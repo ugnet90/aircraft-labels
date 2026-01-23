@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modell – Details</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:18px;line-height:1.35;max-width:720px}
+    .card{border:1px solid #ddd;border-radius:12px;padding:14px;margin:10px 0}
+    .k{color:#666;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+    .v{font-size:16px;margin-top:2px}
+    h1{font-size:20px;margin:0 0 10px}
+    h2{font-size:14px;margin:16px 0 6px;color:#333}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:560px){ .grid{grid-template-columns:1fr} }
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+    a{color:#000}
+    .err{border:1px solid #c00;background:#fff5f5;padding:12px;border-radius:12px}
+    .top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+    .pill{border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
+  </style>
+</head>
+<body>
+
+<div class="top">
+  <h1 id="title">Modell</h1>
+  <span class="pill mono" id="idpill"></span>
+</div>
+
+<div id="content" class="card">Lade Daten …</div>
+
+<p><a href="./index.html">← zurück</a></p>
+
+<script>
+  function qs(name){
+    const u = new URL(window.location.href);
+    return u.searchParams.get(name);
+  }
+
+  function esc(s){
+    return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function row(k,v){
+    if(v === undefined || v === null || v === "") return "";
+    return `<div><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`;
+  }
+
+  async function main(){
+    const id = qs("id");
+    document.getElementById("idpill").textContent = id ? `id=${id}` : "id=?";
+
+    if(!id){
+      document.getElementById("content").innerHTML =
+        `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">model.html?id=aua_oe-lpa</span></div>`;
+      return;
+    }
+
+    const url = `./data/${encodeURIComponent(id)}.json`;
+    try{
+      const res = await fetch(url, {cache:"no-store"});
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      const d = await res.json();
+
+      // Titelzeile
+      const headline = [
+        d.airline, d.aircraft_type, d.registration
+      ].filter(Boolean).join(" · ") || id;
+
+      document.title = headline;
+      document.getElementById("title").textContent = headline;
+
+      const html =
+        `<div class="grid">` +
+          row("Airline", d.airline) +
+          row("Aircraft type", d.aircraft_type) +
+          row("Registration", d.registration) +
+          row("Aircraft name", d.aircraft_name) +
+          row("MSN", d.msn) +
+          row("Engines", d.engine_type) +
+          row("Livery", d.livery_name) +
+        `</div>` +
+
+        `<h2>Scale model</h2>` +
+        `<div class="grid">` +
+          row("Scale", d.model?.scale) +
+          row("Manufacturer", d.model?.manufacturer) +
+          row("Model no.", d.model?.model_number) +
+          row("Notes", d.model?.notes) +
+        `</div>`;
+
+      document.getElementById("content").innerHTML = html;
+
+    }catch(e){
+      document.getElementById("content").innerHTML =
+        `<div class="err"><b>Fehler:</b> Konnte <span class="mono">${esc(url)}</span> nicht laden. (${esc(e.message)})</div>`;
+    }
+  }
+
+  main();
+</script>
+</body>
+</html>
