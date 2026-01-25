@@ -1,0 +1,77 @@
+{
+  "model_id": "OS015",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "AIB-A340-300",
+  "aircraft_type": "Airbus A340-300",
+  "registration": "OE-LAL",
+  "livery_name": "AUA-2006-PHILHARMONIKER",
+  "parent_livery": "AUA-2003-BLUEBELLY",
+  "zusatzinfo": "\"Wiener Philharmoniker\"",
+  "special_note": "",
+  "shop": "Ebay Leon",
+  "price": 47.0,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "12"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A340-300",
+    "type": "Airbus A340-300",
+    "registration": "OE-LAL"
+  },
+  "livery": {
+    "code": "AUA-2006-PHILHARMONIKER",
+    "parent": "AUA-2003-BLUEBELLY",
+    "notes": "\"Wiener Philharmoniker\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay Leon",
+    "price": 47.0,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+    "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A340-300",
+    "Typ_anzeige": "Airbus A340-300",
+    "Hersteller": "Airbus",
+    "Baureihe": "A340",
+    "Unterserie": "-300",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A343",
+    "IATA": "343",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1993",
+    "Status": "teils aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "295",
+    "Length": "63,69",
+    "Wingspan": "60,3",
+    "Height": "16,7",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A340#A340-300"
+  }
+}

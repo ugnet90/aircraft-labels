@@ -1,0 +1,77 @@
+{
+  "model_id": "SO010",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "BUR-OK1K1",
+  "aircraft_type": "",
+  "registration": "OK-GLI",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay DS AutoModelle",
+  "price": 14.79,
+  "shipping_allocated": 8.9,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "https://aero-bg.com/2020/11/10/35-godini-ot-parviya-polet-na-bts-002/",
+  "arrived_excel": "27.10.2025",
+  "arrived": "2025-10-27",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "47"
+  },
+  "aircraft": {
+    "aircraft_id": "BUR-OK1K1",
+    "type": "",
+    "registration": "OK-GLI"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay DS AutoModelle",
+    "price": 14.79,
+    "shipping_allocated": 8.9,
+    "arrived": "2025-10-27",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "",
+    "photo": "https://aero-bg.com/2020/11/10/35-godini-ot-parviya-polet-na-bts-002/"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BUR-OK1K1",
+    "Typ_anzeige": "Buran Space Orbiter OK-1K1",
+    "Hersteller": "NPO Molnija",
+    "Baureihe": "Buran",
+    "Unterserie": "OK-1K1",
+    "Marketingname": "Buran",
+    "Alternate_designations": "Buran Space Shuttle|OK-1K1|Буран",
+    "parent_aircraft_id": "",
+    "ICAO": "BUR",
+    "IATA": "BRN",
+    "Wingtip": "NONE",
+    "Rumpf": "Special",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Sonstige",
+    "Erstflug": "1988",
+    "Status": "ausgemustert",
+    "Antrieb": "Raketenantrieb",
+    "Triebwerke": "0",
+    "Reichweite": "Ultra-lang",
+    "Passengers": "0",
+    "Length": "36,37",
+    "Wingspan": "23,92",
+    "Height": "16,35",
+    "Wiki": "https://de.wikipedia.org/wiki/Buran_(Raumf%C3%A4hre)"
+  }
+}

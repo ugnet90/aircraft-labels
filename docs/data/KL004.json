@@ -1,0 +1,77 @@
+{
+  "model_id": "KL004",
+  "airline_code": "KL",
+  "airline": "KLM",
+  "aircraft_id": "LOC-L188",
+  "aircraft_type": "Lockheed L-188 Electra",
+  "registration": "PH-LLD",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay 4booksubid",
+  "price": 30.68,
+  "shipping_allocated": 18.34,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra",
+  "arrived_excel": "14.07.2025",
+  "arrived": "2025-07-14",
+  "source": {
+    "sheet": "KLM",
+    "row": "41"
+  },
+  "aircraft": {
+    "aircraft_id": "LOC-L188",
+    "type": "Lockheed L-188 Electra",
+    "registration": "PH-LLD"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay 4booksubid",
+    "price": 30.68,
+    "shipping_allocated": 18.34,
+    "arrived": "2025-07-14",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
+    "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "LOC-L188",
+    "Typ_anzeige": "Lockheed L-188 Electra",
+    "Hersteller": "Lockheed",
+    "Baureihe": "L-188",
+    "Unterserie": "",
+    "Marketingname": "L-188 Electra",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "LO18",
+    "IATA": "L88",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1957",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "4",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "98",
+    "Length": "31,8",
+    "Wingspan": "35,9",
+    "Height": "10",
+    "Wiki": "https://de.wikipedia.org/wiki/Lockheed_L-188"
+  }
+}

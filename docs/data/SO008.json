@@ -1,0 +1,77 @@
+{
+  "model_id": "SO008",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "SCA-SS2",
+  "aircraft_type": "",
+  "registration": "N348MS",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Composites 348 White Knight II (N348MS & N202VG)",
+  "special_note": "",
+  "shop": "Flight-Shop.de",
+  "price": 34.24,
+  "shipping_allocated": 3.85,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg",
+  "arrived_excel": "26.06.2025",
+  "arrived": "2025-06-26",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "48"
+  },
+  "aircraft": {
+    "aircraft_id": "SCA-SS2",
+    "type": "",
+    "registration": "N348MS"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Composites 348 White Knight II (N348MS & N202VG)"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Flight-Shop.de",
+    "price": 34.24,
+    "shipping_allocated": 3.85,
+    "arrived": "2025-06-26",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "",
+    "photo": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "SCA-SS2",
+    "Typ_anzeige": "SpaceShipTwo (Virgin Galactic)",
+    "Hersteller": "Scaled Composites",
+    "Baureihe": "SpaceShipTwo",
+    "Unterserie": "",
+    "Marketingname": "VSS Unity",
+    "Alternate_designations": "Virgin Galactic SpaceShipTwo|VSS Unity|SS2|WhiteKnightTwo",
+    "parent_aircraft_id": "SCA-M348",
+    "ICAO": "SS2",
+    "IATA": "SS2",
+    "Wingtip": "NONE",
+    "Rumpf": "Special",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Sonstige",
+    "Erstflug": "2010",
+    "Status": "aktiv",
+    "Antrieb": "Raketenantrieb",
+    "Triebwerke": "1",
+    "Reichweite": "Kurz",
+    "Passengers": "6",
+    "Length": "18,3",
+    "Wingspan": "8,2",
+    "Height": "4,6",
+    "Wiki": "https://de.wikipedia.org/wiki/SpaceShipTwo"
+  }
+}

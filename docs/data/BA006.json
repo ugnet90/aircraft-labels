@@ -1,0 +1,77 @@
+{
+  "model_id": "BA006",
+  "airline_code": "BA",
+  "airline": "British Airways",
+  "aircraft_id": "BAC-111-400",
+  "aircraft_type": "BAC 1-11 Series 400",
+  "registration": "G-AVOE",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 36.89,
+  "shipping_allocated": 1.55,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "https://abpic.co.uk/pictures/view/1178552",
+  "arrived_excel": "15.01.2026",
+  "arrived": "2026-01-15",
+  "source": {
+    "sheet": "BA",
+    "row": "16"
+  },
+  "aircraft": {
+    "aircraft_id": "BAC-111-400",
+    "type": "BAC 1-11 Series 400",
+    "registration": "G-AVOE"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 36.89,
+    "shipping_allocated": 1.55,
+    "arrived": "2026-01-15",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "",
+    "photo": "https://abpic.co.uk/pictures/view/1178552"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BAC-111-400",
+    "Typ_anzeige": "BAC 1-11-400",
+    "Hersteller": "BAC",
+    "Baureihe": "111",
+    "Unterserie": "400",
+    "Marketingname": "One-Eleven 400",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "BAC1",
+    "IATA": "B14",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1965",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "79",
+    "Length": "28,5",
+    "Wingspan": "26,97",
+    "Height": "7,47",
+    "Wiki": "https://de.wikipedia.org/wiki/BAC_1-11"
+  }
+}

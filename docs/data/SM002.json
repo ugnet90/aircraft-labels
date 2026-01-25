@@ -1,0 +1,77 @@
+{
+  "model_id": "SM002",
+  "airline_code": "SM",
+  "airline": "Sondermaße",
+  "aircraft_id": "BOE-314",
+  "aircraft_type": "Boeing 314 Clipper (Pan Am)",
+  "registration": "NC18605",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Dixie Clipper\"",
+  "special_note": "'1:350",
+  "shop": "Leboncoin pat33600",
+  "price": 17.0,
+  "shipping_allocated": 6.95,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
+  "arrived_excel": "02.06.2025",
+  "arrived": "2025-06-02",
+  "source": {
+    "sheet": "Sondermaß",
+    "row": "5"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-314",
+    "type": "Boeing 314 Clipper (Pan Am)",
+    "registration": "NC18605"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Dixie Clipper\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Leboncoin pat33600",
+    "price": 17.0,
+    "shipping_allocated": 6.95,
+    "arrived": "2025-06-02",
+    "flown": null,
+    "special_note": "'1:350"
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
+    "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-314",
+    "Typ_anzeige": "Boeing 314",
+    "Hersteller": "Boeing",
+    "Baureihe": "314",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B314",
+    "IATA": "---",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Special",
+    "Role": "PAX",
+    "Flugzeugtyp": "Wasserflugzeug",
+    "Erstflug": "1938",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "74",
+    "Length": "32,36",
+    "Wingspan": "46,96",
+    "Height": "9,65",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_314"
+  }
+}

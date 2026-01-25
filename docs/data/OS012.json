@@ -1,0 +1,77 @@
+{
+  "model_id": "OS012",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "HAW-HS748",
+  "aircraft_type": "Hawker-Siddeley HS-748",
+  "registration": "OE-LHT",
+  "livery_name": "AUA-1960-CLASSIC",
+  "parent_livery": "",
+  "zusatzinfo": "\"A. Bruckner\"",
+  "special_note": "",
+  "shop": "Ebay aerosmith102",
+  "price": 105.89,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "35"
+  },
+  "aircraft": {
+    "aircraft_id": "HAW-HS748",
+    "type": "Hawker-Siddeley HS-748",
+    "registration": "OE-LHT"
+  },
+  "livery": {
+    "code": "AUA-1960-CLASSIC",
+    "parent": "",
+    "notes": "\"A. Bruckner\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay aerosmith102",
+    "price": 105.89,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+    "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "HAW-HS748",
+    "Typ_anzeige": "Hawker Siddeley HS 748",
+    "Hersteller": "Hawker Siddeley",
+    "Baureihe": "HS 748",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A748",
+    "IATA": "H74",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1960",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz",
+    "Passengers": "48",
+    "Length": "20,42",
+    "Wingspan": "30,18",
+    "Height": "7,57",
+    "Wiki": "https://de.wikipedia.org/wiki/Hawker-Siddeley_HS_748"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LX002",
+  "airline_code": "LX",
+  "airline": "Swiss",
+  "aircraft_id": "AIB-A321-200-SL",
+  "aircraft_type": "Airbus A321-200 (Sharklets)",
+  "registration": "HB-ION",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Lugano\"",
+  "special_note": "",
+  "shop": "Swiss-Edelweiss Airplane Shop",
+  "price": 63.24,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Swiss",
+    "row": "13"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A321-200-SL",
+    "type": "Airbus A321-200 (Sharklets)",
+    "registration": "HB-ION"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Lugano\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Swiss-Edelweiss Airplane Shop",
+    "price": 63.24,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+    "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A321-200-SL",
+    "Typ_anzeige": "Airbus A321-200 (Sharklets)",
+    "Hersteller": "Airbus",
+    "Baureihe": "A321",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A321",
+    "IATA": "321",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1997",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "220",
+    "Length": "44,51",
+    "Wingspan": "35,8",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321#A321-200"
+  }
+}

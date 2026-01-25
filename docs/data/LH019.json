@@ -1,0 +1,77 @@
+{
+  "model_id": "LH019",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A340-600",
+  "aircraft_type": "Airbus A340-600",
+  "registration": "D-AIHN",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Gummersbach\"; Fanhansa",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 54.5,
+  "shipping_allocated": 1.42,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642",
+  "arrived_excel": "20.08.2025",
+  "arrived": "2025-08-20",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "22"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A340-600",
+    "type": "Airbus A340-600",
+    "registration": "D-AIHN"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Gummersbach\"; Fanhansa"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 54.5,
+    "shipping_allocated": 1.42,
+    "arrived": "2025-08-20",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
+    "photo": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A340-600",
+    "Typ_anzeige": "Airbus A340-600",
+    "Hersteller": "Airbus",
+    "Baureihe": "A340",
+    "Unterserie": "-600",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A346",
+    "IATA": "346",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2001",
+    "Status": "teils aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Ultra-lang",
+    "Passengers": "380",
+    "Length": "75,36",
+    "Wingspan": "63,45",
+    "Height": "17,3",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A340#A340-600"
+  }
+}

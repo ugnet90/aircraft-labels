@@ -1,0 +1,77 @@
+{
+  "model_id": "OS004",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "BOE-737-600",
+  "aircraft_type": "Boeing 737-600",
+  "registration": "OE-LNL",
+  "livery_name": "AUA-2003-BLUEBELLY",
+  "parent_livery": "",
+  "zusatzinfo": "\"Kahlenberg\"",
+  "special_note": "",
+  "shop": "World of Wings",
+  "price": 47.95,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "17"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-737-600",
+    "type": "Boeing 737-600",
+    "registration": "OE-LNL"
+  },
+  "livery": {
+    "code": "AUA-2003-BLUEBELLY",
+    "parent": "",
+    "notes": "\"Kahlenberg\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "World of Wings",
+    "price": 47.95,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
+    "photo": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-737-600",
+    "Typ_anzeige": "Boeing 737-600",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-600",
+    "Marketingname": "",
+    "Alternate_designations": " ",
+    "parent_aircraft_id": "",
+    "ICAO": "B736",
+    "IATA": "736",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1998",
+    "Status": "teils aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "132",
+    "Length": "31,2",
+    "Wingspan": "34,3",
+    "Height": "12,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-600"
+  }
+}

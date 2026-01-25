@@ -1,0 +1,77 @@
+{
+  "model_id": "LH025",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "VIC-Viscount-800",
+  "aircraft_type": "Vickers Viscount 814",
+  "registration": "D-ANUN",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay aerosmith102",
+  "price": 41.96,
+  "shipping_allocated": 17.21,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.airhistory.net/photo/702474/D-ANUN",
+  "arrived_excel": "24.10.2025",
+  "arrived": "2025-10-24",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "60"
+  },
+  "aircraft": {
+    "aircraft_id": "VIC-Viscount-800",
+    "type": "Vickers Viscount 814",
+    "registration": "D-ANUN"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay aerosmith102",
+    "price": 41.96,
+    "shipping_allocated": 17.21,
+    "arrived": "2025-10-24",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
+    "photo": "https://www.airhistory.net/photo/702474/D-ANUN"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "VIC-Viscount-800",
+    "Typ_anzeige": "Vickers Viscount 800",
+    "Hersteller": "Vickers",
+    "Baureihe": "Viscount",
+    "Unterserie": "800",
+    "Marketingname": "",
+    "Alternate_designations": "Viscount 837",
+    "parent_aircraft_id": "",
+    "ICAO": "VISC",
+    "IATA": "VS8",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1956",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "4",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "89",
+    "Length": "28,55",
+    "Wingspan": "28,55",
+    "Height": "8,25",
+    "Wiki": "https://de.wikipedia.org/wiki/Vickers_Viscount#Typ_800"
+  }
+}

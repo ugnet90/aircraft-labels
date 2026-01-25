@@ -1,0 +1,77 @@
+{
+  "model_id": "LH016",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "LOC-L1649",
+  "aircraft_type": "Lockheed L-1649A Starliner",
+  "registration": "D-ALUB",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay 4booksubid",
+  "price": 36.68,
+  "shipping_allocated": 18.34,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planepictures.net/v3/show.php?id=614533",
+  "arrived_excel": "14.07.2025",
+  "arrived": "2025-07-14",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "57"
+  },
+  "aircraft": {
+    "aircraft_id": "LOC-L1649",
+    "type": "Lockheed L-1649A Starliner",
+    "registration": "D-ALUB"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay 4booksubid",
+    "price": 36.68,
+    "shipping_allocated": 18.34,
+    "arrived": "2025-07-14",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
+    "photo": "https://www.planepictures.net/v3/show.php?id=614533"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "LOC-L1649",
+    "Typ_anzeige": "Lockheed L-1649 Starliner",
+    "Hersteller": "Lockheed",
+    "Baureihe": "L-1649",
+    "Unterserie": "",
+    "Marketingname": "L-1649 Starliner",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "LO49",
+    "IATA": "L16",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1956",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "99",
+    "Length": "48",
+    "Wingspan": "45,7",
+    "Height": "6,1",
+    "Wiki": "https://de.wikipedia.org/wiki/Lockheed_Starliner"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "OS002",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "AIB-A321-100",
+  "aircraft_type": "Airbus A321-100",
+  "registration": "OE-LBB",
+  "livery_name": "AUA-1999-STRAUSS",
+  "parent_livery": "AUA-1995-ARROWSTRIPE",
+  "zusatzinfo": "\"Pinzgau\" \"Johann Strauss\"",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 24.5,
+  "shipping_allocated": 3.0,
+  "flown": true,
+  "postcard": "Eigenflug; https://jjpostcards.com/de/ansichtskarten/35822-Austrian-A321.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "7"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A321-100",
+    "type": "Airbus A321-100",
+    "registration": "OE-LBB"
+  },
+  "livery": {
+    "code": "AUA-1999-STRAUSS",
+    "parent": "AUA-1995-ARROWSTRIPE",
+    "notes": "\"Pinzgau\" \"Johann Strauss\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 24.5,
+    "shipping_allocated": 3.0,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "Eigenflug; https://jjpostcards.com/de/ansichtskarten/35822-Austrian-A321.html",
+    "photo": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A321-100",
+    "Typ_anzeige": "Airbus A321-100",
+    "Hersteller": "Airbus",
+    "Baureihe": "A321",
+    "Unterserie": "-100",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A321",
+    "IATA": "321",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1993",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "185",
+    "Length": "44,51",
+    "Wingspan": "34,1",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321#A321-100"
+  }
+}

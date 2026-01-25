@@ -1,0 +1,77 @@
+{
+  "model_id": "SO019",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "BOE-C40A",
+  "aircraft_type": "",
+  "registration": "RY-831",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "B737-700",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 15.0,
+  "shipping_allocated": 0.33,
+  "flown": null,
+  "postcard": "x",
+  "postcard_price": null,
+  "photo": "https://www.airhistory.net/photo/425749/165831/5831",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Sonstige",
+    "row": "28"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-C40A",
+    "type": "",
+    "registration": "RY-831"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "B737-700"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 15.0,
+    "shipping_allocated": 0.33,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "x",
+    "photo": "https://www.airhistory.net/photo/425749/165831/5831"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-C40A",
+    "Typ_anzeige": "Boeing C-40A Clipper",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-700",
+    "Marketingname": "C-40A Clipper",
+    "Alternate_designations": "Boeing C-40A|Clipper",
+    "parent_aircraft_id": "BOE-737-700",
+    "ICAO": "C40A",
+    "IATA": "C40A",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1999",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "0",
+    "Length": "33,63",
+    "Wingspan": "34,32",
+    "Height": "12,55",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_C-40#C-40A"
+  }
+}

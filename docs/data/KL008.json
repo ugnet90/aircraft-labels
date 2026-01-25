@@ -1,0 +1,77 @@
+{
+  "model_id": "KL008",
+  "airline_code": "KL",
+  "airline": "KLM",
+  "aircraft_id": "DOU-DC8-63",
+  "aircraft_type": "Douglas DC-8-63",
+  "registration": "PH-DEF",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Henry Hudson\"",
+  "special_note": "",
+  "shop": "Ebay DiecastAirplaneTreasuryTrove",
+  "price": 110.07,
+  "shipping_allocated": 52.69,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+  "postcard_price": 1.35,
+  "photo": "https://abpic.co.uk/pictures/view/1947917",
+  "arrived_excel": "14.11.2025",
+  "arrived": "2025-11-14",
+  "source": {
+    "sheet": "KLM",
+    "row": "38"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-DC8-63",
+    "type": "Douglas DC-8-63",
+    "registration": "PH-DEF"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Henry Hudson\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay DiecastAirplaneTreasuryTrove",
+    "price": 110.07,
+    "shipping_allocated": 52.69,
+    "arrived": "2025-11-14",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+    "photo": "https://abpic.co.uk/pictures/view/1947917"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-DC8-63",
+    "Typ_anzeige": "Douglas DC-8-63 Super 63",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-8",
+    "Unterserie": "-63",
+    "Marketingname": "Super 63",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "DC86",
+    "IATA": "D63",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1967",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "259",
+    "Length": "57",
+    "Wingspan": "45",
+    "Height": "12,9",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-8#Super_Sixties"
+  }
+}

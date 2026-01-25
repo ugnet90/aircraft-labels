@@ -1,0 +1,77 @@
+{
+  "model_id": "BOA002",
+  "airline_code": "BOA",
+  "airline": "BOAC",
+  "aircraft_id": "VIC-VC10-SUPER",
+  "aircraft_type": "BAC Vickers VC-10 Super",
+  "registration": "G-ASGH",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 44.5,
+  "shipping_allocated": 1.16,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.airhistory.net/photo/574510/G-ASGH",
+  "arrived_excel": "20.08.2025",
+  "arrived": "2025-08-20",
+  "source": {
+    "sheet": "BOAC",
+    "row": "19"
+  },
+  "aircraft": {
+    "aircraft_id": "VIC-VC10-SUPER",
+    "type": "BAC Vickers VC-10 Super",
+    "registration": "G-ASGH"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 44.5,
+    "shipping_allocated": 1.16,
+    "arrived": "2025-08-20",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
+    "photo": "https://www.airhistory.net/photo/574510/G-ASGH"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "VIC-VC10-SUPER",
+    "Typ_anzeige": "Vickers VC10 Super",
+    "Hersteller": "Vickers",
+    "Baureihe": "VC10",
+    "Unterserie": "Super VC10",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "VC10",
+    "IATA": "VC2",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1964",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "174",
+    "Length": "48,36",
+    "Wingspan": "44,55",
+    "Height": "12,19",
+    "Wiki": "https://de.wikipedia.org/wiki/Vickers_VC10"
+  }
+}

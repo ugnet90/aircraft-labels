@@ -1,0 +1,77 @@
+{
+  "model_id": "OS006",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "SUD-Caravelle-VIR",
+  "aircraft_type": "Sud Aviation SE 210 Caravelle VI-R",
+  "registration": "OE-LCA",
+  "livery_name": "AUA-1960-CLASSIC",
+  "parent_livery": "",
+  "zusatzinfo": "\"Wien\"",
+  "special_note": "",
+  "shop": "Ebay nozaman",
+  "price": 110.58,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "38"
+  },
+  "aircraft": {
+    "aircraft_id": "SUD-Caravelle-VIR",
+    "type": "Sud Aviation SE 210 Caravelle VI-R",
+    "registration": "OE-LCA"
+  },
+  "livery": {
+    "code": "AUA-1960-CLASSIC",
+    "parent": "",
+    "notes": "\"Wien\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay nozaman",
+    "price": 110.58,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
+    "photo": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "SUD-Caravelle-VIR",
+    "Typ_anzeige": "Sud Aviation Caravelle VI-R",
+    "Hersteller": "Sud Aviation",
+    "Baureihe": "Caravelle",
+    "Unterserie": "VI-R",
+    "Marketingname": "Caravelle VI-R",
+    "Alternate_designations": "Caravelle 6R|Caravelle VIR",
+    "parent_aircraft_id": "",
+    "ICAO": "CRVN",
+    "IATA": "CV6",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1962",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "99",
+    "Length": "32,01",
+    "Wingspan": "34,3",
+    "Height": "8,71",
+    "Wiki": "https://de.wikipedia.org/wiki/Sud_Aviation_Caravelle#Caravelle_VI-R"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "SO003",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "VIC-Viscount-800",
+  "aircraft_type": "",
+  "registration": "4X-AVF",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay mali_1123",
+  "price": 31.6,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+  "postcard_price": 0.85,
+  "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Sonstige",
+    "row": "34"
+  },
+  "aircraft": {
+    "aircraft_id": "VIC-Viscount-800",
+    "type": "",
+    "registration": "4X-AVF"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay mali_1123",
+    "price": 31.6,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+    "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "VIC-Viscount-800",
+    "Typ_anzeige": "Vickers Viscount 800",
+    "Hersteller": "Vickers",
+    "Baureihe": "Viscount",
+    "Unterserie": "800",
+    "Marketingname": "",
+    "Alternate_designations": "Viscount 837",
+    "parent_aircraft_id": "",
+    "ICAO": "VISC",
+    "IATA": "VS8",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1956",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "4",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "89",
+    "Length": "28,55",
+    "Wingspan": "28,55",
+    "Height": "8,25",
+    "Wiki": "https://de.wikipedia.org/wiki/Vickers_Viscount#Typ_800"
+  }
+}

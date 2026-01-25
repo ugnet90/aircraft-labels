@@ -1,0 +1,77 @@
+{
+  "model_id": "SO007",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "JUN-JU52-3M",
+  "aircraft_type": "",
+  "registration": "A-703",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Tante Ju",
+  "special_note": "",
+  "shop": "2dehands Julien Lempereur",
+  "price": 21.0,
+  "shipping_allocated": 11.0,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+  "postcard_price": 1.35,
+  "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703",
+  "arrived_excel": "27.05.2025",
+  "arrived": "2025-05-27",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "33"
+  },
+  "aircraft": {
+    "aircraft_id": "JUN-JU52-3M",
+    "type": "",
+    "registration": "A-703"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Tante Ju"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "2dehands Julien Lempereur",
+    "price": 21.0,
+    "shipping_allocated": 11.0,
+    "arrived": "2025-05-27",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+    "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "JUN-JU52-3M",
+    "Typ_anzeige": "Junkers Ju 3m Tante Ju",
+    "Hersteller": "Junkers",
+    "Baureihe": "Ju",
+    "Unterserie": "3m",
+    "Marketingname": "Tante Ju",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "JU52",
+    "IATA": "J52",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1932",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "3",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "17",
+    "Length": "18,9",
+    "Wingspan": "29,25",
+    "Height": "4,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Junkers_Ju_52"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LH026",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A321-neo",
+  "aircraft_type": "Airbus A321 neo",
+  "registration": "D-AIEP",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Augsburg\"",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 39.5,
+  "shipping_allocated": 0.97,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
+  "arrived_excel": "12.11.2025",
+  "arrived": "2025-11-12",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "17"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A321-neo",
+    "type": "Airbus A321 neo",
+    "registration": "D-AIEP"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Augsburg\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 39.5,
+    "shipping_allocated": 0.97,
+    "arrived": "2025-11-12",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+    "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A321-neo",
+    "Typ_anzeige": "Airbus A321neo",
+    "Hersteller": "Airbus",
+    "Baureihe": "A321",
+    "Unterserie": "neo",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A21N",
+    "IATA": "32Q",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2016",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "206",
+    "Length": "44,51",
+    "Wingspan": "35,8",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321neo"
+  }
+}

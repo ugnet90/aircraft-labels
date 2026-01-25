@@ -1,0 +1,77 @@
+{
+  "model_id": "KL005",
+  "airline_code": "KL",
+  "airline": "KLM",
+  "aircraft_id": "BAC-111-300",
+  "aircraft_type": "BAC 1-11 Series 300",
+  "registration": "G-ATPJ",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay Felindre Diecast",
+  "price": 50.66,
+  "shipping_allocated": 9.25,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.jetphotos.com/photo/7018562",
+  "arrived_excel": "23.10.2025",
+  "arrived": "2025-10-23",
+  "source": {
+    "sheet": "KLM",
+    "row": "10"
+  },
+  "aircraft": {
+    "aircraft_id": "BAC-111-300",
+    "type": "BAC 1-11 Series 300",
+    "registration": "G-ATPJ"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay Felindre Diecast",
+    "price": 50.66,
+    "shipping_allocated": 9.25,
+    "arrived": "2025-10-23",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
+    "photo": "https://www.jetphotos.com/photo/7018562"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BAC-111-300",
+    "Typ_anzeige": "BAC 1-11-300",
+    "Hersteller": "BAC",
+    "Baureihe": "111",
+    "Unterserie": "300",
+    "Marketingname": "One-Eleven 300",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "BAC1",
+    "IATA": "B13",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1964",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "79",
+    "Length": "28,5",
+    "Wingspan": "26,97",
+    "Height": "7,47",
+    "Wiki": "https://de.wikipedia.org/wiki/BAC_1-11"
+  }
+}

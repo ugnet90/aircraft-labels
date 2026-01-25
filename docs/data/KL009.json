@@ -1,0 +1,77 @@
+{
+  "model_id": "KL009",
+  "airline_code": "KL",
+  "airline": "KLM",
+  "aircraft_id": "BOE-767-300ER",
+  "aircraft_type": "Boeing 767-300ER Extended Range",
+  "registration": "PH-BZJ",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 34.5,
+  "shipping_allocated": 1.2,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er",
+  "arrived_excel": "15.01.2026",
+  "arrived": "2026-01-15",
+  "source": {
+    "sheet": "KLM",
+    "row": "23"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-767-300ER",
+    "type": "Boeing 767-300ER Extended Range",
+    "registration": "PH-BZJ"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 34.5,
+    "shipping_allocated": 1.2,
+    "arrived": "2026-01-15",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
+    "photo": "https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-767-300ER",
+    "Typ_anzeige": "Boeing 767-300ER Extended Range",
+    "Hersteller": "Boeing",
+    "Baureihe": "767",
+    "Unterserie": "-300ER",
+    "Marketingname": "Extended Range",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B763",
+    "IATA": "76W",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1988",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "269",
+    "Length": "54,94",
+    "Wingspan": "47,57",
+    "Height": "15,85",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#767-300ER"
+  }
+}

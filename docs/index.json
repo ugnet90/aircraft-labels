@@ -1,0 +1,1537 @@
+{
+  "generated_at": "2026-01-25T17:15:01Z",
+  "count": 151,
+  "counts_by_airline_code": {
+    "OS": 20,
+    "LH": 30,
+    "LX": 16,
+    "BT": 1,
+    "AB": 2,
+    "AF": 3,
+    "AZ": 1,
+    "BA": 7,
+    "BOA": 2,
+    "HF": 3,
+    "FI": 1,
+    "KL": 9,
+    "WA": 3,
+    "NG": 3,
+    "PA": 20,
+    "SK": 5,
+    "TP": 1,
+    "SO": 21,
+    "SM": 3
+  },
+  "items": [
+    {
+      "model_id": "AB001",
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "D-ABDQ",
+      "livery_name": "",
+      "arrived": "2025-11-03"
+    },
+    {
+      "model_id": "AB002",
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "aircraft_id": "BOE-757-200",
+      "aircraft_type": "Boeing 757-200",
+      "registration": "HB-IHR",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "AF001",
+      "airline_code": "AF",
+      "airline": "Air France",
+      "aircraft_id": "AIB-A318",
+      "aircraft_type": "Airbus A318-100",
+      "registration": "F-GUGD",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "AF002",
+      "airline_code": "AF",
+      "airline": "Air France",
+      "aircraft_id": "BOE-777-300ER",
+      "aircraft_type": "Boeing 777-300ER",
+      "registration": "F-GSQB",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "AF003",
+      "airline_code": "AF",
+      "airline": "Air France",
+      "aircraft_id": "EMB-E170",
+      "aircraft_type": "Embraer ERJ-170",
+      "registration": "F-HBXE",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "AZ001",
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "aircraft_id": "DOU-DC8-40",
+      "aircraft_type": "Douglas DC-8-40",
+      "registration": "I-DIWA",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "BA001",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "SUD-CONCORDE",
+      "aircraft_type": "Aérospatiale/BAC Concorde",
+      "registration": "G-BOAD",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "BA002",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "SHO-360",
+      "aircraft_type": "Shorts 360",
+      "registration": "G-BNYI",
+      "livery_name": "",
+      "arrived": "2025-11-10"
+    },
+    {
+      "model_id": "BA003",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "registration": "G-LGNB",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "BA004",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "BOE-787-8",
+      "aircraft_type": "Boeing 787-8 Dreamliner",
+      "registration": "G-ZBJG",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "BA005",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "registration": "G-GNTZ",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "BA006",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "BAC-111-400",
+      "aircraft_type": "BAC 1-11 Series 400",
+      "registration": "G-AVOE",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "BA007",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "HAW-Trident-3",
+      "aircraft_type": "Hawker Siddeley HS-121 Trident 3",
+      "registration": "G-AWZN",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "BOA001",
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "aircraft_id": "BRI-Britannia-312",
+      "aircraft_type": "Bristol 175 Britannia 312",
+      "registration": "G-AOVK",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "BOA002",
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "aircraft_id": "VIC-VC10-SUPER",
+      "aircraft_type": "BAC Vickers VC-10 Super",
+      "registration": "G-ASGH",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "BT001",
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "aircraft_id": "AIB-A220-300",
+      "aircraft_type": "Airbus A220-300",
+      "registration": "YL-AAU",
+      "livery_name": "",
+      "arrived": "2025-10-10"
+    },
+    {
+      "model_id": "FI001",
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "aircraft_id": "BOE-757-200-WL",
+      "aircraft_type": "Boeing 757-200 (Winglets)",
+      "registration": "TF-ISF",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "HF001",
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "registration": "D-AHFC",
+      "livery_name": "",
+      "arrived": "2025-10-23"
+    },
+    {
+      "model_id": "HF002",
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-700",
+      "aircraft_type": "Boeing 737-700",
+      "registration": "D-AGEP",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "HF003",
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "registration": "D-AHLA",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "KL001",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-53",
+      "registration": "PH-DCI",
+      "livery_name": "",
+      "arrived": "2025-06-03"
+    },
+    {
+      "model_id": "KL002",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "MCD-MD11",
+      "aircraft_type": "McDonnell Douglas MD-11",
+      "registration": "PH-KCA",
+      "livery_name": "",
+      "arrived": "2025-06-03"
+    },
+    {
+      "model_id": "KL003",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "registration": "PH-BFH",
+      "livery_name": "",
+      "arrived": "2025-06-23"
+    },
+    {
+      "model_id": "KL004",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "LOC-L188",
+      "aircraft_type": "Lockheed L-188 Electra",
+      "registration": "PH-LLD",
+      "livery_name": "",
+      "arrived": "2025-07-14"
+    },
+    {
+      "model_id": "KL005",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "BAC-111-300",
+      "aircraft_type": "BAC 1-11 Series 300",
+      "registration": "G-ATPJ",
+      "livery_name": "",
+      "arrived": "2025-10-23"
+    },
+    {
+      "model_id": "KL006",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "registration": "PH-DTA",
+      "livery_name": "",
+      "arrived": "2025-10-23"
+    },
+    {
+      "model_id": "KL007",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "DOU-DC7-C",
+      "aircraft_type": "Douglas DC-7C Seven Seas",
+      "registration": "PH-DSG",
+      "livery_name": "",
+      "arrived": "2025-10-30"
+    },
+    {
+      "model_id": "KL008",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "DOU-DC8-63",
+      "aircraft_type": "Douglas DC-8-63",
+      "registration": "PH-DEF",
+      "livery_name": "",
+      "arrived": "2025-11-14"
+    },
+    {
+      "model_id": "KL009",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "aircraft_id": "BOE-767-300ER",
+      "aircraft_type": "Boeing 767-300ER Extended Range",
+      "registration": "PH-BZJ",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "LH001",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A320-200-SL",
+      "aircraft_type": "Airbus A320-200 (Sharklets)",
+      "registration": "D-AIZP",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH002",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-707-320",
+      "aircraft_type": "Boeing 707-330B",
+      "registration": "D-ABUC",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH003",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-747-8",
+      "aircraft_type": "Boeing 747-8",
+      "registration": "D-ABYT",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH004",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A380-800",
+      "aircraft_type": "Airbus A380-800",
+      "registration": "D-AIMA",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH005",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "LOC-L1049",
+      "aircraft_type": "Lockheed L-1049G Super Constellation",
+      "registration": "D-ALEM",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH006",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A350-900",
+      "aircraft_type": "Airbus A350-900",
+      "registration": "D-AIVD",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH007",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "registration": "D-ABHX",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH008",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "FOK-F27",
+      "aircraft_type": "Fokker F27-400 Friendship",
+      "registration": "D-BARI",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH009",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A300-B2",
+      "aircraft_type": "Airbus A300B2",
+      "registration": "D-AIAA",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH010",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "registration": "D-ABVW",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LH011",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "registration": "D-AIRX",
+      "livery_name": "",
+      "arrived": "2025-05-14"
+    },
+    {
+      "model_id": "LH012",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "registration": "D-AFFZ",
+      "livery_name": "",
+      "arrived": "2025-06-16"
+    },
+    {
+      "model_id": "LH013",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "registration": "D-AIKO",
+      "livery_name": "",
+      "arrived": "2025-06-20"
+    },
+    {
+      "model_id": "LH014",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "registration": "D-AIGF",
+      "livery_name": "",
+      "arrived": "2025-06-23"
+    },
+    {
+      "model_id": "LH015",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "registration": "D-ABKB",
+      "livery_name": "",
+      "arrived": "2025-06-23"
+    },
+    {
+      "model_id": "LH016",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "LOC-L1649",
+      "aircraft_type": "Lockheed L-1649A Starliner",
+      "registration": "D-ALUB",
+      "livery_name": "",
+      "arrived": "2025-07-14"
+    },
+    {
+      "model_id": "LH017",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "JUN-JU52-3M",
+      "aircraft_type": "Junkers Ju 52/3m",
+      "registration": "D-AQUI",
+      "livery_name": "",
+      "arrived": "2025-08-05"
+    },
+    {
+      "model_id": "LH018",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-727-100",
+      "aircraft_type": "Boeing 727-100",
+      "registration": "D-ABIB",
+      "livery_name": "",
+      "arrived": "2025-08-08"
+    },
+    {
+      "model_id": "LH019",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A340-600",
+      "aircraft_type": "Airbus A340-600",
+      "registration": "D-AIHN",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "LH020",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "registration": "D-ABEE",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "LH021",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "registration": "D-ABIR",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "LH022",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOM-CRJ200",
+      "aircraft_type": "Bombardier CRJ-200",
+      "registration": "D-ACJH",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "LH023",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOM-CRJ900",
+      "aircraft_type": "Bombardier CRJ-900",
+      "registration": "D-ACND",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "LH024",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-720",
+      "aircraft_type": "Boeing 720",
+      "registration": "D-ABOH",
+      "livery_name": "",
+      "arrived": "2025-10-24"
+    },
+    {
+      "model_id": "LH025",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "VIC-Viscount-800",
+      "aircraft_type": "Vickers Viscount 814",
+      "registration": "D-ANUN",
+      "livery_name": "",
+      "arrived": "2025-10-24"
+    },
+    {
+      "model_id": "LH026",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321 neo",
+      "registration": "D-AIEP",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "LH027",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "registration": "D-ABYA",
+      "livery_name": "",
+      "arrived": "2025-11-13"
+    },
+    {
+      "model_id": "LH028",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321 neo",
+      "registration": "D-AIEQ",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "LH029",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "BOE-747-200F",
+      "aircraft_type": "Boeing 747-200F",
+      "registration": "D-ABZF",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "LH030",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "aircraft_id": "MCD-MD11F",
+      "aircraft_type": "McDonnell Douglas MD-11F",
+      "registration": "D-ALCN",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "LX001",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "BAE-146-300",
+      "aircraft_type": "British Aerospace Avro RJ100",
+      "registration": "HB-IXU",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LX002",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A321-200-SL",
+      "aircraft_type": "Airbus A321-200 (Sharklets)",
+      "registration": "HB-ION",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "LX003",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A220-100",
+      "aircraft_type": "Airbus A220-100",
+      "registration": "C-GWXZ",
+      "livery_name": "",
+      "arrived": "2025-05-14"
+    },
+    {
+      "model_id": "LX004",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "MCD-MD81",
+      "aircraft_type": "McDonnell Douglas MD-81",
+      "registration": "HB-IND",
+      "livery_name": "",
+      "arrived": "2025-07-15"
+    },
+    {
+      "model_id": "LX005",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "HB-IJM",
+      "livery_name": "",
+      "arrived": "2025-08-20"
+    },
+    {
+      "model_id": "LX006",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A220-300",
+      "aircraft_type": "Airbus A220-300",
+      "registration": "HB-JCA",
+      "livery_name": "",
+      "arrived": "2025-10-08"
+    },
+    {
+      "model_id": "LX007",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "BOE-777-300ER",
+      "aircraft_type": "Boeing 777-300ER",
+      "registration": "HB-JNA",
+      "livery_name": "",
+      "arrived": "2025-10-08"
+    },
+    {
+      "model_id": "LX008",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "MCD-MD11",
+      "aircraft_type": "McDonnell Douglas MD-11",
+      "registration": "HB-IWI",
+      "livery_name": "",
+      "arrived": "2025-10-08"
+    },
+    {
+      "model_id": "LX009",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "HB-IJD",
+      "livery_name": "",
+      "arrived": "2025-11-03"
+    },
+    {
+      "model_id": "LX010",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "CON-CV990",
+      "aircraft_type": "Convair CV-990 Coronado",
+      "registration": "HB-ICC",
+      "livery_name": "",
+      "arrived": "2025-11-05"
+    },
+    {
+      "model_id": "LX011",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "registration": "HB-IOH",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "LX012",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "registration": "HB-JDC",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "LX013",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "CON-CV880",
+      "aircraft_type": "Convair CV-880 Golden Arrow",
+      "registration": "HB-ICL",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "LX014",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "registration": "HB-IPA",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "LX015",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "registration": "HB-IGB",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "LX016",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-53",
+      "registration": "HB-IDB",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "NG001",
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "registration": "OE-LPA",
+      "livery_name": "LDA-1990-CLASSIC",
+      "arrived": "2025-06-23"
+    },
+    {
+      "model_id": "NG002",
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "aircraft_id": "BOE-737-600",
+      "aircraft_type": "Boeing 737-600",
+      "registration": "OE-LNM",
+      "livery_name": "LDA-2004-TIROL",
+      "arrived": "2025-11-03"
+    },
+    {
+      "model_id": "NG003",
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "OE-LEA",
+      "livery_name": "",
+      "arrived": "2025-11-03"
+    },
+    {
+      "model_id": "OS001",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "registration": "OE-LDE",
+      "livery_name": "AUA-2015-MYAUA",
+      "arrived": null
+    },
+    {
+      "model_id": "OS002",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "registration": "OE-LBB",
+      "livery_name": "AUA-1999-STRAUSS",
+      "arrived": null
+    },
+    {
+      "model_id": "OS003",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "registration": "OE-LVK",
+      "livery_name": "AUA-2008-FOOTBALL",
+      "arrived": null
+    },
+    {
+      "model_id": "OS004",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "BOE-737-600",
+      "aircraft_type": "Boeing 737-600",
+      "registration": "OE-LNL",
+      "livery_name": "AUA-2003-BLUEBELLY",
+      "arrived": null
+    },
+    {
+      "model_id": "OS005",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A340-200",
+      "aircraft_type": "Airbus A340-200",
+      "registration": "OE-LAG",
+      "livery_name": "AUA-1995-ARROWSTRIPE",
+      "arrived": null
+    },
+    {
+      "model_id": "OS006",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "SUD-Caravelle-VIR",
+      "aircraft_type": "Sud Aviation SE 210 Caravelle VI-R",
+      "registration": "OE-LCA",
+      "livery_name": "AUA-1960-CLASSIC",
+      "arrived": null
+    },
+    {
+      "model_id": "OS007",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "registration": "OE-LAN",
+      "livery_name": "AUA-2003-BLUEBELLY",
+      "arrived": null
+    },
+    {
+      "model_id": "OS008",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "registration": "OE-LGI",
+      "livery_name": "AUA-2003-BLUEBELLY",
+      "arrived": null
+    },
+    {
+      "model_id": "OS009",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "registration": "OE-LPD",
+      "livery_name": "AUA-2003-BLUEBELLY",
+      "arrived": null
+    },
+    {
+      "model_id": "OS010",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "OE-LBP",
+      "livery_name": "AUA-1997-QUALIFLYER",
+      "arrived": null
+    },
+    {
+      "model_id": "OS011",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "registration": "OE-LNT",
+      "livery_name": "AUA-2003-STARALLIANCE",
+      "arrived": null
+    },
+    {
+      "model_id": "OS012",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "HAW-HS748",
+      "aircraft_type": "Hawker-Siddeley HS-748",
+      "registration": "OE-LHT",
+      "livery_name": "AUA-1960-CLASSIC",
+      "arrived": null
+    },
+    {
+      "model_id": "OS013",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "Douglas DC-9-30",
+      "registration": "OE-LDA",
+      "livery_name": "AUA-1980-REDARROW",
+      "arrived": null
+    },
+    {
+      "model_id": "OS014",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "MCD-DC9-50",
+      "aircraft_type": "Douglas DC-9-50",
+      "registration": "OE-LDL",
+      "livery_name": "AUA-1980-REDARROW",
+      "arrived": null
+    },
+    {
+      "model_id": "OS015",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "registration": "OE-LAL",
+      "livery_name": "AUA-2006-PHILHARMONIKER",
+      "arrived": null
+    },
+    {
+      "model_id": "OS016",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "registration": "OE-LBB",
+      "livery_name": "AUA-1996-1000YEARS",
+      "arrived": "2025-05-22"
+    },
+    {
+      "model_id": "OS017",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "registration": "OE-LPM",
+      "livery_name": "AUA-2018-NEW",
+      "arrived": "2025-06-16"
+    },
+    {
+      "model_id": "OS018",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "registration": "OE-LAW",
+      "livery_name": "AUA-2018-NEW",
+      "arrived": "2025-06-20"
+    },
+    {
+      "model_id": "OS019",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "FOK-F70",
+      "aircraft_type": "Fokker 70",
+      "registration": "OE-LFG",
+      "livery_name": "AUA-2003-STARALLIANCE-LOGOSTRIP",
+      "arrived": "2025-07-02"
+    },
+    {
+      "model_id": "OS020",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "aircraft_id": "VIC-Viscount-800",
+      "aircraft_type": "Vickers Viscount 837",
+      "registration": "OE-LAM",
+      "livery_name": "AUA-1959-CHEATLINE",
+      "arrived": "2026-01-16"
+    },
+    {
+      "model_id": "PA001",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-747-SP",
+      "aircraft_type": "Boeing 747SP",
+      "registration": "N533PA",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "PA002",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "registration": "N406KW",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "PA003",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-377",
+      "aircraft_type": "Boeing 377 Stratocruiser",
+      "registration": "N1025V",
+      "livery_name": "",
+      "arrived": "2025-05-08"
+    },
+    {
+      "model_id": "PA004",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-727-200",
+      "aircraft_type": "Boeing 727-200",
+      "registration": "N365PA",
+      "livery_name": "",
+      "arrived": "2025-05-14"
+    },
+    {
+      "model_id": "PA005",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "MCD-DC10-10",
+      "aircraft_type": "McDonnell Douglas DC-10-10",
+      "registration": "N61NA",
+      "livery_name": "",
+      "arrived": "2025-05-22"
+    },
+    {
+      "model_id": "PA006",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "LOC-L1011-500",
+      "aircraft_type": "Lockheed L-1011 TriStar 500",
+      "registration": "N514PA",
+      "livery_name": "",
+      "arrived": "2025-05-22"
+    },
+    {
+      "model_id": "PA007",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "registration": "N67AF",
+      "livery_name": "",
+      "arrived": "2025-06-10"
+    },
+    {
+      "model_id": "PA008",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "registration": "N818PA",
+      "livery_name": "",
+      "arrived": "2025-06-18"
+    },
+    {
+      "model_id": "PA009",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "DOU-DC4",
+      "aircraft_type": "Douglas DC-4",
+      "registration": "N88886",
+      "livery_name": "",
+      "arrived": "2025-07-04"
+    },
+    {
+      "model_id": "PA010",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "DOU-DC4",
+      "aircraft_type": "Douglas DC-4",
+      "registration": "N88934",
+      "livery_name": "",
+      "arrived": "2025-07-04"
+    },
+    {
+      "model_id": "PA011",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "DOU-DC8-62",
+      "aircraft_type": "Douglas DC-8-62",
+      "registration": "N1803",
+      "livery_name": "",
+      "arrived": "2025-07-07"
+    },
+    {
+      "model_id": "PA012",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "registration": "N4704U",
+      "livery_name": "",
+      "arrived": "2025-06-26"
+    },
+    {
+      "model_id": "PA013",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-707-320",
+      "aircraft_type": "Boeing 707-320",
+      "registration": "N412PA",
+      "livery_name": "",
+      "arrived": "2025-07-09"
+    },
+    {
+      "model_id": "PA014",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "BOE-720",
+      "aircraft_type": "Boeing 720",
+      "registration": "N783PA",
+      "livery_name": "",
+      "arrived": "2025-07-15"
+    },
+    {
+      "model_id": "PA015",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "LOC-L049",
+      "aircraft_type": "Lockheed L-049 Constallation",
+      "registration": "NC88831",
+      "livery_name": "",
+      "arrived": "2025-07-21"
+    },
+    {
+      "model_id": "PA016",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "CON-CV240",
+      "aircraft_type": "Convair CV-240 Convairliner",
+      "registration": "N90671",
+      "livery_name": "",
+      "arrived": "2025-08-05"
+    },
+    {
+      "model_id": "PA017",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "CUR-C46",
+      "aircraft_type": "Curtiss-Wright C-46 Commando",
+      "registration": "N67980",
+      "livery_name": "",
+      "arrived": "2025-08-08"
+    },
+    {
+      "model_id": "PA018",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-30",
+      "registration": "N809PA",
+      "livery_name": "",
+      "arrived": "2025-11-05"
+    },
+    {
+      "model_id": "PA019",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "registration": "N207PA",
+      "livery_name": "",
+      "arrived": "2025-11-10"
+    },
+    {
+      "model_id": "PA020",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "registration": "N83NA",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "SK001",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "aircraft_id": "BOM-CRJ900",
+      "aircraft_type": "Bombardier CRJ-900",
+      "registration": "ES-ACG",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "SK002",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "OY-KAR",
+      "livery_name": "",
+      "arrived": "2025-07-22"
+    },
+    {
+      "model_id": "SK003",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "aircraft_id": "BOE-737-700-WL",
+      "aircraft_type": "Boeing 737-700 (Winglets)",
+      "registration": "SE-RJX",
+      "livery_name": "",
+      "arrived": "2025-05-14"
+    },
+    {
+      "model_id": "SK004",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "aircraft_id": "MCD-MD82",
+      "aircraft_type": "McDonnell Douglas MD-82",
+      "registration": "OY-KHR",
+      "livery_name": "",
+      "arrived": "2025-05-14"
+    },
+    {
+      "model_id": "SK005",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "aircraft_id": "MCD-MD87",
+      "aircraft_type": "McDonnell Douglas MD-87",
+      "registration": "OY-KHF",
+      "livery_name": "",
+      "arrived": "2025-11-06"
+    },
+    {
+      "model_id": "SM001",
+      "airline_code": "SM",
+      "airline": "Sondermaße",
+      "aircraft_id": "VIC-Viscount-700",
+      "aircraft_type": "Vickers Viscount 779 (Austrian)",
+      "registration": "OE-LAB",
+      "livery_name": "",
+      "arrived": "2025-05-26"
+    },
+    {
+      "model_id": "SM002",
+      "airline_code": "SM",
+      "airline": "Sondermaße",
+      "aircraft_id": "BOE-314",
+      "aircraft_type": "Boeing 314 Clipper (Pan Am)",
+      "registration": "NC18605",
+      "livery_name": "",
+      "arrived": "2025-06-02"
+    },
+    {
+      "model_id": "SM003",
+      "airline_code": "SM",
+      "airline": "Sondermaße",
+      "aircraft_id": "DOR-DOX",
+      "aircraft_type": "Dornier Do X (Lufthansa)",
+      "registration": "D-1929",
+      "livery_name": "",
+      "arrived": "2025-10-10"
+    },
+    {
+      "model_id": "SO001",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "ANT-An225",
+      "aircraft_type": "",
+      "registration": "UR-82060",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "SO002",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "AIB-A300-600ST",
+      "aircraft_type": "",
+      "registration": "F-GSTC",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "SO003",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "VIC-Viscount-800",
+      "aircraft_type": "",
+      "registration": "4X-AVF",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "SO004",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-747-VC25A",
+      "aircraft_type": "",
+      "registration": "28000",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "SO005",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "ASP-B377SGT",
+      "aircraft_type": "",
+      "registration": "F-BTGV",
+      "livery_name": "",
+      "arrived": "2025-05-08"
+    },
+    {
+      "model_id": "SO006",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "AIB-A310-304VIP",
+      "aircraft_type": "",
+      "registration": "10+21",
+      "livery_name": "",
+      "arrived": "2025-05-22"
+    },
+    {
+      "model_id": "SO007",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "JUN-JU52-3M",
+      "aircraft_type": "",
+      "registration": "A-703",
+      "livery_name": "",
+      "arrived": "2025-05-27"
+    },
+    {
+      "model_id": "SO008",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "SCA-SS2",
+      "aircraft_type": "",
+      "registration": "N348MS",
+      "livery_name": "",
+      "arrived": "2025-06-26"
+    },
+    {
+      "model_id": "SO009",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "DOU-VC118A",
+      "aircraft_type": "",
+      "registration": "46-0505",
+      "livery_name": "",
+      "arrived": "2025-07-23"
+    },
+    {
+      "model_id": "SO010",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BUR-OK1K1",
+      "aircraft_type": "",
+      "registration": "OK-GLI",
+      "livery_name": "",
+      "arrived": "2025-10-27"
+    },
+    {
+      "model_id": "SO011",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-747-VC25B",
+      "aircraft_type": "",
+      "registration": "30000",
+      "livery_name": "",
+      "arrived": "2025-10-27"
+    },
+    {
+      "model_id": "SO012",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "DOU-C47",
+      "aircraft_type": "",
+      "registration": "O-76671",
+      "livery_name": "",
+      "arrived": "2025-11-05"
+    },
+    {
+      "model_id": "SO013",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-YAL1",
+      "aircraft_type": "",
+      "registration": "00-0001",
+      "livery_name": "",
+      "arrived": "2025-11-05"
+    },
+    {
+      "model_id": "SO014",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "AIB-A330-743L",
+      "aircraft_type": "",
+      "registration": "F-GXLI",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "SO015",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "ROC-OV102",
+      "aircraft_type": "",
+      "registration": "OV-102",
+      "livery_name": "",
+      "arrived": "2025-11-12"
+    },
+    {
+      "model_id": "SO016",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "AIB-ACJ350-900",
+      "aircraft_type": "",
+      "registration": "10+01",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "SO017",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-C32A",
+      "aircraft_type": "",
+      "registration": "80001",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "SO018",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "CSA-PBY5",
+      "aircraft_type": "",
+      "registration": "433939",
+      "livery_name": "",
+      "arrived": "2025-12-06"
+    },
+    {
+      "model_id": "SO019",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-C40A",
+      "aircraft_type": "",
+      "registration": "RY-831",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "SO020",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-767-AOA",
+      "aircraft_type": "",
+      "registration": "N767BA",
+      "livery_name": "",
+      "arrived": "2025-12-23"
+    },
+    {
+      "model_id": "SO021",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "LOC-RP3D",
+      "aircraft_type": "",
+      "registration": "VXN-8",
+      "livery_name": "",
+      "arrived": "2026-01-15"
+    },
+    {
+      "model_id": "TP001",
+      "airline_code": "TP",
+      "airline": "TAP",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "registration": "CS-TXJ",
+      "livery_name": "",
+      "arrived": null
+    },
+    {
+      "model_id": "WA001",
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "aircraft_id": "ATR-ATR42-300",
+      "aircraft_type": "ATR 42-320",
+      "registration": "PH-XLD",
+      "livery_name": "",
+      "arrived": "2025-06-03"
+    },
+    {
+      "model_id": "WA002",
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "aircraft_id": "EMB-ERJ145",
+      "aircraft_type": "Embraer ERJ-145MP",
+      "registration": "PH-RXA",
+      "livery_name": "",
+      "arrived": "2025-06-03"
+    },
+    {
+      "model_id": "WA003",
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "aircraft_id": "EMB-E195E2",
+      "aircraft_type": "Embraer E195-E2",
+      "registration": "PH-NXE",
+      "livery_name": "",
+      "arrived": "2025-06-26"
+    }
+  ]
+}

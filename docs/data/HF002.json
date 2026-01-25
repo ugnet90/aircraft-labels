@@ -1,0 +1,77 @@
+{
+  "model_id": "HF002",
+  "airline_code": "HF",
+  "airline": "Hapag-Lloyd",
+  "aircraft_id": "BOE-737-700",
+  "aircraft_type": "Boeing 737-700",
+  "registration": "D-AGEP",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Hapag-Lloyd Express",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 15.0,
+  "shipping_allocated": 0.33,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
+  "arrived_excel": "45997",
+  "arrived": "2025-12-06",
+  "source": {
+    "sheet": "HapagLloyd",
+    "row": "11"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-737-700",
+    "type": "Boeing 737-700",
+    "registration": "D-AGEP"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Hapag-Lloyd Express"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 15.0,
+    "shipping_allocated": 0.33,
+    "arrived": "2025-12-06",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+    "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-737-700",
+    "Typ_anzeige": "Boeing 737-700",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-700",
+    "Marketingname": "",
+    "Alternate_designations": " ",
+    "parent_aircraft_id": "",
+    "ICAO": "B737",
+    "IATA": "737",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1997",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "149",
+    "Length": "33,6",
+    "Wingspan": "34,3",
+    "Height": "12,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-700"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "PA009",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "DOU-DC4",
+  "aircraft_type": "Douglas DC-4",
+  "registration": "N88886",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper Mandarin\"",
+  "special_note": "",
+  "shop": "Ebay aeromini1",
+  "price": 54.19,
+  "shipping_allocated": 17.86,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
+  "arrived_excel": "04.07.2025",
+  "arrived": "2025-07-04",
+  "source": {
+    "sheet": "Panam",
+    "row": "24"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-DC4",
+    "type": "Douglas DC-4",
+    "registration": "N88886"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper Mandarin\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay aeromini1",
+    "price": 54.19,
+    "shipping_allocated": 17.86,
+    "arrived": "2025-07-04",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
+    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-DC4",
+    "Typ_anzeige": "Douglas DC-4",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-4",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "C-54 Skymaster",
+    "parent_aircraft_id": "",
+    "ICAO": "DC4",
+    "IATA": "D44",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1942",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "80",
+    "Length": "28,6",
+    "Wingspan": "42,05",
+    "Height": "8,38",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-4"
+  }
+}

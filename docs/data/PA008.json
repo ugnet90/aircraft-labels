@@ -1,0 +1,77 @@
+{
+  "model_id": "PA008",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "AIB-A310-300",
+  "aircraft_type": "Airbus A310-300",
+  "registration": "N818PA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper Morning Star\"",
+  "special_note": "",
+  "shop": "Ebay waffle-collectibles",
+  "price": 21.92,
+  "shipping_allocated": 46.78,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.airhistory.net/photo/481727/N818PA",
+  "arrived_excel": "18.06.2025",
+  "arrived": "2025-06-18",
+  "source": {
+    "sheet": "Panam",
+    "row": "6"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A310-300",
+    "type": "Airbus A310-300",
+    "registration": "N818PA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper Morning Star\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay waffle-collectibles",
+    "price": 21.92,
+    "shipping_allocated": 46.78,
+    "arrived": "2025-06-18",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+    "photo": "https://www.airhistory.net/photo/481727/N818PA"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A310-300",
+    "Typ_anzeige": "Airbus A310-300",
+    "Hersteller": "Airbus",
+    "Baureihe": "A310",
+    "Unterserie": "-300",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A313",
+    "IATA": "313",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1985",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "280",
+    "Length": "46,7",
+    "Wingspan": "43,9",
+    "Height": "15,8",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A310#A310-300"
+  }
+}

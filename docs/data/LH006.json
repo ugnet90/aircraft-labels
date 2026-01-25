@@ -1,0 +1,77 @@
+{
+  "model_id": "LH006",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A350-900",
+  "aircraft_type": "Airbus A350-900",
+  "registration": "D-AIVD",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"CleanTechFlyer\"",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 39.5,
+  "shipping_allocated": 3.25,
+  "flown": null,
+  "postcard": "-",
+  "postcard_price": null,
+  "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "23"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A350-900",
+    "type": "Airbus A350-900",
+    "registration": "D-AIVD"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"CleanTechFlyer\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 39.5,
+    "shipping_allocated": 3.25,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "-",
+    "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A350-900",
+    "Typ_anzeige": "Airbus A350-900",
+    "Hersteller": "Airbus",
+    "Baureihe": "A350",
+    "Unterserie": "-900",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A359",
+    "IATA": "359",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2013",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "325",
+    "Length": "66,8",
+    "Wingspan": "64,75",
+    "Height": "17,05",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A350#A350-900"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LH010",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "BOE-747-400",
+  "aircraft_type": "Boeing 747-400",
+  "registration": "D-ABVW",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Berlin\"",
+  "special_note": "",
+  "shop": "Kleinanzeigen Josef Voß",
+  "price": 17.0,
+  "shipping_allocated": 5.0,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.jetphotos.com/photo/11667623",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "36"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-747-400",
+    "type": "Boeing 747-400",
+    "registration": "D-ABVW"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Berlin\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Josef Voß",
+    "price": 17.0,
+    "shipping_allocated": 5.0,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+    "photo": "https://www.jetphotos.com/photo/11667623"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-747-400",
+    "Typ_anzeige": "Boeing 747-400",
+    "Hersteller": "Boeing",
+    "Baureihe": "747",
+    "Unterserie": "-400",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B744",
+    "IATA": "744",
+    "Wingtip": "WL",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1989",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "416",
+    "Length": "70,66",
+    "Wingspan": "64,44",
+    "Height": "19,41",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_747#747-400"
+  }
+}

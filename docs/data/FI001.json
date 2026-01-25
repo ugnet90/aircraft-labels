@@ -1,0 +1,77 @@
+{
+  "model_id": "FI001",
+  "airline_code": "FI",
+  "airline": "Icelandair",
+  "aircraft_id": "BOE-757-200-WL",
+  "aircraft_type": "Boeing 757-200 (Winglets)",
+  "registration": "TF-ISF",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Laki\"",
+  "special_note": "",
+  "shop": "Kleinanzeigen.de",
+  "price": 99.0,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11263-icelandair-b757.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1123788/tf-isf-icelandair-boeing-757-223-wl",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Icelandair",
+    "row": "11"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-757-200-WL",
+    "type": "Boeing 757-200 (Winglets)",
+    "registration": "TF-ISF"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Laki\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen.de",
+    "price": 99.0,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11263-icelandair-b757.html",
+    "photo": "https://www.planespotters.net/photo/1123788/tf-isf-icelandair-boeing-757-223-wl"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-757-200-WL",
+    "Typ_anzeige": "Boeing 757-200 (Winglets)",
+    "Hersteller": "Boeing",
+    "Baureihe": "757",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B752",
+    "IATA": "752",
+    "Wingtip": "WL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1982",
+    "Status": "teils aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "200",
+    "Length": "47,32",
+    "Wingspan": "38,05",
+    "Height": "13,56",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_757#757-200"
+  }
+}

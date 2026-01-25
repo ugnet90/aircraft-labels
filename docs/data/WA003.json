@@ -1,0 +1,77 @@
+{
+  "model_id": "WA003",
+  "airline_code": "WA",
+  "airline": "KLM Cityhopper",
+  "aircraft_id": "EMB-E195E2",
+  "aircraft_type": "Embraer E195-E2",
+  "registration": "PH-NXE",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "KLM Cityhopper",
+  "special_note": "",
+  "shop": "flight-shop.de/",
+  "price": 45.32,
+  "shipping_allocated": 5.1,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
+  "arrived_excel": "26.06.2025",
+  "arrived": "2025-06-26",
+  "source": {
+    "sheet": "KLM_CH",
+    "row": "10"
+  },
+  "aircraft": {
+    "aircraft_id": "EMB-E195E2",
+    "type": "Embraer E195-E2",
+    "registration": "PH-NXE"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "KLM Cityhopper"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "flight-shop.de/",
+    "price": 45.32,
+    "shipping_allocated": 5.1,
+    "arrived": "2025-06-26",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+    "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "EMB-E195E2",
+    "Typ_anzeige": "Embraer E195-E2",
+    "Hersteller": "Embraer",
+    "Baureihe": "E195-E2",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "EMB-E195",
+    "ICAO": "E295",
+    "IATA": "E95",
+    "Wingtip": "WL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2018",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "146",
+    "Length": "41,5",
+    "Wingspan": "35,1",
+    "Height": "11,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Embraer_E-Jet_E2#E195-E2"
+  }
+}

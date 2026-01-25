@@ -1,0 +1,77 @@
+{
+  "model_id": "SO020",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "BOE-767-AOA",
+  "aircraft_type": "",
+  "registration": "N767BA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "US Army; Prototyp",
+  "special_note": "",
+  "shop": "Aviationmegastore",
+  "price": 60.35,
+  "shipping_allocated": 14.17,
+  "flown": null,
+  "postcard": "beim Modell vorhanden",
+  "postcard_price": 0.0,
+  "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
+  "arrived_excel": "23.12.2025",
+  "arrived": "2025-12-23",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "29"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-767-AOA",
+    "type": "",
+    "registration": "N767BA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "US Army; Prototyp"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Aviationmegastore",
+    "price": 60.35,
+    "shipping_allocated": 14.17,
+    "arrived": "2025-12-23",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "beim Modell vorhanden",
+    "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-767-AOA",
+    "Typ_anzeige": "Boeing 767-200 Airborne Optical Adjunct",
+    "Hersteller": "Boeing",
+    "Baureihe": "767",
+    "Unterserie": "-200",
+    "Marketingname": "Airborne Optical Adjunct",
+    "Alternate_designations": "Boeing 767-200 AOA|Airborne Optical Adjunct",
+    "parent_aircraft_id": "BOE-767-200",
+    "ICAO": "B762",
+    "IATA": "762",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1993",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "0",
+    "Length": "48,51",
+    "Wingspan": "47,57",
+    "Height": "15,85",
+    "Wiki": "https://en.wikipedia.org/wiki/Airborne_Optical_Adjunct"
+  }
+}

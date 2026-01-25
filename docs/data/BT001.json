@@ -1,0 +1,77 @@
+{
+  "model_id": "BT001",
+  "airline_code": "BT",
+  "airline": "Air Baltic",
+  "aircraft_id": "AIB-A220-300",
+  "aircraft_type": "Airbus A220-300",
+  "registration": "YL-AAU",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"100th Airbus A220\"",
+  "special_note": "",
+  "shop": "Sklep Modelarski",
+  "price": 40.59,
+  "shipping_allocated": 24.21,
+  "flown": true,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11",
+  "arrived_excel": "10.10.2025",
+  "arrived": "2025-10-10",
+  "source": {
+    "sheet": "AirBaltic",
+    "row": "4"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A220-300",
+    "type": "Airbus A220-300",
+    "registration": "YL-AAU"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"100th Airbus A220\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Sklep Modelarski",
+    "price": 40.59,
+    "shipping_allocated": 24.21,
+    "arrived": "2025-10-10",
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
+    "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A220-300",
+    "Typ_anzeige": "Airbus A220-300",
+    "Hersteller": "Airbus",
+    "Baureihe": "A220",
+    "Unterserie": "-300",
+    "Marketingname": "",
+    "Alternate_designations": "CSeries, BCS1 (CS100), BCS3 (CS300)",
+    "parent_aircraft_id": "",
+    "ICAO": "A223",
+    "IATA": "223",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2015",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "150",
+    "Length": "38,7",
+    "Wingspan": "35,1",
+    "Height": "11,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A220#A220-300"
+  }
+}

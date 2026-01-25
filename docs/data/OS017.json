@@ -1,0 +1,77 @@
+{
+  "model_id": "OS017",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "BOE-787-9",
+  "aircraft_type": "Boeing 787-9 Dreamliner",
+  "registration": "OE-LPM",
+  "livery_name": "AUA-2018-NEW",
+  "parent_livery": "",
+  "zusatzinfo": "Flaps down; \"Schönbrunn Palace\"",
+  "special_note": "",
+  "shop": "Kleinanzeigen Dan Segal",
+  "price": 47.0,
+  "shipping_allocated": 5.22,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
+  "arrived_excel": "16.06.2025",
+  "arrived": "2025-06-16",
+  "source": {
+    "sheet": "AUA",
+    "row": "23"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-787-9",
+    "type": "Boeing 787-9 Dreamliner",
+    "registration": "OE-LPM"
+  },
+  "livery": {
+    "code": "AUA-2018-NEW",
+    "parent": "",
+    "notes": "Flaps down; \"Schönbrunn Palace\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Dan Segal",
+    "price": 47.0,
+    "shipping_allocated": 5.22,
+    "arrived": "2025-06-16",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+    "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-787-9",
+    "Typ_anzeige": "Boeing 787-9 Dreamliner",
+    "Hersteller": "Boeing",
+    "Baureihe": "787",
+    "Unterserie": "-9",
+    "Marketingname": "Dreamliner",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B789",
+    "IATA": "789",
+    "Wingtip": "RW",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2013",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "296",
+    "Length": "62,8",
+    "Wingspan": "60,1",
+    "Height": "17",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_787#787-9"
+  }
+}

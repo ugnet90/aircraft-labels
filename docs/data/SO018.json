@@ -1,0 +1,77 @@
+{
+  "model_id": "SO018",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "CSA-PBY5",
+  "aircraft_type": "",
+  "registration": "433939",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Air and Sea Rescue",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 45.0,
+  "shipping_allocated": 0.96,
+  "flown": null,
+  "postcard": "andere Kennung; andere Bemalung; https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.airhistory.net/photos/0027472.jpg",
+  "arrived_excel": "06.12.2025",
+  "arrived": "2025-12-06",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "25"
+  },
+  "aircraft": {
+    "aircraft_id": "CSA-PBY5",
+    "type": "",
+    "registration": "433939"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Air and Sea Rescue"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 45.0,
+    "shipping_allocated": 0.96,
+    "arrived": "2025-12-06",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; andere Bemalung; https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+    "photo": "https://www.airhistory.net/photos/0027472.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "CSA-PBY5",
+    "Typ_anzeige": "Consolidated PBY-5 Catalina",
+    "Hersteller": "Consolidated",
+    "Baureihe": "PBY",
+    "Unterserie": "5",
+    "Marketingname": "PBY-5 Catalina",
+    "Alternate_designations": "Consolidated PBY-5|Catalina|OA-10A",
+    "parent_aircraft_id": "",
+    "ICAO": "PBY5",
+    "IATA": "PB5",
+    "Wingtip": "NONE",
+    "Rumpf": "Special",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Amphibie",
+    "Erstflug": "1936",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "10",
+    "Length": "19,46",
+    "Wingspan": "31,7",
+    "Height": "6,15",
+    "Wiki": "https://de.wikipedia.org/wiki/Consolidated_PBY"
+  }
+}

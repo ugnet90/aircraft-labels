@@ -1,0 +1,77 @@
+{
+  "model_id": "OS011",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "BOE-737-800-WL",
+  "aircraft_type": "Boeing 737-800 (Winglets)",
+  "registration": "OE-LNT",
+  "livery_name": "AUA-2003-STARALLIANCE",
+  "parent_livery": "AUA-2003-BLUEBELLY",
+  "zusatzinfo": "\"Gerlitzen\" \"Star Alliance\"",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 44.5,
+  "shipping_allocated": 5.5,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "20"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-737-800-WL",
+    "type": "Boeing 737-800 (Winglets)",
+    "registration": "OE-LNT"
+  },
+  "livery": {
+    "code": "AUA-2003-STARALLIANCE",
+    "parent": "AUA-2003-BLUEBELLY",
+    "notes": "\"Gerlitzen\" \"Star Alliance\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 44.5,
+    "shipping_allocated": 5.5,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
+    "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-737-800-WL",
+    "Typ_anzeige": "Boeing 737-800 (Winglets)",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-800",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B738",
+    "IATA": "73H",
+    "Wingtip": "WL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1997",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "189",
+    "Length": "39,5",
+    "Wingspan": "35,79",
+    "Height": "12,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-800"
+  }
+}

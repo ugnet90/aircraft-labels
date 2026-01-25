@@ -1,0 +1,77 @@
+{
+  "model_id": "SO012",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "DOU-C47",
+  "aircraft_type": "",
+  "registration": "O-76671",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "50th TFW 1963",
+  "special_note": "",
+  "shop": "Ebay Felindre Diecast",
+  "price": 44.14,
+  "shipping_allocated": 4.8,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.airhistory.net/photo/819930/44-76671/0-76671",
+  "arrived_excel": "05.11.2025",
+  "arrived": "2025-11-05",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "26"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-C47",
+    "type": "",
+    "registration": "O-76671"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "50th TFW 1963"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay Felindre Diecast",
+    "price": 44.14,
+    "shipping_allocated": 4.8,
+    "arrived": "2025-11-05",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+    "photo": "https://www.airhistory.net/photo/819930/44-76671/0-76671"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-C47",
+    "Typ_anzeige": "Douglas C-47 Skytrain",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-3",
+    "Unterserie": "C-47",
+    "Marketingname": "C-47 Skytrain",
+    "Alternate_designations": "Douglas C-47|Dakota|C-47A|C-47B",
+    "parent_aircraft_id": "DOU-DC3",
+    "ICAO": "C47",
+    "IATA": "C47",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Special",
+    "Role": "CARGO",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1941",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "28",
+    "Length": "19,6",
+    "Wingspan": "28,96",
+    "Height": "5,16",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-3#Douglas_C-47_Skytrain"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "OS003",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "FOK-F100",
+  "aircraft_type": "Fokker 100",
+  "registration": "OE-LVK",
+  "livery_name": "AUA-2008-FOOTBALL",
+  "parent_livery": "AUA-2003-BLUEBELLY",
+  "zusatzinfo": "Austrian Arrows \"Fussballverbindet.at\"",
+  "special_note": "",
+  "shop": "Willhaben",
+  "price": 30.0,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "OE-LVH",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "33"
+  },
+  "aircraft": {
+    "aircraft_id": "FOK-F100",
+    "type": "Fokker 100",
+    "registration": "OE-LVK"
+  },
+  "livery": {
+    "code": "AUA-2008-FOOTBALL",
+    "parent": "AUA-2003-BLUEBELLY",
+    "notes": "Austrian Arrows \"Fussballverbindet.at\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Willhaben",
+    "price": 30.0,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "OE-LVH",
+    "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "FOK-F100",
+    "Typ_anzeige": "Fokker F100",
+    "Hersteller": "Fokker",
+    "Baureihe": "F100",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "F100",
+    "IATA": "100",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1986",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "109",
+    "Length": "35,53",
+    "Wingspan": "28,08",
+    "Height": "8,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Fokker_100"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LH028",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A321-neo",
+  "aircraft_type": "Airbus A321 neo",
+  "registration": "D-AIEQ",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"600th Airbus Aircraft\"",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 30.0,
+  "shipping_allocated": 0.66,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx",
+  "arrived_excel": "06.12.2025",
+  "arrived": "2025-12-06",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "16"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A321-neo",
+    "type": "Airbus A321 neo",
+    "registration": "D-AIEQ"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"600th Airbus Aircraft\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 30.0,
+    "shipping_allocated": 0.66,
+    "arrived": "2025-12-06",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "",
+    "photo": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A321-neo",
+    "Typ_anzeige": "Airbus A321neo",
+    "Hersteller": "Airbus",
+    "Baureihe": "A321",
+    "Unterserie": "neo",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A21N",
+    "IATA": "32Q",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2016",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "206",
+    "Length": "44,51",
+    "Wingspan": "35,8",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321neo"
+  }
+}

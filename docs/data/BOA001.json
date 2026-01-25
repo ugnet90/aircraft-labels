@@ -1,0 +1,77 @@
+{
+  "model_id": "BOA001",
+  "airline_code": "BOA",
+  "airline": "BOAC",
+  "aircraft_id": "BRI-Britannia-312",
+  "aircraft_type": "Bristol 175 Britannia 312",
+  "registration": "G-AOVK",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 44.5,
+  "shipping_allocated": 1.16,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.airhistory.net/photo/12485/G-AOVK",
+  "arrived_excel": "20.08.2025",
+  "arrived": "2025-08-20",
+  "source": {
+    "sheet": "BOAC",
+    "row": "12"
+  },
+  "aircraft": {
+    "aircraft_id": "BRI-Britannia-312",
+    "type": "Bristol 175 Britannia 312",
+    "registration": "G-AOVK"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 44.5,
+    "shipping_allocated": 1.16,
+    "arrived": "2025-08-20",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
+    "photo": "https://www.airhistory.net/photo/12485/G-AOVK"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BRI-Britannia-312",
+    "Typ_anzeige": "Bristol Britannia 312",
+    "Hersteller": "Bristol",
+    "Baureihe": "Britannia",
+    "Unterserie": "312",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "BRIT",
+    "IATA": "BR3",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1956",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "99",
+    "Length": "37,87",
+    "Wingspan": "43,36",
+    "Height": "11,43",
+    "Wiki": "https://de.wikipedia.org/wiki/Bristol_Britannia#Britannia_Series_312"
+  }
+}

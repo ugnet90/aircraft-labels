@@ -1,0 +1,77 @@
+{
+  "model_id": "SO005",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "ASP-B377SGT",
+  "aircraft_type": "",
+  "registration": "F-BTGV",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Super Guppy Turbine",
+  "special_note": "",
+  "shop": "aviamart",
+  "price": 70.1,
+  "shipping_allocated": 19.7,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.jetphotos.com/photo/7533809",
+  "arrived_excel": "08.05.2025",
+  "arrived": "2025-05-08",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "7"
+  },
+  "aircraft": {
+    "aircraft_id": "ASP-B377SGT",
+    "type": "",
+    "registration": "F-BTGV"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Super Guppy Turbine"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "aviamart",
+    "price": 70.1,
+    "shipping_allocated": 19.7,
+    "arrived": "2025-05-08",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
+    "photo": "https://www.jetphotos.com/photo/7533809"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "ASP-B377SGT",
+    "Typ_anzeige": "Aero Spacelines Super Guppy SGT-201",
+    "Hersteller": "Aero Spacelines",
+    "Baureihe": "B-377SGT-201",
+    "Unterserie": "",
+    "Marketingname": "Super Guppy Turbine",
+    "Alternate_designations": "B-377SGT",
+    "parent_aircraft_id": "BOE-377",
+    "ICAO": "SGUP",
+    "IATA": "",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "Special",
+    "Role": "CARGO",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1970",
+    "Status": "aktiv",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "4",
+    "Reichweite": "Mittel",
+    "Passengers": "0",
+    "Length": "43,8",
+    "Wingspan": "47,6",
+    "Height": "14,8",
+    "Wiki": "https://de.wikipedia.org/wiki/Aero_Spacelines_Super_Guppy"
+  }
+}

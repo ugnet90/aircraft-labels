@@ -1,0 +1,77 @@
+{
+  "model_id": "SK001",
+  "airline_code": "SK",
+  "airline": "SAS",
+  "aircraft_id": "BOM-CRJ900",
+  "aircraft_type": "Bombardier CRJ-900",
+  "registration": "ES-ACG",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Dvalin Viking\"",
+  "special_note": "",
+  "shop": "Ebay",
+  "price": 73.21,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "SAS",
+    "row": "29"
+  },
+  "aircraft": {
+    "aircraft_id": "BOM-CRJ900",
+    "type": "Bombardier CRJ-900",
+    "registration": "ES-ACG"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Dvalin Viking\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay",
+    "price": 73.21,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+    "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOM-CRJ900",
+    "Typ_anzeige": "Bombardier CRJ-900",
+    "Hersteller": "Bombardier",
+    "Baureihe": "CRJ-900",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "CRJ9",
+    "IATA": "CR9",
+    "Wingtip": "WL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2001",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "90",
+    "Length": "36,4",
+    "Wingspan": "24,85",
+    "Height": "7,57",
+    "Wiki": "https://de.wikipedia.org/wiki/Bombardier_CRJ#CRJ900"
+  }
+}

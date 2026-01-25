@@ -1,0 +1,77 @@
+{
+  "model_id": "TP001",
+  "airline_code": "TP",
+  "airline": "TAP",
+  "aircraft_id": "AIB-A321-neo",
+  "aircraft_type": "Airbus A321neo",
+  "registration": "CS-TXJ",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Bartolomeu de Gusmão\"",
+  "special_note": "",
+  "shop": "Sky Shop",
+  "price": 85.73,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "TAP",
+    "row": "9"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A321-neo",
+    "type": "Airbus A321neo",
+    "registration": "CS-TXJ"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Bartolomeu de Gusmão\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Sky Shop",
+    "price": 85.73,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
+    "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A321-neo",
+    "Typ_anzeige": "Airbus A321neo",
+    "Hersteller": "Airbus",
+    "Baureihe": "A321",
+    "Unterserie": "neo",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A21N",
+    "IATA": "32Q",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2016",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "206",
+    "Length": "44,51",
+    "Wingspan": "35,8",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321neo"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "KL007",
+  "airline_code": "KL",
+  "airline": "KLM",
+  "aircraft_id": "DOU-DC7-C",
+  "aircraft_type": "Douglas DC-7C Seven Seas",
+  "registration": "PH-DSG",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Adriatic Sea\"",
+  "special_note": "",
+  "shop": "Ebay Felindre Diecast",
+  "price": 68.49,
+  "shipping_allocated": 9.09,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
+  "arrived_excel": "30.10.2025",
+  "arrived": "2025-10-30",
+  "source": {
+    "sheet": "KLM",
+    "row": "35"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-DC7-C",
+    "type": "Douglas DC-7C Seven Seas",
+    "registration": "PH-DSG"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Adriatic Sea\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay Felindre Diecast",
+    "price": 68.49,
+    "shipping_allocated": 9.09,
+    "arrived": "2025-10-30",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+    "photo": "https://www.airhistory.net/photo/730187/PH-DSG"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-DC7-C",
+    "Typ_anzeige": "Douglas DC-7C Seven Seas",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-7",
+    "Unterserie": "C",
+    "Marketingname": "Seven Seas",
+    "Alternate_designations": "Douglas DC-7C|Super-7 Clipper|Seven Seas",
+    "parent_aircraft_id": "",
+    "ICAO": "DC7",
+    "IATA": "D7C",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1956",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "105",
+    "Length": "34,9",
+    "Wingspan": "38,8",
+    "Height": "9,6",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-7"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LH002",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "BOE-707-320",
+  "aircraft_type": "Boeing 707-330B",
+  "registration": "D-ABUC",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Bremen\"",
+  "special_note": "",
+  "shop": "Kleinanzeigen Cora Singer",
+  "price": 33.0,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "falsche Reg.; https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "25"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-707-320",
+    "type": "Boeing 707-330B",
+    "registration": "D-ABUC"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Bremen\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Cora Singer",
+    "price": 33.0,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "falsche Reg.; https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+    "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-707-320",
+    "Typ_anzeige": "Boeing 707-320 Intercontinental",
+    "Hersteller": "Boeing",
+    "Baureihe": "707",
+    "Unterserie": "-320",
+    "Marketingname": "Intercontinental",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B703",
+    "IATA": "732",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1959",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "189",
+    "Length": "46,61",
+    "Wingspan": "44,42",
+    "Height": "12,93",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_707#707-300"
+  }
+}

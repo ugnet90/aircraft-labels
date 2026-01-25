@@ -1,0 +1,77 @@
+{
+  "model_id": "PA004",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "BOE-727-200",
+  "aircraft_type": "Boeing 727-200",
+  "registration": "N365PA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper Portsmouth\"",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 44.5,
+  "shipping_allocated": 2.1,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
+  "postcard_price": 1.85,
+  "photo": "https://www.jetphotos.com/photo/9587",
+  "arrived_excel": "14.05.2025",
+  "arrived": "2025-05-14",
+  "source": {
+    "sheet": "Panam",
+    "row": "12"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-727-200",
+    "type": "Boeing 727-200",
+    "registration": "N365PA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper Portsmouth\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 44.5,
+    "shipping_allocated": 2.1,
+    "arrived": "2025-05-14",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
+    "photo": "https://www.jetphotos.com/photo/9587"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-727-200",
+    "Typ_anzeige": "Boeing 727-200",
+    "Hersteller": "Boeing",
+    "Baureihe": "727",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B722",
+    "IATA": "727",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1967",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "3",
+    "Reichweite": "Mittel",
+    "Passengers": "189",
+    "Length": "46,7",
+    "Wingspan": "32,9",
+    "Height": "10,36",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_727#727-200"
+  }
+}

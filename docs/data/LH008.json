@@ -1,0 +1,77 @@
+{
+  "model_id": "LH008",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "FOK-F27",
+  "aircraft_type": "Fokker F27-400 Friendship",
+  "registration": "D-BARI",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "https://www.modelyletadel.cz/en/",
+  "price": 51.53,
+  "shipping_allocated": 9.31,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "52"
+  },
+  "aircraft": {
+    "aircraft_id": "FOK-F27",
+    "type": "Fokker F27-400 Friendship",
+    "registration": "D-BARI"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "https://www.modelyletadel.cz/en/",
+    "price": 51.53,
+    "shipping_allocated": 9.31,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
+    "photo": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "FOK-F27",
+    "Typ_anzeige": "Fokker F27",
+    "Hersteller": "Fokker",
+    "Baureihe": "F27",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "F27",
+    "IATA": "F27",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1955",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz",
+    "Passengers": "44",
+    "Length": "23,5",
+    "Wingspan": "29",
+    "Height": "8",
+    "Wiki": "https://de.wikipedia.org/wiki/Fokker_F27"
+  }
+}

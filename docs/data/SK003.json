@@ -1,0 +1,77 @@
+{
+  "model_id": "SK003",
+  "airline_code": "SK",
+  "airline": "SAS",
+  "aircraft_id": "BOE-737-700-WL",
+  "aircraft_type": "Boeing 737-700 (Winglets)",
+  "registration": "SE-RJX",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Vagn Viking\"",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 39.27,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
+  "arrived_excel": "14.05.2025",
+  "arrived": "2025-05-14",
+  "source": {
+    "sheet": "SAS",
+    "row": "21"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-737-700-WL",
+    "type": "Boeing 737-700 (Winglets)",
+    "registration": "SE-RJX"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Vagn Viking\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 39.27,
+    "shipping_allocated": null,
+    "arrived": "2025-05-14",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+    "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-737-700-WL",
+    "Typ_anzeige": "Boeing 737-700 (Winglets)",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-700",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B737",
+    "IATA": "73G",
+    "Wingtip": "WL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1997",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "149",
+    "Length": "33,6",
+    "Wingspan": "35,79",
+    "Height": "12,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-700"
+  }
+}

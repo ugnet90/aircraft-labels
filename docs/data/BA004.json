@@ -1,0 +1,77 @@
+{
+  "model_id": "BA004",
+  "airline_code": "BA",
+  "airline": "British Airways",
+  "aircraft_id": "BOE-787-8",
+  "aircraft_type": "Boeing 787-8 Dreamliner",
+  "registration": "G-ZBJG",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 30.0,
+  "shipping_allocated": 0.66,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner",
+  "arrived_excel": "06.12.2025",
+  "arrived": "2025-12-06",
+  "source": {
+    "sheet": "BA",
+    "row": "36"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-787-8",
+    "type": "Boeing 787-8 Dreamliner",
+    "registration": "G-ZBJG"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 30.0,
+    "shipping_allocated": 0.66,
+    "arrived": "2025-12-06",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+    "photo": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-787-8",
+    "Typ_anzeige": "Boeing 787-8 Dreamliner",
+    "Hersteller": "Boeing",
+    "Baureihe": "787",
+    "Unterserie": "-8",
+    "Marketingname": "Dreamliner",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B788",
+    "IATA": "788",
+    "Wingtip": "RW",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2009",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "248",
+    "Length": "56,7",
+    "Wingspan": "60,1",
+    "Height": "17",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_787#787-8"
+  }
+}

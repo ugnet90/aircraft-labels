@@ -1,0 +1,77 @@
+{
+  "model_id": "PA018",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "DOU-DC8-30",
+  "aircraft_type": "Douglas DC-8-30",
+  "registration": "N809PA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Jet Clipper Great Republic\"",
+  "special_note": "",
+  "shop": "Ebay Felindre Diecast",
+  "price": 35.59,
+  "shipping_allocated": 3.87,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+  "postcard_price": 1.35,
+  "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
+  "arrived_excel": "05.11.2025",
+  "arrived": "2025-11-05",
+  "source": {
+    "sheet": "Panam",
+    "row": "28"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-DC8-30",
+    "type": "Douglas DC-8-30",
+    "registration": "N809PA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Jet Clipper Great Republic\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay Felindre Diecast",
+    "price": 35.59,
+    "shipping_allocated": 3.87,
+    "arrived": "2025-11-05",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-DC8-30",
+    "Typ_anzeige": "Douglas DC-8-30 Series 30",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-8",
+    "Unterserie": "-30",
+    "Marketingname": "Series 30",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "DC83",
+    "IATA": "D30",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1960",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "177",
+    "Length": "45,9",
+    "Wingspan": "45",
+    "Height": "12,9",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-8#Fr%C3%BChe_Serien"
+  }
+}

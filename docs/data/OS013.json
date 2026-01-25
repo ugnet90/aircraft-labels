@@ -1,0 +1,77 @@
+{
+  "model_id": "OS013",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "MCD-DC9-30",
+  "aircraft_type": "Douglas DC-9-30",
+  "registration": "OE-LDA",
+  "livery_name": "AUA-1980-REDARROW",
+  "parent_livery": "",
+  "zusatzinfo": "\"Niederösterreich\"",
+  "special_note": "",
+  "shop": "Ebay airman3",
+  "price": 117.22,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "28"
+  },
+  "aircraft": {
+    "aircraft_id": "MCD-DC9-30",
+    "type": "Douglas DC-9-30",
+    "registration": "OE-LDA"
+  },
+  "livery": {
+    "code": "AUA-1980-REDARROW",
+    "parent": "",
+    "notes": "\"Niederösterreich\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay airman3",
+    "price": 117.22,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
+    "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "MCD-DC9-30",
+    "Typ_anzeige": "McDonnell Douglas DC-9-30",
+    "Hersteller": "McDonnell Douglas",
+    "Baureihe": "DC-9",
+    "Unterserie": "-30",
+    "Marketingname": "DC-9-30",
+    "Alternate_designations": "McDonnell Douglas DC-9-30|DC-9 Series 30",
+    "parent_aircraft_id": "",
+    "ICAO": "DC93",
+    "IATA": "D93",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1967",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "115",
+    "Length": "36,37",
+    "Wingspan": "28,47",
+    "Height": "8,38",
+    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_DC-9#DC-9-30"
+  }
+}

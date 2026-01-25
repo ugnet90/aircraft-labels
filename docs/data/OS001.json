@@ -1,0 +1,77 @@
+{
+  "model_id": "OS001",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "AIB-A319",
+  "aircraft_type": "Airbus A319-100",
+  "registration": "OE-LDE",
+  "livery_name": "AUA-2015-MYAUA",
+  "parent_livery": "",
+  "zusatzinfo": "\"Baku\"",
+  "special_note": "",
+  "shop": "aviationmegastore.com",
+  "price": null,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.jetphotos.com/photo/10159741",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "5"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A319",
+    "type": "Airbus A319-100",
+    "registration": "OE-LDE"
+  },
+  "livery": {
+    "code": "AUA-2015-MYAUA",
+    "parent": "",
+    "notes": "\"Baku\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "aviationmegastore.com",
+    "price": null,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
+    "photo": "https://www.jetphotos.com/photo/10159741"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A319",
+    "Typ_anzeige": "Airbus A319",
+    "Hersteller": "Airbus",
+    "Baureihe": "A319",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A319",
+    "IATA": "319",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1995",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "156",
+    "Length": "33,84",
+    "Wingspan": "34,1",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A319"
+  }
+}

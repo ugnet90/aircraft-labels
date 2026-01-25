@@ -1,0 +1,77 @@
+{
+  "model_id": "LX009",
+  "airline_code": "LX",
+  "airline": "Swiss",
+  "aircraft_id": "AIB-A320-200",
+  "aircraft_type": "Airbus A320-200",
+  "registration": "HB-IJD",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay philundines",
+  "price": 15.5,
+  "shipping_allocated": 1.97,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/170402/hb-ijd-swiss-airbus-a320-214",
+  "arrived_excel": "03.11.2025",
+  "arrived": "2025-11-03",
+  "source": {
+    "sheet": "Swiss",
+    "row": "9"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A320-200",
+    "type": "Airbus A320-200",
+    "registration": "HB-IJD"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay philundines",
+    "price": 15.5,
+    "shipping_allocated": 1.97,
+    "arrived": "2025-11-03",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",
+    "photo": "https://www.planespotters.net/photo/170402/hb-ijd-swiss-airbus-a320-214"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A320-200",
+    "Typ_anzeige": "Airbus A320-200",
+    "Hersteller": "Airbus",
+    "Baureihe": "A320",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A320",
+    "IATA": "320",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1988",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "180",
+    "Length": "37,57",
+    "Wingspan": "34,1",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200"
+  }
+}

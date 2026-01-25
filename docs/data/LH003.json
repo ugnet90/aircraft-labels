@@ -1,0 +1,77 @@
+{
+  "model_id": "LH003",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "BOE-747-8",
+  "aircraft_type": "Boeing 747-8",
+  "registration": "D-ABYT",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "retro",
+  "special_note": "",
+  "shop": "Kleinanzeigen Rafael Feijs",
+  "price": 75.4,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "37"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-747-8",
+    "type": "Boeing 747-8",
+    "registration": "D-ABYT"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "retro"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Rafael Feijs",
+    "price": 75.4,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+    "photo": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-747-8",
+    "Typ_anzeige": "Boeing 747-8 Intercontinental",
+    "Hersteller": "Boeing",
+    "Baureihe": "747",
+    "Unterserie": "-8",
+    "Marketingname": "Intercontinental",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B748",
+    "IATA": "748",
+    "Wingtip": "RW",
+    "Rumpf": "VeryLarge",
+    "MarketSegment": "VLA",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2011",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "467",
+    "Length": "76,3",
+    "Wingspan": "68,4",
+    "Height": "19,4",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_747-8"
+  }
+}

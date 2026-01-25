@@ -1,0 +1,77 @@
+{
+  "model_id": "LX011",
+  "airline_code": "LX",
+  "airline": "Swiss",
+  "aircraft_id": "AIB-A321-100",
+  "aircraft_type": "Airbus A321-100",
+  "registration": "HB-IOH",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Swissair; The Qualiflyer Group",
+  "special_note": "",
+  "shop": "Kleinanzeigen Finn",
+  "price": 21.0,
+  "shipping_allocated": 7.0,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
+  "arrived_excel": "12.11.2025",
+  "arrived": "2025-11-12",
+  "source": {
+    "sheet": "Swiss",
+    "row": "12"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A321-100",
+    "type": "Airbus A321-100",
+    "registration": "HB-IOH"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Swissair; The Qualiflyer Group"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Finn",
+    "price": 21.0,
+    "shipping_allocated": 7.0,
+    "arrived": "2025-11-12",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+    "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A321-100",
+    "Typ_anzeige": "Airbus A321-100",
+    "Hersteller": "Airbus",
+    "Baureihe": "A321",
+    "Unterserie": "-100",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A321",
+    "IATA": "321",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1993",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "185",
+    "Length": "44,51",
+    "Wingspan": "34,1",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321#A321-100"
+  }
+}

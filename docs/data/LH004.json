@@ -1,0 +1,77 @@
+{
+  "model_id": "LH004",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A380-800",
+  "aircraft_type": "Airbus A380-800",
+  "registration": "D-AIMA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Frankfurt am Main\"",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 24.5,
+  "shipping_allocated": 3.0,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "24"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A380-800",
+    "type": "Airbus A380-800",
+    "registration": "D-AIMA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Frankfurt am Main\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 24.5,
+    "shipping_allocated": 3.0,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+    "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A380-800",
+    "Typ_anzeige": "Airbus A380-800",
+    "Hersteller": "Airbus",
+    "Baureihe": "A380",
+    "Unterserie": "-800",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A388",
+    "IATA": "388",
+    "Wingtip": "NONE",
+    "Rumpf": "VeryLarge",
+    "MarketSegment": "VLA",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2005",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Ultra-lang",
+    "Passengers": "555",
+    "Length": "72,7",
+    "Wingspan": "79,75",
+    "Height": "24,1",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A380"
+  }
+}

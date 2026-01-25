@@ -1,0 +1,77 @@
+{
+  "model_id": "SM003",
+  "airline_code": "SM",
+  "airline": "Sondermaße",
+  "aircraft_id": "DOR-DOX",
+  "aircraft_type": "Dornier Do X (Lufthansa)",
+  "registration": "D-1929",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "'1:350",
+  "shop": "Ebay herzlichst-willkommen",
+  "price": 25.0,
+  "shipping_allocated": 14.49,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
+  "postcard_price": 1.35,
+  "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg",
+  "arrived_excel": "10.10.2025",
+  "arrived": "2025-10-10",
+  "source": {
+    "sheet": "Sondermaß",
+    "row": "6"
+  },
+  "aircraft": {
+    "aircraft_id": "DOR-DOX",
+    "type": "Dornier Do X (Lufthansa)",
+    "registration": "D-1929"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay herzlichst-willkommen",
+    "price": 25.0,
+    "shipping_allocated": 14.49,
+    "arrived": "2025-10-10",
+    "flown": null,
+    "special_note": "'1:350"
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
+    "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOR-DOX",
+    "Typ_anzeige": "Dornier Do X",
+    "Hersteller": "Dornier",
+    "Baureihe": "Do X",
+    "Unterserie": "",
+    "Marketingname": "Do X",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "DOX",
+    "IATA": "DOX",
+    "Wingtip": "NONE",
+    "Rumpf": "Special",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Wasserflugzeug",
+    "Erstflug": "1929",
+    "Status": "ausgemustert",
+    "Antrieb": "Kolbenmotor",
+    "Triebwerke": "12",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "100",
+    "Length": "40,05",
+    "Wingspan": "48",
+    "Height": "10,2",
+    "Wiki": "https://de.wikipedia.org/wiki/Dornier_Do_X"
+  }
+}

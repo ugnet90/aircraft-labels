@@ -1,0 +1,77 @@
+{
+  "model_id": "LX012",
+  "airline_code": "LX",
+  "airline": "Swiss",
+  "aircraft_id": "AIB-A320-neo",
+  "aircraft_type": "Airbus A320neo",
+  "registration": "HB-JDC",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "red nose; \"Pontresina\"",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 39.5,
+  "shipping_allocated": 0.97,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
+  "arrived_excel": "12.11.2025",
+  "arrived": "2025-11-12",
+  "source": {
+    "sheet": "Swiss",
+    "row": "11"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A320-neo",
+    "type": "Airbus A320neo",
+    "registration": "HB-JDC"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "red nose; \"Pontresina\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 39.5,
+    "shipping_allocated": 0.97,
+    "arrived": "2025-11-12",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+    "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A320-neo",
+    "Typ_anzeige": "Airbus A320neo",
+    "Hersteller": "Airbus",
+    "Baureihe": "A320",
+    "Unterserie": "neo",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A20N",
+    "IATA": "32N",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2014",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "195",
+    "Length": "37,57",
+    "Wingspan": "35,8",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320neo-Familie"
+  }
+}

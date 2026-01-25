@@ -1,0 +1,50 @@
+{
+  "model_id": "BA001",
+  "airline_code": "BA",
+  "airline": "British Airways",
+  "aircraft_id": "SUD-CONCORDE",
+  "aircraft_type": "Aérospatiale/BAC Concorde",
+  "registration": "G-BOAD",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Kleinanzeigen Josef Voß",
+  "price": 15.0,
+  "shipping_allocated": 3.2,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "BA",
+    "row": "15"
+  },
+  "aircraft": {
+    "aircraft_id": "SUD-CONCORDE",
+    "type": "Aérospatiale/BAC Concorde",
+    "registration": "G-BOAD"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Josef Voß",
+    "price": 15.0,
+    "shipping_allocated": 3.2,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+    "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102"
+  }
+}

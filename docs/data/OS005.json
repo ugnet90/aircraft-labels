@@ -1,0 +1,77 @@
+{
+  "model_id": "OS005",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "AIB-A340-200",
+  "aircraft_type": "Airbus A340-200",
+  "registration": "OE-LAG",
+  "livery_name": "AUA-1995-ARROWSTRIPE",
+  "parent_livery": "",
+  "zusatzinfo": "\"Europe\"",
+  "special_note": "",
+  "shop": "Ebay 0961.boeing.747-400",
+  "price": 39.85,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/2243-austrian-a340.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "11"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A340-200",
+    "type": "Airbus A340-200",
+    "registration": "OE-LAG"
+  },
+  "livery": {
+    "code": "AUA-1995-ARROWSTRIPE",
+    "parent": "",
+    "notes": "\"Europe\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay 0961.boeing.747-400",
+    "price": 39.85,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/2243-austrian-a340.html",
+    "photo": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A340-200",
+    "Typ_anzeige": "Airbus A340-200",
+    "Hersteller": "Airbus",
+    "Baureihe": "A340",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A342",
+    "IATA": "342",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1992",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "261",
+    "Length": "59,39",
+    "Wingspan": "60,3",
+    "Height": "16,7",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A340#A340-200"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LH018",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "BOE-727-100",
+  "aircraft_type": "Boeing 727-100",
+  "registration": "D-ABIB",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Augsburg\"",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 39.5,
+  "shipping_allocated": 3.23,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.airhistory.net/photo/198636/D-ABIB",
+  "arrived_excel": "08.08.2025",
+  "arrived": "2025-08-08",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "27"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-727-100",
+    "type": "Boeing 727-100",
+    "registration": "D-ABIB"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Augsburg\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 39.5,
+    "shipping_allocated": 3.23,
+    "arrived": "2025-08-08",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
+    "photo": "https://www.airhistory.net/photo/198636/D-ABIB"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-727-100",
+    "Typ_anzeige": "Boeing 727-100",
+    "Hersteller": "Boeing",
+    "Baureihe": "727",
+    "Unterserie": "-100",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B721",
+    "IATA": "721",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1963",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "3",
+    "Reichweite": "Mittel",
+    "Passengers": "106",
+    "Length": "40,6",
+    "Wingspan": "32,9",
+    "Height": "10,36",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_727#727-100"
+  }
+}

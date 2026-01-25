@@ -1,0 +1,77 @@
+{
+  "model_id": "LH001",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A320-200-SL",
+  "aircraft_type": "Airbus A320-200 (Sharklets)",
+  "registration": "D-AIZP",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Plauen\"",
+  "special_note": "",
+  "shop": "Australian Aviation Center",
+  "price": 54.97,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "Kennung vom Eigenflug; https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "12"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A320-200-SL",
+    "type": "Airbus A320-200 (Sharklets)",
+    "registration": "D-AIZP"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Plauen\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Australian Aviation Center",
+    "price": 54.97,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "Kennung vom Eigenflug; https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
+    "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A320-200-SL",
+    "Typ_anzeige": "Airbus A320-200 (Sharklets)",
+    "Hersteller": "Airbus",
+    "Baureihe": "A320",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A320",
+    "IATA": "320",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1988",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "180",
+    "Length": "37,57",
+    "Wingspan": "35,8",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "BA003",
+  "airline_code": "BA",
+  "airline": "British Airways",
+  "aircraft_id": "SAB-340",
+  "aircraft_type": "Saab 340",
+  "registration": "G-LGNB",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Loganair",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 50.0,
+  "shipping_allocated": 1.23,
+  "flown": null,
+  "postcard": "x",
+  "postcard_price": null,
+  "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
+  "arrived_excel": "12.11.2025",
+  "arrived": "2025-11-12",
+  "source": {
+    "sheet": "BA",
+    "row": "69"
+  },
+  "aircraft": {
+    "aircraft_id": "SAB-340",
+    "type": "Saab 340",
+    "registration": "G-LGNB"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Loganair"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 50.0,
+    "shipping_allocated": 1.23,
+    "arrived": "2025-11-12",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "x",
+    "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "SAB-340",
+    "Typ_anzeige": "Saab 340",
+    "Hersteller": "Saab",
+    "Baureihe": "340",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "SB20",
+    "IATA": "SF3",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1983",
+    "Status": "teils aktiv",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz",
+    "Passengers": "35",
+    "Length": "19,73",
+    "Wingspan": "21,44",
+    "Height": "6,97",
+    "Wiki": "https://de.wikipedia.org/wiki/Saab_340"
+  }
+}

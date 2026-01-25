@@ -1,0 +1,77 @@
+{
+  "model_id": "SO002",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "AIB-A300-600ST",
+  "aircraft_type": "",
+  "registration": "F-GSTC",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Beluga #3",
+  "special_note": "",
+  "shop": "https://www.flight-shop.de",
+  "price": 69.9,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Sonstige",
+    "row": "5"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A300-600ST",
+    "type": "",
+    "registration": "F-GSTC"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Beluga #3"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "https://www.flight-shop.de",
+    "price": 69.9,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+    "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A300-600ST",
+    "Typ_anzeige": "Airbus A300-600ST Beluga",
+    "Hersteller": "Airbus",
+    "Baureihe": "A300",
+    "Unterserie": "-600ST",
+    "Marketingname": "Beluga",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "AIB-A300-600",
+    "ICAO": "A3ST",
+    "IATA": "BST",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "Special",
+    "Role": "CARGO",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1994",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "0",
+    "Length": "56,2",
+    "Wingspan": "44,8",
+    "Height": "17,2",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_Beluga"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "LH015",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "BOE-737-400",
+  "aircraft_type": "Boeing 737-400",
+  "registration": "D-ABKB",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Tegernsee\"",
+  "special_note": "",
+  "shop": "Kleinanzeigen Josef Voß",
+  "price": 15.0,
+  "shipping_allocated": 2.21,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.airhistory.net/photo/477289/D-ABKB",
+  "arrived_excel": "23.06.2025",
+  "arrived": "2025-06-23",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "31"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-737-400",
+    "type": "Boeing 737-400",
+    "registration": "D-ABKB"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Tegernsee\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Josef Voß",
+    "price": 15.0,
+    "shipping_allocated": 2.21,
+    "arrived": "2025-06-23",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+    "photo": "https://www.airhistory.net/photo/477289/D-ABKB"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-737-400",
+    "Typ_anzeige": "Boeing 737-400",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-400",
+    "Marketingname": "",
+    "Alternate_designations": " ",
+    "parent_aircraft_id": "",
+    "ICAO": "B734",
+    "IATA": "734",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1988",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "168",
+    "Length": "36,5",
+    "Wingspan": "28,9",
+    "Height": "11,1",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-400"
+  }
+}

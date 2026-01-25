@@ -1,0 +1,77 @@
+{
+  "model_id": "LX007",
+  "airline_code": "LX",
+  "airline": "Swiss",
+  "aircraft_id": "BOE-777-300ER",
+  "aircraft_type": "Boeing 777-300ER",
+  "registration": "HB-JNA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Faces of Swiss\"",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 39.5,
+  "shipping_allocated": 2.43,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer",
+  "arrived_excel": "08.10.2025",
+  "arrived": "2025-10-08",
+  "source": {
+    "sheet": "Swiss",
+    "row": "20"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-777-300ER",
+    "type": "Boeing 777-300ER",
+    "registration": "HB-JNA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Faces of Swiss\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 39.5,
+    "shipping_allocated": 2.43,
+    "arrived": "2025-10-08",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+    "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-777-300ER",
+    "Typ_anzeige": "Boeing 777-300ER Extended Range",
+    "Hersteller": "Boeing",
+    "Baureihe": "777",
+    "Unterserie": "-300ER",
+    "Marketingname": "Extended Range",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "B77W",
+    "IATA": "77W",
+    "Wingtip": "RW",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2004",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "386",
+    "Length": "73,9",
+    "Wingspan": "64,8",
+    "Height": "18,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_777#Boeing_777-300ER"
+  }
+}

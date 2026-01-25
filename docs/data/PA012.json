@@ -1,0 +1,77 @@
+{
+  "model_id": "PA012",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "BOE-747-100",
+  "aircraft_type": "Boeing 747-100",
+  "registration": "N4704U",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper Belle of the Sea\"",
+  "special_note": "",
+  "shop": "Ebay 360models",
+  "price": 42.0,
+  "shipping_allocated": 0.0,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L",
+  "arrived_excel": "26.06.2025",
+  "arrived": "2025-06-26",
+  "source": {
+    "sheet": "Panam",
+    "row": "15"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-747-100",
+    "type": "Boeing 747-100",
+    "registration": "N4704U"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper Belle of the Sea\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay 360models",
+    "price": 42.0,
+    "shipping_allocated": 0.0,
+    "arrived": "2025-06-26",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "",
+    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-747-100",
+    "Typ_anzeige": "Boeing 747-100",
+    "Hersteller": "Boeing",
+    "Baureihe": "747",
+    "Unterserie": "-100",
+    "Marketingname": "",
+    "Alternate_designations": " ",
+    "parent_aircraft_id": "",
+    "ICAO": "B741",
+    "IATA": "741",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1969",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "366",
+    "Length": "70,66",
+    "Wingspan": "59,64",
+    "Height": "19,3",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_747#747-100"
+  }
+}

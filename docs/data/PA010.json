@@ -1,0 +1,77 @@
+{
+  "model_id": "PA010",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "DOU-DC4",
+  "aircraft_type": "Douglas DC-4",
+  "registration": "N88934",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper Pride of American\"",
+  "special_note": "",
+  "shop": "Ebay aeromini1",
+  "price": 54.19,
+  "shipping_allocated": 17.85,
+  "flown": null,
+  "postcard": "-",
+  "postcard_price": null,
+  "photo": "",
+  "arrived_excel": "04.07.2025",
+  "arrived": "2025-07-04",
+  "source": {
+    "sheet": "Panam",
+    "row": "25"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-DC4",
+    "type": "Douglas DC-4",
+    "registration": "N88934"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper Pride of American\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay aeromini1",
+    "price": 54.19,
+    "shipping_allocated": 17.85,
+    "arrived": "2025-07-04",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "-",
+    "photo": ""
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-DC4",
+    "Typ_anzeige": "Douglas DC-4",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-4",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "C-54 Skymaster",
+    "parent_aircraft_id": "",
+    "ICAO": "DC4",
+    "IATA": "D44",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1942",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "80",
+    "Length": "28,6",
+    "Wingspan": "42,05",
+    "Height": "8,38",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-4"
+  }
+}

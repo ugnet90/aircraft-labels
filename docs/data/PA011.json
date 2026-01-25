@@ -1,0 +1,77 @@
+{
+  "model_id": "PA011",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "DOU-DC8-62",
+  "aircraft_type": "Douglas DC-8-62",
+  "registration": "N1803",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper Golden Light\"",
+  "special_note": "",
+  "shop": "Ebay BUCHair USA",
+  "price": 56.7,
+  "shipping_allocated": 46.46,
+  "flown": null,
+  "postcard": "-",
+  "postcard_price": null,
+  "photo": "https://www.jetphotos.com/photo/261236",
+  "arrived_excel": "07.07.2025",
+  "arrived": "2025-07-07",
+  "source": {
+    "sheet": "Panam",
+    "row": "29"
+  },
+  "aircraft": {
+    "aircraft_id": "DOU-DC8-62",
+    "type": "Douglas DC-8-62",
+    "registration": "N1803"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper Golden Light\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay BUCHair USA",
+    "price": 56.7,
+    "shipping_allocated": 46.46,
+    "arrived": "2025-07-07",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "-",
+    "photo": "https://www.jetphotos.com/photo/261236"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "DOU-DC8-62",
+    "Typ_anzeige": "Douglas DC-8-62 Super 62",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-8",
+    "Unterserie": "-62",
+    "Marketingname": "Super 62",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "DC86",
+    "IATA": "D62",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1967",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "259",
+    "Length": "48",
+    "Wingspan": "48",
+    "Height": "12,9",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-8#Super_Sixties"
+  }
+}

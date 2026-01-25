@@ -1,0 +1,77 @@
+{
+  "model_id": "SO006",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "AIB-A310-304VIP",
+  "aircraft_type": "",
+  "registration": "10+21",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "Regierungsmaschine Deutschland",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 27.5,
+  "shipping_allocated": 2.94,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.openspotter.org/bild.php?blid=15772",
+  "arrived_excel": "22.05.2025",
+  "arrived": "2025-05-22",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "14"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A310-304VIP",
+    "type": "",
+    "registration": "10+21"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "Regierungsmaschine Deutschland"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 27.5,
+    "shipping_allocated": 2.94,
+    "arrived": "2025-05-22",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
+    "photo": "https://www.openspotter.org/bild.php?blid=15772"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A310-304VIP",
+    "Typ_anzeige": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
+    "Hersteller": "Airbus",
+    "Baureihe": "A310",
+    "Unterserie": "304VIP",
+    "Marketingname": "A310-304 VIP",
+    "Alternate_designations": "Airbus A310-304 VIP|A310-304 Regierungsflugzeug|Luftwaffe 10+21|Regierungsflugzeug Deutschland",
+    "parent_aircraft_id": "AIB-A310-300",
+    "ICAO": "A310",
+    "IATA": "310",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1985",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "80",
+    "Length": "46,66",
+    "Wingspan": "43,9",
+    "Height": "15,8",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A310#A310-300_als_Regierungsflugzeug"
+  }
+}

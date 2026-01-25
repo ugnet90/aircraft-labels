@@ -1,0 +1,77 @@
+{
+  "model_id": "WA002",
+  "airline_code": "WA",
+  "airline": "KLM Cityhopper",
+  "aircraft_id": "EMB-ERJ145",
+  "aircraft_type": "Embraer ERJ-145MP",
+  "registration": "PH-RXA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "KLM exel",
+  "special_note": "",
+  "shop": "Marktplaats: TOGAflex",
+  "price": 25.0,
+  "shipping_allocated": 1.3,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
+  "arrived_excel": "03.06.2025",
+  "arrived": "2025-06-03",
+  "source": {
+    "sheet": "KLM_CH",
+    "row": "6"
+  },
+  "aircraft": {
+    "aircraft_id": "EMB-ERJ145",
+    "type": "Embraer ERJ-145MP",
+    "registration": "PH-RXA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "KLM exel"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Marktplaats: TOGAflex",
+    "price": 25.0,
+    "shipping_allocated": 1.3,
+    "arrived": "2025-06-03",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
+    "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "EMB-ERJ145",
+    "Typ_anzeige": "Embraer ERJ-145",
+    "Hersteller": "Embraer",
+    "Baureihe": "ERJ-145",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "EMB-ERJ140",
+    "ICAO": "E145",
+    "IATA": "ERJ",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1995",
+    "Status": "teils aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "50",
+    "Length": "29,87",
+    "Wingspan": "20,04",
+    "Height": "6,75",
+    "Wiki": "https://de.wikipedia.org/wiki/Embraer-ERJ-Familie#ERJ_145"
+  }
+}

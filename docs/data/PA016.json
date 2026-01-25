@@ -1,0 +1,77 @@
+{
+  "model_id": "PA016",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "CON-CV240",
+  "aircraft_type": "Convair CV-240 Convairliner",
+  "registration": "N90671",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "Ebay Felindre Diecast",
+  "price": 82.94,
+  "shipping_allocated": 26.97,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L",
+  "arrived_excel": "05.08.2025",
+  "arrived": "2025-08-05",
+  "source": {
+    "sheet": "Panam",
+    "row": "19"
+  },
+  "aircraft": {
+    "aircraft_id": "CON-CV240",
+    "type": "Convair CV-240 Convairliner",
+    "registration": "N90671"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay Felindre Diecast",
+    "price": 82.94,
+    "shipping_allocated": 26.97,
+    "arrived": "2025-08-05",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
+    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "CON-CV240",
+    "Typ_anzeige": "Convair CV-240",
+    "Hersteller": "Convair",
+    "Baureihe": "CV-240",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "CVLP",
+    "IATA": "CV2",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1947",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz",
+    "Passengers": "40",
+    "Length": "22,66",
+    "Wingspan": "28,96",
+    "Height": "7",
+    "Wiki": "https://de.wikipedia.org/wiki/Convair_CV-240"
+  }
+}

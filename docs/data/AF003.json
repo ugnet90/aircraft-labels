@@ -1,0 +1,77 @@
+{
+  "model_id": "AF003",
+  "airline_code": "AF",
+  "airline": "Air France",
+  "aircraft_id": "EMB-E170",
+  "aircraft_type": "Embraer ERJ-170",
+  "registration": "F-HBXE",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Hop!\"",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 32.5,
+  "shipping_allocated": 1.13,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+  "postcard_price": 1.05,
+  "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
+  "arrived_excel": "15.01.2026",
+  "arrived": "2026-01-15",
+  "source": {
+    "sheet": "AirFrance",
+    "row": "53"
+  },
+  "aircraft": {
+    "aircraft_id": "EMB-E170",
+    "type": "Embraer ERJ-170",
+    "registration": "F-HBXE"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Hop!\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 32.5,
+    "shipping_allocated": 1.13,
+    "arrived": "2026-01-15",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+    "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "EMB-E170",
+    "Typ_anzeige": "Embraer E170",
+    "Hersteller": "Embraer",
+    "Baureihe": "E170",
+    "Unterserie": "",
+    "Marketingname": "E170",
+    "Alternate_designations": "ERJ 170-100|E170STD",
+    "parent_aircraft_id": "",
+    "ICAO": "E70",
+    "IATA": "E70",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2002",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "72",
+    "Length": "29,9",
+    "Wingspan": "26",
+    "Height": "9,73",
+    "Wiki": "https://de.wikipedia.org/wiki/Embraer_E-Jets#ERJ_170"
+  }
+}

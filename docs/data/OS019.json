@@ -1,0 +1,77 @@
+{
+  "model_id": "OS019",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "FOK-F70",
+  "aircraft_type": "Fokker 70",
+  "registration": "OE-LFG",
+  "livery_name": "AUA-2003-STARALLIANCE-LOGOSTRIP",
+  "parent_livery": "AUA-2003-STARALLIANCE",
+  "zusatzinfo": "Tyrolean Airways / Star Alliance",
+  "special_note": "",
+  "shop": "Kleinanzeigen Steffi Lang",
+  "price": 49.0,
+  "shipping_allocated": 6.0,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/18360-tyroleanstar-alliance-fokker-70.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070",
+  "arrived_excel": "02.07.2025",
+  "arrived": "2025-07-02",
+  "source": {
+    "sheet": "AUA",
+    "row": "32"
+  },
+  "aircraft": {
+    "aircraft_id": "FOK-F70",
+    "type": "Fokker 70",
+    "registration": "OE-LFG"
+  },
+  "livery": {
+    "code": "AUA-2003-STARALLIANCE-LOGOSTRIP",
+    "parent": "AUA-2003-STARALLIANCE",
+    "notes": "Tyrolean Airways / Star Alliance"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Steffi Lang",
+    "price": 49.0,
+    "shipping_allocated": 6.0,
+    "arrived": "2025-07-02",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/18360-tyroleanstar-alliance-fokker-70.html",
+    "photo": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "FOK-F70",
+    "Typ_anzeige": "Fokker F70",
+    "Hersteller": "Fokker",
+    "Baureihe": "F70",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "F70",
+    "IATA": "F70",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1993",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "80",
+    "Length": "30,9",
+    "Wingspan": "28",
+    "Height": "8,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Fokker_70"
+  }
+}

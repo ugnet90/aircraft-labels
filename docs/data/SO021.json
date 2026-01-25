@@ -1,0 +1,77 @@
+{
+  "model_id": "SO021",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "aircraft_id": "LOC-RP3D",
+  "aircraft_type": "",
+  "registration": "VXN-8",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "US Naval Oceanographic Office",
+  "special_note": "",
+  "shop": "MW-MOBA",
+  "price": 32.75,
+  "shipping_allocated": 1.38,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "https://www.airhistory.net/photo/654297/158227",
+  "arrived_excel": "15.01.2026",
+  "arrived": "2026-01-15",
+  "source": {
+    "sheet": "Sonstige",
+    "row": "24"
+  },
+  "aircraft": {
+    "aircraft_id": "LOC-RP3D",
+    "type": "",
+    "registration": "VXN-8"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "US Naval Oceanographic Office"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-MOBA",
+    "price": 32.75,
+    "shipping_allocated": 1.38,
+    "arrived": "2026-01-15",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "",
+    "photo": "https://www.airhistory.net/photo/654297/158227"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "LOC-RP3D",
+    "Typ_anzeige": "Lockheed RP-3D Orion",
+    "Hersteller": "Lockheed",
+    "Baureihe": "P-3",
+    "Unterserie": "RP-3D",
+    "Marketingname": "RP-3D Orion",
+    "Alternate_designations": "Lockheed RP-3D|Research P-3D|NASA RP-3D",
+    "parent_aircraft_id": "LOC-P3C",
+    "ICAO": "P3D",
+    "IATA": "P3D",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1969",
+    "Status": "aktiv",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "15",
+    "Length": "35,61",
+    "Wingspan": "30,37",
+    "Height": "10,27",
+    "Wiki": "https://de.wikipedia.org/wiki/Lockheed_P-3_Orion#Variants"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "PA003",
+  "airline_code": "PA",
+  "airline": "Pan Am",
+  "aircraft_id": "BOE-377",
+  "aircraft_type": "Boeing 377 Stratocruiser",
+  "registration": "N1025V",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Clipper America\"",
+  "special_note": "",
+  "shop": "https://www.modelwereld.eu/en/",
+  "price": 39.95,
+  "shipping_allocated": 21.0,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+  "postcard_price": 1.35,
+  "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
+  "arrived_excel": "08.05.2025",
+  "arrived": "2025-05-08",
+  "source": {
+    "sheet": "Panam",
+    "row": "9"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-377",
+    "type": "Boeing 377 Stratocruiser",
+    "registration": "N1025V"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Clipper America\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "https://www.modelwereld.eu/en/",
+    "price": 39.95,
+    "shipping_allocated": 21.0,
+    "arrived": "2025-05-08",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+    "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-377",
+    "Typ_anzeige": "Boeing 377 Stratocruiser",
+    "Hersteller": "Boeing",
+    "Baureihe": "377",
+    "Unterserie": "",
+    "Marketingname": "Stratocruiser",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "BO37",
+    "IATA": "B77",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1947",
+    "Status": "ausgemustert",
+    "Antrieb": "Propeller",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "100",
+    "Length": "33,63",
+    "Wingspan": "43,05",
+    "Height": "11,71",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_377"
+  }
+}

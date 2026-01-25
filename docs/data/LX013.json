@@ -1,0 +1,77 @@
+{
+  "model_id": "LX013",
+  "airline_code": "LX",
+  "airline": "Swiss",
+  "aircraft_id": "CON-CV880",
+  "aircraft_type": "Convair CV-880 Golden Arrow",
+  "registration": "HB-ICL",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "special_note": "",
+  "shop": "MW-Moba",
+  "price": 34.5,
+  "shipping_allocated": 0.85,
+  "flown": null,
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+  "postcard_price": 1.35,
+  "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
+  "arrived_excel": "12.11.2025",
+  "arrived": "2025-11-12",
+  "source": {
+    "sheet": "Swiss",
+    "row": "23"
+  },
+  "aircraft": {
+    "aircraft_id": "CON-CV880",
+    "type": "Convair CV-880 Golden Arrow",
+    "registration": "HB-ICL"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "MW-Moba",
+    "price": 34.5,
+    "shipping_allocated": 0.85,
+    "arrived": "2025-11-12",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+    "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "CON-CV880",
+    "Typ_anzeige": "Convair CV-880 Golden Arrow",
+    "Hersteller": "Convair",
+    "Baureihe": "CV-880",
+    "Unterserie": "",
+    "Marketingname": "CV-880 Golden Arrow",
+    "Alternate_designations": "Convair CV-880|Golden Arrow",
+    "parent_aircraft_id": "",
+    "ICAO": "CVLT",
+    "IATA": "CV8",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1959",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Mittel",
+    "Passengers": "110",
+    "Length": "39,42",
+    "Wingspan": "35,8",
+    "Height": "11",
+    "Wiki": "https://de.wikipedia.org/wiki/Convair_CV-880"
+  }
+}

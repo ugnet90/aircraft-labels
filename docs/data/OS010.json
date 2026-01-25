@@ -1,0 +1,77 @@
+{
+  "model_id": "OS010",
+  "airline_code": "OS",
+  "airline": "Austrian",
+  "aircraft_id": "AIB-A320-200",
+  "aircraft_type": "Airbus A320-200",
+  "registration": "OE-LBP",
+  "livery_name": "AUA-1997-QUALIFLYER",
+  "parent_livery": "AUA-1995-ARROWSTRIPE",
+  "zusatzinfo": "\"Qualiflyer\"",
+  "special_note": "",
+  "shop": "Ebay stoeberdaniel",
+  "price": 36.44,
+  "shipping_allocated": null,
+  "flown": true,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
+  "postcard_price": 0.85,
+  "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "AUA",
+    "row": "6"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A320-200",
+    "type": "Airbus A320-200",
+    "registration": "OE-LBP"
+  },
+  "livery": {
+    "code": "AUA-1997-QUALIFLYER",
+    "parent": "AUA-1995-ARROWSTRIPE",
+    "notes": "\"Qualiflyer\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Ebay stoeberdaniel",
+    "price": 36.44,
+    "shipping_allocated": null,
+    "arrived": null,
+    "flown": true,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
+    "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A320-200",
+    "Typ_anzeige": "Airbus A320-200",
+    "Hersteller": "Airbus",
+    "Baureihe": "A320",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A320",
+    "IATA": "320",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1988",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "180",
+    "Length": "37,57",
+    "Wingspan": "34,1",
+    "Height": "11,76",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200"
+  }
+}

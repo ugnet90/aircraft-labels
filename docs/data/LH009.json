@@ -1,0 +1,77 @@
+{
+  "model_id": "LH009",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "AIB-A300-B2",
+  "aircraft_type": "Airbus A300B2",
+  "registration": "D-AIAA",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "\"Garmisch-Patenkirchen\"",
+  "special_note": "",
+  "shop": "Kleinanzeigen Josef Voß",
+  "price": 17.0,
+  "shipping_allocated": 5.0,
+  "flown": null,
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
+  "postcard_price": 0.85,
+  "photo": "https://www.airhistory.net/photo/575352/D-AIAA",
+  "arrived_excel": "",
+  "arrived": null,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "5"
+  },
+  "aircraft": {
+    "aircraft_id": "AIB-A300-B2",
+    "type": "Airbus A300B2",
+    "registration": "D-AIAA"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "\"Garmisch-Patenkirchen\""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "",
+    "model_number": "",
+    "shop": "Kleinanzeigen Josef Voß",
+    "price": 17.0,
+    "shipping_allocated": 5.0,
+    "arrived": null,
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
+    "photo": "https://www.airhistory.net/photo/575352/D-AIAA"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A300-B2",
+    "Typ_anzeige": "Airbus A300 B2",
+    "Hersteller": "Airbus",
+    "Baureihe": "A300",
+    "Unterserie": "B2",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A30B",
+    "IATA": "AB3",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1972",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "270",
+    "Length": "53,6",
+    "Wingspan": "44,8",
+    "Height": "16,5",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A300#A300_B2"
+  }
+}
