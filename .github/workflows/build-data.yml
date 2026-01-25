@@ -1,0 +1,44 @@
+name: Build docs/data from CSV
+
+on:
+  push:
+    paths:
+      - "models_export.csv"
+      - "data/passenger_aircraft_full.csv"
+      - "data/liveries.csv"
+      - "tools/build_json.py"
+      - ".github/workflows/build-data.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build JSON
+        run: python tools/build_json.py
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/data docs/index.json
+
+          # Nur committen, wenn es Änderungen gibt
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Auto-generate docs/data from CSV"
+          git push
