@@ -250,8 +250,8 @@ def main() -> int:
             "registration": registration,
             "livery_name": livery,
             "arrived": angekommen_iso,
+            "scale": scale_final,   # <- neu
         })
-
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
     index_payload = {
