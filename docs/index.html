@@ -173,7 +173,7 @@
           <td>${esc(it.aircraft_type || "")}</td>
           <td class="mono">${esc(it.registration || "")}</td>
           <td>${esc(it.livery_name || "")}</td>
-          <td class="mono">${esc(it.arrived || "")}</td>
+          <td class="mono">${esc(formatDateDE(it.arrived || ""))}</td>
         </tr>
       `;
     }
