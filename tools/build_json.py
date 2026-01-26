@@ -23,7 +23,6 @@ def read_csv(path: str) -> List[Dict[str, str]]:
         reader = csv.DictReader(f, delimiter=";")
         rows = []
         for row in reader:
-            # Normalize None -> ""
             rows.append({k: (v if v is not None else "") for k, v in row.items()})
         return rows
 
@@ -41,9 +40,7 @@ def to_float(v: str) -> Optional[float]:
     v = (v or "").strip()
     if not v:
         return None
-    # Entferne Währungszeichen, Leerzeichen
     v = v.replace("€", "").replace(" ", "")
-    # deutsches Dezimal-Komma
     v = v.replace(",", ".")
     try:
         return float(v)
@@ -54,25 +51,20 @@ def to_float(v: str) -> Optional[float]:
 def excel_serial_to_iso(v: str) -> Optional[str]:
     """
     Excel-Seriendatum (z.B. 45799) -> YYYY-MM-DD
-    Excel day 1 = 1899-12-31 (mit 1900-Leap-Year-Bug); für reine Tageswerte reicht Standardformel.
     """
     v = (v or "").strip()
     if not v:
         return None
-    # falls schon ISO-ähnlich
     if re.match(r"^\d{4}-\d{2}-\d{2}$", v):
         return v
-    # falls deutsches Datum
     if re.match(r"^\d{1,2}\.\d{1,2}\.\d{4}$", v):
         try:
             d = datetime.strptime(v, "%d.%m.%Y").date()
             return d.isoformat()
         except ValueError:
             pass
-    # excel serial
     try:
         n = int(float(v))
-        # Excel epoch: 1899-12-30 ist gängige Umrechnung inkl. 1900-Bug
         base = datetime(1899, 12, 30).date()
         d = base + timedelta(days=n)
         return d.isoformat()
@@ -81,7 +73,6 @@ def excel_serial_to_iso(v: str) -> Optional[str]:
 
 
 def safe_filename(model_id: str) -> str:
-    # model_id wie OS016, BOA001 etc. erlauben; sonst säubern
     model_id = model_id.strip()
     model_id = re.sub(r"[^A-Za-z0-9_-]", "_", model_id)
     return model_id
@@ -89,17 +80,37 @@ def safe_filename(model_id: str) -> str:
 
 def index_by_key(rows: List[Dict[str, str]], key_field: str) -> Dict[str, Dict[str, str]]:
     idx: Dict[str, Dict[str, str]] = {}
+    if not key_field:
+        return idx
     for r in rows:
         k = (r.get(key_field, "") or "").strip()
-        if k:
-            # first wins; bei Duplikaten könnte man loggen
-            if k not in idx:
-                idx[k] = r
+        if k and k not in idx:
+            idx[k] = r
     return idx
 
 
 def normalize_livery_code(v: str) -> str:
     return (v or "").strip()
+
+
+def parse_scale_from_text(text: str) -> Optional[str]:
+    """
+    Finds scale patterns like 1:400, 1 : 200, 1:87 in free text.
+    Also supports Excel-text marker prefix: '1:350
+    Returns normalized '1:XXX' or None.
+    """
+    t = (text or "").strip()
+    if not t:
+        return None
+
+    # Excel export: leading apostrophe to force text (e.g. '1:350)
+    if t.startswith("'"):
+        t = t[1:].strip()
+
+    m = re.search(r"\b1\s*:\s*(\d{2,4})\b", t)
+    if not m:
+        return None
+    return f"1:{m.group(1)}"
 
 
 def main() -> int:
@@ -110,6 +121,7 @@ def main() -> int:
     liv_rows = read_csv(LIV_CSV)
 
     pax_idx = index_by_key(pax_rows, "aircraft_id")
+
     # In liveries kann der Schlüssel unterschiedlich heißen; wir versuchen mehrere typische
     liv_key = None
     if liv_rows:
@@ -155,13 +167,22 @@ def main() -> int:
         source_sheet = (r.get("source_sheet", "") or "").strip()
         source_row = (r.get("source_row", "") or "").strip()
 
+        # Scale precedence:
+        # 1) explicit CSV column "scale" (falls du sie später exportierst)
+        # 2) parse from special_note (Sondermodell; z.B. '1:350)
+        # 3) default 1:400
+        scale_csv = (r.get("scale", "") or "").strip()
+        if scale_csv.startswith("'"):
+            scale_csv = scale_csv[1:].strip()
+        scale_text = parse_scale_from_text(special_note)
+        scale_final = scale_csv or scale_text or "1:400"
+
         # Enrichment: passenger_aircraft_full by aircraft_id
         aircraft_full = pax_idx.get(aircraft_id) if aircraft_id else None
 
         # Enrichment: liveries by livery code (if possible)
         livery_full = liv_idx.get(livery) if livery and livery in liv_idx else None
 
-        # Backward-compatible flat fields for current model.html
         out: Dict[str, Any] = {
             "model_id": model_id,
             "airline_code": airline_code,
@@ -183,7 +204,6 @@ def main() -> int:
             "arrived_excel": angekommen_raw,
             "arrived": angekommen_iso,
             "source": {"sheet": source_sheet, "row": source_row},
-            # structured blocks for future UI
             "aircraft": {
                 "aircraft_id": aircraft_id,
                 "type": aircraft_type,
@@ -195,7 +215,7 @@ def main() -> int:
                 "notes": zusatzinfo,
             },
             "model": {
-                "scale": "1:400",  # default; falls du später exportierst, kann hier überschrieben werden
+                "scale": scale_final,
                 "manufacturer": (r.get("manufacturer", "") or "").strip(),
                 "model_number": (r.get("model_number", "") or "").strip(),
                 "shop": shop,
@@ -221,7 +241,6 @@ def main() -> int:
         with open(os.path.join(OUT_DIR, fn), "w", encoding="utf-8") as f:
             json.dump(out, f, ensure_ascii=False, indent=2)
 
-        # index
         index_list.append({
             "model_id": model_id,
             "airline_code": airline_code,
@@ -235,7 +254,6 @@ def main() -> int:
 
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
-    # write index.json
     index_payload = {
         "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "count": len(index_list),
