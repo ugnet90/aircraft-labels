@@ -79,61 +79,105 @@
   }
 
   function renderV8Table(obj){
-    if(!obj || typeof obj !== "object") return "";
-
-    // Key aus CSV -> deutsches Label
-    const rows = [
-      ["Typ_anzeige", "Flugzeugtyp (Anzeige)"],
-      ["Flugzeugtyp", "Flugzeugtyp (Kategorie)"],
-      ["Hersteller", "Hersteller"],
-      ["Baureihe", "Baureihe"],
-      ["Unterserie", "Unterserie"],
-      ["Marketingname", "Marketingname"],
-      ["Alternate_designations", "Alternative Bezeichnungen"],
-      ["parent_aircraft_id", "Übergeordneter Typ (ID)"],
-
-      ["ICAO", "ICAO-Typcode"],
-      ["IATA", "IATA-Typcode"],
-
-      ["Wingtip", "Wingtip / Winglets / Sharklets"],
-      ["Rumpf", "Rumpf (Kategorie)"],
-      ["MarketSegment", "Segment"],
-      ["Role", "Rolle"],
-
-      ["Erstflug", "Erstflug"],
-      ["Status", "Status"],
-      ["Antrieb", "Antrieb"],
-      ["Triebwerke", "Triebwerke"],
-      ["Reichweite", "Reichweite"],
-      ["Passengers", "Passagiere (typ.)"],
-
-      ["Length", "Länge"],
-      ["Wingspan", "Spannweite"],
-      ["Height", "Höhe"],
-
-      ["Wiki", "Wikipedia"],
-      ["aircraft_id", "aircraft_id (v8)"],
-    ]
-    .map(([key, label]) => [label, obj[key]])
-    .filter(([_, v]) => v !== undefined && v !== null && String(v).trim() !== "");
-
-    if(rows.length === 0) return "";
-
-    let html = `<div class="card"><div class="k">Technik (Flugzeugdaten)</div>` +
-               `<div class="v" style="margin-top:8px"><table>`;
-
-    for(const [label, v] of rows){
-      // Wiki als Link
-      if(label === "Wikipedia"){
-        const url = String(v).trim();
-        html += `<tr><td>${esc(label)}</td><td><a href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a></td></tr>`;
-      } else {
-        html += `<tr><td>${esc(label)}</td><td>${esc(String(v))}</td></tr>`;
-      }
-    }
-
-    html += `</table></div></div>`;
-    return html;
+  if(!obj || typeof obj !== "object") return "";
+  
+  
+  function normListText(v){
+  const s = String(v ?? "").trim();
+  if(!s) return "";
+  // Trennzeichen: , oder | (auch gemischt) -> Zeilenumbrüche
+  return s
+  .split(/[|,]/g)
+  .map(x => x.trim())
+  .filter(Boolean)
+  .join("<br>");
+  }
+  
+  
+  const spec = [
+  ["Typ_anzeige", "Flugzeugtyp"],
+  ["Hersteller", "Hersteller"],
+  ["Baureihe", "Baureihe"],
+  ["Unterserie", "Unterserie"],
+  ["Marketingname", "Marketingname"],
+  ["Alternate_designations", "Alternative Bezeichnungen", normListText],
+  ["parent_aircraft_id", "Übergeordneter Typ (ID)"],
+  
+  
+  ["ICAO", "ICAO-Typcode"],
+  ["IATA", "IATA-Typcode"],
+  
+  
+  ["Wingtip", "Wingtip / Winglets / Sharklets"],
+  ["Rumpf", "Rumpf (Kategorie)"],
+  ["MarketSegment", "Segment"],
+  ["Role", "Rolle"],
+  
+  
+  ["Flugzeugtyp", "Flugzeugtyp (Kategorie)"],
+  
+  
+  ["Erstflug", "Erstflug"],
+  ["Status", "Status"],
+  ["Antrieb", "Antrieb"],
+  ["Triebwerke", "Triebwerke"],
+  ["Reichweite", "Reichweite (Kategorie)"],
+  ["Passengers", "Passagiere (Sitze)"],
+  
+  
+  ["Length", "Länge (m)"],
+  ["Wingspan", "Spannweite (m)"],
+  ["Height", "Höhe (m)"],
+  
+  
+  ["Wiki", "Wikipedia"],
+  ["aircraft_id", "aircraft_id (v8)"],
+  ];
+  
+  
+  const rows = spec
+  .map(([key, label, fmt]) => {
+  const v = obj[key];
+  if(v === undefined || v === null) return null;
+  const raw = String(v).trim();
+  if(!raw) return null;
+  
+  
+  // special: wiki link
+  if(key === "Wiki"){
+  const url = raw;
+  const safe = esc(url);
+  return [label, `<a href="${safe}" target="_blank" rel="noopener">${safe}</a>`];
+  }
+  
+  
+  // formatted list (HTML with <br>)
+  if(typeof fmt === "function"){
+  const html = fmt(raw);
+  if(!html) return null;
+  return [label, html];
+  }
+  
+  
+  return [label, esc(raw)];
+  })
+  .filter(Boolean);
+  
+  
+  if(rows.length === 0) return "";
+  
+  
+  let html = `<div class="card"><div class="k">Technik (Flugzeugdaten)</div>` +
+  `<div class="v" style="margin-top:8px"><table>`;
+  
+  
+  for(const [label, valueHtml] of rows){
+  html += `<tr><td>${esc(label)}</td><td>${valueHtml}</td></tr>`;
+  }
+  
+  
+  html += `</table></div></div>`;
+  return html;
   }
 
   async function main(){
