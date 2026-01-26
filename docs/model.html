@@ -5,19 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Modell – Details</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:18px;line-height:1.35;max-width:720px}
-    .card{border:1px solid #ddd;border-radius:12px;padding:14px;margin:10px 0}
-    .k{color:#666;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
-    .v{font-size:16px;margin-top:2px}
-    h1{font-size:20px;margin:0 0 10px}
-    h2{font-size:14px;margin:16px 0 6px;color:#333}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    @media (max-width:560px){ .grid{grid-template-columns:1fr} }
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;line-height:1.35;max-width:900px}
+    .top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+    h1{font-size:20px;margin:0}
+    .pill{border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
     .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
     a{color:#000}
+    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} }
+    .k{color:#666;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+    .v{font-size:15px;margin-top:2px;word-break:break-word}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
     .err{border:1px solid #c00;background:#fff5f5;padding:12px;border-radius:12px}
-    .top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
-    .pill{border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
+    .muted{color:#666;font-size:12px}
+    .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
+    .btn:hover{background:#fafafa}
+    table{width:100%;border-collapse:collapse}
+    td{padding:6px 6px;border-bottom:1px solid #eee;vertical-align:top}
+    td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
   </style>
 </head>
 <body>
@@ -26,10 +32,13 @@
   <h1 id="title">Modell</h1>
   <span class="pill mono" id="idpill"></span>
 </div>
+<div class="muted" id="subtitle"></div>
 
 <div id="content" class="card">Lade Daten …</div>
 
-<p><a href="./index.html">← zurück</a></p>
+<div class="row">
+  <a class="btn" href="./index.html">← Übersicht</a>
+</div>
 
 <script>
   function qs(name){
@@ -46,50 +55,147 @@
     return `<div><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`;
   }
 
+  function linkRow(k, url){
+    if(!url) return "";
+    const safe = esc(url);
+    return `<div><div class="k">${esc(k)}</div><div class="v"><a href="${safe}" target="_blank" rel="noopener">${safe}</a></div></div>`;
+  }
+
+  function money(v){
+    if(v === null || v === undefined || v === "") return "";
+    const n = Number(v);
+    if(Number.isFinite(n)) return n.toFixed(2).replace(".", ",") + " €";
+    return String(v);
+  }
+
+  function boolBadge(v){
+    if(v === true) return "ja";
+    if(v === false) return "nein";
+    return "";
+  }
+
+  function asText(v){
+    return (v ?? "").toString().trim();
+  }
+
+  function renderV8Table(obj){
+    if(!obj || typeof obj !== "object") return "";
+    // Zeige nur „sinnvolle“ Felder – hier bewusst konservativ
+    const keys = [
+      "manufacturer", "family", "type", "variant",
+      "iata", "icao",
+      "fuselage_category", "segment", "role",
+      "first_year", "status",
+      "propulsion", "engine_count",
+      "range_category", "pax_capacity",
+      "length_m", "wingspan_m", "height_m"
+    ].filter(k => obj[k] !== undefined && obj[k] !== null && obj[k] !== "");
+
+    if(keys.length === 0) return "";
+
+    let html = `<div class="card"><div class="k">Technik (v8)</div><div class="v" style="margin-top:8px">` +
+               `<table>`;
+    for(const k of keys){
+      html += `<tr><td>${esc(k)}</td><td>${esc(String(obj[k]))}</td></tr>`;
+    }
+    html += `</table></div></div>`;
+    return html;
+  }
+
   async function main(){
     const id = qs("id");
     document.getElementById("idpill").textContent = id ? `id=${id}` : "id=?";
 
     if(!id){
       document.getElementById("content").innerHTML =
-        `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">model.html?id=aua_oe-lpa</span></div>`;
+        `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">model.html?id=OS016</span></div>`;
       return;
     }
 
     const url = `./data/${encodeURIComponent(id)}.json`;
+
     try{
       const res = await fetch(url, {cache:"no-store"});
       if(!res.ok) throw new Error(`HTTP ${res.status}`);
       const d = await res.json();
 
-      // Titelzeile
-      const headline = [
-        d.airline, d.aircraft_type, d.registration
-      ].filter(Boolean).join(" · ") || id;
+      const airline = asText(d.airline) || asText(d.airline_code);
+      const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
+      const reg = asText(d.registration) || asText(d.aircraft?.registration);
+      const livery = asText(d.livery_name) || asText(d.livery?.code);
 
+      const headline = [airline, typ, reg].filter(Boolean).join(" · ") || id;
       document.title = headline;
       document.getElementById("title").textContent = headline;
 
-      const html =
-        `<div class="grid">` +
-          row("Airline", d.airline) +
-          row("Aircraft type", d.aircraft_type) +
-          row("Registration", d.registration) +
-          row("Aircraft name", d.aircraft_name) +
-          row("MSN", d.msn) +
-          row("Engines", d.engine_type) +
-          row("Livery", d.livery_name) +
-        `</div>` +
+      const sub = [
+        d.model_id ? `Modell-ID: ${d.model_id}` : "",
+        d.aircraft_id ? `aircraft_id: ${d.aircraft_id}` : "",
+        livery ? `Livery: ${livery}` : ""
+      ].filter(Boolean).join(" | ");
+      document.getElementById("subtitle").textContent = sub;
 
-        `<h2>Scale model</h2>` +
-        `<div class="grid">` +
-          row("Scale", d.model?.scale) +
-          row("Manufacturer", d.model?.manufacturer) +
-          row("Model no.", d.model?.model_number) +
-          row("Notes", d.model?.notes) +
-        `</div>`;
+      // Blocks
+      const modelBlock = `
+        <div class="card">
+          <div class="k">Model</div>
+          <div class="grid" style="margin-top:8px">
+            ${row("Scale", d.model?.scale || "")}
+            ${row("Manufacturer", d.model?.manufacturer || "")}
+            ${row("Model number", d.model?.model_number || "")}
+            ${row("Shop", d.shop || d.model?.shop || "")}
+            ${row("Price", money(d.price ?? d.model?.price))}
+            ${row("Shipping allocated", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
+            ${row("Arrived", d.arrived || d.model?.arrived || "")}
+            ${row("Flown (Eigenflüge)", boolBadge(d.flown ?? d.model?.flown))}
+            ${row("Special", d.special_note || d.model?.special_note || "")}
+          </div>
+        </div>
+      `;
 
-      document.getElementById("content").innerHTML = html;
+      const aircraftBlock = `
+        <div class="card">
+          <div class="k">Aircraft</div>
+          <div class="grid" style="margin-top:8px">
+            ${row("Aircraft type", typ)}
+            ${row("Registration", reg)}
+            ${row("aircraft_id", d.aircraft_id || d.aircraft?.aircraft_id || "")}
+            ${row("MSN", d.msn || "")}
+            ${row("Engines", d.engine_type || "")}
+          </div>
+        </div>
+      `;
+
+      const liveryBlock = `
+        <div class="card">
+          <div class="k">Livery</div>
+          <div class="grid" style="margin-top:8px">
+            ${row("Code", livery)}
+            ${row("Parent", d.parent_livery || d.livery?.parent || "")}
+            ${row("Notes", d.zusatzinfo || d.livery?.notes || "")}
+          </div>
+        </div>
+      `;
+
+      const linksBlock = `
+        <div class="card">
+          <div class="k">Links</div>
+          <div class="grid" style="margin-top:8px">
+            ${linkRow("Postcard", d.postcard || d.links?.postcard || "")}
+            ${row("Postcard price", money(d.postcard_price || ""))}
+            ${linkRow("Photo", d.photo || d.links?.photo || "")}
+          </div>
+        </div>
+      `;
+
+      // Optional: show raw source pointer
+      const src = d.source ? `(${d.source.sheet || ""} #${d.source.row || ""})` : "";
+      const sourceBlock = src ? `<div class="muted">Quelle: ${esc(src)}</div>` : "";
+
+      const v8Block = renderV8Table(d.aircraft_full_v8);
+
+      document.getElementById("content").innerHTML =
+        modelBlock + aircraftBlock + liveryBlock + linksBlock + v8Block + sourceBlock;
 
     }catch(e){
       document.getElementById("content").innerHTML =
