@@ -60,6 +60,13 @@
   }
   function norm(s){ return String(s ?? "").toLowerCase().trim(); }
 
+  function formatDateDE(iso){
+    if(!iso) return "";
+    const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if(!m) return iso; // fallback
+    return `${m[3]}.${m[2]}.${m[1]}`;
+  }
+  
   function parseDateISO(s){
     if(!s) return null;
     const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})$/);
