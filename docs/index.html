@@ -3,29 +3,222 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Flugzeugmodelle – QR</title>
+  <title>Flugzeugmodelle – Übersicht</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:24px;line-height:1.4}
-    code{background:#f2f2f2;padding:2px 6px;border-radius:6px}
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;line-height:1.35;max-width:1100px}
+    h1{font-size:20px;margin:0 0 10px}
+    .meta{color:#666;font-size:12px;margin-bottom:12px}
+    .bar{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:8px;margin:12px 0}
+    @media (max-width:900px){ .bar{grid-template-columns:1fr 1fr} }
+    @media (max-width:520px){ .bar{grid-template-columns:1fr} }
+    input,select{width:100%;padding:8px;border:1px solid #ddd;border-radius:10px;font-size:14px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px 6px;border-bottom:1px solid #eee;vertical-align:top}
+    th{font-size:12px;color:#666;text-align:left;white-space:nowrap}
+    tr:hover{background:#fafafa}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+    .pill{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
     a{color:#000}
+    .err{border:1px solid #c00;background:#fff5f5;padding:12px;border-radius:12px}
+    .right{display:flex;gap:8px;align-items:center;justify-content:flex-end}
+    .small{font-size:12px;color:#666}
   </style>
 </head>
 <body>
-  <h1>Flugzeugmodelle – QR</h1>
-  <p>Wenn du das siehst, läuft GitHub Pages.</p>
 
-  <h2>Test</h2>
-  <p>
-    Beispiel-Modell:
-    <a href="./model.html?id=aua_oe-lpa">aua_oe-lpa</a>
-  </p>
+<h1>Flugzeugmodelle – Übersicht</h1>
+<div class="meta" id="meta">Lade Daten …</div>
 
-  <p>
-    JSON direkt:
-    <a href="./data/aua_oe-lpa.json">data/aua_oe-lpa.json</a>
-  </p>
+<div class="bar">
+  <input id="q" placeholder="Suche (ID, Reg, Typ, Livery …)" />
+  <select id="airline">
+    <option value="">Alle Airlines</option>
+  </select>
+  <select id="sort">
+    <option value="airline_model">Sortierung: Airline → Modell-ID</option>
+    <option value="arrived_desc">Sortierung: angekommen (neu → alt)</option>
+    <option value="arrived_asc">Sortierung: angekommen (alt → neu)</option>
+    <option value="type">Sortierung: Typ</option>
+    <option value="reg">Sortierung: Registrierung</option>
+  </select>
+  <div class="right">
+    <span class="small" id="count"></span>
+  </div>
+</div>
 
-  <hr />
-  <p><small>Repo: GitHub Pages aus <code>/docs</code></small></p>
+<div id="content"></div>
+
+<script>
+  const state = {
+    all: [],
+    filtered: []
+  };
+
+  function esc(s){
+    return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function norm(s){
+    return String(s ?? "").toLowerCase().trim();
+  }
+
+  function parseDateISO(s){
+    // erwartet YYYY-MM-DD, sonst null
+    if(!s) return null;
+    const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if(!m) return null;
+    const d = new Date(`${m[1]}-${m[2]}-${m[3]}T00:00:00Z`);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  function buildAirlineOptions(items){
+    const sel = document.getElementById("airline");
+    const map = new Map();
+    for(const it of items){
+      const code = it.airline_code || "";
+      const name = it.airline || code || "";
+      if(!code && !name) continue;
+      map.set(code || name, {code, name});
+    }
+    const arr = Array.from(map.values()).sort((a,b)=> (a.code||a.name).localeCompare(b.code||b.name));
+    for(const a of arr){
+      const opt = document.createElement("option");
+      opt.value = a.code || a.name;
+      opt.textContent = a.code ? `${a.code} – ${a.name}` : a.name;
+      sel.appendChild(opt);
+    }
+  }
+
+  function matchesQuery(it, q){
+    if(!q) return true;
+    const hay = [
+      it.model_id,
+      it.airline_code,
+      it.airline,
+      it.aircraft_id,
+      it.aircraft_type,
+      it.registration,
+      it.livery_name,
+      it.arrived
+    ].map(norm).join(" | ");
+    return hay.includes(q);
+  }
+
+  function matchesAirline(it, code){
+    if(!code) return true;
+    return (it.airline_code || "") === code || (it.airline || "") === code;
+  }
+
+  function sortItems(items, mode){
+    const arr = items.slice();
+
+    if(mode === "arrived_desc" || mode === "arrived_asc"){
+      arr.sort((a,b)=>{
+        const da = parseDateISO(a.arrived)?.getTime() ?? -1;
+        const db = parseDateISO(b.arrived)?.getTime() ?? -1;
+        return mode === "arrived_desc" ? (db - da) : (da - db);
+      });
+      return arr;
+    }
+
+    if(mode === "type"){
+      arr.sort((a,b)=> (a.aircraft_type||"").localeCompare(b.aircraft_type||"") || (a.model_id||"").localeCompare(b.model_id||""));
+      return arr;
+    }
+
+    if(mode === "reg"){
+      arr.sort((a,b)=> (a.registration||"").localeCompare(b.registration||"") || (a.model_id||"").localeCompare(b.model_id||""));
+      return arr;
+    }
+
+    // default: airline_model
+    arr.sort((a,b)=>
+      (a.airline_code||"").localeCompare(b.airline_code||"") ||
+      (a.model_id||"").localeCompare(b.model_id||"")
+    );
+    return arr;
+  }
+
+  function render(items){
+    document.getElementById("count").textContent = `${items.length} Modelle`;
+
+    if(items.length === 0){
+      document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
+      return;
+    }
+
+    let html = `
+      <table>
+        <thead>
+          <tr>
+            <th>Modell</th>
+            <th>Airline</th>
+            <th>Typ</th>
+            <th>Registrierung</th>
+            <th>Livery</th>
+            <th>angekommen</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    for(const it of items){
+      const link = `./model.html?id=${encodeURIComponent(it.model_id)}`;
+      html += `
+        <tr>
+          <td class="mono"><a href="${esc(link)}">${esc(it.model_id)}</a></td>
+          <td>${esc(it.airline_code || "")} ${it.airline ? `– ${esc(it.airline)}` : ""}</td>
+          <td>${esc(it.aircraft_type || "")}</td>
+          <td class="mono">${esc(it.registration || "")}</td>
+          <td>${esc(it.livery_name || "")}</td>
+          <td class="mono">${esc(it.arrived || "")}</td>
+        </tr>
+      `;
+    }
+
+    html += `</tbody></table>`;
+    document.getElementById("content").innerHTML = html;
+  }
+
+  function apply(){
+    const q = norm(document.getElementById("q").value);
+    const airline = document.getElementById("airline").value;
+    const sort = document.getElementById("sort").value;
+
+    let items = state.all.filter(it => matchesQuery(it, q) && matchesAirline(it, airline));
+    items = sortItems(items, sort);
+    state.filtered = items;
+    render(items);
+  }
+
+  async function main(){
+    try{
+      const res = await fetch("./index.json", {cache:"no-store"});
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      state.all = data.items || [];
+
+      document.getElementById("meta").innerHTML =
+        `<span class="pill">Stand: <span class="mono">${esc(data.generated_at || "")}</span></span>` +
+        `<span class="pill">Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span></span>`;
+
+      buildAirlineOptions(state.all);
+
+      document.getElementById("q").addEventListener("input", apply);
+      document.getElementById("airline").addEventListener("change", apply);
+      document.getElementById("sort").addEventListener("change", apply);
+
+      apply();
+
+    }catch(e){
+      document.getElementById("content").innerHTML =
+        `<div class="err"><b>Fehler:</b> Konnte <span class="mono">docs/index.json</span> nicht laden. (${esc(e.message)})</div>`;
+      document.getElementById("meta").textContent = "";
+    }
+  }
+
+  main();
+</script>
 </body>
 </html>
