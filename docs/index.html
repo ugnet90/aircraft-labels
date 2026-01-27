@@ -22,6 +22,8 @@
     .right{display:flex;gap:8px;align-items:center;justify-content:flex-end}
     .small{font-size:12px;color:#666}
     .pill{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
+    .badge{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
+    .badge-warn{border-color:#c00;background:#fff5f5}
   </style>
 </head>
 <body>
@@ -74,7 +76,15 @@
     const d = new Date(`${m[1]}-${m[2]}-${m[3]}T00:00:00Z`);
     return isNaN(d.getTime()) ? null : d;
   }
-
+  
+  function scaleBadge(scale){
+    const s = String(scale ?? "").trim();
+    if(!s) return "";
+    const isSpecial = (s !== "1:400");
+    const cls = isSpecial ? "badge badge-warn mono" : "badge mono";
+    return `<span class="${cls}">${esc(s)}</span>`;
+  }
+  
   function buildOptions(items, selectId, keyFn, labelFn){
     const sel = document.getElementById(selectId);
     const map = new Map();
@@ -169,7 +179,7 @@
         <tr>
           <td class="mono"><a href="${esc(link)}">${esc(it.model_id)}</a></td>
           <td>${esc(it.airline_code || "")}${it.airline ? ` – ${esc(it.airline)}` : ""}</td>
-          <td class="mono">${esc(it.scale || "")}</td>
+          <td>${scaleBadge(it.scale || "")}</td>
           <td>${esc(it.aircraft_type || "")}</td>
           <td class="mono">${esc(it.registration || "")}</td>
           <td>${esc(it.livery_name || "")}</td>
