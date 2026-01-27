@@ -325,26 +325,17 @@
         </div>
       `;
 
-      const liveryName = firstNonEmpty(
-        d.livery_full?.Bemalung,
-        d.livery_full?.Livery_Name,
-        d.livery_full?.livery_name,
-        d.livery_full?.name
-      );
-      
-      const liveryNotes = firstNonEmpty(
-        d.livery_full?.Erläuterung,
-        d.livery_full?.Notes,
-        d.livery_full?.notes,
-        d.livery_full?.description
-      );
+      const liveryName = (d.livery_full?.Livery_Name || "").trim();
+      const liveryType = (d.livery_full?.Livery_Type || "").trim();
+      const liveryNotes = (d.livery_full?.Notes || "").trim();
       
       const liveryBlock = `
         <div class="card">
           <div class="k">Bemalung</div>
           <div class="grid" style="margin-top:8px">
-            ${row("Bemalung", liveryName || "")}
-            ${row("Erläuterung", liveryNotes || "")}
+            ${row("Bemalung", liveryName)}
+            ${row("Typ", liveryType)}
+            ${row("Erläuterung", liveryNotes)}
           </div>
         </div>
       `;
