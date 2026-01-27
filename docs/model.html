@@ -79,7 +79,7 @@
   function formatDateDE(iso){
     if(!iso) return "";
     const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if(!m) return iso; // fallback
+    if(!m) return iso;
     return `${m[3]}.${m[2]}.${m[1]}`;
   }
   
@@ -87,8 +87,11 @@
     if(v === null || v === undefined || v === "") return "";
     const n = Number(v);
     if(!Number.isFinite(n)) return String(v);
-    // deutsches Format: Komma + € davor
-    return "€ " + n.toFixed(2).replace(".", ",");
+    const amount = n.toFixed(2).replace(".", ",");
+    const sp = CURRENCY.space ? " " : "";
+    return CURRENCY.position === "before"
+    ? `${CURRENCY.symbol}${sp}${amount}`
+    : `${amount}${sp}${CURRENCY.symbol}`;
   }
 
   function boolBadge(v){
