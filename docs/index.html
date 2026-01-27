@@ -120,6 +120,7 @@
       it.model_id, it.airline_code, it.airline,
       it.aircraft_id, it.aircraft_type,
       it.registration, it.livery_name,
+      it.livery_display,
       it.arrived, it.scale, (it.flown===true?"mitgeflogen":it.flown===false?"nicht mitgeflogen":"")
     ].map(norm).join(" | ");
     return hay.includes(q);
@@ -203,7 +204,7 @@
           <td class="mono">${it.flown === true ? "ja" : it.flown === false ? "nein" : ""}</td>
           <td>${esc(it.aircraft_type || "")}</td>
           <td class="mono">${esc(it.registration || "")}</td>
-          <td>${esc(it.livery_name || "")}</td>
+          <td>${esc(it.livery_display || it.livery_name || "")}</td>
           <td class="mono">${esc(formatDateDE(it.arrived || ""))}</td>
         </tr>
       `;
