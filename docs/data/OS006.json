@@ -73,5 +73,20 @@
     "Wingspan": "34,3",
     "Height": "8,71",
     "Wiki": "https://de.wikipedia.org/wiki/Sud_Aviation_Caravelle#Caravelle_VI-R"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-1960-CLASSIC",
+    "Livery_Name": "Classic / Red-White-Red",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1960",
+    "End_Year": "1988",
+    "Aircraft_Type": "Caravelle|DC-9|MD-80|A310",
+    "Example_Reg": "OE-LCE",
+    "Notes": "Frühe Farbgebung mit rot-weiß-roter Cheatline und silbernem Unterrumpf. Teilweise kleiner roter Pfeil an der Nase (nicht bei allen Mustern ausgeführt, z. B. Caravelle). Typisches 1960er-Jahre-Layout mit rotem Leitwerk und weißem Mittelband.",
+    "Source_URL": "",
+    "Photo_URL": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r"
   }
 }

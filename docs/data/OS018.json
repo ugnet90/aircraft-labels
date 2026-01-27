@@ -73,5 +73,20 @@
     "Wingspan": "47,57",
     "Height": "15,85",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#767-300"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-2018-NEW",
+    "Livery_Name": "New Austrian",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "2018",
+    "End_Year": "–",
+    "Aircraft_Type": "A321|A320|A320neo|E195|B767|B777",
+    "Example_Reg": "OE-LAW",
+    "Notes": "Brand-Refresh 2018 ohne my. Großer Austrian Titel beginnend auf Fensterreihe weit vorne, rotes Heck mit erweiterten roten Flächen am Hinterrumpf. Roter Pfeil nur noch im weißen Tailband. Triebwerke weiß oder hellgrau.",
+    "Source_URL": "https://thedesignair.net/2015/03/30/austrian-airlines-launches-new-livery-and-new-brand-direction",
+    "Photo_URL": "https://www.jetphotos.com/photo/10159741"
   }
 }

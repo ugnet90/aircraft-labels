@@ -73,5 +73,20 @@
     "Wingspan": "28,55",
     "Height": "8,25",
     "Wiki": "https://de.wikipedia.org/wiki/Vickers_Viscount#Typ_800"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-1959-CHEATLINE",
+    "Livery_Name": "Early Cheatline",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1959",
+    "End_Year": "1963",
+    "Aircraft_Type": "Vickers Viscount|DC-3",
+    "Example_Reg": "OE-LAK",
+    "Notes": "Übergangsdesign mit durchgehender rot-weiß-roter Cheatline von der schwarzen Bugspitze bis zum Heck und kleinem roten Pfeil auf der Nase. Polierter Metallrumpf unterhalb der Fensterlinie und Leitwerk in rot-weiß-roten Streifen. Diente als direkter Vorläufer der 1960er-Classic-Livery.",
+    "Source_URL": "",
+    "Photo_URL": "https://www.planespotters.net/photo/764544/oe-lba-austrian-airlines-boeing-707-329"
   }
 }

@@ -73,5 +73,20 @@
     "Wingspan": "34,3",
     "Height": "12,5",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-600"
+  },
+  "livery_full": {
+    "Airline": "Lauda Air",
+    "Operator": "Lauda Air",
+    "Livery_ID": "LDA-2004-TIROL",
+    "Livery_Name": "Tirol Special",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "LDA-1990-CLASSIC",
+    "Start_Year": "2004",
+    "End_Year": "2008",
+    "Aircraft_Type": "B737-600",
+    "Example_Reg": "OE-LNM",
+    "Notes": "Sonderbemalung „Tirol – Herz der Alpen“ auf Basis der Lauda-Air-Standardlackierung der 1990er-Jahre. Großflächiges Alpenpanorama mit Tirol-Wappen und Schriftzug „Tirol“ entlang des Rumpfs. Rotes Leitwerk mit goldener Taube und Schriftzug „Sound of Music“. Kooperation mit dem Land Tirol.",
+    "Source_URL": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9",
+    "Photo_URL": ""
   }
 }

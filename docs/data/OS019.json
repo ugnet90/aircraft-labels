@@ -73,5 +73,20 @@
     "Wingspan": "28",
     "Height": "8,5",
     "Wiki": "https://de.wikipedia.org/wiki/Fokker_70"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines / Austrian Arrows Tyrolean",
+    "Livery_ID": "AUA-2003-STARALLIANCE-LOGOSTRIP",
+    "Livery_Name": "Star Alliance Member Logos",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "AUA-2003-STARALLIANCE",
+    "Start_Year": "2003",
+    "End_Year": "2010",
+    "Aircraft_Type": "A320|A330|F70",
+    "Example_Reg": "OE-LBR",
+    "Notes": "Star-Alliance-Sondervariante mit Logo-Kachelstreifen der Allianzpartner oberhalb der Fensterreihe. Weißer Rumpf und schwarzes Leitwerk mit Star-Alliance-Logo. In der Bluebelly-Ära teils mit hellblauen Triebwerken bei Narrowbodies. Nachweisbar auf A320 OE-LBR und A330 OE-LAO sowie F70 OE-LFG.",
+    "Source_URL": "",
+    "Photo_URL": ""
   }
 }

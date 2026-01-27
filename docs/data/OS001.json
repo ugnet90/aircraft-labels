@@ -73,5 +73,20 @@
     "Wingspan": "34,1",
     "Height": "11,76",
     "Wiki": "https://de.wikipedia.org/wiki/Airbus_A319"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-2015-MYAUA",
+    "Livery_Name": "myAustrian",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "2015",
+    "End_Year": "2018",
+    "Aircraft_Type": "A321|A320|E195|B767|B777",
+    "Example_Reg": "OE-LBC",
+    "Notes": "Markenrefresh 2015 mit „myAustrian“-Schriftzug, Entfernung des blauen Unterrumpfs und rote Triebwerke mit „austrian.com“-Logo. Weiß-rotes Erscheinungsbild mit modernisiertem Branding, Übergangsdesign vor dem 2018er-Corporate-Refresh.",
+    "Source_URL": "",
+    "Photo_URL": ""
   }
 }

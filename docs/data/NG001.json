@@ -73,5 +73,20 @@
     "Wingspan": "60,9",
     "Height": "18,5",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_777#Boeing_777-200"
+  },
+  "livery_full": {
+    "Airline": "Lauda Air",
+    "Operator": "Lauda Air",
+    "Livery_ID": "LDA-1990-CLASSIC",
+    "Livery_Name": "Lauda Air Red Ribbon Classic",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1990",
+    "End_Year": "2000",
+    "Aircraft_Type": "B737|B767",
+    "Example_Reg": "OE-LAX",
+    "Notes": "Ikonische Lauda-„Red Ribbon“-Livery mit hellgrauem oberen Rumpf, rotem diagonalem Band am Heck und silber-metallischer Unterseite. Der Cockpitbereich ist im gleichen Hellgrau gehalten wie der obere Rumpf. Großes rotes „Lauda“-Logo ohne Kontur und goldene geflügelte Figur („Golden Bird“) auf dem Rumpf. Markantes, elegantes Erscheinungsbild der 1990er-Jahre – internationales Flaggschiff-Design der Lauda Air.",
+    "Source_URL": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er",
+    "Photo_URL": ""
   }
 }

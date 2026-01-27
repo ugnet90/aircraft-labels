@@ -73,5 +73,20 @@
     "Wingspan": "28,47",
     "Height": "8,38",
     "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_DC-9#DC-9-30"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-1980-REDARROW",
+    "Livery_Name": "Red Arrow",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1980",
+    "End_Year": "1988",
+    "Aircraft_Type": "DC-9|MD-80|A310",
+    "Example_Reg": "OE-LDA",
+    "Notes": "Corporate Design der 1980er-Jahre: weißer Rumpf mit großem roten, nach vorne zeigenden Pfeil auf Höhe der Fensterreihe und „AUSTRIAN“ in Großbuchstaben davor. Rot-weiß-rotes Leitwerk ohne Chevron, Unterrumpf metallisch-silbern. Markantes Erscheinungsbild der späten 70er- und frühen 80er-Jahre vor Einführung des Chevron-Tails 1988.",
+    "Source_URL": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
+    "Photo_URL": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32"
   }
 }

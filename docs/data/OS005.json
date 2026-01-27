@@ -73,5 +73,20 @@
     "Wingspan": "60,3",
     "Height": "16,7",
     "Wiki": "https://de.wikipedia.org/wiki/Airbus_A340#A340-200"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-1995-ARROWSTRIPE",
+    "Livery_Name": "Arrow Stripe / Flag Tail",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "AUA-1988-CHEVRON",
+    "Start_Year": "1995",
+    "End_Year": "2003",
+    "Aircraft_Type": "A320|A321|A310|MD-80|B767|B777",
+    "Example_Reg": "OE-LAA",
+    "Notes": "Corporate-Design 1995 mit großem „AUSTRIAN AIRLINES“-Schriftzug oberhalb der Fenster, rotem Arrow davor und blau-grün verlaufender Linie unterhalb der Fenster. Weißer Unterrumpf, Leitwerk rot-weiß-rot mit rotem Arrow im weißen Feld. Symbolisierte die dynamische Modernisierung der AUA in den 1990er-Jahren.",
+    "Source_URL": "https://de.wikipedia.org/wiki/Austrian_Airlines#Corporate_Design",
+    "Photo_URL": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211"
   }
 }

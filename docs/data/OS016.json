@@ -73,5 +73,20 @@
     "Wingspan": "34,1",
     "Height": "11,76",
     "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321#A321-100"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-1996-1000YEARS",
+    "Livery_Name": "1000 Jahre Österreich",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "AUA-1995-ARROWSTRIPE",
+    "Start_Year": "1996",
+    "End_Year": "1997",
+    "Aircraft_Type": "A321",
+    "Example_Reg": "OE-LBB",
+    "Notes": "Jubiläums Sonderbemalung 1000 Jahre Österreich auf Basis des Arrowstripe Designs goldene Schriftzüge und zusätzliche Grafiken am Heck trug ausschließlich OE LBB",
+    "Source_URL": "",
+    "Photo_URL": "https://www.planespotters.net/photo/355580/oe-lbb-austrian-airlines-airbus-a321-111"
   }
 }

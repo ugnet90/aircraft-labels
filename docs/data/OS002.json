@@ -73,5 +73,20 @@
     "Wingspan": "34,1",
     "Height": "11,76",
     "Wiki": "https://de.wikipedia.org/wiki/Airbus_A321#A321-100"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-1999-STRAUSS",
+    "Livery_Name": "Johann Strauss",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "AUA-1995-ARROWSTRIPE",
+    "Start_Year": "1999",
+    "End_Year": "2002",
+    "Aircraft_Type": "A321",
+    "Example_Reg": "OE-LBB",
+    "Notes": "Sonderbemalung mit Schriftzug Johann Strauss und Abbildung der goldenen Strauss Statue auf der Heckflosse basierend auf Arrowstripe",
+    "Source_URL": "",
+    "Photo_URL": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111"
   }
 }

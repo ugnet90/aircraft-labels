@@ -73,5 +73,20 @@
     "Wingspan": "60,9",
     "Height": "18,5",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_777#Boeing_777-200"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-2003-BLUEBELLY",
+    "Livery_Name": "Blue Belly / Red Arrow",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "2003",
+    "End_Year": "2015",
+    "Aircraft_Type": "A320|A321|B737|B767|B777",
+    "Example_Reg": "OE-LBU",
+    "Notes": "Corporate-Design 2003 mit hellblauem Unterrumpf und blau lackierten Triebwerken. Modernisierter Schriftzug und klarer Red-Arrow-Look, später durch weiß-rotes Design 2015 ersetzt.",
+    "Source_URL": "https://thedesignair.net/2015/03/30/austrian-airlines-launches-new-livery-and-new-brand-direction/",
+    "Photo_URL": "https://www.jetphotos.com/photo/8846235/oe-lbu-austrian-airlines-boeing-767-3z9er"
   }
 }

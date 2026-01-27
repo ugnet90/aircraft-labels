@@ -73,5 +73,20 @@
     "Wingspan": "28,08",
     "Height": "8,5",
     "Wiki": "https://de.wikipedia.org/wiki/Fokker_100"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-2008-FOOTBALL",
+    "Livery_Name": "ÖFB / UEFA Euro 2008",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "AUA-2003-BLUEBELLY",
+    "Start_Year": "2008",
+    "End_Year": "2008",
+    "Aircraft_Type": "F100",
+    "Example_Reg": "OE-LVK",
+    "Notes": "Sonderbemalung anlässlich der UEFA Euro 2008 in Österreich und der Partnerschaft mit dem Österreichischen Fußball-Bund (ÖFB). Weiß-roter Rumpf mit großem roten Fußballsymbol und Schriftzug „ÖFB – Botschafter der Leidenschaft“. Unterrumpf in Austrian-typischem Hellblau (Bluebelly-Stil), Standardleitwerk rot-weiß-rot mit Austrian-Arrow. Eingesetzt von Austrian Arrows (Tyrolean Airways).",
+    "Source_URL": "https://www.planespotters.net/photo/67309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
+    "Photo_URL": ""
   }
 }

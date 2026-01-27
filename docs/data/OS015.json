@@ -73,5 +73,20 @@
     "Wingspan": "60,3",
     "Height": "16,7",
     "Wiki": "https://de.wikipedia.org/wiki/Airbus_A340#A340-300"
+  },
+  "livery_full": {
+    "Airline": "Austrian Airlines",
+    "Operator": "Austrian Airlines",
+    "Livery_ID": "AUA-2006-PHILHARMONIKER",
+    "Livery_Name": "Wiener Philharmoniker",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "AUA-2003-BLUEBELLY",
+    "Start_Year": "2006",
+    "End_Year": "2007",
+    "Aircraft_Type": "A340",
+    "Example_Reg": "OE-LAL",
+    "Notes": "Sonderbemalung mit goldener Instrumenten Grafik und Schriftzug Wiener Philharmoniker auf blauem Unterrumpf und weißem Oberrumpf Triebwerke weiterhin blau lackiert",
+    "Source_URL": "",
+    "Photo_URL": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313"
   }
 }
