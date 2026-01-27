@@ -251,6 +251,7 @@ def main() -> int:
             "livery_name": livery,
             "arrived": angekommen_iso,
             "scale": scale_final,   # <- neu
+            "flown": eigenfluege,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
