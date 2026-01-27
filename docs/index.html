@@ -105,11 +105,14 @@
       if(!key) continue;
       if(!map.has(key)) map.set(key, labelFn(it));
     }
-    const keys = Array.from(map.keys()).sort((a,b)=> String(a).localeCompare(String(b)));
-    for(const k of keys){
+  
+    const pairs = Array.from(map.entries()); // [key, label]
+    pairs.sort((a,b)=> String(a[1]).localeCompare(String(b[1]))); // nach Label
+  
+    for(const [k, label] of pairs){
       const opt = document.createElement("option");
       opt.value = k;
-      opt.textContent = map.get(k);
+      opt.textContent = label;
       sel.appendChild(opt);
     }
   }
