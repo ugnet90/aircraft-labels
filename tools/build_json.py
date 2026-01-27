@@ -256,6 +256,10 @@ def main() -> int:
         with open(os.path.join(OUT_DIR, fn), "w", encoding="utf-8") as f:
             json.dump(out, f, ensure_ascii=False, indent=2)
 
+        livery_pretty = ""
+        if livery_full:
+            livery_pretty = (livery_full.get("Livery_Name", "") or "").strip()
+        
         index_list.append({
             "model_id": model_id,
             "airline_code": airline_code,
@@ -263,9 +267,10 @@ def main() -> int:
             "aircraft_id": aircraft_id,
             "aircraft_type": aircraft_type,
             "registration": registration,
-            "livery_name": livery,
+            "livery_name": livery,                 # Code behalten (für Debug/Referenz)
+            "livery_display": livery_pretty or livery,  # <-- neu: Anzeige
             "arrived": angekommen_iso,
-            "scale": scale_final,   # <- neu
+            "scale": scale_final,
             "flown": eigenfluege,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
