@@ -52,6 +52,13 @@
     return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   }
 
+  function firstNonEmpty(...vals){
+    for(const v of vals){
+      if(v !== undefined && v !== null && String(v).trim() !== "") return String(v).trim();
+    }
+    return "";
+  }
+  
   function scaleBadge(scale){
     const s = String(scale ?? "").trim();
     if(!s) return "";
@@ -227,9 +234,38 @@
     return html;
   }
 
-
+  function extractFirstHttpUrl(text){
+    const s = String(text ?? "").trim();
+    if(!s) return { prefix: "", url: "" };
+  
+    const m = s.match(/https?:\/\/\S+/i);
+    if(!m) return { prefix: s, url: "" };
+  
+    const url = m[0];
+    const prefix = s.replace(url, "").trim().replace(/[;,:]$/, "").trim();
+    return { prefix, url };
+  }
+  
+  function linkOrTextRow(label, raw){
+    const s = String(raw ?? "").trim();
+    if(!s) return "";
+    const { prefix, url } = extractFirstHttpUrl(s);
+  
+    if(!url){
+      // kein http -> reiner Text
+      return row(label, s);
+    }
+  
+    // url vorhanden -> prefix als Text (wenn vorhanden) + url als Link
+    const safeUrl = esc(url);
+    const prefixHtml = prefix ? `${esc(prefix)}<br>` : "";
+    return rowHtml(label, `${prefixHtml}<a href="${safeUrl}" target="_blank" rel="noopener">${safeUrl}</a>`);
+  }
+  
   async function main(){
     const id = qs("id");
+    const pill = document.getElementById("idpill");
+    if(pill) pill.style.display = "none";
     document.getElementById("idpill").textContent = id ? `id=${id}` : "id=?";
 
     if(!id){
@@ -285,18 +321,30 @@
           <div class="grid" style="margin-top:8px">
             ${row("Flugzeugtyp", typ)}
             ${row("Registrierung", reg)}
-            ${row("aircraft_id", d.aircraft_id || d.aircraft?.aircraft_id || "")}
           </div>
         </div>
       `;
 
+      const liveryName = firstNonEmpty(
+        d.livery_full?.Bemalung,
+        d.livery_full?.Livery_Name,
+        d.livery_full?.livery_name,
+        d.livery_full?.name
+      );
+      
+      const liveryNotes = firstNonEmpty(
+        d.livery_full?.Erläuterung,
+        d.livery_full?.Notes,
+        d.livery_full?.notes,
+        d.livery_full?.description
+      );
+      
       const liveryBlock = `
         <div class="card">
           <div class="k">Bemalung</div>
           <div class="grid" style="margin-top:8px">
-            ${row("Code", livery)}
-            ${row("Parent", d.parent_livery || d.livery?.parent || "")}
-            ${row("Notizen", d.zusatzinfo || d.livery?.notes || "")}
+            ${row("Bemalung", liveryName || "")}
+            ${row("Erläuterung", liveryNotes || "")}
           </div>
         </div>
       `;
@@ -305,12 +353,13 @@
         <div class="card">
           <div class="k">Links</div>
           <div class="grid" style="margin-top:8px">
-            ${linkRow("Postkarte", d.postcard || d.links?.postcard || "")}
+            ${linkOrTextRow("Postkarte", d.postcard || d.links?.postcard || "")}
             ${row("Preis Postkarte", money(d.postcard_price || ""))}
-            ${linkRow("Foto", d.photo || d.links?.photo || "")}
+            ${linkOrTextRow("Foto", d.photo || d.links?.photo || "")}
           </div>
         </div>
       `;
+      
       // Optional: show raw source pointer
       const src = d.source ? `(${d.source.sheet || ""} #${d.source.row || ""})` : "";
       const sourceBlock = src ? `<div class="muted">Quelle: ${esc(src)}</div>` : "";
