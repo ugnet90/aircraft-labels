@@ -24,6 +24,8 @@
     table{width:100%;border-collapse:collapse}
     td{padding:6px 6px;border-bottom:1px solid #eee;vertical-align:top}
     td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+    .badge{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
+    .badge-warn{border-color:#c00;background:#fff5f5}
   </style>
 </head>
 <body>
@@ -50,6 +52,14 @@
     return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   }
 
+  function scaleBadge(scale){
+    const s = String(scale ?? "").trim();
+    if(!s) return "";
+    const isSpecial = (s !== "1:400");
+    const cls = isSpecial ? "badge badge-warn mono" : "badge mono";
+    return `<span class="${cls}">${esc(s)}</span>`;
+  }
+  
   function row(k,v){
     if(v === undefined || v === null || v === "") return "";
     return `<div><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`;
@@ -245,7 +255,7 @@
             ${row("Preis", money(d.price ?? d.model?.price))}
             ${row("Versand (anteilig)", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
-            ${row("Eigenflüge", boolBadge(d.flown ?? d.model?.flown))}
+            ${row("Mitgeflogen", boolBadge(d.flown ?? d.model?.flown))}
             ${row("Besonderheit", d.special_note || d.model?.special_note || "")}
           </div>
         </div>
