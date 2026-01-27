@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-27T12:02:07Z",
+  "generated_at": "2026-01-27T12:14:38Z",
   "count": 153,
   "counts_by_airline_code": {
     "OS": 20,
@@ -31,6 +31,7 @@
       "aircraft_type": "Airbus A320-200",
       "registration": "D-ABDQ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null
@@ -43,6 +44,7 @@
       "aircraft_type": "Boeing 757-200",
       "registration": "HB-IHR",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -55,6 +57,7 @@
       "aircraft_type": "Boeing 737-800 (Winglets)",
       "registration": "D-ABAF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-23",
       "scale": "1:400",
       "flown": null
@@ -67,6 +70,7 @@
       "aircraft_type": "Airbus A318-100",
       "registration": "F-GUGD",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -79,6 +83,7 @@
       "aircraft_type": "Boeing 777-300ER",
       "registration": "F-GSQB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -91,6 +96,7 @@
       "aircraft_type": "Embraer ERJ-170",
       "registration": "F-HBXE",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -103,6 +109,7 @@
       "aircraft_type": "Douglas DC-8-40",
       "registration": "I-DIWA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -115,6 +122,7 @@
       "aircraft_type": "Aérospatiale/BAC Concorde",
       "registration": "G-BOAD",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -127,6 +135,7 @@
       "aircraft_type": "Shorts 360",
       "registration": "G-BNYI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-10",
       "scale": "1:400",
       "flown": null
@@ -139,6 +148,7 @@
       "aircraft_type": "Saab 340",
       "registration": "G-LGNB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -151,6 +161,7 @@
       "aircraft_type": "Boeing 787-8 Dreamliner",
       "registration": "G-ZBJG",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -163,6 +174,7 @@
       "aircraft_type": "British Aerospace 146-200",
       "registration": "G-GNTZ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -175,6 +187,7 @@
       "aircraft_type": "BAC 1-11 Series 400",
       "registration": "G-AVOE",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -187,6 +200,7 @@
       "aircraft_type": "Hawker Siddeley HS-121 Trident 3",
       "registration": "G-AWZN",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -199,6 +213,7 @@
       "aircraft_type": "Bristol 175 Britannia 312",
       "registration": "G-AOVK",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -211,6 +226,7 @@
       "aircraft_type": "BAC Vickers VC-10 Super",
       "registration": "G-ASGH",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -223,6 +239,7 @@
       "aircraft_type": "Airbus A220-300",
       "registration": "YL-AAU",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-10",
       "scale": "1:400",
       "flown": true
@@ -235,6 +252,7 @@
       "aircraft_type": "Boeing 757-200 (Winglets)",
       "registration": "TF-ISF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -247,6 +265,7 @@
       "aircraft_type": "Boeing 737-800",
       "registration": "D-AHFC",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-23",
       "scale": "1:400",
       "flown": null
@@ -259,6 +278,7 @@
       "aircraft_type": "Boeing 737-700",
       "registration": "D-AGEP",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -271,6 +291,7 @@
       "aircraft_type": "Airbus A300B4",
       "registration": "D-AHLA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -283,6 +304,7 @@
       "aircraft_type": "Douglas DC-8-53",
       "registration": "PH-DCI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null
@@ -295,6 +317,7 @@
       "aircraft_type": "McDonnell Douglas MD-11",
       "registration": "PH-KCA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null
@@ -307,6 +330,7 @@
       "aircraft_type": "Boeing 747-400",
       "registration": "PH-BFH",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null
@@ -319,6 +343,7 @@
       "aircraft_type": "Lockheed L-188 Electra",
       "registration": "PH-LLD",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-14",
       "scale": "1:400",
       "flown": null
@@ -331,6 +356,7 @@
       "aircraft_type": "BAC 1-11 Series 300",
       "registration": "G-ATPJ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-23",
       "scale": "1:400",
       "flown": null
@@ -343,6 +369,7 @@
       "aircraft_type": "McDonnell Douglas DC-10-30",
       "registration": "PH-DTA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-23",
       "scale": "1:400",
       "flown": null
@@ -355,6 +382,7 @@
       "aircraft_type": "Douglas DC-7C Seven Seas",
       "registration": "PH-DSG",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-30",
       "scale": "1:400",
       "flown": null
@@ -367,6 +395,7 @@
       "aircraft_type": "Douglas DC-8-63",
       "registration": "PH-DEF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-14",
       "scale": "1:400",
       "flown": null
@@ -379,6 +408,7 @@
       "aircraft_type": "Boeing 767-300ER Extended Range",
       "registration": "PH-BZJ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -391,6 +421,7 @@
       "aircraft_type": "Airbus A320-200 (Sharklets)",
       "registration": "D-AIZP",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -403,6 +434,7 @@
       "aircraft_type": "Boeing 707-330B",
       "registration": "D-ABUC",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -415,6 +447,7 @@
       "aircraft_type": "Boeing 747-8",
       "registration": "D-ABYT",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -427,6 +460,7 @@
       "aircraft_type": "Airbus A380-800",
       "registration": "D-AIMA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -439,6 +473,7 @@
       "aircraft_type": "Lockheed L-1049G Super Constellation",
       "registration": "D-ALEM",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -451,6 +486,7 @@
       "aircraft_type": "Airbus A350-900",
       "registration": "D-AIVD",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -463,6 +499,7 @@
       "aircraft_type": "Boeing 737-200",
       "registration": "D-ABHX",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -475,6 +512,7 @@
       "aircraft_type": "Fokker F27-400 Friendship",
       "registration": "D-BARI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -487,6 +525,7 @@
       "aircraft_type": "Airbus A300B2",
       "registration": "D-AIAA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -499,6 +538,7 @@
       "aircraft_type": "Boeing 747-400",
       "registration": "D-ABVW",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -511,6 +551,7 @@
       "aircraft_type": "Airbus A321-100",
       "registration": "D-AIRX",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": true
@@ -523,6 +564,7 @@
       "aircraft_type": "Fokker 50",
       "registration": "D-AFFZ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-16",
       "scale": "1:400",
       "flown": null
@@ -535,6 +577,7 @@
       "aircraft_type": "Airbus A330-300",
       "registration": "D-AIKO",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-20",
       "scale": "1:400",
       "flown": null
@@ -547,6 +590,7 @@
       "aircraft_type": "Airbus A340-300",
       "registration": "D-AIGF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null
@@ -559,6 +603,7 @@
       "aircraft_type": "Boeing 737-400",
       "registration": "D-ABKB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null
@@ -571,6 +616,7 @@
       "aircraft_type": "Lockheed L-1649A Starliner",
       "registration": "D-ALUB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-14",
       "scale": "1:400",
       "flown": null
@@ -583,6 +629,7 @@
       "aircraft_type": "Junkers Ju 52/3m",
       "registration": "D-AQUI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-05",
       "scale": "1:400",
       "flown": null
@@ -595,6 +642,7 @@
       "aircraft_type": "Boeing 727-100",
       "registration": "D-ABIB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-08",
       "scale": "1:400",
       "flown": null
@@ -607,6 +655,7 @@
       "aircraft_type": "Airbus A340-600",
       "registration": "D-AIHN",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -619,6 +668,7 @@
       "aircraft_type": "Boeing 737-300",
       "registration": "D-ABEE",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -631,6 +681,7 @@
       "aircraft_type": "Boeing 737-500",
       "registration": "D-ABIR",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -643,6 +694,7 @@
       "aircraft_type": "Bombardier CRJ-200",
       "registration": "D-ACJH",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -655,6 +707,7 @@
       "aircraft_type": "Bombardier CRJ-900",
       "registration": "D-ACND",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -667,6 +720,7 @@
       "aircraft_type": "Boeing 720",
       "registration": "D-ABOH",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-24",
       "scale": "1:400",
       "flown": null
@@ -679,6 +733,7 @@
       "aircraft_type": "Vickers Viscount 814",
       "registration": "D-ANUN",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-24",
       "scale": "1:400",
       "flown": null
@@ -691,6 +746,7 @@
       "aircraft_type": "Airbus A321 neo",
       "registration": "D-AIEP",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -703,6 +759,7 @@
       "aircraft_type": "Boeing 747-100",
       "registration": "D-ABYA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-13",
       "scale": "1:400",
       "flown": null
@@ -715,6 +772,7 @@
       "aircraft_type": "Airbus A321 neo",
       "registration": "D-AIEQ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -727,6 +785,7 @@
       "aircraft_type": "Boeing 747-200F",
       "registration": "D-ABZF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -739,6 +798,7 @@
       "aircraft_type": "McDonnell Douglas MD-11F",
       "registration": "D-ALCN",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -751,6 +811,7 @@
       "aircraft_type": "British Aerospace Avro RJ100",
       "registration": "HB-IXU",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -763,6 +824,7 @@
       "aircraft_type": "Airbus A321-200 (Sharklets)",
       "registration": "HB-ION",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -775,6 +837,7 @@
       "aircraft_type": "Airbus A220-100",
       "registration": "C-GWXZ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null
@@ -787,6 +850,7 @@
       "aircraft_type": "McDonnell Douglas MD-81",
       "registration": "HB-IND",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-15",
       "scale": "1:400",
       "flown": null
@@ -799,6 +863,7 @@
       "aircraft_type": "Airbus A320-200",
       "registration": "HB-IJM",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null
@@ -811,6 +876,7 @@
       "aircraft_type": "Airbus A220-300",
       "registration": "HB-JCA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-08",
       "scale": "1:400",
       "flown": null
@@ -823,6 +889,7 @@
       "aircraft_type": "Boeing 777-300ER",
       "registration": "HB-JNA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-08",
       "scale": "1:400",
       "flown": null
@@ -835,6 +902,7 @@
       "aircraft_type": "McDonnell Douglas MD-11",
       "registration": "HB-IWI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-08",
       "scale": "1:400",
       "flown": null
@@ -847,6 +915,7 @@
       "aircraft_type": "Airbus A320-200",
       "registration": "HB-IJD",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null
@@ -859,6 +928,7 @@
       "aircraft_type": "Convair CV-990 Coronado",
       "registration": "HB-ICC",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null
@@ -871,6 +941,7 @@
       "aircraft_type": "Airbus A321-100",
       "registration": "HB-IOH",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -883,6 +954,7 @@
       "aircraft_type": "Airbus A320neo",
       "registration": "HB-JDC",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -895,6 +967,7 @@
       "aircraft_type": "Convair CV-880 Golden Arrow",
       "registration": "HB-ICL",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -907,6 +980,7 @@
       "aircraft_type": "Airbus A310-200",
       "registration": "HB-IPA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -919,6 +993,7 @@
       "aircraft_type": "Boeing 747-200",
       "registration": "HB-IGB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -931,6 +1006,7 @@
       "aircraft_type": "Douglas DC-8-53",
       "registration": "HB-IDB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -943,6 +1019,7 @@
       "aircraft_type": "Boeing 777-200",
       "registration": "OE-LPA",
       "livery_name": "LDA-1990-CLASSIC",
+      "livery_display": "Lauda Air Red Ribbon Classic",
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null
@@ -955,6 +1032,7 @@
       "aircraft_type": "Boeing 737-600",
       "registration": "OE-LNM",
       "livery_name": "LDA-2004-TIROL",
+      "livery_display": "Tirol Special",
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null
@@ -967,6 +1045,7 @@
       "aircraft_type": "Airbus A320-200",
       "registration": "OE-LEA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null
@@ -979,6 +1058,7 @@
       "aircraft_type": "Airbus A319-100",
       "registration": "OE-LDE",
       "livery_name": "AUA-2015-MYAUA",
+      "livery_display": "myAustrian",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -991,6 +1071,7 @@
       "aircraft_type": "Airbus A321-100",
       "registration": "OE-LBB",
       "livery_name": "AUA-1999-STRAUSS",
+      "livery_display": "Johann Strauss",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -1003,6 +1084,7 @@
       "aircraft_type": "Fokker 100",
       "registration": "OE-LVK",
       "livery_name": "AUA-2008-FOOTBALL",
+      "livery_display": "ÖFB / UEFA Euro 2008",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1015,6 +1097,7 @@
       "aircraft_type": "Boeing 737-600",
       "registration": "OE-LNL",
       "livery_name": "AUA-2003-BLUEBELLY",
+      "livery_display": "Blue Belly / Red Arrow",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1027,6 +1110,7 @@
       "aircraft_type": "Airbus A340-200",
       "registration": "OE-LAG",
       "livery_name": "AUA-1995-ARROWSTRIPE",
+      "livery_display": "Arrow Stripe / Flag Tail",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1039,6 +1123,7 @@
       "aircraft_type": "Sud Aviation SE 210 Caravelle VI-R",
       "registration": "OE-LCA",
       "livery_name": "AUA-1960-CLASSIC",
+      "livery_display": "Classic / Red-White-Red",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1051,6 +1136,7 @@
       "aircraft_type": "Airbus A330-200",
       "registration": "OE-LAN",
       "livery_name": "AUA-2003-BLUEBELLY",
+      "livery_display": "Blue Belly / Red Arrow",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1063,6 +1149,7 @@
       "aircraft_type": "De Havilland Canada DHC-8-400",
       "registration": "OE-LGI",
       "livery_name": "AUA-2003-BLUEBELLY",
+      "livery_display": "Blue Belly / Red Arrow",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1075,6 +1162,7 @@
       "aircraft_type": "Boeing 777-200",
       "registration": "OE-LPD",
       "livery_name": "AUA-2003-BLUEBELLY",
+      "livery_display": "Blue Belly / Red Arrow",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1087,6 +1175,7 @@
       "aircraft_type": "Airbus A320-200",
       "registration": "OE-LBP",
       "livery_name": "AUA-1997-QUALIFLYER",
+      "livery_display": "Qualiflyer Alliance",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -1099,6 +1188,7 @@
       "aircraft_type": "Boeing 737-800 (Winglets)",
       "registration": "OE-LNT",
       "livery_name": "AUA-2003-STARALLIANCE",
+      "livery_display": "Star Alliance",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1111,6 +1201,7 @@
       "aircraft_type": "Hawker-Siddeley HS-748",
       "registration": "OE-LHT",
       "livery_name": "AUA-1960-CLASSIC",
+      "livery_display": "Classic / Red-White-Red",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1123,6 +1214,7 @@
       "aircraft_type": "Douglas DC-9-30",
       "registration": "OE-LDA",
       "livery_name": "AUA-1980-REDARROW",
+      "livery_display": "Red Arrow",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1135,6 +1227,7 @@
       "aircraft_type": "Douglas DC-9-50",
       "registration": "OE-LDL",
       "livery_name": "AUA-1980-REDARROW",
+      "livery_display": "Red Arrow",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1147,6 +1240,7 @@
       "aircraft_type": "Airbus A340-300",
       "registration": "OE-LAL",
       "livery_name": "AUA-2006-PHILHARMONIKER",
+      "livery_display": "Wiener Philharmoniker",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1159,6 +1253,7 @@
       "aircraft_type": "Airbus A321-100",
       "registration": "OE-LBB",
       "livery_name": "AUA-1996-1000YEARS",
+      "livery_display": "1000 Jahre Österreich",
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": true
@@ -1171,6 +1266,7 @@
       "aircraft_type": "Boeing 787-9 Dreamliner",
       "registration": "OE-LPM",
       "livery_name": "AUA-2018-NEW",
+      "livery_display": "New Austrian",
       "arrived": "2025-06-16",
       "scale": "1:400",
       "flown": null
@@ -1183,6 +1279,7 @@
       "aircraft_type": "Boeing 767-300",
       "registration": "OE-LAW",
       "livery_name": "AUA-2018-NEW",
+      "livery_display": "New Austrian",
       "arrived": "2025-06-20",
       "scale": "1:400",
       "flown": null
@@ -1195,6 +1292,7 @@
       "aircraft_type": "Fokker 70",
       "registration": "OE-LFG",
       "livery_name": "AUA-2003-STARALLIANCE-LOGOSTRIP",
+      "livery_display": "Star Alliance Member Logos",
       "arrived": "2025-07-02",
       "scale": "1:400",
       "flown": null
@@ -1207,6 +1305,7 @@
       "aircraft_type": "Vickers Viscount 837",
       "registration": "OE-LAM",
       "livery_name": "AUA-1959-CHEATLINE",
+      "livery_display": "Early Cheatline",
       "arrived": "2026-01-16",
       "scale": "1:400",
       "flown": null
@@ -1219,6 +1318,7 @@
       "aircraft_type": "Boeing 747SP",
       "registration": "N533PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1231,6 +1331,7 @@
       "aircraft_type": "Boeing 737-400",
       "registration": "N406KW",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1243,6 +1344,7 @@
       "aircraft_type": "Boeing 377 Stratocruiser",
       "registration": "N1025V",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-08",
       "scale": "1:400",
       "flown": null
@@ -1255,6 +1357,7 @@
       "aircraft_type": "Boeing 727-200",
       "registration": "N365PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null
@@ -1267,6 +1370,7 @@
       "aircraft_type": "McDonnell Douglas DC-10-10",
       "registration": "N61NA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": null
@@ -1279,6 +1383,7 @@
       "aircraft_type": "Lockheed L-1011 TriStar 500",
       "registration": "N514PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": null
@@ -1291,6 +1396,7 @@
       "aircraft_type": "Boeing 737-200",
       "registration": "N67AF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-10",
       "scale": "1:400",
       "flown": null
@@ -1303,6 +1409,7 @@
       "aircraft_type": "Airbus A310-300",
       "registration": "N818PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-18",
       "scale": "1:400",
       "flown": null
@@ -1315,6 +1422,7 @@
       "aircraft_type": "Douglas DC-4",
       "registration": "N88886",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-04",
       "scale": "1:400",
       "flown": null
@@ -1327,6 +1435,7 @@
       "aircraft_type": "Douglas DC-4",
       "registration": "N88934",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-04",
       "scale": "1:400",
       "flown": null
@@ -1339,6 +1448,7 @@
       "aircraft_type": "Douglas DC-8-62",
       "registration": "N1803",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-07",
       "scale": "1:400",
       "flown": null
@@ -1351,6 +1461,7 @@
       "aircraft_type": "Boeing 747-100",
       "registration": "N4704U",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-26",
       "scale": "1:400",
       "flown": null
@@ -1363,6 +1474,7 @@
       "aircraft_type": "Boeing 707-320",
       "registration": "N412PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-09",
       "scale": "1:400",
       "flown": null
@@ -1375,6 +1487,7 @@
       "aircraft_type": "Boeing 720",
       "registration": "N783PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-15",
       "scale": "1:400",
       "flown": null
@@ -1387,6 +1500,7 @@
       "aircraft_type": "Lockheed L-049 Constallation",
       "registration": "NC88831",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-21",
       "scale": "1:400",
       "flown": null
@@ -1399,6 +1513,7 @@
       "aircraft_type": "Convair CV-240 Convairliner",
       "registration": "N90671",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-05",
       "scale": "1:400",
       "flown": null
@@ -1411,6 +1526,7 @@
       "aircraft_type": "Curtiss-Wright C-46 Commando",
       "registration": "N67980",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-08-08",
       "scale": "1:400",
       "flown": null
@@ -1423,6 +1539,7 @@
       "aircraft_type": "Douglas DC-8-30",
       "registration": "N809PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null
@@ -1435,6 +1552,7 @@
       "aircraft_type": "Airbus A300B4",
       "registration": "N207PA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-10",
       "scale": "1:400",
       "flown": null
@@ -1447,6 +1565,7 @@
       "aircraft_type": "McDonnell Douglas DC-10-30",
       "registration": "N83NA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -1459,6 +1578,7 @@
       "aircraft_type": "Bombardier CRJ-900",
       "registration": "ES-ACG",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -1471,6 +1591,7 @@
       "aircraft_type": "Airbus A320-200",
       "registration": "OY-KAR",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-22",
       "scale": "1:400",
       "flown": true
@@ -1483,6 +1604,7 @@
       "aircraft_type": "Boeing 737-700 (Winglets)",
       "registration": "SE-RJX",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null
@@ -1495,6 +1617,7 @@
       "aircraft_type": "McDonnell Douglas MD-82",
       "registration": "OY-KHR",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null
@@ -1507,6 +1630,7 @@
       "aircraft_type": "McDonnell Douglas MD-87",
       "registration": "OY-KHF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-06",
       "scale": "1:400",
       "flown": null
@@ -1519,6 +1643,7 @@
       "aircraft_type": "Airbus A319-100",
       "registration": "OY-KBO",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-23",
       "scale": "1:400",
       "flown": null
@@ -1531,6 +1656,7 @@
       "aircraft_type": "Vickers Viscount 779 (Austrian)",
       "registration": "OE-LAB",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-26",
       "scale": "1:500",
       "flown": null
@@ -1543,6 +1669,7 @@
       "aircraft_type": "Boeing 314 Clipper (Pan Am)",
       "registration": "NC18605",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-02",
       "scale": "1:350",
       "flown": null
@@ -1555,6 +1682,7 @@
       "aircraft_type": "Dornier Do X (Lufthansa)",
       "registration": "D-1929",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-10",
       "scale": "1:350",
       "flown": null
@@ -1567,6 +1695,7 @@
       "aircraft_type": "",
       "registration": "UR-82060",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1579,6 +1708,7 @@
       "aircraft_type": "",
       "registration": "F-GSTC",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1591,6 +1721,7 @@
       "aircraft_type": "",
       "registration": "4X-AVF",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1603,6 +1734,7 @@
       "aircraft_type": "",
       "registration": "28000",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1615,6 +1747,7 @@
       "aircraft_type": "",
       "registration": "F-BTGV",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-08",
       "scale": "1:400",
       "flown": null
@@ -1627,6 +1760,7 @@
       "aircraft_type": "",
       "registration": "10+21",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": null
@@ -1639,6 +1773,7 @@
       "aircraft_type": "",
       "registration": "A-703",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-05-27",
       "scale": "1:400",
       "flown": null
@@ -1651,6 +1786,7 @@
       "aircraft_type": "",
       "registration": "N348MS",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-26",
       "scale": "1:400",
       "flown": null
@@ -1663,6 +1799,7 @@
       "aircraft_type": "",
       "registration": "46-0505",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-07-23",
       "scale": "1:400",
       "flown": null
@@ -1675,6 +1812,7 @@
       "aircraft_type": "",
       "registration": "OK-GLI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-27",
       "scale": "1:400",
       "flown": null
@@ -1687,6 +1825,7 @@
       "aircraft_type": "",
       "registration": "30000",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-10-27",
       "scale": "1:400",
       "flown": null
@@ -1699,6 +1838,7 @@
       "aircraft_type": "",
       "registration": "O-76671",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null
@@ -1711,6 +1851,7 @@
       "aircraft_type": "",
       "registration": "00-0001",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null
@@ -1723,6 +1864,7 @@
       "aircraft_type": "",
       "registration": "F-GXLI",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -1735,6 +1877,7 @@
       "aircraft_type": "",
       "registration": "OV-102",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null
@@ -1747,6 +1890,7 @@
       "aircraft_type": "",
       "registration": "10+01",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -1759,6 +1903,7 @@
       "aircraft_type": "",
       "registration": "80001",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -1771,6 +1916,7 @@
       "aircraft_type": "",
       "registration": "433939",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null
@@ -1783,6 +1929,7 @@
       "aircraft_type": "",
       "registration": "RY-831",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": null
@@ -1795,6 +1942,7 @@
       "aircraft_type": "",
       "registration": "N767BA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-12-23",
       "scale": "1:400",
       "flown": null
@@ -1807,6 +1955,7 @@
       "aircraft_type": "",
       "registration": "VXN-8",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null
@@ -1819,6 +1968,7 @@
       "aircraft_type": "Airbus A321neo",
       "registration": "CS-TXJ",
       "livery_name": "",
+      "livery_display": "",
       "arrived": null,
       "scale": "1:400",
       "flown": true
@@ -1831,6 +1981,7 @@
       "aircraft_type": "ATR 42-320",
       "registration": "PH-XLD",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null
@@ -1843,6 +1994,7 @@
       "aircraft_type": "Embraer ERJ-145MP",
       "registration": "PH-RXA",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null
@@ -1855,6 +2007,7 @@
       "aircraft_type": "Embraer E195-E2",
       "registration": "PH-NXE",
       "livery_name": "",
+      "livery_display": "",
       "arrived": "2025-06-26",
       "scale": "1:400",
       "flown": null
