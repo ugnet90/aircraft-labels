@@ -83,15 +83,25 @@
     return `${m[3]}.${m[2]}.${m[1]}`;
   }
   
+  // Globale Währungs-Konfiguration
+  const CURRENCY = { symbol: "€", position: "before", space: true };
+  
   function money(v){
+    // Fallback, falls CURRENCY aus irgendeinem Grund nicht global verfügbar ist
+    const CUR = (typeof CURRENCY !== "undefined" && CURRENCY)
+      ? CURRENCY
+      : { symbol: "€", position: "before", space: true };
+  
     if(v === null || v === undefined || v === "") return "";
     const n = Number(v);
     if(!Number.isFinite(n)) return String(v);
+  
     const amount = n.toFixed(2).replace(".", ",");
-    const sp = CURRENCY.space ? " " : "";
-    return CURRENCY.position === "before"
-    ? `${CURRENCY.symbol}${sp}${amount}`
-    : `${amount}${sp}${CURRENCY.symbol}`;
+    const sp = CUR.space ? " " : "";
+  
+    return CUR.position === "before"
+      ? `${CUR.symbol}${sp}${amount}`
+      : `${amount}${sp}${CUR.symbol}`;
   }
 
   function boolBadge(v){
