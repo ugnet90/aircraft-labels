@@ -122,13 +122,28 @@ def main() -> int:
 
     pax_idx = index_by_key(pax_rows, "aircraft_id")
 
+
     # In liveries kann der Schlüssel unterschiedlich heißen; wir versuchen mehrere typische
     liv_key = None
     if liv_rows:
-        for candidate in ("livery_id", "Livery", "livery", "code", "livery_code"):
-            if candidate in liv_rows[0]:
-                liv_key = candidate
-                break
+        header_keys = list(liv_rows[0].keys())
+    
+        # case-insensitive lookup
+        def find_key_ci(candidates):
+            lower_map = {k.lower(): k for k in header_keys}
+            for c in candidates:
+                k = lower_map.get(c.lower())
+                if k:
+                    return k
+            return None
+    
+        liv_key = find_key_ci([
+            "Livery_ID", "livery_id",
+            "LiveryId", "liveryid",
+            "Livery_Code", "livery_code",
+            "Code", "code"
+        ])
+    
     liv_idx = index_by_key(liv_rows, liv_key) if liv_key else {}
 
     index_list = []
