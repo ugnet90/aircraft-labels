@@ -59,6 +59,11 @@
     const cls = isSpecial ? "badge badge-warn mono" : "badge mono";
     return `<span class="${cls}">${esc(s)}</span>`;
   }
+
+  function rowHtml(k, vHtml){
+    if(vHtml === undefined || vHtml === null || vHtml === "") return "";
+    return `<div><div class="k">${esc(k)}</div><div class="v">${vHtml}</div></div>`;
+  }
   
   function row(k,v){
     if(v === undefined || v === null || v === "") return "";
@@ -248,7 +253,7 @@
         <div class="card">
           <div class="k">Modell</div>
           <div class="grid" style="margin-top:8px">
-            ${row("Maßstab", d.model?.scale || "")}
+            ${rowHtml("Maßstab", scaleBadge(d.model?.scale || ""))}
             ${row("Hersteller", d.model?.manufacturer || "")}
             ${row("Artikel-/Modellnummer", d.model?.model_number || "")}
             ${row("Shop", d.shop || d.model?.shop || "")}
