@@ -43,6 +43,19 @@
 </div>
 
 <script>
+  function logoSrc(d){
+    if(!d || !d.logo) return "";
+  
+    const link = String(d.logo.link || "").trim();
+    if(/^https?:\/\//i.test(link)) return link;
+  
+    // optional: lokale Logos (falls du sie später ablegst)
+    const id = String(d.logo.id || "").trim();
+    if(id) return `./assets/logos/${encodeURIComponent(id)}.png`;
+  
+    return "";
+  }
+  
   function qs(name){
     const u = new URL(window.location.href);
     return u.searchParams.get(name);
@@ -288,8 +301,15 @@
 
       const headline = [airline, typ, reg].filter(Boolean).join(" · ") || id;
       document.title = headline;
-      document.getElementById("title").textContent = headline;
-
+      
+      const logoUrl = logoSrc(d);
+      const logoHtml = logoUrl
+        ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:28px;vertical-align:middle;margin-right:10px">`
+        : "";
+      
+      document.getElementById("title").innerHTML =
+        `${logoHtml}${esc(headline)}`;
+      
       const sub = [
         d.model_id ? `Modell-ID: ${d.model_id}` : "",
         d.aircraft_id ? `aircraft_id: ${d.aircraft_id}` : "",
