@@ -47,6 +47,12 @@
     "postcard": "gleiche Kennung, andere Livery; https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
     "photo": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304"
   },
+  "logo": {
+    "id": "HF_HLF",
+    "link": "https://assets.planespotters.net/files/airlines/1/hapag-lloyd_4b7463.png",
+    "name": "Hapag-Lloyd Flug GmbH",
+    "airline": "Hapag-Lloyd"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A300-B4",
     "Typ_anzeige": "Airbus A300 B4",

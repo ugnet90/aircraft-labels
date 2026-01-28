@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/291-lufthansa-traditionsflug-ju-52.html",
     "photo": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "JUN-JU52-3M",
     "Typ_anzeige": "Junkers Ju 3m Tante Ju",

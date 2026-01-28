@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
     "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-787-9",
     "Typ_anzeige": "Boeing 787-9 Dreamliner",

@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "VIC-Viscount-700",
     "Typ_anzeige": "Vickers Viscount 700",

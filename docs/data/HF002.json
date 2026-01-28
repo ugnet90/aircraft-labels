@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
     "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b"
   },
+  "logo": {
+    "id": "X3_HLX",
+    "link": "https://assets.planespotters.net/files/airlines/3/hapag-lloyd-express_137e3c.png",
+    "name": "Hapag-Lloyd Express GmbH",
+    "airline": "Hapag-Lloyd Express"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-700",
     "Typ_anzeige": "Boeing 737-700",

@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-30",
     "Typ_anzeige": "Douglas DC-8-30 Series 30",

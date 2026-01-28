@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
     "photo": "https://www.airhistory.net/photo/575352/D-AIAA"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A300-B2",
     "Typ_anzeige": "Airbus A300 B2",

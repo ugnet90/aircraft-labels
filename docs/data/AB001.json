@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/10314-air-berlin-a320.html",
     "photo": "https://www.planespotters.net/photo/172370/d-abdq-air-berlin-airbus-a320-214"
   },
+  "logo": {
+    "id": "AB_BER",
+    "link": "https://assets.planespotters.net/files/airlines/5/air-berlin_1981f1.svg",
+    "name": "Air Berlin PLC & Co. Luftverkehrs KG",
+    "airline": "Air Berlin"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200",
     "Typ_anzeige": "Airbus A320-200",

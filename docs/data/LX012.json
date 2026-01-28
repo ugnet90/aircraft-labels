@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
     "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-neo",
     "Typ_anzeige": "Airbus A320neo",

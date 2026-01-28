@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
     "photo": "https://www.airhistory.net/photo/12485/G-AOVK"
   },
+  "logo": {
+    "id": "BA_BOA",
+    "link": "https://assets.planespotters.net/files/airlines/1/british-overseas-airways-corporation-boac_2f6258_opk.png",
+    "name": "British Overseas Airways Corporation",
+    "airline": "BOAC"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BRI-Britannia-312",
     "Typ_anzeige": "Bristol Britannia 312",

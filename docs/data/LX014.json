@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4839-swissair-a310.html",
     "photo": "https://www.jetphotos.com/photo/10644669"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A310-200",
     "Typ_anzeige": "Airbus A310-200",

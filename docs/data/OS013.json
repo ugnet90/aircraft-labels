@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
     "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-DC9-30",
     "Typ_anzeige": "McDonnell Douglas DC-9-30",

@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
     "photo": "https://www.jetphotos.com/photo/7533809"
   },
+  "logo": {
+    "id": "4Y_BGA",
+    "link": "https://assets.planespotters.net/files/airlines/7/airbus-transport-international_ab97b7_opk.png",
+    "name": "",
+    "airline": "Airbus Transport International"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "ASP-B377SGT",
     "Typ_anzeige": "Aero Spacelines Super Guppy SGT-201",

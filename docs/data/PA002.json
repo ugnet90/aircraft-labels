@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/18164-pan-am-19968-b737.html",
     "photo": "https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-400",
     "Typ_anzeige": "Boeing 737-400",

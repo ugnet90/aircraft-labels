@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
     "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html"
   },
+  "logo": {
+    "id": "US_UAF",
+    "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
+    "name": "United States Air Force (USAF)",
+    "airline": "United States Air Force"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-747-VC25A",
     "Typ_anzeige": "Boeing VC-25A (Air Force One)",

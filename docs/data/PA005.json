@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
     "photo": "https://www.airhistory.net/photo/19672/N61NA"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-DC10-10",
     "Typ_anzeige": "McDonnell Douglas DC-10-10",

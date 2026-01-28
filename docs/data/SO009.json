@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster"
   },
+  "logo": {
+    "id": "US_UAF",
+    "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
+    "name": "United States Air Force (USAF)",
+    "airline": "United States Air Force"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-VC118A",
     "Typ_anzeige": "Douglas VC-118A (Independence, Air Force One)",

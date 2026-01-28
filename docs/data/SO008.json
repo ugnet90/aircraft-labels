@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg"
   },
+  "logo": {
+    "id": "US_VGX",
+    "link": "https://assets.planespotters.net/files/airlines/9/virgin-galactic_1fb966_opk.png",
+    "name": "Virgin Galactic Holdings Incorporated",
+    "airline": "Virgin Galactic"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "SCA-SS2",
     "Typ_anzeige": "SpaceShipTwo (Virgin Galactic)",

@@ -47,6 +47,12 @@
     "postcard": "x",
     "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b"
   },
+  "logo": {
+    "id": "BA_BAW",
+    "link": "https://assets.planespotters.net/files/airlines/6/british-airways_a3ae47.svg",
+    "name": "British Airways Plc",
+    "airline": "British Airways"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "SAB-340",
     "Typ_anzeige": "Saab 340",

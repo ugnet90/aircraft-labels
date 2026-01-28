@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
     "photo": "https://www.airhistory.net/photo/702474/D-ANUN"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "VIC-Viscount-800",
     "Typ_anzeige": "Vickers Viscount 800",

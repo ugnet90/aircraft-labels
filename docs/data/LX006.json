@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
     "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A220-300",
     "Typ_anzeige": "Airbus A220-300",

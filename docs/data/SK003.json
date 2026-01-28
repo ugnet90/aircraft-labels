@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
     "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl"
   },
+  "logo": {
+    "id": "SK_SAS",
+    "link": "https://assets.planespotters.net/files/airlines/2/sas_160938_opk.jpg",
+    "name": "Scandinavian Airlines System Denmark-Norway-Sweden",
+    "airline": "SAS"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-700-WL",
     "Typ_anzeige": "Boeing 737-700 (Winglets)",

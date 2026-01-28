@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
     "photo": "https://www.airhistory.net/photo/481727/N818PA"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A310-300",
     "Typ_anzeige": "Airbus A310-300",

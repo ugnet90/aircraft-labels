@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
     "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std"
   },
+  "logo": {
+    "id": "WA_KLC",
+    "link": "https://assets.planespotters.net/files/airlines/1/klm-cityhopper_opk.jpg",
+    "name": "-",
+    "airline": "KLM Cityhopper"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "EMB-E195E2",
     "Typ_anzeige": "Embraer E195-E2",

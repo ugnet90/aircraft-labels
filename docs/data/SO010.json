@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://aero-bg.com/2020/11/10/35-godini-ot-parviya-polet-na-bts-002/"
   },
+  "logo": {
+    "id": "SU_BUR",
+    "link": "https://www.buran-energia.com/img/img_logoV2.png",
+    "name": "-",
+    "airline": "Buran Space Shuttle"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BUR-OK1K1",
     "Typ_anzeige": "Buran Space Orbiter OK-1K1",

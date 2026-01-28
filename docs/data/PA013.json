@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3036-pan-american-b707.html",
     "photo": "https://abpic.co.uk/pictures/view/1646675"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-707-320",
     "Typ_anzeige": "Boeing 707-320 Intercontinental",

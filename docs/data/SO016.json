@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
     "photo": "https://www.planespotters.net/photo/1832221/10-01-luftwaffe-german-air-force-airbus-a350-941"
   },
+  "logo": {
+    "id": "DE_GAF",
+    "link": "https://assets.planespotters.net/files/airlines/6/german-air-force_opk.png",
+    "name": "",
+    "airline": "Luftwaffe (German Air Force)"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-ACJ350-900",
     "Typ_anzeige": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",

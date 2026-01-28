@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
     "photo": "https://abpic.co.uk/pictures/view/1947917"
   },
+  "logo": {
+    "id": "KL_KLM",
+    "link": "https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg",
+    "name": "Koninklijke Luchtvaart Maatschappij N.V.",
+    "airline": "KLM"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-63",
     "Typ_anzeige": "Douglas DC-8-63 Super 63",

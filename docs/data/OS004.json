@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
     "photo": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-600",
     "Typ_anzeige": "Boeing 737-600",

@@ -47,6 +47,12 @@
     "postcard": "Kennung vom Eigenflug; https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
     "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200-SL",
     "Typ_anzeige": "Airbus A320-200 (Sharklets)",

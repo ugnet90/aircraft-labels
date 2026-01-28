@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
     "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg"
   },
+  "logo": {
+    "id": "US_NAS",
+    "link": "https://assets.planespotters.net/files/airlines/2/nasa_e72e0e_opk.png",
+    "name": "National Aeronautics and Space Administration",
+    "airline": "NASA"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "ROC-OV102",
     "Typ_anzeige": "Rockwell Space Shuttle Orbiter Columbia",

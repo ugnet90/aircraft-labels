@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
     "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A220-100",
     "Typ_anzeige": "Airbus A220-100",

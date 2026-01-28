@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
     "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOR-DOX",
     "Typ_anzeige": "Dornier Do X",

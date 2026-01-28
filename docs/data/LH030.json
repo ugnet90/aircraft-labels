@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
     "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/"
   },
+  "logo": {
+    "id": "LH_GEC",
+    "link": "https://assets.planespotters.net/files/airlines/3/lufthansa-cargo_3f7355_opk.jpg",
+    "name": "Lufthansa Cargo AG",
+    "airline": "Lufthansa Cargo"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-MD11F",
     "Typ_anzeige": "McDonnell Douglas MD-11F",

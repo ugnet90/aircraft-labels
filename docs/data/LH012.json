@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/18079-contactairteam-lufthansa-fokker-50.html",
     "photo": "https://www.jetphotos.com/photo/10225836"
   },
+  "logo": {
+    "id": "LH_TEA",
+    "link": "https://assets.planespotters.net/files/airlines/7/team-lufthansa_c89e2c_opk.jpg",
+    "name": "-",
+    "airline": "Team Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "FOK-F50",
     "Typ_anzeige": "Fokker F50",

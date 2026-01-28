@@ -47,6 +47,12 @@
     "postcard": "x",
     "photo": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200"
   },
+  "logo": {
+    "id": "US_UAF",
+    "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
+    "name": "United States Air Force (USAF)",
+    "airline": "United States Air Force"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-C32A",
     "Typ_anzeige": "Boeing C-32A (Air Force Two)",

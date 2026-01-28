@@ -47,6 +47,12 @@
     "postcard": "falsche Reg.; https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
     "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-707-320",
     "Typ_anzeige": "Boeing 707-320 Intercontinental",

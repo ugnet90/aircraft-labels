@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
     "photo": "https://www.airteamimages.com/hawker-siddeley-trident_g-awzn_bea-british-european-airways_40653"
   },
+  "logo": {
+    "id": "BE_BEA",
+    "link": "https://assets.planespotters.net/files/airlines/0/british-european-airways-bea_5d7169_opk.png",
+    "name": "British European Airways Corporation",
+    "airline": "BEA"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "HAW-Trident-3",
     "Typ_anzeige": "Hawker Siddeley Trident 3",

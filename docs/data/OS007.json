@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
     "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A330-200",
     "Typ_anzeige": "Airbus A330-200",

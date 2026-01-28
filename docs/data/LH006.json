@@ -47,6 +47,12 @@
     "postcard": "-",
     "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A350-900",
     "Typ_anzeige": "Airbus A350-900",

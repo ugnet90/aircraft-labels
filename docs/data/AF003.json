@@ -7,7 +7,7 @@
   "registration": "F-HBXE",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Hop!\"",
+  "zusatzinfo": "\"Hop! for Air France\"",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 32.5,
@@ -30,7 +30,7 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Hop!\""
+    "notes": "\"Hop! for Air France\""
   },
   "model": {
     "scale": "1:400",
@@ -46,6 +46,12 @@
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
     "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100"
+  },
+  "logo": {
+    "id": "A5_HOP",
+    "link": "https://assets.planespotters.net/files/airlines/8/air-france-hop_254f8e.svg",
+    "name": "-",
+    "airline": "Air France HOP"
   },
   "aircraft_full_v8": {
     "aircraft_id": "EMB-E170",

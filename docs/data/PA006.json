@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
     "photo": "https://www.planepictures.net/v3/show_en.php?id=276508"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "LOC-L1011-500",
     "Typ_anzeige": "Lockheed L-1011 TriStar 500",

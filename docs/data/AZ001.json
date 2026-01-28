@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
     "photo": "https://www.azfleet.info/aerei/douglas-dc8/i-diwa"
   },
+  "logo": {
+    "id": "AZ_AZA",
+    "link": "https://assets.planespotters.net/files/airlines/6/alitalia-linee-aeree-italiane_34bf65_opr.png",
+    "name": "Alitalia - Linee Aeree Italiane SpA",
+    "airline": "Alitalia"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-40",
     "Typ_anzeige": "Douglas DC-8-40 Series 40",

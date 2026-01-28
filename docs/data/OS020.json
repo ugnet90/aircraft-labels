@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
     "photo": "https://abpic.co.uk/pictures/registration/OE-LAM"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "VIC-Viscount-800",
     "Typ_anzeige": "Vickers Viscount 800",

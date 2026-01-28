@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
     "photo": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er"
   },
+  "logo": {
+    "id": "AF_AFR",
+    "link": "https://assets.planespotters.net/files/airlines/6/air-france_45ae1c.svg",
+    "name": "Air France-KLM",
+    "airline": "Air France"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-777-300ER",
     "Typ_anzeige": "Boeing 777-300ER Extended Range",

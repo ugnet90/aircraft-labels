@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/21554-hapag-lloyd-b737.html",
     "photo": "https://www.planespotters.net/photo/1079811/d-ahfc-hapag-lloyd-boeing-737-8k5"
   },
+  "logo": {
+    "id": "HF_HLF",
+    "link": "https://assets.planespotters.net/files/airlines/1/hapag-lloyd_4b7463.png",
+    "name": "Hapag-Lloyd Flug GmbH",
+    "airline": "Hapag-Lloyd"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-800",
     "Typ_anzeige": "Boeing 737-800",

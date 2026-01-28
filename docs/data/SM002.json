@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
     "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-314",
     "Typ_anzeige": "Boeing 314",

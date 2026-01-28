@@ -7,7 +7,7 @@
   "registration": "OE-LEA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Fly Niki",
+  "zusatzinfo": "Niki",
   "special_note": "",
   "shop": "Ebay philundines",
   "price": 15.0,
@@ -30,7 +30,7 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Fly Niki"
+    "notes": "Niki"
   },
   "model": {
     "scale": "1:400",
@@ -46,6 +46,12 @@
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/10051-niki-a320.html",
     "photo": "https://www.planespotters.net/photo/373434/oe-lea-niki-airbus-a320-214"
+  },
+  "logo": {
+    "id": "HG_NLY",
+    "link": "https://assets.planespotters.net/files/airlines/2/niki_73cf3e.svg",
+    "name": "Niki Luftfahrt GmbH",
+    "airline": "Niki"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200",

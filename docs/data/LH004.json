@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
     "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A380-800",
     "Typ_anzeige": "Airbus A380-800",

@@ -1,57 +1,57 @@
 {
-  "model_id": "PA020",
-  "airline_code": "PA",
-  "airline": "Pan Am",
+  "model_id": "BA008",
+  "airline_code": "BA",
+  "airline": "British Airways",
   "aircraft_id": "MCD-DC10-30",
   "aircraft_type": "McDonnell Douglas DC-10-30",
-  "registration": "N83NA",
+  "registration": "G-BEBM",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Celstial Empire\"",
+  "zusatzinfo": "\"Sherwood Forest\"",
   "special_note": "",
-  "shop": "MW-Moba",
-  "price": 41.04,
-  "shipping_allocated": 1.73,
+  "shop": "Ebay Kontorbuer",
+  "price": 29.0,
+  "shipping_allocated": 3.14,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
-  "postcard_price": 1.35,
-  "photo": "https://abpic.co.uk/pictures/view/1106191",
-  "arrived_excel": "15.01.2026",
-  "arrived": "2026-01-15",
+  "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+  "postcard_price": 1.85,
+  "photo": "https://www.airhistory.net/photo/747410/G-BEBM",
+  "arrived_excel": "27.01.2026",
+  "arrived": "2026-01-27",
   "source": {
-    "sheet": "Panam",
-    "row": "34"
+    "sheet": "BA",
+    "row": "68"
   },
   "aircraft": {
     "aircraft_id": "MCD-DC10-30",
     "type": "McDonnell Douglas DC-10-30",
-    "registration": "N83NA"
+    "registration": "G-BEBM"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Celstial Empire\""
+    "notes": "\"Sherwood Forest\""
   },
   "model": {
     "scale": "1:400",
     "manufacturer": "",
     "model_number": "",
-    "shop": "MW-Moba",
-    "price": 41.04,
-    "shipping_allocated": 1.73,
-    "arrived": "2026-01-15",
+    "shop": "Ebay Kontorbuer",
+    "price": 29.0,
+    "shipping_allocated": 3.14,
+    "arrived": "2026-01-27",
     "flown": null,
     "special_note": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
-    "photo": "https://abpic.co.uk/pictures/view/1106191"
+    "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+    "photo": "https://www.airhistory.net/photo/747410/G-BEBM"
   },
   "logo": {
-    "id": "PA_PAA",
-    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
-    "name": "Pan American World Airways Incorporated",
-    "airline": "Pan Am"
+    "id": "BA_BAW",
+    "link": "https://assets.planespotters.net/files/airlines/6/british-airways_a3ae47.svg",
+    "name": "British Airways Plc",
+    "airline": "British Airways"
   },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-DC10-30",

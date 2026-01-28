@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
     "photo": "https://www.jetphotos.com/photo/7018562"
   },
+  "logo": {
+    "id": "KL_KLM",
+    "link": "https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg",
+    "name": "Koninklijke Luchtvaart Maatschappij N.V.",
+    "airline": "KLM"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BAC-111-300",
     "Typ_anzeige": "BAC 1-11-300",

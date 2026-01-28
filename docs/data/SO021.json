@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://www.airhistory.net/photo/654297/158227"
   },
+  "logo": {
+    "id": "US_NAV",
+    "link": "https://assets.planespotters.net/files/airlines/9/us-navy_6a3378.svg",
+    "name": "United States Navy (US Navy)",
+    "airline": "United States Navy"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "LOC-RP3D",
     "Typ_anzeige": "Lockheed RP-3D Orion",

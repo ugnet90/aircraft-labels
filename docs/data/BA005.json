@@ -47,6 +47,12 @@
     "postcard": "andere Bemalung; https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
     "photo": "https://abpic.co.uk/pictures/view/1732136"
   },
+  "logo": {
+    "id": "BA_BAW",
+    "link": "https://assets.planespotters.net/files/airlines/6/british-airways_a3ae47.svg",
+    "name": "British Airways Plc",
+    "airline": "British Airways"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BAE-146-200",
     "Typ_anzeige": "BAe 146-200 / Avro RJ85",

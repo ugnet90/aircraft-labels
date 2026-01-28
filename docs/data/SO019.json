@@ -47,6 +47,12 @@
     "postcard": "x",
     "photo": "https://www.airhistory.net/photo/425749/165831/5831"
   },
+  "logo": {
+    "id": "US_NAV",
+    "link": "https://assets.planespotters.net/files/airlines/9/us-navy_6a3378.svg",
+    "name": "United States Navy (US Navy)",
+    "airline": "United States Navy"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-C40A",
     "Typ_anzeige": "Boeing C-40A Clipper",

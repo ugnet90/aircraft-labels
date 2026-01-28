@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
     "photo": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232"
   },
+  "logo": {
+    "id": "SK_SAS",
+    "link": "https://assets.planespotters.net/files/airlines/2/sas_160938_opk.jpg",
+    "name": "Scandinavian Airlines System Denmark-Norway-Sweden",
+    "airline": "SAS"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200",
     "Typ_anzeige": "Airbus A320-200",

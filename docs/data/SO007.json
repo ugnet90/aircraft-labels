@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
     "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703"
   },
+  "logo": {
+    "id": "CH_SUI",
+    "link": "https://assets.planespotters.net/files/airlines/0/swiss-air-force_3f0682.svg",
+    "name": "-",
+    "airline": "Schweizer Luftwaffe (Swiss Air Force)"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "JUN-JU52-3M",
     "Typ_anzeige": "Junkers Ju 3m Tante Ju",

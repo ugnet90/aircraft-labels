@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://abpic.co.uk/pictures/view/1178552"
   },
+  "logo": {
+    "id": "BA_BAW",
+    "link": "https://assets.planespotters.net/files/airlines/6/british-airways_a3ae47.svg",
+    "name": "British Airways Plc",
+    "airline": "British Airways"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BAC-111-400",
     "Typ_anzeige": "BAC 1-11-400",

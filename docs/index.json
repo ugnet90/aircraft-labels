@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-01-28T16:08:02Z",
-  "count": 153,
+  "generated_at": "2026-01-28T16:26:59Z",
+  "count": 159,
   "counts_by_airline_code": {
     "OS": 20,
     "LH": 30,
-    "LX": 16,
+    "LX": 17,
     "BT": 1,
     "AB": 3,
     "AF": 3,
     "AZ": 1,
-    "BA": 7,
+    "BA": 9,
     "BOA": 2,
-    "HF": 3,
+    "HF": 4,
     "FI": 1,
     "KL": 9,
     "WA": 3,
     "NG": 3,
     "PA": 20,
-    "SK": 6,
+    "SK": 7,
     "TP": 1,
-    "SO": 21,
+    "SO": 22,
     "SM": 3
   },
   "items": [
@@ -35,7 +35,7 @@
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "AB_BER"
     },
     {
       "model_id": "AB002",
@@ -49,7 +49,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "AB_BER"
     },
     {
       "model_id": "AB003",
@@ -63,7 +63,7 @@
       "arrived": "2026-01-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "AB_BER"
     },
     {
       "model_id": "AF001",
@@ -91,7 +91,7 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "AF_AFR"
     },
     {
       "model_id": "AF003",
@@ -105,7 +105,7 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "A5_HOP"
     },
     {
       "model_id": "AZ001",
@@ -119,7 +119,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "AZ_AZA"
     },
     {
       "model_id": "BA001",
@@ -133,7 +133,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BAW"
     },
     {
       "model_id": "BA002",
@@ -147,7 +147,7 @@
       "arrived": "2025-11-10",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BAW"
     },
     {
       "model_id": "BA003",
@@ -161,7 +161,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BAW"
     },
     {
       "model_id": "BA004",
@@ -175,7 +175,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BAW"
     },
     {
       "model_id": "BA005",
@@ -189,7 +189,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BAW"
     },
     {
       "model_id": "BA006",
@@ -203,7 +203,7 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BAW"
     },
     {
       "model_id": "BA007",
@@ -217,7 +217,35 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BE_BEA"
+    },
+    {
+      "model_id": "BA008",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "registration": "G-BEBM",
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": "2026-01-27",
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BA_BAW"
+    },
+    {
+      "model_id": "BA009",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "aircraft_id": "HAW-Trident-2",
+      "aircraft_type": "Hawker Siddeley HS-121 Trident 2",
+      "registration": "G-AVFB",
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": "2026-01-27",
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BE_BEA"
     },
     {
       "model_id": "BOA001",
@@ -231,7 +259,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BOA"
     },
     {
       "model_id": "BOA002",
@@ -245,7 +273,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "BA_BOA"
     },
     {
       "model_id": "BT001",
@@ -259,7 +287,7 @@
       "arrived": "2025-10-10",
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "BT_BTI"
     },
     {
       "model_id": "FI001",
@@ -273,7 +301,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "FI_ICE"
     },
     {
       "model_id": "HF001",
@@ -287,7 +315,7 @@
       "arrived": "2025-10-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "HF_HLF"
     },
     {
       "model_id": "HF002",
@@ -301,7 +329,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "X3_HLX"
     },
     {
       "model_id": "HF003",
@@ -315,7 +343,21 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "HF_HLF"
+    },
+    {
+      "model_id": "HF004",
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "registration": "D-AHFF",
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": "2026-01-27",
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "HF_HLF"
     },
     {
       "model_id": "KL001",
@@ -329,7 +371,7 @@
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL002",
@@ -343,7 +385,7 @@
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL003",
@@ -357,7 +399,7 @@
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_ASI"
     },
     {
       "model_id": "KL004",
@@ -371,7 +413,7 @@
       "arrived": "2025-07-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL005",
@@ -385,7 +427,7 @@
       "arrived": "2025-10-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL006",
@@ -399,7 +441,7 @@
       "arrived": "2025-10-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL007",
@@ -413,7 +455,7 @@
       "arrived": "2025-10-30",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL008",
@@ -427,7 +469,7 @@
       "arrived": "2025-11-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "KL009",
@@ -441,7 +483,7 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_KLM"
     },
     {
       "model_id": "LH001",
@@ -455,7 +497,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH002",
@@ -469,7 +511,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH003",
@@ -483,7 +525,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH004",
@@ -497,7 +539,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH005",
@@ -511,7 +553,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH006",
@@ -525,7 +567,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH007",
@@ -539,7 +581,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH008",
@@ -553,7 +595,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH009",
@@ -567,7 +609,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH010",
@@ -581,7 +623,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH011",
@@ -595,7 +637,7 @@
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH012",
@@ -609,7 +651,7 @@
       "arrived": "2025-06-16",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_TEA"
     },
     {
       "model_id": "LH013",
@@ -623,7 +665,7 @@
       "arrived": "2025-06-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH014",
@@ -637,7 +679,7 @@
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH015",
@@ -651,7 +693,7 @@
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH016",
@@ -665,7 +707,7 @@
       "arrived": "2025-07-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH017",
@@ -679,7 +721,7 @@
       "arrived": "2025-08-05",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH018",
@@ -693,7 +735,7 @@
       "arrived": "2025-08-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH019",
@@ -707,7 +749,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH020",
@@ -721,7 +763,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH021",
@@ -735,7 +777,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH022",
@@ -749,7 +791,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH023",
@@ -763,7 +805,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "CL_CLH"
     },
     {
       "model_id": "LH024",
@@ -777,7 +819,7 @@
       "arrived": "2025-10-24",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH025",
@@ -791,7 +833,7 @@
       "arrived": "2025-10-24",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH026",
@@ -805,7 +847,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH027",
@@ -819,7 +861,7 @@
       "arrived": "2025-11-13",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH028",
@@ -833,7 +875,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH029",
@@ -847,7 +889,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "LH030",
@@ -861,7 +903,7 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_GEC"
     },
     {
       "model_id": "LX001",
@@ -875,7 +917,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX002",
@@ -889,7 +931,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX003",
@@ -903,7 +945,7 @@
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX004",
@@ -917,7 +959,7 @@
       "arrived": "2025-07-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX005",
@@ -931,7 +973,7 @@
       "arrived": "2025-08-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX006",
@@ -945,7 +987,7 @@
       "arrived": "2025-10-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX007",
@@ -959,7 +1001,7 @@
       "arrived": "2025-10-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX008",
@@ -973,7 +1015,7 @@
       "arrived": "2025-10-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SR_SWR"
     },
     {
       "model_id": "LX009",
@@ -987,7 +1029,7 @@
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX010",
@@ -1001,7 +1043,7 @@
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SR_SWR"
     },
     {
       "model_id": "LX011",
@@ -1015,7 +1057,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SR_SWR"
     },
     {
       "model_id": "LX012",
@@ -1029,7 +1071,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX013",
@@ -1043,7 +1085,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX014",
@@ -1057,7 +1099,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LX_SWR"
     },
     {
       "model_id": "LX015",
@@ -1071,7 +1113,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SR_SWR"
     },
     {
       "model_id": "LX016",
@@ -1085,7 +1127,21 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SR_SWR"
+    },
+    {
+      "model_id": "LX017",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-32",
+      "registration": "HB-IDA",
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": "2026-01-27",
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SR_SWR"
     },
     {
       "model_id": "NG001",
@@ -1099,7 +1155,7 @@
       "arrived": "2025-06-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "NG_LDA"
     },
     {
       "model_id": "NG002",
@@ -1113,7 +1169,7 @@
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "NG_LDA"
     },
     {
       "model_id": "NG003",
@@ -1127,7 +1183,7 @@
       "arrived": "2025-11-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "HG_NLY"
     },
     {
       "model_id": "OS001",
@@ -1141,7 +1197,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS002",
@@ -1155,7 +1211,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS003",
@@ -1169,7 +1225,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_ARR"
     },
     {
       "model_id": "OS004",
@@ -1183,7 +1239,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS005",
@@ -1197,7 +1253,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS006",
@@ -1211,7 +1267,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS007",
@@ -1225,7 +1281,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS008",
@@ -1239,7 +1295,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_ARR"
     },
     {
       "model_id": "OS009",
@@ -1253,7 +1309,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS010",
@@ -1267,7 +1323,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS011",
@@ -1281,7 +1337,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS012",
@@ -1295,7 +1351,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS013",
@@ -1309,7 +1365,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS014",
@@ -1323,7 +1379,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS015",
@@ -1337,7 +1393,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS016",
@@ -1351,7 +1407,7 @@
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS017",
@@ -1365,7 +1421,7 @@
       "arrived": "2025-06-16",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS018",
@@ -1379,7 +1435,7 @@
       "arrived": "2025-06-20",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "OS019",
@@ -1393,7 +1449,7 @@
       "arrived": "2025-07-02",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "VO_TYR"
     },
     {
       "model_id": "OS020",
@@ -1407,7 +1463,7 @@
       "arrived": "2026-01-16",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "PA001",
@@ -1421,7 +1477,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA002",
@@ -1435,7 +1491,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA003",
@@ -1449,7 +1505,7 @@
       "arrived": "2025-05-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA004",
@@ -1463,7 +1519,7 @@
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA005",
@@ -1477,7 +1533,7 @@
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA006",
@@ -1491,7 +1547,7 @@
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA007",
@@ -1505,7 +1561,7 @@
       "arrived": "2025-06-10",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA008",
@@ -1519,7 +1575,7 @@
       "arrived": "2025-06-18",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA009",
@@ -1533,7 +1589,7 @@
       "arrived": "2025-07-04",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA010",
@@ -1547,7 +1603,7 @@
       "arrived": "2025-07-04",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA011",
@@ -1561,7 +1617,7 @@
       "arrived": "2025-07-07",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA012",
@@ -1575,7 +1631,7 @@
       "arrived": "2025-06-26",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA013",
@@ -1589,7 +1645,7 @@
       "arrived": "2025-07-09",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA014",
@@ -1603,7 +1659,7 @@
       "arrived": "2025-07-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA015",
@@ -1617,7 +1673,7 @@
       "arrived": "2025-07-21",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA016",
@@ -1631,7 +1687,7 @@
       "arrived": "2025-08-05",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA017",
@@ -1645,7 +1701,7 @@
       "arrived": "2025-08-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA018",
@@ -1659,7 +1715,7 @@
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA019",
@@ -1673,7 +1729,7 @@
       "arrived": "2025-11-10",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "PA020",
@@ -1687,7 +1743,7 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "SK001",
@@ -1701,7 +1757,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "SK_SAS"
     },
     {
       "model_id": "SK002",
@@ -1715,7 +1771,7 @@
       "arrived": "2025-07-22",
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "SK_SAS"
     },
     {
       "model_id": "SK003",
@@ -1729,7 +1785,7 @@
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SK_SAS"
     },
     {
       "model_id": "SK004",
@@ -1743,7 +1799,7 @@
       "arrived": "2025-05-14",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SK_SAS"
     },
     {
       "model_id": "SK005",
@@ -1757,7 +1813,7 @@
       "arrived": "2025-11-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SK_SAS"
     },
     {
       "model_id": "SK006",
@@ -1771,7 +1827,21 @@
       "arrived": "2026-01-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SK_SAS"
+    },
+    {
+      "model_id": "SK007",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-55",
+      "registration": "LN-MOH",
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": "2026-01-27",
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SK_SAS"
     },
     {
       "model_id": "SM001",
@@ -1785,7 +1855,7 @@
       "arrived": "2025-05-26",
       "scale": "1:500",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "OS_AUA"
     },
     {
       "model_id": "SM002",
@@ -1799,7 +1869,7 @@
       "arrived": "2025-06-02",
       "scale": "1:350",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "PA_PAA"
     },
     {
       "model_id": "SM003",
@@ -1813,7 +1883,7 @@
       "arrived": "2025-10-10",
       "scale": "1:350",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "LH_DLH"
     },
     {
       "model_id": "SO001",
@@ -1827,7 +1897,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "UR_ADB"
     },
     {
       "model_id": "SO002",
@@ -1841,7 +1911,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "FR_BCO"
     },
     {
       "model_id": "SO003",
@@ -1855,7 +1925,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "IZ_AIZ"
     },
     {
       "model_id": "SO004",
@@ -1869,7 +1939,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO005",
@@ -1883,7 +1953,7 @@
       "arrived": "2025-05-08",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "4Y_BGA"
     },
     {
       "model_id": "SO006",
@@ -1897,7 +1967,7 @@
       "arrived": "2025-05-22",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "DE_GAF"
     },
     {
       "model_id": "SO007",
@@ -1911,7 +1981,7 @@
       "arrived": "2025-05-27",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "CH_SUI"
     },
     {
       "model_id": "SO008",
@@ -1925,7 +1995,7 @@
       "arrived": "2025-06-26",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_VGX"
     },
     {
       "model_id": "SO009",
@@ -1939,7 +2009,7 @@
       "arrived": "2025-07-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO010",
@@ -1953,7 +2023,7 @@
       "arrived": "2025-10-27",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "SU_BUR"
     },
     {
       "model_id": "SO011",
@@ -1967,7 +2037,7 @@
       "arrived": "2025-10-27",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO012",
@@ -1981,7 +2051,7 @@
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO013",
@@ -1995,7 +2065,7 @@
       "arrived": "2025-11-05",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO014",
@@ -2009,7 +2079,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "FR_BCO"
     },
     {
       "model_id": "SO015",
@@ -2023,7 +2093,7 @@
       "arrived": "2025-11-12",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_NAS"
     },
     {
       "model_id": "SO016",
@@ -2037,7 +2107,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "DE_GAF"
     },
     {
       "model_id": "SO017",
@@ -2051,7 +2121,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO018",
@@ -2065,7 +2135,7 @@
       "arrived": "2025-12-06",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_UAF"
     },
     {
       "model_id": "SO019",
@@ -2079,7 +2149,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_NAV"
     },
     {
       "model_id": "SO020",
@@ -2093,7 +2163,7 @@
       "arrived": "2025-12-23",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_ARM"
     },
     {
       "model_id": "SO021",
@@ -2107,7 +2177,21 @@
       "arrived": "2026-01-15",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "US_NAV"
+    },
+    {
+      "model_id": "SO022",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "aircraft_id": "BOE-707-330C",
+      "aircraft_type": "",
+      "registration": "D-ABUA",
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": "2026-01-27",
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "FX_GEC"
     },
     {
       "model_id": "TP001",
@@ -2121,7 +2205,7 @@
       "arrived": null,
       "scale": "1:400",
       "flown": true,
-      "logo_id": ""
+      "logo_id": "TP_TAP"
     },
     {
       "model_id": "WA001",
@@ -2135,7 +2219,7 @@
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_EXE"
     },
     {
       "model_id": "WA002",
@@ -2149,7 +2233,7 @@
       "arrived": "2025-06-03",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "KL_EXE"
     },
     {
       "model_id": "WA003",
@@ -2163,7 +2247,7 @@
       "arrived": "2025-06-26",
       "scale": "1:400",
       "flown": null,
-      "logo_id": ""
+      "logo_id": "WA_KLC"
     }
   ]
 }

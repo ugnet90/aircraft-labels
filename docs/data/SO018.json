@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; andere Bemalung; https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
     "photo": "https://www.airhistory.net/photos/0027472.jpg"
   },
+  "logo": {
+    "id": "US_UAF",
+    "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
+    "name": "United States Air Force (USAF)",
+    "airline": "United States Air Force"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "CSA-PBY5",
     "Typ_anzeige": "Consolidated PBY-5 Catalina",

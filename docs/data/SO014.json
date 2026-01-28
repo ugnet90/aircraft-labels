@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
     "photo": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl"
   },
+  "logo": {
+    "id": "FR_BCO",
+    "link": "https://assets.planespotters.net/files/airlines/4/airbus-beluga-transport_18355a_opr.jpg",
+    "name": "",
+    "airline": "Airbus Beluga Transport"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A330-743L",
     "Typ_anzeige": "Airbus A330-743L BelugaXL",

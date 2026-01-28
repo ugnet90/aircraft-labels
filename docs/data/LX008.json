@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
     "photo": "https://abpic.co.uk/pictures/view/1072413"
   },
+  "logo": {
+    "id": "SR_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/5/swissair_30e039_opk.png",
+    "name": "Schweizerische Luftverkehr-Aktiengesellschaft",
+    "airline": "Swissair"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-MD11",
     "Typ_anzeige": "McDonnell Douglas MD-11",

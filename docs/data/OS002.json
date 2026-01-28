@@ -47,6 +47,12 @@
     "postcard": "Eigenflug; https://jjpostcards.com/de/ansichtskarten/35822-Austrian-A321.html",
     "photo": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A321-100",
     "Typ_anzeige": "Airbus A321-100",

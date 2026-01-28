@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
     "photo": "https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er"
   },
+  "logo": {
+    "id": "KL_KLM",
+    "link": "https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg",
+    "name": "Koninklijke Luchtvaart Maatschappij N.V.",
+    "airline": "KLM"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-767-300ER",
     "Typ_anzeige": "Boeing 767-300ER Extended Range",

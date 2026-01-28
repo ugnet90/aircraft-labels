@@ -1,31 +1,31 @@
 {
-  "model_id": "AB003",
-  "airline_code": "AB",
-  "airline": "Air Berlin",
+  "model_id": "HF004",
+  "airline_code": "HF",
+  "airline": "Hapag-Lloyd",
   "aircraft_id": "BOE-737-800-WL",
   "aircraft_type": "Boeing 737-800 (Winglets)",
-  "registration": "D-ABAF",
+  "registration": "D-AHFF",
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "",
   "special_note": "",
-  "shop": "Ebay krysset_4",
-  "price": 17.0,
-  "shipping_allocated": 5.42,
+  "shop": "Ebay Kontorbuer",
+  "price": 13.0,
+  "shipping_allocated": 1.41,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/2654-air-berlin-b737.html",
+  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
   "postcard_price": 0.85,
-  "photo": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl",
-  "arrived_excel": "23.01.2026",
-  "arrived": "2026-01-23",
+  "photo": "https://www.jetphotos.com/photo/33534",
+  "arrived_excel": "27.01.2026",
+  "arrived": "2026-01-27",
   "source": {
-    "sheet": "AirBerlin",
-    "row": "18"
+    "sheet": "HapagLloyd",
+    "row": "13"
   },
   "aircraft": {
     "aircraft_id": "BOE-737-800-WL",
     "type": "Boeing 737-800 (Winglets)",
-    "registration": "D-ABAF"
+    "registration": "D-AHFF"
   },
   "livery": {
     "code": "",
@@ -36,22 +36,22 @@
     "scale": "1:400",
     "manufacturer": "",
     "model_number": "",
-    "shop": "Ebay krysset_4",
-    "price": 17.0,
-    "shipping_allocated": 5.42,
-    "arrived": "2026-01-23",
+    "shop": "Ebay Kontorbuer",
+    "price": 13.0,
+    "shipping_allocated": 1.41,
+    "arrived": "2026-01-27",
     "flown": null,
     "special_note": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/2654-air-berlin-b737.html",
-    "photo": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl"
+    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
+    "photo": "https://www.jetphotos.com/photo/33534"
   },
   "logo": {
-    "id": "AB_BER",
-    "link": "https://assets.planespotters.net/files/airlines/5/air-berlin_1981f1.svg",
-    "name": "Air Berlin PLC & Co. Luftverkehrs KG",
-    "airline": "Air Berlin"
+    "id": "HF_HLF",
+    "link": "https://assets.planespotters.net/files/airlines/1/hapag-lloyd_4b7463.png",
+    "name": "Hapag-Lloyd Flug GmbH",
+    "airline": "Hapag-Lloyd"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-800-WL",

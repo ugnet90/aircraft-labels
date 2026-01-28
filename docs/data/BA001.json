@@ -46,5 +46,11 @@
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
     "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102"
+  },
+  "logo": {
+    "id": "BA_BAW",
+    "link": "https://assets.planespotters.net/files/airlines/6/british-airways_a3ae47.svg",
+    "name": "British Airways Plc",
+    "airline": "British Airways"
   }
 }

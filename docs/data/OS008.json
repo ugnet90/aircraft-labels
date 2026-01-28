@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
     "photo": "https://www.planespotters.net/photo/215733/oe-lgi-austrian-arrows-bombardier-dhc-8-402q-dash-8"
   },
+  "logo": {
+    "id": "OS_ARR",
+    "link": "https://assets.planespotters.net/files/airlines/7/austrian-arrows_opk.jpg",
+    "name": "-",
+    "airline": "Austrian Arrows"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DHC-DHC8-400",
     "Typ_anzeige": "de Havilland Canada DHC-8-400 Dash 8-400 (Q400)",

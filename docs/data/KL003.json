@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4271-klm-asia-b747.html",
     "photo": "https://www.jetphotos.com/photo/10064531"
   },
+  "logo": {
+    "id": "KL_ASI",
+    "link": "https://assets.planespotters.net/files/airlines/7/klm-asia_32dd9b_opk.png",
+    "name": "-",
+    "airline": "KLM Asia"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-747-400",
     "Typ_anzeige": "Boeing 747-400",

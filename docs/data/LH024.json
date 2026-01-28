@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html + https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html (andere Kennung, aber in Farbe)",
     "photo": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-720",
     "Typ_anzeige": "Boeing 720",

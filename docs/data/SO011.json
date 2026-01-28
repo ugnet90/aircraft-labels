@@ -47,6 +47,12 @@
     "postcard": "x",
     "photo": "x"
   },
+  "logo": {
+    "id": "US_UAF",
+    "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
+    "name": "United States Air Force (USAF)",
+    "airline": "United States Air Force"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-747-VC25B",
     "Typ_anzeige": "Boeing VC-25B (Air Force One, 747-8I)",

@@ -47,6 +47,12 @@
     "postcard": "OE-LVH",
     "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100"
   },
+  "logo": {
+    "id": "OS_ARR",
+    "link": "https://assets.planespotters.net/files/airlines/7/austrian-arrows_opk.jpg",
+    "name": "-",
+    "airline": "Austrian Arrows"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "FOK-F100",
     "Typ_anzeige": "Fokker F100",

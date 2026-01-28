@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
     "photo": "https://www.planespotters.net/photo/1100966/d-abir-lufthansa-boeing-737-530"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-500",
     "Typ_anzeige": "Boeing 737-500",

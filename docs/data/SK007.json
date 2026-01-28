@@ -1,57 +1,57 @@
 {
-  "model_id": "KL001",
-  "airline_code": "KL",
-  "airline": "KLM",
+  "model_id": "SK007",
+  "airline_code": "SK",
+  "airline": "SAS",
   "aircraft_id": "DOU-DC8-50",
-  "aircraft_type": "Douglas DC-8-53",
-  "registration": "PH-DCI",
+  "aircraft_type": "Douglas DC-8-55",
+  "registration": "LN-MOH",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Sir Isaac Newton\"",
+  "zusatzinfo": "\"Harald Viking\"",
   "special_note": "",
-  "shop": "Marktplaats: TOGAflex",
-  "price": 45.0,
-  "shipping_allocated": 2.33,
+  "shop": "Kleinanzeigen Micha",
+  "price": 33.66,
+  "shipping_allocated": 4.41,
   "flown": null,
-  "postcard": "andere Livery+Kennung; https://jjpostcards.com/de/ansichtskarten/22826-klm-dc-8.html",
-  "postcard_price": 0.85,
-  "photo": "https://abpic.co.uk/pictures/view/1036468",
-  "arrived_excel": "03.06.2025",
-  "arrived": "2025-06-03",
+  "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+  "postcard_price": 2.5,
+  "photo": "https://image.airport-data.com/aircraft/954767.jpg",
+  "arrived_excel": "27.01.2026",
+  "arrived": "2026-01-27",
   "source": {
-    "sheet": "KLM",
-    "row": "37"
+    "sheet": "SAS",
+    "row": "38"
   },
   "aircraft": {
     "aircraft_id": "DOU-DC8-50",
-    "type": "Douglas DC-8-53",
-    "registration": "PH-DCI"
+    "type": "Douglas DC-8-55",
+    "registration": "LN-MOH"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Sir Isaac Newton\""
+    "notes": "\"Harald Viking\""
   },
   "model": {
     "scale": "1:400",
     "manufacturer": "",
     "model_number": "",
-    "shop": "Marktplaats: TOGAflex",
-    "price": 45.0,
-    "shipping_allocated": 2.33,
-    "arrived": "2025-06-03",
+    "shop": "Kleinanzeigen Micha",
+    "price": 33.66,
+    "shipping_allocated": 4.41,
+    "arrived": "2026-01-27",
     "flown": null,
     "special_note": ""
   },
   "links": {
-    "postcard": "andere Livery+Kennung; https://jjpostcards.com/de/ansichtskarten/22826-klm-dc-8.html",
-    "photo": "https://abpic.co.uk/pictures/view/1036468"
+    "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+    "photo": "https://image.airport-data.com/aircraft/954767.jpg"
   },
   "logo": {
-    "id": "KL_KLM",
-    "link": "https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg",
-    "name": "Koninklijke Luchtvaart Maatschappij N.V.",
-    "airline": "KLM"
+    "id": "SK_SAS",
+    "link": "https://assets.planespotters.net/files/airlines/2/sas_160938_opk.jpg",
+    "name": "Scandinavian Airlines System Denmark-Norway-Sweden",
+    "airline": "SAS"
   },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-50",

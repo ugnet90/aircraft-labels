@@ -47,6 +47,12 @@
     "postcard": "Bemalung nicht ganz exakt; https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
     "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-777-200",
     "Typ_anzeige": "Boeing 777-200",

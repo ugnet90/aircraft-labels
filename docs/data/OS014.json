@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
     "photo": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-DC9-50",
     "Typ_anzeige": "McDonnell Douglas DC-9-50",

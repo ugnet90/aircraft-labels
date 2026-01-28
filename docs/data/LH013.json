@@ -47,6 +47,12 @@
     "postcard": "-",
     "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A330-300",
     "Typ_anzeige": "Airbus A330-300",

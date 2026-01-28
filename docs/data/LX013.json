@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
     "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "CON-CV880",
     "Typ_anzeige": "Convair CV-880 Golden Arrow",

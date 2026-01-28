@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
     "photo": "https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "LOC-L1049",
     "Typ_anzeige": "Lockheed L-1049 Super Constellation",

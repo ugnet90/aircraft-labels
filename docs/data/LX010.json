@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/36596-Swissair-CV-990.html",
     "photo": "https://www.jetphotos.com/photo/6081412"
   },
+  "logo": {
+    "id": "SR_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/5/swissair_30e039_opk.png",
+    "name": "Schweizerische Luftverkehr-Aktiengesellschaft",
+    "airline": "Swissair"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "CON-CV990",
     "Typ_anzeige": "Convair CV-990 Coronado",

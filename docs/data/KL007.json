@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
     "photo": "https://www.airhistory.net/photo/730187/PH-DSG"
   },
+  "logo": {
+    "id": "KL_KLM",
+    "link": "https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg",
+    "name": "Koninklijke Luchtvaart Maatschappij N.V.",
+    "airline": "KLM"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC7-C",
     "Typ_anzeige": "Douglas DC-7C Seven Seas",

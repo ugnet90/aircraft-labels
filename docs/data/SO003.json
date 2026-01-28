@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
     "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg"
   },
+  "logo": {
+    "id": "IZ_AIZ",
+    "link": "https://assets.planespotters.net/files/airlines/0/arkia-israeli-airlines_999d37_opk.png",
+    "name": "Arkia Israeli Airlines Limited",
+    "airline": "Arkia - Israeli Airlines"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "VIC-Viscount-800",
     "Typ_anzeige": "Vickers Viscount 800",

@@ -47,6 +47,12 @@
     "postcard": "vorhanden",
     "photo": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BAE-146-300",
     "Typ_anzeige": "BAe 146-300 / Avro RJ100",

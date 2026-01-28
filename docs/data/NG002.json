@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
     "photo": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9"
   },
+  "logo": {
+    "id": "NG_LDA",
+    "link": "https://assets.planespotters.net/files/airlines/8/lauda-air_cf6af3_opk.png",
+    "name": "Lauda Air Luftfahrt GmbH",
+    "airline": "Lauda Air"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-737-600",
     "Typ_anzeige": "Boeing 737-600",

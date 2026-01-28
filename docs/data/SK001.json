@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
     "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24"
   },
+  "logo": {
+    "id": "SK_SAS",
+    "link": "https://assets.planespotters.net/files/airlines/2/sas_160938_opk.jpg",
+    "name": "Scandinavian Airlines System Denmark-Norway-Sweden",
+    "airline": "SAS"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOM-CRJ900",
     "Typ_anzeige": "Bombardier CRJ-900",

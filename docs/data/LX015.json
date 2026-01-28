@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
     "photo": "https://www.airhistory.net/photo/672110/HB-IGB"
   },
+  "logo": {
+    "id": "SR_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/5/swissair_30e039_opk.png",
+    "name": "Schweizerische Luftverkehr-Aktiengesellschaft",
+    "airline": "Swissair"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-747-200",
     "Typ_anzeige": "Boeing 747-200",

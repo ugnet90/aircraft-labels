@@ -47,6 +47,12 @@
     "postcard": "",
     "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-747-100",
     "Typ_anzeige": "Boeing 747-100",

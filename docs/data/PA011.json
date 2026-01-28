@@ -47,6 +47,12 @@
     "postcard": "-",
     "photo": "https://www.jetphotos.com/photo/261236"
   },
+  "logo": {
+    "id": "PA_PAA",
+    "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
+    "name": "Pan American World Airways Incorporated",
+    "airline": "Pan Am"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-62",
     "Typ_anzeige": "Douglas DC-8-62 Super 62",

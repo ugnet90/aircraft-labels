@@ -47,6 +47,12 @@
     "postcard": "andere Kennung, Typ 100; https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
     "photo": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19"
   },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOM-CRJ200",
     "Typ_anzeige": "Bombardier CRJ-200",

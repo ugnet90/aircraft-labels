@@ -47,6 +47,12 @@
     "postcard": "x",
     "photo": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg"
   },
+  "logo": {
+    "id": "US_UAF",
+    "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
+    "name": "United States Air Force (USAF)",
+    "airline": "United States Air Force"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-YAL1",
     "Typ_anzeige": "Boeing YAL-1 Airborne Laser",

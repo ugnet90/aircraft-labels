@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
     "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313"
   },
+  "logo": {
+    "id": "OS_AUA",
+    "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
+    "name": "Austrian Airlines AG",
+    "airline": "Austrian"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A340-300",
     "Typ_anzeige": "Airbus A340-300",

@@ -47,6 +47,12 @@
     "postcard": "beim Modell vorhanden",
     "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html"
   },
+  "logo": {
+    "id": "US_ARM",
+    "link": "https://assets.planespotters.net/files/airlines/2/us-army_c90ffe_opr.png",
+    "name": "United States Army",
+    "airline": "United States Army"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-767-AOA",
     "Typ_anzeige": "Boeing 767-200 Airborne Optical Adjunct",

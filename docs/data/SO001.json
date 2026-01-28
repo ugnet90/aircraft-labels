@@ -47,6 +47,12 @@
     "postcard": "vorhanden",
     "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/"
   },
+  "logo": {
+    "id": "UR_ADB",
+    "link": "https://assets.planespotters.net/files/airlines/0/antonov-design-bureau_58ff33_opk.png",
+    "name": "-",
+    "airline": "Antonov Airlines"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "ANT-An225",
     "Typ_anzeige": "Antonov An-225 Mriya",

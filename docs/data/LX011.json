@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
     "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L"
   },
+  "logo": {
+    "id": "SR_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/5/swissair_30e039_opk.png",
+    "name": "Schweizerische Luftverkehr-Aktiengesellschaft",
+    "airline": "Swissair"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A321-100",
     "Typ_anzeige": "Airbus A321-100",

@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",
     "photo": "https://www.planespotters.net/photo/170402/hb-ijd-swiss-airbus-a320-214"
   },
+  "logo": {
+    "id": "LX_SWR",
+    "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
+    "name": "Swiss International Air Lines Ltd.",
+    "airline": "Swiss"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200",
     "Typ_anzeige": "Airbus A320-200",

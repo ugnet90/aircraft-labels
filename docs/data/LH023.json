@@ -47,6 +47,12 @@
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42271-lufthansa-city-line-crj-900.html",
     "photo": "https://www.planespotters.net/photo/1754960/d-acnd-lufthansa-bombardier-crj-900lr-cl-600-2d24"
   },
+  "logo": {
+    "id": "CL_CLH",
+    "link": "https://assets.planespotters.net/files/airlines/4/lufthansa-cityline_4abd8f_opk.jpg",
+    "name": "Lufthansa CityLine GmbH",
+    "airline": "Lufthansa CityLine"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "BOM-CRJ900",
     "Typ_anzeige": "Bombardier CRJ-900",

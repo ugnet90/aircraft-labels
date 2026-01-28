@@ -47,6 +47,12 @@
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
     "photo": "https://www.openspotter.org/bild.php?blid=15772"
   },
+  "logo": {
+    "id": "DE_GAF",
+    "link": "https://assets.planespotters.net/files/airlines/6/german-air-force_opk.png",
+    "name": "",
+    "airline": "Luftwaffe (German Air Force)"
+  },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A310-304VIP",
     "Typ_anzeige": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
