@@ -10,6 +10,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELS_CSV = os.path.join(REPO_ROOT, "models_export.csv")
 PAX_CSV = os.path.join(REPO_ROOT, "data", "passenger_aircraft_full.csv")
 LIV_CSV = os.path.join(REPO_ROOT, "data", "liveries.csv")
+AIRLINE_LOGOS_CSV = os.path.join(REPO_ROOT, "data", "airline_logos.csv")
 
 OUT_DIR = os.path.join(REPO_ROOT, "docs", "data")
 INDEX_JSON = os.path.join(REPO_ROOT, "docs", "index.json")
@@ -119,6 +120,10 @@ def main() -> int:
     models = read_csv(MODELS_CSV)
     pax_rows = read_csv(PAX_CSV)
     liv_rows = read_csv(LIV_CSV)
+    logos_rows = read_csv(AIRLINE_LOGOS_CSV)
+
+    # Index nach logo_id (Primärschlüssel)
+    logos_idx = index_by_key(logos_rows, "logo_id")
 
     pax_idx = index_by_key(pax_rows, "aircraft_id")
 
@@ -176,6 +181,13 @@ def main() -> int:
         postcard_price = to_float(r.get("Preis_Postkarte", ""))
         photo = (r.get("Foto", "") or "").strip()
 
+        logo_id = (r.get("logo_id", "") or "").strip()
+        logo_row = logos_idx.get(logo_id) if logo_id else None
+        
+        logo_link = (logo_row.get("Logo_Link", "") or "").strip() if logo_row else ""
+        logo_name = (logo_row.get("full_name", "") or "").strip() if logo_row else ""
+        logo_airline = (logo_row.get("Airline", "") or "").strip() if logo_row else ""
+        
         angekommen_raw = (r.get("angekommen", "") or "").strip()
         angekommen_iso = excel_serial_to_iso(angekommen_raw)
 
@@ -246,6 +258,15 @@ def main() -> int:
             },
         }
 
+        # Logo-Infos (airline_logos.csv)
+        if logo_id or logo_link:
+            out["logo"] = {
+                "id": logo_id,
+                "link": logo_link,
+                "name": logo_name,
+                "airline": logo_airline,
+            }
+            
         if aircraft_full:
             out["aircraft_full_v8"] = aircraft_full
 
@@ -272,6 +293,7 @@ def main() -> int:
             "arrived": angekommen_iso,
             "scale": scale_final,
             "flown": eigenfluege,
+            "logo_id": logo_id,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
