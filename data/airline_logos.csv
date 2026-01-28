@@ -1,0 +1,52 @@
+﻿logo_id;Airline;full_name;IATA;ICAO;Callsign;Logo_Link
+OS_AUA;Austrian;Austrian Airlines AG;OS;AUA;AUSTRIAN;https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg
+OS_ARR;Austrian Arrows;-;OS;-;-;https://assets.planespotters.net/files/airlines/7/austrian-arrows_opk.jpg
+VO_TYR;Tyrolean Airways;Tiroler Luftfahrt GesmbH;VO;TYR;TYROLEAN;https://assets.planespotters.net/files/airlines/9/tyrolean-airways_opk.jpg
+LH_DLH;Lufthansa;Deutsche Lufthansa AG;LH;DLH;LUFTHANSA;https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg
+LH_GEC;Lufthansa Cargo;Lufthansa Cargo AG;LH;GEC;LUFTHANSA CARGO;https://assets.planespotters.net/files/airlines/3/lufthansa-cargo_3f7355_opk.jpg
+CL_CLH;Lufthansa CityLine;Lufthansa CityLine GmbH;CL;CLH;HANSALINE;https://assets.planespotters.net/files/airlines/4/lufthansa-cityline_4abd8f_opk.jpg
+LH_REG;Lufthansa Regional;-;LH;-;-;https://assets.planespotters.net/files/airlines/8/lufthansa-regional_c9af78_opk.jpg
+LH_TEA;Team Lufthansa;-;LH;-;-;https://assets.planespotters.net/files/airlines/7/team-lufthansa_c89e2c_opk.jpg
+FX_GEC;German Cargo;German Cargo Services GmbH;FX;GEC;GERMAN CARGO;https://assets.planespotters.net/files/airlines/8/german-cargo_a6d4d7_opk.png
+LX_SWR;Swiss;Swiss International Air Lines Ltd.;LX;SWR;SWISS;https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg
+LX_CRX;Crossair;Crossair Ltd. Co.;LX;CRX;CROSSAIR;https://assets.planespotters.net/files/airlines/9/crossair_cfd0b4_opk.png
+SR_SWR;Swissair;Schweizerische Luftverkehr-Aktiengesellschaft;SR;SWR;SWISSAIR;https://assets.planespotters.net/files/airlines/5/swissair_30e039_opk.png
+BT_BTI;AirBaltic;Air Baltic Corporation AS;BT;BTI;AIRBALTIC;https://assets.planespotters.net/files/airlines/4/air-baltic_27ccf6_opk.jpg
+AB_BER;Air Berlin;Air Berlin PLC & Co. Luftverkehrs KG;AB;BER;AIR BERLIN;https://assets.planespotters.net/files/airlines/5/air-berlin_1981f1.svg
+AF_AFR;Air France;Air France-KLM;AF;AFR;AIRFRANS;https://assets.planespotters.net/files/airlines/6/air-france_45ae1c.svg
+AZ_AZA;Alitalia;Alitalia - Linee Aeree Italiane SpA;AZ;AZA;ALITALIA;https://assets.planespotters.net/files/airlines/6/alitalia-linee-aeree-italiane_34bf65_opr.png
+BA_BAW;British Airways;British Airways Plc;BA;BAW;SPEEDBIRD;https://assets.planespotters.net/files/airlines/6/british-airways_a3ae47.svg
+BR_BAW;British Asia Airways;British Asia Airways Limited;BR;BAW;SPEEDBIRD;https://assets.planespotters.net/files/airlines/2/british-asiaairways_9f4491_opr.png
+BE_BEA;BEA;British European Airways Corporation;BE;BEA;BEALINE;https://assets.planespotters.net/files/airlines/0/british-european-airways-bea_5d7169_opk.png
+BA_BOA;BOAC;British Overseas Airways Corporation;BA;BOA;SPEEDBIRD;https://assets.planespotters.net/files/airlines/1/british-overseas-airways-corporation-boac_2f6258_opk.png
+LM_LOG;Loganair;Loganair Limited;LM;LOG;LOGAN;https://assets.planespotters.net/files/airlines/1/loganair_opk.png
+A5_HOP;Air France HOP;-;A5;HOP;AIR HOP;https://assets.planespotters.net/files/airlines/8/air-france-hop_254f8e.svg
+HF_HLF;Hapag-Lloyd;Hapag-Lloyd Flug GmbH;HF;HLF;HAPAG LLOYD;https://assets.planespotters.net/files/airlines/1/hapag-lloyd_4b7463.png
+X3_HLX;Hapag-Lloyd Express;Hapag-Lloyd Express GmbH;X3;HLX;YELLOW CAB;https://assets.planespotters.net/files/airlines/3/hapag-lloyd-express_137e3c.png
+FI_ICE;Icelandair;Flugleidir HF.;FI;ICE;ICEAIR;https://assets.planespotters.net/files/airlines/3/icelandair_732c13.svg
+FI_CAR;Icelandair Cargo;-;-;-;-;https://static.trademarkia.com/eu_data/img/1765123.jpg
+KL_KLM;KLM;Koninklijke Luchtvaart Maatschappij N.V.;KL;KLM;KLM;https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg
+KL_EXE;KLM exel;-;KL;-;-;https://assets.planespotters.net/files/airlines/2/klm-exel_opk.png
+WA_KLC;KLM Cityhopper;-;WA;KLC;CITY;https://assets.planespotters.net/files/airlines/1/klm-cityhopper_opk.jpg
+UK_UKA;KLM uk;-;UK;UKA;UKAY;https://assets.planespotters.net/files/airlines/7/klm-uk_3e96df_opk.png
+KL_ASI;KLM Asia;-;KL;-;-;https://assets.planespotters.net/files/airlines/7/klm-asia_32dd9b_opk.png
+NG_LDA;Lauda Air;Lauda Air Luftfahrt GmbH;NG;LDA;LAUDA AIR;https://assets.planespotters.net/files/airlines/8/lauda-air_cf6af3_opk.png
+HG_NLY;Niki;Niki Luftfahrt GmbH;HG;NLY;NIKI;https://assets.planespotters.net/files/airlines/2/niki_73cf3e.svg
+DY_NOZ;Norwegian Air Shuttle;Norwegian Air Shuttle AOC AS;DY;NOZ;NORDIC;https://assets.planespotters.net/files/airlines/4/norwegian-air-shuttle-aoc_7bcc4a.svg
+PA_PAA;Pan Am;Pan American World Airways Incorporated;PA;PAA;CLIPPER;https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png
+SK_SAS;SAS;Scandinavian Airlines System Denmark-Norway-Sweden;SK;SAS;SCANDINAVIAN;https://assets.planespotters.net/files/airlines/2/sas_160938_opk.jpg
+TP_TAP;TAP;Transportes Aéreos Portugueses S.A.;TP;TAP;AIR PORTUGAL;https://assets.planespotters.net/files/airlines/9/tap-air-portugal_28f972.svg
+WF_WIF;Widerøe;Widerøes Flyveselskap AS;WF;WIF;WIDEROE;https://assets.planespotters.net/files/airlines/8/wideroe_540471_opk.png
+CH_SUI;Schweizer Luftwaffe (Swiss Air Force);-;-;SUI;SWISS AIR FORCE;https://assets.planespotters.net/files/airlines/0/swiss-air-force_3f0682.svg
+IZ_AIZ;Arkia - Israeli Airlines;Arkia Israeli Airlines Limited;IZ;AIZ;ARKIA;https://assets.planespotters.net/files/airlines/0/arkia-israeli-airlines_999d37_opk.png
+DE_GAF;Luftwaffe (German Air Force);;-;GAF;GERMAN AIR FORCE;https://assets.planespotters.net/files/airlines/6/german-air-force_opk.png
+US_UAF;United States Air Force;United States Air Force (USAF);-;-;-;https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png
+US_NAV;United States Navy;United States Navy (US Navy);-;CNV;CONVOY;https://assets.planespotters.net/files/airlines/9/us-navy_6a3378.svg
+US_ARM;United States Army;United States Army;-;-;-;https://assets.planespotters.net/files/airlines/2/us-army_c90ffe_opr.png
+SU_AFL;Aeroflot - Russian Airlines;-;SU;AFL;AEROFLOT;https://assets.planespotters.net/files/airlines/4/aeroflot-russian-airlines_27ccf6_opk.jpg
+UR_ADB;Antonov Airlines;-;-;ADB;ANTONOV BUREAU;https://assets.planespotters.net/files/airlines/0/antonov-design-bureau_58ff33_opk.png
+FR_BCO;Airbus Beluga Transport;;-;BCO;BELUGA CARGO;https://assets.planespotters.net/files/airlines/4/airbus-beluga-transport_18355a_opr.jpg
+4Y_BGA;Airbus Transport International;;4Y;BGA;BELOUGA;https://assets.planespotters.net/files/airlines/7/airbus-transport-international_ab97b7_opk.png
+US_VGX;Virgin Galactic;Virgin Galactic Holdings Incorporated;-;VGX;GALACTIC;https://assets.planespotters.net/files/airlines/9/virgin-galactic_1fb966_opk.png
+US_NAS;NASA;National Aeronautics and Space Administration;-;-;-;https://assets.planespotters.net/files/airlines/2/nasa_e72e0e_opk.png
+SU_BUR;Buran Space Shuttle;-;-;-;-;https://www.buran-energia.com/img/img_logoV2.png
