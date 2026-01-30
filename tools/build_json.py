@@ -303,15 +303,25 @@ def main() -> int:
             "model_id": model_id,
             "airline_code": airline_code,
             "airline": airline,
+            "airline_row": (r.get("airline_row", "") or "").strip(),
+        
             "aircraft_id": aircraft_id,
             "aircraft_type": aircraft_type,
             "registration": registration,
-            "livery_name": livery,                 # Code behalten (für Debug/Referenz)
-            "livery_display": livery_pretty or livery,  # <-- neu: Anzeige
+        
+            "manufacturer": (r.get("manufacturer", "") or "").strip(),
+            "aircraft_name": (r.get("aircraft_name", "") or "").strip(),
+            "livery_note": (r.get("livery_note", "") or "").strip(),
+            "extra_info": (r.get("extra_info", "") or "").strip(),
+        
+            "livery_name": livery,                      # Code behalten (für Debug/Referenz)
+            "livery_display": livery_pretty or livery,   # Anzeige
             "arrived": angekommen_iso,
             "scale": scale_final,
             "flown": eigenfluege,
             "logo_id": logo_id,
+        
+            "shop_url": (r.get("Shop_url", "") or "").strip(),
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
