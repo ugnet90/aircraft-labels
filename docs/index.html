@@ -317,6 +317,16 @@
     const airline = a.getAttribute("data-airline");
     const type = a.getAttribute("data-type");
   
+    // "Fresh" start: alle Filter zurücksetzen
+    document.getElementById("q").value = "";
+    document.getElementById("airline").value = "";
+    document.getElementById("type").value = "";
+    document.getElementById("scale").value = "";
+    document.getElementById("flown").value = "";
+    // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
+    // document.getElementById("sort").value = "airline_model";
+  
+    // Nur den geklickten Filter setzen
     if(airline !== null){
       document.getElementById("airline").value = airline;
     }
