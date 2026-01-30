@@ -14,10 +14,24 @@
     .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
     .btn:hover{background:#fafafa}
     .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
-    table{width:100%;border-collapse:collapse;font-size:12px}
-    th,td{border-bottom:1px solid #eee;padding:6px 6px;vertical-align:top}
-    th{position:sticky;top:0;background:#fff}
-    td:first-child, th:first-child{position:sticky;left:0;background:#fff}
+    table{width:max-content;border-collapse:collapse;font-size:12px}
+    th,td{
+      border:1px solid #e6e6e6;
+      padding:6px 8px;
+      vertical-align:top;
+      background:#fff;
+    }
+    th{
+      position:sticky;
+      top:0;
+      z-index:3;
+    }
+    td:first-child, th:first-child{
+      position:sticky;
+      left:0;
+      z-index:2;
+    }
+    tr:nth-child(even) td{background:#fafafa}
     .num{text-align:right;font-variant-numeric:tabular-nums}
     .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
     select,input{padding:6px;border:1px solid #ddd;border-radius:10px}
@@ -43,8 +57,13 @@
     </label>
   </div>
 
-  <div class="card" style="overflow:auto">
-    <table id="tbl"></table>
+  <div class="card" style="padding:0">
+    <div id="topScroll" style="overflow:auto;border-bottom:1px solid #eee">
+      <div id="topScrollInner" style="height:1px"></div>
+    </div>
+    <div id="tableWrap" style="overflow:auto;max-height:75vh">
+      <table id="tbl"></table>
+    </div>
   </div>
 
 <script>
@@ -85,6 +104,20 @@
 
     document.getElementById("tbl").innerHTML = html;
     document.getElementById("meta").textContent = `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
+    // Sync top scrollbar width + scroll position
+    requestAnimationFrame(() => {
+      const wrap = document.getElementById("tableWrap");
+      const top = document.getElementById("topScroll");
+      const inner = document.getElementById("topScrollInner");
+      const tbl = document.getElementById("tbl");
+      if(!wrap || !top || !inner || !tbl) return;
+    
+      inner.style.width = tbl.scrollWidth + "px";
+    
+      // avoid duplicate listeners by resetting handlers
+      top.onscroll = () => { wrap.scrollLeft = top.scrollLeft; };
+      wrap.onscroll = () => { top.scrollLeft = wrap.scrollLeft; };
+    });    
   }
 
   async function main(){
