@@ -37,7 +37,7 @@ def main():
     counts_by_airline_type = defaultdict(lambda: defaultdict(int))
 
     for r in models:
-        airline = norm(r.get("airline_row")) or norm(r.get("airline")) or norm(r.get("airline_code"))
+        airline = norm(r.get("airline")) or norm(r.get("airline_code"))
         t = norm(r.get("aircraft_type"))
         if t:
             present_types.add(t)
