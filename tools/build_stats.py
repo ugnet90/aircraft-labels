@@ -31,51 +31,51 @@ def main():
     models = read_csv(MODELS_CSV, delimiter=";")
     pax = read_csv(PASSENGER_CSV, delimiter=";")
 
-    # --- Collection: types present ---
-    present_types = set()
-    present_by_airline = defaultdict(set)
-    counts_by_airline_type = defaultdict(lambda: defaultdict(int))
-
+    # --- Collection: present aircraft_ids (stable) ---
+    present_ids = set()
     for r in models:
-        airline = norm(r.get("airline")) or norm(r.get("airline_code"))
-        t = norm(r.get("aircraft_type"))
-        if t:
-            present_types.add(t)
-            if airline:
-                present_by_airline[airline].add(t)
-                counts_by_airline_type[airline][t] += 1
+        aid = norm(r.get("aircraft_id"))
+        if aid:
+            present_ids.add(aid)
 
-    # --- Master type list from passenger_aircraft_full.csv ---
-    # Verwendet: aircraft_id + Typ_anzeige
-    master_types = set()
+    # --- Master list from passenger_aircraft_full.csv (stable aircraft_id) ---
+    id_to_label = {}
+    master_ids = set()
     for r in pax:
-        t = norm(r.get("Typ_anzeige")) or norm(r.get("aircraft_id"))
-        if t:
-            master_types.add(t)
+        aid = norm(r.get("aircraft_id"))
+        label = norm(r.get("Typ_anzeige")) or aid
+        if aid:
+            master_ids.add(aid)
+            id_to_label[aid] = label
 
-
-    # Fallback: wenn passenger_aircraft_full.csv fehlt/leer ist:
-    # dann kann man "fehlend" nicht sinnvoll bestimmen -> leere Liste + Hinweis
     warning = ""
-    if not master_types:
-        warning = f"Keine Typen aus {PASSENGER_CSV.name} gefunden (Datei fehlt oder Spaltennamen passen nicht)."
-        missing_types = []
+    if not master_ids:
+        warning = f"Keine aircraft_id aus {PASSENGER_CSV.name} gefunden."
+        missing_ids = []
+        present_in_master = set()
     else:
-        missing_types = sorted(master_types - present_types)
+        present_in_master = present_ids & master_ids
+        missing_ids = sorted(master_ids - present_ids)
+
+    missing_types = [
+        {"aircraft_id": aid, "Typ_anzeige": id_to_label.get(aid, aid)}
+        for aid in missing_ids
+    ]
 
     payload_missing = {
-        "schema": "aircraft-labels.missing-types.v1",
+        "schema": "aircraft-labels.missing-types.v2",
         "warning": warning,
         "counts": {
-            "master_types": len(master_types),
-            "present_types": len(present_types),
-            "missing_types": len(missing_types),
+            "master_types": len(master_ids),
+            "present_types": len(present_in_master),
+            "missing_types": len(missing_ids),
             "models": len(models),
         },
         "missing_types": missing_types,
-        "present_types": sorted(present_types),
     }
+
     OUT_MISSING.write_text(json.dumps(payload_missing, ensure_ascii=False, indent=2), encoding="utf-8")
+
 
     # --- Matrix payload (Airlines x Types) ---
     airlines = sorted(counts_by_airline_type.keys())
