@@ -161,6 +161,15 @@ def main() -> int:
 
         airline_code = (r.get("airline_code", "") or "").strip()
         airline = (r.get("airline", "") or "").strip()
+        airline_row = (r.get("airline_row", "") or "").strip()
+        manufacturer = (r.get("manufacturer", "") or "").strip()
+        
+        aircraft_name = (r.get("aircraft_name", "") or "").strip()
+        livery_note = (r.get("livery_note", "") or "").strip()
+        extra_info = (r.get("extra_info", "") or "").strip()
+        
+        shop_url = (r.get("Shop_url", "") or "").strip()
+
         aircraft_id = (r.get("aircraft_id", "") or "").strip()
 
         aircraft_type = (r.get("aircraft_type", "") or "").strip()
@@ -214,6 +223,12 @@ def main() -> int:
             "model_id": model_id,
             "airline_code": airline_code,
             "airline": airline,
+            "airline_row": airline_row,
+            "manufacturer": manufacturer,
+            "aircraft_name": aircraft_name,
+            "livery_note": livery_note,
+            "extra_info": extra_info,
+            "shop_url": shop_url,
             "aircraft_id": aircraft_id,
             "aircraft_type": aircraft_type,
             "registration": registration,
@@ -239,11 +254,12 @@ def main() -> int:
             "livery": {
                 "code": livery,
                 "parent": parent_livery,
-                "notes": zusatzinfo,
+                "notes_raw": zusatzinfo,
+                "note": livery_note,
             },
             "model": {
                 "scale": scale_final,
-                "manufacturer": (r.get("manufacturer", "") or "").strip(),
+                "manufacturer": manufacturer,
                 "model_number": (r.get("model_number", "") or "").strip(),
                 "shop": shop,
                 "price": price,
@@ -255,6 +271,8 @@ def main() -> int:
             "links": {
                 "postcard": postcard,
                 "photo": photo,
+                "shop": shop,
+                "shop_url": shop_url,
             },
         }
 
