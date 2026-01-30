@@ -49,11 +49,17 @@
 
   function render(){
     const q = (document.getElementById("q").value || "").trim().toLowerCase();
-    const items = all.filter(t => !q || t.toLowerCase().includes(q));
-
+    const items = all.filter(x => {
+      const hay = (x.label + " " + x.id).toLowerCase();
+      return !q || hay.includes(q);
+    });
+    
     document.getElementById("count").textContent = `${items.length} fehlende Typen`;
+    
     const ul = document.getElementById("list");
-    ul.innerHTML = items.map(t => `<li>${esc(t)}</li>`).join("");
+    ul.innerHTML = items
+      .map(x => `<li>${esc(x.label)} <span class="muted">(${esc(x.id)})</span></li>`)
+      .join("");
   }
 
   async function main(){
@@ -71,7 +77,11 @@
       w.innerHTML = `<b>Hinweis:</b> ${esc(d.warning)}`;
     }
 
-    all = (d.missing_types || []);
+    all = (d.missing_types || []).map(x => ({
+      id: String(x.aircraft_id || "").trim(),
+      label: String(x.Typ_anzeige || x.aircraft_id || "").trim()
+    }));
+
     render();
 
     document.getElementById("q").addEventListener("input", render);
