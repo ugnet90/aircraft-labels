@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fehlende Flugzeugtypen</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:900px}
+    .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+    h1{font-size:20px;margin:0}
+    .muted{color:#666;font-size:12px}
+    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
+    input{padding:8px;border:1px solid #ddd;border-radius:10px;width:100%}
+    ul{margin:10px 0 0 18px}
+    li{margin:4px 0}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    a{color:#000}
+    .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
+    .btn:hover{background:#fafafa}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <h1>Fehlende Flugzeugtypen</h1>
+    <span class="muted" id="meta"></span>
+  </div>
+
+  <div class="row">
+    <a class="btn" href="./index.html">← Übersicht</a>
+    <a class="btn" href="./matrix.html">Matrix</a>
+  </div>
+
+  <div id="warn" class="card" style="display:none;border-color:#c00;background:#fff5f5"></div>
+
+  <div class="card">
+    <div class="muted">Filter</div>
+    <input id="q" placeholder="Tippe zum Suchen (z.B. A320, 737, Dash …)" />
+  </div>
+
+  <div class="card">
+    <div class="muted" id="count"></div>
+    <ul id="list"></ul>
+  </div>
+
+<script>
+  function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+
+  let all = [];
+
+  function render(){
+    const q = (document.getElementById("q").value || "").trim().toLowerCase();
+    const items = all.filter(t => !q || t.toLowerCase().includes(q));
+
+    document.getElementById("count").textContent = `${items.length} fehlende Typen`;
+    const ul = document.getElementById("list");
+    ul.innerHTML = items.map(t => `<li>${esc(t)}</li>`).join("");
+  }
+
+  async function main(){
+    const res = await fetch("./data/missing_types.json", {cache:"no-store"});
+    const d = await res.json();
+
+    const meta = d.counts
+      ? `Master: ${d.counts.master_types} · Vorhanden: ${d.counts.present_types} · Fehlend: ${d.counts.missing_types}`
+      : "";
+    document.getElementById("meta").textContent = meta;
+
+    if(d.warning){
+      const w = document.getElementById("warn");
+      w.style.display = "block";
+      w.innerHTML = `<b>Hinweis:</b> ${esc(d.warning)}`;
+    }
+
+    all = (d.missing_types || []);
+    render();
+
+    document.getElementById("q").addEventListener("input", render);
+  }
+
+  main();
+</script>
+</body>
+</html>
