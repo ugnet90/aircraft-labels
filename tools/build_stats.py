@@ -46,13 +46,13 @@ def main():
                 counts_by_airline_type[airline][t] += 1
 
     # --- Master type list from passenger_aircraft_full.csv ---
-    # Erwartete Spalten (mind. eine davon muss existieren):
-    # - Typ_anzeige oder Aircraft Type oder aircraft_type oder aircraft_id
+    # Verwendet: aircraft_id + Typ_anzeige
     master_types = set()
     for r in pax:
-        t = norm(r.get("Typ_anzeige")) or norm(r.get("Aircraft Type")) or norm(r.get("aircraft_type")) or norm(r.get("aircraft_id"))
+        t = norm(r.get("Typ_anzeige")) or norm(r.get("aircraft_id"))
         if t:
             master_types.add(t)
+
 
     # Fallback: wenn passenger_aircraft_full.csv fehlt/leer ist:
     # dann kann man "fehlend" nicht sinnvoll bestimmen -> leere Liste + Hinweis
