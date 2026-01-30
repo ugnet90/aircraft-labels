@@ -1,463 +1,1052 @@
 {
-  "schema": "aircraft-labels.missing-types.v1",
+  "schema": "aircraft-labels.missing-types.v2",
   "warning": "",
   "counts": {
     "master_types": 384,
-    "present_types": 132,
-    "missing_types": 317,
+    "present_types": 124,
+    "missing_types": 260,
     "models": 161
   },
   "missing_types": [
-    "ATR ATR 42-300",
-    "ATR ATR 42-500",
-    "ATR ATR 42-600",
-    "ATR ATR 72-200",
-    "ATR ATR 72-500",
-    "ATR ATR 72-600",
-    "AVIC MA700",
-    "Aermacchi AL-60",
-    "Aero Spacelines Mini Guppy",
-    "Aero Spacelines Mini Guppy Turbine",
-    "Aero Spacelines Pregnant Guppy",
-    "Aero Spacelines Super Guppy",
-    "Aero Spacelines Super Guppy SGT-201",
-    "Aero Vodochody Ae-145",
-    "Aero Vodochody Ae-45",
-    "Aero Vodochody L-29 Delfín",
-    "Airbus A300 B2",
-    "Airbus A300 B4",
-    "Airbus A300-600",
-    "Airbus A300-600ST Beluga",
-    "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
-    "Airbus A318",
-    "Airbus A318 (Sharklets)",
-    "Airbus A319",
-    "Airbus A319 (Sharklets)",
-    "Airbus A319LR Long Range",
-    "Airbus A319LR Long Range (Sharklets)",
-    "Airbus A319neo",
-    "Airbus A320-100",
-    "Airbus A321 LR",
-    "Airbus A321 XLR",
-    "Airbus A321-200",
-    "Airbus A330-200 (Sharklets)",
-    "Airbus A330-300 (Sharklets)",
-    "Airbus A330-743L BelugaXL",
-    "Airbus A330-800neo",
-    "Airbus A330-900neo",
-    "Airbus A340-500",
-    "Airbus A350-1000",
-    "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
-    "Airspeed AS57 Ambassador",
-    "Antonov An-124 Ruslan",
-    "Antonov An-140",
-    "Antonov An-148",
-    "Antonov An-158",
-    "Antonov An-2",
-    "Antonov An-225 Mriya",
-    "Antonov An-24",
-    "Antonov An-26",
-    "Antonov An-28",
-    "Antonov An-32",
-    "Antonov An-72",
-    "Antonov An-74",
-    "Armstrong Whitworth A.W.27 Ensign",
-    "Avro 685 York",
-    "Avro 688/689 Tudor",
-    "Avro 691 Lancastrian",
-    "BAC 1-11-200",
-    "BAC 1-11-300",
-    "BAC 1-11-400",
-    "BAC 1-11-500",
-    "BAe 146-100 / Avro RJ70",
-    "BAe 146-200 / Avro RJ85",
-    "BAe 146-300 / Avro RJ100",
-    "Basler BT-67",
-    "Beechcraft 1900C",
-    "Beechcraft 1900D",
-    "Beechcraft 99",
-    "Beriev Be-200",
-    "Beriev Be-30",
-    "Beriev Be-32",
-    "Boeing 247",
-    "Boeing 307 Stratoliner",
-    "Boeing 314",
-    "Boeing 707-120",
-    "Boeing 707-138",
-    "Boeing 707-220",
-    "Boeing 707-320 Intercontinental",
-    "Boeing 707-330C",
-    "Boeing 707-420",
-    "Boeing 717",
-    "Boeing 737 MAX 10",
-    "Boeing 737 MAX 7",
-    "Boeing 737 MAX 8",
-    "Boeing 737 MAX 9",
-    "Boeing 737-100",
-    "Boeing 737-600 (Winglets)",
-    "Boeing 737-900",
-    "Boeing 737-900 (Winglets)",
-    "Boeing 737-900ER",
-    "Boeing 747 Shuttle Carrier Aircraft",
-    "Boeing 747-200B",
-    "Boeing 747-200B SUD",
-    "Boeing 747-200C",
-    "Boeing 747-300",
-    "Boeing 747-400D Domestic",
-    "Boeing 747-400LCF Dreamlifter",
-    "Boeing 747-8 Intercontinental",
-    "Boeing 747SP Special Performance",
-    "Boeing 747SR Short Range",
-    "Boeing 757-300",
-    "Boeing 757-300 (Winglets)",
-    "Boeing 767-200",
-    "Boeing 767-200 (Winglets)",
-    "Boeing 767-200 Airborne Optical Adjunct",
-    "Boeing 767-200ER Extended Range",
-    "Boeing 767-300 (Winglets)",
-    "Boeing 767-300BCF (Winglets)",
-    "Boeing 767-300ER (Winglets)",
-    "Boeing 767-400ER Extended Range",
-    "Boeing 777-200ER Extended Range",
-    "Boeing 777-200LR Longer Range",
-    "Boeing 777-300",
-    "Boeing 777-300ER Extended Range",
-    "Boeing 777-8",
-    "Boeing 777-9",
-    "Boeing 777F",
-    "Boeing 787-10 Dreamliner",
-    "Boeing C-40A Clipper",
-    "Boeing E-4B",
-    "Boeing VC-137A Stratoliner",
-    "Boeing VC-137B Stratoliner",
-    "Boeing VC-137C Stratoliner",
-    "Boeing YAL-1 Airborne Laser",
-    "Bombardier CRJ-100",
-    "Bombardier CRJ-1000",
-    "Bombardier CRJ-700",
-    "Bristol Britannia 310",
-    "Bristol Britannia 312",
-    "British Aerospace ATP",
-    "British Aerospace Jetstream 31",
-    "British Aerospace Jetstream 32",
-    "British Aerospace Jetstream 41",
-    "Britten-Norman BN-2",
-    "Britten-Norman BN-2A",
-    "CASA C-212",
-    "CASA CN-235",
-    "CASA/Airbus C-295 Pax",
-    "Canadair CL-44",
-    "Canadair North Star C-4",
-    "Cessna 208",
-    "Cessna 402",
-    "Cessna 404",
-    "Cessna 441",
-    "Comac ARJ21-700 ARJ21",
-    "Comac C919",
-    "Consolidated PBY-5 Catalina",
-    "Convair CV-240",
-    "Convair CV-340",
-    "Convair CV-440",
-    "Convair CV-580",
-    "Convair CV-600",
-    "Convair CV-640",
-    "Dassault Mercure 100",
-    "Dornier Do 228",
-    "Dornier Do 328-100",
-    "Dornier Do 328-300",
-    "Dornier Do X",
-    "Douglas C-47 Skytrain",
-    "Douglas DC-2",
-    "Douglas DC-3",
-    "Douglas DC-5",
-    "Douglas DC-6",
-    "Douglas DC-6A",
-    "Douglas DC-6B",
-    "Douglas DC-7",
-    "Douglas DC-7B",
-    "Douglas DC-8-10 Series 10",
-    "Douglas DC-8-20 Series 20",
-    "Douglas DC-8-30 Series 30",
-    "Douglas DC-8-40 Series 40",
-    "Douglas DC-8-50 Series 50",
-    "Douglas DC-8-61 Super 61",
-    "Douglas DC-8-62 Super 62",
-    "Douglas DC-8-63 Super 63",
-    "Douglas DC-8-71 Super 71",
-    "Douglas DC-8-72 Super 72",
-    "Douglas DC-8-73 Super 73",
-    "Embraer E170",
-    "Embraer E170 (Winglets)",
-    "Embraer E175",
-    "Embraer E175-E2",
-    "Embraer E190",
-    "Embraer E190-E2",
-    "Embraer E195",
-    "Embraer EMB-110 Bandeirante",
-    "Embraer EMB-120 Brasilia",
-    "Embraer EMB-121 Xingu",
-    "Embraer ERJ-135",
-    "Embraer ERJ-140",
-    "Embraer ERJ-145",
-    "Fairchild Swearingen Metro",
-    "Focke-Wulf Fw 200 Condor",
-    "Fokker F",
-    "Fokker F100",
-    "Fokker F27",
-    "Fokker F28",
-    "Fokker F50",
-    "Fokker F70",
-    "Ford Trimotor 4-AT",
-    "Ford Trimotor 5-AT",
-    "Handley Page H.P.81 Hermes IV",
-    "Handley Page HPR.7 Herald",
-    "Harbin Y-11",
-    "Harbin Y-12",
-    "Hawker Siddeley HS 748",
-    "Hawker Siddeley Trident 1",
-    "Hawker Siddeley Trident 2",
-    "Hawker Siddeley Trident 3",
-    "Ilyushin Il-114",
-    "Ilyushin Il-12",
-    "Ilyushin Il-14",
-    "Ilyushin Il-18",
-    "Ilyushin Il-62",
-    "Ilyushin Il-86",
-    "Ilyushin Il-96-300",
-    "Irkut MC-21-300",
-    "Junkers Ju 3m Tante Ju",
-    "Let L-410 Turbolet",
-    "Let L-610",
-    "Lockheed C-5A Galaxy",
-    "Lockheed C-5B Galaxy",
-    "Lockheed C-5M Super Galaxy",
-    "Lockheed EP-3E Aries II",
-    "Lockheed L-049 Constellation",
-    "Lockheed L-10 Electra",
-    "Lockheed L-100-30 Hercules",
-    "Lockheed L-1011 TriStar 1",
-    "Lockheed L-1011 TriStar 100",
-    "Lockheed L-1011 TriStar 200",
-    "Lockheed L-1049 Super Constellation",
-    "Lockheed L-14 Super Electra",
-    "Lockheed L-1649 Starliner",
-    "Lockheed L-18 Lodestar",
-    "Lockheed L-649 Constellation",
-    "Lockheed L-749 Constellation",
-    "Lockheed NP-3D Orion",
-    "Lockheed P-3A Orion",
-    "Lockheed P-3B Orion",
-    "Lockheed P-3C Orion",
-    "Martin 2-0-2",
-    "Martin 4-0-4",
-    "McDonnell Douglas DC-10-40",
-    "McDonnell Douglas DC-9-10",
-    "McDonnell Douglas DC-9-15",
-    "McDonnell Douglas DC-9-20",
-    "McDonnell Douglas DC-9-30",
-    "McDonnell Douglas DC-9-40",
-    "McDonnell Douglas DC-9-50",
-    "McDonnell Douglas MD-11ER Extended Range",
-    "McDonnell Douglas MD-83",
-    "McDonnell Douglas MD-88",
-    "McDonnell Douglas MD-90",
-    "NAMC YS-11",
-    "PZL M-18",
-    "PZL M28",
-    "Partenavia P",
-    "Pilatus PC-12",
-    "Pilatus PC-24",
-    "Pilatus PC-6",
-    "Piper PA-23",
-    "Piper PA-31",
-    "Piper PA-31T",
-    "Piper PA-42",
-    "Piper PA-46",
-    "Riley Heron",
-    "Rockwell Space Shuttle Enterprise (Testorbiter)",
-    "Rockwell Space Shuttle Orbiter Atlantis",
-    "Rockwell Space Shuttle Orbiter Challenger",
-    "Rockwell Space Shuttle Orbiter Columbia",
-    "Rockwell Space Shuttle Orbiter Discovery",
-    "Rockwell Space Shuttle Orbiter Endeavour",
-    "Saab 2000",
-    "Scaled Composites Model 348 White Knight Two",
-    "Short S.23 Empire",
-    "Short S.26 G-Class",
-    "Short S.45 Solent",
-    "Shorts 330",
-    "Sud Aviation Caravelle 10B",
-    "Sud Aviation Caravelle I",
-    "Sud Aviation Caravelle III",
-    "Sud Aviation Caravelle VI-N",
-    "Sud Aviation Caravelle VI-R",
-    "Sud Aviation/BAC Concorde",
-    "Sukhoi Superjet 100-95",
-    "Transall C-160",
-    "Tupolew Tu-104",
-    "Tupolew Tu-114",
-    "Tupolew Tu-124",
-    "Tupolew Tu-134",
-    "Tupolew Tu-154",
-    "Tupolew Tu-204-200",
-    "Tupolew Tu-204-300",
-    "Tupolew Tu-214",
-    "VFW-Fokker 614",
-    "Vickers VC10 C1K (RAF Government & VIP)",
-    "Vickers VC10 Standard",
-    "Vickers VC10 Super",
-    "Vickers Vanguard 953",
-    "Vickers Viscount 700",
-    "Vickers Viscount 800",
-    "Xian MA60",
-    "Xian MA600",
-    "Xian Y-7",
-    "Yakowlew Yak-40",
-    "Yakowlew Yak-42",
-    "de Havilland Canada DHC-3 Otter",
-    "de Havilland Canada DHC-6 Twin Otter",
-    "de Havilland Canada DHC-7 Dash 7",
-    "de Havilland Canada DHC-8-100 Dash 8-100",
-    "de Havilland Canada DHC-8-200 Dash 8-200",
-    "de Havilland Canada DHC-8-300 Dash 8-300",
-    "de Havilland Canada DHC-8-400 Dash 8-400 (Q400)",
-    "de Havilland DH.106 Comet 1",
-    "de Havilland DH.106 Comet 4",
-    "de Havilland DH.91 Albatross",
-    "de Havilland DH.95 Flamingo"
-  ],
-  "present_types": [
-    "ATR 42-320",
-    "ATR 72-200",
-    "Airbus 330 Beluga XL",
-    "Airbus A220-100",
-    "Airbus A220-300",
-    "Airbus A300B2",
-    "Airbus A300B4",
-    "Airbus A300B4-600ST",
-    "Airbus A310-200",
-    "Airbus A310-300",
-    "Airbus A310-304 (Bundesrepublik Deutschland)",
-    "Airbus A318-100",
-    "Airbus A319-100",
-    "Airbus A320-200",
-    "Airbus A320-200 (Sharklets)",
-    "Airbus A320neo",
-    "Airbus A321 neo",
-    "Airbus A321-100",
-    "Airbus A321-200 (Sharklets)",
-    "Airbus A321neo",
-    "Airbus A330-200",
-    "Airbus A330-300",
-    "Airbus A340-200",
-    "Airbus A340-300",
-    "Airbus A340-600",
-    "Airbus A350-900",
-    "Airbus A380-800",
-    "Airbus ACJ350-900 (Bundesrepublik Deutschland)",
-    "Antonov AN-225 Mriya",
-    "Aérospatiale/BAC Concorde",
-    "BAC 1-11 Series 300",
-    "BAC 1-11 Series 400",
-    "BAC Vickers VC-10 Super",
-    "Boeing 314 Clipper (Pan Am)",
-    "Boeing 377 Stratocruiser",
-    "Boeing 707-320",
-    "Boeing 707-330B",
-    "Boeing 707-330C (German Cargo)",
-    "Boeing 720",
-    "Boeing 727-100",
-    "Boeing 727-200",
-    "Boeing 737-200",
-    "Boeing 737-300",
-    "Boeing 737-400",
-    "Boeing 737-500",
-    "Boeing 737-600",
-    "Boeing 737-700",
-    "Boeing 737-700 (Winglets)",
-    "Boeing 737-800",
-    "Boeing 737-800 (Winglets)",
-    "Boeing 747-100",
-    "Boeing 747-200",
-    "Boeing 747-200F",
-    "Boeing 747-400",
-    "Boeing 747-8",
-    "Boeing 747SP",
-    "Boeing 757-200",
-    "Boeing 757-200 (Winglets)",
-    "Boeing 767-200 Airborne Optical Adjunct (US Army)",
-    "Boeing 767-300",
-    "Boeing 767-300ER Extended Range",
-    "Boeing 777-200",
-    "Boeing 777-300ER",
-    "Boeing 787-8 Dreamliner",
-    "Boeing 787-9 Dreamliner",
-    "Boeing B-377SGT-201 Super Guppy",
-    "Boeing C-32A (Air Force Two)",
-    "Boeing C-40A Clipper (US Navy)",
-    "Boeing VC-25A (Air Force One)",
-    "Boeing VC-25B (Air Force One, 747-8I)",
-    "Boeing YAL-1 Airborne Laser (USAF)",
-    "Bombardier CRJ-200",
-    "Bombardier CRJ-900",
-    "Bristol 175 Britannia 312",
-    "British Aerospace 146-200",
-    "British Aerospace Avro RJ100",
-    "Buran Space Orbiter OK-1K1",
-    "Consolidated PBY-5 Catalina (USAF)",
-    "Convair CV-240 Convairliner",
-    "Convair CV-880 Golden Arrow",
-    "Convair CV-990 Coronado",
-    "Curtiss-Wright C-46 Commando",
-    "De Havilland Canada DHC-8-400",
-    "Dornier Do X (Lufthansa)",
-    "Douglas C-47 Skytrain (USAF)",
-    "Douglas DC-4",
-    "Douglas DC-7C Seven Seas",
-    "Douglas DC-8-30",
-    "Douglas DC-8-32",
-    "Douglas DC-8-40",
-    "Douglas DC-8-53",
-    "Douglas DC-8-55",
-    "Douglas DC-8-62",
-    "Douglas DC-8-63",
-    "Douglas DC-9-30",
-    "Douglas DC-9-50",
-    "Douglas VC-118A (Independence, Air Force One)",
-    "Embraer E195-E2",
-    "Embraer ERJ-145MP",
-    "Embraer ERJ-170",
-    "Embraer ERJ-190",
-    "Fokker 100",
-    "Fokker 50",
-    "Fokker 70",
-    "Fokker F27-400 Friendship",
-    "Hawker Siddeley HS-121 Trident 2",
-    "Hawker Siddeley HS-121 Trident 3",
-    "Hawker-Siddeley HS-748",
-    "Junkers JU-52 (Swiss Air Force)",
-    "Junkers Ju 52/3m",
-    "Lockheed L-049 Constallation",
-    "Lockheed L-1011 TriStar 500",
-    "Lockheed L-1049G Super Constellation",
-    "Lockheed L-1649A Starliner",
-    "Lockheed L-188 Electra",
-    "Lockheed RP-3D Orion",
-    "McDonnell Douglas DC-10-10",
-    "McDonnell Douglas DC-10-30",
-    "McDonnell Douglas MD-11",
-    "McDonnell Douglas MD-11F",
-    "McDonnell Douglas MD-81",
-    "McDonnell Douglas MD-82",
-    "McDonnell Douglas MD-87",
-    "Saab 340",
-    "Shorts 360",
-    "Space Shuttle Orbiter Columbia",
-    "SpaceShipTwo (Virgin Galactic)",
-    "Sud Aviation SE 210 Caravelle VI-R",
-    "Vickers Viscount 779 (Austrian)",
-    "Vickers Viscount 800 (Arkia)",
-    "Vickers Viscount 814",
-    "Vickers Viscount 837"
+    {
+      "aircraft_id": "AER-AL60",
+      "Typ_anzeige": "Aermacchi AL-60"
+    },
+    {
+      "aircraft_id": "AEV-Ae145",
+      "Typ_anzeige": "Aero Vodochody Ae-145"
+    },
+    {
+      "aircraft_id": "AEV-Ae45",
+      "Typ_anzeige": "Aero Vodochody Ae-45"
+    },
+    {
+      "aircraft_id": "AEV-L29",
+      "Typ_anzeige": "Aero Vodochody L-29 Delfín"
+    },
+    {
+      "aircraft_id": "AIB-A300-600",
+      "Typ_anzeige": "Airbus A300-600"
+    },
+    {
+      "aircraft_id": "AIB-A318-SL",
+      "Typ_anzeige": "Airbus A318 (Sharklets)"
+    },
+    {
+      "aircraft_id": "AIB-A319-SL",
+      "Typ_anzeige": "Airbus A319 (Sharklets)"
+    },
+    {
+      "aircraft_id": "AIB-A319-neo",
+      "Typ_anzeige": "Airbus A319neo"
+    },
+    {
+      "aircraft_id": "AIB-A319LR",
+      "Typ_anzeige": "Airbus A319LR Long Range"
+    },
+    {
+      "aircraft_id": "AIB-A319LR-SL",
+      "Typ_anzeige": "Airbus A319LR Long Range (Sharklets)"
+    },
+    {
+      "aircraft_id": "AIB-A320-100",
+      "Typ_anzeige": "Airbus A320-100"
+    },
+    {
+      "aircraft_id": "AIB-A321-200",
+      "Typ_anzeige": "Airbus A321-200"
+    },
+    {
+      "aircraft_id": "AIB-A321-LR",
+      "Typ_anzeige": "Airbus A321 LR"
+    },
+    {
+      "aircraft_id": "AIB-A321-XLR",
+      "Typ_anzeige": "Airbus A321 XLR"
+    },
+    {
+      "aircraft_id": "AIB-A330-200-SL",
+      "Typ_anzeige": "Airbus A330-200 (Sharklets)"
+    },
+    {
+      "aircraft_id": "AIB-A330-300-SL",
+      "Typ_anzeige": "Airbus A330-300 (Sharklets)"
+    },
+    {
+      "aircraft_id": "AIB-A330-800neo",
+      "Typ_anzeige": "Airbus A330-800neo"
+    },
+    {
+      "aircraft_id": "AIB-A330-900neo",
+      "Typ_anzeige": "Airbus A330-900neo"
+    },
+    {
+      "aircraft_id": "AIB-A340-500",
+      "Typ_anzeige": "Airbus A340-500"
+    },
+    {
+      "aircraft_id": "AIB-A350-1000",
+      "Typ_anzeige": "Airbus A350-1000"
+    },
+    {
+      "aircraft_id": "AIR-AS57",
+      "Typ_anzeige": "Airspeed AS57 Ambassador"
+    },
+    {
+      "aircraft_id": "ANT-AN32",
+      "Typ_anzeige": "Antonov An-32"
+    },
+    {
+      "aircraft_id": "ANT-An124",
+      "Typ_anzeige": "Antonov An-124 Ruslan"
+    },
+    {
+      "aircraft_id": "ANT-An140",
+      "Typ_anzeige": "Antonov An-140"
+    },
+    {
+      "aircraft_id": "ANT-An148",
+      "Typ_anzeige": "Antonov An-148"
+    },
+    {
+      "aircraft_id": "ANT-An158",
+      "Typ_anzeige": "Antonov An-158"
+    },
+    {
+      "aircraft_id": "ANT-An2",
+      "Typ_anzeige": "Antonov An-2"
+    },
+    {
+      "aircraft_id": "ANT-An24",
+      "Typ_anzeige": "Antonov An-24"
+    },
+    {
+      "aircraft_id": "ANT-An26",
+      "Typ_anzeige": "Antonov An-26"
+    },
+    {
+      "aircraft_id": "ANT-An28",
+      "Typ_anzeige": "Antonov An-28"
+    },
+    {
+      "aircraft_id": "ANT-An72",
+      "Typ_anzeige": "Antonov An-72"
+    },
+    {
+      "aircraft_id": "ANT-An74",
+      "Typ_anzeige": "Antonov An-74"
+    },
+    {
+      "aircraft_id": "ARW-AW27",
+      "Typ_anzeige": "Armstrong Whitworth A.W.27 Ensign"
+    },
+    {
+      "aircraft_id": "ASP-377MG",
+      "Typ_anzeige": "Aero Spacelines Mini Guppy"
+    },
+    {
+      "aircraft_id": "ASP-377MGT",
+      "Typ_anzeige": "Aero Spacelines Mini Guppy Turbine"
+    },
+    {
+      "aircraft_id": "ASP-377PG",
+      "Typ_anzeige": "Aero Spacelines Pregnant Guppy"
+    },
+    {
+      "aircraft_id": "ASP-B377SG",
+      "Typ_anzeige": "Aero Spacelines Super Guppy"
+    },
+    {
+      "aircraft_id": "ATR-ATR42-500",
+      "Typ_anzeige": "ATR ATR 42-500"
+    },
+    {
+      "aircraft_id": "ATR-ATR42-600",
+      "Typ_anzeige": "ATR ATR 42-600"
+    },
+    {
+      "aircraft_id": "ATR-ATR72-500",
+      "Typ_anzeige": "ATR ATR 72-500"
+    },
+    {
+      "aircraft_id": "ATR-ATR72-600",
+      "Typ_anzeige": "ATR ATR 72-600"
+    },
+    {
+      "aircraft_id": "AVI-MA700",
+      "Typ_anzeige": "AVIC MA700"
+    },
+    {
+      "aircraft_id": "AVR-685",
+      "Typ_anzeige": "Avro 685 York"
+    },
+    {
+      "aircraft_id": "AVR-688",
+      "Typ_anzeige": "Avro 688/689 Tudor"
+    },
+    {
+      "aircraft_id": "AVR-691",
+      "Typ_anzeige": "Avro 691 Lancastrian"
+    },
+    {
+      "aircraft_id": "BAC-111-200",
+      "Typ_anzeige": "BAC 1-11-200"
+    },
+    {
+      "aircraft_id": "BAC-111-500",
+      "Typ_anzeige": "BAC 1-11-500"
+    },
+    {
+      "aircraft_id": "BAE-146-100",
+      "Typ_anzeige": "BAe 146-100 / Avro RJ70"
+    },
+    {
+      "aircraft_id": "BAE-ATP",
+      "Typ_anzeige": "British Aerospace ATP"
+    },
+    {
+      "aircraft_id": "BAE-Jetstream-31",
+      "Typ_anzeige": "British Aerospace Jetstream 31"
+    },
+    {
+      "aircraft_id": "BAE-Jetstream-32",
+      "Typ_anzeige": "British Aerospace Jetstream 32"
+    },
+    {
+      "aircraft_id": "BAE-Jetstream-41",
+      "Typ_anzeige": "British Aerospace Jetstream 41"
+    },
+    {
+      "aircraft_id": "BAS-BT67",
+      "Typ_anzeige": "Basler BT-67"
+    },
+    {
+      "aircraft_id": "BEE-1900C",
+      "Typ_anzeige": "Beechcraft 1900C"
+    },
+    {
+      "aircraft_id": "BEE-1900D",
+      "Typ_anzeige": "Beechcraft 1900D"
+    },
+    {
+      "aircraft_id": "BEE-99",
+      "Typ_anzeige": "Beechcraft 99"
+    },
+    {
+      "aircraft_id": "BER-Be200",
+      "Typ_anzeige": "Beriev Be-200"
+    },
+    {
+      "aircraft_id": "BER-Be30",
+      "Typ_anzeige": "Beriev Be-30"
+    },
+    {
+      "aircraft_id": "BER-Be32",
+      "Typ_anzeige": "Beriev Be-32"
+    },
+    {
+      "aircraft_id": "BOE-247",
+      "Typ_anzeige": "Boeing 247"
+    },
+    {
+      "aircraft_id": "BOE-307",
+      "Typ_anzeige": "Boeing 307 Stratoliner"
+    },
+    {
+      "aircraft_id": "BOE-707-120",
+      "Typ_anzeige": "Boeing 707-120"
+    },
+    {
+      "aircraft_id": "BOE-707-138",
+      "Typ_anzeige": "Boeing 707-138"
+    },
+    {
+      "aircraft_id": "BOE-707-220",
+      "Typ_anzeige": "Boeing 707-220"
+    },
+    {
+      "aircraft_id": "BOE-707-420",
+      "Typ_anzeige": "Boeing 707-420"
+    },
+    {
+      "aircraft_id": "BOE-717",
+      "Typ_anzeige": "Boeing 717"
+    },
+    {
+      "aircraft_id": "BOE-737-100",
+      "Typ_anzeige": "Boeing 737-100"
+    },
+    {
+      "aircraft_id": "BOE-737-600-WL",
+      "Typ_anzeige": "Boeing 737-600 (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-737-900",
+      "Typ_anzeige": "Boeing 737-900"
+    },
+    {
+      "aircraft_id": "BOE-737-900-WL",
+      "Typ_anzeige": "Boeing 737-900 (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-737-900ER",
+      "Typ_anzeige": "Boeing 737-900ER"
+    },
+    {
+      "aircraft_id": "BOE-737-MAX10",
+      "Typ_anzeige": "Boeing 737 MAX 10"
+    },
+    {
+      "aircraft_id": "BOE-737-MAX7",
+      "Typ_anzeige": "Boeing 737 MAX 7"
+    },
+    {
+      "aircraft_id": "BOE-737-MAX8",
+      "Typ_anzeige": "Boeing 737 MAX 8"
+    },
+    {
+      "aircraft_id": "BOE-737-MAX9",
+      "Typ_anzeige": "Boeing 737 MAX 9"
+    },
+    {
+      "aircraft_id": "BOE-747-200B",
+      "Typ_anzeige": "Boeing 747-200B"
+    },
+    {
+      "aircraft_id": "BOE-747-200C",
+      "Typ_anzeige": "Boeing 747-200C"
+    },
+    {
+      "aircraft_id": "BOE-747-200SUD",
+      "Typ_anzeige": "Boeing 747-200B SUD"
+    },
+    {
+      "aircraft_id": "BOE-747-300",
+      "Typ_anzeige": "Boeing 747-300"
+    },
+    {
+      "aircraft_id": "BOE-747-400D",
+      "Typ_anzeige": "Boeing 747-400D Domestic"
+    },
+    {
+      "aircraft_id": "BOE-747-400LCF",
+      "Typ_anzeige": "Boeing 747-400LCF Dreamlifter"
+    },
+    {
+      "aircraft_id": "BOE-747-SCA",
+      "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft"
+    },
+    {
+      "aircraft_id": "BOE-747-SR",
+      "Typ_anzeige": "Boeing 747SR Short Range"
+    },
+    {
+      "aircraft_id": "BOE-757-300",
+      "Typ_anzeige": "Boeing 757-300"
+    },
+    {
+      "aircraft_id": "BOE-757-300-WL",
+      "Typ_anzeige": "Boeing 757-300 (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-767-200",
+      "Typ_anzeige": "Boeing 767-200"
+    },
+    {
+      "aircraft_id": "BOE-767-200-WL",
+      "Typ_anzeige": "Boeing 767-200 (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-767-200ER",
+      "Typ_anzeige": "Boeing 767-200ER Extended Range"
+    },
+    {
+      "aircraft_id": "BOE-767-300-WL",
+      "Typ_anzeige": "Boeing 767-300 (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-767-300BCF-WL",
+      "Typ_anzeige": "Boeing 767-300BCF (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-767-300ER-WL",
+      "Typ_anzeige": "Boeing 767-300ER (Winglets)"
+    },
+    {
+      "aircraft_id": "BOE-767-400ER",
+      "Typ_anzeige": "Boeing 767-400ER Extended Range"
+    },
+    {
+      "aircraft_id": "BOE-777-200ER",
+      "Typ_anzeige": "Boeing 777-200ER Extended Range"
+    },
+    {
+      "aircraft_id": "BOE-777-200LR",
+      "Typ_anzeige": "Boeing 777-200LR Longer Range"
+    },
+    {
+      "aircraft_id": "BOE-777-300",
+      "Typ_anzeige": "Boeing 777-300"
+    },
+    {
+      "aircraft_id": "BOE-777-8",
+      "Typ_anzeige": "Boeing 777-8"
+    },
+    {
+      "aircraft_id": "BOE-777-9",
+      "Typ_anzeige": "Boeing 777-9"
+    },
+    {
+      "aircraft_id": "BOE-777-F",
+      "Typ_anzeige": "Boeing 777F"
+    },
+    {
+      "aircraft_id": "BOE-787-10",
+      "Typ_anzeige": "Boeing 787-10 Dreamliner"
+    },
+    {
+      "aircraft_id": "BOE-E4B",
+      "Typ_anzeige": "Boeing E-4B"
+    },
+    {
+      "aircraft_id": "BOE-VC137A",
+      "Typ_anzeige": "Boeing VC-137A Stratoliner"
+    },
+    {
+      "aircraft_id": "BOE-VC137B",
+      "Typ_anzeige": "Boeing VC-137B Stratoliner"
+    },
+    {
+      "aircraft_id": "BOE-VC137C",
+      "Typ_anzeige": "Boeing VC-137C Stratoliner"
+    },
+    {
+      "aircraft_id": "BOM-CRJ100",
+      "Typ_anzeige": "Bombardier CRJ-100"
+    },
+    {
+      "aircraft_id": "BOM-CRJ1000",
+      "Typ_anzeige": "Bombardier CRJ-1000"
+    },
+    {
+      "aircraft_id": "BOM-CRJ700",
+      "Typ_anzeige": "Bombardier CRJ-700"
+    },
+    {
+      "aircraft_id": "BRI-Britannia-310",
+      "Typ_anzeige": "Bristol Britannia 310"
+    },
+    {
+      "aircraft_id": "BRN-BN2",
+      "Typ_anzeige": "Britten-Norman BN-2"
+    },
+    {
+      "aircraft_id": "BRN-BN2A",
+      "Typ_anzeige": "Britten-Norman BN-2A"
+    },
+    {
+      "aircraft_id": "CAA-C295-Pax",
+      "Typ_anzeige": "CASA/Airbus C-295 Pax"
+    },
+    {
+      "aircraft_id": "CAN-C4",
+      "Typ_anzeige": "Canadair North Star C-4"
+    },
+    {
+      "aircraft_id": "CAN-CL44",
+      "Typ_anzeige": "Canadair CL-44"
+    },
+    {
+      "aircraft_id": "CAS-C212",
+      "Typ_anzeige": "CASA C-212"
+    },
+    {
+      "aircraft_id": "CAS-CN235",
+      "Typ_anzeige": "CASA CN-235"
+    },
+    {
+      "aircraft_id": "CES-208",
+      "Typ_anzeige": "Cessna 208"
+    },
+    {
+      "aircraft_id": "CES-402",
+      "Typ_anzeige": "Cessna 402"
+    },
+    {
+      "aircraft_id": "CES-404",
+      "Typ_anzeige": "Martin 4-0-4"
+    },
+    {
+      "aircraft_id": "CES-441",
+      "Typ_anzeige": "Cessna 441"
+    },
+    {
+      "aircraft_id": "COM-ARJ21-700",
+      "Typ_anzeige": "Comac ARJ21-700 ARJ21"
+    },
+    {
+      "aircraft_id": "COM-C919",
+      "Typ_anzeige": "Comac C919"
+    },
+    {
+      "aircraft_id": "CON-CV340",
+      "Typ_anzeige": "Convair CV-340"
+    },
+    {
+      "aircraft_id": "CON-CV440",
+      "Typ_anzeige": "Convair CV-440"
+    },
+    {
+      "aircraft_id": "CON-CV580",
+      "Typ_anzeige": "Convair CV-580"
+    },
+    {
+      "aircraft_id": "CON-CV600",
+      "Typ_anzeige": "Convair CV-600"
+    },
+    {
+      "aircraft_id": "CON-CV640",
+      "Typ_anzeige": "Convair CV-640"
+    },
+    {
+      "aircraft_id": "DAS-Mercure-100",
+      "Typ_anzeige": "Dassault Mercure 100"
+    },
+    {
+      "aircraft_id": "DHC-DHC3",
+      "Typ_anzeige": "de Havilland Canada DHC-3 Otter"
+    },
+    {
+      "aircraft_id": "DHC-DHC6",
+      "Typ_anzeige": "de Havilland Canada DHC-6 Twin Otter"
+    },
+    {
+      "aircraft_id": "DHC-DHC7",
+      "Typ_anzeige": "de Havilland Canada DHC-7 Dash 7"
+    },
+    {
+      "aircraft_id": "DHC-DHC8-100",
+      "Typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100"
+    },
+    {
+      "aircraft_id": "DHC-DHC8-200",
+      "Typ_anzeige": "de Havilland Canada DHC-8-200 Dash 8-200"
+    },
+    {
+      "aircraft_id": "DHC-DHC8-300",
+      "Typ_anzeige": "de Havilland Canada DHC-8-300 Dash 8-300"
+    },
+    {
+      "aircraft_id": "DHV-DH106-1",
+      "Typ_anzeige": "de Havilland DH.106 Comet 1"
+    },
+    {
+      "aircraft_id": "DHV-DH106-4",
+      "Typ_anzeige": "de Havilland DH.106 Comet 4"
+    },
+    {
+      "aircraft_id": "DHV-DH91",
+      "Typ_anzeige": "de Havilland DH.91 Albatross"
+    },
+    {
+      "aircraft_id": "DHV-DH95",
+      "Typ_anzeige": "de Havilland DH.95 Flamingo"
+    },
+    {
+      "aircraft_id": "DOR-Do228",
+      "Typ_anzeige": "Dornier Do 228"
+    },
+    {
+      "aircraft_id": "DOR-Do328-100",
+      "Typ_anzeige": "Dornier Do 328-100"
+    },
+    {
+      "aircraft_id": "DOR-Do328-300",
+      "Typ_anzeige": "Dornier Do 328-300"
+    },
+    {
+      "aircraft_id": "DOU-DC2",
+      "Typ_anzeige": "Douglas DC-2"
+    },
+    {
+      "aircraft_id": "DOU-DC3",
+      "Typ_anzeige": "Douglas DC-3"
+    },
+    {
+      "aircraft_id": "DOU-DC5",
+      "Typ_anzeige": "Douglas DC-5"
+    },
+    {
+      "aircraft_id": "DOU-DC6",
+      "Typ_anzeige": "Douglas DC-6"
+    },
+    {
+      "aircraft_id": "DOU-DC6-A",
+      "Typ_anzeige": "Douglas DC-6A"
+    },
+    {
+      "aircraft_id": "DOU-DC6-B",
+      "Typ_anzeige": "Douglas DC-6B"
+    },
+    {
+      "aircraft_id": "DOU-DC7",
+      "Typ_anzeige": "Douglas DC-7"
+    },
+    {
+      "aircraft_id": "DOU-DC7-B",
+      "Typ_anzeige": "Douglas DC-7B"
+    },
+    {
+      "aircraft_id": "DOU-DC8-10",
+      "Typ_anzeige": "Douglas DC-8-10 Series 10"
+    },
+    {
+      "aircraft_id": "DOU-DC8-20",
+      "Typ_anzeige": "Douglas DC-8-20 Series 20"
+    },
+    {
+      "aircraft_id": "DOU-DC8-61",
+      "Typ_anzeige": "Douglas DC-8-61 Super 61"
+    },
+    {
+      "aircraft_id": "DOU-DC8-71",
+      "Typ_anzeige": "Douglas DC-8-71 Super 71"
+    },
+    {
+      "aircraft_id": "DOU-DC8-72",
+      "Typ_anzeige": "Douglas DC-8-72 Super 72"
+    },
+    {
+      "aircraft_id": "DOU-DC8-73",
+      "Typ_anzeige": "Douglas DC-8-73 Super 73"
+    },
+    {
+      "aircraft_id": "EMB-E170-WL",
+      "Typ_anzeige": "Embraer E170 (Winglets)"
+    },
+    {
+      "aircraft_id": "EMB-E175",
+      "Typ_anzeige": "Embraer E175"
+    },
+    {
+      "aircraft_id": "EMB-E175E2",
+      "Typ_anzeige": "Embraer E175-E2"
+    },
+    {
+      "aircraft_id": "EMB-E190E2",
+      "Typ_anzeige": "Embraer E190-E2"
+    },
+    {
+      "aircraft_id": "EMB-E195",
+      "Typ_anzeige": "Embraer E195"
+    },
+    {
+      "aircraft_id": "EMB-EMB110",
+      "Typ_anzeige": "Embraer EMB-110 Bandeirante"
+    },
+    {
+      "aircraft_id": "EMB-EMB120",
+      "Typ_anzeige": "Embraer EMB-120 Brasilia"
+    },
+    {
+      "aircraft_id": "EMB-EMB121",
+      "Typ_anzeige": "Embraer EMB-121 Xingu"
+    },
+    {
+      "aircraft_id": "EMB-ERJ135",
+      "Typ_anzeige": "Embraer ERJ-135"
+    },
+    {
+      "aircraft_id": "EMB-ERJ140",
+      "Typ_anzeige": "Embraer ERJ-140"
+    },
+    {
+      "aircraft_id": "FAI-SA226",
+      "Typ_anzeige": "Fairchild Swearingen Metro"
+    },
+    {
+      "aircraft_id": "FOK-F",
+      "Typ_anzeige": "Fokker F"
+    },
+    {
+      "aircraft_id": "FOK-F28",
+      "Typ_anzeige": "Fokker F28"
+    },
+    {
+      "aircraft_id": "FOR-Trimotor-4AT",
+      "Typ_anzeige": "Ford Trimotor 4-AT"
+    },
+    {
+      "aircraft_id": "FOR-Trimotor-5AT",
+      "Typ_anzeige": "Ford Trimotor 5-AT"
+    },
+    {
+      "aircraft_id": "FOW-FW200",
+      "Typ_anzeige": "Focke-Wulf Fw 200 Condor"
+    },
+    {
+      "aircraft_id": "HAR-Y11",
+      "Typ_anzeige": "Harbin Y-11"
+    },
+    {
+      "aircraft_id": "HAR-Y12",
+      "Typ_anzeige": "Harbin Y-12"
+    },
+    {
+      "aircraft_id": "HAW-Trident-1",
+      "Typ_anzeige": "Hawker Siddeley Trident 1"
+    },
+    {
+      "aircraft_id": "HPR-HP81",
+      "Typ_anzeige": "Handley Page H.P.81 Hermes IV"
+    },
+    {
+      "aircraft_id": "HPR-HPR7",
+      "Typ_anzeige": "Handley Page HPR.7 Herald"
+    },
+    {
+      "aircraft_id": "ILY-Il114",
+      "Typ_anzeige": "Ilyushin Il-114"
+    },
+    {
+      "aircraft_id": "ILY-Il12",
+      "Typ_anzeige": "Ilyushin Il-12"
+    },
+    {
+      "aircraft_id": "ILY-Il14",
+      "Typ_anzeige": "Ilyushin Il-14"
+    },
+    {
+      "aircraft_id": "ILY-Il18",
+      "Typ_anzeige": "Ilyushin Il-18"
+    },
+    {
+      "aircraft_id": "ILY-Il62",
+      "Typ_anzeige": "Ilyushin Il-62"
+    },
+    {
+      "aircraft_id": "ILY-Il86",
+      "Typ_anzeige": "Ilyushin Il-86"
+    },
+    {
+      "aircraft_id": "ILY-Il96-300",
+      "Typ_anzeige": "Ilyushin Il-96-300"
+    },
+    {
+      "aircraft_id": "IRK-MC21-300",
+      "Typ_anzeige": "Irkut MC-21-300"
+    },
+    {
+      "aircraft_id": "LET-L410",
+      "Typ_anzeige": "Let L-410 Turbolet"
+    },
+    {
+      "aircraft_id": "LET-L610",
+      "Typ_anzeige": "Let L-610"
+    },
+    {
+      "aircraft_id": "LOC-C5A",
+      "Typ_anzeige": "Lockheed C-5A Galaxy"
+    },
+    {
+      "aircraft_id": "LOC-C5B",
+      "Typ_anzeige": "Lockheed C-5B Galaxy"
+    },
+    {
+      "aircraft_id": "LOC-C5M",
+      "Typ_anzeige": "Lockheed C-5M Super Galaxy"
+    },
+    {
+      "aircraft_id": "LOC-EP3E",
+      "Typ_anzeige": "Lockheed EP-3E Aries II"
+    },
+    {
+      "aircraft_id": "LOC-L10",
+      "Typ_anzeige": "Lockheed L-10 Electra"
+    },
+    {
+      "aircraft_id": "LOC-L100-30",
+      "Typ_anzeige": "Lockheed L-100-30 Hercules"
+    },
+    {
+      "aircraft_id": "LOC-L1011-1",
+      "Typ_anzeige": "Lockheed L-1011 TriStar 1"
+    },
+    {
+      "aircraft_id": "LOC-L1011-100",
+      "Typ_anzeige": "Lockheed L-1011 TriStar 100"
+    },
+    {
+      "aircraft_id": "LOC-L1011-200",
+      "Typ_anzeige": "Lockheed L-1011 TriStar 200"
+    },
+    {
+      "aircraft_id": "LOC-L14",
+      "Typ_anzeige": "Lockheed L-14 Super Electra"
+    },
+    {
+      "aircraft_id": "LOC-L18",
+      "Typ_anzeige": "Lockheed L-18 Lodestar"
+    },
+    {
+      "aircraft_id": "LOC-L649",
+      "Typ_anzeige": "Lockheed L-649 Constellation"
+    },
+    {
+      "aircraft_id": "LOC-L749",
+      "Typ_anzeige": "Lockheed L-749 Constellation"
+    },
+    {
+      "aircraft_id": "LOC-NP3D",
+      "Typ_anzeige": "Lockheed NP-3D Orion"
+    },
+    {
+      "aircraft_id": "LOC-P3A",
+      "Typ_anzeige": "Lockheed P-3A Orion"
+    },
+    {
+      "aircraft_id": "LOC-P3B",
+      "Typ_anzeige": "Lockheed P-3B Orion"
+    },
+    {
+      "aircraft_id": "LOC-P3C",
+      "Typ_anzeige": "Lockheed P-3C Orion"
+    },
+    {
+      "aircraft_id": "MAR-202",
+      "Typ_anzeige": "Martin 2-0-2"
+    },
+    {
+      "aircraft_id": "MAR-404",
+      "Typ_anzeige": "Cessna 404"
+    },
+    {
+      "aircraft_id": "MCD-DC10-40",
+      "Typ_anzeige": "McDonnell Douglas DC-10-40"
+    },
+    {
+      "aircraft_id": "MCD-DC9-10",
+      "Typ_anzeige": "McDonnell Douglas DC-9-10"
+    },
+    {
+      "aircraft_id": "MCD-DC9-15",
+      "Typ_anzeige": "McDonnell Douglas DC-9-15"
+    },
+    {
+      "aircraft_id": "MCD-DC9-20",
+      "Typ_anzeige": "McDonnell Douglas DC-9-20"
+    },
+    {
+      "aircraft_id": "MCD-DC9-40",
+      "Typ_anzeige": "McDonnell Douglas DC-9-40"
+    },
+    {
+      "aircraft_id": "MCD-MD11-ER",
+      "Typ_anzeige": "McDonnell Douglas MD-11ER Extended Range"
+    },
+    {
+      "aircraft_id": "MCD-MD83",
+      "Typ_anzeige": "McDonnell Douglas MD-83"
+    },
+    {
+      "aircraft_id": "MCD-MD88",
+      "Typ_anzeige": "McDonnell Douglas MD-88"
+    },
+    {
+      "aircraft_id": "MCD-MD90",
+      "Typ_anzeige": "McDonnell Douglas MD-90"
+    },
+    {
+      "aircraft_id": "NAM-YS11",
+      "Typ_anzeige": "NAMC YS-11"
+    },
+    {
+      "aircraft_id": "PAR-P",
+      "Typ_anzeige": "Partenavia P"
+    },
+    {
+      "aircraft_id": "PIL-PC12",
+      "Typ_anzeige": "Pilatus PC-12"
+    },
+    {
+      "aircraft_id": "PIL-PC24",
+      "Typ_anzeige": "Pilatus PC-24"
+    },
+    {
+      "aircraft_id": "PIL-PC6",
+      "Typ_anzeige": "Pilatus PC-6"
+    },
+    {
+      "aircraft_id": "PIP-PA23",
+      "Typ_anzeige": "Piper PA-23"
+    },
+    {
+      "aircraft_id": "PIP-PA31",
+      "Typ_anzeige": "Piper PA-31"
+    },
+    {
+      "aircraft_id": "PIP-PA31T",
+      "Typ_anzeige": "Piper PA-31T"
+    },
+    {
+      "aircraft_id": "PIP-PA42",
+      "Typ_anzeige": "Piper PA-42"
+    },
+    {
+      "aircraft_id": "PIP-PA46",
+      "Typ_anzeige": "Piper PA-46"
+    },
+    {
+      "aircraft_id": "PZL-M18",
+      "Typ_anzeige": "PZL M-18"
+    },
+    {
+      "aircraft_id": "PZL-M28",
+      "Typ_anzeige": "PZL M28"
+    },
+    {
+      "aircraft_id": "RIL-Heron",
+      "Typ_anzeige": "Riley Heron"
+    },
+    {
+      "aircraft_id": "ROC-OV099",
+      "Typ_anzeige": "Rockwell Space Shuttle Orbiter Challenger"
+    },
+    {
+      "aircraft_id": "ROC-OV101",
+      "Typ_anzeige": "Rockwell Space Shuttle Enterprise (Testorbiter)"
+    },
+    {
+      "aircraft_id": "ROC-OV103",
+      "Typ_anzeige": "Rockwell Space Shuttle Orbiter Discovery"
+    },
+    {
+      "aircraft_id": "ROC-OV104",
+      "Typ_anzeige": "Rockwell Space Shuttle Orbiter Atlantis"
+    },
+    {
+      "aircraft_id": "ROC-OV105",
+      "Typ_anzeige": "Rockwell Space Shuttle Orbiter Endeavour"
+    },
+    {
+      "aircraft_id": "SAB-2000",
+      "Typ_anzeige": "Saab 2000"
+    },
+    {
+      "aircraft_id": "SCA-M348",
+      "Typ_anzeige": "Scaled Composites Model 348 White Knight Two"
+    },
+    {
+      "aircraft_id": "SHO-330",
+      "Typ_anzeige": "Shorts 330"
+    },
+    {
+      "aircraft_id": "SHO-S23",
+      "Typ_anzeige": "Short S.23 Empire"
+    },
+    {
+      "aircraft_id": "SHO-S26",
+      "Typ_anzeige": "Short S.26 G-Class"
+    },
+    {
+      "aircraft_id": "SHO-S45",
+      "Typ_anzeige": "Short S.45 Solent"
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-10B",
+      "Typ_anzeige": "Sud Aviation Caravelle 10B"
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-I",
+      "Typ_anzeige": "Sud Aviation Caravelle I"
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-III",
+      "Typ_anzeige": "Sud Aviation Caravelle III"
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-VIN",
+      "Typ_anzeige": "Sud Aviation Caravelle VI-N"
+    },
+    {
+      "aircraft_id": "SUD-Concorde",
+      "Typ_anzeige": "Sud Aviation/BAC Concorde"
+    },
+    {
+      "aircraft_id": "SUK-Superjet-100-95",
+      "Typ_anzeige": "Sukhoi Superjet 100-95"
+    },
+    {
+      "aircraft_id": "TRA-C160",
+      "Typ_anzeige": "Transall C-160"
+    },
+    {
+      "aircraft_id": "TUP-Tu104",
+      "Typ_anzeige": "Tupolew Tu-104"
+    },
+    {
+      "aircraft_id": "TUP-Tu114",
+      "Typ_anzeige": "Tupolew Tu-114"
+    },
+    {
+      "aircraft_id": "TUP-Tu124",
+      "Typ_anzeige": "Tupolew Tu-124"
+    },
+    {
+      "aircraft_id": "TUP-Tu134",
+      "Typ_anzeige": "Tupolew Tu-134"
+    },
+    {
+      "aircraft_id": "TUP-Tu154",
+      "Typ_anzeige": "Tupolew Tu-154"
+    },
+    {
+      "aircraft_id": "TUP-Tu204-200",
+      "Typ_anzeige": "Tupolew Tu-204-200"
+    },
+    {
+      "aircraft_id": "TUP-Tu204-300",
+      "Typ_anzeige": "Tupolew Tu-204-300"
+    },
+    {
+      "aircraft_id": "TUP-Tu214",
+      "Typ_anzeige": "Tupolew Tu-214"
+    },
+    {
+      "aircraft_id": "VFW-614",
+      "Typ_anzeige": "VFW-Fokker 614"
+    },
+    {
+      "aircraft_id": "VIC-VC10",
+      "Typ_anzeige": "Vickers VC10 Standard"
+    },
+    {
+      "aircraft_id": "VIC-VC10-C1K",
+      "Typ_anzeige": "Vickers VC10 C1K (RAF Government & VIP)"
+    },
+    {
+      "aircraft_id": "VIC-Vanguard-953",
+      "Typ_anzeige": "Vickers Vanguard 953"
+    },
+    {
+      "aircraft_id": "XIA-MA60",
+      "Typ_anzeige": "Xian MA60"
+    },
+    {
+      "aircraft_id": "XIA-MA600",
+      "Typ_anzeige": "Xian MA600"
+    },
+    {
+      "aircraft_id": "XIA-Y7",
+      "Typ_anzeige": "Xian Y-7"
+    },
+    {
+      "aircraft_id": "YAK-Yak40",
+      "Typ_anzeige": "Yakowlew Yak-40"
+    },
+    {
+      "aircraft_id": "YAK-Yak42",
+      "Typ_anzeige": "Yakowlew Yak-42"
+    }
   ]
 }
