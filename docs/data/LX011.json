@@ -2,6 +2,12 @@
   "model_id": "LX011",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swissair",
+  "manufacturer": "Tucano Line",
+  "aircraft_name": "",
+  "livery_note": "The Qualiflyer Group",
+  "extra_info": "Swissair",
+  "shop_url": "https://www.kleinanzeigen.de/s-anzeige/tucano-line-swissair-a321-1-400/3231715559-234-9491",
   "aircraft_id": "AIB-A321-100",
   "aircraft_type": "Airbus A321-100",
   "registration": "HB-IOH",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Swissair | L:The Qualiflyer Group"
+    "notes_raw": "I:Swissair | L:The Qualiflyer Group",
+    "note": "The Qualiflyer Group"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
-    "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L"
+    "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
+    "shop": "Kleinanzeigen Finn",
+    "shop_url": "https://www.kleinanzeigen.de/s-anzeige/tucano-line-swissair-a321-1-400/3231715559-234-9491"
   },
   "logo": {
     "id": "SR_SWR",

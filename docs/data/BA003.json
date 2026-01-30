@@ -2,6 +2,12 @@
   "model_id": "BA003",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "British Airways",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Loganair",
+  "shop_url": "https://mw-moba.de/Produkt/saab-340b-british-airways-loganair-g-lgnb-gemini-jets-gjlog1116-1400/",
   "aircraft_id": "SAB-340",
   "aircraft_type": "Saab 340",
   "registration": "G-LGNB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Loganair"
+    "notes_raw": "I:Loganair",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "x",
-    "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b"
+    "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/saab-340b-british-airways-loganair-g-lgnb-gemini-jets-gjlog1116-1400/"
   },
   "logo": {
     "id": "BA_BAW",

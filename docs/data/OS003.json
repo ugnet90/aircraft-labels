@@ -2,6 +2,12 @@
   "model_id": "OS003",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian Arrows",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "Fussballverbindet.at",
+  "extra_info": "Austrian Arrows",
+  "shop_url": "",
   "aircraft_id": "FOK-F100",
   "aircraft_type": "Fokker 100",
   "registration": "OE-LVK",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2008-FOOTBALL",
     "parent": "AUA-2003-BLUEBELLY",
-    "notes": "I:Austrian Arrows | L:Fussballverbindet.at"
+    "notes_raw": "I:Austrian Arrows | L:Fussballverbindet.at",
+    "note": "Fussballverbindet.at"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "OE-LVH",
-    "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100"
+    "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
+    "shop": "Willhaben",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_ARR",

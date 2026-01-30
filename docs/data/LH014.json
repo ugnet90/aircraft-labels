@@ -2,6 +2,12 @@
   "model_id": "LH014",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Göttingen",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A340-300",
   "aircraft_type": "Airbus A340-300",
   "registration": "D-AIGF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Göttingen"
+    "notes_raw": "N:Göttingen",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22695-lufthansa-a340.html",
-    "photo": "https://www.planespotters.net/photo/327157/d-aigf-lufthansa-airbus-a340-311"
+    "photo": "https://www.planespotters.net/photo/327157/d-aigf-lufthansa-airbus-a340-311",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_DLH",

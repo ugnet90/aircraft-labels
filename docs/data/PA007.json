@@ -2,6 +2,12 @@
   "model_id": "PA007",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Clipper Tempelhof",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-737-200",
   "aircraft_type": "Boeing 737-200",
   "registration": "N67AF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Tempelhof"
+    "notes_raw": "N:Clipper Tempelhof",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
-    "photo": "https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222"
+    "photo": "https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222",
+    "shop": "Kleinanzeigen Hellmann",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",

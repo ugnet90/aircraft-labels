@@ -2,6 +2,12 @@
   "model_id": "LX015",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swissair",
+  "manufacturer": "Phoenix",
+  "aircraft_name": "Zurich",
+  "livery_note": "",
+  "extra_info": "Swissair",
+  "shop_url": "https://mw-moba.de/Produkt/boeing-747-257b-swissair-hb-igb-phoenix-11836-1400/",
   "aircraft_id": "BOE-747-200",
   "aircraft_type": "Boeing 747-200",
   "registration": "HB-IGB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Swissair | N:Zurich"
+    "notes_raw": "I:Swissair | N:Zurich",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
-    "photo": "https://www.airhistory.net/photo/672110/HB-IGB"
+    "photo": "https://www.airhistory.net/photo/672110/HB-IGB",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/boeing-747-257b-swissair-hb-igb-phoenix-11836-1400/"
   },
   "logo": {
     "id": "SR_SWR",

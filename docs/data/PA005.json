@@ -2,6 +2,12 @@
   "model_id": "PA005",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Daron",
+  "aircraft_name": "Clipper Evening Star",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.wingsmo.com/neu-bei-wingsmo/postage-stamp/29443/postage-stamp-pan-am-mcdonnell-douglas-dc-10-1-400-ps5820-5?c=0",
   "aircraft_id": "MCD-DC10-10",
   "aircraft_type": "McDonnell Douglas DC-10-10",
   "registration": "N61NA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Evening Star"
+    "notes_raw": "N:Clipper Evening Star",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
-    "photo": "https://www.airhistory.net/photo/19672/N61NA"
+    "photo": "https://www.airhistory.net/photo/19672/N61NA",
+    "shop": "Wingsmo",
+    "shop_url": "https://www.wingsmo.com/neu-bei-wingsmo/postage-stamp/29443/postage-stamp-pan-am-mcdonnell-douglas-dc-10-1-400-ps5820-5?c=0"
   },
   "logo": {
     "id": "PA_PAA",

@@ -2,6 +2,12 @@
   "model_id": "SO016",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "Luftwaffe (German Air Force)",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Regierungsmaschine Deutschland - Luftwaffe",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a350xwb-luftwaffe-bundesrepublik-deutschland-1001-jc-wings-lh4246-1400/",
   "aircraft_id": "AIB-ACJ350-900",
   "aircraft_type": "Airbus ACJ350-900 (Bundesrepublik Deutschland)",
   "registration": "10+01",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Regierungsmaschine Deutschland - Luftwaffe"
+    "notes_raw": "I:Regierungsmaschine Deutschland - Luftwaffe",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
-    "photo": "https://www.planespotters.net/photo/1832221/10-01-luftwaffe-german-air-force-airbus-a350-941"
+    "photo": "https://www.planespotters.net/photo/1832221/10-01-luftwaffe-german-air-force-airbus-a350-941",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a350xwb-luftwaffe-bundesrepublik-deutschland-1001-jc-wings-lh4246-1400/"
   },
   "logo": {
     "id": "DE_GAF",

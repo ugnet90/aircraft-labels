@@ -2,6 +2,12 @@
   "model_id": "LH002",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Bremen",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-707-320",
   "aircraft_type": "Boeing 707-330B",
   "registration": "D-ABUC",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Bremen"
+    "notes_raw": "N:Bremen",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "falsche Reg.; https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
-    "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b"
+    "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
+    "shop": "Kleinanzeigen Cora Singer",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_DLH",

@@ -2,6 +2,12 @@
   "model_id": "LX001",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "?",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://swiss-edelweiss.li/",
   "aircraft_id": "BAE-146-300",
   "aircraft_type": "British Aerospace Avro RJ100",
   "registration": "HB-IXU",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "vorhanden",
-    "photo": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100"
+    "photo": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100",
+    "shop": "Swiss-Edelweiss Airplane Shop",
+    "shop_url": "https://swiss-edelweiss.li/"
   },
   "logo": {
     "id": "LX_SWR",

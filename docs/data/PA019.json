@@ -2,6 +2,12 @@
   "model_id": "PA019",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper Panama",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/116835984188",
   "aircraft_id": "AIB-A300-B4",
   "aircraft_type": "Airbus A300B4",
   "registration": "N207PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Panama"
+    "notes_raw": "N:Clipper Panama",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
-    "photo": "https://www.jetphotos.com/photo/10957009"
+    "photo": "https://www.jetphotos.com/photo/10957009",
+    "shop": "Ebay scr4plans7rwq",
+    "shop_url": "https://www.ebay.de/itm/116835984188"
   },
   "logo": {
     "id": "PA_PAA",

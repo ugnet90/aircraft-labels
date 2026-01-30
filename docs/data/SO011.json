@@ -2,6 +2,12 @@
   "model_id": "SO011",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "United States Air Force",
+  "manufacturer": "NG Models",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "B747-8",
+  "shop_url": "https://www.ebay.de/itm/286878907569",
   "aircraft_id": "BOE-747-VC25B",
   "aircraft_type": "Boeing VC-25B (Air Force One, 747-8I)",
   "registration": "30000",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:B747-8"
+    "notes_raw": "I:B747-8",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "x",
-    "photo": "x"
+    "photo": "x",
+    "shop": "Ebay worldofwingseu",
+    "shop_url": "https://www.ebay.de/itm/286878907569"
   },
   "logo": {
     "id": "US_UAF",

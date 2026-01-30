@@ -2,6 +2,12 @@
   "model_id": "PA017",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/curtiss-c-46-commando-pan-american-world-airways-n67980-aeroclassics-1400/",
   "aircraft_id": "CUR-C46",
   "aircraft_type": "Curtiss-Wright C-46 Commando",
   "registration": "N67980",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "-",
-    "photo": "andere Kennung; https://www.floridamemory.com/fpc/reference/rc08957a.jpg"
+    "photo": "andere Kennung; https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/curtiss-c-46-commando-pan-american-world-airways-n67980-aeroclassics-1400/"
   },
   "logo": {
     "id": "PA_PAA",

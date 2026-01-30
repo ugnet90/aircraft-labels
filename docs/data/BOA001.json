@@ -2,6 +2,12 @@
   "model_id": "BOA001",
   "airline_code": "BOA",
   "airline": "BOAC",
+  "airline_row": "BOAC",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/bristol-britannia-series-310-boac-g-aovk-gemini-jets-gjboa131-1400/",
   "aircraft_id": "BRI-Britannia-312",
   "aircraft_type": "Bristol 175 Britannia 312",
   "registration": "G-AOVK",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
-    "photo": "https://www.airhistory.net/photo/12485/G-AOVK"
+    "photo": "https://www.airhistory.net/photo/12485/G-AOVK",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/bristol-britannia-series-310-boac-g-aovk-gemini-jets-gjboa131-1400/"
   },
   "logo": {
     "id": "BA_BOA",

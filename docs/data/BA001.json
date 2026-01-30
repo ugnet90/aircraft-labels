@@ -2,6 +2,12 @@
   "model_id": "BA001",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "British Airways",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "SUD-CONCORDE",
   "aircraft_type": "Aérospatiale/BAC Concorde",
   "registration": "G-BOAD",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
-    "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102"
+    "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "BA_BAW",

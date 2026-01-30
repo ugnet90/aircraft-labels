@@ -2,6 +2,12 @@
   "model_id": "OS005",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Europe",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A340-200",
   "aircraft_type": "Airbus A340-200",
   "registration": "OE-LAG",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1995-ARROWSTRIPE",
     "parent": "",
-    "notes": "N:Europe"
+    "notes_raw": "N:Europe",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/2243-austrian-a340.html",
-    "photo": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211"
+    "photo": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211",
+    "shop": "Ebay 0961.boeing.747-400",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

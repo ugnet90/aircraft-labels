@@ -2,6 +2,12 @@
   "model_id": "PA014",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Clipper Bonita",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-720",
   "aircraft_type": "Boeing 720",
   "registration": "N783PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Bonita"
+    "notes_raw": "N:Clipper Bonita",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
-    "photo": "https://www.jetphotos.com/photo/5975740"
+    "photo": "https://www.jetphotos.com/photo/5975740",
+    "shop": "Ebay Waffle Collection",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",

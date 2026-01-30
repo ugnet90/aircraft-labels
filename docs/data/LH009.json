@@ -2,6 +2,12 @@
   "model_id": "LH009",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Garmisch-Patenkirchen",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A300-B2",
   "aircraft_type": "Airbus A300B2",
   "registration": "D-AIAA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Garmisch-Patenkirchen"
+    "notes_raw": "N:Garmisch-Patenkirchen",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
-    "photo": "https://www.airhistory.net/photo/575352/D-AIAA"
+    "photo": "https://www.airhistory.net/photo/575352/D-AIAA",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_DLH",

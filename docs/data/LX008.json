@@ -2,6 +2,12 @@
   "model_id": "LX008",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swissair",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Dent Blanche",
+  "livery_note": "",
+  "extra_info": "Swissair",
+  "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11-swissair-hb-iwi-jc-wings-xx4051-1400/",
   "aircraft_id": "MCD-MD11",
   "aircraft_type": "McDonnell Douglas MD-11",
   "registration": "HB-IWI",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Swissair | N:Dent Blanche"
+    "notes_raw": "I:Swissair | N:Dent Blanche",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
-    "photo": "https://abpic.co.uk/pictures/view/1072413"
+    "photo": "https://abpic.co.uk/pictures/view/1072413",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11-swissair-hb-iwi-jc-wings-xx4051-1400/"
   },
   "logo": {
     "id": "SR_SWR",

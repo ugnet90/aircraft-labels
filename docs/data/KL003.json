@@ -2,6 +2,12 @@
   "model_id": "KL003",
   "airline_code": "KL",
   "airline": "KLM",
+  "airline_row": "KLM Asia",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "City of Hongkong",
+  "livery_note": "",
+  "extra_info": "KLM Asia",
+  "shop_url": "",
   "aircraft_id": "BOE-747-400",
   "aircraft_type": "Boeing 747-400",
   "registration": "PH-BFH",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:KLM Asia | N:City of Hongkong"
+    "notes_raw": "I:KLM Asia | N:City of Hongkong",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4271-klm-asia-b747.html",
-    "photo": "https://www.jetphotos.com/photo/10064531"
+    "photo": "https://www.jetphotos.com/photo/10064531",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "KL_ASI",

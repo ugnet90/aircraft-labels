@@ -2,6 +2,12 @@
   "model_id": "LX012",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Phoenix",
+  "aircraft_name": "Pontresina",
+  "livery_note": "",
+  "extra_info": "red nose",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-swiss-hb-jdc-phoenix-11784-1400/",
   "aircraft_id": "AIB-A320-neo",
   "aircraft_type": "Airbus A320neo",
   "registration": "HB-JDC",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:red nose | N:Pontresina"
+    "notes_raw": "I:red nose | N:Pontresina",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
-    "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n"
+    "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-swiss-hb-jdc-phoenix-11784-1400/"
   },
   "logo": {
     "id": "LX_SWR",

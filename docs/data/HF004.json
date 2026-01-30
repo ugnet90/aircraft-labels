@@ -2,6 +2,12 @@
   "model_id": "HF004",
   "airline_code": "HF",
   "airline": "Hapag-Lloyd",
+  "airline_row": "Hapag-Lloyd",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/257315911324",
   "aircraft_id": "BOE-737-800-WL",
   "aircraft_type": "Boeing 737-800 (Winglets)",
   "registration": "D-AHFF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
-    "photo": "https://www.jetphotos.com/photo/33534"
+    "photo": "https://www.jetphotos.com/photo/33534",
+    "shop": "Ebay Kontorbuer",
+    "shop_url": "https://www.ebay.de/itm/257315911324"
   },
   "logo": {
     "id": "HF_HLF",

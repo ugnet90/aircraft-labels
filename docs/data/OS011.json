@@ -2,6 +2,12 @@
   "model_id": "OS011",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Witty Wings",
+  "aircraft_name": "Gerlitzen",
+  "livery_note": "Star Alliance",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
   "aircraft_id": "BOE-737-800-WL",
   "aircraft_type": "Boeing 737-800 (Winglets)",
   "registration": "OE-LNT",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2003-STARALLIANCE",
     "parent": "AUA-2003-BLUEBELLY",
-    "notes": "N:Gerlitzen | L:Star Alliance"
+    "notes_raw": "N:Gerlitzen | L:Star Alliance",
+    "note": "Star Alliance"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
-    "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl"
+    "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"
   },
   "logo": {
     "id": "OS_AUA",

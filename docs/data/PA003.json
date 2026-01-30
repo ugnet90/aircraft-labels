@@ -2,6 +2,12 @@
   "model_id": "PA003",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper America",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.modelwereld.eu/en/",
   "aircraft_id": "BOE-377",
   "aircraft_type": "Boeing 377 Stratocruiser",
   "registration": "N1025V",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper America"
+    "notes_raw": "N:Clipper America",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
-    "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg"
+    "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
+    "shop": "https://www.modelwereld.eu/en/",
+    "shop_url": "https://www.modelwereld.eu/en/"
   },
   "logo": {
     "id": "PA_PAA",

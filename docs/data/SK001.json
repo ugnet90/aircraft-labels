@@ -2,6 +2,12 @@
   "model_id": "SK001",
   "airline_code": "SK",
   "airline": "SAS",
+  "airline_row": "SAS",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Dvalin Viking",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOM-CRJ900",
   "aircraft_type": "Bombardier CRJ-900",
   "registration": "ES-ACG",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Dvalin Viking"
+    "notes_raw": "N:Dvalin Viking",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
-    "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24"
+    "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
+    "shop": "Ebay",
+    "shop_url": ""
   },
   "logo": {
     "id": "SK_SAS",

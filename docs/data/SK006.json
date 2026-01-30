@@ -2,6 +2,12 @@
   "model_id": "SK006",
   "airline_code": "SK",
   "airline": "SAS",
+  "airline_row": "SAS",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Christian Valdemar Viking",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/326941696329",
   "aircraft_id": "AIB-A319",
   "aircraft_type": "Airbus A319-100",
   "registration": "OY-KBO",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Christian Valdemar Viking"
+    "notes_raw": "N:Christian Valdemar Viking",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
-    "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132"
+    "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
+    "shop": "Ebay krysset_4",
+    "shop_url": "https://www.ebay.de/itm/326941696329"
   },
   "logo": {
     "id": "SK_SAS",

@@ -2,6 +2,12 @@
   "model_id": "LH006",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "CleanTechFlyer",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
   "aircraft_id": "AIB-A350-900",
   "aircraft_type": "Airbus A350-900",
   "registration": "D-AIVD",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:CleanTechFlyer"
+    "notes_raw": "L:CleanTechFlyer",
+    "note": "CleanTechFlyer"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "-",
-    "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941"
+    "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"
   },
   "logo": {
     "id": "LH_DLH",

@@ -2,6 +2,12 @@
   "model_id": "PA015",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper London",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "alexmodels.cz",
   "aircraft_id": "LOC-L049",
   "aircraft_type": "Lockheed L-049 Constallation",
   "registration": "NC88831",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper London"
+    "notes_raw": "N:Clipper London",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
-    "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg"
+    "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
+    "shop": "Alexmodels.cz",
+    "shop_url": "alexmodels.cz"
   },
   "logo": {
     "id": "PA_PAA",

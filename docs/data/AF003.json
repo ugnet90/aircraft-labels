@@ -2,6 +2,12 @@
   "model_id": "AF003",
   "airline_code": "AF",
   "airline": "Air France",
+  "airline_row": "Air France HOP",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "Hop! for Air France",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/embraer-e170-hop-for-air-france-f-hbxe-herpa-562621-1400/",
   "aircraft_id": "EMB-E170",
   "aircraft_type": "Embraer ERJ-170",
   "registration": "F-HBXE",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:Hop! for Air France"
+    "notes_raw": "L:Hop! for Air France",
+    "note": "Hop! for Air France"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
-    "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100"
+    "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/embraer-e170-hop-for-air-france-f-hbxe-herpa-562621-1400/"
   },
   "logo": {
     "id": "A5_HOP",

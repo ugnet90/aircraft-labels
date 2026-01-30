@@ -2,6 +2,12 @@
   "model_id": "BA009",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "BEA",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "BEA",
+  "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-bea-british-european-trident-gemini-jets-1-400/3301263814-234-9047",
   "aircraft_id": "HAW-Trident-2",
   "aircraft_type": "Hawker Siddeley HS-121 Trident 2",
   "registration": "G-AVFB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:BEA"
+    "notes_raw": "I:BEA",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/29580-bea-trident-boac-vc-10.html",
-    "photo": "https://www.jetphotos.com/photo/11185579"
+    "photo": "https://www.jetphotos.com/photo/11185579",
+    "shop": "Kleinanzeigen Micha",
+    "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-bea-british-european-trident-gemini-jets-1-400/3301263814-234-9047"
   },
   "logo": {
     "id": "BE_BEA",

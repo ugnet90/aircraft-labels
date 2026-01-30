@@ -2,6 +2,12 @@
   "model_id": "LH013",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Koblenz",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a330-300-lufthansa-d-aiko-gemini-jets-gjdlh1831-1400/",
   "aircraft_id": "AIB-A330-300",
   "aircraft_type": "Airbus A330-300",
   "registration": "D-AIKO",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Koblenz"
+    "notes_raw": "N:Koblenz",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "-",
-    "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343"
+    "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a330-300-lufthansa-d-aiko-gemini-jets-gjdlh1831-1400/"
   },
   "logo": {
     "id": "LH_DLH",

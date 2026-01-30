@@ -2,6 +2,12 @@
   "model_id": "AB003",
   "airline_code": "AB",
   "airline": "Air Berlin",
+  "airline_row": "Air Berlin",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/326941696366",
   "aircraft_id": "BOE-737-800-WL",
   "aircraft_type": "Boeing 737-800 (Winglets)",
   "registration": "D-ABAF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/2654-air-berlin-b737.html",
-    "photo": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl"
+    "photo": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl",
+    "shop": "Ebay krysset_4",
+    "shop_url": "https://www.ebay.de/itm/326941696366"
   },
   "logo": {
     "id": "AB_BER",

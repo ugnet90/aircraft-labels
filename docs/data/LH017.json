@@ -2,6 +2,12 @@
   "model_id": "LH017",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Berlin-Tempelhof",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/297475926197",
   "aircraft_id": "JUN-JU52-3M",
   "aircraft_type": "Junkers Ju 52/3m",
   "registration": "D-AQUI",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Berlin-Tempelhof"
+    "notes_raw": "N:Berlin-Tempelhof",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/291-lufthansa-traditionsflug-ju-52.html",
-    "photo": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52"
+    "photo": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52",
+    "shop": "Ebay Felindre Diecast",
+    "shop_url": "https://www.ebay.de/itm/297475926197"
   },
   "logo": {
     "id": "LH_DLH",

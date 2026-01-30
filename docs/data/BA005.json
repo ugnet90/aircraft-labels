@@ -2,6 +2,12 @@
   "model_id": "BA005",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "British Airways",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/bae-146-rj-85-british-airways-g-gntz-gemini-jets-gjbaw678-1400/",
   "aircraft_id": "BAE-146-200",
   "aircraft_type": "British Aerospace 146-200",
   "registration": "G-GNTZ",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Bemalung; https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
-    "photo": "https://abpic.co.uk/pictures/view/1732136"
+    "photo": "https://abpic.co.uk/pictures/view/1732136",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/bae-146-rj-85-british-airways-g-gntz-gemini-jets-gjbaw678-1400/"
   },
   "logo": {
     "id": "BA_BAW",

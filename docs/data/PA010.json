@@ -2,6 +2,12 @@
   "model_id": "PA010",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Clipper Pride of American",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/197417277964",
   "aircraft_id": "DOU-DC4",
   "aircraft_type": "Douglas DC-4",
   "registration": "N88934",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Pride of American"
+    "notes_raw": "N:Clipper Pride of American",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "-",
-    "photo": ""
+    "photo": "",
+    "shop": "Ebay aeromini1",
+    "shop_url": "https://www.ebay.de/itm/197417277964"
   },
   "logo": {
     "id": "PA_PAA",

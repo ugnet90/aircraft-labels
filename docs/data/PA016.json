@@ -2,6 +2,12 @@
   "model_id": "PA016",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/376412002783",
   "aircraft_id": "CON-CV240",
   "aircraft_type": "Convair CV-240 Convairliner",
   "registration": "N90671",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
-    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L"
+    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L",
+    "shop": "Ebay Felindre Diecast",
+    "shop_url": "https://www.ebay.de/itm/376412002783"
   },
   "logo": {
     "id": "PA_PAA",

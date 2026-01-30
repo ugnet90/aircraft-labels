@@ -2,6 +2,12 @@
   "model_id": "LH023",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa CityLine",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Meersburg",
+  "livery_note": "",
+  "extra_info": "Lufthansa City Line",
+  "shop_url": "https://mw-moba.de/Produkt/bombardier-crj900-lufthansa-cityline-d-acnd-gemini-jets-gjclh2021-1400/",
   "aircraft_id": "BOM-CRJ900",
   "aircraft_type": "Bombardier CRJ-900",
   "registration": "D-ACND",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Lufthansa City Line | N:Meersburg"
+    "notes_raw": "I:Lufthansa City Line | N:Meersburg",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42271-lufthansa-city-line-crj-900.html",
-    "photo": "https://www.planespotters.net/photo/1754960/d-acnd-lufthansa-bombardier-crj-900lr-cl-600-2d24"
+    "photo": "https://www.planespotters.net/photo/1754960/d-acnd-lufthansa-bombardier-crj-900lr-cl-600-2d24",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/bombardier-crj900-lufthansa-cityline-d-acnd-gemini-jets-gjclh2021-1400/"
   },
   "logo": {
     "id": "CL_CLH",

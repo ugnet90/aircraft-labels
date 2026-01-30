@@ -2,6 +2,12 @@
   "model_id": "SO005",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "Airbus Transport International",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Super Guppy Turbine",
+  "shop_url": "https://www.aviamart.com/collections/airplane-models/products/jc-wings-x-aviationtag-super-guppy-edition-1-400?variant=43280865657026",
   "aircraft_id": "ASP-B377SGT",
   "aircraft_type": "Boeing B-377SGT-201 Super Guppy",
   "registration": "F-BTGV",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Super Guppy Turbine"
+    "notes_raw": "I:Super Guppy Turbine",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
-    "photo": "https://www.jetphotos.com/photo/7533809"
+    "photo": "https://www.jetphotos.com/photo/7533809",
+    "shop": "aviamart",
+    "shop_url": "https://www.aviamart.com/collections/airplane-models/products/jc-wings-x-aviationtag-super-guppy-edition-1-400?variant=43280865657026"
   },
   "logo": {
     "id": "4Y_BGA",

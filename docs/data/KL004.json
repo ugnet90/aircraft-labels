@@ -2,6 +2,12 @@
   "model_id": "KL004",
   "airline_code": "KL",
   "airline": "KLM",
+  "airline_row": "KLM",
+  "manufacturer": "JetEx",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/sch/i.html?item=376312332478&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=4booksubid",
   "aircraft_id": "LOC-L188",
   "aircraft_type": "Lockheed L-188 Electra",
   "registration": "PH-LLD",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
-    "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra"
+    "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra",
+    "shop": "Ebay 4booksubid",
+    "shop_url": "https://www.ebay.de/sch/i.html?item=376312332478&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=4booksubid"
   },
   "logo": {
     "id": "KL_KLM",

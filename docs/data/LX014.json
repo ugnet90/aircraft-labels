@@ -2,6 +2,12 @@
   "model_id": "LX014",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Swissair",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a310-200-swissair-hb-ipa-herpa-560771-1400/",
   "aircraft_id": "AIB-A310-200",
   "aircraft_type": "Airbus A310-200",
   "registration": "HB-IPA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Swissair"
+    "notes_raw": "I:Swissair",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4839-swissair-a310.html",
-    "photo": "https://www.jetphotos.com/photo/10644669"
+    "photo": "https://www.jetphotos.com/photo/10644669",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a310-200-swissair-hb-ipa-herpa-560771-1400/"
   },
   "logo": {
     "id": "LX_SWR",

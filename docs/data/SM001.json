@@ -2,6 +2,12 @@
   "model_id": "SM001",
   "airline_code": "SM",
   "airline": "Sondermaße",
+  "airline_row": "Austrian",
+  "manufacturer": "Limox Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "erstes AUA-Flugzeug",
+  "shop_url": "",
   "aircraft_id": "VIC-Viscount-700",
   "aircraft_type": "Vickers Viscount 779 (Austrian)",
   "registration": "OE-LAB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:erstes AUA-Flugzeug"
+    "notes_raw": "I:erstes AUA-Flugzeug",
+    "note": ""
   },
   "model": {
     "scale": "1:500",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "",
-    "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg"
+    "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
+    "shop": "Kleinanzeigen Steffi",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

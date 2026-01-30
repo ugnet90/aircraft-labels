@@ -2,6 +2,12 @@
   "model_id": "SM002",
   "airline_code": "SM",
   "airline": "Sondermaße",
+  "airline_row": "Pan Am",
+  "manufacturer": "Corgi",
+  "aircraft_name": "Dixie Clipper",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-314",
   "aircraft_type": "Boeing 314 Clipper (Pan Am)",
   "registration": "NC18605",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Dixie Clipper"
+    "notes_raw": "N:Dixie Clipper",
+    "note": ""
   },
   "model": {
     "scale": "1:350",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
-    "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg"
+    "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
+    "shop": "Leboncoin pat33600",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",

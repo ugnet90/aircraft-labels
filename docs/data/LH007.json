@@ -2,6 +2,12 @@
   "model_id": "LH007",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
   "aircraft_id": "BOE-737-200",
   "aircraft_type": "Boeing 737-200",
   "registration": "D-ABHX",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/42674-lufthansa-b737.html",
-    "photo": "https://www.jetphotos.com/photo/9958699"
+    "photo": "https://www.jetphotos.com/photo/9958699",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"
   },
   "logo": {
     "id": "LH_DLH",

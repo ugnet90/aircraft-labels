@@ -2,6 +2,12 @@
   "model_id": "LH004",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Frankfurt am Main",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
   "aircraft_id": "AIB-A380-800",
   "aircraft_type": "Airbus A380-800",
   "registration": "D-AIMA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Frankfurt am Main"
+    "notes_raw": "N:Frankfurt am Main",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
-    "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841"
+    "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"
   },
   "logo": {
     "id": "LH_DLH",

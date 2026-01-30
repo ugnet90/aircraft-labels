@@ -2,6 +2,12 @@
   "model_id": "OS019",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Tyrolean Airways",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "Star Alliance",
+  "extra_info": "Tyrolean Airways",
+  "shop_url": "",
   "aircraft_id": "FOK-F70",
   "aircraft_type": "Fokker 70",
   "registration": "OE-LFG",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2003-STARALLIANCE-LOGOSTRIP",
     "parent": "AUA-2003-STARALLIANCE",
-    "notes": "I:Tyrolean Airways | L:Star Alliance"
+    "notes_raw": "I:Tyrolean Airways | L:Star Alliance",
+    "note": "Star Alliance"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/18360-tyroleanstar-alliance-fokker-70.html",
-    "photo": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070"
+    "photo": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070",
+    "shop": "Kleinanzeigen Steffi Lang",
+    "shop_url": ""
   },
   "logo": {
     "id": "VO_TYR",

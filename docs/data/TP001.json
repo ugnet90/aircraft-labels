@@ -2,6 +2,12 @@
   "model_id": "TP001",
   "airline_code": "TP",
   "airline": "TAP",
+  "airline_row": "TAP",
+  "manufacturer": "SkyFlight",
+  "aircraft_name": "Bartolomeu de Gusmão",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A321-neo",
   "aircraft_type": "Airbus A321neo",
   "registration": "CS-TXJ",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Bartolomeu de Gusmão"
+    "notes_raw": "N:Bartolomeu de Gusmão",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
-    "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx"
+    "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
+    "shop": "Sky Shop",
+    "shop_url": ""
   },
   "logo": {
     "id": "TP_TAP",

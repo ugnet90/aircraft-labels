@@ -2,6 +2,12 @@
   "model_id": "KL007",
   "airline_code": "KL",
   "airline": "KLM",
+  "airline_row": "KLM",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Adriatic Sea",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/376626642808",
   "aircraft_id": "DOU-DC7-C",
   "aircraft_type": "Douglas DC-7C Seven Seas",
   "registration": "PH-DSG",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Adriatic Sea"
+    "notes_raw": "N:Adriatic Sea",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
-    "photo": "https://www.airhistory.net/photo/730187/PH-DSG"
+    "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
+    "shop": "Ebay Felindre Diecast",
+    "shop_url": "https://www.ebay.de/itm/376626642808"
   },
   "logo": {
     "id": "KL_KLM",

@@ -2,6 +2,12 @@
   "model_id": "LH012",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Team Lufthansa",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Team Lufthansa",
+  "shop_url": "",
   "aircraft_id": "FOK-F50",
   "aircraft_type": "Fokker 50",
   "registration": "D-AFFZ",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Team Lufthansa"
+    "notes_raw": "I:Team Lufthansa",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/18079-contactairteam-lufthansa-fokker-50.html",
-    "photo": "https://www.jetphotos.com/photo/10225836"
+    "photo": "https://www.jetphotos.com/photo/10225836",
+    "shop": "Kleinanzeigen Dan Segal",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_TEA",

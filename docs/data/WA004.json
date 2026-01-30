@@ -2,6 +2,12 @@
   "model_id": "WA004",
   "airline_code": "WA",
   "airline": "KLM Cityhopper",
+  "airline_row": "KLM exel",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "KLM exel",
+  "shop_url": "https://www.ebay.de/itm/277036315286",
   "aircraft_id": "ATR-ATR72-200",
   "aircraft_type": "ATR 72-200",
   "registration": "PH-XLH",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:KLM exel"
+    "notes_raw": "I:KLM exel",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Bez. \"KLM UK\"; https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
-    "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg"
+    "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
+    "shop": "Ebay Models Shop",
+    "shop_url": "https://www.ebay.de/itm/277036315286"
   },
   "logo": {
     "id": "KL_EXE",

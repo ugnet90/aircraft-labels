@@ -2,6 +2,12 @@
   "model_id": "OS004",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "NG Wings",
+  "aircraft_name": "Kahlenberg",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.world-of-wings.eu/epages/82202172.sf/sec268158f1b3/?ObjectPath=/Shops/82202172/Products/76015",
   "aircraft_id": "BOE-737-600",
   "aircraft_type": "Boeing 737-600",
   "registration": "OE-LNL",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "N:Kahlenberg"
+    "notes_raw": "N:Kahlenberg",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
-    "photo": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9"
+    "photo": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9",
+    "shop": "World of Wings",
+    "shop_url": "https://www.world-of-wings.eu/epages/82202172.sf/sec268158f1b3/?ObjectPath=/Shops/82202172/Products/76015"
   },
   "logo": {
     "id": "OS_AUA",

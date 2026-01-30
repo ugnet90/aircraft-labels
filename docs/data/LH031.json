@@ -2,6 +2,12 @@
   "model_id": "LH031",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa Regional",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Schkeuditz",
+  "livery_note": "",
+  "extra_info": "Lufthansa Regional",
+  "shop_url": "https://www.ebay.de/itm/336326426320",
   "aircraft_id": "EMB-E190",
   "aircraft_type": "Embraer ERJ-190",
   "registration": "D-AECD",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Lufthansa Regional | N:Schkeuditz"
+    "notes_raw": "I:Lufthansa Regional | N:Schkeuditz",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "x",
-    "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr"
+    "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
+    "shop": "Ebay Models Shop",
+    "shop_url": "https://www.ebay.de/itm/336326426320"
   },
   "logo": {
     "id": "LH_REG",

@@ -2,6 +2,12 @@
   "model_id": "LH026",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Phoenix",
+  "aircraft_name": "Augsburg",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a321neo-lufthansa-d-aiep-phoenix-04541-1400/",
   "aircraft_id": "AIB-A321-neo",
   "aircraft_type": "Airbus A321 neo",
   "registration": "D-AIEP",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Augsburg"
+    "notes_raw": "N:Augsburg",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
-    "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx"
+    "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a321neo-lufthansa-d-aiep-phoenix-04541-1400/"
   },
   "logo": {
     "id": "LH_DLH",

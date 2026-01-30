@@ -2,6 +2,12 @@
   "model_id": "OS002",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Pinzgau",
+  "livery_note": "Johann Strauss",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
   "aircraft_id": "AIB-A321-100",
   "aircraft_type": "Airbus A321-100",
   "registration": "OE-LBB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1999-STRAUSS",
     "parent": "AUA-1995-ARROWSTRIPE",
-    "notes": "N:Pinzgau | L:Johann Strauss"
+    "notes_raw": "N:Pinzgau | L:Johann Strauss",
+    "note": "Johann Strauss"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "Eigenflug; https://jjpostcards.com/de/ansichtskarten/35822-Austrian-A321.html",
-    "photo": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111"
+    "photo": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"
   },
   "logo": {
     "id": "OS_AUA",

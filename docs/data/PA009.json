@@ -2,6 +2,12 @@
   "model_id": "PA009",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Clipper Mandarin",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/197417277964",
   "aircraft_id": "DOU-DC4",
   "aircraft_type": "Douglas DC-4",
   "registration": "N88886",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Mandarin"
+    "notes_raw": "N:Clipper Mandarin",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
-    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L"
+    "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
+    "shop": "Ebay aeromini1",
+    "shop_url": "https://www.ebay.de/itm/197417277964"
   },
   "logo": {
     "id": "PA_PAA",

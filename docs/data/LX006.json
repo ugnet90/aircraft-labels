@@ -2,6 +2,12 @@
   "model_id": "LX006",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "Fete de Vignerons",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a220-300-swiss-international-fete-de-vignerons-hb-jca-herpa-562713-1400/",
   "aircraft_id": "AIB-A220-300",
   "aircraft_type": "Airbus A220-300",
   "registration": "HB-JCA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:Fete de Vignerons"
+    "notes_raw": "L:Fete de Vignerons",
+    "note": "Fete de Vignerons"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
-    "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11"
+    "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a220-300-swiss-international-fete-de-vignerons-hb-jca-herpa-562713-1400/"
   },
   "logo": {
     "id": "LX_SWR",

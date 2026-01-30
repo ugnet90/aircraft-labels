@@ -2,6 +2,12 @@
   "model_id": "PA001",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Clipper Young America",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.modelyletadel.cz/en/",
   "aircraft_id": "BOE-747-SP",
   "aircraft_type": "Boeing 747SP",
   "registration": "N533PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Young America"
+    "notes_raw": "N:Clipper Young America",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
-    "photo": "https://www.airhistory.net/photo/516777/N529PA"
+    "photo": "https://www.airhistory.net/photo/516777/N529PA",
+    "shop": "https://www.modelyletadel.cz/en/",
+    "shop_url": "https://www.modelyletadel.cz/en/"
   },
   "logo": {
     "id": "PA_PAA",

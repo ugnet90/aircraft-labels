@@ -2,6 +2,12 @@
   "model_id": "LX013",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/convair-880-swissair-hb-icl-herpa-560528-1400/",
   "aircraft_id": "CON-CV880",
   "aircraft_type": "Convair CV-880 Golden Arrow",
   "registration": "HB-ICL",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
-    "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg"
+    "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/convair-880-swissair-hb-icl-herpa-560528-1400/"
   },
   "logo": {
     "id": "LX_SWR",

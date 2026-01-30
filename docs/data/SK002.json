@@ -2,6 +2,12 @@
   "model_id": "SK002",
   "airline_code": "SK",
   "airline": "SAS",
+  "airline_row": "SAS",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Vermund Viking",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.aviation-center-berlin.de/p/JC40249",
   "aircraft_id": "AIB-A320-200",
   "aircraft_type": "Airbus A320-200",
   "registration": "OY-KAR",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Vermund Viking"
+    "notes_raw": "N:Vermund Viking",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
-    "photo": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232"
+    "photo": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232",
+    "shop": "Aviation Center Berlin",
+    "shop_url": "https://www.aviation-center-berlin.de/p/JC40249"
   },
   "logo": {
     "id": "SK_SAS",

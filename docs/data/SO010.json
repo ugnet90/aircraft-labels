@@ -2,6 +2,12 @@
   "model_id": "SO010",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "Buran Space Shuttle",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BUR-OK1K1",
   "aircraft_type": "Buran Space Orbiter OK-1K1",
   "registration": "OK-GLI",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "",
-    "photo": "https://aero-bg.com/2020/11/10/35-godini-ot-parviya-polet-na-bts-002/"
+    "photo": "https://aero-bg.com/2020/11/10/35-godini-ot-parviya-polet-na-bts-002/",
+    "shop": "Ebay DS AutoModelle",
+    "shop_url": ""
   },
   "logo": {
     "id": "SU_BUR",

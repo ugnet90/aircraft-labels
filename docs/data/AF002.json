@@ -2,6 +2,12 @@
   "model_id": "AF002",
   "airline_code": "AF",
   "airline": "Air France",
+  "airline_row": "Air France",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-air-france-f-gsqb-herpa-561259-1400/",
   "aircraft_id": "BOE-777-300ER",
   "aircraft_type": "Boeing 777-300ER",
   "registration": "F-GSQB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
-    "photo": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er"
+    "photo": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-air-france-f-gsqb-herpa-561259-1400/"
   },
   "logo": {
     "id": "AF_AFR",

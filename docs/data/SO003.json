@@ -2,6 +2,12 @@
   "model_id": "SO003",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "Arkia - Israeli Airlines",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "VIC-Viscount-800",
   "aircraft_type": "Vickers Viscount 800 (Arkia)",
   "registration": "4X-AVF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
-    "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg"
+    "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
+    "shop": "Ebay mali_1123",
+    "shop_url": ""
   },
   "logo": {
     "id": "IZ_AIZ",

@@ -2,6 +2,12 @@
   "model_id": "SK007",
   "airline_code": "SK",
   "airline": "SAS",
+  "airline_row": "SAS",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Harald Viking",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-sas-scandinavian-dc-8-aeroclassics-1-400/3245823809-234-9047",
   "aircraft_id": "DOU-DC8-50",
   "aircraft_type": "Douglas DC-8-55",
   "registration": "LN-MOH",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Harald Viking"
+    "notes_raw": "N:Harald Viking",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
-    "photo": "https://image.airport-data.com/aircraft/954767.jpg"
+    "photo": "https://image.airport-data.com/aircraft/954767.jpg",
+    "shop": "Kleinanzeigen Micha",
+    "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-sas-scandinavian-dc-8-aeroclassics-1-400/3245823809-234-9047"
   },
   "logo": {
     "id": "SK_SAS",

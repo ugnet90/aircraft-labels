@@ -2,6 +2,12 @@
   "model_id": "NG003",
   "airline_code": "NG",
   "airline": "Lauda Air",
+  "airline_row": "Niki",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Niki",
+  "shop_url": "https://www.ebay.de/itm/146906254865",
   "aircraft_id": "AIB-A320-200",
   "aircraft_type": "Airbus A320-200",
   "registration": "OE-LEA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Niki"
+    "notes_raw": "I:Niki",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/10051-niki-a320.html",
-    "photo": "https://www.planespotters.net/photo/373434/oe-lea-niki-airbus-a320-214"
+    "photo": "https://www.planespotters.net/photo/373434/oe-lea-niki-airbus-a320-214",
+    "shop": "Ebay philundines",
+    "shop_url": "https://www.ebay.de/itm/146906254865"
   },
   "logo": {
     "id": "HG_NLY",

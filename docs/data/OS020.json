@@ -2,6 +2,12 @@
   "model_id": "OS020",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Ludwig v. Beethoven",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.aviationmegastore.com/de/modelle/vickers-viscount-800-austrian-oe-lam-aero-classics-ac411459-217204.html",
   "aircraft_id": "VIC-Viscount-800",
   "aircraft_type": "Vickers Viscount 837",
   "registration": "OE-LAM",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1959-CHEATLINE",
     "parent": "",
-    "notes": "N:Ludwig v. Beethoven"
+    "notes_raw": "N:Ludwig v. Beethoven",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
-    "photo": "https://abpic.co.uk/pictures/registration/OE-LAM"
+    "photo": "https://abpic.co.uk/pictures/registration/OE-LAM",
+    "shop": "Aviationmegastore",
+    "shop_url": "https://www.aviationmegastore.com/de/modelle/vickers-viscount-800-austrian-oe-lam-aero-classics-ac411459-217204.html"
   },
   "logo": {
     "id": "OS_AUA",

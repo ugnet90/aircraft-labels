@@ -2,6 +2,12 @@
   "model_id": "LH019",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Gummersbach L:Fanhansa",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a340-600-lufthansa-gummersbach-d-aihn-gemini-jets-gjdlh1318-1400/",
   "aircraft_id": "AIB-A340-600",
   "aircraft_type": "Airbus A340-600",
   "registration": "D-AIHN",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Gummersbach L:Fanhansa"
+    "notes_raw": "N:Gummersbach L:Fanhansa",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
-    "photo": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642"
+    "photo": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a340-600-lufthansa-gummersbach-d-aihn-gemini-jets-gjdlh1318-1400/"
   },
   "logo": {
     "id": "LH_DLH",

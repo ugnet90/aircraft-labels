@@ -2,6 +2,12 @@
   "model_id": "OS006",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Wien",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "SUD-Caravelle-VIR",
   "aircraft_type": "Sud Aviation SE 210 Caravelle VI-R",
   "registration": "OE-LCA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1960-CLASSIC",
     "parent": "",
-    "notes": "N:Wien"
+    "notes_raw": "N:Wien",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
-    "photo": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r"
+    "photo": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r",
+    "shop": "Ebay nozaman",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

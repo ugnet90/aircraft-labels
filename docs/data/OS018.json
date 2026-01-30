@@ -2,6 +2,12 @@
   "model_id": "OS018",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "China",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-767-300",
   "aircraft_type": "Boeing 767-300",
   "registration": "OE-LAW",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2018-NEW",
     "parent": "",
-    "notes": "N:China"
+    "notes_raw": "N:China",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/37600-Austrian-B767.html",
-    "photo": "https://www.jetphotos.com/photo/11688863"
+    "photo": "https://www.jetphotos.com/photo/11688863",
+    "shop": "MW-Moba",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

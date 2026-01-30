@@ -2,6 +2,12 @@
   "model_id": "OS013",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Niederösterreich",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "MCD-DC9-30",
   "aircraft_type": "Douglas DC-9-30",
   "registration": "OE-LDA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1980-REDARROW",
     "parent": "",
-    "notes": "N:Niederösterreich"
+    "notes_raw": "N:Niederösterreich",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
-    "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32"
+    "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
+    "shop": "Ebay airman3",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

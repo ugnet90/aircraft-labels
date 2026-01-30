@@ -2,6 +2,12 @@
   "model_id": "LX003",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "erste Ankunft einer Bombardier CS100 am ZRH",
+  "shop_url": "https://mw-moba.de/Produkt/bombardier-cs100-swiss-international-c-gwxz-herpa-562522-1400/",
   "aircraft_id": "AIB-A220-100",
   "aircraft_type": "Airbus A220-100",
   "registration": "C-GWXZ",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:erste Ankunft einer Bombardier CS100 am ZRH"
+    "notes_raw": "I:erste Ankunft einer Bombardier CS100 am ZRH",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
-    "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10"
+    "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/bombardier-cs100-swiss-international-c-gwxz-herpa-562522-1400/"
   },
   "logo": {
     "id": "LX_SWR",

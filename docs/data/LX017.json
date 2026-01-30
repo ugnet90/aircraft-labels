@@ -2,6 +2,12 @@
   "model_id": "LX017",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swissair",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Swissair",
+  "shop_url": "https://www.ebay.de/itm/257315911157",
   "aircraft_id": "DOU-DC8-30",
   "aircraft_type": "Douglas DC-8-32",
   "registration": "HB-IDA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Swissair"
+    "notes_raw": "I:Swissair",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/25909-swissair-dc-8.html",
-    "photo": "https://www.airhistory.net/photo/249732/HB-IDA"
+    "photo": "https://www.airhistory.net/photo/249732/HB-IDA",
+    "shop": "Ebay Kontorbuer",
+    "shop_url": "https://www.ebay.de/itm/257315911157"
   },
   "logo": {
     "id": "SR_SWR",

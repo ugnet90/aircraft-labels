@@ -2,6 +2,12 @@
   "model_id": "SO018",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "United States Air Force",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Air and Sea Rescue",
+  "shop_url": "https://mw-moba.de/Produkt/pby-5a-catalina-us-air-force-air-and-sea-rescue-herpa-561747-1400/",
   "aircraft_id": "CSA-PBY5",
   "aircraft_type": "Consolidated PBY-5 Catalina (USAF)",
   "registration": "433939",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Air and Sea Rescue"
+    "notes_raw": "I:Air and Sea Rescue",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; andere Bemalung; https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
-    "photo": "https://www.airhistory.net/photos/0027472.jpg"
+    "photo": "https://www.airhistory.net/photos/0027472.jpg",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/pby-5a-catalina-us-air-force-air-and-sea-rescue-herpa-561747-1400/"
   },
   "logo": {
     "id": "US_UAF",

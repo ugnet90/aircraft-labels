@@ -2,6 +2,12 @@
   "model_id": "PA004",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper Portsmouth",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/boeing-727-200-pan-am-n365pa-dragon-wings-55150-1400/",
   "aircraft_id": "BOE-727-200",
   "aircraft_type": "Boeing 727-200",
   "registration": "N365PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Portsmouth"
+    "notes_raw": "N:Clipper Portsmouth",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
-    "photo": "https://www.jetphotos.com/photo/9587"
+    "photo": "https://www.jetphotos.com/photo/9587",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/boeing-727-200-pan-am-n365pa-dragon-wings-55150-1400/"
   },
   "logo": {
     "id": "PA_PAA",

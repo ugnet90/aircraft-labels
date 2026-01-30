@@ -2,6 +2,12 @@
   "model_id": "LH022",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Little Europe",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/bombardier-crj-200-lufthansa-d-acjh-jc-wings-jc4038-1400/",
   "aircraft_id": "BOM-CRJ200",
   "aircraft_type": "Bombardier CRJ-200",
   "registration": "D-ACJH",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Little Europe"
+    "notes_raw": "N:Little Europe",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung, Typ 100; https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
-    "photo": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19"
+    "photo": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/bombardier-crj-200-lufthansa-d-acjh-jc-wings-jc4038-1400/"
   },
   "logo": {
     "id": "LH_DLH",

@@ -2,6 +2,12 @@
   "model_id": "OS016",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Pinzgau",
+  "livery_note": "1000 Jahre Österreich",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A321-100",
   "aircraft_type": "Airbus A321-100",
   "registration": "OE-LBB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1996-1000YEARS",
     "parent": "AUA-1995-ARROWSTRIPE",
-    "notes": "N:Pinzgau | L:1000 Jahre Österreich"
+    "notes_raw": "N:Pinzgau | L:1000 Jahre Österreich",
+    "note": "1000 Jahre Österreich"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/24460-austrian-a321.html",
-    "photo": "https://www.planespotters.net/photo/355580/oe-lbb-austrian-airlines-airbus-a321-111"
+    "photo": "https://www.planespotters.net/photo/355580/oe-lbb-austrian-airlines-airbus-a321-111",
+    "shop": "MW-MOBA",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

@@ -2,6 +2,12 @@
   "model_id": "LH016",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "LOC-L1649",
   "aircraft_type": "Lockheed L-1649A Starliner",
   "registration": "D-ALUB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
-    "photo": "https://www.planepictures.net/v3/show.php?id=614533"
+    "photo": "https://www.planepictures.net/v3/show.php?id=614533",
+    "shop": "Ebay 4booksubid",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_DLH",

@@ -2,6 +2,12 @@
   "model_id": "SO002",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "Airbus Beluga Transport",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Beluga #3",
+  "shop_url": "https://www.flight-shop.de/modelle/jc-wings/scale-1400/12873/jc-wings-airbus-a300-600st-beluga-house-color-3-f-gstc-1-400-modellflugzeug?c=0",
   "aircraft_id": "AIB-A300-600ST",
   "aircraft_type": "Airbus A300B4-600ST",
   "registration": "F-GSTC",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Beluga #3"
+    "notes_raw": "I:Beluga #3",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
-    "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st"
+    "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
+    "shop": "https://www.flight-shop.de",
+    "shop_url": "https://www.flight-shop.de/modelle/jc-wings/scale-1400/12873/jc-wings-airbus-a300-600st-beluga-house-color-3-f-gstc-1-400-modellflugzeug?c=0"
   },
   "logo": {
     "id": "FR_BCO",

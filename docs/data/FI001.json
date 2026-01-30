@@ -2,6 +2,12 @@
   "model_id": "FI001",
   "airline_code": "FI",
   "airline": "Icelandair",
+  "airline_row": "Icelandair",
+  "manufacturer": "NG Models",
+  "aircraft_name": "Laki",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-757-200-WL",
   "aircraft_type": "Boeing 757-200 (Winglets)",
   "registration": "TF-ISF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Laki"
+    "notes_raw": "N:Laki",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11263-icelandair-b757.html",
-    "photo": "https://www.planespotters.net/photo/1123788/tf-isf-icelandair-boeing-757-223-wl"
+    "photo": "https://www.planespotters.net/photo/1123788/tf-isf-icelandair-boeing-757-223-wl",
+    "shop": "Kleinanzeigen.de",
+    "shop_url": ""
   },
   "logo": {
     "id": "FI_ICE",

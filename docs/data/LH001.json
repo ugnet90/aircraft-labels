@@ -2,6 +2,12 @@
   "model_id": "LH001",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Phoenix",
+  "aircraft_name": "Plauen",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.aviation-center.com.au/index.html",
   "aircraft_id": "AIB-A320-200-SL",
   "aircraft_type": "Airbus A320-200 (Sharklets)",
   "registration": "D-AIZP",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Plauen"
+    "notes_raw": "N:Plauen",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "Kennung vom Eigenflug; https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
-    "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl"
+    "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
+    "shop": "Australian Aviation Center",
+    "shop_url": "https://www.aviation-center.com.au/index.html"
   },
   "logo": {
     "id": "LH_DLH",

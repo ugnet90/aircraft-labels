@@ -2,6 +2,12 @@
   "model_id": "LX010",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swissair",
+  "manufacturer": "Witty Wings",
+  "aircraft_name": "St. Gallen",
+  "livery_note": "",
+  "extra_info": "Swissair",
+  "shop_url": "https://www.ebay.de/itm/376644211863?_skw=1%2F400&itmmeta=01K8TKQVTGS1TSTH10Y1AR8G6V&hash=item57b1be9497%3Ag%3AfBsAAeSwZApo-mNk&LH_Auction=1",
   "aircraft_id": "CON-CV990",
   "aircraft_type": "Convair CV-990 Coronado",
   "registration": "HB-ICC",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Swissair | N:St. Gallen"
+    "notes_raw": "I:Swissair | N:St. Gallen",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/36596-Swissair-CV-990.html",
-    "photo": "https://www.jetphotos.com/photo/6081412"
+    "photo": "https://www.jetphotos.com/photo/6081412",
+    "shop": "Ebay Felindre Diecast",
+    "shop_url": "https://www.ebay.de/itm/376644211863?_skw=1%2F400&itmmeta=01K8TKQVTGS1TSTH10Y1AR8G6V&hash=item57b1be9497%3Ag%3AfBsAAeSwZApo-mNk&LH_Auction=1"
   },
   "logo": {
     "id": "SR_SWR",

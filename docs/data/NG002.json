@@ -2,6 +2,12 @@
   "model_id": "NG002",
   "airline_code": "NG",
   "airline": "Lauda Air",
+  "airline_row": "Lauda Air",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Innsbruck - Tirol",
+  "livery_note": "",
+  "extra_info": "Lauda Air | + Gepäckwagen",
+  "shop_url": "https://www.ebay.de/itm/146906325011",
   "aircraft_id": "BOE-737-600",
   "aircraft_type": "Boeing 737-600",
   "registration": "OE-LNM",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "LDA-2004-TIROL",
     "parent": "LDA-1990-CLASSIC",
-    "notes": "I:Lauda Air | N:Innsbruck - Tirol | I:+ Gepäckwagen"
+    "notes_raw": "I:Lauda Air | N:Innsbruck - Tirol | I:+ Gepäckwagen",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
-    "photo": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9"
+    "photo": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9",
+    "shop": "Ebay philundines",
+    "shop_url": "https://www.ebay.de/itm/146906325011"
   },
   "logo": {
     "id": "NG_LDA",

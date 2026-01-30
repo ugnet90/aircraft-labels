@@ -2,6 +2,12 @@
   "model_id": "LH015",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Tegernsee",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-737-400",
   "aircraft_type": "Boeing 737-400",
   "registration": "D-ABKB",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Tegernsee"
+    "notes_raw": "N:Tegernsee",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
-    "photo": "https://www.airhistory.net/photo/477289/D-ABKB"
+    "photo": "https://www.airhistory.net/photo/477289/D-ABKB",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_DLH",

@@ -2,6 +2,12 @@
   "model_id": "OS009",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Spirit of Austria",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
   "aircraft_id": "BOE-777-200",
   "aircraft_type": "Boeing 777-200",
   "registration": "OE-LPD",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "N:Spirit of Austria"
+    "notes_raw": "N:Spirit of Austria",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "Bemalung nicht ganz exakt; https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
-    "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er"
+    "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"
   },
   "logo": {
     "id": "OS_AUA",

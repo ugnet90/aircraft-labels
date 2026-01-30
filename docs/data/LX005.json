@@ -2,6 +2,12 @@
   "model_id": "LX005",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "Hop Suisse!",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a320-swiss-international-air-lines-hop-suisse-hb-ijm-herpa-562027-1400/",
   "aircraft_id": "AIB-A320-200",
   "aircraft_type": "Airbus A320-200",
   "registration": "HB-IJM",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:Hop Suisse!"
+    "notes_raw": "L:Hop Suisse!",
+    "note": "Hop Suisse!"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
-    "photo": "https://www.planespotters.net/photo/435145/hb-ijm-swiss-airbus-a320-214"
+    "photo": "https://www.planespotters.net/photo/435145/hb-ijm-swiss-airbus-a320-214",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a320-swiss-international-air-lines-hop-suisse-hb-ijm-herpa-562027-1400/"
   },
   "logo": {
     "id": "LX_SWR",

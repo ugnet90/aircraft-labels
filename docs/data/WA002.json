@@ -2,6 +2,12 @@
   "model_id": "WA002",
   "airline_code": "WA",
   "airline": "KLM Cityhopper",
+  "airline_row": "KLM exel",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "KLM exel",
+  "shop_url": "",
   "aircraft_id": "EMB-ERJ145",
   "aircraft_type": "Embraer ERJ-145MP",
   "registration": "PH-RXA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:KLM exel"
+    "notes_raw": "I:KLM exel",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
-    "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp"
+    "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
+    "shop": "Marktplaats: TOGAflex",
+    "shop_url": ""
   },
   "logo": {
     "id": "KL_EXE",

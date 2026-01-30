@@ -2,6 +2,12 @@
   "model_id": "OS017",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Schönbrunn Palace",
+  "livery_note": "",
+  "extra_info": "Flaps down",
+  "shop_url": "",
   "aircraft_id": "BOE-787-9",
   "aircraft_type": "Boeing 787-9 Dreamliner",
   "registration": "OE-LPM",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2018-NEW",
     "parent": "",
-    "notes": "I:Flaps down | N:Schönbrunn Palace"
+    "notes_raw": "I:Flaps down | N:Schönbrunn Palace",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
-    "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner"
+    "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
+    "shop": "Kleinanzeigen Dan Segal",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

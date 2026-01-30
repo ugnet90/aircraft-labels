@@ -2,6 +2,12 @@
   "model_id": "BA006",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "British Airways",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/bac-111-one-eleven-british-airways-g-avoe-aeroclassics-1400/",
   "aircraft_id": "BAC-111-400",
   "aircraft_type": "BAC 1-11 Series 400",
   "registration": "G-AVOE",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "",
-    "photo": "https://abpic.co.uk/pictures/view/1178552"
+    "photo": "https://abpic.co.uk/pictures/view/1178552",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/bac-111-one-eleven-british-airways-g-avoe-aeroclassics-1400/"
   },
   "logo": {
     "id": "BA_BAW",

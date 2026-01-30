@@ -2,6 +2,12 @@
   "model_id": "SK003",
   "airline_code": "SK",
   "airline": "SAS",
+  "airline_row": "SAS",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Vagn Viking",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-sas-scandinavian-se-rjx-gemini-jets-gjsas1988-1400/",
   "aircraft_id": "BOE-737-700-WL",
   "aircraft_type": "Boeing 737-700 (Winglets)",
   "registration": "SE-RJX",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Vagn Viking"
+    "notes_raw": "N:Vagn Viking",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
-    "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl"
+    "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-sas-scandinavian-se-rjx-gemini-jets-gjsas1988-1400/"
   },
   "logo": {
     "id": "SK_SAS",

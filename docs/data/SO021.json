@@ -2,6 +2,12 @@
   "model_id": "SO021",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "United States Navy",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "US Naval Oceanographic Office",
+  "shop_url": "",
   "aircraft_id": "LOC-RP3D",
   "aircraft_type": "Lockheed RP-3D Orion",
   "registration": "VXN-8",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:US Naval Oceanographic Office"
+    "notes_raw": "I:US Naval Oceanographic Office",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "",
-    "photo": "https://www.airhistory.net/photo/654297/158227"
+    "photo": "https://www.airhistory.net/photo/654297/158227",
+    "shop": "MW-MOBA",
+    "shop_url": ""
   },
   "logo": {
     "id": "US_NAV",

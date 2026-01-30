@@ -2,6 +2,12 @@
   "model_id": "HF003",
   "airline_code": "HF",
   "airline": "Hapag-Lloyd",
+  "airline_row": "Hapag-Lloyd",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a300-hapag-lloyd-d-ahla-aeroclassics-1400/",
   "aircraft_id": "AIB-A300-B4",
   "aircraft_type": "Airbus A300B4",
   "registration": "D-AHLA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "gleiche Kennung, andere Livery; https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
-    "photo": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304"
+    "photo": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a300-hapag-lloyd-d-ahla-aeroclassics-1400/"
   },
   "logo": {
     "id": "HF_HLF",

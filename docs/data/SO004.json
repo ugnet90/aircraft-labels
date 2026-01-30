@@ -2,6 +2,12 @@
   "model_id": "SO004",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "United States Air Force",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "B747-200B",
+  "shop_url": "",
   "aircraft_id": "BOE-747-VC25A",
   "aircraft_type": "Boeing VC-25A (Air Force One)",
   "registration": "28000",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:B747-200B"
+    "notes_raw": "I:B747-200B",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
-    "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html"
+    "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "US_UAF",

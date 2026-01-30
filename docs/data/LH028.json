@@ -2,6 +2,12 @@
   "model_id": "LH028",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "600th Airbus Aircraft",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-lufthansa-d-aieq-gemini-jets-gjdlh2238-1400/",
   "aircraft_id": "AIB-A321-neo",
   "aircraft_type": "Airbus A321 neo",
   "registration": "D-AIEQ",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:600th Airbus Aircraft"
+    "notes_raw": "L:600th Airbus Aircraft",
+    "note": "600th Airbus Aircraft"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "",
-    "photo": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx"
+    "photo": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-lufthansa-d-aieq-gemini-jets-gjdlh2238-1400/"
   },
   "logo": {
     "id": "LH_DLH",

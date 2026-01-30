@@ -2,6 +2,12 @@
   "model_id": "SO001",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "Antonov Airlines",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.herpa.de/Antonov-Airlines-AN-225-Mriya/562287",
   "aircraft_id": "ANT-An225",
   "aircraft_type": "Antonov AN-225 Mriya",
   "registration": "UR-82060",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "vorhanden",
-    "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/"
+    "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
+    "shop": "https://www.herpa.de",
+    "shop_url": "https://www.herpa.de/Antonov-Airlines-AN-225-Mriya/562287"
   },
   "logo": {
     "id": "UR_ADB",

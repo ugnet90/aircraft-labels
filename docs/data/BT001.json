@@ -2,6 +2,12 @@
   "model_id": "BT001",
   "airline_code": "BT",
   "airline": "Air Baltic",
+  "airline_row": "AirBaltic",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "100th Airbus A220",
+  "extra_info": "",
+  "shop_url": "https://shop.dcc24.eu/en/herpa/22453-herpa-562607-cs300-airbaltic-4013150562607.html",
   "aircraft_id": "AIB-A220-300",
   "aircraft_type": "Airbus A220-300",
   "registration": "YL-AAU",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:100th Airbus A220"
+    "notes_raw": "L:100th Airbus A220",
+    "note": "100th Airbus A220"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
-    "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11"
+    "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11",
+    "shop": "Sklep Modelarski",
+    "shop_url": "https://shop.dcc24.eu/en/herpa/22453-herpa-562607-cs300-airbaltic-4013150562607.html"
   },
   "logo": {
     "id": "BT_BTI",

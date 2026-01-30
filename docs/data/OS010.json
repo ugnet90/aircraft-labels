@@ -2,6 +2,12 @@
   "model_id": "OS010",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "",
+  "livery_note": "Qualiflyer",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A320-200",
   "aircraft_type": "Airbus A320-200",
   "registration": "OE-LBP",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1997-QUALIFLYER",
     "parent": "AUA-1995-ARROWSTRIPE",
-    "notes": "L:Qualiflyer"
+    "notes_raw": "L:Qualiflyer",
+    "note": "Qualiflyer"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
-    "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg"
+    "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
+    "shop": "Ebay stoeberdaniel",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

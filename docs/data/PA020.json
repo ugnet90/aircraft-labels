@@ -2,6 +2,12 @@
   "model_id": "PA020",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Apollo",
+  "aircraft_name": "Clipper Celstial Empire",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/douglas-dc-10-30-pan-am-n83na-apollo-a13038-1400/",
   "aircraft_id": "MCD-DC10-30",
   "aircraft_type": "McDonnell Douglas DC-10-30",
   "registration": "N83NA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Celstial Empire"
+    "notes_raw": "N:Clipper Celstial Empire",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
-    "photo": "https://abpic.co.uk/pictures/view/1106191"
+    "photo": "https://abpic.co.uk/pictures/view/1106191",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/douglas-dc-10-30-pan-am-n83na-apollo-a13038-1400/"
   },
   "logo": {
     "id": "PA_PAA",

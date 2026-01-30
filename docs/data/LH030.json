@@ -2,6 +2,12 @@
   "model_id": "LH030",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa Cargo",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Lufthansa Cargo",
+  "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11f-lufthansa-cargo-d-alcn-gemini-jets-gjdlh1371-1400/",
   "aircraft_id": "MCD-MD11F",
   "aircraft_type": "McDonnell Douglas MD-11F",
   "registration": "D-ALCN",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:Lufthansa Cargo"
+    "notes_raw": "I:Lufthansa Cargo",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
-    "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/"
+    "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
+    "shop": "MW-Moba",
+    "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11f-lufthansa-cargo-d-alcn-gemini-jets-gjdlh1371-1400/"
   },
   "logo": {
     "id": "LH_GEC",

@@ -2,6 +2,12 @@
   "model_id": "SO020",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "United States Army",
+  "manufacturer": "Patriot Model",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "US Army; Prototyp",
+  "shop_url": "https://www.aviationmegastore.com/de/modelle/boeing-767-200-airborne-optical-adjunct--us-army-prototype-n767ba-patriot-model-pt-400-015-214215.html",
   "aircraft_id": "BOE-767-AOA",
   "aircraft_type": "Boeing 767-200 Airborne Optical Adjunct (US Army)",
   "registration": "N767BA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:US Army; Prototyp"
+    "notes_raw": "I:US Army; Prototyp",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "beim Modell vorhanden",
-    "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html"
+    "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
+    "shop": "Aviationmegastore",
+    "shop_url": "https://www.aviationmegastore.com/de/modelle/boeing-767-200-airborne-optical-adjunct--us-army-prototype-n767ba-patriot-model-pt-400-015-214215.html"
   },
   "logo": {
     "id": "US_ARM",

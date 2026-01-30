@@ -2,6 +2,12 @@
   "model_id": "OS015",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Wiener Philharmoniker",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A340-300",
   "aircraft_type": "Airbus A340-300",
   "registration": "OE-LAL",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2006-PHILHARMONIKER",
     "parent": "AUA-2003-BLUEBELLY",
-    "notes": "N:Wiener Philharmoniker"
+    "notes_raw": "N:Wiener Philharmoniker",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
-    "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313"
+    "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313",
+    "shop": "Ebay Leon",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

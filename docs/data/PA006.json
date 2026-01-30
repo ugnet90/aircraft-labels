@@ -2,6 +2,12 @@
   "model_id": "PA006",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper White Falcon",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/lockheed-l-1011-385-3-pan-am-n514pa-dragon-wings-55142-1400/",
   "aircraft_id": "LOC-L1011-500",
   "aircraft_type": "Lockheed L-1011 TriStar 500",
   "registration": "N514PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper White Falcon"
+    "notes_raw": "N:Clipper White Falcon",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
-    "photo": "https://www.planepictures.net/v3/show_en.php?id=276508"
+    "photo": "https://www.planepictures.net/v3/show_en.php?id=276508",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/lockheed-l-1011-385-3-pan-am-n514pa-dragon-wings-55142-1400/"
   },
   "logo": {
     "id": "PA_PAA",

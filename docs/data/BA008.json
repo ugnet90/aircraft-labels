@@ -2,6 +2,12 @@
   "model_id": "BA008",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "British Airways",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "Sherwood Forest",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/257315911323",
   "aircraft_id": "MCD-DC10-30",
   "aircraft_type": "McDonnell Douglas DC-10-30",
   "registration": "G-BEBM",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Sherwood Forest"
+    "notes_raw": "N:Sherwood Forest",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
-    "photo": "https://www.airhistory.net/photo/747410/G-BEBM"
+    "photo": "https://www.airhistory.net/photo/747410/G-BEBM",
+    "shop": "Ebay Kontorbuer",
+    "shop_url": "https://www.ebay.de/itm/257315911323"
   },
   "logo": {
     "id": "BA_BAW",

@@ -2,6 +2,12 @@
   "model_id": "OS012",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "A. Bruckner",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "HAW-HS748",
   "aircraft_type": "Hawker-Siddeley HS-748",
   "registration": "OE-LHT",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-1960-CLASSIC",
     "parent": "",
-    "notes": "N:A. Bruckner"
+    "notes_raw": "N:A. Bruckner",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
-    "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748"
+    "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748",
+    "shop": "Ebay aerosmith102",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

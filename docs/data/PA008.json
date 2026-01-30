@@ -2,6 +2,12 @@
   "model_id": "PA008",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper Morning Star",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A310-300",
   "aircraft_type": "Airbus A310-300",
   "registration": "N818PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Morning Star"
+    "notes_raw": "N:Clipper Morning Star",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
-    "photo": "https://www.airhistory.net/photo/481727/N818PA"
+    "photo": "https://www.airhistory.net/photo/481727/N818PA",
+    "shop": "Ebay waffle-collectibles",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",

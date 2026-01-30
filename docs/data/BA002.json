@@ -2,6 +2,12 @@
   "model_id": "BA002",
   "airline_code": "BA",
   "airline": "British Airways",
+  "airline_row": "British Airways",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/157409674233",
   "aircraft_id": "SHO-360",
   "aircraft_type": "Shorts 360",
   "registration": "G-BNYI",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Bemalung, andere Kennung; https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
-    "photo": "https://www.airhistory.net/photo/697193/G-BNYI"
+    "photo": "https://www.airhistory.net/photo/697193/G-BNYI",
+    "shop": "Ebay Littleworth Models",
+    "shop_url": "https://www.ebay.de/itm/157409674233"
   },
   "logo": {
     "id": "BA_BAW",

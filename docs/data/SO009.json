@@ -2,6 +2,12 @@
   "model_id": "SO009",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "United States Air Force",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "The INDEPENDENCE",
+  "livery_note": "",
+  "extra_info": "US Air Force",
+  "shop_url": "https://www.ebay.de/itm/375992577591",
   "aircraft_id": "DOU-VC118A",
   "aircraft_type": "Douglas VC-118A (Independence, Air Force One)",
   "registration": "46-0505",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:US Air Force | N:The INDEPENDENCE"
+    "notes_raw": "I:US Air Force | N:The INDEPENDENCE",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "",
-    "photo": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster"
+    "photo": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster",
+    "shop": "Ebay *industrial",
+    "shop_url": "https://www.ebay.de/itm/375992577591"
   },
   "logo": {
     "id": "US_UAF",

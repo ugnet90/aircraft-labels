@@ -2,6 +2,12 @@
   "model_id": "PA011",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Clipper Golden Light",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://order.ebay.de/ord/show?orderId=04-13231-92834&ssPageName=STRK:MESO:VPS&_trksid=p4429486.m2548.l2673",
   "aircraft_id": "DOU-DC8-62",
   "aircraft_type": "Douglas DC-8-62",
   "registration": "N1803",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Golden Light"
+    "notes_raw": "N:Clipper Golden Light",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "-",
-    "photo": "https://www.jetphotos.com/photo/261236"
+    "photo": "https://www.jetphotos.com/photo/261236",
+    "shop": "Ebay BUCHair USA",
+    "shop_url": "https://order.ebay.de/ord/show?orderId=04-13231-92834&ssPageName=STRK:MESO:VPS&_trksid=p4429486.m2548.l2673"
   },
   "logo": {
     "id": "PA_PAA",

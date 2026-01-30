@@ -2,6 +2,12 @@
   "model_id": "NG001",
   "airline_code": "NG",
   "airline": "Lauda Air",
+  "airline_row": "Lauda Air",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Lauda Air",
+  "shop_url": "",
   "aircraft_id": "BOE-777-200",
   "aircraft_type": "Boeing 777-200",
   "registration": "OE-LPA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "LDA-1990-CLASSIC",
     "parent": "",
-    "notes": "I:Lauda Air"
+    "notes_raw": "I:Lauda Air",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
-    "photo": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er"
+    "photo": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er",
+    "shop": "Kleinanzeigen Josef Voss",
+    "shop_url": ""
   },
   "logo": {
     "id": "NG_LDA",

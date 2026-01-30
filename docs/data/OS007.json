@@ -2,6 +2,12 @@
   "model_id": "OS007",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Arlberg",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "AIB-A330-200",
   "aircraft_type": "Airbus A330-200",
   "registration": "OE-LAN",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "N:Arlberg"
+    "notes_raw": "N:Arlberg",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
-    "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223"
+    "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223",
+    "shop": "Ebay kunstspezi",
+    "shop_url": ""
   },
   "logo": {
     "id": "OS_AUA",

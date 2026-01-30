@@ -2,6 +2,12 @@
   "model_id": "PA002",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper Splendid",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-737-400",
   "aircraft_type": "Boeing 737-400",
   "registration": "N406KW",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Splendid"
+    "notes_raw": "N:Clipper Splendid",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/18164-pan-am-19968-b737.html",
-    "photo": "https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8"
+    "photo": "https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8",
+    "shop": "Kleinanzeigen Michael",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",

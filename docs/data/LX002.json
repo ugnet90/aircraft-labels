@@ -2,6 +2,12 @@
   "model_id": "LX002",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "Phoenix",
+  "aircraft_name": "Lugano",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://swiss-edelweiss.li/",
   "aircraft_id": "AIB-A321-200-SL",
   "aircraft_type": "Airbus A321-200 (Sharklets)",
   "registration": "HB-ION",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Lugano"
+    "notes_raw": "N:Lugano",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
-    "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl"
+    "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
+    "shop": "Swiss-Edelweiss Airplane Shop",
+    "shop_url": "https://swiss-edelweiss.li/"
   },
   "logo": {
     "id": "LX_SWR",

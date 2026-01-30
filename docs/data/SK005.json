@@ -2,6 +2,12 @@
   "model_id": "SK005",
   "airline_code": "SK",
   "airline": "SAS",
+  "airline_row": "SAS",
+  "manufacturer": "NG Models",
+  "aircraft_name": "Ragnar Viking",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/226985497592",
   "aircraft_id": "MCD-MD87",
   "aircraft_type": "McDonnell Douglas MD-87",
   "registration": "OY-KHF",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Ragnar Viking"
+    "notes_raw": "N:Ragnar Viking",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
-    "photo": "https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87"
+    "photo": "https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87",
+    "shop": "Ebay Scaled-Airliners",
+    "shop_url": "https://www.ebay.de/itm/226985497592"
   },
   "logo": {
     "id": "SK_SAS",

@@ -2,6 +2,12 @@
   "model_id": "PA013",
   "airline_code": "PA",
   "airline": "Pan Am",
+  "airline_row": "Pan Am",
+  "manufacturer": "Dragon Wings",
+  "aircraft_name": "Clipper Empress of the Skies",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-707-320",
   "aircraft_type": "Boeing 707-320",
   "registration": "N412PA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Clipper Empress of the Skies"
+    "notes_raw": "N:Clipper Empress of the Skies",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3036-pan-american-b707.html",
-    "photo": "https://abpic.co.uk/pictures/view/1646675"
+    "photo": "https://abpic.co.uk/pictures/view/1646675",
+    "shop": "Ebay arturkat",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",

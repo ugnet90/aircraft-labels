@@ -2,6 +2,12 @@
   "model_id": "SO022",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
+  "airline_row": "German Cargo",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "German Cargo",
+  "shop_url": "https://www.ebay.de/itm/257315910925",
   "aircraft_id": "BOE-707-330C",
   "aircraft_type": "Boeing 707-330C (German Cargo)",
   "registration": "D-ABUA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:German Cargo"
+    "notes_raw": "I:German Cargo",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
-    "photo": "https://www.airhistory.net/photos/0641225.jpg?m=1705010149"
+    "photo": "https://www.airhistory.net/photos/0641225.jpg?m=1705010149",
+    "shop": "Ebay Kontorbuer",
+    "shop_url": "https://www.ebay.de/itm/257315910925"
   },
   "logo": {
     "id": "FX_GEC",

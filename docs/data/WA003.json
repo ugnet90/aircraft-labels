@@ -2,6 +2,12 @@
   "model_id": "WA003",
   "airline_code": "WA",
   "airline": "KLM Cityhopper",
+  "airline_row": "KLM Cityhopper",
+  "manufacturer": "Gemini Jets",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "KLM Cityhopper",
+  "shop_url": "https://www.flight-shop.de/modelle/geminijets/scale-1400/11784/geminijets-embraer-e195-e2-klm-royal-dutch-ph-nx3-1-400-modellflugzeug?srsltid=AfmBOorHTKyWreFQRtGAn-iFemA-bxLMhEW3CTNpBx-uvqkSzpp8ugku",
   "aircraft_id": "EMB-E195E2",
   "aircraft_type": "Embraer E195-E2",
   "registration": "PH-NXE",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "I:KLM Cityhopper"
+    "notes_raw": "I:KLM Cityhopper",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
-    "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std"
+    "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
+    "shop": "flight-shop.de/",
+    "shop_url": "https://www.flight-shop.de/modelle/geminijets/scale-1400/11784/geminijets-embraer-e195-e2-klm-royal-dutch-ph-nx3-1-400-modellflugzeug?srsltid=AfmBOorHTKyWreFQRtGAn-iFemA-bxLMhEW3CTNpBx-uvqkSzpp8ugku"
   },
   "logo": {
     "id": "WA_KLC",

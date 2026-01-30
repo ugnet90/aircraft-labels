@@ -2,6 +2,12 @@
   "model_id": "LH010",
   "airline_code": "LH",
   "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Herpa Wings",
+  "aircraft_name": "Berlin",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "",
   "aircraft_id": "BOE-747-400",
   "aircraft_type": "Boeing 747-400",
   "registration": "D-ABVW",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "N:Berlin"
+    "notes_raw": "N:Berlin",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
-    "photo": "https://www.jetphotos.com/photo/11667623"
+    "photo": "https://www.jetphotos.com/photo/11667623",
+    "shop": "Kleinanzeigen Josef Voß",
+    "shop_url": ""
   },
   "logo": {
     "id": "LH_DLH",

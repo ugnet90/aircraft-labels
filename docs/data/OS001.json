@@ -2,6 +2,12 @@
   "model_id": "OS001",
   "airline_code": "OS",
   "airline": "Austrian",
+  "airline_row": "Austrian",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "Baku",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.aviationmegastore.com/de/modelle/airbus-a319-austrian-airlines-oe-lde-aero-classics-ac411344-208116.html",
   "aircraft_id": "AIB-A319",
   "aircraft_type": "Airbus A319-100",
   "registration": "OE-LDE",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "AUA-2015-MYAUA",
     "parent": "",
-    "notes": "N:Baku"
+    "notes_raw": "N:Baku",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
-    "photo": "https://www.jetphotos.com/photo/10159741"
+    "photo": "https://www.jetphotos.com/photo/10159741",
+    "shop": "aviationmegastore.com",
+    "shop_url": "https://www.aviationmegastore.com/de/modelle/airbus-a319-austrian-airlines-oe-lde-aero-classics-ac411344-208116.html"
   },
   "logo": {
     "id": "OS_AUA",

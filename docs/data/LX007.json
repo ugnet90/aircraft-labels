@@ -2,6 +2,12 @@
   "model_id": "LX007",
   "airline_code": "LX",
   "airline": "Swiss",
+  "airline_row": "Swiss",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "",
+  "livery_note": "Faces of Swiss",
+  "extra_info": "",
+  "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-swiss-hb-jna-jc-wings-xx4683-1400/",
   "aircraft_id": "BOE-777-300ER",
   "aircraft_type": "Boeing 777-300ER",
   "registration": "HB-JNA",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "L:Faces of Swiss"
+    "notes_raw": "L:Faces of Swiss",
+    "note": "Faces of Swiss"
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
-    "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer"
+    "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer",
+    "shop": "MW-MOBA",
+    "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-swiss-hb-jna-jc-wings-xx4683-1400/"
   },
   "logo": {
     "id": "LX_SWR",

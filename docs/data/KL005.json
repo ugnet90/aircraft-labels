@@ -2,6 +2,12 @@
   "model_id": "KL005",
   "airline_code": "KL",
   "airline": "KLM",
+  "airline_row": "KLM",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/297670868491",
   "aircraft_id": "BAC-111-300",
   "aircraft_type": "BAC 1-11 Series 300",
   "registration": "G-ATPJ",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:400",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
-    "photo": "https://www.jetphotos.com/photo/7018562"
+    "photo": "https://www.jetphotos.com/photo/7018562",
+    "shop": "Ebay Felindre Diecast",
+    "shop_url": "https://www.ebay.de/itm/297670868491"
   },
   "logo": {
     "id": "KL_KLM",

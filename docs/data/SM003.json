@@ -2,6 +2,12 @@
   "model_id": "SM003",
   "airline_code": "SM",
   "airline": "Sondermaße",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Sky-Stars",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/205689921146",
   "aircraft_id": "DOR-DOX",
   "aircraft_type": "Dornier Do X (Lufthansa)",
   "registration": "D-1929",
@@ -30,7 +36,8 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": ""
+    "notes_raw": "",
+    "note": ""
   },
   "model": {
     "scale": "1:350",
@@ -45,7 +52,9 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
-    "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg"
+    "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg",
+    "shop": "Ebay herzlichst-willkommen",
+    "shop_url": "https://www.ebay.de/itm/205689921146"
   },
   "logo": {
     "id": "LH_DLH",
