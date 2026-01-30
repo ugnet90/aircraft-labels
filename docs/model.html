@@ -294,12 +294,18 @@
       if(!res.ok) throw new Error(`HTTP ${res.status}`);
       const d = await res.json();
 
-      const airline = asText(d.airline) || asText(d.airline_code);
+      const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
       const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
       const reg = asText(d.registration) || asText(d.aircraft?.registration);
       const livery = asText(d.livery_name) || asText(d.livery?.code);
 
-      const headline = [airline, typ, reg].filter(Boolean).join(" · ") || id;
+      const headline = [
+        airline,
+        typ,
+        reg,
+        d.aircraft_name ? `„${d.aircraft_name}“` : ""
+      ].filter(Boolean).join(" · ") || id;
+
       document.title = headline;
       
       const logoUrl = logoSrc(d);
@@ -313,8 +319,10 @@
       const sub = [
         d.model_id ? `Modell-ID: ${d.model_id}` : "",
         d.aircraft_id ? `aircraft_id: ${d.aircraft_id}` : "",
-        livery ? `Livery: ${livery}` : ""
+        livery ? `Livery: ${livery}` : "",
+        d.livery_note ? `Bemalung: ${d.livery_note}` : ""
       ].filter(Boolean).join(" | ");
+
       document.getElementById("subtitle").textContent = sub;
 
       // Blocks
@@ -323,9 +331,9 @@
           <div class="k">Modell</div>
           <div class="grid" style="margin-top:8px">
             ${rowHtml("Maßstab", scaleBadge(d.model?.scale || ""))}
-            ${row("Hersteller", d.model?.manufacturer || "")}
+            ${row("Hersteller", d.manufacturer || d.model?.manufacturer || "")}
             ${row("Artikel-/Modellnummer", d.model?.model_number || "")}
-            ${row("Shop", d.shop || d.model?.shop || "")}
+            ${linkOrTextRow("Shop", d.shop_url || d.shop || d.model?.shop || "")}
             ${row("Preis", money(d.price ?? d.model?.price))}
             ${row("Versand (anteilig)", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
@@ -341,9 +349,12 @@
           <div class="grid" style="margin-top:8px">
             ${row("Flugzeugtyp", typ)}
             ${row("Registrierung", reg)}
+            ${row("Taufname", d.aircraft_name || "")}
+            ${row("Zusatzinfo", d.extra_info || "")}
           </div>
         </div>
       `;
+
 
       const liveryName = (d.livery_full?.Livery_Name || "").trim();
       const liveryType = (d.livery_full?.Livery_Type || "").trim();
@@ -364,12 +375,14 @@
         <div class="card">
           <div class="k">Links</div>
           <div class="grid" style="margin-top:8px">
+            ${linkOrTextRow("Shop", d.shop_url || "")}
             ${linkOrTextRow("Postkarte", d.postcard || d.links?.postcard || "")}
             ${row("Preis Postkarte", money(d.postcard_price || ""))}
             ${linkOrTextRow("Foto", d.photo || d.links?.photo || "")}
           </div>
         </div>
       `;
+
       
       // Optional: show raw source pointer
       const src = d.source ? `(${d.source.sheet || ""} #${d.source.row || ""})` : "";
