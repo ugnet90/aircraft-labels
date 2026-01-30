@@ -36,6 +36,9 @@
   <select id="airline">
     <option value="">Alle Airlines</option>
   </select>
+  <select id="type">
+    <option value="">Alle Flugzeugtypen</option>
+  </select>
   <select id="scale">
     <option value="">Alle Maßstäbe</option>
   </select>
@@ -54,6 +57,7 @@
 </div>
 
 <div class="right">
+  <button id="reset" class="pill" style="cursor:pointer;background:#fff">Reset</button>
   <span class="small" id="count"></span>
 </div>
 
@@ -134,6 +138,11 @@
     return (it.airline_code || "") === code || (it.airline || "") === code;
   }
 
+  function matchesType(it, t){
+    if(!t) return true;
+    return (it.aircraft_type || "") === t;
+  }
+
   function matchesScale(it, s){
     if(!s) return true;
     return (it.scale || "") === s;
@@ -202,10 +211,18 @@
       html += `
         <tr>
           <td class="mono"><a href="${esc(link)}">${esc(it.model_id)}</a></td>
-          <td>${esc(it.airline || it.airline_code || "")}</td>
+          <td>
+            <a href="#" data-airline="${esc(it.airline_code || it.airline || "")}">
+              ${esc(it.airline || it.airline_code || "")}
+            </a>
+          </td>
           <td>${scaleBadge(it.scale || "")}</td>
           <td class="mono">${it.flown === true ? "ja" : it.flown === false ? "nein" : ""}</td>
-          <td>${esc(it.aircraft_type || "")}</td>
+          <td>
+            <a href="#" data-type="${esc(it.aircraft_type || "")}">
+              ${esc(it.aircraft_type || "")}
+            </a>
+          </td>
           <td class="mono">${esc(it.registration || "")}</td>
           <td>${esc(it.livery_display || it.livery_name || "")}</td>
           <td class="mono">${esc(formatDateDE(it.arrived || ""))}</td>
@@ -217,15 +234,22 @@
     document.getElementById("content").innerHTML = html;
   }
 
+  
+
   function apply(){
     const q = norm(document.getElementById("q").value);
     const airline = document.getElementById("airline").value;
+    const type = document.getElementById("type").value;
     const scale = document.getElementById("scale").value;
     const flown = document.getElementById("flown").value;
     const sort = document.getElementById("sort").value;
 
     let items = state.all.filter(it =>
-      matchesQuery(it, q) && matchesAirline(it, airline) && matchesScale(it, scale) && matchesFlown(it, flown)
+      matchesQuery(it, q) &&
+      matchesAirline(it, airline) &&
+      matchesType(it, type) &&
+      matchesScale(it, scale) &&
+      matchesFlown(it, flown)
     );
 
     items = sortItems(items, sort);
@@ -249,6 +273,10 @@
         it => (it.airline_code || it.airline || ""),
         it => (it.airline || it.airline_code || "")
       );
+      buildOptions(state.all, "type",
+        it => (it.aircraft_type || ""),
+        it => (it.aircraft_type || "")
+      );
 
       buildOptions(state.all, "scale",
         it => (it.scale || ""),
@@ -257,9 +285,20 @@
 
       document.getElementById("q").addEventListener("input", apply);
       document.getElementById("airline").addEventListener("change", apply);
+      document.getElementById("type").addEventListener("change", apply);
       document.getElementById("scale").addEventListener("change", apply);
       document.getElementById("flown").addEventListener("change", apply);
       document.getElementById("sort").addEventListener("change", apply);
+      document.getElementById("reset").addEventListener("click", () => {
+        document.getElementById("q").value = "";
+        document.getElementById("airline").value = "";
+        document.getElementById("type").value = "";
+        document.getElementById("scale").value = "";
+        document.getElementById("flown").value = "";
+        document.getElementById("sort").value = "airline_model";
+        apply();
+      });
+
 
       apply();
     }catch(e){
@@ -269,6 +308,25 @@
     }
   }
 
+  document.addEventListener("click", (ev) => {
+    const a = ev.target.closest("a[data-airline], a[data-type]");
+    if(!a) return;
+  
+    ev.preventDefault();
+  
+    const airline = a.getAttribute("data-airline");
+    const type = a.getAttribute("data-type");
+  
+    if(airline !== null){
+      document.getElementById("airline").value = airline;
+    }
+    if(type !== null){
+      document.getElementById("type").value = type;
+    }
+  
+    apply();
+  });
+  
   main();
 </script>
 </body>
