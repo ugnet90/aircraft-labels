@@ -5,15 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Matrix: Airlines × Typen</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:1200px}
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:1400px}
     .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
     h1{font-size:20px;margin:0}
     .muted{color:#666;font-size:12px}
-    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
     a{color:#000}
     .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
     .btn:hover{background:#fafafa}
-    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
+    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0;background:#fff}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    input,select{padding:8px;border:1px solid #ddd;border-radius:10px;font-size:14px}
+    label{display:flex;gap:6px;align-items:center}
+
+    /* Desktop/Tablet Matrix */
+    #matrixCard{padding:0}
+    #topScroll{overflow:auto;border-bottom:1px solid #eee}
+    #topScrollInner{height:1px}
+    #tableWrap{overflow:auto;max-height:75vh}
     table{width:max-content;border-collapse:collapse;font-size:12px}
     th,td{
       border:1px solid #e6e6e6;
@@ -21,20 +30,30 @@
       vertical-align:top;
       background:#fff;
     }
-    th{
-      position:sticky;
-      top:0;
-      z-index:3;
-    }
-    td:first-child, th:first-child{
-      position:sticky;
-      left:0;
-      z-index:2;
-    }
+    th{position:sticky;top:0;z-index:3}
+    td:first-child, th:first-child{position:sticky;left:0;z-index:2}
     tr:nth-child(even) td{background:#fafafa}
-    .num{text-align:right;font-variant-numeric:tabular-nums}
-    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    select,input{padding:6px;border:1px solid #ddd;border-radius:10px}
+    td.num{text-align:right;font-variant-numeric:tabular-nums}
+    td.num a{display:block;text-decoration:none;color:#000}
+    td.num a:hover{text-decoration:underline}
+
+    /* Mobile view */
+    #mobileCard{display:none}
+    #mobileList{margin:0;padding-left:18px}
+    #mobileList li{margin:6px 0}
+    .pill{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+
+    @media (max-width: 900px){
+      body{margin:12px}
+      #tableWrap{max-height:70vh}
+    }
+
+    /* Switch to mobile layout */
+    @media (max-width: 720px){
+      #matrixCard{display:none}
+      #mobileCard{display:block}
+    }
   </style>
 </head>
 <body>
@@ -48,31 +67,55 @@
     <a class="btn" href="./missing_types.html">Fehlende Typen</a>
   </div>
 
-  <div class="card controls">
+  <!-- Desktop/Tablet controls -->
+  <div class="card controls" id="desktopControls">
     <label class="muted">Airline enthält:
       <input id="airQ" placeholder="z.B. Austrian" />
     </label>
     <label class="muted">Typ enthält:
       <input id="typeQ" placeholder="z.B. A320" />
     </label>
+    <span class="muted">Tipp: Horizontal oben scrollen.</span>
   </div>
 
-  <div class="card" style="padding:0">
-    <div id="topScroll" style="overflow:auto;border-bottom:1px solid #eee">
-      <div id="topScrollInner" style="height:1px"></div>
-    </div>
-    <div id="tableWrap" style="overflow:auto;max-height:75vh">
+  <!-- Desktop/Tablet matrix -->
+  <div class="card" id="matrixCard">
+    <div id="topScroll"><div id="topScrollInner"></div></div>
+    <div id="tableWrap">
       <table id="tbl"></table>
     </div>
   </div>
 
+  <!-- Mobile controls + list -->
+  <div class="card" id="mobileCard">
+    <div class="controls" style="margin-bottom:10px">
+      <label class="muted">Airline:
+        <select id="mAir"></select>
+      </label>
+      <label class="muted">Typ-Suche:
+        <input id="mTypeQ" placeholder="z.B. A320" />
+      </label>
+      <label class="muted">Nur vorhanden:
+        <select id="mOnlyNonZero">
+          <option value="true">ja</option>
+          <option value="false">nein</option>
+        </select>
+      </label>
+    </div>
+    <div class="muted" id="mMeta"></div>
+    <ul id="mobileList"></ul>
+  </div>
+
 <script>
-  function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+  function esc(s){
+    return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
 
   let data = null;
 
-  function render(){
+  function renderDesktop(){
     if(!data) return;
+
     const airQ = (document.getElementById("airQ").value || "").trim().toLowerCase();
     const typeQ = (document.getElementById("typeQ").value || "").trim().toLowerCase();
 
@@ -89,21 +132,32 @@
       .filter(x => !typeQ || x.t.toLowerCase().includes(typeQ));
 
     let html = "<thead><tr><th>Typ \\ Airline</th>";
-    for(const x of ai){ html += `<th>${esc(x.a)}</th>`; }
+    for(const x of ai){
+      html += `<th>${esc(x.a)}</th>`;
+    }
     html += "</tr></thead><tbody>";
 
     for(const y of ti){
       html += `<tr><td>${esc(y.t)}</td>`;
       for(const x of ai){
         const n = (matrix[x.idx] && matrix[x.idx][y.idx]) ? matrix[x.idx][y.idx] : 0;
-        html += `<td class="num">${n ? n : ""}</td>`;
+
+        // optional: click to jump to index.html filtered (airline + type)
+        if(n){
+          const href = `./index.html?airline=${encodeURIComponent(x.a)}&type=${encodeURIComponent(y.t)}`;
+          html += `<td class="num"><a href="${esc(href)}" title="Öffnen in Übersicht">${n}</a></td>`;
+        }else{
+          html += `<td class="num"></td>`;
+        }
       }
       html += "</tr>";
     }
     html += "</tbody>";
 
     document.getElementById("tbl").innerHTML = html;
-    document.getElementById("meta").textContent = `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
+    document.getElementById("meta").textContent =
+      `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
+
     // Sync top scrollbar width + scroll position
     requestAnimationFrame(() => {
       const wrap = document.getElementById("tableWrap");
@@ -111,21 +165,98 @@
       const inner = document.getElementById("topScrollInner");
       const tbl = document.getElementById("tbl");
       if(!wrap || !top || !inner || !tbl) return;
-    
+
       inner.style.width = tbl.scrollWidth + "px";
-    
-      // avoid duplicate listeners by resetting handlers
+
       top.onscroll = () => { wrap.scrollLeft = top.scrollLeft; };
       wrap.onscroll = () => { top.scrollLeft = wrap.scrollLeft; };
-    });    
+    });
+  }
+
+  function initMobile(){
+    if(!data) return;
+    const mAir = document.getElementById("mAir");
+
+    // build airline dropdown
+    mAir.innerHTML = "";
+    const optAll = document.createElement("option");
+    optAll.value = "";
+    optAll.textContent = "Alle Airlines";
+    mAir.appendChild(optAll);
+
+    for(const a of (data.airlines || [])){
+      const opt = document.createElement("option");
+      opt.value = a;
+      opt.textContent = a;
+      mAir.appendChild(opt);
+    }
+
+    document.getElementById("mAir").addEventListener("change", renderMobile);
+    document.getElementById("mTypeQ").addEventListener("input", renderMobile);
+    document.getElementById("mOnlyNonZero").addEventListener("change", renderMobile);
+
+    renderMobile();
+  }
+
+  function renderMobile(){
+    if(!data) return;
+
+    const airlines = data.airlines || [];
+    const types = data.types || [];
+    const matrix = data.matrix || [];
+
+    const selectedAir = (document.getElementById("mAir").value || "");
+    const typeQ = (document.getElementById("mTypeQ").value || "").trim().toLowerCase();
+    const onlyNonZero = (document.getElementById("mOnlyNonZero").value === "true");
+
+    let airlineIdx = -1;
+    if(selectedAir){
+      airlineIdx = airlines.indexOf(selectedAir);
+    }
+
+    // If no airline selected: show top airlines summary
+    // But simpler: require selection for meaningful list
+    if(airlineIdx < 0){
+      document.getElementById("mMeta").innerHTML =
+        `<span class="pill">Bitte Airline wählen</span> <span class="muted">(${airlines.length} verfügbar)</span>`;
+      document.getElementById("mobileList").innerHTML = "";
+      return;
+    }
+
+    const rows = [];
+    for(let ti = 0; ti < types.length; ti++){
+      const t = types[ti];
+      if(typeQ && !t.toLowerCase().includes(typeQ)) continue;
+
+      const n = (matrix[airlineIdx] && matrix[airlineIdx][ti]) ? matrix[airlineIdx][ti] : 0;
+      if(onlyNonZero && !n) continue;
+
+      rows.push({t, n});
+    }
+
+    rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));
+
+    document.getElementById("mMeta").innerHTML =
+      `<span class="pill">${esc(selectedAir)}</span> ` +
+      `<span class="pill">Treffer: <span class="mono">${rows.length}</span></span>`;
+
+    const ul = document.getElementById("mobileList");
+    ul.innerHTML = rows.map(x => {
+      const href = `./index.html?airline=${encodeURIComponent(selectedAir)}&type=${encodeURIComponent(x.t)}`;
+      const right = x.n ? `<span class="mono">${x.n}</span>` : `<span class="muted">0</span>`;
+      return `<li><a href="${esc(href)}">${esc(x.t)}</a> – ${right}</li>`;
+    }).join("");
   }
 
   async function main(){
     const res = await fetch("./data/matrix.json", {cache:"no-store"});
     data = await res.json();
-    render();
-    document.getElementById("airQ").addEventListener("input", render);
-    document.getElementById("typeQ").addEventListener("input", render);
+
+    renderDesktop();
+    initMobile();
+
+    document.getElementById("airQ").addEventListener("input", renderDesktop);
+    document.getElementById("typeQ").addEventListener("input", renderDesktop);
   }
 
   main();
