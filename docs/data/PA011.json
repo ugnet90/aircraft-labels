@@ -7,7 +7,7 @@
   "registration": "N1803",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Golden Light\"",
+  "zusatzinfo": "N:Clipper Golden Light",
   "special_note": "",
   "shop": "Ebay BUCHair USA",
   "price": 56.7,
@@ -16,7 +16,7 @@
   "postcard": "-",
   "postcard_price": null,
   "photo": "https://www.jetphotos.com/photo/261236",
-  "arrived_excel": "07.07.2025",
+  "arrived_excel": "2025-07-07",
   "arrived": "2025-07-07",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Golden Light\""
+    "notes": "N:Clipper Golden Light"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay BUCHair USA",
     "price": 56.7,

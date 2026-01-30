@@ -7,7 +7,7 @@
   "registration": "OE-LAW",
   "livery_name": "AUA-2018-NEW",
   "parent_livery": "",
-  "zusatzinfo": "\"China\"",
+  "zusatzinfo": "N:China",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 44.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/37600-Austrian-B767.html",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/11688863",
-  "arrived_excel": "20.06.2025",
+  "arrived_excel": "2025-06-20",
   "arrived": "2025-06-20",
   "source": {
     "sheet": "AUA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2018-NEW",
     "parent": "",
-    "notes": "\"China\""
+    "notes": "N:China"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 44.5,

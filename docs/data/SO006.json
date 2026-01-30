@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "AIB-A310-304VIP",
-  "aircraft_type": "",
+  "aircraft_type": "Airbus A310-304 (Bundesrepublik Deutschland)",
   "registration": "10+21",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Regierungsmaschine Deutschland",
+  "zusatzinfo": "I:Regierungsmaschine Deutschland",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 27.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
   "postcard_price": 1.35,
   "photo": "https://www.openspotter.org/bild.php?blid=15772",
-  "arrived_excel": "22.05.2025",
+  "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
   "source": {
     "sheet": "Sonstige",
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "AIB-A310-304VIP",
-    "type": "",
+    "type": "Airbus A310-304 (Bundesrepublik Deutschland)",
     "registration": "10+21"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Regierungsmaschine Deutschland"
+    "notes": "I:Regierungsmaschine Deutschland"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 27.5,

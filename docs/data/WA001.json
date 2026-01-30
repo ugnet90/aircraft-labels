@@ -7,7 +7,7 @@
   "registration": "PH-XLD",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "KLM exel",
+  "zusatzinfo": "I:KLM exel",
   "special_note": "",
   "shop": "Marktplaats: TOGAflex",
   "price": 25.0,
@@ -16,7 +16,7 @@
   "postcard": "-",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/1135487/ph-xld-klm-exel-atr-42-320",
-  "arrived_excel": "03.06.2025",
+  "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
   "source": {
     "sheet": "KLM_CH",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "KLM exel"
+    "notes": "I:KLM exel"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Marktplaats: TOGAflex",
     "price": 25.0,

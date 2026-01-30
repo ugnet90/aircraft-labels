@@ -7,7 +7,7 @@
   "registration": "HB-JDC",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "red nose; \"Pontresina\"",
+  "zusatzinfo": "I:red nose | N:Pontresina",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 39.5,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
-  "arrived_excel": "12.11.2025",
+  "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "red nose; \"Pontresina\""
+    "notes": "I:red nose | N:Pontresina"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 39.5,

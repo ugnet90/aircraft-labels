@@ -7,7 +7,7 @@
   "registration": "OE-LVK",
   "livery_name": "AUA-2008-FOOTBALL",
   "parent_livery": "AUA-2003-BLUEBELLY",
-  "zusatzinfo": "Austrian Arrows \"Fussballverbindet.at\"",
+  "zusatzinfo": "I:Austrian Arrows | L:Fussballverbindet.at",
   "special_note": "",
   "shop": "Willhaben",
   "price": 30.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2008-FOOTBALL",
     "parent": "AUA-2003-BLUEBELLY",
-    "notes": "Austrian Arrows \"Fussballverbindet.at\""
+    "notes": "I:Austrian Arrows | L:Fussballverbindet.at"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Willhaben",
     "price": 30.0,

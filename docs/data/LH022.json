@@ -7,7 +7,7 @@
   "registration": "D-ACJH",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Little Europe\"",
+  "zusatzinfo": "N:Little Europe",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 44.5,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung, Typ 100; https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
   "postcard_price": 1.85,
   "photo": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19",
-  "arrived_excel": "20.08.2025",
+  "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Little Europe\""
+    "notes": "N:Little Europe"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 44.5,

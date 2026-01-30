@@ -7,7 +7,7 @@
   "registration": "OY-KHR",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Torkild Viking\"",
+  "zusatzinfo": "N:Torkild Viking",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 29.5,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/018107/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-81-dc-9-81",
-  "arrived_excel": "14.05.2025",
+  "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
   "source": {
     "sheet": "SAS",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Torkild Viking\""
+    "notes": "N:Torkild Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 29.5,

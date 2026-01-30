@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "BOE-747-VC25A",
-  "aircraft_type": "",
+  "aircraft_type": "Boeing VC-25A (Air Force One)",
   "registration": "28000",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "B747-200B",
+  "zusatzinfo": "I:B747-200B",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
   "price": 18.0,
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-747-VC25A",
-    "type": "",
+    "type": "Boeing VC-25A (Air Force One)",
     "registration": "28000"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "B747-200B"
+    "notes": "I:B747-200B"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Josef Voß",
     "price": 18.0,

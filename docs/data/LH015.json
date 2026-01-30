@@ -7,7 +7,7 @@
   "registration": "D-ABKB",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Tegernsee\"",
+  "zusatzinfo": "N:Tegernsee",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
   "price": 15.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/477289/D-ABKB",
-  "arrived_excel": "23.06.2025",
+  "arrived_excel": "2025-06-23",
   "arrived": "2025-06-23",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Tegernsee\""
+    "notes": "N:Tegernsee"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Josef Voß",
     "price": 15.0,

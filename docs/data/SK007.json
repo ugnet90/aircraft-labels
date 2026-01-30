@@ -7,7 +7,7 @@
   "registration": "LN-MOH",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Harald Viking\"",
+  "zusatzinfo": "N:Harald Viking",
   "special_note": "",
   "shop": "Kleinanzeigen Micha",
   "price": 33.66,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
   "postcard_price": 2.5,
   "photo": "https://image.airport-data.com/aircraft/954767.jpg",
-  "arrived_excel": "27.01.2026",
+  "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
   "source": {
     "sheet": "SAS",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Harald Viking\""
+    "notes": "N:Harald Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Kleinanzeigen Micha",
     "price": 33.66,

@@ -7,7 +7,7 @@
   "registration": "D-AIMA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Frankfurt am Main\"",
+  "zusatzinfo": "N:Frankfurt am Main",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 24.5,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Frankfurt am Main\""
+    "notes": "N:Frankfurt am Main"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 24.5,

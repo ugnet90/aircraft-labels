@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "AIB-A330-743L",
-  "aircraft_type": "",
+  "aircraft_type": "Airbus 330 Beluga XL",
   "registration": "F-GXLI",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Beluga XL #3",
+  "zusatzinfo": "I:Beluga XL #3",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 40.0,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl",
-  "arrived_excel": "12.11.2025",
+  "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
   "source": {
     "sheet": "Sonstige",
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "AIB-A330-743L",
-    "type": "",
+    "type": "Airbus 330 Beluga XL",
     "registration": "F-GXLI"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Beluga XL #3"
+    "notes": "I:Beluga XL #3"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "NG Models",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 40.0,

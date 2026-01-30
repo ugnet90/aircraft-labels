@@ -7,7 +7,7 @@
   "registration": "OY-KBO",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Christian Valdemar Viking\"",
+  "zusatzinfo": "N:Christian Valdemar Viking",
   "special_note": "",
   "shop": "Ebay krysset_4",
   "price": 38.47,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
-  "arrived_excel": "23.01.2026",
+  "arrived_excel": "2026-01-23",
   "arrived": "2026-01-23",
   "source": {
     "sheet": "SAS",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Christian Valdemar Viking\""
+    "notes": "N:Christian Valdemar Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay krysset_4",
     "price": 38.47,

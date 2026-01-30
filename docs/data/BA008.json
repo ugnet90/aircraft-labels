@@ -7,7 +7,7 @@
   "registration": "G-BEBM",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Sherwood Forest\"",
+  "zusatzinfo": "N:Sherwood Forest",
   "special_note": "",
   "shop": "Ebay Kontorbuer",
   "price": 29.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
   "postcard_price": 1.85,
   "photo": "https://www.airhistory.net/photo/747410/G-BEBM",
-  "arrived_excel": "27.01.2026",
+  "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
   "source": {
     "sheet": "BA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Sherwood Forest\""
+    "notes": "N:Sherwood Forest"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Kontorbuer",
     "price": 29.0,

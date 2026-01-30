@@ -7,7 +7,7 @@
   "registration": "PH-DSG",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Adriatic Sea\"",
+  "zusatzinfo": "N:Adriatic Sea",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
   "price": 68.49,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
   "postcard_price": 1.05,
   "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
-  "arrived_excel": "30.10.2025",
+  "arrived_excel": "2025-10-30",
   "arrived": "2025-10-30",
   "source": {
     "sheet": "KLM",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Adriatic Sea\""
+    "notes": "N:Adriatic Sea"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
     "price": 68.49,

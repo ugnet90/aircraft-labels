@@ -7,7 +7,7 @@
   "registration": "OE-LAL",
   "livery_name": "AUA-2006-PHILHARMONIKER",
   "parent_livery": "AUA-2003-BLUEBELLY",
-  "zusatzinfo": "\"Wiener Philharmoniker\"",
+  "zusatzinfo": "N:Wiener Philharmoniker",
   "special_note": "",
   "shop": "Ebay Leon",
   "price": 47.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2006-PHILHARMONIKER",
     "parent": "AUA-2003-BLUEBELLY",
-    "notes": "\"Wiener Philharmoniker\""
+    "notes": "N:Wiener Philharmoniker"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Ebay Leon",
     "price": 47.0,

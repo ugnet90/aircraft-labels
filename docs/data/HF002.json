@@ -7,7 +7,7 @@
   "registration": "D-AGEP",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Hapag-Lloyd Express",
+  "zusatzinfo": "I:Hapag-Lloyd Express",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 15.0,
@@ -16,8 +16,8 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
-  "arrived_excel": "45997",
-  "arrived": "2025-12-06",
+  "arrived_excel": "",
+  "arrived": null,
   "source": {
     "sheet": "HapagLloyd",
     "row": "11"
@@ -30,16 +30,16 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Hapag-Lloyd Express"
+    "notes": "I:Hapag-Lloyd Express"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 15.0,
     "shipping_allocated": 0.33,
-    "arrived": "2025-12-06",
+    "arrived": null,
     "flown": null,
     "special_note": ""
   },

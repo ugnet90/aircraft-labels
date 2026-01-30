@@ -7,7 +7,7 @@
   "registration": "OE-LDA",
   "livery_name": "AUA-1980-REDARROW",
   "parent_livery": "",
-  "zusatzinfo": "\"Niederösterreich\"",
+  "zusatzinfo": "N:Niederösterreich",
   "special_note": "",
   "shop": "Ebay airman3",
   "price": 117.22,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1980-REDARROW",
     "parent": "",
-    "notes": "\"Niederösterreich\""
+    "notes": "N:Niederösterreich"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay airman3",
     "price": 117.22,

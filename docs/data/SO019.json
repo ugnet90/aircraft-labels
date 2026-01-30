@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "BOE-C40A",
-  "aircraft_type": "",
+  "aircraft_type": "Boeing C-40A Clipper (US Navy)",
   "registration": "RY-831",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "B737-700",
+  "zusatzinfo": "I:B737-700",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 15.0,
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-C40A",
-    "type": "",
+    "type": "Boeing C-40A Clipper (US Navy)",
     "registration": "RY-831"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "B737-700"
+    "notes": "I:B737-700"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 15.0,

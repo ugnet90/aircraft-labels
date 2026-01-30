@@ -7,7 +7,7 @@
   "registration": "OE-LAN",
   "livery_name": "AUA-2003-BLUEBELLY",
   "parent_livery": "",
-  "zusatzinfo": "\"Arlberg\"",
+  "zusatzinfo": "N:Arlberg",
   "special_note": "",
   "shop": "Ebay kunstspezi",
   "price": 59.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "\"Arlberg\""
+    "notes": "N:Arlberg"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Ebay kunstspezi",
     "price": 59.0,

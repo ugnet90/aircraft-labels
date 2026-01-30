@@ -7,7 +7,7 @@
   "registration": "D-AIZP",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Plauen\"",
+  "zusatzinfo": "N:Plauen",
   "special_note": "",
   "shop": "Australian Aviation Center",
   "price": 54.97,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Plauen\""
+    "notes": "N:Plauen"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "Australian Aviation Center",
     "price": 54.97,

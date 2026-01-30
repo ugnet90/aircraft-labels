@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/10342-air-berlin-b757.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/079624/hb-ihr-air-berlin-boeing-757-2g5",
-  "arrived_excel": "06.12.2025",
+  "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
   "source": {
     "sheet": "AirBerlin",
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 28.0,

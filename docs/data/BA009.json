@@ -7,7 +7,7 @@
   "registration": "G-AVFB",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "BEA",
+  "zusatzinfo": "I:BEA",
   "special_note": "",
   "shop": "Kleinanzeigen Micha",
   "price": 35.85,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/29580-bea-trident-boac-vc-10.html",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/11185579",
-  "arrived_excel": "27.01.2026",
+  "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
   "source": {
     "sheet": "BA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "BEA"
+    "notes": "I:BEA"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Kleinanzeigen Micha",
     "price": 35.85,

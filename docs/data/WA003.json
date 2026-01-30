@@ -7,7 +7,7 @@
   "registration": "PH-NXE",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "KLM Cityhopper",
+  "zusatzinfo": "I:KLM Cityhopper",
   "special_note": "",
   "shop": "flight-shop.de/",
   "price": 45.32,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
-  "arrived_excel": "26.06.2025",
+  "arrived_excel": "2025-06-26",
   "arrived": "2025-06-26",
   "source": {
     "sheet": "KLM_CH",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "KLM Cityhopper"
+    "notes": "I:KLM Cityhopper"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "flight-shop.de/",
     "price": 45.32,

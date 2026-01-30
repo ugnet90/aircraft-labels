@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/5649-air-france-a318.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/930200/f-gugd-air-france-airbus-a318-111",
-  "arrived_excel": "06.12.2025",
+  "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
   "source": {
     "sheet": "AirFrance",
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 35.0,
@@ -46,6 +46,12 @@
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/5649-air-france-a318.html",
     "photo": "https://www.planespotters.net/photo/930200/f-gugd-air-france-airbus-a318-111"
+  },
+  "logo": {
+    "id": "AF_AFR",
+    "link": "https://assets.planespotters.net/files/airlines/6/air-france_45ae1c.svg",
+    "name": "Air France-KLM",
+    "airline": "Air France"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A318",

@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "AIB-A300-600ST",
-  "aircraft_type": "",
+  "aircraft_type": "Airbus A300B4-600ST",
   "registration": "F-GSTC",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Beluga #3",
+  "zusatzinfo": "I:Beluga #3",
   "special_note": "",
   "shop": "https://www.flight-shop.de",
   "price": 69.9,
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "AIB-A300-600ST",
-    "type": "",
+    "type": "Airbus A300B4-600ST",
     "registration": "F-GSTC"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Beluga #3"
+    "notes": "I:Beluga #3"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "https://www.flight-shop.de",
     "price": 69.9,

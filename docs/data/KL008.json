@@ -7,7 +7,7 @@
   "registration": "PH-DEF",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Henry Hudson\"",
+  "zusatzinfo": "N:Henry Hudson",
   "special_note": "",
   "shop": "Ebay DiecastAirplaneTreasuryTrove",
   "price": 110.07,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/view/1947917",
-  "arrived_excel": "14.11.2025",
+  "arrived_excel": "2025-11-14",
   "arrived": "2025-11-14",
   "source": {
     "sheet": "KLM",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Henry Hudson\""
+    "notes": "N:Henry Hudson"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay DiecastAirplaneTreasuryTrove",
     "price": 110.07,

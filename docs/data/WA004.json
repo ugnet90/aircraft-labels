@@ -1,0 +1,83 @@
+{
+  "model_id": "WA004",
+  "airline_code": "WA",
+  "airline": "KLM Cityhopper",
+  "aircraft_id": "ATR-ATR72-200",
+  "aircraft_type": "ATR 72-200",
+  "registration": "PH-XLH",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "I:KLM exel",
+  "special_note": "",
+  "shop": "Ebay Models Shop",
+  "price": 34.39,
+  "shipping_allocated": 10.47,
+  "flown": null,
+  "postcard": "andere Bez. \"KLM UK\"; https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+  "postcard_price": 0.85,
+  "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
+  "arrived_excel": "2026-01-28",
+  "arrived": "2026-01-28",
+  "source": {
+    "sheet": "KLM_CH",
+    "row": "5"
+  },
+  "aircraft": {
+    "aircraft_id": "ATR-ATR72-200",
+    "type": "ATR 72-200",
+    "registration": "PH-XLH"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "I:KLM exel"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "JC Wings",
+    "model_number": "",
+    "shop": "Ebay Models Shop",
+    "price": 34.39,
+    "shipping_allocated": 10.47,
+    "arrived": "2026-01-28",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "andere Bez. \"KLM UK\"; https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+    "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg"
+  },
+  "logo": {
+    "id": "KL_EXE",
+    "link": "https://assets.planespotters.net/files/airlines/2/klm-exel_opk.png",
+    "name": "-",
+    "airline": "KLM exel"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "ATR-ATR72-200",
+    "Typ_anzeige": "ATR ATR 72-200",
+    "Hersteller": "ATR",
+    "Baureihe": "ATR 72",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "AT72",
+    "IATA": "ATR",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1988",
+    "Status": "ausgemustert",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "70",
+    "Length": "27,17",
+    "Wingspan": "27,05",
+    "Height": "7,65",
+    "Wiki": "https://de.wikipedia.org/wiki/ATR_72#ATR_72-200"
+  }
+}

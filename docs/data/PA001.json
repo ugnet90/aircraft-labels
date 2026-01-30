@@ -7,7 +7,7 @@
   "registration": "N533PA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Young America\"",
+  "zusatzinfo": "N:Clipper Young America",
   "special_note": "",
   "shop": "https://www.modelyletadel.cz/en/",
   "price": 47.57,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Young America\""
+    "notes": "N:Clipper Young America"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "https://www.modelyletadel.cz/en/",
     "price": 47.57,

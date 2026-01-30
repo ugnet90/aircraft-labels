@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "JUN-JU52-3M",
-  "aircraft_type": "",
+  "aircraft_type": "Junkers JU-52 (Swiss Air Force)",
   "registration": "A-703",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Tante Ju",
+  "zusatzinfo": "I:Tante Ju",
   "special_note": "",
   "shop": "2dehands Julien Lempereur",
   "price": 21.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
   "postcard_price": 1.35,
   "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703",
-  "arrived_excel": "27.05.2025",
+  "arrived_excel": "2025-05-27",
   "arrived": "2025-05-27",
   "source": {
     "sheet": "Sonstige",
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "JUN-JU52-3M",
-    "type": "",
+    "type": "Junkers JU-52 (Swiss Air Force)",
     "registration": "A-703"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Tante Ju"
+    "notes": "I:Tante Ju"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "2dehands Julien Lempereur",
     "price": 21.0,

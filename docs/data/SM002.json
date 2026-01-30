@@ -7,7 +7,7 @@
   "registration": "NC18605",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Dixie Clipper\"",
+  "zusatzinfo": "N:Dixie Clipper",
   "special_note": "'1:350",
   "shop": "Leboncoin pat33600",
   "price": 17.0,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
   "postcard_price": 1.35,
   "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
-  "arrived_excel": "02.06.2025",
+  "arrived_excel": "2025-06-02",
   "arrived": "2025-06-02",
   "source": {
     "sheet": "Sondermaß",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Dixie Clipper\""
+    "notes": "N:Dixie Clipper"
   },
   "model": {
     "scale": "1:350",
-    "manufacturer": "",
+    "manufacturer": "Corgi",
     "model_number": "",
     "shop": "Leboncoin pat33600",
     "price": 17.0,

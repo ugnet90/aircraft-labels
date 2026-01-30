@@ -7,7 +7,7 @@
   "registration": "D-ABYT",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "retro",
+  "zusatzinfo": "I:retro",
   "special_note": "",
   "shop": "Kleinanzeigen Rafael Feijs",
   "price": 75.4,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "retro"
+    "notes": "I:retro"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Kleinanzeigen Rafael Feijs",
     "price": 75.4,

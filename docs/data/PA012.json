@@ -7,7 +7,7 @@
   "registration": "N4704U",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Belle of the Sea\"",
+  "zusatzinfo": "N:Clipper Belle of the Sea",
   "special_note": "",
   "shop": "Ebay 360models",
   "price": 42.0,
@@ -16,7 +16,7 @@
   "postcard": "",
   "postcard_price": null,
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L",
-  "arrived_excel": "26.06.2025",
+  "arrived_excel": "2025-06-26",
   "arrived": "2025-06-26",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Belle of the Sea\""
+    "notes": "N:Clipper Belle of the Sea"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Radscale Models",
     "model_number": "",
     "shop": "Ebay 360models",
     "price": 42.0,

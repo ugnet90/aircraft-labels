@@ -1,0 +1,83 @@
+{
+  "model_id": "LH031",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "aircraft_id": "EMB-E190",
+  "aircraft_type": "Embraer ERJ-190",
+  "registration": "D-AECD",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "I:Lufthansa Regional | N:Schkeuditz",
+  "special_note": "",
+  "shop": "Ebay Models Shop",
+  "price": 37.66,
+  "shipping_allocated": 10.69,
+  "flown": null,
+  "postcard": "x",
+  "postcard_price": null,
+  "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
+  "arrived_excel": "2026-01-28",
+  "arrived": "2026-01-28",
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "49"
+  },
+  "aircraft": {
+    "aircraft_id": "EMB-E190",
+    "type": "Embraer ERJ-190",
+    "registration": "D-AECD"
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes": "I:Lufthansa Regional | N:Schkeuditz"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "JC Wings",
+    "model_number": "",
+    "shop": "Ebay Models Shop",
+    "price": 37.66,
+    "shipping_allocated": 10.69,
+    "arrived": "2026-01-28",
+    "flown": null,
+    "special_note": ""
+  },
+  "links": {
+    "postcard": "x",
+    "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr"
+  },
+  "logo": {
+    "id": "LH_REG",
+    "link": "https://assets.planespotters.net/files/airlines/8/lufthansa-regional_c9af78_opk.jpg",
+    "name": "-",
+    "airline": "Lufthansa Regional"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "EMB-E190",
+    "Typ_anzeige": "Embraer E190",
+    "Hersteller": "Embraer",
+    "Baureihe": "E190",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "E190",
+    "IATA": "E90",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2004",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "100",
+    "Length": "36,24",
+    "Wingspan": "28,72",
+    "Height": "10,55",
+    "Wiki": "https://de.wikipedia.org/wiki/Embraer_E-Jets#ERJ_190"
+  }
+}

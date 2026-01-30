@@ -7,7 +7,7 @@
   "registration": "N365PA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Portsmouth\"",
+  "zusatzinfo": "N:Clipper Portsmouth",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 44.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
   "postcard_price": 1.85,
   "photo": "https://www.jetphotos.com/photo/9587",
-  "arrived_excel": "14.05.2025",
+  "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Portsmouth\""
+    "notes": "N:Clipper Portsmouth"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 44.5,

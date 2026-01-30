@@ -7,7 +7,7 @@
   "registration": "N61NA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Evening Star\"",
+  "zusatzinfo": "N:Clipper Evening Star",
   "special_note": "",
   "shop": "Wingsmo",
   "price": 28.3,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
-  "arrived_excel": "22.05.2025",
+  "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Evening Star\""
+    "notes": "N:Clipper Evening Star"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Daron",
     "model_number": "",
     "shop": "Wingsmo",
     "price": 28.3,

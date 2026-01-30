@@ -7,7 +7,7 @@
   "registration": "SE-RJX",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Vagn Viking\"",
+  "zusatzinfo": "N:Vagn Viking",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 39.27,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
-  "arrived_excel": "14.05.2025",
+  "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
   "source": {
     "sheet": "SAS",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Vagn Viking\""
+    "notes": "N:Vagn Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 39.27,

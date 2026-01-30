@@ -7,7 +7,7 @@
   "registration": "D-AIKO",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Koblenz\"",
+  "zusatzinfo": "N:Koblenz",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 44.5,
@@ -16,7 +16,7 @@
   "postcard": "-",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
-  "arrived_excel": "20.06.2025",
+  "arrived_excel": "2025-06-20",
   "arrived": "2025-06-20",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Koblenz\""
+    "notes": "N:Koblenz"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 44.5,

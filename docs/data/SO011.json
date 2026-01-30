@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "BOE-747-VC25B",
-  "aircraft_type": "",
+  "aircraft_type": "Boeing VC-25B (Air Force One, 747-8I)",
   "registration": "30000",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "B747-8",
+  "zusatzinfo": "I:B747-8",
   "special_note": "",
   "shop": "Ebay worldofwingseu",
   "price": 35.01,
@@ -16,7 +16,7 @@
   "postcard": "x",
   "postcard_price": null,
   "photo": "x",
-  "arrived_excel": "27.10.2025",
+  "arrived_excel": "2025-10-27",
   "arrived": "2025-10-27",
   "source": {
     "sheet": "Sonstige",
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-747-VC25B",
-    "type": "",
+    "type": "Boeing VC-25B (Air Force One, 747-8I)",
     "registration": "30000"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "B747-8"
+    "notes": "I:B747-8"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Ebay worldofwingseu",
     "price": 35.01,

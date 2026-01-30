@@ -16,7 +16,7 @@
   "postcard": "",
   "postcard_price": null,
   "photo": "https://abpic.co.uk/pictures/view/1178552",
-  "arrived_excel": "15.01.2026",
+  "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
   "source": {
     "sheet": "BA",
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 36.89,

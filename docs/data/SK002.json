@@ -7,7 +7,7 @@
   "registration": "OY-KAR",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Vermund Viking\"",
+  "zusatzinfo": "N:Vermund Viking",
   "special_note": "",
   "shop": "Aviation Center Berlin",
   "price": 47.34,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232",
-  "arrived_excel": "22.07.2025",
+  "arrived_excel": "2025-07-22",
   "arrived": "2025-07-22",
   "source": {
     "sheet": "SAS",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Vermund Viking\""
+    "notes": "N:Vermund Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Aviation Center Berlin",
     "price": 47.34,

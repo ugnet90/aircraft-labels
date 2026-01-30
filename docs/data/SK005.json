@@ -7,7 +7,7 @@
   "registration": "OY-KHF",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Ragnar Viking\"",
+  "zusatzinfo": "N:Ragnar Viking",
   "special_note": "",
   "shop": "Ebay Scaled-Airliners",
   "price": 29.0,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
   "postcard_price": 1.85,
   "photo": "https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87",
-  "arrived_excel": "06.11.2025",
+  "arrived_excel": "2025-11-06",
   "arrived": "2025-11-06",
   "source": {
     "sheet": "SAS",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Ragnar Viking\""
+    "notes": "N:Ragnar Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Ebay Scaled-Airliners",
     "price": 29.0,

@@ -7,7 +7,7 @@
   "registration": "D-ABEE",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Ulm\"",
+  "zusatzinfo": "N:Ulm",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 39.5,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
-  "arrived_excel": "20.08.2025",
+  "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Ulm\""
+    "notes": "N:Ulm"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 39.5,

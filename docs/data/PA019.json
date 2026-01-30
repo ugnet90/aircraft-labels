@@ -7,7 +7,7 @@
   "registration": "N207PA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Panama\"",
+  "zusatzinfo": "N:Clipper Panama",
   "special_note": "",
   "shop": "Ebay scr4plans7rwq",
   "price": 42.97,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/10957009",
-  "arrived_excel": "10.11.2025",
+  "arrived_excel": "2025-11-10",
   "arrived": "2025-11-10",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Panama\""
+    "notes": "N:Clipper Panama"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Ebay scr4plans7rwq",
     "price": 42.97,

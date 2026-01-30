@@ -7,7 +7,7 @@
   "registration": "PH-DTA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Johann Sebastian Bach\"",
+  "zusatzinfo": "N:Johann Sebastian Bach",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
   "price": 15.0,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30",
-  "arrived_excel": "23.10.2025",
+  "arrived_excel": "2025-10-23",
   "arrived": "2025-10-23",
   "source": {
     "sheet": "KLM",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Johann Sebastian Bach\""
+    "notes": "N:Johann Sebastian Bach"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Kleinanzeigen Josef Voß",
     "price": 15.0,

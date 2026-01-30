@@ -7,7 +7,7 @@
   "registration": "OE-LHT",
   "livery_name": "AUA-1960-CLASSIC",
   "parent_livery": "",
-  "zusatzinfo": "\"A. Bruckner\"",
+  "zusatzinfo": "N:A. Bruckner",
   "special_note": "",
   "shop": "Ebay aerosmith102",
   "price": 105.89,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1960-CLASSIC",
     "parent": "",
-    "notes": "\"A. Bruckner\""
+    "notes": "N:A. Bruckner"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay aerosmith102",
     "price": 105.89,

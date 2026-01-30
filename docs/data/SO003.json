@@ -3,7 +3,7 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "VIC-Viscount-800",
-  "aircraft_type": "",
+  "aircraft_type": "Vickers Viscount 800 (Arkia)",
   "registration": "4X-AVF",
   "livery_name": "",
   "parent_livery": "",
@@ -24,7 +24,7 @@
   },
   "aircraft": {
     "aircraft_id": "VIC-Viscount-800",
-    "type": "",
+    "type": "Vickers Viscount 800 (Arkia)",
     "registration": "4X-AVF"
   },
   "livery": {
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay mali_1123",
     "price": 31.6,

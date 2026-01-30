@@ -7,7 +7,7 @@
   "registration": "G-AWZN",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "BEA",
+  "zusatzinfo": "I:BEA",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 32.75,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
   "postcard_price": 0.85,
   "photo": "https://www.airteamimages.com/hawker-siddeley-trident_g-awzn_bea-british-european-airways_40653",
-  "arrived_excel": "15.01.2026",
+  "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
   "source": {
     "sheet": "BA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "BEA"
+    "notes": "I:BEA"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 32.75,

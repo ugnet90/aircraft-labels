@@ -7,7 +7,7 @@
   "registration": "OE-LAG",
   "livery_name": "AUA-1995-ARROWSTRIPE",
   "parent_livery": "",
-  "zusatzinfo": "\"Europe\"",
+  "zusatzinfo": "N:Europe",
   "special_note": "",
   "shop": "Ebay 0961.boeing.747-400",
   "price": 39.85,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1995-ARROWSTRIPE",
     "parent": "",
-    "notes": "\"Europe\""
+    "notes": "N:Europe"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Ebay 0961.boeing.747-400",
     "price": 39.85,

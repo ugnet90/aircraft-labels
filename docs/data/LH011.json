@@ -7,7 +7,7 @@
   "registration": "D-AIRX",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Retro-Bemalung 50 J. LH",
+  "zusatzinfo": "L:Retro-Bemalung 50 J. LH",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 34.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131",
-  "arrived_excel": "14.05.2025",
+  "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Retro-Bemalung 50 J. LH"
+    "notes": "L:Retro-Bemalung 50 J. LH"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 34.5,

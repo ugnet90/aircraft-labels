@@ -7,7 +7,7 @@
   "registration": "OE-LDL",
   "livery_name": "AUA-1980-REDARROW",
   "parent_livery": "",
-  "zusatzinfo": "\"Linz\"",
+  "zusatzinfo": "N:Linz",
   "special_note": "",
   "shop": "https://www.avworld.ca/",
   "price": 65.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1980-REDARROW",
     "parent": "",
-    "notes": "\"Linz\""
+    "notes": "N:Linz"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "https://www.avworld.ca/",
     "price": 65.0,

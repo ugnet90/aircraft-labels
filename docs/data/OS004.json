@@ -7,7 +7,7 @@
   "registration": "OE-LNL",
   "livery_name": "AUA-2003-BLUEBELLY",
   "parent_livery": "",
-  "zusatzinfo": "\"Kahlenberg\"",
+  "zusatzinfo": "N:Kahlenberg",
   "special_note": "",
   "shop": "World of Wings",
   "price": 47.95,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "\"Kahlenberg\""
+    "notes": "N:Kahlenberg"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "NG Wings",
     "model_number": "",
     "shop": "World of Wings",
     "price": 47.95,

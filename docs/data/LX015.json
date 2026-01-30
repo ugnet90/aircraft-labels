@@ -7,7 +7,7 @@
   "registration": "HB-IGB",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Swissair; \"Zurich\"",
+  "zusatzinfo": "I:Swissair | N:Zurich",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 35.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/672110/HB-IGB",
-  "arrived_excel": "06.12.2025",
+  "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Swissair; \"Zurich\""
+    "notes": "I:Swissair | N:Zurich"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 35.0,

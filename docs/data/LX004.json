@@ -7,7 +7,7 @@
   "registration": "HB-IND",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Servus Wien\"",
+  "zusatzinfo": "L:Servus Wien",
   "special_note": "",
   "shop": "Ebay Waffle Collection",
   "price": 24.94,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/10376450",
-  "arrived_excel": "15.07.2025",
+  "arrived_excel": "2025-07-15",
   "arrived": "2025-07-15",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Servus Wien\""
+    "notes": "L:Servus Wien"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Ebay Waffle Collection",
     "price": 24.94,

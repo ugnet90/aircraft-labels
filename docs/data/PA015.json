@@ -7,7 +7,7 @@
   "registration": "NC88831",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper London\"",
+  "zusatzinfo": "N:Clipper London",
   "special_note": "",
   "shop": "Alexmodels.cz",
   "price": 32.29,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
   "postcard_price": 1.35,
   "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
-  "arrived_excel": "21.07.2025",
+  "arrived_excel": "2025-07-21",
   "arrived": "2025-07-21",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper London\""
+    "notes": "N:Clipper London"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Alexmodels.cz",
     "price": 32.29,

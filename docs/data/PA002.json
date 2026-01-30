@@ -7,7 +7,7 @@
   "registration": "N406KW",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Splendid\"",
+  "zusatzinfo": "N:Clipper Splendid",
   "special_note": "",
   "shop": "Kleinanzeigen Michael",
   "price": 22.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Splendid\""
+    "notes": "N:Clipper Splendid"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Michael",
     "price": 22.0,

@@ -7,7 +7,7 @@
   "registration": "D-AIAA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Garmisch-Patenkirchen\"",
+  "zusatzinfo": "N:Garmisch-Patenkirchen",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
   "price": 17.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Garmisch-Patenkirchen\""
+    "notes": "N:Garmisch-Patenkirchen"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Josef Voß",
     "price": 17.0,

@@ -7,7 +7,7 @@
   "registration": "N783PA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Bonita\"",
+  "zusatzinfo": "N:Clipper Bonita",
   "special_note": "",
   "shop": "Ebay Waffle Collection",
   "price": 31.8,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/5975740",
-  "arrived_excel": "15.07.2025",
+  "arrived_excel": "2025-07-15",
   "arrived": "2025-07-15",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Bonita\""
+    "notes": "N:Clipper Bonita"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Waffle Collection",
     "price": 31.8,

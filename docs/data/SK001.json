@@ -7,7 +7,7 @@
   "registration": "ES-ACG",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Dvalin Viking\"",
+  "zusatzinfo": "N:Dvalin Viking",
   "special_note": "",
   "shop": "Ebay",
   "price": 73.21,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Dvalin Viking\""
+    "notes": "N:Dvalin Viking"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay",
     "price": 73.21,

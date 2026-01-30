@@ -7,7 +7,7 @@
   "registration": "OE-LBP",
   "livery_name": "AUA-1997-QUALIFLYER",
   "parent_livery": "AUA-1995-ARROWSTRIPE",
-  "zusatzinfo": "\"Qualiflyer\"",
+  "zusatzinfo": "L:Qualiflyer",
   "special_note": "",
   "shop": "Ebay stoeberdaniel",
   "price": 36.44,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1997-QUALIFLYER",
     "parent": "AUA-1995-ARROWSTRIPE",
-    "notes": "\"Qualiflyer\""
+    "notes": "L:Qualiflyer"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Ebay stoeberdaniel",
     "price": 36.44,

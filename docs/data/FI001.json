@@ -7,7 +7,7 @@
   "registration": "TF-ISF",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Laki\"",
+  "zusatzinfo": "N:Laki",
   "special_note": "",
   "shop": "Kleinanzeigen.de",
   "price": 99.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Laki\""
+    "notes": "N:Laki"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Kleinanzeigen.de",
     "price": 99.0,

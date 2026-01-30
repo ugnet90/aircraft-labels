@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/7018562",
-  "arrived_excel": "23.10.2025",
+  "arrived_excel": "2025-10-23",
   "arrived": "2025-10-23",
   "source": {
     "sheet": "KLM",
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
     "price": 50.66,

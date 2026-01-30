@@ -7,7 +7,7 @@
   "registration": "OE-LPM",
   "livery_name": "AUA-2018-NEW",
   "parent_livery": "",
-  "zusatzinfo": "Flaps down; \"Schönbrunn Palace\"",
+  "zusatzinfo": "I:Flaps down | N:Schönbrunn Palace",
   "special_note": "",
   "shop": "Kleinanzeigen Dan Segal",
   "price": 47.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
-  "arrived_excel": "16.06.2025",
+  "arrived_excel": "2025-06-16",
   "arrived": "2025-06-16",
   "source": {
     "sheet": "AUA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2018-NEW",
     "parent": "",
-    "notes": "Flaps down; \"Schönbrunn Palace\""
+    "notes": "I:Flaps down | N:Schönbrunn Palace"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Dan Segal",
     "price": 47.0,

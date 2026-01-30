@@ -7,7 +7,7 @@
   "registration": "HB-JCA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Fete de Vignerons\"",
+  "zusatzinfo": "L:Fete de Vignerons",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 34.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11",
-  "arrived_excel": "08.10.2025",
+  "arrived_excel": "2025-10-08",
   "arrived": "2025-10-08",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Fete de Vignerons\""
+    "notes": "L:Fete de Vignerons"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 34.5,

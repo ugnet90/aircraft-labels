@@ -7,7 +7,7 @@
   "registration": "OE-LPD",
   "livery_name": "AUA-2003-BLUEBELLY",
   "parent_livery": "",
-  "zusatzinfo": "\"Spirit of Austria\"",
+  "zusatzinfo": "N:Spirit of Austria",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 49.5,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "\"Spirit of Austria\""
+    "notes": "N:Spirit of Austria"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 49.5,

@@ -7,7 +7,7 @@
   "registration": "OE-LBB",
   "livery_name": "AUA-1999-STRAUSS",
   "parent_livery": "AUA-1995-ARROWSTRIPE",
-  "zusatzinfo": "\"Pinzgau\" \"Johann Strauss\"",
+  "zusatzinfo": "N:Pinzgau | L:Johann Strauss",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 24.5,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1999-STRAUSS",
     "parent": "AUA-1995-ARROWSTRIPE",
-    "notes": "\"Pinzgau\" \"Johann Strauss\""
+    "notes": "N:Pinzgau | L:Johann Strauss"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 24.5,

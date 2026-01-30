@@ -7,7 +7,7 @@
   "registration": "C-GWXZ",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "erste Ankunft einer Bombardier CS100 am ZRH",
+  "zusatzinfo": "I:erste Ankunft einer Bombardier CS100 am ZRH",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 34.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10",
-  "arrived_excel": "14.05.2025",
+  "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "erste Ankunft einer Bombardier CS100 am ZRH"
+    "notes": "I:erste Ankunft einer Bombardier CS100 am ZRH"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 34.5,

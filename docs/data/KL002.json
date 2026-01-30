@@ -7,7 +7,7 @@
   "registration": "PH-KCA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Amy Johnson\"",
+  "zusatzinfo": "N:Amy Johnson",
   "special_note": "",
   "shop": "Marktplaats: TOGAflex",
   "price": 40.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
-  "arrived_excel": "03.06.2025",
+  "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
   "source": {
     "sheet": "KLM",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Amy Johnson\""
+    "notes": "N:Amy Johnson"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "Marktplaats: TOGAflex",
     "price": 40.0,

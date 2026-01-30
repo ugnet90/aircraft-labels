@@ -3,7 +3,7 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "ANT-An225",
-  "aircraft_type": "",
+  "aircraft_type": "Antonov AN-225 Mriya",
   "registration": "UR-82060",
   "livery_name": "",
   "parent_livery": "",
@@ -24,7 +24,7 @@
   },
   "aircraft": {
     "aircraft_id": "ANT-An225",
-    "type": "",
+    "type": "Antonov AN-225 Mriya",
     "registration": "UR-82060"
   },
   "livery": {
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "https://www.herpa.de",
     "price": 65.85,

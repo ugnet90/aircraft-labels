@@ -7,7 +7,7 @@
   "registration": "N809PA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Jet Clipper Great Republic\"",
+  "zusatzinfo": "N:Jet Clipper Great Republic",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
   "price": 35.59,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
   "postcard_price": 1.35,
   "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
-  "arrived_excel": "05.11.2025",
+  "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Jet Clipper Great Republic\""
+    "notes": "N:Jet Clipper Great Republic"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
     "price": 35.59,

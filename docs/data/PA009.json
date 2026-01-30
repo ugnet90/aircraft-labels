@@ -7,7 +7,7 @@
   "registration": "N88886",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Mandarin\"",
+  "zusatzinfo": "N:Clipper Mandarin",
   "special_note": "",
   "shop": "Ebay aeromini1",
   "price": 54.19,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
   "postcard_price": 1.35,
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
-  "arrived_excel": "04.07.2025",
+  "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Mandarin\""
+    "notes": "N:Clipper Mandarin"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay aeromini1",
     "price": 54.19,

@@ -7,7 +7,7 @@
   "registration": "OE-LFG",
   "livery_name": "AUA-2003-STARALLIANCE-LOGOSTRIP",
   "parent_livery": "AUA-2003-STARALLIANCE",
-  "zusatzinfo": "Tyrolean Airways / Star Alliance",
+  "zusatzinfo": "I:Tyrolean Airways | L:Star Alliance",
   "special_note": "",
   "shop": "Kleinanzeigen Steffi Lang",
   "price": 49.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/18360-tyroleanstar-alliance-fokker-70.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070",
-  "arrived_excel": "02.07.2025",
+  "arrived_excel": "2025-07-02",
   "arrived": "2025-07-02",
   "source": {
     "sheet": "AUA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2003-STARALLIANCE-LOGOSTRIP",
     "parent": "AUA-2003-STARALLIANCE",
-    "notes": "Tyrolean Airways / Star Alliance"
+    "notes": "I:Tyrolean Airways | L:Star Alliance"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Steffi Lang",
     "price": 49.0,

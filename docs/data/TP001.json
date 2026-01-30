@@ -7,7 +7,7 @@
   "registration": "CS-TXJ",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Bartolomeu de Gusmão\"",
+  "zusatzinfo": "N:Bartolomeu de Gusmão",
   "special_note": "",
   "shop": "Sky Shop",
   "price": 85.73,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Bartolomeu de Gusmão\""
+    "notes": "N:Bartolomeu de Gusmão"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "SkyFlight",
     "model_number": "",
     "shop": "Sky Shop",
     "price": 85.73,

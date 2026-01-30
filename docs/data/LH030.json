@@ -7,7 +7,7 @@
   "registration": "D-ALCN",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Lufthansa Cargo",
+  "zusatzinfo": "I:Lufthansa Cargo",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 45.18,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
   "postcard_price": 1.35,
   "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
-  "arrived_excel": "15.01.2026",
+  "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Lufthansa Cargo"
+    "notes": "I:Lufthansa Cargo"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 45.18,

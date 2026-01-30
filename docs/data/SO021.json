@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "LOC-RP3D",
-  "aircraft_type": "",
+  "aircraft_type": "Lockheed RP-3D Orion",
   "registration": "VXN-8",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "US Naval Oceanographic Office",
+  "zusatzinfo": "I:US Naval Oceanographic Office",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 32.75,
@@ -16,7 +16,7 @@
   "postcard": "",
   "postcard_price": null,
   "photo": "https://www.airhistory.net/photo/654297/158227",
-  "arrived_excel": "15.01.2026",
+  "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
   "source": {
     "sheet": "Sonstige",
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "LOC-RP3D",
-    "type": "",
+    "type": "Lockheed RP-3D Orion",
     "registration": "VXN-8"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "US Naval Oceanographic Office"
+    "notes": "I:US Naval Oceanographic Office"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 32.75,

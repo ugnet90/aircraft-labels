@@ -7,7 +7,7 @@
   "registration": "HB-IDA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Swissair",
+  "zusatzinfo": "I:Swissair",
   "special_note": "",
   "shop": "Ebay Kontorbuer",
   "price": 17.0,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/25909-swissair-dc-8.html",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/249732/HB-IDA",
-  "arrived_excel": "27.01.2026",
+  "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Swissair"
+    "notes": "I:Swissair"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Kontorbuer",
     "price": 17.0,

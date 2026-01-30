@@ -7,7 +7,7 @@
   "registration": "G-LGNB",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Loganair",
+  "zusatzinfo": "I:Loganair",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 50.0,
@@ -16,7 +16,7 @@
   "postcard": "x",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
-  "arrived_excel": "12.11.2025",
+  "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
   "source": {
     "sheet": "BA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Loganair"
+    "notes": "I:Loganair"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 50.0,

@@ -7,7 +7,7 @@
   "registration": "HB-IWI",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Swissair; \"Dent Blanche\"",
+  "zusatzinfo": "I:Swissair | N:Dent Blanche",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 44.5,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/view/1072413",
-  "arrived_excel": "08.10.2025",
+  "arrived_excel": "2025-10-08",
   "arrived": "2025-10-08",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Swissair; \"Dent Blanche\""
+    "notes": "I:Swissair | N:Dent Blanche"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 44.5,

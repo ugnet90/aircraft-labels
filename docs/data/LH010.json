@@ -7,7 +7,7 @@
   "registration": "D-ABVW",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Berlin\"",
+  "zusatzinfo": "N:Berlin",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
   "price": 17.0,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Berlin\""
+    "notes": "N:Berlin"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Josef Voß",
     "price": 17.0,

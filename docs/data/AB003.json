@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/2654-air-berlin-b737.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl",
-  "arrived_excel": "23.01.2026",
+  "arrived_excel": "2026-01-23",
   "arrived": "2026-01-23",
   "source": {
     "sheet": "AirBerlin",
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Ebay krysset_4",
     "price": 17.0,

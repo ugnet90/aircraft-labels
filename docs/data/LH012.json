@@ -7,7 +7,7 @@
   "registration": "D-AFFZ",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Team Lufthansa",
+  "zusatzinfo": "I:Team Lufthansa",
   "special_note": "",
   "shop": "Kleinanzeigen Dan Segal",
   "price": 25.0,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/18079-contactairteam-lufthansa-fokker-50.html",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/10225836",
-  "arrived_excel": "16.06.2025",
+  "arrived_excel": "2025-06-16",
   "arrived": "2025-06-16",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Team Lufthansa"
+    "notes": "I:Team Lufthansa"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Dan Segal",
     "price": 25.0,

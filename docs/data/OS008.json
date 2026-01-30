@@ -7,7 +7,7 @@
   "registration": "OE-LGI",
   "livery_name": "AUA-2003-BLUEBELLY",
   "parent_livery": "",
-  "zusatzinfo": "Austrian Arrows \"Eisenstadt\"",
+  "zusatzinfo": "I:Austrian Arrows | N:Eisenstadt",
   "special_note": "",
   "shop": "Ebay arniestrains-2",
   "price": 95.01,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-2003-BLUEBELLY",
     "parent": "",
-    "notes": "Austrian Arrows \"Eisenstadt\""
+    "notes": "I:Austrian Arrows | N:Eisenstadt"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay arniestrains-2",
     "price": 95.01,

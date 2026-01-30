@@ -7,7 +7,7 @@
   "registration": "N83NA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Clipper Celstial Empire\"",
+  "zusatzinfo": "N:Clipper Celstial Empire",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 41.04,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/view/1106191",
-  "arrived_excel": "15.01.2026",
+  "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
   "source": {
     "sheet": "Panam",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Clipper Celstial Empire\""
+    "notes": "N:Clipper Celstial Empire"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Apollo",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 41.04,

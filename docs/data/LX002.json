@@ -7,7 +7,7 @@
   "registration": "HB-ION",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Lugano\"",
+  "zusatzinfo": "N:Lugano",
   "special_note": "",
   "shop": "Swiss-Edelweiss Airplane Shop",
   "price": 63.24,
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Lugano\""
+    "notes": "N:Lugano"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "Swiss-Edelweiss Airplane Shop",
     "price": 63.24,

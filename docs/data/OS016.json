@@ -7,7 +7,7 @@
   "registration": "OE-LBB",
   "livery_name": "AUA-1996-1000YEARS",
   "parent_livery": "AUA-1995-ARROWSTRIPE",
-  "zusatzinfo": "\"Pinzgau\" \"1000 Jahre Österreich\"",
+  "zusatzinfo": "N:Pinzgau | L:1000 Jahre Österreich",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 17.5,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/24460-austrian-a321.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/355580/oe-lbb-austrian-airlines-airbus-a321-111",
-  "arrived_excel": "22.05.2025",
+  "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
   "source": {
     "sheet": "AUA",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "AUA-1996-1000YEARS",
     "parent": "AUA-1995-ARROWSTRIPE",
-    "notes": "\"Pinzgau\" \"1000 Jahre Österreich\""
+    "notes": "N:Pinzgau | L:1000 Jahre Österreich"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
     "price": 17.5,

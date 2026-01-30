@@ -7,7 +7,7 @@
   "registration": "D-AIEP",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Augsburg\"",
+  "zusatzinfo": "N:Augsburg",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 39.5,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
-  "arrived_excel": "12.11.2025",
+  "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Augsburg\""
+    "notes": "N:Augsburg"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 39.5,

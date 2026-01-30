@@ -7,7 +7,7 @@
   "registration": "D-ABYA",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "\"Nordrhein Westfalen\"",
+  "zusatzinfo": "N:Nordrhein Westfalen",
   "special_note": "",
   "shop": "Ebay leonzinn0",
   "price": 30.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
   "postcard_price": 1.85,
   "photo": "https://www.planespotters.net/photo/764943/d-abya-lufthansa-boeing-747-130",
-  "arrived_excel": "13.11.2025",
+  "arrived_excel": "2025-11-13",
   "arrived": "2025-11-13",
   "source": {
     "sheet": "Lufthansa",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "\"Nordrhein Westfalen\""
+    "notes": "N:Nordrhein Westfalen"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Ebay leonzinn0",
     "price": 30.0,

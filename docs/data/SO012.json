@@ -3,11 +3,11 @@
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "aircraft_id": "DOU-C47",
-  "aircraft_type": "",
+  "aircraft_type": "Douglas C-47 Skytrain (USAF)",
   "registration": "O-76671",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "50th TFW 1963",
+  "zusatzinfo": "I:50th TFW 1963",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
   "price": 44.14,
@@ -16,7 +16,7 @@
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photo/819930/44-76671/0-76671",
-  "arrived_excel": "05.11.2025",
+  "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",
   "source": {
     "sheet": "Sonstige",
@@ -24,17 +24,17 @@
   },
   "aircraft": {
     "aircraft_id": "DOU-C47",
-    "type": "",
+    "type": "Douglas C-47 Skytrain (USAF)",
     "registration": "O-76671"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "50th TFW 1963"
+    "notes": "I:50th TFW 1963"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
     "price": 44.14,

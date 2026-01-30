@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/170402/hb-ijd-swiss-airbus-a320-214",
-  "arrived_excel": "03.11.2025",
+  "arrived_excel": "2025-11-03",
   "arrived": "2025-11-03",
   "source": {
     "sheet": "Swiss",
@@ -34,7 +34,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Witty Wings",
     "model_number": "",
     "shop": "Ebay philundines",
     "price": 15.5,

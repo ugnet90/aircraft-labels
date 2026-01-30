@@ -7,7 +7,7 @@
   "registration": "HB-IDB",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Swissair",
+  "zusatzinfo": "I:Swissair",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 74.2,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photo/373164/HB-IDB",
-  "arrived_excel": "15.01.2026",
+  "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Swissair"
+    "notes": "I:Swissair"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "MW-Moba",
     "price": 74.2,

@@ -7,7 +7,7 @@
   "registration": "HB-IOH",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "Swissair; The Qualiflyer Group",
+  "zusatzinfo": "I:Swissair | L:The Qualiflyer Group",
   "special_note": "",
   "shop": "Kleinanzeigen Finn",
   "price": 21.0,
@@ -16,7 +16,7 @@
   "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
   "postcard_price": 1.35,
   "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
-  "arrived_excel": "12.11.2025",
+  "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
   "source": {
     "sheet": "Swiss",
@@ -30,11 +30,11 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes": "Swissair; The Qualiflyer Group"
+    "notes": "I:Swissair | L:The Qualiflyer Group"
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "",
+    "manufacturer": "Tucano Line",
     "model_number": "",
     "shop": "Kleinanzeigen Finn",
     "price": 21.0,
