@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Matrix: Airlines × Typen</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:1200px}
+    .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+    h1{font-size:20px;margin:0}
+    .muted{color:#666;font-size:12px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    a{color:#000}
+    .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
+    .btn:hover{background:#fafafa}
+    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
+    table{width:100%;border-collapse:collapse;font-size:12px}
+    th,td{border-bottom:1px solid #eee;padding:6px 6px;vertical-align:top}
+    th{position:sticky;top:0;background:#fff}
+    td:first-child, th:first-child{position:sticky;left:0;background:#fff}
+    .num{text-align:right;font-variant-numeric:tabular-nums}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    select,input{padding:6px;border:1px solid #ddd;border-radius:10px}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <h1>Matrix: Airlines × Typen</h1>
+    <span class="muted" id="meta"></span>
+  </div>
+
+  <div class="row">
+    <a class="btn" href="./index.html">← Übersicht</a>
+    <a class="btn" href="./missing_types.html">Fehlende Typen</a>
+  </div>
+
+  <div class="card controls">
+    <label class="muted">Airline enthält:
+      <input id="airQ" placeholder="z.B. Austrian" />
+    </label>
+    <label class="muted">Typ enthält:
+      <input id="typeQ" placeholder="z.B. A320" />
+    </label>
+  </div>
+
+  <div class="card" style="overflow:auto">
+    <table id="tbl"></table>
+  </div>
+
+<script>
+  function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+
+  let data = null;
+
+  function render(){
+    if(!data) return;
+    const airQ = (document.getElementById("airQ").value || "").trim().toLowerCase();
+    const typeQ = (document.getElementById("typeQ").value || "").trim().toLowerCase();
+
+    const airlines = data.airlines || [];
+    const types = data.types || [];
+    const matrix = data.matrix || [];
+
+    const ai = airlines
+      .map((a, idx) => ({a, idx}))
+      .filter(x => !airQ || x.a.toLowerCase().includes(airQ));
+
+    const ti = types
+      .map((t, idx) => ({t, idx}))
+      .filter(x => !typeQ || x.t.toLowerCase().includes(typeQ));
+
+    let html = "<thead><tr><th>Typ \\ Airline</th>";
+    for(const x of ai){ html += `<th>${esc(x.a)}</th>`; }
+    html += "</tr></thead><tbody>";
+
+    for(const y of ti){
+      html += `<tr><td>${esc(y.t)}</td>`;
+      for(const x of ai){
+        const n = (matrix[x.idx] && matrix[x.idx][y.idx]) ? matrix[x.idx][y.idx] : 0;
+        html += `<td class="num">${n ? n : ""}</td>`;
+      }
+      html += "</tr>";
+    }
+    html += "</tbody>";
+
+    document.getElementById("tbl").innerHTML = html;
+    document.getElementById("meta").textContent = `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
+  }
+
+  async function main(){
+    const res = await fetch("./data/matrix.json", {cache:"no-store"});
+    data = await res.json();
+    render();
+    document.getElementById("airQ").addEventListener("input", render);
+    document.getElementById("typeQ").addEventListener("input", render);
+  }
+
+  main();
+</script>
+</body>
+</html>
