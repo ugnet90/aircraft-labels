@@ -5,8 +5,6 @@ from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_CSV = ROOT / "models_export.csv"
-
-# Passe den Pfad an, falls deine Datei anders liegt:
 PASSENGER_CSV = ROOT / "data" / "passenger_aircraft_full.csv"
 
 OUT_DIR = ROOT / "docs" / "data"
@@ -23,7 +21,7 @@ def read_csv(path: Path, delimiter=";"):
         return list(csv.DictReader(f, delimiter=delimiter))
 
 
-def norm(s: str) -> str:
+def norm(s) -> str:
     return (s or "").strip()
 
 
@@ -31,14 +29,15 @@ def main():
     models = read_csv(MODELS_CSV, delimiter=";")
     pax = read_csv(PASSENGER_CSV, delimiter=";")
 
-    # --- Collection: present aircraft_ids (stable) ---
+    # =========================
+    # Missing types (stable by aircraft_id; display Typ_anzeige)
+    # =========================
     present_ids = set()
     for r in models:
         aid = norm(r.get("aircraft_id"))
         if aid:
             present_ids.add(aid)
 
-    # --- Master list from passenger_aircraft_full.csv (stable aircraft_id) ---
     id_to_label = {}
     master_ids = set()
     for r in pax:
@@ -73,13 +72,24 @@ def main():
         },
         "missing_types": missing_types,
     }
-
     OUT_MISSING.write_text(json.dumps(payload_missing, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    # =========================
+    # Matrix (Airlines from sheets; Types from aircraft_type; cells = count)
+    # =========================
+    counts_by_airline_type = defaultdict(lambda: defaultdict(int))
+    present_types_for_matrix = set()
 
-    # --- Matrix payload (Airlines x Types) ---
+    for r in models:
+        airline = norm(r.get("airline")) or norm(r.get("airline_code"))  # sheet grouping
+        t = norm(r.get("aircraft_type"))
+        if airline and t:
+            counts_by_airline_type[airline][t] += 1
+            present_types_for_matrix.add(t)
+
     airlines = sorted(counts_by_airline_type.keys())
-    types = sorted(present_types)  # nur Typen, die du wirklich hast (übersichtlich)
+    types = sorted(present_types_for_matrix)
+
     matrix = []
     for a in airlines:
         row = []
