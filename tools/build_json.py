@@ -27,7 +27,6 @@ def read_csv(path: str) -> List[Dict[str, str]]:
             rows.append({k: (v if v is not None else "") for k, v in row.items()})
         return rows
 
-
 def to_bool_x(v: str) -> Optional[bool]:
     v = (v or "").strip().lower()
     if v in ("x", "1", "true", "wahr", "yes", "ja"):
