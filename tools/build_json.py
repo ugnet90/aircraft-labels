@@ -201,7 +201,12 @@ def main() -> int:
 
         bestellt_raw = (r.get("bestellt_am", "") or "").strip()
         bestellt_iso = excel_serial_to_iso(bestellt_raw)
-        ordered = bool(bestellt_iso) and not bool(angekommen_iso)
+        
+        vorhanden_raw = (r.get("vorhanden", "") or "").strip().lower()
+        present = (vorhanden_raw in ("wahr", "true", "1", "x", "ja", "yes"))
+        
+        ordered = bool(bestellt_iso) and not bool(angekommen_iso) and not present
+
 
         source_sheet = (r.get("source_sheet", "") or "").strip()
         source_row = (r.get("source_row", "") or "").strip()
