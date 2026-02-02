@@ -24,6 +24,11 @@
     .pill{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
     .badge{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
     .badge-warn{border-color:#c00;background:#fff5f5}
+    .badge-ordered{
+      border-color:#e0b200;
+      background:#fff3c4;
+    }
+
   </style>
 </head>
 <body>
@@ -131,8 +136,13 @@
       it.aircraft_id, it.aircraft_type,
       it.registration, it.livery_name,
       it.livery_display,
-      it.arrived, it.scale, (it.flown===true?"mitgeflogen":it.flown===false?"nicht mitgeflogen":"")
+      it.arrived,
+      it.ordered ? "bestellt" : "",
+      it.ordered_at,
+      it.scale,
+      (it.flown===true?"mitgeflogen":it.flown===false?"nicht mitgeflogen":"")
     ].map(norm).join(" | ");
+
     return hay.includes(q);
   }
 
@@ -228,7 +238,14 @@
           </td>
           <td class="mono">${esc(it.registration || "")}</td>
           <td>${esc(it.livery_display || it.livery_name || "")}</td>
-          <td class="mono">${esc(formatDateDE(it.arrived || ""))}</td>
+          <td class="mono">
+            ${esc(formatDateDE(it.arrived || ""))}
+            ${
+              it.ordered === true && !it.arrived
+                ? ` <span class="badge badge-ordered">bestellt${it.ordered_at ? " " + esc(formatDateDE(it.ordered_at)) : ""}</span>`
+                : ""
+            }
+          </td>
         </tr>
       `;
     }
