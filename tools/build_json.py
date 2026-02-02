@@ -200,6 +200,10 @@ def main() -> int:
         angekommen_raw = (r.get("angekommen", "") or "").strip()
         angekommen_iso = excel_serial_to_iso(angekommen_raw)
 
+        bestellt_raw = (r.get("bestellt_am", "") or "").strip()
+        bestellt_iso = excel_serial_to_iso(bestellt_raw)
+        ordered = bool(bestellt_iso) and not bool(angekommen_iso)
+
         source_sheet = (r.get("source_sheet", "") or "").strip()
         source_row = (r.get("source_row", "") or "").strip()
 
@@ -245,6 +249,8 @@ def main() -> int:
             "photo": photo,
             "arrived_excel": angekommen_raw,
             "arrived": angekommen_iso,
+            "ordered_at": bestellt_iso,
+            "ordered": ordered,
             "source": {"sheet": source_sheet, "row": source_row},
             "aircraft": {
                 "aircraft_id": aircraft_id,
@@ -265,6 +271,8 @@ def main() -> int:
                 "price": price,
                 "shipping_allocated": shipping,
                 "arrived": angekommen_iso,
+                "ordered_at": bestellt_iso,
+                "ordered": ordered,
                 "flown": eigenfluege,
                 "special_note": special_note,
             },
@@ -322,6 +330,8 @@ def main() -> int:
             "logo_id": logo_id,
         
             "shop_url": (r.get("Shop_url", "") or "").strip(),
+            "ordered_at": bestellt_iso,
+            "ordered": ordered,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
