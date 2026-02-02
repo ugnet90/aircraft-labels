@@ -39,6 +39,17 @@
       table{font-size:14px}
       th,td{padding:10px 10px}
     }
+    tr.ordered td{background:#fff8e1}
+    .badge{
+      display:inline-block;
+      padding:2px 8px;
+      border-radius:999px;
+      font-size:11px;
+      border:1px solid #ddd;
+    }
+    .badge.missing{background:#fff}
+    .badge.ordered{background:#ffe08a}
+
   </style>
 </head>
 <body>
@@ -65,6 +76,15 @@
       </select>
     </label>
 
+    <label class="muted">Status:
+      <select id="status">
+        <option value="">Alle</option>
+        <option value="missing">fehlend</option>
+        <option value="ordered">bestellt</option>
+      </select>
+    </label>
+
+
     <button id="reset" class="btn" style="cursor:pointer;background:#fff">Reset</button>
 
     <span class="muted" id="count"></span>
@@ -74,6 +94,7 @@
     <table id="tbl">
       <thead>
         <tr>
+          <th>Status</th>
           <th>Hersteller</th>
           <th>Typ</th>
           <th class="mono">aircraft_id</th>
@@ -113,25 +134,35 @@
   function render(){
     const q = (document.getElementById("q").value || "").trim().toLowerCase();
     const manu = norm(document.getElementById("manu").value);
+    
+    const status = norm(document.getElementById("status").value);
 
     const items = all.filter(x => {
+      if(status && norm(x.status) !== status) return false;
       if(manu && norm(x.manufacturer) !== manu) return false;
       if(!q) return true;
-
+    
       const hay = (norm(x.Typ_anzeige) + " " + norm(x.aircraft_id) + " " + norm(x.manufacturer)).toLowerCase();
       return hay.includes(q);
     });
+
 
     document.getElementById("count").textContent = `${items.length} fehlende Typen`;
 
     const tbody = document.querySelector("#tbl tbody");
     tbody.innerHTML = items.map(x => `
-      <tr>
+      <tr class="${esc(norm(x.status))}">
+        <td>
+          <span class="badge ${esc(norm(x.status))}">
+            ${esc(norm(x.status) === "ordered" ? "bestellt" : "fehlend")}
+          </span>
+        </td>
         <td>${esc(norm(x.manufacturer) || "—")}</td>
         <td>${esc(norm(x.Typ_anzeige) || "—")}</td>
         <td class="mono">${esc(norm(x.aircraft_id) || "")}</td>
       </tr>
     `).join("");
+
   }
 
   async function main(){
@@ -139,7 +170,7 @@
     const d = await res.json();
 
     const meta = d.counts
-      ? `Master: ${d.counts.master_types} · Vorhanden: ${d.counts.present_types} · Fehlend: ${d.counts.missing_types}`
+      ? `Master: ${d.counts.master_types} · Vorhanden: ${d.counts.present_types} · Fehlend: ${d.counts.missing_types} · Bestellt: ${d.counts.ordered_types || 0}`
       : "";
     document.getElementById("meta").textContent = meta;
 
@@ -155,11 +186,14 @@
 
     document.getElementById("q").addEventListener("input", render);
     document.getElementById("manu").addEventListener("change", render);
+    document.getElementById("status").addEventListener("change", render);
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
       document.getElementById("manu").value = "";
+      document.getElementById("status").value = "";
       render();
     });
+
   }
 
   main();
