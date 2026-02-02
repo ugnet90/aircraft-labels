@@ -1,4 +1,4 @@
-<!doctype html>
+rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
@@ -234,7 +234,7 @@
       rows.push({t, n});
     }
 
-    rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));
+    rows.sort((a,b) => a.t.localeCompare(b.t));
 
     document.getElementById("mMeta").innerHTML =
       `<span class="pill">${esc(selectedAir)}</span> ` +
