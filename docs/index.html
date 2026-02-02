@@ -132,7 +132,7 @@
   function matchesQuery(it, q){
     if(!q) return true;
     const hay = [
-      it.model_id, it.airline_code, it.airline,
+      it.model_id, it.airline_code, it.airline_row, it.airline,
       it.aircraft_id, it.aircraft_type,
       it.registration, it.livery_name,
       it.livery_display,
@@ -148,7 +148,7 @@
 
   function matchesAirline(it, code){
     if(!code) return true;
-    return (it.airline_code || "") === code || (it.airline || "") === code;
+    return (it.airline_row || "") === code;
   }
 
   function matchesType(it, t){
@@ -188,7 +188,7 @@
       return arr;
     }
     arr.sort((a,b)=>
-      (a.airline_code||"").localeCompare(b.airline_code||"") ||
+      (a.airline_row||"").localeCompare(b.airline_row||"") ||
       (a.model_id||"").localeCompare(b.model_id||"")
     );
     return arr;
@@ -225,8 +225,8 @@
         <tr>
           <td class="mono"><a href="${esc(link)}">${esc(it.model_id)}</a></td>
           <td>
-            <a href="#" data-airline="${esc(it.airline_code || it.airline || "")}">
-              ${esc(it.airline || it.airline_code || "")}
+            <a href="#" data-airline="${esc(it.airline_row || "")}">
+              ${esc(it.airline_row || it.airline || it.airline_code || "")}
             </a>
           </td>
           <td>${scaleBadge(it.scale || "")}</td>
@@ -290,8 +290,8 @@
         `<span class="pill">Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span></span>`;
 
       buildOptions(state.all, "airline",
-        it => (it.airline_code || it.airline || ""),
-        it => (it.airline || it.airline_code || "")
+        it => (it.airline_row || ""),
+        it => (it.airline_row || "")
       );
       buildOptions(state.all, "type",
         it => (it.aircraft_type || ""),
