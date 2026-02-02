@@ -39,8 +39,10 @@ rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));<!doctype html>
 
     /* Mobile view */
     #mobileCard{display:none}
-    #mobileList{margin:0;padding-left:18px}
-    #mobileList li{margin:6px 0}
+    #mobileTbl td, #mobileTbl th{border-bottom:1px solid #eee;padding:6px 8px;font-size:14px}
+    #mobileTbl td.num{text-align:right;font-variant-numeric:tabular-nums}
+    #mobileTbl td.num a{color:#000;text-decoration:none;display:inline-block;padding:2px 6px;border:1px solid #ddd;border-radius:10px}
+    #mobileTbl td.num a:hover{background:#fafafa}
     .pill{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
 
@@ -103,7 +105,15 @@ rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));<!doctype html>
       </label>
     </div>
     <div class="muted" id="mMeta"></div>
-    <ul id="mobileList"></ul>
+    <table id="mobileTbl" style="width:100%;border-collapse:collapse;margin-top:10px">
+      <thead>
+        <tr>
+          <th style="text-align:right;border-bottom:1px solid #eee;padding:6px 8px">#</th>
+          <th style="text-align:left;border-bottom:1px solid #eee;padding:6px 8px">Typ</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div>
 
 <script>
@@ -219,7 +229,7 @@ rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));<!doctype html>
     if(airlineIdx < 0){
       document.getElementById("mMeta").innerHTML =
         `<span class="pill">Bitte Airline wählen</span> <span class="muted">(${airlines.length} verfügbar)</span>`;
-      document.getElementById("mobileList").innerHTML = "";
+      document.querySelector("#mobileTbl tbody").innerHTML = "";
       return;
     }
 
@@ -240,11 +250,19 @@ rows.sort((a,b) => (b.n - a.n) || a.t.localeCompare(b.t));<!doctype html>
       `<span class="pill">${esc(selectedAir)}</span> ` +
       `<span class="pill">Treffer: <span class="mono">${rows.length}</span></span>`;
 
-    const ul = document.getElementById("mobileList");
-    ul.innerHTML = rows.map(x => {
+    const tbody = document.querySelector("#mobileTbl tbody");
+    tbody.innerHTML = rows.map(x => {
       const href = `./index.html?airline=${encodeURIComponent(selectedAir)}&type=${encodeURIComponent(x.t)}`;
-      const right = x.n ? `<span class="mono">${x.n}</span>` : `<span class="muted">0</span>`;
-      return `<li><a href="${esc(href)}">${esc(x.t)}</a> – ${right}</li>`;
+      const n = x.n ? x.n : 0;
+    
+      return `
+        <tr>
+          <td class="num">
+            <a href="${esc(href)}" title="In Übersicht öffnen">${esc(n)}</a>
+          </td>
+          <td>${esc(x.t)}</td>
+        </tr>
+      `;
     }).join("");
   }
 
