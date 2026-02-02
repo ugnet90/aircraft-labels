@@ -346,7 +346,7 @@ def main() -> int:
         "items": sorted(index_list, key=lambda x: (x.get("airline_code") or "", x.get("model_id") or "")),
     }
     with open(INDEX_JSON, "w", encoding="utf-8") as f:
-    json.dump(index_payload, f, ensure_ascii=False, indent=2)
+        json.dump(index_payload, f, ensure_ascii=False, indent=2)
 
     print("[build_json] wrote index:", INDEX_JSON, "bytes=", os.path.getsize(INDEX_JSON))
     print(f"Generated {len(index_list)} JSON files into {OUT_DIR}")
