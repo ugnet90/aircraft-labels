@@ -3,10 +3,10 @@
   "warning": "",
   "counts": {
     "master_types": 384,
-    "present_types": 124,
-    "missing_types": 260,
+    "present_types": 126,
+    "missing_types": 258,
     "ordered_types": 0,
-    "models": 161
+    "models": 167
   },
   "missing_types": [
     {
@@ -94,26 +94,20 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "AIB-A330-200-SL",
-      "Typ_anzeige": "Airbus A330-200 (Sharklets)",
+      "aircraft_id": "AIB-A330-200",
+      "Typ_anzeige": "Airbus A330-200",
       "manufacturer": "Airbus",
       "status": "missing"
     },
     {
-      "aircraft_id": "AIB-A330-300-SL",
-      "Typ_anzeige": "Airbus A330-300 (Sharklets)",
+      "aircraft_id": "AIB-A330-300",
+      "Typ_anzeige": "Airbus A330-300",
       "manufacturer": "Airbus",
       "status": "missing"
     },
     {
       "aircraft_id": "AIB-A330-800neo",
       "Typ_anzeige": "Airbus A330-800neo",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A330-900neo",
-      "Typ_anzeige": "Airbus A330-900neo",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -492,12 +486,6 @@
     {
       "aircraft_id": "BOE-747-400LCF",
       "Typ_anzeige": "Boeing 747-400LCF Dreamlifter",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-747-SCA",
-      "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
       "manufacturer": "Boeing",
       "status": "missing"
     },
