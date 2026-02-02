@@ -36,6 +36,15 @@ def main():
         aid = norm(r.get("aircraft_id"))
         if aid:
             present_ids.add(aid)
+            
+    # ordered = bestellt_am gesetzt UND noch nicht angekommen
+    ordered_ids = set()
+    for r in models:
+        aid = norm(r.get("aircraft_id"))
+        bestellt = norm(r.get("bestellt_am"))
+        angekommen = norm(r.get("angekommen"))
+        if aid and bestellt and not angekommen:
+            ordered_ids.add(aid)
 
     id_to_label = {}
     id_to_manu = {}
@@ -59,16 +68,32 @@ def main():
         present_in_master = set()
     else:
         present_in_master = present_ids & master_ids
-        missing_ids = sorted(master_ids - present_ids)
+
+        # Fehlend = nicht vorhanden UND nicht bestellt
+        missing_ids = sorted(master_ids - present_ids - ordered_ids)
+
+        # Bestellt aber (noch) nicht vorhanden
+        ordered_missing_ids = sorted((master_ids - present_ids) & ordered_ids)
+
 
     missing_types = [
         {
             "aircraft_id": aid,
             "Typ_anzeige": id_to_label.get(aid, aid),
-            "manufacturer": id_to_manu.get(aid, "")
+            "manufacturer": id_to_manu.get(aid, ""),
+            "status": "missing"
         }
         for aid in missing_ids
+    ] + [
+        {
+            "aircraft_id": aid,
+            "Typ_anzeige": id_to_label.get(aid, aid),
+            "manufacturer": id_to_manu.get(aid, ""),
+            "status": "ordered"
+        }
+        for aid in ordered_missing_ids
     ]
+
 
     payload_missing = {
         "schema": "aircraft-labels.missing-types.v3",
@@ -77,6 +102,7 @@ def main():
             "master_types": len(master_ids),
             "present_types": len(present_in_master),
             "missing_types": len(missing_ids),
+            "ordered_types": len(ordered_missing_ids),
             "models": len(models),
         },
         "missing_types": missing_types,
