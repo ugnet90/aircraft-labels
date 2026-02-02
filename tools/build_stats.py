@@ -24,7 +24,6 @@ def read_csv(path: Path, delimiter=";"):
 def norm(s) -> str:
     return (s or "").strip()
 
-
 def main():
     models = read_csv(MODELS_CSV, delimiter=";")
     pax = read_csv(PASSENGER_CSV, delimiter=";")
@@ -39,13 +38,19 @@ def main():
             present_ids.add(aid)
 
     id_to_label = {}
+    id_to_manu = {}
     master_ids = set()
+    
     for r in pax:
         aid = norm(r.get("aircraft_id"))
         label = norm(r.get("Typ_anzeige")) or aid
+        manu = norm(r.get("Hersteller"))
+    
         if aid:
             master_ids.add(aid)
             id_to_label[aid] = label
+            id_to_manu[aid] = manu
+
 
     warning = ""
     if not master_ids:
@@ -57,12 +62,16 @@ def main():
         missing_ids = sorted(master_ids - present_ids)
 
     missing_types = [
-        {"aircraft_id": aid, "Typ_anzeige": id_to_label.get(aid, aid)}
+        {
+            "aircraft_id": aid,
+            "Typ_anzeige": id_to_label.get(aid, aid),
+            "manufacturer": id_to_manu.get(aid, "")
+        }
         for aid in missing_ids
     ]
 
     payload_missing = {
-        "schema": "aircraft-labels.missing-types.v2",
+        "schema": "aircraft-labels.missing-types.v3",
         "warning": warning,
         "counts": {
             "master_types": len(master_ids),
