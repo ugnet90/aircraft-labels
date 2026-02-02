@@ -24,6 +24,8 @@
   "photo": "https://abpic.co.uk/pictures/view/1646675",
   "arrived_excel": "2025-07-09",
   "arrived": "2025-07-09",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "10"
@@ -47,6 +49,8 @@
     "price": 26.49,
     "shipping_allocated": 34.11,
     "arrived": "2025-07-09",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

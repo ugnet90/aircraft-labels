@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/575352/D-AIAA",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "5"
@@ -47,6 +49,8 @@
     "price": 17.0,
     "shipping_allocated": 5.0,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

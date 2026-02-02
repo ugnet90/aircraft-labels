@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
   "arrived_excel": "2025-06-16",
   "arrived": "2025-06-16",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "23"
@@ -47,6 +49,8 @@
     "price": 47.0,
     "shipping_allocated": 5.22,
     "arrived": "2025-06-16",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

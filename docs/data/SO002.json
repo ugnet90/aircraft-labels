@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "5"
@@ -47,6 +49,8 @@
     "price": 69.9,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

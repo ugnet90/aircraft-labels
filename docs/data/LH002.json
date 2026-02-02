@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "25"
@@ -47,6 +49,8 @@
     "price": 33.0,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

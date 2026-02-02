@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "BA",
     "row": "15"
@@ -47,6 +49,8 @@
     "price": 15.0,
     "shipping_allocated": 3.2,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

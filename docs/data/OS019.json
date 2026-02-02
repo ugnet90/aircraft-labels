@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070",
   "arrived_excel": "2025-07-02",
   "arrived": "2025-07-02",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "32"
@@ -47,6 +49,8 @@
     "price": 49.0,
     "shipping_allocated": 6.0,
     "arrived": "2025-07-02",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

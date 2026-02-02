@@ -24,6 +24,8 @@
   "photo": "https://www.planepictures.net/v3/show.php?id=614533",
   "arrived_excel": "2025-07-14",
   "arrived": "2025-07-14",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "57"
@@ -47,6 +49,8 @@
     "price": 36.68,
     "shipping_allocated": 18.34,
     "arrived": "2025-07-14",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

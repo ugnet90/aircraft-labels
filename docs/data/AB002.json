@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/079624/hb-ihr-air-berlin-boeing-757-2g5",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AirBerlin",
     "row": "19"
@@ -47,6 +49,8 @@
     "price": 28.0,
     "shipping_allocated": 0.61,
     "arrived": "2025-12-06",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

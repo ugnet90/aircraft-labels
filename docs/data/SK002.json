@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232",
   "arrived_excel": "2025-07-22",
   "arrived": "2025-07-22",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "SAS",
     "row": "7"
@@ -47,6 +49,8 @@
     "price": 47.34,
     "shipping_allocated": 14.06,
     "arrived": "2025-07-22",
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

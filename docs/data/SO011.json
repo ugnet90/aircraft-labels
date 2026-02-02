@@ -24,6 +24,8 @@
   "photo": "x",
   "arrived_excel": "2025-10-27",
   "arrived": "2025-10-27",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "19"
@@ -47,6 +49,8 @@
     "price": 35.01,
     "shipping_allocated": 11.99,
     "arrived": "2025-10-27",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

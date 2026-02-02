@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/425749/165831/5831",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "28"
@@ -47,6 +49,8 @@
     "price": 15.0,
     "shipping_allocated": 0.33,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

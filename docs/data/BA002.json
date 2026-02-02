@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/697193/G-BNYI",
   "arrived_excel": "2025-11-10",
   "arrived": "2025-11-10",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "BA",
     "row": "71"
@@ -47,6 +49,8 @@
     "price": 59.19,
     "shipping_allocated": 21.68,
     "arrived": "2025-11-10",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

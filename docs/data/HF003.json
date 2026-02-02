@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "HapagLloyd",
     "row": "4"
@@ -47,6 +49,8 @@
     "price": 32.75,
     "shipping_allocated": 1.38,
     "arrived": "2026-01-15",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

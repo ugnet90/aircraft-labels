@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52",
   "arrived_excel": "2025-08-05",
   "arrived": "2025-08-05",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "55"
@@ -47,6 +49,8 @@
     "price": 47.19,
     "shipping_allocated": 15.35,
     "arrived": "2025-08-05",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

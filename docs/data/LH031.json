@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
   "arrived_excel": "2026-01-28",
   "arrived": "2026-01-28",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "49"
@@ -47,6 +49,8 @@
     "price": 37.66,
     "shipping_allocated": 10.69,
     "arrived": "2026-01-28",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

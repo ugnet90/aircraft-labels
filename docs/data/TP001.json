@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "TAP",
     "row": "9"
@@ -47,6 +49,8 @@
     "price": 85.73,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

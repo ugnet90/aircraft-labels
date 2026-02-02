@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "37"
@@ -47,6 +49,8 @@
     "price": 75.4,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

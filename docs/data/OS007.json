@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "10"
@@ -47,6 +49,8 @@
     "price": 59.0,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

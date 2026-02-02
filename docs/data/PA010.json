@@ -24,6 +24,8 @@
   "photo": "",
   "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "25"
@@ -47,6 +49,8 @@
     "price": 54.19,
     "shipping_allocated": 17.85,
     "arrived": "2025-07-04",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

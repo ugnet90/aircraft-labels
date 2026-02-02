@@ -24,6 +24,8 @@
   "photo": "https://image.airport-data.com/aircraft/954767.jpg",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "SAS",
     "row": "38"
@@ -47,6 +49,8 @@
     "price": 33.66,
     "shipping_allocated": 4.41,
     "arrived": "2026-01-27",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

@@ -24,6 +24,8 @@
   "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
   "arrived_excel": "2026-01-28",
   "arrived": "2026-01-28",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "KLM_CH",
     "row": "5"
@@ -47,6 +49,8 @@
     "price": 34.39,
     "shipping_allocated": 10.47,
     "arrived": "2026-01-28",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

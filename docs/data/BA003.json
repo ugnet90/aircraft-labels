@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "BA",
     "row": "69"
@@ -47,6 +49,8 @@
     "price": 50.0,
     "shipping_allocated": 1.23,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

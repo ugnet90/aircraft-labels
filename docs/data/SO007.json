@@ -24,6 +24,8 @@
   "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703",
   "arrived_excel": "2025-05-27",
   "arrived": "2025-05-27",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "33"
@@ -47,6 +49,8 @@
     "price": 21.0,
     "shipping_allocated": 11.0,
     "arrived": "2025-05-27",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

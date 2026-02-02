@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/249732/HB-IDA",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "26"
@@ -47,6 +49,8 @@
     "price": 17.0,
     "shipping_allocated": 1.84,
     "arrived": "2026-01-27",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

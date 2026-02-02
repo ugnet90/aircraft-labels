@@ -24,6 +24,8 @@
   "photo": "https://www.jetphotos.com/photo/10376450",
   "arrived_excel": "2025-07-15",
   "arrived": "2025-07-15",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "32"
@@ -47,6 +49,8 @@
     "price": 24.94,
     "shipping_allocated": 28.57,
     "arrived": "2025-07-15",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

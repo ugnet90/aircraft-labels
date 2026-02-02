@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/215733/oe-lgi-austrian-arrows-bombardier-dhc-8-402q-dash-8",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "25"
@@ -47,6 +49,8 @@
     "price": 95.01,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

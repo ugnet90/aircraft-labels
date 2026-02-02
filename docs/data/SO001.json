@@ -24,6 +24,8 @@
   "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "9"
@@ -47,6 +49,8 @@
     "price": 65.85,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

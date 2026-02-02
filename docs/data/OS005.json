@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "11"
@@ -47,6 +49,8 @@
     "price": 39.85,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

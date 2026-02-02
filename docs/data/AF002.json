@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AirFrance",
     "row": "34"
@@ -47,6 +49,8 @@
     "price": 26.94,
     "shipping_allocated": 1.38,
     "arrived": "2026-01-15",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

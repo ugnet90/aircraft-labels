@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "HapagLloyd",
     "row": "11"
@@ -47,6 +49,8 @@
     "price": 15.0,
     "shipping_allocated": 0.33,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

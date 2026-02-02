@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "56"
@@ -47,6 +49,8 @@
     "price": 37.0,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

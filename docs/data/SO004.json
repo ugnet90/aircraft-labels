@@ -24,6 +24,8 @@
   "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "18"
@@ -47,6 +49,8 @@
     "price": 18.0,
     "shipping_allocated": 3.8,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

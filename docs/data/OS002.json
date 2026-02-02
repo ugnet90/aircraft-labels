@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "7"
@@ -47,6 +49,8 @@
     "price": 24.5,
     "shipping_allocated": 3.0,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

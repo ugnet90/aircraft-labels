@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "6"
@@ -47,6 +49,8 @@
     "price": 40.0,
     "shipping_allocated": 1.16,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

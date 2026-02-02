@@ -24,6 +24,8 @@
   "photo": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg",
   "arrived_excel": "2025-06-26",
   "arrived": "2025-06-26",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "48"
@@ -47,6 +49,8 @@
     "price": 34.24,
     "shipping_allocated": 3.85,
     "arrived": "2025-06-26",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/172370/d-abdq-air-berlin-airbus-a320-214",
   "arrived_excel": "2025-11-03",
   "arrived": "2025-11-03",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AirBerlin",
     "row": "6"
@@ -47,6 +49,8 @@
     "price": 15.0,
     "shipping_allocated": 1.9,
     "arrived": "2025-11-03",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

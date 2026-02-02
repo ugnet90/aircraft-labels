@@ -24,6 +24,8 @@
   "photo": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg",
   "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "27"
@@ -47,6 +49,8 @@
     "price": 27.06,
     "shipping_allocated": 2.94,
     "arrived": "2025-11-05",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

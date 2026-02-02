@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/574510/G-ASGH",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "BOAC",
     "row": "19"
@@ -47,6 +49,8 @@
     "price": 44.5,
     "shipping_allocated": 1.16,
     "arrived": "2025-08-20",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

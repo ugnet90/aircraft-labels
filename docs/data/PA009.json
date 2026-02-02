@@ -24,6 +24,8 @@
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
   "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "24"
@@ -47,6 +49,8 @@
     "price": 54.19,
     "shipping_allocated": 17.86,
     "arrived": "2025-07-04",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

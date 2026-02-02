@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
   "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "KLM_CH",
     "row": "6"
@@ -47,6 +49,8 @@
     "price": 25.0,
     "shipping_allocated": 1.3,
     "arrived": "2025-06-03",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

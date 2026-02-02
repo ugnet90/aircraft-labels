@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "23"
@@ -47,6 +49,8 @@
     "price": 39.5,
     "shipping_allocated": 3.25,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

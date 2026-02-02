@@ -24,6 +24,8 @@
   "photo": "https://www.jetphotos.com/photo/10159741",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "5"
@@ -47,6 +49,8 @@
     "price": null,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

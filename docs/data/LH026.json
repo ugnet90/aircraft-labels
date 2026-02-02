@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "17"
@@ -47,6 +49,8 @@
     "price": 39.5,
     "shipping_allocated": 0.97,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
   "arrived_excel": "2025-10-30",
   "arrived": "2025-10-30",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "KLM",
     "row": "35"
@@ -47,6 +49,8 @@
     "price": 68.49,
     "shipping_allocated": 9.09,
     "arrived": "2025-10-30",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

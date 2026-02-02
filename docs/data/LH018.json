@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/198636/D-ABIB",
   "arrived_excel": "2025-08-08",
   "arrived": "2025-08-08",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "27"
@@ -47,6 +49,8 @@
     "price": 39.5,
     "shipping_allocated": 3.23,
     "arrived": "2025-08-08",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

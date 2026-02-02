@@ -24,6 +24,8 @@
   "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "23"
@@ -47,6 +49,8 @@
     "price": 34.5,
     "shipping_allocated": 0.85,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

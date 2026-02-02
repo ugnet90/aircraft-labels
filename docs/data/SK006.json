@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
   "arrived_excel": "2026-01-23",
   "arrived": "2026-01-23",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "SAS",
     "row": "6"
@@ -47,6 +49,8 @@
     "price": 38.47,
     "shipping_allocated": 12.27,
     "arrived": "2026-01-23",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

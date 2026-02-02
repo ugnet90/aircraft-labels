@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "SAS",
     "row": "29"
@@ -47,6 +49,8 @@
     "price": 73.21,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

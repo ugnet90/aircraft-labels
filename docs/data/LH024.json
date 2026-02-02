@@ -24,6 +24,8 @@
   "photo": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936",
   "arrived_excel": "2025-10-24",
   "arrived": "2025-10-24",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "26"
@@ -47,6 +49,8 @@
     "price": 41.96,
     "shipping_allocated": 17.21,
     "arrived": "2025-10-24",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

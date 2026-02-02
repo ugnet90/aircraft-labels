@@ -24,6 +24,8 @@
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L",
   "arrived_excel": "2025-06-26",
   "arrived": "2025-06-26",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "15"
@@ -47,6 +49,8 @@
     "price": 42.0,
     "shipping_allocated": 0.0,
     "arrived": "2025-06-26",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

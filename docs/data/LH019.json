@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "22"
@@ -47,6 +49,8 @@
     "price": 54.5,
     "shipping_allocated": 1.42,
     "arrived": "2025-08-20",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

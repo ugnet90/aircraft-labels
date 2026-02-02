@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/702474/D-ANUN",
   "arrived_excel": "2025-10-24",
   "arrived": "2025-10-24",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "60"
@@ -47,6 +49,8 @@
     "price": 41.96,
     "shipping_allocated": 17.21,
     "arrived": "2025-10-24",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

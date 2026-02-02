@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "13"
@@ -47,6 +49,8 @@
     "price": 63.24,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

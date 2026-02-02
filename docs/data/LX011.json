@@ -24,6 +24,8 @@
   "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "12"
@@ -47,6 +49,8 @@
     "price": 21.0,
     "shipping_allocated": 7.0,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

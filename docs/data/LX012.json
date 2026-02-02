@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "11"
@@ -47,6 +49,8 @@
     "price": 39.5,
     "shipping_allocated": 0.97,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

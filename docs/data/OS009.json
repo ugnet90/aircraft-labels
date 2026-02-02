@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "22"
@@ -47,6 +49,8 @@
     "price": 49.5,
     "shipping_allocated": 5.5,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

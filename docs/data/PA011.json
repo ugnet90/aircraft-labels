@@ -24,6 +24,8 @@
   "photo": "https://www.jetphotos.com/photo/261236",
   "arrived_excel": "2025-07-07",
   "arrived": "2025-07-07",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "29"
@@ -47,6 +49,8 @@
     "price": 56.7,
     "shipping_allocated": 46.46,
     "arrived": "2025-07-07",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

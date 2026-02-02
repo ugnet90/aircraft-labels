@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra",
   "arrived_excel": "2025-07-14",
   "arrived": "2025-07-14",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "KLM",
     "row": "41"
@@ -47,6 +49,8 @@
     "price": 30.68,
     "shipping_allocated": 18.34,
     "arrived": "2025-07-14",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

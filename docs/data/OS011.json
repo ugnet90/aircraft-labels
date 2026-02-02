@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "20"
@@ -47,6 +49,8 @@
     "price": 44.5,
     "shipping_allocated": 5.5,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

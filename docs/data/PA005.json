@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
   "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "33"
@@ -47,6 +49,8 @@
     "price": 28.3,
     "shipping_allocated": 6.69,
     "arrived": "2025-05-22",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

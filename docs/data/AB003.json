@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl",
   "arrived_excel": "2026-01-23",
   "arrived": "2026-01-23",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AirBerlin",
     "row": "18"
@@ -47,6 +49,8 @@
     "price": 17.0,
     "shipping_allocated": 5.42,
     "arrived": "2026-01-23",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

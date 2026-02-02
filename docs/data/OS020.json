@@ -24,6 +24,8 @@
   "photo": "https://abpic.co.uk/pictures/registration/OE-LAM",
   "arrived_excel": "2026-01-16",
   "arrived": "2026-01-16",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "42"
@@ -47,6 +49,8 @@
     "price": 49.54,
     "shipping_allocated": 13.49,
     "arrived": "2026-01-16",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

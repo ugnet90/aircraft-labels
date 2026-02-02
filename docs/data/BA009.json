@@ -24,6 +24,8 @@
   "photo": "https://www.jetphotos.com/photo/11185579",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "BA",
     "row": "64"
@@ -47,6 +49,8 @@
     "price": 35.85,
     "shipping_allocated": 4.7,
     "arrived": "2026-01-27",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

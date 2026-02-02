@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11",
   "arrived_excel": "2025-10-08",
   "arrived": "2025-10-08",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Swiss",
     "row": "5"
@@ -47,6 +49,8 @@
     "price": 34.5,
     "shipping_allocated": 2.12,
     "arrived": "2025-10-08",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

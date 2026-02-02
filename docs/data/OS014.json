@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "29"
@@ -47,6 +49,8 @@
     "price": 65.0,
     "shipping_allocated": 15.44,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

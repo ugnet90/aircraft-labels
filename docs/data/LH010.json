@@ -24,6 +24,8 @@
   "photo": "https://www.jetphotos.com/photo/11667623",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "36"
@@ -47,6 +49,8 @@
     "price": 17.0,
     "shipping_allocated": 5.0,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

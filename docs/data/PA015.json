@@ -24,6 +24,8 @@
   "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
   "arrived_excel": "2025-07-21",
   "arrived": "2025-07-21",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "30"
@@ -47,6 +49,8 @@
     "price": 32.29,
     "shipping_allocated": 21.18,
     "arrived": "2025-07-21",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

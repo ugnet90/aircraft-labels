@@ -24,6 +24,8 @@
   "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "46"
@@ -47,6 +49,8 @@
     "price": 60.0,
     "shipping_allocated": 1.48,
     "arrived": "2025-11-12",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

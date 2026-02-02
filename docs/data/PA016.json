@@ -24,6 +24,8 @@
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L",
   "arrived_excel": "2025-08-05",
   "arrived": "2025-08-05",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Panam",
     "row": "19"
@@ -47,6 +49,8 @@
     "price": 82.94,
     "shipping_allocated": 26.97,
     "arrived": "2025-08-05",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

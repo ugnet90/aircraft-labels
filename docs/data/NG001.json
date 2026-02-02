@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er",
   "arrived_excel": "2025-06-23",
   "arrived": "2025-06-23",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "LaudaAir",
     "row": "16"
@@ -47,6 +49,8 @@
     "price": 18.0,
     "shipping_allocated": 2.65,
     "arrived": "2025-06-23",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

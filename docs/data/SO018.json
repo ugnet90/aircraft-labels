@@ -24,6 +24,8 @@
   "photo": "https://www.airhistory.net/photos/0027472.jpg",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Sonstige",
     "row": "25"
@@ -47,6 +49,8 @@
     "price": 45.0,
     "shipping_allocated": 0.96,
     "arrived": "2025-12-06",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

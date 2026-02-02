@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9",
   "arrived_excel": "2025-11-03",
   "arrived": "2025-11-03",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "LaudaAir",
     "row": "10"
@@ -47,6 +49,8 @@
     "price": 20.5,
     "shipping_allocated": 2.6,
     "arrived": "2025-11-03",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

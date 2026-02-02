@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "12"
@@ -47,6 +49,8 @@
     "price": 54.97,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },

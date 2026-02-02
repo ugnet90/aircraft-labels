@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "28"
@@ -47,6 +49,8 @@
     "price": 117.22,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

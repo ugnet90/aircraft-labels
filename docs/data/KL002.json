@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
   "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "KLM",
     "row": "45"
@@ -47,6 +49,8 @@
     "price": 40.0,
     "shipping_allocated": 2.07,
     "arrived": "2025-06-03",
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

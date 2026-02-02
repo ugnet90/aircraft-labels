@@ -24,6 +24,8 @@
   "photo": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "Lufthansa",
     "row": "52"
@@ -47,6 +49,8 @@
     "price": 51.53,
     "shipping_allocated": 9.31,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": null,
     "special_note": ""
   },

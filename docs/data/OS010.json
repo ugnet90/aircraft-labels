@@ -24,6 +24,8 @@
   "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
   "arrived_excel": "",
   "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
   "source": {
     "sheet": "AUA",
     "row": "6"
@@ -47,6 +49,8 @@
     "price": 36.44,
     "shipping_allocated": null,
     "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
     "flown": true,
     "special_note": ""
   },
