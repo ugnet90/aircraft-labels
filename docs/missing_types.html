@@ -5,18 +5,40 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Fehlende Flugzeugtypen</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:900px}
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:1200px}
     .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
     h1{font-size:20px;margin:0}
     .muted{color:#666;font-size:12px}
-    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
-    input{padding:8px;border:1px solid #ddd;border-radius:10px;width:100%}
-    ul{margin:10px 0 0 18px}
-    li{margin:4px 0}
-    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
     a{color:#000}
     .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
     .btn:hover{background:#fafafa}
+    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0;background:#fff}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    input,select{padding:8px;border:1px solid #ddd;border-radius:10px;font-size:14px}
+    label{display:flex;gap:6px;align-items:center}
+
+    /* Table look similar to matrix */
+    .tableWrap{overflow:auto;max-height:75vh}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th,td{
+      border:1px solid #e6e6e6;
+      padding:8px 10px;
+      vertical-align:top;
+      background:#fff;
+    }
+    th{position:sticky;top:0;z-index:3}
+    tr:nth-child(even) td{background:#fafafa}
+    td.small{font-size:12px;color:#666}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+
+    #warn{display:none;border-color:#c00;background:#fff5f5}
+
+    @media (max-width: 720px){
+      body{margin:12px}
+      table{font-size:14px}
+      th,td{padding:10px 10px}
+    }
   </style>
 </head>
 <body>
@@ -30,35 +52,86 @@
     <a class="btn" href="./matrix.html">Matrix</a>
   </div>
 
-  <div id="warn" class="card" style="display:none;border-color:#c00;background:#fff5f5"></div>
+  <div id="warn" class="card"></div>
 
-  <div class="card">
-    <div class="muted">Filter</div>
-    <input id="q" placeholder="Tippe zum Suchen (z.B. A320, 737, Dash …)" />
+  <div class="card controls">
+    <label class="muted">Suche:
+      <input id="q" placeholder="z.B. A320, 737, Dash …" />
+    </label>
+
+    <label class="muted">Hersteller:
+      <select id="manu">
+        <option value="">Alle</option>
+      </select>
+    </label>
+
+    <button id="reset" class="btn" style="cursor:pointer;background:#fff">Reset</button>
+
+    <span class="muted" id="count"></span>
   </div>
 
-  <div class="card">
-    <div class="muted" id="count"></div>
-    <ul id="list"></ul>
+  <div class="card tableWrap">
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th>Hersteller</th>
+          <th>Typ</th>
+          <th class="mono">aircraft_id</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div>
+
 <script>
-  function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+  function esc(s){
+    return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+  function norm(s){ return String(s??"").trim(); }
 
   let all = [];
 
+  function buildOptions(items){
+    const sel = document.getElementById("manu");
+    // keep first option ("Alle"), rebuild the rest
+    sel.innerHTML = '<option value="">Alle</option>';
+
+    const set = new Set();
+    for(const x of items){
+      const m = norm(x.manufacturer);
+      if(m) set.add(m);
+    }
+    const list = Array.from(set).sort((a,b)=>a.localeCompare(b));
+    for(const m of list){
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = m;
+      sel.appendChild(opt);
+    }
+  }
+
   function render(){
     const q = (document.getElementById("q").value || "").trim().toLowerCase();
+    const manu = norm(document.getElementById("manu").value);
+
     const items = all.filter(x => {
-      const hay = (x.label + " " + x.id).toLowerCase();
-      return !q || hay.includes(q);
+      if(manu && norm(x.manufacturer) !== manu) return false;
+      if(!q) return true;
+
+      const hay = (norm(x.Typ_anzeige) + " " + norm(x.aircraft_id) + " " + norm(x.manufacturer)).toLowerCase();
+      return hay.includes(q);
     });
-    
+
     document.getElementById("count").textContent = `${items.length} fehlende Typen`;
-    
-    const ul = document.getElementById("list");
-    ul.innerHTML = items
-      .map(x => `<li>${esc(x.label)} <span class="muted">(${esc(x.id)})</span></li>`)
-      .join("");
+
+    const tbody = document.querySelector("#tbl tbody");
+    tbody.innerHTML = items.map(x => `
+      <tr>
+        <td>${esc(norm(x.manufacturer) || "—")}</td>
+        <td>${esc(norm(x.Typ_anzeige) || "—")}</td>
+        <td class="mono">${esc(norm(x.aircraft_id) || "")}</td>
+      </tr>
+    `).join("");
   }
 
   async function main(){
@@ -76,14 +149,17 @@
       w.innerHTML = `<b>Hinweis:</b> ${esc(d.warning)}`;
     }
 
-    all = (d.missing_types || []).map(x => ({
-      id: String(x.aircraft_id || "").trim(),
-      label: String(x.Typ_anzeige || x.aircraft_id || "").trim()
-    }));
-
+    all = (d.missing_types || []);
+    buildOptions(all);
     render();
 
     document.getElementById("q").addEventListener("input", render);
+    document.getElementById("manu").addEventListener("change", render);
+    document.getElementById("reset").addEventListener("click", () => {
+      document.getElementById("q").value = "";
+      document.getElementById("manu").value = "";
+      render();
+    });
   }
 
   main();
