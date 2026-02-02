@@ -302,8 +302,32 @@
         apply();
       });
 
+      // =========================
+      // URL-Parameter -> Filter setzen (Matrix / Mobile Links)
+      // =========================
+      const p = new URLSearchParams(location.search);
+
+      if (p.has("q")) {
+        document.getElementById("q").value = p.get("q") || "";
+      }
+      if (p.has("airline")) {
+        document.getElementById("airline").value = p.get("airline") || "";
+      }
+      if (p.has("type")) {
+        document.getElementById("type").value = p.get("type") || "";
+      }
+      if (p.has("scale")) {
+        document.getElementById("scale").value = p.get("scale") || "";
+      }
+      if (p.has("flown")) {
+        document.getElementById("flown").value = p.get("flown") || "";
+      }
+      if (p.has("sort")) {
+        document.getElementById("sort").value = p.get("sort") || document.getElementById("sort").value;
+      }
 
       apply();
+
     }catch(e){
       document.getElementById("content").innerHTML =
         `<div class="err"><b>Fehler:</b> Konnte <span class="mono">docs/index.json</span> nicht laden. (${esc(e.message)})</div>`;
