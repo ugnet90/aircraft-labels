@@ -110,38 +110,61 @@ def main():
     OUT_MISSING.write_text(json.dumps(payload_missing, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # =========================
-    # Matrix (Airlines from sheets; Types from aircraft_type; cells = count)
+    # Matrix: Gruppen (airline = Sheet/Gruppe) x Typen (aircraft_type)
+    # - present_matrix: nur vorhandene Modelle
+    # - ordered_matrix: bestellte Modelle (vorhanden=FALSCH & bestellt_am gesetzt)
     # =========================
-    counts_by_airline_type = defaultdict(lambda: defaultdict(int))
-    present_types_for_matrix = set()
+    present_counts = defaultdict(lambda: defaultdict(int))
+    ordered_counts = defaultdict(lambda: defaultdict(int))
+    seen_types = set()
+
+    def is_present(row):
+        v = (row.get("vorhanden", "") or "").strip().lower()
+        return v in ("wahr", "true", "1", "x", "ja", "yes")
 
     for r in models:
-        airline = norm(r.get("airline")) or norm(r.get("airline_code"))  # sheet grouping
+        group = norm(r.get("airline")) or norm(r.get("airline_code"))
         t = norm(r.get("aircraft_type"))
-        if airline and t:
-            counts_by_airline_type[airline][t] += 1
-            present_types_for_matrix.add(t)
+        if not group or not t:
+            continue
 
-    airlines = sorted(counts_by_airline_type.keys())
-    types = sorted(present_types_for_matrix)
+        seen_types.add(t)
 
-    matrix = []
-    for a in airlines:
-        row = []
+        bestellt = norm(r.get("bestellt_am"))
+        arrived = norm(r.get("angekommen"))
+        present = is_present(r)
+        ordered = (not present) and bool(bestellt) and (not arrived)
+
+        if present:
+            present_counts[group][t] += 1
+        elif ordered:
+            ordered_counts[group][t] += 1
+
+    groups = sorted(set(list(present_counts.keys()) + list(ordered_counts.keys())))
+    types = sorted(seen_types)
+
+    present_matrix = []
+    ordered_matrix = []
+    for g in groups:
+        prow = []
+        orow = []
         for t in types:
-            row.append(counts_by_airline_type[a].get(t, 0))
-        matrix.append(row)
+            prow.append(present_counts[g].get(t, 0))
+            orow.append(ordered_counts[g].get(t, 0))
+        present_matrix.append(prow)
+        ordered_matrix.append(orow)
 
     payload_matrix = {
-        "schema": "aircraft-labels.matrix.v1",
+        "schema": "aircraft-labels.matrix.v2",
         "counts": {
-            "airlines": len(airlines),
+            "groups": len(groups),
             "types": len(types),
             "models": len(models),
         },
-        "airlines": airlines,
+        "groups": groups,
         "types": types,
-        "matrix": matrix,
+        "present_matrix": present_matrix,
+        "ordered_matrix": ordered_matrix,
     }
     OUT_MATRIX.write_text(json.dumps(payload_matrix, ensure_ascii=False, indent=2), encoding="utf-8")
 
