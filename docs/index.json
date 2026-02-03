@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-03T11:52:34Z",
+  "generated_at": "2026-02-03T15:03:15Z",
   "count": 167,
   "counts_by_airline_code": {
     "OS": 20,
@@ -2977,7 +2977,7 @@
       "airline": "Sondermaße",
       "airline_row": "Austrian",
       "aircraft_id": "VIC-Viscount-700",
-      "aircraft_type": "Vickers Viscount 779 (Austrian)",
+      "aircraft_type": "Vickers Viscount 779",
       "registration": "OE-LAB",
       "manufacturer": "Limox Wings",
       "aircraft_name": "",
@@ -2999,7 +2999,7 @@
       "airline": "Sondermaße",
       "airline_row": "Pan Am",
       "aircraft_id": "BOE-314",
-      "aircraft_type": "Boeing 314 Clipper (Pan Am)",
+      "aircraft_type": "Boeing 314 Clipper",
       "registration": "NC18605",
       "manufacturer": "Corgi",
       "aircraft_name": "Dixie Clipper",
@@ -3021,7 +3021,7 @@
       "airline": "Sondermaße",
       "airline_row": "Lufthansa",
       "aircraft_id": "DOR-DOX",
-      "aircraft_type": "Dornier Do X (Lufthansa)",
+      "aircraft_type": "Dornier Do X",
       "registration": "D-1929",
       "manufacturer": "Sky-Stars",
       "aircraft_name": "",

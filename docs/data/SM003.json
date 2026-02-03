@@ -9,7 +9,7 @@
   "extra_info": "",
   "shop_url": "https://www.ebay.de/itm/205689921146",
   "aircraft_id": "DOR-DOX",
-  "aircraft_type": "Dornier Do X (Lufthansa)",
+  "aircraft_type": "Dornier Do X",
   "registration": "D-1929",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "DOR-DOX",
-    "type": "Dornier Do X (Lufthansa)",
+    "type": "Dornier Do X",
     "registration": "D-1929"
   },
   "livery": {

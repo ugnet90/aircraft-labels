@@ -9,7 +9,7 @@
   "extra_info": "",
   "shop_url": "",
   "aircraft_id": "BOE-314",
-  "aircraft_type": "Boeing 314 Clipper (Pan Am)",
+  "aircraft_type": "Boeing 314 Clipper",
   "registration": "NC18605",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-314",
-    "type": "Boeing 314 Clipper (Pan Am)",
+    "type": "Boeing 314 Clipper",
     "registration": "NC18605"
   },
   "livery": {

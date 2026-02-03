@@ -9,7 +9,7 @@
   "extra_info": "erstes AUA-Flugzeug",
   "shop_url": "",
   "aircraft_id": "VIC-Viscount-700",
-  "aircraft_type": "Vickers Viscount 779 (Austrian)",
+  "aircraft_type": "Vickers Viscount 779",
   "registration": "OE-LAB",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "VIC-Viscount-700",
-    "type": "Vickers Viscount 779 (Austrian)",
+    "type": "Vickers Viscount 779",
     "registration": "OE-LAB"
   },
   "livery": {

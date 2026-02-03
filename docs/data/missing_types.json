@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 384,
-    "present_types": 126,
+    "present_types": 124,
     "missing_types": 258,
-    "ordered_types": 0,
+    "ordered_types": 2,
     "models": 167
   },
   "missing_types": [
@@ -1556,6 +1556,18 @@
       "Typ_anzeige": "Yakowlew Yak-42",
       "manufacturer": "Yakowlew",
       "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A330-900neo",
+      "Typ_anzeige": "Airbus A330-900neo",
+      "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOE-747-SCA",
+      "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
+      "manufacturer": "Boeing",
+      "status": "ordered"
     }
   ]
 }
