@@ -284,7 +284,10 @@
     let items = state.all.filter(it => {
       if (!matchesQuery(it, q)) return false;
       if (!matchesAirline(it, airline)) return false;
-      if (group && (it.airline || "") !== group) return false;   // ⭐ Airline-Gruppe
+      const grp = (it.airline || it.group || it.airline_group || "");
+      if (group && grp !== group) return false;   // ⭐ Airline-Gruppe
+
+      // if (group && (it.airline || "") !== group) return false;
       if (!matchesType(it, type)) return false;
       if (!matchesScale(it, scale)) return false;
       if (!matchesFlown(it, flown)) return false;
@@ -329,6 +332,7 @@
       );
 
       document.getElementById("q").addEventListener("input", apply);
+      document.getElementById("group").addEventListener("change", apply);
       document.getElementById("airline").addEventListener("change", apply);
       document.getElementById("type").addEventListener("change", apply);
       document.getElementById("scale").addEventListener("change", apply);
