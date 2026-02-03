@@ -5,15 +5,15 @@
   "airline_row": "Luftwaffe (German Air Force)",
   "manufacturer": "Dragon Wings",
   "aircraft_name": "",
-  "livery_note": "",
+  "livery_note": "Bundesrepublik Deutschland",
   "extra_info": "Regierungsmaschine Deutschland",
   "shop_url": "",
   "aircraft_id": "AIB-A310-304VIP",
-  "aircraft_type": "Airbus A310-304 (Bundesrepublik Deutschland)",
+  "aircraft_type": "Airbus A310-304",
   "registration": "10+21",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:Regierungsmaschine Deutschland",
+  "zusatzinfo": "I:Regierungsmaschine Deutschland | L:Bundesrepublik Deutschland",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 27.5,
@@ -32,14 +32,14 @@
   },
   "aircraft": {
     "aircraft_id": "AIB-A310-304VIP",
-    "type": "Airbus A310-304 (Bundesrepublik Deutschland)",
+    "type": "Airbus A310-304",
     "registration": "10+21"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:Regierungsmaschine Deutschland",
-    "note": ""
+    "notes_raw": "I:Regierungsmaschine Deutschland | L:Bundesrepublik Deutschland",
+    "note": "Bundesrepublik Deutschland"
   },
   "model": {
     "scale": "1:400",

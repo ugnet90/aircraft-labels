@@ -4,16 +4,16 @@
   "airline": "Sonstige Airlines",
   "airline_row": "United States Air Force",
   "manufacturer": "Gemini Jets",
-  "aircraft_name": "",
+  "aircraft_name": "Air Force Two",
   "livery_note": "",
   "extra_info": "B757-200",
   "shop_url": "https://mw-moba.de/Produkt/boeing-757-200-united-states-of-america-80001-gemini-jets-gjafo254-1400/",
   "aircraft_id": "BOE-C32A",
-  "aircraft_type": "Boeing C-32A (Air Force Two)",
+  "aircraft_type": "Boeing C-32A",
   "registration": "80001",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:B757-200",
+  "zusatzinfo": "I:B757-200 | N:Air Force Two",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 35.0,
@@ -32,13 +32,13 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-C32A",
-    "type": "Boeing C-32A (Air Force Two)",
+    "type": "Boeing C-32A",
     "registration": "80001"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:B757-200",
+    "notes_raw": "I:B757-200 | N:Air Force Two",
     "note": ""
   },
   "model": {

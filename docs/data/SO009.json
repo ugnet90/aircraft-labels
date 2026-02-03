@@ -4,16 +4,16 @@
   "airline": "Sonstige Airlines",
   "airline_row": "United States Air Force",
   "manufacturer": "Herpa Wings",
-  "aircraft_name": "The INDEPENDENCE",
+  "aircraft_name": "The INDEPENDENCE | Air Force One",
   "livery_note": "",
   "extra_info": "US Air Force",
   "shop_url": "https://www.ebay.de/itm/375992577591",
   "aircraft_id": "DOU-VC118A",
-  "aircraft_type": "Douglas VC-118A (Independence, Air Force One)",
+  "aircraft_type": "Douglas VC-118A",
   "registration": "46-0505",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:US Air Force | N:The INDEPENDENCE",
+  "zusatzinfo": "I:US Air Force | N:The INDEPENDENCE | N:Air Force One",
   "special_note": "",
   "shop": "Ebay *industrial",
   "price": 27.5,
@@ -32,13 +32,13 @@
   },
   "aircraft": {
     "aircraft_id": "DOU-VC118A",
-    "type": "Douglas VC-118A (Independence, Air Force One)",
+    "type": "Douglas VC-118A",
     "registration": "46-0505"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:US Air Force | N:The INDEPENDENCE",
+    "notes_raw": "I:US Air Force | N:The INDEPENDENCE | N:Air Force One",
     "note": ""
   },
   "model": {

@@ -4,16 +4,16 @@
   "airline": "Sonstige Airlines",
   "airline_row": "United States Air Force",
   "manufacturer": "NG Models",
-  "aircraft_name": "",
+  "aircraft_name": "Air Force One",
   "livery_note": "",
   "extra_info": "B747-8",
   "shop_url": "https://www.ebay.de/itm/286878907569",
   "aircraft_id": "BOE-747-VC25B",
-  "aircraft_type": "Boeing VC-25B (Air Force One, 747-8I)",
+  "aircraft_type": "Boeing VC-25B",
   "registration": "30000",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:B747-8",
+  "zusatzinfo": "I:B747-8 | N:Air Force One",
   "special_note": "",
   "shop": "Ebay worldofwingseu",
   "price": 35.01,
@@ -32,13 +32,13 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-747-VC25B",
-    "type": "Boeing VC-25B (Air Force One, 747-8I)",
+    "type": "Boeing VC-25B",
     "registration": "30000"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:B747-8",
+    "notes_raw": "I:B747-8 | N:Air Force One",
     "note": ""
   },
   "model": {

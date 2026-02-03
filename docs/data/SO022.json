@@ -9,7 +9,7 @@
   "extra_info": "German Cargo",
   "shop_url": "https://www.ebay.de/itm/257315910925",
   "aircraft_id": "BOE-707-330C",
-  "aircraft_type": "Boeing 707-330C (German Cargo)",
+  "aircraft_type": "Boeing 707-330C",
   "registration": "D-ABUA",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-707-330C",
-    "type": "Boeing 707-330C (German Cargo)",
+    "type": "Boeing 707-330C",
     "registration": "D-ABUA"
   },
   "livery": {

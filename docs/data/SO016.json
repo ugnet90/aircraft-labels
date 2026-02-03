@@ -5,15 +5,15 @@
   "airline_row": "Luftwaffe (German Air Force)",
   "manufacturer": "JC Wings",
   "aircraft_name": "",
-  "livery_note": "",
+  "livery_note": "Bundesrepublik Deutschland",
   "extra_info": "Regierungsmaschine Deutschland - Luftwaffe",
   "shop_url": "https://mw-moba.de/Produkt/airbus-a350xwb-luftwaffe-bundesrepublik-deutschland-1001-jc-wings-lh4246-1400/",
   "aircraft_id": "AIB-ACJ350-900",
-  "aircraft_type": "Airbus ACJ350-900 (Bundesrepublik Deutschland)",
+  "aircraft_type": "Airbus ACJ350-900",
   "registration": "10+01",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:Regierungsmaschine Deutschland - Luftwaffe",
+  "zusatzinfo": "I:Regierungsmaschine Deutschland - Luftwaffe | L:Bundesrepublik Deutschland",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 30.0,
@@ -32,14 +32,14 @@
   },
   "aircraft": {
     "aircraft_id": "AIB-ACJ350-900",
-    "type": "Airbus ACJ350-900 (Bundesrepublik Deutschland)",
+    "type": "Airbus ACJ350-900",
     "registration": "10+01"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:Regierungsmaschine Deutschland - Luftwaffe",
-    "note": ""
+    "notes_raw": "I:Regierungsmaschine Deutschland - Luftwaffe | L:Bundesrepublik Deutschland",
+    "note": "Bundesrepublik Deutschland"
   },
   "model": {
     "scale": "1:400",

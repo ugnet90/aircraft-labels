@@ -5,15 +5,15 @@
   "airline_row": "United States Navy",
   "manufacturer": "Gemini Jets",
   "aircraft_name": "",
-  "livery_note": "",
+  "livery_note": "UNITED STATES NAVY",
   "extra_info": "B737-700",
   "shop_url": "https://mw-moba.de/Produkt/boeing-c-40-united-states-navy-ry-831-gemini-jets-gjusn295-1400/",
   "aircraft_id": "BOE-C40A",
-  "aircraft_type": "Boeing C-40A Clipper (US Navy)",
+  "aircraft_type": "Boeing C-40A Clipper",
   "registration": "RY-831",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:B737-700",
+  "zusatzinfo": "I:B737-700 | L:UNITED STATES NAVY",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 15.0,
@@ -32,14 +32,14 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-C40A",
-    "type": "Boeing C-40A Clipper (US Navy)",
+    "type": "Boeing C-40A Clipper",
     "registration": "RY-831"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:B737-700",
-    "note": ""
+    "notes_raw": "I:B737-700 | L:UNITED STATES NAVY",
+    "note": "UNITED STATES NAVY"
   },
   "model": {
     "scale": "1:400",

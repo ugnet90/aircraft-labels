@@ -4,16 +4,16 @@
   "airline": "Sonstige Airlines",
   "airline_row": "United States Air Force",
   "manufacturer": "Herpa Wings",
-  "aircraft_name": "",
+  "aircraft_name": "Air Force One",
   "livery_note": "",
   "extra_info": "B747-200B",
   "shop_url": "",
   "aircraft_id": "BOE-747-VC25A",
-  "aircraft_type": "Boeing VC-25A (Air Force One)",
+  "aircraft_type": "Boeing VC-25A",
   "registration": "28000",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:B747-200B",
+  "zusatzinfo": "I:B747-200B | N:Air Force One",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
   "price": 18.0,
@@ -32,13 +32,13 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-747-VC25A",
-    "type": "Boeing VC-25A (Air Force One)",
+    "type": "Boeing VC-25A",
     "registration": "28000"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:B747-200B",
+    "notes_raw": "I:B747-200B | N:Air Force One",
     "note": ""
   },
   "model": {

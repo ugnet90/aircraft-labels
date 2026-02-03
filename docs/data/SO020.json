@@ -9,7 +9,7 @@
   "extra_info": "US Army; Prototyp",
   "shop_url": "https://www.aviationmegastore.com/de/modelle/boeing-767-200-airborne-optical-adjunct--us-army-prototype-n767ba-patriot-model-pt-400-015-214215.html",
   "aircraft_id": "BOE-767-AOA",
-  "aircraft_type": "Boeing 767-200 Airborne Optical Adjunct (US Army)",
+  "aircraft_type": "Boeing 767-200 Airborne Optical Adjunct",
   "registration": "N767BA",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "BOE-767-AOA",
-    "type": "Boeing 767-200 Airborne Optical Adjunct (US Army)",
+    "type": "Boeing 767-200 Airborne Optical Adjunct",
     "registration": "N767BA"
   },
   "livery": {

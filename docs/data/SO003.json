@@ -9,7 +9,7 @@
   "extra_info": "",
   "shop_url": "",
   "aircraft_id": "VIC-Viscount-800",
-  "aircraft_type": "Vickers Viscount 800 (Arkia)",
+  "aircraft_type": "Vickers Viscount 800",
   "registration": "4X-AVF",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "VIC-Viscount-800",
-    "type": "Vickers Viscount 800 (Arkia)",
+    "type": "Vickers Viscount 800",
     "registration": "4X-AVF"
   },
   "livery": {

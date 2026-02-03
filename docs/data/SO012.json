@@ -5,15 +5,15 @@
   "airline_row": "United States Air Force",
   "manufacturer": "Aeroclassics",
   "aircraft_name": "",
-  "livery_note": "",
+  "livery_note": "U.S. Air Force",
   "extra_info": "50th TFW 1963",
   "shop_url": "https://www.ebay.de/itm/297706525341?_skw=1%2F400&itmmeta=01K8TKQVTF57ZBTZ7GM4DXEWMJ&hash=item4550b1129d%3Ag%3ARk0AAeSwrGJo-mV5&LH_Auction=1",
   "aircraft_id": "DOU-C47",
-  "aircraft_type": "Douglas C-47 Skytrain (USAF)",
+  "aircraft_type": "Douglas C-47 Skytrain",
   "registration": "O-76671",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:50th TFW 1963",
+  "zusatzinfo": "I:50th TFW 1963 | L:U.S. Air Force",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
   "price": 44.14,
@@ -32,14 +32,14 @@
   },
   "aircraft": {
     "aircraft_id": "DOU-C47",
-    "type": "Douglas C-47 Skytrain (USAF)",
+    "type": "Douglas C-47 Skytrain",
     "registration": "O-76671"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:50th TFW 1963",
-    "note": ""
+    "notes_raw": "I:50th TFW 1963 | L:U.S. Air Force",
+    "note": "U.S. Air Force"
   },
   "model": {
     "scale": "1:400",

@@ -9,7 +9,7 @@
   "extra_info": "Composites 348 White Knight II (N348MS & N202VG)",
   "shop_url": "https://www.flight-shop.de/",
   "aircraft_id": "SCA-SS2",
-  "aircraft_type": "SpaceShipTwo (Virgin Galactic)",
+  "aircraft_type": "SpaceShipTwo",
   "registration": "N348MS",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "SCA-SS2",
-    "type": "SpaceShipTwo (Virgin Galactic)",
+    "type": "SpaceShipTwo",
     "registration": "N348MS"
   },
   "livery": {

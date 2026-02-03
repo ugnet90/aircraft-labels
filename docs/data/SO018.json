@@ -5,15 +5,15 @@
   "airline_row": "United States Air Force",
   "manufacturer": "Herpa Wings",
   "aircraft_name": "",
-  "livery_note": "",
+  "livery_note": "U.S. Air Force",
   "extra_info": "Air and Sea Rescue",
   "shop_url": "https://mw-moba.de/Produkt/pby-5a-catalina-us-air-force-air-and-sea-rescue-herpa-561747-1400/",
   "aircraft_id": "CSA-PBY5",
-  "aircraft_type": "Consolidated PBY-5 Catalina (USAF)",
+  "aircraft_type": "Consolidated PBY-5 Catalina",
   "registration": "433939",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "I:Air and Sea Rescue",
+  "zusatzinfo": "I:Air and Sea Rescue | L:U.S. Air Force",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 45.0,
@@ -32,14 +32,14 @@
   },
   "aircraft": {
     "aircraft_id": "CSA-PBY5",
-    "type": "Consolidated PBY-5 Catalina (USAF)",
+    "type": "Consolidated PBY-5 Catalina",
     "registration": "433939"
   },
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "I:Air and Sea Rescue",
-    "note": ""
+    "notes_raw": "I:Air and Sea Rescue | L:U.S. Air Force",
+    "note": "U.S. Air Force"
   },
   "model": {
     "scale": "1:400",

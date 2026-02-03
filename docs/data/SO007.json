@@ -9,7 +9,7 @@
   "extra_info": "Tante Ju",
   "shop_url": "https://www.2dehands.be/u/jawan/33093180/",
   "aircraft_id": "JUN-JU52-3M",
-  "aircraft_type": "Junkers JU-52 (Swiss Air Force)",
+  "aircraft_type": "Junkers JU-52",
   "registration": "A-703",
   "livery_name": "",
   "parent_livery": "",
@@ -32,7 +32,7 @@
   },
   "aircraft": {
     "aircraft_id": "JUN-JU52-3M",
-    "type": "Junkers JU-52 (Swiss Air Force)",
+    "type": "Junkers JU-52",
     "registration": "A-703"
   },
   "livery": {
