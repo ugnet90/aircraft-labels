@@ -168,8 +168,8 @@
     document.getElementById("count").textContent = `${items.length} fehlende Typen`;
 
     const tbody = document.querySelector("#tbl tbody");
-    items = sortMissing(items);
-    tbody.innerHTML = items.map(x => `
+    const sorted = sortMissing(items);
+    tbody.innerHTML = sorted.map(x => `
       <tr class="${esc(norm(x.status))}">
         <td>
           <span class="badge ${esc(norm(x.status))}">
