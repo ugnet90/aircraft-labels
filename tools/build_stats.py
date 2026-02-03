@@ -24,6 +24,11 @@ def read_csv(path: Path, delimiter=";"):
 def norm(s) -> str:
     return (s or "").strip()
 
+def is_present(row) -> bool:
+    v = (row.get("vorhanden", "") or "").strip().lower()
+    return v in ("wahr", "true", "1", "x", "ja", "yes")
+
+
 def main():
     models = read_csv(MODELS_CSV, delimiter=";")
     pax = read_csv(PASSENGER_CSV, delimiter=";")
@@ -34,8 +39,9 @@ def main():
     present_ids = set()
     for r in models:
         aid = norm(r.get("aircraft_id"))
-        if aid:
+        if aid and is_present(r):
             present_ids.add(aid)
+
             
     # ordered = bestellt_am gesetzt UND noch nicht angekommen
     ordered_ids = set()
@@ -43,8 +49,9 @@ def main():
         aid = norm(r.get("aircraft_id"))
         bestellt = norm(r.get("bestellt_am"))
         angekommen = norm(r.get("angekommen"))
-        if aid and bestellt and not angekommen:
+        if aid and (not is_present(r)) and bestellt and not angekommen:
             ordered_ids.add(aid)
+
 
     id_to_label = {}
     id_to_manu = {}
@@ -117,10 +124,6 @@ def main():
     present_counts = defaultdict(lambda: defaultdict(int))
     ordered_counts = defaultdict(lambda: defaultdict(int))
     seen_types = set()
-
-    def is_present(row):
-        v = (row.get("vorhanden", "") or "").strip().lower()
-        return v in ("wahr", "true", "1", "x", "ja", "yes")
 
     for r in models:
         group = norm(r.get("airline")) or norm(r.get("airline_code"))
