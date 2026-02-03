@@ -38,6 +38,9 @@
 
 <div class="bar">
   <input id="q" placeholder="Suche (ID, Reg, Typ, Bemalung …)" />
+  <label class="muted">Airline-Gruppe:
+    <select id="group"></select>
+  </label>
   <select id="airline">
     <option value="">Alle Airlines</option>
   </select>
@@ -53,6 +56,7 @@
     <option value="false">Mitgeflogen: nein</option>
   </select>
   <select id="sort">
+    <option value="group_model">Sortierung: Airline-Gruppe → Modell-ID</option>
     <option value="airline_model">Sortierung: Airline → Modell-ID</option>
     <option value="arrived_desc">Sortierung: angekommen (neu → alt)</option>
     <option value="arrived_asc">Sortierung: angekommen (alt → neu)</option>
@@ -187,6 +191,15 @@
       arr.sort((a,b)=> (a.registration||"").localeCompare(b.registration||"") || (a.model_id||"").localeCompare(b.model_id||""));
       return arr;
     }
+
+    if(mode === "group_model"){
+      arr.sort((a,b)=>
+        (a.airline||"").localeCompare(b.airline||"") ||
+        (a.model_id||"").localeCompare(b.model_id||"")
+      );
+      return arr;
+    }
+
     arr.sort((a,b)=>
       (a.airline_row||"").localeCompare(b.airline_row||"") ||
       (a.model_id||"").localeCompare(b.model_id||"")
@@ -207,6 +220,7 @@
         <thead>
           <tr>
             <th>Modell-ID</th>
+            <th>Airline-Gruppe</th>
             <th>Airline</th>
             <th>Maßstab</th>
             <th>Mitgeflogen</th>
@@ -224,6 +238,7 @@
       html += `
         <tr>
           <td class="mono"><a href="${esc(link)}">${esc(it.model_id)}</a></td>
+          <td>${esc(it.airline || "")}</td>
           <td>
             <a href="#" data-airline="${esc(it.airline_row || "")}">
               ${esc(it.airline_row || it.airline || it.airline_code || "")}
@@ -258,24 +273,28 @@
 
   function apply(){
     const q = norm(document.getElementById("q").value);
+    const group = document.getElementById("group").value;
     const airline = document.getElementById("airline").value;
     const type = document.getElementById("type").value;
     const scale = document.getElementById("scale").value;
     const flown = document.getElementById("flown").value;
     const sort = document.getElementById("sort").value;
-
-    let items = state.all.filter(it =>
-      matchesQuery(it, q) &&
-      matchesAirline(it, airline) &&
-      matchesType(it, type) &&
-      matchesScale(it, scale) &&
-      matchesFlown(it, flown)
-    );
-
+  
+    let items = state.all.filter(it => {
+      if (!matchesQuery(it, q)) return false;
+      if (!matchesAirline(it, airline)) return false;
+      if (group && (it.airline || "") !== group) return false;   // ⭐ Airline-Gruppe
+      if (!matchesType(it, type)) return false;
+      if (!matchesScale(it, scale)) return false;
+      if (!matchesFlown(it, flown)) return false;
+      return true;
+    });
+  
     items = sortItems(items, sort);
     state.filtered = items;
     render(items);
   }
+
 
   async function main(){
     try{
@@ -288,6 +307,11 @@
       document.getElementById("meta").innerHTML =
         `<span class="pill">Stand: <span class="mono">${esc(formatDateTimeDE(data.generated_at || ""))}</span></span>` +
         `<span class="pill">Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span></span>`;
+      
+      buildOptions(state.all, "group",
+        it => (it.airline || ""),   // airline = Gruppe (Sheet)
+        it => (it.airline || "")
+      );
 
       buildOptions(state.all, "airline",
         it => (it.airline_row || ""),
@@ -311,11 +335,12 @@
       document.getElementById("sort").addEventListener("change", apply);
       document.getElementById("reset").addEventListener("click", () => {
         document.getElementById("q").value = "";
+        document.getElementById("group").value = "";
         document.getElementById("airline").value = "";
         document.getElementById("type").value = "";
         document.getElementById("scale").value = "";
         document.getElementById("flown").value = "";
-        document.getElementById("sort").value = "airline_model";
+        document.getElementById("sort").value = "group_model";
         apply();
       });
 
