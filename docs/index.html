@@ -251,11 +251,13 @@
       html += `
         <tr>
           <td class="mono">
-            ${
-              (it.model_id || "").startsWith("ORD-")
-                ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
-                : `${esc(it.model_id || "")}`
-            }
+            <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
+              ${
+                (it.model_id || "").startsWith("ORD-")
+                  ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
+                  : `${esc(it.model_id || "")}`
+              }
+            </a>
           </td>
           <td>
             <a href="#" data-group="${esc(it.airline || "")}">
