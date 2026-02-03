@@ -28,6 +28,18 @@
       border-color:#e0b200;
       background:#fff3c4;
     }
+    .badge-id{
+      display:inline-block;
+      padding:2px 8px;
+      border-radius:999px;
+      font-size:11px;
+      border:1px solid #ddd;
+      font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+    }
+    .badge-id.ord{
+      background:#eef6ff;
+      border-color:#cfe3ff;
+    }
 
   </style>
 </head>
@@ -238,8 +250,18 @@
       const link = `./model.html?id=${encodeURIComponent(it.model_id)}`;
       html += `
         <tr>
-          <td class="mono"><a href="${esc(link)}">${esc(it.model_id)}</a></td>
-          <td>${esc(it.airline || "")}</td>
+          <td class="mono">
+            ${
+              (it.model_id || "").startsWith("ORD-")
+                ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
+                : `${esc(it.model_id || "")}`
+            }
+          </td>
+          <td>
+            <a href="#" data-group="${esc(it.airline || "")}">
+              ${esc(it.airline || "")}
+            </a>
+          </td>
           <td>
             <a href="#" data-airline="${esc(it.airline_row || "")}">
               ${esc(it.airline_row || it.airline || it.airline_code || "")}
@@ -383,24 +405,29 @@
   }
 
   document.addEventListener("click", (ev) => {
-    const a = ev.target.closest("a[data-airline], a[data-type]");
+    const a = ev.target.closest("a[data-airline], a[data-type], a[data-group]");
     if(!a) return;
   
     ev.preventDefault();
   
     const airline = a.getAttribute("data-airline");
     const type = a.getAttribute("data-type");
+    const group = a.getAttribute("data-group");
   
     // "Fresh" start: alle Filter zurücksetzen
     document.getElementById("q").value = "";
+    document.getElementById("group").value = "";
     document.getElementById("airline").value = "";
     document.getElementById("type").value = "";
     document.getElementById("scale").value = "";
     document.getElementById("flown").value = "";
     // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
-    // document.getElementById("sort").value = "airline_model";
+    // document.getElementById("sort").value = "group_model";
   
     // Nur den geklickten Filter setzen
+    if(group !== null){
+      document.getElementById("group").value = group;
+    }
     if(airline !== null){
       document.getElementById("airline").value = airline;
     }
@@ -412,6 +439,7 @@
   });
   
   main();
+
 </script>
 </body>
 </html>
