@@ -56,6 +56,38 @@
       #matrixCard{display:none}
       #mobileCard{display:block}
     }
+    /* Typ-Spalte schmal + Umbruch */
+    th.typeCol, td.typeCol{
+      max-width: 160px;
+      width: 160px;
+      white-space: normal;
+      word-break: break-word;
+      line-height: 1.15;
+    }
+    /* Airline-Gruppen senkrecht */
+    th.colHead{
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      white-space: nowrap;
+      padding: 8px 6px;
+      height: 150px;
+      vertical-align: bottom;
+    }
+    /* Bestellt-Hervorhebung */
+    .cellOrdered{
+      background:#fff8e1 !important;
+    }
+    .badgeOrdered{
+      display:inline-block;
+      margin-left:6px;
+      padding:2px 6px;
+      border-radius:999px;
+      font-size:11px;
+      border:1px solid #e0b200;
+      background:#fff3c4;
+    }
+
+
   </style>
 </head>
 <body>
@@ -129,9 +161,11 @@
     const airQ = (document.getElementById("airQ").value || "").trim().toLowerCase();
     const typeQ = (document.getElementById("typeQ").value || "").trim().toLowerCase();
 
-    const airlines = data.airlines || [];
+    const airlines = data.groups || data.airlines || [];
     const types = data.types || [];
-    const matrix = data.matrix || [];
+    const pm = data.present_matrix || data.matrix || [];
+    const om = data.ordered_matrix || [];
+
 
     const ai = airlines
       .map((a, idx) => ({a, idx}))
@@ -141,24 +175,30 @@
       .map((t, idx) => ({t, idx}))
       .filter(x => !typeQ || x.t.toLowerCase().includes(typeQ));
 
-    let html = "<thead><tr><th>Typ \\ Airline</th>";
+    let html = "<thead><tr><th class='typeCol'>Typ \\ Airline</th>";
     for(const x of ai){
-      html += `<th>${esc(x.a)}</th>`;
+      html += `<th class="colHead">${esc(x.a)}</th>`;
     }
+
     html += "</tr></thead><tbody>";
 
     for(const y of ti){
-      html += `<tr><td>${esc(y.t)}</td>`;
+      html += `<tr><td class="typeCol">${esc(y.t)}</td>`;
       for(const x of ai){
-        const n = (matrix[x.idx] && matrix[x.idx][y.idx]) ? matrix[x.idx][y.idx] : 0;
+        const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
+        const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
+
 
         // optional: click to jump to index.html filtered (airline + type)
-        if(n){
-          const href = `./index.html?airline=${encodeURIComponent(x.a)}&type=${encodeURIComponent(y.t)}`;
-          html += `<td class="num"><a href="${esc(href)}" title="Öffnen in Übersicht">${n}</a></td>`;
+        if(p || o){
+          const href = `./index.html?group=${encodeURIComponent(x.a)}&type=${encodeURIComponent(y.t)}`;
+          const badge = o ? `<span class="badgeOrdered">+${o}</span>` : "";
+          const cls = o ? "num cellOrdered" : "num";
+          html += `<td class="${cls}"><a href="${esc(href)}" title="In Übersicht öffnen">${p}</a>${badge}</td>`;
         }else{
           html += `<td class="num"></td>`;
         }
+
       }
       html += "</tr>";
     }
