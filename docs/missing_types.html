@@ -112,6 +112,24 @@
 
   let all = [];
 
+  function sortMissing(items){
+    const status = norm(document.getElementById("status").value);
+  
+    // Status == "" bedeutet "Alle"
+    if(!status){
+      // Wunsch: bei "Alle" nach aircraft_id sortieren
+      return items.slice().sort((a,b)=>
+        (norm(a.aircraft_id)).localeCompare(norm(b.aircraft_id))
+      );
+    }
+  
+    // bei missing / ordered: Status + aircraft_id
+    return items.slice().sort((a,b)=>
+      norm(a.status).localeCompare(norm(b.status)) ||
+      norm(a.aircraft_id).localeCompare(norm(b.aircraft_id))
+    );
+  }
+
   function buildOptions(items){
     const sel = document.getElementById("manu");
     // keep first option ("Alle"), rebuild the rest
@@ -150,6 +168,7 @@
     document.getElementById("count").textContent = `${items.length} fehlende Typen`;
 
     const tbody = document.querySelector("#tbl tbody");
+    items = sortMissing(items);
     tbody.innerHTML = items.map(x => `
       <tr class="${esc(norm(x.status))}">
         <td>
