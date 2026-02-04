@@ -307,32 +307,43 @@
       const showAirlineText = (asText(d.logo_speaking).toUpperCase() !== "WAHR");
 
       // Headline: Typ + Reg + (optional) Taufname, Airline nur wenn Logo NICHT sprechend ist
-      const headline = [
-        showAirlineText ? airline : "",
+      const logoSpeaking = asText(d.logo_speaking).toUpperCase() === "WAHR";
+      const showAirlineText = !logoSpeaking;
+      
+      const titleMain = [
         typ,
         reg,
         d.aircraft_name ? `„${d.aircraft_name}“` : ""
       ].filter(Boolean).join(" · ") || id;
-
-
-      document.title = headline;
+      
+      document.title = showAirlineText
+        ? `${airline} · ${titleMain}`
+        : titleMain;
       
       const logoUrl = logoSrc(d);
       const logoHtml = logoUrl
-        ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:28px;vertical-align:middle;margin-right:10px">`
+        ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:34px;vertical-align:middle;margin-right:10px">`
         : "";
       
-      document.getElementById("title").innerHTML =
-        `${logoHtml}${esc(headline)}`;
+      // Header: Logo links + Title (Typ/Reg) rechts
+      document.getElementById("title").innerHTML = `${logoHtml}${esc(titleMain)}`;
+      
+      // Airline als eigene Zeile nur wenn nicht redundant
+      const airlineLine = showAirlineText && airline ? airline : "";
+
+      
+      const orderedAt = asText(d.ordered_at || "");
+      const orderedText = (d.ordered && orderedAt) ? `Bestellt: ${formatDateDE(orderedAt)}` : "";
       
       const sub = [
-        d.model_id ? `Modell-ID: ${d.model_id}` : "",
-        d.aircraft_id ? `aircraft_id: ${d.aircraft_id}` : "",
+        airlineLine,
         livery ? `Livery: ${livery}` : "",
-        d.livery_note ? `Bemalung: ${d.livery_note}` : ""
+        d.livery_note ? `Bemalung: ${d.livery_note}` : "",
+        orderedText
       ].filter(Boolean).join(" | ");
-
+      
       document.getElementById("subtitle").textContent = sub;
+
       // Status (Bestellt)
       const statusPill = document.getElementById("statuspill");
       const orderedAt = asText(d.ordered_at || d.orderedAt || "");
