@@ -26,6 +26,9 @@
     td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
     .badge{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
     .badge-warn{border-color:#c00;background:#fff5f5}
+    .sectionGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:640px){ .sectionGrid{grid-template-columns:1fr} }
+
   </style>
 </head>
 <body>
@@ -301,12 +304,16 @@
       const reg = asText(d.registration) || asText(d.aircraft?.registration);
       const livery = asText(d.livery_name) || asText(d.livery?.code);
 
+      const showAirlineText = (asText(d.logo_speaking).toUpperCase() !== "WAHR");
+
+      // Headline: Typ + Reg + (optional) Taufname, Airline nur wenn Logo NICHT sprechend ist
       const headline = [
-        airline,
+        showAirlineText ? airline : "",
         typ,
         reg,
         d.aircraft_name ? `„${d.aircraft_name}“` : ""
       ].filter(Boolean).join(" · ") || id;
+
 
       document.title = headline;
       
@@ -406,7 +413,9 @@
       const v8Block = renderV8Table(d.aircraft_full_v8);
 
       document.getElementById("content").innerHTML =
-        modelBlock + aircraftBlock + liveryBlock + linksBlock + v8Block + sourceBlock;
+        `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>` +
+        liveryBlock + linksBlock + v8Block + sourceBlock;
+
 
     }catch(e){
       document.getElementById("content").innerHTML =
