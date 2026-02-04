@@ -345,17 +345,17 @@
       document.getElementById("subtitle").textContent = sub;
 
       // Status (Bestellt)
-      const statusPill = document.getElementById("statuspill");
-      const orderedAt = asText(d.ordered_at || d.orderedAt || "");
-      const isOrdered = !!d.ordered && !!orderedAt;
+      // const statusPill = document.getElementById("statuspill");
+      // const orderedAt = asText(d.ordered_at || d.orderedAt || "");
+      // const isOrdered = !!d.ordered && !!orderedAt;
       
-      if(isOrdered){
-        statusPill.style.display = "";
-        statusPill.textContent = `Bestellt: ${formatDateDE(orderedAt)}`;
-      }else{
-        statusPill.style.display = "none";
-        statusPill.textContent = "";
-      }
+      // if(isOrdered){
+      //   statusPill.style.display = "";
+      //   statusPill.textContent = `Bestellt: ${formatDateDE(orderedAt)}`;
+      //  }else{
+      //   statusPill.style.display = "none";
+      //   statusPill.textContent = "";
+      // }
 
       // Blocks
       const modelBlock = `
