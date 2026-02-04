@@ -28,7 +28,13 @@
     .badge-warn{border-color:#c00;background:#fff5f5}
     .sectionGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     @media (max-width:640px){ .sectionGrid{grid-template-columns:1fr} }
-
+    .sectionTitle{font-weight:700;margin:0 0 8px 0}
+    .section{border:1px solid #eee;border-radius:12px;padding:12px;margin:12px 0;background:#fff}
+    .section.sam{background:#fbfbff;border-color:#e7e7ff}
+    .kv{display:grid;grid-template-columns:160px 1fr;gap:6px 12px}
+    .k{color:#666}
+    .v{color:#111}
+    @media (max-width:640px){ .kv{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
@@ -93,6 +99,35 @@
   function row(k,v){
     if(v === undefined || v === null || v === "") return "";
     return `<div><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`;
+  }
+
+  function prettyHost(url){
+    try{
+      const u = new URL(url);
+      return u.hostname.replace(/^www\./, "");
+    }catch(e){
+      return "";
+    }
+  }
+  
+  function linkText(url, preferred, fallback){
+    const p = asText(preferred);
+    if(p) return p;
+    const h = prettyHost(url);
+    if(h) return h;
+    return fallback || "Link";
+  }
+  
+  function aLink(url, preferredText, fallbackText){
+    const u = asText(url);
+    if(!u) return "";
+    const t = linkText(u, preferredText, fallbackText);
+    return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+  }
+  
+  function rowLink(label, url, preferredText, fallbackText){
+    const h = aLink(url, preferredText, fallbackText);
+    return h ? row(label, h) : "";
   }
 
   function linkRow(k, url){
