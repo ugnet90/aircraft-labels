@@ -64,7 +64,8 @@
     "id": "VO_TYR",
     "link": "https://assets.planespotters.net/files/airlines/9/tyrolean-airways_opk.jpg",
     "name": "Tiroler Luftfahrt GesmbH",
-    "airline": "Tyrolean Airways"
+    "airline": "Tyrolean Airways",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "FOK-F70",

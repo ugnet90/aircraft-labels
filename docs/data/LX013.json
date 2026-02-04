@@ -64,7 +64,8 @@
     "id": "LX_SWR",
     "link": "https://assets.planespotters.net/files/airlines/9/swiss_8c838e.svg",
     "name": "Swiss International Air Lines Ltd.",
-    "airline": "Swiss"
+    "airline": "Swiss",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "CON-CV880",

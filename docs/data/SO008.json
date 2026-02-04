@@ -64,7 +64,8 @@
     "id": "US_VGX",
     "link": "https://assets.planespotters.net/files/airlines/9/virgin-galactic_1fb966_opk.png",
     "name": "Virgin Galactic Holdings Incorporated",
-    "airline": "Virgin Galactic"
+    "airline": "Virgin Galactic",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "SCA-SS2",

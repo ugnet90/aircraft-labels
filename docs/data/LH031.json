@@ -64,7 +64,8 @@
     "id": "LH_REG",
     "link": "https://assets.planespotters.net/files/airlines/8/lufthansa-regional_c9af78_opk.jpg",
     "name": "-",
-    "airline": "Lufthansa Regional"
+    "airline": "Lufthansa Regional",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "EMB-E190",

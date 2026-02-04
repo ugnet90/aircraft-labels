@@ -64,7 +64,8 @@
     "id": "UR_ADB",
     "link": "https://assets.planespotters.net/files/airlines/0/antonov-design-bureau_58ff33_opk.png",
     "name": "-",
-    "airline": "Antonov Airlines"
+    "airline": "Antonov Airlines",
+    "logo_speaking": "Falsch"
   },
   "aircraft_full_v8": {
     "aircraft_id": "ANT-An225",

@@ -64,7 +64,8 @@
     "id": "A5_HOP",
     "link": "https://assets.planespotters.net/files/airlines/8/air-france-hop_254f8e.svg",
     "name": "-",
-    "airline": "Air France HOP"
+    "airline": "Air France HOP",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "EMB-E170",

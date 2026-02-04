@@ -64,7 +64,8 @@
     "id": "TP_CAR",
     "link": "https://assets.planespotters.net/files/airlines/7/tap-air-cargo_8e4046_opr.jpg",
     "name": "-",
-    "airline": "TAP Air Cargo"
+    "airline": "TAP Air Cargo",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A330-200-SL",

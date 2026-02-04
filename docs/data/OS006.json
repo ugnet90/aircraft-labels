@@ -64,7 +64,8 @@
     "id": "OS_AUA",
     "link": "https://assets.planespotters.net/files/airlines/1/austrian-airlines_1be7ce.svg",
     "name": "Austrian Airlines AG",
-    "airline": "Austrian"
+    "airline": "Austrian",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "SUD-Caravelle-VIR",

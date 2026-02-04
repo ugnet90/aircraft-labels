@@ -64,7 +64,8 @@
     "id": "FI_ICE",
     "link": "https://assets.planespotters.net/files/airlines/3/icelandair_732c13.svg",
     "name": "Flugleidir HF.",
-    "airline": "Icelandair"
+    "airline": "Icelandair",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-757-200-WL",

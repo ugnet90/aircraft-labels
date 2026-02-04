@@ -64,7 +64,8 @@
     "id": "CH_SUI",
     "link": "https://assets.planespotters.net/files/airlines/0/swiss-air-force_3f0682.svg",
     "name": "-",
-    "airline": "Schweizer Luftwaffe (Swiss Air Force)"
+    "airline": "Schweizer Luftwaffe (Swiss Air Force)",
+    "logo_speaking": "Falsch"
   },
   "aircraft_full_v8": {
     "aircraft_id": "JUN-JU52-3M",

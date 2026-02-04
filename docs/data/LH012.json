@@ -64,7 +64,8 @@
     "id": "LH_TEA",
     "link": "https://assets.planespotters.net/files/airlines/7/team-lufthansa_c89e2c_opk.jpg",
     "name": "-",
-    "airline": "Team Lufthansa"
+    "airline": "Team Lufthansa",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "FOK-F50",

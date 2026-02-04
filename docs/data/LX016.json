@@ -64,7 +64,8 @@
     "id": "SR_SWR",
     "link": "https://assets.planespotters.net/files/airlines/5/swissair_30e039_opk.png",
     "name": "Schweizerische Luftverkehr-Aktiengesellschaft",
-    "airline": "Swissair"
+    "airline": "Swissair",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-50",

@@ -64,7 +64,8 @@
     "id": "US_UAF",
     "link": "https://assets.planespotters.net/files/airlines/8/usaf-united-states-air-force_c52411_opk.png",
     "name": "United States Air Force (USAF)",
-    "airline": "United States Air Force"
+    "airline": "United States Air Force",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-C32A",

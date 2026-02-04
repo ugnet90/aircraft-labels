@@ -64,7 +64,8 @@
     "id": "OS_ARR",
     "link": "https://assets.planespotters.net/files/airlines/7/austrian-arrows_opk.jpg",
     "name": "-",
-    "airline": "Austrian Arrows"
+    "airline": "Austrian Arrows",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "DHC-DHC8-400",

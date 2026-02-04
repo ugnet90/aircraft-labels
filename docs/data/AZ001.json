@@ -64,7 +64,8 @@
     "id": "AZ_AZA",
     "link": "https://assets.planespotters.net/files/airlines/6/alitalia-linee-aeree-italiane_34bf65_opr.png",
     "name": "Alitalia - Linee Aeree Italiane SpA",
-    "airline": "Alitalia"
+    "airline": "Alitalia",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-40",

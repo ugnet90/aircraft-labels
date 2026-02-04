@@ -64,7 +64,8 @@
     "id": "BA_BOA",
     "link": "https://assets.planespotters.net/files/airlines/1/british-overseas-airways-corporation-boac_2f6258_opk.png",
     "name": "British Overseas Airways Corporation",
-    "airline": "BOAC"
+    "airline": "BOAC",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BRI-Britannia-312",

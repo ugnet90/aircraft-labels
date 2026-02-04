@@ -64,7 +64,8 @@
     "id": "SK_SAS",
     "link": "https://assets.planespotters.net/files/airlines/2/sas_160938_opk.jpg",
     "name": "Scandinavian Airlines System Denmark-Norway-Sweden",
-    "airline": "SAS"
+    "airline": "SAS",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-MD87",

@@ -64,7 +64,8 @@
     "id": "CL_CLH",
     "link": "https://assets.planespotters.net/files/airlines/4/lufthansa-cityline_4abd8f_opk.jpg",
     "name": "Lufthansa CityLine GmbH",
-    "airline": "Lufthansa CityLine"
+    "airline": "Lufthansa CityLine",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOM-CRJ900",

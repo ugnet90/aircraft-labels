@@ -64,7 +64,8 @@
     "id": "IZ_AIZ",
     "link": "https://assets.planespotters.net/files/airlines/0/arkia-israeli-airlines_999d37_opk.png",
     "name": "Arkia Israeli Airlines Limited",
-    "airline": "Arkia - Israeli Airlines"
+    "airline": "Arkia - Israeli Airlines",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "VIC-Viscount-800",

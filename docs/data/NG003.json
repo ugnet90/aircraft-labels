@@ -64,7 +64,8 @@
     "id": "HG_NLY",
     "link": "https://assets.planespotters.net/files/airlines/2/niki_73cf3e.svg",
     "name": "Niki Luftfahrt GmbH",
-    "airline": "Niki"
+    "airline": "Niki",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200",

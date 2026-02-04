@@ -64,7 +64,8 @@
     "id": "US_NAS",
     "link": "https://assets.planespotters.net/files/airlines/2/nasa_e72e0e_opk.png",
     "name": "National Aeronautics and Space Administration",
-    "airline": "NASA"
+    "airline": "NASA",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "ROC-OV102",

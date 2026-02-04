@@ -64,7 +64,8 @@
     "id": "SU_BUR",
     "link": "https://www.buran-energia.com/img/img_logoV2.png",
     "name": "-",
-    "airline": "Buran Space Shuttle"
+    "airline": "Buran Space Shuttle",
+    "logo_speaking": "Falsch"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BUR-OK1K1",

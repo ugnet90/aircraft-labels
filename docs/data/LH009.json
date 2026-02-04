@@ -64,7 +64,8 @@
     "id": "LH_DLH",
     "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
     "name": "Deutsche Lufthansa AG",
-    "airline": "Lufthansa"
+    "airline": "Lufthansa",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A300-B2",

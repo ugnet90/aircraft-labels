@@ -64,7 +64,8 @@
     "id": "4Y_BGA",
     "link": "https://assets.planespotters.net/files/airlines/7/airbus-transport-international_ab97b7_opk.png",
     "name": "-",
-    "airline": "Airbus Transport International"
+    "airline": "Airbus Transport International",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "ASP-B377SGT",

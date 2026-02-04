@@ -64,7 +64,8 @@
     "id": "LH_GEC",
     "link": "https://assets.planespotters.net/files/airlines/3/lufthansa-cargo_3f7355_opk.jpg",
     "name": "Lufthansa Cargo AG",
-    "airline": "Lufthansa Cargo"
+    "airline": "Lufthansa Cargo",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "MCD-MD11F",

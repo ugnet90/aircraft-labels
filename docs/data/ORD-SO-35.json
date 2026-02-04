@@ -64,7 +64,8 @@
     "id": "KF_ABB",
     "link": "https://assets.planespotters.net/files/airlines/1/air-belgium-2017_e72e0e_opk.png",
     "name": "Air Belgium S.A",
-    "airline": "Air Belgium"
+    "airline": "Air Belgium",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A330-900neo",

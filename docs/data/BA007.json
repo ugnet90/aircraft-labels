@@ -64,7 +64,8 @@
     "id": "BE_BEA",
     "link": "https://assets.planespotters.net/files/airlines/0/british-european-airways-bea_5d7169_opk.png",
     "name": "British European Airways Corporation",
-    "airline": "BEA"
+    "airline": "BEA",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "HAW-Trident-3",

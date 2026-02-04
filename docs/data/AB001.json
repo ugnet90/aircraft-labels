@@ -64,7 +64,8 @@
     "id": "AB_BER",
     "link": "https://assets.planespotters.net/files/airlines/5/air-berlin_1981f1.svg",
     "name": "Air Berlin PLC & Co. Luftverkehrs KG",
-    "airline": "Air Berlin"
+    "airline": "Air Berlin",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "AIB-A320-200",

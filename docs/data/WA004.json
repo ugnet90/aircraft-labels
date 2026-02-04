@@ -64,7 +64,8 @@
     "id": "KL_EXE",
     "link": "https://assets.planespotters.net/files/airlines/2/klm-exel_opk.png",
     "name": "-",
-    "airline": "KLM exel"
+    "airline": "KLM exel",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "ATR-ATR72-200",

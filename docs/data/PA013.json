@@ -64,7 +64,8 @@
     "id": "PA_PAA",
     "link": "https://assets.planespotters.net/files/airlines/8/pan-am-corporation_d48279_opr.png",
     "name": "Pan American World Airways Incorporated",
-    "airline": "Pan Am"
+    "airline": "Pan Am",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-707-320",

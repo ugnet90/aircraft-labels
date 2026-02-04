@@ -64,7 +64,8 @@
     "id": "KL_KLM",
     "link": "https://assets.planespotters.net/files/airlines/4/klm-royal-dutch-airlines_c407df.svg",
     "name": "Koninklijke Luchtvaart Maatschappij N.V.",
-    "airline": "KLM"
+    "airline": "KLM",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "DOU-DC8-63",

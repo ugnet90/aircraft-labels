@@ -64,7 +64,8 @@
     "id": "WA_KLC",
     "link": "https://assets.planespotters.net/files/airlines/1/klm-cityhopper_opk.jpg",
     "name": "-",
-    "airline": "KLM Cityhopper"
+    "airline": "KLM Cityhopper",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "EMB-E195E2",

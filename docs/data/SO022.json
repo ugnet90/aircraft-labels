@@ -64,7 +64,8 @@
     "id": "FX_GEC",
     "link": "https://assets.planespotters.net/files/airlines/8/german-cargo_a6d4d7_opk.png",
     "name": "German Cargo Services GmbH",
-    "airline": "German Cargo"
+    "airline": "German Cargo",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-707-330C",

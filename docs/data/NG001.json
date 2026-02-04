@@ -64,7 +64,8 @@
     "id": "NG_LDA",
     "link": "https://assets.planespotters.net/files/airlines/8/lauda-air_cf6af3_opk.png",
     "name": "Lauda Air Luftfahrt GmbH",
-    "airline": "Lauda Air"
+    "airline": "Lauda Air",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-777-200",
