@@ -33,7 +33,9 @@
 <div class="top">
   <h1 id="title">Modell</h1>
   <span class="pill mono" id="idpill"></span>
+  <span class="pill badge-warn" id="statuspill" style="display:none"></span>
 </div>
+
 <div class="muted" id="subtitle"></div>
 
 <div id="content" class="card">Lade Daten …</div>
@@ -324,6 +326,18 @@
       ].filter(Boolean).join(" | ");
 
       document.getElementById("subtitle").textContent = sub;
+      // Status (Bestellt)
+      const statusPill = document.getElementById("statuspill");
+      const orderedAt = asText(d.ordered_at || d.orderedAt || "");
+      const isOrdered = !!d.ordered && !!orderedAt;
+      
+      if(isOrdered){
+        statusPill.style.display = "";
+        statusPill.textContent = `Bestellt: ${formatDateDE(orderedAt)}`;
+      }else{
+        statusPill.style.display = "none";
+        statusPill.textContent = "";
+      }
 
       // Blocks
       const modelBlock = `
@@ -336,6 +350,7 @@
             ${linkOrTextRow("Shop", d.shop_url || d.shop || d.model?.shop || "")}
             ${row("Preis", money(d.price ?? d.model?.price))}
             ${row("Versand (anteilig)", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
+            ${row("Bestellt am", formatDateDE(d.ordered_at || d.orderedAt || ""))}
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
             ${row("Mitgeflogen", boolBadge(d.flown ?? d.model?.flown))}
             ${row("Besonderheit", d.special_note || d.model?.special_note || "")}
