@@ -195,6 +195,7 @@ def main() -> int:
         logo_link = (logo_row.get("Logo_Link", "") or "").strip() if logo_row else ""
         logo_name = (logo_row.get("full_name", "") or "").strip() if logo_row else ""
         logo_airline = (logo_row.get("Airline", "") or "").strip() if logo_row else ""
+        logo_speaking = (logo_row.get("logo_speaking", "") or "").strip() if logo_row else ""
         
         angekommen_raw = (r.get("angekommen", "") or "").strip()
         angekommen_iso = excel_serial_to_iso(angekommen_raw)
@@ -295,6 +296,7 @@ def main() -> int:
                 "link": logo_link,
                 "name": logo_name,
                 "airline": logo_airline,
+                "logo_speaking": logo_speaking,
             }
             
         if aircraft_full:
@@ -332,6 +334,7 @@ def main() -> int:
             "scale": scale_final,
             "flown": eigenfluege,
             "logo_id": logo_id,
+            "logo_speaking": logo_speaking,
         
             "shop_url": (r.get("Shop_url", "") or "").strip(),
             "ordered_at": bestellt_iso,
