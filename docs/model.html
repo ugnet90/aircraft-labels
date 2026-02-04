@@ -304,58 +304,37 @@
       const reg = asText(d.registration) || asText(d.aircraft?.registration);
       const livery = asText(d.livery_name) || asText(d.livery?.code);
 
-      const showAirlineText = (asText(d.logo_speaking).toUpperCase() !== "WAHR");
-
-      // Headline: Typ + Reg + (optional) Taufname, Airline nur wenn Logo NICHT sprechend ist
+      // Option A: Airline-Text nur wenn Logo NICHT "sprechend" ist
       const logoSpeaking = asText(d.logo_speaking).toUpperCase() === "WAHR";
       const showAirlineText = !logoSpeaking;
-      
+
       const titleMain = [
         typ,
         reg,
         d.aircraft_name ? `„${d.aircraft_name}“` : ""
       ].filter(Boolean).join(" · ") || id;
-      
-      document.title = showAirlineText
-        ? `${airline} · ${titleMain}`
-        : titleMain;
-      
+
+      document.title = showAirlineText && airline ? `${airline} · ${titleMain}` : titleMain;
+
       const logoUrl = logoSrc(d);
       const logoHtml = logoUrl
         ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:34px;vertical-align:middle;margin-right:10px">`
         : "";
-      
-      // Header: Logo links + Title (Typ/Reg) rechts
-      document.getElementById("title").innerHTML = `${logoHtml}${esc(titleMain)}`;
-      
-      // Airline als eigene Zeile nur wenn nicht redundant
-      const airlineLine = showAirlineText && airline ? airline : "";
 
-      
+      document.getElementById("title").innerHTML = `${logoHtml}${esc(titleMain)}`;
+
+      // Bestellt-Hinweis
       const orderedAt = asText(d.ordered_at || "");
       const orderedText = (d.ordered && orderedAt) ? `Bestellt: ${formatDateDE(orderedAt)}` : "";
-      
+
       const sub = [
-        airlineLine,
+        (showAirlineText && airline) ? airline : "",
         livery ? `Livery: ${livery}` : "",
         d.livery_note ? `Bemalung: ${d.livery_note}` : "",
         orderedText
       ].filter(Boolean).join(" | ");
-      
-      document.getElementById("subtitle").textContent = sub;
 
-      // Status (Bestellt)
-      // const statusPill = document.getElementById("statuspill");
-      // const orderedAt = asText(d.ordered_at || d.orderedAt || "");
-      // const isOrdered = !!d.ordered && !!orderedAt;
-      
-      // if(isOrdered){
-      //   statusPill.style.display = "";
-      //   statusPill.textContent = `Bestellt: ${formatDateDE(orderedAt)}`;
-      //  }else{
-      //   statusPill.style.display = "none";
-      //   statusPill.textContent = "";
-      // }
+      document.getElementById("subtitle").textContent = sub;
 
       // Blocks
       const modelBlock = `
@@ -368,9 +347,10 @@
             ${linkOrTextRow("Shop", d.shop_url || d.shop || d.model?.shop || "")}
             ${row("Preis", money(d.price ?? d.model?.price))}
             ${row("Versand (anteilig)", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
-            ${row("Bestellt am", formatDateDE(d.ordered_at || d.orderedAt || ""))}
+            ${row("Bestellt am", formatDateDE(d.ordered_at || ""))}
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
             ${row("Mitgeflogen", boolBadge(d.flown ?? d.model?.flown))}
+
             ${row("Besonderheit", d.special_note || d.model?.special_note || "")}
           </div>
         </div>
