@@ -1,0 +1,30 @@
+/* === index page only === */
+body{ --maxw: 1100px; }
+
+.meta{ color:#666; font-size:12px; margin-bottom:12px; }
+
+.bar{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;
+  gap:8px;
+  margin:12px 0;
+}
+@media (max-width:900px){ .bar{ grid-template-columns:1fr 1fr; } }
+@media (max-width:520px){ .bar{ grid-template-columns:1fr; } }
+
+tr:hover{ background:#fafafa; }
+
+.right{ display:flex; gap:8px; align-items:center; justify-content:flex-end; }
+.small{ font-size:12px; color:#666; }
+
+.badge-ordered{ border-color:#e0b200; background:#fff3c4; }
+
+.badge-id{
+  display:inline-block;
+  padding:2px 8px;
+  border-radius:999px;
+  font-size:11px;
+  border:1px solid #ddd;
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+}
+.badge-id.ord{ background:#eef6ff; border-color:#cfe3ff; }
