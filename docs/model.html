@@ -102,6 +102,17 @@
     return (s === "wahr" || s === "true" || s === "1" || s === "ja" || s === "yes" || s === "x");
   }
 
+  function getLogoSpeaking(d){
+    // robust: Feld kann oben oder unter d.logo liegen
+    const raw =
+      asText(d?.logo_speaking) ||
+      asText(d?.logo?.logo_speaking) ||
+      asText(d?.logo?.speaking) ||
+      asText(d?.logoSpeaking);
+  
+    return raw; // string (kann leer sein)
+  }
+  
   function logoSrc(d){
     if(!d || !d.logo) return "";
   
@@ -397,8 +408,15 @@
       const livery = asText(d.livery_name) || asText(d.livery?.code);
 
       // Option A: Airline-Text nur wenn Logo NICHT "sprechend" ist
-      const logoSpeaking = boolDE(d.logo_speaking);
+      const logoSpeakingRaw = getLogoSpeaking(d);
+
+      // WICHTIG: Default = "sprechend" (damit Airline NICHT doppelt erscheint),
+      // Airline nur anzeigen, wenn explizit als NICHT sprechend markiert
+      const logoSpeaking = logoSpeakingRaw ? boolDE(logoSpeakingRaw) : true;
       const showAirlineText = !logoSpeaking;
+
+      // temporär - dann wieder entfernen!
+      document.getElementById("subtitle").textContent = `debug: logo_speaking="${logoSpeakingRaw}", parsed=${logoSpeaking}`;
 
       const titleMain = [
         typ,
