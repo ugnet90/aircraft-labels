@@ -465,10 +465,11 @@
 
       document.getElementById("content").innerHTML =
         `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>` +
-        liveryBlock +
-        v8Block +
-        sourceBlock;
-
+        `<div class="stack">` +
+          liveryBlock +
+          v8Block +
+          sourceBlock +
+        `</div>`;
 
 
     }catch(e){
