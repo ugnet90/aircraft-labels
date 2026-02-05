@@ -45,9 +45,12 @@
   </style>
 </head>
 <body>
-
 <div class="top">
-  <h1 id="title">Modell</h1>
+  <div style="display:flex;align-items:center;gap:12px">
+    <a class="btn" href="./index.html">← Übersicht</a>
+    <h1 id="title">Modell</h1>
+  </div>
+
   <span class="pill mono" id="idpill"></span>
   <span class="pill badge-warn" id="statuspill" style="display:none"></span>
 </div>
@@ -55,10 +58,6 @@
 <div class="muted" id="subtitle"></div>
 
 <div id="content" class="card">Lade Daten …</div>
-
-<div class="row">
-  <a class="btn" href="./index.html">← Übersicht</a>
-</div>
 
 <script>
   function logoSrc(d){
@@ -134,8 +133,9 @@
   
   function rowLink(label, url, preferredText, fallbackText){
     const h = aLink(url, preferredText, fallbackText);
-    return h ? row(label, h) : "";
+    return h ? rowHtml(label, h) : "";
   }
+
 
   function linkRow(k, url){
     if(!url) return "";
@@ -267,7 +267,7 @@
         if(key === "Wiki"){
           const url = raw;
           const safe = esc(url);
-          return [label, `<a href="${safe}" target="_blank" rel="noopener">${safe}</a>`];
+          return [label, `<a href="${safe}" target="_blank" rel="noopener">Ⓦ Wikipedia</a>`];
         }
 
         if(typeof fmt === "function"){
