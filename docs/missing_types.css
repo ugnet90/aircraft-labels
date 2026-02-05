@@ -1,0 +1,38 @@
+/* === missing types page only === */
+body{ --maxw: 1200px; }
+
+.controls{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+label{ display:flex; gap:6px; align-items:center; }
+
+.tableWrap{ overflow:auto; max-height:75vh; }
+table{ width:100%; border-collapse:collapse; font-size:13px; }
+th, td{
+  border:1px solid #e6e6e6;
+  padding:8px 10px;
+  vertical-align:top;
+  background:#fff;
+}
+th{ position:sticky; top:0; z-index:3; }
+tr:nth-child(even) td{ background:#fafafa; }
+
+td.small{ font-size:12px; color:#666; }
+
+#warn{ display:none; border-color:#c00; background:#fff5f5; }
+
+@media (max-width:720px){
+  body{ margin:12px; }
+  table{ font-size:14px; }
+  th, td{ padding:10px 10px; }
+}
+
+tr.ordered td{ background:#fff8e1; }
+
+.badge{
+  display:inline-block;
+  padding:2px 8px;
+  border-radius:999px;
+  font-size:11px;
+  border:1px solid #ddd;
+}
+.badge.missing{ background:#fff; }
+.badge.ordered{ background:#ffe08a; }
