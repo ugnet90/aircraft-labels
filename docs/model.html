@@ -97,6 +97,11 @@
 <div id="content" class="card">Lade Daten …</div>
 
 <script>
+  function boolDE(v){
+    const s = asText(v).toLowerCase();
+    return (s === "wahr" || s === "true" || s === "1" || s === "ja" || s === "yes" || s === "x");
+  }
+
   function logoSrc(d){
     if(!d || !d.logo) return "";
   
@@ -392,7 +397,7 @@
       const livery = asText(d.livery_name) || asText(d.livery?.code);
 
       // Option A: Airline-Text nur wenn Logo NICHT "sprechend" ist
-      const logoSpeaking = asText(d.logo_speaking).toUpperCase() === "WAHR";
+      const logoSpeaking = boolDE(d.logo_speaking);
       const showAirlineText = !logoSpeaking;
 
       const titleMain = [
