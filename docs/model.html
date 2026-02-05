@@ -463,12 +463,13 @@
         </div>
       ` : "";
 
+      const tailBlocks = [liveryBlock, v8Block, sourceBlock]
+        .filter(x => x && String(x).trim() !== "");
+      
       document.getElementById("content").innerHTML =
         `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>` +
         `<div class="stack">` +
-          liveryBlock +
-          v8Block +
-          sourceBlock +
+          tailBlocks.map(x => `<div class="stackItem">${x}</div>`).join("") +
         `</div>`;
 
 
