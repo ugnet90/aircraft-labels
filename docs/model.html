@@ -511,10 +511,9 @@
       const v8Block = v8Table ? `
         <div class="card">
           <div class="k">Flugzeugdaten</div>
-          <div style="margin-top:10px">${v8Table}</div>
         </div>
+        ${v8Table}
       ` : "";
-
 
       document.getElementById("content").innerHTML =
         `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>` +
