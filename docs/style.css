@@ -139,3 +139,7 @@ th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
 @media (max-width:640px){
   .masonry{ column-count: 1; }
 }
+
+.stack > .card + .card{
+  margin-top:12px;
+}
