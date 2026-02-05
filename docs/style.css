@@ -50,7 +50,7 @@ h1{ font-size:20px; margin:0; }
   border:1px solid #ddd;
   border-radius:12px;
   padding:12px;
-  margin:10px 0;
+  margin:0;              /* ← WICHTIG: kein Abstand mehr hier */
   background:#fff;
 }
 
@@ -70,10 +70,16 @@ h1{ font-size:20px; margin:0; }
 
 /* Simple grids used by multiple pages */
 .grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-.sectionGrid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-@media (max-width:640px){
-  .grid, .sectionGrid{ grid-template-columns:1fr; }
+.sectionGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:12px;
+  row-gap:12px;   /* ← DAS hat gefehlt */
 }
+@media (max-width:640px){
+  .sectionGrid{ grid-template-columns:1fr; }
+}
+
 
 /* Form controls (index/matrix/missing) */
 input, select{
