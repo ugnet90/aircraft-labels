@@ -4,53 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Fehlende Flugzeugtypen</title>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:1200px}
-    .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
-    h1{font-size:20px;margin:0}
-    .muted{color:#666;font-size:12px}
-    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    a{color:#000}
-    .btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
-    .btn:hover{background:#fafafa}
-    .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0;background:#fff}
-    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    input,select{padding:8px;border:1px solid #ddd;border-radius:10px;font-size:14px}
-    label{display:flex;gap:6px;align-items:center}
-
-    /* Table look similar to matrix */
-    .tableWrap{overflow:auto;max-height:75vh}
-    table{width:100%;border-collapse:collapse;font-size:13px}
-    th,td{
-      border:1px solid #e6e6e6;
-      padding:8px 10px;
-      vertical-align:top;
-      background:#fff;
-    }
-    th{position:sticky;top:0;z-index:3}
-    tr:nth-child(even) td{background:#fafafa}
-    td.small{font-size:12px;color:#666}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
-
-    #warn{display:none;border-color:#c00;background:#fff5f5}
-
-    @media (max-width: 720px){
-      body{margin:12px}
-      table{font-size:14px}
-      th,td{padding:10px 10px}
-    }
-    tr.ordered td{background:#fff8e1}
-    .badge{
-      display:inline-block;
-      padding:2px 8px;
-      border-radius:999px;
-      font-size:11px;
-      border:1px solid #ddd;
-    }
-    .badge.missing{background:#fff}
-    .badge.ordered{background:#ffe08a}
-
-  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./missing_types.css">
 </head>
 <body>
   <div class="top">
