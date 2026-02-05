@@ -41,6 +41,26 @@
     .hTyp{font-weight:800;font-size:22px;line-height:1.1}
     .hReg{color:#666;font-size:14px;line-height:1.1}
     .hName{color:#666;font-size:13px;line-height:1.1}
+    /* Bestellt-Hervorhebung */
+    .card.sam.ordered{
+      border-color:#c00;
+      background:#fff5f5;
+    }
+    .pill.ordered{
+      border-color:#c00;
+      background:#fff5f5;
+    }
+    /* Card-Überschriften hervorheben (ohne Feldlabels zu ändern) */
+    .card > .k{
+      font-size:13px;
+      font-weight:800;
+      color:#111;
+      text-transform:none;
+      letter-spacing:0;
+      padding-bottom:8px;
+      border-bottom:1px solid #eee;
+      margin-bottom:10px;
+    }
 
   </style>
 </head>
@@ -183,7 +203,7 @@
 
   function renderV8Table(obj){
     if(!obj || typeof obj !== "object") return "";
-
+  
     function normListHtml(v){
       const s = String(v ?? "").trim();
       if(!s) return "";
@@ -193,7 +213,7 @@
         .filter(Boolean)
         .join("<br>");
     }
-
+  
     function translateWingtip(v){
       const x = String(v ?? "").trim().toUpperCase();
       const map = {
@@ -202,27 +222,27 @@
         "WL": "Winglets",
         "RW": "Raked Wingtips"
       };
-      return map[x] ? `${map[x]} (${x})` : String(v ?? "").trim();
+      return map[x] ? `${map[x]} (${x})` : esc(v);
     }
-
+  
     function translateRumpf(v){
       const x = String(v ?? "").trim();
       const map = {
         "SingleAisle": "Schmalrumpf (Single Aisle)",
         "TwinAisle": "Großraum (Twin Aisle)"
       };
-      return map[x] || x;
+      return map[x] || esc(x);
     }
-
+  
     function translateRole(v){
       const x = String(v ?? "").trim().toUpperCase();
       const map = {
         "PAX": "Passagierflugzeug (PAX)",
         "CARGO": "Frachtflugzeug (Cargo)"
       };
-      return map[x] || String(v ?? "").trim();
+      return map[x] || esc(v);
     }
-
+  
     const spec = [
       ["Typ_anzeige", "Flugzeugtyp"],
       ["Hersteller", "Hersteller"],
@@ -231,68 +251,51 @@
       ["Marketingname", "Marketingname"],
       ["Alternate_designations", "Alternative Bezeichnungen", normListHtml],
       ["parent_aircraft_id", "Übergeordneter Typ (ID)"],
-
+  
       ["ICAO", "ICAO-Typcode"],
       ["IATA", "IATA-Typcode"],
-
-      ["Wingtip", "Wingtip / Winglets / Sharklets", (v)=>esc(translateWingtip(v))],
-      ["Rumpf", "Rumpf (Kategorie)", (v)=>esc(translateRumpf(v))],
+  
+      ["Wingtip", "Wingtip / Winglets / Sharklets", translateWingtip],
+      ["Rumpf", "Rumpf (Kategorie)", translateRumpf],
       ["MarketSegment", "Segment"],
-      ["Role", "Rolle", (v)=>esc(translateRole(v))],
-
-      ["Flugzeugtyp", "Flugzeugtyp (Kategorie)"],
-
+      ["Role", "Rolle", translateRole],
+  
       ["Erstflug", "Erstflug"],
       ["Status", "Status"],
       ["Antrieb", "Antrieb"],
       ["Triebwerke", "Triebwerke"],
       ["Reichweite", "Reichweite (Kategorie)"],
-      ["Passengers", "Passagiere (Sitze)"],
-
+      ["Passengers", "Passagiere"],
+  
       ["Length", "Länge (m)"],
       ["Wingspan", "Spannweite (m)"],
-      ["Height", "Höhe (m)"],
-
-      ["Wiki", "Wikipedia"],
-      // aircraft_id bewusst NICHT hier, weil oben im Modellblock vorhanden
+      ["Height", "Höhe (m)"]
     ];
-
+  
     const rows = spec
       .map(([key, label, fmt]) => {
         const v = obj[key];
         if(v === undefined || v === null) return null;
         const raw = String(v).trim();
         if(!raw) return null;
-
-        if(key === "Wiki"){
-          const url = raw;
-          const safe = esc(url);
-          return [label, `<a href="${safe}" target="_blank" rel="noopener">Ⓦ Wikipedia</a>`];
-        }
-
+  
+        let html;
         if(typeof fmt === "function"){
-          // fmt liefert bereits escaped/HTML
-          const html = fmt(raw);
-          if(!html) return null;
-          return [label, html];
+          html = fmt(raw);
+        }else{
+          html = esc(raw);
         }
-
-        return [label, esc(raw)];
+        if(!html) return null;
+  
+        return `<tr><td>${esc(label)}</td><td>${html}</td></tr>`;
       })
       .filter(Boolean);
-
+  
     if(rows.length === 0) return "";
-
-    let html = `<div class="card"><div class="k">Flugzeugdaten</div>` +
-               `<div class="v" style="margin-top:8px"><table>`;
-
-    for(const [label, valueHtml] of rows){
-      html += `<tr><td>${esc(label)}</td><td>${valueHtml}</td></tr>`;
-    }
-
-    html += `</table></div></div>`;
-    return html;
+  
+    return `<table>${rows.join("")}</table>`;
   }
+
 
   function extractFirstHttpUrl(text){
     const s = String(text ?? "").trim();
@@ -378,6 +381,18 @@
       // Bestellt-Hinweis
       const orderedAt = asText(d.ordered_at || "");
       const orderedText = (d.ordered && orderedAt) ? `Bestellt: ${formatDateDE(orderedAt)}` : "";
+      const statusPill = document.getElementById("statuspill");
+      const isOrderedNow = !!d.ordered && !!orderedAt && !asText(d.arrived);
+      
+      if(isOrderedNow){
+        statusPill.style.display = "";
+        statusPill.classList.add("ordered");
+        statusPill.textContent = `Bestellt: ${formatDateDE(orderedAt)}`;
+      }else{
+        statusPill.style.display = "none";
+        statusPill.textContent = "";
+      }
+
 
       const sub = [
         (showAirlineText && airline) ? airline : "",
@@ -390,7 +405,7 @@
 
       // Blocks
       const modelBlock = `
-        <div class="card sam">
+        <div class="card sam ${isOrderedNow ? "ordered" : ""}">
           <div class="k">Sammlung</div>
           <div class="grid" style="margin-top:8px">
             ${rowHtml("Maßstab", scaleBadge(d.model?.scale || ""))}
