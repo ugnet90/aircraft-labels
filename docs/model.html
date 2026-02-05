@@ -77,6 +77,8 @@
     }
     .headRow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 
+    .hAir{font-weight:700;font-size:14px;line-height:1.1;color:#111}
+
   </style>
 </head>
 <body>
@@ -410,13 +412,13 @@
         <div class="headerWrap">
           ${logoHtml}
           <div class="headerTxt">
+            ${showAirlineText && airline ? `<div class="hAir">${esc(airline)}</div>` : ""}
             <div class="hTyp">${esc(typ || id)}</div>
             <div class="hReg">${esc(reg || "")}</div>
             ${d.aircraft_name ? `<div class="hName">„${esc(d.aircraft_name)}“</div>` : ""}
           </div>
         </div>
       `;
-
 
       // Bestellt-Hinweis
       const orderedAt = asText(d.ordered_at || "");
@@ -512,7 +514,6 @@
           <div style="margin-top:10px">${v8Table}</div>
         </div>
       ` : "";
-
 
 
       document.getElementById("content").innerHTML =
