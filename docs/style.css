@@ -79,15 +79,18 @@ td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;lett
   column-count: 2;
   column-gap: 12px;
   width: 100%;
+  padding-bottom: 12px; /* sorgt für sauberen Abschluss unten */
 }
 
-/* WICHTIG: block + keine width:100% => keine Überlappung */
+/* Cards in Masonry: kein Top-Margin, nur Bottom-Gap */
 .masonry > .card{
-  display: block;
   break-inside: avoid;
   page-break-inside: avoid;
-  margin: 0 0 12px 0; /* Abstand wenn übereinander */
-  margin-bottom:12px !important;
+  margin: 0 0 12px 0;      /* genau EINMAL */
+  padding: 12px;           /* bleibt gleich wie .card */
+  border: 1px solid #ddd;  /* bleibt gleich wie .card */
+  border-radius: 12px;
+  background: #fff;
 }
 
 /* Mobile: 1 Spalte */
