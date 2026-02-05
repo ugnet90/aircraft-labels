@@ -50,8 +50,8 @@ h1{ font-size:20px; margin:0; }
   border:1px solid #ddd;
   border-radius:12px;
   padding:12px;
-  margin:0;              /* ← WICHTIG: kein Abstand mehr hier */
   background:#fff;
+  /* margin ist optional, aber NICHT zwangsweise 0 !important */
 }
 
 .card.sam{ background:#fbfbff; border-color:#e7e7ff; }
