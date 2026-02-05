@@ -463,14 +463,17 @@
         </div>
       ` : "";
 
+      const headBlock = `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>`;
+
       const tailBlocks = [liveryBlock, v8Block, sourceBlock]
         .filter(x => x && String(x).trim() !== "");
       
       document.getElementById("content").innerHTML =
-        `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>` +
         `<div class="stack">` +
+          `<div class="stackItem">${headBlock}</div>` +
           tailBlocks.map(x => `<div class="stackItem">${x}</div>`).join("") +
         `</div>`;
+
 
 
     }catch(e){
