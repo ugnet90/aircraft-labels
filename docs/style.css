@@ -1,52 +1,62 @@
+/* === Common UI (shared across all pages) === */
 *, *::before, *::after { box-sizing: border-box; }
 
-body{font-family:Arial,Helvetica,sans-serif;margin:16px;line-height:1.35;max-width:900px}
-.top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
-h1{font-size:20px;margin:0}
-.pill{border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
-.mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
-a{color:#000}
-.card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
-.card.sam { background:#fbfbff; border-color:#e7e7ff; }
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media (max-width:640px){ .grid{grid-template-columns:1fr} }
-.k{color:#666;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
-.v{font-size:15px;margin-top:2px;word-break:break-word}
-.row{display:flex;gap:10px;flex-wrap:wrap}
-.err{border:1px solid #c00;background:#fff5f5;padding:12px;border-radius:12px}
-.muted{color:#666;font-size:12px}
-.btn{display:inline-block;border:1px solid #ddd;border-radius:10px;padding:8px 10px;text-decoration:none}
-.btn:hover{background:#fafafa}
-table{width:100%;border-collapse:collapse}
-td{padding:6px 6px;border-bottom:1px solid #eee;vertical-align:top}
-td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
-.badge{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
-.badge-warn{border-color:#c00;background:#fff5f5}
-.sectionGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media (max-width:640px){ .sectionGrid{grid-template-columns:1fr} }
-.sectionTitle{font-weight:700;margin:0 0 8px 0}
-.section{border:1px solid #eee;border-radius:12px;padding:12px;margin:12px 0;background:#fff}
-.section.sam{background:#fbfbff;border-color:#e7e7ff}
-.kv{display:grid;grid-template-columns:160px 1fr;gap:6px 12px}
-.k{color:#666}
-.v{color:#111}
-@media (max-width:640px){ .kv{grid-template-columns:1fr} }
-.headerWrap{display:flex;align-items:center;gap:12px}
-.headerTxt{display:flex;flex-direction:column;gap:2px}
-.hTyp{font-weight:800;font-size:22px;line-height:1.1}
-.hReg{color:#666;font-size:14px;line-height:1.1}
-.hName{color:#666;font-size:13px;line-height:1.1}
+:root{
+  --maxw: 1100px;          /* default, pro Seite überschreibbar */
+  --gap: 12px;
+}
 
-/* Bestellt-Hervorhebung */
-.card.sam.ordered{
-  border-color:#c00;
-  background:#fff5f5;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 16px;
+  line-height: 1.35;
+  max-width: var(--maxw);
 }
-.pill.ordered{
-  border-color:#c00;
-  background:#fff5f5;
+
+a{ color:#000; }
+
+h1{ font-size:20px; margin:0; }
+
+.muted{ color:#666; font-size:12px; }
+.mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+.btn{
+  display:inline-block;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:8px 10px;
+  text-decoration:none;
 }
-/* Card-Überschriften hervorheben (ohne Feldlabels zu ändern) */
+.btn:hover{ background:#fafafa; }
+
+.pill, .badge{
+  display:inline-block;
+  border:1px solid #ddd;
+  border-radius:999px;
+  padding:2px 8px;
+  font-size:12px;
+}
+
+.badge-warn{ border-color:#c00; background:#fff5f5; }
+
+.err{
+  border:1px solid #c00;
+  background:#fff5f5;
+  padding:12px;
+  border-radius:12px;
+}
+
+.card{
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:12px;
+  margin:10px 0;
+  background:#fff;
+}
+
+.card.sam{ background:#fbfbff; border-color:#e7e7ff; }
+
+/* Card-Überschrift hervorheben */
 .card > .k{
   font-size:13px;
   font-weight:800;
@@ -57,43 +67,69 @@ td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;lett
   border-bottom:1px solid #eee;
   margin-bottom:10px;
 }
-/* Mobile Feinschliff */
+
+/* Simple grids used by multiple pages */
+.grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.sectionGrid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
 @media (max-width:640px){
-  body{margin:12px}
-  .top{gap:8px}
-  .btn{padding:6px 8px;font-size:12px;border-radius:8px}
-  .pill{font-size:11px;padding:2px 7px}
-  .headerWrap{align-items:flex-start}
-  .headerTxt{gap:4px}
-  .hTyp{font-size:18px}
-  .hReg{font-size:13px}
-  .hName{font-size:12px}
-  .headerWrap img{height:36px !important;margin-right:0 !important}
+  .grid, .sectionGrid{ grid-template-columns:1fr; }
 }
-.headRow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 
-.hAir{font-weight:700;font-size:14px;line-height:1.1;color:#111}
+/* Form controls (index/matrix/missing) */
+input, select{
+  width:100%;
+  padding:8px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:14px;
+}
 
-/* Masonry Layout für Flugzeugdaten-Gruppen */
+/* Tables (common baseline; pages can override) */
+table{ width:100%; border-collapse:collapse; }
+th, td{ padding:8px 6px; border-bottom:1px solid #eee; vertical-align:top; }
+th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
+
+.row{ display:flex; gap:10px; flex-wrap:wrap; }
+
+/* Header helpers used by model */
+.top{ display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; }
+.headerWrap{ display:flex; align-items:center; gap:12px; }
+.headerTxt{ display:flex; flex-direction:column; gap:2px; }
+.hAir{ font-weight:700; font-size:14px; line-height:1.1; color:#111; }
+.hTyp{ font-weight:800; font-size:22px; line-height:1.1; }
+.hReg{ color:#666; font-size:14px; line-height:1.1; }
+.hName{ color:#666; font-size:13px; line-height:1.1; }
+
+/* Mobile polish */
+@media (max-width:640px){
+  body{ margin:12px; }
+  .top{ gap:8px; }
+  .btn{ padding:6px 8px; font-size:12px; border-radius:8px; }
+  .pill, .badge{ font-size:11px; padding:2px 7px; }
+  .headerWrap{ align-items:flex-start; }
+  .headerTxt{ gap:4px; }
+  .hTyp{ font-size:18px; }
+  .hReg{ font-size:13px; }
+  .hName{ font-size:12px; }
+  .headerWrap img{ height:36px !important; margin-right:0 !important; }
+}
+
+/* Masonry (used in model flight data groups) */
 .masonry{
   column-count: 2;
   column-gap: 12px;
   width: 100%;
-  padding-bottom: 12px; /* sorgt für sauberen Abschluss unten */
+  padding-bottom: 12px;
 }
-
-/* Cards in Masonry: kein Top-Margin, nur Bottom-Gap */
 .masonry > .card{
   break-inside: avoid;
   page-break-inside: avoid;
-  margin: 0 0 12px 0;      /* genau EINMAL */
-  padding: 12px;           /* bleibt gleich wie .card */
-  border: 1px solid #ddd;  /* bleibt gleich wie .card */
+  margin: 0 0 12px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
   border-radius: 12px;
   background: #fff;
 }
-
-/* Mobile: 1 Spalte */
 @media (max-width:640px){
   .masonry{ column-count: 1; }
 }
