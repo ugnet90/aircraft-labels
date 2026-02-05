@@ -76,18 +76,20 @@ td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;lett
 
 /* Masonry Layout für Flugzeugdaten-Gruppen */
 .masonry{
-  column-count:2;
-  column-gap:12px;
-  width:100%;
+  column-count: 2;
+  column-gap: 12px;
+  width: 100%;
 }
-.masonry .card{
-  display:inline-block;
-  width:100%;
-  max-width:100%;
-  box-sizing:border-box;
-  break-inside:avoid;
-  margin:0 0 12px 0;
+
+/* WICHTIG: block + keine width:100% => keine Überlappung */
+.masonry > .card{
+  display: block;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0 0 12px 0; /* Abstand wenn übereinander */
 }
+
+/* Mobile: 1 Spalte */
 @media (max-width:640px){
-  .masonry{column-count:1;}
+  .masonry{ column-count: 1; }
 }
