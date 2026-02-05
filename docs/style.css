@@ -87,6 +87,7 @@ td:first-child{color:#666;width:32%;font-size:12px;text-transform:uppercase;lett
   break-inside: avoid;
   page-break-inside: avoid;
   margin: 0 0 12px 0; /* Abstand wenn übereinander */
+  margin-bottom:12px !important;
 }
 
 /* Mobile: 1 Spalte */
