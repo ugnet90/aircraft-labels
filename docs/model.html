@@ -12,6 +12,7 @@
     .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
     a{color:#000}
     .card{border:1px solid #ddd;border-radius:12px;padding:12px;margin:10px 0}
+    .card.sam { background:#fbfbff; border-color:#e7e7ff; }
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     @media (max-width:640px){ .grid{grid-template-columns:1fr} }
     .k{color:#666;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
@@ -35,6 +36,12 @@
     .k{color:#666}
     .v{color:#111}
     @media (max-width:640px){ .kv{grid-template-columns:1fr} }
+    .headerWrap{display:flex;align-items:center;gap:12px}
+    .headerTxt{display:flex;flex-direction:column;gap:2px}
+    .hTyp{font-weight:800;font-size:22px;line-height:1.1}
+    .hReg{color:#666;font-size:14px;line-height:1.1}
+    .hName{color:#666;font-size:13px;line-height:1.1}
+
   </style>
 </head>
 <body>
@@ -276,7 +283,7 @@
 
     if(rows.length === 0) return "";
 
-    let html = `<div class="card"><div class="k">Flugzeugdaten</div>` +
+    let html = <div class="card"><div class="k">Flugzeugdaten</div>` +
                `<div class="v" style="margin-top:8px"><table>`;
 
     for(const [label, valueHtml] of rows){
@@ -353,10 +360,20 @@
 
       const logoUrl = logoSrc(d);
       const logoHtml = logoUrl
-        ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:34px;vertical-align:middle;margin-right:10px">`
+        ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:44px;vertical-align:middle;margin-right:10px">`
         : "";
 
-      document.getElementById("title").innerHTML = `${logoHtml}${esc(titleMain)}`;
+      document.getElementById("title").innerHTML = `
+        <div class="headerWrap">
+          ${logoHtml}
+          <div class="headerTxt">
+            <div class="hTyp">${esc(typ || id)}</div>
+            <div class="hReg">${esc(reg || "")}</div>
+            ${d.aircraft_name ? `<div class="hName">„${esc(d.aircraft_name)}“</div>` : ""}
+          </div>
+        </div>
+      `;
+
 
       // Bestellt-Hinweis
       const orderedAt = asText(d.ordered_at || "");
@@ -369,24 +386,25 @@
         orderedText
       ].filter(Boolean).join(" | ");
 
-      document.getElementById("subtitle").textContent = sub;
+      document.getElementById("subtitle").textContent = "";
 
       // Blocks
       const modelBlock = `
-        <div class="card">
-          <div class="k">Modell</div>
+        <div class="card sam">
+          <div class="k">Sammlung</div>
           <div class="grid" style="margin-top:8px">
             ${rowHtml("Maßstab", scaleBadge(d.model?.scale || ""))}
             ${row("Hersteller", d.manufacturer || d.model?.manufacturer || "")}
             ${row("Artikel-/Modellnummer", d.model?.model_number || "")}
-            ${linkOrTextRow("Shop", d.shop_url || d.shop || d.model?.shop || "")}
+            ${rowLink("Shop", d.shop_url || "", d.shop || "", "Shop")}
             ${row("Preis", money(d.price ?? d.model?.price))}
             ${row("Versand (anteilig)", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
             ${row("Bestellt am", formatDateDE(d.ordered_at || ""))}
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
             ${row("Mitgeflogen", boolBadge(d.flown ?? d.model?.flown))}
-
             ${row("Besonderheit", d.special_note || d.model?.special_note || "")}
+            ${rowLink("Postkarte", d.postcard || d.links?.postcard || "", "", "Postkarte")}
+            ${row("Preis Postkarte", money(d.postcard_price || ""))}
           </div>
         </div>
       `;
@@ -399,6 +417,7 @@
             ${row("Registrierung", reg)}
             ${row("Taufname", d.aircraft_name || "")}
             ${row("Zusatzinfo", d.extra_info || "")}
+            ${rowLink("Foto", d.photo || d.links?.photo || "", "", "Foto")}
           </div>
         </div>
       `;
@@ -408,39 +427,43 @@
       const liveryType = (d.livery_full?.Livery_Type || "").trim();
       const liveryNotes = (d.livery_full?.Notes || "").trim();
       
-      const liveryBlock = `
+      const hasLivery = !!liveryName || !!liveryType || !!liveryNotes || !!livery || !!(d.livery_note || "");
+      const liveryBlock = !hasLivery ? "" : `
         <div class="card">
           <div class="k">Bemalung</div>
           <div class="grid" style="margin-top:8px">
-            ${row("Bezeichnung", liveryName)}
-            ${row("Typ", liveryType)}
-            ${row("Erläuterung", liveryNotes)}
+            ${livery ? row("Code", livery) : ""}
+            ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
+            ${liveryName ? row("Bezeichnung", liveryName) : ""}
+            ${liveryType ? row("Typ", liveryType) : ""}
+            ${liveryNotes ? row("Erläuterung", liveryNotes) : ""}
           </div>
         </div>
       `;
 
-      const linksBlock = `
-        <div class="card">
-          <div class="k">Links</div>
-          <div class="grid" style="margin-top:8px">
-            ${linkOrTextRow("Shop", d.shop_url || "")}
-            ${linkOrTextRow("Postkarte", d.postcard || d.links?.postcard || "")}
-            ${row("Preis Postkarte", money(d.postcard_price || ""))}
-            ${linkOrTextRow("Foto", d.photo || d.links?.photo || "")}
-          </div>
-        </div>
-      `;
+
+      const linksBlock = "";
 
       
       // Optional: show raw source pointer
       const src = d.source ? `(${d.source.sheet || ""} #${d.source.row || ""})` : "";
       const sourceBlock = src ? `<div class="muted">Quelle: ${esc(src)}</div>` : "";
 
-      const v8Block = renderV8Table(d.aircraft_full_v8);
+      const v8Table = renderV8Table(d.aircraft_full_v8);
+      const v8Block = v8Table ? `
+        <div class="card">
+          <div class="k">Flugzeugdaten</div>
+          <div style="margin-top:8px">${v8Table}</div>
+        </div>
+      ` : "";
+
 
       document.getElementById("content").innerHTML =
         `<div class="sectionGrid">${modelBlock}${aircraftBlock}</div>` +
-        liveryBlock + linksBlock + v8Block + sourceBlock;
+        liveryBlock +
+        v8Block +
+        sourceBlock;
+
 
 
     }catch(e){
