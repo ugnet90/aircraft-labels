@@ -488,7 +488,7 @@
       const liveryBlock = !hasLivery ? "" : `
         <div class="card">
           <div class="k">Bemalung</div>
-          <div class="grid" style="margin-top:8px">
+          <div class="sectionGrid" style="margin-top:8px">
             ${livery ? row("Code", livery) : ""}
             ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
             ${liveryName ? row("Bezeichnung", liveryName) : ""}
@@ -511,8 +511,8 @@
       const v8Block = v8Table ? `
         <div class="card">
           <div class="k">Flugzeugdaten</div>
+          <div style="margin-top:10px">${v8Table}</div>
         </div>
-        ${v8Table}
       ` : "";
 
       document.getElementById("content").innerHTML =
