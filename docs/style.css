@@ -121,6 +121,29 @@ th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
 .hReg{ color:#666; font-size:14px; line-height:1.1; }
 .hName{ color:#666; font-size:13px; line-height:1.1; }
 
+/* Header Meta-Zeile: Registrierung + Taufname */
+.hMeta{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.hMeta .hReg{
+  font-size:14px;
+  color:#666;
+}
+
+/* Taufname dezent hervorheben */
+.hMeta .hName{
+  font-size:13px;
+  color:#444;
+  padding:2px 6px;
+  border:1px solid #e0e0e0;
+  border-radius:6px;
+  background:#fafafa;
+}
+
 /* Mobile polish */
 @media (max-width:640px){
   body{ margin:12px; }
@@ -133,6 +156,9 @@ th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
   .hReg{ font-size:13px; }
   .hName{ font-size:12px; }
   .headerWrap img{ height:36px !important; margin-right:0 !important; }
+  .hMeta{
+    gap:6px;
+  }
 }
 
 /* Masonry (used in model flight data groups) */
