@@ -56,6 +56,21 @@ h1{ font-size:20px; margin:0; }
 
 .card.sam{ background:#fbfbff; border-color:#e7e7ff; }
 
+/* Key/Value (Labels vs Werte) */
+.k{
+  color:#666;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.v{
+  color:#111;
+  font-size:15px;
+  margin-top:2px;
+  word-break:break-word;
+}
+
 /* Card-Überschrift hervorheben */
 .card > .k{
   font-size:13px;
