@@ -295,6 +295,7 @@
   function linkOrTextRow(label, raw){
     const s = String(raw ?? "").trim();
     if(!s) return "";
+  
     const { prefix, url } = extractFirstHttpUrl(s);
   
     if(!url){
@@ -302,11 +303,22 @@
       return row(label, s);
     }
   
-    // url vorhanden -> prefix als Text (wenn vorhanden) + url als Link
-    const safeUrl = esc(url);
+    // schöner Linktext statt voller URL
+    let linkLabel = "Link";
+    try{
+      const u = new URL(url);
+      linkLabel = u.hostname.replace(/^www\./, "");
+    }catch(e){
+      linkLabel = "Link";
+    }
+  
     const prefixHtml = prefix ? `${esc(prefix)}<br>` : "";
-    return rowHtml(label, `${prefixHtml}<a href="${safeUrl}" target="_blank" rel="noopener">${safeUrl}</a>`);
+    return rowHtml(
+      label,
+      `${prefixHtml}<a href="${esc(url)}" target="_blank" rel="noopener">${esc(linkLabel)}</a>`
+    );
   }
+
   
   async function main(){
     const id = qs("id");
