@@ -166,6 +166,7 @@ def main() -> int:
         aircraft_name = (r.get("aircraft_name", "") or "").strip()
         livery_note = (r.get("livery_note", "") or "").strip()
         extra_info = (r.get("extra_info", "") or "").strip()
+        model_extra = (r.get("model_extra", "") or "").strip()
         
         shop_url = (r.get("Shop_url", "") or "").strip()
 
@@ -244,6 +245,7 @@ def main() -> int:
             "livery_name": livery,
             "parent_livery": parent_livery,
             "zusatzinfo": zusatzinfo,
+            "model_extra": model_extra,
             "special_note": special_note,
             "shop": shop,
             "price": price,
@@ -280,6 +282,7 @@ def main() -> int:
                 "ordered": ordered,
                 "flown": eigenfluege,
                 "special_note": special_note,
+                "model_extra": model_extra,
             },
             "links": {
                 "postcard": postcard,
