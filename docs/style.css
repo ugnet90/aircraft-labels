@@ -39,6 +39,12 @@ h1{ font-size:20px; margin:0; }
 
 .badge-warn{ border-color:#c00; background:#fff5f5; }
 
+.badge.flown{
+  background:#e8f4ff;
+  border-color:#b6dcff;
+  color:#003b70;
+}
+
 .err{
   border:1px solid #c00;
   background:#fff5f5;
