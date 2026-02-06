@@ -362,8 +362,10 @@
           <div class="headerTxt">
             ${showAirlineText && airline ? `<div class="hAir">${esc(airline)}</div>` : ""}
             <div class="hTyp">${esc(typ || id)}</div>
-            <div class="hReg">${esc(reg || "")}</div>
-            ${d.aircraft_name ? `<div class="hName">„${esc(d.aircraft_name)}“</div>` : ""}
+            <div class="hMeta">
+              ${reg ? `<span class="hReg">${esc(reg)}</span>` : ""}
+              ${d.aircraft_name ? `<span class="hName">„${esc(d.aircraft_name)}“</span>` : ""}
+            </div>
           </div>
         </div>
       `;
