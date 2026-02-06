@@ -415,7 +415,7 @@
             ${rowHtml("Maßstab", scaleBadge(d.model?.scale || ""))}
             ${row("Hersteller", d.manufacturer || d.model?.manufacturer || "")}
             ${row("Artikel-/Modellnummer", d.model?.model_number || "")}
-            ${rowLink("Shop", d.shop_url || "", d.shop || "", "Shop")}
+            ${linkOrTextRow("Shop", d.shop_url || d.shop || "")}
             ${row("Preis", money(d.price ?? d.model?.price))}
             ${row("Versand (anteilig)", money(d.shipping_allocated ?? d.model?.shipping_allocated))}
             ${row("Bestellt am", formatDateDE(d.ordered_at || ""))}
@@ -435,7 +435,7 @@
             ${row("Registrierung", reg)}
             ${row("Taufname", d.aircraft_name || "")}
             ${row("Zusatzinfo", d.extra_info || "")}
-            ${row("Mitgeflogen", boolBadge(d.flown ?? d.model?.flown))}
+            ${(d.flown ?? d.model?.flown) ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ mitgeflogen</span>`) : ""}
             ${rowLink("Foto", d.photo || d.links?.photo || "", "", "Foto")}
           </div>
         </div>
