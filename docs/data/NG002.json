@@ -6,14 +6,14 @@
   "manufacturer": "Herpa Wings",
   "aircraft_name": "Innsbruck - Tirol",
   "livery_note": "",
-  "extra_info": "Lauda Air | + Gepäckwagen",
+  "extra_info": "Lauda Air",
   "shop_url": "https://www.ebay.de/itm/146906325011",
   "aircraft_id": "BOE-737-600",
   "aircraft_type": "Boeing 737-600",
   "registration": "OE-LNM",
   "livery_name": "LDA-2004-TIROL",
   "parent_livery": "LDA-1990-CLASSIC",
-  "zusatzinfo": "I:Lauda Air | N:Innsbruck - Tirol | I:+ Gepäckwagen",
+  "zusatzinfo": "I:Lauda Air | N:Innsbruck - Tirol |M:inkl. Gepäckwagen",
   "special_note": "",
   "shop": "Ebay philundines",
   "price": 20.5,
@@ -38,7 +38,7 @@
   "livery": {
     "code": "LDA-2004-TIROL",
     "parent": "LDA-1990-CLASSIC",
-    "notes_raw": "I:Lauda Air | N:Innsbruck - Tirol | I:+ Gepäckwagen",
+    "notes_raw": "I:Lauda Air | N:Innsbruck - Tirol |M:inkl. Gepäckwagen",
     "note": ""
   },
   "model": {

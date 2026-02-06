@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-06T08:15:57Z",
+  "generated_at": "2026-02-06T11:34:18Z",
   "count": 167,
   "counts_by_airline_code": {
     "OS": 20,
@@ -1966,7 +1966,7 @@
       "manufacturer": "Herpa Wings",
       "aircraft_name": "Innsbruck - Tirol",
       "livery_note": "",
-      "extra_info": "Lauda Air | + Gepäckwagen",
+      "extra_info": "Lauda Air",
       "livery_name": "LDA-2004-TIROL",
       "livery_display": "Tirol Special",
       "arrived": "2025-11-03",
