@@ -9,8 +9,11 @@ on:
       - "data/liveries.csv"
       - "tools/build_json.py"
       - "tools/build_stats.py"
-      - "docs/**"
   workflow_dispatch:
+
+concurrency:
+  group: build-data-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
