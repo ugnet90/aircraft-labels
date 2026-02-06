@@ -410,7 +410,7 @@
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
             ${row("Mitgeflogen", boolBadge(d.flown ?? d.model?.flown))}
             ${row("Besonderheit", d.special_note || d.model?.special_note || "")}
-            ${rowLink("Postkarte", d.postcard || d.links?.postcard || "", "", "Postkarte")}
+            ${linkOrTextRow("Postkarte", d.postcard || d.links?.postcard || "", "", "Postkarte")}
             ${row("Preis Postkarte", money(d.postcard_price || ""))}
           </div>
         </div>
