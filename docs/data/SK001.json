@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Dvalin Viking",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay",
   "price": 73.21,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",

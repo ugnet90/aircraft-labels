@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Bartolomeu de Gusmão",
+  "model_extra": "",
   "special_note": "",
   "shop": "Sky Shop",
   "price": 85.73,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",

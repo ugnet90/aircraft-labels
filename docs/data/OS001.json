@@ -14,6 +14,7 @@
   "livery_name": "AUA-2015-MYAUA",
   "parent_livery": "",
   "zusatzinfo": "N:Baku",
+  "model_extra": "",
   "special_note": "",
   "shop": "aviationmegastore.com",
   "price": null,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",

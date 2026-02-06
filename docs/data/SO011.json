@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "I:B747-8 | N:Air Force One",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay worldofwingseu",
   "price": 35.01,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "x",

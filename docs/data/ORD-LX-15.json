@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "I:Edelweiss | N:Bahari",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
   "price": 15.0,
@@ -52,7 +53,8 @@
     "ordered_at": "2026-02-01",
     "ordered": true,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",

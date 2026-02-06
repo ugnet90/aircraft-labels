@@ -14,6 +14,7 @@
   "livery_name": "AUA-2003-BLUEBELLY",
   "parent_livery": "",
   "zusatzinfo": "N:Kahlenberg",
+  "model_extra": "",
   "special_note": "",
   "shop": "World of Wings",
   "price": 47.95,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",

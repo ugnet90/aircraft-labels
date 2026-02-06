@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "L:Retro-Bemalung 50 J. LH",
+  "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 34.5,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",

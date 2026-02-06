@@ -14,6 +14,7 @@
   "livery_name": "AUA-1980-REDARROW",
   "parent_livery": "",
   "zusatzinfo": "N:Linz",
+  "model_extra": "",
   "special_note": "",
   "shop": "https://www.avworld.ca/",
   "price": 65.0,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",

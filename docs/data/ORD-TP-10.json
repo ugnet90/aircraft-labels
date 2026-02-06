@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "L:TAP Air Cargo | N:Pedro Nunes",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
   "price": 30.55,
@@ -52,7 +53,8 @@
     "ordered_at": "2026-02-01",
     "ordered": true,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/40154-TAP-Cargo-A330.html",

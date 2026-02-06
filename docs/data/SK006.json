@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Christian Valdemar Viking",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay krysset_4",
   "price": 38.47,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",

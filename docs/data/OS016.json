@@ -14,6 +14,7 @@
   "livery_name": "AUA-1996-1000YEARS",
   "parent_livery": "AUA-1995-ARROWSTRIPE",
   "zusatzinfo": "N:Pinzgau | L:1000 Jahre Österreich",
+  "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
   "price": 17.5,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/24460-austrian-a321.html",

@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "",
+  "model_extra": "",
   "special_note": "",
   "shop": "Swiss-Edelweiss Airplane Shop",
   "price": 56.91,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "vorhanden",

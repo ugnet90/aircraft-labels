@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay philundines",
   "price": 15.5,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",

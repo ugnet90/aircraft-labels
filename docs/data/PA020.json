@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Celstial Empire",
+  "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
   "price": 41.04,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",

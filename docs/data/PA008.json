@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Morning Star",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay waffle-collectibles",
   "price": 21.92,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",

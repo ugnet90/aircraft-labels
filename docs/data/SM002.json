@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Dixie Clipper",
+  "model_extra": "",
   "special_note": "'1:350",
   "shop": "Leboncoin pat33600",
   "price": 17.0,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": "'1:350"
+    "special_note": "'1:350",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",

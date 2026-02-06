@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Harald Viking",
+  "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Micha",
   "price": 33.66,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",

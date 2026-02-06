@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "N:Sherwood Forest",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay Kontorbuer",
   "price": 29.0,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",

@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "I:KLM exel",
+  "model_extra": "",
   "special_note": "",
   "shop": "Ebay Models Shop",
   "price": 34.39,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Bez. \"KLM UK\"; https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",

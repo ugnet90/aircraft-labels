@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "L:100th Airbus A220",
+  "model_extra": "",
   "special_note": "",
   "shop": "Sklep Modelarski",
   "price": 40.59,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": true,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",

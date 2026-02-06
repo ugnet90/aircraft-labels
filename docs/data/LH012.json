@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "I:Team Lufthansa",
+  "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Dan Segal",
   "price": 25.0,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/18079-contactairteam-lufthansa-fokker-50.html",

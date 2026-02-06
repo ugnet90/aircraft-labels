@@ -14,6 +14,7 @@
   "livery_name": "",
   "parent_livery": "",
   "zusatzinfo": "I:Tante Ju",
+  "model_extra": "",
   "special_note": "",
   "shop": "2dehands Julien Lempereur",
   "price": 21.0,
@@ -52,7 +53,8 @@
     "ordered_at": null,
     "ordered": false,
     "flown": null,
-    "special_note": ""
+    "special_note": "",
+    "model_extra": ""
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
