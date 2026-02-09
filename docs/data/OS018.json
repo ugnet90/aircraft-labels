@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-767-300",
     "type": "Boeing 767-300",
-    "registration": "OE-LAW"
+    "registration": "OE-LAW",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2018-NEW",

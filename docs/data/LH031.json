@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "EMB-E190",
     "type": "Embraer ERJ-190",
-    "registration": "D-AECD"
+    "registration": "D-AECD",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

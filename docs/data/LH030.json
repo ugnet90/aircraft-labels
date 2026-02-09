@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-MD11F",
     "type": "McDonnell Douglas MD-11F",
-    "registration": "D-ALCN"
+    "registration": "D-ALCN",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

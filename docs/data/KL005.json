@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BAC-111-300",
     "type": "BAC 1-11 Series 300",
-    "registration": "G-ATPJ"
+    "registration": "G-ATPJ",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

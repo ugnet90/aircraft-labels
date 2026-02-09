@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-C32A",
     "type": "Boeing C-32A",
-    "registration": "80001"
+    "registration": "80001",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "VIC-Viscount-800",
     "type": "Vickers Viscount 800",
-    "registration": "4X-AVF"
+    "registration": "4X-AVF",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BAC-111-400",
     "type": "BAC 1-11 Series 400",
-    "registration": "G-AVOE"
+    "registration": "G-AVOE",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

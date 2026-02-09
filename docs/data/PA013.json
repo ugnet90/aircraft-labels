@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-707-320",
     "type": "Boeing 707-320",
-    "registration": "N412PA"
+    "registration": "N412PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "SUD-Caravelle-VIR",
     "type": "Sud Aviation SE 210 Caravelle VI-R",
-    "registration": "OE-LCA"
+    "registration": "OE-LCA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-1960-CLASSIC",

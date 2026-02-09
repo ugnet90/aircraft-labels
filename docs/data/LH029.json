@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-200F",
     "type": "Boeing 747-200F",
-    "registration": "D-ABZF"
+    "registration": "D-ABZF",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

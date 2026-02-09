@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "FOK-F50",
     "type": "Fokker 50",
-    "registration": "D-AFFZ"
+    "registration": "D-AFFZ",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

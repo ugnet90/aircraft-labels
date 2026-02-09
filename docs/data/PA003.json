@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-377",
     "type": "Boeing 377 Stratocruiser",
-    "registration": "N1025V"
+    "registration": "N1025V",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

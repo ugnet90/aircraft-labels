@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "LOC-RP3D",
     "type": "Lockheed RP-3D Orion",
-    "registration": "VXN-8"
+    "registration": "VXN-8",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

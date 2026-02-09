@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-DC8-50",
     "type": "Douglas DC-8-53",
-    "registration": "PH-DCI"
+    "registration": "PH-DCI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

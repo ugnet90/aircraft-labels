@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOM-CRJ900",
     "type": "Bombardier CRJ-900",
-    "registration": "D-ACND"
+    "registration": "D-ACND",
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

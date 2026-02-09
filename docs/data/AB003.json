@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-800-WL",
     "type": "Boeing 737-800 (Winglets)",
-    "registration": "D-ABAF"
+    "registration": "D-ABAF",
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

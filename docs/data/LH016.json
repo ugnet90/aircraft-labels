@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "LOC-L1649",
     "type": "Lockheed L-1649A Starliner",
-    "registration": "D-ALUB"
+    "registration": "D-ALUB",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

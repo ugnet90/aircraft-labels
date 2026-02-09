@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-YAL1",
     "type": "Boeing YAL-1 Airborne Laser",
-    "registration": "00-0001"
+    "registration": "00-0001",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

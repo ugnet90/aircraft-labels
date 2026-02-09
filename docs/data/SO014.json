@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A330-743L",
     "type": "Airbus 330 Beluga XL",
-    "registration": "F-GXLI"
+    "registration": "F-GXLI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

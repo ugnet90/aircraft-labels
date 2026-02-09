@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-700",
     "type": "Boeing 737-700",
-    "registration": "D-AGEP"
+    "registration": "D-AGEP",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

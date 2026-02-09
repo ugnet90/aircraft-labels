@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-720",
     "type": "Boeing 720",
-    "registration": "D-ABOH"
+    "registration": "D-ABOH",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

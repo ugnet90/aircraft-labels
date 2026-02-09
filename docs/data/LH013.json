@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A330-300-SL",
     "type": "Airbus A330-300 (Sharklets)",
-    "registration": "D-AIKO"
+    "registration": "D-AIKO",
+    "wingtip": "SL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

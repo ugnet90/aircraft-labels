@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-ACJ350-900",
     "type": "Airbus ACJ350-900",
-    "registration": "10+01"
+    "registration": "10+01",
+    "wingtip": "SL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

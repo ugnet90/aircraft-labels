@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BRI-Britannia-312",
     "type": "Bristol 175 Britannia 312",
-    "registration": "G-AOVK"
+    "registration": "G-AOVK",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

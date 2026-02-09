@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DHC-DHC8-400",
     "type": "De Havilland Canada DHC-8-400",
-    "registration": "OE-LGI"
+    "registration": "OE-LGI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2003-BLUEBELLY",

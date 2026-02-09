@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-100",
     "type": "Boeing 747-100",
-    "registration": "D-ABYA"
+    "registration": "D-ABYA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

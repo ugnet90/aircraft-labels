@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-8",
     "type": "Boeing 747-8",
-    "registration": "D-ABYT"
+    "registration": "D-ABYT",
+    "wingtip": "RW",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

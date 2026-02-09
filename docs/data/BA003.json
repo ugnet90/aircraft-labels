@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "SAB-340",
     "type": "Saab 340",
-    "registration": "G-LGNB"
+    "registration": "G-LGNB",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

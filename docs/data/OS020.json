@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "VIC-Viscount-800",
     "type": "Vickers Viscount 837",
-    "registration": "OE-LAM"
+    "registration": "OE-LAM",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-1959-CHEATLINE",

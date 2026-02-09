@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-MD11",
     "type": "McDonnell Douglas MD-11",
-    "registration": "HB-IWI"
+    "registration": "HB-IWI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

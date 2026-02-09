@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-DC4",
     "type": "Douglas DC-4",
-    "registration": "N88886"
+    "registration": "N88886",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

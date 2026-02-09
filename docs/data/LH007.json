@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-200",
     "type": "Boeing 737-200",
-    "registration": "D-ABHX"
+    "registration": "D-ABHX",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

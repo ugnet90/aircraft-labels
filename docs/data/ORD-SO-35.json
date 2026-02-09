@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A330-900neo",
     "type": "Airbus A330-900neo",
-    "registration": "OO-ABG"
+    "registration": "OO-ABG",
+    "wingtip": "SL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-727-100",
     "type": "Boeing 727-100",
-    "registration": "D-ABIB"
+    "registration": "D-ABIB",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

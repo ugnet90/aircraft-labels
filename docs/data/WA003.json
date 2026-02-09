@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "EMB-E195E2",
     "type": "Embraer E195-E2",
-    "registration": "PH-NXE"
+    "registration": "PH-NXE",
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

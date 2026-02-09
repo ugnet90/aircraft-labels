@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-SP",
     "type": "Boeing 747SP",
-    "registration": "N533PA"
+    "registration": "N533PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

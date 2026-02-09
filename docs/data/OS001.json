@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A319",
     "type": "Airbus A319-100",
-    "registration": "OE-LDE"
+    "registration": "OE-LDE",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2015-MYAUA",

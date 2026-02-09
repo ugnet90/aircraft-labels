@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "EMB-ERJ145",
     "type": "Embraer ERJ-145MP",
-    "registration": "PH-RXA"
+    "registration": "PH-RXA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

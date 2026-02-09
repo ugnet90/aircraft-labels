@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-MD87",
     "type": "McDonnell Douglas MD-87",
-    "registration": "OY-KHF"
+    "registration": "OY-KHF",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

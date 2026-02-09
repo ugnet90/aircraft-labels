@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "JUN-JU52-3M",
     "type": "Junkers Ju 52/3m",
-    "registration": "D-AQUI"
+    "registration": "D-AQUI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

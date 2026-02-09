@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A310-300",
     "type": "Airbus A310-300",
-    "registration": "N818PA"
+    "registration": "N818PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

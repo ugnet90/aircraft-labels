@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-DC8-40",
     "type": "Douglas DC-8-40",
-    "registration": "I-DIWA"
+    "registration": "I-DIWA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

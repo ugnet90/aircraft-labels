@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-757-200",
     "type": "Boeing 757-200",
-    "registration": "HB-IHR"
+    "registration": "HB-IHR",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

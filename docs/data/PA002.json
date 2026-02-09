@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-400",
     "type": "Boeing 737-400",
-    "registration": "N406KW"
+    "registration": "N406KW",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

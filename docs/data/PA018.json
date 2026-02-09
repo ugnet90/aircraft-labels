@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-DC8-30",
     "type": "Douglas DC-8-30",
-    "registration": "N809PA"
+    "registration": "N809PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

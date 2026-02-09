@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BAE-146-300",
     "type": "British Aerospace Avro RJ100",
-    "registration": "HB-IXU"
+    "registration": "HB-IXU",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

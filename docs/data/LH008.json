@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "FOK-F27",
     "type": "Fokker F27-400 Friendship",
-    "registration": "D-BARI"
+    "registration": "D-BARI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "VIC-Viscount-800",
     "type": "Vickers Viscount 814",
-    "registration": "D-ANUN"
+    "registration": "D-ANUN",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

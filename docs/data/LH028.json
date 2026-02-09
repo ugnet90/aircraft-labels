@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A321-neo",
     "type": "Airbus A321 neo",
-    "registration": "D-AIEQ"
+    "registration": "D-AIEQ",
+    "wingtip": "SL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-DC9-50",
     "type": "Douglas DC-9-50",
-    "registration": "OE-LDL"
+    "registration": "OE-LDL",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-1980-REDARROW",

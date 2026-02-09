@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "CON-CV880",
     "type": "Convair CV-880 Golden Arrow",
-    "registration": "HB-ICL"
+    "registration": "HB-ICL",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

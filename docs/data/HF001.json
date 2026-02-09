@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-800",
     "type": "Boeing 737-800",
-    "registration": "D-AHFC"
+    "registration": "D-AHFC",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

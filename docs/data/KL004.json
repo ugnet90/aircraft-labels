@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "LOC-L188",
     "type": "Lockheed L-188 Electra",
-    "registration": "PH-LLD"
+    "registration": "PH-LLD",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

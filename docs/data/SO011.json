@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-VC25B",
     "type": "Boeing VC-25B",
-    "registration": "30000"
+    "registration": "30000",
+    "wingtip": "SL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

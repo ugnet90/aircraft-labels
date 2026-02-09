@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "FOK-F70",
     "type": "Fokker 70",
-    "registration": "OE-LFG"
+    "registration": "OE-LFG",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2003-STARALLIANCE-LOGOSTRIP",

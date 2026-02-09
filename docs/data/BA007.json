@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "HAW-Trident-3",
     "type": "Hawker Siddeley HS-121 Trident 3",
-    "registration": "G-AWZN"
+    "registration": "G-AWZN",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

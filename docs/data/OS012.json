@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "HAW-HS748",
     "type": "Hawker-Siddeley HS-748",
-    "registration": "OE-LHT"
+    "registration": "OE-LHT",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-1960-CLASSIC",

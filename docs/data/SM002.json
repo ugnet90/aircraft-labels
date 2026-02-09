@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-314",
     "type": "Boeing 314 Clipper",
-    "registration": "NC18605"
+    "registration": "NC18605",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

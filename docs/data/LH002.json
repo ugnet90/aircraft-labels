@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-707-320",
     "type": "Boeing 707-330B",
-    "registration": "D-ABUC"
+    "registration": "D-ABUC",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

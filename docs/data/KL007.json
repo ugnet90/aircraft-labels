@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-DC7-C",
     "type": "Douglas DC-7C Seven Seas",
-    "registration": "PH-DSG"
+    "registration": "PH-DSG",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "FOK-F100",
     "type": "Fokker 100",
-    "registration": "OE-LVK"
+    "registration": "OE-LVK",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2008-FOOTBALL",

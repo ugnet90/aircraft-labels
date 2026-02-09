@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-757-200-WL",
     "type": "Boeing 757-200 (Winglets)",
-    "registration": "TF-ISF"
+    "registration": "TF-ISF",
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

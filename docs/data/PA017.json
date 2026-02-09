@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "CUR-C46",
     "type": "Curtiss-Wright C-46 Commando",
-    "registration": "N67980"
+    "registration": "N67980",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-C40A",
     "type": "Boeing C-40A Clipper",
-    "registration": "RY-831"
+    "registration": "RY-831",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

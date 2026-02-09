@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A300-B2",
     "type": "Airbus A300B2",
-    "registration": "D-AIAA"
+    "registration": "D-AIAA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

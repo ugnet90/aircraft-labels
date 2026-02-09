@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A350-900",
     "type": "Airbus A350-900",
-    "registration": "D-AIVD"
+    "registration": "D-AIVD",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

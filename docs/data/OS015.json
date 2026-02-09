@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A340-300",
     "type": "Airbus A340-300",
-    "registration": "OE-LAL"
+    "registration": "OE-LAL",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2006-PHILHARMONIKER",

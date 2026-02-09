@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "LOC-L1011-500",
     "type": "Lockheed L-1011 TriStar 500",
-    "registration": "N514PA"
+    "registration": "N514PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

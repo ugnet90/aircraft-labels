@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOR-DOX",
     "type": "Dornier Do X",
-    "registration": "D-1929"
+    "registration": "D-1929",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

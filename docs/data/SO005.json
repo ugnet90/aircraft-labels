@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "ASP-B377SGT",
     "type": "Boeing B-377SGT-201 Super Guppy",
-    "registration": "F-BTGV"
+    "registration": "F-BTGV",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "SHO-360",
     "type": "Shorts 360",
-    "registration": "G-BNYI"
+    "registration": "G-BNYI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

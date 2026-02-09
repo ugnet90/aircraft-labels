@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-727-200",
     "type": "Boeing 727-200",
-    "registration": "N365PA"
+    "registration": "N365PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

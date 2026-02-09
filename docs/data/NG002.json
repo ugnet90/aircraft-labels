@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-600",
     "type": "Boeing 737-600",
-    "registration": "OE-LNM"
+    "registration": "OE-LNM",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "LDA-2004-TIROL",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "JUN-JU52-3M",
     "type": "Junkers JU-52",
-    "registration": "A-703"
+    "registration": "A-703",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

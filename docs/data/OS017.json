@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-787-9",
     "type": "Boeing 787-9 Dreamliner",
-    "registration": "OE-LPM"
+    "registration": "OE-LPM",
+    "wingtip": "RW",
+    "has_wingtip": true
   },
   "livery": {
     "code": "AUA-2018-NEW",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-DC8-30",
     "type": "Douglas DC-8-32",
-    "registration": "HB-IDA"
+    "registration": "HB-IDA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-777-200",
     "type": "Boeing 777-200",
-    "registration": "OE-LPA"
+    "registration": "OE-LPA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "LDA-1990-CLASSIC",

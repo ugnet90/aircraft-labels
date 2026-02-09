@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "EMB-E170",
     "type": "Embraer ERJ-170",
-    "registration": "F-HBXE"
+    "registration": "F-HBXE",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

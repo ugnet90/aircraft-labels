@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-SCA",
     "type": "Boeing 747 Shuttle Carrier Aircraft",
-    "registration": "N905NA"
+    "registration": "N905NA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

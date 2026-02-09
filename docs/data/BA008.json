@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-DC10-30",
     "type": "McDonnell Douglas DC-10-30",
-    "registration": "G-BEBM"
+    "registration": "G-BEBM",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

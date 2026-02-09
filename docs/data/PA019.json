@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A300-B4",
     "type": "Airbus A300B4",
-    "registration": "N207PA"
+    "registration": "N207PA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "AIB-A320-200",
     "type": "Airbus A320-200",
-    "registration": "OY-KAR"
+    "registration": "OY-KAR",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

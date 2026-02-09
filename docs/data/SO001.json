@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "ANT-An225",
     "type": "Antonov AN-225 Mriya",
-    "registration": "UR-82060"
+    "registration": "UR-82060",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

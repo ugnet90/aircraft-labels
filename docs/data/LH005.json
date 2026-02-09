@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "LOC-L1049",
     "type": "Lockheed L-1049G Super Constellation",
-    "registration": "D-ALEM"
+    "registration": "D-ALEM",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

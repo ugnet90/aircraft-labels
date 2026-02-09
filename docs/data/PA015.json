@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "LOC-L049",
     "type": "Lockheed L-049 Constallation",
-    "registration": "NC88831"
+    "registration": "NC88831",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

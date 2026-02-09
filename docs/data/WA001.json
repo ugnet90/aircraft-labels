@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "ATR-ATR42-300",
     "type": "ATR 42-320",
-    "registration": "PH-XLD"
+    "registration": "PH-XLD",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "CSA-PBY5",
     "type": "Consolidated PBY-5 Catalina",
-    "registration": "433939"
+    "registration": "433939",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

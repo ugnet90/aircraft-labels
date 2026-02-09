@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-777-300ER",
     "type": "Boeing 777-300ER",
-    "registration": "F-GSQB"
+    "registration": "F-GSQB",
+    "wingtip": "RW",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

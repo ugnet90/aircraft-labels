@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "ATR-ATR72-200",
     "type": "ATR 72-200",
-    "registration": "PH-XLH"
+    "registration": "PH-XLH",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

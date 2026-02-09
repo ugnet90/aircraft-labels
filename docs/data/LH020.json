@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-300",
     "type": "Boeing 737-300",
-    "registration": "D-ABEE"
+    "registration": "D-ABEE",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

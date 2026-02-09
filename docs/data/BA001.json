@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "SUD-CONCORDE",
     "type": "Aérospatiale/BAC Concorde",
-    "registration": "G-BOAD"
+    "registration": "G-BOAD",
+    "wingtip": "",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-DC10-30",
     "type": "McDonnell Douglas DC-10-30",
-    "registration": "PH-DTA"
+    "registration": "PH-DTA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

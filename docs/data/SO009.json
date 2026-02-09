@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-VC118A",
     "type": "Douglas VC-118A",
-    "registration": "46-0505"
+    "registration": "46-0505",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

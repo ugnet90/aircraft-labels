@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-600",
     "type": "Boeing 737-600",
-    "registration": "OE-LNL"
+    "registration": "OE-LNL",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "AUA-2003-BLUEBELLY",

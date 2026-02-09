@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "SCA-SS2",
     "type": "SpaceShipTwo",
-    "registration": "N348MS"
+    "registration": "N348MS",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

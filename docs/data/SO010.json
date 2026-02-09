@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BUR-OK1K1",
     "type": "Buran Space Orbiter OK-1K1",
-    "registration": "OK-GLI"
+    "registration": "OK-GLI",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

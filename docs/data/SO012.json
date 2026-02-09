@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "DOU-C47",
     "type": "Douglas C-47 Skytrain",
-    "registration": "O-76671"
+    "registration": "O-76671",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

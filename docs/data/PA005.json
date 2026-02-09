@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-DC10-10",
     "type": "McDonnell Douglas DC-10-10",
-    "registration": "N61NA"
+    "registration": "N61NA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

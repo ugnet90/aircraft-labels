@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-767-300ER",
     "type": "Boeing 767-300ER Extended Range",
-    "registration": "PH-BZJ"
+    "registration": "PH-BZJ",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "VIC-VC10-SUPER",
     "type": "BAC Vickers VC-10 Super",
-    "registration": "G-ASGH"
+    "registration": "G-ASGH",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

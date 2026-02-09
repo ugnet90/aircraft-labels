@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-200",
     "type": "Boeing 747-200",
-    "registration": "HB-IGB"
+    "registration": "HB-IGB",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

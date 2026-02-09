@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "VIC-Viscount-700",
     "type": "Vickers Viscount 779",
-    "registration": "OE-LAB"
+    "registration": "OE-LAB",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

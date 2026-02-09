@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "CON-CV990",
     "type": "Convair CV-990 Coronado",
-    "registration": "HB-ICC"
+    "registration": "HB-ICC",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

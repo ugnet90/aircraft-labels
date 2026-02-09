@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "MCD-MD81",
     "type": "McDonnell Douglas MD-81",
-    "registration": "HB-IND"
+    "registration": "HB-IND",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-747-400",
     "type": "Boeing 747-400",
-    "registration": "PH-BFH"
+    "registration": "PH-BFH",
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

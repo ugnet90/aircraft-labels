@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-767-AOA",
     "type": "Boeing 767-200 Airborne Optical Adjunct",
-    "registration": "N767BA"
+    "registration": "N767BA",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

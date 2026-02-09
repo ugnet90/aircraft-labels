@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BOE-737-700-WL",
     "type": "Boeing 737-700 (Winglets)",
-    "registration": "SE-RJX"
+    "registration": "SE-RJX",
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",

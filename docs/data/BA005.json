@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "BAE-146-200",
     "type": "British Aerospace 146-200",
-    "registration": "G-GNTZ"
+    "registration": "G-GNTZ",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",

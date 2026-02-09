@@ -34,7 +34,9 @@
   "aircraft": {
     "aircraft_id": "CON-CV240",
     "type": "Convair CV-240 Convairliner",
-    "registration": "N90671"
+    "registration": "N90671",
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",
