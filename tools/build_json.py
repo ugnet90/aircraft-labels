@@ -263,6 +263,8 @@ def main() -> int:
                 "aircraft_id": aircraft_id,
                 "type": aircraft_type,
                 "registration": registration,
+                "wingtip": wingtip,
+                "has_wingtip": has_wingtip,                
             },
             "livery": {
                 "code": livery,
@@ -315,6 +317,12 @@ def main() -> int:
         livery_pretty = ""
         if livery_full:
             livery_pretty = (livery_full.get("Livery_Name", "") or "").strip()
+        wingtip = ""
+        has_wingtip = False
+        if aircraft_full:
+            wingtip = (aircraft_full.get("Wingtip", "") or "").strip().upper()
+            has_wingtip = (wingtip != "" and wingtip != "NONE")
+            
         
         index_list.append({
             "model_id": model_id,
@@ -330,7 +338,10 @@ def main() -> int:
             "aircraft_name": (r.get("aircraft_name", "") or "").strip(),
             "livery_note": (r.get("livery_note", "") or "").strip(),
             "extra_info": (r.get("extra_info", "") or "").strip(),
-        
+            
+            "wingtip": wingtip,
+            "has_wingtip": has_wingtip,
+      
             "livery_name": livery,                      # Code behalten (für Debug/Referenz)
             "livery_display": livery_pretty or livery,   # Anzeige
             "arrived": angekommen_iso,
