@@ -31,3 +31,6 @@ tr:hover{ background:#fafafa; }
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
 }
 .badge-id.ord{ background:#eef6ff; border-color:#cfe3ff; }
+@media (max-width:520px){
+  .hide-m{ display:none !important; }
+}
