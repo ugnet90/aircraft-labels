@@ -200,13 +200,13 @@
             <th>Modell-ID</th>
             <th>Airline-Gruppe</th>
             <th>Airline</th>
-            <th>Maßstab</th>
-            <th>Mitgeflogen</th>
+            <th class="hide-m">Maßstab</th>
+            <th class="hide-m">Mitgeflogen</th>
             <th>Flugzeugtyp</th>
             <th>WL/SL</th>
-            <th>Registrierung</th>
-            <th>Bemalung</th>
-            <th>Angekommen</th>
+            <th class="hide-m">Registrierung</th>
+            <th class="hide-m">Bemalung</th>
+            <th class="hide-m">Angekommen</th>
           </tr>
         </thead>
         <tbody>
@@ -235,8 +235,8 @@
               ${esc(it.airline_row || it.airline || it.airline_code || "")}
             </a>
           </td>
-          <td>${scaleBadge(it.scale || "")}</td>
-          <td class="mono">${it.flown === true ? "ja" : it.flown === false ? "nein" : ""}</td>
+          <td class="hide-m">${scaleBadge(it.scale || "")}</td>
+          <td class="mono hide-m">${it.flown === true ? "ja" : it.flown === false ? "nein" : ""}</td>
           <td>
             <a href="#" data-type="${esc(it.aircraft_type || "")}">
               ${esc(it.aircraft_type || "")}
@@ -249,9 +249,9 @@
                 : ""
             }
           </td>
-          <td class="mono">${esc(it.registration || "")}</td>
-          <td>${esc(it.livery_display || it.livery_name || "")}</td>
-          <td class="mono">
+          <td class="mono hide-m">${esc(it.registration || "")}</td>
+          <td class="hide-m">${esc(it.livery_display || it.livery_name || "")}</td>
+          <td class="mono hide-m">
             ${esc(formatDateDE(it.arrived || ""))}
             ${
               it.ordered === true && !it.arrived
