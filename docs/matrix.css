@@ -1,5 +1,5 @@
 /* === matrix page only === */
-body{ --maxw: 1400px; }
+body{ --maxw: 1100px; }   /* oder 1200px, wenn du etwas mehr Luft willst */
 
 .controls{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
 label{ display:flex; gap:6px; align-items:center; }
@@ -9,7 +9,7 @@ label{ display:flex; gap:6px; align-items:center; }
 #topScrollInner{ height:1px; }
 #tableWrap{ overflow:auto; max-height:75vh; }
 
-table{ width:max-content; border-collapse:collapse; font-size:12px; }
+table{ width:100%; border-collapse:collapse; font-size:12px; }
 th, td{
   border:1px solid #e6e6e6;
   padding:6px 8px;
