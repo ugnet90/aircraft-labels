@@ -150,7 +150,8 @@
     optAll.textContent = "Alle Airlines";
     mAir.appendChild(optAll);
 
-    for(const a of (data.airlines || [])){
+    const airlines = data.groups || data.airlines || [];
+    for(const a of airlines){
       const opt = document.createElement("option");
       opt.value = a;
       opt.textContent = a;
@@ -167,9 +168,11 @@
   function renderMobile(){
     if(!data) return;
 
-    const airlines = data.airlines || [];
+    const airlines = data.groups || data.airlines || [];
     const types = data.types || [];
-    const matrix = data.matrix || [];
+    const matrix = data.present_matrix || data.matrix || [];
+    const ordered = data.ordered_matrix || [];
+
 
     const selectedAir = (document.getElementById("mAir").value || "");
     const typeQ = (document.getElementById("mTypeQ").value || "").trim().toLowerCase();
@@ -195,9 +198,10 @@
       if(typeQ && !t.toLowerCase().includes(typeQ)) continue;
 
       const n = (matrix[airlineIdx] && matrix[airlineIdx][ti]) ? matrix[airlineIdx][ti] : 0;
+      const o = (ordered[airlineIdx] && ordered[airlineIdx][ti]) ? ordered[airlineIdx][ti] : 0;
       if(onlyNonZero && !n) continue;
 
-      rows.push({t, n});
+       rows.push({t, n, o});
     }
 
     rows.sort((a,b) => a.t.localeCompare(b.t));
@@ -208,13 +212,13 @@
 
     const tbody = document.querySelector("#mobileTbl tbody");
     tbody.innerHTML = rows.map(x => {
-      const href = `./index.html?airline=${encodeURIComponent(selectedAir)}&type=${encodeURIComponent(x.t)}`;
+      const href = `./index.html?group=${encodeURIComponent(selectedAir)}&type=${encodeURIComponent(x.t)}`;
       const n = x.n ? x.n : 0;
     
       return `
         <tr>
           <td class="num">
-            <a href="${esc(href)}" title="In Übersicht öffnen">${esc(n)}</a>
+            <a href="${esc(href)}" title="In Übersicht öffnen">${esc(n)}</a>${x.o ? ` <span class="badgeOrdered">+${esc(x.o)}</span>` : ""}
           </td>
           <td>${esc(x.t)}</td>
         </tr>
