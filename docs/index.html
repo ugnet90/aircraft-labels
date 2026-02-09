@@ -203,6 +203,7 @@
             <th>Maßstab</th>
             <th>Mitgeflogen</th>
             <th>Flugzeugtyp</th>
+            <th>WL/SL</th>
             <th>Registrierung</th>
             <th>Bemalung</th>
             <th>Angekommen</th>
@@ -240,6 +241,13 @@
             <a href="#" data-type="${esc(it.aircraft_type || "")}">
               ${esc(it.aircraft_type || "")}
             </a>
+          </td>
+          <td class="mono">
+            ${
+              (it.has_wingtip === true) || ((it.wingtip || "").toUpperCase() && (it.wingtip || "").toUpperCase() !== "NONE")
+                ? `<span class="badge">ja</span>`
+                : ""
+            }
           </td>
           <td class="mono">${esc(it.registration || "")}</td>
           <td>${esc(it.livery_display || it.livery_name || "")}</td>
