@@ -11,6 +11,9 @@ body{ --maxw: 1100px; }
 }
 @media (max-width:900px){ .bar{ grid-template-columns:1fr 1fr; } }
 @media (max-width:520px){ .bar{ grid-template-columns:1fr; } }
+@media (max-width:720px){
+  .hide-m{ display:none; }
+}
 
 tr:hover{ background:#fafafa; }
 
