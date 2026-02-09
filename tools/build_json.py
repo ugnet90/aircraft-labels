@@ -171,6 +171,15 @@ def main() -> int:
         shop_url = (r.get("Shop_url", "") or "").strip()
 
         aircraft_id = (r.get("aircraft_id", "") or "").strip()
+        
+        # Wingtip (aus passenger_aircraft_full.csv) – robust initialisieren
+        wingtip = ""
+        has_wingtip = False
+
+        aircraft_full = pax_idx.get(aircraft_id) if aircraft_id else None
+        if aircraft_full:
+            wingtip = (aircraft_full.get("Wingtip", "") or "").strip().upper()
+            has_wingtip = (wingtip != "" and wingtip != "NONE")
 
         aircraft_type = (r.get("aircraft_type", "") or "").strip()
         registration = (r.get("registration", "") or "").strip()
