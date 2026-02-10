@@ -1,4 +1,3 @@
-<!-- TEST123 -->
 <!doctype html>
 <html lang="de">
 <head>
@@ -239,7 +238,7 @@
           <td class="hide-m">${scaleBadge(it.scale || "")}</td>
           <td class="mono hide-m">${it.flown === true ? "ja" : it.flown === false ? "nein" : ""}</td>
           <td>
-            <a href="#" data-type="${esc(it.aircraft_type || "")}">
+            <a href="#" data-aircraft-id="${esc(it.aircraft_id || "")}" data-type="${esc(it.aircraft_type || "")}">
               ${esc(it.aircraft_type || "")}
             </a>
           </td>
@@ -390,11 +389,12 @@
   }
 
   document.addEventListener("click", (ev) => {
-    const a = ev.target.closest("a[data-airline], a[data-type], a[data-group]");
+    const a = ev.target.closest("a[data-airline], a[data-type], a[data-group], a[data-aircraft-id]");
     if(!a) return;
   
     ev.preventDefault();
-  
+
+    const aid = a.getAttribute("data-aircraft-id");
     const airline = a.getAttribute("data-airline");
     const type = a.getAttribute("data-type");
     const group = a.getAttribute("data-group");
@@ -416,7 +416,12 @@
     if(airline !== null){
       document.getElementById("airline").value = airline;
     }
-    if(type !== null){
+    if(aid){
+      document.getElementById("q").value = aid;   // aircraft_id als Suchfilter
+      document.getElementById("type").value = ""; // Typ-Text bewusst leeren
+    }
+
+    if(!aid && type !== null){
       document.getElementById("type").value = type;
     }
   
