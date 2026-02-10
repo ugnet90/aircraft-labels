@@ -172,6 +172,14 @@ body{ --maxw: 1200px; }
   font-size: inherit;
 }
 
-
 .tbl th.col-num{ text-align:right; }
+
+.detailAll{
+  margin: 0 0 10px 0;
+}
+.detailAll .btn{
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+}
 
