@@ -27,7 +27,6 @@ body{ --maxw: 1200px; }
   background: #fff;
 }
 .tbl th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
-.tbl th.col-num{ text-align:right; }
 .tbl tr:hover td{ background:#fafafa; }
 
 .col-num{ text-align:right; font-variant-numeric: tabular-nums; width: 90px; }
@@ -172,3 +171,7 @@ body{ --maxw: 1200px; }
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: inherit;
 }
+
+
+.tbl th.col-num{ text-align:right; }
+
