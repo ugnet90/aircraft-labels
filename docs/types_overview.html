@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Typen-Übersicht</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./types_overview.css">
+</head>
+<body>
+  <div class="top">
+    <h1>Typen-Übersicht</h1>
+    <span class="muted" id="meta"></span>
+  </div>
+
+  <div class="row">
+    <a class="btn" href="./index.html">← Übersicht</a>
+    <a class="btn" href="./matrix.html">Matrix</a>
+    <a class="btn" href="./missing_types.html">Fehlende Typen</a>
+  </div>
+
+  <div class="card controls">
+    <div class="bar">
+      <input id="q" placeholder="Suche (Typ / aircraft_id / Hersteller)" />
+
+      <select id="manu"></select>
+
+      <select id="status"></select>
+
+      <select id="wing"></select>
+
+      <select id="sort"></select>
+    </div>
+
+    <div class="muted" id="count"></div>
+  </div>
+
+  <div id="content"></div>
+
+<script>
+  function esc(s){
+    return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+  function norm(s){ return String(s ?? "").trim().toLowerCase(); }
+
+  let data = null;
+  let all = [];
+  let expanded = new Set(); // aircraft_id
+
+  function buildSelect(id, firstLabel, options){
+    const sel = document.getElementById(id);
+    sel.innerHTML = "";
+    const opt0 = document.createElement("option");
+    opt0.value = "";
+    opt0.textContent = firstLabel;
+    sel.appendChild(opt0);
+
+    for(const x of options){
+      const opt = document.createElement("option");
+      opt.value = x;
+      opt.textContent = x;
+      sel.appendChild(opt);
+    }
+  }
+
+  function buildStaticSelects(){
+    buildSelect("status", "Status: alle", [
+      "missing", "owned", "ordered", "mixed"
+    ]);
+
+    // has_wingtip filter: all/true/false
+    const wing = document.getElementById("wing");
+    wing.innerHTML = `
+      <option value="">Wingtip: alle</option>
+      <option value="true">Wingtip: ja</option>
+      <option value="false">Wingtip: nein</option>
+    `;
+
+    const sort = document.getElementById("sort");
+    sort.innerHTML = `
+      <option value="type_az">Sort: Typ A→Z</option>
+      <option value="owned_desc">Sort: owned ↓</option>
+      <option value="ordered_desc">Sort: ordered ↓</option>
+      <option value="manufacturer_az">Sort: Hersteller A→Z</option>
+    `;
+  }
+
+  function apply(){
+    const q = norm(document.getElementById("q").value);
+    const manu = document.getElementById("manu").value;
+    const status = document.getElementById("status").value;
+    const wing = document.getElementById("wing").value;
+    const sort = document.getElementById("sort").value || "type_az";
+
+    let items = all.filter(x => {
+      if(manu && (x.manufacturer || "") !== manu) return false;
+      if(status && (x.status || "") !== status) return false;
+
+      if(wing === "true" && x.has_wingtip !== true) return false;
+      if(wing === "false" && x.has_wingtip !== false) return false;
+
+      if(!q) return true;
+      const hay = (norm(x.typ_anzeige) + " " + norm(x.aircraft_id) + " " + norm(x.manufacturer));
+      return hay.includes(q);
+    });
+
+    items = sortItems(items, sort);
+
+    document.getElementById("count").textContent =
+      `${items.length} Typen · davon ${items.filter(x=>x.total_count>0).length} mit Modellen`;
+
+    render(items);
+  }
+
+  function sortItems(items, mode){
+    const arr = items.slice();
+    if(mode === "owned_desc"){
+      arr.sort((a,b)=>(b.owned_count-a.owned_count) || (a.type_key||"").localeCompare(b.type_key||""));
+      return arr;
+    }
+    if(mode === "ordered_desc"){
+      arr.sort((a,b)=>(b.ordered_count-a.ordered_count) || (a.type_key||"").localeCompare(b.type_key||""));
+      return arr;
+    }
+    if(mode === "manufacturer_az"){
+      arr.sort((a,b)=> (a.manufacturer||"").localeCompare(b.manufacturer||"") || (a.type_key||"").localeCompare(b.type_key||""));
+      return arr;
+    }
+    arr.sort((a,b)=> (a.type_key||"").localeCompare(b.type_key||""));
+    return arr;
+  }
+
+  function statusBadge(st){
+    const s = st || "";
+    const cls = "badge " + (s ? "st-" + s : "");
+    return s ? `<span class="${cls}">${esc(s)}</span>` : "";
+  }
+
+  function wingBadge(v){
+    return v === true ? `<span class="badge">WL/SL</span>` : "";
+  }
+
+  function render(items){
+    if(items.length === 0){
+      document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
+      return;
+    }
+
+    let html = `
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="col-type">Typ</th>
+            <th class="col-manu">Hersteller</th>
+            <th class="col-wing">WL/SL</th>
+            <th class="col-num">owned</th>
+            <th class="col-num">ordered</th>
+            <th class="col-num">total</th>
+            <th class="col-status">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    for(const x of items){
+      const isOpen = expanded.has(x.aircraft_id);
+      html += `
+        <tr class="rowMain" data-aid="${esc(x.aircraft_id)}">
+          <td class="col-type">
+            <div class="typeLine">
+              <button class="toggle" data-aid="${esc(x.aircraft_id)}" aria-label="Details">
+                ${isOpen ? "▾" : "▸"}
+              </button>
+              <div>
+                <div class="typeName">${esc(x.typ_anzeige || x.aircraft_id)}</div>
+                <div class="muted mono">${esc(x.aircraft_id)}</div>
+              </div>
+            </div>
+          </td>
+          <td class="col-manu">${esc(x.manufacturer || "")}</td>
+          <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
+          <td class="col-num mono">${esc(x.owned_count || 0)}</td>
+          <td class="col-num mono">${esc(x.ordered_count || 0)}</td>
+          <td class="col-num mono">${esc(x.total_count || 0)}</td>
+          <td class="col-status">${statusBadge(x.status)}</td>
+        </tr>
+      `;
+
+      if(isOpen){
+        html += `
+          <tr class="rowDetail">
+            <td colspan="7">
+              ${renderDetail(x)}
+            </td>
+          </tr>
+        `;
+      }
+    }
+
+    html += `</tbody></table>`;
+    document.getElementById("content").innerHTML = html;
+  }
+
+  function renderDetail(x){
+    const groups = Array.isArray(x.airline_group_counts) ? x.airline_group_counts : [];
+    if(groups.length === 0){
+      return `<div class="muted">Keine Modelle vorhanden/bestellt.</div>`;
+    }
+
+    let html = `<div class="detailWrap">`;
+
+    for(const g of groups){
+      const groupName = g.group || "";
+      const gOwned = g.owned || 0;
+      const gOrd = g.ordered || 0;
+
+      const linkAll = `./index.html?group=${encodeURIComponent(groupName)}&type=${encodeURIComponent(x.typ_anzeige || "")}`;
+
+      html += `
+        <div class="detailGroup">
+          <div class="detailHead">
+            <div>
+              <span class="badge">${esc(groupName)}</span>
+              <span class="muted">owned:</span> <span class="mono">${esc(gOwned)}</span>
+              <span class="muted">ordered:</span> <span class="mono">${esc(gOrd)}</span>
+              <a class="smallLink" href="${esc(linkAll)}" title="In Übersicht öffnen">öffnen</a>
+            </div>
+          </div>
+      `;
+
+      const airlines = Array.isArray(g.airlines) ? g.airlines : [];
+      if(airlines.length){
+        html += `<ul class="airList">`;
+        for(const a of airlines){
+          const aName = a.airline || "";
+          const aOwned = a.owned || 0;
+          const aOrd = a.ordered || 0;
+          html += `<li><span class="mono">${esc(aOwned)}</span> / <span class="mono">${esc(aOrd)}</span> – ${esc(aName)}</li>`;
+        }
+        html += `</ul>`;
+      }
+
+      html += `</div>`;
+    }
+
+    html += `</div>`;
+    return html;
+  }
+
+  document.addEventListener("click", (ev)=>{
+    const btn = ev.target.closest("button.toggle");
+    if(!btn) return;
+    const aid = btn.getAttribute("data-aid") || "";
+    if(!aid) return;
+
+    if(expanded.has(aid)) expanded.delete(aid);
+    else expanded.add(aid);
+
+    apply();
+  });
+
+  async function main(){
+    const res = await fetch("./data/types_overview.json", {cache:"no-store"});
+    data = await res.json();
+    all = data.items || [];
+
+    document.getElementById("meta").textContent =
+      `${data.master_count || all.length} Typen · fehlend: ${data.missing ?? ""}`;
+
+    buildStaticSelects();
+    buildSelect("manu", "Hersteller: alle", (data.filters?.manufacturers || []));
+
+    // events
+    document.getElementById("q").addEventListener("input", apply);
+    document.getElementById("manu").addEventListener("change", apply);
+    document.getElementById("status").addEventListener("change", apply);
+    document.getElementById("wing").addEventListener("change", apply);
+    document.getElementById("sort").addEventListener("change", apply);
+
+    apply();
+  }
+
+  main();
+</script>
+</body>
+</html>
