@@ -1,0 +1,7530 @@
+{
+  "schema": "aircraft-labels.types-overview.v1",
+  "generated_at": "",
+  "master_count": 385,
+  "with_any_models": 128,
+  "missing": 257,
+  "filters": {
+    "manufacturers": [
+      "Aermacchi",
+      "Aero Spacelines",
+      "Aero Vodochody",
+      "Airbus",
+      "Airspeed",
+      "Antonov",
+      "Armstrong Whitworth",
+      "ATR",
+      "AVIC",
+      "Avro",
+      "BAC",
+      "Basler",
+      "Beechcraft",
+      "Beriev",
+      "Boeing",
+      "Bombardier",
+      "Bristol",
+      "British Aerospace",
+      "British Aerospace / Avro",
+      "Britten-Norman",
+      "Canadair",
+      "CASA",
+      "CASA/Airbus",
+      "Cessna",
+      "Comac",
+      "Consolidated",
+      "Convair",
+      "Curtiss-Wright",
+      "Dassault",
+      "de Havilland",
+      "de Havilland Canada",
+      "Dornier",
+      "Douglas",
+      "Embraer",
+      "Fairchild Swearingen",
+      "Focke-Wulf",
+      "Fokker",
+      "Ford",
+      "Handley Page",
+      "Harbin",
+      "Hawker Siddeley",
+      "Ilyushin",
+      "Irkut",
+      "Junkers",
+      "Let",
+      "Let (Aero Vodochody)",
+      "Lockheed",
+      "Martin",
+      "McDonnell Douglas",
+      "NAMC",
+      "NPO Molnija",
+      "Partenavia",
+      "Pilatus",
+      "Piper",
+      "PZL",
+      "Riley",
+      "Rockwell",
+      "Saab",
+      "Scaled Composites",
+      "Shorts",
+      "Sud Aviation",
+      "Sud Aviation/BAC",
+      "Sukhoi",
+      "Transport Allianz",
+      "Tupolew",
+      "VFW-Fokker",
+      "Vickers",
+      "Xian",
+      "Yakowlew"
+    ],
+    "statuses": [
+      "all",
+      "missing",
+      "owned",
+      "ordered",
+      "mixed"
+    ],
+    "has_wingtip": [
+      "all",
+      "true",
+      "false"
+    ]
+  },
+  "default_sort": "type_az",
+  "sort_modes": [
+    "type_az",
+    "owned_desc",
+    "ordered_desc",
+    "manufacturer_az"
+  ],
+  "items": [
+    {
+      "aircraft_id": "AER-AL60",
+      "typ_anzeige": "Aermacchi AL-60",
+      "type_key": "aermacchi al-60",
+      "manufacturer": "Aermacchi",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ASP-377MG",
+      "typ_anzeige": "Aero Spacelines Mini Guppy",
+      "type_key": "aero spacelines mini guppy",
+      "manufacturer": "Aero Spacelines",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ASP-377MGT",
+      "typ_anzeige": "Aero Spacelines Mini Guppy Turbine",
+      "type_key": "aero spacelines mini guppy turbine",
+      "manufacturer": "Aero Spacelines",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ASP-377PG",
+      "typ_anzeige": "Aero Spacelines Pregnant Guppy",
+      "type_key": "aero spacelines pregnant guppy",
+      "manufacturer": "Aero Spacelines",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ASP-B377SG",
+      "typ_anzeige": "Aero Spacelines Super Guppy",
+      "type_key": "aero spacelines super guppy",
+      "manufacturer": "Aero Spacelines",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ASP-B377SGT",
+      "typ_anzeige": "Aero Spacelines Super Guppy SGT-201",
+      "type_key": "aero spacelines super guppy sgt-201",
+      "manufacturer": "Aero Spacelines",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Airbus Transport International",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AEV-Ae145",
+      "typ_anzeige": "Aero Vodochody Ae-145",
+      "type_key": "aero vodochody ae-145",
+      "manufacturer": "Aero Vodochody",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AEV-Ae45",
+      "typ_anzeige": "Aero Vodochody Ae-45",
+      "type_key": "aero vodochody ae-45",
+      "manufacturer": "Aero Vodochody",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AEV-L29",
+      "typ_anzeige": "Aero Vodochody L-29 Delfín",
+      "type_key": "aero vodochody l-29 delfín",
+      "manufacturer": "Aero Vodochody",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A220-100",
+      "typ_anzeige": "Airbus A220-100",
+      "type_key": "airbus a220-100",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A220-300",
+      "typ_anzeige": "Airbus A220-300",
+      "type_key": "airbus a220-300",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Air Baltic",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "AirBaltic",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A300-B2",
+      "typ_anzeige": "Airbus A300 B2",
+      "type_key": "airbus a300 b2",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A300-B4",
+      "typ_anzeige": "Airbus A300 B4",
+      "type_key": "airbus a300 b4",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Hapag-Lloyd",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Hapag-Lloyd",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A300-600",
+      "typ_anzeige": "Airbus A300-600",
+      "type_key": "airbus a300-600",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A300-600ST",
+      "typ_anzeige": "Airbus A300-600ST Beluga",
+      "type_key": "airbus a300-600st beluga",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Airbus Beluga Transport",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A310-200",
+      "typ_anzeige": "Airbus A310-200",
+      "type_key": "airbus a310-200",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A310-300",
+      "typ_anzeige": "Airbus A310-300",
+      "type_key": "airbus a310-300",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A310-304VIP",
+      "typ_anzeige": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
+      "type_key": "airbus a310-304 vip (regierungsflugzeug, luftwaffe)",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A318",
+      "typ_anzeige": "Airbus A318",
+      "type_key": "airbus a318",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Air France",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air France",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A318-SL",
+      "typ_anzeige": "Airbus A318 (Sharklets)",
+      "type_key": "airbus a318 (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A319",
+      "typ_anzeige": "Airbus A319",
+      "type_key": "airbus a319",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A319-SL",
+      "typ_anzeige": "Airbus A319 (Sharklets)",
+      "type_key": "airbus a319 (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A319LR",
+      "typ_anzeige": "Airbus A319LR Long Range",
+      "type_key": "airbus a319lr long range",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A319LR-SL",
+      "typ_anzeige": "Airbus A319LR Long Range (Sharklets)",
+      "type_key": "airbus a319lr long range (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A319-neo",
+      "typ_anzeige": "Airbus A319neo",
+      "type_key": "airbus a319neo",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A320-100",
+      "typ_anzeige": "Airbus A320-100",
+      "type_key": "airbus a320-100",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A320-200",
+      "typ_anzeige": "Airbus A320-200",
+      "type_key": "airbus a320-200",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 6,
+      "ordered_count": 0,
+      "total_count": 6,
+      "airline_group_counts": [
+        {
+          "group": "Air Berlin",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air Berlin",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lauda Air",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Niki",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 2,
+          "ordered": 0,
+          "total": 2,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 2,
+              "ordered": 0,
+              "total": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A320-200-SL",
+      "typ_anzeige": "Airbus A320-200 (Sharklets)",
+      "type_key": "airbus a320-200 (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A320-neo",
+      "typ_anzeige": "Airbus A320neo",
+      "type_key": "airbus a320neo",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A321-LR",
+      "typ_anzeige": "Airbus A321 LR",
+      "type_key": "airbus a321 lr",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A321-XLR",
+      "typ_anzeige": "Airbus A321 XLR",
+      "type_key": "airbus a321 xlr",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A321-100",
+      "typ_anzeige": "Airbus A321-100",
+      "type_key": "airbus a321-100",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 4,
+      "ordered_count": 0,
+      "total_count": 4,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 2,
+          "ordered": 0,
+          "total": 2,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 2,
+              "ordered": 0,
+              "total": 2
+            }
+          ]
+        },
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A321-200",
+      "typ_anzeige": "Airbus A321-200",
+      "type_key": "airbus a321-200",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A321-200-SL",
+      "typ_anzeige": "Airbus A321-200 (Sharklets)",
+      "type_key": "airbus a321-200 (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A321-neo",
+      "typ_anzeige": "Airbus A321neo",
+      "type_key": "airbus a321neo",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
+      "total_count": 3,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 2,
+          "ordered": 0,
+          "total": 2,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 2,
+              "ordered": 0,
+              "total": 2
+            }
+          ]
+        },
+        {
+          "group": "TAP",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "TAP",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A330-200",
+      "typ_anzeige": "Airbus A330-200",
+      "type_key": "airbus a330-200",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A330-200-SL",
+      "typ_anzeige": "Airbus A330-200 (Sharklets)",
+      "type_key": "airbus a330-200 (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "mixed",
+      "owned_count": 1,
+      "ordered_count": 3,
+      "total_count": 4,
+      "airline_group_counts": [
+        {
+          "group": "Alitalia",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Alitalia",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Edelweiss",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "TAP",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "TAP Air Cargo",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A330-300",
+      "typ_anzeige": "Airbus A330-300",
+      "type_key": "airbus a330-300",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A330-300-SL",
+      "typ_anzeige": "Airbus A330-300 (Sharklets)",
+      "type_key": "airbus a330-300 (sharklets)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "mixed",
+      "owned_count": 1,
+      "ordered_count": 1,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "SAS",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A330-743L",
+      "typ_anzeige": "Airbus A330-743L BelugaXL",
+      "type_key": "airbus a330-743l belugaxl",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Airbus Beluga Transport",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A330-800neo",
+      "typ_anzeige": "Airbus A330-800neo",
+      "type_key": "airbus a330-800neo",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A330-900neo",
+      "typ_anzeige": "Airbus A330-900neo",
+      "type_key": "airbus a330-900neo",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "ordered",
+      "owned_count": 0,
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air Belgium",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A340-200",
+      "typ_anzeige": "Airbus A340-200",
+      "type_key": "airbus a340-200",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A340-300",
+      "typ_anzeige": "Airbus A340-300",
+      "type_key": "airbus a340-300",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A340-500",
+      "typ_anzeige": "Airbus A340-500",
+      "type_key": "airbus a340-500",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A340-600",
+      "typ_anzeige": "Airbus A340-600",
+      "type_key": "airbus a340-600",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A350-1000",
+      "typ_anzeige": "Airbus A350-1000",
+      "type_key": "airbus a350-1000",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AIB-A350-900",
+      "typ_anzeige": "Airbus A350-900",
+      "type_key": "airbus a350-900",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-A380-800",
+      "typ_anzeige": "Airbus A380-800",
+      "type_key": "airbus a380-800",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIB-ACJ350-900",
+      "typ_anzeige": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
+      "type_key": "airbus acj350-900 (regierungsflugzeug, luftwaffe)",
+      "manufacturer": "Airbus",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "AIR-AS57",
+      "typ_anzeige": "Airspeed AS57 Ambassador",
+      "type_key": "airspeed as57 ambassador",
+      "manufacturer": "Airspeed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An124",
+      "typ_anzeige": "Antonov An-124 Ruslan",
+      "type_key": "antonov an-124 ruslan",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An140",
+      "typ_anzeige": "Antonov An-140",
+      "type_key": "antonov an-140",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An148",
+      "typ_anzeige": "Antonov An-148",
+      "type_key": "antonov an-148",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An158",
+      "typ_anzeige": "Antonov An-158",
+      "type_key": "antonov an-158",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An2",
+      "typ_anzeige": "Antonov An-2",
+      "type_key": "antonov an-2",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An225",
+      "typ_anzeige": "Antonov An-225 Mriya",
+      "type_key": "antonov an-225 mriya",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Antonov Airlines",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "ANT-An24",
+      "typ_anzeige": "Antonov An-24",
+      "type_key": "antonov an-24",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An26",
+      "typ_anzeige": "Antonov An-26",
+      "type_key": "antonov an-26",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An28",
+      "typ_anzeige": "Antonov An-28",
+      "type_key": "antonov an-28",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-AN32",
+      "typ_anzeige": "Antonov An-32",
+      "type_key": "antonov an-32",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An72",
+      "typ_anzeige": "Antonov An-72",
+      "type_key": "antonov an-72",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ANT-An74",
+      "typ_anzeige": "Antonov An-74",
+      "type_key": "antonov an-74",
+      "manufacturer": "Antonov",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ARW-AW27",
+      "typ_anzeige": "Armstrong Whitworth A.W.27 Ensign",
+      "type_key": "armstrong whitworth a.w.27 ensign",
+      "manufacturer": "Armstrong Whitworth",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ATR-ATR42-300",
+      "typ_anzeige": "ATR ATR 42-300",
+      "type_key": "atr atr 42-300",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM Cityhopper",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM exel",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "ATR-ATR42-500",
+      "typ_anzeige": "ATR ATR 42-500",
+      "type_key": "atr atr 42-500",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ATR-ATR42-600",
+      "typ_anzeige": "ATR ATR 42-600",
+      "type_key": "atr atr 42-600",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ATR-ATR72-200",
+      "typ_anzeige": "ATR ATR 72-200",
+      "type_key": "atr atr 72-200",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM Cityhopper",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM exel",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "ATR-ATR72-500",
+      "typ_anzeige": "ATR ATR 72-500",
+      "type_key": "atr atr 72-500",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ATR-ATR72-600",
+      "typ_anzeige": "ATR ATR 72-600",
+      "type_key": "atr atr 72-600",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AVI-MA700",
+      "typ_anzeige": "AVIC MA700",
+      "type_key": "avic ma700",
+      "manufacturer": "AVIC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AVR-685",
+      "typ_anzeige": "Avro 685 York",
+      "type_key": "avro 685 york",
+      "manufacturer": "Avro",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AVR-688",
+      "typ_anzeige": "Avro 688/689 Tudor",
+      "type_key": "avro 688/689 tudor",
+      "manufacturer": "Avro",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "AVR-691",
+      "typ_anzeige": "Avro 691 Lancastrian",
+      "type_key": "avro 691 lancastrian",
+      "manufacturer": "Avro",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAC-111-200",
+      "typ_anzeige": "BAC 1-11-200",
+      "type_key": "bac 1-11-200",
+      "manufacturer": "BAC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAC-111-300",
+      "typ_anzeige": "BAC 1-11-300",
+      "type_key": "bac 1-11-300",
+      "manufacturer": "BAC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BAC-111-400",
+      "typ_anzeige": "BAC 1-11-400",
+      "type_key": "bac 1-11-400",
+      "manufacturer": "BAC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BAC-111-500",
+      "typ_anzeige": "BAC 1-11-500",
+      "type_key": "bac 1-11-500",
+      "manufacturer": "BAC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAE-146-100",
+      "typ_anzeige": "BAe 146-100 / Avro RJ70",
+      "type_key": "bae 146-100 / avro rj70",
+      "manufacturer": "British Aerospace / Avro",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAE-146-200",
+      "typ_anzeige": "BAe 146-200 / Avro RJ85",
+      "type_key": "bae 146-200 / avro rj85",
+      "manufacturer": "British Aerospace / Avro",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BAE-146-300",
+      "typ_anzeige": "BAe 146-300 / Avro RJ100",
+      "type_key": "bae 146-300 / avro rj100",
+      "manufacturer": "British Aerospace / Avro",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BAS-BT67",
+      "typ_anzeige": "Basler BT-67",
+      "type_key": "basler bt-67",
+      "manufacturer": "Basler",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BEE-1900C",
+      "typ_anzeige": "Beechcraft 1900C",
+      "type_key": "beechcraft 1900c",
+      "manufacturer": "Beechcraft",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BEE-1900D",
+      "typ_anzeige": "Beechcraft 1900D",
+      "type_key": "beechcraft 1900d",
+      "manufacturer": "Beechcraft",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BEE-99",
+      "typ_anzeige": "Beechcraft 99",
+      "type_key": "beechcraft 99",
+      "manufacturer": "Beechcraft",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BER-Be200",
+      "typ_anzeige": "Beriev Be-200",
+      "type_key": "beriev be-200",
+      "manufacturer": "Beriev",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BER-Be30",
+      "typ_anzeige": "Beriev Be-30",
+      "type_key": "beriev be-30",
+      "manufacturer": "Beriev",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BER-Be32",
+      "typ_anzeige": "Beriev Be-32",
+      "type_key": "beriev be-32",
+      "manufacturer": "Beriev",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-247",
+      "typ_anzeige": "Boeing 247",
+      "type_key": "boeing 247",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-307",
+      "typ_anzeige": "Boeing 307 Stratoliner",
+      "type_key": "boeing 307 stratoliner",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-314",
+      "typ_anzeige": "Boeing 314",
+      "type_key": "boeing 314",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sondermaße",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-377",
+      "typ_anzeige": "Boeing 377 Stratocruiser",
+      "type_key": "boeing 377 stratocruiser",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-707-120",
+      "typ_anzeige": "Boeing 707-120",
+      "type_key": "boeing 707-120",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-707-138",
+      "typ_anzeige": "Boeing 707-138",
+      "type_key": "boeing 707-138",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-707-220",
+      "typ_anzeige": "Boeing 707-220",
+      "type_key": "boeing 707-220",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-707-320",
+      "typ_anzeige": "Boeing 707-320 Intercontinental",
+      "type_key": "boeing 707-320 intercontinental",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-707-330C",
+      "typ_anzeige": "Boeing 707-330C",
+      "type_key": "boeing 707-330c",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "German Cargo",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-707-420",
+      "typ_anzeige": "Boeing 707-420",
+      "type_key": "boeing 707-420",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-717",
+      "typ_anzeige": "Boeing 717",
+      "type_key": "boeing 717",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-720",
+      "typ_anzeige": "Boeing 720",
+      "type_key": "boeing 720",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-727-100",
+      "typ_anzeige": "Boeing 727-100",
+      "type_key": "boeing 727-100",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-727-200",
+      "typ_anzeige": "Boeing 727-200",
+      "type_key": "boeing 727-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-MAX10",
+      "typ_anzeige": "Boeing 737 MAX 10",
+      "type_key": "boeing 737 max 10",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-MAX7",
+      "typ_anzeige": "Boeing 737 MAX 7",
+      "type_key": "boeing 737 max 7",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-MAX8",
+      "typ_anzeige": "Boeing 737 MAX 8",
+      "type_key": "boeing 737 max 8",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-MAX9",
+      "typ_anzeige": "Boeing 737 MAX 9",
+      "type_key": "boeing 737 max 9",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-100",
+      "typ_anzeige": "Boeing 737-100",
+      "type_key": "boeing 737-100",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-200",
+      "typ_anzeige": "Boeing 737-200",
+      "type_key": "boeing 737-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-300",
+      "typ_anzeige": "Boeing 737-300",
+      "type_key": "boeing 737-300",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-400",
+      "typ_anzeige": "Boeing 737-400",
+      "type_key": "boeing 737-400",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-500",
+      "typ_anzeige": "Boeing 737-500",
+      "type_key": "boeing 737-500",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-600",
+      "typ_anzeige": "Boeing 737-600",
+      "type_key": "boeing 737-600",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lauda Air",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lauda Air",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-600-WL",
+      "typ_anzeige": "Boeing 737-600 (Winglets)",
+      "type_key": "boeing 737-600 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-700",
+      "typ_anzeige": "Boeing 737-700",
+      "type_key": "boeing 737-700",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Hapag-Lloyd",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Hapag-Lloyd Express",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-700-WL",
+      "typ_anzeige": "Boeing 737-700 (Winglets)",
+      "type_key": "boeing 737-700 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-800",
+      "typ_anzeige": "Boeing 737-800",
+      "type_key": "boeing 737-800",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Hapag-Lloyd",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Hapag-Lloyd",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-800-WL",
+      "typ_anzeige": "Boeing 737-800 (Winglets)",
+      "type_key": "boeing 737-800 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
+      "total_count": 3,
+      "airline_group_counts": [
+        {
+          "group": "Air Berlin",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air Berlin",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Hapag-Lloyd",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Hapag-Lloyd",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-737-900",
+      "typ_anzeige": "Boeing 737-900",
+      "type_key": "boeing 737-900",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-900-WL",
+      "typ_anzeige": "Boeing 737-900 (Winglets)",
+      "type_key": "boeing 737-900 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-737-900ER",
+      "typ_anzeige": "Boeing 737-900ER",
+      "type_key": "boeing 737-900er",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-SCA",
+      "typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
+      "type_key": "boeing 747 shuttle carrier aircraft",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "ordered",
+      "owned_count": 0,
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "NASA",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-100",
+      "typ_anzeige": "Boeing 747-100",
+      "type_key": "boeing 747-100",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-200",
+      "typ_anzeige": "Boeing 747-200",
+      "type_key": "boeing 747-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-200B",
+      "typ_anzeige": "Boeing 747-200B",
+      "type_key": "boeing 747-200b",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-200SUD",
+      "typ_anzeige": "Boeing 747-200B SUD",
+      "type_key": "boeing 747-200b sud",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-200C",
+      "typ_anzeige": "Boeing 747-200C",
+      "type_key": "boeing 747-200c",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-200F",
+      "typ_anzeige": "Boeing 747-200F",
+      "type_key": "boeing 747-200f",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-300",
+      "typ_anzeige": "Boeing 747-300",
+      "type_key": "boeing 747-300",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-400",
+      "typ_anzeige": "Boeing 747-400",
+      "type_key": "boeing 747-400",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM Asia",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-400-VO",
+      "typ_anzeige": "Boeing 747-400 LauncherOne Carrier Aircraft",
+      "type_key": "boeing 747-400 launcherone carrier aircraft",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "ordered",
+      "owned_count": 0,
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Virgin Orbit",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-400D",
+      "typ_anzeige": "Boeing 747-400D Domestic",
+      "type_key": "boeing 747-400d domestic",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-400LCF",
+      "typ_anzeige": "Boeing 747-400LCF Dreamlifter",
+      "type_key": "boeing 747-400lcf dreamlifter",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-8",
+      "typ_anzeige": "Boeing 747-8 Intercontinental",
+      "type_key": "boeing 747-8 intercontinental",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-SP",
+      "typ_anzeige": "Boeing 747SP Special Performance",
+      "type_key": "boeing 747sp special performance",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-SR",
+      "typ_anzeige": "Boeing 747SR Short Range",
+      "type_key": "boeing 747sr short range",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-757-200",
+      "typ_anzeige": "Boeing 757-200",
+      "type_key": "boeing 757-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Air Berlin",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air Berlin",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-757-200-WL",
+      "typ_anzeige": "Boeing 757-200 (Winglets)",
+      "type_key": "boeing 757-200 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Icelandair",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Icelandair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-757-300",
+      "typ_anzeige": "Boeing 757-300",
+      "type_key": "boeing 757-300",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-757-300-WL",
+      "typ_anzeige": "Boeing 757-300 (Winglets)",
+      "type_key": "boeing 757-300 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-200",
+      "typ_anzeige": "Boeing 767-200",
+      "type_key": "boeing 767-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-200-WL",
+      "typ_anzeige": "Boeing 767-200 (Winglets)",
+      "type_key": "boeing 767-200 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-AOA",
+      "typ_anzeige": "Boeing 767-200 Airborne Optical Adjunct",
+      "type_key": "boeing 767-200 airborne optical adjunct",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Army",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-767-200ER",
+      "typ_anzeige": "Boeing 767-200ER Extended Range",
+      "type_key": "boeing 767-200er extended range",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-300",
+      "typ_anzeige": "Boeing 767-300",
+      "type_key": "boeing 767-300",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-767-300-WL",
+      "typ_anzeige": "Boeing 767-300 (Winglets)",
+      "type_key": "boeing 767-300 (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-300BCF-WL",
+      "typ_anzeige": "Boeing 767-300BCF (Winglets)",
+      "type_key": "boeing 767-300bcf (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-300ER-WL",
+      "typ_anzeige": "Boeing 767-300ER (Winglets)",
+      "type_key": "boeing 767-300er (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-767-300ER",
+      "typ_anzeige": "Boeing 767-300ER Extended Range",
+      "type_key": "boeing 767-300er extended range",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-767-400ER",
+      "typ_anzeige": "Boeing 767-400ER Extended Range",
+      "type_key": "boeing 767-400er extended range",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-777-200",
+      "typ_anzeige": "Boeing 777-200",
+      "type_key": "boeing 777-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lauda Air",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lauda Air",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-777-200ER",
+      "typ_anzeige": "Boeing 777-200ER Extended Range",
+      "type_key": "boeing 777-200er extended range",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "ordered",
+      "owned_count": 0,
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Alitalia",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Alitalia",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-777-200LR",
+      "typ_anzeige": "Boeing 777-200LR Longer Range",
+      "type_key": "boeing 777-200lr longer range",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-777-300",
+      "typ_anzeige": "Boeing 777-300",
+      "type_key": "boeing 777-300",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-777-300ER",
+      "typ_anzeige": "Boeing 777-300ER Extended Range",
+      "type_key": "boeing 777-300er extended range",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Air France",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air France",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-777-8",
+      "typ_anzeige": "Boeing 777-8",
+      "type_key": "boeing 777-8",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-777-9",
+      "typ_anzeige": "Boeing 777-9",
+      "type_key": "boeing 777-9",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-777-F",
+      "typ_anzeige": "Boeing 777F",
+      "type_key": "boeing 777f",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-787-10",
+      "typ_anzeige": "Boeing 787-10 Dreamliner",
+      "type_key": "boeing 787-10 dreamliner",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-787-8",
+      "typ_anzeige": "Boeing 787-8 Dreamliner",
+      "type_key": "boeing 787-8 dreamliner",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-787-9",
+      "typ_anzeige": "Boeing 787-9 Dreamliner",
+      "type_key": "boeing 787-9 dreamliner",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-C32A",
+      "typ_anzeige": "Boeing C-32A (Air Force Two)",
+      "type_key": "boeing c-32a (air force two)",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-C40A",
+      "typ_anzeige": "Boeing C-40A Clipper",
+      "type_key": "boeing c-40a clipper",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Navy",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-E4B",
+      "typ_anzeige": "Boeing E-4B",
+      "type_key": "boeing e-4b",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-VC137A",
+      "typ_anzeige": "Boeing VC-137A Stratoliner",
+      "type_key": "boeing vc-137a stratoliner",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-VC137B",
+      "typ_anzeige": "Boeing VC-137B Stratoliner",
+      "type_key": "boeing vc-137b stratoliner",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-VC137C",
+      "typ_anzeige": "Boeing VC-137C Stratoliner",
+      "type_key": "boeing vc-137c stratoliner",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-VC25A",
+      "typ_anzeige": "Boeing VC-25A (Air Force One)",
+      "type_key": "boeing vc-25a (air force one)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-747-VC25B",
+      "typ_anzeige": "Boeing VC-25B (Air Force One, 747-8I)",
+      "type_key": "boeing vc-25b (air force one, 747-8i)",
+      "manufacturer": "Boeing",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOE-YAL1",
+      "typ_anzeige": "Boeing YAL-1 Airborne Laser",
+      "type_key": "boeing yal-1 airborne laser",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOM-CRJ100",
+      "typ_anzeige": "Bombardier CRJ-100",
+      "type_key": "bombardier crj-100",
+      "manufacturer": "Bombardier",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOM-CRJ1000",
+      "typ_anzeige": "Bombardier CRJ-1000",
+      "type_key": "bombardier crj-1000",
+      "manufacturer": "Bombardier",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOM-CRJ200",
+      "typ_anzeige": "Bombardier CRJ-200",
+      "type_key": "bombardier crj-200",
+      "manufacturer": "Bombardier",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BOM-CRJ700",
+      "typ_anzeige": "Bombardier CRJ-700",
+      "type_key": "bombardier crj-700",
+      "manufacturer": "Bombardier",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOM-CRJ900",
+      "typ_anzeige": "Bombardier CRJ-900",
+      "type_key": "bombardier crj-900",
+      "manufacturer": "Bombardier",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa CityLine",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BRI-Britannia-310",
+      "typ_anzeige": "Bristol Britannia 310",
+      "type_key": "bristol britannia 310",
+      "manufacturer": "Bristol",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BRI-Britannia-312",
+      "typ_anzeige": "Bristol Britannia 312",
+      "type_key": "bristol britannia 312",
+      "manufacturer": "Bristol",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "BOAC",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "BOAC",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "BAE-ATP",
+      "typ_anzeige": "British Aerospace ATP",
+      "type_key": "british aerospace atp",
+      "manufacturer": "British Aerospace",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAE-Jetstream-31",
+      "typ_anzeige": "British Aerospace Jetstream 31",
+      "type_key": "british aerospace jetstream 31",
+      "manufacturer": "British Aerospace",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAE-Jetstream-32",
+      "typ_anzeige": "British Aerospace Jetstream 32",
+      "type_key": "british aerospace jetstream 32",
+      "manufacturer": "British Aerospace",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BAE-Jetstream-41",
+      "typ_anzeige": "British Aerospace Jetstream 41",
+      "type_key": "british aerospace jetstream 41",
+      "manufacturer": "British Aerospace",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BRN-BN2",
+      "typ_anzeige": "Britten-Norman BN-2",
+      "type_key": "britten-norman bn-2",
+      "manufacturer": "Britten-Norman",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BRN-BN2A",
+      "typ_anzeige": "Britten-Norman BN-2A",
+      "type_key": "britten-norman bn-2a",
+      "manufacturer": "Britten-Norman",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BUR-OK1K1",
+      "typ_anzeige": "Buran Space Orbiter OK-1K1",
+      "type_key": "buran space orbiter ok-1k1",
+      "manufacturer": "NPO Molnija",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Buran Space Shuttle",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "CAN-CL44",
+      "typ_anzeige": "Canadair CL-44",
+      "type_key": "canadair cl-44",
+      "manufacturer": "Canadair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CAN-C4",
+      "typ_anzeige": "Canadair North Star C-4",
+      "type_key": "canadair north star c-4",
+      "manufacturer": "Canadair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CAS-C212",
+      "typ_anzeige": "CASA C-212",
+      "type_key": "casa c-212",
+      "manufacturer": "CASA",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CAS-CN235",
+      "typ_anzeige": "CASA CN-235",
+      "type_key": "casa cn-235",
+      "manufacturer": "CASA",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CAA-C295-Pax",
+      "typ_anzeige": "CASA/Airbus C-295 Pax",
+      "type_key": "casa/airbus c-295 pax",
+      "manufacturer": "CASA/Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CES-208",
+      "typ_anzeige": "Cessna 208",
+      "type_key": "cessna 208",
+      "manufacturer": "Cessna",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CES-402",
+      "typ_anzeige": "Cessna 402",
+      "type_key": "cessna 402",
+      "manufacturer": "Cessna",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MAR-404",
+      "typ_anzeige": "Cessna 404",
+      "type_key": "cessna 404",
+      "manufacturer": "Cessna",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CES-441",
+      "typ_anzeige": "Cessna 441",
+      "type_key": "cessna 441",
+      "manufacturer": "Cessna",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "COM-ARJ21-700",
+      "typ_anzeige": "Comac ARJ21-700 ARJ21",
+      "type_key": "comac arj21-700 arj21",
+      "manufacturer": "Comac",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "COM-C919",
+      "typ_anzeige": "Comac C919",
+      "type_key": "comac c919",
+      "manufacturer": "Comac",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CSA-PBY5",
+      "typ_anzeige": "Consolidated PBY-5 Catalina",
+      "type_key": "consolidated pby-5 catalina",
+      "manufacturer": "Consolidated",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "CON-CV240",
+      "typ_anzeige": "Convair CV-240",
+      "type_key": "convair cv-240",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "CON-CV340",
+      "typ_anzeige": "Convair CV-340",
+      "type_key": "convair cv-340",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CON-CV440",
+      "typ_anzeige": "Convair CV-440",
+      "type_key": "convair cv-440",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CON-CV580",
+      "typ_anzeige": "Convair CV-580",
+      "type_key": "convair cv-580",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CON-CV600",
+      "typ_anzeige": "Convair CV-600",
+      "type_key": "convair cv-600",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CON-CV640",
+      "typ_anzeige": "Convair CV-640",
+      "type_key": "convair cv-640",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CON-CV880",
+      "typ_anzeige": "Convair CV-880 Golden Arrow",
+      "type_key": "convair cv-880 golden arrow",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "CON-CV990",
+      "typ_anzeige": "Convair CV-990 Coronado",
+      "type_key": "convair cv-990 coronado",
+      "manufacturer": "Convair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "CUR-C46",
+      "typ_anzeige": "Curtiss-Wright C-46 Commando",
+      "type_key": "curtiss-wright c-46 commando",
+      "manufacturer": "Curtiss-Wright",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DAS-Mercure-100",
+      "typ_anzeige": "Dassault Mercure 100",
+      "type_key": "dassault mercure 100",
+      "manufacturer": "Dassault",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC3",
+      "typ_anzeige": "de Havilland Canada DHC-3 Otter",
+      "type_key": "de havilland canada dhc-3 otter",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC6",
+      "typ_anzeige": "de Havilland Canada DHC-6 Twin Otter",
+      "type_key": "de havilland canada dhc-6 twin otter",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC7",
+      "typ_anzeige": "de Havilland Canada DHC-7 Dash 7",
+      "type_key": "de havilland canada dhc-7 dash 7",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC8-100",
+      "typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100",
+      "type_key": "de havilland canada dhc-8-100 dash 8-100",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC8-200",
+      "typ_anzeige": "de Havilland Canada DHC-8-200 Dash 8-200",
+      "type_key": "de havilland canada dhc-8-200 dash 8-200",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC8-300",
+      "typ_anzeige": "de Havilland Canada DHC-8-300 Dash 8-300",
+      "type_key": "de havilland canada dhc-8-300 dash 8-300",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHC-DHC8-400",
+      "typ_anzeige": "de Havilland Canada DHC-8-400 Dash 8-400 (Q400)",
+      "type_key": "de havilland canada dhc-8-400 dash 8-400 (q400)",
+      "manufacturer": "de Havilland Canada",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian Arrows",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DHV-DH106-1",
+      "typ_anzeige": "de Havilland DH.106 Comet 1",
+      "type_key": "de havilland dh.106 comet 1",
+      "manufacturer": "de Havilland",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHV-DH106-4",
+      "typ_anzeige": "de Havilland DH.106 Comet 4",
+      "type_key": "de havilland dh.106 comet 4",
+      "manufacturer": "de Havilland",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHV-DH91",
+      "typ_anzeige": "de Havilland DH.91 Albatross",
+      "type_key": "de havilland dh.91 albatross",
+      "manufacturer": "de Havilland",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DHV-DH95",
+      "typ_anzeige": "de Havilland DH.95 Flamingo",
+      "type_key": "de havilland dh.95 flamingo",
+      "manufacturer": "de Havilland",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOR-Do228",
+      "typ_anzeige": "Dornier Do 228",
+      "type_key": "dornier do 228",
+      "manufacturer": "Dornier",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOR-Do328-100",
+      "typ_anzeige": "Dornier Do 328-100",
+      "type_key": "dornier do 328-100",
+      "manufacturer": "Dornier",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOR-Do328-300",
+      "typ_anzeige": "Dornier Do 328-300",
+      "type_key": "dornier do 328-300",
+      "manufacturer": "Dornier",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOR-DOX",
+      "typ_anzeige": "Dornier Do X",
+      "type_key": "dornier do x",
+      "manufacturer": "Dornier",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sondermaße",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-C47",
+      "typ_anzeige": "Douglas C-47 Skytrain",
+      "type_key": "douglas c-47 skytrain",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC2",
+      "typ_anzeige": "Douglas DC-2",
+      "type_key": "douglas dc-2",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC3",
+      "typ_anzeige": "Douglas DC-3",
+      "type_key": "douglas dc-3",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC4",
+      "typ_anzeige": "Douglas DC-4",
+      "type_key": "douglas dc-4",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 2,
+          "ordered": 0,
+          "total": 2,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 2,
+              "ordered": 0,
+              "total": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC5",
+      "typ_anzeige": "Douglas DC-5",
+      "type_key": "douglas dc-5",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC6",
+      "typ_anzeige": "Douglas DC-6",
+      "type_key": "douglas dc-6",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC6-A",
+      "typ_anzeige": "Douglas DC-6A",
+      "type_key": "douglas dc-6a",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC6-B",
+      "typ_anzeige": "Douglas DC-6B",
+      "type_key": "douglas dc-6b",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC7",
+      "typ_anzeige": "Douglas DC-7",
+      "type_key": "douglas dc-7",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC7-B",
+      "typ_anzeige": "Douglas DC-7B",
+      "type_key": "douglas dc-7b",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC7-C",
+      "typ_anzeige": "Douglas DC-7C Seven Seas",
+      "type_key": "douglas dc-7c seven seas",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC8-10",
+      "typ_anzeige": "Douglas DC-8-10 Series 10",
+      "type_key": "douglas dc-8-10 series 10",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC8-20",
+      "typ_anzeige": "Douglas DC-8-20 Series 20",
+      "type_key": "douglas dc-8-20 series 20",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC8-30",
+      "typ_anzeige": "Douglas DC-8-30 Series 30",
+      "type_key": "douglas dc-8-30 series 30",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC8-40",
+      "typ_anzeige": "Douglas DC-8-40 Series 40",
+      "type_key": "douglas dc-8-40 series 40",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Alitalia",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Alitalia",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC8-50",
+      "typ_anzeige": "Douglas DC-8-50 Series 50",
+      "type_key": "douglas dc-8-50 series 50",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
+      "total_count": 3,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC8-61",
+      "typ_anzeige": "Douglas DC-8-61 Super 61",
+      "type_key": "douglas dc-8-61 super 61",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC8-62",
+      "typ_anzeige": "Douglas DC-8-62 Super 62",
+      "type_key": "douglas dc-8-62 super 62",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC8-63",
+      "typ_anzeige": "Douglas DC-8-63 Super 63",
+      "type_key": "douglas dc-8-63 super 63",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "DOU-DC8-71",
+      "typ_anzeige": "Douglas DC-8-71 Super 71",
+      "type_key": "douglas dc-8-71 super 71",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC8-72",
+      "typ_anzeige": "Douglas DC-8-72 Super 72",
+      "type_key": "douglas dc-8-72 super 72",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-DC8-73",
+      "typ_anzeige": "Douglas DC-8-73 Super 73",
+      "type_key": "douglas dc-8-73 super 73",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "DOU-VC118A",
+      "typ_anzeige": "Douglas VC-118A (Independence, Air Force One)",
+      "type_key": "douglas vc-118a (independence, air force one)",
+      "manufacturer": "Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Air Force",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "EMB-E170",
+      "typ_anzeige": "Embraer E170",
+      "type_key": "embraer e170",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Air France",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Air France HOP",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "EMB-E170-WL",
+      "typ_anzeige": "Embraer E170 (Winglets)",
+      "type_key": "embraer e170 (winglets)",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-E175",
+      "typ_anzeige": "Embraer E175",
+      "type_key": "embraer e175",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-E175E2",
+      "typ_anzeige": "Embraer E175-E2",
+      "type_key": "embraer e175-e2",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-E190",
+      "typ_anzeige": "Embraer E190",
+      "type_key": "embraer e190",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa Regional",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "EMB-E190E2",
+      "typ_anzeige": "Embraer E190-E2",
+      "type_key": "embraer e190-e2",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-E195",
+      "typ_anzeige": "Embraer E195",
+      "type_key": "embraer e195",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-E195E2",
+      "typ_anzeige": "Embraer E195-E2",
+      "type_key": "embraer e195-e2",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM Cityhopper",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM Cityhopper",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "EMB-EMB110",
+      "typ_anzeige": "Embraer EMB-110 Bandeirante",
+      "type_key": "embraer emb-110 bandeirante",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-EMB120",
+      "typ_anzeige": "Embraer EMB-120 Brasilia",
+      "type_key": "embraer emb-120 brasilia",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-EMB121",
+      "typ_anzeige": "Embraer EMB-121 Xingu",
+      "type_key": "embraer emb-121 xingu",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-ERJ135",
+      "typ_anzeige": "Embraer ERJ-135",
+      "type_key": "embraer erj-135",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-ERJ140",
+      "typ_anzeige": "Embraer ERJ-140",
+      "type_key": "embraer erj-140",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-ERJ145",
+      "typ_anzeige": "Embraer ERJ-145",
+      "type_key": "embraer erj-145",
+      "manufacturer": "Embraer",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM Cityhopper",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM exel",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "FAI-SA226",
+      "typ_anzeige": "Fairchild Swearingen Metro",
+      "type_key": "fairchild swearingen metro",
+      "manufacturer": "Fairchild Swearingen",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "FOW-FW200",
+      "typ_anzeige": "Focke-Wulf Fw 200 Condor",
+      "type_key": "focke-wulf fw 200 condor",
+      "manufacturer": "Focke-Wulf",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "FOK-F",
+      "typ_anzeige": "Fokker F",
+      "type_key": "fokker f",
+      "manufacturer": "Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "FOK-F100",
+      "typ_anzeige": "Fokker F100",
+      "type_key": "fokker f100",
+      "manufacturer": "Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian Arrows",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "FOK-F27",
+      "typ_anzeige": "Fokker F27",
+      "type_key": "fokker f27",
+      "manufacturer": "Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "FOK-F28",
+      "typ_anzeige": "Fokker F28",
+      "type_key": "fokker f28",
+      "manufacturer": "Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "FOK-F50",
+      "typ_anzeige": "Fokker F50",
+      "type_key": "fokker f50",
+      "manufacturer": "Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Team Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "FOK-F70",
+      "typ_anzeige": "Fokker F70",
+      "type_key": "fokker f70",
+      "manufacturer": "Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Tyrolean Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "FOR-Trimotor-4AT",
+      "typ_anzeige": "Ford Trimotor 4-AT",
+      "type_key": "ford trimotor 4-at",
+      "manufacturer": "Ford",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "FOR-Trimotor-5AT",
+      "typ_anzeige": "Ford Trimotor 5-AT",
+      "type_key": "ford trimotor 5-at",
+      "manufacturer": "Ford",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "HPR-HP81",
+      "typ_anzeige": "Handley Page H.P.81 Hermes IV",
+      "type_key": "handley page h.p.81 hermes iv",
+      "manufacturer": "Handley Page",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "HPR-HPR7",
+      "typ_anzeige": "Handley Page HPR.7 Herald",
+      "type_key": "handley page hpr.7 herald",
+      "manufacturer": "Handley Page",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "HAR-Y11",
+      "typ_anzeige": "Harbin Y-11",
+      "type_key": "harbin y-11",
+      "manufacturer": "Harbin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "HAR-Y12",
+      "typ_anzeige": "Harbin Y-12",
+      "type_key": "harbin y-12",
+      "manufacturer": "Harbin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "HAW-HS748",
+      "typ_anzeige": "Hawker Siddeley HS 748",
+      "type_key": "hawker siddeley hs 748",
+      "manufacturer": "Hawker Siddeley",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "HAW-Trident-1",
+      "typ_anzeige": "Hawker Siddeley Trident 1",
+      "type_key": "hawker siddeley trident 1",
+      "manufacturer": "Hawker Siddeley",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "HAW-Trident-2",
+      "typ_anzeige": "Hawker Siddeley Trident 2",
+      "type_key": "hawker siddeley trident 2",
+      "manufacturer": "Hawker Siddeley",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "BEA",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "HAW-Trident-3",
+      "typ_anzeige": "Hawker Siddeley Trident 3",
+      "type_key": "hawker siddeley trident 3",
+      "manufacturer": "Hawker Siddeley",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "BEA",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "ILY-Il114",
+      "typ_anzeige": "Ilyushin Il-114",
+      "type_key": "ilyushin il-114",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ILY-Il12",
+      "typ_anzeige": "Ilyushin Il-12",
+      "type_key": "ilyushin il-12",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ILY-Il14",
+      "typ_anzeige": "Ilyushin Il-14",
+      "type_key": "ilyushin il-14",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ILY-Il18",
+      "typ_anzeige": "Ilyushin Il-18",
+      "type_key": "ilyushin il-18",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ILY-Il62",
+      "typ_anzeige": "Ilyushin Il-62",
+      "type_key": "ilyushin il-62",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ILY-Il86",
+      "typ_anzeige": "Ilyushin Il-86",
+      "type_key": "ilyushin il-86",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ILY-Il96-300",
+      "typ_anzeige": "Ilyushin Il-96-300",
+      "type_key": "ilyushin il-96-300",
+      "manufacturer": "Ilyushin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "IRK-MC21-300",
+      "typ_anzeige": "Irkut MC-21-300",
+      "type_key": "irkut mc-21-300",
+      "manufacturer": "Irkut",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "JUN-JU52-3M",
+      "typ_anzeige": "Junkers Ju 3m Tante Ju",
+      "type_key": "junkers ju 3m tante ju",
+      "manufacturer": "Junkers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Schweizer Luftwaffe (Swiss Air Force)",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "LET-L410",
+      "typ_anzeige": "Let L-410 Turbolet",
+      "type_key": "let l-410 turbolet",
+      "manufacturer": "Let (Aero Vodochody)",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LET-L610",
+      "typ_anzeige": "Let L-610",
+      "type_key": "let l-610",
+      "manufacturer": "Let",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-C5A",
+      "typ_anzeige": "Lockheed C-5A Galaxy",
+      "type_key": "lockheed c-5a galaxy",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-C5B",
+      "typ_anzeige": "Lockheed C-5B Galaxy",
+      "type_key": "lockheed c-5b galaxy",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-C5M",
+      "typ_anzeige": "Lockheed C-5M Super Galaxy",
+      "type_key": "lockheed c-5m super galaxy",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-EP3E",
+      "typ_anzeige": "Lockheed EP-3E Aries II",
+      "type_key": "lockheed ep-3e aries ii",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L049",
+      "typ_anzeige": "Lockheed L-049 Constellation",
+      "type_key": "lockheed l-049 constellation",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "LOC-L10",
+      "typ_anzeige": "Lockheed L-10 Electra",
+      "type_key": "lockheed l-10 electra",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L100-30",
+      "typ_anzeige": "Lockheed L-100-30 Hercules",
+      "type_key": "lockheed l-100-30 hercules",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L1011-1",
+      "typ_anzeige": "Lockheed L-1011 TriStar 1",
+      "type_key": "lockheed l-1011 tristar 1",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L1011-100",
+      "typ_anzeige": "Lockheed L-1011 TriStar 100",
+      "type_key": "lockheed l-1011 tristar 100",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L1011-200",
+      "typ_anzeige": "Lockheed L-1011 TriStar 200",
+      "type_key": "lockheed l-1011 tristar 200",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L1011-500",
+      "typ_anzeige": "Lockheed L-1011 TriStar 500",
+      "type_key": "lockheed l-1011 tristar 500",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "LOC-L1049",
+      "typ_anzeige": "Lockheed L-1049 Super Constellation",
+      "type_key": "lockheed l-1049 super constellation",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "LOC-L14",
+      "typ_anzeige": "Lockheed L-14 Super Electra",
+      "type_key": "lockheed l-14 super electra",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L1649",
+      "typ_anzeige": "Lockheed L-1649 Starliner",
+      "type_key": "lockheed l-1649 starliner",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "LOC-L18",
+      "typ_anzeige": "Lockheed L-18 Lodestar",
+      "type_key": "lockheed l-18 lodestar",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L188",
+      "typ_anzeige": "Lockheed L-188 Electra",
+      "type_key": "lockheed l-188 electra",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "LOC-L649",
+      "typ_anzeige": "Lockheed L-649 Constellation",
+      "type_key": "lockheed l-649 constellation",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-L749",
+      "typ_anzeige": "Lockheed L-749 Constellation",
+      "type_key": "lockheed l-749 constellation",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-NP3D",
+      "typ_anzeige": "Lockheed NP-3D Orion",
+      "type_key": "lockheed np-3d orion",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-P3A",
+      "typ_anzeige": "Lockheed P-3A Orion",
+      "type_key": "lockheed p-3a orion",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-P3B",
+      "typ_anzeige": "Lockheed P-3B Orion",
+      "type_key": "lockheed p-3b orion",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-P3C",
+      "typ_anzeige": "Lockheed P-3C Orion",
+      "type_key": "lockheed p-3c orion",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-RP3D",
+      "typ_anzeige": "Lockheed RP-3D Orion",
+      "type_key": "lockheed rp-3d orion",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United States Navy",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MAR-202",
+      "typ_anzeige": "Martin 2-0-2",
+      "type_key": "martin 2-0-2",
+      "manufacturer": "Martin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "CES-404",
+      "typ_anzeige": "Martin 4-0-4",
+      "type_key": "martin 4-0-4",
+      "manufacturer": "Martin",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-DC10-10",
+      "typ_anzeige": "McDonnell Douglas DC-10-10",
+      "type_key": "mcdonnell douglas dc-10-10",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-DC10-30",
+      "typ_anzeige": "McDonnell Douglas DC-10-30",
+      "type_key": "mcdonnell douglas dc-10-30",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
+      "total_count": 3,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-DC10-40",
+      "typ_anzeige": "McDonnell Douglas DC-10-40",
+      "type_key": "mcdonnell douglas dc-10-40",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-DC9-10",
+      "typ_anzeige": "McDonnell Douglas DC-9-10",
+      "type_key": "mcdonnell douglas dc-9-10",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-DC9-15",
+      "typ_anzeige": "McDonnell Douglas DC-9-15",
+      "type_key": "mcdonnell douglas dc-9-15",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-DC9-20",
+      "typ_anzeige": "McDonnell Douglas DC-9-20",
+      "type_key": "mcdonnell douglas dc-9-20",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-DC9-30",
+      "typ_anzeige": "McDonnell Douglas DC-9-30",
+      "type_key": "mcdonnell douglas dc-9-30",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-DC9-40",
+      "typ_anzeige": "McDonnell Douglas DC-9-40",
+      "type_key": "mcdonnell douglas dc-9-40",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-DC9-50",
+      "typ_anzeige": "McDonnell Douglas DC-9-50",
+      "type_key": "mcdonnell douglas dc-9-50",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-MD11",
+      "typ_anzeige": "McDonnell Douglas MD-11",
+      "type_key": "mcdonnell douglas md-11",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "KLM",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "KLM",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-MD11-ER",
+      "typ_anzeige": "McDonnell Douglas MD-11ER Extended Range",
+      "type_key": "mcdonnell douglas md-11er extended range",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-MD11F",
+      "typ_anzeige": "McDonnell Douglas MD-11F",
+      "type_key": "mcdonnell douglas md-11f",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa Cargo",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-MD81",
+      "typ_anzeige": "McDonnell Douglas MD-81",
+      "type_key": "mcdonnell douglas md-81",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-MD82",
+      "typ_anzeige": "McDonnell Douglas MD-82",
+      "type_key": "mcdonnell douglas md-82",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-MD83",
+      "typ_anzeige": "McDonnell Douglas MD-83",
+      "type_key": "mcdonnell douglas md-83",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-MD87",
+      "typ_anzeige": "McDonnell Douglas MD-87",
+      "type_key": "mcdonnell douglas md-87",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "MCD-MD88",
+      "typ_anzeige": "McDonnell Douglas MD-88",
+      "type_key": "mcdonnell douglas md-88",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "MCD-MD90",
+      "typ_anzeige": "McDonnell Douglas MD-90",
+      "type_key": "mcdonnell douglas md-90",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "NAM-YS11",
+      "typ_anzeige": "NAMC YS-11",
+      "type_key": "namc ys-11",
+      "manufacturer": "NAMC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PAR-P",
+      "typ_anzeige": "Partenavia P",
+      "type_key": "partenavia p",
+      "manufacturer": "Partenavia",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIL-PC12",
+      "typ_anzeige": "Pilatus PC-12",
+      "type_key": "pilatus pc-12",
+      "manufacturer": "Pilatus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIL-PC24",
+      "typ_anzeige": "Pilatus PC-24",
+      "type_key": "pilatus pc-24",
+      "manufacturer": "Pilatus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIL-PC6",
+      "typ_anzeige": "Pilatus PC-6",
+      "type_key": "pilatus pc-6",
+      "manufacturer": "Pilatus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIP-PA23",
+      "typ_anzeige": "Piper PA-23",
+      "type_key": "piper pa-23",
+      "manufacturer": "Piper",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIP-PA31",
+      "typ_anzeige": "Piper PA-31",
+      "type_key": "piper pa-31",
+      "manufacturer": "Piper",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIP-PA31T",
+      "typ_anzeige": "Piper PA-31T",
+      "type_key": "piper pa-31t",
+      "manufacturer": "Piper",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIP-PA42",
+      "typ_anzeige": "Piper PA-42",
+      "type_key": "piper pa-42",
+      "manufacturer": "Piper",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIP-PA46",
+      "typ_anzeige": "Piper PA-46",
+      "type_key": "piper pa-46",
+      "manufacturer": "Piper",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PZL-M18",
+      "typ_anzeige": "PZL M-18",
+      "type_key": "pzl m-18",
+      "manufacturer": "PZL",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PZL-M28",
+      "typ_anzeige": "PZL M28",
+      "type_key": "pzl m28",
+      "manufacturer": "PZL",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "RIL-Heron",
+      "typ_anzeige": "Riley Heron",
+      "type_key": "riley heron",
+      "manufacturer": "Riley",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ROC-OV101",
+      "typ_anzeige": "Rockwell Space Shuttle Enterprise (Testorbiter)",
+      "type_key": "rockwell space shuttle enterprise (testorbiter)",
+      "manufacturer": "Rockwell",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ROC-OV104",
+      "typ_anzeige": "Rockwell Space Shuttle Orbiter Atlantis",
+      "type_key": "rockwell space shuttle orbiter atlantis",
+      "manufacturer": "Rockwell",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ROC-OV099",
+      "typ_anzeige": "Rockwell Space Shuttle Orbiter Challenger",
+      "type_key": "rockwell space shuttle orbiter challenger",
+      "manufacturer": "Rockwell",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ROC-OV102",
+      "typ_anzeige": "Rockwell Space Shuttle Orbiter Columbia",
+      "type_key": "rockwell space shuttle orbiter columbia",
+      "manufacturer": "Rockwell",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "NASA",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "ROC-OV103",
+      "typ_anzeige": "Rockwell Space Shuttle Orbiter Discovery",
+      "type_key": "rockwell space shuttle orbiter discovery",
+      "manufacturer": "Rockwell",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ROC-OV105",
+      "typ_anzeige": "Rockwell Space Shuttle Orbiter Endeavour",
+      "type_key": "rockwell space shuttle orbiter endeavour",
+      "manufacturer": "Rockwell",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SAB-2000",
+      "typ_anzeige": "Saab 2000",
+      "type_key": "saab 2000",
+      "manufacturer": "Saab",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SAB-340",
+      "typ_anzeige": "Saab 340",
+      "type_key": "saab 340",
+      "manufacturer": "Saab",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "SCA-M348",
+      "typ_anzeige": "Scaled Composites Model 348 White Knight Two",
+      "type_key": "scaled composites model 348 white knight two",
+      "manufacturer": "Scaled Composites",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SHO-S23",
+      "typ_anzeige": "Short S.23 Empire",
+      "type_key": "short s.23 empire",
+      "manufacturer": "Shorts",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SHO-S26",
+      "typ_anzeige": "Short S.26 G-Class",
+      "type_key": "short s.26 g-class",
+      "manufacturer": "Shorts",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SHO-S45",
+      "typ_anzeige": "Short S.45 Solent",
+      "type_key": "short s.45 solent",
+      "manufacturer": "Shorts",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SHO-330",
+      "typ_anzeige": "Shorts 330",
+      "type_key": "shorts 330",
+      "manufacturer": "Shorts",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SHO-360",
+      "typ_anzeige": "Shorts 360",
+      "type_key": "shorts 360",
+      "manufacturer": "Shorts",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "SCA-SS2",
+      "typ_anzeige": "SpaceShipTwo (Virgin Galactic)",
+      "type_key": "spaceshiptwo (virgin galactic)",
+      "manufacturer": "Scaled Composites",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Virgin Galactic",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-10B",
+      "typ_anzeige": "Sud Aviation Caravelle 10B",
+      "type_key": "sud aviation caravelle 10b",
+      "manufacturer": "Sud Aviation",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-I",
+      "typ_anzeige": "Sud Aviation Caravelle I",
+      "type_key": "sud aviation caravelle i",
+      "manufacturer": "Sud Aviation",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-III",
+      "typ_anzeige": "Sud Aviation Caravelle III",
+      "type_key": "sud aviation caravelle iii",
+      "manufacturer": "Sud Aviation",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-VIN",
+      "typ_anzeige": "Sud Aviation Caravelle VI-N",
+      "type_key": "sud aviation caravelle vi-n",
+      "manufacturer": "Sud Aviation",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SUD-Caravelle-VIR",
+      "typ_anzeige": "Sud Aviation Caravelle VI-R",
+      "type_key": "sud aviation caravelle vi-r",
+      "manufacturer": "Sud Aviation",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "SUD-Concorde",
+      "typ_anzeige": "Sud Aviation/BAC Concorde",
+      "type_key": "sud aviation/bac concorde",
+      "manufacturer": "Sud Aviation/BAC",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "SUK-Superjet-100-95",
+      "typ_anzeige": "Sukhoi Superjet 100-95",
+      "type_key": "sukhoi superjet 100-95",
+      "manufacturer": "Sukhoi",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TRA-C160",
+      "typ_anzeige": "Transall C-160",
+      "type_key": "transall c-160",
+      "manufacturer": "Transport Allianz",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu104",
+      "typ_anzeige": "Tupolew Tu-104",
+      "type_key": "tupolew tu-104",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu114",
+      "typ_anzeige": "Tupolew Tu-114",
+      "type_key": "tupolew tu-114",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu124",
+      "typ_anzeige": "Tupolew Tu-124",
+      "type_key": "tupolew tu-124",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu134",
+      "typ_anzeige": "Tupolew Tu-134",
+      "type_key": "tupolew tu-134",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu154",
+      "typ_anzeige": "Tupolew Tu-154",
+      "type_key": "tupolew tu-154",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu204-200",
+      "typ_anzeige": "Tupolew Tu-204-200",
+      "type_key": "tupolew tu-204-200",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu204-300",
+      "typ_anzeige": "Tupolew Tu-204-300",
+      "type_key": "tupolew tu-204-300",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "TUP-Tu214",
+      "typ_anzeige": "Tupolew Tu-214",
+      "type_key": "tupolew tu-214",
+      "manufacturer": "Tupolew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "VFW-614",
+      "typ_anzeige": "VFW-Fokker 614",
+      "type_key": "vfw-fokker 614",
+      "manufacturer": "VFW-Fokker",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "VIC-Vanguard-953",
+      "typ_anzeige": "Vickers Vanguard 953",
+      "type_key": "vickers vanguard 953",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "VIC-VC10-C1K",
+      "typ_anzeige": "Vickers VC10 C1K (RAF Government & VIP)",
+      "type_key": "vickers vc10 c1k (raf government & vip)",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "VIC-VC10",
+      "typ_anzeige": "Vickers VC10 Standard",
+      "type_key": "vickers vc10 standard",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "VIC-VC10-SUPER",
+      "typ_anzeige": "Vickers VC10 Super",
+      "type_key": "vickers vc10 super",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "BOAC",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "BOAC",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "VIC-Viscount-700",
+      "typ_anzeige": "Vickers Viscount 700",
+      "type_key": "vickers viscount 700",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sondermaße",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "VIC-Viscount-800",
+      "typ_anzeige": "Vickers Viscount 800",
+      "type_key": "vickers viscount 800",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
+      "total_count": 3,
+      "airline_group_counts": [
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Arkia - Israeli Airlines",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aircraft_id": "XIA-MA60",
+      "typ_anzeige": "Xian MA60",
+      "type_key": "xian ma60",
+      "manufacturer": "Xian",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "XIA-MA600",
+      "typ_anzeige": "Xian MA600",
+      "type_key": "xian ma600",
+      "manufacturer": "Xian",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "XIA-Y7",
+      "typ_anzeige": "Xian Y-7",
+      "type_key": "xian y-7",
+      "manufacturer": "Xian",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "YAK-Yak40",
+      "typ_anzeige": "Yakowlew Yak-40",
+      "type_key": "yakowlew yak-40",
+      "manufacturer": "Yakowlew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "YAK-Yak42",
+      "typ_anzeige": "Yakowlew Yak-42",
+      "type_key": "yakowlew yak-42",
+      "manufacturer": "Yakowlew",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    }
+  ]
+}
