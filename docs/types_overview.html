@@ -230,6 +230,14 @@
 
     let html = `<div class="detailWrap">`;
 
+    const allHref = `./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
+    html += `
+      <div class="detailAll">
+        <a class="btn" href="${esc(allHref)}" title="Alle Modelle dieses Typs (alle Airlines/Gruppen)">Alle öffnen</a>
+      </div>
+    `;
+
+
     for(const g of groups){
       const groupName = g.group || "";
       const gOwned = g.owned || 0;
