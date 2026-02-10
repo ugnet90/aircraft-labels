@@ -67,10 +67,10 @@
     const statusSel = document.getElementById("status");
     statusSel.innerHTML = `
       <option value="">Status: alle</option>
-      <option value="missing">Fehlend</option>
-      <option value="owned">Vorhanden</option>
-      <option value="ordered">Bestellt</option>
-      <option value="mixed">Vorhanden + Bestellt</option>
+      <option value="missing">fehlend</option>
+      <option value="owned">vorhanden</option>
+      <option value="ordered">bestellt</option>
+      <option value="mixed">vorhanden + bestellt</option>
     `;
 
 
@@ -85,8 +85,8 @@
     const sort = document.getElementById("sort");
     sort.innerHTML = `
       <option value="type_az">Sort: Typ A→Z</option>
-      <option value="owned_desc">Sort: owned ↓</option>
-      <option value="ordered_desc">Sort: ordered ↓</option>
+      <option value="owned_desc">Sort: vorhanden ↓</option>
+      <option value="ordered_desc">Sort: bestellt ↓</option>
       <option value="manufacturer_az">Sort: Hersteller A→Z</option>
     `;
   }
@@ -138,10 +138,10 @@
 
   function statusLabel(st){
     switch(st){
-      case "missing": return "Fehlend";
-      case "owned": return "Vorhanden";
-      case "ordered": return "Bestellt";
-      case "mixed": return "Vorhanden + Bestellt";
+      case "missing": return "fehlend";
+      case "owned": return "vorhanden";
+      case "ordered": return "bestellt";
+      case "mixed": return "vorhanden + bestellt";
       default: return "";
     }
   }
@@ -200,9 +200,9 @@
           </td>
           <td class="col-manu">${esc(x.manufacturer || "")}</td>
           <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
-          <td class="col-num mono">${esc(x.owned_count || 0)}</td>
-          <td class="col-num mono">${esc(x.ordered_count || 0)}</td>
-          <td class="col-num mono">${esc(x.total_count || 0)}</td>
+          <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
+          <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
+          <td class="col-num mono">${(x.total_count > 0) ? esc(x.total_count) : ""}</td>
           <td class="col-status">${statusBadge(x.status)}</td>
         </tr>
       `;
@@ -267,9 +267,9 @@
                 <div class="dName">${esc(groupName)}</div>
               </div>
             </div>
-            <div class="dNum mono">${esc(gOwned)}</div>
-            <div class="dNum mono">${esc(gOrd)}</div>
-            <div class="dNum mono">${esc(gTotal)}</div>
+            <div class="dNum mono">${gOwned > 0 ? esc(gOwned) : ""}</div>
+            <div class="dNum mono">${gOrd > 0 ? esc(gOrd) : ""}</div>
+            <div class="dNum mono">${gTotal > 0 ? esc(gTotal) : ""}</div>
             <div class="dAct">
               <a class="smallLink" href="${esc(linkAll)}" title="In Übersicht öffnen">öffnen</a>
             </div>
@@ -292,9 +292,9 @@
                 ${esc(aName)}
                 <a class="smallLink" href="${esc(linkAir)}" title="Nur diese Airline in Übersicht öffnen">öffnen</a>
               </div>
-              <div class="dNum mono">${esc(aOwned)}</div>
-              <div class="dNum mono">${esc(aOrd)}</div>
-              <div class="dNum mono">${esc(aTotal)}</div>
+              <div class="dNum mono">${gOwned > 0 ? esc(gOwned) : ""}</div>
+              <div class="dNum mono">${gOrd > 0 ? esc(gOrd) : ""}</div>
+              <div class="dNum mono">${gTotal > 0 ? esc(gTotal) : ""}</div>
               <div></div>
             </div>
           `;
