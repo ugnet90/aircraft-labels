@@ -183,3 +183,17 @@ body{ --maxw: 1200px; }
   border-radius: 10px;
 }
 
+.detailAllLine{
+  display:flex;
+  gap:8px;
+  align-items:baseline;
+  margin: 0 0 8px 0;
+}
+.smallLink{
+  text-decoration:none;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:2px 8px;
+  font-size:12px;
+}
+.smallLink:hover{ background:#fafafa; }
