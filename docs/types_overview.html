@@ -236,7 +236,7 @@
       const gOrd = g.ordered || 0;
       const gTotal = g.total ?? (gOwned + gOrd);
 
-      const linkAll = `./index.html?group=${encodeURIComponent(groupName)}&type=${encodeURIComponent(x.typ_anzeige || "")}`;
+      const linkAll = `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
 
       // Logo: wir nutzen das gleiche Pattern wie bei anderen Seiten: logo über groupName
       // Erwartung: docs/data/airline_logos.csv wurde in index.json bereits zugeordnet -> in types_overview haben wir das nicht.
@@ -275,7 +275,7 @@
           const aOwned = a.owned || 0;
           const aOrd = a.ordered || 0;
           const aTotal = a.total ?? (aOwned + aOrd);
-          const linkAir = `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&type=${encodeURIComponent(x.typ_anzeige || "")}`;
+          const linkAir = `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
           
           html += `
             <div class="airGrid">
