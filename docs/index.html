@@ -355,6 +355,12 @@
       if (p.has("q")) {
         document.getElementById("q").value = p.get("q") || "";
       }
+      if (p.has("aircraft_id")) {
+        // aircraft_id hat Priorität: wir setzen den Typ-Filter NICHT,
+        // sondern nutzen die Suche (matchesQuery enthält aircraft_id bereits)
+        document.getElementById("q").value = p.get("aircraft_id") || "";
+      }
+
       if (p.has("group")) {
         document.getElementById("group").value = p.get("group") || "";
       }
