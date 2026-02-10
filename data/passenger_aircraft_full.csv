@@ -29,7 +29,7 @@ AIB-A321-200-SL;Airbus A321-200 (Sharklets);Airbus;A321;-200;;;;A321;321;SL;Sing
 AIB-A321-LR;Airbus A321 LR;Airbus;A321;LR;;;;A21N;32Q;SL;SingleAisle;Standard;PAX;Landflugzeug;2018;aktiv;Jet;2;Lang;206;44,51;35,8;11,76;https://de.wikipedia.org/wiki/Airbus_A321LR
 AIB-A321-neo;Airbus A321neo;Airbus;A321;neo;;;;A21N;32Q;SL;SingleAisle;Standard;PAX;Landflugzeug;2016;aktiv;Jet;2;Mittel;206;44,51;35,8;11,76;https://de.wikipedia.org/wiki/Airbus_A321neo
 AIB-A321-XLR;Airbus A321 XLR;Airbus;A321;XLR;;;;A21X;32R;SL;SingleAisle;Standard;PAX;Landflugzeug;2022;aktiv;Jet;2;Lang;244;44,51;35,8;11,76;https://de.wikipedia.org/wiki/Airbus_A321XLR
-AIB-A330-200;Airbus A330-200;Airbus;A330;-200;;;;A332;332;NONE;TwinAisle;LongHaul;PAX;Landflugzeug;1992;aktiv;Jet;2;Lang;253;58,82;60,3;17,39;https://de.wikipedia.org/wiki/Airbus_A330#A330-200
+AIB-A330-200;Airbus A330-200;Airbus;A330;-200;;;;A332;332;NONE;TwinAisle;LongHaul;PAX;Landflugzeug;1992;aktiv;Jet;2;Lang;253;58,82;58;17,39;https://de.wikipedia.org/wiki/Airbus_A330#A330-200
 AIB-A330-200-SL;Airbus A330-200 (Sharklets);Airbus;A330;-200;;;;A332;332;SL;TwinAisle;LongHaul;PAX;Landflugzeug;1992;aktiv;Jet;2;Lang;253;58,82;60,3;17,39;https://de.wikipedia.org/wiki/Airbus_A330#A330-200
 AIB-A330-300;Airbus A330-300;Airbus;A330;-300;;;;A333;333;NONE;TwinAisle;LongHaul;PAX;Landflugzeug;1992;aktiv;Jet;2;Lang;300;63,69;60,3;16,85;https://de.wikipedia.org/wiki/Airbus_A330#A330-300
 AIB-A330-300-SL;Airbus A330-300 (Sharklets);Airbus;A330;-300;;;;A333;333;SL;TwinAisle;LongHaul;PAX;Landflugzeug;1992;aktiv;Jet;2;Lang;300;63,69;60,3;16,85;https://de.wikipedia.org/wiki/Airbus_A330#A330-300
@@ -138,6 +138,7 @@ BOE-E4B;Boeing E-4B;Boeing;E-4;B;Advanced Airborne Command Post;Boeing E-4A|E-4B
 BOE-747-300;Boeing 747-300;Boeing;747;-300;; ;;B743;743;NONE;TwinAisle;LongHaul;PAX;Landflugzeug;1980;ausgemustert;Jet;4;Lang;412;70,66;59,64;19,3;https://de.wikipedia.org/wiki/Boeing_747#747-300
 BOE-747-400;Boeing 747-400;Boeing;747;-400;;;;B744;744;WL;TwinAisle;LongHaul;PAX;Landflugzeug;1989;ausgemustert;Jet;4;Lang;416;70,66;64,44;19,41;https://de.wikipedia.org/wiki/Boeing_747#747-400
 BOE-YAL1;Boeing YAL-1 Airborne Laser;Boeing;747;YAL-1;YAL-1 Airborne Laser;Boeing YAL-1A|Airborne Laser|747-400F ABL;BOE-747-400;B741;741;NONE;TwinAisle;Special;SPECIAL;Landflugzeug;2002;ausgemustert;Jet;4;Lang;0;70,66;64,44;19,41;https://de.wikipedia.org/wiki/Boeing_YAL-1
+BOE-747-400-VO;Boeing 747-400 LauncherOne Carrier Aircraft;Boeing;747;-400;LauncherOne Carrier Aircraft;Cosmic Girl|Virgin Orbit carrier aircraft|LauncherOne mothership;BOE-747-400;B744;744;WL;TwinAisle;Special;SPECIAL;Landflugzeug;2017;ausgemustert;Jet;4;Lang;0;70,66;64,44;19,41;https://de.wikipedia.org/wiki/Virgin_Orbit
 BOE-747-400D;Boeing 747-400D Domestic;Boeing;747;-400D;Domestic;;;B744;74D;NONE;TwinAisle;LongHaul;PAX;Landflugzeug;1991;ausgemustert;Jet;4;Kurz/Mittel;568;70,66;59,64;19,3;https://de.wikipedia.org/wiki/Boeing_747#747-400D
 BOE-747-400LCF;Boeing 747-400LCF Dreamlifter;Boeing;747;-400LCF;Dreamlifter;;BOE-747-400;BLCF;4LC;WL;TwinAisle;Special;CARGO;Landflugzeug;2006;aktiv;Jet;4;Lang;0;71,68;64,44;21,54;https://de.wikipedia.org/wiki/Boeing_Dreamlifter
 BOE-747-8;Boeing 747-8 Intercontinental;Boeing;747;-8;Intercontinental;;;B748;748;RW;VeryLarge;VLA;PAX;Landflugzeug;2011;aktiv;Jet;4;Lang;467;76,3;68,4;19,4;https://de.wikipedia.org/wiki/Boeing_747-8
