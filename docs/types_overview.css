@@ -34,20 +34,29 @@ body{ --maxw: 1200px; }
 .col-status{ width: 110px; }
 .col-manu{ width: 180px; }
 
-.typeLine{
-  display:flex;
-  gap: 10px;
-  align-items:flex-start;
+.typeLine{ display:flex; gap:10px; align-items:flex-start; }
+
+.toggle, .toggleOff{
+  width: 34px;          /* fix, für saubere Einrückung */
+  min-width: 34px;
+  height: 26px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
 }
+
 .toggle{
   border:1px solid #ddd;
   background:#fff;
   border-radius:10px;
-  padding: 2px 8px;
+  padding: 0;           /* wichtig: padding raus, sonst verschiebt es */
   cursor:pointer;
-  line-height: 1.2;
+  line-height: 1;
 }
 .toggle:hover{ background:#fafafa; }
+
+.toggleOff{ /* kein Inhalt, aber gleiche Box */ }
+
 
 .typeName{ font-weight:700; }
 
@@ -107,8 +116,40 @@ body{ --maxw: 1200px; }
 
 /* Hover soll noch erkennbar bleiben */
 .tbl tr.rowMain:hover td{ filter: brightness(0.98); }
-.toggleOff{
-  display:inline-block;
-  width: 34px;   /* ungefähr wie der Button */
-  height: 24px;
+
+.detailGroup{ padding: 10px; }
+
+.detailGrid, .airGrid{
+  display:grid;
+  grid-template-columns: 1fr 90px 90px 90px 80px;
+  gap: 8px;
+  align-items:center;
 }
+
+.dAir{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.logo{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border:1px solid #eee;
+  border-radius: 8px;
+  background:#fff;
+}
+
+.dName{ font-weight:700; }
+.dNum{ text-align:right; font-variant-numeric: tabular-nums; }
+.dAct{ text-align:right; }
+
+.airGridWrap{
+  margin-top: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+.aName{ color:#333; font-size: 13px; }
+
