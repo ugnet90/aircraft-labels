@@ -107,3 +107,8 @@ body{ --maxw: 1200px; }
 
 /* Hover soll noch erkennbar bleiben */
 .tbl tr.rowMain:hover td{ filter: brightness(0.98); }
+.toggleOff{
+  display:inline-block;
+  width: 34px;   /* ungefähr wie der Button */
+  height: 24px;
+}
