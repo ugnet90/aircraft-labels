@@ -344,6 +344,9 @@
         document.getElementById("flown").value = "";
         document.getElementById("sort").value = "group_model";
         apply();
+
+        // URL bereinigen (Query-Parameter entfernen)
+        history.replaceState(null, "", location.pathname);
       });
 
       // =========================
