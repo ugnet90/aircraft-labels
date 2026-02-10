@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-10T08:42:45Z",
+  "generated_at": "2026-02-10T09:12:18Z",
   "count": 169,
   "counts_by_airline_code": {
     "OS": 20,
@@ -3510,8 +3510,8 @@
       "aircraft_name": "Cosmic Girl",
       "livery_note": "Virgin Orbit",
       "extra_info": "Flight Test",
-      "wingtip": "",
-      "has_wingtip": false,
+      "wingtip": "WL",
+      "has_wingtip": true,
       "livery_name": "",
       "livery_display": "",
       "arrived": null,

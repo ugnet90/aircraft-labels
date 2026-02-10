@@ -35,8 +35,8 @@
     "aircraft_id": "BOE-747-400-VO",
     "type": "Boeing 747-400 LauncherOne Carrier Aircraft",
     "registration": "N744VG",
-    "wingtip": "",
-    "has_wingtip": false
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",
@@ -70,5 +70,32 @@
     "name": "Virgin Orbit LLC",
     "airline": "Virgin Orbit",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-747-400-VO",
+    "Typ_anzeige": "Boeing 747-400 LauncherOne Carrier Aircraft",
+    "Hersteller": "Boeing",
+    "Baureihe": "747",
+    "Unterserie": "-400",
+    "Marketingname": "LauncherOne Carrier Aircraft",
+    "Alternate_designations": "Cosmic Girl|Virgin Orbit carrier aircraft|LauncherOne mothership",
+    "parent_aircraft_id": "BOE-747-400",
+    "ICAO": "B744",
+    "IATA": "744",
+    "Wingtip": "WL",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2017",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "0",
+    "Length": "70,66",
+    "Wingspan": "64,44",
+    "Height": "19,41",
+    "Wiki": "https://de.wikipedia.org/wiki/Virgin_Orbit"
   }
 }
