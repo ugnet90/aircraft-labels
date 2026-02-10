@@ -20,6 +20,12 @@ body{ --maxw: 1200px; }
   border-bottom: 1px solid #eee;
   vertical-align: top;
 }
+.tbl thead th{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #fff;
+}
 .tbl th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
 .tbl tr:hover td{ background:#fafafa; }
 
@@ -93,3 +99,11 @@ body{ --maxw: 1200px; }
   .col-status{ width:auto; }
   .tbl th{ white-space: normal; }
 }
+/* Ganze Zeile nach Status einfärben */
+.rowMain.st-missing td{ background:#fff; }
+.rowMain.st-owned td{ background:#f1fff1; }
+.rowMain.st-ordered td{ background:#fff3c4; }
+.rowMain.st-mixed td{ background:#eef6ff; }
+
+/* Hover soll noch erkennbar bleiben */
+.tbl tr.rowMain:hover td{ filter: brightness(0.98); }
