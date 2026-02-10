@@ -66,9 +66,9 @@
   },
   "logo": {
     "id": "US_OBT",
-    "link": "",
-    "name": "",
-    "airline": "",
-    "logo_speaking": ""
+    "link": "https://assets.planespotters.net/files/airlines/3/virgin-orbit_e3ae92_opk.png",
+    "name": "Virgin Orbit LLC",
+    "airline": "Virgin Orbit",
+    "logo_speaking": "Wahr"
   }
 }

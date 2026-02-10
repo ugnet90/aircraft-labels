@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-10T08:12:09Z",
+  "generated_at": "2026-02-10T08:42:45Z",
   "count": 169,
   "counts_by_airline_code": {
     "OS": 20,
@@ -3518,7 +3518,7 @@
       "scale": "1:400",
       "flown": null,
       "logo_id": "US_OBT",
-      "logo_speaking": "",
+      "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336412101117",
       "ordered_at": "2026-02-08",
       "ordered": true
