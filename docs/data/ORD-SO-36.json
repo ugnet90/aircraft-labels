@@ -1,0 +1,74 @@
+{
+  "model_id": "ORD-SO-36",
+  "airline_code": "SO",
+  "airline": "Sonstige Airlines",
+  "airline_row": "Virgin Orbit",
+  "manufacturer": "JC Wings",
+  "aircraft_name": "Cosmic Girl",
+  "livery_note": "Virgin Orbit",
+  "extra_info": "Flight Test",
+  "shop_url": "https://www.ebay.de/itm/336412101117",
+  "aircraft_id": "BOE-747-400-VO",
+  "aircraft_type": "Boeing 747-400 LauncherOne Carrier Aircraft",
+  "registration": "N744VG",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "L:Virgin Orbit | I:Flight Test | M:with Rocket | N:Cosmic Girl",
+  "model_extra": "with Rocket",
+  "special_note": "",
+  "shop": "Ebay bigbird1946",
+  "price": 20.5,
+  "shipping_allocated": 2.74,
+  "flown": null,
+  "postcard": "",
+  "postcard_price": null,
+  "photo": "http://ocdn.eu/images/pulscms/NDU7MDA_/a1b6ec02-cea2-4aab-8911-311b9d4c8293.jpeg",
+  "arrived_excel": "",
+  "arrived": null,
+  "ordered_at": "2026-02-08",
+  "ordered": true,
+  "source": {
+    "sheet": "Sonstige",
+    "row": "36"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-747-400-VO",
+    "type": "Boeing 747-400 LauncherOne Carrier Aircraft",
+    "registration": "N744VG",
+    "wingtip": "",
+    "has_wingtip": false
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes_raw": "L:Virgin Orbit | I:Flight Test | M:with Rocket | N:Cosmic Girl",
+    "note": "Virgin Orbit"
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "JC Wings",
+    "model_number": "",
+    "shop": "Ebay bigbird1946",
+    "price": 20.5,
+    "shipping_allocated": 2.74,
+    "arrived": null,
+    "ordered_at": "2026-02-08",
+    "ordered": true,
+    "flown": null,
+    "special_note": "",
+    "model_extra": "with Rocket"
+  },
+  "links": {
+    "postcard": "",
+    "photo": "http://ocdn.eu/images/pulscms/NDU7MDA_/a1b6ec02-cea2-4aab-8911-311b9d4c8293.jpeg",
+    "shop": "Ebay bigbird1946",
+    "shop_url": "https://www.ebay.de/itm/336412101117"
+  },
+  "logo": {
+    "id": "US_OBT",
+    "link": "",
+    "name": "",
+    "airline": "",
+    "logo_speaking": ""
+  }
+}

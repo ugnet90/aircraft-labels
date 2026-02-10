@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 384,
     "present_types": 124,
-    "missing_types": 258,
-    "ordered_types": 2,
-    "models": 167
+    "missing_types": 257,
+    "ordered_types": 3,
+    "models": 169
   },
   "missing_types": [
     {
@@ -546,12 +546,6 @@
     {
       "aircraft_id": "BOE-767-400ER",
       "Typ_anzeige": "Boeing 767-400ER Extended Range",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-777-200ER",
-      "Typ_anzeige": "Boeing 777-200ER Extended Range",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1566,6 +1560,12 @@
     {
       "aircraft_id": "BOE-747-SCA",
       "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
+      "manufacturer": "Boeing",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOE-777-200ER",
+      "Typ_anzeige": "Boeing 777-200ER Extended Range",
       "manufacturer": "Boeing",
       "status": "ordered"
     }
