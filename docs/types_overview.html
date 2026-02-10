@@ -170,9 +170,9 @@
             <th class="col-type">Typ</th>
             <th class="col-manu">Hersteller</th>
             <th class="col-wing">WL/SL</th>
-            <th class="col-num">owned</th>
-            <th class="col-num">ordered</th>
-            <th class="col-num">total</th>
+            <th class="col-num">vorh.</th>
+            <th class="col-num">best.</th>
+            <th class="col-num">ges.</th>
             <th class="col-status">Status</th>
           </tr>
         </thead>
@@ -234,16 +234,34 @@
       const groupName = g.group || "";
       const gOwned = g.owned || 0;
       const gOrd = g.ordered || 0;
+      const gTotal = g.total ?? (gOwned + gOrd);
 
       const linkAll = `./index.html?group=${encodeURIComponent(groupName)}&type=${encodeURIComponent(x.typ_anzeige || "")}`;
 
+      // Logo: wir nutzen das gleiche Pattern wie bei anderen Seiten: logo über groupName
+      // Erwartung: docs/data/airline_logos.csv wurde in index.json bereits zugeordnet -> in types_overview haben wir das nicht.
+      // Deshalb: Wir verwenden ein simples Logo-Mapping via index.json NICHT.
+      // => Für jetzt: nur Text + optional später Logo JSON hinzufügen.
+      // Hier aber schon vorbereitet: <img> wird nur gerendert wenn logoUrl vorhanden.
+      const logoUrl = (g.logo_url || ""); // optional (falls du später ergänzst)
+
+      const logoHtml = logoUrl
+        ? `<img class="logo" src="${esc(logoUrl)}" alt="" loading="lazy">`
+        : "";
+
       html += `
         <div class="detailGroup">
-          <div class="detailHead">
-            <div>
-              <span class="badge">${esc(groupName)}</span>
-              <span class="muted">owned:</span> <span class="mono">${esc(gOwned)}</span>
-              <span class="muted">ordered:</span> <span class="mono">${esc(gOrd)}</span>
+          <div class="detailGrid">
+            <div class="dAir">
+              ${logoHtml}
+              <div>
+                <div class="dName">${esc(groupName)}</div>
+              </div>
+            </div>
+            <div class="dNum mono">${esc(gOwned)}</div>
+            <div class="dNum mono">${esc(gOrd)}</div>
+            <div class="dNum mono">${esc(gTotal)}</div>
+            <div class="dAct">
               <a class="smallLink" href="${esc(linkAll)}" title="In Übersicht öffnen">öffnen</a>
             </div>
           </div>
@@ -251,14 +269,24 @@
 
       const airlines = Array.isArray(g.airlines) ? g.airlines : [];
       if(airlines.length){
-        html += `<ul class="airList">`;
+        html += `<div class="airGridWrap">`;
         for(const a of airlines){
           const aName = a.airline || "";
           const aOwned = a.owned || 0;
           const aOrd = a.ordered || 0;
-          html += `<li><span class="mono">${esc(aOwned)}</span> / <span class="mono">${esc(aOrd)}</span> – ${esc(aName)}</li>`;
+          const aTotal = a.total ?? (aOwned + aOrd);
+
+          html += `
+            <div class="airGrid">
+              <div class="aName">${esc(aName)}</div>
+              <div class="dNum mono">${esc(aOwned)}</div>
+              <div class="dNum mono">${esc(aOrd)}</div>
+              <div class="dNum mono">${esc(aTotal)}</div>
+              <div></div>
+            </div>
+          `;
         }
-        html += `</ul>`;
+        html += `</div>`;
       }
 
       html += `</div>`;
@@ -267,6 +295,7 @@
     html += `</div>`;
     return html;
   }
+
 
   document.addEventListener("click", (ev)=>{
     const btn = ev.target.closest("button.toggle");
