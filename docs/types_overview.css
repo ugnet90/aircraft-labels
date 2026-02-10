@@ -27,6 +27,7 @@ body{ --maxw: 1200px; }
   background: #fff;
 }
 .tbl th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
+.tbl th.col-num{ text-align:right; }
 .tbl tr:hover td{ background:#fafafa; }
 
 .col-num{ text-align:right; font-variant-numeric: tabular-nums; width: 90px; }
@@ -121,9 +122,19 @@ body{ --maxw: 1200px; }
 
 .detailGrid, .airGrid{
   display:grid;
-  grid-template-columns: 1fr 90px 90px 90px 80px;
-  gap: 8px;
+  /* 1. Spalte flexibel, Zahlen-Spalten kompakt, Link kompakt */
+  grid-template-columns: 1fr minmax(40px,72px) minmax(40px,72px) minmax(40px,72px) minmax(52px,72px);
+  column-gap: 6px;
+  row-gap: 4px;
   align-items:center;
+}
+
+/* Mobil noch kompakter */
+@media (max-width: 520px){
+  .detailGrid, .airGrid{
+    grid-template-columns: 1fr 48px 48px 48px 56px;
+    column-gap: 4px;
+  }
 }
 
 .dAir{
@@ -153,8 +164,11 @@ body{ --maxw: 1200px; }
 
 .aName{ color:#333; font-size: 13px; }
 
-@media (max-width: 520px){
-  .detailGrid, .airGrid{
-    grid-template-columns: 1fr 70px 70px 70px 60px;
-  }
+/* Detail: Zahlen sollen exakt wie Tabelle wirken */
+.detailGroup, .detailGroup *{
+  font-size: inherit;
+}
+.detailGroup .dNum{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: inherit;
 }
