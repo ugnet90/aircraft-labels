@@ -153,3 +153,8 @@ body{ --maxw: 1200px; }
 
 .aName{ color:#333; font-size: 13px; }
 
+@media (max-width: 520px){
+  .detailGrid, .airGrid{
+    grid-template-columns: 1fr 70px 70px 70px 60px;
+  }
+}
