@@ -275,16 +275,21 @@
           const aOwned = a.owned || 0;
           const aOrd = a.ordered || 0;
           const aTotal = a.total ?? (aOwned + aOrd);
-
+          const linkAir = `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&type=${encodeURIComponent(x.typ_anzeige || "")}`;
+          
           html += `
             <div class="airGrid">
-              <div class="aName">${esc(aName)}</div>
+              <div class="aName">
+                ${esc(aName)}
+                <a class="smallLink" href="${esc(linkAir)}" title="Nur diese Airline in Übersicht öffnen">öffnen</a>
+              </div>
               <div class="dNum mono">${esc(aOwned)}</div>
               <div class="dNum mono">${esc(aOrd)}</div>
               <div class="dNum mono">${esc(aTotal)}</div>
               <div></div>
             </div>
           `;
+
         }
         html += `</div>`;
       }
