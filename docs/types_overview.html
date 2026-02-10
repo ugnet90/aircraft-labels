@@ -64,9 +64,15 @@
   }
 
   function buildStaticSelects(){
-    buildSelect("status", "Status: alle", [
-      "missing", "owned", "ordered", "mixed"
-    ]);
+    const statusSel = document.getElementById("status");
+    statusSel.innerHTML = `
+      <option value="">Status: alle</option>
+      <option value="missing">Fehlend</option>
+      <option value="owned">Vorhanden</option>
+      <option value="ordered">Bestellt</option>
+      <option value="mixed">Vorhanden + Bestellt</option>
+    `;
+
 
     // has_wingtip filter: all/true/false
     const wing = document.getElementById("wing");
@@ -130,10 +136,21 @@
     return arr;
   }
 
+  function statusLabel(st){
+    switch(st){
+      case "missing": return "Fehlend";
+      case "owned": return "Vorhanden";
+      case "ordered": return "Bestellt";
+      case "mixed": return "Vorhanden + Bestellt";
+      default: return "";
+    }
+  }
+
   function statusBadge(st){
     const s = st || "";
+    const lbl = statusLabel(s);
     const cls = "badge " + (s ? "st-" + s : "");
-    return s ? `<span class="${cls}">${esc(s)}</span>` : "";
+    return lbl ? `<span class="${cls}">${esc(lbl)}</span>` : "";
   }
 
   function wingBadge(v){
@@ -165,12 +182,16 @@
     for(const x of items){
       const isOpen = expanded.has(x.aircraft_id);
       html += `
-        <tr class="rowMain" data-aid="${esc(x.aircraft_id)}">
+        <tr class="rowMain st-${esc(x.status || "")}" data-aid="${esc(x.aircraft_id)}">
           <td class="col-type">
             <div class="typeLine">
-              <button class="toggle" data-aid="${esc(x.aircraft_id)}" aria-label="Details">
-                ${isOpen ? "▾" : "▸"}
-              </button>
+              ${
+                (x.status === "missing")
+                  ? `<span class="toggleOff"></span>`
+                  : `<button class="toggle" data-aid="${esc(x.aircraft_id)}" aria-label="Details">
+                       ${isOpen ? "▾" : "▸"}
+                     </button>`
+              }
               <div>
                 <div class="typeName">${esc(x.typ_anzeige || x.aircraft_id)}</div>
                 <div class="muted mono">${esc(x.aircraft_id)}</div>
@@ -186,7 +207,7 @@
         </tr>
       `;
 
-      if(isOpen){
+      if(isOpen && x.status !== "missing"){
         html += `
           <tr class="rowDetail">
             <td colspan="7">
@@ -250,14 +271,19 @@
   document.addEventListener("click", (ev)=>{
     const btn = ev.target.closest("button.toggle");
     if(!btn) return;
+  
     const aid = btn.getAttribute("data-aid") || "";
     if(!aid) return;
-
+  
+    const x = all.find(it => it.aircraft_id === aid);
+    if(!x || x.status === "missing") return;
+  
     if(expanded.has(aid)) expanded.delete(aid);
     else expanded.add(aid);
-
+  
     apply();
   });
+
 
   async function main(){
     const res = await fetch("./data/types_overview.json", {cache:"no-store"});
