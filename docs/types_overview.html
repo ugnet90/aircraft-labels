@@ -232,8 +232,9 @@
 
     const allHref = `./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
     html += `
-      <div class="detailAll">
-        <a class="btn" href="${esc(allHref)}" title="Alle Modelle dieses Typs (alle Airlines/Gruppen)">Alle öffnen</a>
+      <div class="detailAllLine">
+        <span class="muted">Alle Airlines/Gruppen:</span>
+        <a class="smallLink" href="${esc(allHref)}" title="Alle Modelle dieses Typs öffnen">öffnen</a>
       </div>
     `;
 
@@ -309,7 +310,8 @@
     return html;
   }
 
-
+  let wantScrollAid = "";
+  
   document.addEventListener("click", (ev)=>{
     const btn = ev.target.closest("button.toggle");
     if(!btn) return;
@@ -320,12 +322,25 @@
     const x = all.find(it => it.aircraft_id === aid);
     if(!x || x.status === "missing") return;
   
-    if(expanded.has(aid)) expanded.delete(aid);
-    else expanded.add(aid);
+    if(expanded.has(aid)){
+      expanded.clear();
+      wantScrollAid = ""; // nichts scrollen
+    }else{
+      expanded.clear();     // nur 1 offen
+      expanded.add(aid);
+      wantScrollAid = aid;  // nach dem Render dahin scrollen
+    }
   
     apply();
+  
+    // Nach dem Render: Zeile ins Sichtfeld scrollen (sanft)
+    if(wantScrollAid){
+      requestAnimationFrame(() => {
+        const tr = document.querySelector(`tr.rowMain[data-aid="${CSS.escape(wantScrollAid)}"]`);
+        if(tr) tr.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+    }
   });
-
 
   async function main(){
     const res = await fetch("./data/types_overview.json", {cache:"no-store"});
