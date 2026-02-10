@@ -136,7 +136,7 @@ def main():
 
     for r in models:
         group = norm(r.get("airline")) or norm(r.get("airline_code"))
-        t = norm(r.get("aircraft_type"))
+        t = norm(r.get("aircraft_id"))
         if not group or not t:
             continue
 
