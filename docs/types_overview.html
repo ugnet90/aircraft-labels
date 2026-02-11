@@ -269,15 +269,15 @@
             <div class="dAir">
               ${logoHtml}
               <div>
-                <div class="dName">${esc(groupName)}</div>
+                <div class="dName">
+                  ${esc(groupName)}
+                  <a class="smallLink" href="${esc(linkAll)}" title="Diese Gruppe in Übersicht öffnen">öffnen</a>
+                </div>
               </div>
             </div>
-            <div class="dNum mono">${gOwned > 0 ? esc(gOwned) : ""}</div>
+
             <div class="dNum mono">${gOrd > 0 ? esc(gOrd) : ""}</div>
-            <div class="dNum mono">${gTotal > 0 ? esc(gTotal) : ""}</div>
-            <div class="dAct">
-              <a class="smallLink" href="${esc(linkAll)}" title="In Übersicht öffnen">öffnen</a>
-            </div>
+            <div class="dNum mono">${gOwned > 0 ? esc(gOwned) : ""}</div>
           </div>
       `;
 
@@ -297,10 +297,9 @@
                 ${esc(aName)}
                 <a class="smallLink" href="${esc(linkAir)}" title="Nur diese Airline in Übersicht öffnen">öffnen</a>
               </div>
-              <div class="dNum mono">${gOwned > 0 ? esc(gOwned) : ""}</div>
-              <div class="dNum mono">${gOrd > 0 ? esc(gOrd) : ""}</div>
-              <div class="dNum mono">${gTotal > 0 ? esc(gTotal) : ""}</div>
-              <div></div>
+
+              <div class="dNum mono">${aOrd > 0 ? esc(aOrd) : ""}</div>
+              <div class="dNum mono">${aOwned > 0 ? esc(aOwned) : ""}</div>
             </div>
           `;
 
