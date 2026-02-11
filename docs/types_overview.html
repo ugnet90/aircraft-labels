@@ -28,9 +28,10 @@
       <select id="manu"></select>
 
       <div class="statusFilters">
-        <label><input type="checkbox" id="fMissing" checked> fehlend</label>
-        <label><input type="checkbox" id="fOwned" checked> vorhanden</label>
-        <label><input type="checkbox" id="fOrdered" checked> bestellt</label>
+        <div class="sfTitle">Status</div>
+        <label class="sfItem"><input type="checkbox" id="fMissing" checked> fehlend</label>
+        <label class="sfItem"><input type="checkbox" id="fOwned" checked> vorhanden</label>
+        <label class="sfItem"><input type="checkbox" id="fOrdered" checked> bestellt</label>
       </div>
 
       <select id="wing"></select>
@@ -86,6 +87,10 @@
       <option value="ordered_desc">Sort: bestellt ↓</option>
       <option value="manufacturer_az">Sort: Hersteller A→Z</option>
     `;
+  }
+
+  function wingIcon(has){
+    return has ? `<span class="wingIcon" title="Wingtip vorhanden">🪽</span>` : "";
   }
 
   function apply(){
@@ -180,7 +185,6 @@
       <table class="tbl">
         <thead>
           <tr>
-            <th class="col-status">Status</th>
             <th class="col-type">Typ</th>
             <th class="col-manu">Hersteller</th>
             <th class="col-wing">WL</th>
@@ -203,18 +207,18 @@
     
       html += `
         <tr class="rowMain st-${esc(x.status || "")}" data-aid="${esc(x.aircraft_id)}">
-          <td class="col-status">
-            ${toggleHtml}
-          </td>
-    
+   
           <td class="col-type">
             <div class="typeLine">
+              ${toggleHtml}
               <div>
+
                 <div class="typeName">
                   ${esc(x.typ_anzeige || x.aircraft_id)}
-                  <a class="typeLink"
-                     href="./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}"
-                     title="Alle Airlines dieses Typs anzeigen">↗︎</a>
+                    ${(x.status !== "missing") ? `
+                      <a class="typeLink"
+                         href="./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}"
+                         title="Alle Airlines dieses Typs anzeigen">↗︎</a>` : ""}
                 </div>
                 <div class="muted mono">${esc(x.aircraft_id)}</div>
               </div>
@@ -222,7 +226,7 @@
           </td>
     
           <td class="col-manu">${esc(x.manufacturer || "")}</td>
-          <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
+          <td class="col-wing">${wingIcon(x.has_wingtip === true)}</td>
     
           <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
           <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
@@ -232,9 +236,11 @@
       if(isOpen && canOpen){
         html += `
           <tr class="rowDetail">
-            <td colspan="6">
+            <td colspan="3">
               ${renderDetail(x)}
             </td>
+            <td></td>
+            <td></td>
           </tr>
         `;
       }
