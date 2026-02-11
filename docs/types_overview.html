@@ -167,13 +167,12 @@
       <table class="tbl">
         <thead>
           <tr>
+            <th class="col-status">Status</th>
             <th class="col-type">Typ</th>
             <th class="col-manu">Hersteller</th>
-            <th class="col-wing">WL/SL</th>
-            <th class="col-num">vorh.</th>
+            <th class="col-wing">WL</th>
             <th class="col-num">best.</th>
-            <th class="col-num">ges.</th>
-            <th class="col-status">Status</th>
+            <th class="col-num">vorh.</th>
           </tr>
         </thead>
         <tbody>
@@ -181,36 +180,42 @@
 
     for(const x of items){
       const isOpen = expanded.has(x.aircraft_id);
+      const canOpen = (x.status !== "missing");
+    
+      const toggleHtml = canOpen
+        ? `<button class="toggle" data-aid="${esc(x.aircraft_id)}" aria-label="Details">
+             ${isOpen ? "▾" : "▸"}
+           </button>`
+        : ""; // kein Platzhalter mehr!
+    
       html += `
         <tr class="rowMain st-${esc(x.status || "")}" data-aid="${esc(x.aircraft_id)}">
+          <td class="col-status">
+            ${toggleHtml}
+            ${statusBadge(x.status)}
+          </td>
+    
           <td class="col-type">
             <div class="typeLine">
-              ${
-                (x.status === "missing")
-                  ? `<span class="toggleOff"></span>`
-                  : `<button class="toggle" data-aid="${esc(x.aircraft_id)}" aria-label="Details">
-                       ${isOpen ? "▾" : "▸"}
-                     </button>`
-              }
               <div>
                 <div class="typeName">${esc(x.typ_anzeige || x.aircraft_id)}</div>
                 <div class="muted mono">${esc(x.aircraft_id)}</div>
               </div>
             </div>
           </td>
+    
           <td class="col-manu">${esc(x.manufacturer || "")}</td>
           <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
-          <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
+    
           <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
-          <td class="col-num mono">${(x.total_count > 0) ? esc(x.total_count) : ""}</td>
-          <td class="col-status">${statusBadge(x.status)}</td>
+          <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
         </tr>
       `;
-
-      if(isOpen && x.status !== "missing"){
+    
+      if(isOpen && canOpen){
         html += `
           <tr class="rowDetail">
-            <td colspan="7">
+            <td colspan="6">
               ${renderDetail(x)}
             </td>
           </tr>
