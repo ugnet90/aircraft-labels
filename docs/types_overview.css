@@ -152,3 +152,28 @@ body{ --maxw: 1200px; }
   .detailTbl th{ white-space: normal; }
   .detailTbl .colDots{ width: 72px; }
 }
+
+/* === FIX: Status-Dots immer sichtbar (Desktop + Mobile) === */
+.detailTbl td.colDots{
+  display: table-cell !important;
+  text-align: right !important;
+  white-space: nowrap !important;
+}
+
+.detailTbl .dotLink{
+  display: inline-block !important;
+  margin-left: 8px !important;
+  text-decoration: none !important;
+}
+
+.detailTbl .dot{
+  display: inline-block !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 999px !important;
+  opacity: 0.9 !important;
+  visibility: visible !important;
+}
+
+.detailTbl .dotG{ background:#54c57a !important; }
+.detailTbl .dotY{ background:#f2c94c !important; }
