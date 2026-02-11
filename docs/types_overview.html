@@ -69,25 +69,16 @@
     }
   }
 
-  function buildStaticSelects(){
-    const statusSel = document.getElementById("status");
-    statusSel.innerHTML = `
-      <option value="">Status: alle</option>
-      <option value="missing">fehlend</option>
-      <option value="owned">vorhanden</option>
-      <option value="ordered">bestellt</option>
-      <option value="mixed">vorhanden + bestellt</option>
-    `;
-
-
-    // has_wingtip filter: all/true/false
+  function buildStaticSelects(){  
+    // Wingtip
     const wing = document.getElementById("wing");
     wing.innerHTML = `
       <option value="">Wingtip: alle</option>
       <option value="true">Wingtip: ja</option>
       <option value="false">Wingtip: nein</option>
     `;
-
+  
+    // Sortierung
     const sort = document.getElementById("sort");
     sort.innerHTML = `
       <option value="type_az">Sort: Typ A→Z</option>
@@ -102,39 +93,41 @@
     const manu = document.getElementById("manu").value;
     const wing = document.getElementById("wing").value;
     const sort = document.getElementById("sort").value || "type_az";
+  
     const fMissing = document.getElementById("fMissing").checked;
     const fOwned = document.getElementById("fOwned").checked;
     const fOrdered = document.getElementById("fOrdered").checked;
-    
-    items = items.filter(x => {
-      const hasOwned = x.owned_count > 0;
-      const hasOrdered = x.ordered_count > 0;
-    
-      if(!fMissing && !hasOwned && !hasOrdered) return false;
-      if(!fOwned && hasOwned) return false;
-      if(!fOrdered && hasOrdered) return false;
-    
-      return true;
-    });
-
-
+  
     let items = all.filter(x => {
+      // Hersteller
       if(manu && (x.manufacturer || "") !== manu) return false;
-      if(status && (x.status || "") !== status) return false;
-
+  
+      // Wingtip
       if(wing === "true" && x.has_wingtip !== true) return false;
       if(wing === "false" && x.has_wingtip !== false) return false;
-
+  
+      // Status via Checkboxen
+      const hasOwned = (x.owned_count || 0) > 0;
+      const hasOrdered = (x.ordered_count || 0) > 0;
+      const isMissing = !hasOwned && !hasOrdered;
+  
+      const okMissing = fMissing && isMissing;
+      const okOwned = fOwned && hasOwned;
+      const okOrdered = fOrdered && hasOrdered;
+  
+      if(!(okMissing || okOwned || okOrdered)) return false;
+  
+      // Suche
       if(!q) return true;
       const hay = (norm(x.typ_anzeige) + " " + norm(x.aircraft_id) + " " + norm(x.manufacturer));
       return hay.includes(q);
     });
-
+  
     items = sortItems(items, sort);
-
+  
     document.getElementById("count").textContent =
-      `${items.length} Typen · davon ${items.filter(x=>x.total_count>0).length} mit Modellen`;
-
+      `${items.length} Typen · davon ${items.filter(x => (x.total_count || 0) > 0).length} mit Modellen`;
+  
     render(items);
   }
 
@@ -356,7 +349,6 @@
     // events
     document.getElementById("q").addEventListener("input", apply);
     document.getElementById("manu").addEventListener("change", apply);
-    document.getElementById("status").addEventListener("change", apply);
     document.getElementById("wing").addEventListener("change", apply);
     document.getElementById("sort").addEventListener("change", apply);
     document.getElementById("fMissing").addEventListener("change", apply);
