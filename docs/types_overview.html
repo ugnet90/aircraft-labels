@@ -258,16 +258,11 @@
   
     let html = `
       <table class="detailTbl">
-        <colgroup>
-          <col>
-          <col>
-          <col>
-        </colgroup>
         <thead>
           <tr>
             <th>Airline-Gruppe</th>
             <th>Airline</th>
-            <th class="col-status">Status</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -279,32 +274,24 @@
   
       for(const a of airlines){
         const aName = a.airline || "";
-        const owned = a.owned || 0;
-        const ordered = a.ordered || 0;
+  
+        // Links (Gruppe + Airline + Punkte)
+        const linkGroup = `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
+        const linkAir   = `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
+  
+        const owned = (a.owned || 0) > 0;
+        const ord   = (a.ordered || 0) > 0;
+  
+        // Punkte: grün = vorhanden, gelb = bestellt
+        const dots =
+          (owned ? `<a class="dotLink" href="${esc(linkAir)}" title="Vorhandene dieser Airline anzeigen"><span class="dot dotG"></span></a>` : ``) +
+          (ord   ? `<a class="dotLink" href="${esc(linkAir)}" title="Bestellte dieser Airline anzeigen"><span class="dot dotY"></span></a>` : ``);
   
         html += `
           <tr>
-            <td>
-              <a href="./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}">
-                ${esc(groupName)}
-              </a>
-            </td>
-            <td>
-              <a href="./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}">
-                ${esc(aName)}
-              </a>
-            </td>
-            <td class="dStatus">
-              ${owned > 0 ? `
-                <a class="dot"
-                   href="./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=owned"
-                   title="Vorhandene Modelle anzeigen">🟢</a>` : ""}
-  
-              ${ordered > 0 ? `
-                <a class="dot"
-                   href="./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=ordered"
-                   title="Bestellte Modelle anzeigen">🟡</a>` : ""}
-            </td>
+            <td><a href="${esc(linkGroup)}">${esc(groupName)}</a></td>
+            <td><a href="${esc(linkAir)}">${esc(aName)}</a></td>
+            <td class="colDots">${dots}</td>
           </tr>
         `;
       }
@@ -313,6 +300,7 @@
     html += `</tbody></table>`;
     return html;
   }
+
 
   let wantScrollAid = "";
   
