@@ -216,3 +216,38 @@ body{ --maxw: 1200px; }
   font-size:12px;
 }
 .smallLink:hover{ background:#fafafa; }
+
+.typeName{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.typeLink{
+  font-size:13px;
+  text-decoration:none;
+  opacity:0.6;
+  transition:opacity 0.15s ease;
+}
+
+.typeLink:hover{
+  opacity:1;
+}
+
+.dStatus{
+  display:flex;
+  gap:6px;
+  justify-content:flex-end;
+}
+
+.dot{
+  text-decoration:none;
+  font-size:15px;
+  line-height:1;
+  opacity:0.85;
+  transition:opacity 0.15s ease;
+}
+
+.dot:hover{
+  opacity:1;
+}
