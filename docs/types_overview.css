@@ -114,7 +114,11 @@ body{ --maxw: 1200px; }
 
 @media (max-width: 520px){
   .col-manu{ width:auto; }
-  .col-status{ width:auto; }
+  .col-status{
+    flex-direction:column;
+    align-self:stretch;
+    gap:6px;
+  }
   .tbl th{ white-space: normal; }
 }
 /* Ganze Zeile nach Status einfärben */
@@ -128,22 +132,28 @@ body{ --maxw: 1200px; }
 
 .detailGroup{ padding: 10px; }
 
-.detailGrid, .airGrid{
+.detailGrid{
   display:grid;
-  /* 1. Spalte flexibel, Zahlen-Spalten kompakt, Link kompakt */
-  grid-template-columns: 1fr minmax(40px,72px) minmax(40px,72px) minmax(40px,72px) minmax(52px,72px);
-  column-gap: 6px;
-  row-gap: 4px;
+  grid-template-columns: 1fr 90px 90px;
+  gap: 8px;
   align-items:center;
 }
+
+.airGrid{
+  display:grid;
+  grid-template-columns: 1fr 90px 90px;
+  gap: 8px;
+  align-items:center;
+}
+
 
 /* Mobil noch kompakter */
 @media (max-width: 520px){
   .detailGrid, .airGrid{
-    grid-template-columns: 1fr 48px 48px 48px 56px;
-    column-gap: 4px;
+    grid-template-columns: 1fr 70px 70px;
   }
 }
+
 
 .dAir{
   display:flex;
