@@ -198,7 +198,12 @@
           <td class="col-type">
             <div class="typeLine">
               <div>
-                <div class="typeName">${esc(x.typ_anzeige || x.aircraft_id)}</div>
+                <div class="typeName">
+                  ${esc(x.typ_anzeige || x.aircraft_id)}
+                  <a class="typeLink"
+                     href="./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}"
+                     title="Alle Airlines dieses Typs anzeigen">↗︎</a>
+                </div>
                 <div class="muted mono">${esc(x.aircraft_id)}</div>
               </div>
             </div>
@@ -276,8 +281,15 @@
               </div>
             </div>
 
-            <div class="dNum mono">${gOrd > 0 ? esc(gOrd) : ""}</div>
-            <div class="dNum mono">${gOwned > 0 ? esc(gOwned) : ""}</div>
+            <div class="dStatus">
+              ${gOwned > 0 ? `<a class="dot owned"
+                 href="./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=owned"
+                 title="Vorhandene Modelle anzeigen">🟢</a>` : ""}
+            
+              ${gOrd > 0 ? `<a class="dot ordered"
+                 href="./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=ordered"
+                 title="Bestellte Modelle anzeigen">🟡</a>` : ""}
+            </div>
           </div>
       `;
 
