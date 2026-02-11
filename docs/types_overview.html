@@ -25,7 +25,11 @@
 
       <select id="manu"></select>
 
-      <select id="status"></select>
+      <div class="statusFilters">
+        <label><input type="checkbox" id="fMissing" checked> fehlend</label>
+        <label><input type="checkbox" id="fOwned" checked> vorhanden</label>
+        <label><input type="checkbox" id="fOrdered" checked> bestellt</label>
+      </div>
 
       <select id="wing"></select>
 
@@ -192,7 +196,6 @@
         <tr class="rowMain st-${esc(x.status || "")}" data-aid="${esc(x.aircraft_id)}">
           <td class="col-status">
             ${toggleHtml}
-            ${statusBadge(x.status)}
           </td>
     
           <td class="col-type">
@@ -237,92 +240,57 @@
     if(groups.length === 0){
       return `<div class="muted">Keine Modelle vorhanden/bestellt.</div>`;
     }
-
-    let html = `<div class="detailWrap">`;
-
-    const allHref = `./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
-    html += `
-      <div class="detailAllLine">
-        <span class="muted">Alle Airlines/Gruppen:</span>
-        <a class="smallLink" href="${esc(allHref)}" title="Alle Modelle dieses Typs öffnen">öffnen</a>
-      </div>
+  
+    let html = `
+      <table class="detailTbl">
+        <thead>
+          <tr>
+            <th>Airline-Gruppe</th>
+            <th>Airline</th>
+            <th class="col-status">Status</th>
+          </tr>
+        </thead>
+        <tbody>
     `;
-
-
+  
     for(const g of groups){
       const groupName = g.group || "";
-      const gOwned = g.owned || 0;
-      const gOrd = g.ordered || 0;
-      const gTotal = g.total ?? (gOwned + gOrd);
-
-      const linkAll = `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
-
-      // Logo: wir nutzen das gleiche Pattern wie bei anderen Seiten: logo über groupName
-      // Erwartung: docs/data/airline_logos.csv wurde in index.json bereits zugeordnet -> in types_overview haben wir das nicht.
-      // Deshalb: Wir verwenden ein simples Logo-Mapping via index.json NICHT.
-      // => Für jetzt: nur Text + optional später Logo JSON hinzufügen.
-      // Hier aber schon vorbereitet: <img> wird nur gerendert wenn logoUrl vorhanden.
-      const logoUrl = (g.logo_url || ""); // optional (falls du später ergänzst)
-
-      const logoHtml = logoUrl
-        ? `<img class="logo" src="${esc(logoUrl)}" alt="" loading="lazy">`
-        : "";
-
-      html += `
-        <div class="detailGroup">
-          <div class="detailGrid">
-            <div class="dAir">
-              ${logoHtml}
-              <div>
-                <div class="dName">
-                  ${esc(groupName)}
-                  <a class="smallLink" href="${esc(linkAll)}" title="Diese Gruppe in Übersicht öffnen">öffnen</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="dStatus">
-              ${gOwned > 0 ? `<a class="dot owned"
-                 href="./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=owned"
-                 title="Vorhandene Modelle anzeigen">🟢</a>` : ""}
-            
-              ${gOrd > 0 ? `<a class="dot ordered"
-                 href="./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=ordered"
-                 title="Bestellte Modelle anzeigen">🟡</a>` : ""}
-            </div>
-          </div>
-      `;
-
       const airlines = Array.isArray(g.airlines) ? g.airlines : [];
-      if(airlines.length){
-        html += `<div class="airGridWrap">`;
-        for(const a of airlines){
-          const aName = a.airline || "";
-          const aOwned = a.owned || 0;
-          const aOrd = a.ordered || 0;
-          const aTotal = a.total ?? (aOwned + aOrd);
-          const linkAir = `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
-          
-          html += `
-            <div class="airGrid">
-              <div class="aName">
+  
+      for(const a of airlines){
+        const aName = a.airline || "";
+        const owned = a.owned || 0;
+        const ordered = a.ordered || 0;
+  
+        html += `
+          <tr>
+            <td>
+              <a href="./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}">
+                ${esc(groupName)}
+              </a>
+            </td>
+            <td>
+              <a href="./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}">
                 ${esc(aName)}
-                <a class="smallLink" href="${esc(linkAir)}" title="Nur diese Airline in Übersicht öffnen">öffnen</a>
-              </div>
-
-              <div class="dNum mono">${aOrd > 0 ? esc(aOrd) : ""}</div>
-              <div class="dNum mono">${aOwned > 0 ? esc(aOwned) : ""}</div>
-            </div>
-          `;
-
-        }
-        html += `</div>`;
+              </a>
+            </td>
+            <td class="dStatus">
+              ${owned > 0 ? `
+                <a class="dot"
+                   href="./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=owned"
+                   title="Vorhandene Modelle anzeigen">🟢</a>` : ""}
+  
+              ${ordered > 0 ? `
+                <a class="dot"
+                   href="./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}&status=ordered"
+                   title="Bestellte Modelle anzeigen">🟡</a>` : ""}
+            </td>
+          </tr>
+        `;
       }
-
-      html += `</div>`;
     }
-
-    html += `</div>`;
+  
+    html += `</tbody></table>`;
     return html;
   }
 
