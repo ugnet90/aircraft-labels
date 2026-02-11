@@ -31,7 +31,16 @@ body{ --maxw: 1200px; }
 
 .col-num{ text-align:right; font-variant-numeric: tabular-nums; width: 90px; }
 .col-wing{ width: 90px; text-align:center; }
-.col-status{ width: 110px; }
+
+.col-status{
+  width: 140px;               /* genug Platz für Toggle + Badge */
+  display:flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+}
+.col-status .badge{ white-space:nowrap; }
+
 .col-manu{ width: 180px; }
 
 .typeLine{ display:flex; gap:10px; align-items:flex-start; }
