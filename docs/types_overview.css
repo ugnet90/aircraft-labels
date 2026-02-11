@@ -329,3 +329,34 @@ body{ --maxw: 1200px; }
   line-height:1;
   opacity:0.85;
 }
+
+/* Detailbereich auf linke Spalten begrenzen */
+.rowDetail td{
+  padding: 0;              /* kein extra Padding vom TD */
+}
+
+.detailWrap{
+  padding: 12px 0 12px 0;
+  max-width: 100%;
+}
+
+.detailTbl{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;     /* verhindert unkontrolliertes Strecken */
+}
+
+/* Spaltenbreiten exakt an Haupttabelle anpassen */
+.detailTbl col:nth-child(1){ width: 40%; }
+.detailTbl col:nth-child(2){ width: 40%; }
+.detailTbl col:nth-child(3){ width: 20%; }
+
+/* Status-Spalte kompakt */
+.detailTbl td:last-child{
+  text-align: center;
+}
+
+/* Keine zusätzliche horizontale Linie über gesamte Seite */
+.rowDetail{
+  background: #f9f9f9;
+}
