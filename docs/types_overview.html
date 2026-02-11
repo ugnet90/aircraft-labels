@@ -101,6 +101,21 @@
     const status = document.getElementById("status").value;
     const wing = document.getElementById("wing").value;
     const sort = document.getElementById("sort").value || "type_az";
+    const fMissing = document.getElementById("fMissing").checked;
+    const fOwned = document.getElementById("fOwned").checked;
+    const fOrdered = document.getElementById("fOrdered").checked;
+    
+    items = items.filter(x => {
+      const hasOwned = x.owned_count > 0;
+      const hasOrdered = x.ordered_count > 0;
+    
+      if(!fMissing && !hasOwned && !hasOrdered) return false;
+      if(!fOwned && hasOwned) return false;
+      if(!fOrdered && hasOrdered) return false;
+    
+      return true;
+    });
+
 
     let items = all.filter(x => {
       if(manu && (x.manufacturer || "") !== manu) return false;
@@ -343,6 +358,9 @@
     document.getElementById("status").addEventListener("change", apply);
     document.getElementById("wing").addEventListener("change", apply);
     document.getElementById("sort").addEventListener("change", apply);
+    document.getElementById("fMissing").addEventListener("change", apply);
+    document.getElementById("fOwned").addEventListener("change", apply);
+    document.getElementById("fOrdered").addEventListener("change", apply);
 
     apply();
   }
