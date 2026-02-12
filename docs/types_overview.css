@@ -177,3 +177,16 @@ body{ --maxw: 1200px; }
 
 .detailTbl .dotG{ background:#54c57a !important; }
 .detailTbl .dotY{ background:#f2c94c !important; }
+
+/* === Row coloring by status (Main rows) === */
+tr.rowMain.st-owned td   { background:#eefaf0; }  /* grünlich */
+tr.rowMain.st-ordered td { background:#fff8e1; }  /* gelblich */
+tr.rowMain.st-mixed td   { background:#eef6ff; }  /* bläulich */
+tr.rowMain.st-missing td { background:#fff; }     /* keine Farbe */
+
+/* === Numbers: right align in header + cells === */
+.tbl th.col-num,
+.tbl td.col-num{
+  text-align:right;
+  font-variant-numeric: tabular-nums;
+}
