@@ -1,17 +1,18 @@
 body{ --maxw: 1200px; }
 
-.controls .bar{
+/* Controls-Layout: 2 Zeilen */
+.bar{
   display:grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
-  gap: 8px;
-  margin-top: 8px;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr; /* Suche, Hersteller, Wingtip, Sort */
+  gap: 10px;
+  align-items: center;
 }
 
 @media (max-width: 900px){
-  .controls .bar{ grid-template-columns: 1fr 1fr; }
+  .bar{ grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 520px){
-  .controls .bar{ grid-template-columns: 1fr; }
+  .bar{ grid-template-columns: 1fr; }
 }
 
 .tbl{
@@ -179,9 +180,18 @@ body{ --maxw: 1200px; }
 }
 
 .detailTbl .dot{
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  min-width:18px !important;
+  height:18px !important;
+  padding:0 6px !important;       /* erlaubt 12, 128 etc. */
+  border-radius:999px !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  color:#111 !important;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.95 !important;
 }
 
 .detailTbl .dotG{ background:#54c57a !important; }
@@ -313,3 +323,18 @@ a.typeLink:hover{
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+
+.legend{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin: 6px 0 10px 0;
+}
+.legend .dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  display:inline-block;
+  margin-right:6px;
+}
+.legendTxt{ font-size:12px; color:#666; }
