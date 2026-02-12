@@ -19,8 +19,10 @@
     <a class="btn" href="./missing_types.html">Fehlende Typen</a>
   </div>
   <div class="legend">
-    🟢 vorhanden &nbsp;&nbsp; 🟡 bestellt
+    <span class="dot dotG"></span><span class="legendTxt">vorhanden</span>
+    <span class="dot dotY"></span><span class="legendTxt">bestellt</span>
   </div>
+
   <div class="pageWrap">
     <div class="card controls">
     
@@ -34,9 +36,9 @@
       <div class="statusBox">
         <div class="statusTitle">Status</div>
         <div class="statusRow">
-          <label><input type="checkbox" id="fMissing" checked> fehlend</label>
-          <label><input type="checkbox" id="fOwned" checked> vorhanden</label>
-          <label><input type="checkbox" id="fOrdered" checked> bestellt</label>
+          <label class="chk"><input type="checkbox" id="fMissing" checked> fehlend</label>
+          <label class="chk"><input type="checkbox" id="fOwned" checked> vorhanden</label>
+          <label class="chk"><input type="checkbox" id="fOrdered" checked> bestellt</label>
         </div>
       </div>
     
