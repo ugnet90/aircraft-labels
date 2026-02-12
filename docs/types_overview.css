@@ -190,3 +190,49 @@ tr.rowMain.st-missing td { background:#fff; }     /* keine Farbe */
   text-align:right;
   font-variant-numeric: tabular-nums;
 }
+
+/* Status-Checkboxgruppe als eigenes Control */
+.statusBox{
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:8px 10px;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  min-height: 40px;      /* gleiche “Optik-Höhe” wie Inputs */
+}
+
+.statusTitle{
+  font-size:12px;
+  color:#666;
+  line-height:1.1;
+}
+
+.statusBox .chk{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  color:#111;
+  margin:0;
+}
+
+.statusBox input[type="checkbox"]{
+  width:auto;
+  transform: translateY(1px);
+}
+
+.wlBadge{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  letter-spacing:.02em;
+}
+
+a.typeLink{
+  text-decoration:none !important;
+  margin-left:6px;
+  opacity:.85;
+}
+a.typeLink:hover{
+  opacity:1;
+}
