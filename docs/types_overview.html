@@ -289,36 +289,45 @@
     
         const linkAir =
           `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
-    
+
+        const ownedCount = Number(a.owned || 0);
+        const orderedCount = Number(a.ordered || 0);
+
         const owned = (a.owned || 0) > 0;
         const ord   = (a.ordered || 0) > 0;
     
         // Dynamische Titel
         const titleGroup =
-          `Alle Modelle vom Typ ${typeLabel} in der Airline-Gruppe ${groupName} anzeigen`;
+          `Alle Sammel-Modelle vom Typ ${typeLabel} in der Airline-Gruppe ${groupName} anzeigen`;
     
         const titleAir =
-          `Alle Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+          `Alle Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
     
         const titleOwned =
-          `Vorhandene Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+          `Vorhandene Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
     
         const titleOrdered =
-          `Bestellte Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+          `Bestellte Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
     
         const dots =
           (owned ? `
             <a class="dotLink"
                href="${esc(linkAir)}"
                title="${esc(titleOwned)}">
-              <span class="dot dotG"></span>
+              <span class="dotCount">
+                <span class="dotNum">${esc(ownedCount)}</span>
+                <span class="dot dotG"></span>
+              </span>
             </a>
           ` : ``) +
           (ord ? `
             <a class="dotLink"
                href="${esc(linkAir)}"
                title="${esc(titleOrdered)}">
-              <span class="dot dotY"></span>
+              <span class="dotCount">
+                <span class="dotNum">${esc(orderedCount)}</span>
+                <span class="dot dotY"></span>
+              </span>
             </a>
           ` : ``);
     
