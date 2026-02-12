@@ -171,18 +171,17 @@ body{ --maxw: 1200px; }
 }
 
 .detailTbl .dotLink{
-  display: inline-block !important;
-  margin-left: 8px !important;
-  text-decoration: none !important;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin: 0 4px;
+  text-decoration:none;
 }
 
 .detailTbl .dot{
-  display: inline-block !important;
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 999px !important;
-  opacity: 0.9 !important;
-  visibility: visible !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
 }
 
 .detailTbl .dotG{ background:#54c57a !important; }
