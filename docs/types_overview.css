@@ -269,3 +269,47 @@ a.typeLink:hover{
 .tbl th.col-wing{
   text-align: center;
 }
+
+/* === Layout stabilisieren: Controls + Tabelle gleiche Breite === */
+.pageWrap{
+  display: inline-block;      /* shrink-to-fit */
+  max-width: 100%;            /* aber nie über Viewport */
+}
+
+.pageWrap .card{
+  width: 100%;
+}
+
+/* Haupttabelle soll NICHT springen beim Auf-/Zuklappen */
+.tbl{
+  width: max-content;         /* passt sich Inhalt an */
+  max-width: 100%;
+  table-layout: fixed;        /* verhindert Reflow durch Detailzeilen */
+}
+
+/* Damit die Tabelle nicht überläuft, wenn Typ sehr lang ist */
+.col-type{ width: 520px; }    /* ggf. 460–620 nach Geschmack */
+.col-wing{ width: 70px; text-align:center; }
+.col-num{ width: 80px; text-align:right; font-variant-numeric: tabular-nums; }
+
+/* Content soll wie Tabelle “shrink-to-fit”, aber responsiv bleiben */
+#content{
+  width: max-content;
+  max-width: 100%;
+}
+
+/* Falls du hover/overflow willst: */
+#content{ overflow-x: auto; }
+
+/* Statusbox soll exakt wie Controls-Breite laufen */
+.statusBox{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.statusRow{
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
