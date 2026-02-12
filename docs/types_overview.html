@@ -21,27 +21,28 @@
   <div class="legend">
     🟢 vorhanden &nbsp;&nbsp; 🟡 bestellt
   </div>
-  <div class="card controls">
-  
-    <div class="bar">
-      <input id="q" placeholder="Suche (Typ / aircraft_id / Hersteller)" />
-      <select id="manu"></select>
-      <select id="wing"></select>
-      <select id="sort"></select>
-    </div>
-  
-    <div class="statusBox">
-      <div class="statusTitle">Status</div>
-      <div class="statusRow">
-        <label><input type="checkbox" id="fMissing" checked> fehlend</label>
-        <label><input type="checkbox" id="fOwned" checked> vorhanden</label>
-        <label><input type="checkbox" id="fOrdered" checked> bestellt</label>
+  <div class="pageWrap">
+    <div class="card controls">
+    
+      <div class="bar">
+        <input id="q" placeholder="Suche (Typ / aircraft_id / Hersteller)" />
+        <select id="manu"></select>
+        <select id="wing"></select>
+        <select id="sort"></select>
       </div>
+    
+      <div class="statusBox">
+        <div class="statusTitle">Status</div>
+        <div class="statusRow">
+          <label><input type="checkbox" id="fMissing" checked> fehlend</label>
+          <label><input type="checkbox" id="fOwned" checked> vorhanden</label>
+          <label><input type="checkbox" id="fOrdered" checked> bestellt</label>
+        </div>
+      </div>
+    
+      <div class="muted" id="count"></div>
     </div>
-  
-    <div class="muted" id="count"></div>
   </div>
-
   <div id="content"></div>
 
 <script>
