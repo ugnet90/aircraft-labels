@@ -276,32 +276,74 @@
     for(const g of groups){
       const groupName = g.group || "";
       const airlines = Array.isArray(g.airlines) ? g.airlines : [];
-  
+    
       for(const a of airlines){
         const aName = a.airline || "";
-  
-        // Links (Gruppe + Airline + Punkte)
-        const linkGroup = `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
-        const linkAir   = `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(x.aircraft_id || "")}`;
-  
+    
+        const aircraftId = x.aircraft_id || "";
+        const typeLabel  = x.typ_anzeige || aircraftId;
+    
+        // Links
+        const linkGroup =
+          `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
+    
+        const linkAir =
+          `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
+    
         const owned = (a.owned || 0) > 0;
         const ord   = (a.ordered || 0) > 0;
-  
-        // Punkte: grün = vorhanden, gelb = bestellt
+    
+        // Dynamische Titel
+        const titleGroup =
+          `Alle Modelle vom Typ ${typeLabel} in der Airline-Gruppe ${groupName} anzeigen`;
+    
+        const titleAir =
+          `Alle Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+    
+        const titleOwned =
+          `Vorhandene Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+    
+        const titleOrdered =
+          `Bestellte Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+    
         const dots =
-          (owned ? `<a class="dotLink" href="${esc(linkAir)}" title="Vorhandene dieser Airline anzeigen"><span class="dot dotG"></span></a>` : ``) +
-          (ord   ? `<a class="dotLink" href="${esc(linkAir)}" title="Bestellte dieser Airline anzeigen"><span class="dot dotY"></span></a>` : ``);
-  
+          (owned ? `
+            <a class="dotLink"
+               href="${esc(linkAir)}"
+               title="${esc(titleOwned)}">
+              <span class="dot dotG"></span>
+            </a>
+          ` : ``) +
+          (ord ? `
+            <a class="dotLink"
+               href="${esc(linkAir)}"
+               title="${esc(titleOrdered)}">
+              <span class="dot dotY"></span>
+            </a>
+          ` : ``);
+    
         html += `
           <tr>
-            <td><a href="${esc(linkGroup)}">${esc(groupName)}</a></td>
-            <td><a href="${esc(linkAir)}">${esc(aName)}</a></td>
+            <td>
+              <a href="${esc(linkGroup)}"
+                 title="${esc(titleGroup)}">
+                ${esc(groupName)}
+              </a>
+            </td>
+    
+            <td>
+              <a href="${esc(linkAir)}"
+                 title="${esc(titleAir)}">
+                ${esc(aName)}
+              </a>
+            </td>
+    
             <td class="colDots">${dots}</td>
           </tr>
         `;
       }
     }
-  
+    
     html += `</tbody></table>`;
     return html;
   }
