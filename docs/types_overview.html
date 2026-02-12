@@ -304,10 +304,15 @@
           `Alle Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
     
         const titleOwned =
-          `Vorhandene Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
-    
+          ownedCount === 1
+            ? `1 vorhandenes Sammelmodell vom Typ ${typeLabel} bei ${aName} anzeigen`
+            : `${ownedCount} vorhandene Sammelmodelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+        
         const titleOrdered =
-          `Bestellte Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+          orderedCount === 1
+            ? `1 bestelltes Sammelmodell vom Typ ${typeLabel} bei ${aName} anzeigen`
+            : `${orderedCount} bestellte Sammelmodelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+
     
         const dots =
           (owned ? `
