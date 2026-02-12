@@ -194,6 +194,19 @@ body{ --maxw: 1200px; }
   opacity: 0.95 !important;
 }
 
+.detailTbl .dotCount{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  text-decoration:none;
+}
+
+.detailTbl .dotNum{
+  font-variant-numeric: tabular-nums;
+  font-size:13px;
+  line-height:1;
+}
+
 .detailTbl .dotG{ background:#54c57a !important; }
 .detailTbl .dotY{ background:#f2c94c !important; }
 
