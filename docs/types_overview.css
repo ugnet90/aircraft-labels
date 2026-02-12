@@ -41,7 +41,8 @@ body{ --maxw: 1200px; }
 }
 .col-status .badge{ white-space:nowrap; }
 
-.col-manu{ width: 180px; }
+/* .col-manu{ width: 180px; } */
+
 
 .typeLine{ display:flex; gap:10px; align-items:flex-start; }
 
