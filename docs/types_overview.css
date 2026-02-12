@@ -256,13 +256,6 @@ a.typeLink:hover{
   opacity:1;
 }
 
-.statusBox{
-  border:1px solid #ddd;
-  border-radius:10px;
-  padding:10px 12px;
-  margin-top:12px;
-}
-
 .statusTitle{
   font-size:12px;
   color:#666;
@@ -311,17 +304,34 @@ a.typeLink:hover{
 /* Falls du hover/overflow willst: */
 #content{ overflow-x: auto; }
 
-/* Statusbox soll exakt wie Controls-Breite laufen */
+/* Status-Checkboxgruppe als eigenes Control (shrink-to-fit) */
 .statusBox{
-  width: 100%;
-  box-sizing: border-box;
-}
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:8px 10px;
+  background:#fff;
 
+  display:inline-flex;        /* wichtig: nicht block-breit */
+  flex-direction:column;
+  gap:6px;
+
+  margin-top:12px;
+}
+/* Checkboxen in einer Reihe */
 .statusRow{
   display:flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  gap:14px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.statusRow .chk{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  color:#111;
+  margin:0;
 }
 
 .legend{
