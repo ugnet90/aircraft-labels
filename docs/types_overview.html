@@ -27,12 +27,13 @@
 
       <select id="manu"></select>
 
-      <div class="statusFilters">
-        <div class="sfTitle">Status</div>
-        <label class="sfItem"><input type="checkbox" id="fMissing" checked> fehlend</label>
-        <label class="sfItem"><input type="checkbox" id="fOwned" checked> vorhanden</label>
-        <label class="sfItem"><input type="checkbox" id="fOrdered" checked> bestellt</label>
+      <div class="statusBox">
+        <div class="statusTitle">Status</div>
+        <label class="chk"><input type="checkbox" id="fMissing" checked> fehlend</label>
+        <label class="chk"><input type="checkbox" id="fOwned" checked> vorhanden</label>
+        <label class="chk"><input type="checkbox" id="fOrdered" checked> bestellt</label>
       </div>
+
 
       <select id="wing"></select>
 
@@ -92,6 +93,11 @@
   function wingIcon(has){
     return has ? `<span class="wingIcon" title="Wingtip vorhanden">🪽</span>` : "";
   }
+  
+  function wingBadge(has){
+    return has ? `<span class="wlBadge">WL</span>` : "";
+  }
+
 
   function apply(){
     const q = norm(document.getElementById("q").value);
@@ -226,8 +232,7 @@
           </td>
     
           <td class="col-manu">${esc(x.manufacturer || "")}</td>
-          <td class="col-wing">${wingIcon(x.has_wingtip === true)}</td>
-    
+          <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
           <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
           <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
         </tr>
