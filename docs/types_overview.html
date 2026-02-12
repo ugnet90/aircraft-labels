@@ -192,7 +192,6 @@
         <thead>
           <tr>
             <th class="col-type">Typ</th>
-            <th class="col-manu">Hersteller</th>
             <th class="col-wing">WL</th>
             <th class="col-num">best.</th>
             <th class="col-num">vorh.</th>
@@ -231,7 +230,6 @@
             </div>
           </td>
     
-          <td class="col-manu">${esc(x.manufacturer || "")}</td>
           <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
           <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
           <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
