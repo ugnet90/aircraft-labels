@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 385,
+    "master_types": 386,
     "present_types": 124,
-    "missing_types": 257,
+    "missing_types": 258,
     "ordered_types": 4,
     "models": 169
   },
@@ -1296,6 +1296,12 @@
     {
       "aircraft_id": "PIP-PA23",
       "Typ_anzeige": "Piper PA-23",
+      "manufacturer": "Piper",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "PIP-PA28RT-201T",
+      "Typ_anzeige": "Piper PA-28RT-201T Turbo Arrow IV",
       "manufacturer": "Piper",
       "status": "missing"
     },

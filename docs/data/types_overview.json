@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 385,
+  "master_count": 386,
   "with_any_models": 128,
-  "missing": 257,
+  "missing": 258,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -6719,6 +6719,19 @@
       "aircraft_id": "PIP-PA23",
       "typ_anzeige": "Piper PA-23",
       "type_key": "piper pa-23",
+      "manufacturer": "Piper",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "PIP-PA28RT-201T",
+      "typ_anzeige": "Piper PA-28RT-201T Turbo Arrow IV",
+      "type_key": "piper pa-28rt-201t turbo arrow iv",
       "manufacturer": "Piper",
       "wingtip": "NONE",
       "has_wingtip": false,
