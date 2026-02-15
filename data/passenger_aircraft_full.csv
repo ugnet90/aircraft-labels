@@ -334,6 +334,7 @@ PIL-PC12;Pilatus PC-12;Pilatus;PC-12;;;;;PC12;PL2;NONE;SingleAisle;Regional;PAX;
 PIL-PC24;Pilatus PC-24;Pilatus;PC-24;;;;;PC24;PC24;NONE;SingleAisle;Regional;PAX;Landflugzeug;2015;aktiv;Jet;2;Kurz/Mittel;10;16,8;17;5,3;https://de.wikipedia.org/wiki/Pilatus_PC-24
 PIL-PC6;Pilatus PC-6;Pilatus;PC-6;;;;;PC6;PC6;NONE;SingleAisle;Regional;PAX;Landflugzeug;1959;teils aktiv;Propeller;1;Kurz;10;11;15;3,2;https://de.wikipedia.org/wiki/Pilatus_PC-6
 PIP-PA23;Piper PA-23;Piper;PA-23;;;;;PA23;P23;NONE;SingleAisle;Regional;PAX;Landflugzeug;1952;teils aktiv;Propeller;2;Kurz;6;8,6;11,8;2,9;https://de.wikipedia.org/wiki/Piper_PA-23
+PIP-PA28RT-201T;Piper PA-28RT-201T Turbo Arrow IV;Piper;PA-28RT;-201T;Turbo Arrow IV;PA-28RT-201T|Turbo Arrow IV;;PAR4;P28T;NONE;SingleAisle;Special;PRIVATE;Landflugzeug;1979;ausgemustert;Kolbenmotor;1;Kurz;4;7,62;9,75;2,44;https://en.wikipedia.org/wiki/Piper_PA-28R_Arrow
 PIP-PA31;Piper PA-31;Piper;PA-31;;;;;PA31;P31;NONE;SingleAisle;Regional;PAX;Landflugzeug;1964;teils aktiv;Propeller;2;Kurz;8;10,8;12;3,5;https://de.wikipedia.org/wiki/Piper_PA-31
 PIP-PA31T;Piper PA-31T;Piper;PA-31T;;;;;PA31T;P31T;NONE;SingleAisle;Regional;PAX;Landflugzeug;1973;teils aktiv;Turboprop;2;Kurz/Mittel;8;10,8;14;4,2;https://en.wikipedia.org/wiki/Piper_PA-31T_Cheyenne
 PIP-PA42;Piper PA-42;Piper;PA-42;;;;;PA42;P42;NONE;SingleAisle;Regional;PAX;Landflugzeug;1977;teils aktiv;Turboprop;2;Kurz/Mittel;11;13,4;15;4,5;https://de.wikipedia.org/wiki/Piper_PA-42
