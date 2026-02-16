@@ -154,7 +154,7 @@
         : esc(reg);
   
       html += `
-        <tr>
+        <tr class="rowFlight" data-id="${esc(f.flight_id)}">
           <td class="col-date mono" data-label="Datum">
             <div class="dDate">${esc(date)}</div>
             ${time ? `<div class="dTime">${esc(time)}</div>` : ``}
@@ -173,6 +173,17 @@
   
     html += `</tbody></table>`;
     document.getElementById("content").innerHTML = html;
+    document.querySelectorAll(".rowFlight").forEach(tr => {
+      tr.addEventListener("click", e => {
+        // keine Navigation wenn man auf externen Link klickt (Reg-Link)
+        if(e.target.closest("a")) return;
+    
+        const id = tr.getAttribute("data-id");
+        if(id){
+          location.href = `./flight.html?id=${encodeURIComponent(id)}`;
+        }
+      });
+    });
   }
 
   
