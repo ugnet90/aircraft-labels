@@ -124,6 +124,11 @@ def main() -> int:
     logos_rows = read_csv(AIRLINE_LOGOS_CSV)
     flights_rows = read_csv(FLIGHTS_CSV)
     
+    print("DEBUG flights rows:", len(flights_rows))
+    if flights_rows:
+        print("DEBUG keys:", list(flights_rows[0].keys()))
+        print("DEBUG first row:", flights_rows[0])
+    
     # Index nach logo_id (Primärschlüssel)
     logos_idx = index_by_key(logos_rows, "logo_id")
 
