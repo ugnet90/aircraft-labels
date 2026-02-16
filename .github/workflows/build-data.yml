@@ -7,6 +7,7 @@ on:
       - "data/passenger_aircraft_full.csv"
       - "data/airline_logos.csv"
       - "data/liveries.csv"
+      - "data/flights_export.csv"
       - "tools/build_json.py"
       - "tools/build_stats.py"
   workflow_dispatch:
