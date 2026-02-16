@@ -36,6 +36,106 @@
   <div id="content" class="card" style="margin-top:12px">Lade Daten …</div>
 
 <script>
+  function timeToMinutes(v){
+    if(v === null || v === undefined) return 0;
+    const s = String(v).trim();
+    if(!s) return 0;
+  
+    // "HH:MM" / "HH:MM:SS"
+    const m = s.match(/^(\d{1,2}):(\d{2})(?::(\d{2}))?$/);
+    if(m){
+      const hh = Number(m[1] || 0);
+      const mm = Number(m[2] || 0);
+      return (hh * 60) + mm;
+    }
+  
+    // Excel fraction 0,552083... / 0.552083...
+    const num = Number(s.replace(",", "."));
+    if(Number.isFinite(num)){
+      const totalMinutes = Math.round(num * 24 * 60);
+      return totalMinutes;
+    }
+  
+    return 0;
+  }
+  
+  function flightStamp(f){
+    const d = String(f.date || "").trim();
+    // Wenn Datum fehlt: ans Ende
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(d)) return Number.MAX_SAFE_INTEGER;
+  
+    const mins = timeToMinutes(f.time);
+    // YYYY-MM-DD -> Minutenstempel
+    const [Y,M,D] = d.split("-").map(Number);
+    const ts = Date.UTC(Y, (M-1), D, 0, 0, 0);
+    return ts + (mins * 60 * 1000);
+  }
+  
+  function normKey(v){
+    return String(v ?? "").trim().toUpperCase();
+  }
+  
+  // Ermittelt FIRST-Maps über ALLE Flüge (chronologisch ASC)
+  function computeFirstMaps(allFlights){
+    const flights = (allFlights || []).slice().sort((a,b)=> flightStamp(a) - flightStamp(b));
+  
+    const first = {
+      airline: new Map(),        // logo_id
+      type: new Map(),           // aircraft_id
+      reg: new Map(),            // registration
+      airlineType: new Map(),    // logo_id|aircraft_id
+      airlineReg: new Map(),     // logo_id|registration
+    };
+  
+    for(const f of flights){
+      const id = String(f.flight_id || "").trim();
+      if(!id) continue;
+  
+      const a = normKey(f.logo_id);
+      const t = normKey(f.aircraft_id);
+      const r = normKey(f.registration);
+  
+      if(a && !first.airline.has(a)) first.airline.set(a, id);
+      if(t && !first.type.has(t)) first.type.set(t, id);
+      if(r && !first.reg.has(r)) first.reg.set(r, id);
+  
+      if(a && t){
+        const k = a + "|" + t;
+        if(!first.airlineType.has(k)) first.airlineType.set(k, id);
+      }
+      if(a && r){
+        const k = a + "|" + r;
+        if(!first.airlineReg.has(k)) first.airlineReg.set(k, id);
+      }
+    }
+  
+    return first;
+  }
+  
+  // Baut Badges für den aktuellen Flug
+  function buildFirstBadges(f, firstMaps){
+    const id = String(f.flight_id || "").trim();
+    if(!id) return "";
+  
+    const a = normKey(f.logo_id);
+    const t = normKey(f.aircraft_id);
+    const r = normKey(f.registration);
+  
+    const badges = [];
+  
+    if(a && firstMaps.airline.get(a) === id) badges.push("Erstflug Airline");
+    if(t && firstMaps.type.get(t) === id) badges.push("Erstflug Typ");
+    if(r && firstMaps.reg.get(r) === id) badges.push("Erstflug Reg");
+  
+    if(a && t && firstMaps.airlineType.get(a + "|" + t) === id) badges.push("Erstflug Airline+Typ");
+    if(a && r && firstMaps.airlineReg.get(a + "|" + r) === id) badges.push("Erstflug Airline+Reg");
+  
+    if(!badges.length) return "";
+  
+    // Du hast .badge/.pill bereits – wir nutzen .badge-warn als auffällig, sonst .badge
+    return badges.map(x => `<span class="badge badge-warn">${x}</span>`).join(" ");
+  }
+
   function qs(name){
     const u = new URL(window.location.href);
     return u.searchParams.get(name);
@@ -166,6 +266,8 @@
       if(!resF.ok) throw new Error(`flights.json HTTP ${resF.status}`);
       const flights = await resF.json();
       const items = flights.items || [];
+      
+      const firstMaps = computeFirstMaps(items);
 
       const f = items.find(x => asText(x.flight_id) === asText(id));
       if(!f){
@@ -173,6 +275,7 @@
           `<div class="err"><b>Fehler:</b> Flug <span class="mono">${esc(id)}</span> nicht gefunden.</div>`;
         return;
       }
+      const firstBadgesHtml = buildFirstBadges(f, firstMaps);
 
       // models index (für Matching)
       const resI = await fetch("./index.json", {cache:"no-store"});
@@ -203,7 +306,11 @@
 
       document.title = `${dateDE}${timeHHMM ? " " + timeHHMM : ""} · ${route || "Flug"} · ${reg || typ || "Details"}`;
       document.getElementById("title").textContent = `${route || "Flug"}${dateDE ? " · " + dateDE : ""}${timeHHMM ? " " + timeHHMM : ""}`;
-      document.getElementById("meta").textContent = [airline, flightNo].filter(Boolean).join(" · ");
+      document.getElementById("meta").innerHTML =
+        esc([airline, flightNo].filter(Boolean).join(" · ")) +
+        (firstBadgesHtml
+          ? `<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">${firstBadgesHtml}</div>`
+          : "");
 
       // Matching
       const analysis = analyzeFlight(models, f);
