@@ -127,3 +127,53 @@ a:hover{ text-decoration:underline; }
     border-bottom:1px solid #bbb;
   }
 }
+
+@media (max-width: 720px){
+
+  /* 1. Zeile: Route + Airline nebeneinander */
+  .tbl tr{
+    position: relative;
+  }
+
+  .tbl td.col-route,
+  .tbl td.col-air{
+    display:inline-block;
+    width:auto;
+    padding:0;
+    border:0;
+  }
+
+  .tbl td.col-route{
+    font-size:14px;
+    font-weight:700;
+    margin-right:10px;
+  }
+
+  .tbl td.col-air{
+    font-size:14px;
+    color:#111;
+  }
+
+  /* Labels für diese beiden ausblenden (sonst doppelt) */
+  .tbl td.col-route::before,
+  .tbl td.col-air::before{
+    display:none;
+  }
+
+  /* Rest darunter als “Stack”, mit Labels wie bisher */
+  .tbl td.col-date,
+  .tbl td.col-fn,
+  .tbl td.col-type,
+  .tbl td.col-reg{
+    margin-top:8px;
+  }
+
+  /* Datum/Zeit kompakter */
+  .tbl td.col-date .dDate{ display:inline; }
+  .tbl td.col-date .dTime{ display:inline; margin-left:8px; }
+
+  /* Typ-Block etwas kompakter */
+  .tbl td.col-type .muted{
+    margin-top:2px;
+  }
+}
