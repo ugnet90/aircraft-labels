@@ -1,0 +1,40 @@
+/* flights.css */
+:root{ --maxw: 1100px; }
+
+.tbl{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+.tbl th, .tbl td{
+  padding:8px 10px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+}
+.tbl th{
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:2;
+  font-size:12px;
+  color:#666;
+  text-align:left;
+  white-space:nowrap;
+}
+.tbl tr:hover td{ background:#fafafa; }
+
+.col-date{ width:120px; white-space:nowrap; }
+.col-time{ width:70px; white-space:nowrap; }
+.col-route{ width:110px; white-space:nowrap; }
+.col-air{ width:170px; }
+.col-fn{ width:90px; white-space:nowrap; }
+.col-type{ min-width:240px; }
+.col-reg{ width:110px; white-space:nowrap; }
+
+a{ text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+@media (max-width: 720px){
+  .tbl th{ white-space:normal; }
+  .col-type{ min-width:auto; }
+}
