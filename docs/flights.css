@@ -65,3 +65,65 @@ a:hover{ text-decoration:underline; }
 .tbl th.active{
   color:#111;
 }
+
+/* ===== flights mobile layout ===== */
+
+/* mono generell etwas kleiner (damit Codes nicht so fett wirken) */
+.mono{
+  font-size: 12px;
+}
+
+/* Datum/Zeit in einer Zelle */
+.dDate{ font-size:12px; }
+.dTime{ font-size:11px; color:#666; margin-top:2px; }
+
+/* auf schmalen Screens: Tabelle als Cards (kein Überlaufen) */
+@media (max-width: 720px){
+  .tbl{
+    width:100%;
+  }
+
+  .tbl thead{
+    display:none;              /* Header ausblenden */
+  }
+
+  .tbl, .tbl tbody, .tbl tr, .tbl td{
+    display:block;
+    width:100%;
+  }
+
+  .tbl tr{
+    border:1px solid #e6e6e6;
+    border-radius:12px;
+    padding:10px 12px;
+    margin:10px 0;
+    background:#fff;
+  }
+
+  .tbl td{
+    border:0;
+    padding:6px 0;
+  }
+
+  /* Jede Zeile als Key/Value */
+  .tbl td::before{
+    content: attr(data-label);
+    display:block;
+    font-size:11px;
+    color:#666;
+    margin-bottom:2px;
+  }
+
+  /* Route, Airline, Typ ruhig etwas größer */
+  .tbl td.col-route,
+  .tbl td.col-air,
+  .tbl td.col-type{
+    font-size:14px;
+  }
+
+  /* Reg Link ohne Unterstrich (falls du später global willst, hier lokal) */
+  .tbl td.col-reg a{
+    text-decoration:none;
+    border-bottom:1px solid #bbb;
+  }
+}
