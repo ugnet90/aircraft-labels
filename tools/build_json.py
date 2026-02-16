@@ -11,6 +11,8 @@ MODELS_CSV = os.path.join(REPO_ROOT, "models_export.csv")
 PAX_CSV = os.path.join(REPO_ROOT, "data", "passenger_aircraft_full.csv")
 LIV_CSV = os.path.join(REPO_ROOT, "data", "liveries.csv")
 AIRLINE_LOGOS_CSV = os.path.join(REPO_ROOT, "data", "airline_logos.csv")
+FLIGHTS_CSV = os.path.join(REPO_ROOT, "main", "data", "flights_export.csv")
+OUT_FLIGHTS_JSON = os.path.join(REPO_ROOT, "docs", "data", "flights.json")
 
 OUT_DIR = os.path.join(REPO_ROOT, "docs", "data")
 INDEX_JSON = os.path.join(REPO_ROOT, "docs", "index.json")
@@ -120,7 +122,8 @@ def main() -> int:
     pax_rows = read_csv(PAX_CSV)
     liv_rows = read_csv(LIV_CSV)
     logos_rows = read_csv(AIRLINE_LOGOS_CSV)
-
+    flights_rows = read_csv(FLIGHTS_CSV)
+    
     # Index nach logo_id (Primärschlüssel)
     logos_idx = index_by_key(logos_rows, "logo_id")
 
@@ -374,6 +377,75 @@ def main() -> int:
     with open(INDEX_JSON, "w", encoding="utf-8") as f:
         json.dump(index_payload, f, ensure_ascii=False, indent=2)
 
+    # =========================
+    # Flights -> docs/data/flights.json
+    # =========================
+    def parse_dt_key(fr: Dict[str, str]) -> str:
+        d = (fr.get("date", "") or "").strip()   # YYYY-MM-DD
+        t = (fr.get("time", "") or "").strip()   # HH:MM (oder leer)
+        if t and len(t) >= 5:
+            return f"{d}T{t[:5]}"
+        return f"{d}T00:00"
+
+    flights_items = []
+    for fr in flights_rows:
+        flight_id = (fr.get("flight_id", "") or "").strip()
+        if not flight_id:
+            continue
+
+        logo_id = (fr.get("logo_id", "") or "").strip()
+        aircraft_id = (fr.get("aircraft_id", "") or "").strip()
+        reg = (fr.get("registration", "") or "").strip()
+
+        logo_row = logos_idx.get(logo_id) if logo_id else None
+        airline_name = ((logo_row.get("Airline", "") if logo_row else "") or "").strip()
+
+        pax_row = pax_idx.get(aircraft_id) if aircraft_id else None
+        typ_anzeige = ((pax_row.get("Typ_anzeige", "") if pax_row else "") or "").strip()
+        hersteller = ((pax_row.get("Hersteller", "") if pax_row else "") or "").strip()
+        wingtip = ((pax_row.get("Wingtip", "") if pax_row else "") or "").strip()
+
+        reg_url = f"https://airport-data.com/aircraft/{reg}.html" if reg else ""
+
+        flights_items.append({
+            "flight_id": flight_id,
+            "date": (fr.get("date", "") or "").strip(),
+            "time": (fr.get("time", "") or "").strip(),
+            "from": (fr.get("from", "") or "").strip(),
+            "to": (fr.get("to", "") or "").strip(),
+            "flight_no": (fr.get("flight_no", "") or "").strip(),
+            "callsign": (fr.get("callsign", "") or "").strip(),
+
+            "logo_id": logo_id,
+            "airline": airline_name,
+
+            "aircraft_id": aircraft_id,
+            "typ_anzeige": typ_anzeige,
+            "manufacturer": hersteller,
+            "wingtip": wingtip,
+
+            "registration": reg,
+            "reg_url": reg_url,
+
+            # optional detail fields (für spätere Detailansicht)
+            "travel_class": (fr.get("travel_class", "") or "").strip(),
+            "seat": (fr.get("seat", "") or "").strip(),
+            "notes": (fr.get("notes", "") or "").strip(),
+            "lounge": (fr.get("lounge", "") or "").strip(),
+        })
+
+    flights_items.sort(key=lambda x: parse_dt_key(x), reverse=True)
+
+    flights_payload = {
+        "schema": "aircraft-labels.flights.v1",
+        "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "count": len(flights_items),
+        "items": flights_items,
+    }
+
+    with open(OUT_FLIGHTS_JSON, "w", encoding="utf-8") as f:
+        json.dump(flights_payload, f, ensure_ascii=False, indent=2)
+        
     print("[build_json] wrote index:", INDEX_JSON, "bytes=", os.path.getsize(INDEX_JSON))
     print(f"Generated {len(index_list)} JSON files into {OUT_DIR}")
     return 0
