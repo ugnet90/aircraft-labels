@@ -21,13 +21,33 @@ INDEX_JSON = os.path.join(REPO_ROOT, "docs", "index.json")
 def read_csv(path: str) -> List[Dict[str, str]]:
     if not os.path.exists(path):
         return []
-    with open(path, "r", encoding="utf-8-sig", newline="") as f:
-        # deutschsprachige Excel-CSV: Semikolon
-        reader = csv.DictReader(f, delimiter=";")
-        rows = []
-        for row in reader:
-            rows.append({k: (v if v is not None else "") for k, v in row.items()})
-        return rows
+
+    # Wir probieren mehrere Encodings, weil Excel-Exports oft CP1252/ANSI sind.
+    encodings = ["utf-8-sig", "utf-8", "cp1252", "latin-1"]
+
+    last_err: Exception | None = None
+    for enc in encodings:
+        try:
+            with open(path, "r", encoding=enc, newline="") as f:
+                reader = csv.DictReader(f, delimiter=";")
+                rows: List[Dict[str, str]] = []
+                for row in reader:
+                    # Normalize None -> ""
+                    rows.append({k: (v if v is not None else "") for k, v in row.items()})
+                return rows
+        except UnicodeDecodeError as e:
+            last_err = e
+            continue
+
+    # Wenn alles fehlschlägt, klarer Fehler
+    raise UnicodeDecodeError(
+        "read_csv",
+        b"",
+        0,
+        1,
+        f"Cannot decode CSV {path} with encodings {encodings}. Last error: {last_err}",
+    )
+
 
 def to_bool_x(v: str) -> Optional[bool]:
     v = (v or "").strip().lower()
