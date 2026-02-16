@@ -122,6 +122,9 @@
       <table class="tbl">
         <thead>
           <tr>
+            <th class="${thClass("date","col-date")}" data-sort="date">
+              Datum ${mark("date")}
+            </th>
             <th class="${thClass("date","col-date")}" data-sort="date">Datum ${mark("date")}</th>
             <th class="${thClass("route","col-route")}" data-sort="route">Route ${mark("route")}</th>
             <th class="${thClass("airline","col-air")}" data-sort="airline">Airline ${mark("airline")}</th>
@@ -155,6 +158,10 @@
   
       html += `
         <tr class="rowFlight" data-id="${esc(f.flight_id)}">
+          <td class="col-route mono" data-label="Route">
+            ${renderFlightMatch(f)}
+            ${esc(route)}
+          </td>
           <td class="col-date mono" data-label="Datum">
             <div class="dDate">${esc(date)}</div>
             ${time ? `<div class="dTime">${esc(time)}</div>` : ``}
@@ -205,14 +212,102 @@
       `${items.length} Flüge · Sort: ${sortKey} ${sortDir === "asc" ? "↑" : "↓"}`;
   }
   
-  async function main(){
-    const res = await fetch("./data/flights.json", {cache:"no-store"});
-    const data = await res.json();
-    allFlights = data.items || [];
+  function key3(logoId, aircraftId, reg){
+    return [asText(logoId), asText(aircraftId), asText(reg)].join("||");
+  }
+  function key2(logoId, aircraftId){
+    return [asText(logoId), asText(aircraftId)].join("||");
+  }
   
+  // "bestellt" = ordered true UND noch nicht arrived
+  function isOrderedModel(m){
+    return m && m.ordered === true && !asText(m.arrived);
+  }
+  function getModelLogoId(m){
+    // robust: je nachdem wie dein index.json aktuell aussieht
+    return asText(m.logo_id) || asText(m.logo?.id) || asText(m.logoId) || "";
+  }
+  function getModelAircraftId(m){
+    return asText(m.aircraft_id) || "";
+  }
+  function getModelReg(m){
+    return asText(m.registration) || "";
+  }
+  
+  function buildMatchSets(models){
+    const presentExact = new Set();
+    const presentType  = new Set();
+    const orderedExact = new Set();
+    const orderedType  = new Set();
+  
+    for(const m of (models || [])){
+      const lid = getModelLogoId(m);
+      const aid = getModelAircraftId(m);
+      if(!lid || !aid) continue;
+  
+      const k2 = key2(lid, aid);
+      const k3e = key3(lid, aid, getModelReg(m));
+  
+      if(isOrderedModel(m)){
+        orderedType.add(k2);
+        if(getModelReg(m)) orderedExact.add(k3e);
+      }else{
+        presentType.add(k2);
+        if(getModelReg(m)) presentExact.add(k3e);
+      }
+    }
+    return { presentExact, presentType, orderedExact, orderedType };
+  }
+  
+  function matchDotsHtml(f, sets){
+    const lid = asText(f.logo_id);
+    const aid = asText(f.aircraft_id);
+    const reg = asText(f.registration);
+  
+    if(!lid || !aid) return "";
+  
+    const k2 = key2(lid, aid);
+    const k3e = key3(lid, aid, reg);
+  
+    // Priorität: exakt vor type-level
+    const hasGfill = reg && sets.presentExact.has(k3e);
+    const hasGopen = !hasGfill && sets.presentType.has(k2);
+  
+    const hasYfill = reg && sets.orderedExact.has(k3e);
+    const hasYopen = !hasYfill && sets.orderedType.has(k2);
+  
+    const parts = [];
+  
+    if(hasGfill) parts.push(`<span class="dot dotGfill" title="Exakt vorhanden (Airline+Typ+Reg)"></span>`);
+    else if(hasGopen) parts.push(`<span class="dot dotGopen" title="Vorhanden (Airline+Typ)"></span>`);
+  
+    if(hasYfill) parts.push(`<span class="dot dotYfill" title="Exakt bestellt (Airline+Typ+Reg)"></span>`);
+    else if(hasYopen) parts.push(`<span class="dot dotYopen" title="Bestellt (Airline+Typ)"></span>`);
+  
+    if(parts.length === 0) return "";
+    return `<span class="matchDots">${parts.join("")}</span>`;
+  }
+  
+  let allFlights = [];
+  let allModels = [];
+
+  async function main(){
+    // 1) Flights laden
+    const resF = await fetch("./data/flights.json", {cache:"no-store"});
+    if(!resF.ok) throw new Error(`flights.json HTTP ${resF.status}`);
+    const dataF = await resF.json();
+    allFlights = dataF.items || [];
+  
+    // 2) Models-Index laden (für Matching / Kreise)
+    const resI = await fetch("./index.json", {cache:"no-store"});
+    if(!resI.ok) throw new Error(`index.json HTTP ${resI.status}`);
+    const dataI = await resI.json();
+    allModels = dataI.items || [];
+  
+    // 3) Render
     applyRender();
   
-    // Klick auf Header -> sortieren
+    // 4) Klick auf Header -> sortieren
     document.addEventListener("click", (ev)=>{
       const th = ev.target.closest("th[data-sort]");
       if(!th) return;
