@@ -115,7 +115,6 @@
         <thead>
           <tr>
             <th class="${thClass("date","col-date")}" data-sort="date">Datum ${mark("date")}</th>
-            <th class="${thClass("time","col-time")}" data-sort="time">Zeit ${mark("time")}</th>
             <th class="${thClass("route","col-route")}" data-sort="route">Route ${mark("route")}</th>
             <th class="${thClass("airline","col-air")}" data-sort="airline">Airline ${mark("airline")}</th>
             <th class="${thClass("flight_no","col-fn")}" data-sort="flight_no">Flug ${mark("flight_no")}</th>
@@ -148,16 +147,18 @@
   
       html += `
         <tr>
-          <td class="col-date mono">${esc(date)}</td>
-          <td class="col-time mono">${esc(time)}</td>
-          <td class="col-route mono">${esc(route)}</td>
-          <td class="col-air">${esc(airline)}</td>
-          <td class="col-fn mono">${esc(fn)}</td>
-          <td class="col-type">
+          <td class="col-date mono" data-label="Datum">
+            <div class="dDate">${esc(date)}</div>
+            ${time ? `<div class="dTime">${esc(time)}</div>` : ``}
+          </td>
+          <td class="col-route mono" data-label="Route">${esc(route)}</td>
+          <td class="col-air" data-label="Airline">${esc(airline)}</td>
+          <td class="col-fn mono" data-label="Flug">${esc(fn)}</td>
+          <td class="col-type" data-label="Flugzeugtyp">
             <div>${esc(typ)}</div>
             <div class="muted mono">${esc(aid)}</div>
           </td>
-          <td class="col-reg mono">${regLink}</td>
+          <td class="col-reg mono" data-label="Reg.">${regLink}</td>
         </tr>
       `;
     }
