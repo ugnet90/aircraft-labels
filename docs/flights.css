@@ -38,3 +38,30 @@ a:hover{ text-decoration:underline; }
   .tbl th{ white-space:normal; }
   .col-type{ min-width:auto; }
 }
+
+/* Sortierbare Header */
+.tbl th[data-sort]{
+  cursor: pointer;
+  user-select: none;
+}
+
+.tbl th.thSort{
+  position: relative;
+}
+
+.sortMark{
+  display:inline-block;
+  margin-left:6px;
+  font-size:12px;
+  color:#999;
+  opacity:.7;
+}
+
+.sortMark.active{
+  color:#111;
+  opacity:1;
+}
+
+.tbl th.active{
+  color:#111;
+}
