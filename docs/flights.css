@@ -185,3 +185,32 @@ a:hover{ text-decoration:underline; }
 .rowFlight:hover{
   background:#fafafa;
 }
+
+/* Match-Dots */
+.matchDots{
+  display:inline-flex;
+  gap:6px;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+}
+
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  display:inline-block;
+  border:2px solid transparent;
+  box-sizing:border-box;
+}
+
+/* Grün */
+.dotGfill{ background:#54c57a; border-color:#54c57a; }
+.dotGopen{ background:transparent; border-color:#54c57a; }
+
+/* Gelb */
+.dotYfill{ background:#f2c94c; border-color:#f2c94c; }
+.dotYopen{ background:transparent; border-color:#f2c94c; }
+
+/* kleine Spalte */
+.col-match{ width:44px; text-align:center; }
