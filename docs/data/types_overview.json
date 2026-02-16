@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 386,
-  "with_any_models": 128,
-  "missing": 258,
+  "with_any_models": 129,
+  "missing": 257,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -967,21 +967,21 @@
       "manufacturer": "Airbus",
       "wingtip": "SL",
       "has_wingtip": true,
-      "status": "mixed",
-      "owned_count": 1,
-      "ordered_count": 3,
+      "status": "owned",
+      "owned_count": 4,
+      "ordered_count": 0,
       "total_count": 4,
       "airline_group_counts": [
         {
           "group": "Alitalia",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Alitalia",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -1002,28 +1002,28 @@
         },
         {
           "group": "Swiss",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Edelweiss",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
         },
         {
           "group": "TAP",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "TAP Air Cargo",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -1050,9 +1050,9 @@
       "manufacturer": "Airbus",
       "wingtip": "SL",
       "has_wingtip": true,
-      "status": "mixed",
-      "owned_count": 1,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
       "total_count": 2,
       "airline_group_counts": [
         {
@@ -1071,14 +1071,14 @@
         },
         {
           "group": "SAS",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "SAS",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -1133,21 +1133,21 @@
       "manufacturer": "Airbus",
       "wingtip": "SL",
       "has_wingtip": true,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Air Belgium",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -2942,21 +2942,21 @@
       "manufacturer": "Boeing",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Virgin Orbit",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -3364,21 +3364,21 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Alitalia",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Alitalia",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -4146,11 +4146,26 @@
       "manufacturer": "Comac",
       "wingtip": "SL",
       "has_wingtip": true,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "COMAC",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "CSA-PBY5",

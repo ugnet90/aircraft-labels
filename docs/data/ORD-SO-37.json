@@ -8,8 +8,8 @@
   "livery_note": "Factory House Colors",
   "extra_info": "Erstes Flugzeug, das komplett in China entwickelt und gefertigt wurde",
   "shop_url": "https://www.ebay.de/itm/336426829170",
-  "aircraft_id": "COM-C919",
-  "aircraft_type": "Comac C919",
+  "aircraft_id": "COM-C919-100",
+  "aircraft_type": "Comac C919-100",
   "registration": "B-001J",
   "livery_name": "",
   "parent_livery": "",
@@ -20,8 +20,8 @@
   "price": 23.01,
   "shipping_allocated": 15.0,
   "flown": null,
-  "postcard": "",
-  "postcard_price": null,
+  "postcard": "andere Livery; https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+  "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er",
   "arrived_excel": "",
   "arrived": null,
@@ -32,11 +32,11 @@
     "row": "37"
   },
   "aircraft": {
-    "aircraft_id": "COM-C919",
-    "type": "Comac C919",
+    "aircraft_id": "COM-C919-100",
+    "type": "Comac C919-100",
     "registration": "B-001J",
-    "wingtip": "",
-    "has_wingtip": false
+    "wingtip": "SL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",
@@ -59,7 +59,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "",
+    "postcard": "andere Livery; https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
     "photo": "https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er",
     "shop": "Ebay bigbird1946",
     "shop_url": "https://www.ebay.de/itm/336426829170"
@@ -70,5 +70,32 @@
     "name": "Commercial Aircraft Corporation of China, Ltd.",
     "airline": "COMAC",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "COM-C919-100",
+    "Typ_anzeige": "Comac C919-100",
+    "Hersteller": "Comac",
+    "Baureihe": "C919",
+    "Unterserie": "-100",
+    "Marketingname": "C919-100",
+    "Alternate_designations": "C919-100",
+    "parent_aircraft_id": "",
+    "ICAO": "C919",
+    "IATA": "919",
+    "Wingtip": "SL",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Standard",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2017",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "158",
+    "Length": "38,9",
+    "Wingspan": "35,8",
+    "Height": "11,95",
+    "Wiki": "https://de.wikipedia.org/wiki/Comac_C919"
   }
 }

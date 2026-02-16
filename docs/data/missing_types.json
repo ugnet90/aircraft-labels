@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 386,
-    "present_types": 124,
-    "missing_types": 258,
-    "ordered_types": 4,
+    "present_types": 127,
+    "missing_types": 257,
+    "ordered_types": 2,
     "models": 170
   },
   "missing_types": [
@@ -702,12 +702,6 @@
     {
       "aircraft_id": "COM-ARJ21-700",
       "Typ_anzeige": "Comac ARJ21-700 ARJ21",
-      "manufacturer": "Comac",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "COM-C919-100",
-      "Typ_anzeige": "Comac C919-100",
       "manufacturer": "Comac",
       "status": "missing"
     },
@@ -1558,27 +1552,15 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "AIB-A330-900neo",
-      "Typ_anzeige": "Airbus A330-900neo",
-      "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOE-747-400-VO",
-      "Typ_anzeige": "Boeing 747-400 LauncherOne Carrier Aircraft",
-      "manufacturer": "Boeing",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "BOE-747-SCA",
       "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
       "manufacturer": "Boeing",
       "status": "ordered"
     },
     {
-      "aircraft_id": "BOE-777-200ER",
-      "Typ_anzeige": "Boeing 777-200ER Extended Range",
-      "manufacturer": "Boeing",
+      "aircraft_id": "COM-C919-100",
+      "Typ_anzeige": "Comac C919-100",
+      "manufacturer": "Comac",
       "status": "ordered"
     }
   ]
