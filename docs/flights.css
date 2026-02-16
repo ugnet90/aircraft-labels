@@ -177,3 +177,11 @@ a:hover{ text-decoration:underline; }
     margin-top:2px;
   }
 }
+
+.rowFlight{
+  cursor:pointer;
+}
+
+.rowFlight:hover{
+  background:#fafafa;
+}
