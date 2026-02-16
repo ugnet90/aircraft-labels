@@ -1,0 +1,46 @@
+/* flight.css – optional */
+
+.tblSmall{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:6px;
+}
+.tblSmall th, .tblSmall td{
+  padding:8px 8px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+}
+.tblSmall th{
+  font-size:12px;
+  color:#666;
+  text-align:left;
+  white-space:nowrap;
+}
+
+.kv{
+  width:100%;
+  border-collapse:collapse;
+}
+.kv td{
+  padding:6px 6px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+}
+.kv td:first-child{
+  color:#666;
+  width:32%;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+/* Status dots (wie types_overview) */
+.dot{
+  display:inline-block;
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  opacity:0.9;
+}
+.dotG{ background:#54c57a; }
+.dotY{ background:#f2c94c; }
