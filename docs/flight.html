@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flug – Details</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./flight.css">
+</head>
+<body>
+
+  <!-- NAV: in alle Seiten gleich -->
+  <nav class="nav">
+    <div class="navInner">
+      <div class="navRight">
+        <a href="./index.html">Übersicht</a>
+        <a href="./matrix.html">Matrix</a>
+        <a href="./missing_types.html">Fehlende Typen</a>
+        <a href="./types_overview.html">Typen</a>
+        <a href="./flights.html">Flüge</a>
+        <a href="./stats.html">Stats</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="top" style="margin-top:10px">
+    <h1 id="title">Flug</h1>
+    <span class="muted" id="meta"></span>
+  </div>
+
+  <div class="row" style="margin-top:10px">
+    <a class="btn" href="./flights.html">← Flüge</a>
+    <a class="btn" href="./index.html">Übersicht</a>
+  </div>
+
+  <div id="content" class="card" style="margin-top:12px">Lade Daten …</div>
+
+<script>
+  function qs(name){
+    const u = new URL(window.location.href);
+    return u.searchParams.get(name);
+  }
+
+  function esc(s){
+    return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function asText(v){ return (v??"").toString().trim(); }
+
+  function formatDateDE(iso){
+    if(!iso) return "";
+    const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if(!m) return iso;
+    return `${m[3]}.${m[2]}.${m[1]}`;
+  }
+
+  function formatTimeExcel(v){
+    if(v === null || v === undefined) return "";
+    const s = String(v).trim();
+    if(!s) return "";
+
+    // "HH:MM" / "HH:MM:SS" bereits ok
+    if(/^\d{1,2}:\d{2}(:\d{2})?$/.test(s)) return s.slice(0,5);
+
+    // Excel: 0,552083... oder 0.552083...
+    const num = Number(s.replace(",", "."));
+    if(!Number.isFinite(num)) return s;
+
+    const totalSeconds = Math.round(num * 24 * 60 * 60);
+    const hh = Math.floor(totalSeconds / 3600) % 24;
+    const mm = Math.floor((totalSeconds % 3600) / 60);
+    return String(hh).padStart(2,"0") + ":" + String(mm).padStart(2,"0");
+  }
+
+  function kvRow(k, vHtml){
+    if(!vHtml) return "";
+    return `<tr><td>${esc(k)}</td><td>${vHtml}</td></tr>`;
+  }
+
+  function kvText(k, v){
+    const s = asText(v);
+    if(!s) return "";
+    return kvRow(k, esc(s));
+  }
+
+  function linkA(url, text){
+    const u = asText(url);
+    if(!u) return "";
+    const t = asText(text) || u;
+    return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+  }
+
+  function badgeDot(kind, title){
+    // kind: "owned" | "ordered"
+    const cls = (kind === "owned") ? "dot dotG" : "dot dotY";
+    return `<span class="${cls}" title="${esc(title)}"></span>`;
+  }
+
+  function normalize(s){
+    return asText(s).toLowerCase();
+  }
+
+  function sameAirline(model, flight){
+    // models: airline_row (echte Airline), airline (Gruppe), airline_code
+    // flights: airline (aus logos), logo_id
+    const fAir = normalize(flight.airline) || normalize(flight.logo_id);
+    const mAir = normalize(model.airline_row) || normalize(model.airline_code) || normalize(model.airline);
+    return fAir && mAir && (mAir === fAir);
+  }
+
+  function findMatches(models, flight){
+    const fAircraftId = asText(flight.aircraft_id);
+    const fReg = asText(flight.registration);
+
+    // Prio 1: Airline + aircraft_id + registration
+    const p1 = models.filter(m =>
+      fAircraftId && asText(m.aircraft_id) === fAircraftId &&
+      fReg && asText(m.registration) === fReg &&
+      sameAirline(m, flight)
+    );
+
+    if(p1.length) return {level: 1, matches: p1};
+
+    // Prio 2: Airline + aircraft_id
+    const p2 = models.filter(m =>
+      fAircraftId && asText(m.aircraft_id) === fAircraftId &&
+      sameAirline(m, flight)
+    );
+
+    if(p2.length) return {level: 2, matches: p2};
+
+    return {level: 0, matches: []};
+  }
+
+  function modelStatus(m){
+    // aus index.json: vorhanden / ordered / arrived etc.
+    const mid = asText(m.model_id);
+    const arrived = asText(m.arrived);
+    const ordered = (m.ordered === true) || (!!asText(m.ordered_at)) || mid.startsWith("ORD-");
+    const present = (m.present === true) || (m.vorhanden === true) || (!!arrived && !ordered);
+
+    if(present) return {key:"owned", label:"vorhanden"};
+    if(ordered) return {key:"ordered", label:"bestellt"};
+    return {key:"", label:""};
+  }
+
+  async function main(){
+    const id = qs("id");
+    if(!id){
+      document.getElementById("content").innerHTML =
+        `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">flight.html?id=F0001</span></div>`;
+      return;
+    }
+
+    try{
+      // flights
+      const resF = await fetch("./data/flights.json", {cache:"no-store"});
+      if(!resF.ok) throw new Error(`flights.json HTTP ${resF.status}`);
+      const flights = await resF.json();
+      const items = flights.items || [];
+
+      const f = items.find(x => asText(x.flight_id) === asText(id));
+      if(!f){
+        document.getElementById("content").innerHTML =
+          `<div class="err"><b>Fehler:</b> Flug <span class="mono">${esc(id)}</span> nicht gefunden.</div>`;
+        return;
+      }
+
+      // models index (für Matching)
+      const resI = await fetch("./index.json", {cache:"no-store"});
+      const idx = await resI.json();
+      const models = idx.items || [];
+
+      const dateISO = asText(f.date);
+      const timeRaw = asText(f.time);
+      const dateDE = formatDateDE(dateISO);
+      const timeHHMM = formatTimeExcel(timeRaw);
+
+      const from = asText(f.from);
+      const to = asText(f.to);
+      const route = [from,to].filter(Boolean).join(" → ");
+
+      const airline = asText(f.airline) || asText(f.logo_id);
+      const flightNo = asText(f.flight_no);
+      const callsign = asText(f.callsign);
+
+      const reg = asText(f.registration);
+      const regUrl = asText(f.reg_url) || (reg ? `https://airport-data.com/aircraft/${encodeURIComponent(reg)}.html` : "");
+      const regLink = reg ? linkA(regUrl, reg) : "";
+
+      const typ = asText(f.typ_anzeige) || asText(f.type) || asText(f.aircraft_id);
+      const aircraftId = asText(f.aircraft_id);
+      const manu = asText(f.manufacturer);
+      const wingtip = asText(f.wingtip);
+
+      document.title = `${dateDE}${timeHHMM ? " " + timeHHMM : ""} · ${route || "Flug"} · ${reg || typ || "Details"}`;
+      document.getElementById("title").textContent = `${route || "Flug"}${dateDE ? " · " + dateDE : ""}${timeHHMM ? " " + timeHHMM : ""}`;
+      document.getElementById("meta").textContent = [airline, flightNo].filter(Boolean).join(" · ");
+
+      // Matching
+      const match = findMatches(models, f);
+
+      let matchHtml = "";
+      if(match.level === 0){
+        matchHtml = `
+          <div class="card">
+            <div class="k">Sammlung</div>
+            <div class="muted" style="margin-top:8px">Kein Match gefunden (nach <span class="mono">Airline+aircraft_id(+Reg)</span>).</div>
+            <div class="muted" style="margin-top:6px">
+              Tipp: Prüfe ob <span class="mono">aircraft_id</span> im Flug-Export exakt zu deiner Sammlung passt.
+            </div>
+          </div>
+        `;
+      }else{
+        const lvlText = (match.level === 1)
+          ? "Match (Airline + Typ + Registrierung)"
+          : "Match (Airline + Typ)";
+
+        const rows = match.matches.map(m => {
+          const mid = asText(m.model_id);
+          const st = modelStatus(m);
+          const dot = st.key === "owned"
+            ? badgeDot("owned", "vorhanden")
+            : st.key === "ordered"
+              ? badgeDot("ordered", "bestellt")
+              : "";
+
+          const link = `./model.html?id=${encodeURIComponent(mid)}`;
+          const label = mid.startsWith("ORD-") ? "Bestellung" : "Modell";
+          const scale = asText(m.scale || "");
+
+          return `
+            <tr>
+              <td class="mono"><a href="${esc(link)}">${esc(mid)}</a></td>
+              <td>${esc(label)}</td>
+              <td class="mono">${esc(scale)}</td>
+              <td>${dot}</td>
+            </tr>
+          `;
+        }).join("");
+
+        matchHtml = `
+          <div class="card">
+            <div class="k">Sammlung</div>
+            <div class="muted" style="margin-top:8px">${esc(lvlText)} · Treffer: <span class="mono">${match.matches.length}</span></div>
+
+            <div style="margin-top:10px">
+              <table class="tblSmall">
+                <thead>
+                  <tr>
+                    <th>Modell-ID</th>
+                    <th>Art</th>
+                    <th>Maßstab</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // Detail-Blöcke
+      const flightBlock = `
+        <div class="card">
+          <div class="k">Flug</div>
+          <div style="margin-top:10px">
+            <table class="kv">
+              ${kvText("Datum", dateDE)}
+              ${kvText("Zeit", timeHHMM)}
+              ${kvText("Von", from)}
+              ${kvText("Nach", to)}
+              ${kvText("Route", route)}
+              ${kvText("Airline", airline)}
+              ${kvText("Linie", asText(f.line))}
+              ${kvText("Flug-Nr.", flightNo)}
+              ${kvText("Callsign", callsign)}
+              ${kvText("Class", asText(f.travel_class))}
+              ${kvText("Sitz", asText(f.seat))}
+            </table>
+          </div>
+        </div>
+      `;
+
+      const aircraftBlock = `
+        <div class="card">
+          <div class="k">Flugzeug</div>
+          <div style="margin-top:10px">
+            <table class="kv">
+              ${reg ? kvRow("Registrierung", regLink) : ""}
+              ${kvText("Typ", typ)}
+              ${kvText("aircraft_id", aircraftId)}
+              ${kvText("Hersteller", manu)}
+              ${kvText("Wingtip", wingtip)}
+              ${kvText("MSN", asText(f.msn))}
+              ${kvText("Mode-S / ICAO24", asText(f.mode_s))}
+              ${kvText("Taufname", asText(f.search_name))}
+              ${kvText("Anmerkungen", asText(f.notes))}
+              ${kvText("Lounge", asText(f.lounge))}
+              ${kvText("Buchungscode", asText(f.booking_code))}
+              ${kvText("Ticket-Nr.", asText(f.ticket_no))}
+            </table>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("content").innerHTML =
+        `<div class="sectionGrid">${flightBlock}${aircraftBlock}</div>` +
+        matchHtml;
+
+    }catch(e){
+      document.getElementById("content").innerHTML =
+        `<div class="err"><b>Fehler:</b> ${esc(e.message)}</div>`;
+    }
+  }
+
+  main();
+</script>
+</body>
+</html>
