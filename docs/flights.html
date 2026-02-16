@@ -45,8 +45,16 @@
   
     // Spezial: date (YYYY-MM-DD) und time
     if(sortKey === "date"){
-      return (va.localeCompare(vb)) * (sortDir === "asc" ? 1 : -1);
+      // Primär: Datum
+      const d = va.localeCompare(vb);
+      if(d !== 0) return d * (sortDir === "asc" ? 1 : -1);
+    
+      // Sekundär: Zeit (gleiches Datum)
+      const ta = formatTimeExcel(getVal(a, "time"));
+      const tb = formatTimeExcel(getVal(b, "time"));
+      return ta.localeCompare(tb) * (sortDir === "asc" ? 1 : -1);
     }
+
     if(sortKey === "time"){
       // Vergleich über formatTimeExcel -> Minuten
       const ta = formatTimeExcel(va);
