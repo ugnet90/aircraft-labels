@@ -66,9 +66,9 @@
   },
   "logo": {
     "id": "B_COM",
-    "link": "",
-    "name": "",
-    "airline": "",
-    "logo_speaking": ""
+    "link": "https://assets.planespotters.net/files/airlines/1/comac_ab7ba8.svg",
+    "name": "Commercial Aircraft Corporation of China, Ltd.",
+    "airline": "COMAC",
+    "logo_speaking": "Wahr"
   }
 }

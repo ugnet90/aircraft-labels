@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T11:48:04Z",
+  "generated_at": "2026-02-16T11:48:48Z",
   "count": 170,
   "counts_by_airline_code": {
     "OS": 20,
@@ -3543,7 +3543,7 @@
       "scale": "1:400",
       "flown": null,
       "logo_id": "B_COM",
-      "logo_speaking": "",
+      "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336426829170",
       "ordered_at": "2026-02-15",
       "ordered": true
