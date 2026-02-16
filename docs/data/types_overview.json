@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 386,
-  "with_any_models": 129,
-  "missing": 257,
+  "with_any_models": 128,
+  "missing": 258,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -4140,32 +4140,17 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "COM-C919",
-      "typ_anzeige": "Comac C919",
-      "type_key": "comac c919",
+      "aircraft_id": "COM-C919-100",
+      "typ_anzeige": "Comac C919-100",
+      "type_key": "comac c919-100",
       "manufacturer": "Comac",
       "wingtip": "SL",
       "has_wingtip": true,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "COMAC",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ]
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
       "aircraft_id": "CSA-PBY5",

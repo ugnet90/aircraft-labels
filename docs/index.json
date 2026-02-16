@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T11:47:21Z",
+  "generated_at": "2026-02-16T11:48:04Z",
   "count": 170,
   "counts_by_airline_code": {
     "OS": 20,
@@ -3535,8 +3535,8 @@
       "aircraft_name": "",
       "livery_note": "Factory House Colors",
       "extra_info": "Erstes Flugzeug, das komplett in China entwickelt und gefertigt wurde",
-      "wingtip": "SL",
-      "has_wingtip": true,
+      "wingtip": "",
+      "has_wingtip": false,
       "livery_name": "",
       "livery_display": "",
       "arrived": null,

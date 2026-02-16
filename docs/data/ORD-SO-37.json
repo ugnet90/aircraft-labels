@@ -35,8 +35,8 @@
     "aircraft_id": "COM-C919",
     "type": "Comac C919",
     "registration": "B-001J",
-    "wingtip": "SL",
-    "has_wingtip": true
+    "wingtip": "",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",
@@ -70,32 +70,5 @@
     "name": "",
     "airline": "",
     "logo_speaking": ""
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "COM-C919",
-    "Typ_anzeige": "Comac C919",
-    "Hersteller": "Comac",
-    "Baureihe": "C919",
-    "Unterserie": "",
-    "Marketingname": "",
-    "Alternate_designations": "",
-    "parent_aircraft_id": "",
-    "ICAO": "C919",
-    "IATA": "919",
-    "Wingtip": "SL",
-    "Rumpf": "SingleAisle",
-    "MarketSegment": "Standard",
-    "Role": "PAX",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "2017",
-    "Status": "Prototyp/aktiv",
-    "Antrieb": "Jet",
-    "Triebwerke": "2",
-    "Reichweite": "Mittel",
-    "Passengers": "158",
-    "Length": "38,9",
-    "Wingspan": "35,8",
-    "Height": "11,95",
-    "Wiki": "https://de.wikipedia.org/wiki/Comac_C919"
   }
 }
