@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-16T09:21:00Z",
-  "count": 169,
+  "generated_at": "2026-02-16T11:47:21Z",
+  "count": 170,
   "counts_by_airline_code": {
     "OS": 20,
     "LH": 31,
@@ -19,7 +19,7 @@
     "PA": 20,
     "SK": 8,
     "TP": 2,
-    "SO": 25,
+    "SO": 26,
     "SM": 3
   },
   "items": [
@@ -3521,6 +3521,31 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336412101117",
       "ordered_at": "2026-02-08",
+      "ordered": true
+    },
+    {
+      "model_id": "ORD-SO-37",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "COMAC",
+      "aircraft_id": "COM-C919",
+      "aircraft_type": "Comac C919",
+      "registration": "B-001J",
+      "manufacturer": "NG Models",
+      "aircraft_name": "",
+      "livery_note": "Factory House Colors",
+      "extra_info": "Erstes Flugzeug, das komplett in China entwickelt und gefertigt wurde",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "B_COM",
+      "logo_speaking": "",
+      "shop_url": "https://www.ebay.de/itm/336426829170",
+      "ordered_at": "2026-02-15",
       "ordered": true
     },
     {
