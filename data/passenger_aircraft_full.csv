@@ -192,7 +192,7 @@ CES-402;Cessna 402;Cessna;402;;;;;C402;C42;NONE;SingleAisle;Regional;PAX;Landflu
 CES-404;Martin 4-0-4;Martin;4-0-4;;;;;M404;404;NONE;SingleAisle;Regional;PAX;Landflugzeug;1950;ausgemustert;Propeller;2;Kurz/Mittel;40;20,5;28,5;6,1;https://en.wikipedia.org/wiki/Sud-Ouest_Aviation_Bloch_404
 CES-441;Cessna 441;Cessna;441;;;;;C441;C41;NONE;SingleAisle;Regional;PAX;Landflugzeug;1974;teils aktiv;Turboprop;2;Kurz/Mittel;10;11,78;15,86;3,76;https://de.wikipedia.org/wiki/Cessna_441
 COM-ARJ21-700;Comac ARJ21-700 ARJ21;Comac;ARJ21;-700;ARJ21;;;ARJ7;AR7;NONE;SingleAisle;Regional;PAX;Landflugzeug;2008;aktiv;Jet;2;Mittel;90;33,4;27,3;8,44;https://de.wikipedia.org/wiki/Comac_ARJ21
-COM-C919;Comac C919;Comac;C919;;;;;C919;919;SL;SingleAisle;Standard;PAX;Landflugzeug;2017;Prototyp/aktiv;Jet;2;Mittel;158;38,9;35,8;11,95;https://de.wikipedia.org/wiki/Comac_C919
+COM-C919-100;Comac C919-100;Comac;C919;-100;C919-100;C919-100;;C919;919;SL;SingleAisle;Standard;PAX;Landflugzeug;2017;aktiv;Jet;2;Mittel;158;38,9;35,8;11,95;https://de.wikipedia.org/wiki/Comac_C919
 CON-CV240;Convair CV-240;Convair;CV-240;;;;;CVLP;CV2;NONE;SingleAisle;Standard;PAX;Landflugzeug;1947;ausgemustert;Propeller;2;Kurz;40;22,66;28,96;7;https://de.wikipedia.org/wiki/Convair_CV-240
 CON-CV340;Convair CV-340;Convair;CV-340;;;;;CVLP;CV3;NONE;SingleAisle;Standard;PAX;Landflugzeug;1951;ausgemustert;Propeller;2;Kurz;44;24,85;32;8,25;https://de.wikipedia.org/wiki/Convair_CV-340
 CON-CV440;Convair CV-440;Convair;CV-440;;;;;CVLP;CV4;NONE;SingleAisle;Standard;PAX;Landflugzeug;1955;ausgemustert;Propeller;2;Kurz;52;24,85;32;8,25;https://de.wikipedia.org/wiki/Convair_CV-440
