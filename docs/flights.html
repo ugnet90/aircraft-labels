@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flüge</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./flights.css">
+</head>
+<body>
+
+  <!-- NAV: in alle Seiten gleich -->
+  <nav class="nav">
+    <div class="navInner">
+      <div class="navLeft"><a class="navHome" href="./index.html">Aircraft Labels</a></div>
+      <div class="navRight">
+        <a href="./index.html">Übersicht</a>
+        <a href="./matrix.html">Matrix</a>
+        <a href="./missing_types.html">Fehlende Typen</a>
+        <a href="./types_overview.html">Typen</a>
+        <a class="active" href="./flights.html">Flüge</a>
+        <a href="./stats.html">Stats</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="top" style="margin-top:10px">
+    <h1>Flüge</h1>
+    <span class="muted" id="meta"></span>
+  </div>
+
+  <div id="content" class="card">Lade Daten …</div>
+
+<script>
+  function esc(s){
+    return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+  function formatDateDE(iso){
+    if(!iso) return "";
+    const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if(!m) return iso;
+    return `${m[3]}.${m[2]}.${m[1]}`;
+  }
+  function asText(v){ return (v??"").toString().trim(); }
+
+  async function main(){
+    const res = await fetch("./data/flights.json", {cache:"no-store"});
+    const data = await res.json();
+    const items = data.items || [];
+
+    document.getElementById("meta").textContent = `${items.length} Flüge (neueste zuerst)`;
+
+    let html = `
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="col-date">Datum</th>
+            <th class="col-time">Zeit</th>
+            <th class="col-route">Route</th>
+            <th class="col-air">Airline</th>
+            <th class="col-fn">Flug</th>
+            <th class="col-type">Flugzeugtyp</th>
+            <th class="col-reg">Reg.</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    for(const f of items){
+      const date = formatDateDE(asText(f.date));
+      const time = asText(f.time);
+      const from = asText(f.from);
+      const to = asText(f.to);
+      const route = [from, to].filter(Boolean).join(" → ");
+      const airline = asText(f.airline) || asText(f.logo_id);
+      const fn = asText(f.flight_no);
+      const typ = asText(f.typ_anzeige) || asText(f.aircraft_id);
+      const reg = asText(f.registration);
+
+      const regLink = f.reg_url ? `<a href="${esc(f.reg_url)}" target="_blank" rel="noopener">${esc(reg)}</a>` : esc(reg);
+
+      html += `
+        <tr>
+          <td class="col-date mono">${esc(date)}</td>
+          <td class="col-time mono">${esc(time)}</td>
+          <td class="col-route mono">${esc(route)}</td>
+          <td class="col-air">${esc(airline)}</td>
+          <td class="col-fn mono">${esc(fn)}</td>
+          <td class="col-type">
+            <div>${esc(typ)}</div>
+            <div class="muted mono">${esc(asText(f.aircraft_id))}</div>
+          </td>
+          <td class="col-reg mono">${regLink}</td>
+        </tr>
+      `;
+    }
+
+    html += `</tbody></table>`;
+    document.getElementById("content").innerHTML = html;
+  }
+
+  main();
+</script>
+</body>
+</html>
