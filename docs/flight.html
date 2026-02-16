@@ -108,29 +108,37 @@
     return fAir && mAir && (mAir === fAir);
   }
 
-  function findMatches(models, flight){
+  function analyzeFlight(models, flight){
+  
     const fAircraftId = asText(flight.aircraft_id);
     const fReg = asText(flight.registration);
-
-    // Prio 1: Airline + aircraft_id + registration
-    const p1 = models.filter(m =>
-      fAircraftId && asText(m.aircraft_id) === fAircraftId &&
-      fReg && asText(m.registration) === fReg &&
-      sameAirline(m, flight)
+  
+    const sameAirlineFn = (m) => {
+      const fAir = normalize(flight.airline) || normalize(flight.logo_id);
+      const mAir = normalize(m.airline_row) || normalize(m.airline_code) || normalize(m.airline);
+      return fAir && mAir && (fAir === mAir);
+    };
+  
+    const sameType = (m) =>
+      fAircraftId && asText(m.aircraft_id) === fAircraftId;
+  
+    const sameReg = (m) =>
+      fReg && asText(m.registration) === fReg;
+  
+    const airlineTypeModels = models.filter(m =>
+      sameType(m) && sameAirlineFn(m)
     );
-
-    if(p1.length) return {level: 1, matches: p1};
-
-    // Prio 2: Airline + aircraft_id
-    const p2 = models.filter(m =>
-      fAircraftId && asText(m.aircraft_id) === fAircraftId &&
-      sameAirline(m, flight)
+  
+    const exactModels = airlineTypeModels.filter(m =>
+      sameReg(m)
     );
-
-    if(p2.length) return {level: 2, matches: p2};
-
-    return {level: 0, matches: []};
+  
+    return {
+      airlineTypeModels,
+      exactModels
+    };
   }
+
 
   function modelStatus(m){
     // aus index.json: vorhanden / ordered / arrived etc.
@@ -198,68 +206,88 @@
       document.getElementById("meta").textContent = [airline, flightNo].filter(Boolean).join(" · ");
 
       // Matching
-      const match = findMatches(models, f);
-
-      let matchHtml = "";
-      if(match.level === 0){
-        matchHtml = `
-          <div class="card">
-            <div class="k">Sammlung</div>
-            <div class="muted" style="margin-top:8px">Kein Match gefunden (nach <span class="mono">Airline+aircraft_id(+Reg)</span>).</div>
-            <div class="muted" style="margin-top:6px">
-              Tipp: Prüfe ob <span class="mono">aircraft_id</span> im Flug-Export exakt zu deiner Sammlung passt.
-            </div>
-          </div>
+      const analysis = analyzeFlight(models, f);
+      const exact = analysis.exactModels;
+      const typeMatches = analysis.airlineTypeModels;
+      
+      let summaryDot = "";
+      let summaryText = "";
+      
+      if(exact.length){
+        const owned = exact.some(m => modelStatus(m).key === "owned");
+        const ordered = exact.some(m => modelStatus(m).key === "ordered");
+      
+        summaryDot =
+          (owned ? badgeDot("owned","vorhanden") : "") +
+          (ordered ? badgeDot("ordered","bestellt") : "");
+      
+        summaryText = "Dieses konkrete Flugzeug ist in deiner Sammlung.";
+      }
+      else if(typeMatches.length){
+        const owned = typeMatches.some(m => modelStatus(m).key === "owned");
+        const ordered = typeMatches.some(m => modelStatus(m).key === "ordered");
+      
+        summaryDot =
+          (owned ? badgeDot("owned","Typ vorhanden") : "") +
+          (ordered ? badgeDot("ordered","Typ bestellt") : "");
+      
+        summaryText = "Typ vorhanden, aber andere Registrierung.";
+      }
+      else{
+        summaryText = "Kein Modell dieses Typs in deiner Sammlung.";
+      }
+      
+      let detailRows = "";
+      
+      const displayModels = exact.length ? exact : typeMatches;
+      
+      for(const m of displayModels){
+        const st = modelStatus(m);
+        const dot = st.key === "owned"
+          ? badgeDot("owned","vorhanden")
+          : st.key === "ordered"
+            ? badgeDot("ordered","bestellt")
+            : "";
+      
+        detailRows += `
+          <tr>
+            <td class="mono">
+              <a href="./model.html?id=${esc(m.model_id)}">${esc(m.model_id)}</a>
+            </td>
+            <td class="mono">${esc(m.registration || "")}</td>
+            <td>${dot}</td>
+          </tr>
         `;
-      }else{
-        const lvlText = (match.level === 1)
-          ? "Match (Airline + Typ + Registrierung)"
-          : "Match (Airline + Typ)";
-
-        const rows = match.matches.map(m => {
-          const mid = asText(m.model_id);
-          const st = modelStatus(m);
-          const dot = st.key === "owned"
-            ? badgeDot("owned", "vorhanden")
-            : st.key === "ordered"
-              ? badgeDot("ordered", "bestellt")
-              : "";
-
-          const link = `./model.html?id=${encodeURIComponent(mid)}`;
-          const label = mid.startsWith("ORD-") ? "Bestellung" : "Modell";
-          const scale = asText(m.scale || "");
-
-          return `
-            <tr>
-              <td class="mono"><a href="${esc(link)}">${esc(mid)}</a></td>
-              <td>${esc(label)}</td>
-              <td class="mono">${esc(scale)}</td>
-              <td>${dot}</td>
-            </tr>
-          `;
-        }).join("");
-
-        matchHtml = `
-          <div class="card">
-            <div class="k">Sammlung</div>
-            <div class="muted" style="margin-top:8px">${esc(lvlText)} · Treffer: <span class="mono">${match.matches.length}</span></div>
-
-            <div style="margin-top:10px">
-              <table class="tblSmall">
-                <thead>
-                  <tr>
-                    <th>Modell-ID</th>
-                    <th>Art</th>
-                    <th>Maßstab</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>${rows}</tbody>
-              </table>
-            </div>
+      }
+      
+      let matchHtml = `
+        <div class="card">
+          <div class="k">Sammlung</div>
+      
+          <div style="margin-top:10px; display:flex; align-items:center; gap:8px;">
+            ${summaryDot}
+            <div>${esc(summaryText)}</div>
+          </div>
+      `;
+      
+      if(displayModels.length){
+        matchHtml += `
+          <div style="margin-top:12px">
+            <table class="tblSmall">
+              <thead>
+                <tr>
+                  <th>Modell-ID</th>
+                  <th>Reg.</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>${detailRows}</tbody>
+            </table>
           </div>
         `;
       }
+      
+      matchHtml += `</div>`;
 
       // Detail-Blöcke
       const flightBlock = `
