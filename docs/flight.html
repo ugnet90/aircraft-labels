@@ -247,13 +247,14 @@
   }
 
   function modelStatus(m){
-    // Robust: arrived gewinnt immer (=> vorhanden), sonst ordered, sonst leer.
-    const mid = asText(m.model_id);
-    const arrived = asText(m.arrived);
-    const ordered = (m.ordered === true) || (!!asText(m.ordered_at)) || (mid && mid.startsWith("ORD-"));
+    const st = asText(m.status);
   
-    if(arrived) return {key:"owned", label:"vorhanden"};
-    if(ordered) return {key:"ordered", label:"bestellt"};
+    if(st === "owned" || st === "mixed")
+      return {key:"owned", label:"vorhanden"};
+  
+    if(st === "ordered")
+      return {key:"ordered", label:"bestellt"};
+  
     return {key:"", label:""};
   }
 
