@@ -243,6 +243,11 @@ a:hover{ text-decoration:underline; }
   box-shadow: 0 1px 0 #eee;
 }
 
+.tableWrap{
+  max-height: 75vh;
+  overflow: auto;
+}
+
 /* Sticky Header muss im Scroll-Container sitzen */
 .tableWrap thead th{
   position: sticky;
