@@ -226,3 +226,15 @@ a:hover{ text-decoration:underline; }
 .card{
   overflow-x: auto;
 }
+
+.routeCell{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.routeDots{
+  display:flex;
+  gap:6px;
+}
