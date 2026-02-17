@@ -248,7 +248,7 @@ a:hover{ text-decoration:underline; }
 /* Sticky Header im Scroll-Container */
 .tableWrap thead th{
   position: sticky;
-  top: 54px;
+  top: 0;
   background: #fff;           /* wichtig: sonst “durchsichtig” */
   z-index: 10;
   box-shadow: 0 1px 0 #eee;   /* sauberer Rand */
