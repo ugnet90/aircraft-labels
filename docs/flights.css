@@ -238,3 +238,21 @@ a:hover{ text-decoration:underline; }
   display:flex;
   gap:6px;
 }
+
+.tableWrap{
+  max-height: 75vh;          /* oder 80vh – nach Geschmack */
+  overflow: auto;
+  border-radius: 12px;        /* optional: passt zur Card-Optik */
+}
+
+/* Sticky Header im Scroll-Container */
+.tableWrap thead th{
+  position: sticky;
+  top: 0;
+  background: #fff;           /* wichtig: sonst “durchsichtig” */
+  z-index: 10;
+  box-shadow: 0 1px 0 #eee;   /* sauberer Rand */
+}
+
+/* optional, verhindert “zucken” bei sticky in manchen Browsern */
+.tbl{ border-collapse: separate; border-spacing: 0; }
