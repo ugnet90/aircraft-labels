@@ -237,22 +237,10 @@ a:hover{ text-decoration:underline; }
 /* Sticky Header: muss auf den THs der Tabelle liegen */
 .tbl thead th{
   position: sticky;
-  top: 0;
-  z-index: 10;
+  top: 60px; /* Höhe der Navigation + Abstand */
+  z-index: 20;
   background: #fff;
   box-shadow: 0 1px 0 #eee;
-}
-
-/* Card für Tabelle ohne Innen-Padding (sonst verschiebt sticky) */
-.tableCard{
-  padding: 0;
-}
-
-/* Scroll-Container */
-.tableWrap{
-  max-height: 75vh;
-  overflow: auto;
-  border-radius: 12px;
 }
 
 /* Sticky Header muss im Scroll-Container sitzen */
