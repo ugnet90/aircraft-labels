@@ -165,8 +165,10 @@
           </td>
       
           <td class="col-route mono" data-label="Route">
-            ${matchSets ? matchDotsHtml(f, matchSets) : ""}
-            ${esc(route)}
+            <div class="routeCell">
+              <span class="routeText">${esc(route)}</span>
+              ${matchSets ? `<span class="routeDots">${matchDotsHtml(f, matchSets)}</span>` : ""}
+            </div>
           </td>
       
           <td class="col-air" data-label="Airline">${esc(airline)}</td>
