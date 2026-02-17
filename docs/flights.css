@@ -215,18 +215,6 @@ a:hover{ text-decoration:underline; }
 /* kleine Spalte */
 .col-match{ width:44px; text-align:center; }
 
-.tbl thead th{
-  position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 5;
-  border-bottom: 1px solid #ddd;
-}
-
-.card{
-  overflow-x: auto;
-}
-
 .routeCell{
   display:flex;
   justify-content:space-between;
@@ -239,20 +227,30 @@ a:hover{ text-decoration:underline; }
   gap:6px;
 }
 
-.tableWrap{
-  max-height: 75vh;          /* oder 80vh – nach Geschmack */
-  overflow: auto;
-  border-radius: 12px;        /* optional: passt zur Card-Optik */
+/* Der Card-Container soll NICHT selbst scrollen */
+#content.card{
+  overflow: visible;
 }
 
-/* Sticky Header im Scroll-Container */
-.tableWrap thead th{
+/* Scroll-Container um die Tabelle */
+.tableWrap{
+  max-height: 75vh;
+  overflow: auto;             /* vertikal + horizontal */
+  border-radius: 12px;
+}
+
+/* Tabelle */
+.tbl{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Sticky Header: muss auf den THs der Tabelle liegen */
+.tbl thead th{
   position: sticky;
   top: 0;
-  background: #fff;           /* wichtig: sonst “durchsichtig” */
   z-index: 10;
-  box-shadow: 0 1px 0 #eee;   /* sauberer Rand */
+  background: #fff;
+  box-shadow: 0 1px 0 #eee;
 }
-
-/* optional, verhindert “zucken” bei sticky in manchen Browsern */
-.tbl{ border-collapse: separate; border-spacing: 0; }
