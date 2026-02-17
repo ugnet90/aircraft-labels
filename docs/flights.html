@@ -111,6 +111,8 @@
   function asText(v){ return (v??"").toString().trim(); }
 
   let allFlights = [];
+  let allModels = [];
+  let matchSets = null;
   
   function renderFlights(items){
     const mark = (key) => {
@@ -124,9 +126,6 @@
       <table class="tbl">
         <thead>
           <tr>
-            <th class="${thClass("date","col-date")}" data-sort="date">
-              Datum ${mark("date")}
-            </th>
             <th class="${thClass("date","col-date")}" data-sort="date">Datum ${mark("date")}</th>
             <th class="${thClass("route","col-route")}" data-sort="route">Route ${mark("route")}</th>
             <th class="${thClass("airline","col-air")}" data-sort="airline">Airline ${mark("airline")}</th>
@@ -160,24 +159,28 @@
   
       html += `
         <tr class="rowFlight" data-id="${esc(f.flight_id)}">
-          <td class="col-route mono" data-label="Route">
-            ${renderFlightMatch(f)}
-            ${esc(route)}
-          </td>
           <td class="col-date mono" data-label="Datum">
             <div class="dDate">${esc(date)}</div>
             ${time ? `<div class="dTime">${esc(time)}</div>` : ``}
           </td>
-          <td class="col-route mono" data-label="Route">${esc(route)}</td>
+      
+          <td class="col-route mono" data-label="Route">
+            ${matchSets ? matchDotsHtml(f, matchSets) : ""}
+            ${esc(route)}
+          </td>
+      
           <td class="col-air" data-label="Airline">${esc(airline)}</td>
           <td class="col-fn mono" data-label="Flug">${esc(fn)}</td>
+      
           <td class="col-type" data-label="Flugzeugtyp">
             <div>${esc(typ)}</div>
             <div class="muted mono">${esc(aid)}</div>
           </td>
+      
           <td class="col-reg mono" data-label="Reg.">${regLink}</td>
         </tr>
       `;
+
     }
   
     html += `</tbody></table>`;
@@ -290,9 +293,6 @@
     return `<span class="matchDots">${parts.join("")}</span>`;
   }
   
-  let allFlights = [];
-  let allModels = [];
-
   async function fetchJson(url){
     const res = await fetch(url, {cache:"no-store"});
     if(!res.ok){
@@ -310,7 +310,8 @@
       // 2) index.json laden (für Matching)
       const idx = await fetchJson("./index.json");
       allModels = idx.items || [];
-
+      matchSets = buildMatchSets(allModels);
+      
       // 3) normal weiter
       applyRender(); // <- MUSS es bei dir geben, sonst kommt jetzt gleich der Fehler sichtbar
 
