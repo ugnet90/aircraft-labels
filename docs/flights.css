@@ -214,3 +214,15 @@ a:hover{ text-decoration:underline; }
 
 /* kleine Spalte */
 .col-match{ width:44px; text-align:center; }
+
+.tbl thead th{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 5;
+  border-bottom: 1px solid #ddd;
+}
+
+.card{
+  overflow-x: auto;
+}
