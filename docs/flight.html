@@ -239,15 +239,20 @@
     };
   }
 
+  function dotOnly(kind, filled, title){
+    const base = (kind === "owned") ? "dot dotG" : "dot dotY";
+    const cls = filled ? base : (base + " dotO");
+    const t = title ? ` title="${esc(title)}"` : "";
+    return `<span class="${cls}"${t} aria-hidden="true"></span>`;
+  }
 
   function modelStatus(m){
-    // aus index.json: vorhanden / ordered / arrived etc.
+    // Robust: arrived gewinnt immer (=> vorhanden), sonst ordered, sonst leer.
     const mid = asText(m.model_id);
     const arrived = asText(m.arrived);
-    const ordered = (m.ordered === true) || (!!asText(m.ordered_at)) || mid.startsWith("ORD-");
-    const present = (m.present === true) || (m.vorhanden === true) || (!!arrived && !ordered);
-
-    if(present) return {key:"owned", label:"vorhanden"};
+    const ordered = (m.ordered === true) || (!!asText(m.ordered_at)) || (mid && mid.startsWith("ORD-"));
+  
+    if(arrived) return {key:"owned", label:"vorhanden"};
     if(ordered) return {key:"ordered", label:"bestellt"};
     return {key:"", label:""};
   }
@@ -348,13 +353,14 @@
       
       const displayModels = exact.length ? exact : typeMatches;
       
+      const isExactContext = exact.length > 0; // wenn wir gerade exakte Reg-Matches anzeigen => gefüllt
       for(const m of displayModels){
         const st = modelStatus(m);
-        const dot = st.key === "owned"
-          ? badgeDot("owned","vorhanden")
-          : st.key === "ordered"
-            ? badgeDot("ordered","bestellt")
-            : "";
+      
+        const dot =
+          (st.key === "owned")   ? dotOnly("owned",   isExactContext, "Vorhanden") :
+          (st.key === "ordered") ? dotOnly("ordered", isExactContext, "Bestellt") :
+          "";
       
         detailRows += `
           <tr>
