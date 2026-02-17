@@ -186,7 +186,7 @@
   
     html += `</tbody></table>`;
     document.getElementById("content").innerHTML =
-      `<div class="tableWrap">${html}</div>`;
+      `<div class="card tableCard"><div class="tableWrap">${html}</div></div>`;
 
     document.querySelectorAll(".rowFlight").forEach(tr => {
       tr.addEventListener("click", e => {
