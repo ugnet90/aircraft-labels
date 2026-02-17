@@ -247,14 +247,36 @@
   }
 
   function modelStatus(m){
-    const st = asText(m.status);
+    const mid = asText(m.model_id);
   
-    if(st === "owned" || st === "mixed")
-      return {key:"owned", label:"vorhanden"};
+    // 1) Falls es irgendwo schon ein sauberes status-Feld gibt -> verwenden
+    const st = asText(m.status).toLowerCase();
+    if(st){
+      if(st === "owned" || st === "present" || st === "vorhanden" || st === "mixed"){
+        return {key:"owned", label:"vorhanden"};
+      }
+      if(st === "ordered" || st === "bestellt"){
+        return {key:"ordered", label:"bestellt"};
+      }
+    }
   
-    if(st === "ordered")
-      return {key:"ordered", label:"bestellt"};
+    // 2) Fallback: heuristisch wie vorher (aber robuster)
+    const arrived = asText(m.arrived || m.model?.arrived);
+    const orderedAt = asText(m.ordered_at || m.model?.ordered_at);
   
+    const ordered =
+      (m.ordered === true) ||
+      (!!orderedAt) ||
+      mid.startsWith("ORD-");
+  
+    // "vorhanden": arrived gesetzt ODER explizite Flags
+    const present =
+      (m.present === true) ||
+      (m.vorhanden === true) ||
+      (!!arrived);  // <- wichtig: arrived reicht, auch wenn orderedAt irgendwo noch drin steht
+  
+    if(present) return {key:"owned", label:"vorhanden"};
+    if(ordered) return {key:"ordered", label:"bestellt"};
     return {key:"", label:""};
   }
 
