@@ -44,3 +44,12 @@
 }
 .dotG{ background:#54c57a; }
 .dotY{ background:#f2c94c; }
+
+
+/* Outline/Ring-Variante */
+.dotO{
+  background:transparent !important;
+  border:2px solid currentColor;
+}
+.dotG.dotO{ color:#54c57a; }
+.dotY.dotO{ color:#f2c94c; }
