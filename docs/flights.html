@@ -114,30 +114,33 @@
   let matchSets = null;
   
   function renderFlights(items){
+    const mark = (key) => {
+      if(sortKey !== key) return `<span class="sortMark">↕</span>`;
+      return `<span class="sortMark active">${sortDir === "asc" ? "↑" : "↓"}</span>`;
+    };
+  
+    const thClass = (key, base) => (sortKey === key ? `${base} thSort active` : `${base} thSort`);
+  
     let html = `
-      <div class="tableWrap">
-        <table class="tbl">
-          <thead>
-            <tr>
-              <th class="${thClass("date","col-date")}" data-sort="date">Datum ${mark("date")}</th>
-              <th class="${thClass("route","col-route")}" data-sort="route">Route ${mark("route")}</th>
-              <th class="${thClass("airline","col-air")}" data-sort="airline">Airline ${mark("airline")}</th>
-              <th class="${thClass("flight_no","col-fn")}" data-sort="flight_no">Flug ${mark("flight_no")}</th>
-              <th class="${thClass("aircraft","col-type")}" data-sort="aircraft">Flugzeugtyp ${mark("aircraft")}</th>
-              <th class="${thClass("registration","col-reg")}" data-sort="registration">Reg. ${mark("registration")}</th>
-            </tr>
-          </thead>
-          <tbody>
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="${thClass("date","col-date")}" data-sort="date">Datum ${mark("date")}</th>
+            <th class="${thClass("route","col-route")}" data-sort="route">Route ${mark("route")}</th>
+            <th class="${thClass("airline","col-air")}" data-sort="airline">Airline ${mark("airline")}</th>
+            <th class="${thClass("flight_no","col-fn")}" data-sort="flight_no">Flug ${mark("flight_no")}</th>
+            <th class="${thClass("aircraft_id","col-type")}" data-sort="aircraft_id">Flugzeugtyp ${mark("aircraft_id")}</th>
+            <th class="${thClass("registration","col-reg")}" data-sort="registration">Reg. ${mark("registration")}</th>
+          </tr>
+        </thead>
+        <tbody>
     `;
   
     for(const f of items){
-      const id = asText(f.flight_id);
+      const dateRaw = asText(f.date);
+      const date = formatDateDE(dateRaw);
   
-      const dateISO = asText(f.date);
-      const timeRaw = asText(f.time);
-      const dateDE = formatDateDE(dateISO);
-      const timeHHMM = formatTimeExcel(timeRaw);
-  
+      const time = formatTimeExcel(asText(f.time));
       const from = asText(f.from);
       const to = asText(f.to);
       const route = [from, to].filter(Boolean).join(" → ");
@@ -149,52 +152,54 @@
       const aid = asText(f.aircraft_id);
   
       const reg = asText(f.registration);
-      const regUrl = asText(f.reg_url);
-      const regLink = regUrl
-        ? `<a href="${esc(regUrl)}" target="_blank" rel="noopener">${esc(reg)}</a>`
+      const regLink = f.reg_url
+        ? `<a href="${esc(f.reg_url)}" target="_blank" rel="noopener">${esc(reg)}</a>`
         : esc(reg);
   
-      const dots = matchDotsHtml(f, matchSets);
-  
       html += `
-        <tr class="rowFlight" data-id="${esc(id)}">
+        <tr class="rowFlight" data-id="${esc(f.flight_id)}">
           <td class="col-date mono" data-label="Datum">
-            <div>${esc(dateDE)}</div>
-            ${timeHHMM ? `<div class="muted mono">${esc(timeHHMM)}</div>` : ""}
+            <div class="dDate">${esc(date)}</div>
+            ${time ? `<div class="dTime">${esc(time)}</div>` : ``}
           </td>
-  
+      
           <td class="col-route mono" data-label="Route">
             <div class="routeCell">
-              <span>${esc(route)}</span>
-              <span class="routeDots">${dots}</span>
+              <span class="routeText">${esc(route)}</span>
+              ${matchSets ? `<span class="routeDots">${matchDotsHtml(f, matchSets)}</span>` : ""}
             </div>
           </td>
-  
+      
           <td class="col-air" data-label="Airline">${esc(airline)}</td>
           <td class="col-fn mono" data-label="Flug">${esc(fn)}</td>
-  
+      
           <td class="col-type" data-label="Flugzeugtyp">
             <div>${esc(typ)}</div>
             <div class="muted mono">${esc(aid)}</div>
           </td>
-  
+      
           <td class="col-reg mono" data-label="Reg.">${regLink}</td>
         </tr>
       `;
+
     }
   
-    html += `</tbody></table></div>`;
-    document.getElementById("content").innerHTML = html;
-  
+    html += `</tbody></table>`;
+    document.getElementById("content").innerHTML =
+      `<div class="card tableCard"><div class="tableWrap">${html}</div></div>`;
+
     document.querySelectorAll(".rowFlight").forEach(tr => {
       tr.addEventListener("click", e => {
-        if(e.target.closest("a")) return; // externen Link nicht hijacken
-        const fid = tr.getAttribute("data-id");
-        if(fid) location.href = `./flight.html?id=${encodeURIComponent(fid)}`;
+        // keine Navigation wenn man auf externen Link klickt (Reg-Link)
+        if(e.target.closest("a")) return;
+    
+        const id = tr.getAttribute("data-id");
+        if(id){
+          location.href = `./flight.html?id=${encodeURIComponent(id)}`;
+        }
       });
     });
   }
-
 
   
   function applyRender(){
