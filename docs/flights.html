@@ -291,30 +291,40 @@
   let allFlights = [];
   let allModels = [];
 
-  async function main(){
-    // 1) Flights laden
-    const resF = await fetch("./data/flights.json", {cache:"no-store"});
-    if(!resF.ok) throw new Error(`flights.json HTTP ${resF.status}`);
-    const dataF = await resF.json();
-    allFlights = dataF.items || [];
-  
-    // 2) Models-Index laden (für Matching / Kreise)
-    const resI = await fetch("./index.json", {cache:"no-store"});
-    if(!resI.ok) throw new Error(`index.json HTTP ${resI.status}`);
-    const dataI = await resI.json();
-    allModels = dataI.items || [];
-  
-    // 3) Render
-    applyRender();
-  
-    // 4) Klick auf Header -> sortieren
-    document.addEventListener("click", (ev)=>{
-      const th = ev.target.closest("th[data-sort]");
-      if(!th) return;
-      setSort(th.getAttribute("data-sort"));
-    });
+  async function fetchJson(url){
+    const res = await fetch(url, {cache:"no-store"});
+    if(!res.ok){
+      throw new Error(`${url} HTTP ${res.status}`);
+    }
+    return await res.json();
   }
-  
+
+  async function main(){
+    try{
+      // 1) flights.json laden
+      const flights = await fetchJson("./data/flights.json");
+      allFlights = flights.items || [];
+
+      // 2) index.json laden (für Matching)
+      const idx = await fetchJson("./index.json");
+      allModels = idx.items || [];
+
+      // 3) normal weiter
+      applyRender(); // <- MUSS es bei dir geben, sonst kommt jetzt gleich der Fehler sichtbar
+
+      // 4) Klick auf Header -> sortieren
+      document.addEventListener("click", (ev)=>{
+        const th = ev.target.closest("th[data-sort]");
+        if(!th) return;
+        setSort(th.getAttribute("data-sort"));
+      });
+
+    }catch(e){
+      document.getElementById("content").innerHTML =
+        `<div class="err"><b>Fehler:</b> ${String(e.message || e)}</div>`;
+    }
+  }
+
   main();
 
 </script>
