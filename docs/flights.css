@@ -227,18 +227,6 @@ a:hover{ text-decoration:underline; }
   gap:6px;
 }
 
-/* Der Card-Container soll NICHT selbst scrollen */
-#content.card{
-  overflow: visible;
-}
-
-/* Scroll-Container um die Tabelle */
-.tableWrap{
-  max-height: 75vh;
-  overflow: auto;             /* vertikal + horizontal */
-  border-radius: 12px;
-}
-
 /* Tabelle */
 .tbl{
   width: 100%;
@@ -248,6 +236,27 @@ a:hover{ text-decoration:underline; }
 
 /* Sticky Header: muss auf den THs der Tabelle liegen */
 .tbl thead th{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 1px 0 #eee;
+}
+
+/* Card für Tabelle ohne Innen-Padding (sonst verschiebt sticky) */
+.tableCard{
+  padding: 0;
+}
+
+/* Scroll-Container */
+.tableWrap{
+  max-height: 75vh;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+/* Sticky Header muss im Scroll-Container sitzen */
+.tableWrap thead th{
   position: sticky;
   top: 0;
   z-index: 10;
