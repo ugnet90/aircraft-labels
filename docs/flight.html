@@ -208,18 +208,14 @@
     return fAir && mAir && (mAir === fAir);
   }
 
-  function analyzeFlight(models, flight, logoMap){
+  function analyzeFlight(models, flight){
+  
     const fAircraftId = asText(flight.aircraft_id);
     const fReg = asText(flight.registration);
   
     const sameAirlineFn = (m) => {
-      // flight: logo_id -> Airline-Text aus airline_logos.csv
-      const fLogo = asText(flight.logo_id);
-      const fAir  = normalize((logoMap && logoMap.get(fLogo)) ? logoMap.get(fLogo) : fLogo);
-  
-      // model: echte Airline (airline_row) ist die Referenz
+      const fAir = normalize(flight.airline) || normalize(flight.logo_id);
       const mAir = normalize(m.airline_row) || normalize(m.airline_code) || normalize(m.airline);
-  
       return fAir && mAir && (fAir === mAir);
     };
   
@@ -237,9 +233,11 @@
       sameReg(m)
     );
   
-    return { airlineTypeModels, exactModels };
+    return {
+      airlineTypeModels,
+      exactModels
+    };
   }
-
 
   function dotOnly(kind, filled, title){
     const base = (kind === "owned") ? "dot dotG" : "dot dotY";
@@ -272,32 +270,7 @@
         return;
       }
       const firstBadgesHtml = buildFirstBadges(f, firstMaps);
-      
-      const resL = await fetch("./data/airline_logos.csv", {cache:"no-store"});
-      if(!resL.ok) throw new Error(`airline_logos.csv HTTP ${resL.status}`);
-      const logosCsv = await resL.text();
-      
-      function parseCsvSemi(text){
-        const lines = text.split(/\r?\n/).filter(Boolean);
-        if(lines.length < 2) return [];
-        const header = lines[0].split(";").map(s=>s.trim());
-        const rows = [];
-        for(let i=1;i<lines.length;i++){
-          const cols = lines[i].split(";");
-          const obj = {};
-          for(let j=0;j<header.length;j++){
-            obj[header[j]] = (cols[j] ?? "").trim();
-          }
-          rows.push(obj);
-        }
-        return rows;
-      }
-      
-      const logoRows = parseCsvSemi(logosCsv);
-      const logoMap = new Map(
-        logoRows.map(r => [String(r.logo_id||"").trim(), String(r.Airline||"").trim()])
-      );
-      
+
       // models index (für Matching)
       const resI = await fetch("./index.json", {cache:"no-store"});
       const idx = await resI.json();
@@ -312,8 +285,7 @@
       const to = asText(f.to);
       const route = [from,to].filter(Boolean).join(" → ");
 
-      const airlineId = asText(f.logo_id);
-      const airline = logoMap.get(airlineId) || airlineId;
+      const airline = asText(f.airline) || asText(f.logo_id);
       const flightNo = asText(f.flight_no);
       const callsign = asText(f.callsign);
 
@@ -335,7 +307,7 @@
           : "");
 
       // Matching
-      const analysis = analyzeFlight(models, f, logoMap);
+      const analysis = analyzeFlight(models, f);
       const exact = analysis.exactModels;
       const typeMatches = analysis.airlineTypeModels;
       
