@@ -79,6 +79,15 @@ async function main(){
   const resI = await fetch("./index.json",{cache:"no-store"});
   const idx = await resI.json();
   const models = idx.items || [];
+  
+  const airlineByLogo = new Map();
+  for(const m of models){
+    const lid = asText(m.logo_id);
+    if(!lid || airlineByLogo.has(lid)) continue;
+    const name = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code);
+    if(name) airlineByLogo.set(lid, name);
+  }
+
 
   document.getElementById("meta").textContent =
     `${flights.length} Flüge`;
