@@ -437,7 +437,6 @@ def main() -> int:
 
         logo_row = logos_idx.get(logo_id) if logo_id else None
         airline_name = ((logo_row.get("Airline", "") if logo_row else "") or "").strip()
-        airline_row = ((logo_row.get("airline_row", "") if logo_row else "") or "").strip()
 
         pax_row = pax_idx.get(aircraft_id) if aircraft_id else None
         typ_anzeige = ((pax_row.get("Typ_anzeige", "") if pax_row else "") or "").strip()
@@ -456,8 +455,7 @@ def main() -> int:
             "callsign": (fr.get("callsign", "") or "").strip(),
 
             "logo_id": logo_id,
-            "airline": airline_name,
-            "airline_row": airline_row,
+            "airline_row": airline_name,
 
             "aircraft_id": aircraft_id,
             "typ_anzeige": typ_anzeige,
