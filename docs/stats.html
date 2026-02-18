@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stats</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./stats.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="navInner">
+    <div class="navRight">
+      <a href="./index.html">Übersicht</a>
+      <a href="./matrix.html">Matrix</a>
+      <a href="./missing_types.html">Fehlende Typen</a>
+      <a href="./types_overview.html">Typen</a>
+      <a href="./flights.html">Flüge</a>
+      <a class="active" href="./stats.html">Stats</a>
+    </div>
+  </div>
+</nav>
+
+<div class="top" style="margin-top:10px">
+  <h1>Statistik</h1>
+  <span class="muted" id="meta"></span>
+</div>
+
+<div id="content">Lade Daten …</div>
+
+<script>
+function esc(s){
+  return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function asText(v){ return (v??"").toString().trim(); }
+
+function dot(key, filled){
+  const cls = key === "owned"
+    ? (filled ? "dot dotG" : "dot dotGRing")
+    : (filled ? "dot dotY" : "dot dotYRing");
+  return `<span class="${cls}"></span>`;
+}
+
+function modelStatus(m){
+  if(m.status === "owned")   return {key:"owned"};
+  if(m.status === "ordered") return {key:"ordered"};
+  return {key:""};
+}
+
+function analyzeFlight(models, flight){
+
+  const fAircraftId = asText(flight.aircraft_id);
+  const fReg = asText(flight.registration);
+  const fAir = (asText(flight.logo_id) || "").toLowerCase();
+
+  const airlineType = models.filter(m =>
+    asText(m.aircraft_id) === fAircraftId &&
+    (asText(m.logo_id) || "").toLowerCase() === fAir
+  );
+
+  const exact = airlineType.filter(m =>
+    asText(m.registration) === fReg
+  );
+
+  return { airlineTypeModels: airlineType, exactModels: exact };
+}
+
+function uniqueCount(arr){
+  return new Set(arr.filter(Boolean)).size;
+}
+
+async function main(){
+
+  const resF = await fetch("./data/flights.json",{cache:"no-store"});
+  const flightsData = await resF.json();
+  const flights = flightsData.items || [];
+
+  const resI = await fetch("./index.json",{cache:"no-store"});
+  const idx = await resI.json();
+  const models = idx.items || [];
+
+  document.getElementById("meta").textContent =
+    `${flights.length} Flüge`;
+
+  // --- OVERVIEW ---
+
+  const airlines = flights.map(f=>asText(f.logo_id));
+  const types = flights.map(f=>asText(f.aircraft_id));
+  const regs = flights.map(f=>asText(f.registration));
+  const routes = flights.map(f=>asText(f.from)+"-"+asText(f.to));
+
+  // Sammlung-Abdeckung
+  let exactOwned=0, exactOrdered=0, typeOwned=0, typeOrdered=0, none=0;
+
+  flights.forEach(f=>{
+    const a = analyzeFlight(models, f);
+
+    if(a.exactModels.length){
+      if(a.exactModels.some(m=>m.status==="owned")) exactOwned++;
+      else if(a.exactModels.some(m=>m.status==="ordered")) exactOrdered++;
+    }
+    else if(a.airlineTypeModels.length){
+      if(a.airlineTypeModels.some(m=>m.status==="owned")) typeOwned++;
+      else if(a.airlineTypeModels.some(m=>m.status==="ordered")) typeOrdered++;
+    }
+    else none++;
+  });
+
+  let html = `
+  <div class="card">
+    <div class="k">Überblick</div>
+    <div class="kpiWrap">
+      <span class="kpi">Flüge: <b>${flights.length}</b></span>
+      <span class="kpi">Airlines: <b>${uniqueCount(airlines)}</b></span>
+      <span class="kpi">Typen: <b>${uniqueCount(types)}</b></span>
+      <span class="kpi">Registrierungen: <b>${uniqueCount(regs)}</b></span>
+      <span class="kpi">Routen: <b>${uniqueCount(routes)}</b></span>
+    </div>
+
+    <div class="coverage">
+      <div>${dot("owned",true)} exakt vorhanden: ${exactOwned}</div>
+      <div>${dot("ordered",true)} exakt bestellt: ${exactOrdered}</div>
+      <div>${dot("owned",false)} Typ vorhanden: ${typeOwned}</div>
+      <div>${dot("ordered",false)} Typ bestellt: ${typeOrdered}</div>
+      <div>❌ kein Modell: ${none}</div>
+    </div>
+  </div>
+  `;
+
+  // --- AIRLINE LIST ---
+
+  const airlineMap = {};
+  flights.forEach(f=>{
+    const k = asText(f.logo_id);
+    airlineMap[k] = (airlineMap[k]||0)+1;
+  });
+
+  html += `
+  <div class="card">
+    <div class="k">Airlines</div>
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>Airline</th>
+          <th class="col-num">Flüge</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  Object.entries(airlineMap)
+    .sort((a,b)=>b[1]-a[1])
+    .forEach(([k,v])=>{
+      html += `
+        <tr>
+          <td>${esc(k)}</td>
+          <td class="col-num mono">${v}</td>
+        </tr>
+      `;
+    });
+
+  html += `</tbody></table></div>`;
+
+  document.getElementById("content").innerHTML = html;
+}
+
+main();
+</script>
+</body>
+</html>
