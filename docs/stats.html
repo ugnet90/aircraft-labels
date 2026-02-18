@@ -52,7 +52,7 @@ function analyzeFlight(models, flight){
 
   const fAircraftId = asText(flight.aircraft_id);
   const fReg = asText(flight.registration);
-  const fAir = (asText(flight.logo_id) || "").toLowerCase();
+  const fAir = (asText(flight.airline_row) || "").toLowerCase();
 
   const airlineType = models.filter(m =>
     asText(m.aircraft_id) === fAircraftId &&
@@ -85,7 +85,7 @@ async function main(){
 
   // --- OVERVIEW ---
 
-  const airlines = flights.map(f=>asText(f.airline));
+  const airlines = flights.map(f=>asText(f.airline_row));
   const types = flights.map(f=>asText(f.aircraft_id));
   const regs = flights.map(f=>asText(f.registration));
   const routes = flights.map(f=>asText(f.from)+"-"+asText(f.to));
