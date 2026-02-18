@@ -319,8 +319,8 @@
         const ordered = exact.some(m => m.status === "ordered");
       
         summaryDot =
-          (owned ? badgeDot("owned","vorhanden") : "") +
-          (ordered ? badgeDot("ordered","bestellt") : "");
+          (owned   ? dotOnly("owned",   true,  "Vorhanden") : "") +
+          (ordered ? dotOnly("ordered", true,  "Bestellt")  : "");
       
         summaryText = "Dieses konkrete Flugzeug ist in deiner Sammlung.";
       }
@@ -329,14 +329,15 @@
         const ordered = typeMatches.some(m => m.status === "ordered");
       
         summaryDot =
-          (owned ? badgeDot("owned","Typ vorhanden") : "") +
-          (ordered ? badgeDot("ordered","Typ bestellt") : "");
+          (owned   ? dotOnly("owned",   false, "Typ vorhanden") : "") +
+          (ordered ? dotOnly("ordered", false, "Typ bestellt")  : "");
       
         summaryText = "Typ vorhanden, aber andere Registrierung.";
       }
       else{
         summaryText = "Kein Modell dieses Typs in deiner Sammlung.";
       }
+
       
       let detailRows = "";
       
