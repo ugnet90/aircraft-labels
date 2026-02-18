@@ -246,40 +246,6 @@
     return `<span class="${cls}"${t} aria-hidden="true"></span>`;
   }
 
-  function modelStatus(m){
-    const mid = asText(m.model_id);
-  
-    // 1) Falls es irgendwo schon ein sauberes status-Feld gibt -> verwenden
-    const st = asText(m.status).toLowerCase();
-    if(st){
-      if(st === "owned" || st === "present" || st === "vorhanden" || st === "mixed"){
-        return {key:"owned", label:"vorhanden"};
-      }
-      if(st === "ordered" || st === "bestellt"){
-        return {key:"ordered", label:"bestellt"};
-      }
-    }
-  
-    // 2) Fallback: heuristisch wie vorher (aber robuster)
-    const arrived = asText(m.arrived || m.model?.arrived);
-    const orderedAt = asText(m.ordered_at || m.model?.ordered_at);
-  
-    const ordered =
-      (m.ordered === true) ||
-      (!!orderedAt) ||
-      mid.startsWith("ORD-");
-  
-    // "vorhanden": arrived gesetzt ODER explizite Flags
-    const present =
-      (m.present === true) ||
-      (m.vorhanden === true) ||
-      (!!arrived);  // <- wichtig: arrived reicht, auch wenn orderedAt irgendwo noch drin steht
-  
-    if(present) return {key:"owned", label:"vorhanden"};
-    if(ordered) return {key:"ordered", label:"bestellt"};
-    return {key:"", label:""};
-  }
-
   async function main(){
     const id = qs("id");
     if(!id){
@@ -349,8 +315,8 @@
       let summaryText = "";
       
       if(exact.length){
-        const owned = exact.some(m => modelStatus(m).key === "owned");
-        const ordered = exact.some(m => modelStatus(m).key === "ordered");
+        const owned = exact.some(m => m.status === "owned");
+        const ordered = exact.some(m => m.status === "ordered");
       
         summaryDot =
           (owned ? badgeDot("owned","vorhanden") : "") +
@@ -359,8 +325,8 @@
         summaryText = "Dieses konkrete Flugzeug ist in deiner Sammlung.";
       }
       else if(typeMatches.length){
-        const owned = typeMatches.some(m => modelStatus(m).key === "owned");
-        const ordered = typeMatches.some(m => modelStatus(m).key === "ordered");
+        const owned = typeMatches.some(m => m.status === "owned");
+        const ordered = typeMatches.some(m => m.status === "ordered");
       
         summaryDot =
           (owned ? badgeDot("owned","Typ vorhanden") : "") +
@@ -378,11 +344,9 @@
       
       const isExactContext = exact.length > 0; // wenn wir gerade exakte Reg-Matches anzeigen => gefüllt
       for(const m of displayModels){
-        const st = modelStatus(m);
-      
         const dot =
-          (st.key === "owned")   ? dotOnly("owned",   isExactContext, "Vorhanden") :
-          (st.key === "ordered") ? dotOnly("ordered", isExactContext, "Bestellt") :
+          (m.status === "owned")   ? dotOnly("owned",   isExactContext, "Vorhanden") :
+          (m.status === "ordered") ? dotOnly("ordered", isExactContext, "Bestellt") :
           "";
       
         detailRows += `
