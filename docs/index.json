@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T10:03:24Z",
+  "generated_at": "2026-02-18T10:22:23Z",
   "count": 170,
   "counts_by_airline_code": {
     "OS": 20,
@@ -46,7 +46,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/146906385605",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AB002",
@@ -71,7 +73,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-757-200-air-berlin-hb-ihr-jc-wings-lh4091-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AB003",
@@ -96,7 +100,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/326941696366",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AF001",
@@ -121,7 +127,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a318-air-france-f-gugd-herpa-562232-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AF002",
@@ -146,7 +154,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-air-france-f-gsqb-herpa-561259-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AF003",
@@ -171,7 +181,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/embraer-e170-hop-for-air-france-f-hbxe-herpa-562621-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AZ001",
@@ -196,7 +208,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AZ002",
@@ -221,7 +235,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336405838642",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "AZ003",
@@ -246,7 +262,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336412108496",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA001",
@@ -271,7 +289,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA002",
@@ -296,7 +316,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/157409674233",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA003",
@@ -321,7 +343,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/saab-340b-british-airways-loganair-g-lgnb-gemini-jets-gjlog1116-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA004",
@@ -346,7 +370,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-787-8-british-airways-g-zbjg-gemini-jets-gjbaw2107-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA005",
@@ -371,7 +397,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/bae-146-rj-85-british-airways-g-gntz-gemini-jets-gjbaw678-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA006",
@@ -396,7 +424,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/bac-111-one-eleven-british-airways-g-avoe-aeroclassics-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA007",
@@ -421,7 +451,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt/hawker-siddeley-hs121-trident-2e-bea-g-avff-gemini-jets-gjbea751-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA008",
@@ -446,7 +478,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/257315911323",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BA009",
@@ -471,7 +505,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-bea-british-european-trident-gemini-jets-1-400/3301263814-234-9047",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BOA001",
@@ -496,7 +532,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/bristol-britannia-series-310-boac-g-aovk-gemini-jets-gjboa131-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BOA002",
@@ -521,7 +559,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/vickers-super-vc10-boac-g-asgh-gemini-jets-gjbaw657-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "BT001",
@@ -546,7 +586,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://shop.dcc24.eu/en/herpa/22453-herpa-562607-cs300-airbaltic-4013150562607.html",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "FI001",
@@ -571,7 +613,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "HF001",
@@ -596,7 +640,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "HF002",
@@ -621,7 +667,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-hapag-lloyd-express-d-agep-gemini-jets-3557457-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "HF003",
@@ -646,7 +694,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a300-hapag-lloyd-d-ahla-aeroclassics-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "HF004",
@@ -671,7 +721,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/257315911324",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL001",
@@ -696,7 +748,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL002",
@@ -721,7 +775,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL003",
@@ -746,7 +802,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL004",
@@ -771,7 +829,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/sch/i.html?item=376312332478&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=4booksubid",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL005",
@@ -796,7 +856,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/297670868491",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL006",
@@ -821,7 +883,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.kleinanzeigen.de/s-anzeige/schuco-starjets-und-gemini-jets-konvolut-1-400-1-500/3214030289-234-1362",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL007",
@@ -846,7 +910,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/376626642808",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL008",
@@ -871,7 +937,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/136597425675?_skw=klm&itmmeta=01K8N1RV4VWDRHQ1Y0GJ58SS7H&hash=item1fcdd74e0b:g:RPMAAeSwCdVoTlyY",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "KL009",
@@ -896,7 +964,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-767-300-klm-royal-dutch-airlines-ph-bzj-dragon-wings-55621-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH001",
@@ -921,7 +991,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.aviation-center.com.au/index.html",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH002",
@@ -946,7 +1018,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH003",
@@ -971,7 +1045,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH004",
@@ -996,7 +1072,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH005",
@@ -1021,7 +1099,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH006",
@@ -1046,7 +1126,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH007",
@@ -1071,7 +1153,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH008",
@@ -1096,7 +1180,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.modelyletadel.cz/en/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH009",
@@ -1121,7 +1207,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH010",
@@ -1146,7 +1234,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH011",
@@ -1171,7 +1261,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH012",
@@ -1196,7 +1288,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH013",
@@ -1221,7 +1315,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a330-300-lufthansa-d-aiko-gemini-jets-gjdlh1831-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH014",
@@ -1246,7 +1342,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH015",
@@ -1271,7 +1369,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH016",
@@ -1296,7 +1396,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH017",
@@ -1321,7 +1423,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/297475926197",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH018",
@@ -1346,7 +1450,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-727-100-lufthansa-d-abib-aeroclassics-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH019",
@@ -1371,7 +1477,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a340-600-lufthansa-gummersbach-d-aihn-gemini-jets-gjdlh1318-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH020",
@@ -1396,7 +1504,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-737-300-lufthansa-ulm-d-abee-gemini-jets-gjdlh1326-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH021",
@@ -1421,7 +1531,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-737-500-lufthansa-anklam-d-abir-gemini-jets-gjdlh1327-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH022",
@@ -1446,7 +1558,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/bombardier-crj-200-lufthansa-d-acjh-jc-wings-jc4038-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH023",
@@ -1471,7 +1585,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/bombardier-crj900-lufthansa-cityline-d-acnd-gemini-jets-gjclh2021-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH024",
@@ -1496,7 +1612,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/256347481240",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH025",
@@ -1521,7 +1639,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/256605729195",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH026",
@@ -1546,7 +1666,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a321neo-lufthansa-d-aiep-phoenix-04541-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH027",
@@ -1571,7 +1693,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/376633905001",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH028",
@@ -1596,7 +1720,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-lufthansa-d-aieq-gemini-jets-gjdlh2238-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH029",
@@ -1621,7 +1747,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-747-200f-lufthansa-cargo-africa-d-abzf-dragon-55075-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH030",
@@ -1646,7 +1774,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11f-lufthansa-cargo-d-alcn-gemini-jets-gjdlh1371-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LH031",
@@ -1671,7 +1801,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336326426320",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX001",
@@ -1696,7 +1828,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://swiss-edelweiss.li/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX002",
@@ -1721,7 +1855,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://swiss-edelweiss.li/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX003",
@@ -1746,7 +1882,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/bombardier-cs100-swiss-international-c-gwxz-herpa-562522-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX004",
@@ -1771,7 +1909,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX005",
@@ -1796,7 +1936,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a320-swiss-international-air-lines-hop-suisse-hb-ijm-herpa-562027-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX006",
@@ -1821,7 +1963,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a220-300-swiss-international-fete-de-vignerons-hb-jca-herpa-562713-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX007",
@@ -1846,7 +1990,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-swiss-hb-jna-jc-wings-xx4683-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX008",
@@ -1871,7 +2017,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11-swissair-hb-iwi-jc-wings-xx4051-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX009",
@@ -1896,7 +2044,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/146906406759",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX010",
@@ -1921,7 +2071,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/376644211863?_skw=1%2F400&itmmeta=01K8TKQVTGS1TSTH10Y1AR8G6V&hash=item57b1be9497%3Ag%3AfBsAAeSwZApo-mNk&LH_Auction=1",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX011",
@@ -1946,7 +2098,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.kleinanzeigen.de/s-anzeige/tucano-line-swissair-a321-1-400/3231715559-234-9491",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX012",
@@ -1971,7 +2125,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-swiss-hb-jdc-phoenix-11784-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX013",
@@ -1996,7 +2152,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/convair-880-swissair-hb-icl-herpa-560528-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX014",
@@ -2021,7 +2179,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a310-200-swissair-hb-ipa-herpa-560771-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX015",
@@ -2046,7 +2206,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-747-257b-swissair-hb-igb-phoenix-11836-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX016",
@@ -2071,7 +2233,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/douglas-dc-8-50-swissair-hb-idb-aeroclassics-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX017",
@@ -2096,7 +2260,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/257315911157",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "LX018",
@@ -2121,7 +2287,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336405846019",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "NG001",
@@ -2146,7 +2314,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "NG002",
@@ -2171,7 +2341,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/146906325011",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "NG003",
@@ -2196,7 +2368,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/146906254865",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS001",
@@ -2221,7 +2395,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.aviationmegastore.com/de/modelle/airbus-a319-austrian-airlines-oe-lde-aero-classics-ac411344-208116.html",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS002",
@@ -2246,7 +2422,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS003",
@@ -2271,7 +2449,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS004",
@@ -2296,7 +2476,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.world-of-wings.eu/epages/82202172.sf/sec268158f1b3/?ObjectPath=/Shops/82202172/Products/76015",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS005",
@@ -2321,7 +2503,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS006",
@@ -2346,7 +2530,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS007",
@@ -2371,7 +2557,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS008",
@@ -2396,7 +2584,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS009",
@@ -2421,7 +2611,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS010",
@@ -2446,7 +2638,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS011",
@@ -2471,7 +2665,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS012",
@@ -2496,7 +2692,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS013",
@@ -2521,7 +2719,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS014",
@@ -2546,7 +2746,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS015",
@@ -2571,7 +2773,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS016",
@@ -2596,7 +2800,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS017",
@@ -2621,7 +2827,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS018",
@@ -2646,7 +2854,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS019",
@@ -2671,7 +2881,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "OS020",
@@ -2696,7 +2908,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.aviationmegastore.com/de/modelle/vickers-viscount-800-austrian-oe-lam-aero-classics-ac411459-217204.html",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA001",
@@ -2721,7 +2935,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.modelyletadel.cz/en/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA002",
@@ -2746,7 +2962,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA003",
@@ -2771,7 +2989,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.modelwereld.eu/en/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA004",
@@ -2796,7 +3016,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-727-200-pan-am-n365pa-dragon-wings-55150-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA005",
@@ -2821,7 +3043,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.wingsmo.com/neu-bei-wingsmo/postage-stamp/29443/postage-stamp-pan-am-mcdonnell-douglas-dc-10-1-400-ps5820-5?c=0",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA006",
@@ -2846,7 +3070,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/lockheed-l-1011-385-3-pan-am-n514pa-dragon-wings-55142-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA007",
@@ -2871,7 +3097,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA008",
@@ -2896,7 +3124,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA009",
@@ -2921,7 +3151,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/197417277964",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA010",
@@ -2946,7 +3178,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/197417277964",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA011",
@@ -2971,7 +3205,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://order.ebay.de/ord/show?orderId=04-13231-92834&ssPageName=STRK:MESO:VPS&_trksid=p4429486.m2548.l2673",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA012",
@@ -2996,7 +3232,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/267293388934?autorefresh=true",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA013",
@@ -3021,7 +3259,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA014",
@@ -3046,7 +3286,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA015",
@@ -3071,7 +3313,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "alexmodels.cz",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA016",
@@ -3096,7 +3340,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/376412002783",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA017",
@@ -3121,7 +3367,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/curtiss-c-46-commando-pan-american-world-airways-n67980-aeroclassics-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA018",
@@ -3146,7 +3394,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/376641810428",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA019",
@@ -3171,7 +3421,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/116835984188",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "PA020",
@@ -3196,7 +3448,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/douglas-dc-10-30-pan-am-n83na-apollo-a13038-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK001",
@@ -3221,7 +3475,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK002",
@@ -3246,7 +3502,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.aviation-center-berlin.de/p/JC40249",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK003",
@@ -3271,7 +3529,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-sas-scandinavian-se-rjx-gemini-jets-gjsas1988-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK004",
@@ -3296,7 +3556,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-82-sas-scandinavian-oy-khr-dragon-wings-55751-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK005",
@@ -3321,7 +3583,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/226985497592",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK006",
@@ -3346,7 +3610,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/326941696329",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK007",
@@ -3371,7 +3637,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-sas-scandinavian-dc-8-aeroclassics-1-400/3245823809-234-9047",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SK008",
@@ -3396,7 +3664,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336405864151",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SM001",
@@ -3421,7 +3691,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SM002",
@@ -3446,7 +3718,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SM003",
@@ -3471,7 +3745,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/205689921146",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "ORD-SO-37",
@@ -3496,7 +3772,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336426829170",
       "ordered_at": "2026-02-15",
-      "ordered": true
+      "ordered": true,
+      "present": false,
+      "status": "ordered"
     },
     {
       "model_id": "ORD-SO-49",
@@ -3521,7 +3799,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.aviation-center-berlin.de/p/PT-400-023",
       "ordered_at": "2025-12-29",
-      "ordered": true
+      "ordered": true,
+      "present": false,
+      "status": "ordered"
     },
     {
       "model_id": "SO001",
@@ -3546,7 +3826,9 @@
       "logo_speaking": "Falsch",
       "shop_url": "https://www.herpa.de/Antonov-Airlines-AN-225-Mriya/562287",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO002",
@@ -3571,7 +3853,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.flight-shop.de/modelle/jc-wings/scale-1400/12873/jc-wings-airbus-a300-600st-beluga-house-color-3-f-gstc-1-400-modellflugzeug?c=0",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO003",
@@ -3596,7 +3880,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO004",
@@ -3621,7 +3907,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO005",
@@ -3646,7 +3934,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.aviamart.com/collections/airplane-models/products/jc-wings-x-aviationtag-super-guppy-edition-1-400?variant=43280865657026",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO006",
@@ -3671,7 +3961,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO007",
@@ -3696,7 +3988,9 @@
       "logo_speaking": "Falsch",
       "shop_url": "https://www.2dehands.be/u/jawan/33093180/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO008",
@@ -3721,7 +4015,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.flight-shop.de/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO009",
@@ -3746,7 +4042,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/375992577591",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO010",
@@ -3771,7 +4069,9 @@
       "logo_speaking": "Falsch",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO011",
@@ -3796,7 +4096,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/286878907569",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO012",
@@ -3821,7 +4123,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/297706525341?_skw=1%2F400&itmmeta=01K8TKQVTF57ZBTZ7GM4DXEWMJ&hash=item4550b1129d%3Ag%3ARk0AAeSwrGJo-mV5&LH_Auction=1",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO013",
@@ -3846,7 +4150,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/297708607526?_skw=1%2F400&itmmeta=01K8TKQVTFNFET2J6P9Z4A3PRZ&hash=item4550d0d826%3Ag%3A1vsAAeSw2xto-4A0&LH_Auction=1",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO014",
@@ -3871,7 +4177,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO015",
@@ -3896,7 +4204,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/space-shuttle-orbiter-columbia-nasa-ov-102-dragon-wings-55532-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO016",
@@ -3921,7 +4231,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/airbus-a350xwb-luftwaffe-bundesrepublik-deutschland-1001-jc-wings-lh4246-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO017",
@@ -3946,7 +4258,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/boeing-757-200-united-states-of-america-80001-gemini-jets-gjafo254-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO018",
@@ -3971,7 +4285,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://mw-moba.de/Produkt/pby-5a-catalina-us-air-force-air-and-sea-rescue-herpa-561747-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO019",
@@ -3996,7 +4312,9 @@
       "logo_speaking": "Falsch",
       "shop_url": "https://mw-moba.de/Produkt/boeing-c-40-united-states-navy-ry-831-gemini-jets-gjusn295-1400/",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO020",
@@ -4021,7 +4339,9 @@
       "logo_speaking": "Falsch",
       "shop_url": "https://www.aviationmegastore.com/de/modelle/boeing-767-200-airborne-optical-adjunct--us-army-prototype-n767ba-patriot-model-pt-400-015-214215.html",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO021",
@@ -4046,7 +4366,9 @@
       "logo_speaking": "Falsch",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO022",
@@ -4071,7 +4393,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/257315910925",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO023",
@@ -4096,7 +4420,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336405897835",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "SO024",
@@ -4121,7 +4447,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336412101117",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "TP001",
@@ -4146,7 +4474,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "TP002",
@@ -4171,7 +4501,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/336405842990",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "WA001",
@@ -4196,7 +4528,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "WA002",
@@ -4221,7 +4555,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "WA003",
@@ -4246,7 +4582,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.flight-shop.de/modelle/geminijets/scale-1400/11784/geminijets-embraer-e195-e2-klm-royal-dutch-ph-nx3-1-400-modellflugzeug?srsltid=AfmBOorHTKyWreFQRtGAn-iFemA-bxLMhEW3CTNpBx-uvqkSzpp8ugku",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     },
     {
       "model_id": "WA004",
@@ -4271,7 +4609,9 @@
       "logo_speaking": "Wahr",
       "shop_url": "https://www.ebay.de/itm/277036315286",
       "ordered_at": null,
-      "ordered": false
+      "ordered": false,
+      "present": true,
+      "status": "owned"
     }
   ]
 }
