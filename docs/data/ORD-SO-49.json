@@ -54,6 +54,8 @@
     "arrived": null,
     "ordered_at": "2025-12-29",
     "ordered": true,
+    "present": false,
+    "status": "ordered",
     "flown": null,
     "special_note": "",
     "model_extra": ""
