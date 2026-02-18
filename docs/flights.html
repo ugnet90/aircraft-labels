@@ -145,7 +145,7 @@
       const to = asText(f.to);
       const route = [from, to].filter(Boolean).join(" → ");
   
-      const airline = asText(f.airline) || asText(f.logo_id);
+      const airline = asText(f.airline_row) || asText(f.logo_id);
       const fn = asText(f.flight_no);
   
       const typ = asText(f.typ_anzeige) || asText(f.aircraft_id);
