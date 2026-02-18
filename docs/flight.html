@@ -214,7 +214,7 @@
     const fReg = asText(flight.registration);
   
     const sameAirlineFn = (m) => {
-      const fAir = normalize(flight.airline) || normalize(flight.logo_id);
+      const fAir = normalize(flight.airline_row) || normalize(flight.airline) || normalize(flight.logo_id);
       const mAir = normalize(m.airline_row) || normalize(m.airline_code) || normalize(m.airline);
       return fAir && mAir && (fAir === mAir);
     };
@@ -285,7 +285,7 @@
       const to = asText(f.to);
       const route = [from,to].filter(Boolean).join(" → ");
 
-      const airline = asText(f.airline) || asText(f.logo_id);
+      const airline = asText(f.airline_row) || asText(f.airline) || asText(f.logo_id);
       const flightNo = asText(f.flight_no);
       const callsign = asText(f.callsign);
 
