@@ -1,0 +1,45 @@
+.kpiWrap{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:12px;
+}
+
+.kpi{
+  font-size:14px;
+}
+
+.coverage{
+  margin-top:14px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  align-items:center;
+}
+
+.dot{
+  display:inline-block;
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  margin-right:6px;
+  vertical-align:middle;
+}
+
+.dotG{ background:#54c57a; }
+.dotY{ background:#f2c94c; }
+
+.dotGRing{
+  border:2px solid #54c57a;
+  background:transparent;
+}
+
+.dotYRing{
+  border:2px solid #f2c94c;
+  background:transparent;
+}
+
+.col-num{
+  text-align:right;
+  width:80px;
+}
