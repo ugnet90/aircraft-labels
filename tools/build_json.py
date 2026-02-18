@@ -134,6 +134,9 @@ def parse_scale_from_text(text: str) -> Optional[str]:
         return None
     return f"1:{m.group(1)}"
 
+def is_truthy(v: str) -> bool:
+    s = (v or "").strip().lower()
+    return s in {"1", "true", "wahr", "yes", "ja", "y", "x"}
 
 def main() -> int:
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -237,15 +240,21 @@ def main() -> int:
         
         angekommen_raw = (r.get("angekommen", "") or "").strip()
         angekommen_iso = excel_serial_to_iso(angekommen_raw)
-
+        
         bestellt_raw = (r.get("bestellt_am", "") or "").strip()
         bestellt_iso = excel_serial_to_iso(bestellt_raw)
         
         vorhanden_raw = (r.get("vorhanden", "") or "").strip().lower()
-        present = (vorhanden_raw in ("wahr", "true", "1", "x", "ja", "yes"))
+        present_flag = (vorhanden_raw in ("wahr", "true", "1", "x", "ja", "yes"))
         
-        ordered = bool(bestellt_iso) and not bool(angekommen_iso) and not present
-
+        # present: entweder Flag ODER angekommen-Datum
+        present = present_flag or bool(angekommen_iso)
+        
+        # ordered: bestellt_am vorhanden, aber NICHT present
+        ordered = bool(bestellt_iso) and not present
+        
+        # status (wishlist später)
+        status = "owned" if present else ("ordered" if ordered else "owned")
 
         source_sheet = (r.get("source_sheet", "") or "").strip()
         source_row = (r.get("source_row", "") or "").strip()
@@ -319,6 +328,8 @@ def main() -> int:
                 "arrived": angekommen_iso,
                 "ordered_at": bestellt_iso,
                 "ordered": ordered,
+                "present": present,
+                "status": status,
                 "flown": eigenfluege,
                 "special_note": special_note,
                 "model_extra": model_extra,
