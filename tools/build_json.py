@@ -401,6 +401,8 @@ def main() -> int:
             "shop_url": (r.get("Shop_url", "") or "").strip(),
             "ordered_at": bestellt_iso,
             "ordered": ordered,
+            "present": present,
+            "status": status,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
