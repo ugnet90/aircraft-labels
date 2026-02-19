@@ -1020,6 +1020,7 @@ async function init(){
     handlerInstalled = true;
 
     document.addEventListener("click", (ev)=>{
+    
       // KPI-Views + "← Überblick"
       const v = ev.target.closest("[data-view]");
       if(v){
@@ -1027,15 +1028,13 @@ async function init(){
         setView(v.getAttribute("data-view"));
         return;
       }
-
-      // Links sollen normal funktionieren
-      if(ev.target.closest("a")) return;
-
-      // Sort: Klick auf Tabellenkopf
+    
+      // Sort: Klick auf Tabellenkopf  (MUSS VOR <a>-Guard!)
       const th = ev.target.closest("th[data-sort]");
       if(th){
         const key = th.getAttribute("data-sort") || "";
         const inDetail = !!ev.target.closest("table.tblSmall"); // Detailtabellen
+    
         if(inDetail){
           if(detailSortKey === key) detailSortDir = (detailSortDir === "asc" ? "desc" : "asc");
           else { detailSortKey = key; detailSortDir = "asc"; }
@@ -1043,51 +1042,54 @@ async function init(){
           if(mainSortKey === key) mainSortDir = (mainSortDir === "asc" ? "desc" : "asc");
           else { mainSortKey = key; mainSortDir = "desc"; } // numeric meist absteigend sinnvoll
         }
+    
         render();
         return;
       }
-
+    
+      // Links sollen normal funktionieren (NACH Sort!)
+      if(ev.target.closest("a")) return;
+    
       // Toggle je nach View
       if(view === "airlines"){
         const trA = ev.target.closest("tr.airRow");
         if(!trA) return;
-
+    
         const key = trA.getAttribute("data-air") || "";
         expandedAir = (expandedAir === key) ? "" : key;
         render();
         return;
       }
-
+    
       if(view === "types"){
         const trT = ev.target.closest("tr.typeRow");
         if(!trT) return;
-
+    
         const key = trT.getAttribute("data-type") || "";
         expandedType = (expandedType === key) ? "" : key;
         render();
         return;
       }
-      
+    
       if(view === "regs"){
         const trR = ev.target.closest("tr.regRow");
         if(!trR) return;
-
+    
         const key = trR.getAttribute("data-reg") || "";
         expandedReg = (expandedReg === key) ? "" : key;
         render();
         return;
       }
-
+    
       if(view === "routes"){
         const trRoute = ev.target.closest("tr.routeRow");
         if(!trRoute) return;
-
+    
         const key = trRoute.getAttribute("data-route") || "";
         expandedRoute = (expandedRoute === key) ? "" : key;
         render();
         return;
       }
-      
     });
   }
 }
