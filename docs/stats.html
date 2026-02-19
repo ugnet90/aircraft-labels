@@ -678,12 +678,12 @@ function renderRegs(){
     <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
-          <th>Reg.</th>
-          <th class="col-num">Flüge</th>
-          <th class="col-num">${dot("owned",true)}</th>
-          <th class="col-num">${dot("owned",false)}</th>
-          <th class="col-num">${dot("ordered",true)}</th>
-          <th class="col-num">${dot("ordered",false)}</th>
+          <th data-sort="reg">Reg.</th>
+          <th class="col-num" data-sort="total">Flüge</th>
+          <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
+          <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
+          <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
+          <th class="col-num" data-sort="typeOrdered">${dot("ordered",false)}</th>
         </tr>
       </thead>
       <tbody>
@@ -991,7 +991,7 @@ function render(){
   if(view === "overview") html = renderOverview();
   else if(view === "airlines") html = renderAirlines();
   else if(view === "types") html = renderTypes();
-  else if(view === "regs") html = renderRegs();
+  else if(view === "regs") html = ();
   else if(view === "routes") html = renderRoutes();
   else if(view === "time") html = renderPlaceholder("Zeit");
   else html = renderOverview();
