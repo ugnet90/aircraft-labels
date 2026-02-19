@@ -30,7 +30,10 @@
 <div id="content">Lade Daten …</div>
 
 <script>
+let flights = [];
+let models = [];
 let expandedAir = ""; // logo_id der aktuell aufgeklappten Airline
+let handlerInstalled = false;
 
 function esc(s){
   return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -339,16 +342,24 @@ async function main(){
   html += `</tbody></table></div>`;
 
   document.getElementById("content").innerHTML = html;
-
-  document.addEventListener("click", (ev)=>{
-    const tr = ev.target.closest("tr.airRow");
-    if(!tr) return;
   
-    const key = tr.getAttribute("data-air") || "";
-    expandedAir = (expandedAir === key) ? "" : key;
-    main(); // simplest: neu rendern (für deine Datenmenge ok)
-  });
-
+  if(!handlerInstalled){
+    handlerInstalled = true;
+  
+    document.addEventListener("click", (ev)=>{
+      // wenn Link geklickt: Link soll normal funktionieren
+      if(ev.target.closest("a")) return;
+  
+      const tr = ev.target.closest("tr.airRow");
+      if(!tr) return;
+  
+      const key = tr.getAttribute("data-air") || "";
+      expandedAir = (expandedAir === key) ? "" : key;
+  
+      // NUR neu rendern: main() erneut ist ok, weil handlerInstalled verhindert neue Listener
+      main();
+    });
+  }
 }
 
 main();
