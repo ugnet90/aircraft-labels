@@ -49,21 +49,33 @@ function modelStatus(m){
 }
 
 function analyzeFlight(models, flight){
-
   const fAircraftId = asText(flight.aircraft_id);
   const fReg = asText(flight.registration);
-  const fAir = (asText(flight.airline_row) || "").toLowerCase();
+  const fLogo = asText(flight.logo_id).toLowerCase().trim();
+  const fAirText = (asText(flight.airline) || "").toLowerCase().trim(); // optional, falls vorhanden
 
-  const airlineType = models.filter(m =>
-    asText(m.aircraft_id) === fAircraftId &&
-    (asText(m.logo_id) || "").toLowerCase() === fAir
-  );
+  const sameAirline = (m) => {
+    // 1) stärkste Übereinstimmung: logo_id
+    const mLogo = asText(m.logo_id).toLowerCase().trim();
+    if(fLogo && mLogo && fLogo === mLogo) return true;
 
-  const exact = airlineType.filter(m =>
-    asText(m.registration) === fReg
-  );
+    // 2) fallback: Airline-Text (falls flights.json airline hat)
+    if(fAirText){
+      const mAir =
+        (asText(m.airline_row) || asText(m.airline_code) || asText(m.airline)).toLowerCase().trim();
+      return !!mAir && (mAir === fAirText);
+    }
 
-  return { airlineTypeModels: airlineType, exactModels: exact };
+    return false;
+  };
+
+  const sameType = (m) => fAircraftId && asText(m.aircraft_id) === fAircraftId;
+  const sameReg  = (m) => fReg && asText(m.registration) === fReg;
+
+  const airlineTypeModels = models.filter(m => sameType(m) && sameAirline(m));
+  const exactModels = airlineTypeModels.filter(m => sameReg(m));
+
+  return { airlineTypeModels, exactModels };
 }
 
 function uniqueCount(arr){
@@ -80,12 +92,18 @@ async function main(){
   const idx = await resI.json();
   const models = idx.items || [];
   
-  const airlineByLogo = new Map();
+  // logo_id -> Anzeige-Airline (aus index.json abgeleitet)
+  const airlineNameByLogo = {};
   for(const m of models){
     const lid = asText(m.logo_id);
-    if(!lid || airlineByLogo.has(lid)) continue;
-    const name = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code);
-    if(name) airlineByLogo.set(lid, name);
+    if(lid && !airlineNameByLogo[lid]){
+      airlineNameByLogo[lid] = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code) || lid;
+    }
+  }
+  
+  function flightAirlineLabel(f){
+    // falls flights.json irgendwann wieder airline enthält, nutzt es das
+    return asText(f.airline) || airlineNameByLogo[asText(f.logo_id)] || asText(f.logo_id);
   }
 
 
@@ -141,7 +159,7 @@ async function main(){
 
   const airlineMap = {};
   flights.forEach(f=>{
-    const k = asText(f.logo_id);
+    const k = flightAirlineLabel(f);
     airlineMap[k] = (airlineMap[k]||0)+1;
   });
 
