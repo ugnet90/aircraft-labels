@@ -32,7 +32,11 @@
 <script>
 let flights = [];
 let models = [];
-let expandedAir = ""; // logo_id der aktuell aufgeklappten Airline
+
+// Views: overview | airlines | types | regs | routes | time
+let view = (location.hash || "#overview").replace("#","") || "overview";
+
+let expandedAir = "";         // logo_id der aktuell aufgeklappten Airline
 let handlerInstalled = false;
 
 function esc(s){
@@ -40,33 +44,12 @@ function esc(s){
 }
 function asText(v){ return (v??"").toString().trim(); }
 
-async function fetchCsvMapLogoToAirline(){
-  const res = await fetch("./data/airline_logos.csv", {cache:"no-store"});
-  if(!res.ok) throw new Error(`airline_logos.csv HTTP ${res.status}`);
-
-  const text = await res.text();
-
-  // ; getrennt, 1. Zeile Header: logo_id;Airline;...
-  const lines = text.split(/\r?\n/).filter(x => x.trim() !== "");
-  if(lines.length < 2) return {};
-
-  const header = lines[0].split(";").map(x => x.trim());
-  const idxLogo = header.indexOf("logo_id");
-  const idxAir  = header.indexOf("Airline");     // wichtig: genau "Airline"
-  const idxFull = header.indexOf("full_name");   // optional
-
-  const map = {};
-  for(let i=1;i<lines.length;i++){
-    const cols = lines[i].split(";");
-
-    const logo = (cols[idxLogo] || "").trim();
-    const air  = (cols[idxAir]  || "").trim();
-    const full = idxFull >= 0 ? (cols[idxFull] || "").trim() : "";
-
-    if(!logo) continue;
-    map[logo] = air || full || logo;
-  }
-  return map;
+function setView(v){
+  view = v || "overview";
+  expandedAir = "";
+  // URL-Hash setzen (ohne Reload)
+  history.replaceState(null, "", `#${encodeURIComponent(view)}`);
+  render();
 }
 
 function dot(key, filled){
@@ -86,7 +69,7 @@ function analyzeFlight(models, flight){
   const fAircraftId = asText(flight.aircraft_id);
   const fReg = asText(flight.registration);
   const fLogo = asText(flight.logo_id).toLowerCase().trim();
-  const fAirText = (asText(flight.airline) || "").toLowerCase().trim(); // optional, falls vorhanden
+  const fAirText = (asText(flight.airline) || "").toLowerCase().trim(); // optional
 
   const sameAirline = (m) => {
     // 1) stärkste Übereinstimmung: logo_id
@@ -99,7 +82,6 @@ function analyzeFlight(models, flight){
         (asText(m.airline_row) || asText(m.airline_code) || asText(m.airline)).toLowerCase().trim();
       return !!mAir && (mAir === fAirText);
     }
-
     return false;
   };
 
@@ -116,18 +98,7 @@ function uniqueCount(arr){
   return new Set(arr.filter(Boolean)).size;
 }
 
-async function main(){
-
-  const resF = await fetch("./data/flights.json",{cache:"no-store"});
-  const flightsData = await resF.json();
-  const flights = flightsData.items || [];
-
-  const resI = await fetch("./index.json",{cache:"no-store"});
-  const idx = await resI.json();
-  const models = idx.items || [];
-
-  //logoMap = await fetchCsvMapLogoToAirline();
-  
+function flightAirlineLabelFactory(models){
   // logo_id -> Anzeige-Airline (aus index.json abgeleitet)
   const airlineNameByLogo = {};
   for(const m of models){
@@ -136,28 +107,19 @@ async function main(){
       airlineNameByLogo[lid] = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code) || lid;
     }
   }
-  
-  function flightAirlineLabel(f){
+
+  return function flightAirlineLabel(f){
     const lid = asText(f.logo_id);
     return (
-      asText(f.airline_row) ||     // wenn flights.json das hat -> perfekt
+      asText(f.airline_row) ||     // falls flights.json das hat
       asText(f.airline) ||         // falls du es doch mal wieder einführst
       (lid && airlineNameByLogo[lid]) ||
       lid
     );
-  }
+  };
+}
 
-  document.getElementById("meta").textContent =
-    `${flights.length} Flüge`;
-
-  // --- OVERVIEW ---
-
-  const airlines = flights.map(f => flightAirlineLabel(f));
-  const types = flights.map(f=>asText(f.aircraft_id));
-  const regs = flights.map(f=>asText(f.registration));
-  const routes = flights.map(f=>asText(f.from)+"-"+asText(f.to));
-
-  // Sammlung-Abdeckung
+function computeCoverage(flights, models){
   let exactOwned=0, exactOrdered=0, typeOwned=0, typeOrdered=0, none=0;
 
   flights.forEach(f=>{
@@ -174,31 +136,63 @@ async function main(){
     else none++;
   });
 
-  let html = `
-  <div class="card">
-    <div class="k">Überblick</div>
-    <div class="kpiWrap">
-      <span class="kpi">Flüge: <b>${flights.length}</b></span>
-      <span class="kpi">Airlines: <b>${uniqueCount(airlines)}</b></span>
-      <span class="kpi">Typen: <b>${uniqueCount(types)}</b></span>
-      <span class="kpi">Registrierungen: <b>${uniqueCount(regs)}</b></span>
-      <span class="kpi">Routen: <b>${uniqueCount(routes)}</b></span>
-    </div>
+  return { exactOwned, exactOrdered, typeOwned, typeOrdered, none };
+}
 
-    <div class="coverage">
-      <div>${dot("owned",true)} exakt vorhanden: ${exactOwned}</div>
-      <div>${dot("ordered",true)} exakt bestellt: ${exactOrdered}</div>
-      <div>${dot("owned",false)} Typ vorhanden: ${typeOwned}</div>
-      <div>${dot("ordered",false)} Typ bestellt: ${typeOrdered}</div>
-      <div>❌ kein Modell: ${none}</div>
+function renderOverview(){
+  const flightAirlineLabel = flightAirlineLabelFactory(models);
+
+  const airlines = flights.map(f => flightAirlineLabel(f));
+  const types = flights.map(f=>asText(f.aircraft_id));
+  const regs = flights.map(f=>asText(f.registration));
+  const routes = flights.map(f=>asText(f.from)+"-"+asText(f.to));
+
+  const cov = computeCoverage(flights, models);
+
+  return `
+    <div class="card">
+      <div class="k">Überblick</div>
+
+      <div class="kpiWrap">
+        <span class="kpi">Flüge: <b>${flights.length}</b></span>
+
+        <a href="#" class="kpi kpiLink" data-view="airlines">
+          Airlines: <b>${uniqueCount(airlines)}</b>
+        </a>
+
+        <a href="#" class="kpi kpiLink" data-view="types">
+          Typen: <b>${uniqueCount(types)}</b>
+        </a>
+
+        <a href="#" class="kpi kpiLink" data-view="regs">
+          Registrierungen: <b>${uniqueCount(regs)}</b>
+        </a>
+
+        <a href="#" class="kpi kpiLink" data-view="routes">
+          Routen: <b>${uniqueCount(routes)}</b>
+        </a>
+
+        <a href="#" class="kpi kpiLink" data-view="time">
+          Zeit: <b>Jahre/Monate</b>
+        </a>
+      </div>
+
+      <div class="coverage">
+        <div>${dot("owned",true)} exakt vorhanden: ${cov.exactOwned}</div>
+        <div>${dot("ordered",true)} exakt bestellt: ${cov.exactOrdered}</div>
+        <div>${dot("owned",false)} Typ vorhanden: ${cov.typeOwned}</div>
+        <div>${dot("ordered",false)} Typ bestellt: ${cov.typeOrdered}</div>
+        <div>❌ kein Modell: ${cov.none}</div>
+      </div>
     </div>
-  </div>
   `;
+}
 
-  // --- AIRLINES (vollständig mit Abdeckung) ---
+function renderAirlines(){
+  const flightAirlineLabel = flightAirlineLabelFactory(models);
 
-  // pro Airline zählen
-  const airStats = {}; // key=logo_id
+  // pro Airline zählen (key = logo_id)
+  const airStats = {};
   flights.forEach(f=>{
     const k = asText(f.logo_id) || "";
     if(!k) return;
@@ -214,6 +208,7 @@ async function main(){
         typeOrdered: 0,
       };
     }
+
     const s = airStats[k];
     s.total++;
 
@@ -234,34 +229,37 @@ async function main(){
 
   const airList = Object.values(airStats).sort((a,b)=> b.total - a.total);
 
-  html += `
-  <div class="card">
-    <div class="k">Airlines</div>
+  let html = `
+    <div class="card">
+      <div class="k headRow">
+        <span>Airlines</span>
+        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+      </div>
 
-    <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
-      <span>${dot("owned",true)} exakt vorhanden</span>
-      <span>${dot("owned",false)} Typ+Airline vorhanden</span>
-      <span>${dot("ordered",true)} exakt bestellt</span>
-      <span>${dot("ordered",false)} Typ+Airline bestellt</span>
-    </div>
+      <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
+        <span>${dot("owned",true)} exakt vorhanden</span>
+        <span>${dot("owned",false)} Typ+Airline vorhanden</span>
+        <span>${dot("ordered",true)} exakt bestellt</span>
+        <span>${dot("ordered",false)} Typ+Airline bestellt</span>
+      </div>
 
-    <table class="tbl" style="margin-top:10px">
-      <thead>
-        <tr>
-          <th>Airline</th>
-          <th class="col-num">Flüge</th>
-          <th class="col-num">${dot("owned",true)}</th>
-          <th class="col-num">${dot("owned",false)}</th>
-          <th class="col-num">${dot("ordered",true)}</th>
-          <th class="col-num">${dot("ordered",false)}</th>
-        </tr>
-      </thead>
-      <tbody>
+      <table class="tbl" style="margin-top:10px">
+        <thead>
+          <tr>
+            <th>Airline</th>
+            <th class="col-num">Flüge</th>
+            <th class="col-num">${dot("owned",true)}</th>
+            <th class="col-num">${dot("owned",false)}</th>
+            <th class="col-num">${dot("ordered",true)}</th>
+            <th class="col-num">${dot("ordered",false)}</th>
+          </tr>
+        </thead>
+        <tbody>
   `;
 
   for(const s of airList){
     const isOpen = expandedAir === s.logo_id;
-  
+
     html += `
       <tr class="airRow ${isOpen ? "open" : ""}" data-air="${esc(s.logo_id)}">
         <td>${esc(s.label || s.logo_id)}</td>
@@ -272,17 +270,14 @@ async function main(){
         <td class="col-num mono">${s.typeOrdered || ""}</td>
       </tr>
     `;
-  
+
     if(isOpen){
-      // Flüge dieser Airline sammeln
       const flightsThis = flights.filter(f => asText(f.logo_id) === asText(s.logo_id));
-  
-      // Detailtabelle bauen
+
       let rows = "";
       for(const f of flightsThis){
         const a = analyzeFlight(models, f);
-  
-        // Kategorie bestimmen (deine 4 Logiken)
+
         let dots = "";
         if(a.exactModels.length){
           const hasOwned = a.exactModels.some(m => m.status === "owned");
@@ -295,15 +290,14 @@ async function main(){
           if(hasOwned) dots += dot("owned", false);
           if(hasOrd)   dots += dot("ordered", false);
         }
-  
+
         const date = asText(f.date);
         const from = asText(f.from);
         const to   = asText(f.to);
         const reg  = asText(f.registration);
         const typ  = asText(f.typ_anzeige) || asText(f.aircraft_id);
-  
         const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
-  
+
         rows += `
           <tr>
             <td class="mono"><a href="${esc(href)}">${esc(date)}</a></td>
@@ -314,7 +308,7 @@ async function main(){
           </tr>
         `;
       }
-  
+
       html += `
         <tr class="rowDetail">
           <td colspan="6">
@@ -338,31 +332,80 @@ async function main(){
     }
   }
 
-
   html += `</tbody></table></div>`;
+  return html;
+}
+
+function renderPlaceholder(title){
+  return `
+    <div class="card">
+      <div class="k headRow">
+        <span>${esc(title)}</span>
+        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+      </div>
+      <div class="muted" style="margin-top:8px">Kommt als nächster Schritt.</div>
+    </div>
+  `;
+}
+
+function render(){
+  if(!flights.length){
+    document.getElementById("content").innerHTML = `<div class="card">Keine Daten.</div>`;
+    return;
+  }
+
+  let html = "";
+  if(view === "overview") html = renderOverview();
+  else if(view === "airlines") html = renderAirlines();
+  else if(view === "types") html = renderPlaceholder("Flugzeugtypen");
+  else if(view === "regs") html = renderPlaceholder("Registrierungen");
+  else if(view === "routes") html = renderPlaceholder("Routen");
+  else if(view === "time") html = renderPlaceholder("Zeit");
+  else html = renderOverview();
 
   document.getElementById("content").innerHTML = html;
-  
+}
+
+async function init(){
+  const resF = await fetch("./data/flights.json",{cache:"no-store"});
+  const flightsData = await resF.json();
+  flights = flightsData.items || [];
+
+  const resI = await fetch("./index.json",{cache:"no-store"});
+  const idx = await resI.json();
+  models = idx.items || [];
+
+  document.getElementById("meta").textContent = `${flights.length} Flüge`;
+
+  render();
+
   if(!handlerInstalled){
     handlerInstalled = true;
-  
+
     document.addEventListener("click", (ev)=>{
-      // wenn Link geklickt: Link soll normal funktionieren
+      // KPI-Views + "← Überblick"
+      const v = ev.target.closest("[data-view]");
+      if(v){
+        ev.preventDefault();
+        setView(v.getAttribute("data-view"));
+        return;
+      }
+
+      // Links sollen normal funktionieren
       if(ev.target.closest("a")) return;
-  
+
+      // Airline-Zeilen togglen (nur in Airlines-View sinnvoll)
       const tr = ev.target.closest("tr.airRow");
       if(!tr) return;
-  
+
       const key = tr.getAttribute("data-air") || "";
       expandedAir = (expandedAir === key) ? "" : key;
-  
-      // NUR neu rendern: main() erneut ist ok, weil handlerInstalled verhindert neue Listener
-      main();
+      render();
     });
   }
 }
 
-main();
+init();
 </script>
 </body>
 </html>
