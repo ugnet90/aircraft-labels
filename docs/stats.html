@@ -30,7 +30,7 @@
 <div id="content">Lade Daten …</div>
 
 <script>
-let logoMap = {};
+//let logoMap = {};
 
 function esc(s){
   return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -123,8 +123,8 @@ async function main(){
   const idx = await resI.json();
   const models = idx.items || [];
   
-  // const logoMap = await fetchCsvMapLogoToAirline();
-  logoMap = await fetchCsvMapLogoToAirline();
+  const logoMap = await fetchCsvMapLogoToAirline();
+  //logoMap = await fetchCsvMapLogoToAirline();
   
   // logo_id -> Anzeige-Airline (aus index.json abgeleitet)
   const airlineNameByLogo = {};
