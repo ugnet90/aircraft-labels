@@ -685,7 +685,7 @@ function renderRegs(){
   
     if(isOpen){
       // Flüge dieser Registrierung
-      const regKey = asText(s.registration);
+      const regKey = asText(s.reg);
       const flightsThis = flights.filter(f => asText(f.registration) === regKey);
     
       // 1) erst sammeln
@@ -714,10 +714,19 @@ function renderRegs(){
         const airline = flightAirlineLabel(f);
         const typ = asText(f.typ_anzeige) || asText(f.aircraft_id);
         const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
-    
+        
+        let statusKey = "";
+        if(a.exactModels.length){
+          if(a.exactModels.some(m => m.status === "owned")) statusKey = "1_exact_owned";
+          else if(a.exactModels.some(m => m.status === "ordered")) statusKey = "2_exact_ordered";
+        }else if(a.airlineTypeModels.length){
+          if(a.airlineTypeModels.some(m => m.status === "owned")) statusKey = "3_type_owned";
+          else if(a.airlineTypeModels.some(m => m.status === "ordered")) statusKey = "4_type_ordered";
+        }
+
         det.push({
           date, route, airline, typ,
-          href, dots
+          href, dots, status: statusKey
         });
       }
     
@@ -727,7 +736,7 @@ function renderRegs(){
       const detSorted = sortBy(det, dk, dd);
     
       // 3) rendern
-      const rows = det.map(x => `
+      const rows = detSorted.map(x => `
         <tr>
           <td class="mono"><a href="${esc(x.href)}">${esc(x.date)}</a></td>
           <td class="mono">${esc(x.route)}</td>
