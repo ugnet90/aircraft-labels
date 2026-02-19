@@ -30,7 +30,7 @@
 <div id="content">Lade Daten …</div>
 
 <script>
-//let logoMap = {};
+let expandedAir = ""; // logo_id der aktuell aufgeklappten Airline
 
 function esc(s){
   return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -194,20 +194,6 @@ async function main(){
 
   // --- AIRLINES (vollständig mit Abdeckung) ---
 
-  // Anzeige-Name für logo_id aus index.json (Models) ableiten
-  const logoName = {};
-  for(const m of models){
-    const lid = asText(m.logo_id);
-    if(!lid) continue;
-    const name = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code);
-    if(name && !logoName[lid]) logoName[lid] = name;
-  }
-
-  function flightAirlineLabel(f){
-    const lid = asText(f.logo_id);
-    return asText(f.airline_row) || asText(f.airline) || (lid && logoName[lid]) || lid;
-  }
-
   // pro Airline zählen
   const airStats = {}; // key=logo_id
   flights.forEach(f=>{
@@ -271,8 +257,10 @@ async function main(){
   `;
 
   for(const s of airList){
+    const isOpen = expandedAir === s.logo_id;
+  
     html += `
-      <tr>
+      <tr class="airRow ${isOpen ? "open" : ""}" data-air="${esc(s.logo_id)}">
         <td>${esc(s.label || s.logo_id)}</td>
         <td class="col-num mono">${s.total}</td>
         <td class="col-num mono">${s.exactOwned || ""}</td>
@@ -281,11 +269,86 @@ async function main(){
         <td class="col-num mono">${s.typeOrdered || ""}</td>
       </tr>
     `;
+  
+    if(isOpen){
+      // Flüge dieser Airline sammeln
+      const flightsThis = flights.filter(f => asText(f.logo_id) === asText(s.logo_id));
+  
+      // Detailtabelle bauen
+      let rows = "";
+      for(const f of flightsThis){
+        const a = analyzeFlight(models, f);
+  
+        // Kategorie bestimmen (deine 4 Logiken)
+        let dots = "";
+        if(a.exactModels.length){
+          const hasOwned = a.exactModels.some(m => m.status === "owned");
+          const hasOrd   = a.exactModels.some(m => m.status === "ordered");
+          if(hasOwned) dots += dot("owned", true);
+          if(hasOrd)   dots += dot("ordered", true);
+        }else if(a.airlineTypeModels.length){
+          const hasOwned = a.airlineTypeModels.some(m => m.status === "owned");
+          const hasOrd   = a.airlineTypeModels.some(m => m.status === "ordered");
+          if(hasOwned) dots += dot("owned", false);
+          if(hasOrd)   dots += dot("ordered", false);
+        }
+  
+        const date = asText(f.date);
+        const from = asText(f.from);
+        const to   = asText(f.to);
+        const reg  = asText(f.registration);
+        const typ  = asText(f.typ_anzeige) || asText(f.aircraft_id);
+  
+        const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
+  
+        rows += `
+          <tr>
+            <td class="mono"><a href="${esc(href)}">${esc(date)}</a></td>
+            <td class="mono">${esc(from)} → ${esc(to)}</td>
+            <td class="mono">${esc(reg)}</td>
+            <td>${esc(typ)}</td>
+            <td class="dotsCell">${dots}</td>
+          </tr>
+        `;
+      }
+  
+      html += `
+        <tr class="rowDetail">
+          <td colspan="6">
+            <div class="detailBox">
+              <table class="tblSmall">
+                <thead>
+                  <tr>
+                    <th>Datum</th>
+                    <th>Route</th>
+                    <th>Reg.</th>
+                    <th>Typ</th>
+                    <th class="dotsHead">Status</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      `;
+    }
   }
+
 
   html += `</tbody></table></div>`;
 
   document.getElementById("content").innerHTML = html;
+
+  document.addEventListener("click", (ev)=>{
+    const tr = ev.target.closest("tr.airRow");
+    if(!tr) return;
+  
+    const key = tr.getAttribute("data-air") || "";
+    expandedAir = (expandedAir === key) ? "" : key;
+    main(); // simplest: neu rendern (für deine Datenmenge ok)
+  });
+
 }
 
 main();
