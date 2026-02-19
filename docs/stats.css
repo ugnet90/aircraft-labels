@@ -43,3 +43,46 @@
   text-align:right;
   width:80px;
 }
+
+/* Links: ohne Unterstrich (auch hover) */
+a, .tbl a{
+  text-decoration: none !important;
+}
+a:hover, .tbl a:hover{
+  text-decoration: none !important;
+}
+
+.tbl a{
+  color:#000;
+  border-bottom:1px solid transparent;
+}
+.tbl a:hover{
+  border-bottom-color:#bbb; /* wirkt wie “dezent”, aber kein Underline */
+}
+
+tr.airRow{ cursor:pointer; }
+tr.airRow:hover{ background:#fafafa; }
+
+tr.rowDetail td{
+  padding:0;
+  border-bottom:1px solid #eee;
+}
+
+.detailBox{
+  padding:10px 12px;
+  background:#fff;
+}
+
+.tblSmall{
+  width:100%;
+  border-collapse:collapse;
+}
+.tblSmall th, .tblSmall td{
+  padding:8px 6px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+}
+.dotsHead, .dotsCell{
+  text-align:right;
+  white-space:nowrap;
+}
