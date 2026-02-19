@@ -620,12 +620,12 @@ function renderRegs(){
   const list = Object.values(regStats).sort((a,b)=> b.total - a.total);
 
   let html = `
-  <div class="card">
-    <div class="headRow">
-      <a class="btn" href="#" data-view="overview">← Überblick</a>
-      <div class="k">Registrierungen</div>
-      <div class="muted">${items.length} Registrierungen · ${flights.length} Flüge</div>
-    </div>
+    <div class="card">
+      <div class="k headRow">
+        <span>Registrierungen</span>
+        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+      </div>
+
     <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
       <span>${dot("owned",true)} exakt vorhanden</span>
       <span>${dot("owned",false)} Typ+Airline vorhanden</span>
@@ -779,11 +779,10 @@ function renderRoutes(){
 
   let html = `
   <div class="card">
-    <div class="headRow">
-      <a class="btn" href="#" data-view="overview">← Überblick</a>
-      <div class="k">Routen</div>
-      <div class="muted">${items.length} Routen · ${flights.length} Flüge</div>
-    </div>
+      <div class="k headRow">
+        <span>Routen</span>
+        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+      </div>
     
     <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
       <span>${dot("owned",true)} exakt vorhanden</span>
