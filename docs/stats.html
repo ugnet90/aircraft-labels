@@ -893,28 +893,30 @@ function renderRoutes(){
   
     if(isOpen){
       // Flüge dieser Route
-      const rk = asText(s.route); // genau der gleiche Key wie oben: "FROM → TO"
+      const rk = asText(s.route); // Key: "FROM → TO"
       const flightsThis = flights.filter(f => {
         const fr = asText(f.from);
         const to = asText(f.to);
         return (`${fr} → ${to}` === rk);
       });
     
+      // 1) erst sammeln
       const det = [];
       for(const f of flightsThis){
         const a = analyzeFlight(models, f);
     
         let dots = "";
+        let status = ""; // für Sortierung (optional, aber sauber)
         if(a.exactModels.length){
           const hasOwned = a.exactModels.some(m => m.status === "owned");
           const hasOrd   = a.exactModels.some(m => m.status === "ordered");
-          if(hasOwned) dots += dot("owned", true);
-          if(hasOrd)   dots += dot("ordered", true);
+          if(hasOwned){ dots += dot("owned", true); status = status || "owned_exact"; }
+          if(hasOrd){   dots += dot("ordered", true); status = status || "ordered_exact"; }
         }else if(a.airlineTypeModels.length){
           const hasOwned = a.airlineTypeModels.some(m => m.status === "owned");
           const hasOrd   = a.airlineTypeModels.some(m => m.status === "ordered");
-          if(hasOwned) dots += dot("owned", false);
-          if(hasOrd)   dots += dot("ordered", false);
+          if(hasOwned){ dots += dot("owned", false); status = status || "owned_type"; }
+          if(hasOrd){   dots += dot("ordered", false); status = status || "ordered_type"; }
         }
     
         const date = asText(f.date);
@@ -924,13 +926,16 @@ function renderRoutes(){
     
         const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
     
-        det.push({ date, airline, reg, typ, href, dots });
+        det.push({ date, airline, reg, typ, href, dots, status });
       }
     
-      // Detail-Sort (wie bei den anderen): cmpDetail / detailSortKey / detailSortDir
-      det.sort(cmpDetail);
+      // 2) sortieren (wie bei Regs)
+      const dk = detailSortKey || "date";
+      const dd = detailSortDir || "desc";
+      const detSorted = sortBy(det, dk, dd);
     
-      const rows = det.map(x => `
+      // 3) rendern
+      const rows = detSorted.map(x => `
         <tr>
           <td class="mono"><a href="${esc(x.href)}">${esc(x.date)}</a></td>
           <td>${esc(x.airline)}</td>
