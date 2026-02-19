@@ -264,6 +264,9 @@ function renderAirlines(){
     airList = airList.sort((a,b)=> b.total - a.total); // Default
   }
 
+  const viewCount = airList.length;  // oder typeList.length / regList.length / routeList.length
+  const flightCount = flights.length;
+  
   let html = `
     <div class="card">
       <div class="k headRow">
@@ -272,6 +275,7 @@ function renderAirlines(){
       </div>
 
       <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
+        <span>${flightCount} Flüge mit ${viewCount} Airlines</span>
         <span>${dot("owned",true)} exakt vorhanden</span>
         <span>${dot("owned",false)} Typ+Airline vorhanden</span>
         <span>${dot("ordered",true)} exakt bestellt</span>
@@ -290,12 +294,6 @@ function renderAirlines(){
           </tr>
         </thead>
         <tbody>
-  `;
-  
-  const viewCount = airList.length;  // oder typeList.length / regList.length / routeList.length
-  const flightCount = flights.length;
-  html += `
-    <div class="muted">${viewCount} … · ${flightCount} Flüge</div>
   `;
   
   for(const s of airList){
