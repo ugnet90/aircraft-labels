@@ -576,6 +576,174 @@ function renderTypes(){
   html += `</tbody></table></div>`;
   return html;
 }
+
+function renderRegs(){
+  // pro Registrierung zählen (inkl. Abdeckung wie Airlines/Types)
+  const regStats = {}; // key = registration
+
+  for(const f of flights){
+    const reg = asText(f.registration);
+    if(!reg) continue;
+
+    if(!regStats[reg]){
+      regStats[reg] = {
+        reg,
+        total: 0,
+        exactOwned: 0,
+        typeOwned: 0,
+        exactOrdered: 0,
+        typeOrdered: 0,
+      };
+    }
+
+    const s = regStats[reg];
+    s.total++;
+
+    const a = analyzeFlight(models, f);
+
+    if(a.exactModels.length){
+      const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
+      const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+      if(hasOwned) s.exactOwned++;
+      else if(hasOrd) s.exactOrdered++;
+    }else if(a.airlineTypeModels.length){
+      const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
+      const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+      if(hasOwned) s.typeOwned++;
+      else if(hasOrd) s.typeOrdered++;
+    }
+  }
+
+  const list = Object.values(regStats).sort((a,b)=> b.total - a.total);
+
+  let html = `
+  <div class="card">
+    <div class="k">Registrierungen</div>
+
+    <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
+      <span>${dot("owned",true)} exakt vorhanden</span>
+      <span>${dot("owned",false)} Typ+Airline vorhanden</span>
+      <span>${dot("ordered",true)} exakt bestellt</span>
+      <span>${dot("ordered",false)} Typ+Airline bestellt</span>
+    </div>
+
+    <table class="tbl" style="margin-top:10px">
+      <thead>
+        <tr>
+          <th>Reg.</th>
+          <th class="col-num">Flüge</th>
+          <th class="col-num">${dot("owned",true)}</th>
+          <th class="col-num">${dot("owned",false)}</th>
+          <th class="col-num">${dot("ordered",true)}</th>
+          <th class="col-num">${dot("ordered",false)}</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  for(const s of list){
+    const regUrl = `https://airport-data.com/aircraft/${encodeURIComponent(s.reg)}.html`;
+    html += `
+      <tr>
+        <td class="mono">
+          <a href="${esc(regUrl)}" target="_blank" rel="noopener" title="airport-data.com öffnen">${esc(s.reg)}</a>
+        </td>
+        <td class="col-num mono">${s.total}</td>
+        <td class="col-num mono">${s.exactOwned || ""}</td>
+        <td class="col-num mono">${s.typeOwned || ""}</td>
+        <td class="col-num mono">${s.exactOrdered || ""}</td>
+        <td class="col-num mono">${s.typeOrdered || ""}</td>
+      </tr>
+    `;
+  }
+
+  html += `</tbody></table></div>`;
+  return html;
+}
+
+function renderRoutes(){
+  // pro Route zählen (inkl. Abdeckung)
+  const routeStats = {}; // key = "FROM → TO"
+
+  for(const f of flights){
+    const fr = asText(f.from);
+    const to = asText(f.to);
+    if(!fr || !to) continue;
+
+    const key = `${fr} → ${to}`;
+
+    if(!routeStats[key]){
+      routeStats[key] = {
+        route: key,
+        total: 0,
+        exactOwned: 0,
+        typeOwned: 0,
+        exactOrdered: 0,
+        typeOrdered: 0,
+      };
+    }
+
+    const s = routeStats[key];
+    s.total++;
+
+    const a = analyzeFlight(models, f);
+
+    if(a.exactModels.length){
+      const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
+      const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+      if(hasOwned) s.exactOwned++;
+      else if(hasOrd) s.exactOrdered++;
+    }else if(a.airlineTypeModels.length){
+      const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
+      const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+      if(hasOwned) s.typeOwned++;
+      else if(hasOrd) s.typeOrdered++;
+    }
+  }
+
+  const list = Object.values(routeStats).sort((a,b)=> b.total - a.total);
+
+  let html = `
+  <div class="card">
+    <div class="k">Routen</div>
+
+    <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
+      <span>${dot("owned",true)} exakt vorhanden</span>
+      <span>${dot("owned",false)} Typ+Airline vorhanden</span>
+      <span>${dot("ordered",true)} exakt bestellt</span>
+      <span>${dot("ordered",false)} Typ+Airline bestellt</span>
+    </div>
+
+    <table class="tbl" style="margin-top:10px">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th class="col-num">Flüge</th>
+          <th class="col-num">${dot("owned",true)}</th>
+          <th class="col-num">${dot("owned",false)}</th>
+          <th class="col-num">${dot("ordered",true)}</th>
+          <th class="col-num">${dot("ordered",false)}</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  for(const s of list){
+    html += `
+      <tr>
+        <td class="mono">${esc(s.route)}</td>
+        <td class="col-num mono">${s.total}</td>
+        <td class="col-num mono">${s.exactOwned || ""}</td>
+        <td class="col-num mono">${s.typeOwned || ""}</td>
+        <td class="col-num mono">${s.exactOrdered || ""}</td>
+        <td class="col-num mono">${s.typeOrdered || ""}</td>
+      </tr>
+    `;
+  }
+
+  html += `</tbody></table></div>`;
+  return html;
+}
   
 function renderPlaceholder(title){
   return `
@@ -599,8 +767,8 @@ function render(){
   if(view === "overview") html = renderOverview();
   else if(view === "airlines") html = renderAirlines();
   else if(view === "types") html = renderTypes();
-  else if(view === "regs") html = renderPlaceholder("Registrierungen");
-  else if(view === "routes") html = renderPlaceholder("Routen");
+  else if(view === "regs") html = renderRegs();
+  else if(view === "routes") html = renderRoutes();
   else if(view === "time") html = renderPlaceholder("Zeit");
   else html = renderOverview();
 
