@@ -866,12 +866,12 @@ function renderRoutes(){
     <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
-          <th>Route</th>
-          <th class="col-num">Flüge</th>
-          <th class="col-num">${dot("owned",true)}</th>
-          <th class="col-num">${dot("owned",false)}</th>
-          <th class="col-num">${dot("ordered",true)}</th>
-          <th class="col-num">${dot("ordered",false)}</th>
+          <th data-sort="route">Route</th>
+          <th class="col-num" data-sort="total">Flüge</th>
+          <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
+          <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
+          <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
+          <th class="col-num" data-sort="typeOrdered">${dot("ordered",false)}</th>
         </tr>
       </thead>
       <tbody>
