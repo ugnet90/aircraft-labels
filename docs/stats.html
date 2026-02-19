@@ -55,6 +55,30 @@ function esc(s){
 }
 function asText(v){ return (v??"").toString().trim(); }
 
+// global: logo_id -> Anzeige-Airline (aus index.json abgeleitet)
+let airlineNameByLogo = {};
+
+function buildAirlineNameByLogo(models){
+  airlineNameByLogo = {};
+  for(const m of (models || [])){
+    const lid = asText(m.logo_id);
+    if(lid && !airlineNameByLogo[lid]){
+      airlineNameByLogo[lid] =
+        asText(m.airline_row) || asText(m.airline) || asText(m.airline_code) || lid;
+    }
+  }
+}
+
+function flightAirlineLabel(f){
+  const lid = asText(f.logo_id);
+  return (
+    asText(f.airline_row) ||   // falls flights.json das hat
+    asText(f.airline) ||       // falls es wieder reinkommt
+    (lid && airlineNameByLogo[lid]) ||
+    lid
+  );
+}
+
 function setView(v){
   view = v || "overview";
   expandedAir = "";
@@ -983,6 +1007,7 @@ async function init(){
   const resI = await fetch("./index.json",{cache:"no-store"});
   const idx = await resI.json();
   models = idx.items || [];
+  buildAirlineNameByLogo(models);
 
   document.getElementById("meta").textContent = `${flights.length} Flüge`;
 
