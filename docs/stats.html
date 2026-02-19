@@ -446,11 +446,15 @@ function renderTypes(){
     typeList = typeList.sort((a,b)=> b.total - a.total); // Default
   }
 
+  const viewCount = typeList.length;  // airList.length oder typeList.length / regList.length / routeList.length
+  const flightCount = flights.length;
+  
   let html = `
     <div class="card">
       <div class="k headRow">
         <span>Flugzeugtypen</span>
-        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+        <span>${flightCount} Flüge mit insgesamt ${viewCount} Flugzeug-Typen</span>
+        <span><a href="#" class="smallLink" data-view="overview">← Überblick</a></span>
       </div>
 
       <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
@@ -623,11 +627,15 @@ function renderRegs(){
 
   const list = Object.values(regStats).sort((a,b)=> b.total - a.total);
 
+  const viewCount = regList.length;  // airList.length oder typeList.length / regList.length / routeList.length
+  const flightCount = flights.length;
+  
   let html = `
     <div class="card">
       <div class="k headRow">
         <span>Registrierungen</span>
-        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+        <span>${flightCount} Flüge mit insgesamt ${viewCount} Registrierungen</span>
+        <span><a href="#" class="smallLink" data-view="overview">← Überblick</a></span>
       </div>
 
     <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
@@ -670,48 +678,57 @@ function renderRegs(){
     `;
   
     if(isOpen){
-      const flightsThis = flights.filter(f => asText(f.registration) === asText(s.reg));
-  
-      let rows = "";
+      // Flüge dieser Registrierung
+      const regKey = asText(s.registration);
+      const flightsThis = flights.filter(f => asText(f.registration) === regKey);
+    
+      // 1) erst sammeln
+      const det = [];
       for(const f of flightsThis){
         const a = analyzeFlight(models, f);
-  
+    
+        // Status-Dots (deine 4 Logiken)
         let dots = "";
         if(a.exactModels.length){
-          const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
-          const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+          const hasOwned = a.exactModels.some(m => m.status === "owned");
+          const hasOrd   = a.exactModels.some(m => m.status === "ordered");
           if(hasOwned) dots += dot("owned", true);
           if(hasOrd)   dots += dot("ordered", true);
         }else if(a.airlineTypeModels.length){
-          const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
-          const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+          const hasOwned = a.airlineTypeModels.some(m => m.status === "owned");
+          const hasOrd   = a.airlineTypeModels.some(m => m.status === "ordered");
           if(hasOwned) dots += dot("owned", false);
           if(hasOrd)   dots += dot("ordered", false);
         }
-  
+    
         const date = asText(f.date);
         const from = asText(f.from);
         const to   = asText(f.to);
-        const route = [from,to].filter(Boolean).join(" → ");
-  
-        const air = (typeof flightAirlineLabel === "function")
-          ? flightAirlineLabel(f)
-          : (asText(f.airline_row) || asText(f.airline) || asText(f.logo_id));
-  
+        const route = `${from} → ${to}`;
+        const airline = flightAirlineLabel(f);
         const typ = asText(f.typ_anzeige) || asText(f.aircraft_id);
         const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
-  
-        rows += `
-          <tr>
-            <td class="mono"><a href="${esc(href)}">${esc(date)}</a></td>
-            <td class="mono">${esc(route)}</td>
-            <td>${esc(air)}</td>
-            <td>${esc(typ)}</td>
-            <td class="dotsCell">${dots}</td>
-          </tr>
-        `;
+    
+        det.push({
+          date, route, airline, typ,
+          href, dots
+        });
       }
-  
+    
+      // 2) sortieren (detailSortKey/detailSortDir + cmpDetail müssen existieren)
+      det.sort(cmpDetail);
+    
+      // 3) rendern
+      const rows = det.map(x => `
+        <tr>
+          <td class="mono"><a href="${esc(x.href)}">${esc(x.date)}</a></td>
+          <td class="mono">${esc(x.route)}</td>
+          <td>${esc(x.airline)}</td>
+          <td>${esc(x.typ)}</td>
+          <td class="dotsCell">${x.dots}</td>
+        </tr>
+      `).join("");
+    
       html += `
         <tr class="rowDetail">
           <td colspan="6">
@@ -719,10 +736,10 @@ function renderRegs(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th>Datum</th>
-                    <th>Route</th>
-                    <th>Airline</th>
-                    <th>Typ</th>
+                    <th data-sort="date">Datum</th>
+                    <th data-sort="route">Route</th>
+                    <th data-sort="airline">Airline</th>
+                    <th data-sort="typ">Typ</th>
                     <th class="dotsHead">Status</th>
                   </tr>
                 </thead>
@@ -781,11 +798,15 @@ function renderRoutes(){
 
   const list = Object.values(routeStats).sort((a,b)=> b.total - a.total);
 
+  const viewCount = routeList.length;  // airList.length oder typeList.length / regList.length / routeList.length
+  const flightCount = flights.length;
+  
   let html = `
   <div class="card">
       <div class="k headRow">
         <span>Routen</span>
-        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+        <span>${flightCount} Flüge auf insgesamt ${viewCount} Routen</span>
+        <span><a href="#" class="smallLink" data-view="overview">← Überblick</a></span>
       </div>
     
     <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
@@ -824,51 +845,56 @@ function renderRoutes(){
     `;
   
     if(isOpen){
-      const flightsThis = flights.filter(f => {
-        const fr = asText(f.from);
-        const to = asText(f.to);
-        const key = `${fr} → ${to}`;
-        return asText(key) === asText(s.route);
-      });
-  
-      let rows = "";
+      // Flüge dieser Route (s.route_key muss deinem Gruppierungsschlüssel entsprechen)
+      const rk = asText(s.route_key);
+      const flightsThis = flights.filter(f => (asText(f.from) + "→" + asText(f.to)) === rk);
+    
+      const det = [];
       for(const f of flightsThis){
         const a = analyzeFlight(models, f);
-  
+    
         let dots = "";
         if(a.exactModels.length){
-          const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
-          const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+          const hasOwned = a.exactModels.some(m => m.status === "owned");
+          const hasOrd   = a.exactModels.some(m => m.status === "ordered");
           if(hasOwned) dots += dot("owned", true);
           if(hasOrd)   dots += dot("ordered", true);
         }else if(a.airlineTypeModels.length){
-          const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
-          const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+          const hasOwned = a.airlineTypeModels.some(m => m.status === "owned");
+          const hasOrd   = a.airlineTypeModels.some(m => m.status === "ordered");
           if(hasOwned) dots += dot("owned", false);
           if(hasOrd)   dots += dot("ordered", false);
         }
-  
+    
         const date = asText(f.date);
+        const airline = flightAirlineLabel(f);
         const reg  = asText(f.registration);
-  
-        const air = (typeof flightAirlineLabel === "function")
-          ? flightAirlineLabel(f)
-          : (asText(f.airline_row) || asText(f.airline) || asText(f.logo_id));
-  
         const typ  = asText(f.typ_anzeige) || asText(f.aircraft_id);
+    
+        const from = asText(f.from);
+        const to   = asText(f.to);
+        const route = `${from} → ${to}`;
+    
         const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
-  
-        rows += `
-          <tr>
-            <td class="mono"><a href="${esc(href)}">${esc(date)}</a></td>
-            <td>${esc(air)}</td>
-            <td class="mono">${esc(reg)}</td>
-            <td>${esc(typ)}</td>
-            <td class="dotsCell">${dots}</td>
-          </tr>
-        `;
+    
+        det.push({
+          date, route, airline, reg, typ,
+          href, dots
+        });
       }
-  
+    
+      det.sort(cmpDetail);
+    
+      const rows = det.map(x => `
+        <tr>
+          <td class="mono"><a href="${esc(x.href)}">${esc(x.date)}</a></td>
+          <td>${esc(x.airline)}</td>
+          <td class="mono">${esc(x.reg)}</td>
+          <td>${esc(x.typ)}</td>
+          <td class="dotsCell">${x.dots}</td>
+        </tr>
+      `).join("");
+    
       html += `
         <tr class="rowDetail">
           <td colspan="6">
@@ -876,10 +902,10 @@ function renderRoutes(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th>Datum</th>
-                    <th>Airline</th>
-                    <th>Reg.</th>
-                    <th>Typ</th>
+                    <th data-sort="date">Datum</th>
+                    <th data-sort="airline">Airline</th>
+                    <th data-sort="reg">Reg.</th>
+                    <th data-sort="typ">Typ</th>
                     <th class="dotsHead">Status</th>
                   </tr>
                 </thead>
