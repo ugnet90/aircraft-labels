@@ -38,6 +38,9 @@ let view = (location.hash || "#overview").replace("#","") || "overview";
 
 let expandedAir = "";         // logo_id der aktuell aufgeklappten Airline
 let expandedType = "";        // aircraft_id der aktuell aufgeklappten Type-Zeile
+let expandedReg = "";
+let expandedRoute = "";
+
 
 let handlerInstalled = false;
   
@@ -642,9 +645,12 @@ function renderRegs(){
   `;
 
   for(const s of list){
+    const isOpen = (expandedReg === s.reg);
+  
     const regUrl = `https://airport-data.com/aircraft/${encodeURIComponent(s.reg)}.html`;
+  
     html += `
-      <tr>
+      <tr class="regRow ${isOpen ? "open" : ""}" data-reg="${esc(s.reg)}">
         <td class="mono">
           <a href="${esc(regUrl)}" target="_blank" rel="noopener" title="airport-data.com öffnen">${esc(s.reg)}</a>
         </td>
@@ -655,6 +661,71 @@ function renderRegs(){
         <td class="col-num mono">${s.typeOrdered || ""}</td>
       </tr>
     `;
+  
+    if(isOpen){
+      const flightsThis = flights.filter(f => asText(f.registration) === asText(s.reg));
+  
+      let rows = "";
+      for(const f of flightsThis){
+        const a = analyzeFlight(models, f);
+  
+        let dots = "";
+        if(a.exactModels.length){
+          const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
+          const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+          if(hasOwned) dots += dot("owned", true);
+          if(hasOrd)   dots += dot("ordered", true);
+        }else if(a.airlineTypeModels.length){
+          const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
+          const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+          if(hasOwned) dots += dot("owned", false);
+          if(hasOrd)   dots += dot("ordered", false);
+        }
+  
+        const date = asText(f.date);
+        const from = asText(f.from);
+        const to   = asText(f.to);
+        const route = [from,to].filter(Boolean).join(" → ");
+  
+        const air = (typeof flightAirlineLabel === "function")
+          ? flightAirlineLabel(f)
+          : (asText(f.airline_row) || asText(f.airline) || asText(f.logo_id));
+  
+        const typ = asText(f.typ_anzeige) || asText(f.aircraft_id);
+        const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
+  
+        rows += `
+          <tr>
+            <td class="mono"><a href="${esc(href)}">${esc(date)}</a></td>
+            <td class="mono">${esc(route)}</td>
+            <td>${esc(air)}</td>
+            <td>${esc(typ)}</td>
+            <td class="dotsCell">${dots}</td>
+          </tr>
+        `;
+      }
+  
+      html += `
+        <tr class="rowDetail">
+          <td colspan="6">
+            <div class="detailBox">
+              <table class="tblSmall">
+                <thead>
+                  <tr>
+                    <th>Datum</th>
+                    <th>Route</th>
+                    <th>Airline</th>
+                    <th>Typ</th>
+                    <th class="dotsHead">Status</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      `;
+    }
   }
 
   html += `</tbody></table></div>`;
@@ -729,8 +800,10 @@ function renderRoutes(){
   `;
 
   for(const s of list){
+    const isOpen = (expandedRoute === s.route);
+  
     html += `
-      <tr>
+      <tr class="routeRow ${isOpen ? "open" : ""}" data-route="${esc(s.route)}">
         <td class="mono">${esc(s.route)}</td>
         <td class="col-num mono">${s.total}</td>
         <td class="col-num mono">${s.exactOwned || ""}</td>
@@ -739,6 +812,74 @@ function renderRoutes(){
         <td class="col-num mono">${s.typeOrdered || ""}</td>
       </tr>
     `;
+  
+    if(isOpen){
+      const flightsThis = flights.filter(f => {
+        const fr = asText(f.from);
+        const to = asText(f.to);
+        const key = `${fr} → ${to}`;
+        return asText(key) === asText(s.route);
+      });
+  
+      let rows = "";
+      for(const f of flightsThis){
+        const a = analyzeFlight(models, f);
+  
+        let dots = "";
+        if(a.exactModels.length){
+          const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
+          const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+          if(hasOwned) dots += dot("owned", true);
+          if(hasOrd)   dots += dot("ordered", true);
+        }else if(a.airlineTypeModels.length){
+          const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
+          const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+          if(hasOwned) dots += dot("owned", false);
+          if(hasOrd)   dots += dot("ordered", false);
+        }
+  
+        const date = asText(f.date);
+        const reg  = asText(f.registration);
+  
+        const air = (typeof flightAirlineLabel === "function")
+          ? flightAirlineLabel(f)
+          : (asText(f.airline_row) || asText(f.airline) || asText(f.logo_id));
+  
+        const typ  = asText(f.typ_anzeige) || asText(f.aircraft_id);
+        const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
+  
+        rows += `
+          <tr>
+            <td class="mono"><a href="${esc(href)}">${esc(date)}</a></td>
+            <td>${esc(air)}</td>
+            <td class="mono">${esc(reg)}</td>
+            <td>${esc(typ)}</td>
+            <td class="dotsCell">${dots}</td>
+          </tr>
+        `;
+      }
+  
+      html += `
+        <tr class="rowDetail">
+          <td colspan="6">
+            <div class="detailBox">
+              <table class="tblSmall">
+                <thead>
+                  <tr>
+                    <th>Datum</th>
+                    <th>Airline</th>
+                    <th>Reg.</th>
+                    <th>Typ</th>
+                    <th class="dotsHead">Status</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      `;
+    }
   }
 
   html += `</tbody></table></div>`;
@@ -839,6 +980,27 @@ async function init(){
         render();
         return;
       }
+      
+      if(view === "regs"){
+        const trR = ev.target.closest("tr.regRow");
+        if(!trR) return;
+
+        const key = trR.getAttribute("data-reg") || "";
+        expandedReg = (expandedReg === key) ? "" : key;
+        render();
+        return;
+      }
+
+      if(view === "routes"){
+        const trRoute = ev.target.closest("tr.routeRow");
+        if(!trRoute) return;
+
+        const key = trRoute.getAttribute("data-route") || "";
+        expandedRoute = (expandedRoute === key) ? "" : key;
+        render();
+        return;
+      }
+      
     });
   }
 }
