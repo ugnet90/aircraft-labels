@@ -122,8 +122,7 @@ async function main(){
   const resI = await fetch("./index.json",{cache:"no-store"});
   const idx = await resI.json();
   const models = idx.items || [];
-  
-  const logoMap = await fetchCsvMapLogoToAirline();
+
   //logoMap = await fetchCsvMapLogoToAirline();
   
   // logo_id -> Anzeige-Airline (aus index.json abgeleitet)
@@ -138,8 +137,8 @@ async function main(){
   function flightAirlineLabel(f){
     const lid = asText(f.logo_id);
     return (
-      asText(f.airline) ||
-      (lid && logoMap[lid]) ||
+      asText(f.airline_row) ||     // wenn flights.json das hat -> perfekt
+      asText(f.airline) ||         // falls du es doch mal wieder einführst
       (lid && airlineNameByLogo[lid]) ||
       lid
     );
@@ -150,7 +149,7 @@ async function main(){
 
   // --- OVERVIEW ---
 
-  const airlines = flights.map(f=>asText(f.airline_row));
+  const airlines = flights.map(f => flightAirlineLabel(f));
   const types = flights.map(f=>asText(f.aircraft_id));
   const regs = flights.map(f=>asText(f.registration));
   const routes = flights.map(f=>asText(f.from)+"-"+asText(f.to));
