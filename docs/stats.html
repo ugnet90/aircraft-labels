@@ -892,9 +892,13 @@ function renderRoutes(){
     `;
   
     if(isOpen){
-      // Flüge dieser Route (s.route_key muss deinem Gruppierungsschlüssel entsprechen)
-      const rk = asText(s.route_key);
-      const flightsThis = flights.filter(f => (asText(f.from) + "→" + asText(f.to)) === rk);
+      // Flüge dieser Route
+      const rk = asText(s.route); // genau der gleiche Key wie oben: "FROM → TO"
+      const flightsThis = flights.filter(f => {
+        const fr = asText(f.from);
+        const to = asText(f.to);
+        return (`${fr} → ${to}` === rk);
+      });
     
       const det = [];
       for(const f of flightsThis){
@@ -918,18 +922,12 @@ function renderRoutes(){
         const reg  = asText(f.registration);
         const typ  = asText(f.typ_anzeige) || asText(f.aircraft_id);
     
-        const from = asText(f.from);
-        const to   = asText(f.to);
-        const route = `${from} → ${to}`;
-    
         const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
     
-        det.push({
-          date, route, airline, reg, typ,
-          href, dots
-        });
+        det.push({ date, airline, reg, typ, href, dots });
       }
     
+      // Detail-Sort (wie bei den anderen): cmpDetail / detailSortKey / detailSortDir
       det.sort(cmpDetail);
     
       const rows = det.map(x => `
@@ -953,7 +951,7 @@ function renderRoutes(){
                     <th data-sort="airline">Airline</th>
                     <th data-sort="reg">Reg.</th>
                     <th data-sort="typ">Typ</th>
-                    <th class="dotsHead">Status</th>
+                    <th class="dotsHead" data-sort="status">Status</th>
                   </tr>
                 </thead>
                 <tbody>${rows}</tbody>
