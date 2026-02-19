@@ -123,3 +123,9 @@ tr.airRow.open td,
 tr.typeRow.open td{
   background:#fafafa;
 }
+
+.coverageBig{
+  font-size: 14px;     /* gleiche “Optik-Klasse” wie KPI */
+  color:#111;
+}
+.coverageBig .mono{ font-family: inherit; }  /* falls irgendwo mono reingrätscht */
