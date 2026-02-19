@@ -291,7 +291,13 @@ function renderAirlines(){
         </thead>
         <tbody>
   `;
-
+  
+  const viewCount = airList.length;  // oder typeList.length / regList.length / routeList.length
+  const flightCount = flights.length;
+  html += `
+    <div class="muted">${viewCount} … · ${flightCount} Flüge</div>
+  `;
+  
   for(const s of airList){
     const isOpen = expandedAir === s.logo_id;
 
