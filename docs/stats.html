@@ -192,37 +192,96 @@ async function main(){
   </div>
   `;
 
-  // --- AIRLINE LIST ---
+  // --- AIRLINES (vollständig mit Abdeckung) ---
 
-  const airlineMap = {};
+  // Anzeige-Name für logo_id aus index.json (Models) ableiten
+  const logoName = {};
+  for(const m of models){
+    const lid = asText(m.logo_id);
+    if(!lid) continue;
+    const name = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code);
+    if(name && !logoName[lid]) logoName[lid] = name;
+  }
+
+  function flightAirlineLabel(f){
+    const lid = asText(f.logo_id);
+    return asText(f.airline_row) || asText(f.airline) || (lid && logoName[lid]) || lid;
+  }
+
+  // pro Airline zählen
+  const airStats = {}; // key=logo_id
   flights.forEach(f=>{
-    const k = flightAirlineLabel(f);
-    airlineMap[k] = (airlineMap[k]||0)+1;
+    const k = asText(f.logo_id) || "";
+    if(!k) return;
+
+    if(!airStats[k]){
+      airStats[k] = {
+        logo_id: k,
+        label: flightAirlineLabel(f),
+        total: 0,
+        exactOwned: 0,
+        typeOwned: 0,
+        exactOrdered: 0,
+        typeOrdered: 0,
+      };
+    }
+    const s = airStats[k];
+    s.total++;
+
+    const a = analyzeFlight(models, f);
+
+    if(a.exactModels.length){
+      const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
+      const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
+      if(hasOwned) s.exactOwned++;
+      else if(hasOrd) s.exactOrdered++;
+    }else if(a.airlineTypeModels.length){
+      const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
+      const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
+      if(hasOwned) s.typeOwned++;
+      else if(hasOrd) s.typeOrdered++;
+    }
   });
+
+  const airList = Object.values(airStats).sort((a,b)=> b.total - a.total);
 
   html += `
   <div class="card">
     <div class="k">Airlines</div>
-    <table class="tbl">
+
+    <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
+      <span>${dot("owned",true)} exakt vorhanden</span>
+      <span>${dot("owned",false)} Typ+Airline vorhanden</span>
+      <span>${dot("ordered",true)} exakt bestellt</span>
+      <span>${dot("ordered",false)} Typ+Airline bestellt</span>
+    </div>
+
+    <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
           <th>Airline</th>
           <th class="col-num">Flüge</th>
+          <th class="col-num">${dot("owned",true)}</th>
+          <th class="col-num">${dot("owned",false)}</th>
+          <th class="col-num">${dot("ordered",true)}</th>
+          <th class="col-num">${dot("ordered",false)}</th>
         </tr>
       </thead>
       <tbody>
   `;
 
-  Object.entries(airlineMap)
-    .sort((a,b)=>b[1]-a[1])
-    .forEach(([k,v])=>{
-      html += `
-        <tr>
-          <td>${esc(k)}</td>
-          <td class="col-num mono">${v}</td>
-        </tr>
-      `;
-    });
+  for(const s of airList){
+    html += `
+      <tr>
+        <td>${esc(s.label || s.logo_id)}</td>
+        <td class="col-num mono">${s.total}</td>
+        <td class="col-num mono">${s.exactOwned || ""}</td>
+        <td class="col-num mono">${s.typeOwned || ""}</td>
+        <td class="col-num mono">${s.exactOrdered || ""}</td>
+        <td class="col-num mono">${s.typeOrdered || ""}</td>
+      </tr>
+    `;
+  }
 
   html += `</tbody></table></div>`;
 
