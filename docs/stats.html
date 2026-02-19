@@ -31,6 +31,17 @@
 
 <script>
 //let logoMap = {};
+let STATE = {
+  expandedAir: "",   // logo_id
+  expandedCat: "",   // "", "exact_owned", "type_owned", "exact_ordered", "type_ordered"
+};
+
+let CACHE = {
+  flights: [],
+  models: [],
+  logoName: {}, // logo_id -> "Airline"
+  airlineStats: [], // render-ready array
+};
 
 function esc(s){
   return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -192,98 +203,291 @@ async function main(){
   </div>
   `;
 
-  // --- AIRLINES (vollständig mit Abdeckung) ---
-
-  // Anzeige-Name für logo_id aus index.json (Models) ableiten
-  const logoName = {};
-  for(const m of models){
-    const lid = asText(m.logo_id);
-    if(!lid) continue;
-    const name = asText(m.airline_row) || asText(m.airline) || asText(m.airline_code);
-    if(name && !logoName[lid]) logoName[lid] = name;
-  }
-
-  function flightAirlineLabel(f){
-    const lid = asText(f.logo_id);
-    return asText(f.airline_row) || asText(f.airline) || (lid && logoName[lid]) || lid;
-  }
-
-  // pro Airline zählen
-  const airStats = {}; // key=logo_id
-  flights.forEach(f=>{
-    const k = asText(f.logo_id) || "";
-    if(!k) return;
-
-    if(!airStats[k]){
-      airStats[k] = {
-        logo_id: k,
-        label: flightAirlineLabel(f),
-        total: 0,
-        exactOwned: 0,
-        typeOwned: 0,
-        exactOrdered: 0,
-        typeOrdered: 0,
-      };
+  // --- AIRLINES (mit Drilldown) ---
+  
+  // logo_id -> Airline-Name (aus index.json, weil flights.json nicht mehr "airline" enthält)
+  function buildLogoName(models){
+    const m = {};
+    for(const x of models){
+      const lid = asText(x.logo_id);
+      if(!lid) continue;
+      const name = asText(x.airline_row) || asText(x.airline) || asText(x.airline_code);
+      if(name && !m[lid]) m[lid] = name;
     }
-    const s = airStats[k];
-    s.total++;
-
+    return m;
+  }
+  
+  function uniq(arr){
+    return Array.from(new Set(arr.filter(Boolean)));
+  }
+  
+  // Coverage je Flug (entspricht deinem Punkt-Design)
+  function covOfFlight(models, f){
     const a = analyzeFlight(models, f);
-
+  
+    // exact
     if(a.exactModels.length){
-      const hasOwned = a.exactModels.some(m => modelStatus(m).key === "owned");
-      const hasOrd   = a.exactModels.some(m => modelStatus(m).key === "ordered");
-      if(hasOwned) s.exactOwned++;
-      else if(hasOrd) s.exactOrdered++;
-    }else if(a.airlineTypeModels.length){
-      const hasOwned = a.airlineTypeModels.some(m => modelStatus(m).key === "owned");
-      const hasOrd   = a.airlineTypeModels.some(m => modelStatus(m).key === "ordered");
-      if(hasOwned) s.typeOwned++;
-      else if(hasOrd) s.typeOrdered++;
+      const owned = a.exactModels.some(m => asText(m.status)==="owned");
+      const ordered = a.exactModels.some(m => asText(m.status)==="ordered");
+      if(owned)   return {cat:"exact_owned",   models: a.exactModels.filter(m=>asText(m.status)==="owned")};
+      if(ordered) return {cat:"exact_ordered", models: a.exactModels.filter(m=>asText(m.status)==="ordered")};
     }
-  });
-
-  const airList = Object.values(airStats).sort((a,b)=> b.total - a.total);
-
-  html += `
-  <div class="card">
-    <div class="k">Airlines</div>
-
-    <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
-      <span>${dot("owned",true)} exakt vorhanden</span>
-      <span>${dot("owned",false)} Typ+Airline vorhanden</span>
-      <span>${dot("ordered",true)} exakt bestellt</span>
-      <span>${dot("ordered",false)} Typ+Airline bestellt</span>
-    </div>
-
-    <table class="tbl" style="margin-top:10px">
-      <thead>
+  
+    // airline+type
+    if(a.airlineTypeModels.length){
+      const owned = a.airlineTypeModels.some(m => asText(m.status)==="owned");
+      const ordered = a.airlineTypeModels.some(m => asText(m.status)==="ordered");
+      if(owned)   return {cat:"type_owned",   models: a.airlineTypeModels.filter(m=>asText(m.status)==="owned")};
+      if(ordered) return {cat:"type_ordered", models: a.airlineTypeModels.filter(m=>asText(m.status)==="ordered")};
+    }
+  
+    return {cat:"none", models: []};
+  }
+  
+  function dotHtml(cat){
+    if(cat==="exact_owned")   return dot("owned", true);
+    if(cat==="type_owned")    return dot("owned", false);
+    if(cat==="exact_ordered") return dot("ordered", true);
+    if(cat==="type_ordered")  return dot("ordered", false);
+    return "";
+  }
+  
+  function airlineLabel(logoId){
+    return CACHE.logoName[logoId] || logoId;
+  }
+  
+  function buildAirlineStats(){
+    const map = new Map();
+  
+    for(const f of CACHE.flights){
+      const lid = asText(f.logo_id);
+      if(!lid) continue;
+  
+      const cov = covOfFlight(CACHE.models, f);
+      f.__cov = cov;
+  
+      if(!map.has(lid)){
+        map.set(lid, {
+          logo_id: lid,
+          flights: [],
+          total: 0,
+          exact_owned: 0,
+          type_owned: 0,
+          exact_ordered: 0,
+          type_ordered: 0,
+        });
+      }
+  
+      const s = map.get(lid);
+      s.flights.push(f);
+      s.total++;
+  
+      if(cov.cat && cov.cat !== "none"){
+        s[cov.cat] = (s[cov.cat] || 0) + 1;
+      }
+    }
+  
+    const arr = Array.from(map.values());
+    arr.sort((a,b)=>b.total - a.total);
+    return arr;
+  }
+  
+  function flightSortDesc(a,b){
+    // date desc, time desc (gleiches Verhalten wie flights.html)
+    const da = asText(a.date), db = asText(b.date);
+    if(da !== db) return db.localeCompare(da);
+    const ta = formatTimeExcel(asText(a.time)), tb = formatTimeExcel(asText(b.time));
+    return tb.localeCompare(ta);
+  }
+  
+  function renderAirlineDetail(s){
+    const cat = STATE.expandedCat;
+    const all = s.flights.slice().sort(flightSortDesc);
+  
+    const filtered = cat
+      ? all.filter(f => f.__cov && f.__cov.cat === cat)
+      : all;
+  
+    // Modelle (unique) aus den Flights dieser Auswahl
+    const models = [];
+    for(const f of filtered){
+      const ms = (f.__cov && Array.isArray(f.__cov.models)) ? f.__cov.models : [];
+      for(const m of ms){
+        const mid = asText(m.model_id);
+        if(mid) models.push(m);
+      }
+    }
+  
+    const uniqModelIds = uniq(models.map(m=>asText(m.model_id)));
+    const modelRows = uniqModelIds.map(mid=>{
+      const m = models.find(x=>asText(x.model_id)===mid) || {};
+      const st = asText(m.status);
+      const isExact = true; // in Detail-„Modelle“-Liste sind wir ohnehin in einer konkreten Kategorie
+      const dotM = (st==="owned") ? dot("owned", isExact) : (st==="ordered") ? dot("ordered", isExact) : "";
+      return `
         <tr>
-          <th>Airline</th>
-          <th class="col-num">Flüge</th>
-          <th class="col-num">${dot("owned",true)}</th>
-          <th class="col-num">${dot("owned",false)}</th>
-          <th class="col-num">${dot("ordered",true)}</th>
-          <th class="col-num">${dot("ordered",false)}</th>
+          <td class="mono"><a href="./model.html?id=${esc(mid)}">${esc(mid)}</a></td>
+          <td class="mono">${esc(asText(m.registration))}</td>
+          <td class="dDots">${dotM}</td>
         </tr>
-      </thead>
-      <tbody>
-  `;
-
-  for(const s of airList){
-    html += `
-      <tr>
-        <td>${esc(s.label || s.logo_id)}</td>
-        <td class="col-num mono">${s.total}</td>
-        <td class="col-num mono">${s.exactOwned || ""}</td>
-        <td class="col-num mono">${s.typeOwned || ""}</td>
-        <td class="col-num mono">${s.exactOrdered || ""}</td>
-        <td class="col-num mono">${s.typeOrdered || ""}</td>
-      </tr>
+      `;
+    }).join("");
+  
+    const flightsRows = filtered.map(f=>{
+      const date = formatDateDE(asText(f.date));
+      const time = formatTimeExcel(asText(f.time));
+      const route = [asText(f.from), asText(f.to)].filter(Boolean).join(" → ");
+      const reg = asText(f.registration);
+      const typ = asText(f.typ_anzeige) || asText(f.aircraft_id);
+      const covDot = dotHtml(f.__cov?.cat || "");
+  
+      const href = `./flight.html?id=${encodeURIComponent(asText(f.flight_id))}`;
+      return `
+        <tr>
+          <td class="mono"><a href="${esc(href)}">${esc(date)}${time ? " " + esc(time) : ""}</a></td>
+          <td class="mono">${esc(route)}</td>
+          <td class="mono">${esc(asText(f.flight_no))}</td>
+          <td class="mono">${esc(reg)}</td>
+          <td>${esc(typ)}</td>
+          <td class="dDots">${covDot}</td>
+        </tr>
+      `;
+    }).join("");
+  
+    const title =
+      (cat==="exact_owned") ? "Exakt vorhanden (Typ+Airline+Reg)" :
+      (cat==="type_owned") ? "Typ+Airline vorhanden" :
+      (cat==="exact_ordered") ? "Exakt bestellt (Typ+Airline+Reg)" :
+      (cat==="type_ordered") ? "Typ+Airline bestellt" :
+      "Alle Flüge dieser Airline";
+  
+    return `
+      <div class="detailBox">
+        <div class="detailTitle">${esc(title)} · ${filtered.length} Flüge</div>
+  
+        <table class="detailTbl">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Route</th>
+              <th>Flug</th>
+              <th>Reg.</th>
+              <th>Typ</th>
+              <th class="dDots">Status</th>
+            </tr>
+          </thead>
+          <tbody>${flightsRows || `<tr><td colspan="6" class="muted">Keine Treffer.</td></tr>`}</tbody>
+        </table>
+  
+        ${
+          cat
+            ? `
+              <div class="detailTitle" style="margin-top:12px">Modelle (konkret)</div>
+              <table class="detailTbl">
+                <thead>
+                  <tr>
+                    <th>Modell-ID</th>
+                    <th>Reg.</th>
+                    <th class="dDots">Status</th>
+                  </tr>
+                </thead>
+                <tbody>${modelRows || `<tr><td colspan="3" class="muted">Keine Modelle.</td></tr>`}</tbody>
+              </table>
+            `
+            : ``
+        }
+      </div>
     `;
   }
-
-  html += `</tbody></table></div>`;
+  
+  function renderAirlinesTable(){
+    const stats = CACHE.airlineStats;
+  
+    let out = `
+    <div class="card">
+      <div class="k">Airlines</div>
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>Airline</th>
+            <th class="col-num">Flüge</th>
+            <th class="col-num">${dot("owned",true)} exakt</th>
+            <th class="col-num">${dot("owned",false)} Typ+Air</th>
+            <th class="col-num">${dot("ordered",true)} exakt</th>
+            <th class="col-num">${dot("ordered",false)} Typ+Air</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+  
+    for(const s of stats){
+      const lid = s.logo_id;
+      const isOpen = (STATE.expandedAir === lid);
+  
+      const cell = (cat, n) => {
+        const val = n || 0;
+        if(!val) return `<span class="muted">–</span>`;
+        return `<a class="numLink" href="#" data-air="${esc(lid)}" data-cat="${esc(cat)}">${val}</a>`;
+      };
+  
+      out += `
+        <tr class="rowMain ${isOpen ? "open" : ""}">
+          <td>
+            <a class="airLink" href="#" data-air="${esc(lid)}" data-cat="">${esc(airlineLabel(lid))}</a>
+            <div class="muted mono">${esc(lid)}</div>
+          </td>
+          <td class="col-num mono">${s.total}</td>
+          <td class="col-num mono">${cell("exact_owned", s.exact_owned)}</td>
+          <td class="col-num mono">${cell("type_owned", s.type_owned)}</td>
+          <td class="col-num mono">${cell("exact_ordered", s.exact_ordered)}</td>
+          <td class="col-num mono">${cell("type_ordered", s.type_ordered)}</td>
+        </tr>
+      `;
+  
+      if(isOpen){
+        out += `
+          <tr class="rowDetail">
+            <td colspan="6">
+              ${renderAirlineDetail(s)}
+            </td>
+          </tr>
+        `;
+      }
+    }
+  
+    out += `</tbody></table></div>`;
+    return out;
+  }
+  
+  // build + render
+  CACHE.logoName = buildLogoName(models);
+  CACHE.flights = flights;
+  CACHE.models = models;
+  CACHE.airlineStats = buildAirlineStats();
+  
+  html += renderAirlinesTable();
+  
+  // Click handling: nur 1 Airline offen
+  document.addEventListener("click", (ev)=>{
+    const a = ev.target.closest("a[data-air]");
+    if(!a) return;
+    ev.preventDefault();
+  
+    const air = a.getAttribute("data-air") || "";
+    const cat = a.getAttribute("data-cat") || "";
+  
+    // Toggle (gleiche Airline + cat leer) -> zuklappen
+    if(STATE.expandedAir === air && !cat){
+      STATE.expandedAir = "";
+      STATE.expandedCat = "";
+    }else{
+      STATE.expandedAir = air;
+      STATE.expandedCat = cat; // "" oder eine Kategorie
+    }
+  
+    // neu rendern: Overview + Airlines
+    renderStats(CACHE.flights, CACHE.models);
+  });
 
   document.getElementById("content").innerHTML = html;
 }
