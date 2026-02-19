@@ -86,3 +86,35 @@ tr.rowDetail td{
   text-align:right;
   white-space:nowrap;
 }
+
+/* Links ohne Unterstrich (Stats) */
+#content a{
+  color:#000;
+  text-decoration:none;
+}
+#content a:hover{
+  text-decoration:none;
+}
+
+/* KPI Links wie Text, aber klickbar */
+.kpiLink{
+  cursor:pointer;
+}
+
+/* kleiner Zurück-Link */
+.smallLink{
+  font-size:12px;
+  color:#000;
+  text-decoration:none;
+  opacity:.85;
+}
+.smallLink:hover{ opacity:1; }
+
+/* Optional: HeadRow (Titel + Back-Link in einer Zeile) */
+.headRow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
