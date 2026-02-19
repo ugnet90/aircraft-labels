@@ -665,7 +665,7 @@ function renderRegs(){
       <tbody>
   `;
 
-  for(const s of list){
+  for(const s of regList){
     const isOpen = (expandedReg === s.reg);
   
     const regUrl = `https://airport-data.com/aircraft/${encodeURIComponent(s.reg)}.html`;
@@ -842,7 +842,7 @@ function renderRoutes(){
       <tbody>
   `;
 
-  for(const s of list){
+  for(const s of routeList){
     const isOpen = (expandedRoute === s.route);
   
     html += `
