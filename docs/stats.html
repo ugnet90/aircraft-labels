@@ -30,10 +30,41 @@
 <div id="content">Lade Daten …</div>
 
 <script>
+let logoMap = {};
+
 function esc(s){
   return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
 function asText(v){ return (v??"").toString().trim(); }
+
+async function fetchCsvMapLogoToAirline(){
+  const res = await fetch("./data/airline_logos.csv", {cache:"no-store"});
+  if(!res.ok) throw new Error(`airline_logos.csv HTTP ${res.status}`);
+
+  const text = await res.text();
+
+  // ; getrennt, 1. Zeile Header: logo_id;Airline;...
+  const lines = text.split(/\r?\n/).filter(x => x.trim() !== "");
+  if(lines.length < 2) return {};
+
+  const header = lines[0].split(";").map(x => x.trim());
+  const idxLogo = header.indexOf("logo_id");
+  const idxAir  = header.indexOf("Airline");     // wichtig: genau "Airline"
+  const idxFull = header.indexOf("full_name");   // optional
+
+  const map = {};
+  for(let i=1;i<lines.length;i++){
+    const cols = lines[i].split(";");
+
+    const logo = (cols[idxLogo] || "").trim();
+    const air  = (cols[idxAir]  || "").trim();
+    const full = idxFull >= 0 ? (cols[idxFull] || "").trim() : "";
+
+    if(!logo) continue;
+    map[logo] = air || full || logo;
+  }
+  return map;
+}
 
 function dot(key, filled){
   const cls = key === "owned"
@@ -92,6 +123,9 @@ async function main(){
   const idx = await resI.json();
   const models = idx.items || [];
   
+  // const logoMap = await fetchCsvMapLogoToAirline();
+  logoMap = await fetchCsvMapLogoToAirline();
+  
   // logo_id -> Anzeige-Airline (aus index.json abgeleitet)
   const airlineNameByLogo = {};
   for(const m of models){
@@ -102,10 +136,14 @@ async function main(){
   }
   
   function flightAirlineLabel(f){
-    // falls flights.json irgendwann wieder airline enthält, nutzt es das
-    return asText(f.airline) || airlineNameByLogo[asText(f.logo_id)] || asText(f.logo_id);
+    const lid = asText(f.logo_id);
+    return (
+      asText(f.airline) ||
+      (lid && logoMap[lid]) ||
+      (lid && airlineNameByLogo[lid]) ||
+      lid
+    );
   }
-
 
   document.getElementById("meta").textContent =
     `${flights.length} Flüge`;
