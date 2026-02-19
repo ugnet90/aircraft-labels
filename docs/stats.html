@@ -625,7 +625,13 @@ function renderRegs(){
     }
   }
 
-  const list = Object.values(regStats).sort((a,b)=> b.total - a.total);
+  //const list = Object.values(regStats).sort((a,b)=> b.total - a.total);
+  let regList = Object.values(regStats);
+  if(mainSortKey){
+    regList = sortBy(regList, mainSortKey, mainSortDir);
+  }else{
+    regList = regList.sort((a,b)=> b.total - a.total); // Default
+  }
 
   const viewCount = regList.length;  // airList.length oder typeList.length / regList.length / routeList.length
   const flightCount = flights.length;
@@ -796,7 +802,13 @@ function renderRoutes(){
     }
   }
 
-  const list = Object.values(routeStats).sort((a,b)=> b.total - a.total);
+  //const list = Object.values(routeStats).sort((a,b)=> b.total - a.total);
+  let routeList = Object.values(routeStats);
+  if(mainSortKey){
+    routeList = sortBy(routeList, mainSortKey, mainSortDir);
+  }else{
+    routeList = routeList.sort((a,b)=> b.total - a.total); // Default
+  }
 
   const viewCount = routeList.length;  // airList.length oder typeList.length / regList.length / routeList.length
   const flightCount = flights.length;
