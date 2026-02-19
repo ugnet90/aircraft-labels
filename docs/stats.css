@@ -118,3 +118,8 @@ tr.rowDetail td{
   gap:12px;
   flex-wrap:wrap;
 }
+
+tr.airRow.open td,
+tr.typeRow.open td{
+  background:#fafafa;
+}
