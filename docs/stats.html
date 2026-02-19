@@ -721,8 +721,10 @@ function renderRegs(){
         });
       }
     
-      // 2) sortieren (detailSortKey/detailSortDir + cmpDetail müssen existieren)
-      det.sort(cmpDetail);
+      // 2) sortieren (detailSortKey/detailSortDir hast du schon in 2.0)
+      const dk = detailSortKey || "date";
+      const dd = detailSortDir || "desc";
+      const detSorted = sortBy(det, dk, dd);
     
       // 3) rendern
       const rows = det.map(x => `
