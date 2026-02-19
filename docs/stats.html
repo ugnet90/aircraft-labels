@@ -272,11 +272,10 @@ function renderAirlines(){
       <div class="k headRow">
         <span>Airlines</span>
         <span>${flightCount} Flüge mit insgesamt ${viewCount} Airlines</span>
-        <a href="#" class="smallLink" data-view="overview">← Überblick</a>
+        <span><a href="#" class="smallLink" data-view="overview">← Überblick</a></span>
       </div>
 
       <div class="muted" style="margin-top:6px;display:flex;gap:14px;flex-wrap:wrap">
-
         <span>${dot("owned",true)} exakt vorhanden</span>
         <span>${dot("owned",false)} Typ+Airline vorhanden</span>
         <span>${dot("ordered",true)} exakt bestellt</span>
