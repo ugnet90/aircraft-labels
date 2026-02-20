@@ -318,10 +318,10 @@ function renderAirlines(){
       <table class="tbl" style="margin-top:10px">
         <thead>
           <tr>
-            <th data-sort="label">
+            <th data-sort="label" class="${mainSortKey==='label' ? 'sortActive' : ''}">
               Airline${sortMark("label", false)}
             </th>
-            <th class="col-num" data-sort="total">
+            <th class="col-num" data-sort="total" class="${mainSortKey==='total' ? 'sortActive' : ''}">
               Flüge${sortMark("total", false)}
             </th>
             <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
@@ -514,10 +514,10 @@ function renderTypes(){
       <table class="tbl" style="margin-top:10px">
         <thead>
           <tr>
-            <th data-sort="label">
+            <th data-sort="label" class="${mainSortKey==='label' ? 'sortActive' : ''}">
               Typ${sortMark("label", false)}
             </th>
-            <th class="col-num" data-sort="total">
+            <th class="col-num" data-sort="total" class="${mainSortKey==='total' ? 'sortActive' : ''}">
               Flüge${sortMark("total", false)}
             </th>
             <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
@@ -715,10 +715,10 @@ function renderRegs(){
     <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
-          <th data-sort="reg">
+          <th data-sort="reg" class="${mainSortKey==='reg' ? 'sortActive' : ''}">
             Reg.${sortMark("reg", false)}
           </th>
-          <th class="col-num" data-sort="total">
+          <th class="col-num" data-sort="total" class="${mainSortKey==='total' ? 'sortActive' : ''}">
             Flüge${sortMark("total", false)}
           </th>
           <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
@@ -920,7 +920,7 @@ function renderRoutes(){
           <th data-sort="route" class="${mainSortKey==='route' ? 'sortActive' : ''}">
             Route${sortMark("route", false)}
           </th>
-          <th class="col-num" data-sort="total">
+          <th class="col-num" data-sort="total" class="${mainSortKey==='total' ? 'sortActive' : ''}">
             Flüge${sortMark("total", false)}
           </th>
           <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
@@ -1007,19 +1007,19 @@ function renderRoutes(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">
+                    <th data-sort="date" class="${detailSortKey==='date' ? 'sortActive' : ''}">
                       Datum${sortMark("date", true)}
                     </th>
-                    <th data-sort="airline">
-                      Airline${sortMark("date", true)}
+                    <th data-sort="airline" class="${detailSortKey==='airline' ? 'sortActive' : ''}">
+                      Airline${sortMark("airline", true)}
                     </th>
-                    <th data-sort="reg">
-                      Reg.${sortMark("airline", true)}
+                    <th data-sort="reg" class="${detailSortKey==='reg' ? 'sortActive' : ''}">
+                      Reg.${sortMark("reg", true)}
                     </th>
-                    <th data-sort="typ">
+                    <th data-sort="typ" class="${detailSortKey==='typ' ? 'sortActive' : ''}">
                       Typ${sortMark("typ", true)}
                     </th>
-                    <th class="dotsHead" data-sort="status">
+                    <th class="dotsHead" data-sort="status" class="${detailSortKey==='status' ? 'sortActive' : ''}">
                       Status${sortMark("status", true)}
                     </th>
                   </tr>
