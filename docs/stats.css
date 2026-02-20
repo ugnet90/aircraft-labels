@@ -129,3 +129,15 @@ tr.typeRow.open td{
   color:#111;
 }
 .coverageBig .mono{ font-family: inherit; }  /* falls irgendwo mono reingrätscht */
+
+th[data-sort]{
+  cursor: pointer;
+}
+
+th[data-sort]:hover{
+  background:#f5f5f5;
+}
+
+th.sortActive{
+  background:#eef3ff;
+}
