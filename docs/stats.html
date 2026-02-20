@@ -321,13 +321,26 @@ function renderAirlines(){
             <th data-sort="label" class="${mainSortKey==='label' ? 'sortActive' : ''}">
               Airline${sortMark("label", false)}
             </th>
-            <th class="col-num" data-sort="total" class="${mainSortKey==='total' ? 'sortActive' : ''}">
+        
+            <th data-sort="total" class="col-num ${mainSortKey==='total' ? 'sortActive' : ''}">
               Flüge${sortMark("total", false)}
             </th>
-            <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
-            <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
-            <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
-            <th class="col-num" data-sort="typeOrdered">${dot("ordered",false)}</th>
+        
+            <th data-sort="exactOwned" class="col-num ${mainSortKey==='exactOwned' ? 'sortActive' : ''}">
+              ${dot("owned",true)}${sortMark("exactOwned", false)}
+            </th>
+        
+            <th data-sort="typeOwned" class="col-num ${mainSortKey==='typeOwned' ? 'sortActive' : ''}">
+              ${dot("owned",false)}${sortMark("typeOwned", false)}
+            </th>
+        
+            <th data-sort="exactOrdered" class="col-num ${mainSortKey==='exactOrdered' ? 'sortActive' : ''}">
+              ${dot("ordered",true)}${sortMark("exactOrdered", false)}
+            </th>
+        
+            <th data-sort="typeOrdered" class="col-num ${mainSortKey==='typeOrdered' ? 'sortActive' : ''}">
+              ${dot("ordered",false)}${sortMark("typeOrdered", false)}
+            </th>
           </tr>
         </thead>
         <tbody>
