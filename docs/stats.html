@@ -1078,6 +1078,20 @@ async function init(){
   buildAirlineNameByLogo(models);
 
   document.getElementById("meta").textContent = `${flights.length} Flüge`;
+  
+  // ✅ Default-Sort setzen, damit Pfeile/Hervorhebung sofort da sind
+  if(!mainSortKey){
+    if(view === "airlines") { mainSortKey = "total"; mainSortDir = "desc"; }
+    else if(view === "types") { mainSortKey = "total"; mainSortDir = "desc"; }
+    else if(view === "regs") { mainSortKey = "total"; mainSortDir = "desc"; }
+    else if(view === "routes") { mainSortKey = "total"; mainSortDir = "desc"; }
+    else if(view === "time") { mainSortKey = "year"; mainSortDir = "desc"; }
+    else { mainSortKey = "total"; mainSortDir = "desc"; } // Fallback
+  }
+  if(!detailSortKey){
+    detailSortKey = "date";
+    detailSortDir = "desc";
+  }
 
   render();
 
