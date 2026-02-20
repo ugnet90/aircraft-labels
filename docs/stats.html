@@ -318,8 +318,12 @@ function renderAirlines(){
       <table class="tbl" style="margin-top:10px">
         <thead>
           <tr>
-            <th data-sort="label">Airline</th>
-            <th class="col-num" data-sort="total">Flüge</th>
+            <th data-sort="label">
+              Airline${sortMark("label", false)}
+            </th>
+            <th class="col-num" data-sort="total">
+              Flüge${sortMark("total", false)}
+            </th>
             <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
             <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
             <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
@@ -510,8 +514,12 @@ function renderTypes(){
       <table class="tbl" style="margin-top:10px">
         <thead>
           <tr>
-            <th data-sort="label">Typ</th>
-            <th class="col-num" data-sort="total">Flüge</th>
+            <th data-sort="label">
+              Typ${sortMark("label", false)}
+            </th>
+            <th class="col-num" data-sort="total">
+              Flüge${sortMark("total", false)}
+            </th>
             <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
             <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
             <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
@@ -707,8 +715,12 @@ function renderRegs(){
     <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
-          <th data-sort="reg">Reg.</th>
-          <th class="col-num" data-sort="total">Flüge</th>
+          <th data-sort="reg">
+            Reg.${sortMark("reg", false)}
+          </th>
+          <th class="col-num" data-sort="total">
+            Flüge${sortMark("total", false)}
+          </th>
           <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
           <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
           <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
@@ -905,7 +917,7 @@ function renderRoutes(){
     <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
-          <th data-sort="route">
+          <th data-sort="route" class="${mainSortKey==='route' ? 'sortActive' : ''}">
             Route${sortMark("route", false)}
           </th>
           <th class="col-num" data-sort="total">
