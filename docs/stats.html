@@ -417,16 +417,16 @@ function renderAirlines(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">
+                    <th data-sort="date" class="${detailSortKey==='date' ? 'sortActive' : ''}">
                       Datum${sortMark("date", true)}
                     </th>
-                    <th data-sort="route">
+                    <th data-sort="route" class="${detailSortKey==='route' ? 'sortActive' : ''}">
                       Route${sortMark("route", true)}
                     </th>
-                    <th data-sort="reg">
+                    <th data-sort="reg" class="${detailSortKey==='reg' ? 'sortActive' : ''}">
                       Reg.${sortMark("reg", true)}
                     </th>
-                    <th data-sort="typ">
+                    <th data-sort="typ" class="${detailSortKey==='typ' ? 'sortActive' : ''}">
                       Typ${sortMark("typ", true)}
                     </th>
                     <th class="dotsHead" data-sort="status">
@@ -619,16 +619,16 @@ function renderTypes(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">
+                    <th data-sort="date" class="${detailSortKey==='date' ? 'sortActive' : ''}">
                       Datum${sortMark("date", true)}
                     </th>
-                    <th data-sort="route">
+                    <th data-sort="route" class="${detailSortKey==='route' ? 'sortActive' : ''}">
                       Route${sortMark("route", true)}
                     </th>
-                    <th data-sort="airline">
+                    <th data-sort="airline" class="${detailSortKey==='airline' ? 'sortActive' : ''}">
                       Airline${sortMark("airline", true)}
                     </th>
-                    <th data-sort="reg">
+                    <th data-sort="reg" class="${detailSortKey==='reg' ? 'sortActive' : ''}">
                       Reg.${sortMark("reg", true)}
                     </th>
                     <th class="dotsHead" data-sort="status">
@@ -818,16 +818,16 @@ function renderRegs(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">
+                    <th data-sort="date" class="${detailSortKey==='date' ? 'sortActive' : ''}">
                       Datum${sortMark("date", true)}
                     </th>
-                    <th data-sort="route">
+                    <th data-sort="route" class="${detailSortKey==='route' ? 'sortActive' : ''}">
                       Route${sortMark("route", true)}
                     </th>
-                    <th data-sort="airline">
+                    <th data-sort="airline" class="${detailSortKey==='airline' ? 'sortActive' : ''}">
                       Airline${sortMark("airline", true)}
                     </th>
-                    <th data-sort="typ">
+                    <th data-sort="typ" class="${detailSortKey==='typ' ? 'sortActive' : ''}">
                       Typ${sortMark("typ", true)}
                     </th>
                     <th class="dotsHead" data-sort="status">
@@ -1019,7 +1019,7 @@ function renderRoutes(){
                     <th data-sort="typ" class="${detailSortKey==='typ' ? 'sortActive' : ''}">
                       Typ${sortMark("typ", true)}
                     </th>
-                    <th class="dotsHead" data-sort="status" class="${detailSortKey==='status' ? 'sortActive' : ''}">
+                    <th class="dotsHead" data-sort="status">
                       Status${sortMark("status", true)}
                     </th>
                   </tr>
