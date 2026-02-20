@@ -55,6 +55,15 @@ function esc(s){
 }
 function asText(v){ return (v??"").toString().trim(); }
 
+function sortMark(key, isDetail){
+  const activeKey = isDetail ? detailSortKey : mainSortKey;
+  const activeDir = isDetail ? detailSortDir : mainSortDir;
+
+  if(activeKey !== key) return "";
+
+  return activeDir === "asc" ? " ▲" : " ▼";
+}
+  
 // global: logo_id -> Anzeige-Airline (aus index.json abgeleitet)
 let airlineNameByLogo = {};
 
@@ -404,11 +413,21 @@ function renderAirlines(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">Datum</th>
-                    <th data-sort="route">Route</th>
-                    <th data-sort="reg">Reg.</th>
-                    <th data-sort="typ">Typ</th>
-                    <th class="dotsHead" data-sort="status">Status</th>
+                    <th data-sort="date">
+                      Datum${sortMark("date", true)}
+                    </th>
+                    <th data-sort="route">
+                      Route${sortMark("route", true)}
+                    </th>
+                    <th data-sort="reg">
+                      Reg.${sortMark("reg", true)}
+                    </th>
+                    <th data-sort="typ">
+                      Typ${sortMark("typ", true)}
+                    </th>
+                    <th class="dotsHead" data-sort="status">
+                      Status${sortMark("status", true)}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>${rows}</tbody>
@@ -592,11 +611,21 @@ function renderTypes(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">Datum</th>
-                    <th data-sort="route">Route</th>
-                    <th data-sort="airline">Airline</th>
-                    <th data-sort="reg">Reg.</th>
-                    <th class="dotsHead" data-sort="status">Status</th>
+                    <th data-sort="date">
+                      Datum${sortMark("date", true)}
+                    </th>
+                    <th data-sort="route">
+                      Route${sortMark("route", true)}
+                    </th>
+                    <th data-sort="airline">
+                      Airline${sortMark("airline", true)}
+                    </th>
+                    <th data-sort="reg">
+                      Reg.${sortMark("reg", true)}
+                    </th>
+                    <th class="dotsHead" data-sort="status">
+                      Status${sortMark("status", true)}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>${rows}</tbody>
@@ -777,11 +806,21 @@ function renderRegs(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">Datum</th>
-                    <th data-sort="route">Route</th>
-                    <th data-sort="airline">Airline</th>
-                    <th data-sort="typ">Typ</th>
-                    <th class="dotsHead">Status</th>
+                    <th data-sort="date">
+                      Datum${sortMark("date", true)}
+                    </th>
+                    <th data-sort="route">
+                      Route${sortMark("route", true)}
+                    </th>
+                    <th data-sort="airline">
+                      Airline${sortMark("airline", true)}
+                    </th>
+                    <th data-sort="typ">
+                      Typ${sortMark("typ", true)}
+                    </th>
+                    <th class="dotsHead" data-sort="status">
+                      Status${sortMark("status", true)}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>${rows}</tbody>
@@ -866,8 +905,12 @@ function renderRoutes(){
     <table class="tbl" style="margin-top:10px">
       <thead>
         <tr>
-          <th data-sort="route">Route</th>
-          <th class="col-num" data-sort="total">Flüge</th>
+          <th data-sort="route">
+            Route${sortMark("route", false)}
+          </th>
+          <th class="col-num" data-sort="total">
+            Flüge${sortMark("total", false)}
+          </th>
           <th class="col-num" data-sort="exactOwned">${dot("owned",true)}</th>
           <th class="col-num" data-sort="typeOwned">${dot("owned",false)}</th>
           <th class="col-num" data-sort="exactOrdered">${dot("ordered",true)}</th>
@@ -952,11 +995,21 @@ function renderRoutes(){
               <table class="tblSmall">
                 <thead>
                   <tr>
-                    <th data-sort="date">Datum</th>
-                    <th data-sort="airline">Airline</th>
-                    <th data-sort="reg">Reg.</th>
-                    <th data-sort="typ">Typ</th>
-                    <th class="dotsHead" data-sort="status">Status</th>
+                    <th data-sort="date">
+                      Datum${sortMark("date", true)}
+                    </th>
+                    <th data-sort="airline">
+                      Airline${sortMark("date", true)}
+                    </th>
+                    <th data-sort="reg">
+                      Reg.${sortMark("airline", true)}
+                    </th>
+                    <th data-sort="typ">
+                      Typ${sortMark("typ", true)}
+                    </th>
+                    <th class="dotsHead" data-sort="status">
+                      Status${sortMark("status", true)}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>${rows}</tbody>
