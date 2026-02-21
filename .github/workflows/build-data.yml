@@ -8,8 +8,11 @@ on:
       - "data/airline_logos.csv"
       - "data/liveries.csv"
       - "data/flights_export.csv"
+      - "data/airports.csv"
       - "tools/build_json.py"
       - "tools/build_stats.py"
+      - "tools/build_airports.py"
+      - "tools/build_heatmap.py"
   workflow_dispatch:
 
 concurrency:
@@ -31,6 +34,12 @@ jobs:
 
       - name: Build model JSON
         run: python tools/build_json.py
+
+      - name: Build airports JSON
+        run: python tools/build_airports.py
+
+      - name: Build heatmap data
+        run: python tools/build_heatmap.py
 
       - name: Build stats (missing types + matrix)
         run: python tools/build_stats.py
