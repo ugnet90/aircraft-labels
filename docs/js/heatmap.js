@@ -165,7 +165,10 @@ function clamp(n, a, b) {
       const w = r.w || 1;
 
       // thickness/opacity scaling (leave default Leaflet color)
-      const weight = clamp(1 + 6 * Math.sqrt(w / maxW), 1, 7);
+      const strengthEl = document.getElementById("routeStrength");
+      const strength = strengthEl ? Number(strengthEl.value) : 1;
+      
+      const weight = clamp((1 + 6 * Math.sqrt(w / maxW)) * strength, 0.5, 20);
       const opacity = clamp(0.15 + 0.75 * (w / maxW), 0.15, 0.9);
 
       const latlngs = [
@@ -210,6 +213,7 @@ function clamp(n, a, b) {
   const blurEl = document.getElementById("blur");
   const viewModeEl = document.getElementById("viewMode");
   const maxRoutesEl = document.getElementById("maxRoutes");
+  const routeStrengthEl = document.getElementById("routeStrength");
 
   if (radiusEl) radiusEl.addEventListener("input", rebuildHeat);
   if (blurEl) blurEl.addEventListener("input", rebuildHeat);
@@ -223,5 +227,12 @@ function clamp(n, a, b) {
     });
   }
 
+  if (routeStrengthEl) {
+    routeStrengthEl.addEventListener("input", () => {
+      renderRoutes();
+      applyViewMode();
+    });
+  }
+  
   applyViewMode();
 })();
