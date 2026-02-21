@@ -33,17 +33,50 @@ function fillTable(tableId, rows) {
 
   // KPIs
   function extractFlights(payload) {
+    // 1) Direkt Array?
     if (Array.isArray(payload)) return payload;
-
-    if (payload && typeof payload === "object") {
-      // common wrappers
-      for (const key of ["flights", "items", "data", "rows", "records"]) {
-        if (Array.isArray(payload[key])) return payload[key];
+  
+    // 2) Rekursiv nach einem Array suchen, das wie "flights" aussieht
+    // Heuristik: Array von Objekten, die (from/to) oder (date/from/to) enthalten.
+    const seen = new Set();
+    const queue = [{ value: payload, depth: 0 }];
+  
+    const isFlightLikeArray = (arr) => {
+      if (!Array.isArray(arr) || arr.length === 0) return false;
+      // Prüfe nur die ersten paar Einträge
+      const sample = arr.slice(0, 10);
+      let hits = 0;
+      for (const x of sample) {
+        if (x && typeof x === "object" && !Array.isArray(x)) {
+          const hasFromTo = typeof x.from === "string" && typeof x.to === "string";
+          const hasDate = typeof x.date === "string";
+          if (hasFromTo || (hasFromTo && hasDate) || (hasDate && x.from && x.to)) hits++;
+        }
       }
-      // fallback: exactly one array value
-      const arrays = Object.values(payload).filter(v => Array.isArray(v));
-      if (arrays.length === 1) return arrays[0];
+      // mind. 1 "flight-like" object im sample reicht meist
+      return hits >= 1;
+    };
+  
+    while (queue.length) {
+      const { value, depth } = queue.shift();
+      if (value === null || value === undefined) continue;
+      if (depth > 8) continue; // Sicherheitslimit
+  
+      if (typeof value !== "object") continue;
+      if (seen.has(value)) continue;
+      seen.add(value);
+  
+      // Wenn ein Objekt direkt Arrays als values hat -> prüfen
+      for (const v of Object.values(value)) {
+        if (Array.isArray(v) && isFlightLikeArray(v)) return v;
+      }
+  
+      // Weiter in die Tiefe gehen (Objekte und Arrays)
+      for (const v of Object.values(value)) {
+        if (v && typeof v === "object") queue.push({ value: v, depth: depth + 1 });
+      }
     }
+  
     return [];
   }
 
