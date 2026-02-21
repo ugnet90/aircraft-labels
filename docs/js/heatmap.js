@@ -1,5 +1,4 @@
 // docs/js/heatmap.js
-console.log("HEATMAP.JS LOADED");
 
 async function fetchJson(path) {
   const res = await fetch(path, { cache: "no-store" });
@@ -101,11 +100,6 @@ function haversineKm(lat1, lon1, lat2, lon2) {
     fetchJson("data/flights.json"),
     fetchJson("data/flights_routes.json"),
   ]);
-  
-  console.log("routes length:", Array.isArray(routes) ? routes.length : routes);
-  console.log("DOM kpiTotalKm:", !!document.getElementById("kpiTotalKm"));
-  console.log("DOM kpiLongestKm:", !!document.getElementById("kpiLongestKm"));
-  console.log("DOM tblRoutes tbody:", !!document.querySelector("#tblRoutes tbody"));
   
   // --- KPIs ---
   const flightsList = extractFlights(flightsPayload);
