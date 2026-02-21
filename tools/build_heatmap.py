@@ -17,9 +17,34 @@ def _iata(v) -> str | None:
     if v is None:
         return None
     s = str(v).strip().upper()
-    if len(s) == 3:
-        return s
-    return None
+    return s if len(s) == 3 else None
+
+
+def _extract_flights(payload) -> list[dict]:
+    """
+    Accepts either:
+    - list[flight]
+    - dict with common keys holding the list, e.g. {"flights":[...]} or {"items":[...]} etc.
+    """
+    if isinstance(payload, list):
+        return [x for x in payload if isinstance(x, dict)]
+
+    if isinstance(payload, dict):
+        # common wrappers
+        for key in ("flights", "items", "data", "rows", "records"):
+            val = payload.get(key)
+            if isinstance(val, list):
+                return [x for x in val if isinstance(x, dict)]
+
+        # fallback: if there is exactly one list value, use it
+        list_values = [v for v in payload.values() if isinstance(v, list)]
+        if len(list_values) == 1:
+            return [x for x in list_values[0] if isinstance(x, dict)]
+
+    raise ValueError(
+        "docs/data/flights.json has an unexpected structure. "
+        "Expected a list OR a dict wrapping a list (keys: flights/items/data/rows/records)."
+    )
 
 
 def main() -> None:
@@ -30,19 +55,15 @@ def main() -> None:
             f"Missing input: {AIRPORTS_JSON} (run tools/build_airports.py first)"
         )
 
-    flights = json.loads(FLIGHTS_JSON.read_text(encoding="utf-8"))
+    flights_payload = json.loads(FLIGHTS_JSON.read_text(encoding="utf-8"))
     airports = json.loads(AIRPORTS_JSON.read_text(encoding="utf-8"))
 
-    # flights.json can be list[flight] (expected)
-    if not isinstance(flights, list):
-        raise ValueError("docs/data/flights.json is not a list")
+    flights = _extract_flights(flights_payload)
 
     counts: Counter[str] = Counter()
     missing: Counter[str] = Counter()
 
     for fl in flights:
-        if not isinstance(fl, dict):
-            continue
         fr = _iata(fl.get("from"))
         to = _iata(fl.get("to"))
 
@@ -60,14 +81,12 @@ def main() -> None:
         ap = airports.get(iata)
         if not ap:
             continue
-        points.append(
-            {
-                "iata": iata,
-                "lat": ap["lat"],
-                "lon": ap["lon"],
-                "w": int(w),
-            }
-        )
+        # safety: require coords
+        lat = ap.get("lat")
+        lon = ap.get("lon")
+        if lat is None or lon is None:
+            continue
+        points.append({"iata": iata, "lat": lat, "lon": lon, "w": int(w)})
 
     OUT_POINTS.parent.mkdir(parents=True, exist_ok=True)
     OUT_POINTS.write_text(json.dumps(points, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -77,8 +96,7 @@ def main() -> None:
         json.dumps(missing_list, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
-    total_segments = len(flights)  # assuming each entry is one segment
-    print(f"[build_heatmap] segments: {total_segments}")
+    print(f"[build_heatmap] flights: {len(flights)}")
     print(f"[build_heatmap] points: {len(points)} -> {OUT_POINTS}")
     print(f"[build_heatmap] missing airports: {len(missing_list)} -> {OUT_MISSING}")
 
