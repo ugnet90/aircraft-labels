@@ -1,0 +1,135 @@
+/* docs/heatmap.css */
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 12px 8px;
+}
+
+.pageHeader h1 {
+  margin: 0;
+}
+
+.subtle {
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.heatmapLayout {
+  padding: 0 12px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  align-items: end;
+}
+
+.kpi {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.kpi__label {
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+.kpi__value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.controls {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 8px 0 0;
+}
+
+.controls label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.mapWrap {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#map {
+  height: 68vh;
+  min-height: 420px;
+  width: 100%;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.tableCard {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.tableCard__title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.simpleTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.simpleTable th, .simpleTable td {
+  padding: 6px 6px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.col-num {
+  text-align: right;
+}
+
+@media (min-width: 1000px) {
+  .heatmapLayout {
+    grid-template-columns: 1.6fr 1fr;
+    align-items: start;
+  }
+
+  .kpis {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mapWrap {
+    grid-column: 1 / 2;
+  }
+
+  .tables {
+    grid-column: 2 / 3;
+    grid-template-columns: 1fr;
+  }
+}
