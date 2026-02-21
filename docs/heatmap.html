@@ -42,7 +42,14 @@
         <div class="kpi__label">Countries</div>
         <div class="kpi__value" id="kpiCountries">–</div>
       </div>
-
+      <div class="kpi">
+        <div class="kpi__label">Total Distance</div>
+        <div class="kpi__value" id="kpiTotalKm">–</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Longest Route</div>
+        <div class="kpi__value" id="kpiLongestKm">–</div>
+      </div>
       <div class="controls">
         <label>
           View
@@ -97,6 +104,20 @@
           <tbody></tbody>
         </table>
       </div>
+
+      <div class="tableCard">
+        <div class="tableCard__title">Top Routes</div>
+        <table class="simpleTable" id="tblRoutes">
+          <thead>
+            <tr>
+              <th>Route</th>
+              <th class="col-num">Count</th>
+              <th class="col-num">km</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>      
     </section>
   </main>
 
