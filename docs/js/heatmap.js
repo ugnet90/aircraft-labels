@@ -32,7 +32,23 @@ function fillTable(tableId, rows) {
   ]);
 
   // KPIs
-  const segments = Array.isArray(flights) ? flights.length : 0;
+  function extractFlights(payload) {
+    if (Array.isArray(payload)) return payload;
+
+    if (payload && typeof payload === "object") {
+      // common wrappers
+      for (const key of ["flights", "items", "data", "rows", "records"]) {
+        if (Array.isArray(payload[key])) return payload[key];
+      }
+      // fallback: exactly one array value
+      const arrays = Object.values(payload).filter(v => Array.isArray(v));
+      if (arrays.length === 1) return arrays[0];
+    }
+    return [];
+  }
+
+  const flightsList = extractFlights(flights);
+  const segments = flightsList.length;
   setText("kpiSegments", fmtInt(segments));
   setText("kpiAirports", fmtInt(points.length));
 
