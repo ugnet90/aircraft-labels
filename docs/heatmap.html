@@ -1,0 +1,91 @@
+<!-- docs/heatmap.html -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flight Heatmap</title>
+
+  <!-- Deine bestehenden globalen Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/heatmap.css" />
+
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+  <header class="pageHeader">
+    <div class="pageHeader__left">
+      <h1>Flight Heatmap</h1>
+      <div class="subtle">Airports (Departures + Arrivals)</div>
+    </div>
+    <div class="pageHeader__right">
+      <a class="btn" href="stats.html">Stats</a>
+      <a class="btn" href="flights.html">Flights</a>
+    </div>
+  </header>
+
+  <main class="heatmapLayout">
+    <section class="kpis">
+      <div class="kpi">
+        <div class="kpi__label">Segments</div>
+        <div class="kpi__value" id="kpiSegments">–</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Visited Airports</div>
+        <div class="kpi__value" id="kpiAirports">–</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Countries</div>
+        <div class="kpi__value" id="kpiCountries">–</div>
+      </div>
+
+      <div class="controls">
+        <label>
+          Radius
+          <input id="radius" type="range" min="8" max="40" value="18" />
+        </label>
+        <label>
+          Blur
+          <input id="blur" type="range" min="8" max="40" value="20" />
+        </label>
+      </div>
+    </section>
+
+    <section class="mapWrap">
+      <div id="map"></div>
+    </section>
+
+    <section class="tables">
+      <div class="tableCard">
+        <div class="tableCard__title">Top Airports</div>
+        <table class="simpleTable" id="tblAirports">
+          <thead>
+            <tr><th>IATA</th><th class="col-num">Count</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="tableCard">
+        <div class="tableCard__title">Top Countries</div>
+        <table class="simpleTable" id="tblCountries">
+          <thead>
+            <tr><th>Country</th><th class="col-num">Count</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Leaflet + Heat -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+  <script src="js/heatmap.js"></script>
+</body>
+</html>
