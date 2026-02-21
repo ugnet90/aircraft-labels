@@ -133,3 +133,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+.controls select {
+  padding: 4px 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.15);
+}
