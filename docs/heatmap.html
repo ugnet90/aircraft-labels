@@ -45,6 +45,20 @@
 
       <div class="controls">
         <label>
+          View
+          <select id="viewMode">
+            <option value="combined" selected>Combined</option>
+            <option value="airports">Airports</option>
+            <option value="routes">Routes</option>
+          </select>
+        </label>
+        
+        <label>
+          Max Routes
+          <input id="maxRoutes" type="range" min="50" max="800" value="300" />
+        </label>
+        <span class="subtle" id="maxRoutesLabel">300</span>        
+        <label>
           Radius
           <input id="radius" type="range" min="8" max="40" value="18" />
         </label>
