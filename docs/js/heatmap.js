@@ -10,17 +10,22 @@ function fmtInt(n) {
   return new Intl.NumberFormat("de-AT").format(n);
 }
 
+function fmtKm(km) {
+  if (!isFinite(km)) return "–";
+  return `${fmtInt(Math.round(km))}`;
+}
+
 function setText(id, value) {
   const el = document.getElementById(id);
   if (el) el.textContent = value;
 }
 
-function fillTable(tableId, rows) {
+function fillTable(tableId, rows, renderRow) {
   const tbody = document.querySelector(`#${tableId} tbody`);
   tbody.innerHTML = "";
   for (const r of rows) {
     const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${r[0]}</td><td class="col-num">${fmtInt(r[1])}</td>`;
+    tr.innerHTML = renderRow ? renderRow(r) : `<td>${r[0]}</td><td class="col-num">${fmtInt(r[1])}</td>`;
     tbody.appendChild(tr);
   }
 }
@@ -71,6 +76,23 @@ function clamp(n, a, b) {
   return Math.max(a, Math.min(b, n));
 }
 
+// Haversine distance (km)
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const toRad = (d) => (d * Math.PI) / 180;
+  const R = 6371.0088; // mean Earth radius in km
+  const φ1 = toRad(lat1), φ2 = toRad(lat2);
+  const Δφ = toRad(lat2 - lat1);
+  const Δλ = toRad(lon2 - lon1);
+
+  const a =
+    Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+    Math.cos(φ1) * Math.cos(φ2) *
+    Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
 (async function init() {
   const [points, airportsMap, flightsPayload, routes] = await Promise.all([
     fetchJson("data/flights_points.json"),
@@ -93,6 +115,29 @@ function clamp(n, a, b) {
   }
   setText("kpiCountries", fmtInt(countryCounts.size));
 
+  // --- Distance stats + Top Routes table ---
+  const routesList = Array.isArray(routes) ? routes.slice(0) : [];
+
+  // compute per-route distance once
+  let totalKm = 0;
+  let longestKm = 0;
+  let longestRouteLabel = "";
+
+  for (const r of routesList) {
+    const km = haversineKm(r.a_lat, r.a_lon, r.b_lat, r.b_lon);
+    r.km = km;
+    totalKm += km * (r.w || 0);
+
+    if (km > longestKm) {
+      longestKm = km;
+      longestRouteLabel = `${r.a}-${r.b}`;
+    }
+  }
+
+  // KPI: total distance and longest route
+  setText("kpiTotalKm", `${fmtKm(totalKm)} km`);
+  setText("kpiLongestKm", longestKm > 0 ? `${fmtKm(longestKm)} km (${longestRouteLabel})` : "–");
+
   // Top tables
   const topAirports = [...points]
     .sort((a, b) => b.w - a.w)
@@ -105,6 +150,14 @@ function clamp(n, a, b) {
 
   fillTable("tblAirports", topAirports);
   fillTable("tblCountries", topCountries);
+
+  // Top Routes (by count)
+  routesList.sort((x, y) => (y.w || 0) - (x.w || 0));
+  const topRoutes = routesList.slice(0, 50);
+  fillTable("tblRoutes", topRoutes, (r) => {
+    const routeLabel = `${r.a}-${r.b}`;
+    return `<td>${routeLabel}</td><td class="col-num">${fmtInt(r.w || 0)}</td><td class="col-num">${fmtKm(r.km)} km</td>`;
+  });
 
   // --- Map base ---
   const map = L.map("map", { worldCopyJump: true }).setView([20, 0], 2);
@@ -134,13 +187,6 @@ function clamp(n, a, b) {
     map.fitBounds(bounds.pad(0.2));
   }
 
-  function rebuildHeat() {
-    if (map.hasLayer(heat)) map.removeLayer(heat);
-    heat = makeHeatLayer();
-    // do not add here; applyViewMode decides
-    applyViewMode();
-  }
-
   // --- Routes layer ---
   const routesLayer = L.layerGroup().addTo(map);
 
@@ -149,13 +195,14 @@ function clamp(n, a, b) {
 
     const maxRoutesEl = document.getElementById("maxRoutes");
     const maxRoutesLabelEl = document.getElementById("maxRoutesLabel");
-
     const maxRoutes = maxRoutesEl ? Number(maxRoutesEl.value) : 300;
     if (maxRoutesLabelEl) maxRoutesLabelEl.textContent = String(maxRoutes);
 
-    const list = Array.isArray(routes) ? routes.slice(0) : [];
-    list.sort((x, y) => (y.w || 0) - (x.w || 0));
+    const strengthEl = document.getElementById("routeStrength");
+    const strength = strengthEl ? parseFloat(strengthEl.value) : 1;
 
+    const list = routesList.slice(0); // already contains r.km
+    list.sort((x, y) => (y.w || 0) - (x.w || 0));
     const slice = list.slice(0, maxRoutes);
     if (!slice.length) return;
 
@@ -165,9 +212,6 @@ function clamp(n, a, b) {
       const w = r.w || 1;
 
       // thickness/opacity scaling (leave default Leaflet color)
-      const strengthEl = document.getElementById("routeStrength");
-      const strength = strengthEl ? Number(strengthEl.value) : 1;
-      
       const weight = clamp((1 + 6 * Math.sqrt(w / maxW)) * strength, 0.5, 20);
       const opacity = clamp(0.15 + 0.75 * (w / maxW), 0.15, 0.9);
 
@@ -177,12 +221,10 @@ function clamp(n, a, b) {
       ];
 
       const line = L.polyline(latlngs, { weight, opacity });
-      line.bindTooltip(`${r.a}-${r.b}: ${fmtInt(w)}`, { sticky: true });
+      line.bindTooltip(`${r.a}-${r.b}: ${fmtInt(w)} · ${fmtKm(r.km)} km`, { sticky: true });
       line.addTo(routesLayer);
     }
   }
-
-  renderRoutes();
 
   // --- View toggle ---
   function applyViewMode() {
@@ -206,6 +248,15 @@ function clamp(n, a, b) {
 
     const maxRoutesEl = document.getElementById("maxRoutes");
     if (maxRoutesEl) maxRoutesEl.disabled = !showRoutes;
+
+    const strengthEl = document.getElementById("routeStrength");
+    if (strengthEl) strengthEl.disabled = !showRoutes;
+  }
+
+  function rebuildHeat() {
+    if (map.hasLayer(heat)) map.removeLayer(heat);
+    heat = makeHeatLayer();
+    applyViewMode();
   }
 
   // --- Controls wiring ---
@@ -218,7 +269,9 @@ function clamp(n, a, b) {
   if (radiusEl) radiusEl.addEventListener("input", rebuildHeat);
   if (blurEl) blurEl.addEventListener("input", rebuildHeat);
 
-  if (viewModeEl) viewModeEl.addEventListener("change", applyViewMode);
+  if (viewModeEl) viewModeEl.addEventListener("change", () => {
+    applyViewMode();
+  });
 
   if (maxRoutesEl) {
     maxRoutesEl.addEventListener("input", () => {
@@ -233,6 +286,8 @@ function clamp(n, a, b) {
       applyViewMode();
     });
   }
-  
+
+  // Initial render
+  renderRoutes();
   applyViewMode();
 })();
