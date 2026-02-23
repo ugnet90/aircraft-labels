@@ -20,9 +20,9 @@
   "price": 105.89,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
     "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748",
     "shop": "Ebay aerosmith102",
     "shop_url": ""

@@ -20,9 +20,9 @@
   "price": 85.73,
   "shipping_allocated": null,
   "flown": true,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
+    "postcard_url": "https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
     "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
     "shop": "Sky Shop",
     "shop_url": ""

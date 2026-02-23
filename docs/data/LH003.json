@@ -20,9 +20,9 @@
   "price": 75.4,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
     "photo": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830",
     "shop": "Kleinanzeigen Rafael Feijs",
     "shop_url": ""

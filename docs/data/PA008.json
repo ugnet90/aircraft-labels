@@ -20,9 +20,9 @@
   "price": 21.92,
   "shipping_allocated": 46.78,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photo/481727/N818PA",
   "arrived_excel": "2025-06-18",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
     "photo": "https://www.airhistory.net/photo/481727/N818PA",
     "shop": "Ebay waffle-collectibles",
     "shop_url": ""

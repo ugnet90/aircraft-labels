@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 386,
     "present_types": 127,
-    "missing_types": 257,
-    "ordered_types": 2,
-    "models": 170
+    "missing_types": 256,
+    "ordered_types": 3,
+    "models": 174
   },
   "missing_types": [
     {
@@ -850,12 +850,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "DOU-DC6-B",
-      "Typ_anzeige": "Douglas DC-6B",
-      "manufacturer": "Douglas",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "DOU-DC7",
       "Typ_anzeige": "Douglas DC-7",
       "manufacturer": "Douglas",
@@ -1561,6 +1555,12 @@
       "aircraft_id": "COM-C919-100",
       "Typ_anzeige": "Comac C919-100",
       "manufacturer": "Comac",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "DOU-DC6-B",
+      "Typ_anzeige": "Douglas DC-6B",
+      "manufacturer": "Douglas",
       "status": "ordered"
     }
   ]

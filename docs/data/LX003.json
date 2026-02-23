@@ -20,9 +20,9 @@
   "price": 34.5,
   "shipping_allocated": 1.62,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10",
   "arrived_excel": "2025-05-14",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
     "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/Produkt/bombardier-cs100-swiss-international-c-gwxz-herpa-562522-1400/"

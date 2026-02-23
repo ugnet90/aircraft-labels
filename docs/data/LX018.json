@@ -20,9 +20,9 @@
   "price": 15.0,
   "shipping_allocated": 2.01,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
   "postcard_price": 0.85,
   "photo": "https://cdn.jetphotos.com/full/2/11550_1280047497.jpg",
   "arrived_excel": "2026-02-13",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
     "photo": "https://cdn.jetphotos.com/full/2/11550_1280047497.jpg",
     "shop": "Ebay bigbird1946",
     "shop_url": "https://www.ebay.de/itm/336405846019"

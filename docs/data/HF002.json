@@ -20,9 +20,9 @@
   "price": 15.0,
   "shipping_allocated": 0.33,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
     "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-hapag-lloyd-express-d-agep-gemini-jets-3557457-1400/"

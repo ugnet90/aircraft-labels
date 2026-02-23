@@ -20,9 +20,9 @@
   "price": 63.24,
   "shipping_allocated": null,
   "flown": true,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
     "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
     "shop": "Swiss-Edelweiss Airplane Shop",
     "shop_url": "https://swiss-edelweiss.li/"

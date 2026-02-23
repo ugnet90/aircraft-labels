@@ -20,9 +20,9 @@
   "price": 32.75,
   "shipping_allocated": 1.38,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
   "postcard_price": 0.85,
   "photo": "https://www.airteamimages.com/hawker-siddeley-trident_g-awzn_bea-british-european-airways_40653",
   "arrived_excel": "2026-01-15",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
     "photo": "https://www.airteamimages.com/hawker-siddeley-trident_g-awzn_bea-british-european-airways_40653",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/produkt/hawker-siddeley-hs121-trident-2e-bea-g-avff-gemini-jets-gjbea751-1400/"

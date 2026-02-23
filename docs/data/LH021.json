@@ -20,9 +20,9 @@
   "price": 39.5,
   "shipping_allocated": 1.03,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/1100966/d-abir-lufthansa-boeing-737-530",
   "arrived_excel": "2025-08-20",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
     "photo": "https://www.planespotters.net/photo/1100966/d-abir-lufthansa-boeing-737-530",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/boeing-737-500-lufthansa-anklam-d-abir-gemini-jets-gjdlh1327-1400/"

@@ -20,9 +20,9 @@
   "price": 20.5,
   "shipping_allocated": 2.6,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9",
   "arrived_excel": "2025-11-03",
@@ -63,8 +63,8 @@
     "model_extra": "inkl. Gepäckwagen"
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
     "photo": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9",
     "shop": "Ebay philundines",
     "shop_url": "https://www.ebay.de/itm/146906325011"

@@ -20,9 +20,9 @@
   "price": 39.5,
   "shipping_allocated": 2.43,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer",
   "arrived_excel": "2025-10-08",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
     "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/Produkt/boeing-777-300er-swiss-hb-jna-jc-wings-xx4683-1400/"

@@ -20,9 +20,9 @@
   "price": 69.9,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
     "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
     "shop": "https://www.flight-shop.de",
     "shop_url": "https://www.flight-shop.de/modelle/jc-wings/scale-1400/12873/jc-wings-airbus-a300-600st-beluga-house-color-3-f-gstc-1-400-modellflugzeug?c=0"

@@ -20,9 +20,9 @@
   "price": 28.3,
   "shipping_allocated": 6.69,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
   "arrived_excel": "2025-05-22",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
     "photo": "https://www.airhistory.net/photo/19672/N61NA",
     "shop": "Wingsmo",
     "shop_url": "https://www.wingsmo.com/neu-bei-wingsmo/postage-stamp/29443/postage-stamp-pan-am-mcdonnell-douglas-dc-10-1-400-ps5820-5?c=0"

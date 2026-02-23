@@ -20,9 +20,9 @@
   "price": 35.59,
   "shipping_allocated": 3.87,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
   "postcard_price": 1.35,
   "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
   "arrived_excel": "2025-11-05",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
     "shop": "Ebay Felindre Diecast",
     "shop_url": "https://www.ebay.de/itm/376641810428"

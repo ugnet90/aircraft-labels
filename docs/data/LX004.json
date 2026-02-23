@@ -20,9 +20,9 @@
   "price": 24.94,
   "shipping_allocated": 28.57,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/10376450",
   "arrived_excel": "2025-07-15",
@@ -31,7 +31,7 @@
   "ordered": false,
   "source": {
     "sheet": "Swiss",
-    "row": "32"
+    "row": "33"
   },
   "aircraft": {
     "aircraft_id": "MCD-MD81",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
     "photo": "https://www.jetphotos.com/photo/10376450",
     "shop": "Ebay Waffle Collection",
     "shop_url": ""

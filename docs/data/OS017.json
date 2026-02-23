@@ -20,9 +20,9 @@
   "price": 47.0,
   "shipping_allocated": 5.22,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+  "postcard": "U:https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
   "arrived_excel": "2025-06-16",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+    "postcard_url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
     "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
     "shop": "Kleinanzeigen Dan Segal",
     "shop_url": ""

@@ -20,9 +20,9 @@
   "price": 49.5,
   "shipping_allocated": 5.5,
   "flown": null,
-  "postcard": "Bemalung nicht ganz exakt; https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:Bemalung nicht ganz exakt | U:https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+  "postcard_info": "Bemalung nicht ganz exakt",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "Bemalung nicht ganz exakt; https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
-    "postcard_url": "",
+    "postcard": "I:Bemalung nicht ganz exakt | U:https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
     "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"

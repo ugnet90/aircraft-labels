@@ -20,9 +20,9 @@
   "price": 33.0,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "falsche Reg.; https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:falsche Reg. | U:https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+  "postcard_info": "falsche Reg.",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "falsche Reg.; https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
-    "postcard_url": "",
+    "postcard": "I:falsche Reg. | U:https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
     "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
     "shop": "Kleinanzeigen Cora Singer",
     "shop_url": ""

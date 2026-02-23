@@ -6,14 +6,14 @@
   "manufacturer": "Aeroclassics",
   "aircraft_name": "",
   "livery_note": "",
-  "extra_info": "",
+  "extra_info": "andere Kennung bei Foto",
   "shop_url": "https://mw-moba.de/Produkt/curtiss-c-46-commando-pan-american-world-airways-n67980-aeroclassics-1400/",
   "aircraft_id": "CUR-C46",
   "aircraft_type": "Curtiss-Wright C-46 Commando",
   "registration": "N67980",
   "livery_name": "",
   "parent_livery": "",
-  "zusatzinfo": "",
+  "zusatzinfo": "I:andere Kennung bei Foto",
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
@@ -21,10 +21,10 @@
   "shipping_allocated": 5.27,
   "flown": null,
   "postcard": "-",
-  "postcard_info": "",
+  "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
-  "photo": "andere Kennung; https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
+  "photo": "https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
   "arrived_excel": "2025-08-08",
   "arrived": "2025-08-08",
   "ordered_at": null,
@@ -43,7 +43,7 @@
   "livery": {
     "code": "",
     "parent": "",
-    "notes_raw": "",
+    "notes_raw": "I:andere Kennung bei Foto",
     "note": ""
   },
   "model": {
@@ -65,7 +65,7 @@
   "links": {
     "postcard": "-",
     "postcard_url": "",
-    "photo": "andere Kennung; https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
+    "photo": "https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/curtiss-c-46-commando-pan-american-world-airways-n67980-aeroclassics-1400/"
   },

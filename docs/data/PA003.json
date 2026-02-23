@@ -20,9 +20,9 @@
   "price": 39.95,
   "shipping_allocated": 21.0,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
   "postcard_price": 1.35,
   "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
   "arrived_excel": "2025-05-08",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
     "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
     "shop": "https://www.modelwereld.eu/en/",
     "shop_url": "https://www.modelwereld.eu/en/"

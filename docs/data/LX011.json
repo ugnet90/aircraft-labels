@@ -20,9 +20,9 @@
   "price": 21.0,
   "shipping_allocated": 7.0,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
   "postcard_price": 1.35,
   "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
   "arrived_excel": "2025-11-12",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
     "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
     "shop": "Kleinanzeigen Finn",
     "shop_url": "https://www.kleinanzeigen.de/s-anzeige/tucano-line-swissair-a321-1-400/3231715559-234-9491"

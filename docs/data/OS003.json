@@ -20,8 +20,8 @@
   "price": 30.0,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "OE-LVH",
-  "postcard_info": "",
+  "postcard": "I:OE-LVH",
+  "postcard_info": "OE-LVH",
   "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
@@ -63,7 +63,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "OE-LVH",
+    "postcard": "I:OE-LVH",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
     "shop": "Willhaben",

@@ -20,9 +20,9 @@
   "price": 30.68,
   "shipping_allocated": 18.34,
   "flown": null,
-  "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
+  "postcard_info": "andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra",
   "arrived_excel": "2025-07-14",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
     "photo": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra",
     "shop": "Ebay 4booksubid",
     "shop_url": "https://www.ebay.de/sch/i.html?item=376312332478&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=4booksubid"

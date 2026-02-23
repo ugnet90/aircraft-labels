@@ -20,9 +20,9 @@
   "price": 29.0,
   "shipping_allocated": 3.14,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
   "postcard_price": 1.85,
   "photo": "https://www.airhistory.net/photo/747410/G-BEBM",
   "arrived_excel": "2026-01-27",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
     "photo": "https://www.airhistory.net/photo/747410/G-BEBM",
     "shop": "Ebay Kontorbuer",
     "shop_url": "https://www.ebay.de/itm/257315911323"

@@ -20,9 +20,9 @@
   "price": 39.27,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
   "arrived_excel": "2025-05-14",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
     "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-sas-scandinavian-se-rjx-gemini-jets-gjsas1988-1400/"

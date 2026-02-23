@@ -20,9 +20,9 @@
   "price": 59.19,
   "shipping_allocated": 21.68,
   "flown": null,
-  "postcard": "andere Bemalung, andere Kennung; https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Bemalung, andere Kennung | U:https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
+  "postcard_info": "andere Bemalung, andere Kennung",
+  "postcard_url": "https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photo/697193/G-BNYI",
   "arrived_excel": "2025-11-10",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Bemalung, andere Kennung; https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
-    "postcard_url": "",
+    "postcard": "I:andere Bemalung, andere Kennung | U:https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
+    "postcard_url": "https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
     "photo": "https://www.airhistory.net/photo/697193/G-BNYI",
     "shop": "Ebay Littleworth Models",
     "shop_url": "https://www.ebay.de/itm/157409674233"

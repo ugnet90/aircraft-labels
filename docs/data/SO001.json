@@ -20,8 +20,8 @@
   "price": 65.85,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "vorhanden",
-  "postcard_info": "",
+  "postcard": "I:vorhanden",
+  "postcard_info": "vorhanden",
   "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
@@ -63,7 +63,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "vorhanden",
+    "postcard": "I:vorhanden",
     "postcard_url": "",
     "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
     "shop": "https://www.herpa.de",

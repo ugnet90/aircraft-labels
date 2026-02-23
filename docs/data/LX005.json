@@ -20,9 +20,9 @@
   "price": 19.5,
   "shipping_allocated": 0.51,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/435145/hb-ijm-swiss-airbus-a320-214",
   "arrived_excel": "2025-08-20",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
     "photo": "https://www.planespotters.net/photo/435145/hb-ijm-swiss-airbus-a320-214",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/airbus-a320-swiss-international-air-lines-hop-suisse-hb-ijm-herpa-562027-1400/"

@@ -20,9 +20,9 @@
   "price": 41.96,
   "shipping_allocated": 17.21,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photo/702474/D-ANUN",
   "arrived_excel": "2025-10-24",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
     "photo": "https://www.airhistory.net/photo/702474/D-ANUN",
     "shop": "Ebay aerosmith102",
     "shop_url": "https://www.ebay.de/itm/256605729195"

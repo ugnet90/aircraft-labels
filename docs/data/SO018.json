@@ -20,9 +20,9 @@
   "price": 45.0,
   "shipping_allocated": 0.96,
   "flown": null,
-  "postcard": "andere Kennung; andere Bemalung; https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
-  "postcard_info": "",
-  "postcard_url": "",
+  "postcard": "I:andere Kennung | I:andere Bemalung | U:https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+  "postcard_info": "andere Kennung | andere Bemalung",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photos/0027472.jpg",
   "arrived_excel": "2025-12-06",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "andere Kennung; andere Bemalung; https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
-    "postcard_url": "",
+    "postcard": "I:andere Kennung | I:andere Bemalung | U:https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
     "photo": "https://www.airhistory.net/photos/0027472.jpg",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/pby-5a-catalina-us-air-force-air-and-sea-rescue-herpa-561747-1400/"

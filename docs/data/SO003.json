@@ -20,9 +20,9 @@
   "price": 31.6,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
   "postcard_info": "",
-  "postcard_url": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
   "postcard_price": 0.85,
   "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
   "arrived_excel": "",
@@ -63,8 +63,8 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
-    "postcard_url": "",
+    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
     "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
     "shop": "Ebay mali_1123",
     "shop_url": ""

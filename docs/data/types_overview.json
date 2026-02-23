@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 386,
-  "with_any_models": 129,
-  "missing": 257,
+  "with_any_models": 130,
+  "missing": 256,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -649,22 +649,22 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
+      "status": "mixed",
       "owned_count": 6,
-      "ordered_count": 0,
-      "total_count": 6,
+      "ordered_count": 1,
+      "total_count": 7,
       "airline_group_counts": [
         {
           "group": "Air Berlin",
           "owned": 1,
-          "ordered": 0,
-          "total": 1,
+          "ordered": 1,
+          "total": 2,
           "airlines": [
             {
               "airline": "Air Berlin",
               "owned": 1,
-              "ordered": 0,
-              "total": 1
+              "ordered": 1,
+              "total": 2
             }
           ]
         },
@@ -1566,10 +1566,10 @@
       "manufacturer": "ATR",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
+      "status": "mixed",
       "owned_count": 1,
-      "ordered_count": 0,
-      "total_count": 1,
+      "ordered_count": 1,
+      "total_count": 2,
       "airline_group_counts": [
         {
           "group": "KLM Cityhopper",
@@ -1581,6 +1581,20 @@
               "airline": "KLM exel",
               "owned": 1,
               "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am Express",
+              "owned": 0,
+              "ordered": 1,
               "total": 1
             }
           ]
@@ -2750,11 +2764,25 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
+      "status": "mixed",
       "owned_count": 2,
-      "ordered_count": 0,
-      "total_count": 2,
+      "ordered_count": 1,
+      "total_count": 3,
       "airline_group_counts": [
+        {
+          "group": "BOAC",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "BOAC",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        },
         {
           "group": "Lufthansa",
           "owned": 1,
@@ -4738,11 +4766,26 @@
       "manufacturer": "Douglas",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Swiss",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Swissair",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "DOU-DC7",
