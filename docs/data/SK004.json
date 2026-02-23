@@ -21,6 +21,8 @@
   "shipping_allocated": 1.39,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/018107/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-81-dc-9-81",
   "arrived_excel": "2025-05-14",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/018107/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-81-dc-9-81",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-82-sas-scandinavian-oy-khr-dragon-wings-55751-1400/"

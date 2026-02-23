@@ -21,6 +21,8 @@
   "shipping_allocated": 0.85,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
   "arrived_excel": "2025-11-12",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+    "postcard_url": "",
     "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/convair-880-swissair-hb-icl-herpa-560528-1400/"

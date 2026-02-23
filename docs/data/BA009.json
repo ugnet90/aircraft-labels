@@ -21,6 +21,8 @@
   "shipping_allocated": 4.7,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/29580-bea-trident-boac-vc-10.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/11185579",
   "arrived_excel": "2026-01-27",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/29580-bea-trident-boac-vc-10.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/11185579",
     "shop": "Kleinanzeigen Micha",
     "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-bea-british-european-trident-gemini-jets-1-400/3301263814-234-9047"

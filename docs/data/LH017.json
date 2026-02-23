@@ -21,6 +21,8 @@
   "shipping_allocated": 15.35,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/291-lufthansa-traditionsflug-ju-52.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52",
   "arrived_excel": "2025-08-05",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/291-lufthansa-traditionsflug-ju-52.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52",
     "shop": "Ebay Felindre Diecast",
     "shop_url": "https://www.ebay.de/itm/297475926197"

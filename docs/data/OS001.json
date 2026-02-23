@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": true,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/10159741",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/10159741",
     "shop": "aviationmegastore.com",
     "shop_url": "https://www.aviationmegastore.com/de/modelle/airbus-a319-austrian-airlines-oe-lde-aero-classics-ac411344-208116.html"

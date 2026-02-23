@@ -21,6 +21,8 @@
   "shipping_allocated": 5.0,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/11667623",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/11667623",
     "shop": "Kleinanzeigen Josef Voß",
     "shop_url": ""

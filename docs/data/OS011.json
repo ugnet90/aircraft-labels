@@ -21,6 +21,8 @@
   "shipping_allocated": 5.5,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"

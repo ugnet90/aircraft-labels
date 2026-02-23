@@ -21,6 +21,8 @@
   "shipping_allocated": 0.77,
   "flown": null,
   "postcard": "x",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
   "arrived_excel": "2025-12-06",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "x",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/boeing-757-200-united-states-of-america-80001-gemini-jets-gjafo254-1400/"

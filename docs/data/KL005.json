@@ -21,6 +21,8 @@
   "shipping_allocated": 9.25,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/7018562",
   "arrived_excel": "2025-10-23",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/7018562",
     "shop": "Ebay Felindre Diecast",
     "shop_url": "https://www.ebay.de/itm/297670868491"

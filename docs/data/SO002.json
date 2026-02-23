@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
     "shop": "https://www.flight-shop.de",
     "shop_url": "https://www.flight-shop.de/modelle/jc-wings/scale-1400/12873/jc-wings-airbus-a300-600st-beluga-house-color-3-f-gstc-1-400-modellflugzeug?c=0"

@@ -21,6 +21,8 @@
   "shipping_allocated": 2.14,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/7936576",
   "arrived_excel": "2026-02-13",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/7936576",
     "shop": "Ebay bigbird1946",
     "shop_url": "https://www.ebay.de/itm/336412108496"

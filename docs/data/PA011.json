@@ -21,6 +21,8 @@
   "shipping_allocated": 46.46,
   "flown": null,
   "postcard": "-",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.jetphotos.com/photo/261236",
   "arrived_excel": "2025-07-07",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "-",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/261236",
     "shop": "Ebay BUCHair USA",
     "shop_url": "https://order.ebay.de/ord/show?orderId=04-13231-92834&ssPageName=STRK:MESO:VPS&_trksid=p4429486.m2548.l2673"

@@ -21,6 +21,8 @@
   "shipping_allocated": 3.85,
   "flown": null,
   "postcard": "",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg",
   "arrived_excel": "2025-06-26",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "",
+    "postcard_url": "",
     "photo": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg",
     "shop": "Flight-Shop.de",
     "shop_url": "https://www.flight-shop.de/"

@@ -21,6 +21,8 @@
   "shipping_allocated": 17.21,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html + https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html (andere Kennung, aber in Farbe)",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 3.2,
   "photo": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936",
   "arrived_excel": "2025-10-24",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html + https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html (andere Kennung, aber in Farbe)",
+    "postcard_url": "",
     "photo": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936",
     "shop": "Ebay aerosmith102",
     "shop_url": "https://www.ebay.de/itm/256347481240"

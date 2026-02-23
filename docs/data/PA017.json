@@ -21,6 +21,8 @@
   "shipping_allocated": 5.27,
   "flown": null,
   "postcard": "-",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "andere Kennung; https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
   "arrived_excel": "2025-08-08",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "-",
+    "postcard_url": "",
     "photo": "andere Kennung; https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/curtiss-c-46-commando-pan-american-world-airways-n67980-aeroclassics-1400/"

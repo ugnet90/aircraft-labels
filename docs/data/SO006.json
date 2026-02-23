@@ -21,6 +21,8 @@
   "shipping_allocated": 2.94,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.openspotter.org/bild.php?blid=15772",
   "arrived_excel": "2025-05-22",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
+    "postcard_url": "",
     "photo": "https://www.openspotter.org/bild.php?blid=15772",
     "shop": "MW-MOBA",
     "shop_url": ""

@@ -21,6 +21,8 @@
   "shipping_allocated": 2.07,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/408884/ei-ejg-alitalia-compagnia-aerea-italiana-airbus-a330-202",
   "arrived_excel": "2026-02-13",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/408884/ei-ejg-alitalia-compagnia-aerea-italiana-airbus-a330-202",
     "shop": "Ebay bigbird1946",
     "shop_url": "https://www.ebay.de/itm/336405838642"

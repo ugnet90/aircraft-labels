@@ -21,6 +21,8 @@
   "shipping_allocated": 21.18,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
   "arrived_excel": "2025-07-21",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
+    "postcard_url": "",
     "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
     "shop": "Alexmodels.cz",
     "shop_url": "alexmodels.cz"

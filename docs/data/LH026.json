@@ -21,6 +21,8 @@
   "shipping_allocated": 0.97,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
   "arrived_excel": "2025-11-12",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/airbus-a321neo-lufthansa-d-aiep-phoenix-04541-1400/"

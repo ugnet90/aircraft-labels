@@ -21,6 +21,8 @@
   "shipping_allocated": 5.5,
   "flown": null,
   "postcard": "Bemalung nicht ganz exakt; https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "Bemalung nicht ganz exakt; https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"

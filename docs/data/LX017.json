@@ -21,6 +21,8 @@
   "shipping_allocated": 1.84,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/25909-swissair-dc-8.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/249732/HB-IDA",
   "arrived_excel": "2026-01-27",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/25909-swissair-dc-8.html",
+    "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/249732/HB-IDA",
     "shop": "Ebay Kontorbuer",
     "shop_url": "https://www.ebay.de/itm/257315911157"

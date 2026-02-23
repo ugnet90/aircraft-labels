@@ -21,6 +21,8 @@
   "shipping_allocated": 1.03,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
   "arrived_excel": "2025-08-20",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/boeing-737-300-lufthansa-ulm-d-abee-gemini-jets-gjdlh1326-1400/"

@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": true,
   "postcard": "Kennung vom Eigenflug; https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "Kennung vom Eigenflug; https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
     "shop": "Australian Aviation Center",
     "shop_url": "https://www.aviation-center.com.au/index.html"

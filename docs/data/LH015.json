@@ -21,6 +21,8 @@
   "shipping_allocated": 2.21,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/477289/D-ABKB",
   "arrived_excel": "2025-06-23",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+    "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/477289/D-ABKB",
     "shop": "Kleinanzeigen Josef Voß",
     "shop_url": ""

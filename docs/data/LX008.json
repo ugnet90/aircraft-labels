@@ -21,6 +21,8 @@
   "shipping_allocated": 2.74,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/view/1072413",
   "arrived_excel": "2025-10-08",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
+    "postcard_url": "",
     "photo": "https://abpic.co.uk/pictures/view/1072413",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11-swissair-hb-iwi-jc-wings-xx4051-1400/"

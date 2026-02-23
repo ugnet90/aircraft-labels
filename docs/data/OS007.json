@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223",
     "shop": "Ebay kunstspezi",
     "shop_url": ""

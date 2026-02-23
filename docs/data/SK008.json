@@ -21,6 +21,8 @@
   "shipping_allocated": 3.41,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/34783-SAS-A330.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/7950061",
   "arrived_excel": "2026-02-13",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/34783-SAS-A330.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/7950061",
     "shop": "Ebay bigbird1946",
     "shop_url": "https://www.ebay.de/itm/336405864151"

@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": true,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
+    "postcard_url": "",
     "photo": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
     "shop": "Ebay stoeberdaniel",
     "shop_url": ""

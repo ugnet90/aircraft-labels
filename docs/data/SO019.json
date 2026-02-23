@@ -21,6 +21,8 @@
   "shipping_allocated": 0.33,
   "flown": null,
   "postcard": "x",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.airhistory.net/photo/425749/165831/5831",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "x",
+    "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/425749/165831/5831",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/boeing-c-40-united-states-navy-ry-831-gemini-jets-gjusn295-1400/"

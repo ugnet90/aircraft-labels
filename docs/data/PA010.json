@@ -21,6 +21,8 @@
   "shipping_allocated": 17.85,
   "flown": null,
   "postcard": "-",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "",
   "arrived_excel": "2025-07-04",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "-",
+    "postcard_url": "",
     "photo": "",
     "shop": "Ebay aeromini1",
     "shop_url": "https://www.ebay.de/itm/197417277964"

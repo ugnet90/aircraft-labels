@@ -21,6 +21,8 @@
   "shipping_allocated": 10.69,
   "flown": null,
   "postcard": "x",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
   "arrived_excel": "2026-01-28",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "x",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
     "shop": "Ebay Models Shop",
     "shop_url": "https://www.ebay.de/itm/336326426320"

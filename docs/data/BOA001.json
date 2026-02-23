@@ -21,6 +21,8 @@
   "shipping_allocated": 1.16,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.airhistory.net/photo/12485/G-AOVK",
   "arrived_excel": "2025-08-20",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
+    "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/12485/G-AOVK",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/Produkt/bristol-britannia-series-310-boac-g-aovk-gemini-jets-gjboa131-1400/"

@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation",
     "shop": "Kleinanzeigen Rudolf Zimmermann",
     "shop_url": ""

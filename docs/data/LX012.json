@@ -21,6 +21,8 @@
   "shipping_allocated": 0.97,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
   "arrived_excel": "2025-11-12",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-swiss-hb-jdc-phoenix-11784-1400/"

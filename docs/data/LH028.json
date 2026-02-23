@@ -21,6 +21,8 @@
   "shipping_allocated": 0.66,
   "flown": null,
   "postcard": "",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx",
   "arrived_excel": "2025-12-06",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-lufthansa-d-aieq-gemini-jets-gjdlh2238-1400/"

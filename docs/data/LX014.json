@@ -21,6 +21,8 @@
   "shipping_allocated": 0.66,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4839-swissair-a310.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.jetphotos.com/photo/10644669",
   "arrived_excel": "2025-12-06",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4839-swissair-a310.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/10644669",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/airbus-a310-200-swissair-hb-ipa-herpa-560771-1400/"

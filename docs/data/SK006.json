@@ -21,6 +21,8 @@
   "shipping_allocated": 12.27,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
   "arrived_excel": "2026-01-23",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
     "shop": "Ebay krysset_4",
     "shop_url": "https://www.ebay.de/itm/326941696329"

@@ -21,6 +21,8 @@
   "shipping_allocated": 52.69,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/view/1947917",
   "arrived_excel": "2025-11-14",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+    "postcard_url": "",
     "photo": "https://abpic.co.uk/pictures/view/1947917",
     "shop": "Ebay DiecastAirplaneTreasuryTrove",
     "shop_url": "https://www.ebay.de/itm/136597425675?_skw=klm&itmmeta=01K8N1RV4VWDRHQ1Y0GJ58SS7H&hash=item1fcdd74e0b:g:RPMAAeSwCdVoTlyY"

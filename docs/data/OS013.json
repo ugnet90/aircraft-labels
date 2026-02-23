@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
     "shop": "Ebay airman3",
     "shop_url": ""

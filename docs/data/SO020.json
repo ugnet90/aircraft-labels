@@ -21,6 +21,8 @@
   "shipping_allocated": 14.17,
   "flown": null,
   "postcard": "beim Modell vorhanden",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.0,
   "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
   "arrived_excel": "2025-12-23",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "beim Modell vorhanden",
+    "postcard_url": "",
     "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
     "shop": "Aviationmegastore",
     "shop_url": "https://www.aviationmegastore.com/de/modelle/boeing-767-200-airborne-optical-adjunct--us-army-prototype-n767ba-patriot-model-pt-400-015-214215.html"

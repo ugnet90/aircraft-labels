@@ -21,6 +21,8 @@
   "shipping_allocated": 7.5,
   "flown": null,
   "postcard": "",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
   "arrived_excel": "2025-05-26",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "",
+    "postcard_url": "",
     "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
     "shop": "Kleinanzeigen Steffi",
     "shop_url": ""

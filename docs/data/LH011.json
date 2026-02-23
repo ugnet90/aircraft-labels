@@ -21,6 +21,8 @@
   "shipping_allocated": 1.62,
   "flown": true,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131",
   "arrived_excel": "2025-05-14",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131",
     "shop": "MW-MOBA",
     "shop_url": ""

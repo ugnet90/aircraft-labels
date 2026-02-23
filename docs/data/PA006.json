@@ -21,6 +21,8 @@
   "shipping_allocated": 3.69,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planepictures.net/v3/show_en.php?id=276508",
   "arrived_excel": "2025-05-22",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
+    "postcard_url": "",
     "photo": "https://www.planepictures.net/v3/show_en.php?id=276508",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/Produkt/lockheed-l-1011-385-3-pan-am-n514pa-dragon-wings-55142-1400/"

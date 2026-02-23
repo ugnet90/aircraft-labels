@@ -21,6 +21,8 @@
   "shipping_allocated": 15.0,
   "flown": null,
   "postcard": "andere Livery; https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Livery; https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er",
     "shop": "Ebay bigbird1946",
     "shop_url": "https://www.ebay.de/itm/336426829170"

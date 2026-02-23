@@ -21,6 +21,8 @@
   "shipping_allocated": null,
   "flown": true,
   "postcard": "vorhanden",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "vorhanden",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100",
     "shop": "Swiss-Edelweiss Airplane Shop",
     "shop_url": "https://swiss-edelweiss.li/"

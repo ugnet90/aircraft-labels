@@ -21,6 +21,8 @@
   "shipping_allocated": 40.85,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/10957009",
   "arrived_excel": "2025-11-10",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/10957009",
     "shop": "Ebay scr4plans7rwq",
     "shop_url": "https://www.ebay.de/itm/116835984188"

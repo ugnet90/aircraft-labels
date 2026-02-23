@@ -21,6 +21,8 @@
   "shipping_allocated": 1.9,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
   "arrived_excel": "2026-01-15",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
+    "postcard_url": "",
     "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/mcdonnell-douglas-md-11f-lufthansa-cargo-d-alcn-gemini-jets-gjdlh1371-1400/"

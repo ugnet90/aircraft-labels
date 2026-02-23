@@ -21,6 +21,8 @@
   "shipping_allocated": 5.0,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222",
   "arrived_excel": "2025-06-10",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222",
     "shop": "Kleinanzeigen Hellmann",
     "shop_url": ""

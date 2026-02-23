@@ -21,6 +21,8 @@
   "shipping_allocated": 5.0,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://www.airhistory.net/photo/575352/D-AIAA",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
+    "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/575352/D-AIAA",
     "shop": "Kleinanzeigen Josef Voß",
     "shop_url": ""

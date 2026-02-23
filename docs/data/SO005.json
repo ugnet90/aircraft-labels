@@ -21,6 +21,8 @@
   "shipping_allocated": 19.7,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/7533809",
   "arrived_excel": "2025-05-08",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/7533809",
     "shop": "aviamart",
     "shop_url": "https://www.aviamart.com/collections/airplane-models/products/jc-wings-x-aviationtag-super-guppy-edition-1-400?variant=43280865657026"

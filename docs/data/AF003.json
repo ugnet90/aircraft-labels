@@ -21,6 +21,8 @@
   "shipping_allocated": 1.13,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
   "arrived_excel": "2026-01-15",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/embraer-e170-hop-for-air-france-f-hbxe-herpa-562621-1400/"

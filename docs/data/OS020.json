@@ -21,6 +21,8 @@
   "shipping_allocated": 13.49,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/registration/OE-LAM",
   "arrived_excel": "2026-01-16",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
+    "postcard_url": "",
     "photo": "https://abpic.co.uk/pictures/registration/OE-LAM",
     "shop": "Aviationmegastore",
     "shop_url": "https://www.aviationmegastore.com/de/modelle/vickers-viscount-800-austrian-oe-lam-aero-classics-ac411459-217204.html"

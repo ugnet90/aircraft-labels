@@ -21,6 +21,8 @@
   "shipping_allocated": 28.57,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 0.85,
   "photo": "https://www.jetphotos.com/photo/10376450",
   "arrived_excel": "2025-07-15",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/10376450",
     "shop": "Ebay Waffle Collection",
     "shop_url": ""

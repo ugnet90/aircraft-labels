@@ -21,6 +21,8 @@
   "shipping_allocated": 24.21,
   "flown": true,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11",
   "arrived_excel": "2025-10-10",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11",
     "shop": "Sklep Modelarski",
     "shop_url": "https://shop.dcc24.eu/en/herpa/22453-herpa-562607-cs300-airbaltic-4013150562607.html"

@@ -21,6 +21,8 @@
   "shipping_allocated": 0.0,
   "flown": null,
   "postcard": "",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L",
   "arrived_excel": "2025-06-26",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "",
+    "postcard_url": "",
     "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L",
     "shop": "Ebay 360models",
     "shop_url": "https://www.ebay.de/itm/267293388934?autorefresh=true"

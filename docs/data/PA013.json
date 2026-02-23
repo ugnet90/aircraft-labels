@@ -21,6 +21,8 @@
   "shipping_allocated": 34.11,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/3036-pan-american-b707.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://abpic.co.uk/pictures/view/1646675",
   "arrived_excel": "2025-07-09",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/3036-pan-american-b707.html",
+    "postcard_url": "",
     "photo": "https://abpic.co.uk/pictures/view/1646675",
     "shop": "Ebay arturkat",
     "shop_url": ""

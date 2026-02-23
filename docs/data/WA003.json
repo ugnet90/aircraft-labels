@@ -21,6 +21,8 @@
   "shipping_allocated": 5.1,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
   "arrived_excel": "2025-06-26",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
     "shop": "flight-shop.de/",
     "shop_url": "https://www.flight-shop.de/modelle/geminijets/scale-1400/11784/geminijets-embraer-e195-e2-klm-royal-dutch-ph-nx3-1-400-modellflugzeug?srsltid=AfmBOorHTKyWreFQRtGAn-iFemA-bxLMhEW3CTNpBx-uvqkSzpp8ugku"

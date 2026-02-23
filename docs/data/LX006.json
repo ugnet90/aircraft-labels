@@ -21,6 +21,8 @@
   "shipping_allocated": 2.12,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11",
   "arrived_excel": "2025-10-08",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/airbus-a220-300-swiss-international-fete-de-vignerons-hb-jca-herpa-562713-1400/"

@@ -21,6 +21,8 @@
   "shipping_allocated": 1.3,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.05,
   "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
   "arrived_excel": "2025-06-03",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
     "shop": "Marktplaats: TOGAflex",
     "shop_url": ""

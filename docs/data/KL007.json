@@ -21,6 +21,8 @@
   "shipping_allocated": 9.09,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.05,
   "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
   "arrived_excel": "2025-10-30",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+    "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
     "shop": "Ebay Felindre Diecast",
     "shop_url": "https://www.ebay.de/itm/376626642808"

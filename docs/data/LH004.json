@@ -21,6 +21,8 @@
   "shipping_allocated": 3.0,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"

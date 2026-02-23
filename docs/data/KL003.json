@@ -21,6 +21,8 @@
   "shipping_allocated": 2.93,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/4271-klm-asia-b747.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.05,
   "photo": "https://www.jetphotos.com/photo/10064531",
   "arrived_excel": "2025-06-23",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/4271-klm-asia-b747.html",
+    "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/10064531",
     "shop": "Kleinanzeigen Josef Voß",
     "shop_url": ""

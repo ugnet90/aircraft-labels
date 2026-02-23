@@ -21,6 +21,8 @@
   "shipping_allocated": 0.66,
   "flown": null,
   "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner",
   "arrived_excel": "2025-12-06",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung; https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner",
     "shop": "MW-Moba",
     "shop_url": "https://mw-moba.de/Produkt/boeing-787-8-british-airways-g-zbjg-gemini-jets-gjbaw2107-1400/"

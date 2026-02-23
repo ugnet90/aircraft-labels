@@ -21,6 +21,8 @@
   "shipping_allocated": 3.25,
   "flown": null,
   "postcard": "-",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": null,
   "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
   "arrived_excel": "",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "-",
+    "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
     "shop": "MW-MOBA",
     "shop_url": "https://mw-moba.de/produkt-kategorie/1400/"

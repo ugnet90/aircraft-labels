@@ -21,6 +21,8 @@
   "shipping_allocated": 11.0,
   "flown": null,
   "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 1.35,
   "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703",
   "arrived_excel": "2025-05-27",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+    "postcard_url": "",
     "photo": "andere Livery: https://www.airhistory.net/photo/642702/A-703",
     "shop": "2dehands Julien Lempereur",
     "shop_url": "https://www.2dehands.be/u/jawan/33093180/"

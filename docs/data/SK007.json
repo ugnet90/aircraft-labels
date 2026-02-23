@@ -21,6 +21,8 @@
   "shipping_allocated": 4.41,
   "flown": null,
   "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+  "postcard_info": "",
+  "postcard_url": "",
   "postcard_price": 2.5,
   "photo": "https://image.airport-data.com/aircraft/954767.jpg",
   "arrived_excel": "2026-01-27",
@@ -62,6 +64,7 @@
   },
   "links": {
     "postcard": "andere Kennung,  https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+    "postcard_url": "",
     "photo": "https://image.airport-data.com/aircraft/954767.jpg",
     "shop": "Kleinanzeigen Micha",
     "shop_url": "https://www.kleinanzeigen.de/s-anzeige/flugzeugmodell-sas-scandinavian-dc-8-aeroclassics-1-400/3245823809-234-9047"
