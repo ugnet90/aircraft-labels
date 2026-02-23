@@ -106,6 +106,76 @@ function haversineKm(lat1, lon1, lat2, lon2) {
   setText("kpiSegments", fmtInt(flightsList.length));
   setText("kpiAirports", fmtInt(points.length));
 
+  // --- Phase 1 KPIs from flights.json ---
+  const aircraftTypes = new Set();
+  const registrations = new Set();
+  const airlineCounts = new Map();
+
+  // Seat analysis
+  let seatKnown = 0;
+  let windowSeats = 0;
+
+  function seatLetter(seat) {
+    if (!seat) return "";
+    const s = String(seat).trim().toUpperCase();
+    // last letter in something like "9A", "12F", "10K"
+    const m = s.match(/([A-Z])\s*$/);
+    return m ? m[1] : "";
+  }
+
+  // Heuristic (works well for most common configs):
+  // window: A/F (+K for some widebodies)
+  // aisle: C/D/G/H/J
+  // middle: B/E
+  function isWindow(letter) {
+    return letter === "A" || letter === "F" || letter === "K";
+  }
+  function isRecognizedSeat(letter) {
+    return ["A","B","C","D","E","F","G","H","J","K"].includes(letter);
+  }
+
+  for (const f of flightsList) {
+    if (!f || typeof f !== "object") continue;
+
+    if (f.aircraft_id) aircraftTypes.add(String(f.aircraft_id));
+    if (f.registration) registrations.add(String(f.registration));
+
+    const airline = (f.airline_row || f.logo_id || "").toString().trim();
+    if (airline) airlineCounts.set(airline, (airlineCounts.get(airline) || 0) + 1);
+
+    const letter = seatLetter(f.seat);
+    if (isRecognizedSeat(letter)) {
+      seatKnown += 1;
+      if (isWindow(letter)) windowSeats += 1;
+    }
+  }
+
+  // Unique aircraft types / regs
+  setText("kpiAircraftTypes", fmtInt(aircraftTypes.size));
+  setText("kpiRegistrations", fmtInt(registrations.size));
+
+  // Top airline (by segment count)
+  let topAirline = "–";
+  let topAirlineCount = 0;
+  for (const [name, cnt] of airlineCounts.entries()) {
+    if (cnt > topAirlineCount) {
+      topAirlineCount = cnt;
+      topAirline = name;
+    }
+  }
+  setText("kpiTopAirline", topAirlineCount ? `${topAirline} (${fmtInt(topAirlineCount)})` : "–");
+
+  // Window seat %
+  if (seatKnown > 0) {
+    const pct = Math.round((windowSeats / seatKnown) * 100);
+    setText(
+      "kpiWindowSeatPct",
+      `${pct}% (${fmtInt(windowSeats)}/${fmtInt(seatKnown)})`
+    );
+  } else {
+    setText("kpiWindowSeatPct", "–");
+  }
+  
   // Countries KPI + Top Countries
   const countryCounts = new Map();
   for (const p of points) {
