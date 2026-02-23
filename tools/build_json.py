@@ -147,6 +147,25 @@ def main() -> int:
     logos_rows = read_csv(AIRLINE_LOGOS_CSV)
     flights_rows = read_csv(FLIGHTS_CSV)
     
+    print("DEBUG models rows:", len(models))
+    if models:
+        print("DEBUG models keys:", list(models[0].keys()))
+        # probe a few rows that have Postkarte content
+        shown = 0
+        for rr in models:
+            p = (rr.get("Postkarte", "") or "").strip()
+            pi = (rr.get("postkarte_info", "") or "").strip()
+            pu = (rr.get("postkarte_url", "") or "").strip()
+            if p or pi or pu:
+                print("DEBUG model postcard sample:",
+                      "model_id=", (rr.get("model_id","") or "").strip(),
+                      "Postkarte=", repr(p),
+                      "postkarte_info=", repr(pi),
+                      "postkarte_url=", repr(pu))
+                shown += 1
+                if shown >= 5:
+                    break
+    
     print("DEBUG flights rows:", len(flights_rows))
     if flights_rows:
         print("DEBUG keys:", list(flights_rows[0].keys()))
