@@ -227,6 +227,8 @@ def main() -> int:
         eigenfluege = to_bool_x(r.get("Eigenfluege", ""))
 
         postcard = (r.get("Postkarte", "") or "").strip()
+        postcard_info = (r.get("postkarte_info", "") or "").strip()
+        postcard_url = (r.get("postkarte_url", "") or "").strip()
         postcard_price = to_float(r.get("Preis_Postkarte", ""))
         photo = (r.get("Foto", "") or "").strip()
 
@@ -298,6 +300,8 @@ def main() -> int:
             "shipping_allocated": shipping,
             "flown": eigenfluege,
             "postcard": postcard,
+            "postcard_info": postcard_info,
+            "postcard_url": postcard_url,
             "postcard_price": postcard_price,
             "photo": photo,
             "arrived_excel": angekommen_raw,
@@ -335,7 +339,8 @@ def main() -> int:
                 "model_extra": model_extra,
             },
             "links": {
-                "postcard": postcard,
+                "postcard": postcard,                
+                "postcard_url": postcard_url,
                 "photo": photo,
                 "shop": shop,
                 "shop_url": shop_url,
