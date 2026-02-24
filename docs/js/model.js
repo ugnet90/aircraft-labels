@@ -77,11 +77,20 @@ function renderPostcardsCard(d){
     `;
   }).join("");
 
+  // ---- Total berechnen / anzeigen ----
+  const total = Number(d?.postcard_price_total || 0);
+  const totalRow = total > 0
+    ? `<div class="pc-total" style="margin-top:12px;font-weight:600">
+         Total: ${money(total)}
+       </div>`
+    : "";
+
   return `
     <div class="card">
       <div class="k">Postkarte</div>
       <div style="margin-top:10px">
         ${rows}
+        ${totalRow}
       </div>
     </div>
   `;
