@@ -253,13 +253,21 @@ def main() -> int:
                 price = None
         
                 parts = [p.strip() for p in card.split("|") if p.strip()]
+                
                 for p in parts:
-                    if p.startswith("I:"):
-                        label = p[2:].strip()
-                    elif p.startswith("U:"):
-                        url = p[2:].strip()
-                    elif p.startswith("P:"):
-                        price = parse_price(p[2:].strip())
+                    pp = p.strip()
+                
+                    if len(pp) >= 2 and pp[:2].upper() == "I:":
+                        label = pp[2:].strip()
+                
+                    elif len(pp) >= 2 and pp[:2].upper() == "U:":
+                        url = pp[2:].strip()
+                
+                    elif len(pp) >= 2 and pp[:2].upper() == "P:":
+                        price = parse_price(pp[2:].strip())
+
+                if price is None and len(cards) == 1 and postcard_price not in (None, 0.0):
+                    price = postcard_price                
         
                 if price:
                     postcard_price_total += price
@@ -273,14 +281,13 @@ def main() -> int:
         
         # fallback wenn kein postcards_raw vorhanden
         elif postcard_info or postcard_url or postcard_price:
-            if postcard_price:
-                postcard_price_total = postcard_price
+            price_obj = postcard_price if postcard_price not in (None, 0.0) else None
         
             postcards.append({
                 "id": f"PC-{model_id}-01",
                 "label": postcard_info,
                 "url": postcard_url,
-                "price": postcard_price
+                "price": price_obj
             })
    
         photo = (r.get("Foto", "") or "").strip()
@@ -357,7 +364,6 @@ def main() -> int:
             "postcard_url": postcard_url,
             "postcard_price": postcard_price,
             "postcards": postcards,
-            "postcard_price_total": round(postcard_price_total, 2) if postcard_price_total else None,
             "photo": photo,
             "arrived_excel": angekommen_raw,
             "arrived": angekommen_iso,
