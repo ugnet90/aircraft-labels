@@ -352,7 +352,7 @@ def main() -> int:
             "price": price,
             "shipping_allocated": shipping,
             "flown": eigenfluege,
-            "postcard": postcard,
+            "postcard_raw": postcard_raw,
             "postcard_info": postcard_info,
             "postcard_url": postcard_url,
             "postcard_price": postcard_price,
@@ -394,7 +394,7 @@ def main() -> int:
                 "model_extra": model_extra,
             },
             "links": {
-                "postcard": postcard,                
+                "postcard_raw": postcard_raw,                
                 "postcard_url": postcard_url,
                 "photo": photo,
                 "shop": shop,
