@@ -66,6 +66,50 @@
     }
     return "";
   }
+
+  function renderPostcardsCard(d){
+    const arr = Array.isArray(d?.postcards) ? d.postcards : [];
+    if(!arr.length) return "";
+  
+    const rows = arr.map((pc, idx) => {
+      const label = String(pc?.label ?? "").trim();
+      const url   = String(pc?.url ?? "").trim();
+      const price = pc?.price;
+  
+      let linkLabel = "Link";
+      if(url){
+        try{ linkLabel = (new URL(url)).hostname.replace(/^www\./, ""); }catch(e){ linkLabel = "Link"; }
+      }
+  
+      const head = (arr.length > 1)
+        ? rowHtml("Postkarte", `<span class="mono">#${idx+1} · ${esc(String(pc?.id ?? ""))}</span>`)
+        : "";
+  
+      const labelRow = label ? row("Info", label) : "";
+      const linkRow  = url ? rowHtml("Link", `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(linkLabel)}</a>`) : "";
+      const priceRow = (price !== null && price !== undefined && Number(price) > 0) ? row("Preis", money(price)) : "";
+  
+      return `
+        <div class="pc-subcard">
+          <div class="grid">
+            ${head}
+            ${labelRow}
+            ${linkRow}
+            ${priceRow}
+          </div>
+        </div>
+      `;
+    }).join("");
+  
+    return `
+      <div class="card">
+        <div class="k">Postkarte</div>
+        <div style="margin-top:10px">
+          ${rows}
+        </div>
+      </div>
+    `;
+  }
   
   function scaleBadge(scale){
     const s = String(scale ?? "").trim();
@@ -113,7 +157,6 @@
     const h = aLink(url, preferredText, fallbackText);
     return h ? rowHtml(label, h) : "";
   }
-
 
   function linkRow(k, url){
     if(!url) return "";
@@ -422,12 +465,12 @@
             ${row("Bestellt am", formatDateDE(d.ordered_at || ""))}
             ${row("Angekommen", formatDateDE(d.arrived || d.model?.arrived || ""))}
             ${row("Besonderheit", d.special_note || d.model?.special_note || "")}
-            ${linkOrTextRow("Postkarte", d.postcard || d.links?.postcard || "", "", "Postkarte")}
-            ${row("Preis Postkarte", money(d.postcard_price || ""))}
           </div>
         </div>
       `;
 
+      const postcardBlock = renderPostcardsCard(d);
+      
       const aircraftBlock = `
         <div class="card">
           <div class="k">Flugzeug</div>
@@ -463,7 +506,6 @@
 
 
       const linksBlock = "";
-
       
       // Optional: show raw source pointer
       const src = d.source ? `(${d.source.sheet || ""} #${d.source.row || ""})` : "";
@@ -483,14 +525,15 @@
       const tailBlocks = [liveryBlock, v8Block, sourceBlock]
         .filter(x => x && String(x).trim() !== "");
       
+      const midBlocks = [postcardBlock].filter(x => x && String(x).trim() !== "");
+
       document.getElementById("content").innerHTML =
         `<div class="stack">` +
           `<div class="stackItem">${headBlock}</div>` +
+          midBlocks.map(x => `<div class="stackItem">${x}</div>`).join("") +
           tailBlocks.map(x => `<div class="stackItem">${x}</div>`).join("") +
         `</div>`;
-
-
-
+      
     }catch(e){
       document.getElementById("content").innerHTML =
         `<div class="err"><b>Fehler:</b> Konnte <span class="mono">${esc(url)}</span> nicht laden. (${esc(e.message)})</div>`;
