@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
-  "price": 53.65,
+  "price": null,
   "shipping_allocated": 8.11,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-ORD-PA-7-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.planepictures.net/v3/show_en.php?id=695003",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
-    "price": 53.65,
+    "price": null,
     "shipping_allocated": 8.11,
     "arrived": null,
     "ordered_at": "2026-02-22",
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
     "photo": "https://www.planepictures.net/v3/show_en.php?id=695003",
     "shop": "Ebay Felindre Diecast",

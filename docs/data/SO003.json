@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay mali_1123",
-  "price": 31.6,
+  "price": null,
   "shipping_allocated": null,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-SO003-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay mali_1123",
-    "price": 31.6,
+    "price": null,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
     "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
     "shop": "Ebay mali_1123",

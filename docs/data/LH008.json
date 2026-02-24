@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "https://www.modelyletadel.cz/en/",
-  "price": 51.53,
+  "price": null,
   "shipping_allocated": 9.31,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-LH008-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "https://www.modelyletadel.cz/en/",
-    "price": 51.53,
+    "price": null,
     "shipping_allocated": 9.31,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
     "photo": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship",
     "shop": "https://www.modelyletadel.cz/en/",

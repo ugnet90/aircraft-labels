@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Models Shop",
-  "price": 34.39,
+  "price": null,
   "shipping_allocated": 10.47,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Bez. KLM UK | U:https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
   "postcard_info": "andere Bez. KLM UK",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-WA004-01",
       "label": "andere Bez. KLM UK",
       "url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
   "arrived_excel": "2026-01-28",
   "arrived": "2026-01-28",
@@ -60,7 +60,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Ebay Models Shop",
-    "price": 34.39,
+    "price": null,
     "shipping_allocated": 10.47,
     "arrived": "2026-01-28",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Bez. KLM UK | U:https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
     "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
     "shop": "Ebay Models Shop",

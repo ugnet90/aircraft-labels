@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Micha",
-  "price": 33.66,
+  "price": null,
   "shipping_allocated": 4.41,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
   "postcard_price": 2.5,
@@ -29,10 +29,10 @@
       "id": "PC-SK007-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
-      "price": 2.5
+      "price": null
     }
   ],
-  "postcard_price_total": 2.5,
+  "postcard_price_total": null,
   "photo": "https://image.airport-data.com/aircraft/954767.jpg",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Kleinanzeigen Micha",
-    "price": 33.66,
+    "price": null,
     "shipping_allocated": 4.41,
     "arrived": "2026-01-27",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
     "photo": "https://image.airport-data.com/aircraft/954767.jpg",
     "shop": "Kleinanzeigen Micha",

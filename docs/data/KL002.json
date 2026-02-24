@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Marktplaats: TOGAflex",
-  "price": 40.0,
+  "price": null,
   "shipping_allocated": 2.07,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-KL002-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
   "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
@@ -60,7 +60,7 @@
     "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "Marktplaats: TOGAflex",
-    "price": 40.0,
+    "price": null,
     "shipping_allocated": 2.07,
     "arrived": "2025-06-03",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
     "photo": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
     "shop": "Marktplaats: TOGAflex",

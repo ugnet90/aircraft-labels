@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": 24.5,
+  "price": null,
   "shipping_allocated": 3.0,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-LH004-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": 24.5,
+    "price": null,
     "shipping_allocated": 3.0,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
     "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
     "shop": "MW-MOBA",

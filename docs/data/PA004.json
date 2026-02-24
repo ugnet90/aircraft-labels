@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 44.5,
+  "price": null,
   "shipping_allocated": 2.1,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
   "postcard_price": 1.85,
@@ -29,10 +29,10 @@
       "id": "PC-PA004-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
-      "price": 1.85
+      "price": null
     }
   ],
-  "postcard_price_total": 1.85,
+  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/9587",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
@@ -60,7 +60,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 44.5,
+    "price": null,
     "shipping_allocated": 2.1,
     "arrived": "2025-05-14",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
     "photo": "https://www.jetphotos.com/photo/9587",
     "shop": "MW-Moba",

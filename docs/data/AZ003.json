@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": 16.01,
+  "price": null,
   "shipping_allocated": 2.14,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-AZ003-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/7936576",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": 16.01,
+    "price": null,
     "shipping_allocated": 2.14,
     "arrived": "2026-02-13",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
     "photo": "https://www.jetphotos.com/photo/7936576",
     "shop": "Ebay bigbird1946",

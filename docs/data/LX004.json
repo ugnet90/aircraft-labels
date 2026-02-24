@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Waffle Collection",
-  "price": 24.94,
+  "price": null,
   "shipping_allocated": 28.57,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-LX004-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/10376450",
   "arrived_excel": "2025-07-15",
   "arrived": "2025-07-15",
@@ -60,7 +60,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Ebay Waffle Collection",
-    "price": 24.94,
+    "price": null,
     "shipping_allocated": 28.57,
     "arrived": "2025-07-15",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
     "photo": "https://www.jetphotos.com/photo/10376450",
     "shop": "Ebay Waffle Collection",

@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 35.0,
+  "price": null,
   "shipping_allocated": 0.77,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "x",
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-SO017-01",
-      "label": "x",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 35.0,
+    "price": null,
     "shipping_allocated": 0.77,
     "arrived": "2025-12-06",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "x",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
     "shop": "MW-Moba",

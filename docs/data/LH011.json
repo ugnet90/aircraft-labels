@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": 34.5,
+  "price": null,
   "shipping_allocated": 1.62,
   "flown": true,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
   "postcard_price": 1.05,
@@ -29,10 +29,10 @@
       "id": "PC-LH011-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
-      "price": 1.05
+      "price": null
     }
   ],
-  "postcard_price_total": 1.05,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
@@ -60,7 +60,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": 34.5,
+    "price": null,
     "shipping_allocated": 1.62,
     "arrived": "2025-05-14",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
     "photo": "https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131",
     "shop": "MW-MOBA",

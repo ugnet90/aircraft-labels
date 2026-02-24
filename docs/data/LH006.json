@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": 39.5,
+  "price": null,
   "shipping_allocated": 3.25,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "-",
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-LH006-01",
-      "label": "-",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": 39.5,
+    "price": null,
     "shipping_allocated": 3.25,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "-",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
     "shop": "MW-MOBA",

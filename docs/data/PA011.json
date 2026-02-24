@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay BUCHair USA",
-  "price": 56.7,
+  "price": null,
   "shipping_allocated": 46.46,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "-",
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-PA011-01",
-      "label": "-",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay BUCHair USA",
-    "price": 56.7,
+    "price": null,
     "shipping_allocated": 46.46,
     "arrived": "2025-07-07",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "-",
     "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/261236",
     "shop": "Ebay BUCHair USA",

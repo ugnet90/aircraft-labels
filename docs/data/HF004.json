@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Kontorbuer",
-  "price": 13.0,
+  "price": null,
   "shipping_allocated": 1.41,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-HF004-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/33534",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Kontorbuer",
-    "price": 13.0,
+    "price": null,
     "shipping_allocated": 1.41,
     "arrived": "2026-01-27",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
     "photo": "https://www.jetphotos.com/photo/33534",
     "shop": "Ebay Kontorbuer",

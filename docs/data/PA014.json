@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Waffle Collection",
-  "price": 31.8,
+  "price": null,
   "shipping_allocated": 35.54,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-PA014-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/5975740",
   "arrived_excel": "2025-07-15",
   "arrived": "2025-07-15",
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Waffle Collection",
-    "price": 31.8,
+    "price": null,
     "shipping_allocated": 35.54,
     "arrived": "2025-07-15",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
     "photo": "https://www.jetphotos.com/photo/5975740",
     "shop": "Ebay Waffle Collection",

@@ -20,7 +20,7 @@
   "price": null,
   "shipping_allocated": null,
   "flown": true,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-OS001-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/10159741",
   "arrived_excel": "",
   "arrived": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
     "photo": "https://www.jetphotos.com/photo/10159741",
     "shop": "aviationmegastore.com",

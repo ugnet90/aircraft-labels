@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 74.2,
+  "price": null,
   "shipping_allocated": 3.12,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-LX016-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/373164/HB-IDB",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 74.2,
+    "price": null,
     "shipping_allocated": 3.12,
     "arrived": "2026-01-15",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
     "photo": "https://www.airhistory.net/photo/373164/HB-IDB",
     "shop": "MW-Moba",

@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay krysset_4",
-  "price": 38.47,
+  "price": null,
   "shipping_allocated": 12.27,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
   "postcard_price": 1.05,
@@ -29,10 +29,10 @@
       "id": "PC-SK006-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
-      "price": 1.05
+      "price": null
     }
   ],
-  "postcard_price_total": 1.05,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
   "arrived_excel": "2026-01-23",
   "arrived": "2026-01-23",
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay krysset_4",
-    "price": 38.47,
+    "price": null,
     "shipping_allocated": 12.27,
     "arrived": "2026-01-23",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
     "photo": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
     "shop": "Ebay krysset_4",

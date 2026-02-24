@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Scaled-Airliners",
-  "price": 29.0,
+  "price": null,
   "shipping_allocated": 8.9,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
   "postcard_price": 1.85,
@@ -29,10 +29,10 @@
       "id": "PC-SK005-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
-      "price": 1.85
+      "price": null
     }
   ],
-  "postcard_price_total": 1.85,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87",
   "arrived_excel": "2025-11-06",
   "arrived": "2025-11-06",
@@ -60,7 +60,7 @@
     "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Ebay Scaled-Airliners",
-    "price": 29.0,
+    "price": null,
     "shipping_allocated": 8.9,
     "arrived": "2025-11-06",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
     "photo": "https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87",
     "shop": "Ebay Scaled-Airliners",

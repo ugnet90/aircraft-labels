@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 60.0,
+  "price": null,
   "shipping_allocated": 1.48,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-SO015-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -60,7 +60,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 60.0,
+    "price": null,
     "shipping_allocated": 1.48,
     "arrived": "2025-11-12",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
     "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
     "shop": "MW-Moba",

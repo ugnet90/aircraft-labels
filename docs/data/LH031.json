@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Models Shop",
-  "price": 37.66,
+  "price": null,
   "shipping_allocated": 10.69,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "x",
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-LH031-01",
-      "label": "x",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Ebay Models Shop",
-    "price": 37.66,
+    "price": null,
     "shipping_allocated": 10.69,
     "arrived": "2026-01-28",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "x",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
     "shop": "Ebay Models Shop",

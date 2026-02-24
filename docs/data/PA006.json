@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": 34.5,
+  "price": null,
   "shipping_allocated": 3.69,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-PA006-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.planepictures.net/v3/show_en.php?id=276508",
   "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
@@ -60,7 +60,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": 34.5,
+    "price": null,
     "shipping_allocated": 3.69,
     "arrived": "2025-05-22",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
     "photo": "https://www.planepictures.net/v3/show_en.php?id=276508",
     "shop": "MW-MOBA",

@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Aviationmegastore",
-  "price": 60.35,
+  "price": null,
   "shipping_allocated": 14.17,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:beim Modell vorhanden",
   "postcard_info": "beim Modell vorhanden",
   "postcard_url": "",
   "postcard_price": 0.0,
@@ -29,7 +29,7 @@
       "id": "PC-SO020-01",
       "label": "beim Modell vorhanden",
       "url": "",
-      "price": 0.0
+      "price": null
     }
   ],
   "postcard_price_total": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Patriot Model",
     "model_number": "",
     "shop": "Aviationmegastore",
-    "price": 60.35,
+    "price": null,
     "shipping_allocated": 14.17,
     "arrived": "2025-12-23",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:beim Modell vorhanden",
     "postcard_url": "",
     "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
     "shop": "Aviationmegastore",

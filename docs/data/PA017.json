@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 64.5,
+  "price": null,
   "shipping_allocated": 5.27,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "-",
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-PA017-01",
-      "label": "-",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 64.5,
+    "price": null,
     "shipping_allocated": 5.27,
     "arrived": "2025-08-08",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "-",
     "postcard_url": "",
     "photo": "https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
     "shop": "MW-Moba",

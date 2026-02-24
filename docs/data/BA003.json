@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 50.0,
+  "price": null,
   "shipping_allocated": 1.23,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "x",
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-BA003-01",
-      "label": "x",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 50.0,
+    "price": null,
     "shipping_allocated": 1.23,
     "arrived": "2025-11-12",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "x",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
     "shop": "MW-Moba",

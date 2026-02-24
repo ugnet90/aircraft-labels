@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "https://www.flight-shop.de",
-  "price": 69.9,
+  "price": null,
   "shipping_allocated": null,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-SO002-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "https://www.flight-shop.de",
-    "price": 69.9,
+    "price": null,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
     "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
     "shop": "https://www.flight-shop.de",

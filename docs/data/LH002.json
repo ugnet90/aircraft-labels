@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Cora Singer",
-  "price": 33.0,
+  "price": null,
   "shipping_allocated": null,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:falsche Reg. | U:https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
   "postcard_info": "falsche Reg.",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-LH002-01",
       "label": "falsche Reg.",
       "url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Cora Singer",
-    "price": 33.0,
+    "price": null,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:falsche Reg. | U:https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
     "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
     "shop": "Kleinanzeigen Cora Singer",

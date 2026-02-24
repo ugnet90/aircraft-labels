@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
-  "price": 35.59,
+  "price": null,
   "shipping_allocated": 3.87,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-PA018-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
   "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
-    "price": 35.59,
+    "price": null,
     "shipping_allocated": 3.87,
     "arrived": "2025-11-05",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
     "shop": "Ebay Felindre Diecast",

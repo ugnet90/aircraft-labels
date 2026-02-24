@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Australian Aviation Center",
-  "price": 54.97,
+  "price": null,
   "shipping_allocated": null,
   "flown": true,
-  "postcards_raw": "",
+  "postcards_raw": "I:Kennung vom Eigenflug | U:https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
   "postcard_info": "Kennung vom Eigenflug",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-LH001-01",
       "label": "Kennung vom Eigenflug",
       "url": "https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "Australian Aviation Center",
-    "price": 54.97,
+    "price": null,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:Kennung vom Eigenflug | U:https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
     "photo": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
     "shop": "Australian Aviation Center",

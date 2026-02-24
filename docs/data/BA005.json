@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 40.0,
+  "price": null,
   "shipping_allocated": 0.88,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "I:andere Bemalung | U:https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
   "postcard_info": "andere Bemalung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
   "postcard_price": 0.85,
@@ -29,10 +29,10 @@
       "id": "PC-BA005-01",
       "label": "andere Bemalung",
       "url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
-      "price": 0.85
+      "price": null
     }
   ],
-  "postcard_price_total": 0.85,
+  "postcard_price_total": null,
   "photo": "https://abpic.co.uk/pictures/view/1732136",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 40.0,
+    "price": null,
     "shipping_allocated": 0.88,
     "arrived": "2025-12-06",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "I:andere Bemalung | U:https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
     "photo": "https://abpic.co.uk/pictures/view/1732136",
     "shop": "MW-Moba",

@@ -17,17 +17,17 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Marktplaats: TOGAflex",
-  "price": 25.0,
+  "price": null,
   "shipping_allocated": 1.3,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "-",
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [
     {
       "id": "PC-WA001-01",
-      "label": "-",
+      "label": "",
       "url": "",
       "price": null
     }
@@ -60,7 +60,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Marktplaats: TOGAflex",
-    "price": 25.0,
+    "price": null,
     "shipping_allocated": 1.3,
     "arrived": "2025-06-03",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "-",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1135487/ph-xld-klm-exel-atr-42-320",
     "shop": "Marktplaats: TOGAflex",

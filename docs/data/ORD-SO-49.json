@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Aviation Center Berlin",
-  "price": 98.77,
+  "price": null,
   "shipping_allocated": null,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-ORD-SO-49-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Patriot Model",
     "model_number": "",
     "shop": "Aviation Center Berlin",
-    "price": 98.77,
+    "price": null,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": "2025-12-29",
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
     "photo": "https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123",
     "shop": "Aviation Center Berlin",

@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
-  "price": 37.17,
+  "price": null,
   "shipping_allocated": 5.62,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-ORD-LX-26-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.airliners.net/photo/Swissair/Douglas-DC-6B/108683",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +60,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
-    "price": 37.17,
+    "price": null,
     "shipping_allocated": 5.62,
     "arrived": null,
     "ordered_at": "2026-02-22",
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
     "photo": "https://www.airliners.net/photo/Swissair/Douglas-DC-6B/108683",
     "shop": "Ebay Felindre Diecast",

@@ -17,10 +17,10 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Wingsmo",
-  "price": 28.3,
+  "price": null,
   "shipping_allocated": 6.69,
   "flown": null,
-  "postcards_raw": "",
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_price": 1.35,
@@ -29,10 +29,10 @@
       "id": "PC-PA005-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
-      "price": 1.35
+      "price": null
     }
   ],
-  "postcard_price_total": 1.35,
+  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
   "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
@@ -60,7 +60,7 @@
     "manufacturer": "Daron",
     "model_number": "",
     "shop": "Wingsmo",
-    "price": 28.3,
+    "price": null,
     "shipping_allocated": 6.69,
     "arrived": "2025-05-22",
     "ordered_at": null,
@@ -72,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "",
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
     "photo": "https://www.airhistory.net/photo/19672/N61NA",
     "shop": "Wingsmo",
