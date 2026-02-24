@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay DiecastAirplaneTreasuryTrove",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 52.69,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
@@ -29,10 +29,9 @@
       "id": "PC-KL008-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://abpic.co.uk/pictures/view/1947917",
   "arrived_excel": "2025-11-14",
   "arrived": "2025-11-14",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay DiecastAirplaneTreasuryTrove",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 52.69,
     "arrived": "2025-11-14",
     "ordered_at": null,

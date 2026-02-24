@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 1.16,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
@@ -29,10 +29,9 @@
       "id": "PC-BOA002-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/574510/G-ASGH",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 1.16,
     "arrived": "2025-08-20",
     "ordered_at": null,

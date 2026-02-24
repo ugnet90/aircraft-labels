@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "flight-shop.de/",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 5.1,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
@@ -29,10 +29,9 @@
       "id": "PC-WA003-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
   "arrived_excel": "2025-06-26",
   "arrived": "2025-06-26",
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "flight-shop.de/",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 5.1,
     "arrived": "2025-06-26",
     "ordered_at": null,

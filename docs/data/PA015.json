@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Alexmodels.cz",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 21.18,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA015-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
   "arrived_excel": "2025-07-21",
   "arrived": "2025-07-21",
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Alexmodels.cz",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 21.18,
     "arrived": "2025-07-21",
     "ordered_at": null,

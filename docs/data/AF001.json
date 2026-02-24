@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": 0.77,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/5649-air-france-a318.html",
@@ -29,10 +29,9 @@
       "id": "PC-AF001-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/5649-air-france-a318.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/930200/f-gugd-air-france-airbus-a318-111",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
@@ -60,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": 0.77,
     "arrived": "2025-12-06",
     "ordered_at": null,

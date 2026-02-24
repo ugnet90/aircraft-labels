@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Sky Shop",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": null,
   "flown": true,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
@@ -29,10 +29,9 @@
       "id": "PC-TP001-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "SkyFlight",
     "model_number": "",
     "shop": "Sky Shop",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

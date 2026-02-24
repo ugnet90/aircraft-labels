@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Sklep Modelarski",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 24.21,
   "flown": true,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
@@ -29,10 +29,9 @@
       "id": "PC-BT001-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11",
   "arrived_excel": "2025-10-10",
   "arrived": "2025-10-10",
@@ -60,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Sklep Modelarski",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 24.21,
     "arrived": "2025-10-10",
     "ordered_at": null,

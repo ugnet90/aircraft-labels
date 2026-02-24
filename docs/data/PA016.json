@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
-  "price": null,
+  "price": 1.05,
   "shipping_allocated": 26.97,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA016-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
-      "price": null
+      "price": 1.05
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L",
   "arrived_excel": "2025-08-05",
   "arrived": "2025-08-05",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
-    "price": null,
+    "price": 1.05,
     "shipping_allocated": 26.97,
     "arrived": "2025-08-05",
     "ordered_at": null,

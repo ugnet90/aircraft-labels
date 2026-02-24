@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay waffle-collectibles",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": 46.78,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA008-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/481727/N818PA",
   "arrived_excel": "2025-06-18",
   "arrived": "2025-06-18",
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Ebay waffle-collectibles",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": 46.78,
     "arrived": "2025-06-18",
     "ordered_at": null,

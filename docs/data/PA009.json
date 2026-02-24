@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay aeromini1",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 17.86,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA009-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
   "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay aeromini1",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 17.86,
     "arrived": "2025-07-04",
     "ordered_at": null,

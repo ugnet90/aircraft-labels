@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Aviationmegastore",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 13.49,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
@@ -29,10 +29,9 @@
       "id": "PC-OS020-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://abpic.co.uk/pictures/registration/OE-LAM",
   "arrived_excel": "2026-01-16",
   "arrived": "2026-01-16",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Aviationmegastore",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 13.49,
     "arrived": "2026-01-16",
     "ordered_at": null,

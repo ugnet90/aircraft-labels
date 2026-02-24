@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 0.97,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
@@ -29,10 +29,9 @@
       "id": "PC-LX012-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -60,7 +59,7 @@
     "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 0.97,
     "arrived": "2025-11-12",
     "ordered_at": null,

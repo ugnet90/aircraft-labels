@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 5.5,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
@@ -29,10 +29,9 @@
       "id": "PC-OS011-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Witty Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 5.5,
     "arrived": null,
     "ordered_at": null,

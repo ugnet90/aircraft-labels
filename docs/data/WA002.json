@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Marktplaats: TOGAflex",
-  "price": null,
+  "price": 1.05,
   "shipping_allocated": 1.3,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
@@ -29,10 +29,9 @@
       "id": "PC-WA002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
-      "price": null
+      "price": 1.05
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
   "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
@@ -60,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Marktplaats: TOGAflex",
-    "price": null,
+    "price": 1.05,
     "shipping_allocated": 1.3,
     "arrived": "2025-06-03",
     "ordered_at": null,

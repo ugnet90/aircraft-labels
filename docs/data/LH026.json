@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 0.97,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
@@ -29,10 +29,9 @@
       "id": "PC-LH026-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -60,7 +59,7 @@
     "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 0.97,
     "arrived": "2025-11-12",
     "ordered_at": null,

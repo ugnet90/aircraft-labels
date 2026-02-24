@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 1.62,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
@@ -29,10 +29,9 @@
       "id": "PC-LX003-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
@@ -60,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 1.62,
     "arrived": "2025-05-14",
     "ordered_at": null,

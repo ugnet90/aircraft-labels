@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "'1:350",
   "shop": "Leboncoin pat33600",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 6.95,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
@@ -29,10 +29,9 @@
       "id": "PC-SM002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
   "arrived_excel": "2025-06-02",
   "arrived": "2025-06-02",
@@ -60,7 +59,7 @@
     "manufacturer": "Corgi",
     "model_number": "",
     "shop": "Leboncoin pat33600",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 6.95,
     "arrived": "2025-06-02",
     "ordered_at": null,

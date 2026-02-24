@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": 3.23,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
@@ -29,10 +29,9 @@
       "id": "PC-LH018-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/198636/D-ABIB",
   "arrived_excel": "2025-08-08",
   "arrived": "2025-08-08",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": 3.23,
     "arrived": "2025-08-08",
     "ordered_at": null,

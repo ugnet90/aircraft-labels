@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 1.42,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
@@ -29,10 +29,9 @@
       "id": "PC-LH019-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 1.42,
     "arrived": "2025-08-20",
     "ordered_at": null,

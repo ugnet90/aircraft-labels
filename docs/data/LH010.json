@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Josef Voß",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 5.0,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
@@ -29,10 +29,9 @@
       "id": "PC-LH010-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.jetphotos.com/photo/11667623",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Josef Voß",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 5.0,
     "arrived": null,
     "ordered_at": null,

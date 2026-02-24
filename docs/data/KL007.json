@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay Felindre Diecast",
-  "price": null,
+  "price": 1.05,
   "shipping_allocated": 9.09,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
@@ -29,10 +29,9 @@
       "id": "PC-KL007-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
-      "price": null
+      "price": 1.05
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
   "arrived_excel": "2025-10-30",
   "arrived": "2025-10-30",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay Felindre Diecast",
-    "price": null,
+    "price": 1.05,
     "shipping_allocated": 9.09,
     "arrived": "2025-10-30",
     "ordered_at": null,

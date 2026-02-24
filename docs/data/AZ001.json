@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Matthias Kock",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
@@ -29,10 +29,9 @@
       "id": "PC-AZ001-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.azfleet.info/aerei/douglas-dc8/i-diwa",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Kleinanzeigen Matthias Kock",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

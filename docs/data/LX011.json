@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Finn",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 7.0,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
@@ -29,10 +29,9 @@
       "id": "PC-LX011-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -60,7 +59,7 @@
     "manufacturer": "Tucano Line",
     "model_number": "",
     "shop": "Kleinanzeigen Finn",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 7.0,
     "arrived": "2025-11-12",
     "ordered_at": null,

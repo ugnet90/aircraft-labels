@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "https://www.modelwereld.eu/en/",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 21.0,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA003-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
   "arrived_excel": "2025-05-08",
   "arrived": "2025-05-08",
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "https://www.modelwereld.eu/en/",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 21.0,
     "arrived": "2025-05-08",
     "ordered_at": null,

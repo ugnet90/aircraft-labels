@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Dan Segal",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 5.22,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
@@ -29,10 +29,9 @@
       "id": "PC-OS017-01",
       "label": "",
       "url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
   "arrived_excel": "2025-06-16",
   "arrived": "2025-06-16",
@@ -60,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Dan Segal",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 5.22,
     "arrived": "2025-06-16",
     "ordered_at": null,

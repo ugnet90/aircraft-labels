@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 4.09,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/40154-TAP-Cargo-A330.html",
@@ -29,10 +29,9 @@
       "id": "PC-TP002-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/40154-TAP-Cargo-A330.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1169224/cs-top-tap-air-cargo-airbus-a330-202",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",
@@ -60,7 +59,7 @@
     "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 4.09,
     "arrived": "2026-02-13",
     "ordered_at": null,

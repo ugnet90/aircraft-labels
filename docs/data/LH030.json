@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 1.9,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
@@ -29,10 +29,9 @@
       "id": "PC-LH030-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 1.9,
     "arrived": "2026-01-15",
     "ordered_at": null,

@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
@@ -29,10 +29,9 @@
       "id": "PC-SK003-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": null,
     "arrived": "2025-05-14",
     "ordered_at": null,

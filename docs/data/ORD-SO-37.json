@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 6.05,
   "flown": null,
   "postcards_raw": "I:andere Livery | U:https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
@@ -29,10 +29,9 @@
       "id": "PC-ORD-SO-37-01",
       "label": "andere Livery",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 6.05,
     "arrived": null,
     "ordered_at": "2026-02-15",

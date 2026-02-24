@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": 2.01,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
@@ -29,10 +29,9 @@
       "id": "PC-LX018-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://cdn.jetphotos.com/full/2/11550_1280047497.jpg",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": 2.01,
     "arrived": "2026-02-13",
     "ordered_at": null,

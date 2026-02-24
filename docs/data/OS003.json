@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Willhaben",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "I:OE-LVH",
@@ -29,10 +29,9 @@
       "id": "PC-OS003-01",
       "label": "OE-LVH",
       "url": "",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Willhaben",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

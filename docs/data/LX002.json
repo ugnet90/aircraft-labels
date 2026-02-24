@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Swiss-Edelweiss Airplane Shop",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": null,
   "flown": true,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
@@ -29,10 +29,9 @@
       "id": "PC-LX002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "Swiss-Edelweiss Airplane Shop",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

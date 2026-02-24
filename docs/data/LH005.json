@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Rudolf Zimmermann",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
@@ -29,10 +29,9 @@
       "id": "PC-LH005-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Rudolf Zimmermann",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

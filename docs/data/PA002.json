@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Michael",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/18164-pan-am-19968-b737.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/18164-pan-am-19968-b737.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "Kleinanzeigen Michael",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

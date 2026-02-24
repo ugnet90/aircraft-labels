@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": null,
   "flown": true,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
@@ -29,10 +29,9 @@
       "id": "PC-SK001-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

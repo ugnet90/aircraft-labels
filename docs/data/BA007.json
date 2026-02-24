@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": 1.38,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
@@ -29,10 +29,9 @@
       "id": "PC-BA007-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airteamimages.com/hawker-siddeley-trident_g-awzn_bea-british-european-airways_40653",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
@@ -60,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": 1.38,
     "arrived": "2026-01-15",
     "ordered_at": null,

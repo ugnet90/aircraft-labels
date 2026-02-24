@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 1.39,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
@@ -29,10 +29,9 @@
       "id": "PC-SK004-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/018107/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-81-dc-9-81",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
@@ -60,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 1.39,
     "arrived": "2025-05-14",
     "ordered_at": null,

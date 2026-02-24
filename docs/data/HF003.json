@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 0.85,
   "shipping_allocated": 1.38,
   "flown": null,
   "postcards_raw": "I:gleiche Kennung, andere Livery | U:https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
@@ -29,10 +29,9 @@
       "id": "PC-HF003-01",
       "label": "gleiche Kennung, andere Livery",
       "url": "https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
-      "price": null
+      "price": 0.85
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
@@ -60,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 0.85,
     "shipping_allocated": 1.38,
     "arrived": "2026-01-15",
     "ordered_at": null,

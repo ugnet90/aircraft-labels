@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "https://www.modelyletadel.cz/en/",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 8.6,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
@@ -29,10 +29,9 @@
       "id": "PC-PA001-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/516777/N529PA",
   "arrived_excel": "",
   "arrived": null,
@@ -60,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "https://www.modelyletadel.cz/en/",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 8.6,
     "arrived": null,
     "ordered_at": null,

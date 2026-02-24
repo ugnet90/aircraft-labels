@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": null,
+  "price": 1.35,
   "shipping_allocated": 3.54,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
@@ -29,10 +29,9 @@
       "id": "PC-SO023-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
-      "price": null
+      "price": 1.35
     }
   ],
-  "postcard_price_total": null,
   "photo": "https://www.airfleets.net/photo/Air-Belgium_OO-ABG_97032_a330.htm",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",
@@ -60,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": null,
+    "price": 1.35,
     "shipping_allocated": 3.54,
     "arrived": "2026-02-13",
     "ordered_at": null,
