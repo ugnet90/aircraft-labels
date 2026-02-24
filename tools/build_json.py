@@ -230,6 +230,18 @@ def main() -> int:
         postcard_info = (r.get("postkarte_info", "") or "").strip()
         postcard_url = (r.get("postkarte_url", "") or "").strip()
         postcard_price = to_float(r.get("Preis_Postkarte", ""))
+
+        # Build postcard objects (hybrid model): postcards[] as canonical, keep legacy fields for now
+        postcards: List[Dict[str, Any]] = []
+        
+        if postcard_info or postcard_url or (postcard_price not in (None, 0.0)):
+            postcards.append({
+                "id": f"PC-{model_id}-01",
+                "label": postcard_info,
+                "url": postcard_url,
+                "price": postcard_price if postcard_price not in (None, 0.0) else None,
+            })
+    
         photo = (r.get("Foto", "") or "").strip()
 
         logo_id = (r.get("logo_id", "") or "").strip()
@@ -303,6 +315,7 @@ def main() -> int:
             "postcard_info": postcard_info,
             "postcard_url": postcard_url,
             "postcard_price": postcard_price,
+            "postcards": postcards,
             "photo": photo,
             "arrived_excel": angekommen_raw,
             "arrived": angekommen_iso,
