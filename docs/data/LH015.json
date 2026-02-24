@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LH015-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/477289/D-ABKB",
   "arrived_excel": "2025-06-23",
   "arrived": "2025-06-23",

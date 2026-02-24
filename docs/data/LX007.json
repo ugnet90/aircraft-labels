@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-LX007-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer",
   "arrived_excel": "2025-10-08",
   "arrived": "2025-10-08",

@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-ORD-AB-7-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1232122/d-abda-air-berlin-airbus-a320-214",
   "arrived_excel": "",
   "arrived": null,

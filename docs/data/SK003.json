@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-SK003-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",

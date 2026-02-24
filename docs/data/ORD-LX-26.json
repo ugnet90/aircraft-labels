@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-ORD-LX-26-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airliners.net/photo/Swissair/Douglas-DC-6B/108683",
   "arrived_excel": "",
   "arrived": null,

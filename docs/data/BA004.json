@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-BA004-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",

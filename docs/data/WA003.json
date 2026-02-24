@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-WA003-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
   "arrived_excel": "2025-06-26",
   "arrived": "2025-06-26",

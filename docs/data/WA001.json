@@ -24,6 +24,14 @@
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-WA001-01",
+      "label": "-",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1135487/ph-xld-klm-exel-atr-42-320",
   "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",

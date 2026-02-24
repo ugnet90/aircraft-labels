@@ -24,6 +24,14 @@
   "postcard_info": "gleiche Kennung, andere Livery",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-HF003-01",
+      "label": "gleiche Kennung, andere Livery",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",

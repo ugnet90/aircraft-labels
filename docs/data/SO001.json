@@ -24,6 +24,14 @@
   "postcard_info": "vorhanden",
   "postcard_url": "",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-SO001-01",
+      "label": "vorhanden",
+      "url": "",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
   "arrived_excel": "",
   "arrived": null,

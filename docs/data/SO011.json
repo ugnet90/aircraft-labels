@@ -24,6 +24,14 @@
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-SO011-01",
+      "label": "x",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "x",
   "arrived_excel": "2025-10-27",
   "arrived": "2025-10-27",

@@ -24,6 +24,14 @@
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-SO013-01",
+      "label": "x",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg",
   "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",

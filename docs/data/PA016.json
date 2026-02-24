@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-PA016-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L",
   "arrived_excel": "2025-08-05",
   "arrived": "2025-08-05",

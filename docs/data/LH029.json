@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/24816-lufthansa-cargo-b747.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-LH029-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/24816-lufthansa-cargo-b747.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.jetphotos.com/photo/10539124",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",

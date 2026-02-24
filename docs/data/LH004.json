@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LH004-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
   "arrived_excel": "",
   "arrived": null,

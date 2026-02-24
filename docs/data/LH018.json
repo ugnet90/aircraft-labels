@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LH018-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/198636/D-ABIB",
   "arrived_excel": "2025-08-08",
   "arrived": "2025-08-08",

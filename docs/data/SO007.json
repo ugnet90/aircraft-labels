@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-SO007-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/642702/A-703",
   "arrived_excel": "2025-05-27",
   "arrived": "2025-05-27",

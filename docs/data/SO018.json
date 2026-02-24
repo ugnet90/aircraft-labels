@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung | andere Bemalung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-SO018-01",
+      "label": "andere Kennung | andere Bemalung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.airhistory.net/photos/0027472.jpg",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",

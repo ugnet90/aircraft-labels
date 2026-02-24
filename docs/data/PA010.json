@@ -24,6 +24,14 @@
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-PA010-01",
+      "label": "-",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "",
   "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",

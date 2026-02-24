@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-AF002-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",

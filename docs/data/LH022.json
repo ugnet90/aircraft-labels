@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung, Typ 100",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
   "postcard_price": 1.85,
+  "postcards": [
+    {
+      "id": "PC-LH022-01",
+      "label": "andere Kennung, Typ 100",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
+      "price": 1.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",

@@ -24,6 +24,14 @@
   "postcard_info": "-",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-LH013-01",
+      "label": "-",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
   "arrived_excel": "2025-06-20",
   "arrived": "2025-06-20",

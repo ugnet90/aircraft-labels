@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-SO004-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
   "arrived_excel": "",
   "arrived": null,

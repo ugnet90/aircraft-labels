@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LX011-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",

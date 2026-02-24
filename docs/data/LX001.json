@@ -24,6 +24,14 @@
   "postcard_info": "vorhanden",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-LX001-01",
+      "label": "vorhanden",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100",
   "arrived_excel": "",
   "arrived": null,

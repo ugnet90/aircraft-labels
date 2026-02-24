@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-OS017-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
   "arrived_excel": "2025-06-16",
   "arrived": "2025-06-16",

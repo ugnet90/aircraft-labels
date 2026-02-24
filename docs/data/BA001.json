@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-BA001-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
   "arrived_excel": "",
   "arrived": null,

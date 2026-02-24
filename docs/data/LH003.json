@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-LH003-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830",
   "arrived_excel": "",
   "arrived": null,

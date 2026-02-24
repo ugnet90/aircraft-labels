@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LH016-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planepictures.net/v3/show.php?id=614533",
   "arrived_excel": "2025-07-14",
   "arrived": "2025-07-14",

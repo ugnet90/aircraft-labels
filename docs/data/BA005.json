@@ -24,6 +24,14 @@
   "postcard_info": "andere Bemalung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-BA005-01",
+      "label": "andere Bemalung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://abpic.co.uk/pictures/view/1732136",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",

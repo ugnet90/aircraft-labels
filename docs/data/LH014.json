@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/22695-lufthansa-a340.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LH014-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22695-lufthansa-a340.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/327157/d-aigf-lufthansa-airbus-a340-311",
   "arrived_excel": "2025-06-23",
   "arrived": "2025-06-23",

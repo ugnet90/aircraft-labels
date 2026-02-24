@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-SO015-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",

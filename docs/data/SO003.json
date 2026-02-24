@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-SO003-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
   "arrived_excel": "",
   "arrived": null,

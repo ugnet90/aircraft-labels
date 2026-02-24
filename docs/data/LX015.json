@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LX015-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/672110/HB-IGB",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",

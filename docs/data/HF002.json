@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-HF002-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
   "arrived_excel": "",
   "arrived": null,

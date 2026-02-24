@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-OS007-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223",
   "arrived_excel": "",
   "arrived": null,

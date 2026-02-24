@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-ORD-SO-49-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123",
   "arrived_excel": "",
   "arrived": null,

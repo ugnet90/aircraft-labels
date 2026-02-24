@@ -24,6 +24,14 @@
   "postcard_info": "andere Bez. KLM UK",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-WA004-01",
+      "label": "andere Bez. KLM UK",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
   "arrived_excel": "2026-01-28",
   "arrived": "2026-01-28",

@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-OS015-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313",
   "arrived_excel": "",
   "arrived": null,

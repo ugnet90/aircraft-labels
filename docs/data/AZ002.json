@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-AZ002-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/408884/ei-ejg-alitalia-compagnia-aerea-italiana-airbus-a330-202",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",

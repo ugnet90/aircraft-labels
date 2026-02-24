@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
   "postcard_price": 2.5,
+  "postcards": [
+    {
+      "id": "PC-SK007-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+      "price": 2.5
+    }
+  ],
   "photo": "https://image.airport-data.com/aircraft/954767.jpg",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",

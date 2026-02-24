@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-PA009-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
   "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",

@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-KL007-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
   "arrived_excel": "2025-10-30",
   "arrived": "2025-10-30",

@@ -24,6 +24,14 @@
   "postcard_info": "beim Modell vorhanden",
   "postcard_url": "",
   "postcard_price": 0.0,
+  "postcards": [
+    {
+      "id": "PC-SO020-01",
+      "label": "beim Modell vorhanden",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
   "arrived_excel": "2025-12-23",
   "arrived": "2025-12-23",

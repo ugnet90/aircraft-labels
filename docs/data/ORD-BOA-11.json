@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung, nicht exakte Beschriftung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-ORD-BOA-11-01",
+      "label": "andere Kennung, nicht exakte Beschriftung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/338505/G-AWNB",
   "arrived_excel": "",
   "arrived": null,

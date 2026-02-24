@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-KL006-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30",
   "arrived_excel": "2025-10-23",
   "arrived": "2025-10-23",

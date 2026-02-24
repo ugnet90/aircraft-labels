@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-OS006-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r",
   "arrived_excel": "",
   "arrived": null,

@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
   "postcard_price": 1.85,
+  "postcards": [
+    {
+      "id": "PC-BA008-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+      "price": 1.85
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/747410/G-BEBM",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",

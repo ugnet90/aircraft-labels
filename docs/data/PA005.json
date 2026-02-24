@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-PA005-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
   "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",

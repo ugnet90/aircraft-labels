@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-KL008-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://abpic.co.uk/pictures/view/1947917",
   "arrived_excel": "2025-11-14",
   "arrived": "2025-11-14",

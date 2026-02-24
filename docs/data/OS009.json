@@ -24,6 +24,14 @@
   "postcard_info": "Bemalung nicht ganz exakt",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-OS009-01",
+      "label": "Bemalung nicht ganz exakt",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
   "arrived_excel": "",
   "arrived": null,

@@ -24,6 +24,14 @@
   "postcard_info": "andere Bemalung, andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-BA002-01",
+      "label": "andere Bemalung, andere Kennung",
+      "url": "https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/697193/G-BNYI",
   "arrived_excel": "2025-11-10",
   "arrived": "2025-11-10",

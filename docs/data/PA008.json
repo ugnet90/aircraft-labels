@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-PA008-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/481727/N818PA",
   "arrived_excel": "2025-06-18",
   "arrived": "2025-06-18",

@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LH030-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",

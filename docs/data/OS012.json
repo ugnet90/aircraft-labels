@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-OS012-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748",
   "arrived_excel": "",
   "arrived": null,

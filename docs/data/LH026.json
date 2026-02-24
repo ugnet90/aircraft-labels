@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LH026-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",

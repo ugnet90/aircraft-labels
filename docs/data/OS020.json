@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-OS020-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://abpic.co.uk/pictures/registration/OE-LAM",
   "arrived_excel": "2026-01-16",
   "arrived": "2026-01-16",

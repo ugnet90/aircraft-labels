@@ -24,6 +24,14 @@
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
+  "postcards": [
+    {
+      "id": "PC-SO019-01",
+      "label": "x",
+      "url": "",
+      "price": null
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/425749/165831/5831",
   "arrived_excel": "",
   "arrived": null,

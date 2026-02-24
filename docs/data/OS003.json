@@ -24,6 +24,14 @@
   "postcard_info": "OE-LVH",
   "postcard_url": "",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-OS003-01",
+      "label": "OE-LVH",
+      "url": "",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
   "arrived_excel": "",
   "arrived": null,

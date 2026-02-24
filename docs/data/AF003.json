@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
   "postcard_price": 1.05,
+  "postcards": [
+    {
+      "id": "PC-AF003-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+      "price": 1.05
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",

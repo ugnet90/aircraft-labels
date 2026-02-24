@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-PA003-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
   "arrived_excel": "2025-05-08",
   "arrived": "2025-05-08",

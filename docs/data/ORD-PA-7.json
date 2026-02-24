@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-ORD-PA-7-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planepictures.net/v3/show_en.php?id=695003",
   "arrived_excel": "",
   "arrived": null,

@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-OS014-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51",
   "arrived_excel": "",
   "arrived": null,

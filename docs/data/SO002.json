@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-SO002-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
   "arrived_excel": "",
   "arrived": null,

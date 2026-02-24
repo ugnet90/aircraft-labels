@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-SK001-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
   "arrived_excel": "",
   "arrived": null,

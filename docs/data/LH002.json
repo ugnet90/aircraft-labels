@@ -24,6 +24,14 @@
   "postcard_info": "falsche Reg.",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LH002-01",
+      "label": "falsche Reg.",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
   "arrived_excel": "",
   "arrived": null,

@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-AZ001-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.azfleet.info/aerei/douglas-dc8/i-diwa",
   "arrived_excel": "",
   "arrived": null,

@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-PA001-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/516777/N529PA",
   "arrived_excel": "",
   "arrived": null,

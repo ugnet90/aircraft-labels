@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LH010-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.jetphotos.com/photo/11667623",
   "arrived_excel": "",
   "arrived": null,

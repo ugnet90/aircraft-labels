@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LX016-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.airhistory.net/photo/373164/HB-IDB",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",

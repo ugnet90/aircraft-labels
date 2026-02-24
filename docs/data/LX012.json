@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
   "postcard_price": 1.35,
+  "postcards": [
+    {
+      "id": "PC-LX012-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+      "price": 1.35
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",

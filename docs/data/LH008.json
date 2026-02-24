@@ -24,6 +24,14 @@
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LH008-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship",
   "arrived_excel": "",
   "arrived": null,

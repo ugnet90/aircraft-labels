@@ -24,6 +24,14 @@
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
   "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-LX002-01",
+      "label": "andere Kennung",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+      "price": 0.85
+    }
+  ],
   "photo": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
   "arrived_excel": "",
   "arrived": null,
