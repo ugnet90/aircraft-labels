@@ -226,22 +226,63 @@ def main() -> int:
         shipping = to_float(r.get("Versandkosten", ""))
         eigenfluege = to_bool_x(r.get("Eigenfluege", ""))
 
-        postcard = (r.get("Postkarte", "") or "").strip()
+        postcards_raw = (r.get("postcards_raw", "") or "").strip()
+
+        # legacy fallback
         postcard_info = (r.get("postkarte_info", "") or "").strip()
         postcard_url = (r.get("postkarte_url", "") or "").strip()
         postcard_price = to_float(r.get("Preis_Postkarte", ""))
 
-        # Build postcard objects (hybrid model): postcards[] as canonical, keep legacy fields for now
         postcards: List[Dict[str, Any]] = []
+        postcard_price_total = 0.0
         
-        if postcard_info or postcard_url or (postcard_price not in (None, 0.0)):
+        def parse_price(val: str) -> float | None:
+            if not val:
+                return None
+            val = val.replace(",", ".").strip()
+            try:
+                return float(val)
+            except:
+                return None
+        
+        if postcards_raw:
+            cards = [c.strip() for c in postcards_raw.split("||") if c.strip()]
+            for idx, card in enumerate(cards, start=1):
+                label = ""
+                url = ""
+                price = None
+        
+                parts = [p.strip() for p in card.split("|") if p.strip()]
+                for p in parts:
+                    if p.startswith("I:"):
+                        label = p[2:].strip()
+                    elif p.startswith("U:"):
+                        url = p[2:].strip()
+                    elif p.startswith("P:"):
+                        price = parse_price(p[2:].strip())
+        
+                if price:
+                    postcard_price_total += price
+        
+                postcards.append({
+                    "id": f"PC-{model_id}-{idx:02d}",
+                    "label": label,
+                    "url": url,
+                    "price": price
+                })
+        
+        # fallback wenn kein postcards_raw vorhanden
+        elif postcard_info or postcard_url or postcard_price:
+            if postcard_price:
+                postcard_price_total = postcard_price
+        
             postcards.append({
                 "id": f"PC-{model_id}-01",
                 "label": postcard_info,
                 "url": postcard_url,
-                "price": postcard_price if postcard_price not in (None, 0.0) else None,
+                "price": postcard_price
             })
-    
+   
         photo = (r.get("Foto", "") or "").strip()
 
         logo_id = (r.get("logo_id", "") or "").strip()
@@ -316,6 +357,7 @@ def main() -> int:
             "postcard_url": postcard_url,
             "postcard_price": postcard_price,
             "postcards": postcards,
+            "postcard_price_total": round(postcard_price_total, 2) if postcard_price_total else None,
             "photo": photo,
             "arrived_excel": angekommen_raw,
             "arrived": angekommen_iso,
