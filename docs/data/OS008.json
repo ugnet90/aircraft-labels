@@ -20,7 +20,7 @@
   "price": 95.01,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
   "postcard_price": 1.85,
@@ -32,6 +32,7 @@
       "price": 1.85
     }
   ],
+  "postcard_price_total": 1.85,
   "photo": "https://www.planespotters.net/photo/215733/oe-lgi-austrian-arrows-bombardier-dhc-8-402q-dash-8",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
     "photo": "https://www.planespotters.net/photo/215733/oe-lgi-austrian-arrows-bombardier-dhc-8-402q-dash-8",
     "shop": "Ebay arniestrains-2",

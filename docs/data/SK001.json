@@ -20,7 +20,7 @@
   "price": 73.21,
   "shipping_allocated": null,
   "flown": true,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
     "photo": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
     "shop": "Ebay",

@@ -20,7 +20,7 @@
   "price": 47.57,
   "shipping_allocated": 8.6,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airhistory.net/photo/516777/N529PA",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
     "photo": "https://www.airhistory.net/photo/516777/N529PA",
     "shop": "https://www.modelyletadel.cz/en/",

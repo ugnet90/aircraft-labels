@@ -20,7 +20,7 @@
   "price": 39.27,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
   "arrived_excel": "2025-05-14",
   "arrived": "2025-05-14",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
     "photo": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
     "shop": "MW-MOBA",

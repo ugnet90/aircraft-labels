@@ -20,7 +20,7 @@
   "price": 40.0,
   "shipping_allocated": 0.88,
   "flown": null,
-  "postcard": "I:andere Bemalung | U:https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
+  "postcards_raw": "",
   "postcard_info": "andere Bemalung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://abpic.co.uk/pictures/view/1732136",
   "arrived_excel": "2025-12-06",
   "arrived": "2025-12-06",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Bemalung | U:https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
     "photo": "https://abpic.co.uk/pictures/view/1732136",
     "shop": "MW-Moba",

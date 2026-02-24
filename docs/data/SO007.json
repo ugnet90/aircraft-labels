@@ -20,7 +20,7 @@
   "price": 21.0,
   "shipping_allocated": 11.0,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airhistory.net/photo/642702/A-703",
   "arrived_excel": "2025-05-27",
   "arrived": "2025-05-27",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
     "photo": "https://www.airhistory.net/photo/642702/A-703",
     "shop": "2dehands Julien Lempereur",

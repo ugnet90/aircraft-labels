@@ -20,7 +20,7 @@
   "price": 44.14,
   "shipping_allocated": 4.8,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.airhistory.net/photo/819930/44-76671/0-76671",
   "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
     "photo": "https://www.airhistory.net/photo/819930/44-76671/0-76671",
     "shop": "Ebay Felindre Diecast",

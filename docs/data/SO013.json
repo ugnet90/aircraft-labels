@@ -20,7 +20,7 @@
   "price": 27.06,
   "shipping_allocated": 2.94,
   "flown": null,
-  "postcard": "x",
+  "postcards_raw": "",
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
@@ -32,6 +32,7 @@
       "price": null
     }
   ],
+  "postcard_price_total": null,
   "photo": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg",
   "arrived_excel": "2025-11-05",
   "arrived": "2025-11-05",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "x",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg",
     "shop": "Ebay Felindre Diecast",

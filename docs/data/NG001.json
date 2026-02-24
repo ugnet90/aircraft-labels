@@ -20,7 +20,7 @@
   "price": 18.0,
   "shipping_allocated": 2.65,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er",
   "arrived_excel": "2025-06-23",
   "arrived": "2025-06-23",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
     "photo": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er",
     "shop": "Kleinanzeigen Josef Voss",

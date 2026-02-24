@@ -20,7 +20,7 @@
   "price": 34.39,
   "shipping_allocated": 10.47,
   "flown": null,
-  "postcard": "I:andere Bez. KLM UK | U:https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+  "postcards_raw": "",
   "postcard_info": "andere Bez. KLM UK",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
   "arrived_excel": "2026-01-28",
   "arrived": "2026-01-28",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Bez. KLM UK | U:https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
     "photo": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
     "shop": "Ebay Models Shop",

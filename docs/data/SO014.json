@@ -20,7 +20,7 @@
   "price": 40.0,
   "shipping_allocated": 1.16,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
     "photo": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl",
     "shop": "MW-MOBA",

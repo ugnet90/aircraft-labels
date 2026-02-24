@@ -20,7 +20,7 @@
   "price": 68.49,
   "shipping_allocated": 9.09,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
   "postcard_price": 1.05,
@@ -32,6 +32,7 @@
       "price": 1.05
     }
   ],
+  "postcard_price_total": 1.05,
   "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
   "arrived_excel": "2025-10-30",
   "arrived": "2025-10-30",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
     "photo": "https://www.airhistory.net/photo/730187/PH-DSG",
     "shop": "Ebay Felindre Diecast",

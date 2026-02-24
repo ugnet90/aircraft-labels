@@ -20,7 +20,7 @@
   "price": 40.0,
   "shipping_allocated": 2.07,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
   "arrived_excel": "2025-06-03",
   "arrived": "2025-06-03",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
     "photo": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
     "shop": "Marktplaats: TOGAflex",

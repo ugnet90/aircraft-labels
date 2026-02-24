@@ -20,7 +20,7 @@
   "price": 15.0,
   "shipping_allocated": 9.0,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30",
   "arrived_excel": "2025-10-23",
   "arrived": "2025-10-23",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
     "photo": "https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30",
     "shop": "Kleinanzeigen Josef Voß",

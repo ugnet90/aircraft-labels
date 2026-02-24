@@ -20,7 +20,7 @@
   "price": 15.0,
   "shipping_allocated": 3.2,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
     "photo": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
     "shop": "Kleinanzeigen Josef Voß",

@@ -20,7 +20,7 @@
   "price": 69.9,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
     "photo": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
     "shop": "https://www.flight-shop.de",

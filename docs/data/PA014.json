@@ -20,7 +20,7 @@
   "price": 31.8,
   "shipping_allocated": 35.54,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.jetphotos.com/photo/5975740",
   "arrived_excel": "2025-07-15",
   "arrived": "2025-07-15",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
     "photo": "https://www.jetphotos.com/photo/5975740",
     "shop": "Ebay Waffle Collection",

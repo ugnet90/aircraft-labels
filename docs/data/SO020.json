@@ -20,7 +20,7 @@
   "price": 60.35,
   "shipping_allocated": 14.17,
   "flown": null,
-  "postcard": "I:beim Modell vorhanden",
+  "postcards_raw": "",
   "postcard_info": "beim Modell vorhanden",
   "postcard_url": "",
   "postcard_price": 0.0,
@@ -29,9 +29,10 @@
       "id": "PC-SO020-01",
       "label": "beim Modell vorhanden",
       "url": "",
-      "price": null
+      "price": 0.0
     }
   ],
+  "postcard_price_total": null,
   "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
   "arrived_excel": "2025-12-23",
   "arrived": "2025-12-23",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:beim Modell vorhanden",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
     "shop": "Aviationmegastore",

@@ -20,7 +20,7 @@
   "price": 98.77,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
     "photo": "https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123",
     "shop": "Aviation Center Berlin",

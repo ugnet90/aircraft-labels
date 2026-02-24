@@ -20,11 +20,12 @@
   "price": 20.5,
   "shipping_allocated": 2.74,
   "flown": null,
-  "postcard": "",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [],
+  "postcard_price_total": null,
   "photo": "http://ocdn.eu/images/pulscms/NDU7MDA_/a1b6ec02-cea2-4aab-8911-311b9d4c8293.jpeg",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",
@@ -64,7 +65,7 @@
     "model_extra": "with Rocket"
   },
   "links": {
-    "postcard": "",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "http://ocdn.eu/images/pulscms/NDU7MDA_/a1b6ec02-cea2-4aab-8911-311b9d4c8293.jpeg",
     "shop": "Ebay bigbird1946",

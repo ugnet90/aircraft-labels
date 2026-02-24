@@ -20,7 +20,7 @@
   "price": 39.5,
   "shipping_allocated": 1.03,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
     "photo": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
     "shop": "MW-Moba",

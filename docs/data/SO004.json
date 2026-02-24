@@ -20,7 +20,7 @@
   "price": 18.0,
   "shipping_allocated": 3.8,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
     "photo": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
     "shop": "Kleinanzeigen Josef Voß",

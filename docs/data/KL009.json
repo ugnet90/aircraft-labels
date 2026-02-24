@@ -20,7 +20,7 @@
   "price": 34.5,
   "shipping_allocated": 1.2,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
     "photo": "https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er",
     "shop": "MW-Moba",

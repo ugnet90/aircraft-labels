@@ -20,11 +20,12 @@
   "price": 27.5,
   "shipping_allocated": 10.0,
   "flown": null,
-  "postcard": "",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [],
+  "postcard_price_total": null,
   "photo": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster",
   "arrived_excel": "2025-07-23",
   "arrived": "2025-07-23",
@@ -64,7 +65,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster",
     "shop": "Ebay *industrial",

@@ -20,7 +20,7 @@
   "price": 23.5,
   "shipping_allocated": 6.18,
   "flown": null,
-  "postcard": "I:andere Kennung, nicht exakte Beschriftung | U:https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung, nicht exakte Beschriftung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airhistory.net/photo/338505/G-AWNB",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung, nicht exakte Beschriftung | U:https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
     "photo": "https://www.airhistory.net/photo/338505/G-AWNB",
     "shop": "Ebay bigbird1946",

@@ -20,7 +20,7 @@
   "price": 30.0,
   "shipping_allocated": 15.0,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
   "postcard_price": 1.85,
@@ -32,6 +32,7 @@
       "price": 1.85
     }
   ],
+  "postcard_price_total": 1.85,
   "photo": "https://www.planespotters.net/photo/764943/d-abya-lufthansa-boeing-747-130",
   "arrived_excel": "2025-11-13",
   "arrived": "2025-11-13",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
     "photo": "https://www.planespotters.net/photo/764943/d-abya-lufthansa-boeing-747-130",
     "shop": "Ebay leonzinn0",

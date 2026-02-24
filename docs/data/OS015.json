@@ -20,7 +20,7 @@
   "price": 47.0,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
     "photo": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313",
     "shop": "Ebay Leon",

@@ -20,7 +20,7 @@
   "price": 25.0,
   "shipping_allocated": 14.49,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg",
   "arrived_excel": "2025-10-10",
   "arrived": "2025-10-10",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
     "photo": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg",
     "shop": "Ebay herzlichst-willkommen",

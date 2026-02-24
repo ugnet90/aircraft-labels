@@ -20,7 +20,7 @@
   "price": 74.2,
   "shipping_allocated": 3.12,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.airhistory.net/photo/373164/HB-IDB",
   "arrived_excel": "2026-01-15",
   "arrived": "2026-01-15",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
     "photo": "https://www.airhistory.net/photo/373164/HB-IDB",
     "shop": "MW-Moba",

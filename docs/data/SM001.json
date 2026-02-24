@@ -20,11 +20,12 @@
   "price": 19.0,
   "shipping_allocated": 7.5,
   "flown": null,
-  "postcard": "",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
   "postcards": [],
+  "postcard_price_total": null,
   "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
   "arrived_excel": "2025-05-26",
   "arrived": "2025-05-26",
@@ -64,7 +65,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
     "shop": "Kleinanzeigen Steffi",

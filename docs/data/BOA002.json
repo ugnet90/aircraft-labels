@@ -20,7 +20,7 @@
   "price": 44.5,
   "shipping_allocated": 1.16,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airhistory.net/photo/574510/G-ASGH",
   "arrived_excel": "2025-08-20",
   "arrived": "2025-08-20",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
     "photo": "https://www.airhistory.net/photo/574510/G-ASGH",
     "shop": "MW-MOBA",

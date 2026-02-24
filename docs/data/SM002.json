@@ -20,7 +20,7 @@
   "price": 17.0,
   "shipping_allocated": 6.95,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
   "arrived_excel": "2025-06-02",
   "arrived": "2025-06-02",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
     "photo": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
     "shop": "Leboncoin pat33600",

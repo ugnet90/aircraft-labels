@@ -20,7 +20,7 @@
   "price": 28.3,
   "shipping_allocated": 6.69,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
   "arrived_excel": "2025-05-22",
   "arrived": "2025-05-22",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
     "photo": "https://www.airhistory.net/photo/19672/N61NA",
     "shop": "Wingsmo",

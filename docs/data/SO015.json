@@ -20,7 +20,7 @@
   "price": 60.0,
   "shipping_allocated": 1.48,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
     "photo": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
     "shop": "MW-Moba",

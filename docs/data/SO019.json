@@ -20,7 +20,7 @@
   "price": 15.0,
   "shipping_allocated": 0.33,
   "flown": null,
-  "postcard": "x",
+  "postcards_raw": "",
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
@@ -32,6 +32,7 @@
       "price": null
     }
   ],
+  "postcard_price_total": null,
   "photo": "https://www.airhistory.net/photo/425749/165831/5831",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "x",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.airhistory.net/photo/425749/165831/5831",
     "shop": "MW-Moba",

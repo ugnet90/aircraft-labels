@@ -20,7 +20,7 @@
   "price": 65.0,
   "shipping_allocated": 15.44,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
     "photo": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51",
     "shop": "https://www.avworld.ca/",

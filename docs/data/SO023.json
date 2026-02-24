@@ -20,7 +20,7 @@
   "price": 26.5,
   "shipping_allocated": 3.54,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airfleets.net/photo/Air-Belgium_OO-ABG_97032_a330.htm",
   "arrived_excel": "2026-02-13",
   "arrived": "2026-02-13",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
     "photo": "https://www.airfleets.net/photo/Air-Belgium_OO-ABG_97032_a330.htm",
     "shop": "Ebay bigbird1946",

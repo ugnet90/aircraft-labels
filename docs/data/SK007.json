@@ -20,7 +20,7 @@
   "price": 33.66,
   "shipping_allocated": 4.41,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
   "postcard_price": 2.5,
@@ -32,6 +32,7 @@
       "price": 2.5
     }
   ],
+  "postcard_price_total": 2.5,
   "photo": "https://image.airport-data.com/aircraft/954767.jpg",
   "arrived_excel": "2026-01-27",
   "arrived": "2026-01-27",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
     "photo": "https://image.airport-data.com/aircraft/954767.jpg",
     "shop": "Kleinanzeigen Micha",

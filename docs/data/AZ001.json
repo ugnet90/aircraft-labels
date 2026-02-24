@@ -20,7 +20,7 @@
   "price": 30.0,
   "shipping_allocated": null,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.azfleet.info/aerei/douglas-dc8/i-diwa",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
     "photo": "https://www.azfleet.info/aerei/douglas-dc8/i-diwa",
     "shop": "Kleinanzeigen Matthias Kock",

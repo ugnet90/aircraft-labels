@@ -20,7 +20,7 @@
   "price": 37.17,
   "shipping_allocated": 5.62,
   "flown": null,
-  "postcard": "U:https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+  "postcards_raw": "",
   "postcard_info": "",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airliners.net/photo/Swissair/Douglas-DC-6B/108683",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "U:https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
     "photo": "https://www.airliners.net/photo/Swissair/Douglas-DC-6B/108683",
     "shop": "Ebay Felindre Diecast",

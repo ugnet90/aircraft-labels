@@ -20,7 +20,7 @@
   "price": 53.65,
   "shipping_allocated": 8.11,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
   "postcard_price": 0.85,
@@ -32,6 +32,7 @@
       "price": 0.85
     }
   ],
+  "postcard_price_total": 0.85,
   "photo": "https://www.planepictures.net/v3/show_en.php?id=695003",
   "arrived_excel": "",
   "arrived": null,
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
     "photo": "https://www.planepictures.net/v3/show_en.php?id=695003",
     "shop": "Ebay Felindre Diecast",

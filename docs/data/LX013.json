@@ -20,7 +20,7 @@
   "price": 34.5,
   "shipping_allocated": 0.85,
   "flown": null,
-  "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+  "postcards_raw": "",
   "postcard_info": "andere Kennung",
   "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
   "postcard_price": 1.35,
@@ -32,6 +32,7 @@
       "price": 1.35
     }
   ],
+  "postcard_price_total": 1.35,
   "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
   "arrived_excel": "2025-11-12",
   "arrived": "2025-11-12",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+    "postcards_raw": "",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
     "photo": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
     "shop": "MW-Moba",

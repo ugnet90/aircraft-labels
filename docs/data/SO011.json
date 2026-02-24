@@ -20,7 +20,7 @@
   "price": 35.01,
   "shipping_allocated": 11.99,
   "flown": null,
-  "postcard": "x",
+  "postcards_raw": "",
   "postcard_info": "x",
   "postcard_url": "",
   "postcard_price": null,
@@ -32,6 +32,7 @@
       "price": null
     }
   ],
+  "postcard_price_total": null,
   "photo": "x",
   "arrived_excel": "2025-10-27",
   "arrived": "2025-10-27",
@@ -71,7 +72,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcard": "x",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "x",
     "shop": "Ebay worldofwingseu",
