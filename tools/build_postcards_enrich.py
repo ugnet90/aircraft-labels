@@ -83,114 +83,70 @@ def parse_size(val: str) -> Optional[str]:
 
 def extract_artikeldetails_pairs(html: str) -> Dict[str, str]:
     """
-    Robust strategy:
-    - Find the 'Artikeldetails' heading block
-    - Then parse label/value as alternating elements.
-    On jjpostcards pages, in the rendered text it appears as:
-      Artikeldetails
-      Airline
-          Alitalia
-      ...
-    We'll parse the DOM by reading the product description area and walking text blocks.
+    Parse 'Artikeldetails' as line-based label/value pairs.
+    This is robust against DOM nesting, because it uses soup.get_text("\n").
     """
     soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n")
+    lines = [norm_space(l) for l in text.split("\n")]
+    lines = [l for l in lines if l]
 
-    # Attempt 1: look for a container that contains the text "Artikeldetails"
-    text_nodes = soup.find_all(string=re.compile(r"^\s*Artikeldetails\s*$", re.IGNORECASE))
-    container = None
-    for tn in text_nodes:
-        container = tn.parent
-        if container:
-            # climb a bit to get a larger section
-            for _ in range(6):
-                if container.parent:
-                    container = container.parent
+    # find 'Artikeldetails'
+    start = None
+    for i, l in enumerate(lines):
+        if l.lower() == "artikeldetails":
+            start = i + 1
+            break
+    if start is None:
+        return {}
+
+    # stop when the "other items" section starts (seen on jjpostcards pages)
+    stop_markers = {
+        "16 andere artikel in der gleichen kategorie:",
+        "andere artikel in der gleichen kategorie:",
+        "unternehmen",
+        "ihr konto",
+    }
+
+    pairs: Dict[str, str] = {}
+    i = start
+    while i < len(lines):
+        label = lines[i]
+
+        low = label.lower()
+        if low in stop_markers:
             break
 
-    # Fallback to whole page if not found
-    root = container if container else soup
-
-    # Grab text lines in reading order
-    lines: List[str] = []
-    for el in root.find_all(["h1", "h2", "h3", "p", "li", "span", "div"]):
-        t = norm_space(el.get_text(" ", strip=True))
-        if not t:
-            continue
-        # keep lines reasonably short; avoid huge duplicates
-        if len(t) > 250:
-            continue
-        lines.append(t)
-
-    # Now find the first occurrence of "Artikeldetails" in lines and parse pairs after it
-    pairs: Dict[str, str] = {}
-    try:
-        start_idx = next(i for i, t in enumerate(lines) if t.lower() == "artikeldetails")
-    except StopIteration:
-        return pairs
-
-    # after "Artikeldetails", labels and values often appear as separate lines.
-    # We'll scan and accept known labels, grabbing the next non-label line as value.
-    i = start_idx + 1
-    while i < len(lines) - 1:
-        label = lines[i]
         if label in LABEL_MAP:
-            # value may be on next line; sometimes next line repeats label, so skip empties/duplicates
+            # collect value lines until next known label or stop marker
             j = i + 1
+            vals: List[str] = []
             while j < len(lines):
-                val = lines[j]
-                if not val or val.lower() == "artikeldetails":
-                    j += 1
-                    continue
-                # stop if we hit another label
-                if val in LABEL_MAP:
+                nxt = lines[j]
+                low2 = nxt.lower()
+                if low2 in stop_markers:
                     break
-                pairs[label] = val
-                break
+                if nxt in LABEL_MAP:
+                    break
+                vals.append(nxt)
+                j += 1
+
+            if vals:
+                # join multi-line values (e.g. Flughafen has 2 lines)
+                pairs[label] = norm_space(" ".join(vals))
+
             i = j
+            continue
+
         i += 1
 
     return pairs
     
-def extract_image_urls(soup: BeautifulSoup, base_url: str) -> List[str]:
-    """
-    Returns a list of absolute image URLs, best-effort:
-    - Prefer og:image
-    - Then any <img> sources that look like product images
-    """
-    urls: List[str] = []
-
-    # 1) og:image is usually the main product image
+def extract_og_image(soup: BeautifulSoup, base_url: str) -> Optional[str]:
     og = soup.find("meta", attrs={"property": "og:image"})
     if og and og.get("content"):
-        urls.append(urljoin(base_url, og["content"].strip()))
-
-    # 2) collect candidate <img> tags
-    for img in soup.find_all("img"):
-        src = (img.get("data-src") or img.get("src") or "").strip()
-        if not src:
-            continue
-        full = urljoin(base_url, src)
-
-        # heuristics to avoid UI icons/flags etc.
-        low = full.lower()
-        if any(x in low for x in ["flag", "sprite", "icon", "logo", "payment", "carrier"]):
-            continue
-        # keep typical image file types
-        if not re.search(r"\.(jpg|jpeg|png|webp)(\?|$)", low):
-            continue
-
-        urls.append(full)
-
-    # de-duplicate preserving order
-    seen = set()
-    out: List[str] = []
-    for u in urls:
-        if u in seen:
-            continue
-        seen.add(u)
-        out.append(u)
-
-    return out
+        return urljoin(base_url, og["content"].strip())
+    return None
 
 def scrape_one(url: str) -> Dict[str, Any]:
     res = requests.get(
@@ -205,13 +161,11 @@ def scrape_one(url: str) -> Dict[str, Any]:
     soup = BeautifulSoup(res.text, "html.parser")
     pairs = extract_artikeldetails_pairs(res.text)
 
-    images = extract_image_urls(soup, url)
-    thumb_url = images[0] if images else None
+    thumb_url = extract_og_image(soup, url)
 
     out: Dict[str, Any] = {
         "source_url": url,
         "thumb_url": thumb_url,
-        "image_urls": images,
     }
 
     for jj_label, field in LABEL_MAP.items():
