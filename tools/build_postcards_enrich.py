@@ -6,7 +6,7 @@ import os
 import re
 import time
 from typing import Any, Dict, List, Tuple, Optional
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -150,7 +150,47 @@ def extract_artikeldetails_pairs(html: str) -> Dict[str, str]:
         i += 1
 
     return pairs
+    
+def extract_image_urls(soup: BeautifulSoup, base_url: str) -> List[str]:
+    """
+    Returns a list of absolute image URLs, best-effort:
+    - Prefer og:image
+    - Then any <img> sources that look like product images
+    """
+    urls: List[str] = []
 
+    # 1) og:image is usually the main product image
+    og = soup.find("meta", attrs={"property": "og:image"})
+    if og and og.get("content"):
+        urls.append(urljoin(base_url, og["content"].strip()))
+
+    # 2) collect candidate <img> tags
+    for img in soup.find_all("img"):
+        src = (img.get("data-src") or img.get("src") or "").strip()
+        if not src:
+            continue
+        full = urljoin(base_url, src)
+
+        # heuristics to avoid UI icons/flags etc.
+        low = full.lower()
+        if any(x in low for x in ["flag", "sprite", "icon", "logo", "payment", "carrier"]):
+            continue
+        # keep typical image file types
+        if not re.search(r"\.(jpg|jpeg|png|webp)(\?|$)", low):
+            continue
+
+        urls.append(full)
+
+    # de-duplicate preserving order
+    seen = set()
+    out: List[str] = []
+    for u in urls:
+        if u in seen:
+            continue
+        seen.add(u)
+        out.append(u)
+
+    return out
 
 def scrape_one(url: str) -> Dict[str, Any]:
     res = requests.get(
@@ -161,10 +201,17 @@ def scrape_one(url: str) -> Dict[str, Any]:
         },
     )
     res.raise_for_status()
+
+    soup = BeautifulSoup(res.text, "html.parser")
     pairs = extract_artikeldetails_pairs(res.text)
+
+    images = extract_image_urls(soup, url)
+    thumb_url = images[0] if images else None
 
     out: Dict[str, Any] = {
         "source_url": url,
+        "thumb_url": thumb_url,
+        "image_urls": images,
     }
 
     for jj_label, field in LABEL_MAP.items():
@@ -180,7 +227,6 @@ def scrape_one(url: str) -> Dict[str, Any]:
             out[field] = norm_space(val)
 
     return out
-
 
 def collect_postcards_from_models() -> List[Tuple[str, str, str]]:
     """
@@ -200,9 +246,14 @@ def collect_postcards_from_models() -> List[Tuple[str, str, str]]:
         path = os.path.join(MODELS_DIR, fn)
         try:
             d = load_json(path)
+            
         except Exception:
             continue
-
+        
+        if not isinstance(d, dict):
+            print(f"[postcards_enrich] skip non-dict json: {fn}")
+            continue
+        
         model_id = str(d.get("model_id") or "").strip()
         pcs = d.get("postcards")
         if not model_id or not isinstance(pcs, list):
