@@ -1,11 +1,12 @@
-name: Cleanup old model JSONs (docs/data root)
+name: Cleanup old model JSONs (safe)
 
 on:
   workflow_dispatch:
-
-concurrency:
-  group: cleanup-old-model-jsons-${{ github.ref }}
-  cancel-in-progress: true
+    inputs:
+      apply:
+        description: "Set to true to actually delete files"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -20,14 +21,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Cleanup old model JSONs in docs/data
-        run: python tools/cleanup_old_model_jsons.py
+      - name: Run cleanup (dry-run or apply)
+        run: |
+          if [ "${{ github.event.inputs.apply }}" = "true" ]; then
+            python tools/cleanup_old_model_jsons.py --apply
+          else
+            python tools/cleanup_old_model_jsons.py
+          fi
 
-      - name: Commit deletions
+      - name: Commit deletions (only if apply=true)
+        if: ${{ github.event.inputs.apply == 'true' }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git status --porcelain
           git add -A
           git commit -m "Cleanup old model JSONs in docs/data" || echo "No changes"
           git push
