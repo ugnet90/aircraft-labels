@@ -1,0 +1,233 @@
+
+/* === Common UI (shared across all pages) === */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root{
+  --maxw: 1100px;          /* default, pro Seite überschreibbar */
+  --gap: 12px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 16px;
+  line-height: 1.35;
+  max-width: var(--maxw);
+}
+
+a{ color:#000; }
+
+h1{ font-size:20px; margin:0; }
+
+.muted{ color:#666; font-size:12px; }
+.mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+.btn{
+  display:inline-block;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:8px 10px;
+  text-decoration:none;
+}
+.btn:hover{ background:#fafafa; }
+
+.pill, .badge{
+  display:inline-block;
+  border:1px solid #ddd;
+  border-radius:999px;
+  padding:2px 8px;
+  font-size:12px;
+}
+
+.badge-warn{ border-color:#c00; background:#fff5f5; }
+
+.badge.flown{
+  background:#e8f4ff;
+  border-color:#b6dcff;
+  color:#003b70;
+}
+
+.err{
+  border:1px solid #c00;
+  background:#fff5f5;
+  padding:12px;
+  border-radius:12px;
+}
+
+.card{
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:12px;
+  background:#fff;
+  /* margin ist optional, aber NICHT zwangsweise 0 !important */
+}
+
+.card.sam{ background:#fbfbff; border-color:#e7e7ff; }
+
+/* Key/Value (Labels vs Werte) */
+.k{
+  color:#666;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.v{
+  color:#111;
+  font-size:15px;
+  margin-top:2px;
+  word-break:break-word;
+}
+
+/* Card-Überschrift hervorheben */
+.card > .k{
+  font-size:13px;
+  font-weight:800;
+  color:#111;
+  text-transform:none;
+  letter-spacing:0;
+  padding-bottom:8px;
+  border-bottom:1px solid #eee;
+  margin-bottom:10px;
+}
+
+/* Simple grids used by multiple pages */
+.grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.sectionGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:12px;
+  row-gap:12px;   /* ← DAS hat gefehlt */
+}
+@media (max-width:640px){
+  .sectionGrid{ grid-template-columns:1fr; }
+}
+
+
+/* Form controls (index/matrix/missing) */
+input, select{
+  width:100%;
+  padding:8px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:14px;
+}
+
+/* Tables (common baseline; pages can override) */
+table{ width:100%; border-collapse:collapse; }
+th, td{ padding:8px 6px; border-bottom:1px solid #eee; vertical-align:top; }
+th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
+
+.row{ display:flex; gap:10px; flex-wrap:wrap; }
+
+/* Header helpers used by model */
+.top{ display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; }
+.headerWrap{ display:flex; align-items:center; gap:12px; }
+.headerTxt{ display:flex; flex-direction:column; gap:2px; }
+.hAir{ font-weight:700; font-size:14px; line-height:1.1; color:#111; }
+.hTyp{ font-weight:800; font-size:22px; line-height:1.1; }
+.hReg{ color:#666; font-size:14px; line-height:1.1; }
+.hName{ color:#666; font-size:13px; line-height:1.1; }
+
+/* Header Meta-Zeile: Registrierung + Taufname */
+.hMeta{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.hMeta .hReg{
+  font-size:14px;
+  color:#666;
+}
+
+/* Taufname dezent hervorheben */
+.hMeta .hName{
+  font-size:13px;
+  color:#444;
+  padding:2px 6px;
+  border:1px solid #e0e0e0;
+  border-radius:6px;
+  background:#fafafa;
+}
+
+/* Mobile polish */
+@media (max-width:640px){
+  body{ margin:12px; }
+  .top{ gap:8px; }
+  .btn{ padding:6px 8px; font-size:12px; border-radius:8px; }
+  .pill, .badge{ font-size:11px; padding:2px 7px; }
+  .headerWrap{ align-items:flex-start; }
+  .headerTxt{ gap:4px; }
+  .hTyp{ font-size:18px; }
+  .hReg{ font-size:13px; }
+  .hName{ font-size:12px; }
+  .headerWrap img{ height:36px !important; margin-right:0 !important; }
+  .hMeta{
+    gap:6px;
+  }
+}
+
+/* Masonry (used in model flight data groups) */
+.masonry{
+  column-count: 2;
+  column-gap: 12px;
+  width: 100%;
+  padding-bottom: 12px;
+}
+.masonry > .card{
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0 0 12px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+@media (max-width:640px){
+  .masonry{ column-count: 1; }
+}
+
+.stack{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.stackItem{ display:block; }
+.stackItem:empty{ display:none; }
+
+/* === NAV (shared) === */
+.nav{
+  border-bottom:1px solid #eee;
+  padding:10px 0;
+  margin-bottom: 10px;
+}
+.navInner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.navHome{
+  font-weight:800;
+  text-decoration:none;
+}
+.navRight{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.navRight a{
+  text-decoration:none;
+  padding:6px 10px;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+.navRight a:hover{ background:#fafafa; }
+.navRight a.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
