@@ -77,18 +77,23 @@ function renderPostcardsCard(d, enrichedById){
 
     const head = "";
 
-    const labelRow = rowFixed("Info", label);
-
-    // Hersteller + Größe aus Enrichment
-    const manu = e?.aircraft_manufacturer || "";
+    // Enrichment-Daten
+    const publisher = e?.publisher_norm || e?.publisher || "";
     const sizeTxt = fmtSizeMm(e?.size_mm) || (e?.size || "");
     
-    const manuRow = rowFixed("Hersteller", manu);
-    const sizeRow = rowFixed("Grösse", sizeTxt);
+    // fixe Reihenfolge
+    const publisherRow = rowFixed("Herausgeber", publisher);
+    const sizeRow      = rowFixed("Grösse", sizeTxt);
     
-    // Preis stabil (auch wenn leer)
-    const priceRow = rowFixed("Preis", (price !== null && price !== undefined && Number(price) > 0) ? money(price) : "");
-
+    const priceRow = rowFixed(
+      "Preis",
+      (price !== null && price !== undefined && Number(price) > 0)
+        ? money(price)
+        : ""
+    );
+    
+    const labelRow = rowFixed("Info", label);
+    
     return `
       <div class="pc-subcard">
         <div class="pc-row">
@@ -96,10 +101,10 @@ function renderPostcardsCard(d, enrichedById){
           <div class="pc-body">
             <div class="grid">
               ${head}
-              ${labelRow}
-              ${manuRow}
+              ${publisherRow}
               ${sizeRow}
               ${priceRow}
+              ${labelRow}
             </div>
           </div>
         </div>
