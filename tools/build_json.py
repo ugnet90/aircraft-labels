@@ -14,7 +14,7 @@ AIRLINE_LOGOS_CSV = os.path.join(REPO_ROOT, "data", "airline_logos.csv")
 FLIGHTS_CSV = os.path.join(REPO_ROOT, "data", "flights_export.csv")
 OUT_FLIGHTS_JSON = os.path.join(REPO_ROOT, "docs", "data", "flights.json")
 
-OUT_DIR = os.path.join(REPO_ROOT, "docs", "data")
+OUT_DIR = os.path.join(REPO_ROOT, "docs", "data", "models")
 INDEX_JSON = os.path.join(REPO_ROOT, "docs", "index.json")
 
 
