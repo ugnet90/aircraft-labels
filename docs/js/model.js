@@ -87,7 +87,7 @@ function renderPostcardsCard(d, enrichedById){
               ${linkRow}
               ${priceRow}
             </div>
-            // ${metaHtml}
+            
           </div>
         </div>
       </div>
