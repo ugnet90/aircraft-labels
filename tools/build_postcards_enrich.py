@@ -36,8 +36,19 @@ LABEL_MAP = {
     "Kartenzustand": "condition",
 }
 
-# some pages show "Kartenherausgeber, Nummer" etc. – we ignore unless you want it later.
+# Labels that exist in jjpostcards "Artikeldetails" but we don't store them.
+# They must still act as boundaries, otherwise they get appended to the previous value.
+IGNORE_LABELS = {
+    "Bemalung, Sticker, spezielle Titel",
+    "Land",
+    "Aufnahmeort, Datum",
+    "Kartenherausgeber, Nummer",
+    # optional (harmless boundaries, even if you don't use them)
+    "Flughafen",
+    "Land Flughafen",
+}
 
+ALL_DETAIL_LABELS = set(LABEL_MAP.keys()) | set(IGNORE_LABELS)
 
 def load_json(path: str) -> Any:
     with open(path, "r", encoding="utf-8") as f:
@@ -117,7 +128,7 @@ def extract_artikeldetails_pairs(html: str) -> Dict[str, str]:
         if low in stop_markers:
             break
 
-        if label in LABEL_MAP:
+        if label in ALL_DETAIL_LABELS:
             # collect value lines until next known label or stop marker
             j = i + 1
             vals: List[str] = []
@@ -126,14 +137,14 @@ def extract_artikeldetails_pairs(html: str) -> Dict[str, str]:
                 low2 = nxt.lower()
                 if low2 in stop_markers:
                     break
-                if nxt in LABEL_MAP:
+                if nxt in ALL_DETAIL_LABELS:
                     break
                 vals.append(nxt)
                 j += 1
 
-            if vals:
-                # join multi-line values (e.g. Flughafen has 2 lines)
-                pairs[label] = norm_space(" ".join(vals))
+            if vals and label in LABEL_MAP:
+                # take only the first line to avoid "bleed" and keep fields clean
+                pairs[label] = vals[0]
 
             i = j
             continue
