@@ -69,9 +69,7 @@ function renderPostcardsCard(d, enrichedById){
       try{ linkLabel = (new URL(url)).hostname.replace(/^www\./, ""); }catch(err){ linkLabel = "Link"; }
     }
 
-    const head = (arr.length > 1)
-      ? rowHtml("Postkarte", `<span class="mono">#${idx+1} · ${esc(String(pc?.id ?? ""))}</span>`)
-      : "";
+    const head = "";
 
     const labelRow = label ? row("Info", label) : "";
     const linkRow  = url ? rowHtml("Link", `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(linkLabel)}</a>`) : "";
