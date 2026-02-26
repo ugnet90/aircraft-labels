@@ -82,9 +82,9 @@ function renderPostcardsCard(d, enrichedById){
           <div class="pc-body">
             <div class="grid">
               ${head}
-              ${labelRow}
-              ${linkRow}
               ${priceRow}
+              ${linkRow}
+              ${labelRow}            
             </div>
           </div>
         </div>
@@ -94,10 +94,11 @@ function renderPostcardsCard(d, enrichedById){
 
   // Total: du wolltest es eigentlich nicht mehr -> hier sicher deaktiviert
   const totalRow = "";
-
+  const title = arr.length > 1 ? "Postkarten" : "Postkarte";
+  
   return `
     <div class="card">
-      <div class="k">Postkarte</div>
+      <div class="k">${title}</div>
       <div style="margin-top:10px">
         ${rows}
         ${totalRow}
