@@ -104,9 +104,30 @@ def collect_models() -> List[Dict[str, str]]:
             continue
 
         # allow direct image URLs too (no scraping needed)
-        out.append({"model_id": model_id, "photo_url": photo_url})
+        reg = norm(d.get("registration"))
+        out.append({"model_id": model_id, "photo_url": photo_url, "registration": reg})
     return out
 
+def fetch_planespotters_api_by_reg(reg: str) -> Optional[Dict[str, Any]]:
+    reg = reg.strip()
+    if not reg:
+        return None
+    api_url = f"https://api.planespotters.net/pub/photos/reg/{reg}"
+    res = requests.get(api_url, timeout=TIMEOUT, headers={"User-Agent": UA})
+    res.raise_for_status()
+    j = res.json()
+    if not isinstance(j, dict):
+        return None
+    photos = j.get("photos")
+    if not isinstance(photos, list) or not photos:
+        return None
+    p0 = photos[0] if isinstance(photos[0], dict) else None
+    if not p0:
+        return None
+    tl = p0.get("thumbnail_large") or {}
+    thumb = tl.get("src") if isinstance(tl, dict) else None
+    link = p0.get("link")  # public page URL
+    return {"source_url": link or api_url, "thumb_url": thumb, "api_url": api_url}
 
 def is_direct_image(url: str) -> bool:
     u = url.lower()
@@ -138,10 +159,11 @@ def main() -> int:
     for i, m in enumerate(to_fetch, start=1):
         model_id = m["model_id"]
         url = m["photo_url"]
+    
         print(f"[photos_enrich] ({i}/{len(to_fetch)}) {model_id} -> {url}")
-
+    
         try:
-            # direct image: store as thumb_url directly
+            # 1) Direct image URLs bleiben wie bisher
             if is_direct_image(url):
                 existing[model_id] = {
                     "model_id": model_id,
@@ -150,24 +172,36 @@ def main() -> int:
                     "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                     "direct_image": True,
                 }
+    
             else:
-                # scrape only from allowed hosts
-                if not host_allowed(url):
+                # 2) Planespotters API via registration
+                reg = norm(m.get("registration"))
+                hit = None
+    
+                try:
+                    hit = fetch_planespotters_api_by_reg(reg) if reg else None
+                except Exception as e:
+                    hit = {"thumb_url": None, "error": f"api reg failed: {e}"}
+    
+                if hit and hit.get("thumb_url"):
+                    existing[model_id] = {
+                        "model_id": model_id,
+                        **hit,
+                        "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        "direct_image": False,
+                        "method": "planespotters_api_reg",
+                    }
+                else:
                     existing[model_id] = {
                         "model_id": model_id,
                         "source_url": url,
                         "thumb_url": None,
                         "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                        "error": "host not in allowlist",
-                    }
-                else:
-                    data = scrape_thumb(url)
-                    existing[model_id] = {
-                        "model_id": model_id,
-                        **data,
-                        "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                         "direct_image": False,
+                        "method": "none",
+                        "error": (hit.get("error") if isinstance(hit, dict) else None) or "no thumbnail",
                     }
+    
         except Exception as e:
             existing[model_id] = {
                 "model_id": model_id,
@@ -176,9 +210,9 @@ def main() -> int:
                 "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 "error": str(e),
             }
-
+    
         time.sleep(SLEEP_SECONDS)
-
+    
     save_json(OUT_PATH, existing)
     print(f"[photos_enrich] wrote: {OUT_PATH} entries={len(existing)}")
     return 0
