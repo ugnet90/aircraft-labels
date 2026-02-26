@@ -143,25 +143,55 @@ def _pick_thumb(photo: dict) -> Optional[str]:
                 return str(src).strip()
     return None
 
+from urllib.parse import urlparse
+
+def _slug_tokens_from_link(photo: dict) -> List[str]:
+    link = photo.get("link") or ""
+    try:
+        path = urlparse(str(link)).path or ""
+    except Exception:
+        path = str(link)
+
+    slug = path.strip("/").split("/")[-1]  # last part
+    slug = _norm_match(slug)
+    # tokens split on hyphen and other separators
+    tokens = [t for t in slug.replace("_", "-").split("-") if t]
+    return tokens
+
+def _slug_text_from_link(photo: dict) -> str:
+    tokens = _slug_tokens_from_link(photo)
+    return " ".join(tokens)
+    
 def _photo_airline_name(photo: dict) -> str:
-    # try a couple of common structures
-    return _norm_match(
+    v = _norm_match(
         _dig(photo, "airline", "name", default="")
         or _dig(photo, "operator", "name", default="")
-        or photo.get("airline", "")  # sometimes string
+        or photo.get("airline", "")
         or photo.get("operator", "")
         or ""
     )
+    if v:
+        return v
+
+    # Fallback: parse from link slug (e.g. ".../d-abdq-eurowings-airbus-a320-214")
+    slug = _slug_text_from_link(photo)
+    # airline is typically a token group before manufacturer tokens; we just return slug text as "airline-ish"
+    # and let scoring check substring matches.
+    return slug
 
 def _photo_type_text(photo: dict) -> str:
-    # try a couple of common structures
-    return _norm_match(
+    v = _norm_match(
         _dig(photo, "aircraft", "type", default="")
         or _dig(photo, "aircraft", "model", default="")
         or _dig(photo, "aircraft", "name", default="")
         or photo.get("type", "")
         or ""
     )
+    if v:
+        return v
+
+    # Fallback: parse from link slug
+    return _slug_text_from_link(photo)
 
 def _score_photo(photo: dict, want_airline: str, want_type: str) -> int:
     s = 0
@@ -169,7 +199,9 @@ def _score_photo(photo: dict, want_airline: str, want_type: str) -> int:
     got_type = _photo_type_text(photo)
 
     wa = _norm_match(want_airline)
+    wa_slug = wa.replace(" ", "-")
     wt = _norm_match(want_type)
+    wt_slug = wt.replace(" ", "-")
 
     # airline match
     if wa and got_airline:
@@ -177,11 +209,15 @@ def _score_photo(photo: dict, want_airline: str, want_type: str) -> int:
             s += 6
         elif wa in got_airline or got_airline in wa:
             s += 4
+        elif wa_slug and wa_slug in got_airline:
+            s += 4
 
     # type match (very tolerant)
     if wt and got_type:
         if wt == got_type:
             s += 6
+        elif wt_slug and wt_slug in got_type:
+            s += 4            
         else:
             # handle "Airbus A320-200" vs "Airbus A320"
             # give points if key tokens overlap
