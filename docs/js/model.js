@@ -402,6 +402,22 @@ function fmtSizeMm(mm){
   return `${w}×${h} mm`;
 }
 
+// --- Aircraft photo enrichment (lazy) ---
+let _aircraftPhotosEnrichedCache = null;
+
+async function loadAircraftPhotosEnriched(){
+  if(_aircraftPhotosEnrichedCache !== null) return _aircraftPhotosEnrichedCache;
+  try{
+    const res = await fetch("data/aircraft_photos_enriched.json", { cache: "no-store" });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json();
+    _aircraftPhotosEnrichedCache = (j && typeof j === "object") ? j : {};
+  }catch(e){
+    _aircraftPhotosEnrichedCache = {};
+  }
+  return _aircraftPhotosEnrichedCache;
+}
+
 async function main(){
   const id = qs("id");
   const pill = document.getElementById("idpill");
@@ -421,6 +437,8 @@ async function main(){
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const d = await res.json();
 
+    const photosEnriched = await loadAircraftPhotosEnriched();
+    const photoE = photosEnriched ? (photosEnriched[id] || null) : null;    
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
     const reg = asText(d.registration) || asText(d.aircraft?.registration);
@@ -518,6 +536,12 @@ async function main(){
       <div class="card">
         <div class="k">Flugzeug</div>
         <div class="grid" style="margin-top:8px">
+          ${rowHtml("Foto", (photoE && photoE.thumb_url)
+            ? `<a href="${esc(photoE.source_url || photoE.thumb_url)}" target="_blank" rel="noopener">
+                 <img class="air-thumb" src="${esc(photoE.thumb_url)}" alt="Aircraft photo" loading="lazy">
+               </a>`
+            : (d.photo ? `<a href="${esc(d.photo)}" target="_blank" rel="noopener">Link</a>` : ""))
+          }
           ${row("Flugzeugtyp", typ)}
           ${row("Registrierung", reg)}
           ${row("Taufname", d.aircraft_name || "")}
