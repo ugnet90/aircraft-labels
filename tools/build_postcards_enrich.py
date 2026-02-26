@@ -83,14 +83,12 @@ def parse_year(val: str) -> Optional[int]:
         return None
 
 
-def parse_size(val: str) -> Optional[str]:
-    # examples: "150x105 mm", "148x104 mm"
+def parse_size_mm(val: str) -> Optional[Dict[str, int]]:
     v = norm_space(val)
     m = re.search(r"(\d{2,3})\s*[x×]\s*(\d{2,3})\s*mm", v, flags=re.IGNORECASE)
     if not m:
         return None
-    return f"{m.group(1)}x{m.group(2)} mm"
-
+    return {"w": int(m.group(1)), "h": int(m.group(2))}
 
 def extract_artikeldetails_pairs(html: str) -> Dict[str, str]:
     """
@@ -187,10 +185,16 @@ def scrape_one(url: str) -> Dict[str, Any]:
         if field == "year":
             out[field] = parse_year(val)
         elif field == "size":
-            out[field] = parse_size(val) or norm_space(val)
+            out[field] = norm_space(val)
+            mm = parse_size_mm(val)
+            if mm:
+                out["size_mm"] = mm
         else:
             out[field] = norm_space(val)
-
+    
+    if out.get("publisher"):
+        out["publisher_norm"] = norm_space(out["publisher"])
+        
     return out
 
 def collect_postcards_from_models() -> List[Tuple[str, str, str]]:
