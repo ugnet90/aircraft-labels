@@ -1,1213 +1,1521 @@
 {
   "AB001": {
     "model_id": "AB001",
-    "source_url": "https://www.planespotters.net/photo/172370/d-abdq-air-berlin-airbus-a320-214",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:04Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/172370/d-abdq-air-berlin-airbus-a320-214"
+    "source_url": "https://www.planespotters.net/photo/1601770/d-abdq-eurowings-airbus-a320-214?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/22225/1601770_b689d6a322_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABDQ",
+    "scraped_at_utc": "2026-02-26T20:15:04Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AB002": {
     "model_id": "AB002",
-    "source_url": "https://www.planespotters.net/photo/079624/hb-ihr-air-berlin-boeing-757-2g5",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:05Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/079624/hb-ihr-air-berlin-boeing-757-2g5"
+    "source_url": "https://www.planespotters.net/photo/226918/hb-ihr-air-berlin-boeing-757-2g5?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/48875/226918_0cbe6a0615_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IHR",
+    "scraped_at_utc": "2026-02-26T20:15:05Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AB003": {
     "model_id": "AB003",
-    "source_url": "https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:06Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/330892/d-abaf-air-berlin-boeing-737-86j-wl"
+    "source_url": "https://www.planespotters.net/photo/1326715/d-abaf-tuifly-boeing-737-86j-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/29076/1326715_a697a2d868_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABAF",
+    "scraped_at_utc": "2026-02-26T20:15:07Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AF001": {
     "model_id": "AF001",
-    "source_url": "https://www.planespotters.net/photo/930200/f-gugd-air-france-airbus-a318-111",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:07Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/930200/f-gugd-air-france-airbus-a318-111"
+    "source_url": "https://www.planespotters.net/photo/1205368/f-gugd-air-france-airbus-a318-111?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/13515/1205368_0802e012d9_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/F-GUGD",
+    "scraped_at_utc": "2026-02-26T20:15:09Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AF002": {
     "model_id": "AF002",
-    "source_url": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:09Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er"
+    "source_url": "https://www.planespotters.net/photo/1859672/f-gsqb-air-france-boeing-777-328er?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/47275/1859672_b452072858_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/F-GSQB",
+    "scraped_at_utc": "2026-02-26T20:15:10Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AF003": {
     "model_id": "AF003",
-    "source_url": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:10Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100"
+    "source_url": "https://www.planespotters.net/photo/1835600/f-hbxe-hop-embraer-erj-170std-erj-170-100?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/41216/1835600_2ce23c4cb5_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/F-HBXE",
+    "scraped_at_utc": "2026-02-26T20:15:12Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AZ001": {
     "model_id": "AZ001",
     "source_url": "https://www.azfleet.info/aerei/douglas-dc8/i-diwa",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:11Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:15:13Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "AZ002": {
     "model_id": "AZ002",
-    "source_url": "https://www.planespotters.net/photo/408884/ei-ejg-alitalia-compagnia-aerea-italiana-airbus-a330-202",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:12Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/408884/ei-ejg-alitalia-compagnia-aerea-italiana-airbus-a330-202"
+    "source_url": "https://www.planespotters.net/photo/1853108/ei-ejg-ita-airways-airbus-a330-202?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/11524/1853108_b1213d2ddb_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/EI-EJG",
+    "scraped_at_utc": "2026-02-26T20:15:15Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "AZ003": {
     "model_id": "AZ003",
-    "source_url": "https://www.jetphotos.com/photo/7936576",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:13Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/7936576"
+    "source_url": "https://www.planespotters.net/photo/350514/i-disa-alitalia-compagnia-aerea-italiana-boeing-777-243er?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/19220/350514_0d8c1a6745_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/I-DISA",
+    "scraped_at_utc": "2026-02-26T20:15:17Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BA001": {
     "model_id": "BA001",
-    "source_url": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:14Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102"
+    "source_url": "https://www.planespotters.net/photo/1820161/g-boad-british-airways-bac-concorde-102?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/44473/1820161_dbfceff200_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-BOAD",
+    "scraped_at_utc": "2026-02-26T20:15:18Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BA002": {
     "model_id": "BA002",
     "source_url": "https://www.airhistory.net/photo/697193/G-BNYI",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:15Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:15:20Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "BA003": {
     "model_id": "BA003",
-    "source_url": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:16Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b"
+    "source_url": "https://www.planespotters.net/photo/1245959/g-lgnb-loganair-saab-340b?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/05549/1245959_df8f652556_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-LGNB",
+    "scraped_at_utc": "2026-02-26T20:15:21Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BA004": {
     "model_id": "BA004",
-    "source_url": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:17Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner"
+    "source_url": "https://www.planespotters.net/photo/1748073/g-zbjg-british-airways-boeing-787-8-dreamliner?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/13298/1748073_397b11834a_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-ZBJG",
+    "scraped_at_utc": "2026-02-26T20:15:23Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BA005": {
     "model_id": "BA005",
-    "source_url": "https://abpic.co.uk/pictures/view/1732136",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:18Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/354308/g-gntz-business-air-british-aerospace-146-200a?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/35184/354308_76517d2474_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-GNTZ",
+    "scraped_at_utc": "2026-02-26T20:15:25Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BA006": {
     "model_id": "BA006",
-    "source_url": "https://abpic.co.uk/pictures/view/1178552",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:19Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1193153/g-avoe-dan-air-london-bac-1-11-416ek-one-eleven?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/01363/1193153_9a0162718a_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-AVOE",
+    "scraped_at_utc": "2026-02-26T20:15:26Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BA007": {
     "model_id": "BA007",
     "source_url": "https://www.airteamimages.com/hawker-siddeley-trident_g-awzn_bea-british-european-airways_40653",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:20Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:15:28Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "BA008": {
     "model_id": "BA008",
     "source_url": "https://www.airhistory.net/photo/747410/G-BEBM",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:21Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:15:29Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "BA009": {
     "model_id": "BA009",
-    "source_url": "https://www.jetphotos.com/photo/11185579",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:22Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/11185579"
+    "source_url": "https://www.planespotters.net/photo/1648844/g-avfb-bea-british-european-airways-hawker-siddeley-hs-121-trident-2e?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/10695/1648844_f8a5a4e2a6_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-AVFB",
+    "scraped_at_utc": "2026-02-26T20:15:31Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "BOA001": {
     "model_id": "BOA001",
     "source_url": "https://www.airhistory.net/photo/12485/G-AOVK",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:23Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:15:32Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "BOA002": {
     "model_id": "BOA002",
     "source_url": "https://www.airhistory.net/photo/574510/G-ASGH",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:24Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:15:34Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "BT001": {
     "model_id": "BT001",
-    "source_url": "https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:25Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1636685/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11"
+    "source_url": "https://www.planespotters.net/photo/1859401/yl-aau-airbaltic-airbus-a220-300-bd-500-1a11?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/02453/1859401_aaa69591f8_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/YL-AAU",
+    "scraped_at_utc": "2026-02-26T20:15:36Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "FI001": {
     "model_id": "FI001",
-    "source_url": "https://www.planespotters.net/photo/1123788/tf-isf-icelandair-boeing-757-223-wl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:26Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1123788/tf-isf-icelandair-boeing-757-223-wl"
+    "source_url": "https://www.planespotters.net/photo/1039606/tf-isf-icelandair-boeing-757-223-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/38520/1039606_2b346e771c_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/TF-ISF",
+    "scraped_at_utc": "2026-02-26T20:15:37Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "HF001": {
     "model_id": "HF001",
-    "source_url": "https://www.planespotters.net/photo/1079811/d-ahfc-hapag-lloyd-boeing-737-8k5",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:27Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1079811/d-ahfc-hapag-lloyd-boeing-737-8k5"
+    "source_url": "https://www.planespotters.net/photo/093087/d-ahfc-hapagfly-boeing-737-8k5-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/44258/093087_4efe5d99e7_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AHFC",
+    "scraped_at_utc": "2026-02-26T20:15:39Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "HF002": {
     "model_id": "HF002",
-    "source_url": "https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:29Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/728271/d-agep-hapag-lloyd-express-boeing-737-75b"
+    "source_url": "https://www.planespotters.net/photo/881423/d-agep-germania-boeing-737-75b-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/24292/881423_1247f6b1e6_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AGEP",
+    "scraped_at_utc": "2026-02-26T20:15:40Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "HF003": {
     "model_id": "HF003",
-    "source_url": "https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:30Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1021183/d-ahla-hapag-lloyd-airbus-a310-304"
+    "source_url": "https://www.planespotters.net/photo/009898/d-ahla-hapagfly-airbus-a310-304?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/28772/009898_c4945cf243_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AHLA",
+    "scraped_at_utc": "2026-02-26T20:15:42Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "HF004": {
     "model_id": "HF004",
-    "source_url": "https://www.jetphotos.com/photo/33534",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:31Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/33534"
+    "source_url": "https://www.planespotters.net/photo/280186/d-ahff-transaero-boeing-737-8k5-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/42716/280186_f55d7467cf_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AHFF",
+    "scraped_at_utc": "2026-02-26T20:15:43Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL001": {
     "model_id": "KL001",
-    "source_url": "https://abpic.co.uk/pictures/view/1036468",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:32Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1746058/ph-dci-ais-airlines-british-aerospace-jetstream-32ep-3201?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/39963/1746058_ce4cdaff1f_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-DCI",
+    "scraped_at_utc": "2026-02-26T20:15:45Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL002": {
     "model_id": "KL002",
-    "source_url": "https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:33Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1412141/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11"
+    "source_url": "https://www.planespotters.net/photo/967937/ph-kca-klm-royal-dutch-airlines-mcdonnell-douglas-md-11?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/49426/967937_17b50f80b9_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-KCA",
+    "scraped_at_utc": "2026-02-26T20:15:47Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL003": {
     "model_id": "KL003",
-    "source_url": "https://www.jetphotos.com/photo/10064531",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:34Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10064531"
+    "source_url": "https://www.planespotters.net/photo/1182239/ph-bfh-klm-royal-dutch-airlines-boeing-747-406m?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/34416/1182239_988dd14091_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-BFH",
+    "scraped_at_utc": "2026-02-26T20:15:48Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL004": {
     "model_id": "KL004",
-    "source_url": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:35Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra"
+    "source_url": "https://www.planespotters.net/photo/816528/ph-lld-klm-royal-dutch-airlines-lockheed-l-188c-electra?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/05011/816528_d9e52d65f8_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-LLD",
+    "scraped_at_utc": "2026-02-26T20:15:50Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL005": {
     "model_id": "KL005",
-    "source_url": "https://www.jetphotos.com/photo/7018562",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:36Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/7018562"
+    "source_url": "https://www.planespotters.net/photo/392655/g-atpj-dan-air-london-bac-1-11-301ag-one-eleven?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/16797/392655_aa6389bf39_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-ATPJ",
+    "scraped_at_utc": "2026-02-26T20:15:51Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL006": {
     "model_id": "KL006",
-    "source_url": "https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:37Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30"
+    "source_url": "https://www.planespotters.net/photo/681419/ph-dta-klm-royal-dutch-airlines-mcdonnell-douglas-dc-10-30?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/17239/681419_3ccaf71215_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-DTA",
+    "scraped_at_utc": "2026-02-26T20:15:53Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL007": {
     "model_id": "KL007",
-    "source_url": "https://www.airhistory.net/photo/730187/PH-DSG",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:38Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1895960/ph-dsg-klm-cargo-douglas-dc-7cf?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/12390/1895960_35b59812e8_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-DSG",
+    "scraped_at_utc": "2026-02-26T20:15:55Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL008": {
     "model_id": "KL008",
-    "source_url": "https://abpic.co.uk/pictures/view/1947917",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:39Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/290826/ph-def-klm-royal-dutch-airlines-mcdonnell-douglas-dc-8-63?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/42799/290826_9ff6c9362e_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-DEF",
+    "scraped_at_utc": "2026-02-26T20:15:56Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "KL009": {
     "model_id": "KL009",
     "source_url": "https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:40Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/031433/ph-bzi-klm-royal-dutch-airlines-boeing-767-306er"
+    "scraped_at_utc": "2026-02-26T20:15:57Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "LH001": {
     "model_id": "LH001",
-    "source_url": "https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:41Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1313542/d-aizp-lufthansa-airbus-a320-214-wl"
+    "source_url": "https://www.planespotters.net/photo/1886614/d-aizp-lufthansa-airbus-a320-214-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/16128/1886614_ac8d177e39_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIZP",
+    "scraped_at_utc": "2026-02-26T20:15:59Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH002": {
     "model_id": "LH002",
-    "source_url": "https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:42Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/754353/d-abub-lufthansa-boeing-707-330b"
+    "source_url": "https://www.planespotters.net/photo/1575362/d-abuc-condor-boeing-767-330er?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/04987/1575362_d3fdf6b2cc_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABUC",
+    "scraped_at_utc": "2026-02-26T20:16:00Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH003": {
     "model_id": "LH003",
-    "source_url": "https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:43Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1632410/d-abyt-lufthansa-boeing-747-830"
+    "source_url": "https://www.planespotters.net/photo/1890348/d-abyt-lufthansa-boeing-747-830?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/06572/1890348_1e63004c81_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABYT",
+    "scraped_at_utc": "2026-02-26T20:16:02Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH004": {
     "model_id": "LH004",
-    "source_url": "https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:45Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/797719/d-aima-lufthansa-airbus-a380-841"
+    "source_url": "https://www.planespotters.net/photo/1895413/d-aima-lufthansa-airbus-a380-841?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/46829/1895413_a85f217c74_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIMA",
+    "scraped_at_utc": "2026-02-26T20:16:04Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH005": {
     "model_id": "LH005",
-    "source_url": "https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:46Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/760654/d-alem-lufthansa-lockheed-l-1049g-super-constellation"
+    "source_url": "https://www.planespotters.net/photo/1533980/d-alem-lufthansa-lockheed-l-1049g-super-constellation?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/25775/1533980_1dbbc9eb2e_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ALEM",
+    "scraped_at_utc": "2026-02-26T20:16:05Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH006": {
     "model_id": "LH006",
-    "source_url": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:47Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941"
+    "source_url": "https://www.planespotters.net/photo/1878844/d-aivd-lufthansa-airbus-a350-941?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/47618/1878844_eb0c59164e_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIVD",
+    "scraped_at_utc": "2026-02-26T20:16:07Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH007": {
     "model_id": "LH007",
-    "source_url": "https://www.jetphotos.com/photo/9958699",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:48Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/9958699"
+    "source_url": "https://www.planespotters.net/photo/691416/d-abhx-condor-boeing-737-230-adv?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/42924/691416_5d9b11221c_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABHX",
+    "scraped_at_utc": "2026-02-26T20:16:09Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH008": {
     "model_id": "LH008",
-    "source_url": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:49Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship"
+    "source_url": "https://www.planespotters.net/photo/1084025/d-bari-lufthansa-fokker-f27-400-friendship?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/22431/1084025_0856852596_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-BARI",
+    "scraped_at_utc": "2026-02-26T20:16:10Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH009": {
     "model_id": "LH009",
-    "source_url": "https://www.airhistory.net/photo/575352/D-AIAA",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:50Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1886185/d-aiaa-condor-airbus-a321-211-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/21159/1886185_c0e94bcc94_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIAA",
+    "scraped_at_utc": "2026-02-26T20:16:12Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH010": {
     "model_id": "LH010",
-    "source_url": "https://www.jetphotos.com/photo/11667623",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:51Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/11667623"
+    "source_url": "https://www.planespotters.net/photo/1878677/d-abvw-lufthansa-boeing-747-430?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/27887/1878677_6c40288bdc_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABVW",
+    "scraped_at_utc": "2026-02-26T20:16:13Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH011": {
     "model_id": "LH011",
-    "source_url": "https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:52Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/479539/d-airx-lufthansa-airbus-a321-131"
+    "source_url": "https://www.planespotters.net/photo/1889602/d-airx-lufthansa-airbus-a321-131?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/31084/1889602_14e5cdc90d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIRX",
+    "scraped_at_utc": "2026-02-26T20:16:14Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH012": {
     "model_id": "LH012",
-    "source_url": "https://www.jetphotos.com/photo/10225836",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:53Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10225836"
+    "source_url": "https://www.planespotters.net/photo/724807/d-affz-team-lufthansa-fokker-50-f27-mark-050?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/35257/724807_b0083d2b8f_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AFFZ",
+    "scraped_at_utc": "2026-02-26T20:16:16Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH013": {
     "model_id": "LH013",
-    "source_url": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:54Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343"
+    "source_url": "https://www.planespotters.net/photo/1881277/d-aiko-discover-airlines-airbus-a330-343?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/44382/1881277_462c2bf8a2_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIKO",
+    "scraped_at_utc": "2026-02-26T20:16:17Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH014": {
     "model_id": "LH014",
-    "source_url": "https://www.planespotters.net/photo/327157/d-aigf-lufthansa-airbus-a340-311",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:55Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/327157/d-aigf-lufthansa-airbus-a340-311"
+    "source_url": "https://www.planespotters.net/photo/965713/d-aigf-lufthansa-airbus-a340-311?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/18121/965713_869460dfbd_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIGF",
+    "scraped_at_utc": "2026-02-26T20:16:19Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH015": {
     "model_id": "LH015",
-    "source_url": "https://www.airhistory.net/photo/477289/D-ABKB",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:56Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1702357/d-abkb-pegasus-boeing-737-86j-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/09610/1702357_b1d58f72a4_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABKB",
+    "scraped_at_utc": "2026-02-26T20:16:21Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH016": {
     "model_id": "LH016",
     "source_url": "https://www.planepictures.net/v3/show.php?id=614533",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:57Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:16:22Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "LH017": {
     "model_id": "LH017",
-    "source_url": "https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:58Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/230024/d-aqui-lufthansa-traditionsflug-junkers-ju-52"
+    "source_url": "https://www.planespotters.net/photo/1531541/d-aqui-lufthansa-traditionsflug-junkers-ju-52?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/41166/1531541_c03197a88d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AQUI",
+    "scraped_at_utc": "2026-02-26T20:16:24Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH018": {
     "model_id": "LH018",
-    "source_url": "https://www.airhistory.net/photo/198636/D-ABIB",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:45:59Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1178463/d-abib-lufthansa-boeing-737-530?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/23429/1178463_7b83336ac8_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABIB",
+    "scraped_at_utc": "2026-02-26T20:16:25Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH019": {
     "model_id": "LH019",
-    "source_url": "https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:00Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/469445/d-aihn-lufthansa-airbus-a340-642"
+    "source_url": "https://www.planespotters.net/photo/697077/d-aihn-lufthansa-airbus-a340-642?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/23896/697077_3a72bf0c55_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIHN",
+    "scraped_at_utc": "2026-02-26T20:16:31Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH020": {
     "model_id": "LH020",
-    "source_url": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:01Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330"
+    "source_url": "https://www.planespotters.net/photo/760224/d-abee-lufthansa-boeing-737-330?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/15018/760224_5ab316a4f2_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABEE",
+    "scraped_at_utc": "2026-02-26T20:16:32Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH021": {
     "model_id": "LH021",
-    "source_url": "https://www.planespotters.net/photo/1100966/d-abir-lufthansa-boeing-737-530",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:02Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1100966/d-abir-lufthansa-boeing-737-530"
+    "source_url": "https://www.planespotters.net/photo/692670/d-abir-lufthansa-boeing-737-530?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/36385/692670_5c4c039397_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABIR",
+    "scraped_at_utc": "2026-02-26T20:16:34Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH022": {
     "model_id": "LH022",
-    "source_url": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:04Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19"
+    "source_url": "https://www.planespotters.net/photo/430057/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/40007/430057_0114988053_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ACJH",
+    "scraped_at_utc": "2026-02-26T20:16:35Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH023": {
     "model_id": "LH023",
-    "source_url": "https://www.planespotters.net/photo/1754960/d-acnd-lufthansa-bombardier-crj-900lr-cl-600-2d24",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:05Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1754960/d-acnd-lufthansa-bombardier-crj-900lr-cl-600-2d24"
+    "source_url": "https://www.planespotters.net/photo/1879603/d-acnd-lufthansa-bombardier-crj-900lr-cl-600-2d24?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/19684/1879603_6f4aa798c0_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ACND",
+    "scraped_at_utc": "2026-02-26T20:16:37Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH024": {
     "model_id": "LH024",
-    "source_url": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:06Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1845654/d-aboh-condor-boeing-757-330-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/36418/1845654_6c3d4a314f_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABOH",
+    "scraped_at_utc": "2026-02-26T20:16:39Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH025": {
     "model_id": "LH025",
-    "source_url": "https://www.airhistory.net/photo/702474/D-ANUN",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:07Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/755325/d-anun-condor-vickers-viscount-814?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/19598/755325_dbfd956f27_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ANUN",
+    "scraped_at_utc": "2026-02-26T20:16:40Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH026": {
     "model_id": "LH026",
-    "source_url": "https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:08Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1426175/d-aiep-lufthansa-airbus-a321-271nx"
+    "source_url": "https://www.planespotters.net/photo/1890937/d-aiep-lufthansa-airbus-a321-271nx?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/30735/1890937_d5af3436fc_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIEP",
+    "scraped_at_utc": "2026-02-26T20:16:41Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH027": {
     "model_id": "LH027",
-    "source_url": "https://www.planespotters.net/photo/764943/d-abya-lufthansa-boeing-747-130",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:09Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/764943/d-abya-lufthansa-boeing-747-130"
+    "source_url": "https://www.planespotters.net/photo/1882253/d-abya-lufthansa-boeing-747-830?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/12100/1882253_1762af9064_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABYA",
+    "scraped_at_utc": "2026-02-26T20:16:43Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH028": {
     "model_id": "LH028",
-    "source_url": "https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:10Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1749659/d-aieq-lufthansa-airbus-a321-271nx"
+    "source_url": "https://www.planespotters.net/photo/1890357/d-aieq-lufthansa-airbus-a321-271nx?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/37915/1890357_dd83c9ff89_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AIEQ",
+    "scraped_at_utc": "2026-02-26T20:16:45Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH029": {
     "model_id": "LH029",
-    "source_url": "https://www.jetphotos.com/photo/10539124",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:11Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10539124"
+    "source_url": "https://www.planespotters.net/photo/831069/d-abzf-austrian-airlines-airbus-a320-216?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/41937/831069_3ab9fd499e_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABZF",
+    "scraped_at_utc": "2026-02-26T20:16:46Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH030": {
     "model_id": "LH030",
-    "source_url": "https://airplane-pictures.net/photo/1114340/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f/",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:12Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1032211/d-alcn-lufthansa-cargo-mcdonnell-douglas-md-11f?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/47708/1032211_adf5930e0c_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ALCN",
+    "scraped_at_utc": "2026-02-26T20:16:48Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LH031": {
     "model_id": "LH031",
-    "source_url": "https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:13Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1429784/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr"
+    "source_url": "https://www.planespotters.net/photo/1485795/d-aecd-lufthansa-embraer-erj-190lr-erj-190-100-lr?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/25054/1485795_98702c6455_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-AECD",
+    "scraped_at_utc": "2026-02-26T20:16:49Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX001": {
     "model_id": "LX001",
-    "source_url": "https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:14Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/321617/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100"
+    "source_url": "https://www.planespotters.net/photo/1142875/hb-ixu-swiss-british-aerospace-avro-rj100-146-rj100?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/39584/1142875_ae97a63df3_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IXU",
+    "scraped_at_utc": "2026-02-26T20:16:51Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX002": {
     "model_id": "LX002",
-    "source_url": "https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:15Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1305538/hb-ion-swiss-airbus-a321-212-wl"
+    "source_url": "https://www.planespotters.net/photo/1884400/hb-ion-swiss-airbus-a321-212-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/30297/1884400_02bfbe6948_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-ION",
+    "scraped_at_utc": "2026-02-26T20:16:52Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX003": {
     "model_id": "LX003",
-    "source_url": "https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:16Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1702172/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10"
+    "source_url": "https://www.planespotters.net/photo/701113/c-gwxz-bombardier-bombardier-cseries-cs100-bd-500-1a10?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/05978/701113_59eab21494_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/C-GWXZ",
+    "scraped_at_utc": "2026-02-26T20:16:54Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX004": {
     "model_id": "LX004",
-    "source_url": "https://www.jetphotos.com/photo/10376450",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:17Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10376450"
+    "source_url": "https://www.planespotters.net/photo/1013444/hb-ind-swissair-mcdonnell-douglas-md-81-dc-9-81?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/37705/1013444_06d7abcff4_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IND",
+    "scraped_at_utc": "2026-02-26T20:16:55Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX005": {
     "model_id": "LX005",
-    "source_url": "https://www.planespotters.net/photo/435145/hb-ijm-swiss-airbus-a320-214",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:18Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/435145/hb-ijm-swiss-airbus-a320-214"
+    "source_url": "https://www.planespotters.net/photo/1885898/hb-ijm-swiss-airbus-a320-214?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/16021/1885898_1639401bf0_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IJM",
+    "scraped_at_utc": "2026-02-26T20:16:57Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX006": {
     "model_id": "LX006",
-    "source_url": "https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:19Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/994127/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11"
+    "source_url": "https://www.planespotters.net/photo/1887962/hb-jca-swiss-bombardier-cseries-cs300-bd-500-1a11?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/25594/1887962_8354bd5ec1_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-JCA",
+    "scraped_at_utc": "2026-02-26T20:16:58Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX007": {
     "model_id": "LX007",
-    "source_url": "https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:20Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/729405/hb-jna-swiss-boeing-777-3deer"
+    "source_url": "https://www.planespotters.net/photo/1890516/hb-jna-swiss-boeing-777-3deer?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/24932/1890516_450eab7ccd_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-JNA",
+    "scraped_at_utc": "2026-02-26T20:17:00Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX008": {
     "model_id": "LX008",
-    "source_url": "https://abpic.co.uk/pictures/view/1072413",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:21Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/728477/hb-iwi-swiss-mcdonnell-douglas-md-11?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/35787/728477_ec5253c43b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IWI",
+    "scraped_at_utc": "2026-02-26T20:17:01Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX009": {
     "model_id": "LX009",
-    "source_url": "https://www.planespotters.net/photo/170402/hb-ijd-swiss-airbus-a320-214",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:22Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/170402/hb-ijd-swiss-airbus-a320-214"
+    "source_url": "https://www.planespotters.net/photo/1205706/hb-ijd-swiss-airbus-a320-214?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/06537/1205706_2b4371fc23_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IJD",
+    "scraped_at_utc": "2026-02-26T20:17:03Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX010": {
     "model_id": "LX010",
-    "source_url": "https://www.jetphotos.com/photo/6081412",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:23Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/6081412"
+    "source_url": "https://www.planespotters.net/photo/873629/hb-icc-swissair-convair-cv-990-30a-6?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/49211/873629_6c6bd0a77b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-ICC",
+    "scraped_at_utc": "2026-02-26T20:17:04Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX011": {
     "model_id": "LX011",
-    "source_url": "https://www.airliners.net/photo/Swissair/Airbus-A321-111/107362/L",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:24Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1884504/hb-ioh-swiss-airbus-a321-111?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/27823/1884504_27482ee300_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IOH",
+    "scraped_at_utc": "2026-02-26T20:17:06Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX012": {
     "model_id": "LX012",
-    "source_url": "https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:26Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1358550/hb-jdc-swiss-airbus-a320-271n"
+    "source_url": "https://www.planespotters.net/photo/1633690/hb-jdc-swiss-airbus-a320-271n?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/15295/1633690_f167092726_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-JDC",
+    "scraped_at_utc": "2026-02-26T20:17:07Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX013": {
     "model_id": "LX013",
     "source_url": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
     "thumb_url": "https://www.airliners-airlines.de/fotoserien/swissair/hb_icl.jpg",
-    "scraped_at_utc": "2026-02-26T19:46:27Z",
+    "scraped_at_utc": "2026-02-26T20:17:08Z",
     "direct_image": true
   },
   "LX014": {
     "model_id": "LX014",
-    "source_url": "https://www.jetphotos.com/photo/10644669",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:28Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10644669"
+    "source_url": "https://www.planespotters.net/photo/700484/hb-ipa-swissair-airbus-a310-221?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/46949/700484_a7f73bcaf0_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/HB-IPA",
+    "scraped_at_utc": "2026-02-26T20:17:10Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "LX015": {
     "model_id": "LX015",
     "source_url": "https://www.airhistory.net/photo/672110/HB-IGB",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:29Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:17:11Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "LX016": {
     "model_id": "LX016",
     "source_url": "https://www.airhistory.net/photo/373164/HB-IDB",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:30Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:17:13Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "LX017": {
     "model_id": "LX017",
     "source_url": "https://www.airhistory.net/photo/249732/HB-IDA",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:31Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:17:15Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "LX018": {
     "model_id": "LX018",
     "source_url": "https://cdn.jetphotos.com/full/2/11550_1280047497.jpg",
     "thumb_url": "https://cdn.jetphotos.com/full/2/11550_1280047497.jpg",
-    "scraped_at_utc": "2026-02-26T19:46:32Z",
+    "scraped_at_utc": "2026-02-26T20:17:16Z",
     "direct_image": true
   },
   "NG001": {
     "model_id": "NG001",
-    "source_url": "https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:33Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1012256/oe-lpa-lauda-air-boeing-777-2z9er"
+    "source_url": "https://www.planespotters.net/photo/1808406/oe-lpa-austrian-airlines-boeing-777-2z9er?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/01416/1808406_13583d535d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LPA",
+    "scraped_at_utc": "2026-02-26T20:17:17Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "NG002": {
     "model_id": "NG002",
-    "source_url": "https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:34Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1142071/oe-lnm-lauda-air-boeing-737-6z9"
+    "source_url": "https://www.planespotters.net/photo/262786/oe-lnm-austrian-airlines-boeing-737-6z9?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/13781/262786_78920ce5b5_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LNM",
+    "scraped_at_utc": "2026-02-26T20:17:19Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "NG003": {
     "model_id": "NG003",
-    "source_url": "https://www.planespotters.net/photo/373434/oe-lea-niki-airbus-a320-214",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:35Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/373434/oe-lea-niki-airbus-a320-214"
+    "source_url": "https://www.planespotters.net/photo/694116/oe-lea-small-planet-airlines-germany-airbus-a320-214?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/47525/694116_a371b5e4f2_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LEA",
+    "scraped_at_utc": "2026-02-26T20:17:20Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "ORD-AB-7": {
     "model_id": "ORD-AB-7",
-    "source_url": "https://www.planespotters.net/photo/1232122/d-abda-air-berlin-airbus-a320-214",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:36Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1232122/d-abda-air-berlin-airbus-a320-214"
+    "source_url": "https://www.planespotters.net/photo/205410/d-abda-air-berlin-airbus-a320-214?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/13357/205410_ac6c1a221b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/D-ABDA",
+    "scraped_at_utc": "2026-02-26T20:17:22Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "ORD-BOA-11": {
     "model_id": "ORD-BOA-11",
-    "source_url": "https://www.airhistory.net/photo/338505/G-AWNB",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:37Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1566828/g-awnb-british-airways-boeing-747-136?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/26815/1566828_75f23d4c3f_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/G-AWNB",
+    "scraped_at_utc": "2026-02-26T20:17:23Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "ORD-LX-26": {
     "model_id": "ORD-LX-26",
     "source_url": "https://www.airliners.net/photo/Swissair/Douglas-DC-6B/108683",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:38Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:17:25Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "ORD-PA-7": {
     "model_id": "ORD-PA-7",
     "source_url": "https://www.planepictures.net/v3/show_en.php?id=695003",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:39Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:17:27Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "ORD-SO-37": {
     "model_id": "ORD-SO-37",
-    "source_url": "https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:40Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1470415/b-001j-comac-comac-c919-100er"
+    "source_url": "https://www.planespotters.net/photo/1804467/b-001j-lao-airlines-comac-arj21-700?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/13129/1804467_3125e17197_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/B-001J",
+    "scraped_at_utc": "2026-02-26T20:17:28Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "ORD-SO-49": {
     "model_id": "ORD-SO-49",
-    "source_url": "https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:41Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/313229/n905na-nasa-boeing-747-123"
+    "source_url": "https://www.planespotters.net/photo/1461214/n905na-nasa-boeing-747-123?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/08766/1461214_139611a23d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N905NA",
+    "scraped_at_utc": "2026-02-26T20:17:30Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS001": {
     "model_id": "OS001",
-    "source_url": "https://www.jetphotos.com/photo/10159741",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:42Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10159741"
+    "source_url": "https://www.planespotters.net/photo/1254381/oe-lde-austrian-airlines-airbus-a319-112?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/04638/1254381_57eda849f6_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LDE",
+    "scraped_at_utc": "2026-02-26T20:17:32Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS002": {
     "model_id": "OS002",
-    "source_url": "https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:43Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/255885/oe-lbb-austrian-airlines-airbus-a321-111"
+    "source_url": "https://www.planespotters.net/photo/1812067/oe-lbb-austrian-airlines-airbus-a321-111?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/10642/1812067_366c914771_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LBB",
+    "scraped_at_utc": "2026-02-26T20:17:33Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS003": {
     "model_id": "OS003",
-    "source_url": "https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:44Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/067309/oe-lvk-austrian-arrows-fokker-100-f28-mark-0100"
+    "source_url": "https://www.planespotters.net/photo/1871437/oe-lvk-easyjet-europe-airbus-a319-111?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/00959/1871437_ee7483404b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LVK",
+    "scraped_at_utc": "2026-02-26T20:17:35Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS004": {
     "model_id": "OS004",
-    "source_url": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:45Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9"
+    "source_url": "https://www.planespotters.net/photo/1666443/oe-lnl-dhl-aviation-boeing-757-223-pcf-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/26614/1666443_960703a10d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LNL",
+    "scraped_at_utc": "2026-02-26T20:17:36Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS005": {
     "model_id": "OS005",
-    "source_url": "https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:46Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/015371/oe-lag-austrian-airlines-airbus-a340-211"
+    "source_url": "https://www.planespotters.net/photo/021102/oe-lag-austrian-airlines-airbus-a340-211?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/26912/021102_e517f87942_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LAG",
+    "scraped_at_utc": "2026-02-26T20:17:38Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS006": {
     "model_id": "OS006",
-    "source_url": "https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:47Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/768976/oe-lca-austrian-airlines-sud-aviation-se-210-caravelle-vi-r"
+    "source_url": "https://www.planespotters.net/photo/1757987/oe-lca-avcon-jet-bombardier-global-express-xrs-bd-700-1a10?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/21662/1757987_4cdc70b1ca_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LCA",
+    "scraped_at_utc": "2026-02-26T20:17:39Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS007": {
     "model_id": "OS007",
-    "source_url": "https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:49Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/011983/oe-lan-austrian-airlines-airbus-a330-223"
+    "source_url": "https://www.planespotters.net/photo/916534/oe-lan-private-bombardier-challenger-650-cl-600-2b16?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/48846/916534_d8894c999b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LAN",
+    "scraped_at_utc": "2026-02-26T20:17:40Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS008": {
     "model_id": "OS008",
-    "source_url": "https://www.planespotters.net/photo/215733/oe-lgi-austrian-arrows-bombardier-dhc-8-402q-dash-8",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:50Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/215733/oe-lgi-austrian-arrows-bombardier-dhc-8-402q-dash-8"
+    "source_url": "https://www.planespotters.net/photo/1185662/oe-lgi-austrian-airlines-bombardier-dhc-8-402-dash-8-q400?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/26500/1185662_36561b5cf5_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LGI",
+    "scraped_at_utc": "2026-02-26T20:17:42Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS009": {
     "model_id": "OS009",
-    "source_url": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:51Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er"
+    "source_url": "https://www.planespotters.net/photo/1869937/oe-lpd-austrian-airlines-boeing-777-2z9er?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/16493/1869937_67426d0c74_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LPD",
+    "scraped_at_utc": "2026-02-26T20:17:44Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS010": {
     "model_id": "OS010",
     "source_url": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
     "thumb_url": "https://berlin-spotter.de/focus/aua320qualiflyer.jpg",
-    "scraped_at_utc": "2026-02-26T19:46:52Z",
+    "scraped_at_utc": "2026-02-26T20:17:45Z",
     "direct_image": true
   },
   "OS011": {
     "model_id": "OS011",
-    "source_url": "https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:53Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/245246/oe-lnt-austrian-airlines-boeing-737-8z9-wl"
+    "source_url": "https://www.planespotters.net/photo/358492/oe-lnt-austrian-airlines-boeing-737-8z9-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/41734/358492_621069842d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LNT",
+    "scraped_at_utc": "2026-02-26T20:17:46Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS012": {
     "model_id": "OS012",
-    "source_url": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:54Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748"
+    "source_url": "https://www.planespotters.net/photo/990494/oe-lht-austrian-airlines-hawker-siddeley-hs-748?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/17845/990494_ed3effd657_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LHT",
+    "scraped_at_utc": "2026-02-26T20:17:48Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS013": {
     "model_id": "OS013",
-    "source_url": "https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:55Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/415265/oe-lda-austrian-airlines-mcdonnell-douglas-dc-9-32"
+    "source_url": "https://www.planespotters.net/photo/1208158/oe-lda-austrian-airlines-airbus-a319-112?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/16184/1208158_68961e3a6d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LDA",
+    "scraped_at_utc": "2026-02-26T20:17:49Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS014": {
     "model_id": "OS014",
-    "source_url": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:56Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51"
+    "source_url": "https://www.planespotters.net/photo/491499/oe-ldl-austrian-airlines-mcdonnell-douglas-dc-9-51?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/14924/491499_1a880dbfbc_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LDL",
+    "scraped_at_utc": "2026-02-26T20:17:51Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS015": {
     "model_id": "OS015",
-    "source_url": "https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:57Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/036860/oe-lal-austrian-airlines-airbus-a340-313"
+    "source_url": "https://www.planespotters.net/photo/1721095/oe-lal-hongyuan-group-airbus-a330-243-p2f?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/03324/1721095_c7cb5a9df7_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LAL",
+    "scraped_at_utc": "2026-02-26T20:17:52Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS016": {
     "model_id": "OS016",
-    "source_url": "https://www.planespotters.net/photo/355580/oe-lbb-austrian-airlines-airbus-a321-111",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:58Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/355580/oe-lbb-austrian-airlines-airbus-a321-111"
+    "source_url": "https://www.planespotters.net/photo/1812067/oe-lbb-austrian-airlines-airbus-a321-111?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/10642/1812067_366c914771_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LBB",
+    "scraped_at_utc": "2026-02-26T20:17:53Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS017": {
     "model_id": "OS017",
-    "source_url": "https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:46:59Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1644019/oe-lpm-austrian-airlines-boeing-787-9-dreamliner"
+    "source_url": "https://www.planespotters.net/photo/1866033/oe-lpm-austrian-airlines-boeing-787-9-dreamliner?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/31252/1866033_76564f7155_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LPM",
+    "scraped_at_utc": "2026-02-26T20:17:54Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS018": {
     "model_id": "OS018",
-    "source_url": "https://www.jetphotos.com/photo/11688863",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:01Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/11688863"
+    "source_url": "https://www.planespotters.net/photo/1217844/oe-law-austrian-airlines-boeing-767-3z9er-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/06572/1217844_ca0284e095_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LAW",
+    "scraped_at_utc": "2026-02-26T20:17:56Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS019": {
     "model_id": "OS019",
-    "source_url": "https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:02Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1369982/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070"
+    "source_url": "https://www.planespotters.net/photo/463261/oe-lfg-tyrolean-airways-fokker-70-f28-mark-0070?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/42621/463261_d9caa4a5e7_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LFG",
+    "scraped_at_utc": "2026-02-26T20:17:58Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "OS020": {
     "model_id": "OS020",
-    "source_url": "https://abpic.co.uk/pictures/registration/OE-LAM",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:03Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1283676/oe-lam-smbc-aviation-capital-airbus-a320-214-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/39591/1283676_17877bf1fc_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OE-LAM",
+    "scraped_at_utc": "2026-02-26T20:17:59Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "PA001": {
     "model_id": "PA001",
     "source_url": "https://www.airhistory.net/photo/516777/N529PA",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:04Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:00Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA002": {
     "model_id": "PA002",
-    "source_url": "https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:05Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8"
+    "source_url": "https://www.planespotters.net/photo/896241/n406kw-pan-am-boeing-737-4q8?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/03582/896241_fa1f465b3e_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N406KW",
+    "scraped_at_utc": "2026-02-26T20:18:02Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "PA003": {
     "model_id": "PA003",
     "source_url": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
     "thumb_url": "https://silodrome.com/wp-content/uploads/2019/08/Pan-Am-Boeing-377-Stratocruiser.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:06Z",
+    "scraped_at_utc": "2026-02-26T20:18:03Z",
     "direct_image": true
   },
   "PA004": {
     "model_id": "PA004",
     "source_url": "https://www.jetphotos.com/photo/9587",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:07Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/9587"
+    "scraped_at_utc": "2026-02-26T20:18:05Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA005": {
     "model_id": "PA005",
     "source_url": "https://www.airhistory.net/photo/19672/N61NA",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:08Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:06Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA006": {
     "model_id": "PA006",
     "source_url": "https://www.planepictures.net/v3/show_en.php?id=276508",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:09Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:08Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA007": {
     "model_id": "PA007",
-    "source_url": "https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:10Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222"
+    "source_url": "https://www.planespotters.net/photo/1139729/n67af-barnax-air-boeing-737-222?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/24348/1139729_f295a8f3ec_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N67AF",
+    "scraped_at_utc": "2026-02-26T20:18:09Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "PA008": {
     "model_id": "PA008",
-    "source_url": "https://www.airhistory.net/photo/481727/N818PA",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:11Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/810604/n818pa-delta-air-lines-airbus-a310-324?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/27523/810604_d1bc0fa700_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N818PA",
+    "scraped_at_utc": "2026-02-26T20:18:10Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "PA009": {
     "model_id": "PA009",
     "source_url": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-C-54E-Skymaster-DC-4/1212785/L",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:12Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:12Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA011": {
     "model_id": "PA011",
     "source_url": "https://www.jetphotos.com/photo/261236",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:13Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/261236"
+    "scraped_at_utc": "2026-02-26T20:18:13Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA012": {
     "model_id": "PA012",
-    "source_url": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Boeing-747-122/7816273/L",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:14Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1745018/n4704u-pan-am-boeing-747-122?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/01222/1745018_d4978f98f2_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N4704U",
+    "scraped_at_utc": "2026-02-26T20:18:15Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "PA013": {
     "model_id": "PA013",
     "source_url": "https://abpic.co.uk/pictures/view/1646675",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:15Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:16Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA014": {
     "model_id": "PA014",
     "source_url": "https://www.jetphotos.com/photo/5975740",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:16Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/5975740"
+    "scraped_at_utc": "2026-02-26T20:18:18Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA015": {
     "model_id": "PA015",
     "source_url": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
     "thumb_url": "https://aviadejavu.ru/Images6/HI/HI-35/49-3.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:17Z",
+    "scraped_at_utc": "2026-02-26T20:18:19Z",
     "direct_image": true
   },
   "PA016": {
     "model_id": "PA016",
-    "source_url": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Convair-240-2/961390/L",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:18Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1644289/n90671-private-cessna-o-1-bird-dog?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/14840/1644289_8433f8913d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N90671",
+    "scraped_at_utc": "2026-02-26T20:18:20Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "PA017": {
     "model_id": "PA017",
     "source_url": "https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
     "thumb_url": "https://www.floridamemory.com/fpc/reference/rc08957a.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:19Z",
+    "scraped_at_utc": "2026-02-26T20:18:21Z",
     "direct_image": true
   },
   "PA018": {
     "model_id": "PA018",
     "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
     "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/N809PA_Douglas_DC-8-32_Pan_American_World_Airways_MAN_21JUL68.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:20Z",
+    "scraped_at_utc": "2026-02-26T20:18:22Z",
     "direct_image": true
   },
   "PA019": {
     "model_id": "PA019",
     "source_url": "https://www.jetphotos.com/photo/10957009",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:21Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/10957009"
+    "scraped_at_utc": "2026-02-26T20:18:24Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "PA020": {
     "model_id": "PA020",
-    "source_url": "https://abpic.co.uk/pictures/view/1106191",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:22Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/681151/n83na-pan-am-mcdonnell-douglas-dc-10-30?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/42376/681151_7cf77b961a_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/N83NA",
+    "scraped_at_utc": "2026-02-26T20:18:25Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK001": {
     "model_id": "SK001",
-    "source_url": "https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:23Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1608963/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24"
+    "source_url": "https://www.planespotters.net/photo/1637311/es-acg-sas-scandinavian-airlines-bombardier-crj-900lr-cl-600-2d24?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/12970/1637311_1e3ba3f906_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/ES-ACG",
+    "scraped_at_utc": "2026-02-26T20:18:27Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK002": {
     "model_id": "SK002",
-    "source_url": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:24Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232"
+    "source_url": "https://www.planespotters.net/photo/1789562/oy-kar-sas-scandinavian-airlines-airbus-a320-232?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/15568/1789562_8a92bbbd2b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OY-KAR",
+    "scraped_at_utc": "2026-02-26T20:18:28Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK003": {
     "model_id": "SK003",
-    "source_url": "https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:25Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1654130/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl"
+    "source_url": "https://www.planespotters.net/photo/1501636/se-rjx-sas-scandinavian-airlines-boeing-737-76n-wl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/34921/1501636_e4526f88e0_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/SE-RJX",
+    "scraped_at_utc": "2026-02-26T20:18:30Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK004": {
     "model_id": "SK004",
-    "source_url": "https://www.planespotters.net/photo/018107/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-81-dc-9-81",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:26Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/018107/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-81-dc-9-81"
+    "source_url": "https://www.planespotters.net/photo/031792/oy-khr-sas-scandinavian-airlines-mcdonnell-douglas-md-82-dc-9-82?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/37926/031792_10300c70ec_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OY-KHR",
+    "scraped_at_utc": "2026-02-26T20:18:32Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK005": {
     "model_id": "SK005",
-    "source_url": "https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:27Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/018007/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87"
+    "source_url": "https://www.planespotters.net/photo/020227/oy-khf-sas-scandinavian-airlines-mcdonnell-douglas-md-87-dc-9-87?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/29654/020227_d1212fb26d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OY-KHF",
+    "scraped_at_utc": "2026-02-26T20:18:33Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK006": {
     "model_id": "SK006",
-    "source_url": "https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:28Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1780713/oy-kbo-sas-scandinavian-airlines-airbus-a319-132"
+    "source_url": "https://www.planespotters.net/photo/1844340/oy-kbo-sas-scandinavian-airlines-airbus-a319-132?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/28524/1844340_c38158386b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OY-KBO",
+    "scraped_at_utc": "2026-02-26T20:18:35Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SK007": {
     "model_id": "SK007",
     "source_url": "https://image.airport-data.com/aircraft/954767.jpg",
     "thumb_url": "https://image.airport-data.com/aircraft/954767.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:29Z",
+    "scraped_at_utc": "2026-02-26T20:18:36Z",
     "direct_image": true
   },
   "SK008": {
     "model_id": "SK008",
-    "source_url": "https://www.jetphotos.com/photo/7950061",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:31Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/7950061"
+    "source_url": "https://www.planespotters.net/photo/1043727/ln-rkh-sas-scandinavian-airlines-airbus-a330-343?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/32860/1043727_23a15c89f1_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/LN-RKH",
+    "scraped_at_utc": "2026-02-26T20:18:37Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SM001": {
     "model_id": "SM001",
     "source_url": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
     "thumb_url": "https://media.abpic.co.uk/pictures/full_size_0495/1751037-medium.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:32Z",
+    "scraped_at_utc": "2026-02-26T20:18:38Z",
     "direct_image": true
   },
   "SM002": {
     "model_id": "SM002",
     "source_url": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
     "thumb_url": "https://www.clipperflyingboats.com/wp-content/images/314-138-laguardia1.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:33Z",
+    "scraped_at_utc": "2026-02-26T20:18:39Z",
     "direct_image": true
   },
   "SM003": {
     "model_id": "SM003",
     "source_url": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg",
     "thumb_url": "https://de.wikipedia.org/wiki/Dornier_Do_X#/media/Datei:Dornier_Do-X_(15136810048).jpg",
-    "scraped_at_utc": "2026-02-26T19:47:34Z",
+    "scraped_at_utc": "2026-02-26T20:18:40Z",
     "direct_image": true
   },
   "SO001": {
     "model_id": "SO001",
-    "source_url": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:35Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1254854/ur-82060-antonov-airlines-antonov-an-225-mriya?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/09426/1254854_6183eb2487_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/UR-82060",
+    "scraped_at_utc": "2026-02-26T20:18:42Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO002": {
     "model_id": "SO002",
-    "source_url": "https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:36Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1674549/f-gstc-airbus-beluga-transport-airbus-a300b4-608st"
+    "source_url": "https://www.planespotters.net/photo/1879153/f-gstc-airbus-transport-international-airbus-a300b4-608st?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/22754/1879153_c232f5f63b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/F-GSTC",
+    "scraped_at_utc": "2026-02-26T20:18:44Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO003": {
     "model_id": "SO003",
     "source_url": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
     "thumb_url": "https://live.staticflickr.com/65535/48996086863_0676291e4e_b.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:37Z",
+    "scraped_at_utc": "2026-02-26T20:18:45Z",
     "direct_image": true
   },
   "SO004": {
     "model_id": "SO004",
     "source_url": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:38Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:46Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO005": {
     "model_id": "SO005",
-    "source_url": "https://www.jetphotos.com/photo/7533809",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:39Z",
-    "error": "403 Client Error: Forbidden for url: https://www.jetphotos.com/photo/7533809"
+    "source_url": "https://www.planespotters.net/photo/388944/f-btgv-airbus-transport-international-aero-spacelines-377sgt-super-guppy?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/02897/388944_58272748e0_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/F-BTGV",
+    "scraped_at_utc": "2026-02-26T20:18:48Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO006": {
     "model_id": "SO006",
-    "source_url": "https://www.openspotter.org/bild.php?blid=15772",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:40Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/825198/10-21-luftwaffe-german-air-force-airbus-a310-304?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/22934/825198_8daf50c55b_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/10+21",
+    "scraped_at_utc": "2026-02-26T20:18:49Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO007": {
     "model_id": "SO007",
     "source_url": "https://www.airhistory.net/photo/642702/A-703",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:41Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:51Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO008": {
     "model_id": "SO008",
     "source_url": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg",
     "thumb_url": "https://de.wikipedia.org/wiki/SpaceShipTwo#/media/Datei:SS2_and_VMS_Eve.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:42Z",
+    "scraped_at_utc": "2026-02-26T20:18:52Z",
     "direct_image": true
   },
   "SO009": {
     "model_id": "SO009",
-    "source_url": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:43Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster"
+    "source_url": "https://www.planespotters.net/photo/1611184/46-0505-united-states-air-force-douglas-vc-118-liftmaster?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/45422/1611184_082cef433d_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/46-0505",
+    "scraped_at_utc": "2026-02-26T20:18:53Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO010": {
     "model_id": "SO010",
     "source_url": "https://aero-bg.com/2020/11/10/35-godini-ot-parviya-polet-na-bts-002/",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:44Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:55Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO011": {
     "model_id": "SO011",
     "source_url": "x",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:45Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:56Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO012": {
     "model_id": "SO012",
     "source_url": "https://www.airhistory.net/photo/819930/44-76671/0-76671",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:46Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:18:58Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO013": {
     "model_id": "SO013",
     "source_url": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg",
     "thumb_url": "https://en.wikipedia.org/wiki/Boeing_YAL-1#/media/File:YAL-1A_Airborne_Laser_unstowed_crop.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:47Z",
+    "scraped_at_utc": "2026-02-26T20:18:59Z",
     "direct_image": true
   },
   "SO014": {
     "model_id": "SO014",
-    "source_url": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:48Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl"
+    "source_url": "https://www.planespotters.net/photo/1889488/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/47600/1889488_ba81b10023_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/F-GXLI",
+    "scraped_at_utc": "2026-02-26T20:19:01Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO015": {
     "model_id": "SO015",
     "source_url": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
     "thumb_url": "https://cdn2.picryl.com/photo/1991/06/14/sts-40-columbia-ov-102-lands-on-concrete-runway-22-at-eafb-california-5c3a64-1024.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:49Z",
+    "scraped_at_utc": "2026-02-26T20:19:02Z",
     "direct_image": true
   },
   "SO016": {
     "model_id": "SO016",
-    "source_url": "https://www.planespotters.net/photo/1832221/10-01-luftwaffe-german-air-force-airbus-a350-941",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:50Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1832221/10-01-luftwaffe-german-air-force-airbus-a350-941"
+    "source_url": "https://www.planespotters.net/photo/1895487/10-01-luftwaffe-german-air-force-airbus-a350-941?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/23368/1895487_95001a5eb6_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/10+01",
+    "scraped_at_utc": "2026-02-26T20:19:03Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO017": {
     "model_id": "SO017",
     "source_url": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:51Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200"
+    "scraped_at_utc": "2026-02-26T20:19:04Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO018": {
     "model_id": "SO018",
     "source_url": "https://www.airhistory.net/photos/0027472.jpg",
     "thumb_url": "https://www.airhistory.net/photos/0027472.jpg",
-    "scraped_at_utc": "2026-02-26T19:47:52Z",
+    "scraped_at_utc": "2026-02-26T20:19:05Z",
     "direct_image": true
   },
   "SO019": {
     "model_id": "SO019",
     "source_url": "https://www.airhistory.net/photo/425749/165831/5831",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:53Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:19:06Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO020": {
     "model_id": "SO020",
     "source_url": "https://www.aussieairliners.org/b-767i/22233-001/n767ba.html",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:54Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:19:08Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO021": {
     "model_id": "SO021",
     "source_url": "https://www.airhistory.net/photo/654297/158227",
     "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:55Z",
-    "error": "host not in allowlist"
+    "scraped_at_utc": "2026-02-26T20:19:09Z",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   },
   "SO022": {
     "model_id": "SO022",
     "source_url": "https://www.airhistory.net/photos/0641225.jpg?m=1705010149",
     "thumb_url": "https://www.airhistory.net/photos/0641225.jpg?m=1705010149",
-    "scraped_at_utc": "2026-02-26T19:47:56Z",
+    "scraped_at_utc": "2026-02-26T20:19:10Z",
     "direct_image": true
   },
   "SO023": {
     "model_id": "SO023",
-    "source_url": "https://www.airfleets.net/photo/Air-Belgium_OO-ABG_97032_a330.htm",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:57Z",
-    "error": "host not in allowlist"
+    "source_url": "https://www.planespotters.net/photo/1570132/oo-abg-air-belgium-airbus-a330-941?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/42218/1570132_3b00a23c37_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/OO-ABG",
+    "scraped_at_utc": "2026-02-26T20:19:12Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "SO024": {
     "model_id": "SO024",
     "source_url": "http://ocdn.eu/images/pulscms/NDU7MDA_/a1b6ec02-cea2-4aab-8911-311b9d4c8293.jpeg",
     "thumb_url": "http://ocdn.eu/images/pulscms/NDU7MDA_/a1b6ec02-cea2-4aab-8911-311b9d4c8293.jpeg",
-    "scraped_at_utc": "2026-02-26T19:47:58Z",
+    "scraped_at_utc": "2026-02-26T20:19:13Z",
     "direct_image": true
   },
   "TP001": {
     "model_id": "TP001",
-    "source_url": "https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:47:59Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1660755/cs-txj-tap-air-portugal-airbus-a321-251nx"
+    "source_url": "https://www.planespotters.net/photo/1755160/cs-txj-tap-air-portugal-airbus-a321-251nx?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/22155/1755160_0a7d675143_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/CS-TXJ",
+    "scraped_at_utc": "2026-02-26T20:19:14Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "TP002": {
     "model_id": "TP002",
-    "source_url": "https://www.planespotters.net/photo/1169224/cs-top-tap-air-cargo-airbus-a330-202",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:48:00Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1169224/cs-top-tap-air-cargo-airbus-a330-202"
+    "source_url": "https://www.planespotters.net/photo/1844794/cs-top-tap-air-portugal-airbus-a330-202?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/21970/1844794_d6846f9f3a_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/CS-TOP",
+    "scraped_at_utc": "2026-02-26T20:19:16Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "WA001": {
     "model_id": "WA001",
-    "source_url": "https://www.planespotters.net/photo/1135487/ph-xld-klm-exel-atr-42-320",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:48:01Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1135487/ph-xld-klm-exel-atr-42-320"
+    "source_url": "https://www.planespotters.net/photo/1135487/ph-xld-klm-exel-atr-42-320?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/34095/1135487_b0a14c2213_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-XLD",
+    "scraped_at_utc": "2026-02-26T20:19:17Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "WA002": {
     "model_id": "WA002",
-    "source_url": "https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:48:02Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1181886/ph-rxa-klm-exel-embraer-erj-145mp"
+    "source_url": "https://www.planespotters.net/photo/081831/ph-rxa-bmi-regional-embraer-erj-145mp?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/36991/081831_5cf778f5d2_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-RXA",
+    "scraped_at_utc": "2026-02-26T20:19:19Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "WA003": {
     "model_id": "WA003",
-    "source_url": "https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-02-26T19:48:03Z",
-    "error": "403 Client Error: Forbidden for url: https://www.planespotters.net/photo/1502669/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std"
+    "source_url": "https://www.planespotters.net/photo/1666100/ph-nxe-klm-cityhopper-embraer-e195-e2-erj-190-400-std?utm_source=api",
+    "thumb_url": "https://t.plnspttrs.net/29055/1666100_2abda9d191_280.jpg",
+    "api_url": "https://api.planespotters.net/pub/photos/reg/PH-NXE",
+    "scraped_at_utc": "2026-02-26T20:19:21Z",
+    "direct_image": false,
+    "method": "planespotters_api_reg"
   },
   "WA004": {
     "model_id": "WA004",
     "source_url": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
     "thumb_url": "https://cdn.jetphotos.com/full/2/25827_1067672094.jpg",
-    "scraped_at_utc": "2026-02-26T19:48:04Z",
+    "scraped_at_utc": "2026-02-26T20:19:22Z",
     "direct_image": true
   }
 }
