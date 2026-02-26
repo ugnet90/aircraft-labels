@@ -43,6 +43,12 @@ function firstNonEmpty(...vals){
   return "";
 }
 
+function rowFixed(label, value){
+  const v = String(value ?? "").trim();
+  // immer rendern, damit die Reihenfolge stabil bleibt
+  return rowHtml(label, `<span style="opacity:${v ? "1" : ".55"}">${esc(v || "—")}</span>`);
+}
+
 function renderPostcardsCard(d, enrichedById){
   const enrich = enrichedById && typeof enrichedById === "object" ? enrichedById : {};
   const arr = Array.isArray(d?.postcards) ? d.postcards : [];
@@ -71,9 +77,17 @@ function renderPostcardsCard(d, enrichedById){
 
     const head = "";
 
-    const labelRow = label ? row("Info", label) : "";
-    const linkRow  = url ? rowHtml("Link", `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(linkLabel)}</a>`) : "";
-    const priceRow = (price !== null && price !== undefined && Number(price) > 0) ? row("Preis", money(price)) : "";
+    const labelRow = rowFixed("Info", label);
+
+    // Hersteller + Größe aus Enrichment
+    const manu = e?.aircraft_manufacturer || "";
+    const sizeTxt = fmtSizeMm(e?.size_mm) || (e?.size || "");
+    
+    const manuRow = rowFixed("Hersteller", manu);
+    const sizeRow = rowFixed("Grösse", sizeTxt);
+    
+    // Preis stabil (auch wenn leer)
+    const priceRow = rowFixed("Preis", (price !== null && price !== undefined && Number(price) > 0) ? money(price) : "");
 
     return `
       <div class="pc-subcard">
@@ -82,9 +96,10 @@ function renderPostcardsCard(d, enrichedById){
           <div class="pc-body">
             <div class="grid">
               ${head}
+              ${labelRow}
+              ${manuRow}
+              ${sizeRow}
               ${priceRow}
-              ${linkRow}
-              ${labelRow}            
             </div>
           </div>
         </div>
