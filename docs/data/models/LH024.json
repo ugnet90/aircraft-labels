@@ -1,0 +1,120 @@
+{
+  "model_id": "LH024",
+  "airline_code": "LH",
+  "airline": "Lufthansa",
+  "airline_row": "Lufthansa",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "",
+  "shop_url": "https://www.ebay.de/itm/256347481240",
+  "aircraft_id": "BOE-720",
+  "aircraft_type": "Boeing 720",
+  "registration": "D-ABOH",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "",
+  "model_extra": "",
+  "special_note": "",
+  "shop": "Ebay aerosmith102",
+  "price": 1.35,
+  "shipping_allocated": 17.21,
+  "flown": null,
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html | P:0,85 || U:https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html | I:andere Kennung, aber in Farbe | P:1,35",
+  "postcard_info": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html",
+  "postcard_price": 3.2,
+  "postcards": [
+    {
+      "id": "PC-LH024-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH024-02",
+      "label": "andere Kennung, aber in Farbe",
+      "url": "https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html",
+      "price": 1.35
+    }
+  ],
+  "photo": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936",
+  "arrived_excel": "2025-10-24",
+  "arrived": "2025-10-24",
+  "ordered_at": null,
+  "ordered": false,
+  "source": {
+    "sheet": "Lufthansa",
+    "row": "26"
+  },
+  "aircraft": {
+    "aircraft_id": "BOE-720",
+    "type": "Boeing 720",
+    "registration": "D-ABOH",
+    "wingtip": "NONE",
+    "has_wingtip": false
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes_raw": "",
+    "note": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "Aeroclassics",
+    "model_number": "",
+    "shop": "Ebay aerosmith102",
+    "price": 1.35,
+    "shipping_allocated": 17.21,
+    "arrived": "2025-10-24",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
+    "status": "owned",
+    "flown": null,
+    "special_note": "",
+    "model_extra": ""
+  },
+  "links": {
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html | P:0,85 || U:https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html | I:andere Kennung, aber in Farbe | P:1,35",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html",
+    "photo": "https://www.airteamimages.com/boeing-720_d-abop_lufthansa_254936",
+    "shop": "Ebay aerosmith102",
+    "shop_url": "https://www.ebay.de/itm/256347481240"
+  },
+  "logo": {
+    "id": "LH_DLH",
+    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
+    "name": "Deutsche Lufthansa AG",
+    "airline": "Lufthansa",
+    "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-720",
+    "Typ_anzeige": "Boeing 720",
+    "Hersteller": "Boeing",
+    "Baureihe": "720",
+    "Unterserie": "",
+    "Marketingname": "",
+    "Alternate_designations": "707-020",
+    "parent_aircraft_id": "",
+    "ICAO": "B720",
+    "IATA": "720",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1959",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "149",
+    "Length": "41,6",
+    "Wingspan": "39,9",
+    "Height": "12,93",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_720"
+  }
+}
