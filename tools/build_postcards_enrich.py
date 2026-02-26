@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS_DATA_DIR = os.path.join(ROOT, "docs", "data")
-MODELS_DIR = DOCS_DATA_DIR  # model json files live in docs/data/<MODEL_ID>.json
+MODELS_DIR = os.path.join(DOCS_DATA_DIR, "models")  # model json files live in docs/data/models/<MODEL_ID>.json
 OUT_PATH = os.path.join(DOCS_DATA_DIR, "postcards_enriched.json")
 
 # Rate limit to be polite
