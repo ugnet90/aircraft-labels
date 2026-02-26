@@ -105,29 +105,140 @@ def collect_models() -> List[Dict[str, str]]:
 
         # allow direct image URLs too (no scraping needed)
         reg = norm(d.get("registration"))
-        out.append({"model_id": model_id, "photo_url": photo_url, "registration": reg})
+        airline_row = norm(d.get("airline_row") or d.get("airline"))
+        aircraft_type = norm(d.get("aircraft_type") or d.get("typ_anzeige"))
+        aircraft_id = norm(d.get("aircraft_id"))
+        
+        out.append({
+            "model_id": model_id,
+            "photo_url": photo_url,
+            "registration": reg,
+            "airline_row": airline_row,
+            "aircraft_type": aircraft_type,
+            "aircraft_id": aircraft_id,
+        })
     return out
 
-def fetch_planespotters_api_by_reg(reg: str) -> Optional[Dict[str, Any]]:
+def _norm_match(s: str) -> str:
+    s = (s or "").strip().lower()
+    # cheap normalization
+    s = " ".join(s.split())
+    return s
+
+def _dig(d: dict, *path, default=None):
+    cur = d
+    for p in path:
+        if not isinstance(cur, dict) or p not in cur:
+            return default
+        cur = cur[p]
+    return cur
+
+def _pick_thumb(photo: dict) -> Optional[str]:
+    # tolerate different keys
+    for k in ("thumbnail_large", "thumbnail", "thumbnail_medium", "thumbnail_small"):
+        v = photo.get(k)
+        if isinstance(v, dict):
+            src = v.get("src")
+            if src:
+                return str(src).strip()
+    return None
+
+def _photo_airline_name(photo: dict) -> str:
+    # try a couple of common structures
+    return _norm_match(
+        _dig(photo, "airline", "name", default="")
+        or _dig(photo, "operator", "name", default="")
+        or photo.get("airline", "")  # sometimes string
+        or photo.get("operator", "")
+        or ""
+    )
+
+def _photo_type_text(photo: dict) -> str:
+    # try a couple of common structures
+    return _norm_match(
+        _dig(photo, "aircraft", "type", default="")
+        or _dig(photo, "aircraft", "model", default="")
+        or _dig(photo, "aircraft", "name", default="")
+        or photo.get("type", "")
+        or ""
+    )
+
+def _score_photo(photo: dict, want_airline: str, want_type: str) -> int:
+    s = 0
+    got_airline = _photo_airline_name(photo)
+    got_type = _photo_type_text(photo)
+
+    wa = _norm_match(want_airline)
+    wt = _norm_match(want_type)
+
+    # airline match
+    if wa and got_airline:
+        if wa == got_airline:
+            s += 6
+        elif wa in got_airline or got_airline in wa:
+            s += 4
+
+    # type match (very tolerant)
+    if wt and got_type:
+        if wt == got_type:
+            s += 6
+        else:
+            # handle "Airbus A320-200" vs "Airbus A320"
+            # give points if key tokens overlap
+            tokens_w = [t for t in wt.replace("-", " ").split() if len(t) >= 3]
+            tokens_g = [t for t in got_type.replace("-", " ").split() if len(t) >= 3]
+            overlap = sum(1 for t in tokens_w if t in tokens_g)
+            if overlap >= 2:
+                s += 4
+            elif overlap == 1:
+                s += 2
+
+    # prefer entries that actually have a thumbnail
+    if _pick_thumb(photo):
+        s += 2
+
+    return s
+
+def fetch_planespotters_api_by_reg(reg: str, want_airline: str = "", want_type: str = "") -> Optional[Dict[str, Any]]:
     reg = reg.strip()
     if not reg:
         return None
+
     api_url = f"https://api.planespotters.net/pub/photos/reg/{reg}"
     res = requests.get(api_url, timeout=TIMEOUT, headers={"User-Agent": UA})
     res.raise_for_status()
     j = res.json()
+
     if not isinstance(j, dict):
         return None
     photos = j.get("photos")
     if not isinstance(photos, list) or not photos:
         return None
-    p0 = photos[0] if isinstance(photos[0], dict) else None
-    if not p0:
+
+    best = None
+    best_score = -1
+    for p in photos:
+        if not isinstance(p, dict):
+            continue
+        sc = _score_photo(p, want_airline, want_type)
+        if sc > best_score:
+            best_score = sc
+            best = p
+
+    if not isinstance(best, dict):
         return None
-    tl = p0.get("thumbnail_large") or {}
-    thumb = tl.get("src") if isinstance(tl, dict) else None
-    link = p0.get("link")  # public page URL
-    return {"source_url": link or api_url, "thumb_url": thumb, "api_url": api_url}
+
+    thumb_url = _pick_thumb(best)
+    link = best.get("link")  # public page URL
+    return {
+        "source_url": str(link or api_url),
+        "thumb_url": thumb_url,
+        "api_url": api_url,
+        "picked_score": best_score,
+        # optional debug: keep what we matched against (small + helpful)
+        "picked_airline": _photo_airline_name(best),
+        "picked_type": _photo_type_text(best),
+    }
 
 def is_direct_image(url: str) -> bool:
     u = url.lower()
@@ -179,7 +290,10 @@ def main() -> int:
                 hit = None
     
                 try:
-                    hit = fetch_planespotters_api_by_reg(reg) if reg else None
+                    want_airline = norm(m.get("airline_row"))
+                    want_type = norm(m.get("aircraft_type"))
+                    
+                    hit = fetch_planespotters_api_by_reg(reg, want_airline=want_airline, want_type=want_type) if reg else None
                 except Exception as e:
                     hit = {"thumb_url": None, "error": f"api reg failed: {e}"}
     
