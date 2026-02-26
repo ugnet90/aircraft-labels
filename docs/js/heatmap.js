@@ -250,6 +250,30 @@ function haversineKm(lat1, lon1, lat2, lon2) {
 
   let heat = makeHeatLayer().addTo(map);
 
+  // --- Map maximize (viewport overlay) ---
+  (function(){
+    const wrap = document.getElementById("mapWrap");
+    const btnMax = document.getElementById("mapMaxBtn");
+    const btnClose = document.getElementById("mapCloseBtn");
+    if(!wrap || !btnMax || !btnClose) return;
+
+    function setMax(on){
+      wrap.classList.toggle("is-max", !!on);
+      btnMax.style.display = on ? "none" : "";
+      btnClose.style.display = on ? "" : "none";
+      setTimeout(()=> map.invalidateSize(), 150);
+    }
+
+    btnMax.addEventListener("click", ()=> setMax(true));
+    btnClose.addEventListener("click", ()=> setMax(false));
+
+    document.addEventListener("keydown", (e)=>{
+      if(e.key === "Escape" && wrap.classList.contains("is-max")){
+        setMax(false);
+      }
+    });
+  })();
+
   // Fit bounds to points
   if (heatLatLngs.length) {
     const latlngs = points.map((p) => [p.lat, p.lon]);
