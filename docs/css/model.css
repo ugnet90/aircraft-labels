@@ -9,3 +9,29 @@
   margin-top: 12px;
   font-weight: 600;
 }
+
+.pc-row{
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.pc-thumb{
+  display: block;
+  width: 110px;
+}
+
+.pc-thumb img{
+  width: 110px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.12);
+}
+
+.pc-meta{
+  margin-top: 8px;
+  opacity: .85;
+  font-size: 0.95em;
+  line-height: 1.25;
+}
