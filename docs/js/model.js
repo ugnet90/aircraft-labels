@@ -43,7 +43,8 @@ function firstNonEmpty(...vals){
   return "";
 }
 
-function renderPostcardsCard(d){
+function renderPostcardsCard(d, enrichedById){
+  const enrich = enrichedById && typeof enrichedById === "object" ? enrichedById : {};
   const arr = Array.isArray(d?.postcards) ? d.postcards : [];
   if(!arr.length) return "";
 
@@ -51,7 +52,17 @@ function renderPostcardsCard(d){
     const label = String(pc?.label ?? "").trim();
     const url   = String(pc?.url ?? "").trim();
     const price = pc?.price;
-
+    const pcId = String(pc?.id ?? "").trim();
+    const e = pcId ? (enrich[pcId] || null) : null;
+    
+    // thumbnail
+    const thumbUrl = e && e.thumb_url ? String(e.thumb_url).trim() : "";
+    const thumbHtml = thumbUrl
+      ? `<a class="pc-thumb" href="${esc(url || thumbUrl)}" target="_blank" rel="noopener">
+           <img src="${esc(thumbUrl)}" alt="Postkarte Thumbnail" loading="lazy">
+         </a>`
+      : "";
+    
     let linkLabel = "Link";
     if(url){
       try{ linkLabel = (new URL(url)).hostname.replace(/^www\./, ""); }catch(e){ linkLabel = "Link"; }
@@ -67,15 +78,20 @@ function renderPostcardsCard(d){
 
     return `
       <div class="pc-subcard">
-        <div class="grid">
-          ${head}
-          ${labelRow}
-          ${linkRow}
-          ${priceRow}
+        <div class="pc-row">
+          ${thumbHtml}
+          <div class="pc-body">
+            <div class="grid">
+              ${head}
+              ${labelRow}
+              ${linkRow}
+              ${priceRow}
+            </div>
+            // ${metaHtml}
+          </div>
         </div>
       </div>
     `;
-  }).join("");
 
   // ---- Total berechnen / anzeigen ----
   const total = Number(d?.postcard_price_total || 0);
@@ -347,6 +363,29 @@ function linkOrTextRow(label, raw){
   );
 }
 
+// --- Postcards enrichment (lazy) ---
+let _postcardsEnrichedCache = null; // null=not loaded, {}=loaded/empty
+
+async function loadPostcardsEnriched(){
+  if(_postcardsEnrichedCache !== null) return _postcardsEnrichedCache;
+
+  try{
+    const res = await fetch("data/postcards_enriched.json", { cache: "no-store" });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json();
+    _postcardsEnrichedCache = (j && typeof j === "object") ? j : {};
+  }catch(e){
+    _postcardsEnrichedCache = {};
+  }
+  return _postcardsEnrichedCache;
+}
+
+function fmtSizeMm(mm){
+  if(!mm || typeof mm !== "object") return "";
+  const w = Number(mm.w), h = Number(mm.h);
+  if(!Number.isFinite(w) || !Number.isFinite(h)) return "";
+  return `${w}×${h} mm`;
+}
 
 async function main(){
   const id = qs("id");
@@ -454,7 +493,11 @@ async function main(){
       </div>
     `;
 
-    const postcardBlock = renderPostcardsCard(d);
+    let postcardBlock = "";
+    if(Array.isArray(d.postcards) && d.postcards.length){
+      const enrichedById = await loadPostcardsEnriched();
+      postcardBlock = renderPostcardsCard(d, enrichedById);
+    }
     
     const aircraftBlock = `
       <div class="card">
