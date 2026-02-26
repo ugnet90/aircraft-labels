@@ -176,7 +176,8 @@ function applyRender(){
     const from = asText(f.from);
     const to = asText(f.to);
     f.route = [from, to].filter(Boolean).join(" → ");
-    f.airline = asText(f.airline) || asText(f.logo_id);
+    //f.airline = asText(f.airline) || asText(f.logo_id);
+    f.airline = asText(f.airline_row);
   }
 
   items.sort(cmp);
