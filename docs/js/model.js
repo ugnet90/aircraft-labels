@@ -414,8 +414,8 @@ async function main(){
     return;
   }
 
-  const url = `./data/${encodeURIComponent(id)}.json`;
-
+  const url = `./data/models/${encodeURIComponent(id)}.json`;
+  
   try{
     const res = await fetch(url, {cache:"no-store"});
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
