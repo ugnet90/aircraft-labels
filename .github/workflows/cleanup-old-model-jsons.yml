@@ -1,0 +1,33 @@
+name: Cleanup old model JSONs (docs/data root)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: cleanup-old-model-jsons-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cleanup old model JSONs in docs/data
+        run: python tools/cleanup_old_model_jsons.py
+
+      - name: Commit deletions
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git status --porcelain
+          git add -A
+          git commit -m "Cleanup old model JSONs in docs/data" || echo "No changes"
+          git push
