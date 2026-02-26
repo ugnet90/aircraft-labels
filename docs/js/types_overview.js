@@ -1,0 +1,371 @@
+function esc(s){
+  return String(s??"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function norm(s){ return String(s ?? "").trim().toLowerCase(); }
+
+let data = null;
+let all = [];
+let expanded = new Set(); // aircraft_id
+
+function buildSelect(id, firstLabel, options){
+  const sel = document.getElementById(id);
+  sel.innerHTML = "";
+  const opt0 = document.createElement("option");
+  opt0.value = "";
+  opt0.textContent = firstLabel;
+  sel.appendChild(opt0);
+
+  for(const x of options){
+    const opt = document.createElement("option");
+    opt.value = x;
+    opt.textContent = x;
+    sel.appendChild(opt);
+  }
+}
+
+function buildStaticSelects(){  
+  // Wingtip
+  const wing = document.getElementById("wing");
+  wing.innerHTML = `
+    <option value="">Wingtip: alle</option>
+    <option value="true">Wingtip: ja</option>
+    <option value="false">Wingtip: nein</option>
+  `;
+
+  // Sortierung
+  const sort = document.getElementById("sort");
+  sort.innerHTML = `
+    <option value="type_az">Sort: Typ A→Z</option>
+    <option value="owned_desc">Sort: vorhanden ↓</option>
+    <option value="ordered_desc">Sort: bestellt ↓</option>
+    <option value="manufacturer_az">Sort: Hersteller A→Z</option>
+  `;
+}
+
+function wingIcon(has){
+  return has ? `<span class="wingIcon" title="Wingtip vorhanden">🪽</span>` : "";
+}
+
+function wingBadge(has){
+  return has ? `<span class="wlBadge">WL</span>` : "";
+}
+
+
+function apply(){
+  const q = norm(document.getElementById("q").value);
+  const manu = document.getElementById("manu").value;
+  const wing = document.getElementById("wing").value;
+  const sort = document.getElementById("sort").value || "type_az";
+
+  const fMissing = document.getElementById("fMissing").checked;
+  const fOwned = document.getElementById("fOwned").checked;
+  const fOrdered = document.getElementById("fOrdered").checked;
+
+  let items = all.filter(x => {
+    // Hersteller
+    if(manu && (x.manufacturer || "") !== manu) return false;
+
+    // Wingtip
+    if(wing === "true" && x.has_wingtip !== true) return false;
+    if(wing === "false" && x.has_wingtip !== false) return false;
+
+    // Status via Checkboxen
+    const hasOwned = (x.owned_count || 0) > 0;
+    const hasOrdered = (x.ordered_count || 0) > 0;
+    const isMissing = !hasOwned && !hasOrdered;
+
+    const okMissing = fMissing && isMissing;
+    const okOwned = fOwned && hasOwned;
+    const okOrdered = fOrdered && hasOrdered;
+
+    if(!(okMissing || okOwned || okOrdered)) return false;
+
+    // Suche
+    if(!q) return true;
+    const hay = (norm(x.typ_anzeige) + " " + norm(x.aircraft_id) + " " + norm(x.manufacturer));
+    return hay.includes(q);
+  });
+
+  items = sortItems(items, sort);
+
+  document.getElementById("count").textContent =
+    `${items.length} Typen · davon ${items.filter(x => (x.total_count || 0) > 0).length} mit Modellen`;
+
+  render(items);
+}
+
+function sortItems(items, mode){
+  const arr = items.slice();
+  if(mode === "owned_desc"){
+    arr.sort((a,b)=>(b.owned_count-a.owned_count) || (a.type_key||"").localeCompare(b.type_key||""));
+    return arr;
+  }
+  if(mode === "ordered_desc"){
+    arr.sort((a,b)=>(b.ordered_count-a.ordered_count) || (a.type_key||"").localeCompare(b.type_key||""));
+    return arr;
+  }
+  if(mode === "manufacturer_az"){
+    arr.sort((a,b)=> (a.manufacturer||"").localeCompare(b.manufacturer||"") || (a.type_key||"").localeCompare(b.type_key||""));
+    return arr;
+  }
+  arr.sort((a,b)=> (a.type_key||"").localeCompare(b.type_key||""));
+  return arr;
+}
+
+function statusLabel(st){
+  switch(st){
+    case "missing": return "fehlend";
+    case "owned": return "vorhanden";
+    case "ordered": return "bestellt";
+    case "mixed": return "vorhanden + bestellt";
+    default: return "";
+  }
+}
+
+function statusBadge(st){
+  const s = st || "";
+  const lbl = statusLabel(s);
+  const cls = "badge " + (s ? "st-" + s : "");
+  return lbl ? `<span class="${cls}">${esc(lbl)}</span>` : "";
+}
+
+function wingBadge(v){
+  return v === true ? `<span class="badge">WL/SL</span>` : "";
+}
+
+function render(items){
+  if(items.length === 0){
+    document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
+    return;
+  }
+
+  let html = `
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th class="col-type">Typ</th>
+          <th class="col-wing">WL</th>
+          <th class="col-num">best.</th>
+          <th class="col-num">vorh.</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  for(const x of items){
+    const isOpen = expanded.has(x.aircraft_id);
+    const canOpen = (x.status !== "missing");
+  
+    const toggleHtml = canOpen
+      ? `<button class="toggle" data-aid="${esc(x.aircraft_id)}" aria-label="Details">
+           ${isOpen ? "▾" : "▸"}
+         </button>`
+      : ""; // kein Platzhalter mehr!
+  
+    html += `
+      <tr class="rowMain st-${esc(x.status || "")}" data-aid="${esc(x.aircraft_id)}">
+ 
+        <td class="col-type">
+          <div class="typeLine">
+            ${toggleHtml}
+            <div>
+
+              <div class="typeName">
+                ${esc(x.typ_anzeige || x.aircraft_id)}
+                  ${(x.status !== "missing") ? `
+                    <a class="typeLink"
+                       href="./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}"
+                       title="Alle Airlines dieses Typs anzeigen">↗︎</a>` : ""}
+              </div>
+              <div class="muted mono">${esc(x.aircraft_id)}</div>
+            </div>
+          </div>
+        </td>
+  
+        <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
+        <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
+        <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
+      </tr>
+    `;
+  
+    if(isOpen && canOpen){
+      html += `
+        <tr class="rowDetail">
+          <td colspan="3">
+            ${renderDetail(x)}
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+      `;
+    }
+  }
+
+  html += `</tbody></table>`;
+  document.getElementById("content").innerHTML = html;
+}
+
+function renderDetail(x){
+  const groups = Array.isArray(x.airline_group_counts) ? x.airline_group_counts : [];
+  if(groups.length === 0){
+    return `<div class="muted">Keine Modelle vorhanden/bestellt.</div>`;
+  }
+
+  let html = `
+    <table class="detailTbl">
+      <thead>
+        <tr>
+          <th>Airline-Gruppe</th>
+          <th>Airline</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  for(const g of groups){
+    const groupName = g.group || "";
+    const airlines = Array.isArray(g.airlines) ? g.airlines : [];
+  
+    for(const a of airlines){
+      const aName = a.airline || "";
+  
+      const aircraftId = x.aircraft_id || "";
+      const typeLabel  = x.typ_anzeige || aircraftId;
+  
+      // Links
+      const linkGroup =
+        `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
+  
+      const linkAir =
+        `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
+
+      const ownedCount = Number(a.owned || 0);
+      const orderedCount = Number(a.ordered || 0);
+
+      const owned = (a.owned || 0) > 0;
+      const ord   = (a.ordered || 0) > 0;
+  
+      // Dynamische Titel
+      const titleGroup =
+        `Alle Sammel-Modelle vom Typ ${typeLabel} in der Airline-Gruppe ${groupName} anzeigen`;
+  
+      const titleAir =
+        `Alle Sammel-Modelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+  
+      const titleOwned =
+        ownedCount === 1
+          ? `1 vorhandenes Sammelmodell vom Typ ${typeLabel} bei ${aName} anzeigen`
+          : `${ownedCount} vorhandene Sammelmodelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+      
+      const titleOrdered =
+        orderedCount === 1
+          ? `1 bestelltes Sammelmodell vom Typ ${typeLabel} bei ${aName} anzeigen`
+          : `${orderedCount} bestellte Sammelmodelle vom Typ ${typeLabel} bei ${aName} anzeigen`;
+
+  
+      const dots =
+        (owned ? `
+          <a class="dotLink"
+             href="${esc(linkAir)}"
+             title="${esc(titleOwned)}">
+            <span class="dotCount">
+              <span class="dotNum">${esc(ownedCount)}</span>
+              <span class="dot dotG"></span>
+            </span>
+          </a>
+        ` : ``) +
+        (ord ? `
+          <a class="dotLink"
+             href="${esc(linkAir)}"
+             title="${esc(titleOrdered)}">
+            <span class="dotCount">
+              <span class="dotNum">${esc(orderedCount)}</span>
+              <span class="dot dotY"></span>
+            </span>
+          </a>
+        ` : ``);
+  
+      html += `
+        <tr>
+          <td>
+            <a href="${esc(linkGroup)}"
+               title="${esc(titleGroup)}">
+              ${esc(groupName)}
+            </a>
+          </td>
+  
+          <td>
+            <a href="${esc(linkAir)}"
+               title="${esc(titleAir)}">
+              ${esc(aName)}
+            </a>
+          </td>
+  
+          <td class="colDots">${dots}</td>
+        </tr>
+      `;
+    }
+  }
+  
+  html += `</tbody></table>`;
+  return html;
+}
+
+
+let wantScrollAid = "";
+
+document.addEventListener("click", (ev)=>{
+  const btn = ev.target.closest("button.toggle");
+  if(!btn) return;
+
+  const aid = btn.getAttribute("data-aid") || "";
+  if(!aid) return;
+
+  const x = all.find(it => it.aircraft_id === aid);
+  if(!x || x.status === "missing") return;
+
+  if(expanded.has(aid)){
+    expanded.clear();
+    wantScrollAid = ""; // nichts scrollen
+  }else{
+    expanded.clear();     // nur 1 offen
+    expanded.add(aid);
+    wantScrollAid = aid;  // nach dem Render dahin scrollen
+  }
+
+  apply();
+
+  // Nach dem Render: Zeile ins Sichtfeld scrollen (sanft)
+  if(wantScrollAid){
+    requestAnimationFrame(() => {
+      const tr = document.querySelector(`tr.rowMain[data-aid="${CSS.escape(wantScrollAid)}"]`);
+      if(tr) tr.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }
+});
+
+async function main(){
+  const res = await fetch("./data/types_overview.json", {cache:"no-store"});
+  data = await res.json();
+  all = data.items || [];
+
+  document.getElementById("meta").textContent =
+    `${data.master_count || all.length} Typen · fehlend: ${data.missing ?? ""}`;
+
+  buildStaticSelects();
+  buildSelect("manu", "Hersteller: alle", (data.filters?.manufacturers || []));
+
+  // events
+  document.getElementById("q").addEventListener("input", apply);
+  document.getElementById("manu").addEventListener("change", apply);
+  document.getElementById("wing").addEventListener("change", apply);
+  document.getElementById("sort").addEventListener("change", apply);
+  document.getElementById("fMissing").addEventListener("change", apply);
+  document.getElementById("fOwned").addEventListener("change", apply);
+  document.getElementById("fOrdered").addEventListener("change", apply);
+
+  apply();
+}
+
+main();
