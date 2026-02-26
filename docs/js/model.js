@@ -52,9 +52,10 @@ function renderPostcardsCard(d, enrichedById){
     const label = String(pc?.label ?? "").trim();
     const url   = String(pc?.url ?? "").trim();
     const price = pc?.price;
+
     const pcId = String(pc?.id ?? "").trim();
     const e = pcId ? (enrich[pcId] || null) : null;
-    
+
     // thumbnail
     const thumbUrl = e && e.thumb_url ? String(e.thumb_url).trim() : "";
     const thumbHtml = thumbUrl
@@ -62,10 +63,10 @@ function renderPostcardsCard(d, enrichedById){
            <img src="${esc(thumbUrl)}" alt="Postkarte Thumbnail" loading="lazy">
          </a>`
       : "";
-    
+
     let linkLabel = "Link";
     if(url){
-      try{ linkLabel = (new URL(url)).hostname.replace(/^www\./, ""); }catch(e){ linkLabel = "Link"; }
+      try{ linkLabel = (new URL(url)).hostname.replace(/^www\./, ""); }catch(err){ linkLabel = "Link"; }
     }
 
     const head = (arr.length > 1)
@@ -87,19 +88,14 @@ function renderPostcardsCard(d, enrichedById){
               ${linkRow}
               ${priceRow}
             </div>
-            
           </div>
         </div>
       </div>
     `;
+  }).join("");
 
-  // ---- Total berechnen / anzeigen ----
-  const total = Number(d?.postcard_price_total || 0);
-  const totalRow = total > 0
-    ? `<div class="pc-total" style="margin-top:12px;font-weight:600">
-         Total: ${money(total)}
-       </div>`
-    : "";
+  // Total: du wolltest es eigentlich nicht mehr -> hier sicher deaktiviert
+  const totalRow = "";
 
   return `
     <div class="card">
