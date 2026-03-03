@@ -3100,5 +3100,110 @@
     "postcard_id": "PC-LH029-01",
     "model_id": "LH029",
     "scraped_at_utc": "2026-02-26T07:42:49Z"
+  },
+  "PC-BOA003-01": {
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+    "thumb_url": "https://jjpostcards.com/51449-thickbox_default/british-airways-b747.jpg",
+    "airline": "British Airways",
+    "aircraft_manufacturer": "Boeing",
+    "aircraft_type": "Boeing 747",
+    "aircraft_type_exact": "Boeing 747-136",
+    "registration": "G-AWNK",
+    "publisher": "World Great Airlines",
+    "year": 2010,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "World Great Airlines",
+    "postcard_id": "PC-BOA003-01",
+    "model_id": "BOA003",
+    "scraped_at_utc": "2026-03-03T13:11:59Z"
+  },
+  "PC-SO025-01": {
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+    "thumb_url": "https://jjpostcards.com/88161-thickbox_default/china-eastern-c919.jpg",
+    "airline": "China Eastern",
+    "aircraft_manufacturer": "Comac",
+    "aircraft_type": "Comac C919",
+    "aircraft_type_exact": "Comac C919",
+    "registration": "B-001J",
+    "publisher": "FlyingBooks",
+    "year": 2023,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "FlyingBooks",
+    "postcard_id": "PC-SO025-01",
+    "model_id": "SO025",
+    "scraped_at_utc": "2026-03-03T13:12:00Z"
+  },
+  "PC-AB004-01": {
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
+    "thumb_url": "https://jjpostcards.com/21059-thickbox_default/air-berlin-a320.jpg",
+    "airline": "Air-Berlin",
+    "aircraft_manufacturer": "Airbus",
+    "aircraft_type": "Airbus A318/A319/A320/A321 Family",
+    "aircraft_type_exact": "A320-214",
+    "registration": "D-ABDC",
+    "publisher": "FlyingBooks",
+    "year": 2010,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "FlyingBooks",
+    "postcard_id": "PC-AB004-01",
+    "model_id": "AB004",
+    "scraped_at_utc": "2026-03-03T13:12:02Z"
+  },
+  "PC-LX019-01": {
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+    "thumb_url": "https://jjpostcards.com/85090-thickbox_default/Swissair-DC-6-Pan-Am-DC-7.jpg",
+    "airline": "Pan American",
+    "aircraft_manufacturer": "Douglas",
+    "aircraft_type": "Douglas DC-6 (C-118/R6D Liftmaster)",
+    "aircraft_type_exact": "DC-6B",
+    "registration": "VH-TAB",
+    "publisher": "Collection Vilain",
+    "year": 2023,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "Collection Vilain",
+    "postcard_id": "PC-LX019-01",
+    "model_id": "LX019",
+    "scraped_at_utc": "2026-03-03T13:12:05Z"
+  },
+  "PC-PA021-01": {
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+    "thumb_url": "https://jjpostcards.com/23255-thickbox_default/pan-am-express-atr-42.jpg",
+    "airline": "Pan Am Express",
+    "aircraft_manufacturer": "ATR",
+    "aircraft_type": "ATR 42",
+    "aircraft_type_exact": "ATR 42-300",
+    "registration": "N4203G",
+    "publisher": "Flite-Line Fotocards",
+    "year": 1988,
+    "size": "140x89 mm",
+    "size_mm": {
+      "w": 140,
+      "h": 89
+    },
+    "condition": "neu",
+    "publisher_norm": "Flite-Line Fotocards",
+    "postcard_id": "PC-PA021-01",
+    "model_id": "PA021",
+    "scraped_at_utc": "2026-03-03T13:12:07Z"
   }
 }
