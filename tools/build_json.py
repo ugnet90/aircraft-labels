@@ -250,7 +250,7 @@ def main() -> int:
             for idx, card in enumerate(cards, start=1):
                 label = ""
                 url = ""
-                price = None
+                pc_price = None
         
                 parts = [p.strip() for p in card.split("|") if p.strip()]
                 
@@ -264,13 +264,13 @@ def main() -> int:
                         url = pp[2:].strip()
                 
                     elif len(pp) >= 2 and pp[:2].upper() == "P:":
-                        price = parse_price(pp[2:].strip())
+                        pc_price = parse_price(pp[2:].strip())
 
-                if price is None and len(cards) == 1 and postcard_price not in (None, 0.0):
-                    price = postcard_price                
+                if pc_price is None and len(cards) == 1 and postcard_price not in (None, 0.0):
+                    pc_price = postcard_price                
         
-                if price:
-                    postcard_price_total += price
+                if pc_price:
+                    postcard_price_total += pc_price
         
                 postcards.append({
                     "id": f"PC-{model_id}-{idx:02d}",
