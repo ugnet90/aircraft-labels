@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": 1.35,
+  "price": 40.0,
   "shipping_allocated": 1.16,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
@@ -29,7 +29,7 @@
       "id": "PC-SO014-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
-      "price": 1.35
+      "price": 40.0
     }
   ],
   "photo": "https://www.planespotters.net/photo/1734418/f-gxli-airbus-transport-international-airbus-a330-743l-beluga-xl",
@@ -59,7 +59,7 @@
     "manufacturer": "NG Models",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": 1.35,
+    "price": 40.0,
     "shipping_allocated": 1.16,
     "arrived": "2025-11-12",
     "ordered_at": null,

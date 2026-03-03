@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.35,
+  "price": 41.04,
   "shipping_allocated": 1.73,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
@@ -29,7 +29,7 @@
       "id": "PC-PA020-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
-      "price": 1.35
+      "price": 41.04
     }
   ],
   "photo": "https://abpic.co.uk/pictures/view/1106191",
@@ -59,7 +59,7 @@
     "manufacturer": "Apollo",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.35,
+    "price": 41.04,
     "shipping_allocated": 1.73,
     "arrived": "2026-01-15",
     "ordered_at": null,

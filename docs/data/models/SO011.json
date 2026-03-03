@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay worldofwingseu",
-  "price": null,
+  "price": 35.01,
   "shipping_allocated": 11.99,
   "flown": null,
   "postcards_raw": "x",
@@ -29,7 +29,7 @@
       "id": "PC-SO011-01",
       "label": "",
       "url": "",
-      "price": null
+      "price": 35.01
     }
   ],
   "photo": "x",
@@ -59,7 +59,7 @@
     "manufacturer": "NG Models",
     "model_number": "",
     "shop": "Ebay worldofwingseu",
-    "price": null,
+    "price": 35.01,
     "shipping_allocated": 11.99,
     "arrived": "2025-10-27",
     "ordered_at": null,

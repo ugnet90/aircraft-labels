@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.05,
+  "price": 32.5,
   "shipping_allocated": 1.13,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
@@ -29,7 +29,7 @@
       "id": "PC-AF003-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
-      "price": 1.05
+      "price": 32.5
     }
   ],
   "photo": "https://www.planespotters.net/photo/1444982/f-hbxe-hop-embraer-erj-170std-erj-170-100",
@@ -59,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.05,
+    "price": 32.5,
     "shipping_allocated": 1.13,
     "arrived": "2026-01-15",
     "ordered_at": null,

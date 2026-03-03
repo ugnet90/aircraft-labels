@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Wingsmo",
-  "price": 1.35,
+  "price": 28.3,
   "shipping_allocated": 6.69,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
@@ -29,7 +29,7 @@
       "id": "PC-PA005-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
-      "price": 1.35
+      "price": 28.3
     }
   ],
   "photo": "https://www.airhistory.net/photo/19672/N61NA",
@@ -59,7 +59,7 @@
     "manufacturer": "Daron",
     "model_number": "",
     "shop": "Wingsmo",
-    "price": 1.35,
+    "price": 28.3,
     "shipping_allocated": 6.69,
     "arrived": "2025-05-22",
     "ordered_at": null,

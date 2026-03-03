@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay aeromini1",
-  "price": null,
+  "price": 54.19,
   "shipping_allocated": 17.85,
   "flown": null,
   "postcards_raw": "-",
@@ -29,7 +29,7 @@
       "id": "PC-PA010-01",
       "label": "",
       "url": "",
-      "price": null
+      "price": 54.19
     }
   ],
   "photo": "",
@@ -59,7 +59,7 @@
     "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay aeromini1",
-    "price": null,
+    "price": 54.19,
     "shipping_allocated": 17.85,
     "arrived": "2025-07-04",
     "ordered_at": null,

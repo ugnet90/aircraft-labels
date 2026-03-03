@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": 1.35,
+  "price": 15.5,
   "shipping_allocated": 2.07,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
@@ -29,7 +29,7 @@
       "id": "PC-AZ002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
-      "price": 1.35
+      "price": 15.5
     }
   ],
   "photo": "https://www.planespotters.net/photo/408884/ei-ejg-alitalia-compagnia-aerea-italiana-airbus-a330-202",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": 1.35,
+    "price": 15.5,
     "shipping_allocated": 2.07,
     "arrived": "2026-02-13",
     "ordered_at": null,

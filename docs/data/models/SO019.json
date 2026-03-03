@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": null,
+  "price": 15.0,
   "shipping_allocated": 0.33,
   "flown": null,
   "postcards_raw": "x",
@@ -29,7 +29,7 @@
       "id": "PC-SO019-01",
       "label": "",
       "url": "",
-      "price": null
+      "price": 15.0
     }
   ],
   "photo": "https://www.airhistory.net/photo/425749/165831/5831",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": null,
+    "price": 15.0,
     "shipping_allocated": 0.33,
     "arrived": null,
     "ordered_at": null,

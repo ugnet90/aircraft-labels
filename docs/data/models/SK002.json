@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Aviation Center Berlin",
-  "price": 0.85,
+  "price": 47.34,
   "shipping_allocated": 14.06,
   "flown": true,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
@@ -29,7 +29,7 @@
       "id": "PC-SK002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
-      "price": 0.85
+      "price": 47.34
     }
   ],
   "photo": "https://www.planespotters.net/photo/869467/oy-kar-sas-scandinavian-airlines-airbus-a320-232",
@@ -59,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "Aviation Center Berlin",
-    "price": 0.85,
+    "price": 47.34,
     "shipping_allocated": 14.06,
     "arrived": "2025-07-22",
     "ordered_at": null,

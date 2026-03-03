@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.35,
+  "price": 35.0,
   "shipping_allocated": 0.77,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
@@ -29,7 +29,7 @@
       "id": "PC-LX015-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
-      "price": 1.35
+      "price": 35.0
     }
   ],
   "photo": "https://www.airhistory.net/photo/672110/HB-IGB",
@@ -59,7 +59,7 @@
     "manufacturer": "Phoenix",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.35,
+    "price": 35.0,
     "shipping_allocated": 0.77,
     "arrived": "2025-12-06",
     "ordered_at": null,

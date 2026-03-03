@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "World of Wings",
-  "price": 0.85,
+  "price": 47.95,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
@@ -29,7 +29,7 @@
       "id": "PC-OS004-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
-      "price": 0.85
+      "price": 47.95
     }
   ],
   "photo": "https://www.planespotters.net/photo/209509/oe-lnl-austrian-airlines-boeing-737-6z9",
@@ -59,7 +59,7 @@
     "manufacturer": "NG Wings",
     "model_number": "",
     "shop": "World of Wings",
-    "price": 0.85,
+    "price": 47.95,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

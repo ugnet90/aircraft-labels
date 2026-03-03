@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.85,
+  "price": 44.5,
   "shipping_allocated": 1.16,
   "flown": null,
   "postcards_raw": "I:andere Kennung, Typ 100 | U:https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
@@ -29,7 +29,7 @@
       "id": "PC-LH022-01",
       "label": "andere Kennung, Typ 100",
       "url": "https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
-      "price": 1.85
+      "price": 44.5
     }
   ],
   "photo": "https://www.planespotters.net/photo/094375/d-acjh-lufthansa-bombardier-crj-200lr-cl-600-2b19",
@@ -59,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.85,
+    "price": 44.5,
     "shipping_allocated": 1.16,
     "arrived": "2025-08-20",
     "ordered_at": null,

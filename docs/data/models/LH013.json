@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": null,
+  "price": 44.5,
   "shipping_allocated": 4.25,
   "flown": null,
   "postcards_raw": "-",
@@ -29,7 +29,7 @@
       "id": "PC-LH013-01",
       "label": "",
       "url": "",
-      "price": null
+      "price": 44.5
     }
   ],
   "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": null,
+    "price": 44.5,
     "shipping_allocated": 4.25,
     "arrived": "2025-06-20",
     "ordered_at": null,

@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Kleinanzeigen Hellmann",
-  "price": 1.35,
+  "price": 35.0,
   "shipping_allocated": 5.0,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
@@ -29,7 +29,7 @@
       "id": "PC-PA007-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
-      "price": 1.35
+      "price": 35.0
     }
   ],
   "photo": "https://www.planespotters.net/photo/1153892/n67af-pan-am-boeing-737-222",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Kleinanzeigen Hellmann",
-    "price": 1.35,
+    "price": 35.0,
     "shipping_allocated": 5.0,
     "arrived": "2025-06-10",
     "ordered_at": null,

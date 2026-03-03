@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 0.85,
+  "price": 44.5,
   "shipping_allocated": 4.25,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/37600-Austrian-B767.html",
@@ -29,7 +29,7 @@
       "id": "PC-OS018-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/37600-Austrian-B767.html",
-      "price": 0.85
+      "price": 44.5
     }
   ],
   "photo": "https://www.jetphotos.com/photo/11688863",
@@ -59,7 +59,7 @@
     "manufacturer": "JC Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 0.85,
+    "price": 44.5,
     "shipping_allocated": 4.25,
     "arrived": "2025-06-20",
     "ordered_at": null,

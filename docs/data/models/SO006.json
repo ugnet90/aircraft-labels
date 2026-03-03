@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-MOBA",
-  "price": 1.35,
+  "price": 27.5,
   "shipping_allocated": 2.94,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
@@ -29,7 +29,7 @@
       "id": "PC-SO006-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
-      "price": 1.35
+      "price": 27.5
     }
   ],
   "photo": "https://www.openspotter.org/bild.php?blid=15772",
@@ -59,7 +59,7 @@
     "manufacturer": "Dragon Wings",
     "model_number": "",
     "shop": "MW-MOBA",
-    "price": 1.35,
+    "price": 27.5,
     "shipping_allocated": 2.94,
     "arrived": "2025-05-22",
     "ordered_at": null,

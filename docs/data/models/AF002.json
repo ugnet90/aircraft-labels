@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.35,
+  "price": 26.94,
   "shipping_allocated": 1.38,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
@@ -29,7 +29,7 @@
       "id": "PC-AF002-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
-      "price": 1.35
+      "price": 26.94
     }
   ],
   "photo": "https://www.planespotters.net/photo/057372/f-gsqb-air-france-boeing-777-328er",
@@ -59,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.35,
+    "price": 26.94,
     "shipping_allocated": 1.38,
     "arrived": "2026-01-15",
     "ordered_at": null,

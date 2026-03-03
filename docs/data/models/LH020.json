@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.35,
+  "price": 39.5,
   "shipping_allocated": 1.03,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
@@ -29,7 +29,7 @@
       "id": "PC-LH020-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
-      "price": 1.35
+      "price": 39.5
     }
   ],
   "photo": "https://www.planespotters.net/photo/684877/d-abee-lufthansa-boeing-737-330",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.35,
+    "price": 39.5,
     "shipping_allocated": 1.03,
     "arrived": "2025-08-20",
     "ordered_at": null,

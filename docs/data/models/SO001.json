@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "https://www.herpa.de",
-  "price": 1.35,
+  "price": 65.85,
   "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "I:vorhanden",
@@ -29,7 +29,7 @@
       "id": "PC-SO001-01",
       "label": "vorhanden",
       "url": "",
-      "price": 1.35
+      "price": 65.85
     }
   ],
   "photo": "https://www.austrianwings.info/2022/03/fotoreportage-mit-video-der-letzte-besuch-der-an-225-mrija-am-flughafen-linz/",
@@ -59,7 +59,7 @@
     "manufacturer": "Herpa Wings",
     "model_number": "",
     "shop": "https://www.herpa.de",
-    "price": 1.35,
+    "price": 65.85,
     "shipping_allocated": null,
     "arrived": null,
     "ordered_at": null,

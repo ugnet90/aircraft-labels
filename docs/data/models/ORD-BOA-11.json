@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "Ebay bigbird1946",
-  "price": 1.35,
+  "price": 23.5,
   "shipping_allocated": 6.18,
   "flown": null,
   "postcards_raw": "I:andere Kennung, nicht exakte Beschriftung | U:https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
@@ -29,7 +29,7 @@
       "id": "PC-ORD-BOA-11-01",
       "label": "andere Kennung, nicht exakte Beschriftung",
       "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
-      "price": 1.35
+      "price": 23.5
     }
   ],
   "photo": "https://www.airhistory.net/photo/338505/G-AWNB",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "Ebay bigbird1946",
-    "price": 1.35,
+    "price": 23.5,
     "shipping_allocated": 6.18,
     "arrived": null,
     "ordered_at": "2026-02-22",

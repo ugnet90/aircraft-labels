@@ -17,7 +17,7 @@
   "model_extra": "",
   "special_note": "",
   "shop": "MW-Moba",
-  "price": 1.35,
+  "price": 30.0,
   "shipping_allocated": 0.66,
   "flown": null,
   "postcards_raw": "I:andere Kennung | U:https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
@@ -29,7 +29,7 @@
       "id": "PC-BA004-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
-      "price": 1.35
+      "price": 30.0
     }
   ],
   "photo": "https://www.planespotters.net/photo/1513102/g-zbjg-british-airways-boeing-787-8-dreamliner",
@@ -59,7 +59,7 @@
     "manufacturer": "Gemini Jets",
     "model_number": "",
     "shop": "MW-Moba",
-    "price": 1.35,
+    "price": 30.0,
     "shipping_allocated": 0.66,
     "arrived": "2025-12-06",
     "ordered_at": null,
