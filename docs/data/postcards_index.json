@@ -1,0 +1,2021 @@
+{
+  "generated_at": "2026-03-03T14:46:30Z",
+  "count_total": 155,
+  "count_unique": 155,
+  "items": [
+    {
+      "id": "PC-AB001-01",
+      "model_id": "AB001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10314-air-berlin-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-AB002-01",
+      "model_id": "AB002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10342-air-berlin-b757.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-AB003-01",
+      "model_id": "AB003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2654-air-berlin-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-AB004-01",
+      "model_id": "AB004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-AF001-01",
+      "model_id": "AF001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5649-air-france-a318.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-AF002-01",
+      "model_id": "AF002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-AF003-01",
+      "model_id": "AF003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-AZ001-01",
+      "model_id": "AZ001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-AZ002-01",
+      "model_id": "AZ002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-AZ003-01",
+      "model_id": "AZ003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BA001-01",
+      "model_id": "BA001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BA002-01",
+      "model_id": "BA002",
+      "url": "https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
+      "label": "andere Bemalung, andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-BA004-01",
+      "model_id": "BA004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BA005-01",
+      "model_id": "BA005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
+      "label": "andere Bemalung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-BA007-01",
+      "model_id": "BA007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-BA008-01",
+      "model_id": "BA008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+      "price": 1.85
+    },
+    {
+      "id": "PC-BA009-01",
+      "model_id": "BA009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/29580-bea-trident-boac-vc-10.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BOA001-01",
+      "model_id": "BOA001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BOA002-01",
+      "model_id": "BOA002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BOA003-01",
+      "model_id": "BOA003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+      "label": "andere Kennung, nicht exakte Beschriftung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-BT001-01",
+      "model_id": "BT001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-FI001-01",
+      "model_id": "FI001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11263-icelandair-b757.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-HF001-01",
+      "model_id": "HF001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/21554-hapag-lloyd-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-HF002-01",
+      "model_id": "HF002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-HF003-01",
+      "model_id": "HF003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
+      "label": "gleiche Kennung, andere Livery",
+      "price": 0.85
+    },
+    {
+      "id": "PC-HF004-01",
+      "model_id": "HF004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-KL001-01",
+      "model_id": "KL001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22826-klm-dc-8.html",
+      "label": "andere Livery+Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-KL002-01",
+      "model_id": "KL002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-KL003-01",
+      "model_id": "KL003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4271-klm-asia-b747.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-KL004-01",
+      "model_id": "KL004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-KL005-01",
+      "model_id": "KL005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-KL006-01",
+      "model_id": "KL006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-KL007-01",
+      "model_id": "KL007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-KL008-01",
+      "model_id": "KL008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-KL009-01",
+      "model_id": "KL009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH001-01",
+      "model_id": "LH001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
+      "label": "Kennung vom Eigenflug",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH002-01",
+      "model_id": "LH002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+      "label": "falsche Reg.",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH003-01",
+      "model_id": "LH003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-LH004-01",
+      "model_id": "LH004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH005-01",
+      "model_id": "LH005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH007-01",
+      "model_id": "LH007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42674-lufthansa-b737.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH008-01",
+      "model_id": "LH008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH009-01",
+      "model_id": "LH009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH010-01",
+      "model_id": "LH010",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH011-01",
+      "model_id": "LH011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-LH012-01",
+      "model_id": "LH012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/18079-contactairteam-lufthansa-fokker-50.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH014-01",
+      "model_id": "LH014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22695-lufthansa-a340.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH015-01",
+      "model_id": "LH015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH016-01",
+      "model_id": "LH016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH017-01",
+      "model_id": "LH017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/291-lufthansa-traditionsflug-ju-52.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH018-01",
+      "model_id": "LH018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH019-01",
+      "model_id": "LH019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH020-01",
+      "model_id": "LH020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH021-01",
+      "model_id": "LH021",
+      "url": "https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH022-01",
+      "model_id": "LH022",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
+      "label": "andere Kennung, Typ 100",
+      "price": 1.85
+    },
+    {
+      "id": "PC-LH023-01",
+      "model_id": "LH023",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42271-lufthansa-city-line-crj-900.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH024-01",
+      "model_id": "LH024",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH024-02",
+      "model_id": "LH024",
+      "url": "https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html",
+      "label": "andere Kennung, aber in Farbe",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH025-01",
+      "model_id": "LH025",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LH026-01",
+      "model_id": "LH026",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LH027-01",
+      "model_id": "LH027",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
+      "price": 1.85
+    },
+    {
+      "id": "PC-LH029-01",
+      "model_id": "LH029",
+      "url": "https://jjpostcards.com/de/ansichtskarten/24816-lufthansa-cargo-b747.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-LH030-01",
+      "model_id": "LH030",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX002-01",
+      "model_id": "LX002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LX003-01",
+      "model_id": "LX003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX004-01",
+      "model_id": "LX004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LX005-01",
+      "model_id": "LX005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX006-01",
+      "model_id": "LX006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX007-01",
+      "model_id": "LX007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-LX008-01",
+      "model_id": "LX008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX009-01",
+      "model_id": "LX009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LX010-01",
+      "model_id": "LX010",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36596-Swissair-CV-990.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX011-01",
+      "model_id": "LX011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX012-01",
+      "model_id": "LX012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX013-01",
+      "model_id": "LX013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX014-01",
+      "model_id": "LX014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4839-swissair-a310.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX015-01",
+      "model_id": "LX015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX016-01",
+      "model_id": "LX016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LX017-01",
+      "model_id": "LX017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25909-swissair-dc-8.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-LX018-01",
+      "model_id": "LX018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-LX019-01",
+      "model_id": "LX019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-NG001-01",
+      "model_id": "NG001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-NG002-01",
+      "model_id": "NG002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-NG003-01",
+      "model_id": "NG003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10051-niki-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-AB-7-01",
+      "model_id": "ORD-AB-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-BOA-11-01",
+      "model_id": "ORD-BOA-11",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+      "label": "andere Kennung, nicht exakte Beschriftung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-LX-26-01",
+      "model_id": "ORD-LX-26",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-PA-7-01",
+      "model_id": "ORD-PA-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-ORD-SO-37-01",
+      "model_id": "ORD-SO-37",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+      "label": "andere Livery",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-SO-49-01",
+      "model_id": "ORD-SO-49",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS001-01",
+      "model_id": "OS001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS002-01",
+      "model_id": "OS002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/35822-Austrian-A321.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS004-01",
+      "model_id": "OS004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS005-01",
+      "model_id": "OS005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2243-austrian-a340.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS006-01",
+      "model_id": "OS006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS007-01",
+      "model_id": "OS007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS008-01",
+      "model_id": "OS008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
+      "label": "andere Kennung",
+      "price": 1.85
+    },
+    {
+      "id": "PC-OS009-01",
+      "model_id": "OS009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+      "label": "Bemalung nicht ganz exakt",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS010-01",
+      "model_id": "OS010",
+      "url": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS011-01",
+      "model_id": "OS011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS012-01",
+      "model_id": "OS012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS013-01",
+      "model_id": "OS013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS014-01",
+      "model_id": "OS014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS015-01",
+      "model_id": "OS015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS016-01",
+      "model_id": "OS016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/24460-austrian-a321.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-OS017-01",
+      "model_id": "OS017",
+      "url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+      "price": 1.35
+    },
+    {
+      "id": "PC-OS018-01",
+      "model_id": "OS018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37600-Austrian-B767.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS019-01",
+      "model_id": "OS019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/18360-tyroleanstar-alliance-fokker-70.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-OS020-01",
+      "model_id": "OS020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA001-01",
+      "model_id": "PA001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA002-01",
+      "model_id": "PA002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/18164-pan-am-19968-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-PA003-01",
+      "model_id": "PA003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA004-01",
+      "model_id": "PA004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
+      "price": 1.85
+    },
+    {
+      "id": "PC-PA005-01",
+      "model_id": "PA005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA006-01",
+      "model_id": "PA006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA007-01",
+      "model_id": "PA007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA008-01",
+      "model_id": "PA008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-PA009-01",
+      "model_id": "PA009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA013-01",
+      "model_id": "PA013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3036-pan-american-b707.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA014-01",
+      "model_id": "PA014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-PA015-01",
+      "model_id": "PA015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA016-01",
+      "model_id": "PA016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
+      "id": "PC-PA018-01",
+      "model_id": "PA018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA019-01",
+      "model_id": "PA019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-PA020-01",
+      "model_id": "PA020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA021-01",
+      "model_id": "PA021",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SK001-01",
+      "model_id": "SK001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SK002-01",
+      "model_id": "SK002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SK003-01",
+      "model_id": "SK003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SK004-01",
+      "model_id": "SK004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SK005-01",
+      "model_id": "SK005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
+      "label": "andere Kennung",
+      "price": 1.85
+    },
+    {
+      "id": "PC-SK006-01",
+      "model_id": "SK006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-SK007-01",
+      "model_id": "SK007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+      "label": "andere Kennung",
+      "price": 2.5
+    },
+    {
+      "id": "PC-SK008-01",
+      "model_id": "SK008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34783-SAS-A330.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SM002-01",
+      "model_id": "SM002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SM003-01",
+      "model_id": "SM003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO002-01",
+      "model_id": "SO002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO003-01",
+      "model_id": "SO003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO004-01",
+      "model_id": "SO004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO005-01",
+      "model_id": "SO005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO006-01",
+      "model_id": "SO006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO007-01",
+      "model_id": "SO007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO012-01",
+      "model_id": "SO012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO014-01",
+      "model_id": "SO014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO015-01",
+      "model_id": "SO015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO016-01",
+      "model_id": "SO016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO018-01",
+      "model_id": "SO018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+      "label": "andere Bemalung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO022-01",
+      "model_id": "SO022",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO023-01",
+      "model_id": "SO023",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO025-01",
+      "model_id": "SO025",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+      "label": "andere Livery",
+      "price": 1.35
+    },
+    {
+      "id": "PC-TP001-01",
+      "model_id": "TP001",
+      "url": "https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-TP002-01",
+      "model_id": "TP002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40154-TAP-Cargo-A330.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WA002-01",
+      "model_id": "WA002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
+      "id": "PC-WA003-01",
+      "model_id": "WA003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WA004-01",
+      "model_id": "WA004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+      "label": "andere Bez. KLM UK",
+      "price": 0.85
+    }
+  ],
+  "by_id": {
+    "PC-AB001-01": {
+      "id": "PC-AB001-01",
+      "model_id": "AB001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10314-air-berlin-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-AB002-01": {
+      "id": "PC-AB002-01",
+      "model_id": "AB002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10342-air-berlin-b757.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-AB003-01": {
+      "id": "PC-AB003-01",
+      "model_id": "AB003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2654-air-berlin-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-AB004-01": {
+      "id": "PC-AB004-01",
+      "model_id": "AB004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-AF001-01": {
+      "id": "PC-AF001-01",
+      "model_id": "AF001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5649-air-france-a318.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-AF002-01": {
+      "id": "PC-AF002-01",
+      "model_id": "AF002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/31131-Air-France-B777.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-AF003-01": {
+      "id": "PC-AF003-01",
+      "model_id": "AF003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/32999-regional-airl-hop-embraer-170.html",
+      "price": 1.05
+    },
+    "PC-AZ001-01": {
+      "id": "PC-AZ001-01",
+      "model_id": "AZ001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37117-Alitalia-DC-8.html",
+      "price": 1.35
+    },
+    "PC-AZ002-01": {
+      "id": "PC-AZ002-01",
+      "model_id": "AZ002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9829-alitalia-a330.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-AZ003-01": {
+      "id": "PC-AZ003-01",
+      "model_id": "AZ003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10015-alitalia-b777.html",
+      "price": 1.35
+    },
+    "PC-BA001-01": {
+      "id": "PC-BA001-01",
+      "model_id": "BA001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3021-british-airways-concorde.html",
+      "price": 1.35
+    },
+    "PC-BA002-01": {
+      "id": "PC-BA002-01",
+      "model_id": "BA002",
+      "url": "https://jjpostcards.com/de/?airline=british-airways&flugzeugtyp=short-360",
+      "label": "andere Bemalung, andere Kennung",
+      "price": 0.85
+    },
+    "PC-BA004-01": {
+      "id": "PC-BA004-01",
+      "model_id": "BA004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26711-british-airways-b787.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-BA005-01": {
+      "id": "PC-BA005-01",
+      "model_id": "BA005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15009-british-regionalba-expr-146.html",
+      "label": "andere Bemalung",
+      "price": 0.85
+    },
+    "PC-BA007-01": {
+      "id": "PC-BA007-01",
+      "model_id": "BA007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1952-bea-trident.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-BA008-01": {
+      "id": "PC-BA008-01",
+      "model_id": "BA008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9368-british-airways-dc-10.html",
+      "price": 1.85
+    },
+    "PC-BA009-01": {
+      "id": "PC-BA009-01",
+      "model_id": "BA009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/29580-bea-trident-boac-vc-10.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-BOA001-01": {
+      "id": "PC-BOA001-01",
+      "model_id": "BOA001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26125-boac-britannia.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-BOA002-01": {
+      "id": "PC-BOA002-01",
+      "model_id": "BOA002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26130-boac-vc-10.html",
+      "price": 1.35
+    },
+    "PC-BOA003-01": {
+      "id": "PC-BOA003-01",
+      "model_id": "BOA003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+      "label": "andere Kennung, nicht exakte Beschriftung",
+      "price": 1.35
+    },
+    "PC-BT001-01": {
+      "id": "PC-BT001-01",
+      "model_id": "BT001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
+      "price": 1.35
+    },
+    "PC-FI001-01": {
+      "id": "PC-FI001-01",
+      "model_id": "FI001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11263-icelandair-b757.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-HF001-01": {
+      "id": "PC-HF001-01",
+      "model_id": "HF001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/21554-hapag-lloyd-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-HF002-01": {
+      "id": "PC-HF002-01",
+      "model_id": "HF002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4323-hapag-lloyd-express-b737.html",
+      "price": 1.05
+    },
+    "PC-HF003-01": {
+      "id": "PC-HF003-01",
+      "model_id": "HF003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2610-african-safari-asa-a310.html",
+      "label": "gleiche Kennung, andere Livery",
+      "price": 0.85
+    },
+    "PC-HF004-01": {
+      "id": "PC-HF004-01",
+      "model_id": "HF004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/20829-hapag-lloyd-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-KL001-01": {
+      "id": "PC-KL001-01",
+      "model_id": "KL001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22826-klm-dc-8.html",
+      "label": "andere Livery+Kennung",
+      "price": 0.85
+    },
+    "PC-KL002-01": {
+      "id": "PC-KL002-01",
+      "model_id": "KL002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9670-klm-md-11.html",
+      "price": 0.85
+    },
+    "PC-KL003-01": {
+      "id": "PC-KL003-01",
+      "model_id": "KL003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4271-klm-asia-b747.html",
+      "price": 1.05
+    },
+    "PC-KL004-01": {
+      "id": "PC-KL004-01",
+      "model_id": "KL004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36983-KLM-Electra.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-KL005-01": {
+      "id": "PC-KL005-01",
+      "model_id": "KL005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8395-klm-bac-1-11.html",
+      "price": 1.35
+    },
+    "PC-KL006-01": {
+      "id": "PC-KL006-01",
+      "model_id": "KL006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10787-klm-dc-10.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-KL007-01": {
+      "id": "PC-KL007-01",
+      "model_id": "KL007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23832-klm-dc-7.html",
+      "price": 1.05
+    },
+    "PC-KL008-01": {
+      "id": "PC-KL008-01",
+      "model_id": "KL008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11012-klm-dc-8.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-KL009-01": {
+      "id": "PC-KL009-01",
+      "model_id": "KL009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6676-klm-b767.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-LH001-01": {
+      "id": "PC-LH001-01",
+      "model_id": "LH001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34462-Lufthansa-A320.html",
+      "label": "Kennung vom Eigenflug",
+      "price": 1.35
+    },
+    "PC-LH002-01": {
+      "id": "PC-LH002-01",
+      "model_id": "LH002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16926-lufthansa-b707.html",
+      "label": "falsche Reg.",
+      "price": 0.85
+    },
+    "PC-LH003-01": {
+      "id": "PC-LH003-01",
+      "model_id": "LH003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34173-Lufthansa-B747.html",
+      "price": 1.05
+    },
+    "PC-LH004-01": {
+      "id": "PC-LH004-01",
+      "model_id": "LH004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/30381-Lufthansa-A380.html",
+      "price": 1.35
+    },
+    "PC-LH005-01": {
+      "id": "PC-LH005-01",
+      "model_id": "LH005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27705-lufthansa-super-constellation.html",
+      "price": 1.35
+    },
+    "PC-LH007-01": {
+      "id": "PC-LH007-01",
+      "model_id": "LH007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42674-lufthansa-b737.html",
+      "price": 1.35
+    },
+    "PC-LH008-01": {
+      "id": "PC-LH008-01",
+      "model_id": "LH008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5743-lufthansa-f27.html",
+      "price": 0.85
+    },
+    "PC-LH009-01": {
+      "id": "PC-LH009-01",
+      "model_id": "LH009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22280-lufthansa-a300.html",
+      "price": 0.85
+    },
+    "PC-LH010-01": {
+      "id": "PC-LH010-01",
+      "model_id": "LH010",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3571-lufthansa-b747.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LH011-01": {
+      "id": "PC-LH011-01",
+      "model_id": "LH011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4470-lufthansa-a321.html",
+      "price": 1.05
+    },
+    "PC-LH012-01": {
+      "id": "PC-LH012-01",
+      "model_id": "LH012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/18079-contactairteam-lufthansa-fokker-50.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-LH014-01": {
+      "id": "PC-LH014-01",
+      "model_id": "LH014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22695-lufthansa-a340.html",
+      "price": 0.85
+    },
+    "PC-LH015-01": {
+      "id": "PC-LH015-01",
+      "model_id": "LH015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3582-lufthansa-b737.html",
+      "price": 1.35
+    },
+    "PC-LH016-01": {
+      "id": "PC-LH016-01",
+      "model_id": "LH016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15766-lufthansa-starliner.html",
+      "price": 0.85
+    },
+    "PC-LH017-01": {
+      "id": "PC-LH017-01",
+      "model_id": "LH017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/291-lufthansa-traditionsflug-ju-52.html",
+      "price": 1.35
+    },
+    "PC-LH018-01": {
+      "id": "PC-LH018-01",
+      "model_id": "LH018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25938-lufthansa-b727.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-LH019-01": {
+      "id": "PC-LH019-01",
+      "model_id": "LH019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28198-lufthansa-a340.html",
+      "price": 1.35
+    },
+    "PC-LH020-01": {
+      "id": "PC-LH020-01",
+      "model_id": "LH020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22222-lufthansa-b737.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LH021-01": {
+      "id": "PC-LH021-01",
+      "model_id": "LH021",
+      "url": "https://jjpostcards.com/de/ansichtskarten/21485-lufthansa-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-LH022-01": {
+      "id": "PC-LH022-01",
+      "model_id": "LH022",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17572-lufthansa-city-line-crj-100.html",
+      "label": "andere Kennung, Typ 100",
+      "price": 1.85
+    },
+    "PC-LH023-01": {
+      "id": "PC-LH023-01",
+      "model_id": "LH023",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42271-lufthansa-city-line-crj-900.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LH024-01": {
+      "id": "PC-LH024-01",
+      "model_id": "LH024",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25939-lufthansa-b720.html",
+      "price": 0.85
+    },
+    "PC-LH024-02": {
+      "id": "PC-LH024-02",
+      "model_id": "LH024",
+      "url": "https://jjpostcards.com/de/ansichtskarten/41259-Lufthansa-B720.html",
+      "label": "andere Kennung, aber in Farbe",
+      "price": 1.35
+    },
+    "PC-LH025-01": {
+      "id": "PC-LH025-01",
+      "model_id": "LH025",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25936-lufthansa-viscount.html",
+      "price": 0.85
+    },
+    "PC-LH026-01": {
+      "id": "PC-LH026-01",
+      "model_id": "LH026",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36687-Lufthansa-A321neo.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LH027-01": {
+      "id": "PC-LH027-01",
+      "model_id": "LH027",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27748-stuttgart-luftaufnahme.html",
+      "price": 1.85
+    },
+    "PC-LH029-01": {
+      "id": "PC-LH029-01",
+      "model_id": "LH029",
+      "url": "https://jjpostcards.com/de/ansichtskarten/24816-lufthansa-cargo-b747.html",
+      "price": 1.05
+    },
+    "PC-LH030-01": {
+      "id": "PC-LH030-01",
+      "model_id": "LH030",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38056-Lufthansa-Cargo-MD-11.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LX002-01": {
+      "id": "PC-LX002-01",
+      "model_id": "LX002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-LX003-01": {
+      "id": "PC-LX003-01",
+      "model_id": "LX003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/30726-Bombardier-Swiss-CS100.html",
+      "price": 1.35
+    },
+    "PC-LX004-01": {
+      "id": "PC-LX004-01",
+      "model_id": "LX004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6605-swissair-md-80.html",
+      "price": 0.85
+    },
+    "PC-LX005-01": {
+      "id": "PC-LX005-01",
+      "model_id": "LX005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38110-Swiss-A320.html",
+      "price": 1.35
+    },
+    "PC-LX006-01": {
+      "id": "PC-LX006-01",
+      "model_id": "LX006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36119-Swiss-A220.html",
+      "price": 1.35
+    },
+    "PC-LX007-01": {
+      "id": "PC-LX007-01",
+      "model_id": "LX007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/31112-Swiss-B777.html",
+      "price": 1.05
+    },
+    "PC-LX008-01": {
+      "id": "PC-LX008-01",
+      "model_id": "LX008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9571-swissair-md-11.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LX009-01": {
+      "id": "PC-LX009-01",
+      "model_id": "LX009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22624-swiss-a320.html",
+      "price": 0.85
+    },
+    "PC-LX010-01": {
+      "id": "PC-LX010-01",
+      "model_id": "LX010",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36596-Swissair-CV-990.html",
+      "price": 1.35
+    },
+    "PC-LX011-01": {
+      "id": "PC-LX011-01",
+      "model_id": "LX011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3072-swissair-a321.html",
+      "price": 1.35
+    },
+    "PC-LX012-01": {
+      "id": "PC-LX012-01",
+      "model_id": "LX012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26621-swiss-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LX013-01": {
+      "id": "PC-LX013-01",
+      "model_id": "LX013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27673-swissair-cv-880.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LX014-01": {
+      "id": "PC-LX014-01",
+      "model_id": "LX014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4839-swissair-a310.html",
+      "price": 1.35
+    },
+    "PC-LX015-01": {
+      "id": "PC-LX015-01",
+      "model_id": "LX015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4831-swissair-b747.html",
+      "price": 1.35
+    },
+    "PC-LX016-01": {
+      "id": "PC-LX016-01",
+      "model_id": "LX016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8651-swissair-dc-8.html",
+      "price": 0.85
+    },
+    "PC-LX017-01": {
+      "id": "PC-LX017-01",
+      "model_id": "LX017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25909-swissair-dc-8.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-LX018-01": {
+      "id": "PC-LX018-01",
+      "model_id": "LX018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6978-edelweiss-a330.html",
+      "price": 0.85
+    },
+    "PC-LX019-01": {
+      "id": "PC-LX019-01",
+      "model_id": "LX019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+      "price": 1.35
+    },
+    "PC-NG001-01": {
+      "id": "PC-NG001-01",
+      "model_id": "NG001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17670-lauda-air-b777.html",
+      "price": 0.85
+    },
+    "PC-NG002-01": {
+      "id": "PC-NG002-01",
+      "model_id": "NG002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11134-lauda-air-b737.html",
+      "price": 1.35
+    },
+    "PC-NG003-01": {
+      "id": "PC-NG003-01",
+      "model_id": "NG003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10051-niki-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-ORD-AB-7-01": {
+      "id": "PC-ORD-AB-7-01",
+      "model_id": "ORD-AB-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-ORD-BOA-11-01": {
+      "id": "PC-ORD-BOA-11-01",
+      "model_id": "ORD-BOA-11",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
+      "label": "andere Kennung, nicht exakte Beschriftung",
+      "price": 1.35
+    },
+    "PC-ORD-LX-26-01": {
+      "id": "PC-ORD-LX-26-01",
+      "model_id": "ORD-LX-26",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
+      "price": 1.35
+    },
+    "PC-ORD-PA-7-01": {
+      "id": "PC-ORD-PA-7-01",
+      "model_id": "ORD-PA-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-ORD-SO-37-01": {
+      "id": "PC-ORD-SO-37-01",
+      "model_id": "ORD-SO-37",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+      "label": "andere Livery",
+      "price": 1.35
+    },
+    "PC-ORD-SO-49-01": {
+      "id": "PC-ORD-SO-49-01",
+      "model_id": "ORD-SO-49",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "price": 1.35
+    },
+    "PC-OS001-01": {
+      "id": "PC-OS001-01",
+      "model_id": "OS001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
+      "price": 1.35
+    },
+    "PC-OS002-01": {
+      "id": "PC-OS002-01",
+      "model_id": "OS002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/35822-Austrian-A321.html",
+      "price": 0.85
+    },
+    "PC-OS004-01": {
+      "id": "PC-OS004-01",
+      "model_id": "OS004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19214-austrian-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-OS005-01": {
+      "id": "PC-OS005-01",
+      "model_id": "OS005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2243-austrian-a340.html",
+      "price": 0.85
+    },
+    "PC-OS006-01": {
+      "id": "PC-OS006-01",
+      "model_id": "OS006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25888-austrian-caravelle.html",
+      "price": 1.35
+    },
+    "PC-OS007-01": {
+      "id": "PC-OS007-01",
+      "model_id": "OS007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19862-austrian-a330.html",
+      "price": 0.85
+    },
+    "PC-OS008-01": {
+      "id": "PC-OS008-01",
+      "model_id": "OS008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19569-austrian-arrows-dhc-8.html",
+      "label": "andere Kennung",
+      "price": 1.85
+    },
+    "PC-OS009-01": {
+      "id": "PC-OS009-01",
+      "model_id": "OS009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42987-austrian-b777.html",
+      "label": "Bemalung nicht ganz exakt",
+      "price": 1.35
+    },
+    "PC-OS010-01": {
+      "id": "PC-OS010-01",
+      "model_id": "OS010",
+      "url": "https://jjpostcards.com/de/ansichtskarten/14917-austrian-a320.html",
+      "price": 0.85
+    },
+    "PC-OS011-01": {
+      "id": "PC-OS011-01",
+      "model_id": "OS011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13117-austrianstar-alliance-b737.html",
+      "price": 1.35
+    },
+    "PC-OS012-01": {
+      "id": "PC-OS012-01",
+      "model_id": "OS012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8685-austrian-hs-748.html",
+      "price": 0.85
+    },
+    "PC-OS013-01": {
+      "id": "PC-OS013-01",
+      "model_id": "OS013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22566-austrian-dc-9.html",
+      "price": 1.35
+    },
+    "PC-OS014-01": {
+      "id": "PC-OS014-01",
+      "model_id": "OS014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40694-Austrian-DC-9.html",
+      "price": 1.35
+    },
+    "PC-OS015-01": {
+      "id": "PC-OS015-01",
+      "model_id": "OS015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11095-austrian-a340.html",
+      "price": 1.35
+    },
+    "PC-OS016-01": {
+      "id": "PC-OS016-01",
+      "model_id": "OS016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/24460-austrian-a321.html",
+      "price": 1.05
+    },
+    "PC-OS017-01": {
+      "id": "PC-OS017-01",
+      "model_id": "OS017",
+      "url": "https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
+      "price": 1.35
+    },
+    "PC-OS018-01": {
+      "id": "PC-OS018-01",
+      "model_id": "OS018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37600-Austrian-B767.html",
+      "price": 0.85
+    },
+    "PC-OS019-01": {
+      "id": "PC-OS019-01",
+      "model_id": "OS019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/18360-tyroleanstar-alliance-fokker-70.html",
+      "price": 0.85
+    },
+    "PC-OS020-01": {
+      "id": "PC-OS020-01",
+      "model_id": "OS020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28570-austrian-viscount.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA001-01": {
+      "id": "PC-PA001-01",
+      "model_id": "PA001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34064-Pan-American-B747SP.html",
+      "price": 1.35
+    },
+    "PC-PA002-01": {
+      "id": "PC-PA002-01",
+      "model_id": "PA002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/18164-pan-am-19968-b737.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-PA003-01": {
+      "id": "PC-PA003-01",
+      "model_id": "PA003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28753-pan-american-boeing-377.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA004-01": {
+      "id": "PC-PA004-01",
+      "model_id": "PA004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/17786-pan-am-19968-b727.html",
+      "price": 1.85
+    },
+    "PC-PA005-01": {
+      "id": "PC-PA005-01",
+      "model_id": "PA005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25759-pan-american-dc-10.html",
+      "price": 1.35
+    },
+    "PC-PA006-01": {
+      "id": "PC-PA006-01",
+      "model_id": "PA006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42589-pan-american-tristar.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA007-01": {
+      "id": "PC-PA007-01",
+      "model_id": "PA007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37148-Pan-American-B737.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA008-01": {
+      "id": "PC-PA008-01",
+      "model_id": "PA008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9373-pan-american-a310.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-PA009-01": {
+      "id": "PC-PA009-01",
+      "model_id": "PA009",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13755-pan-american-dc-4.html",
+      "price": 1.35
+    },
+    "PC-PA013-01": {
+      "id": "PC-PA013-01",
+      "model_id": "PA013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3036-pan-american-b707.html",
+      "price": 1.35
+    },
+    "PC-PA014-01": {
+      "id": "PC-PA014-01",
+      "model_id": "PA014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8633-pan-american-b720.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-PA015-01": {
+      "id": "PC-PA015-01",
+      "model_id": "PA015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA016-01": {
+      "id": "PC-PA016-01",
+      "model_id": "PA016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13542-pan-american-cv-240.html",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    "PC-PA018-01": {
+      "id": "PC-PA018-01",
+      "model_id": "PA018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+      "price": 1.35
+    },
+    "PC-PA019-01": {
+      "id": "PC-PA019-01",
+      "model_id": "PA019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-PA020-01": {
+      "id": "PC-PA020-01",
+      "model_id": "PA020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA021-01": {
+      "id": "PC-PA021-01",
+      "model_id": "PA021",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-SK001-01": {
+      "id": "PC-SK001-01",
+      "model_id": "SK001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-SK002-01": {
+      "id": "PC-SK002-01",
+      "model_id": "SK002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27072-sas-a320.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-SK003-01": {
+      "id": "PC-SK003-01",
+      "model_id": "SK003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/41792-SAS-B737.html",
+      "price": 1.35
+    },
+    "PC-SK004-01": {
+      "id": "PC-SK004-01",
+      "model_id": "SK004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/14195-sas-md-80.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-SK005-01": {
+      "id": "PC-SK005-01",
+      "model_id": "SK005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/19600-sas-md-80.html",
+      "label": "andere Kennung",
+      "price": 1.85
+    },
+    "PC-SK006-01": {
+      "id": "PC-SK006-01",
+      "model_id": "SK006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4501-sas-a319.html",
+      "price": 1.05
+    },
+    "PC-SK007-01": {
+      "id": "PC-SK007-01",
+      "model_id": "SK007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27816-sas-dc-8.html",
+      "label": "andere Kennung",
+      "price": 2.5
+    },
+    "PC-SK008-01": {
+      "id": "PC-SK008-01",
+      "model_id": "SK008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34783-SAS-A330.html",
+      "price": 1.35
+    },
+    "PC-SM002-01": {
+      "id": "PC-SM002-01",
+      "model_id": "SM002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3024-pan-american-boeing-314.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-SM003-01": {
+      "id": "PC-SM003-01",
+      "model_id": "SM003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40001-Lufthansa-Dornier-Do-X.html",
+      "price": 1.35
+    },
+    "PC-SO002-01": {
+      "id": "PC-SO002-01",
+      "model_id": "SO002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11160-airbus-transport-international-a300.html",
+      "price": 1.35
+    },
+    "PC-SO003-01": {
+      "id": "PC-SO003-01",
+      "model_id": "SO003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3132-arkia-viscount.html",
+      "price": 0.85
+    },
+    "PC-SO004-01": {
+      "id": "PC-SO004-01",
+      "model_id": "SO004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "price": 0.85
+    },
+    "PC-SO005-01": {
+      "id": "PC-SO005-01",
+      "model_id": "SO005",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
+      "price": 0.85
+    },
+    "PC-SO006-01": {
+      "id": "PC-SO006-01",
+      "model_id": "SO006",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
+      "price": 1.35
+    },
+    "PC-SO007-01": {
+      "id": "PC-SO007-01",
+      "model_id": "SO007",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
+      "price": 1.35
+    },
+    "PC-SO012-01": {
+      "id": "PC-SO012-01",
+      "model_id": "SO012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-SO014-01": {
+      "id": "PC-SO014-01",
+      "model_id": "SO014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-SO015-01": {
+      "id": "PC-SO015-01",
+      "model_id": "SO015",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-SO016-01": {
+      "id": "PC-SO016-01",
+      "model_id": "SO016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-SO018-01": {
+      "id": "PC-SO018-01",
+      "model_id": "SO018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+      "label": "andere Bemalung",
+      "price": 0.85
+    },
+    "PC-SO022-01": {
+      "id": "PC-SO022-01",
+      "model_id": "SO022",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
+      "price": 0.85
+    },
+    "PC-SO023-01": {
+      "id": "PC-SO023-01",
+      "model_id": "SO023",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
+      "price": 1.35
+    },
+    "PC-SO025-01": {
+      "id": "PC-SO025-01",
+      "model_id": "SO025",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+      "label": "andere Livery",
+      "price": 1.35
+    },
+    "PC-TP001-01": {
+      "id": "PC-TP001-01",
+      "model_id": "TP001",
+      "url": "https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-TP002-01": {
+      "id": "PC-TP002-01",
+      "model_id": "TP002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40154-TAP-Cargo-A330.html",
+      "price": 1.35
+    },
+    "PC-WA002-01": {
+      "id": "PC-WA002-01",
+      "model_id": "WA002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4404-klm-exel-erj-145.html",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    "PC-WA003-01": {
+      "id": "PC-WA003-01",
+      "model_id": "WA003",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42297-klm-cityhopper-embraer-190.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WA004-01": {
+      "id": "PC-WA004-01",
+      "model_id": "WA004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
+      "label": "andere Bez. KLM UK",
+      "price": 0.85
+    }
+  }
+}
