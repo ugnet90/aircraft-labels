@@ -649,21 +649,21 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 6,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 7,
+      "ordered_count": 0,
       "total_count": 7,
       "airline_group_counts": [
         {
           "group": "Air Berlin",
-          "owned": 1,
-          "ordered": 1,
+          "owned": 2,
+          "ordered": 0,
           "total": 2,
           "airlines": [
             {
               "airline": "Air Berlin",
-              "owned": 1,
-              "ordered": 1,
+              "owned": 2,
+              "ordered": 0,
               "total": 2
             }
           ]
@@ -1566,9 +1566,9 @@
       "manufacturer": "ATR",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 1,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
       "total_count": 2,
       "airline_group_counts": [
         {
@@ -1587,14 +1587,14 @@
         },
         {
           "group": "Pan Am",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Pan Am Express",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -2764,21 +2764,21 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 2,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
       "total_count": 3,
       "airline_group_counts": [
         {
           "group": "BOAC",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "BOAC",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -4174,21 +4174,21 @@
       "manufacturer": "Comac",
       "wingtip": "SL",
       "has_wingtip": true,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "COMAC",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -4766,21 +4766,21 @@
       "manufacturer": "Douglas",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Swiss",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Swissair",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]

@@ -6,15 +6,15 @@
   "manufacturer": "JC Wings",
   "aircraft_name": "Schönbrunn Palace",
   "livery_note": "",
-  "extra_info": "Flaps down",
+  "extra_info": "",
   "shop_url": "",
   "aircraft_id": "BOE-787-9",
   "aircraft_type": "Boeing 787-9 Dreamliner",
   "registration": "OE-LPM",
   "livery_name": "AUA-2018-NEW",
   "parent_livery": "",
-  "zusatzinfo": "I:Flaps down | N:Schönbrunn Palace",
-  "model_extra": "",
+  "zusatzinfo": "M:Flaps down | N:Schönbrunn Palace",
+  "model_extra": "Flaps down",
   "special_note": "",
   "shop": "Kleinanzeigen Dan Segal",
   "price": 47.0,
@@ -51,7 +51,7 @@
   "livery": {
     "code": "AUA-2018-NEW",
     "parent": "",
-    "notes_raw": "I:Flaps down | N:Schönbrunn Palace",
+    "notes_raw": "M:Flaps down | N:Schönbrunn Palace",
     "note": ""
   },
   "model": {
@@ -68,7 +68,7 @@
     "status": "owned",
     "flown": null,
     "special_note": "",
-    "model_extra": ""
+    "model_extra": "Flaps down"
   },
   "links": {
     "postcards_raw": "U:https://jjpostcards.com/de/suche?controller=search&s=OE-LPM",
