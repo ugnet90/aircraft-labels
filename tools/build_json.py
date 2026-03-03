@@ -276,7 +276,7 @@ def main() -> int:
                     "id": f"PC-{model_id}-{idx:02d}",
                     "label": label,
                     "url": url,
-                    "price": price
+                    "price": pc_price
                 })
         
         # fallback wenn kein postcards_raw vorhanden
