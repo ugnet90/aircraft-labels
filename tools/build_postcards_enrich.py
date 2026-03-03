@@ -15,6 +15,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS_DATA_DIR = os.path.join(ROOT, "docs", "data")
 MODELS_DIR = os.path.join(DOCS_DATA_DIR, "models")  # model json files live in docs/data/models/<MODEL_ID>.json
 OUT_PATH = os.path.join(DOCS_DATA_DIR, "postcards_enriched.json")
+POSTCARDS_INDEX_JSON = os.path.join(DOCS_DATA_DIR, "postcards_index.json")
 
 # Rate limit to be polite
 SLEEP_SECONDS = 1.0
@@ -60,6 +61,56 @@ def save_json(path: str, obj: Any) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
 
+def load_postcards_index_by_id() -> dict:
+    """
+    Returns dict keyed by postcard id:
+      { "PC-...": {"id":..., "model_id":..., "url":..., "label"?:..., "price"?:...}, ... }
+    """
+    if not os.path.exists(POSTCARDS_INDEX_JSON):
+        return {}
+
+    try:
+        j = load_json(POSTCARDS_INDEX_JSON)
+    except Exception:
+        return {}
+
+    if not isinstance(j, dict):
+        return {}
+
+    by_id = j.get("by_id")
+    if not isinstance(by_id, dict):
+        return {}
+
+    out = {}
+    for k, v in by_id.items():
+        if not isinstance(v, dict):
+            continue
+        pid = str(v.get("id") or k).strip()
+        url = str(v.get("url") or "").strip()
+        mid = str(v.get("model_id") or "").strip()
+        if pid and url and mid:
+            out[pid] = v
+    return out
+
+def collect_postcards() -> dict:
+    """
+    Canonical postcard list keyed by postcard_id.
+    Priority:
+      1) docs/data/postcards_index.json (fast, canonical)
+      2) fallback: scan model json files (legacy)
+    """
+    idx = load_postcards_index_by_id()
+    if idx:
+        print(f"[postcards_enrich] index loaded: {len(idx)} postcards")
+        return idx
+
+    print("[postcards_enrich] postcards_index.json missing -> fallback to model scan")
+    items = collect_postcards_from_models()  # List[Tuple[pc_id, model_id, url]]
+
+    by_id = {}
+    for pc_id, model_id, url in items:
+        by_id[pc_id] = {"id": pc_id, "model_id": model_id, "url": url}
+    return by_id
 
 def is_jjpostcards_url(url: str) -> bool:
     try:
@@ -241,39 +292,61 @@ def collect_postcards_from_models() -> List[Tuple[str, str, str]]:
 
     return items
 
+def load_existing_enriched(path: str) -> dict:
+    if not os.path.exists(path):
+        return {}
+    j = load_json(path)
+
+    if isinstance(j, dict):
+        return j
+
+    if isinstance(j, list):
+        out = {}
+        for it in j:
+            if isinstance(it, dict):
+                pid = str(it.get("id") or "").strip()
+                if pid:
+                    out[pid] = it
+        return out
+
+    return {}
 
 def main() -> int:
-    existing: Dict[str, Any] = {}
-    if os.path.exists(OUT_PATH):
-        try:
-            existing = load_json(OUT_PATH)
-            if not isinstance(existing, dict):
-                existing = {}
-        except Exception:
-            existing = {}
+    existing: Dict[str, Any] = load_existing_enriched(OUT_PATH)
 
-    postcards = collect_postcards_from_models()
+    postcards = collect_postcards()  # dict keyed by postcard_id
 
-    # Deduplicate by postcard_id, keep first URL
-    by_id: Dict[str, Tuple[str, str]] = {}
-    for pc_id, model_id, url in postcards:
-        if pc_id not in by_id:
-            by_id[pc_id] = (model_id, url)
+    to_fetch = [pc_id for pc_id in postcards.keys() if pc_id not in existing]
 
-    to_fetch = [(pc_id, by_id[pc_id][0], by_id[pc_id][1]) for pc_id in by_id.keys() if pc_id not in existing]
+    print(f"[postcards_enrich] found postcards: {len(postcards)} ; existing: {len(existing)} ; to fetch: {len(to_fetch)}")
 
-    print(f"[postcards_enrich] found postcards: {len(by_id)} ; existing: {len(existing)} ; to fetch: {len(to_fetch)}")
+    for n, pc_id in enumerate(to_fetch, start=1):
+        base = postcards.get(pc_id, {}) if isinstance(postcards, dict) else {}
+        model_id = str(base.get("model_id") or "").strip()
+        url = str(base.get("url") or "").strip()
 
-    for n, (pc_id, model_id, url) in enumerate(to_fetch, start=1):
         print(f"[postcards_enrich] ({n}/{len(to_fetch)}) {pc_id} {model_id} -> {url}")
+
         try:
-            data = scrape_one(url)
-            data["postcard_id"] = pc_id
-            data["model_id"] = model_id
-            data["scraped_at_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-            existing[pc_id] = data
+            scraped = scrape_one(url)
+
+            out = {
+                **base,          # keeps id/model_id/url (+ label/price if present)
+                **scraped,       # scraped metadata
+                "postcard_id": pc_id,  # keep legacy field name too
+                "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            }
+
+            # ensure required fields exist
+            out["id"] = out.get("id") or pc_id
+            out["model_id"] = out.get("model_id") or model_id
+            out["source_url"] = out.get("source_url") or url
+
+            existing[pc_id] = out
+
         except Exception as e:
             existing[pc_id] = {
+                **base,
                 "postcard_id": pc_id,
                 "model_id": model_id,
                 "source_url": url,
