@@ -292,6 +292,16 @@ def main() -> int:
    
         photo = (r.get("Foto", "") or "").strip()
 
+        # Aircraft photo (new structured columns)
+        photo_source_url = (r.get("Photo_Source_Url", "") or "").strip()
+        photo_image_url  = (r.get("Photo_Image_Url", "") or "").strip()
+        photo_credit     = (r.get("Photo_Credit", "") or "").strip()
+        
+        # Transitional fallback: if Photo_Source_Url empty, use legacy "Foto"
+        photo_legacy = (r.get("Foto", "") or "").strip()
+        if not photo_source_url and photo_legacy:
+            photo_source_url = photo_legacy
+    
         logo_id = (r.get("logo_id", "") or "").strip()
         logo_row = logos_idx.get(logo_id) if logo_id else None
         
@@ -365,6 +375,10 @@ def main() -> int:
             "postcard_price": postcard_price,
             "postcards": postcards,
             "photo": photo,
+            "photo_source_url": photo_source_url,
+            "photo_image_url": photo_image_url,
+            "photo_credit": photo_credit,
+            "arrived_excel": angekommen_raw,            
             "arrived_excel": angekommen_raw,
             "arrived": angekommen_iso,
             "ordered_at": bestellt_iso,
