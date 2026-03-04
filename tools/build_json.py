@@ -4,6 +4,7 @@ import os
 import re
 from datetime import datetime, timedelta
 from typing import Any, Dict, Optional, List
+from urllib.parse import urlparse
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -17,7 +18,43 @@ OUT_FLIGHTS_JSON = os.path.join(REPO_ROOT, "docs", "data", "flights.json")
 OUT_DIR = os.path.join(REPO_ROOT, "docs", "data", "models")
 INDEX_JSON = os.path.join(REPO_ROOT, "docs", "index.json")
 
+_RE_PLNSPTTRS_CDN = re.compile(
+    r"/(?P<folder>\d+)/.*?_PlanespottersNet_(?P<pid>\d+)_(?P<hash>[0-9a-fA-F]{6,})_o\.(?P<ext>jpg|jpeg|png|webp)$"
+)
 
+def derive_thumb_url(image_url: str) -> str:
+    """
+    Best-effort thumbnail derivation.
+    - If already a planespotters thumbnail (t.plnspttrs.net): return as-is
+    - If planespotters CDN original (cdn.plnspttrs.net/..._PlanespottersNet_<id>_<hash>_o.jpg):
+        -> https://t.plnspttrs.net/<folder>/<id>_<hash>_280.jpg
+    - Otherwise: return original
+    """
+    s = (image_url or "").strip()
+    if not s:
+        return ""
+
+    try:
+        u = urlparse(s)
+        host = (u.hostname or "").lower()
+        path = u.path or ""
+    except Exception:
+        return s
+
+    if "t.plnspttrs.net" in host:
+        return s
+
+    if "cdn.plnspttrs.net" in host:
+        m = _RE_PLNSPTTRS_CDN.search(path)
+        if m:
+            folder = m.group("folder")
+            pid = m.group("pid")
+            h = m.group("hash").lower()
+            # Planespotters thumbs are jpgs in practice; keep simple
+            return f"https://t.plnspttrs.net/{folder}/{pid}_{h}_280.jpg"
+
+    return s
+    
 def read_csv(path: str) -> List[Dict[str, str]]:
     if not os.path.exists(path):
         return []
@@ -296,6 +333,7 @@ def main() -> int:
         photo_source_url = (r.get("Photo_Source_Url", "") or "").strip()
         photo_image_url  = (r.get("Photo_Image_Url", "") or "").strip()
         photo_credit     = (r.get("Photo_Credit", "") or "").strip()
+        photo_thumb_url = derive_thumb_url(photo_image_url)
         
         # Transitional fallback: if Photo_Source_Url empty, use legacy "Foto"
         photo_legacy = (r.get("Foto", "") or "").strip()
@@ -377,6 +415,7 @@ def main() -> int:
             "photo": photo,
             "photo_source_url": photo_source_url,
             "photo_image_url": photo_image_url,
+            "photo_thumb_url": photo_thumb_url,
             "photo_credit": photo_credit,
             "arrived_excel": angekommen_raw,            
             "arrived_excel": angekommen_raw,
