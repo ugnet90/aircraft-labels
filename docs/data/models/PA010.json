@@ -33,6 +33,9 @@
     }
   ],
   "photo": "",
+  "photo_source_url": "",
+  "photo_image_url": "",
+  "photo_credit": "",
   "arrived_excel": "2025-07-04",
   "arrived": "2025-07-04",
   "ordered_at": null,
