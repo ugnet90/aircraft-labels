@@ -27,6 +27,22 @@ function logoSrc(d){
   return "";
 }
 
+function hostFromUrl(u){
+  const s = String(u || "").trim();
+  if(!s) return "";
+  try { return (new URL(s)).hostname.replace(/^www\./,""); }
+  catch(e){ return ""; }
+}
+
+function photoCopyright(credit, sourceUrl, imageUrl){
+  const c = String(credit || "").trim();
+  const host = hostFromUrl(sourceUrl) || hostFromUrl(imageUrl);
+  if(c && host) return `© ${c} / ${host}`;
+  if(c) return `© ${c}`;
+  if(host) return host;
+  return "";
+}
+
 function qs(name){
   const u = new URL(window.location.href);
   return u.searchParams.get(name);
@@ -532,26 +548,37 @@ async function main(){
       postcardBlock = renderPostcardsCard(d, enrichedById);
     }
     
+    const photoSource = asText(d.photo_source_url) || asText(d.photo) || "";
+    const photoImg    = asText(d.photo_image_url) || "";
+    const photoCredit = asText(d.photo_credit) || "";
+    
+    const photoHref = photoSource || photoImg;
+    const copyright = photoCopyright(photoCredit, photoSource, photoImg);
+    
+    const aircraftPhotoHtml = photoImg
+      ? `<div class="air-photo">
+           <a href="${esc(photoHref || photoImg)}" target="_blank" rel="noopener">
+             <img class="air-thumb" src="${esc(photoImg)}" alt="Aircraft photo" loading="lazy">
+           </a>
+           ${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}
+         </div>`
+      : (photoSource
+          ? `<a href="${esc(photoSource)}" target="_blank" rel="noopener">Foto-Link</a>${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}`
+          : "");
+    
     const aircraftBlock = `
       <div class="card">
         <div class="k">Flugzeug</div>
         <div class="grid" style="margin-top:8px">
-          ${rowHtml("Foto", (photoE && photoE.thumb_url)
-            ? `<a href="${esc(photoE.source_url || photoE.thumb_url)}" target="_blank" rel="noopener">
-                 <img class="air-thumb" src="${esc(photoE.thumb_url)}" alt="Aircraft photo" loading="lazy">
-               </a>`
-            : (d.photo ? `<a href="${esc(d.photo)}" target="_blank" rel="noopener">Link</a>` : ""))
-          }
+          ${rowHtml("Foto", aircraftPhotoHtml)}
           ${row("Flugzeugtyp", typ)}
           ${row("Registrierung", reg)}
           ${row("Taufname", d.aircraft_name || "")}
           ${row("Zusatzinfo", d.extra_info || "")}
           ${(d.flown ?? d.model?.flown) ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`) : ""}
-          ${rowLink("Foto", d.photo || d.links?.photo || "", "", "Foto")}
         </div>
       </div>
     `;
-
 
     const liveryName = (d.livery_full?.Livery_Name || "").trim();
     const liveryType = (d.livery_full?.Livery_Type || "").trim();
