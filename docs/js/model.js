@@ -614,9 +614,8 @@ async function main(){
 
     const logoUrl = logoSrc(d);
     const logoHtml = logoUrl
-      ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:44px;vertical-align:middle;margin-right:10px">`
+      ? `<img class="airlineLogo" src="${esc(logoUrl)}" alt="Logo">`
       : "";
-
     const navHtml = (prevId || nextId) ? buildNavHtml(prevId, nextId, pos, total) : "";
     
     document.getElementById("title").innerHTML = `
@@ -631,9 +630,6 @@ async function main(){
               ${d.aircraft_name ? `<span class="hName">„${esc(d.aircraft_name)}“</span>` : ""}
             </div>
           </div>
-        </div>
-        <div class="headerRight">
-          ${navHtml}
         </div>
       </div>
     `;
