@@ -581,13 +581,25 @@ async function main(){
     const aircraftBlock = `
       <div class="card">
         <div class="k">Flugzeug</div>
-        <div class="grid" style="margin-top:8px">
-          ${rowHtml("Foto", aircraftPhotoHtml)}
-          ${row("Flugzeugtyp", typ)}
-          ${row("Registrierung", reg)}
-          ${row("Taufname", d.aircraft_name || "")}
-          ${row("Zusatzinfo", d.extra_info || "")}
-          ${(d.flown ?? d.model?.flown) ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`) : ""}
+    
+        <div class="air-layout">
+    
+          ${aircraftPhotoHtml ? `
+            <div class="air-photo-box">
+              ${aircraftPhotoHtml}
+            </div>
+          ` : ""}
+    
+          <div class="air-data grid">
+            ${row("Flugzeugtyp", typ)}
+            ${row("Registrierung", reg)}
+            ${row("Taufname", d.aircraft_name || "")}
+            ${row("Zusatzinfo", d.extra_info || "")}
+            ${(d.flown ?? d.model?.flown)
+              ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
+              : ""}
+          </div>
+    
         </div>
       </div>
     `;
