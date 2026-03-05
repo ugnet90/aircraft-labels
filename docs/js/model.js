@@ -534,8 +534,11 @@ async function loadIndexIds(){
 }
 
 function navNeighbors(ids, currentId){
-  const i = ids.indexOf(currentId);
+  const cur = String(currentId || "").trim().toUpperCase();
+  const i = ids.findIndex(x => String(x || "").trim().toUpperCase() === cur);
+
   if(i < 0) return { prev: "", next: "", pos: 0, total: ids.length };
+
   return {
     prev: i > 0 ? ids[i-1] : "",
     next: i < ids.length-1 ? ids[i+1] : "",
@@ -574,6 +577,8 @@ function enableArrowKeys(prevId, nextId){
 
 async function main(){
   const id = qs("id");
+  const idRaw = qs("id");
+  const id = String(idRaw || "").trim().toUpperCase();
   const pill = document.getElementById("idpill");
   if(pill) pill.style.display = "none";
   document.getElementById("idpill").textContent = id ? `id=${id}` : "id=?";
@@ -587,6 +592,7 @@ async function main(){
   let prevId = "", nextId = "", pos = 0, total = 0;
   try{
     const ids = await loadIndexIds();
+    console.log("current id:", id, "found index:", ids.indexOf(id), "first10:", ids.slice(0,10));
     const n = navNeighbors(ids, id);
     prevId = n.prev; nextId = n.next; pos = n.pos; total = n.total;
     enableArrowKeys(prevId, nextId);
