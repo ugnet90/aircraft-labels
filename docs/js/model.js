@@ -503,19 +503,34 @@ function closeLightbox(){
 }
 
 async function loadIndexIds(){
-  // index.json can be: {items:[...]} or [...]
   const res = await fetch("./index.json", {cache:"no-store"});
   if(!res.ok) throw new Error(`index.json HTTP ${res.status}`);
   const j = await res.json();
 
-  const items = Array.isArray(j) ? j : (Array.isArray(j?.items) ? j.items : []);
-  const ids = items
-    .map(x => String(x?.model_id ?? x?.id ?? "").trim())
-    .filter(Boolean);
+  // try known shapes in priority order
+  let items = [];
+  if(Array.isArray(j)){
+    items = j;
+  }else if(Array.isArray(j?.items)){
+    items = j.items;
+  }else if(Array.isArray(j?.index)){
+    items = j.index;
+  }else if(Array.isArray(j?.models)){
+    items = j.models;
+  }else{
+    // last resort: find first array-valued property
+    for(const k of Object.keys(j || {})){
+      if(Array.isArray(j[k])) { items = j[k]; break; }
+    }
+  }
 
-  // de-dup, keep order
-  const seen = new Set();
-  return ids.filter(id => (seen.has(id) ? false : (seen.add(id), true)));
+  // extract model_id in the SAME ORDER as in index.json
+  const ids = [];
+  for(const it of items){
+    const id = String(it?.model_id ?? it?.id ?? "").trim();
+    if(id) ids.push(id);
+  }
+  return ids; // keep order, no sorting, no de-dup (index should already be clean)
 }
 
 function navNeighbors(ids, currentId){
