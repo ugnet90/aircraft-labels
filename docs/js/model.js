@@ -502,6 +502,61 @@ function closeLightbox(){
   if(img) img.src = "";
 }
 
+async function loadIndexIds(){
+  // index.json can be: {items:[...]} or [...]
+  const res = await fetch("./index.json", {cache:"no-store"});
+  if(!res.ok) throw new Error(`index.json HTTP ${res.status}`);
+  const j = await res.json();
+
+  const items = Array.isArray(j) ? j : (Array.isArray(j?.items) ? j.items : []);
+  const ids = items
+    .map(x => String(x?.model_id ?? x?.id ?? "").trim())
+    .filter(Boolean);
+
+  // de-dup, keep order
+  const seen = new Set();
+  return ids.filter(id => (seen.has(id) ? false : (seen.add(id), true)));
+}
+
+function navNeighbors(ids, currentId){
+  const i = ids.indexOf(currentId);
+  if(i < 0) return { prev: "", next: "", pos: 0, total: ids.length };
+  return {
+    prev: i > 0 ? ids[i-1] : "",
+    next: i < ids.length-1 ? ids[i+1] : "",
+    pos: i + 1,
+    total: ids.length
+  };
+}
+
+function buildNavHtml(prevId, nextId, pos, total){
+  const prevHref = prevId ? `model.html?id=${encodeURIComponent(prevId)}` : "";
+  const nextHref = nextId ? `model.html?id=${encodeURIComponent(nextId)}` : "";
+
+  return `
+    <div class="navWrap">
+      <a class="navBtn ${prevId ? "" : "disabled"}" ${prevId ? `href="${prevHref}"` : ""} title="Vorheriges Modell">←</a>
+      <div class="navPos">${total ? `${pos}/${total}` : ""}</div>
+      <a class="navBtn ${nextId ? "" : "disabled"}" ${nextId ? `href="${nextHref}"` : ""} title="Nächstes Modell">→</a>
+    </div>
+  `;
+}
+
+function enableArrowKeys(prevId, nextId){
+  document.addEventListener("keydown", (ev) => {
+    // ignore when typing in inputs (future-proof)
+    const t = ev.target;
+    const tag = (t && t.tagName) ? t.tagName.toLowerCase() : "";
+    if(tag === "input" || tag === "textarea" || tag === "select") return;
+
+    if(ev.key === "ArrowLeft" && prevId){
+      window.location.href = `model.html?id=${encodeURIComponent(prevId)}`;
+    }else if(ev.key === "ArrowRight" && nextId){
+      window.location.href = `model.html?id=${encodeURIComponent(nextId)}`;
+    }
+  });
+}
+
 async function main(){
   const id = qs("id");
   const pill = document.getElementById("idpill");
@@ -513,7 +568,17 @@ async function main(){
       `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">model.html?id=OS016</span></div>`;
     return;
   }
-
+  
+  let prevId = "", nextId = "", pos = 0, total = 0;
+  try{
+    const ids = await loadIndexIds();
+    const n = navNeighbors(ids, id);
+    prevId = n.prev; nextId = n.next; pos = n.pos; total = n.total;
+    enableArrowKeys(prevId, nextId);
+  }catch(e){
+    // index.json not critical; just skip nav if it fails
+  }
+  
   const url = `./data/models/${encodeURIComponent(id)}.json`;
   
   try{
@@ -552,20 +617,27 @@ async function main(){
       ? `<img src="${esc(logoUrl)}" alt="Logo" style="height:44px;vertical-align:middle;margin-right:10px">`
       : "";
 
+    const navHtml = (prevId || nextId) ? buildNavHtml(prevId, nextId, pos, total) : "";
+    
     document.getElementById("title").innerHTML = `
       <div class="headerWrap">
-        ${logoHtml}
-        <div class="headerTxt">
-          ${showAirlineText && airline ? `<div class="hAir">${esc(airline)}</div>` : ""}
-          <div class="hTyp">${esc(typ || id)}</div>
-          <div class="hMeta">
-            ${reg ? `<span class="hReg">${esc(reg)}</span>` : ""}
-            ${d.aircraft_name ? `<span class="hName">„${esc(d.aircraft_name)}“</span>` : ""}
+        <div class="headerLeft">
+          ${logoHtml}
+          <div class="headerTxt">
+            ${showAirlineText && airline ? `<div class="hAir">${esc(airline)}</div>` : ""}
+            <div class="hTyp">${esc(typ || id)}</div>
+            <div class="hMeta">
+              ${reg ? `<span class="hReg">${esc(reg)}</span>` : ""}
+              ${d.aircraft_name ? `<span class="hName">„${esc(d.aircraft_name)}“</span>` : ""}
+            </div>
           </div>
+        </div>
+        <div class="headerRight">
+          ${navHtml}
         </div>
       </div>
     `;
-
+    
     // Bestellt-Hinweis
     const orderedAt = asText(d.ordered_at || "");
     const orderedText = (d.ordered && orderedAt) ? `Bestellt: ${formatDateDE(orderedAt)}` : "";
