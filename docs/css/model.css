@@ -36,21 +36,46 @@
   line-height: 1.25;
 }
 
-.air-thumb{
-  display:block;
-  width: 140px;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.air-credit{
-  margin-top: 6px;
-  font-size: 12px;
-  color: rgba(0,0,0,0.6);
-  line-height: 1.2;
-}
-
 .air-photo{
   display: inline-block;
+}
+
+/* Flugzeug Layout */
+.air-layout{
+  display:grid;
+  grid-template-columns: 420px 1fr;
+  gap:22px;
+  align-items:start;
+}
+
+/* Bildbox */
+.air-photo-box{
+  max-width:420px;
+}
+
+/* großes Bild */
+.air-thumb{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,0.08);
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Copyright */
+.air-credit{
+  margin-top:6px;
+  font-size:12px;
+  color:rgba(0,0,0,0.6);
+}
+
+/* responsive */
+@media (max-width: 800px){
+  .air-layout{
+    grid-template-columns:1fr;
+  }
+
+  .air-photo-box{
+    max-width:100%;
+  }
 }
