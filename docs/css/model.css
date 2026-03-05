@@ -150,24 +150,6 @@ body.noscroll{ overflow: hidden; }
   font-size: 14px;
 }
 
-.headerWrap{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:14px;
-}
-
-.headerLeft{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  min-width:0;
-}
-
-.headerRight{
-  flex: 0 0 auto;
-}
-
 .navWrap{
   display:flex;
   align-items:center;
@@ -203,4 +185,33 @@ body.noscroll{ overflow: hidden; }
   color:rgba(0,0,0,0.6);
   min-width:56px;
   text-align:center;
+}
+
+/* Header: nav fix rechts oben */
+.headerWrap{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* rechts oben fix, unabhängig von Logo/Text */
+.headerRight{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* damit der Text nicht unter die Pfeile läuft */
+.headerLeft{
+  padding-right: 120px; /* ggf. 100–140 anpassen */
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 520px){
+  .headerLeft{ padding-right: 0; }
+  .headerRight{ position: static; margin-left: auto; }
 }
