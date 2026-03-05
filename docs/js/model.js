@@ -550,7 +550,6 @@ async function main(){
     
     const photoSource = asText(d.photo_source_url) || asText(d.photo) || "";
     const photoImg    = asText(d.photo_image_url) || "";
-    const photoThumb  = asText(d.photo_thumb_url) || photoImg;
     const photoCredit = asText(d.photo_credit) || "";
     
     const photoHref = photoSource || photoImg;
@@ -559,7 +558,7 @@ async function main(){
     const aircraftPhotoHtml = photoImg
       ? `<div class="air-photo">
            <a href="${esc(photoHref || photoImg)}" target="_blank" rel="noopener">
-             <img class="air-thumb" src="${esc(photoThumb)}" alt="Aircraft photo" loading="lazy" decoding="async" fetchpriority="low">
+             <img class="air-thumb" src="${esc(photoImg)}" alt="Aircraft photo" loading="lazy">
            </a>
            ${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}
          </div>`
