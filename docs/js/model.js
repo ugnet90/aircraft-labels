@@ -364,7 +364,6 @@ function renderV8Groups(obj){
   return rendered ? `<div class="masonry">${rendered}</div>` : "";
 }
 
-
 function extractFirstHttpUrl(text){
   const s = String(text ?? "").trim();
   if(!s) return { prefix: "", url: "" };
@@ -442,6 +441,65 @@ async function loadAircraftPhotosEnriched(){
     _aircraftPhotosEnrichedCache = {};
   }
   return _aircraftPhotosEnrichedCache;
+}
+
+// ---------- Lightbox ----------
+function ensureLightbox(){
+  if(document.getElementById("lightbox")) return;
+
+  const el = document.createElement("div");
+  el.id = "lightbox";
+  el.className = "lb";
+  el.innerHTML = `
+    <div class="lb-backdrop" data-close="1"></div>
+    <div class="lb-panel" role="dialog" aria-modal="true">
+      <button class="lb-close" type="button" aria-label="Schließen" data-close="1">×</button>
+      <img class="lb-img" alt="Foto" />
+      <div class="lb-actions">
+        <a class="lb-open" href="#" target="_blank" rel="noopener">In neuem Tab öffnen</a>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(el);
+
+  // click close
+  el.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if(t && t.getAttribute && t.getAttribute("data-close") === "1"){
+      closeLightbox();
+    }
+  });
+
+  // ESC close
+  document.addEventListener("keydown", (ev) => {
+    if(ev.key === "Escape") closeLightbox();
+  });
+}
+
+function openLightbox(imgUrl, openUrl){
+  const src = String(imgUrl || "").trim();
+  if(!src) return;
+  ensureLightbox();
+
+  const lb = document.getElementById("lightbox");
+  const img = lb.querySelector(".lb-img");
+  const a = lb.querySelector(".lb-open");
+
+  img.src = src;
+  a.href = (String(openUrl || "").trim() || src);
+
+  lb.classList.add("on");
+  document.body.classList.add("noscroll");
+}
+
+function closeLightbox(){
+  const lb = document.getElementById("lightbox");
+  if(!lb) return;
+  lb.classList.remove("on");
+  document.body.classList.remove("noscroll");
+
+  const img = lb.querySelector(".lb-img");
+  if(img) img.src = "";
 }
 
 async function main(){
@@ -567,9 +625,14 @@ async function main(){
     
     const aircraftPhotoHtml = photoImg
       ? `<div class="air-photo">
-           <a href="${esc(photoHref || photoImg)}" target="_blank" rel="noopener">
-             <img class="air-thumb" src="${esc(photoImg)}" alt="Aircraft photo" loading="lazy">
-           </a>
+           <img class="air-thumb"
+             src="${esc(photoImg)}"
+             alt="Aircraft photo"
+             loading="lazy"
+             decoding="async"
+             fetchpriority="low"
+             style="cursor: zoom-in"
+             onclick="openLightbox('${esc(photoImg)}','${esc(photoHref || photoImg)}')">
            ${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}
          </div>`
       : (photoSource
