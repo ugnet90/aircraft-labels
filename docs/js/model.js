@@ -576,7 +576,6 @@ function enableArrowKeys(prevId, nextId){
 }
 
 async function main(){
-  const id = qs("id");
   const idRaw = qs("id");
   const id = String(idRaw || "").trim().toUpperCase();
   const pill = document.getElementById("idpill");
