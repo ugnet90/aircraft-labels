@@ -249,3 +249,18 @@ body.noscroll{ overflow: hidden; }
   font-size:11px;
   min-width:44px;
 }
+
+.airlineLogo{
+  height:44px;
+  width:auto;
+  max-width: 220px; /* desktop safety */
+  display:block;
+}
+
+/* Mobile: stärker begrenzen */
+@media (max-width: 520px){
+  .airlineLogo{
+    height:34px;
+    max-width: 140px;
+  }
+}
