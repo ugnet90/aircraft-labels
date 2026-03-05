@@ -225,3 +225,27 @@ body.noscroll{ overflow: hidden; }
   min-width:52px;
   text-align:center;
 }
+
+/* Card header mit Navigation */
+.cardHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:6px;
+}
+
+/* damit die Pfeile etwas kompakter sind */
+.cardHeader .navWrap{
+  gap:8px;
+}
+
+.cardHeader .navBtn{
+  width:34px;
+  height:34px;
+  font-size:18px;
+}
+
+.cardHeader .navPos{
+  font-size:11px;
+  min-width:44px;
+}
