@@ -602,7 +602,7 @@ async function main(){
     const showAirlineText = !logoSpeaking;
 
     // temporär - dann wieder entfernen!
-    document.getElementById("subtitle").textContent = `debug: logo_speaking="${logoSpeakingRaw}", parsed=${logoSpeaking}`;
+    // document.getElementById("subtitle").textContent = `debug: logo_speaking="${logoSpeakingRaw}", parsed=${logoSpeaking}`;
 
     const titleMain = [
       typ,
@@ -715,7 +715,10 @@ async function main(){
     
     const aircraftBlock = `
       <div class="card">
-        <div class="k">Flugzeug</div>
+        <div class="cardHeader">
+          <div class="k">Flugzeug</div>
+          ${navHtml || ""}
+        </div>
     
         <div class="air-layout">
     
