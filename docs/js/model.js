@@ -34,6 +34,16 @@ function hostFromUrl(u){
   catch(e){ return ""; }
 }
 
+function hostLabel(u){
+  const s = String(u || "").trim();
+  if(!s) return "";
+  try{
+    return new URL(s).hostname.replace(/^www\./,"");
+  }catch(e){
+    return "Foto";
+  }
+}
+
 function photoCopyright(credit, sourceUrl, imageUrl){
   const c = String(credit || "").trim();
   const host = hostFromUrl(sourceUrl) || hostFromUrl(imageUrl);
@@ -563,7 +573,9 @@ async function main(){
            ${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}
          </div>`
       : (photoSource
-          ? `<a href="${esc(photoSource)}" target="_blank" rel="noopener">Foto-Link</a>${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}`
+          ? `<a href="${esc(photoSource)}" target="_blank" rel="noopener">
+              ${esc(hostLabel(photoSource))}
+            </a>${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}`
           : "");
     
     const aircraftBlock = `
