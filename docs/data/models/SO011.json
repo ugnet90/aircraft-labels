@@ -32,8 +32,8 @@
       "price": null
     }
   ],
-  "photo": "x",
-  "photo_source_url": "x",
+  "photo": "",
+  "photo_source_url": "",
   "photo_image_url": "",
   "photo_credit": "",
   "arrived_excel": "2025-10-27",
@@ -76,7 +76,7 @@
   "links": {
     "postcards_raw": "x",
     "postcard_url": "",
-    "photo": "x",
+    "photo": "",
     "shop": "Ebay worldofwingseu",
     "shop_url": "https://www.ebay.de/itm/286878907569"
   },
