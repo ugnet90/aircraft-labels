@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 386,
+    "master_types": 387,
     "present_types": 130,
-    "missing_types": 255,
+    "missing_types": 256,
     "ordered_types": 1,
     "models": 174
   },
@@ -450,6 +450,12 @@
     {
       "aircraft_id": "BOE-737-MAX9",
       "Typ_anzeige": "Boeing 737 MAX 9",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-123SF",
+      "Typ_anzeige": "Boeing 747-123 Special Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },

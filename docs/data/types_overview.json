@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 386,
+  "master_count": 387,
   "with_any_models": 131,
-  "missing": 255,
+  "missing": 256,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -2812,6 +2812,19 @@
           ]
         }
       ]
+    },
+    {
+      "aircraft_id": "BOE-747-123SF",
+      "typ_anzeige": "Boeing 747-123 Special Freighter",
+      "type_key": "boeing 747-123 special freighter",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
       "aircraft_id": "BOE-747-200",
