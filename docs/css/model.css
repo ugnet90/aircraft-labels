@@ -1,3 +1,4 @@
+
 .pc-subcard{
   padding: 10px;
   border: 1px solid rgba(0,0,0,.12);
@@ -226,29 +227,6 @@ body.noscroll{ overflow: hidden; }
   text-align:center;
 }
 
-/* Card header mit Navigation */
-.cardHeader{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  margin-bottom:6px;
-}
-
-/* damit die Pfeile etwas kompakter sind */
-.cardHeader .navWrap{
-  gap:8px;
-}
-
-.cardHeader .navBtn{
-  width:34px;
-  height:34px;
-  font-size:18px;
-}
-
-.cardHeader .navPos{
-  font-size:11px;
-  min-width:44px;
-}
 
 .airlineLogo{
   height:44px;
@@ -311,20 +289,6 @@ body.noscroll{ overflow: hidden; }
   border-bottom:1px solid rgba(0,0,0,0.05);
 }
 
-.card-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid rgba(0,0,0,0.08);
-  padding-bottom:8px;
-  margin-bottom:12px;
-}
-
-.card-header .k{
-  margin:0;
-  padding:0;
-  border:0;
-}
 
 .k-nav{
   display:flex;
