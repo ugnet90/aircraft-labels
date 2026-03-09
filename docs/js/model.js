@@ -288,6 +288,20 @@ function renderV8Groups(obj){
     return `<tr><td>${esc(label)}</td><td>${valueHtml}</td></tr>`;
   }
 
+  function normalizeUnit(label, valueHtml){
+    const rawLabel = String(label ?? "").trim();
+    const rawValue = String(valueHtml ?? "").trim();
+    if(!rawLabel || !rawValue) return [rawLabel, rawValue];
+  
+    const m = rawLabel.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+    if(!m) return [rawLabel, rawValue];
+  
+    const cleanLabel = m[1].trim();
+    const unit = m[2].trim();
+  
+    return [cleanLabel, `${rawValue} ${esc(unit)}`];
+  }  
+  
   function val(key){
     const v = obj[key];
     if(v === undefined || v === null) return "";
@@ -345,7 +359,10 @@ function renderV8Groups(obj){
   const rendered = groups
     .map(g => {
       const body = g.rows
-        .map(([label, value]) => row(label, value))
+        .map(([label, value]) => {
+          const [nl, nv] = normalizeUnit(label, value);
+          return row(nl, nv);
+        })
         .filter(Boolean)
         .join("");
       if(!body) return "";
@@ -744,6 +761,9 @@ async function main(){
              fetchpriority="low"
              style="cursor: zoom-in"
              onclick="openLightbox('${esc(photoImg)}','${esc(photoHref || photoImg)}')">
+    
+           ${usingPostcard ? `<div class="air-credit postcard">Postkartenmotiv</div>` : ``}
+    
            ${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}
          </div>`
       : (photoSource
