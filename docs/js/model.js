@@ -699,30 +699,35 @@ async function main(){
     `;
 
     let postcardBlock = "";
+    let enrichedById = {};
+    
     if(Array.isArray(d.postcards) && d.postcards.length){
-      const enrichedById = await loadPostcardsEnriched();
+      enrichedById = await loadPostcardsEnriched();
       postcardBlock = renderPostcardsCard(d, enrichedById);
     }
     
-    const photoSource = asText(d.photo_source_url) || asText(d.photo) || "";
-    let photoImg      = asText(d.photo_image_url) || "";
-    let photoCredit   = asText(d.photo_credit) || "";
+    const photoSource0 = asText(d.photo_source_url) || asText(d.photo) || "";
+    let photoSource = photoSource0;
+    let photoImg    = asText(d.photo_image_url) || "";
+    let photoCredit = asText(d.photo_credit) || "";
     
     // --- Fallback: Postkarte als Bild ---
     let usingPostcard = false;
     
     if(!photoImg && Array.isArray(d.postcards) && d.postcards.length){
       const pc = d.postcards[0];
+      const pcId = asText(pc?.id);
+      const pcE = pcId ? (enrichedById?.[pcId] || null) : null;
     
-      if(pc && pc.thumb_url){
-        photoImg = pc.thumb_url;
+      if(pcE && pcE.thumb_url){
+        photoImg = asText(pcE.thumb_url);
         usingPostcard = true;
       }
     
       if(pc && pc.url && !photoSource){
-        photoSource = pc.url;
+        photoSource = asText(pc.url);
       }
-    }    
+    }
     
     const photoHref = photoSource || photoImg;
     const copyright = (!usingPostcard && photoCredit)
@@ -752,10 +757,8 @@ async function main(){
         <div class="cardHeader">
           <div class="k">Flugzeug</div>
           ${navHtml || ""}
-        </div>
-    
-        <div class="air-layout">
-    
+        </div>    
+        <div class="air-layout">    
           ${aircraftPhotoHtml ? `
             <div class="air-photo-box">
               ${aircraftPhotoHtml}
@@ -770,8 +773,7 @@ async function main(){
             ${(d.flown ?? d.model?.flown)
               ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
               : ""}
-          </div>
-    
+          </div>    
         </div>
       </div>
     `;
