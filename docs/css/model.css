@@ -264,3 +264,15 @@ body.noscroll{ overflow: hidden; }
     max-width: 140px;
   }
 }
+
+.air-credit.postcard{
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.card .grid .k{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  color:#777;
+}
