@@ -82,7 +82,7 @@
 
 /* Flugzeug: rechte Daten immer EINspaltig */
 .air-data.grid{
-  grid-template-columns: 1fr !important;
+  grid-template-columns:1fr !important;
 }
 
 /* Optional: falls .grid Auto-Fit nutzt */
@@ -311,18 +311,17 @@ body.noscroll{ overflow: hidden; }
   border-bottom:1px solid rgba(0,0,0,0.05);
 }
 
-
 .card-header{
   display:flex;
   justify-content:space-between;
   align-items:center;
   border-bottom:1px solid rgba(0,0,0,0.08);
-  padding-bottom:6px;
-  margin-bottom:8px;
+  padding-bottom:8px;
+  margin-bottom:12px;
 }
 
 .card-header .k{
-  border-bottom:none;
-  margin-bottom:0;
-  padding-bottom:0;
+  margin:0;
+  padding:0;
+  border:0;
 }
