@@ -773,11 +773,13 @@ async function main(){
           : "");
     
     const aircraftBlock = `
-      <div class="card-header">
-        <div class="k">Flugzeug</div>
-        ${navHtml || ""}
-      </div>
-        <div class="air-layout">    
+      <div class="card">
+        <div class="card-header">
+          <div class="k">Flugzeug</div>
+          ${navHtml || ""}
+        </div>
+    
+        <div class="air-layout">
           ${aircraftPhotoHtml ? `
             <div class="air-photo-box">
               ${aircraftPhotoHtml}
@@ -792,7 +794,7 @@ async function main(){
             ${(d.flown ?? d.model?.flown)
               ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
               : ""}
-          </div>    
+          </div>
         </div>
       </div>
     `;
