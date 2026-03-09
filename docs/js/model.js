@@ -774,8 +774,8 @@ async function main(){
     
     const aircraftBlock = `
       <div class="card">
-        <div class="card-header">
-          <div class="k">Flugzeug</div>
+        <div class="k k-nav">
+          <span>Flugzeug</span>
           ${navHtml || ""}
         </div>
     
