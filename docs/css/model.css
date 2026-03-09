@@ -310,3 +310,19 @@ body.noscroll{ overflow: hidden; }
 .masonry tr:not(:last-child) td{
   border-bottom:1px solid rgba(0,0,0,0.05);
 }
+
+
+.card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  padding-bottom:6px;
+  margin-bottom:8px;
+}
+
+.card-header .k{
+  border-bottom:none;
+  margin-bottom:0;
+  padding-bottom:0;
+}
