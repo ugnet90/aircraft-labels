@@ -325,3 +325,27 @@ body.noscroll{ overflow: hidden; }
   padding:0;
   border:0;
 }
+
+.k-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.k-nav .navWrap{
+  gap:8px;
+}
+
+.k-nav .navBtn{
+  width:34px;
+  height:34px;
+  font-size:18px;
+}
+
+.k-nav .navPos{
+  font-size:11px;
+  min-width:44px;
+  text-align:center;
+  color:#666;
+}
