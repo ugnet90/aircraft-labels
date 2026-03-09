@@ -773,11 +773,10 @@ async function main(){
           : "");
     
     const aircraftBlock = `
-      <div class="card">
-        <div class="cardHeader">
-          <div class="k">Flugzeug</div>
-          ${navHtml || ""}
-        </div>    
+      <div class="card-header">
+        <div class="k">Flugzeug</div>
+        ${navHtml || ""}
+      </div>
         <div class="air-layout">    
           ${aircraftPhotoHtml ? `
             <div class="air-photo-box">
