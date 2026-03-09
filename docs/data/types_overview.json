@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 386,
-  "with_any_models": 130,
-  "missing": 256,
+  "with_any_models": 131,
+  "missing": 255,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -7232,11 +7232,26 @@
       "manufacturer": "Sud Aviation/BAC",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "SUK-Superjet-100-95",

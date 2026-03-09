@@ -3,8 +3,8 @@
   "warning": "",
   "counts": {
     "master_types": 386,
-    "present_types": 129,
-    "missing_types": 256,
+    "present_types": 130,
+    "missing_types": 255,
     "ordered_types": 1,
     "models": 174
   },
@@ -1423,12 +1423,6 @@
       "aircraft_id": "SUD-Caravelle-VIN",
       "Typ_anzeige": "Sud Aviation Caravelle VI-N",
       "manufacturer": "Sud Aviation",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "SUD-Concorde",
-      "Typ_anzeige": "Sud Aviation/BAC Concorde",
-      "manufacturer": "Sud Aviation/BAC",
       "status": "missing"
     },
     {

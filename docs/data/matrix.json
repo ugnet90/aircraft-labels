@@ -153,8 +153,8 @@
     "SAB-340",
     "SCA-SS2",
     "SHO-360",
-    "SUD-CONCORDE",
     "SUD-Caravelle-VIR",
+    "SUD-Concorde",
     "VIC-VC10-SUPER",
     "VIC-Viscount-700",
     "VIC-Viscount-800"
@@ -819,8 +819,8 @@
       0,
       0,
       0,
-      0,
       1,
+      0,
       0,
       0,
       1
@@ -1085,8 +1085,8 @@
       1,
       0,
       1,
-      1,
       0,
+      1,
       0,
       0,
       0

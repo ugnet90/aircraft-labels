@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T10:57:17Z",
+  "generated_at": "2026-03-09T10:07:07Z",
   "count": 174,
   "counts_by_airline_code": {
     "OS": 20,
@@ -298,14 +298,14 @@
       "airline_code": "BA",
       "airline": "British Airways",
       "airline_row": "British Airways",
-      "aircraft_id": "SUD-CONCORDE",
+      "aircraft_id": "SUD-Concorde",
       "aircraft_type": "Aérospatiale/BAC Concorde",
       "registration": "G-BOAD",
       "manufacturer": "Herpa Wings",
       "aircraft_name": "",
       "livery_note": "",
       "extra_info": "",
-      "wingtip": "",
+      "wingtip": "NONE",
       "has_wingtip": false,
       "livery_name": "",
       "livery_display": "",
