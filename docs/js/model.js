@@ -705,11 +705,29 @@ async function main(){
     }
     
     const photoSource = asText(d.photo_source_url) || asText(d.photo) || "";
-    const photoImg    = asText(d.photo_image_url) || "";
-    const photoCredit = asText(d.photo_credit) || "";
+    let photoImg      = asText(d.photo_image_url) || "";
+    let photoCredit   = asText(d.photo_credit) || "";
+    
+    // --- Fallback: Postkarte als Bild ---
+    let usingPostcard = false;
+    
+    if(!photoImg && Array.isArray(d.postcards) && d.postcards.length){
+      const pc = d.postcards[0];
+    
+      if(pc && pc.thumb_url){
+        photoImg = pc.thumb_url;
+        usingPostcard = true;
+      }
+    
+      if(pc && pc.url && !photoSource){
+        photoSource = pc.url;
+      }
+    }    
     
     const photoHref = photoSource || photoImg;
-    const copyright = photoCopyright(photoCredit, photoSource, photoImg);
+    const copyright = (!usingPostcard && photoCredit)
+      ? photoCopyright(photoCredit, photoSource, photoImg)
+      : "";
     
     const aircraftPhotoHtml = photoImg
       ? `<div class="air-photo">
