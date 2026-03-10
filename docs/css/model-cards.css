@@ -273,3 +273,15 @@
     font-size:13px;
   }
 }
+
+/* ========================================
+   Aircraft family compare table
+   ======================================== */
+
+.famCmpTable th.famParent,
+.famCmpTable td.famParent{
+  width:120px;
+  font-size:11px;
+  color:#888;
+  white-space:nowrap;
+}
