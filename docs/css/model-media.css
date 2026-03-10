@@ -1,0 +1,108 @@
+/* ========================================
+   MODEL MEDIA / IMAGES / LIGHTBOX
+   ======================================== */
+
+.pc-row{
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.pc-thumb{
+  display: block;
+  width: 110px;
+}
+
+.pc-thumb img{
+  width: 110px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.12);
+}
+
+.air-photo{
+  display: inline-block;
+}
+
+.air-thumb{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,0.08);
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.airlineLogo{
+  height:44px;
+  width:auto;
+  max-width: 220px;
+  display:block;
+}
+
+@media (max-width: 520px){
+  .airlineLogo{
+    height:34px;
+    max-width: 140px;
+  }
+}
+
+/* Lightbox */
+body.noscroll{ overflow: hidden; }
+
+.lb{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.lb.on{ display: block; }
+
+.lb-backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.lb-panel{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: min(1100px, 92vw);
+  height: min(86vh, 900px);
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.lb-close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.9);
+  font-size: 26px;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.lb-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #111;
+}
+
+.lb-actions{
+  padding: 10px 14px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  font-size: 14px;
+}
