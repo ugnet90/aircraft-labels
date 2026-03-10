@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-03-10T08:51:26Z",
+  "generated_at": "2026-03-10T09:16:34Z",
   "count_families": 221,
   "families": {
     "AL-60": [
       {
         "aircraft_id": "AER-AL60",
         "type": "Aermacchi AL-60",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.1,
         "wingspan": 14.9,
         "height": 3.4,
@@ -17,6 +19,8 @@
       {
         "aircraft_id": "AEV-Ae145",
         "type": "Aero Vodochody Ae-145",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 9.0,
         "wingspan": 13.6,
         "height": 3.1,
@@ -28,6 +32,8 @@
       {
         "aircraft_id": "AEV-Ae45",
         "type": "Aero Vodochody Ae-45",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 8.6,
         "wingspan": 12.6,
         "height": 3.1,
@@ -39,6 +45,8 @@
       {
         "aircraft_id": "AEV-L29",
         "type": "Aero Vodochody L-29 Delfín",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.81,
         "wingspan": 10.29,
         "height": 3.13,
@@ -50,6 +58,8 @@
       {
         "aircraft_id": "AIB-A220-100",
         "type": "Airbus A220-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.0,
         "wingspan": 35.1,
         "height": 11.5,
@@ -59,6 +69,8 @@
       {
         "aircraft_id": "AIB-A220-300",
         "type": "Airbus A220-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 38.7,
         "wingspan": 35.1,
         "height": 11.5,
@@ -70,6 +82,8 @@
       {
         "aircraft_id": "AIB-A300-B2",
         "type": "Airbus A300 B2",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 53.6,
         "wingspan": 44.8,
         "height": 16.5,
@@ -79,6 +93,8 @@
       {
         "aircraft_id": "AIB-A300-B4",
         "type": "Airbus A300 B4",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 53.6,
         "wingspan": 44.8,
         "height": 16.5,
@@ -88,6 +104,8 @@
       {
         "aircraft_id": "AIB-A300-600",
         "type": "Airbus A300-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.1,
         "wingspan": 44.8,
         "height": 16.5,
@@ -97,6 +115,8 @@
       {
         "aircraft_id": "AIB-A300-600ST",
         "type": "Airbus A300-600ST Beluga",
+        "parent_aircraft_id": "AIB-A300-600",
+        "parent_type": "Airbus A300-600",
         "length": 56.2,
         "wingspan": 44.8,
         "height": 17.2,
@@ -108,6 +128,8 @@
       {
         "aircraft_id": "AIB-A310-304VIP",
         "type": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
+        "parent_aircraft_id": "AIB-A310-300",
+        "parent_type": "Airbus A310-300",
         "length": 46.66,
         "wingspan": 43.9,
         "height": 15.8,
@@ -117,6 +139,8 @@
       {
         "aircraft_id": "AIB-A310-200",
         "type": "Airbus A310-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.7,
         "wingspan": 43.9,
         "height": 15.8,
@@ -126,6 +150,8 @@
       {
         "aircraft_id": "AIB-A310-300",
         "type": "Airbus A310-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.7,
         "wingspan": 43.9,
         "height": 15.8,
@@ -137,6 +163,8 @@
       {
         "aircraft_id": "AIB-A318",
         "type": "Airbus A318",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.44,
         "wingspan": 34.1,
         "height": 12.6,
@@ -146,6 +174,8 @@
       {
         "aircraft_id": "AIB-A318-SL",
         "type": "Airbus A318 (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.44,
         "wingspan": 34.1,
         "height": 12.6,
@@ -157,6 +187,8 @@
       {
         "aircraft_id": "AIB-A319",
         "type": "Airbus A319",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.84,
         "wingspan": 34.1,
         "height": 11.76,
@@ -166,6 +198,8 @@
       {
         "aircraft_id": "AIB-A319-SL",
         "type": "Airbus A319 (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.84,
         "wingspan": 34.1,
         "height": 11.76,
@@ -175,6 +209,8 @@
       {
         "aircraft_id": "AIB-A319LR",
         "type": "Airbus A319LR Long Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.84,
         "wingspan": 34.1,
         "height": 11.76,
@@ -184,6 +220,8 @@
       {
         "aircraft_id": "AIB-A319LR-SL",
         "type": "Airbus A319LR Long Range (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.84,
         "wingspan": 35.8,
         "height": 11.76,
@@ -193,6 +231,8 @@
       {
         "aircraft_id": "AIB-A319-neo",
         "type": "Airbus A319neo",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.84,
         "wingspan": 35.8,
         "height": 11.76,
@@ -204,6 +244,8 @@
       {
         "aircraft_id": "AIB-A320-100",
         "type": "Airbus A320-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.57,
         "wingspan": 34.1,
         "height": 11.76,
@@ -213,6 +255,8 @@
       {
         "aircraft_id": "AIB-A320-200",
         "type": "Airbus A320-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.57,
         "wingspan": 34.1,
         "height": 11.76,
@@ -222,6 +266,8 @@
       {
         "aircraft_id": "AIB-A320-200-SL",
         "type": "Airbus A320-200 (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.57,
         "wingspan": 35.8,
         "height": 11.76,
@@ -231,6 +277,8 @@
       {
         "aircraft_id": "AIB-A320-neo",
         "type": "Airbus A320neo",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.57,
         "wingspan": 35.8,
         "height": 11.76,
@@ -242,6 +290,8 @@
       {
         "aircraft_id": "AIB-A321-LR",
         "type": "Airbus A321 LR",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.51,
         "wingspan": 35.8,
         "height": 11.76,
@@ -251,6 +301,8 @@
       {
         "aircraft_id": "AIB-A321-XLR",
         "type": "Airbus A321 XLR",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.51,
         "wingspan": 35.8,
         "height": 11.76,
@@ -260,6 +312,8 @@
       {
         "aircraft_id": "AIB-A321-100",
         "type": "Airbus A321-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.51,
         "wingspan": 34.1,
         "height": 11.76,
@@ -269,6 +323,8 @@
       {
         "aircraft_id": "AIB-A321-200",
         "type": "Airbus A321-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.51,
         "wingspan": 34.1,
         "height": 11.76,
@@ -278,6 +334,8 @@
       {
         "aircraft_id": "AIB-A321-200-SL",
         "type": "Airbus A321-200 (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.51,
         "wingspan": 35.8,
         "height": 11.76,
@@ -287,6 +345,8 @@
       {
         "aircraft_id": "AIB-A321-neo",
         "type": "Airbus A321neo",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.51,
         "wingspan": 35.8,
         "height": 11.76,
@@ -298,6 +358,8 @@
       {
         "aircraft_id": "AIB-A330-200",
         "type": "Airbus A330-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 58.82,
         "wingspan": 58.0,
         "height": 17.39,
@@ -307,6 +369,8 @@
       {
         "aircraft_id": "AIB-A330-200-SL",
         "type": "Airbus A330-200 (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 58.82,
         "wingspan": 60.3,
         "height": 17.39,
@@ -316,6 +380,8 @@
       {
         "aircraft_id": "AIB-A330-800neo",
         "type": "Airbus A330-800neo",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 58.82,
         "wingspan": 64.0,
         "height": 17.39,
@@ -325,6 +391,8 @@
       {
         "aircraft_id": "AIB-A330-743L",
         "type": "Airbus A330-743L BelugaXL",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.1,
         "wingspan": 60.3,
         "height": 18.9,
@@ -334,6 +402,8 @@
       {
         "aircraft_id": "AIB-A330-300",
         "type": "Airbus A330-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.69,
         "wingspan": 60.3,
         "height": 16.85,
@@ -343,6 +413,8 @@
       {
         "aircraft_id": "AIB-A330-300-SL",
         "type": "Airbus A330-300 (Sharklets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.69,
         "wingspan": 60.3,
         "height": 16.85,
@@ -352,6 +424,8 @@
       {
         "aircraft_id": "AIB-A330-900neo",
         "type": "Airbus A330-900neo",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.69,
         "wingspan": 64.0,
         "height": 16.85,
@@ -363,6 +437,8 @@
       {
         "aircraft_id": "AIB-A340-200",
         "type": "Airbus A340-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 59.39,
         "wingspan": 60.3,
         "height": 16.7,
@@ -372,6 +448,8 @@
       {
         "aircraft_id": "AIB-A340-300",
         "type": "Airbus A340-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.69,
         "wingspan": 60.3,
         "height": 16.7,
@@ -381,6 +459,8 @@
       {
         "aircraft_id": "AIB-A340-500",
         "type": "Airbus A340-500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 67.9,
         "wingspan": 63.45,
         "height": 17.1,
@@ -390,6 +470,8 @@
       {
         "aircraft_id": "AIB-A340-600",
         "type": "Airbus A340-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 75.36,
         "wingspan": 63.45,
         "height": 17.3,
@@ -401,6 +483,8 @@
       {
         "aircraft_id": "AIB-A350-900",
         "type": "Airbus A350-900",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 66.8,
         "wingspan": 64.75,
         "height": 17.05,
@@ -410,6 +494,8 @@
       {
         "aircraft_id": "AIB-ACJ350-900",
         "type": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
+        "parent_aircraft_id": "AIB-A350-900",
+        "parent_type": "Airbus A350-900",
         "length": 66.8,
         "wingspan": 64.75,
         "height": 17.05,
@@ -419,6 +505,8 @@
       {
         "aircraft_id": "AIB-A350-1000",
         "type": "Airbus A350-1000",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 73.79,
         "wingspan": 64.75,
         "height": 17.08,
@@ -430,6 +518,8 @@
       {
         "aircraft_id": "AIB-A380-800",
         "type": "Airbus A380-800",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 72.7,
         "wingspan": 79.75,
         "height": 24.1,
@@ -441,6 +531,8 @@
       {
         "aircraft_id": "AIR-AS57",
         "type": "Airspeed AS57 Ambassador",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 25.5,
         "wingspan": 34.7,
         "height": 7.8,
@@ -452,6 +544,8 @@
       {
         "aircraft_id": "ANT-An124",
         "type": "Antonov An-124 Ruslan",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 68.96,
         "wingspan": 73.3,
         "height": 20.78,
@@ -463,6 +557,8 @@
       {
         "aircraft_id": "ANT-An140",
         "type": "Antonov An-140",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.6,
         "wingspan": 24.5,
         "height": 8.23,
@@ -474,6 +570,8 @@
       {
         "aircraft_id": "ANT-An148",
         "type": "Antonov An-148",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 29.13,
         "wingspan": 28.91,
         "height": 8.4,
@@ -485,6 +583,8 @@
       {
         "aircraft_id": "ANT-An158",
         "type": "Antonov An-158",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 34.36,
         "wingspan": 28.91,
         "height": 9.6,
@@ -496,6 +596,8 @@
       {
         "aircraft_id": "ANT-An2",
         "type": "Antonov An-2",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.4,
         "wingspan": 18.17,
         "height": 4.13,
@@ -507,6 +609,8 @@
       {
         "aircraft_id": "ANT-An225",
         "type": "Antonov An-225 Mriya",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 84.0,
         "wingspan": 88.4,
         "height": 18.1,
@@ -518,6 +622,8 @@
       {
         "aircraft_id": "ANT-An24",
         "type": "Antonov An-24",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 23.53,
         "wingspan": 29.2,
         "height": 8.32,
@@ -529,6 +635,8 @@
       {
         "aircraft_id": "ANT-An26",
         "type": "Antonov An-26",
+        "parent_aircraft_id": "ANT-An24",
+        "parent_type": "Antonov An-24",
         "length": 23.8,
         "wingspan": 29.2,
         "height": 8.58,
@@ -540,6 +648,8 @@
       {
         "aircraft_id": "ANT-An28",
         "type": "Antonov An-28",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.98,
         "wingspan": 22.06,
         "height": 4.6,
@@ -551,6 +661,8 @@
       {
         "aircraft_id": "ANT-AN32",
         "type": "Antonov An-32",
+        "parent_aircraft_id": "ANT-An26",
+        "parent_type": "Antonov An-26",
         "length": 23.78,
         "wingspan": 29.2,
         "height": 8.75,
@@ -562,6 +674,8 @@
       {
         "aircraft_id": "ANT-An72",
         "type": "Antonov An-72",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.07,
         "wingspan": 31.89,
         "height": 8.65,
@@ -573,6 +687,8 @@
       {
         "aircraft_id": "ANT-An74",
         "type": "Antonov An-74",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.07,
         "wingspan": 31.89,
         "height": 8.65,
@@ -584,6 +700,8 @@
       {
         "aircraft_id": "ARW-AW27",
         "type": "Armstrong Whitworth A.W.27 Ensign",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 30.48,
         "wingspan": 38.41,
         "height": 8.23,
@@ -595,6 +713,8 @@
       {
         "aircraft_id": "ASP-377MG",
         "type": "Aero Spacelines Mini Guppy",
+        "parent_aircraft_id": "BOE-377",
+        "parent_type": "Boeing 377 Stratocruiser",
         "length": 43.8,
         "wingspan": 47.6,
         "height": 14.8,
@@ -606,6 +726,8 @@
       {
         "aircraft_id": "ASP-377MGT",
         "type": "Aero Spacelines Mini Guppy Turbine",
+        "parent_aircraft_id": "BOE-377",
+        "parent_type": "Boeing 377 Stratocruiser",
         "length": 43.8,
         "wingspan": 47.6,
         "height": 14.8,
@@ -617,6 +739,8 @@
       {
         "aircraft_id": "ASP-377PG",
         "type": "Aero Spacelines Pregnant Guppy",
+        "parent_aircraft_id": "BOE-377",
+        "parent_type": "Boeing 377 Stratocruiser",
         "length": 43.8,
         "wingspan": 47.6,
         "height": 14.8,
@@ -628,6 +752,8 @@
       {
         "aircraft_id": "ASP-B377SG",
         "type": "Aero Spacelines Super Guppy",
+        "parent_aircraft_id": "BOE-377",
+        "parent_type": "Boeing 377 Stratocruiser",
         "length": 43.8,
         "wingspan": 47.6,
         "height": 14.8,
@@ -639,6 +765,8 @@
       {
         "aircraft_id": "ASP-B377SGT",
         "type": "Aero Spacelines Super Guppy SGT-201",
+        "parent_aircraft_id": "BOE-377",
+        "parent_type": "Boeing 377 Stratocruiser",
         "length": 43.8,
         "wingspan": 47.6,
         "height": 14.8,
@@ -650,6 +778,8 @@
       {
         "aircraft_id": "ATR-ATR42-300",
         "type": "ATR ATR 42-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.67,
         "wingspan": 24.57,
         "height": 7.59,
@@ -659,6 +789,8 @@
       {
         "aircraft_id": "ATR-ATR42-500",
         "type": "ATR ATR 42-500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.67,
         "wingspan": 24.57,
         "height": 7.59,
@@ -668,6 +800,8 @@
       {
         "aircraft_id": "ATR-ATR42-600",
         "type": "ATR ATR 42-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.67,
         "wingspan": 24.57,
         "height": 7.59,
@@ -679,6 +813,8 @@
       {
         "aircraft_id": "ATR-ATR72-200",
         "type": "ATR ATR 72-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.17,
         "wingspan": 27.05,
         "height": 7.65,
@@ -688,6 +824,8 @@
       {
         "aircraft_id": "ATR-ATR72-500",
         "type": "ATR ATR 72-500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.17,
         "wingspan": 27.05,
         "height": 7.65,
@@ -697,6 +835,8 @@
       {
         "aircraft_id": "ATR-ATR72-600",
         "type": "ATR ATR 72-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.17,
         "wingspan": 27.05,
         "height": 7.65,
@@ -708,6 +848,8 @@
       {
         "aircraft_id": "AVI-MA700",
         "type": "AVIC MA700",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 30.5,
         "wingspan": 28.5,
         "height": 8.4,
@@ -719,6 +861,8 @@
       {
         "aircraft_id": "AVR-685",
         "type": "Avro 685 York",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 23.33,
         "wingspan": 33.94,
         "height": 5.33,
@@ -730,6 +874,8 @@
       {
         "aircraft_id": "AVR-688",
         "type": "Avro 688/689 Tudor",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.18,
         "wingspan": 36.58,
         "height": 9.0,
@@ -741,6 +887,8 @@
       {
         "aircraft_id": "AVR-691",
         "type": "Avro 691 Lancastrian",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.18,
         "wingspan": 31.09,
         "height": 6.6,
@@ -752,6 +900,8 @@
       {
         "aircraft_id": "BAC-111-200",
         "type": "BAC 1-11-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.5,
         "wingspan": 26.97,
         "height": 7.47,
@@ -761,6 +911,8 @@
       {
         "aircraft_id": "BAC-111-300",
         "type": "BAC 1-11-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.5,
         "wingspan": 26.97,
         "height": 7.47,
@@ -770,6 +922,8 @@
       {
         "aircraft_id": "BAC-111-400",
         "type": "BAC 1-11-400",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.5,
         "wingspan": 26.97,
         "height": 7.47,
@@ -779,6 +933,8 @@
       {
         "aircraft_id": "BAC-111-500",
         "type": "BAC 1-11-500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.61,
         "wingspan": 28.5,
         "height": 7.47,
@@ -790,6 +946,8 @@
       {
         "aircraft_id": "BAE-146-100",
         "type": "BAe 146-100 / Avro RJ70",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.19,
         "wingspan": 26.34,
         "height": 8.61,
@@ -799,6 +957,8 @@
       {
         "aircraft_id": "BAE-146-200",
         "type": "BAe 146-200 / Avro RJ85",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.55,
         "wingspan": 26.34,
         "height": 8.61,
@@ -808,6 +968,8 @@
       {
         "aircraft_id": "BAE-146-300",
         "type": "BAe 146-300 / Avro RJ100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.01,
         "wingspan": 26.34,
         "height": 8.61,
@@ -819,6 +981,8 @@
       {
         "aircraft_id": "BAE-ATP",
         "type": "British Aerospace ATP",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.0,
         "wingspan": 30.6,
         "height": 8.5,
@@ -830,6 +994,8 @@
       {
         "aircraft_id": "BAE-Jetstream-31",
         "type": "British Aerospace Jetstream 31",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.7,
         "wingspan": 15.8,
         "height": 5.0,
@@ -839,6 +1005,8 @@
       {
         "aircraft_id": "BAE-Jetstream-32",
         "type": "British Aerospace Jetstream 32",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.7,
         "wingspan": 15.8,
         "height": 5.0,
@@ -848,6 +1016,8 @@
       {
         "aircraft_id": "BAE-Jetstream-41",
         "type": "British Aerospace Jetstream 41",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 19.25,
         "wingspan": 18.29,
         "height": 5.74,
@@ -859,6 +1029,8 @@
       {
         "aircraft_id": "BAS-BT67",
         "type": "Basler BT-67",
+        "parent_aircraft_id": "DOU-DC3",
+        "parent_type": "Douglas DC-3",
         "length": 19.83,
         "wingspan": 28.96,
         "height": 5.33,
@@ -870,6 +1042,8 @@
       {
         "aircraft_id": "BEE-1900C",
         "type": "Beechcraft 1900C",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 17.63,
         "wingspan": 17.67,
         "height": 4.52,
@@ -881,6 +1055,8 @@
       {
         "aircraft_id": "BEE-1900D",
         "type": "Beechcraft 1900D",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 17.63,
         "wingspan": 17.67,
         "height": 4.72,
@@ -892,6 +1068,8 @@
       {
         "aircraft_id": "BEE-99",
         "type": "Beechcraft 99",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.67,
         "wingspan": 13.6,
         "height": 4.52,
@@ -903,6 +1081,8 @@
       {
         "aircraft_id": "BER-Be200",
         "type": "Beriev Be-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.05,
         "wingspan": 32.78,
         "height": 8.9,
@@ -914,6 +1094,8 @@
       {
         "aircraft_id": "BER-Be30",
         "type": "Beriev Be-30",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 9.7,
         "wingspan": 15.0,
         "height": 3.3,
@@ -925,6 +1107,8 @@
       {
         "aircraft_id": "BER-Be32",
         "type": "Beriev Be-32",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.84,
         "wingspan": 15.5,
         "height": 4.3,
@@ -936,6 +1120,8 @@
       {
         "aircraft_id": "BOE-247",
         "type": "Boeing 247",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 15.18,
         "wingspan": 22.56,
         "height": 3.96,
@@ -947,6 +1133,8 @@
       {
         "aircraft_id": "BOE-307",
         "type": "Boeing 307 Stratoliner",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.66,
         "wingspan": 32.61,
         "height": 6.2,
@@ -958,6 +1146,8 @@
       {
         "aircraft_id": "BOE-314",
         "type": "Boeing 314",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.36,
         "wingspan": 46.96,
         "height": 9.65,
@@ -969,6 +1159,8 @@
       {
         "aircraft_id": "BOE-377",
         "type": "Boeing 377 Stratocruiser",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.63,
         "wingspan": 43.05,
         "height": 11.71,
@@ -980,6 +1172,8 @@
       {
         "aircraft_id": "BOE-707-138",
         "type": "Boeing 707-138",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.4,
         "wingspan": 39.9,
         "height": 12.93,
@@ -989,6 +1183,8 @@
       {
         "aircraft_id": "BOE-707-120",
         "type": "Boeing 707-120",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.04,
         "wingspan": 39.9,
         "height": 12.93,
@@ -998,6 +1194,8 @@
       {
         "aircraft_id": "BOE-707-220",
         "type": "Boeing 707-220",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 44.22,
         "wingspan": 39.88,
         "height": 12.93,
@@ -1007,6 +1205,8 @@
       {
         "aircraft_id": "BOE-VC137A",
         "type": "Boeing VC-137A Stratoliner",
+        "parent_aircraft_id": "BOE-707-120",
+        "parent_type": "Boeing 707-120",
         "length": 44.22,
         "wingspan": 39.88,
         "height": 12.93,
@@ -1016,6 +1216,8 @@
       {
         "aircraft_id": "BOE-707-320",
         "type": "Boeing 707-320 Intercontinental",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.61,
         "wingspan": 44.42,
         "height": 12.93,
@@ -1025,6 +1227,8 @@
       {
         "aircraft_id": "BOE-707-330C",
         "type": "Boeing 707-330C",
+        "parent_aircraft_id": "BOE-707-320C",
+        "parent_type": "",
         "length": 46.61,
         "wingspan": 44.42,
         "height": 12.93,
@@ -1034,6 +1238,8 @@
       {
         "aircraft_id": "BOE-707-420",
         "type": "Boeing 707-420",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.61,
         "wingspan": 44.42,
         "height": 12.93,
@@ -1043,6 +1249,8 @@
       {
         "aircraft_id": "BOE-VC137B",
         "type": "Boeing VC-137B Stratoliner",
+        "parent_aircraft_id": "BOE-707-320",
+        "parent_type": "Boeing 707-320 Intercontinental",
         "length": 46.61,
         "wingspan": 44.22,
         "height": 12.93,
@@ -1052,6 +1260,8 @@
       {
         "aircraft_id": "BOE-VC137C",
         "type": "Boeing VC-137C Stratoliner",
+        "parent_aircraft_id": "BOE-707-320",
+        "parent_type": "Boeing 707-320 Intercontinental",
         "length": 46.61,
         "wingspan": 44.22,
         "height": 12.93,
@@ -1063,6 +1273,8 @@
       {
         "aircraft_id": "BOE-717",
         "type": "Boeing 717",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.81,
         "wingspan": 28.45,
         "height": 8.92,
@@ -1074,6 +1286,8 @@
       {
         "aircraft_id": "BOE-720",
         "type": "Boeing 720",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 41.6,
         "wingspan": 39.9,
         "height": 12.93,
@@ -1085,6 +1299,8 @@
       {
         "aircraft_id": "BOE-727-100",
         "type": "Boeing 727-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.6,
         "wingspan": 32.9,
         "height": 10.36,
@@ -1094,6 +1310,8 @@
       {
         "aircraft_id": "BOE-727-200",
         "type": "Boeing 727-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.7,
         "wingspan": 32.9,
         "height": 10.36,
@@ -1105,6 +1323,8 @@
       {
         "aircraft_id": "BOE-737-100",
         "type": "Boeing 737-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.65,
         "wingspan": 28.35,
         "height": 11.28,
@@ -1114,6 +1334,8 @@
       {
         "aircraft_id": "BOE-737-200",
         "type": "Boeing 737-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 30.53,
         "wingspan": 28.35,
         "height": 11.28,
@@ -1123,6 +1345,8 @@
       {
         "aircraft_id": "BOE-737-500",
         "type": "Boeing 737-500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.0,
         "wingspan": 28.9,
         "height": 11.1,
@@ -1132,6 +1356,8 @@
       {
         "aircraft_id": "BOE-737-600",
         "type": "Boeing 737-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.2,
         "wingspan": 34.3,
         "height": 12.5,
@@ -1141,6 +1367,8 @@
       {
         "aircraft_id": "BOE-737-600-WL",
         "type": "Boeing 737-600 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.2,
         "wingspan": 35.79,
         "height": 12.5,
@@ -1150,6 +1378,8 @@
       {
         "aircraft_id": "BOE-737-300",
         "type": "Boeing 737-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.4,
         "wingspan": 28.9,
         "height": 11.1,
@@ -1159,6 +1389,8 @@
       {
         "aircraft_id": "BOE-737-700",
         "type": "Boeing 737-700",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.6,
         "wingspan": 34.3,
         "height": 12.5,
@@ -1168,6 +1400,8 @@
       {
         "aircraft_id": "BOE-737-700-WL",
         "type": "Boeing 737-700 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.6,
         "wingspan": 35.79,
         "height": 12.5,
@@ -1177,6 +1411,8 @@
       {
         "aircraft_id": "BOE-C40A",
         "type": "Boeing C-40A Clipper",
+        "parent_aircraft_id": "BOE-737-700",
+        "parent_type": "Boeing 737-700",
         "length": 33.63,
         "wingspan": 34.32,
         "height": 12.55,
@@ -1186,6 +1422,8 @@
       {
         "aircraft_id": "BOE-737-MAX7",
         "type": "Boeing 737 MAX 7",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.6,
         "wingspan": 35.9,
         "height": 12.3,
@@ -1195,6 +1433,8 @@
       {
         "aircraft_id": "BOE-737-400",
         "type": "Boeing 737-400",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.5,
         "wingspan": 28.9,
         "height": 11.1,
@@ -1204,6 +1444,8 @@
       {
         "aircraft_id": "BOE-737-MAX8",
         "type": "Boeing 737 MAX 8",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 39.5,
         "wingspan": 35.9,
         "height": 12.3,
@@ -1213,6 +1455,8 @@
       {
         "aircraft_id": "BOE-737-800",
         "type": "Boeing 737-800",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 39.5,
         "wingspan": 34.3,
         "height": 12.5,
@@ -1222,6 +1466,8 @@
       {
         "aircraft_id": "BOE-737-800-WL",
         "type": "Boeing 737-800 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 39.5,
         "wingspan": 35.79,
         "height": 12.5,
@@ -1231,6 +1477,8 @@
       {
         "aircraft_id": "BOE-737-900",
         "type": "Boeing 737-900",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 42.1,
         "wingspan": 34.3,
         "height": 12.5,
@@ -1240,6 +1488,8 @@
       {
         "aircraft_id": "BOE-737-900-WL",
         "type": "Boeing 737-900 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 42.1,
         "wingspan": 35.79,
         "height": 12.5,
@@ -1249,6 +1499,8 @@
       {
         "aircraft_id": "BOE-737-900ER",
         "type": "Boeing 737-900ER",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 42.1,
         "wingspan": 35.79,
         "height": 12.5,
@@ -1258,6 +1510,8 @@
       {
         "aircraft_id": "BOE-737-MAX9",
         "type": "Boeing 737 MAX 9",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 42.2,
         "wingspan": 35.9,
         "height": 12.3,
@@ -1267,6 +1521,8 @@
       {
         "aircraft_id": "BOE-737-MAX10",
         "type": "Boeing 737 MAX 10",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 43.8,
         "wingspan": 35.9,
         "height": 12.3,
@@ -1278,6 +1534,8 @@
       {
         "aircraft_id": "BOE-747-SP",
         "type": "Boeing 747SP Special Performance",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 56.3,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1287,6 +1545,8 @@
       {
         "aircraft_id": "BOE-747-SCA",
         "type": "Boeing 747 Shuttle Carrier Aircraft",
+        "parent_aircraft_id": "BOE-747-100",
+        "parent_type": "Boeing 747-100",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1296,6 +1556,8 @@
       {
         "aircraft_id": "BOE-747-100",
         "type": "Boeing 747-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1305,6 +1567,8 @@
       {
         "aircraft_id": "BOE-747-123SF",
         "type": "Boeing 747-123 Special Freighter",
+        "parent_aircraft_id": "BOE-747-100",
+        "parent_type": "Boeing 747-100",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1314,6 +1578,8 @@
       {
         "aircraft_id": "BOE-747-200",
         "type": "Boeing 747-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1323,6 +1589,8 @@
       {
         "aircraft_id": "BOE-747-200B",
         "type": "Boeing 747-200B",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1332,6 +1600,8 @@
       {
         "aircraft_id": "BOE-747-200SUD",
         "type": "Boeing 747-200B SUD",
+        "parent_aircraft_id": "BOE-747-200B",
+        "parent_type": "Boeing 747-200B",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1341,6 +1611,8 @@
       {
         "aircraft_id": "BOE-747-200C",
         "type": "Boeing 747-200C",
+        "parent_aircraft_id": "BOE-747-200B",
+        "parent_type": "Boeing 747-200B",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1350,6 +1622,8 @@
       {
         "aircraft_id": "BOE-747-200F",
         "type": "Boeing 747-200F",
+        "parent_aircraft_id": "BOE-747-200B",
+        "parent_type": "Boeing 747-200B",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1359,6 +1633,8 @@
       {
         "aircraft_id": "BOE-747-300",
         "type": "Boeing 747-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1368,6 +1644,8 @@
       {
         "aircraft_id": "BOE-747-400",
         "type": "Boeing 747-400",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 64.44,
         "height": 19.41,
@@ -1377,6 +1655,8 @@
       {
         "aircraft_id": "BOE-747-400-VO",
         "type": "Boeing 747-400 LauncherOne Carrier Aircraft",
+        "parent_aircraft_id": "BOE-747-400",
+        "parent_type": "Boeing 747-400",
         "length": 70.66,
         "wingspan": 64.44,
         "height": 19.41,
@@ -1386,6 +1666,8 @@
       {
         "aircraft_id": "BOE-747-400D",
         "type": "Boeing 747-400D Domestic",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1395,6 +1677,8 @@
       {
         "aircraft_id": "BOE-747-SR",
         "type": "Boeing 747SR Short Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 70.66,
         "wingspan": 59.64,
         "height": 19.3,
@@ -1404,6 +1688,8 @@
       {
         "aircraft_id": "BOE-747-VC25A",
         "type": "Boeing VC-25A (Air Force One)",
+        "parent_aircraft_id": "BOE-747-200B",
+        "parent_type": "Boeing 747-200B",
         "length": 70.66,
         "wingspan": 64.4,
         "height": 19.3,
@@ -1413,6 +1699,8 @@
       {
         "aircraft_id": "BOE-YAL1",
         "type": "Boeing YAL-1 Airborne Laser",
+        "parent_aircraft_id": "BOE-747-400",
+        "parent_type": "Boeing 747-400",
         "length": 70.66,
         "wingspan": 64.44,
         "height": 19.41,
@@ -1422,6 +1710,8 @@
       {
         "aircraft_id": "BOE-747-400LCF",
         "type": "Boeing 747-400LCF Dreamlifter",
+        "parent_aircraft_id": "BOE-747-400",
+        "parent_type": "Boeing 747-400",
         "length": 71.68,
         "wingspan": 64.44,
         "height": 21.54,
@@ -1431,6 +1721,8 @@
       {
         "aircraft_id": "BOE-747-VC25B",
         "type": "Boeing VC-25B (Air Force One, 747-8I)",
+        "parent_aircraft_id": "BOE-747-8",
+        "parent_type": "Boeing 747-8 Intercontinental",
         "length": 76.25,
         "wingspan": 68.45,
         "height": 19.36,
@@ -1440,6 +1732,8 @@
       {
         "aircraft_id": "BOE-747-8",
         "type": "Boeing 747-8 Intercontinental",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 76.3,
         "wingspan": 68.4,
         "height": 19.4,
@@ -1451,6 +1745,8 @@
       {
         "aircraft_id": "BOE-E4B",
         "type": "Boeing E-4B",
+        "parent_aircraft_id": "BOE-747-200B",
+        "parent_type": "Boeing 747-200B",
         "length": 70.51,
         "wingspan": 59.64,
         "height": 19.33,
@@ -1462,6 +1758,8 @@
       {
         "aircraft_id": "BOE-757-200",
         "type": "Boeing 757-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 47.32,
         "wingspan": 38.05,
         "height": 13.56,
@@ -1471,6 +1769,8 @@
       {
         "aircraft_id": "BOE-757-200-WL",
         "type": "Boeing 757-200 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 47.32,
         "wingspan": 38.05,
         "height": 13.56,
@@ -1480,6 +1780,8 @@
       {
         "aircraft_id": "BOE-C32A",
         "type": "Boeing C-32A (Air Force Two)",
+        "parent_aircraft_id": "BOE-757-200",
+        "parent_type": "Boeing 757-200",
         "length": 47.32,
         "wingspan": 38.05,
         "height": 13.56,
@@ -1489,6 +1791,8 @@
       {
         "aircraft_id": "BOE-757-300",
         "type": "Boeing 757-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.43,
         "wingspan": 38.05,
         "height": 13.56,
@@ -1498,6 +1802,8 @@
       {
         "aircraft_id": "BOE-757-300-WL",
         "type": "Boeing 757-300 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.43,
         "wingspan": 41.1,
         "height": 13.56,
@@ -1509,6 +1815,8 @@
       {
         "aircraft_id": "BOE-767-200",
         "type": "Boeing 767-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.51,
         "wingspan": 47.57,
         "height": 15.85,
@@ -1518,6 +1826,8 @@
       {
         "aircraft_id": "BOE-767-200-WL",
         "type": "Boeing 767-200 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.51,
         "wingspan": 47.57,
         "height": 15.85,
@@ -1527,6 +1837,8 @@
       {
         "aircraft_id": "BOE-767-AOA",
         "type": "Boeing 767-200 Airborne Optical Adjunct",
+        "parent_aircraft_id": "BOE-767-200",
+        "parent_type": "Boeing 767-200",
         "length": 48.51,
         "wingspan": 47.57,
         "height": 15.85,
@@ -1536,6 +1848,8 @@
       {
         "aircraft_id": "BOE-767-200ER",
         "type": "Boeing 767-200ER Extended Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.51,
         "wingspan": 47.57,
         "height": 15.85,
@@ -1545,6 +1859,8 @@
       {
         "aircraft_id": "BOE-767-300",
         "type": "Boeing 767-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.94,
         "wingspan": 47.57,
         "height": 15.85,
@@ -1554,6 +1870,8 @@
       {
         "aircraft_id": "BOE-767-300-WL",
         "type": "Boeing 767-300 (Winglets)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.94,
         "wingspan": 52.05,
         "height": 15.85,
@@ -1563,6 +1881,8 @@
       {
         "aircraft_id": "BOE-767-300BCF-WL",
         "type": "Boeing 767-300BCF (Winglets)",
+        "parent_aircraft_id": "BOE-767-300",
+        "parent_type": "Boeing 767-300",
         "length": 54.94,
         "wingspan": 52.05,
         "height": 15.85,
@@ -1572,6 +1892,8 @@
       {
         "aircraft_id": "BOE-767-300ER-WL",
         "type": "Boeing 767-300ER (Winglets)",
+        "parent_aircraft_id": "BOE-767-300ER",
+        "parent_type": "Boeing 767-300ER Extended Range",
         "length": 54.94,
         "wingspan": 52.05,
         "height": 15.85,
@@ -1581,6 +1903,8 @@
       {
         "aircraft_id": "BOE-767-300ER",
         "type": "Boeing 767-300ER Extended Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.94,
         "wingspan": 47.57,
         "height": 15.85,
@@ -1590,6 +1914,8 @@
       {
         "aircraft_id": "BOE-767-400ER",
         "type": "Boeing 767-400ER Extended Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 61.37,
         "wingspan": 51.92,
         "height": 16.8,
@@ -1601,6 +1927,8 @@
       {
         "aircraft_id": "BOE-777-200",
         "type": "Boeing 777-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.7,
         "wingspan": 60.9,
         "height": 18.5,
@@ -1610,6 +1938,8 @@
       {
         "aircraft_id": "BOE-777-200ER",
         "type": "Boeing 777-200ER Extended Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.7,
         "wingspan": 60.9,
         "height": 18.5,
@@ -1619,6 +1949,8 @@
       {
         "aircraft_id": "BOE-777-200LR",
         "type": "Boeing 777-200LR Longer Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 63.7,
         "wingspan": 64.8,
         "height": 18.5,
@@ -1628,6 +1960,8 @@
       {
         "aircraft_id": "BOE-777-F",
         "type": "Boeing 777F",
+        "parent_aircraft_id": "BOE-777-200LR",
+        "parent_type": "Boeing 777-200LR Longer Range",
         "length": 63.73,
         "wingspan": 64.8,
         "height": 18.6,
@@ -1637,6 +1971,8 @@
       {
         "aircraft_id": "BOE-777-8",
         "type": "Boeing 777-8",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 69.8,
         "wingspan": 71.8,
         "height": 19.7,
@@ -1646,6 +1982,8 @@
       {
         "aircraft_id": "BOE-777-300",
         "type": "Boeing 777-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 73.9,
         "wingspan": 60.9,
         "height": 18.5,
@@ -1655,6 +1993,8 @@
       {
         "aircraft_id": "BOE-777-300ER",
         "type": "Boeing 777-300ER Extended Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 73.9,
         "wingspan": 64.8,
         "height": 18.5,
@@ -1664,6 +2004,8 @@
       {
         "aircraft_id": "BOE-777-9",
         "type": "Boeing 777-9",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 76.7,
         "wingspan": 71.8,
         "height": 19.7,
@@ -1675,6 +2017,8 @@
       {
         "aircraft_id": "BOE-787-8",
         "type": "Boeing 787-8 Dreamliner",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 56.7,
         "wingspan": 60.1,
         "height": 17.0,
@@ -1684,6 +2028,8 @@
       {
         "aircraft_id": "BOE-787-9",
         "type": "Boeing 787-9 Dreamliner",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 62.8,
         "wingspan": 60.1,
         "height": 17.0,
@@ -1693,6 +2039,8 @@
       {
         "aircraft_id": "BOE-787-10",
         "type": "Boeing 787-10 Dreamliner",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 68.3,
         "wingspan": 60.1,
         "height": 17.0,
@@ -1704,6 +2052,8 @@
       {
         "aircraft_id": "BOM-CRJ100",
         "type": "Bombardier CRJ-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.77,
         "wingspan": 21.21,
         "height": 6.22,
@@ -1715,6 +2065,8 @@
       {
         "aircraft_id": "BOM-CRJ200",
         "type": "Bombardier CRJ-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.77,
         "wingspan": 21.21,
         "height": 6.22,
@@ -1726,6 +2078,8 @@
       {
         "aircraft_id": "BOM-CRJ700",
         "type": "Bombardier CRJ-700",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.51,
         "wingspan": 23.24,
         "height": 7.57,
@@ -1737,6 +2091,8 @@
       {
         "aircraft_id": "BOM-CRJ900",
         "type": "Bombardier CRJ-900",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.4,
         "wingspan": 24.85,
         "height": 7.57,
@@ -1748,6 +2104,8 @@
       {
         "aircraft_id": "BOM-CRJ1000",
         "type": "Bombardier CRJ-1000",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 39.1,
         "wingspan": 28.7,
         "height": 7.13,
@@ -1759,6 +2117,8 @@
       {
         "aircraft_id": "BRI-Britannia-310",
         "type": "Bristol Britannia 310",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.87,
         "wingspan": 43.36,
         "height": 11.43,
@@ -1768,6 +2128,8 @@
       {
         "aircraft_id": "BRI-Britannia-312",
         "type": "Bristol Britannia 312",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.87,
         "wingspan": 43.36,
         "height": 11.43,
@@ -1779,6 +2141,8 @@
       {
         "aircraft_id": "BRN-BN2",
         "type": "Britten-Norman BN-2",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.9,
         "wingspan": 14.94,
         "height": 4.17,
@@ -1790,6 +2154,8 @@
       {
         "aircraft_id": "BRN-BN2A",
         "type": "Britten-Norman BN-2A",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.9,
         "wingspan": 14.94,
         "height": 4.17,
@@ -1801,6 +2167,8 @@
       {
         "aircraft_id": "BUR-OK1K1",
         "type": "Buran Space Orbiter OK-1K1",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.37,
         "wingspan": 23.92,
         "height": 16.35,
@@ -1812,6 +2180,8 @@
       {
         "aircraft_id": "CAA-C295-Pax",
         "type": "CASA/Airbus C-295 Pax",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.5,
         "wingspan": 25.81,
         "height": 8.6,
@@ -1823,6 +2193,8 @@
       {
         "aircraft_id": "CAN-C4",
         "type": "Canadair North Star C-4",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.96,
         "wingspan": 43.05,
         "height": 7.57,
@@ -1834,6 +2206,8 @@
       {
         "aircraft_id": "CAN-CL44",
         "type": "Canadair CL-44",
+        "parent_aircraft_id": "BRI-Britannia-312",
+        "parent_type": "Bristol Britannia 312",
         "length": 36.6,
         "wingspan": 42.54,
         "height": 11.1,
@@ -1845,6 +2219,8 @@
       {
         "aircraft_id": "CAS-C212",
         "type": "CASA C-212",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 16.47,
         "wingspan": 20.28,
         "height": 6.1,
@@ -1856,6 +2232,8 @@
       {
         "aircraft_id": "CAS-CN235",
         "type": "CASA CN-235",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.4,
         "wingspan": 25.81,
         "height": 8.18,
@@ -1867,6 +2245,8 @@
       {
         "aircraft_id": "CES-208",
         "type": "Cessna 208",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.28,
         "wingspan": 15.88,
         "height": 4.32,
@@ -1878,6 +2258,8 @@
       {
         "aircraft_id": "CES-402",
         "type": "Cessna 402",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.97,
         "wingspan": 11.0,
         "height": 3.46,
@@ -1889,6 +2271,8 @@
       {
         "aircraft_id": "CES-404",
         "type": "Martin 4-0-4",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 20.5,
         "wingspan": 28.5,
         "height": 6.1,
@@ -1900,6 +2284,8 @@
       {
         "aircraft_id": "CES-441",
         "type": "Cessna 441",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.78,
         "wingspan": 15.86,
         "height": 3.76,
@@ -1911,6 +2297,8 @@
       {
         "aircraft_id": "COM-ARJ21-700",
         "type": "Comac ARJ21-700 ARJ21",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.4,
         "wingspan": 27.3,
         "height": 8.44,
@@ -1922,6 +2310,8 @@
       {
         "aircraft_id": "COM-C919-100",
         "type": "Comac C919-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 38.9,
         "wingspan": 35.8,
         "height": 11.95,
@@ -1933,6 +2323,8 @@
       {
         "aircraft_id": "CON-CV240",
         "type": "Convair CV-240",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.66,
         "wingspan": 28.96,
         "height": 7.0,
@@ -1944,6 +2336,8 @@
       {
         "aircraft_id": "CON-CV340",
         "type": "Convair CV-340",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.85,
         "wingspan": 32.0,
         "height": 8.25,
@@ -1955,6 +2349,8 @@
       {
         "aircraft_id": "CON-CV440",
         "type": "Convair CV-440",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.85,
         "wingspan": 32.0,
         "height": 8.25,
@@ -1966,6 +2362,8 @@
       {
         "aircraft_id": "CON-CV580",
         "type": "Convair CV-580",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.85,
         "wingspan": 32.0,
         "height": 8.25,
@@ -1977,6 +2375,8 @@
       {
         "aircraft_id": "CON-CV600",
         "type": "Convair CV-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.85,
         "wingspan": 32.0,
         "height": 8.25,
@@ -1988,6 +2388,8 @@
       {
         "aircraft_id": "CON-CV640",
         "type": "Convair CV-640",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.85,
         "wingspan": 32.0,
         "height": 8.25,
@@ -1999,6 +2401,8 @@
       {
         "aircraft_id": "CON-CV880",
         "type": "Convair CV-880 Golden Arrow",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 39.42,
         "wingspan": 35.8,
         "height": 11.0,
@@ -2010,6 +2414,8 @@
       {
         "aircraft_id": "CON-CV990",
         "type": "Convair CV-990 Coronado",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 42.36,
         "wingspan": 36.58,
         "height": 11.68,
@@ -2021,6 +2427,8 @@
       {
         "aircraft_id": "CSA-PBY5",
         "type": "Consolidated PBY-5 Catalina",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 19.46,
         "wingspan": 31.7,
         "height": 6.15,
@@ -2032,6 +2440,8 @@
       {
         "aircraft_id": "CUR-C46",
         "type": "Curtiss-Wright C-46 Commando",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 23.27,
         "wingspan": 32.92,
         "height": 6.29,
@@ -2043,6 +2453,8 @@
       {
         "aircraft_id": "DAS-Mercure-100",
         "type": "Dassault Mercure 100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 34.84,
         "wingspan": 30.55,
         "height": 11.44,
@@ -2054,6 +2466,8 @@
       {
         "aircraft_id": "DHC-DHC3",
         "type": "de Havilland Canada DHC-3 Otter",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.65,
         "wingspan": 16.65,
         "height": 3.02,
@@ -2065,6 +2479,8 @@
       {
         "aircraft_id": "DHC-DHC6",
         "type": "de Havilland Canada DHC-6 Twin Otter",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 15.77,
         "wingspan": 19.8,
         "height": 5.94,
@@ -2076,6 +2492,8 @@
       {
         "aircraft_id": "DHC-DHC7",
         "type": "de Havilland Canada DHC-7 Dash 7",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.58,
         "wingspan": 28.35,
         "height": 8.36,
@@ -2087,6 +2505,8 @@
       {
         "aircraft_id": "DHC-DHC8-100",
         "type": "de Havilland Canada DHC-8-100 Dash 8-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.25,
         "wingspan": 25.91,
         "height": 7.49,
@@ -2096,6 +2516,8 @@
       {
         "aircraft_id": "DHC-DHC8-200",
         "type": "de Havilland Canada DHC-8-200 Dash 8-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 22.25,
         "wingspan": 25.91,
         "height": 7.49,
@@ -2105,6 +2527,8 @@
       {
         "aircraft_id": "DHC-DHC8-300",
         "type": "de Havilland Canada DHC-8-300 Dash 8-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 25.68,
         "wingspan": 27.4,
         "height": 7.49,
@@ -2114,6 +2538,8 @@
       {
         "aircraft_id": "DHC-DHC8-400",
         "type": "de Havilland Canada DHC-8-400 Dash 8-400 (Q400)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.8,
         "wingspan": 28.4,
         "height": 8.3,
@@ -2125,6 +2551,8 @@
       {
         "aircraft_id": "DHV-DH106-1",
         "type": "de Havilland DH.106 Comet 1",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.6,
         "wingspan": 35.05,
         "height": 8.0,
@@ -2134,6 +2562,8 @@
       {
         "aircraft_id": "DHV-DH106-4",
         "type": "de Havilland DH.106 Comet 4",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 34.98,
         "wingspan": 35.05,
         "height": 8.0,
@@ -2145,6 +2575,8 @@
       {
         "aircraft_id": "DHV-DH91",
         "type": "de Havilland DH.91 Albatross",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 23.24,
         "wingspan": 32.92,
         "height": 6.17,
@@ -2156,6 +2588,8 @@
       {
         "aircraft_id": "DHV-DH95",
         "type": "de Havilland DH.95 Flamingo",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 15.24,
         "wingspan": 20.73,
         "height": 5.16,
@@ -2167,6 +2601,8 @@
       {
         "aircraft_id": "DOR-Do228",
         "type": "Dornier Do 228",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 16.56,
         "wingspan": 16.97,
         "height": 4.86,
@@ -2178,6 +2614,8 @@
       {
         "aircraft_id": "DOR-Do328-100",
         "type": "Dornier Do 328-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.23,
         "wingspan": 21.0,
         "height": 7.23,
@@ -2187,6 +2625,8 @@
       {
         "aircraft_id": "DOR-Do328-300",
         "type": "Dornier Do 328-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.23,
         "wingspan": 20.98,
         "height": 7.24,
@@ -2198,6 +2638,8 @@
       {
         "aircraft_id": "DOR-DOX",
         "type": "Dornier Do X",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.05,
         "wingspan": 48.0,
         "height": 10.2,
@@ -2209,6 +2651,8 @@
       {
         "aircraft_id": "DOU-DC2",
         "type": "Douglas DC-2",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 18.2,
         "wingspan": 25.9,
         "height": 4.5,
@@ -2220,6 +2664,8 @@
       {
         "aircraft_id": "DOU-C47",
         "type": "Douglas C-47 Skytrain",
+        "parent_aircraft_id": "DOU-DC3",
+        "parent_type": "Douglas DC-3",
         "length": 19.6,
         "wingspan": 28.96,
         "height": 5.16,
@@ -2229,6 +2675,8 @@
       {
         "aircraft_id": "DOU-DC3",
         "type": "Douglas DC-3",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 19.7,
         "wingspan": 28.96,
         "height": 5.16,
@@ -2240,6 +2688,8 @@
       {
         "aircraft_id": "DOU-DC4",
         "type": "Douglas DC-4",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.6,
         "wingspan": 42.05,
         "height": 8.38,
@@ -2251,6 +2701,8 @@
       {
         "aircraft_id": "DOU-DC5",
         "type": "Douglas DC-5",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 16.05,
         "wingspan": 23.8,
         "height": 4.83,
@@ -2262,6 +2714,8 @@
       {
         "aircraft_id": "DOU-VC118A",
         "type": "Douglas VC-118A (Independence, Air Force One)",
+        "parent_aircraft_id": "DOU-DC6",
+        "parent_type": "Douglas DC-6",
         "length": 30.18,
         "wingspan": 35.81,
         "height": 8.9,
@@ -2271,6 +2725,8 @@
       {
         "aircraft_id": "DOU-DC6",
         "type": "Douglas DC-6",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.2,
         "wingspan": 35.8,
         "height": 8.66,
@@ -2280,6 +2736,8 @@
       {
         "aircraft_id": "DOU-DC6-A",
         "type": "Douglas DC-6A",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.2,
         "wingspan": 35.8,
         "height": 8.66,
@@ -2289,6 +2747,8 @@
       {
         "aircraft_id": "DOU-DC6-B",
         "type": "Douglas DC-6B",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.2,
         "wingspan": 35.8,
         "height": 8.66,
@@ -2300,6 +2760,8 @@
       {
         "aircraft_id": "DOU-DC7",
         "type": "Douglas DC-7",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.2,
         "wingspan": 38.8,
         "height": 9.6,
@@ -2309,6 +2771,8 @@
       {
         "aircraft_id": "DOU-DC7-B",
         "type": "Douglas DC-7B",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 33.6,
         "wingspan": 38.8,
         "height": 9.6,
@@ -2318,6 +2782,8 @@
       {
         "aircraft_id": "DOU-DC7-C",
         "type": "Douglas DC-7C Seven Seas",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 34.9,
         "wingspan": 38.8,
         "height": 9.6,
@@ -2329,6 +2795,8 @@
       {
         "aircraft_id": "DOU-DC8-10",
         "type": "Douglas DC-8-10 Series 10",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.9,
         "wingspan": 43.4,
         "height": 12.9,
@@ -2338,6 +2806,8 @@
       {
         "aircraft_id": "DOU-DC8-20",
         "type": "Douglas DC-8-20 Series 20",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.9,
         "wingspan": 43.4,
         "height": 12.9,
@@ -2347,6 +2817,8 @@
       {
         "aircraft_id": "DOU-DC8-30",
         "type": "Douglas DC-8-30 Series 30",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.9,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2356,6 +2828,8 @@
       {
         "aircraft_id": "DOU-DC8-40",
         "type": "Douglas DC-8-40 Series 40",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.9,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2365,6 +2839,8 @@
       {
         "aircraft_id": "DOU-DC8-50",
         "type": "Douglas DC-8-50 Series 50",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.9,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2374,6 +2850,8 @@
       {
         "aircraft_id": "DOU-DC8-62",
         "type": "Douglas DC-8-62 Super 62",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.0,
         "wingspan": 48.0,
         "height": 12.9,
@@ -2383,6 +2861,8 @@
       {
         "aircraft_id": "DOU-DC8-72",
         "type": "Douglas DC-8-72 Super 72",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.0,
         "wingspan": 48.0,
         "height": 12.9,
@@ -2392,6 +2872,8 @@
       {
         "aircraft_id": "DOU-DC8-61",
         "type": "Douglas DC-8-61 Super 61",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 57.0,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2401,6 +2883,8 @@
       {
         "aircraft_id": "DOU-DC8-63",
         "type": "Douglas DC-8-63 Super 63",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 57.0,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2410,6 +2894,8 @@
       {
         "aircraft_id": "DOU-DC8-71",
         "type": "Douglas DC-8-71 Super 71",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 57.0,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2419,6 +2905,8 @@
       {
         "aircraft_id": "DOU-DC8-73",
         "type": "Douglas DC-8-73 Super 73",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 57.0,
         "wingspan": 45.0,
         "height": 12.9,
@@ -2430,6 +2918,8 @@
       {
         "aircraft_id": "EMB-EMB110",
         "type": "Embraer EMB-110 Bandeirante",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 15.1,
         "wingspan": 15.6,
         "height": 4.9,
@@ -2441,6 +2931,8 @@
       {
         "aircraft_id": "EMB-EMB120",
         "type": "Embraer EMB-120 Brasilia",
+        "parent_aircraft_id": "EMB-EMB110",
+        "parent_type": "Embraer EMB-110 Bandeirante",
         "length": 20.0,
         "wingspan": 19.8,
         "height": 6.3,
@@ -2452,6 +2944,8 @@
       {
         "aircraft_id": "EMB-EMB121",
         "type": "Embraer EMB-121 Xingu",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.27,
         "wingspan": 12.0,
         "height": 3.8,
@@ -2463,6 +2957,8 @@
       {
         "aircraft_id": "EMB-ERJ135",
         "type": "Embraer ERJ-135",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.33,
         "wingspan": 20.04,
         "height": 6.75,
@@ -2474,6 +2970,8 @@
       {
         "aircraft_id": "EMB-ERJ140",
         "type": "Embraer ERJ-140",
+        "parent_aircraft_id": "EMB-ERJ135",
+        "parent_type": "Embraer ERJ-135",
         "length": 28.45,
         "wingspan": 20.04,
         "height": 6.75,
@@ -2485,6 +2983,8 @@
       {
         "aircraft_id": "EMB-ERJ145",
         "type": "Embraer ERJ-145",
+        "parent_aircraft_id": "EMB-ERJ140",
+        "parent_type": "Embraer ERJ-140",
         "length": 29.87,
         "wingspan": 20.04,
         "height": 6.75,
@@ -2496,6 +2996,8 @@
       {
         "aircraft_id": "EMB-E170",
         "type": "Embraer E170",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 29.9,
         "wingspan": 26.0,
         "height": 9.73,
@@ -2505,6 +3007,8 @@
       {
         "aircraft_id": "EMB-E170-WL",
         "type": "Embraer E170 (Winglets)",
+        "parent_aircraft_id": "EMB-E170",
+        "parent_type": "Embraer E170",
         "length": 29.9,
         "wingspan": 26.0,
         "height": 9.73,
@@ -2516,6 +3020,8 @@
       {
         "aircraft_id": "EMB-E175",
         "type": "Embraer E175",
+        "parent_aircraft_id": "EMB-E170",
+        "parent_type": "Embraer E170",
         "length": 31.68,
         "wingspan": 26.0,
         "height": 9.73,
@@ -2527,6 +3033,8 @@
       {
         "aircraft_id": "EMB-E175E2",
         "type": "Embraer E175-E2",
+        "parent_aircraft_id": "EMB-E175",
+        "parent_type": "Embraer E175",
         "length": 32.4,
         "wingspan": 30.0,
         "height": 10.9,
@@ -2538,6 +3046,8 @@
       {
         "aircraft_id": "EMB-E190",
         "type": "Embraer E190",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.24,
         "wingspan": 28.72,
         "height": 10.55,
@@ -2549,6 +3059,8 @@
       {
         "aircraft_id": "EMB-E190E2",
         "type": "Embraer E190-E2",
+        "parent_aircraft_id": "EMB-E190",
+        "parent_type": "Embraer E190",
         "length": 36.24,
         "wingspan": 33.7,
         "height": 11.0,
@@ -2560,6 +3072,8 @@
       {
         "aircraft_id": "EMB-E195",
         "type": "Embraer E195",
+        "parent_aircraft_id": "EMB-E190",
+        "parent_type": "Embraer E190",
         "length": 38.65,
         "wingspan": 28.72,
         "height": 10.55,
@@ -2571,6 +3085,8 @@
       {
         "aircraft_id": "EMB-E195E2",
         "type": "Embraer E195-E2",
+        "parent_aircraft_id": "EMB-E195",
+        "parent_type": "Embraer E195",
         "length": 41.5,
         "wingspan": 35.1,
         "height": 11.5,
@@ -2582,6 +3098,8 @@
       {
         "aircraft_id": "FAI-SA226",
         "type": "Fairchild Swearingen Metro",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 18.08,
         "wingspan": 14.2,
         "height": 4.7,
@@ -2593,6 +3111,8 @@
       {
         "aircraft_id": "FOK-F",
         "type": "Fokker F",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.5,
         "wingspan": 14.7,
         "height": 3.2,
@@ -2604,6 +3124,8 @@
       {
         "aircraft_id": "FOK-F100",
         "type": "Fokker F100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.53,
         "wingspan": 28.08,
         "height": 8.5,
@@ -2615,6 +3137,8 @@
       {
         "aircraft_id": "FOK-F27",
         "type": "Fokker F27",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 23.5,
         "wingspan": 29.0,
         "height": 8.0,
@@ -2626,6 +3150,8 @@
       {
         "aircraft_id": "FOK-F28",
         "type": "Fokker F28",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.4,
         "wingspan": 25.0,
         "height": 8.5,
@@ -2637,6 +3163,8 @@
       {
         "aircraft_id": "FOK-F50",
         "type": "Fokker F50",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 25.25,
         "wingspan": 29.0,
         "height": 7.9,
@@ -2648,6 +3176,8 @@
       {
         "aircraft_id": "FOK-F70",
         "type": "Fokker F70",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 30.9,
         "wingspan": 28.0,
         "height": 8.5,
@@ -2659,6 +3189,8 @@
       {
         "aircraft_id": "FOR-Trimotor-4AT",
         "type": "Ford Trimotor 4-AT",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 15.2,
         "wingspan": 22.5,
         "height": 3.7,
@@ -2668,6 +3200,8 @@
       {
         "aircraft_id": "FOR-Trimotor-5AT",
         "type": "Ford Trimotor 5-AT",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 16.1,
         "wingspan": 23.7,
         "height": 3.8,
@@ -2679,6 +3213,8 @@
       {
         "aircraft_id": "FOW-FW200",
         "type": "Focke-Wulf Fw 200 Condor",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 23.45,
         "wingspan": 32.85,
         "height": 6.3,
@@ -2690,6 +3226,8 @@
       {
         "aircraft_id": "HAR-Y11",
         "type": "Harbin Y-11",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.0,
         "wingspan": 16.0,
         "height": 4.2,
@@ -2701,6 +3239,8 @@
       {
         "aircraft_id": "HAR-Y12",
         "type": "Harbin Y-12",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.86,
         "wingspan": 19.2,
         "height": 5.6,
@@ -2712,6 +3252,8 @@
       {
         "aircraft_id": "HAW-HS748",
         "type": "Hawker Siddeley HS 748",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 20.42,
         "wingspan": 30.18,
         "height": 7.57,
@@ -2723,6 +3265,8 @@
       {
         "aircraft_id": "HAW-Trident-1",
         "type": "Hawker Siddeley Trident 1",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.0,
         "wingspan": 27.0,
         "height": 8.6,
@@ -2732,6 +3276,8 @@
       {
         "aircraft_id": "HAW-Trident-2",
         "type": "Hawker Siddeley Trident 2",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.6,
         "wingspan": 27.0,
         "height": 8.6,
@@ -2741,6 +3287,8 @@
       {
         "aircraft_id": "HAW-Trident-3",
         "type": "Hawker Siddeley Trident 3",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.0,
         "wingspan": 28.5,
         "height": 9.1,
@@ -2752,6 +3300,8 @@
       {
         "aircraft_id": "HPR-HP81",
         "type": "Handley Page H.P.81 Hermes IV",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.82,
         "wingspan": 35.05,
         "height": 7.47,
@@ -2763,6 +3313,8 @@
       {
         "aircraft_id": "HPR-HPR7",
         "type": "Handley Page HPR.7 Herald",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.92,
         "wingspan": 28.96,
         "height": 8.23,
@@ -2774,6 +3326,8 @@
       {
         "aircraft_id": "ILY-Il114",
         "type": "Ilyushin Il-114",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.9,
         "wingspan": 30.0,
         "height": 8.9,
@@ -2785,6 +3339,8 @@
       {
         "aircraft_id": "ILY-Il12",
         "type": "Ilyushin Il-12",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 19.7,
         "wingspan": 31.7,
         "height": 6.3,
@@ -2796,6 +3352,8 @@
       {
         "aircraft_id": "ILY-Il14",
         "type": "Ilyushin Il-14",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.25,
         "wingspan": 31.7,
         "height": 6.9,
@@ -2807,6 +3365,8 @@
       {
         "aircraft_id": "ILY-Il18",
         "type": "Ilyushin Il-18",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.9,
         "wingspan": 37.4,
         "height": 10.2,
@@ -2818,6 +3378,8 @@
       {
         "aircraft_id": "ILY-Il62",
         "type": "Ilyushin Il-62",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 53.12,
         "wingspan": 43.2,
         "height": 12.35,
@@ -2829,6 +3391,8 @@
       {
         "aircraft_id": "ILY-Il86",
         "type": "Ilyushin Il-86",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 59.54,
         "wingspan": 48.06,
         "height": 15.81,
@@ -2840,6 +3404,8 @@
       {
         "aircraft_id": "ILY-Il96-300",
         "type": "Ilyushin Il-96-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 55.3,
         "wingspan": 60.1,
         "height": 17.6,
@@ -2851,6 +3417,8 @@
       {
         "aircraft_id": "IRK-MC21-300",
         "type": "Irkut MC-21-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 42.2,
         "wingspan": 35.9,
         "height": 11.5,
@@ -2862,6 +3430,8 @@
       {
         "aircraft_id": "JUN-JU52-3M",
         "type": "Junkers Ju 3m Tante Ju",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 18.9,
         "wingspan": 29.25,
         "height": 4.5,
@@ -2873,6 +3443,8 @@
       {
         "aircraft_id": "LET-L410",
         "type": "Let L-410 Turbolet",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.42,
         "wingspan": 19.48,
         "height": 5.83,
@@ -2884,6 +3456,8 @@
       {
         "aircraft_id": "LET-L610",
         "type": "Let L-610",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.32,
         "wingspan": 28.0,
         "height": 7.98,
@@ -2895,6 +3469,8 @@
       {
         "aircraft_id": "LOC-C5A",
         "type": "Lockheed C-5A Galaxy",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 75.53,
         "wingspan": 67.89,
         "height": 19.84,
@@ -2904,6 +3480,8 @@
       {
         "aircraft_id": "LOC-C5B",
         "type": "Lockheed C-5B Galaxy",
+        "parent_aircraft_id": "LOC-C5A",
+        "parent_type": "Lockheed C-5A Galaxy",
         "length": 75.53,
         "wingspan": 67.89,
         "height": 19.84,
@@ -2913,6 +3491,8 @@
       {
         "aircraft_id": "LOC-C5M",
         "type": "Lockheed C-5M Super Galaxy",
+        "parent_aircraft_id": "LOC-C5B",
+        "parent_type": "Lockheed C-5B Galaxy",
         "length": 75.53,
         "wingspan": 67.89,
         "height": 19.84,
@@ -2924,6 +3504,8 @@
       {
         "aircraft_id": "LOC-L10",
         "type": "Lockheed L-10 Electra",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.63,
         "wingspan": 19.96,
         "height": 3.94,
@@ -2935,6 +3517,8 @@
       {
         "aircraft_id": "LOC-L14",
         "type": "Lockheed L-14 Super Electra",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 13.5,
         "wingspan": 20.2,
         "height": 3.8,
@@ -2946,6 +3530,8 @@
       {
         "aircraft_id": "LOC-L18",
         "type": "Lockheed L-18 Lodestar",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 15.2,
         "wingspan": 20.1,
         "height": 3.5,
@@ -2957,6 +3543,8 @@
       {
         "aircraft_id": "LOC-L049",
         "type": "Lockheed L-049 Constellation",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 29.0,
         "wingspan": 37.5,
         "height": 7.1,
@@ -2968,6 +3556,8 @@
       {
         "aircraft_id": "LOC-L649",
         "type": "Lockheed L-649 Constellation",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 29.0,
         "wingspan": 37.5,
         "height": 7.1,
@@ -2979,6 +3569,8 @@
       {
         "aircraft_id": "LOC-L749",
         "type": "Lockheed L-749 Constellation",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 29.0,
         "wingspan": 37.5,
         "height": 7.1,
@@ -2990,6 +3582,8 @@
       {
         "aircraft_id": "LOC-L1049",
         "type": "Lockheed L-1049 Super Constellation",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.4,
         "wingspan": 37.5,
         "height": 7.6,
@@ -3001,6 +3595,8 @@
       {
         "aircraft_id": "LOC-L1649",
         "type": "Lockheed L-1649 Starliner",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.0,
         "wingspan": 45.7,
         "height": 6.1,
@@ -3012,6 +3608,8 @@
       {
         "aircraft_id": "LOC-L188",
         "type": "Lockheed L-188 Electra",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.8,
         "wingspan": 35.9,
         "height": 10.0,
@@ -3023,6 +3621,8 @@
       {
         "aircraft_id": "LOC-L100-30",
         "type": "Lockheed L-100-30 Hercules",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 34.37,
         "wingspan": 40.41,
         "height": 11.1,
@@ -3034,6 +3634,8 @@
       {
         "aircraft_id": "LOC-L1011-500",
         "type": "Lockheed L-1011 TriStar 500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 50.0,
         "wingspan": 47.3,
         "height": 16.9,
@@ -3043,6 +3645,8 @@
       {
         "aircraft_id": "LOC-L1011-1",
         "type": "Lockheed L-1011 TriStar 1",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.2,
         "wingspan": 47.3,
         "height": 16.9,
@@ -3052,6 +3656,8 @@
       {
         "aircraft_id": "LOC-L1011-100",
         "type": "Lockheed L-1011 TriStar 100",
+        "parent_aircraft_id": "LOC-L1011-1",
+        "parent_type": "Lockheed L-1011 TriStar 1",
         "length": 54.2,
         "wingspan": 47.3,
         "height": 16.9,
@@ -3061,6 +3667,8 @@
       {
         "aircraft_id": "LOC-L1011-200",
         "type": "Lockheed L-1011 TriStar 200",
+        "parent_aircraft_id": "LOC-L1011-1",
+        "parent_type": "Lockheed L-1011 TriStar 1",
         "length": 54.2,
         "wingspan": 47.3,
         "height": 16.9,
@@ -3072,6 +3680,8 @@
       {
         "aircraft_id": "LOC-EP3E",
         "type": "Lockheed EP-3E Aries II",
+        "parent_aircraft_id": "LOC-P3C",
+        "parent_type": "Lockheed P-3C Orion",
         "length": 35.61,
         "wingspan": 30.37,
         "height": 10.27,
@@ -3081,6 +3691,8 @@
       {
         "aircraft_id": "LOC-NP3D",
         "type": "Lockheed NP-3D Orion",
+        "parent_aircraft_id": "LOC-P3C",
+        "parent_type": "Lockheed P-3C Orion",
         "length": 35.61,
         "wingspan": 30.37,
         "height": 10.27,
@@ -3090,6 +3702,8 @@
       {
         "aircraft_id": "LOC-P3A",
         "type": "Lockheed P-3A Orion",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.61,
         "wingspan": 30.37,
         "height": 10.27,
@@ -3099,6 +3713,8 @@
       {
         "aircraft_id": "LOC-P3B",
         "type": "Lockheed P-3B Orion",
+        "parent_aircraft_id": "LOC-P3A",
+        "parent_type": "Lockheed P-3A Orion",
         "length": 35.61,
         "wingspan": 30.37,
         "height": 10.27,
@@ -3108,6 +3724,8 @@
       {
         "aircraft_id": "LOC-P3C",
         "type": "Lockheed P-3C Orion",
+        "parent_aircraft_id": "LOC-P3B",
+        "parent_type": "Lockheed P-3B Orion",
         "length": 35.61,
         "wingspan": 30.37,
         "height": 10.27,
@@ -3117,6 +3735,8 @@
       {
         "aircraft_id": "LOC-RP3D",
         "type": "Lockheed RP-3D Orion",
+        "parent_aircraft_id": "LOC-P3C",
+        "parent_type": "Lockheed P-3C Orion",
         "length": 35.61,
         "wingspan": 30.37,
         "height": 10.27,
@@ -3128,6 +3748,8 @@
       {
         "aircraft_id": "MAR-202",
         "type": "Martin 2-0-2",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.2,
         "wingspan": 19.5,
         "height": 4.5,
@@ -3139,6 +3761,8 @@
       {
         "aircraft_id": "MAR-404",
         "type": "Cessna 404",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.7,
         "wingspan": 15.0,
         "height": 3.9,
@@ -3150,6 +3774,8 @@
       {
         "aircraft_id": "MCD-DC9-10",
         "type": "McDonnell Douglas DC-9-10",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.82,
         "wingspan": 27.25,
         "height": 8.38,
@@ -3159,6 +3785,8 @@
       {
         "aircraft_id": "MCD-DC9-15",
         "type": "McDonnell Douglas DC-9-15",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 31.82,
         "wingspan": 27.25,
         "height": 8.38,
@@ -3168,6 +3796,8 @@
       {
         "aircraft_id": "MCD-DC9-20",
         "type": "McDonnell Douglas DC-9-20",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.37,
         "wingspan": 28.44,
         "height": 8.38,
@@ -3177,6 +3807,8 @@
       {
         "aircraft_id": "MCD-DC9-30",
         "type": "McDonnell Douglas DC-9-30",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.37,
         "wingspan": 28.47,
         "height": 8.38,
@@ -3186,6 +3818,8 @@
       {
         "aircraft_id": "MCD-DC9-40",
         "type": "McDonnell Douglas DC-9-40",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 39.75,
         "wingspan": 28.47,
         "height": 8.38,
@@ -3195,6 +3829,8 @@
       {
         "aircraft_id": "MCD-DC9-50",
         "type": "McDonnell Douglas DC-9-50",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.72,
         "wingspan": 28.47,
         "height": 8.38,
@@ -3206,6 +3842,8 @@
       {
         "aircraft_id": "MCD-DC10-40",
         "type": "McDonnell Douglas DC-10-40",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 55.04,
         "wingspan": 50.39,
         "height": 17.7,
@@ -3215,6 +3853,8 @@
       {
         "aircraft_id": "MCD-DC10-30",
         "type": "McDonnell Douglas DC-10-30",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 55.06,
         "wingspan": 50.39,
         "height": 17.7,
@@ -3224,6 +3864,8 @@
       {
         "aircraft_id": "MCD-DC10-10",
         "type": "McDonnell Douglas DC-10-10",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 55.55,
         "wingspan": 47.43,
         "height": 17.7,
@@ -3235,6 +3877,8 @@
       {
         "aircraft_id": "MCD-MD11F",
         "type": "McDonnell Douglas MD-11F",
+        "parent_aircraft_id": "MCD-MD11",
+        "parent_type": "McDonnell Douglas MD-11",
         "length": 61.2,
         "wingspan": 51.7,
         "height": 17.6,
@@ -3244,6 +3888,8 @@
       {
         "aircraft_id": "MCD-MD11",
         "type": "McDonnell Douglas MD-11",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 61.6,
         "wingspan": 51.7,
         "height": 17.6,
@@ -3253,6 +3899,8 @@
       {
         "aircraft_id": "MCD-MD11-ER",
         "type": "McDonnell Douglas MD-11ER Extended Range",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 61.6,
         "wingspan": 51.7,
         "height": 17.6,
@@ -3264,6 +3912,8 @@
       {
         "aircraft_id": "MCD-MD81",
         "type": "McDonnell Douglas MD-81",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.1,
         "wingspan": 32.8,
         "height": 9.3,
@@ -3275,6 +3925,8 @@
       {
         "aircraft_id": "MCD-MD82",
         "type": "McDonnell Douglas MD-82",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.1,
         "wingspan": 32.8,
         "height": 9.3,
@@ -3286,6 +3938,8 @@
       {
         "aircraft_id": "MCD-MD83",
         "type": "McDonnell Douglas MD-83",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.1,
         "wingspan": 32.8,
         "height": 9.3,
@@ -3297,6 +3951,8 @@
       {
         "aircraft_id": "MCD-MD87",
         "type": "McDonnell Douglas MD-87",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.4,
         "wingspan": 32.8,
         "height": 9.3,
@@ -3308,6 +3964,8 @@
       {
         "aircraft_id": "MCD-MD88",
         "type": "McDonnell Douglas MD-88",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 45.1,
         "wingspan": 32.8,
         "height": 9.3,
@@ -3319,6 +3977,8 @@
       {
         "aircraft_id": "MCD-MD90",
         "type": "McDonnell Douglas MD-90",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.5,
         "wingspan": 32.8,
         "height": 9.3,
@@ -3330,6 +3990,8 @@
       {
         "aircraft_id": "NAM-YS11",
         "type": "NAMC YS-11",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.3,
         "wingspan": 32.0,
         "height": 8.98,
@@ -3341,6 +4003,8 @@
       {
         "aircraft_id": "PAR-P",
         "type": "Partenavia P",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.0,
         "wingspan": 15.0,
         "height": 4.5,
@@ -3352,6 +4016,8 @@
       {
         "aircraft_id": "PIL-PC12",
         "type": "Pilatus PC-12",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 14.4,
         "wingspan": 16.3,
         "height": 4.26,
@@ -3363,6 +4029,8 @@
       {
         "aircraft_id": "PIL-PC24",
         "type": "Pilatus PC-24",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 16.8,
         "wingspan": 17.0,
         "height": 5.3,
@@ -3374,6 +4042,8 @@
       {
         "aircraft_id": "PIL-PC6",
         "type": "Pilatus PC-6",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 11.0,
         "wingspan": 15.0,
         "height": 3.2,
@@ -3385,6 +4055,8 @@
       {
         "aircraft_id": "PIP-PA23",
         "type": "Piper PA-23",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 8.6,
         "wingspan": 11.8,
         "height": 2.9,
@@ -3396,6 +4068,8 @@
       {
         "aircraft_id": "PIP-PA28RT-201T",
         "type": "Piper PA-28RT-201T Turbo Arrow IV",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 7.62,
         "wingspan": 9.75,
         "height": 2.44,
@@ -3407,6 +4081,8 @@
       {
         "aircraft_id": "PIP-PA31",
         "type": "Piper PA-31",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.8,
         "wingspan": 12.0,
         "height": 3.5,
@@ -3418,6 +4094,8 @@
       {
         "aircraft_id": "PIP-PA31T",
         "type": "Piper PA-31T",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.8,
         "wingspan": 14.0,
         "height": 4.2,
@@ -3429,6 +4107,8 @@
       {
         "aircraft_id": "PIP-PA42",
         "type": "Piper PA-42",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 13.4,
         "wingspan": 15.0,
         "height": 4.5,
@@ -3440,6 +4120,8 @@
       {
         "aircraft_id": "PIP-PA46",
         "type": "Piper PA-46",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 9.0,
         "wingspan": 13.0,
         "height": 3.4,
@@ -3451,6 +4133,8 @@
       {
         "aircraft_id": "PZL-M18",
         "type": "PZL M-18",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 10.5,
         "wingspan": 18.0,
         "height": 3.2,
@@ -3462,6 +4146,8 @@
       {
         "aircraft_id": "PZL-M28",
         "type": "PZL M28",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 13.1,
         "wingspan": 22.0,
         "height": 4.9,
@@ -3473,6 +4159,8 @@
       {
         "aircraft_id": "RIL-Heron",
         "type": "Riley Heron",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 12.1,
         "wingspan": 21.5,
         "height": 3.9,
@@ -3484,6 +4172,8 @@
       {
         "aircraft_id": "ROC-OV101",
         "type": "Rockwell Space Shuttle Enterprise (Testorbiter)",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 37.24,
         "wingspan": 23.79,
         "height": 17.25,
@@ -3493,6 +4183,8 @@
       {
         "aircraft_id": "ROC-OV104",
         "type": "Rockwell Space Shuttle Orbiter Atlantis",
+        "parent_aircraft_id": "ROC-OV102",
+        "parent_type": "Rockwell Space Shuttle Orbiter Columbia",
         "length": 37.24,
         "wingspan": 23.79,
         "height": 17.25,
@@ -3502,6 +4194,8 @@
       {
         "aircraft_id": "ROC-OV099",
         "type": "Rockwell Space Shuttle Orbiter Challenger",
+        "parent_aircraft_id": "ROC-OV102",
+        "parent_type": "Rockwell Space Shuttle Orbiter Columbia",
         "length": 37.24,
         "wingspan": 23.79,
         "height": 17.25,
@@ -3511,6 +4205,8 @@
       {
         "aircraft_id": "ROC-OV102",
         "type": "Rockwell Space Shuttle Orbiter Columbia",
+        "parent_aircraft_id": "ROC-OV101",
+        "parent_type": "Rockwell Space Shuttle Enterprise (Testorbiter)",
         "length": 37.24,
         "wingspan": 23.79,
         "height": 17.25,
@@ -3520,6 +4216,8 @@
       {
         "aircraft_id": "ROC-OV103",
         "type": "Rockwell Space Shuttle Orbiter Discovery",
+        "parent_aircraft_id": "ROC-OV102",
+        "parent_type": "Rockwell Space Shuttle Orbiter Columbia",
         "length": 37.24,
         "wingspan": 23.79,
         "height": 17.25,
@@ -3529,6 +4227,8 @@
       {
         "aircraft_id": "ROC-OV105",
         "type": "Rockwell Space Shuttle Orbiter Endeavour",
+        "parent_aircraft_id": "ROC-OV104",
+        "parent_type": "Rockwell Space Shuttle Orbiter Atlantis",
         "length": 37.24,
         "wingspan": 23.79,
         "height": 17.25,
@@ -3540,6 +4240,8 @@
       {
         "aircraft_id": "SAB-2000",
         "type": "Saab 2000",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.28,
         "wingspan": 24.76,
         "height": 7.4,
@@ -3551,6 +4253,8 @@
       {
         "aircraft_id": "SAB-340",
         "type": "Saab 340",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 19.73,
         "wingspan": 21.44,
         "height": 6.97,
@@ -3562,6 +4266,8 @@
       {
         "aircraft_id": "SCA-M348",
         "type": "Scaled Composites Model 348 White Knight Two",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.38,
         "wingspan": 42.67,
         "height": 7.7,
@@ -3573,6 +4279,8 @@
       {
         "aircraft_id": "SCA-SS2",
         "type": "SpaceShipTwo (Virgin Galactic)",
+        "parent_aircraft_id": "SCA-M348",
+        "parent_type": "Scaled Composites Model 348 White Knight Two",
         "length": 18.3,
         "wingspan": 8.2,
         "height": 4.6,
@@ -3584,6 +4292,8 @@
       {
         "aircraft_id": "SHO-330",
         "type": "Shorts 330",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 19.7,
         "wingspan": 22.0,
         "height": 6.0,
@@ -3595,6 +4305,8 @@
       {
         "aircraft_id": "SHO-360",
         "type": "Shorts 360",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 21.58,
         "wingspan": 22.76,
         "height": 7.06,
@@ -3606,6 +4318,8 @@
       {
         "aircraft_id": "SHO-S23",
         "type": "Short S.23 Empire",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.9,
         "wingspan": 34.6,
         "height": 9.8,
@@ -3617,6 +4331,8 @@
       {
         "aircraft_id": "SHO-S26",
         "type": "Short S.26 G-Class",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 35.0,
         "wingspan": 45.72,
         "height": 10.0,
@@ -3628,6 +4344,8 @@
       {
         "aircraft_id": "SHO-S45",
         "type": "Short S.45 Solent",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 27.94,
         "wingspan": 34.78,
         "height": 10.16,
@@ -3639,6 +4357,8 @@
       {
         "aircraft_id": "SUD-Caravelle-10B",
         "type": "Sud Aviation Caravelle 10B",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.01,
         "wingspan": 34.3,
         "height": 8.71,
@@ -3648,6 +4368,8 @@
       {
         "aircraft_id": "SUD-Caravelle-I",
         "type": "Sud Aviation Caravelle I",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.01,
         "wingspan": 34.3,
         "height": 8.71,
@@ -3657,6 +4379,8 @@
       {
         "aircraft_id": "SUD-Caravelle-III",
         "type": "Sud Aviation Caravelle III",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.01,
         "wingspan": 34.3,
         "height": 8.71,
@@ -3666,6 +4390,8 @@
       {
         "aircraft_id": "SUD-Caravelle-VIN",
         "type": "Sud Aviation Caravelle VI-N",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.01,
         "wingspan": 34.3,
         "height": 8.71,
@@ -3675,6 +4401,8 @@
       {
         "aircraft_id": "SUD-Caravelle-VIR",
         "type": "Sud Aviation Caravelle VI-R",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.01,
         "wingspan": 34.3,
         "height": 8.71,
@@ -3686,6 +4414,8 @@
       {
         "aircraft_id": "SUD-Concorde",
         "type": "Sud Aviation/BAC Concorde",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 61.66,
         "wingspan": 25.6,
         "height": 12.19,
@@ -3697,6 +4427,8 @@
       {
         "aircraft_id": "SUK-Superjet-100-95",
         "type": "Sukhoi Superjet 100-95",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 29.94,
         "wingspan": 27.8,
         "height": 10.28,
@@ -3708,6 +4440,8 @@
       {
         "aircraft_id": "TRA-C160",
         "type": "Transall C-160",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 32.4,
         "wingspan": 40.0,
         "height": 11.65,
@@ -3719,6 +4453,8 @@
       {
         "aircraft_id": "TUP-Tu104",
         "type": "Tupolew Tu-104",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 40.06,
         "wingspan": 34.5,
         "height": 11.9,
@@ -3730,6 +4466,8 @@
       {
         "aircraft_id": "TUP-Tu114",
         "type": "Tupolew Tu-114",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.1,
         "wingspan": 51.1,
         "height": 15.5,
@@ -3741,6 +4479,8 @@
       {
         "aircraft_id": "TUP-Tu124",
         "type": "Tupolew Tu-124",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 30.6,
         "wingspan": 25.55,
         "height": 8.08,
@@ -3752,6 +4492,8 @@
       {
         "aircraft_id": "TUP-Tu134",
         "type": "Tupolew Tu-134",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 34.85,
         "wingspan": 29.0,
         "height": 9.0,
@@ -3763,6 +4505,8 @@
       {
         "aircraft_id": "TUP-Tu154",
         "type": "Tupolew Tu-154",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 47.9,
         "wingspan": 37.5,
         "height": 11.4,
@@ -3774,6 +4518,8 @@
       {
         "aircraft_id": "TUP-Tu204-200",
         "type": "Tupolew Tu-204-200",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 46.14,
         "wingspan": 41.8,
         "height": 13.84,
@@ -3783,6 +4529,8 @@
       {
         "aircraft_id": "TUP-Tu204-300",
         "type": "Tupolew Tu-204-300",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.1,
         "wingspan": 41.8,
         "height": 13.84,
@@ -3794,6 +4542,8 @@
       {
         "aircraft_id": "TUP-Tu214",
         "type": "Tupolew Tu-214",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 54.1,
         "wingspan": 41.8,
         "height": 13.84,
@@ -3805,6 +4555,8 @@
       {
         "aircraft_id": "VIC-Vanguard-953",
         "type": "Vickers Vanguard 953",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 41.15,
         "wingspan": 43.36,
         "height": 11.3,
@@ -3816,6 +4568,8 @@
       {
         "aircraft_id": "VIC-VC10-C1K",
         "type": "Vickers VC10 C1K (RAF Government & VIP)",
+        "parent_aircraft_id": "VIC-VC10-SUPER",
+        "parent_type": "Vickers VC10 Super",
         "length": 48.36,
         "wingspan": 44.55,
         "height": 12.04,
@@ -3825,6 +4579,8 @@
       {
         "aircraft_id": "VIC-VC10",
         "type": "Vickers VC10 Standard",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.36,
         "wingspan": 44.55,
         "height": 12.19,
@@ -3834,6 +4590,8 @@
       {
         "aircraft_id": "VIC-VC10-SUPER",
         "type": "Vickers VC10 Super",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 48.36,
         "wingspan": 44.55,
         "height": 12.19,
@@ -3845,6 +4603,8 @@
       {
         "aircraft_id": "VIC-Viscount-700",
         "type": "Vickers Viscount 700",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 26.11,
         "wingspan": 28.55,
         "height": 8.25,
@@ -3854,6 +4614,8 @@
       {
         "aircraft_id": "VIC-Viscount-800",
         "type": "Vickers Viscount 800",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 28.55,
         "wingspan": 28.55,
         "height": 8.25,
@@ -3865,6 +4627,8 @@
       {
         "aircraft_id": "VFW-614",
         "type": "VFW-Fokker 614",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 20.31,
         "wingspan": 21.5,
         "height": 7.45,
@@ -3876,6 +4640,8 @@
       {
         "aircraft_id": "XIA-MA60",
         "type": "Xian MA60",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.7,
         "wingspan": 29.2,
         "height": 8.1,
@@ -3887,6 +4653,8 @@
       {
         "aircraft_id": "XIA-MA600",
         "type": "Xian MA600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.7,
         "wingspan": 29.2,
         "height": 8.1,
@@ -3898,6 +4666,8 @@
       {
         "aircraft_id": "XIA-Y7",
         "type": "Xian Y-7",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 24.3,
         "wingspan": 29.0,
         "height": 8.0,
@@ -3909,6 +4679,8 @@
       {
         "aircraft_id": "YAK-Yak40",
         "type": "Yakowlew Yak-40",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 20.36,
         "wingspan": 25.0,
         "height": 6.5,
@@ -3920,6 +4692,8 @@
       {
         "aircraft_id": "YAK-Yak42",
         "type": "Yakowlew Yak-42",
+        "parent_aircraft_id": "",
+        "parent_type": "",
         "length": 36.38,
         "wingspan": 34.88,
         "height": 9.83,
