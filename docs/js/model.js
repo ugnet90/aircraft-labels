@@ -592,6 +592,145 @@ function enableArrowKeys(prevId, nextId){
   });
 }
 
+// --- Aircraft families compare (lazy) ---
+let _aircraftFamiliesCache = null;
+
+async function loadAircraftFamilies(){
+  if(_aircraftFamiliesCache !== null) return _aircraftFamiliesCache;
+
+  try{
+    const res = await fetch("data/aircraft_families.json", { cache: "no-store" });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json();
+    _aircraftFamiliesCache = (j && typeof j === "object") ? j : {};
+  }catch(e){
+    _aircraftFamiliesCache = {};
+  }
+  return _aircraftFamiliesCache;
+}
+
+function fmtDim(v){
+  const n = Number(v);
+  if(!Number.isFinite(n)) return "—";
+  return `${String(v).replace(".", ",")} m`;
+}
+
+function cmpClass(val, cur){
+  if(val === null || val === undefined || cur === null || cur === undefined) return "";
+  const a = Number(val), b = Number(cur);
+  if(!Number.isFinite(a) || !Number.isFinite(b)) return "";
+  return a === b ? "famCmp-same" : "famCmp-diff";
+}
+
+function ensureFamilyCompareModal(){
+  if(document.getElementById("familyCompareModal")) return;
+
+  const el = document.createElement("div");
+  el.id = "familyCompareModal";
+  el.className = "famCmpModal";
+  el.innerHTML = `
+    <div class="famCmpBackdrop" data-close="1"></div>
+    <div class="famCmpPanel" role="dialog" aria-modal="true">
+      <div class="famCmpHead">
+        <div class="famCmpTitle">Baureihenvergleich</div>
+        <button class="famCmpClose" type="button" data-close="1" aria-label="Schließen">×</button>
+      </div>
+      <div class="famCmpBody" id="familyCompareBody"></div>
+    </div>
+  `;
+  document.body.appendChild(el);
+
+  el.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if(t && t.getAttribute && t.getAttribute("data-close") === "1"){
+      closeFamilyCompare();
+    }
+  });
+
+  document.addEventListener("keydown", (ev) => {
+    if(ev.key === "Escape") closeFamilyCompare();
+  });
+}
+
+function closeFamilyCompare(){
+  const el = document.getElementById("familyCompareModal");
+  if(!el) return;
+  el.classList.remove("on");
+  document.body.classList.remove("noscroll");
+}
+
+async function openFamilyCompare(baureihe, currentAircraftId){
+  const familyName = String(baureihe || "").trim();
+  const currentId = String(currentAircraftId || "").trim();
+  if(!familyName) return;
+
+  ensureFamilyCompareModal();
+
+  const data = await loadAircraftFamilies();
+  const fams = data?.families || {};
+  const rows = Array.isArray(fams[familyName]) ? fams[familyName] : [];
+
+  const body = document.getElementById("familyCompareBody");
+  if(!body) return;
+
+  if(!rows.length){
+    body.innerHTML = `<div class="muted">Keine Daten für diese Baureihe vorhanden.</div>`;
+  }else{
+    const cur = rows.find(r => String(r.aircraft_id || "").trim() === currentId) || null;
+    const curLen = cur?.length ?? null;
+    const curSpan = cur?.wingspan ?? null;
+    const curHeight = cur?.height ?? null;
+
+    const htmlRows = rows.map(r => {
+      const isCurrent = String(r.aircraft_id || "").trim() === currentId;
+      return `
+        <tr class="${isCurrent ? "famCmp-current" : ""}">
+          <td>${esc(String(r.type || ""))}</td>
+          <td class="${cmpClass(r.length, curLen)}">${fmtDim(r.length)}</td>
+          <td class="${cmpClass(r.wingspan, curSpan)}">${fmtDim(r.wingspan)}</td>
+          <td class="${cmpClass(r.height, curHeight)}">${fmtDim(r.height)}</td>
+          <td>${esc(String(r.wingtip || "—"))}</td>
+          <td>${r.owned ? `<span class="famOwned">✓</span>` : `<span class="famMissing">—</span>`}</td>
+        </tr>
+      `;
+    }).join("");
+
+    body.innerHTML = `
+      <div class="famCmpSub">${esc(familyName)}</div>
+      <table class="famCmpTable">
+        <thead>
+          <tr>
+            <th>Typ</th>
+            <th>Länge</th>
+            <th>Spannweite</th>
+            <th>Höhe</th>
+            <th>WL/SL</th>
+            <th>Modell</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${htmlRows}
+        </tbody>
+      </table>
+    `;
+  }
+
+  const el = document.getElementById("familyCompareModal");
+  if(el){
+    el.classList.add("on");
+    document.body.classList.add("noscroll");
+  }
+}
+
+document.addEventListener("click", (ev) => {
+  const btn = ev.target && ev.target.closest ? ev.target.closest(".cmpFamilyBtn") : null;
+  if(!btn) return;
+
+  const family = btn.getAttribute("data-family") || "";
+  const aircraft = btn.getAttribute("data-aircraft") || "";
+  openFamilyCompare(family, aircraft);
+});
+
 async function main(){
   const idRaw = qs("id");
   const id = String(idRaw || "").trim().toUpperCase();
@@ -771,6 +910,21 @@ async function main(){
               ${esc(hostLabel(photoSource))}
             </a>${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}`
           : "");
+
+    const familyName = asText(d.aircraft_full_v8?.Baureihe || "");
+    const familyCompareRow = familyName
+      ? rowHtml(
+          "Baureihe",
+          `${esc(familyName)}
+           <div style="margin-top:6px">
+             <button class="cmpFamilyBtn" type="button"
+               data-family="${esc(familyName)}"
+               data-aircraft="${esc(asText(d.aircraft_id))}">
+               Baureihe vergleichen
+             </button>
+           </div>`
+        )
+      : "";
     
     const aircraftBlock = `
       <div class="card">
@@ -788,6 +942,7 @@ async function main(){
     
           <div class="air-data grid">
             ${row("Flugzeugtyp", typ)}
+            ${familyCompareRow}
             ${row("Registrierung", reg)}
             ${row("Taufname", d.aircraft_name || "")}
             ${row("Zusatzinfo", d.extra_info || "")}
