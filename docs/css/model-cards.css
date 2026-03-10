@@ -140,3 +140,136 @@
 .masonry tr:not(:last-child) td{
   border-bottom:1px solid rgba(0,0,0,0.05);
 }
+
+/* ========================================
+   FAMILY COMPARE MODAL
+   ======================================== */
+
+.cmpFamilyBtn{
+  border:1px solid rgba(0,0,0,0.12);
+  background:#fff;
+  border-radius:8px;
+  padding:6px 10px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.cmpFamilyBtn:hover{
+  background:#f4f6f8;
+}
+
+.famCmpModal{
+  position:fixed;
+  inset:0;
+  display:none;
+  z-index:10000;
+}
+
+.famCmpModal.on{
+  display:block;
+}
+
+.famCmpBackdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+
+.famCmpPanel{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:min(900px, 92vw);
+  max-height:86vh;
+  overflow:auto;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.28);
+}
+
+.famCmpHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 16px;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+.famCmpTitle{
+  font-size:14px;
+  font-weight:700;
+}
+
+.famCmpClose{
+  border:0;
+  background:#fff;
+  font-size:24px;
+  cursor:pointer;
+  line-height:1;
+}
+
+.famCmpBody{
+  padding:14px 16px 18px;
+}
+
+.famCmpSub{
+  margin-bottom:10px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.famCmpTable{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.famCmpTable th,
+.famCmpTable td{
+  padding:8px 10px;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+.famCmpTable th{
+  text-align:left;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:#777;
+}
+
+.famCmpTable td:nth-child(n+2){
+  text-align:right;
+}
+
+.famCmp-current{
+  background:rgba(0,0,0,0.05);
+}
+
+.famCmp-same{
+  color:#8a8a8a;
+}
+
+.famCmp-diff{
+  font-weight:600;
+}
+
+.famOwned{
+  font-weight:700;
+}
+
+.famMissing{
+  color:#8a8a8a;
+}
+
+@media (max-width: 700px){
+  .famCmpPanel{
+    width:95vw;
+  }
+
+  .famCmpTable th,
+  .famCmpTable td{
+    padding:7px 8px;
+    font-size:13px;
+  }
+}
