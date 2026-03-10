@@ -13,7 +13,7 @@ LIV_CSV = os.path.join(REPO_ROOT, "data", "liveries.csv")
 AIRLINE_LOGOS_CSV = os.path.join(REPO_ROOT, "data", "airline_logos.csv")
 FLIGHTS_CSV = os.path.join(REPO_ROOT, "data", "flights_export.csv")
 OUT_FLIGHTS_JSON = os.path.join(REPO_ROOT, "docs", "data", "flights.json")
-
+OUT_AIRCRAFT_FAMILIES_JSON = os.path.join(REPO_ROOT, "docs", "data", "aircraft_families.json")
 OUT_DIR = os.path.join(REPO_ROOT, "docs", "data", "models")
 INDEX_JSON = os.path.join(REPO_ROOT, "docs", "index.json")
     
@@ -564,11 +564,60 @@ def main() -> int:
 
     with open(OUT_FLIGHTS_JSON, "w", encoding="utf-8") as f:
         json.dump(flights_payload, f, ensure_ascii=False, indent=2)
-        
+
+    # ------------------------------------------------------------
+    # Build aircraft families overview (for model compare modal)
+    # ------------------------------------------------------------
+    owned_aircraft_ids = set()
+    for r2 in models:
+        aid = (r2.get("aircraft_id", "") or "").strip()
+        if aid:
+            owned_aircraft_ids.add(aid)
+
+    families: Dict[str, List[Dict[str, Any]]] = {}
+
+    for pr in pax_rows:
+        baureihe = (pr.get("Baureihe", "") or "").strip()
+        aircraft_id_p = (pr.get("aircraft_id", "") or "").strip()
+        typ_anzeige = (pr.get("Typ_anzeige", "") or "").strip()
+        wingtip_p = (pr.get("Wingtip", "") or "").strip().upper()
+
+        if not baureihe or not aircraft_id_p or not typ_anzeige:
+            continue
+
+        entry = {
+            "aircraft_id": aircraft_id_p,
+            "type": typ_anzeige,
+            "length": to_float(pr.get("Length", "")),
+            "wingspan": to_float(pr.get("Wingspan", "")),
+            "height": to_float(pr.get("Height", "")),
+            "wingtip": wingtip_p,
+            "owned": aircraft_id_p in owned_aircraft_ids,
+        }
+
+        families.setdefault(baureihe, []).append(entry)
+
+    def family_sort_key(x: Dict[str, Any]):
+        length = x.get("length")
+        if length is None:
+            return (999999, str(x.get("type", "")))
+        return (length, str(x.get("type", "")))
+
+    for fam_name in families.keys():
+        families[fam_name] = sorted(families[fam_name], key=family_sort_key)
+
+    families_out = {
+        "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "count_families": len(families),
+        "families": families,
+    }
+
+    with open(OUT_AIRCRAFT_FAMILIES_JSON, "w", encoding="utf-8") as f:
+        json.dump(families_out, f, ensure_ascii=False, indent=2)
+
     print("[build_json] wrote index:", INDEX_JSON, "bytes=", os.path.getsize(INDEX_JSON))
     print(f"Generated {len(index_list)} JSON files into {OUT_DIR}")
     return 0
-
 
 
 if __name__ == "__main__":
