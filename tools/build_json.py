@@ -573,7 +573,14 @@ def main() -> int:
         aid = (r2.get("aircraft_id", "") or "").strip()
         if aid:
             owned_aircraft_ids.add(aid)
-
+            
+    pax_type_by_id: Dict[str, str] = {}
+    for pr2 in pax_rows:
+        aid2 = (pr2.get("aircraft_id", "") or "").strip()
+        typ2 = (pr2.get("Typ_anzeige", "") or "").strip()
+        if aid2 and typ2 and aid2 not in pax_type_by_id:
+            pax_type_by_id[aid2] = typ2
+            
     families: Dict[str, List[Dict[str, Any]]] = {}
 
     for pr in pax_rows:
@@ -581,6 +588,8 @@ def main() -> int:
         aircraft_id_p = (pr.get("aircraft_id", "") or "").strip()
         typ_anzeige = (pr.get("Typ_anzeige", "") or "").strip()
         wingtip_p = (pr.get("Wingtip", "") or "").strip().upper()
+        parent_aircraft_id_p = (pr.get("parent_aircraft_id", "") or "").strip()
+        parent_type_p = pax_type_by_id.get(parent_aircraft_id_p, "")
 
         if not baureihe or not aircraft_id_p or not typ_anzeige:
             continue
@@ -588,6 +597,8 @@ def main() -> int:
         entry = {
             "aircraft_id": aircraft_id_p,
             "type": typ_anzeige,
+            "parent_aircraft_id": parent_aircraft_id_p,
+            "parent_type": parent_type_p,
             "length": to_float(pr.get("Length", "")),
             "wingspan": to_float(pr.get("Wingspan", "")),
             "height": to_float(pr.get("Height", "")),
