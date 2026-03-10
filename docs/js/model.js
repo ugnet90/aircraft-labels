@@ -669,6 +669,7 @@ async function openFamilyCompare(baureihe, currentAircraftId){
   const data = await loadAircraftFamilies();
   const fams = data?.families || {};
   const rows = Array.isArray(fams[familyName]) ? fams[familyName] : [];
+  const hasParent = rows.some(r => r.parent_type && String(r.parent_type).trim() !== "");
 
   const body = document.getElementById("familyCompareBody");
   if(!body) return;
@@ -686,7 +687,7 @@ async function openFamilyCompare(baureihe, currentAircraftId){
       return `
         <tr class="${isCurrent ? "famCmp-current" : ""}">
           <td>${esc(String(r.type || ""))}</td>
-          <td>${esc(String(r.parent_type || "—"))}</td>
+          ${hasParent ? `<td class="famParent">${r.parent_type ? esc(String(r.parent_type)) : ""}</td>` : ``}
           <td class="${cmpClass(r.length, curLen)}">${fmtDim(r.length)}</td>
           <td class="${cmpClass(r.wingspan, curSpan)}">${fmtDim(r.wingspan)}</td>
           <td class="${cmpClass(r.height, curHeight)}">${fmtDim(r.height)}</td>
@@ -702,7 +703,7 @@ async function openFamilyCompare(baureihe, currentAircraftId){
         <thead>
           <tr>
             <th>Typ</th>
-            <th>Übergeordnet</th>
+            ${hasParent ? `<th class="famParent">Basis</th>` : ``}
             <th>Länge</th>
             <th>Spannweite</th>
             <th>Höhe</th>
