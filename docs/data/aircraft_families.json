@@ -1,0 +1,3931 @@
+{
+  "generated_at": "2026-03-10T08:51:26Z",
+  "count_families": 221,
+  "families": {
+    "AL-60": [
+      {
+        "aircraft_id": "AER-AL60",
+        "type": "Aermacchi AL-60",
+        "length": 11.1,
+        "wingspan": 14.9,
+        "height": 3.4,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Ae-145": [
+      {
+        "aircraft_id": "AEV-Ae145",
+        "type": "Aero Vodochody Ae-145",
+        "length": 9.0,
+        "wingspan": 13.6,
+        "height": 3.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Ae-45": [
+      {
+        "aircraft_id": "AEV-Ae45",
+        "type": "Aero Vodochody Ae-45",
+        "length": 8.6,
+        "wingspan": 12.6,
+        "height": 3.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-29": [
+      {
+        "aircraft_id": "AEV-L29",
+        "type": "Aero Vodochody L-29 Delfín",
+        "length": 10.81,
+        "wingspan": 10.29,
+        "height": 3.13,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "A220": [
+      {
+        "aircraft_id": "AIB-A220-100",
+        "type": "Airbus A220-100",
+        "length": 35.0,
+        "wingspan": 35.1,
+        "height": 11.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A220-300",
+        "type": "Airbus A220-300",
+        "length": 38.7,
+        "wingspan": 35.1,
+        "height": 11.5,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "A300": [
+      {
+        "aircraft_id": "AIB-A300-B2",
+        "type": "Airbus A300 B2",
+        "length": 53.6,
+        "wingspan": 44.8,
+        "height": 16.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A300-B4",
+        "type": "Airbus A300 B4",
+        "length": 53.6,
+        "wingspan": 44.8,
+        "height": 16.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A300-600",
+        "type": "Airbus A300-600",
+        "length": 54.1,
+        "wingspan": 44.8,
+        "height": 16.5,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A300-600ST",
+        "type": "Airbus A300-600ST Beluga",
+        "length": 56.2,
+        "wingspan": 44.8,
+        "height": 17.2,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "A310": [
+      {
+        "aircraft_id": "AIB-A310-304VIP",
+        "type": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
+        "length": 46.66,
+        "wingspan": 43.9,
+        "height": 15.8,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A310-200",
+        "type": "Airbus A310-200",
+        "length": 46.7,
+        "wingspan": 43.9,
+        "height": 15.8,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A310-300",
+        "type": "Airbus A310-300",
+        "length": 46.7,
+        "wingspan": 43.9,
+        "height": 15.8,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "A318": [
+      {
+        "aircraft_id": "AIB-A318",
+        "type": "Airbus A318",
+        "length": 31.44,
+        "wingspan": 34.1,
+        "height": 12.6,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A318-SL",
+        "type": "Airbus A318 (Sharklets)",
+        "length": 31.44,
+        "wingspan": 34.1,
+        "height": 12.6,
+        "wingtip": "SL",
+        "owned": false
+      }
+    ],
+    "A319": [
+      {
+        "aircraft_id": "AIB-A319",
+        "type": "Airbus A319",
+        "length": 33.84,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A319-SL",
+        "type": "Airbus A319 (Sharklets)",
+        "length": 33.84,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A319LR",
+        "type": "Airbus A319LR Long Range",
+        "length": 33.84,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A319LR-SL",
+        "type": "Airbus A319LR Long Range (Sharklets)",
+        "length": 33.84,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A319-neo",
+        "type": "Airbus A319neo",
+        "length": 33.84,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": false
+      }
+    ],
+    "A320": [
+      {
+        "aircraft_id": "AIB-A320-100",
+        "type": "Airbus A320-100",
+        "length": 37.57,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A320-200",
+        "type": "Airbus A320-200",
+        "length": 37.57,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A320-200-SL",
+        "type": "Airbus A320-200 (Sharklets)",
+        "length": 37.57,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A320-neo",
+        "type": "Airbus A320neo",
+        "length": 37.57,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": true
+      }
+    ],
+    "A321": [
+      {
+        "aircraft_id": "AIB-A321-LR",
+        "type": "Airbus A321 LR",
+        "length": 44.51,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A321-XLR",
+        "type": "Airbus A321 XLR",
+        "length": 44.51,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A321-100",
+        "type": "Airbus A321-100",
+        "length": 44.51,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A321-200",
+        "type": "Airbus A321-200",
+        "length": 44.51,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A321-200-SL",
+        "type": "Airbus A321-200 (Sharklets)",
+        "length": 44.51,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A321-neo",
+        "type": "Airbus A321neo",
+        "length": 44.51,
+        "wingspan": 35.8,
+        "height": 11.76,
+        "wingtip": "SL",
+        "owned": true
+      }
+    ],
+    "A330": [
+      {
+        "aircraft_id": "AIB-A330-200",
+        "type": "Airbus A330-200",
+        "length": 58.82,
+        "wingspan": 58.0,
+        "height": 17.39,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A330-200-SL",
+        "type": "Airbus A330-200 (Sharklets)",
+        "length": 58.82,
+        "wingspan": 60.3,
+        "height": 17.39,
+        "wingtip": "SL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A330-800neo",
+        "type": "Airbus A330-800neo",
+        "length": 58.82,
+        "wingspan": 64.0,
+        "height": 17.39,
+        "wingtip": "SL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A330-743L",
+        "type": "Airbus A330-743L BelugaXL",
+        "length": 63.1,
+        "wingspan": 60.3,
+        "height": 18.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A330-300",
+        "type": "Airbus A330-300",
+        "length": 63.69,
+        "wingspan": 60.3,
+        "height": 16.85,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A330-300-SL",
+        "type": "Airbus A330-300 (Sharklets)",
+        "length": 63.69,
+        "wingspan": 60.3,
+        "height": 16.85,
+        "wingtip": "SL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A330-900neo",
+        "type": "Airbus A330-900neo",
+        "length": 63.69,
+        "wingspan": 64.0,
+        "height": 16.85,
+        "wingtip": "SL",
+        "owned": true
+      }
+    ],
+    "A340": [
+      {
+        "aircraft_id": "AIB-A340-200",
+        "type": "Airbus A340-200",
+        "length": 59.39,
+        "wingspan": 60.3,
+        "height": 16.7,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A340-300",
+        "type": "Airbus A340-300",
+        "length": 63.69,
+        "wingspan": 60.3,
+        "height": 16.7,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A340-500",
+        "type": "Airbus A340-500",
+        "length": 67.9,
+        "wingspan": 63.45,
+        "height": 17.1,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "AIB-A340-600",
+        "type": "Airbus A340-600",
+        "length": 75.36,
+        "wingspan": 63.45,
+        "height": 17.3,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "A350": [
+      {
+        "aircraft_id": "AIB-A350-900",
+        "type": "Airbus A350-900",
+        "length": 66.8,
+        "wingspan": 64.75,
+        "height": 17.05,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-ACJ350-900",
+        "type": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
+        "length": 66.8,
+        "wingspan": 64.75,
+        "height": 17.05,
+        "wingtip": "SL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "AIB-A350-1000",
+        "type": "Airbus A350-1000",
+        "length": 73.79,
+        "wingspan": 64.75,
+        "height": 17.08,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "A380": [
+      {
+        "aircraft_id": "AIB-A380-800",
+        "type": "Airbus A380-800",
+        "length": 72.7,
+        "wingspan": 79.75,
+        "height": 24.1,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "AS57": [
+      {
+        "aircraft_id": "AIR-AS57",
+        "type": "Airspeed AS57 Ambassador",
+        "length": 25.5,
+        "wingspan": 34.7,
+        "height": 7.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-124": [
+      {
+        "aircraft_id": "ANT-An124",
+        "type": "Antonov An-124 Ruslan",
+        "length": 68.96,
+        "wingspan": 73.3,
+        "height": 20.78,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-140": [
+      {
+        "aircraft_id": "ANT-An140",
+        "type": "Antonov An-140",
+        "length": 22.6,
+        "wingspan": 24.5,
+        "height": 8.23,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-148": [
+      {
+        "aircraft_id": "ANT-An148",
+        "type": "Antonov An-148",
+        "length": 29.13,
+        "wingspan": 28.91,
+        "height": 8.4,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-158": [
+      {
+        "aircraft_id": "ANT-An158",
+        "type": "Antonov An-158",
+        "length": 34.36,
+        "wingspan": 28.91,
+        "height": 9.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-2": [
+      {
+        "aircraft_id": "ANT-An2",
+        "type": "Antonov An-2",
+        "length": 12.4,
+        "wingspan": 18.17,
+        "height": 4.13,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-225": [
+      {
+        "aircraft_id": "ANT-An225",
+        "type": "Antonov An-225 Mriya",
+        "length": 84.0,
+        "wingspan": 88.4,
+        "height": 18.1,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "An-24": [
+      {
+        "aircraft_id": "ANT-An24",
+        "type": "Antonov An-24",
+        "length": 23.53,
+        "wingspan": 29.2,
+        "height": 8.32,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-26": [
+      {
+        "aircraft_id": "ANT-An26",
+        "type": "Antonov An-26",
+        "length": 23.8,
+        "wingspan": 29.2,
+        "height": 8.58,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-28": [
+      {
+        "aircraft_id": "ANT-An28",
+        "type": "Antonov An-28",
+        "length": 12.98,
+        "wingspan": 22.06,
+        "height": 4.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-32": [
+      {
+        "aircraft_id": "ANT-AN32",
+        "type": "Antonov An-32",
+        "length": 23.78,
+        "wingspan": 29.2,
+        "height": 8.75,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-72": [
+      {
+        "aircraft_id": "ANT-An72",
+        "type": "Antonov An-72",
+        "length": 28.07,
+        "wingspan": 31.89,
+        "height": 8.65,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "An-74": [
+      {
+        "aircraft_id": "ANT-An74",
+        "type": "Antonov An-74",
+        "length": 28.07,
+        "wingspan": 31.89,
+        "height": 8.65,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "A.W.27": [
+      {
+        "aircraft_id": "ARW-AW27",
+        "type": "Armstrong Whitworth A.W.27 Ensign",
+        "length": 30.48,
+        "wingspan": 38.41,
+        "height": 8.23,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "B-377MG": [
+      {
+        "aircraft_id": "ASP-377MG",
+        "type": "Aero Spacelines Mini Guppy",
+        "length": 43.8,
+        "wingspan": 47.6,
+        "height": 14.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "B-377MGT": [
+      {
+        "aircraft_id": "ASP-377MGT",
+        "type": "Aero Spacelines Mini Guppy Turbine",
+        "length": 43.8,
+        "wingspan": 47.6,
+        "height": 14.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "B-377PG": [
+      {
+        "aircraft_id": "ASP-377PG",
+        "type": "Aero Spacelines Pregnant Guppy",
+        "length": 43.8,
+        "wingspan": 47.6,
+        "height": 14.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "B-377SG": [
+      {
+        "aircraft_id": "ASP-B377SG",
+        "type": "Aero Spacelines Super Guppy",
+        "length": 43.8,
+        "wingspan": 47.6,
+        "height": 14.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "B-377SGT-201": [
+      {
+        "aircraft_id": "ASP-B377SGT",
+        "type": "Aero Spacelines Super Guppy SGT-201",
+        "length": 43.8,
+        "wingspan": 47.6,
+        "height": 14.8,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "ATR 42": [
+      {
+        "aircraft_id": "ATR-ATR42-300",
+        "type": "ATR ATR 42-300",
+        "length": 22.67,
+        "wingspan": 24.57,
+        "height": 7.59,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "ATR-ATR42-500",
+        "type": "ATR ATR 42-500",
+        "length": 22.67,
+        "wingspan": 24.57,
+        "height": 7.59,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "ATR-ATR42-600",
+        "type": "ATR ATR 42-600",
+        "length": 22.67,
+        "wingspan": 24.57,
+        "height": 7.59,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "ATR 72": [
+      {
+        "aircraft_id": "ATR-ATR72-200",
+        "type": "ATR ATR 72-200",
+        "length": 27.17,
+        "wingspan": 27.05,
+        "height": 7.65,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "ATR-ATR72-500",
+        "type": "ATR ATR 72-500",
+        "length": 27.17,
+        "wingspan": 27.05,
+        "height": 7.65,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "ATR-ATR72-600",
+        "type": "ATR ATR 72-600",
+        "length": 27.17,
+        "wingspan": 27.05,
+        "height": 7.65,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MA700": [
+      {
+        "aircraft_id": "AVI-MA700",
+        "type": "AVIC MA700",
+        "length": 30.5,
+        "wingspan": 28.5,
+        "height": 8.4,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "685": [
+      {
+        "aircraft_id": "AVR-685",
+        "type": "Avro 685 York",
+        "length": 23.33,
+        "wingspan": 33.94,
+        "height": 5.33,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "688/689": [
+      {
+        "aircraft_id": "AVR-688",
+        "type": "Avro 688/689 Tudor",
+        "length": 32.18,
+        "wingspan": 36.58,
+        "height": 9.0,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "691": [
+      {
+        "aircraft_id": "AVR-691",
+        "type": "Avro 691 Lancastrian",
+        "length": 21.18,
+        "wingspan": 31.09,
+        "height": 6.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "111": [
+      {
+        "aircraft_id": "BAC-111-200",
+        "type": "BAC 1-11-200",
+        "length": 28.5,
+        "wingspan": 26.97,
+        "height": 7.47,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BAC-111-300",
+        "type": "BAC 1-11-300",
+        "length": 28.5,
+        "wingspan": 26.97,
+        "height": 7.47,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BAC-111-400",
+        "type": "BAC 1-11-400",
+        "length": 28.5,
+        "wingspan": 26.97,
+        "height": 7.47,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BAC-111-500",
+        "type": "BAC 1-11-500",
+        "length": 32.61,
+        "wingspan": 28.5,
+        "height": 7.47,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "BAe 146": [
+      {
+        "aircraft_id": "BAE-146-100",
+        "type": "BAe 146-100 / Avro RJ70",
+        "length": 26.19,
+        "wingspan": 26.34,
+        "height": 8.61,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BAE-146-200",
+        "type": "BAe 146-200 / Avro RJ85",
+        "length": 28.55,
+        "wingspan": 26.34,
+        "height": 8.61,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BAE-146-300",
+        "type": "BAe 146-300 / Avro RJ100",
+        "length": 31.01,
+        "wingspan": 26.34,
+        "height": 8.61,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "ATP": [
+      {
+        "aircraft_id": "BAE-ATP",
+        "type": "British Aerospace ATP",
+        "length": 26.0,
+        "wingspan": 30.6,
+        "height": 8.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Jetstream": [
+      {
+        "aircraft_id": "BAE-Jetstream-31",
+        "type": "British Aerospace Jetstream 31",
+        "length": 14.7,
+        "wingspan": 15.8,
+        "height": 5.0,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BAE-Jetstream-32",
+        "type": "British Aerospace Jetstream 32",
+        "length": 14.7,
+        "wingspan": 15.8,
+        "height": 5.0,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BAE-Jetstream-41",
+        "type": "British Aerospace Jetstream 41",
+        "length": 19.25,
+        "wingspan": 18.29,
+        "height": 5.74,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "BT-67": [
+      {
+        "aircraft_id": "BAS-BT67",
+        "type": "Basler BT-67",
+        "length": 19.83,
+        "wingspan": 28.96,
+        "height": 5.33,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "1900C": [
+      {
+        "aircraft_id": "BEE-1900C",
+        "type": "Beechcraft 1900C",
+        "length": 17.63,
+        "wingspan": 17.67,
+        "height": 4.52,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "1900D": [
+      {
+        "aircraft_id": "BEE-1900D",
+        "type": "Beechcraft 1900D",
+        "length": 17.63,
+        "wingspan": 17.67,
+        "height": 4.72,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "99": [
+      {
+        "aircraft_id": "BEE-99",
+        "type": "Beechcraft 99",
+        "length": 10.67,
+        "wingspan": 13.6,
+        "height": 4.52,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Be-200": [
+      {
+        "aircraft_id": "BER-Be200",
+        "type": "Beriev Be-200",
+        "length": 32.05,
+        "wingspan": 32.78,
+        "height": 8.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Be-30": [
+      {
+        "aircraft_id": "BER-Be30",
+        "type": "Beriev Be-30",
+        "length": 9.7,
+        "wingspan": 15.0,
+        "height": 3.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Be-32": [
+      {
+        "aircraft_id": "BER-Be32",
+        "type": "Beriev Be-32",
+        "length": 11.84,
+        "wingspan": 15.5,
+        "height": 4.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "247": [
+      {
+        "aircraft_id": "BOE-247",
+        "type": "Boeing 247",
+        "length": 15.18,
+        "wingspan": 22.56,
+        "height": 3.96,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "307": [
+      {
+        "aircraft_id": "BOE-307",
+        "type": "Boeing 307 Stratoliner",
+        "length": 22.66,
+        "wingspan": 32.61,
+        "height": 6.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "314": [
+      {
+        "aircraft_id": "BOE-314",
+        "type": "Boeing 314",
+        "length": 32.36,
+        "wingspan": 46.96,
+        "height": 9.65,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "377": [
+      {
+        "aircraft_id": "BOE-377",
+        "type": "Boeing 377 Stratocruiser",
+        "length": 33.63,
+        "wingspan": 43.05,
+        "height": 11.71,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "707": [
+      {
+        "aircraft_id": "BOE-707-138",
+        "type": "Boeing 707-138",
+        "length": 40.4,
+        "wingspan": 39.9,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-707-120",
+        "type": "Boeing 707-120",
+        "length": 44.04,
+        "wingspan": 39.9,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-707-220",
+        "type": "Boeing 707-220",
+        "length": 44.22,
+        "wingspan": 39.88,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-VC137A",
+        "type": "Boeing VC-137A Stratoliner",
+        "length": 44.22,
+        "wingspan": 39.88,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-707-320",
+        "type": "Boeing 707-320 Intercontinental",
+        "length": 46.61,
+        "wingspan": 44.42,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-707-330C",
+        "type": "Boeing 707-330C",
+        "length": 46.61,
+        "wingspan": 44.42,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-707-420",
+        "type": "Boeing 707-420",
+        "length": 46.61,
+        "wingspan": 44.42,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-VC137B",
+        "type": "Boeing VC-137B Stratoliner",
+        "length": 46.61,
+        "wingspan": 44.22,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-VC137C",
+        "type": "Boeing VC-137C Stratoliner",
+        "length": 46.61,
+        "wingspan": 44.22,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "717": [
+      {
+        "aircraft_id": "BOE-717",
+        "type": "Boeing 717",
+        "length": 32.81,
+        "wingspan": 28.45,
+        "height": 8.92,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "720": [
+      {
+        "aircraft_id": "BOE-720",
+        "type": "Boeing 720",
+        "length": 41.6,
+        "wingspan": 39.9,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "727": [
+      {
+        "aircraft_id": "BOE-727-100",
+        "type": "Boeing 727-100",
+        "length": 40.6,
+        "wingspan": 32.9,
+        "height": 10.36,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-727-200",
+        "type": "Boeing 727-200",
+        "length": 46.7,
+        "wingspan": 32.9,
+        "height": 10.36,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "737": [
+      {
+        "aircraft_id": "BOE-737-100",
+        "type": "Boeing 737-100",
+        "length": 28.65,
+        "wingspan": 28.35,
+        "height": 11.28,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-200",
+        "type": "Boeing 737-200",
+        "length": 30.53,
+        "wingspan": 28.35,
+        "height": 11.28,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-500",
+        "type": "Boeing 737-500",
+        "length": 31.0,
+        "wingspan": 28.9,
+        "height": 11.1,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-600",
+        "type": "Boeing 737-600",
+        "length": 31.2,
+        "wingspan": 34.3,
+        "height": 12.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-600-WL",
+        "type": "Boeing 737-600 (Winglets)",
+        "length": 31.2,
+        "wingspan": 35.79,
+        "height": 12.5,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-300",
+        "type": "Boeing 737-300",
+        "length": 33.4,
+        "wingspan": 28.9,
+        "height": 11.1,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-700",
+        "type": "Boeing 737-700",
+        "length": 33.6,
+        "wingspan": 34.3,
+        "height": 12.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-700-WL",
+        "type": "Boeing 737-700 (Winglets)",
+        "length": 33.6,
+        "wingspan": 35.79,
+        "height": 12.5,
+        "wingtip": "WL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-C40A",
+        "type": "Boeing C-40A Clipper",
+        "length": 33.63,
+        "wingspan": 34.32,
+        "height": 12.55,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-MAX7",
+        "type": "Boeing 737 MAX 7",
+        "length": 35.6,
+        "wingspan": 35.9,
+        "height": 12.3,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-400",
+        "type": "Boeing 737-400",
+        "length": 36.5,
+        "wingspan": 28.9,
+        "height": 11.1,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-MAX8",
+        "type": "Boeing 737 MAX 8",
+        "length": 39.5,
+        "wingspan": 35.9,
+        "height": 12.3,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-800",
+        "type": "Boeing 737-800",
+        "length": 39.5,
+        "wingspan": 34.3,
+        "height": 12.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-800-WL",
+        "type": "Boeing 737-800 (Winglets)",
+        "length": 39.5,
+        "wingspan": 35.79,
+        "height": 12.5,
+        "wingtip": "WL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-737-900",
+        "type": "Boeing 737-900",
+        "length": 42.1,
+        "wingspan": 34.3,
+        "height": 12.5,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-900-WL",
+        "type": "Boeing 737-900 (Winglets)",
+        "length": 42.1,
+        "wingspan": 35.79,
+        "height": 12.5,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-900ER",
+        "type": "Boeing 737-900ER",
+        "length": 42.1,
+        "wingspan": 35.79,
+        "height": 12.5,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-MAX9",
+        "type": "Boeing 737 MAX 9",
+        "length": 42.2,
+        "wingspan": 35.9,
+        "height": 12.3,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-737-MAX10",
+        "type": "Boeing 737 MAX 10",
+        "length": 43.8,
+        "wingspan": 35.9,
+        "height": 12.3,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "747": [
+      {
+        "aircraft_id": "BOE-747-SP",
+        "type": "Boeing 747SP Special Performance",
+        "length": 56.3,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-SCA",
+        "type": "Boeing 747 Shuttle Carrier Aircraft",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-100",
+        "type": "Boeing 747-100",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-123SF",
+        "type": "Boeing 747-123 Special Freighter",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-200",
+        "type": "Boeing 747-200",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-200B",
+        "type": "Boeing 747-200B",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-200SUD",
+        "type": "Boeing 747-200B SUD",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-200C",
+        "type": "Boeing 747-200C",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-200F",
+        "type": "Boeing 747-200F",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-300",
+        "type": "Boeing 747-300",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-400",
+        "type": "Boeing 747-400",
+        "length": 70.66,
+        "wingspan": 64.44,
+        "height": 19.41,
+        "wingtip": "WL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-400-VO",
+        "type": "Boeing 747-400 LauncherOne Carrier Aircraft",
+        "length": 70.66,
+        "wingspan": 64.44,
+        "height": 19.41,
+        "wingtip": "WL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-400D",
+        "type": "Boeing 747-400D Domestic",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-SR",
+        "type": "Boeing 747SR Short Range",
+        "length": 70.66,
+        "wingspan": 59.64,
+        "height": 19.3,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-VC25A",
+        "type": "Boeing VC-25A (Air Force One)",
+        "length": 70.66,
+        "wingspan": 64.4,
+        "height": 19.3,
+        "wingtip": "WL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-YAL1",
+        "type": "Boeing YAL-1 Airborne Laser",
+        "length": 70.66,
+        "wingspan": 64.44,
+        "height": 19.41,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-400LCF",
+        "type": "Boeing 747-400LCF Dreamlifter",
+        "length": 71.68,
+        "wingspan": 64.44,
+        "height": 21.54,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-747-VC25B",
+        "type": "Boeing VC-25B (Air Force One, 747-8I)",
+        "length": 76.25,
+        "wingspan": 68.45,
+        "height": 19.36,
+        "wingtip": "SL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-747-8",
+        "type": "Boeing 747-8 Intercontinental",
+        "length": 76.3,
+        "wingspan": 68.4,
+        "height": 19.4,
+        "wingtip": "RW",
+        "owned": true
+      }
+    ],
+    "E-4": [
+      {
+        "aircraft_id": "BOE-E4B",
+        "type": "Boeing E-4B",
+        "length": 70.51,
+        "wingspan": 59.64,
+        "height": 19.33,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "757": [
+      {
+        "aircraft_id": "BOE-757-200",
+        "type": "Boeing 757-200",
+        "length": 47.32,
+        "wingspan": 38.05,
+        "height": 13.56,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-757-200-WL",
+        "type": "Boeing 757-200 (Winglets)",
+        "length": 47.32,
+        "wingspan": 38.05,
+        "height": 13.56,
+        "wingtip": "WL",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-C32A",
+        "type": "Boeing C-32A (Air Force Two)",
+        "length": 47.32,
+        "wingspan": 38.05,
+        "height": 13.56,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-757-300",
+        "type": "Boeing 757-300",
+        "length": 54.43,
+        "wingspan": 38.05,
+        "height": 13.56,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-757-300-WL",
+        "type": "Boeing 757-300 (Winglets)",
+        "length": 54.43,
+        "wingspan": 41.1,
+        "height": 13.56,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "767": [
+      {
+        "aircraft_id": "BOE-767-200",
+        "type": "Boeing 767-200",
+        "length": 48.51,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-767-200-WL",
+        "type": "Boeing 767-200 (Winglets)",
+        "length": 48.51,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-767-AOA",
+        "type": "Boeing 767-200 Airborne Optical Adjunct",
+        "length": 48.51,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-767-200ER",
+        "type": "Boeing 767-200ER Extended Range",
+        "length": 48.51,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-767-300",
+        "type": "Boeing 767-300",
+        "length": 54.94,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-767-300-WL",
+        "type": "Boeing 767-300 (Winglets)",
+        "length": 54.94,
+        "wingspan": 52.05,
+        "height": 15.85,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-767-300BCF-WL",
+        "type": "Boeing 767-300BCF (Winglets)",
+        "length": 54.94,
+        "wingspan": 52.05,
+        "height": 15.85,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-767-300ER-WL",
+        "type": "Boeing 767-300ER (Winglets)",
+        "length": 54.94,
+        "wingspan": 52.05,
+        "height": 15.85,
+        "wingtip": "WL",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-767-300ER",
+        "type": "Boeing 767-300ER Extended Range",
+        "length": 54.94,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-767-400ER",
+        "type": "Boeing 767-400ER Extended Range",
+        "length": 61.37,
+        "wingspan": 51.92,
+        "height": 16.8,
+        "wingtip": "RW",
+        "owned": false
+      }
+    ],
+    "777": [
+      {
+        "aircraft_id": "BOE-777-200",
+        "type": "Boeing 777-200",
+        "length": 63.7,
+        "wingspan": 60.9,
+        "height": 18.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-777-200ER",
+        "type": "Boeing 777-200ER Extended Range",
+        "length": 63.7,
+        "wingspan": 60.9,
+        "height": 18.5,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-777-200LR",
+        "type": "Boeing 777-200LR Longer Range",
+        "length": 63.7,
+        "wingspan": 64.8,
+        "height": 18.5,
+        "wingtip": "RW",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-777-F",
+        "type": "Boeing 777F",
+        "length": 63.73,
+        "wingspan": 64.8,
+        "height": 18.6,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-777-8",
+        "type": "Boeing 777-8",
+        "length": 69.8,
+        "wingspan": 71.8,
+        "height": 19.7,
+        "wingtip": "RW",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-777-300",
+        "type": "Boeing 777-300",
+        "length": 73.9,
+        "wingspan": 60.9,
+        "height": 18.5,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BOE-777-300ER",
+        "type": "Boeing 777-300ER Extended Range",
+        "length": 73.9,
+        "wingspan": 64.8,
+        "height": 18.5,
+        "wingtip": "RW",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-777-9",
+        "type": "Boeing 777-9",
+        "length": 76.7,
+        "wingspan": 71.8,
+        "height": 19.7,
+        "wingtip": "RW",
+        "owned": false
+      }
+    ],
+    "787": [
+      {
+        "aircraft_id": "BOE-787-8",
+        "type": "Boeing 787-8 Dreamliner",
+        "length": 56.7,
+        "wingspan": 60.1,
+        "height": 17.0,
+        "wingtip": "RW",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-787-9",
+        "type": "Boeing 787-9 Dreamliner",
+        "length": 62.8,
+        "wingspan": 60.1,
+        "height": 17.0,
+        "wingtip": "RW",
+        "owned": true
+      },
+      {
+        "aircraft_id": "BOE-787-10",
+        "type": "Boeing 787-10 Dreamliner",
+        "length": 68.3,
+        "wingspan": 60.1,
+        "height": 17.0,
+        "wingtip": "RW",
+        "owned": false
+      }
+    ],
+    "CRJ-100": [
+      {
+        "aircraft_id": "BOM-CRJ100",
+        "type": "Bombardier CRJ-100",
+        "length": 26.77,
+        "wingspan": 21.21,
+        "height": 6.22,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CRJ-200": [
+      {
+        "aircraft_id": "BOM-CRJ200",
+        "type": "Bombardier CRJ-200",
+        "length": 26.77,
+        "wingspan": 21.21,
+        "height": 6.22,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "CRJ-700": [
+      {
+        "aircraft_id": "BOM-CRJ700",
+        "type": "Bombardier CRJ-700",
+        "length": 32.51,
+        "wingspan": 23.24,
+        "height": 7.57,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "CRJ-900": [
+      {
+        "aircraft_id": "BOM-CRJ900",
+        "type": "Bombardier CRJ-900",
+        "length": 36.4,
+        "wingspan": 24.85,
+        "height": 7.57,
+        "wingtip": "WL",
+        "owned": true
+      }
+    ],
+    "CRJ-1000": [
+      {
+        "aircraft_id": "BOM-CRJ1000",
+        "type": "Bombardier CRJ-1000",
+        "length": 39.1,
+        "wingspan": 28.7,
+        "height": 7.13,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "Britannia": [
+      {
+        "aircraft_id": "BRI-Britannia-310",
+        "type": "Bristol Britannia 310",
+        "length": 37.87,
+        "wingspan": 43.36,
+        "height": 11.43,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "BRI-Britannia-312",
+        "type": "Bristol Britannia 312",
+        "length": 37.87,
+        "wingspan": 43.36,
+        "height": 11.43,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "BN-2": [
+      {
+        "aircraft_id": "BRN-BN2",
+        "type": "Britten-Norman BN-2",
+        "length": 10.9,
+        "wingspan": 14.94,
+        "height": 4.17,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "BN-2A": [
+      {
+        "aircraft_id": "BRN-BN2A",
+        "type": "Britten-Norman BN-2A",
+        "length": 10.9,
+        "wingspan": 14.94,
+        "height": 4.17,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Buran": [
+      {
+        "aircraft_id": "BUR-OK1K1",
+        "type": "Buran Space Orbiter OK-1K1",
+        "length": 36.37,
+        "wingspan": 23.92,
+        "height": 16.35,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "C-295": [
+      {
+        "aircraft_id": "CAA-C295-Pax",
+        "type": "CASA/Airbus C-295 Pax",
+        "length": 24.5,
+        "wingspan": 25.81,
+        "height": 8.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "North Star": [
+      {
+        "aircraft_id": "CAN-C4",
+        "type": "Canadair North Star C-4",
+        "length": 28.96,
+        "wingspan": 43.05,
+        "height": 7.57,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CL-44": [
+      {
+        "aircraft_id": "CAN-CL44",
+        "type": "Canadair CL-44",
+        "length": 36.6,
+        "wingspan": 42.54,
+        "height": 11.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "C-212": [
+      {
+        "aircraft_id": "CAS-C212",
+        "type": "CASA C-212",
+        "length": 16.47,
+        "wingspan": 20.28,
+        "height": 6.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CN-235": [
+      {
+        "aircraft_id": "CAS-CN235",
+        "type": "CASA CN-235",
+        "length": 21.4,
+        "wingspan": 25.81,
+        "height": 8.18,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "208": [
+      {
+        "aircraft_id": "CES-208",
+        "type": "Cessna 208",
+        "length": 11.28,
+        "wingspan": 15.88,
+        "height": 4.32,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "402": [
+      {
+        "aircraft_id": "CES-402",
+        "type": "Cessna 402",
+        "length": 10.97,
+        "wingspan": 11.0,
+        "height": 3.46,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "4-0-4": [
+      {
+        "aircraft_id": "CES-404",
+        "type": "Martin 4-0-4",
+        "length": 20.5,
+        "wingspan": 28.5,
+        "height": 6.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "441": [
+      {
+        "aircraft_id": "CES-441",
+        "type": "Cessna 441",
+        "length": 11.78,
+        "wingspan": 15.86,
+        "height": 3.76,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "ARJ21": [
+      {
+        "aircraft_id": "COM-ARJ21-700",
+        "type": "Comac ARJ21-700 ARJ21",
+        "length": 33.4,
+        "wingspan": 27.3,
+        "height": 8.44,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "C919": [
+      {
+        "aircraft_id": "COM-C919-100",
+        "type": "Comac C919-100",
+        "length": 38.9,
+        "wingspan": 35.8,
+        "height": 11.95,
+        "wingtip": "SL",
+        "owned": true
+      }
+    ],
+    "CV-240": [
+      {
+        "aircraft_id": "CON-CV240",
+        "type": "Convair CV-240",
+        "length": 22.66,
+        "wingspan": 28.96,
+        "height": 7.0,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "CV-340": [
+      {
+        "aircraft_id": "CON-CV340",
+        "type": "Convair CV-340",
+        "length": 24.85,
+        "wingspan": 32.0,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CV-440": [
+      {
+        "aircraft_id": "CON-CV440",
+        "type": "Convair CV-440",
+        "length": 24.85,
+        "wingspan": 32.0,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CV-580": [
+      {
+        "aircraft_id": "CON-CV580",
+        "type": "Convair CV-580",
+        "length": 24.85,
+        "wingspan": 32.0,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CV-600": [
+      {
+        "aircraft_id": "CON-CV600",
+        "type": "Convair CV-600",
+        "length": 24.85,
+        "wingspan": 32.0,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CV-640": [
+      {
+        "aircraft_id": "CON-CV640",
+        "type": "Convair CV-640",
+        "length": 24.85,
+        "wingspan": 32.0,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "CV-880": [
+      {
+        "aircraft_id": "CON-CV880",
+        "type": "Convair CV-880 Golden Arrow",
+        "length": 39.42,
+        "wingspan": 35.8,
+        "height": 11.0,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "CV-990": [
+      {
+        "aircraft_id": "CON-CV990",
+        "type": "Convair CV-990 Coronado",
+        "length": 42.36,
+        "wingspan": 36.58,
+        "height": 11.68,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "PBY": [
+      {
+        "aircraft_id": "CSA-PBY5",
+        "type": "Consolidated PBY-5 Catalina",
+        "length": 19.46,
+        "wingspan": 31.7,
+        "height": 6.15,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "C-46": [
+      {
+        "aircraft_id": "CUR-C46",
+        "type": "Curtiss-Wright C-46 Commando",
+        "length": 23.27,
+        "wingspan": 32.92,
+        "height": 6.29,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Mercure": [
+      {
+        "aircraft_id": "DAS-Mercure-100",
+        "type": "Dassault Mercure 100",
+        "length": 34.84,
+        "wingspan": 30.55,
+        "height": 11.44,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DHC-3": [
+      {
+        "aircraft_id": "DHC-DHC3",
+        "type": "de Havilland Canada DHC-3 Otter",
+        "length": 12.65,
+        "wingspan": 16.65,
+        "height": 3.02,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DHC-6": [
+      {
+        "aircraft_id": "DHC-DHC6",
+        "type": "de Havilland Canada DHC-6 Twin Otter",
+        "length": 15.77,
+        "wingspan": 19.8,
+        "height": 5.94,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DHC-7": [
+      {
+        "aircraft_id": "DHC-DHC7",
+        "type": "de Havilland Canada DHC-7 Dash 7",
+        "length": 24.58,
+        "wingspan": 28.35,
+        "height": 8.36,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DHC-8": [
+      {
+        "aircraft_id": "DHC-DHC8-100",
+        "type": "de Havilland Canada DHC-8-100 Dash 8-100",
+        "length": 22.25,
+        "wingspan": 25.91,
+        "height": 7.49,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DHC-DHC8-200",
+        "type": "de Havilland Canada DHC-8-200 Dash 8-200",
+        "length": 22.25,
+        "wingspan": 25.91,
+        "height": 7.49,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DHC-DHC8-300",
+        "type": "de Havilland Canada DHC-8-300 Dash 8-300",
+        "length": 25.68,
+        "wingspan": 27.4,
+        "height": 7.49,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DHC-DHC8-400",
+        "type": "de Havilland Canada DHC-8-400 Dash 8-400 (Q400)",
+        "length": 32.8,
+        "wingspan": 28.4,
+        "height": 8.3,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "DH.106": [
+      {
+        "aircraft_id": "DHV-DH106-1",
+        "type": "de Havilland DH.106 Comet 1",
+        "length": 28.6,
+        "wingspan": 35.05,
+        "height": 8.0,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DHV-DH106-4",
+        "type": "de Havilland DH.106 Comet 4",
+        "length": 34.98,
+        "wingspan": 35.05,
+        "height": 8.0,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DH.91": [
+      {
+        "aircraft_id": "DHV-DH91",
+        "type": "de Havilland DH.91 Albatross",
+        "length": 23.24,
+        "wingspan": 32.92,
+        "height": 6.17,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DH.95": [
+      {
+        "aircraft_id": "DHV-DH95",
+        "type": "de Havilland DH.95 Flamingo",
+        "length": 15.24,
+        "wingspan": 20.73,
+        "height": 5.16,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Do 228": [
+      {
+        "aircraft_id": "DOR-Do228",
+        "type": "Dornier Do 228",
+        "length": 16.56,
+        "wingspan": 16.97,
+        "height": 4.86,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Do 328": [
+      {
+        "aircraft_id": "DOR-Do328-100",
+        "type": "Dornier Do 328-100",
+        "length": 21.23,
+        "wingspan": 21.0,
+        "height": 7.23,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOR-Do328-300",
+        "type": "Dornier Do 328-300",
+        "length": 21.23,
+        "wingspan": 20.98,
+        "height": 7.24,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Do X": [
+      {
+        "aircraft_id": "DOR-DOX",
+        "type": "Dornier Do X",
+        "length": 40.05,
+        "wingspan": 48.0,
+        "height": 10.2,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "DC-2": [
+      {
+        "aircraft_id": "DOU-DC2",
+        "type": "Douglas DC-2",
+        "length": 18.2,
+        "wingspan": 25.9,
+        "height": 4.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DC-3": [
+      {
+        "aircraft_id": "DOU-C47",
+        "type": "Douglas C-47 Skytrain",
+        "length": 19.6,
+        "wingspan": 28.96,
+        "height": 5.16,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC3",
+        "type": "Douglas DC-3",
+        "length": 19.7,
+        "wingspan": 28.96,
+        "height": 5.16,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DC-4": [
+      {
+        "aircraft_id": "DOU-DC4",
+        "type": "Douglas DC-4",
+        "length": 28.6,
+        "wingspan": 42.05,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "DC-5": [
+      {
+        "aircraft_id": "DOU-DC5",
+        "type": "Douglas DC-5",
+        "length": 16.05,
+        "wingspan": 23.8,
+        "height": 4.83,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DC-6": [
+      {
+        "aircraft_id": "DOU-VC118A",
+        "type": "Douglas VC-118A (Independence, Air Force One)",
+        "length": 30.18,
+        "wingspan": 35.81,
+        "height": 8.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC6",
+        "type": "Douglas DC-6",
+        "length": 32.2,
+        "wingspan": 35.8,
+        "height": 8.66,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC6-A",
+        "type": "Douglas DC-6A",
+        "length": 32.2,
+        "wingspan": 35.8,
+        "height": 8.66,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC6-B",
+        "type": "Douglas DC-6B",
+        "length": 32.2,
+        "wingspan": 35.8,
+        "height": 8.66,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "DC-7": [
+      {
+        "aircraft_id": "DOU-DC7",
+        "type": "Douglas DC-7",
+        "length": 32.2,
+        "wingspan": 38.8,
+        "height": 9.6,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC7-B",
+        "type": "Douglas DC-7B",
+        "length": 33.6,
+        "wingspan": 38.8,
+        "height": 9.6,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC7-C",
+        "type": "Douglas DC-7C Seven Seas",
+        "length": 34.9,
+        "wingspan": 38.8,
+        "height": 9.6,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "DC-8": [
+      {
+        "aircraft_id": "DOU-DC8-10",
+        "type": "Douglas DC-8-10 Series 10",
+        "length": 45.9,
+        "wingspan": 43.4,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC8-20",
+        "type": "Douglas DC-8-20 Series 20",
+        "length": 45.9,
+        "wingspan": 43.4,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC8-30",
+        "type": "Douglas DC-8-30 Series 30",
+        "length": 45.9,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC8-40",
+        "type": "Douglas DC-8-40 Series 40",
+        "length": 45.9,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC8-50",
+        "type": "Douglas DC-8-50 Series 50",
+        "length": 45.9,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC8-62",
+        "type": "Douglas DC-8-62 Super 62",
+        "length": 48.0,
+        "wingspan": 48.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC8-72",
+        "type": "Douglas DC-8-72 Super 72",
+        "length": 48.0,
+        "wingspan": 48.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC8-61",
+        "type": "Douglas DC-8-61 Super 61",
+        "length": 57.0,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC8-63",
+        "type": "Douglas DC-8-63 Super 63",
+        "length": 57.0,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "DOU-DC8-71",
+        "type": "Douglas DC-8-71 Super 71",
+        "length": 57.0,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "DOU-DC8-73",
+        "type": "Douglas DC-8-73 Super 73",
+        "length": 57.0,
+        "wingspan": 45.0,
+        "height": 12.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "EMB-110": [
+      {
+        "aircraft_id": "EMB-EMB110",
+        "type": "Embraer EMB-110 Bandeirante",
+        "length": 15.1,
+        "wingspan": 15.6,
+        "height": 4.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "EMB-120": [
+      {
+        "aircraft_id": "EMB-EMB120",
+        "type": "Embraer EMB-120 Brasilia",
+        "length": 20.0,
+        "wingspan": 19.8,
+        "height": 6.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "EMB-121": [
+      {
+        "aircraft_id": "EMB-EMB121",
+        "type": "Embraer EMB-121 Xingu",
+        "length": 11.27,
+        "wingspan": 12.0,
+        "height": 3.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "ERJ-135": [
+      {
+        "aircraft_id": "EMB-ERJ135",
+        "type": "Embraer ERJ-135",
+        "length": 26.33,
+        "wingspan": 20.04,
+        "height": 6.75,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "ERJ-140": [
+      {
+        "aircraft_id": "EMB-ERJ140",
+        "type": "Embraer ERJ-140",
+        "length": 28.45,
+        "wingspan": 20.04,
+        "height": 6.75,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "ERJ-145": [
+      {
+        "aircraft_id": "EMB-ERJ145",
+        "type": "Embraer ERJ-145",
+        "length": 29.87,
+        "wingspan": 20.04,
+        "height": 6.75,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "E170": [
+      {
+        "aircraft_id": "EMB-E170",
+        "type": "Embraer E170",
+        "length": 29.9,
+        "wingspan": 26.0,
+        "height": 9.73,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "EMB-E170-WL",
+        "type": "Embraer E170 (Winglets)",
+        "length": 29.9,
+        "wingspan": 26.0,
+        "height": 9.73,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "E175": [
+      {
+        "aircraft_id": "EMB-E175",
+        "type": "Embraer E175",
+        "length": 31.68,
+        "wingspan": 26.0,
+        "height": 9.73,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "E175-E2": [
+      {
+        "aircraft_id": "EMB-E175E2",
+        "type": "Embraer E175-E2",
+        "length": 32.4,
+        "wingspan": 30.0,
+        "height": 10.9,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "E190": [
+      {
+        "aircraft_id": "EMB-E190",
+        "type": "Embraer E190",
+        "length": 36.24,
+        "wingspan": 28.72,
+        "height": 10.55,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "E190-E2": [
+      {
+        "aircraft_id": "EMB-E190E2",
+        "type": "Embraer E190-E2",
+        "length": 36.24,
+        "wingspan": 33.7,
+        "height": 11.0,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "E195": [
+      {
+        "aircraft_id": "EMB-E195",
+        "type": "Embraer E195",
+        "length": 38.65,
+        "wingspan": 28.72,
+        "height": 10.55,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "E195-E2": [
+      {
+        "aircraft_id": "EMB-E195E2",
+        "type": "Embraer E195-E2",
+        "length": 41.5,
+        "wingspan": 35.1,
+        "height": 11.5,
+        "wingtip": "WL",
+        "owned": true
+      }
+    ],
+    "SA226": [
+      {
+        "aircraft_id": "FAI-SA226",
+        "type": "Fairchild Swearingen Metro",
+        "length": 18.08,
+        "wingspan": 14.2,
+        "height": 4.7,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "F": [
+      {
+        "aircraft_id": "FOK-F",
+        "type": "Fokker F",
+        "length": 12.5,
+        "wingspan": 14.7,
+        "height": 3.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "F100": [
+      {
+        "aircraft_id": "FOK-F100",
+        "type": "Fokker F100",
+        "length": 35.53,
+        "wingspan": 28.08,
+        "height": 8.5,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "F27": [
+      {
+        "aircraft_id": "FOK-F27",
+        "type": "Fokker F27",
+        "length": 23.5,
+        "wingspan": 29.0,
+        "height": 8.0,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "F28": [
+      {
+        "aircraft_id": "FOK-F28",
+        "type": "Fokker F28",
+        "length": 27.4,
+        "wingspan": 25.0,
+        "height": 8.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "F50": [
+      {
+        "aircraft_id": "FOK-F50",
+        "type": "Fokker F50",
+        "length": 25.25,
+        "wingspan": 29.0,
+        "height": 7.9,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "F70": [
+      {
+        "aircraft_id": "FOK-F70",
+        "type": "Fokker F70",
+        "length": 30.9,
+        "wingspan": 28.0,
+        "height": 8.5,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Trimotor": [
+      {
+        "aircraft_id": "FOR-Trimotor-4AT",
+        "type": "Ford Trimotor 4-AT",
+        "length": 15.2,
+        "wingspan": 22.5,
+        "height": 3.7,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "FOR-Trimotor-5AT",
+        "type": "Ford Trimotor 5-AT",
+        "length": 16.1,
+        "wingspan": 23.7,
+        "height": 3.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Fw 200": [
+      {
+        "aircraft_id": "FOW-FW200",
+        "type": "Focke-Wulf Fw 200 Condor",
+        "length": 23.45,
+        "wingspan": 32.85,
+        "height": 6.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Y-11": [
+      {
+        "aircraft_id": "HAR-Y11",
+        "type": "Harbin Y-11",
+        "length": 12.0,
+        "wingspan": 16.0,
+        "height": 4.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Y-12": [
+      {
+        "aircraft_id": "HAR-Y12",
+        "type": "Harbin Y-12",
+        "length": 14.86,
+        "wingspan": 19.2,
+        "height": 5.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "HS 748": [
+      {
+        "aircraft_id": "HAW-HS748",
+        "type": "Hawker Siddeley HS 748",
+        "length": 20.42,
+        "wingspan": 30.18,
+        "height": 7.57,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Trident": [
+      {
+        "aircraft_id": "HAW-Trident-1",
+        "type": "Hawker Siddeley Trident 1",
+        "length": 32.0,
+        "wingspan": 27.0,
+        "height": 8.6,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "HAW-Trident-2",
+        "type": "Hawker Siddeley Trident 2",
+        "length": 37.6,
+        "wingspan": 27.0,
+        "height": 8.6,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "HAW-Trident-3",
+        "type": "Hawker Siddeley Trident 3",
+        "length": 40.0,
+        "wingspan": 28.5,
+        "height": 9.1,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "H.P.81": [
+      {
+        "aircraft_id": "HPR-HP81",
+        "type": "Handley Page H.P.81 Hermes IV",
+        "length": 26.82,
+        "wingspan": 35.05,
+        "height": 7.47,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "HPR.7": [
+      {
+        "aircraft_id": "HPR-HPR7",
+        "type": "Handley Page HPR.7 Herald",
+        "length": 21.92,
+        "wingspan": 28.96,
+        "height": 8.23,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-114": [
+      {
+        "aircraft_id": "ILY-Il114",
+        "type": "Ilyushin Il-114",
+        "length": 26.9,
+        "wingspan": 30.0,
+        "height": 8.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-12": [
+      {
+        "aircraft_id": "ILY-Il12",
+        "type": "Ilyushin Il-12",
+        "length": 19.7,
+        "wingspan": 31.7,
+        "height": 6.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-14": [
+      {
+        "aircraft_id": "ILY-Il14",
+        "type": "Ilyushin Il-14",
+        "length": 21.25,
+        "wingspan": 31.7,
+        "height": 6.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-18": [
+      {
+        "aircraft_id": "ILY-Il18",
+        "type": "Ilyushin Il-18",
+        "length": 35.9,
+        "wingspan": 37.4,
+        "height": 10.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-62": [
+      {
+        "aircraft_id": "ILY-Il62",
+        "type": "Ilyushin Il-62",
+        "length": 53.12,
+        "wingspan": 43.2,
+        "height": 12.35,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-86": [
+      {
+        "aircraft_id": "ILY-Il86",
+        "type": "Ilyushin Il-86",
+        "length": 59.54,
+        "wingspan": 48.06,
+        "height": 15.81,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Il-96": [
+      {
+        "aircraft_id": "ILY-Il96-300",
+        "type": "Ilyushin Il-96-300",
+        "length": 55.3,
+        "wingspan": 60.1,
+        "height": 17.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MC-21": [
+      {
+        "aircraft_id": "IRK-MC21-300",
+        "type": "Irkut MC-21-300",
+        "length": 42.2,
+        "wingspan": 35.9,
+        "height": 11.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Ju": [
+      {
+        "aircraft_id": "JUN-JU52-3M",
+        "type": "Junkers Ju 3m Tante Ju",
+        "length": 18.9,
+        "wingspan": 29.25,
+        "height": 4.5,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "L-410": [
+      {
+        "aircraft_id": "LET-L410",
+        "type": "Let L-410 Turbolet",
+        "length": 14.42,
+        "wingspan": 19.48,
+        "height": 5.83,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-610": [
+      {
+        "aircraft_id": "LET-L610",
+        "type": "Let L-610",
+        "length": 21.32,
+        "wingspan": 28.0,
+        "height": 7.98,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "C-5": [
+      {
+        "aircraft_id": "LOC-C5A",
+        "type": "Lockheed C-5A Galaxy",
+        "length": 75.53,
+        "wingspan": 67.89,
+        "height": 19.84,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-C5B",
+        "type": "Lockheed C-5B Galaxy",
+        "length": 75.53,
+        "wingspan": 67.89,
+        "height": 19.84,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-C5M",
+        "type": "Lockheed C-5M Super Galaxy",
+        "length": 75.53,
+        "wingspan": 67.89,
+        "height": 19.84,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-10": [
+      {
+        "aircraft_id": "LOC-L10",
+        "type": "Lockheed L-10 Electra",
+        "length": 14.63,
+        "wingspan": 19.96,
+        "height": 3.94,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-14": [
+      {
+        "aircraft_id": "LOC-L14",
+        "type": "Lockheed L-14 Super Electra",
+        "length": 13.5,
+        "wingspan": 20.2,
+        "height": 3.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-18": [
+      {
+        "aircraft_id": "LOC-L18",
+        "type": "Lockheed L-18 Lodestar",
+        "length": 15.2,
+        "wingspan": 20.1,
+        "height": 3.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-049": [
+      {
+        "aircraft_id": "LOC-L049",
+        "type": "Lockheed L-049 Constellation",
+        "length": 29.0,
+        "wingspan": 37.5,
+        "height": 7.1,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "L-649": [
+      {
+        "aircraft_id": "LOC-L649",
+        "type": "Lockheed L-649 Constellation",
+        "length": 29.0,
+        "wingspan": 37.5,
+        "height": 7.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-749": [
+      {
+        "aircraft_id": "LOC-L749",
+        "type": "Lockheed L-749 Constellation",
+        "length": 29.0,
+        "wingspan": 37.5,
+        "height": 7.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-1049": [
+      {
+        "aircraft_id": "LOC-L1049",
+        "type": "Lockheed L-1049 Super Constellation",
+        "length": 35.4,
+        "wingspan": 37.5,
+        "height": 7.6,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "L-1649": [
+      {
+        "aircraft_id": "LOC-L1649",
+        "type": "Lockheed L-1649 Starliner",
+        "length": 48.0,
+        "wingspan": 45.7,
+        "height": 6.1,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "L-188": [
+      {
+        "aircraft_id": "LOC-L188",
+        "type": "Lockheed L-188 Electra",
+        "length": 31.8,
+        "wingspan": 35.9,
+        "height": 10.0,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "L-100": [
+      {
+        "aircraft_id": "LOC-L100-30",
+        "type": "Lockheed L-100-30 Hercules",
+        "length": 34.37,
+        "wingspan": 40.41,
+        "height": 11.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "L-1011": [
+      {
+        "aircraft_id": "LOC-L1011-500",
+        "type": "Lockheed L-1011 TriStar 500",
+        "length": 50.0,
+        "wingspan": 47.3,
+        "height": 16.9,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "LOC-L1011-1",
+        "type": "Lockheed L-1011 TriStar 1",
+        "length": 54.2,
+        "wingspan": 47.3,
+        "height": 16.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-L1011-100",
+        "type": "Lockheed L-1011 TriStar 100",
+        "length": 54.2,
+        "wingspan": 47.3,
+        "height": 16.9,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-L1011-200",
+        "type": "Lockheed L-1011 TriStar 200",
+        "length": 54.2,
+        "wingspan": 47.3,
+        "height": 16.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "P-3": [
+      {
+        "aircraft_id": "LOC-EP3E",
+        "type": "Lockheed EP-3E Aries II",
+        "length": 35.61,
+        "wingspan": 30.37,
+        "height": 10.27,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-NP3D",
+        "type": "Lockheed NP-3D Orion",
+        "length": 35.61,
+        "wingspan": 30.37,
+        "height": 10.27,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-P3A",
+        "type": "Lockheed P-3A Orion",
+        "length": 35.61,
+        "wingspan": 30.37,
+        "height": 10.27,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-P3B",
+        "type": "Lockheed P-3B Orion",
+        "length": 35.61,
+        "wingspan": 30.37,
+        "height": 10.27,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-P3C",
+        "type": "Lockheed P-3C Orion",
+        "length": 35.61,
+        "wingspan": 30.37,
+        "height": 10.27,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "LOC-RP3D",
+        "type": "Lockheed RP-3D Orion",
+        "length": 35.61,
+        "wingspan": 30.37,
+        "height": 10.27,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "2-0-2": [
+      {
+        "aircraft_id": "MAR-202",
+        "type": "Martin 2-0-2",
+        "length": 14.2,
+        "wingspan": 19.5,
+        "height": 4.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "404": [
+      {
+        "aircraft_id": "MAR-404",
+        "type": "Cessna 404",
+        "length": 11.7,
+        "wingspan": 15.0,
+        "height": 3.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "DC-9": [
+      {
+        "aircraft_id": "MCD-DC9-10",
+        "type": "McDonnell Douglas DC-9-10",
+        "length": 31.82,
+        "wingspan": 27.25,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "MCD-DC9-15",
+        "type": "McDonnell Douglas DC-9-15",
+        "length": 31.82,
+        "wingspan": 27.25,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "MCD-DC9-20",
+        "type": "McDonnell Douglas DC-9-20",
+        "length": 36.37,
+        "wingspan": 28.44,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "MCD-DC9-30",
+        "type": "McDonnell Douglas DC-9-30",
+        "length": 36.37,
+        "wingspan": 28.47,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "MCD-DC9-40",
+        "type": "McDonnell Douglas DC-9-40",
+        "length": 39.75,
+        "wingspan": 28.47,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "MCD-DC9-50",
+        "type": "McDonnell Douglas DC-9-50",
+        "length": 40.72,
+        "wingspan": 28.47,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "DC-10": [
+      {
+        "aircraft_id": "MCD-DC10-40",
+        "type": "McDonnell Douglas DC-10-40",
+        "length": 55.04,
+        "wingspan": 50.39,
+        "height": 17.7,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "MCD-DC10-30",
+        "type": "McDonnell Douglas DC-10-30",
+        "length": 55.06,
+        "wingspan": 50.39,
+        "height": 17.7,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "MCD-DC10-10",
+        "type": "McDonnell Douglas DC-10-10",
+        "length": 55.55,
+        "wingspan": 47.43,
+        "height": 17.7,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "MD-11": [
+      {
+        "aircraft_id": "MCD-MD11F",
+        "type": "McDonnell Douglas MD-11F",
+        "length": 61.2,
+        "wingspan": 51.7,
+        "height": 17.6,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "MCD-MD11",
+        "type": "McDonnell Douglas MD-11",
+        "length": 61.6,
+        "wingspan": 51.7,
+        "height": 17.6,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "MCD-MD11-ER",
+        "type": "McDonnell Douglas MD-11ER Extended Range",
+        "length": 61.6,
+        "wingspan": 51.7,
+        "height": 17.6,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MD-81": [
+      {
+        "aircraft_id": "MCD-MD81",
+        "type": "McDonnell Douglas MD-81",
+        "length": 45.1,
+        "wingspan": 32.8,
+        "height": 9.3,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "MD-82": [
+      {
+        "aircraft_id": "MCD-MD82",
+        "type": "McDonnell Douglas MD-82",
+        "length": 45.1,
+        "wingspan": 32.8,
+        "height": 9.3,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "MD-83": [
+      {
+        "aircraft_id": "MCD-MD83",
+        "type": "McDonnell Douglas MD-83",
+        "length": 45.1,
+        "wingspan": 32.8,
+        "height": 9.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MD-87": [
+      {
+        "aircraft_id": "MCD-MD87",
+        "type": "McDonnell Douglas MD-87",
+        "length": 40.4,
+        "wingspan": 32.8,
+        "height": 9.3,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "MD-88": [
+      {
+        "aircraft_id": "MCD-MD88",
+        "type": "McDonnell Douglas MD-88",
+        "length": 45.1,
+        "wingspan": 32.8,
+        "height": 9.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MD-90": [
+      {
+        "aircraft_id": "MCD-MD90",
+        "type": "McDonnell Douglas MD-90",
+        "length": 46.5,
+        "wingspan": 32.8,
+        "height": 9.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "YS-11": [
+      {
+        "aircraft_id": "NAM-YS11",
+        "type": "NAMC YS-11",
+        "length": 26.3,
+        "wingspan": 32.0,
+        "height": 8.98,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "P": [
+      {
+        "aircraft_id": "PAR-P",
+        "type": "Partenavia P",
+        "length": 12.0,
+        "wingspan": 15.0,
+        "height": 4.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PC-12": [
+      {
+        "aircraft_id": "PIL-PC12",
+        "type": "Pilatus PC-12",
+        "length": 14.4,
+        "wingspan": 16.3,
+        "height": 4.26,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PC-24": [
+      {
+        "aircraft_id": "PIL-PC24",
+        "type": "Pilatus PC-24",
+        "length": 16.8,
+        "wingspan": 17.0,
+        "height": 5.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PC-6": [
+      {
+        "aircraft_id": "PIL-PC6",
+        "type": "Pilatus PC-6",
+        "length": 11.0,
+        "wingspan": 15.0,
+        "height": 3.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PA-23": [
+      {
+        "aircraft_id": "PIP-PA23",
+        "type": "Piper PA-23",
+        "length": 8.6,
+        "wingspan": 11.8,
+        "height": 2.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PA-28RT": [
+      {
+        "aircraft_id": "PIP-PA28RT-201T",
+        "type": "Piper PA-28RT-201T Turbo Arrow IV",
+        "length": 7.62,
+        "wingspan": 9.75,
+        "height": 2.44,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PA-31": [
+      {
+        "aircraft_id": "PIP-PA31",
+        "type": "Piper PA-31",
+        "length": 10.8,
+        "wingspan": 12.0,
+        "height": 3.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PA-31T": [
+      {
+        "aircraft_id": "PIP-PA31T",
+        "type": "Piper PA-31T",
+        "length": 10.8,
+        "wingspan": 14.0,
+        "height": 4.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PA-42": [
+      {
+        "aircraft_id": "PIP-PA42",
+        "type": "Piper PA-42",
+        "length": 13.4,
+        "wingspan": 15.0,
+        "height": 4.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "PA-46": [
+      {
+        "aircraft_id": "PIP-PA46",
+        "type": "Piper PA-46",
+        "length": 9.0,
+        "wingspan": 13.0,
+        "height": 3.4,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "M-18": [
+      {
+        "aircraft_id": "PZL-M18",
+        "type": "PZL M-18",
+        "length": 10.5,
+        "wingspan": 18.0,
+        "height": 3.2,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "M28": [
+      {
+        "aircraft_id": "PZL-M28",
+        "type": "PZL M28",
+        "length": 13.1,
+        "wingspan": 22.0,
+        "height": 4.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Heron": [
+      {
+        "aircraft_id": "RIL-Heron",
+        "type": "Riley Heron",
+        "length": 12.1,
+        "wingspan": 21.5,
+        "height": 3.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Space Shuttle": [
+      {
+        "aircraft_id": "ROC-OV101",
+        "type": "Rockwell Space Shuttle Enterprise (Testorbiter)",
+        "length": 37.24,
+        "wingspan": 23.79,
+        "height": 17.25,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "ROC-OV104",
+        "type": "Rockwell Space Shuttle Orbiter Atlantis",
+        "length": 37.24,
+        "wingspan": 23.79,
+        "height": 17.25,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "ROC-OV099",
+        "type": "Rockwell Space Shuttle Orbiter Challenger",
+        "length": 37.24,
+        "wingspan": 23.79,
+        "height": 17.25,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "ROC-OV102",
+        "type": "Rockwell Space Shuttle Orbiter Columbia",
+        "length": 37.24,
+        "wingspan": 23.79,
+        "height": 17.25,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "ROC-OV103",
+        "type": "Rockwell Space Shuttle Orbiter Discovery",
+        "length": 37.24,
+        "wingspan": 23.79,
+        "height": 17.25,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "ROC-OV105",
+        "type": "Rockwell Space Shuttle Orbiter Endeavour",
+        "length": 37.24,
+        "wingspan": 23.79,
+        "height": 17.25,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "2000": [
+      {
+        "aircraft_id": "SAB-2000",
+        "type": "Saab 2000",
+        "length": 27.28,
+        "wingspan": 24.76,
+        "height": 7.4,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "340": [
+      {
+        "aircraft_id": "SAB-340",
+        "type": "Saab 340",
+        "length": 19.73,
+        "wingspan": 21.44,
+        "height": 6.97,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Model 348": [
+      {
+        "aircraft_id": "SCA-M348",
+        "type": "Scaled Composites Model 348 White Knight Two",
+        "length": 24.38,
+        "wingspan": 42.67,
+        "height": 7.7,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "SpaceShipTwo": [
+      {
+        "aircraft_id": "SCA-SS2",
+        "type": "SpaceShipTwo (Virgin Galactic)",
+        "length": 18.3,
+        "wingspan": 8.2,
+        "height": 4.6,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "330": [
+      {
+        "aircraft_id": "SHO-330",
+        "type": "Shorts 330",
+        "length": 19.7,
+        "wingspan": 22.0,
+        "height": 6.0,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "360": [
+      {
+        "aircraft_id": "SHO-360",
+        "type": "Shorts 360",
+        "length": 21.58,
+        "wingspan": 22.76,
+        "height": 7.06,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "S.23": [
+      {
+        "aircraft_id": "SHO-S23",
+        "type": "Short S.23 Empire",
+        "length": 27.9,
+        "wingspan": 34.6,
+        "height": 9.8,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "S.26": [
+      {
+        "aircraft_id": "SHO-S26",
+        "type": "Short S.26 G-Class",
+        "length": 35.0,
+        "wingspan": 45.72,
+        "height": 10.0,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "S.45": [
+      {
+        "aircraft_id": "SHO-S45",
+        "type": "Short S.45 Solent",
+        "length": 27.94,
+        "wingspan": 34.78,
+        "height": 10.16,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Caravelle": [
+      {
+        "aircraft_id": "SUD-Caravelle-10B",
+        "type": "Sud Aviation Caravelle 10B",
+        "length": 32.01,
+        "wingspan": 34.3,
+        "height": 8.71,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "SUD-Caravelle-I",
+        "type": "Sud Aviation Caravelle I",
+        "length": 32.01,
+        "wingspan": 34.3,
+        "height": 8.71,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "SUD-Caravelle-III",
+        "type": "Sud Aviation Caravelle III",
+        "length": 32.01,
+        "wingspan": 34.3,
+        "height": 8.71,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "SUD-Caravelle-VIN",
+        "type": "Sud Aviation Caravelle VI-N",
+        "length": 32.01,
+        "wingspan": 34.3,
+        "height": 8.71,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "SUD-Caravelle-VIR",
+        "type": "Sud Aviation Caravelle VI-R",
+        "length": 32.01,
+        "wingspan": 34.3,
+        "height": 8.71,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Concorde": [
+      {
+        "aircraft_id": "SUD-Concorde",
+        "type": "Sud Aviation/BAC Concorde",
+        "length": 61.66,
+        "wingspan": 25.6,
+        "height": 12.19,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Superjet": [
+      {
+        "aircraft_id": "SUK-Superjet-100-95",
+        "type": "Sukhoi Superjet 100-95",
+        "length": 29.94,
+        "wingspan": 27.8,
+        "height": 10.28,
+        "wingtip": "WL",
+        "owned": false
+      }
+    ],
+    "C-160": [
+      {
+        "aircraft_id": "TRA-C160",
+        "type": "Transall C-160",
+        "length": 32.4,
+        "wingspan": 40.0,
+        "height": 11.65,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-104": [
+      {
+        "aircraft_id": "TUP-Tu104",
+        "type": "Tupolew Tu-104",
+        "length": 40.06,
+        "wingspan": 34.5,
+        "height": 11.9,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-114": [
+      {
+        "aircraft_id": "TUP-Tu114",
+        "type": "Tupolew Tu-114",
+        "length": 54.1,
+        "wingspan": 51.1,
+        "height": 15.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-124": [
+      {
+        "aircraft_id": "TUP-Tu124",
+        "type": "Tupolew Tu-124",
+        "length": 30.6,
+        "wingspan": 25.55,
+        "height": 8.08,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-134": [
+      {
+        "aircraft_id": "TUP-Tu134",
+        "type": "Tupolew Tu-134",
+        "length": 34.85,
+        "wingspan": 29.0,
+        "height": 9.0,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-154": [
+      {
+        "aircraft_id": "TUP-Tu154",
+        "type": "Tupolew Tu-154",
+        "length": 47.9,
+        "wingspan": 37.5,
+        "height": 11.4,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-204": [
+      {
+        "aircraft_id": "TUP-Tu204-200",
+        "type": "Tupolew Tu-204-200",
+        "length": 46.14,
+        "wingspan": 41.8,
+        "height": 13.84,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "TUP-Tu204-300",
+        "type": "Tupolew Tu-204-300",
+        "length": 54.1,
+        "wingspan": 41.8,
+        "height": 13.84,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Tu-214": [
+      {
+        "aircraft_id": "TUP-Tu214",
+        "type": "Tupolew Tu-214",
+        "length": 54.1,
+        "wingspan": 41.8,
+        "height": 13.84,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Vanguard": [
+      {
+        "aircraft_id": "VIC-Vanguard-953",
+        "type": "Vickers Vanguard 953",
+        "length": 41.15,
+        "wingspan": 43.36,
+        "height": 11.3,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "VC10": [
+      {
+        "aircraft_id": "VIC-VC10-C1K",
+        "type": "Vickers VC10 C1K (RAF Government & VIP)",
+        "length": 48.36,
+        "wingspan": 44.55,
+        "height": 12.04,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "VIC-VC10",
+        "type": "Vickers VC10 Standard",
+        "length": 48.36,
+        "wingspan": 44.55,
+        "height": 12.19,
+        "wingtip": "NONE",
+        "owned": false
+      },
+      {
+        "aircraft_id": "VIC-VC10-SUPER",
+        "type": "Vickers VC10 Super",
+        "length": 48.36,
+        "wingspan": 44.55,
+        "height": 12.19,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "Viscount": [
+      {
+        "aircraft_id": "VIC-Viscount-700",
+        "type": "Vickers Viscount 700",
+        "length": 26.11,
+        "wingspan": 28.55,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": true
+      },
+      {
+        "aircraft_id": "VIC-Viscount-800",
+        "type": "Vickers Viscount 800",
+        "length": 28.55,
+        "wingspan": 28.55,
+        "height": 8.25,
+        "wingtip": "NONE",
+        "owned": true
+      }
+    ],
+    "614": [
+      {
+        "aircraft_id": "VFW-614",
+        "type": "VFW-Fokker 614",
+        "length": 20.31,
+        "wingspan": 21.5,
+        "height": 7.45,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MA60": [
+      {
+        "aircraft_id": "XIA-MA60",
+        "type": "Xian MA60",
+        "length": 24.7,
+        "wingspan": 29.2,
+        "height": 8.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "MA600": [
+      {
+        "aircraft_id": "XIA-MA600",
+        "type": "Xian MA600",
+        "length": 24.7,
+        "wingspan": 29.2,
+        "height": 8.1,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Y-7": [
+      {
+        "aircraft_id": "XIA-Y7",
+        "type": "Xian Y-7",
+        "length": 24.3,
+        "wingspan": 29.0,
+        "height": 8.0,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Yak-40": [
+      {
+        "aircraft_id": "YAK-Yak40",
+        "type": "Yakowlew Yak-40",
+        "length": 20.36,
+        "wingspan": 25.0,
+        "height": 6.5,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ],
+    "Yak-42": [
+      {
+        "aircraft_id": "YAK-Yak42",
+        "type": "Yakowlew Yak-42",
+        "length": 36.38,
+        "wingspan": 34.88,
+        "height": 9.83,
+        "wingtip": "NONE",
+        "owned": false
+      }
+    ]
+  }
+}
