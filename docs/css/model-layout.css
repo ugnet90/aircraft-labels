@@ -1,0 +1,53 @@
+/* ========================================
+   MODEL PAGE LAYOUT
+   ======================================== */
+
+.headerWrap{
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  align-items:start;
+  gap:14px;
+}
+
+.headerLeft{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+
+.headerRight{
+  justify-self:end;
+}
+
+/* Flugzeug Layout */
+.air-layout{
+  display:grid;
+  grid-template-columns: 420px 1fr;
+  gap:22px;
+  align-items:start;
+}
+
+.air-photo-box{
+  max-width:420px;
+}
+
+/* Flugzeug: rechte Daten immer EINspaltig */
+.air-data.grid{
+  grid-template-columns:1fr !important;
+}
+
+.air-data{
+  width: 100%;
+}
+
+/* responsive */
+@media (max-width: 800px){
+  .air-layout{
+    grid-template-columns:1fr;
+  }
+
+  .air-photo-box{
+    max-width:100%;
+  }
+}
