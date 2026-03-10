@@ -686,6 +686,7 @@ async function openFamilyCompare(baureihe, currentAircraftId){
       return `
         <tr class="${isCurrent ? "famCmp-current" : ""}">
           <td>${esc(String(r.type || ""))}</td>
+          <td>${esc(String(r.parent_type || "—"))}</td>
           <td class="${cmpClass(r.length, curLen)}">${fmtDim(r.length)}</td>
           <td class="${cmpClass(r.wingspan, curSpan)}">${fmtDim(r.wingspan)}</td>
           <td class="${cmpClass(r.height, curHeight)}">${fmtDim(r.height)}</td>
@@ -701,6 +702,7 @@ async function openFamilyCompare(baureihe, currentAircraftId){
         <thead>
           <tr>
             <th>Typ</th>
+            <th>Übergeordnet</th>
             <th>Länge</th>
             <th>Spannweite</th>
             <th>Höhe</th>
