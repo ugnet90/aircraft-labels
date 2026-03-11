@@ -244,27 +244,6 @@
   text-align:right;
 }
 
-.famCmp-current{
-  background:rgba(0,0,0,0.05);
-}
-
-.famCmp-same{
-  color:#8a8a8a;
-}
-
-.famCmp-diff{
-  font-weight:600;
-}
-
-.famOwned{
-  font-weight:700;
-}
-
-.famMissing{
-  color:#8a8a8a;
-}
-
-
 /* ========================================
    Aircraft family compare table
    ======================================== */
@@ -429,6 +408,7 @@
   font-size:11px;
   color:#888;
   white-space:nowrap;
+  text-align:right;
 }
 
 .famNowrap{
@@ -436,8 +416,13 @@
 }
 
 .famCmp-current{
-  outline:2px solid rgba(0,0,0,0.12);
-  outline-offset:-2px;
+  outline:3px solid rgba(0,0,0,0.28);
+  outline-offset:-3px;
+  box-shadow: inset 0 0 0 9999px rgba(255,255,255,0.18);
+}
+
+.famCmp-current td{
+  font-weight:700;
 }
 
 .famRow-owned{
