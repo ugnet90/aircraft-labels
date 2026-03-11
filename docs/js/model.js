@@ -658,10 +658,10 @@ function scaleDim(value, mode){
 
   if(mode === "model400"){
     const cm = n * 100 / 400;
-    return `${cm.toFixed(2).replace(".", ",")} cm`;
+    return `${cm.toFixed(1).replace(".", ",")} cm`;
   }
 
-  return `${String(value).replace(".", ",")} m`;
+  return `${n.toFixed(2).replace(".", ",")} m`;
 }
 
 function statusSymbol(status){
@@ -762,7 +762,9 @@ async function openFamilyCompare(baureihe, currentAircraftId){
   const fams = data?.families || {};
   const rows = Array.isArray(fams[familyName]) ? fams[familyName] : [];
   const hasParent = rows.some(r => r.parent_type && String(r.parent_type).trim() !== "");
-
+  const familyManufacturer = rows.length ? String(rows[0].manufacturer || "").trim() : "";
+  const familyTitle = familyManufacturer ? `${familyManufacturer} ${familyName}` : familyName;
+  
   const body = document.getElementById("familyCompareBody");
   if(!body) return;
 
@@ -801,7 +803,7 @@ async function openFamilyCompare(baureihe, currentAircraftId){
 
     body.innerHTML = `
       <div class="famCmpTop">
-        <div class="famCmpSub">Baureihenvergleich (${esc(familyName)})</div>
+        <div class="famCmpSub">${esc(familyTitle)}</div>
         <div class="famCmpTopRight">
           <div class="famCmpToggle" role="tablist" aria-label="Maßstab umschalten">
             <button type="button" class="famModeBtn is-on" data-fam-mode="original">Original</button>
