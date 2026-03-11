@@ -285,3 +285,215 @@
   color:#888;
   white-space:nowrap;
 }
+
+/* ========================================
+   FAMILY COMPARE MODAL / TABLE
+   ======================================== */
+
+.cmpFamilyBtn{
+  border:1px solid rgba(0,0,0,0.12);
+  background:#fff;
+  border-radius:8px;
+  padding:6px 10px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.cmpFamilyBtn:hover{
+  background:#f4f6f8;
+}
+
+.famCmpModal{
+  position:fixed;
+  inset:0;
+  display:none;
+  z-index:10000;
+}
+
+.famCmpModal.on{
+  display:block;
+}
+
+.famCmpBackdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+
+.famCmpPanel{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:min(980px, 94vw);
+  max-height:86vh;
+  overflow:auto;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.28);
+}
+
+.famCmpHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 16px;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+.famCmpTitle{
+  font-size:14px;
+  font-weight:700;
+}
+
+.famCmpClose{
+  border:0;
+  background:#fff;
+  font-size:24px;
+  cursor:pointer;
+  line-height:1;
+}
+
+.famCmpBody{
+  padding:14px 16px 18px;
+}
+
+.famCmpTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  margin-bottom:10px;
+}
+
+.famCmpSub{
+  font-size:13px;
+  font-weight:600;
+}
+
+.famCmpToggle{
+  display:flex;
+  gap:6px;
+}
+
+.famModeBtn{
+  border:1px solid rgba(0,0,0,0.12);
+  background:#fff;
+  border-radius:8px;
+  padding:5px 10px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.famModeBtn.is-on{
+  background:#eef3ff;
+  border-color:#b7c6f4;
+}
+
+.famCmpTable{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.famCmpTable th,
+.famCmpTable td{
+  padding:8px 10px;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+.famCmpTable th{
+  text-align:left;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:#777;
+}
+
+.famCmpTable th.num,
+.famCmpTable td.num{
+  text-align:right;
+}
+
+.famCmpTable th.famParent,
+.famCmpTable td.famParent{
+  width:120px;
+  font-size:11px;
+  color:#888;
+  white-space:nowrap;
+}
+
+.famNowrap{
+  white-space:nowrap;
+}
+
+.famCmp-current{
+  outline:2px solid rgba(0,0,0,0.12);
+  outline-offset:-2px;
+}
+
+.famRow-owned{
+  background:rgba(46, 160, 67, 0.08);
+}
+
+.famRow-ordered{
+  background:rgba(255, 193, 7, 0.10);
+}
+
+.famRow-wish{
+  background:rgba(64, 123, 255, 0.08);
+}
+
+.famRow-missing{
+  background:rgba(220, 53, 69, 0.05);
+}
+
+.famCmp-same{
+  color:#8a8a8a;
+}
+
+.famCmp-diff{
+  font-weight:600;
+}
+
+.famStatus{
+  display:inline-block;
+  padding:3px 8px;
+  border-radius:999px;
+  font-size:11px;
+  line-height:1.2;
+  white-space:nowrap;
+}
+
+.famStatus-owned{
+  background:rgba(46, 160, 67, 0.14);
+}
+
+.famStatus-ordered{
+  background:rgba(255, 193, 7, 0.18);
+}
+
+.famStatus-wish{
+  background:rgba(64, 123, 255, 0.14);
+}
+
+.famStatus-missing{
+  background:rgba(0,0,0,0.08);
+  color:#666;
+}
+
+@media (max-width: 700px){
+  .famCmpTop{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .famCmpPanel{
+    width:95vw;
+  }
+
+  .famCmpTable th,
+  .famCmpTable td{
+    padding:7px 8px;
+    font-size:13px;
+  }
+}
