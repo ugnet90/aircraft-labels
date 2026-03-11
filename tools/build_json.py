@@ -568,11 +568,37 @@ def main() -> int:
     # ------------------------------------------------------------
     # Build aircraft families overview (for model compare modal)
     # ------------------------------------------------------------
-    owned_aircraft_ids = set()
+    aircraft_status: Dict[str, str] = {}
+
+    def is_truthy(val: Any) -> bool:
+        s = str(val or "").strip().lower()
+        return s in ("1", "true", "wahr", "yes", "ja", "x")
+
     for r2 in models:
         aid = (r2.get("aircraft_id", "") or "").strip()
-        if aid:
-            owned_aircraft_ids.add(aid)
+        if not aid:
+            continue
+
+        vorhanden2 = is_truthy(r2.get("vorhanden", ""))
+        bestellt2 = bool((r2.get("bestellt_am", "") or "").strip())
+
+        # optional future field(s)
+        wunsch2 = is_truthy(r2.get("Wunsch", "")) or is_truthy(r2.get("wishlist", ""))
+
+        # priority: vorhanden > bestellt > Wunsch
+        new_status = ""
+        if vorhanden2:
+            new_status = "owned"
+        elif bestellt2:
+            new_status = "ordered"
+        elif wunsch2:
+            new_status = "wish"
+
+        old_status = aircraft_status.get(aid, "")
+        rank = {"": 0, "missing": 0, "wish": 1, "ordered": 2, "owned": 3}
+
+        if rank.get(new_status, 0) > rank.get(old_status, 0):
+            aircraft_status[aid] = new_status
             
     pax_type_by_id: Dict[str, str] = {}
     for pr2 in pax_rows:
@@ -603,7 +629,7 @@ def main() -> int:
             "wingspan": to_float(pr.get("Wingspan", "")),
             "height": to_float(pr.get("Height", "")),
             "wingtip": wingtip_p,
-            "owned": aircraft_id_p in owned_aircraft_ids,
+            "status": aircraft_status.get(aircraft_id_p, "missing"),
         }
 
         families.setdefault(baureihe, []).append(entry)
