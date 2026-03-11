@@ -614,6 +614,7 @@ def main() -> int:
         aircraft_id_p = (pr.get("aircraft_id", "") or "").strip()
         typ_anzeige = (pr.get("Typ_anzeige", "") or "").strip()
         wingtip_p = (pr.get("Wingtip", "") or "").strip().upper()
+        hersteller_p = (pr.get("Hersteller", "") or "").strip()
         parent_aircraft_id_p = (pr.get("parent_aircraft_id", "") or "").strip()
         parent_type_p = pax_type_by_id.get(parent_aircraft_id_p, "")
 
@@ -630,6 +631,7 @@ def main() -> int:
             "height": to_float(pr.get("Height", "")),
             "wingtip": wingtip_p,
             "status": aircraft_status.get(aircraft_id_p, "missing"),
+            "manufacturer": hersteller_p,
         }
 
         families.setdefault(baureihe, []).append(entry)
