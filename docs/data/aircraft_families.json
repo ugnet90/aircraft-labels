@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-10T09:16:34Z",
+  "generated_at": "2026-03-11T07:24:04Z",
   "count_families": 221,
   "families": {
     "AL-60": [
@@ -12,7 +12,7 @@
         "wingspan": 14.9,
         "height": 3.4,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Ae-145": [
@@ -25,7 +25,7 @@
         "wingspan": 13.6,
         "height": 3.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Ae-45": [
@@ -38,7 +38,7 @@
         "wingspan": 12.6,
         "height": 3.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-29": [
@@ -51,7 +51,7 @@
         "wingspan": 10.29,
         "height": 3.13,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "A220": [
@@ -64,7 +64,7 @@
         "wingspan": 35.1,
         "height": 11.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A220-300",
@@ -75,7 +75,7 @@
         "wingspan": 35.1,
         "height": 11.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A300": [
@@ -88,7 +88,7 @@
         "wingspan": 44.8,
         "height": 16.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A300-B4",
@@ -99,7 +99,7 @@
         "wingspan": 44.8,
         "height": 16.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A300-600",
@@ -110,7 +110,7 @@
         "wingspan": 44.8,
         "height": 16.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A300-600ST",
@@ -121,7 +121,7 @@
         "wingspan": 44.8,
         "height": 17.2,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A310": [
@@ -134,7 +134,7 @@
         "wingspan": 43.9,
         "height": 15.8,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A310-200",
@@ -145,7 +145,7 @@
         "wingspan": 43.9,
         "height": 15.8,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A310-300",
@@ -156,7 +156,7 @@
         "wingspan": 43.9,
         "height": 15.8,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A318": [
@@ -169,7 +169,7 @@
         "wingspan": 34.1,
         "height": 12.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A318-SL",
@@ -180,7 +180,7 @@
         "wingspan": 34.1,
         "height": 12.6,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "A319": [
@@ -193,7 +193,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A319-SL",
@@ -204,7 +204,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A319LR",
@@ -215,7 +215,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A319LR-SL",
@@ -226,7 +226,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A319-neo",
@@ -237,7 +237,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "A320": [
@@ -250,7 +250,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A320-200",
@@ -261,7 +261,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A320-200-SL",
@@ -272,7 +272,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A320-neo",
@@ -283,7 +283,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A321": [
@@ -296,7 +296,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A321-XLR",
@@ -307,7 +307,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A321-100",
@@ -318,7 +318,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A321-200",
@@ -329,7 +329,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A321-200-SL",
@@ -340,7 +340,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A321-neo",
@@ -351,7 +351,7 @@
         "wingspan": 35.8,
         "height": 11.76,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A330": [
@@ -364,7 +364,7 @@
         "wingspan": 58.0,
         "height": 17.39,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A330-200-SL",
@@ -375,7 +375,7 @@
         "wingspan": 60.3,
         "height": 17.39,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A330-800neo",
@@ -386,7 +386,7 @@
         "wingspan": 64.0,
         "height": 17.39,
         "wingtip": "SL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A330-743L",
@@ -397,7 +397,7 @@
         "wingspan": 60.3,
         "height": 18.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A330-300",
@@ -408,7 +408,7 @@
         "wingspan": 60.3,
         "height": 16.85,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A330-300-SL",
@@ -419,7 +419,7 @@
         "wingspan": 60.3,
         "height": 16.85,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A330-900neo",
@@ -430,7 +430,7 @@
         "wingspan": 64.0,
         "height": 16.85,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A340": [
@@ -443,7 +443,7 @@
         "wingspan": 60.3,
         "height": 16.7,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A340-300",
@@ -454,7 +454,7 @@
         "wingspan": 60.3,
         "height": 16.7,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A340-500",
@@ -465,7 +465,7 @@
         "wingspan": 63.45,
         "height": 17.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "AIB-A340-600",
@@ -476,7 +476,7 @@
         "wingspan": 63.45,
         "height": 17.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "A350": [
@@ -489,7 +489,7 @@
         "wingspan": 64.75,
         "height": 17.05,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-ACJ350-900",
@@ -500,7 +500,7 @@
         "wingspan": 64.75,
         "height": 17.05,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "AIB-A350-1000",
@@ -511,7 +511,7 @@
         "wingspan": 64.75,
         "height": 17.08,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "A380": [
@@ -524,7 +524,7 @@
         "wingspan": 79.75,
         "height": 24.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "AS57": [
@@ -537,7 +537,7 @@
         "wingspan": 34.7,
         "height": 7.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-124": [
@@ -550,7 +550,7 @@
         "wingspan": 73.3,
         "height": 20.78,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-140": [
@@ -563,7 +563,7 @@
         "wingspan": 24.5,
         "height": 8.23,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-148": [
@@ -576,7 +576,7 @@
         "wingspan": 28.91,
         "height": 8.4,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-158": [
@@ -589,7 +589,7 @@
         "wingspan": 28.91,
         "height": 9.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-2": [
@@ -602,7 +602,7 @@
         "wingspan": 18.17,
         "height": 4.13,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-225": [
@@ -615,7 +615,7 @@
         "wingspan": 88.4,
         "height": 18.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "An-24": [
@@ -628,7 +628,7 @@
         "wingspan": 29.2,
         "height": 8.32,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-26": [
@@ -641,7 +641,7 @@
         "wingspan": 29.2,
         "height": 8.58,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-28": [
@@ -654,7 +654,7 @@
         "wingspan": 22.06,
         "height": 4.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-32": [
@@ -667,7 +667,7 @@
         "wingspan": 29.2,
         "height": 8.75,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-72": [
@@ -680,7 +680,7 @@
         "wingspan": 31.89,
         "height": 8.65,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "An-74": [
@@ -693,7 +693,7 @@
         "wingspan": 31.89,
         "height": 8.65,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "A.W.27": [
@@ -706,7 +706,7 @@
         "wingspan": 38.41,
         "height": 8.23,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "B-377MG": [
@@ -719,7 +719,7 @@
         "wingspan": 47.6,
         "height": 14.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "B-377MGT": [
@@ -732,7 +732,7 @@
         "wingspan": 47.6,
         "height": 14.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "B-377PG": [
@@ -745,7 +745,7 @@
         "wingspan": 47.6,
         "height": 14.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "B-377SG": [
@@ -758,7 +758,7 @@
         "wingspan": 47.6,
         "height": 14.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "B-377SGT-201": [
@@ -771,7 +771,7 @@
         "wingspan": 47.6,
         "height": 14.8,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "ATR 42": [
@@ -784,7 +784,7 @@
         "wingspan": 24.57,
         "height": 7.59,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "ATR-ATR42-500",
@@ -795,7 +795,7 @@
         "wingspan": 24.57,
         "height": 7.59,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "ATR-ATR42-600",
@@ -806,7 +806,7 @@
         "wingspan": 24.57,
         "height": 7.59,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "ATR 72": [
@@ -819,7 +819,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "ATR-ATR72-500",
@@ -830,7 +830,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "ATR-ATR72-600",
@@ -841,7 +841,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MA700": [
@@ -854,7 +854,7 @@
         "wingspan": 28.5,
         "height": 8.4,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "685": [
@@ -867,7 +867,7 @@
         "wingspan": 33.94,
         "height": 5.33,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "688/689": [
@@ -880,7 +880,7 @@
         "wingspan": 36.58,
         "height": 9.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "691": [
@@ -893,7 +893,7 @@
         "wingspan": 31.09,
         "height": 6.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "111": [
@@ -906,7 +906,7 @@
         "wingspan": 26.97,
         "height": 7.47,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BAC-111-300",
@@ -917,7 +917,7 @@
         "wingspan": 26.97,
         "height": 7.47,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BAC-111-400",
@@ -928,7 +928,7 @@
         "wingspan": 26.97,
         "height": 7.47,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BAC-111-500",
@@ -939,7 +939,7 @@
         "wingspan": 28.5,
         "height": 7.47,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "BAe 146": [
@@ -952,7 +952,7 @@
         "wingspan": 26.34,
         "height": 8.61,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BAE-146-200",
@@ -963,7 +963,7 @@
         "wingspan": 26.34,
         "height": 8.61,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BAE-146-300",
@@ -974,7 +974,7 @@
         "wingspan": 26.34,
         "height": 8.61,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "ATP": [
@@ -987,7 +987,7 @@
         "wingspan": 30.6,
         "height": 8.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Jetstream": [
@@ -1000,7 +1000,7 @@
         "wingspan": 15.8,
         "height": 5.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BAE-Jetstream-32",
@@ -1011,7 +1011,7 @@
         "wingspan": 15.8,
         "height": 5.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BAE-Jetstream-41",
@@ -1022,7 +1022,7 @@
         "wingspan": 18.29,
         "height": 5.74,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "BT-67": [
@@ -1035,7 +1035,7 @@
         "wingspan": 28.96,
         "height": 5.33,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "1900C": [
@@ -1048,7 +1048,7 @@
         "wingspan": 17.67,
         "height": 4.52,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "1900D": [
@@ -1061,7 +1061,7 @@
         "wingspan": 17.67,
         "height": 4.72,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "99": [
@@ -1074,7 +1074,7 @@
         "wingspan": 13.6,
         "height": 4.52,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Be-200": [
@@ -1087,7 +1087,7 @@
         "wingspan": 32.78,
         "height": 8.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Be-30": [
@@ -1100,7 +1100,7 @@
         "wingspan": 15.0,
         "height": 3.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Be-32": [
@@ -1113,7 +1113,7 @@
         "wingspan": 15.5,
         "height": 4.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "247": [
@@ -1126,7 +1126,7 @@
         "wingspan": 22.56,
         "height": 3.96,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "307": [
@@ -1139,7 +1139,7 @@
         "wingspan": 32.61,
         "height": 6.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "314": [
@@ -1152,7 +1152,7 @@
         "wingspan": 46.96,
         "height": 9.65,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "377": [
@@ -1165,7 +1165,7 @@
         "wingspan": 43.05,
         "height": 11.71,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "707": [
@@ -1178,7 +1178,7 @@
         "wingspan": 39.9,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-707-120",
@@ -1189,7 +1189,7 @@
         "wingspan": 39.9,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-707-220",
@@ -1200,7 +1200,7 @@
         "wingspan": 39.88,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-VC137A",
@@ -1211,7 +1211,7 @@
         "wingspan": 39.88,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-707-320",
@@ -1222,7 +1222,7 @@
         "wingspan": 44.42,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-707-330C",
@@ -1233,7 +1233,7 @@
         "wingspan": 44.42,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-707-420",
@@ -1244,7 +1244,7 @@
         "wingspan": 44.42,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-VC137B",
@@ -1255,7 +1255,7 @@
         "wingspan": 44.22,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-VC137C",
@@ -1266,7 +1266,7 @@
         "wingspan": 44.22,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "717": [
@@ -1279,7 +1279,7 @@
         "wingspan": 28.45,
         "height": 8.92,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "720": [
@@ -1292,7 +1292,7 @@
         "wingspan": 39.9,
         "height": 12.93,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "727": [
@@ -1305,7 +1305,7 @@
         "wingspan": 32.9,
         "height": 10.36,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-727-200",
@@ -1316,7 +1316,7 @@
         "wingspan": 32.9,
         "height": 10.36,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "737": [
@@ -1329,7 +1329,7 @@
         "wingspan": 28.35,
         "height": 11.28,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-200",
@@ -1340,7 +1340,7 @@
         "wingspan": 28.35,
         "height": 11.28,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-500",
@@ -1351,7 +1351,7 @@
         "wingspan": 28.9,
         "height": 11.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-600",
@@ -1362,7 +1362,7 @@
         "wingspan": 34.3,
         "height": 12.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-600-WL",
@@ -1373,7 +1373,7 @@
         "wingspan": 35.79,
         "height": 12.5,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-300",
@@ -1384,7 +1384,7 @@
         "wingspan": 28.9,
         "height": 11.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-700",
@@ -1395,7 +1395,7 @@
         "wingspan": 34.3,
         "height": 12.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-700-WL",
@@ -1406,7 +1406,7 @@
         "wingspan": 35.79,
         "height": 12.5,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-C40A",
@@ -1417,7 +1417,7 @@
         "wingspan": 34.32,
         "height": 12.55,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-MAX7",
@@ -1428,7 +1428,7 @@
         "wingspan": 35.9,
         "height": 12.3,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-400",
@@ -1439,7 +1439,7 @@
         "wingspan": 28.9,
         "height": 11.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-MAX8",
@@ -1450,7 +1450,7 @@
         "wingspan": 35.9,
         "height": 12.3,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-800",
@@ -1461,7 +1461,7 @@
         "wingspan": 34.3,
         "height": 12.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-800-WL",
@@ -1472,7 +1472,7 @@
         "wingspan": 35.79,
         "height": 12.5,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-737-900",
@@ -1483,7 +1483,7 @@
         "wingspan": 34.3,
         "height": 12.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-900-WL",
@@ -1494,7 +1494,7 @@
         "wingspan": 35.79,
         "height": 12.5,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-900ER",
@@ -1505,7 +1505,7 @@
         "wingspan": 35.79,
         "height": 12.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-MAX9",
@@ -1516,7 +1516,7 @@
         "wingspan": 35.9,
         "height": 12.3,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-737-MAX10",
@@ -1527,7 +1527,7 @@
         "wingspan": 35.9,
         "height": 12.3,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "747": [
@@ -1540,7 +1540,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-SCA",
@@ -1551,7 +1551,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "ordered"
       },
       {
         "aircraft_id": "BOE-747-100",
@@ -1562,7 +1562,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-123SF",
@@ -1573,7 +1573,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-200",
@@ -1584,7 +1584,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-200B",
@@ -1595,7 +1595,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-200SUD",
@@ -1606,7 +1606,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-200C",
@@ -1617,7 +1617,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-200F",
@@ -1628,7 +1628,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-300",
@@ -1639,7 +1639,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-400",
@@ -1650,7 +1650,7 @@
         "wingspan": 64.44,
         "height": 19.41,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-400-VO",
@@ -1661,7 +1661,7 @@
         "wingspan": 64.44,
         "height": 19.41,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-400D",
@@ -1672,7 +1672,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-SR",
@@ -1683,7 +1683,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-VC25A",
@@ -1694,7 +1694,7 @@
         "wingspan": 64.4,
         "height": 19.3,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-YAL1",
@@ -1705,7 +1705,7 @@
         "wingspan": 64.44,
         "height": 19.41,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-400LCF",
@@ -1716,7 +1716,7 @@
         "wingspan": 64.44,
         "height": 21.54,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-747-VC25B",
@@ -1727,7 +1727,7 @@
         "wingspan": 68.45,
         "height": 19.36,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-747-8",
@@ -1738,7 +1738,7 @@
         "wingspan": 68.4,
         "height": 19.4,
         "wingtip": "RW",
-        "owned": true
+        "status": "owned"
       }
     ],
     "E-4": [
@@ -1751,7 +1751,7 @@
         "wingspan": 59.64,
         "height": 19.33,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "757": [
@@ -1764,7 +1764,7 @@
         "wingspan": 38.05,
         "height": 13.56,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-757-200-WL",
@@ -1775,7 +1775,7 @@
         "wingspan": 38.05,
         "height": 13.56,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-C32A",
@@ -1786,7 +1786,7 @@
         "wingspan": 38.05,
         "height": 13.56,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-757-300",
@@ -1797,7 +1797,7 @@
         "wingspan": 38.05,
         "height": 13.56,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-757-300-WL",
@@ -1808,7 +1808,7 @@
         "wingspan": 41.1,
         "height": 13.56,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "767": [
@@ -1821,7 +1821,7 @@
         "wingspan": 47.57,
         "height": 15.85,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-767-200-WL",
@@ -1832,7 +1832,7 @@
         "wingspan": 47.57,
         "height": 15.85,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-767-AOA",
@@ -1843,7 +1843,7 @@
         "wingspan": 47.57,
         "height": 15.85,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-767-200ER",
@@ -1854,7 +1854,7 @@
         "wingspan": 47.57,
         "height": 15.85,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-767-300",
@@ -1865,7 +1865,7 @@
         "wingspan": 47.57,
         "height": 15.85,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-767-300-WL",
@@ -1876,7 +1876,7 @@
         "wingspan": 52.05,
         "height": 15.85,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-767-300BCF-WL",
@@ -1887,7 +1887,7 @@
         "wingspan": 52.05,
         "height": 15.85,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-767-300ER-WL",
@@ -1898,7 +1898,7 @@
         "wingspan": 52.05,
         "height": 15.85,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-767-300ER",
@@ -1909,7 +1909,7 @@
         "wingspan": 47.57,
         "height": 15.85,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-767-400ER",
@@ -1920,7 +1920,7 @@
         "wingspan": 51.92,
         "height": 16.8,
         "wingtip": "RW",
-        "owned": false
+        "status": "missing"
       }
     ],
     "777": [
@@ -1933,7 +1933,7 @@
         "wingspan": 60.9,
         "height": 18.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-777-200ER",
@@ -1944,7 +1944,7 @@
         "wingspan": 60.9,
         "height": 18.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-777-200LR",
@@ -1955,7 +1955,7 @@
         "wingspan": 64.8,
         "height": 18.5,
         "wingtip": "RW",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-777-F",
@@ -1966,7 +1966,7 @@
         "wingspan": 64.8,
         "height": 18.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-777-8",
@@ -1977,7 +1977,7 @@
         "wingspan": 71.8,
         "height": 19.7,
         "wingtip": "RW",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-777-300",
@@ -1988,7 +1988,7 @@
         "wingspan": 60.9,
         "height": 18.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BOE-777-300ER",
@@ -1999,7 +1999,7 @@
         "wingspan": 64.8,
         "height": 18.5,
         "wingtip": "RW",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-777-9",
@@ -2010,7 +2010,7 @@
         "wingspan": 71.8,
         "height": 19.7,
         "wingtip": "RW",
-        "owned": false
+        "status": "missing"
       }
     ],
     "787": [
@@ -2023,7 +2023,7 @@
         "wingspan": 60.1,
         "height": 17.0,
         "wingtip": "RW",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-787-9",
@@ -2034,7 +2034,7 @@
         "wingspan": 60.1,
         "height": 17.0,
         "wingtip": "RW",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "BOE-787-10",
@@ -2045,7 +2045,7 @@
         "wingspan": 60.1,
         "height": 17.0,
         "wingtip": "RW",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CRJ-100": [
@@ -2058,7 +2058,7 @@
         "wingspan": 21.21,
         "height": 6.22,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CRJ-200": [
@@ -2071,7 +2071,7 @@
         "wingspan": 21.21,
         "height": 6.22,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "CRJ-700": [
@@ -2084,7 +2084,7 @@
         "wingspan": 23.24,
         "height": 7.57,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CRJ-900": [
@@ -2097,7 +2097,7 @@
         "wingspan": 24.85,
         "height": 7.57,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       }
     ],
     "CRJ-1000": [
@@ -2110,7 +2110,7 @@
         "wingspan": 28.7,
         "height": 7.13,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Britannia": [
@@ -2123,7 +2123,7 @@
         "wingspan": 43.36,
         "height": 11.43,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "BRI-Britannia-312",
@@ -2134,7 +2134,7 @@
         "wingspan": 43.36,
         "height": 11.43,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "BN-2": [
@@ -2147,7 +2147,7 @@
         "wingspan": 14.94,
         "height": 4.17,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "BN-2A": [
@@ -2160,7 +2160,7 @@
         "wingspan": 14.94,
         "height": 4.17,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Buran": [
@@ -2173,7 +2173,7 @@
         "wingspan": 23.92,
         "height": 16.35,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "C-295": [
@@ -2186,7 +2186,7 @@
         "wingspan": 25.81,
         "height": 8.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "North Star": [
@@ -2199,7 +2199,7 @@
         "wingspan": 43.05,
         "height": 7.57,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CL-44": [
@@ -2212,7 +2212,7 @@
         "wingspan": 42.54,
         "height": 11.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "C-212": [
@@ -2225,7 +2225,7 @@
         "wingspan": 20.28,
         "height": 6.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CN-235": [
@@ -2238,7 +2238,7 @@
         "wingspan": 25.81,
         "height": 8.18,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "208": [
@@ -2251,7 +2251,7 @@
         "wingspan": 15.88,
         "height": 4.32,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "402": [
@@ -2264,7 +2264,7 @@
         "wingspan": 11.0,
         "height": 3.46,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "4-0-4": [
@@ -2277,7 +2277,7 @@
         "wingspan": 28.5,
         "height": 6.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "441": [
@@ -2290,7 +2290,7 @@
         "wingspan": 15.86,
         "height": 3.76,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "ARJ21": [
@@ -2303,7 +2303,7 @@
         "wingspan": 27.3,
         "height": 8.44,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "C919": [
@@ -2316,7 +2316,7 @@
         "wingspan": 35.8,
         "height": 11.95,
         "wingtip": "SL",
-        "owned": true
+        "status": "owned"
       }
     ],
     "CV-240": [
@@ -2329,7 +2329,7 @@
         "wingspan": 28.96,
         "height": 7.0,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "CV-340": [
@@ -2342,7 +2342,7 @@
         "wingspan": 32.0,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CV-440": [
@@ -2355,7 +2355,7 @@
         "wingspan": 32.0,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CV-580": [
@@ -2368,7 +2368,7 @@
         "wingspan": 32.0,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CV-600": [
@@ -2381,7 +2381,7 @@
         "wingspan": 32.0,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CV-640": [
@@ -2394,7 +2394,7 @@
         "wingspan": 32.0,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "CV-880": [
@@ -2407,7 +2407,7 @@
         "wingspan": 35.8,
         "height": 11.0,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "CV-990": [
@@ -2420,7 +2420,7 @@
         "wingspan": 36.58,
         "height": 11.68,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "PBY": [
@@ -2433,7 +2433,7 @@
         "wingspan": 31.7,
         "height": 6.15,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "C-46": [
@@ -2446,7 +2446,7 @@
         "wingspan": 32.92,
         "height": 6.29,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Mercure": [
@@ -2459,7 +2459,7 @@
         "wingspan": 30.55,
         "height": 11.44,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DHC-3": [
@@ -2472,7 +2472,7 @@
         "wingspan": 16.65,
         "height": 3.02,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DHC-6": [
@@ -2485,7 +2485,7 @@
         "wingspan": 19.8,
         "height": 5.94,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DHC-7": [
@@ -2498,7 +2498,7 @@
         "wingspan": 28.35,
         "height": 8.36,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DHC-8": [
@@ -2511,7 +2511,7 @@
         "wingspan": 25.91,
         "height": 7.49,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DHC-DHC8-200",
@@ -2522,7 +2522,7 @@
         "wingspan": 25.91,
         "height": 7.49,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DHC-DHC8-300",
@@ -2533,7 +2533,7 @@
         "wingspan": 27.4,
         "height": 7.49,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DHC-DHC8-400",
@@ -2544,7 +2544,7 @@
         "wingspan": 28.4,
         "height": 8.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "DH.106": [
@@ -2557,7 +2557,7 @@
         "wingspan": 35.05,
         "height": 8.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DHV-DH106-4",
@@ -2568,7 +2568,7 @@
         "wingspan": 35.05,
         "height": 8.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DH.91": [
@@ -2581,7 +2581,7 @@
         "wingspan": 32.92,
         "height": 6.17,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DH.95": [
@@ -2594,7 +2594,7 @@
         "wingspan": 20.73,
         "height": 5.16,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Do 228": [
@@ -2607,7 +2607,7 @@
         "wingspan": 16.97,
         "height": 4.86,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Do 328": [
@@ -2620,7 +2620,7 @@
         "wingspan": 21.0,
         "height": 7.23,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOR-Do328-300",
@@ -2631,7 +2631,7 @@
         "wingspan": 20.98,
         "height": 7.24,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Do X": [
@@ -2644,7 +2644,7 @@
         "wingspan": 48.0,
         "height": 10.2,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "DC-2": [
@@ -2657,7 +2657,7 @@
         "wingspan": 25.9,
         "height": 4.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DC-3": [
@@ -2670,7 +2670,7 @@
         "wingspan": 28.96,
         "height": 5.16,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC3",
@@ -2681,7 +2681,7 @@
         "wingspan": 28.96,
         "height": 5.16,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DC-4": [
@@ -2694,7 +2694,7 @@
         "wingspan": 42.05,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "DC-5": [
@@ -2707,7 +2707,7 @@
         "wingspan": 23.8,
         "height": 4.83,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DC-6": [
@@ -2720,7 +2720,7 @@
         "wingspan": 35.81,
         "height": 8.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC6",
@@ -2731,7 +2731,7 @@
         "wingspan": 35.8,
         "height": 8.66,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC6-A",
@@ -2742,7 +2742,7 @@
         "wingspan": 35.8,
         "height": 8.66,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC6-B",
@@ -2753,7 +2753,7 @@
         "wingspan": 35.8,
         "height": 8.66,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "DC-7": [
@@ -2766,7 +2766,7 @@
         "wingspan": 38.8,
         "height": 9.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC7-B",
@@ -2777,7 +2777,7 @@
         "wingspan": 38.8,
         "height": 9.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC7-C",
@@ -2788,7 +2788,7 @@
         "wingspan": 38.8,
         "height": 9.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "DC-8": [
@@ -2801,7 +2801,7 @@
         "wingspan": 43.4,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC8-20",
@@ -2812,7 +2812,7 @@
         "wingspan": 43.4,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC8-30",
@@ -2823,7 +2823,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC8-40",
@@ -2834,7 +2834,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC8-50",
@@ -2845,7 +2845,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC8-62",
@@ -2856,7 +2856,7 @@
         "wingspan": 48.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC8-72",
@@ -2867,7 +2867,7 @@
         "wingspan": 48.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC8-61",
@@ -2878,7 +2878,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC8-63",
@@ -2889,7 +2889,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "DOU-DC8-71",
@@ -2900,7 +2900,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "DOU-DC8-73",
@@ -2911,7 +2911,7 @@
         "wingspan": 45.0,
         "height": 12.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "EMB-110": [
@@ -2924,7 +2924,7 @@
         "wingspan": 15.6,
         "height": 4.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "EMB-120": [
@@ -2937,7 +2937,7 @@
         "wingspan": 19.8,
         "height": 6.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "EMB-121": [
@@ -2950,7 +2950,7 @@
         "wingspan": 12.0,
         "height": 3.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "ERJ-135": [
@@ -2963,7 +2963,7 @@
         "wingspan": 20.04,
         "height": 6.75,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "ERJ-140": [
@@ -2976,7 +2976,7 @@
         "wingspan": 20.04,
         "height": 6.75,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "ERJ-145": [
@@ -2989,7 +2989,7 @@
         "wingspan": 20.04,
         "height": 6.75,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "E170": [
@@ -3002,7 +3002,7 @@
         "wingspan": 26.0,
         "height": 9.73,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "EMB-E170-WL",
@@ -3013,7 +3013,7 @@
         "wingspan": 26.0,
         "height": 9.73,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "E175": [
@@ -3026,7 +3026,7 @@
         "wingspan": 26.0,
         "height": 9.73,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "E175-E2": [
@@ -3039,7 +3039,7 @@
         "wingspan": 30.0,
         "height": 10.9,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "E190": [
@@ -3052,7 +3052,7 @@
         "wingspan": 28.72,
         "height": 10.55,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "E190-E2": [
@@ -3065,7 +3065,7 @@
         "wingspan": 33.7,
         "height": 11.0,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "E195": [
@@ -3078,7 +3078,7 @@
         "wingspan": 28.72,
         "height": 10.55,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "E195-E2": [
@@ -3091,7 +3091,7 @@
         "wingspan": 35.1,
         "height": 11.5,
         "wingtip": "WL",
-        "owned": true
+        "status": "owned"
       }
     ],
     "SA226": [
@@ -3104,7 +3104,7 @@
         "wingspan": 14.2,
         "height": 4.7,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "F": [
@@ -3117,7 +3117,7 @@
         "wingspan": 14.7,
         "height": 3.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "F100": [
@@ -3130,7 +3130,7 @@
         "wingspan": 28.08,
         "height": 8.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "F27": [
@@ -3143,7 +3143,7 @@
         "wingspan": 29.0,
         "height": 8.0,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "F28": [
@@ -3156,7 +3156,7 @@
         "wingspan": 25.0,
         "height": 8.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "F50": [
@@ -3169,7 +3169,7 @@
         "wingspan": 29.0,
         "height": 7.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "F70": [
@@ -3182,7 +3182,7 @@
         "wingspan": 28.0,
         "height": 8.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Trimotor": [
@@ -3195,7 +3195,7 @@
         "wingspan": 22.5,
         "height": 3.7,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "FOR-Trimotor-5AT",
@@ -3206,7 +3206,7 @@
         "wingspan": 23.7,
         "height": 3.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Fw 200": [
@@ -3219,7 +3219,7 @@
         "wingspan": 32.85,
         "height": 6.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Y-11": [
@@ -3232,7 +3232,7 @@
         "wingspan": 16.0,
         "height": 4.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Y-12": [
@@ -3245,7 +3245,7 @@
         "wingspan": 19.2,
         "height": 5.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "HS 748": [
@@ -3258,7 +3258,7 @@
         "wingspan": 30.18,
         "height": 7.57,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Trident": [
@@ -3271,7 +3271,7 @@
         "wingspan": 27.0,
         "height": 8.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "HAW-Trident-2",
@@ -3282,7 +3282,7 @@
         "wingspan": 27.0,
         "height": 8.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "HAW-Trident-3",
@@ -3293,7 +3293,7 @@
         "wingspan": 28.5,
         "height": 9.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "H.P.81": [
@@ -3306,7 +3306,7 @@
         "wingspan": 35.05,
         "height": 7.47,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "HPR.7": [
@@ -3319,7 +3319,7 @@
         "wingspan": 28.96,
         "height": 8.23,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-114": [
@@ -3332,7 +3332,7 @@
         "wingspan": 30.0,
         "height": 8.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-12": [
@@ -3345,7 +3345,7 @@
         "wingspan": 31.7,
         "height": 6.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-14": [
@@ -3358,7 +3358,7 @@
         "wingspan": 31.7,
         "height": 6.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-18": [
@@ -3371,7 +3371,7 @@
         "wingspan": 37.4,
         "height": 10.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-62": [
@@ -3384,7 +3384,7 @@
         "wingspan": 43.2,
         "height": 12.35,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-86": [
@@ -3397,7 +3397,7 @@
         "wingspan": 48.06,
         "height": 15.81,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Il-96": [
@@ -3410,7 +3410,7 @@
         "wingspan": 60.1,
         "height": 17.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MC-21": [
@@ -3423,7 +3423,7 @@
         "wingspan": 35.9,
         "height": 11.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Ju": [
@@ -3436,7 +3436,7 @@
         "wingspan": 29.25,
         "height": 4.5,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "L-410": [
@@ -3449,7 +3449,7 @@
         "wingspan": 19.48,
         "height": 5.83,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-610": [
@@ -3462,7 +3462,7 @@
         "wingspan": 28.0,
         "height": 7.98,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "C-5": [
@@ -3475,7 +3475,7 @@
         "wingspan": 67.89,
         "height": 19.84,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-C5B",
@@ -3486,7 +3486,7 @@
         "wingspan": 67.89,
         "height": 19.84,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-C5M",
@@ -3497,7 +3497,7 @@
         "wingspan": 67.89,
         "height": 19.84,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-10": [
@@ -3510,7 +3510,7 @@
         "wingspan": 19.96,
         "height": 3.94,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-14": [
@@ -3523,7 +3523,7 @@
         "wingspan": 20.2,
         "height": 3.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-18": [
@@ -3536,7 +3536,7 @@
         "wingspan": 20.1,
         "height": 3.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-049": [
@@ -3549,7 +3549,7 @@
         "wingspan": 37.5,
         "height": 7.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "L-649": [
@@ -3562,7 +3562,7 @@
         "wingspan": 37.5,
         "height": 7.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-749": [
@@ -3575,7 +3575,7 @@
         "wingspan": 37.5,
         "height": 7.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-1049": [
@@ -3588,7 +3588,7 @@
         "wingspan": 37.5,
         "height": 7.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "L-1649": [
@@ -3601,7 +3601,7 @@
         "wingspan": 45.7,
         "height": 6.1,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "L-188": [
@@ -3614,7 +3614,7 @@
         "wingspan": 35.9,
         "height": 10.0,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "L-100": [
@@ -3627,7 +3627,7 @@
         "wingspan": 40.41,
         "height": 11.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "L-1011": [
@@ -3640,7 +3640,7 @@
         "wingspan": 47.3,
         "height": 16.9,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "LOC-L1011-1",
@@ -3651,7 +3651,7 @@
         "wingspan": 47.3,
         "height": 16.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-L1011-100",
@@ -3662,7 +3662,7 @@
         "wingspan": 47.3,
         "height": 16.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-L1011-200",
@@ -3673,7 +3673,7 @@
         "wingspan": 47.3,
         "height": 16.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "P-3": [
@@ -3686,7 +3686,7 @@
         "wingspan": 30.37,
         "height": 10.27,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-NP3D",
@@ -3697,7 +3697,7 @@
         "wingspan": 30.37,
         "height": 10.27,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-P3A",
@@ -3708,7 +3708,7 @@
         "wingspan": 30.37,
         "height": 10.27,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-P3B",
@@ -3719,7 +3719,7 @@
         "wingspan": 30.37,
         "height": 10.27,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-P3C",
@@ -3730,7 +3730,7 @@
         "wingspan": 30.37,
         "height": 10.27,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "LOC-RP3D",
@@ -3741,7 +3741,7 @@
         "wingspan": 30.37,
         "height": 10.27,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "2-0-2": [
@@ -3754,7 +3754,7 @@
         "wingspan": 19.5,
         "height": 4.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "404": [
@@ -3767,7 +3767,7 @@
         "wingspan": 15.0,
         "height": 3.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "DC-9": [
@@ -3780,7 +3780,7 @@
         "wingspan": 27.25,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "MCD-DC9-15",
@@ -3791,7 +3791,7 @@
         "wingspan": 27.25,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "MCD-DC9-20",
@@ -3802,7 +3802,7 @@
         "wingspan": 28.44,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "MCD-DC9-30",
@@ -3813,7 +3813,7 @@
         "wingspan": 28.47,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "MCD-DC9-40",
@@ -3824,7 +3824,7 @@
         "wingspan": 28.47,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "MCD-DC9-50",
@@ -3835,7 +3835,7 @@
         "wingspan": 28.47,
         "height": 8.38,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "DC-10": [
@@ -3848,7 +3848,7 @@
         "wingspan": 50.39,
         "height": 17.7,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "MCD-DC10-30",
@@ -3859,7 +3859,7 @@
         "wingspan": 50.39,
         "height": 17.7,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "MCD-DC10-10",
@@ -3870,7 +3870,7 @@
         "wingspan": 47.43,
         "height": 17.7,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "MD-11": [
@@ -3883,7 +3883,7 @@
         "wingspan": 51.7,
         "height": 17.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "MCD-MD11",
@@ -3894,7 +3894,7 @@
         "wingspan": 51.7,
         "height": 17.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "MCD-MD11-ER",
@@ -3905,7 +3905,7 @@
         "wingspan": 51.7,
         "height": 17.6,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MD-81": [
@@ -3918,7 +3918,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "MD-82": [
@@ -3931,7 +3931,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "MD-83": [
@@ -3944,7 +3944,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MD-87": [
@@ -3957,7 +3957,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "MD-88": [
@@ -3970,7 +3970,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MD-90": [
@@ -3983,7 +3983,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "YS-11": [
@@ -3996,7 +3996,7 @@
         "wingspan": 32.0,
         "height": 8.98,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "P": [
@@ -4009,7 +4009,7 @@
         "wingspan": 15.0,
         "height": 4.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PC-12": [
@@ -4022,7 +4022,7 @@
         "wingspan": 16.3,
         "height": 4.26,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PC-24": [
@@ -4035,7 +4035,7 @@
         "wingspan": 17.0,
         "height": 5.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PC-6": [
@@ -4048,7 +4048,7 @@
         "wingspan": 15.0,
         "height": 3.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PA-23": [
@@ -4061,7 +4061,7 @@
         "wingspan": 11.8,
         "height": 2.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PA-28RT": [
@@ -4074,7 +4074,7 @@
         "wingspan": 9.75,
         "height": 2.44,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PA-31": [
@@ -4087,7 +4087,7 @@
         "wingspan": 12.0,
         "height": 3.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PA-31T": [
@@ -4100,7 +4100,7 @@
         "wingspan": 14.0,
         "height": 4.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PA-42": [
@@ -4113,7 +4113,7 @@
         "wingspan": 15.0,
         "height": 4.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "PA-46": [
@@ -4126,7 +4126,7 @@
         "wingspan": 13.0,
         "height": 3.4,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "M-18": [
@@ -4139,7 +4139,7 @@
         "wingspan": 18.0,
         "height": 3.2,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "M28": [
@@ -4152,7 +4152,7 @@
         "wingspan": 22.0,
         "height": 4.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Heron": [
@@ -4165,7 +4165,7 @@
         "wingspan": 21.5,
         "height": 3.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Space Shuttle": [
@@ -4178,7 +4178,7 @@
         "wingspan": 23.79,
         "height": 17.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "ROC-OV104",
@@ -4189,7 +4189,7 @@
         "wingspan": 23.79,
         "height": 17.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "ROC-OV099",
@@ -4200,7 +4200,7 @@
         "wingspan": 23.79,
         "height": 17.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "ROC-OV102",
@@ -4211,7 +4211,7 @@
         "wingspan": 23.79,
         "height": 17.25,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "ROC-OV103",
@@ -4222,7 +4222,7 @@
         "wingspan": 23.79,
         "height": 17.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "ROC-OV105",
@@ -4233,7 +4233,7 @@
         "wingspan": 23.79,
         "height": 17.25,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "2000": [
@@ -4246,7 +4246,7 @@
         "wingspan": 24.76,
         "height": 7.4,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "340": [
@@ -4259,7 +4259,7 @@
         "wingspan": 21.44,
         "height": 6.97,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Model 348": [
@@ -4272,7 +4272,7 @@
         "wingspan": 42.67,
         "height": 7.7,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "SpaceShipTwo": [
@@ -4285,7 +4285,7 @@
         "wingspan": 8.2,
         "height": 4.6,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "330": [
@@ -4298,7 +4298,7 @@
         "wingspan": 22.0,
         "height": 6.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "360": [
@@ -4311,7 +4311,7 @@
         "wingspan": 22.76,
         "height": 7.06,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "S.23": [
@@ -4324,7 +4324,7 @@
         "wingspan": 34.6,
         "height": 9.8,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "S.26": [
@@ -4337,7 +4337,7 @@
         "wingspan": 45.72,
         "height": 10.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "S.45": [
@@ -4350,7 +4350,7 @@
         "wingspan": 34.78,
         "height": 10.16,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Caravelle": [
@@ -4363,7 +4363,7 @@
         "wingspan": 34.3,
         "height": 8.71,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "SUD-Caravelle-I",
@@ -4374,7 +4374,7 @@
         "wingspan": 34.3,
         "height": 8.71,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "SUD-Caravelle-III",
@@ -4385,7 +4385,7 @@
         "wingspan": 34.3,
         "height": 8.71,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "SUD-Caravelle-VIN",
@@ -4396,7 +4396,7 @@
         "wingspan": 34.3,
         "height": 8.71,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "SUD-Caravelle-VIR",
@@ -4407,7 +4407,7 @@
         "wingspan": 34.3,
         "height": 8.71,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Concorde": [
@@ -4420,7 +4420,7 @@
         "wingspan": 25.6,
         "height": 12.19,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Superjet": [
@@ -4433,7 +4433,7 @@
         "wingspan": 27.8,
         "height": 10.28,
         "wingtip": "WL",
-        "owned": false
+        "status": "missing"
       }
     ],
     "C-160": [
@@ -4446,7 +4446,7 @@
         "wingspan": 40.0,
         "height": 11.65,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-104": [
@@ -4459,7 +4459,7 @@
         "wingspan": 34.5,
         "height": 11.9,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-114": [
@@ -4472,7 +4472,7 @@
         "wingspan": 51.1,
         "height": 15.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-124": [
@@ -4485,7 +4485,7 @@
         "wingspan": 25.55,
         "height": 8.08,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-134": [
@@ -4498,7 +4498,7 @@
         "wingspan": 29.0,
         "height": 9.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-154": [
@@ -4511,7 +4511,7 @@
         "wingspan": 37.5,
         "height": 11.4,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-204": [
@@ -4524,7 +4524,7 @@
         "wingspan": 41.8,
         "height": 13.84,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "TUP-Tu204-300",
@@ -4535,7 +4535,7 @@
         "wingspan": 41.8,
         "height": 13.84,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Tu-214": [
@@ -4548,7 +4548,7 @@
         "wingspan": 41.8,
         "height": 13.84,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Vanguard": [
@@ -4561,7 +4561,7 @@
         "wingspan": 43.36,
         "height": 11.3,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "VC10": [
@@ -4574,7 +4574,7 @@
         "wingspan": 44.55,
         "height": 12.04,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "VIC-VC10",
@@ -4585,7 +4585,7 @@
         "wingspan": 44.55,
         "height": 12.19,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       },
       {
         "aircraft_id": "VIC-VC10-SUPER",
@@ -4596,7 +4596,7 @@
         "wingspan": 44.55,
         "height": 12.19,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "Viscount": [
@@ -4609,7 +4609,7 @@
         "wingspan": 28.55,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       },
       {
         "aircraft_id": "VIC-Viscount-800",
@@ -4620,7 +4620,7 @@
         "wingspan": 28.55,
         "height": 8.25,
         "wingtip": "NONE",
-        "owned": true
+        "status": "owned"
       }
     ],
     "614": [
@@ -4633,7 +4633,7 @@
         "wingspan": 21.5,
         "height": 7.45,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MA60": [
@@ -4646,7 +4646,7 @@
         "wingspan": 29.2,
         "height": 8.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "MA600": [
@@ -4659,7 +4659,7 @@
         "wingspan": 29.2,
         "height": 8.1,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Y-7": [
@@ -4672,7 +4672,7 @@
         "wingspan": 29.0,
         "height": 8.0,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Yak-40": [
@@ -4685,7 +4685,7 @@
         "wingspan": 25.0,
         "height": 6.5,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ],
     "Yak-42": [
@@ -4698,7 +4698,7 @@
         "wingspan": 34.88,
         "height": 9.83,
         "wingtip": "NONE",
-        "owned": false
+        "status": "missing"
       }
     ]
   }
