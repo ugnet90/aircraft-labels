@@ -664,12 +664,12 @@ function scaleDim(value, mode){
   return `${String(value).replace(".", ",")} m`;
 }
 
-function statusLabel(status){
+function statusSymbol(status){
   const s = String(status || "").trim();
-  if(s === "owned") return "Vorhanden";
-  if(s === "ordered") return "Bestellt";
-  if(s === "wish") return "Wunsch";
-  return "Fehlt";
+  if(s === "owned") return "✓";
+  if(s === "ordered") return "◷";
+  if(s === "wish") return "★";
+  return "x";
 }
 
 function statusBadge(status){
@@ -698,6 +698,57 @@ function closeFamilyCompare(){
   if(!el) return;
   el.classList.remove("on");
   document.body.classList.remove("noscroll");
+}
+
+function statusRank(status){
+  const s = String(status || "").trim();
+  if(s === "owned") return 4;
+  if(s === "ordered") return 3;
+  if(s === "wish") return 2;
+  return 1;
+}
+
+function sortFamilyCompareTable(key){
+  const table = document.querySelector(".famCmpTable");
+  if(!table) return;
+
+  const tbody = table.querySelector("tbody");
+  if(!tbody) return;
+
+  const currentKey = table.getAttribute("data-sort-key") || "";
+  const currentDir = table.getAttribute("data-sort-dir") || "asc";
+  const nextDir = (currentKey === key && currentDir === "asc") ? "desc" : "asc";
+
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+
+  rows.sort((a, b) => {
+    let av = a.getAttribute(`data-${key}`) || "";
+    let bv = b.getAttribute(`data-${key}`) || "";
+
+    let cmp = 0;
+
+    if(key === "length" || key === "wingspan" || key === "height"){
+      const an = Number(av), bn = Number(bv);
+      cmp = (Number.isFinite(an) ? an : -999999) - (Number.isFinite(bn) ? bn : -999999);
+    }else if(key === "status"){
+      cmp = statusRank(av) - statusRank(bv);
+    }else{
+      cmp = av.localeCompare(bv, "de", { sensitivity: "base", numeric: true });
+    }
+
+    return nextDir === "asc" ? cmp : -cmp;
+  });
+
+  rows.forEach(r => tbody.appendChild(r));
+
+  table.setAttribute("data-sort-key", key);
+  table.setAttribute("data-sort-dir", nextDir);
+
+  table.querySelectorAll("th[data-sort]").forEach(th => {
+    const thKey = th.getAttribute("data-sort");
+    th.classList.toggle("sort-active", thKey === key);
+    th.classList.toggle("sort-desc", thKey === key && nextDir === "desc");
+  });
 }
 
 async function openFamilyCompare(baureihe, currentAircraftId){
@@ -730,37 +781,45 @@ async function openFamilyCompare(baureihe, currentAircraftId){
       return `
         <tr class="${isCurrent ? "famCmp-current " : ""}${statusRowClass(status)}"
             data-aircraft-id="${esc(String(r.aircraft_id || ""))}"
-            data-status="${esc(status)}">
+            data-status="${esc(status)}"
+            data-type="${esc(String(r.type || ""))}"
+            data-parent_type="${esc(String(r.parent_type || ""))}"
+            data-length="${esc(String(r.length ?? ""))}"
+            data-wingspan="${esc(String(r.wingspan ?? ""))}"
+            data-height="${esc(String(r.height ?? ""))}"
+            data-wingtip="${esc(String(r.wingtip || ""))}">
           <td>${esc(String(r.type || ""))}</td>
           ${hasParent ? `<td class="famParent">${r.parent_type ? esc(String(r.parent_type)) : ""}</td>` : ``}
           <td class="num ${dimCellClass(r.length, curLen)}"><span class="famNowrap" data-raw="${esc(String(r.length ?? ""))}" data-mode="length"></span></td>
           <td class="num ${dimCellClass(r.wingspan, curSpan)}"><span class="famNowrap" data-raw="${esc(String(r.wingspan ?? ""))}" data-mode="wingspan"></span></td>
           <td class="num ${dimCellClass(r.height, curHeight)}"><span class="famNowrap" data-raw="${esc(String(r.height ?? ""))}" data-mode="height"></span></td>
-          <td class="num">${esc(String(r.wingtip || "—"))}</td>
-          <td class="num">${statusBadge(status)}</td>
+          <td class="num">${String(r.wingtip || "").trim().toUpperCase() === "NONE" ? "" : esc(String(r.wingtip || ""))}</td>
+          <td class="num famModelMark">${esc(statusSymbol(status))}</td>
         </tr>
       `;
     }).join("");
 
     body.innerHTML = `
       <div class="famCmpTop">
-        <div class="famCmpSub">${esc(familyName)}</div>
-        <div class="famCmpToggle" role="tablist" aria-label="Maßstab umschalten">
-          <button type="button" class="famModeBtn is-on" data-fam-mode="original">Original</button>
-          <button type="button" class="famModeBtn" data-fam-mode="model400">1:400</button>
+        <div class="famCmpSub">Baureihenvergleich (${esc(familyName)})</div>
+        <div class="famCmpTopRight">
+          <div class="famCmpToggle" role="tablist" aria-label="Maßstab umschalten">
+            <button type="button" class="famModeBtn is-on" data-fam-mode="original">Original</button>
+            <button type="button" class="famModeBtn" data-fam-mode="model400">1:400</button>
+          </div>
         </div>
       </div>
-
-      <table class="famCmpTable">
+    
+      <table class="famCmpTable" data-sort-key="length" data-sort-dir="asc">
         <thead>
           <tr>
-            <th>Typ</th>
-            ${hasParent ? `<th class="famParent">Basis</th>` : ``}
-            <th class="num">Länge</th>
-            <th class="num">Spannweite</th>
-            <th class="num">Höhe</th>
-            <th class="num">WL/SL</th>
-            <th class="num">Modell</th>
+            <th data-sort="type">Typ</th>
+            ${hasParent ? `<th class="famParent" data-sort="parent_type">Basis</th>` : ``}
+            <th class="num" data-sort="length">Länge</th>
+            <th class="num" data-sort="wingspan">Spannweite</th>
+            <th class="num" data-sort="height">Höhe</th>
+            <th class="num" data-sort="wingtip">WL/SL</th>
+            <th class="num" data-sort="status">Modell</th>
           </tr>
         </thead>
         <tbody>
@@ -811,6 +870,13 @@ document.addEventListener("click", (ev) => {
     return;
   }
 
+  const sortTh = ev.target && ev.target.closest ? ev.target.closest(".famCmpTable th[data-sort]") : null;
+  if(sortTh){
+    const key = sortTh.getAttribute("data-sort") || "";
+    if(key) sortFamilyCompareTable(key);
+    return;
+  }
+  
   const tr = ev.target && ev.target.closest ? ev.target.closest(".famCmpTable tbody tr") : null;
   if(tr){
     const status = String(tr.getAttribute("data-status") || "").trim();
