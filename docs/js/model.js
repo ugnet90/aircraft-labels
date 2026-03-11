@@ -632,8 +632,11 @@ function ensureFamilyCompareModal(){
     <div class="famCmpBackdrop" data-close="1"></div>
     <div class="famCmpPanel" role="dialog" aria-modal="true">
       <div class="famCmpHead">
-        <div class="famCmpTitle">Baureihenvergleich</div>
-        <button class="famCmpClose" type="button" data-close="1" aria-label="Schließen">×</button>
+        <div class="famCmpTitle" id="familyCompareTitle">Baureihenvergleich</div>
+        <div class="famCmpHeadRight">
+          <div class="famCmpToggle" id="familyCompareToggle" role="tablist" aria-label="Maßstab umschalten"></div>
+          <button class="famCmpClose" type="button" data-close="1" aria-label="Schließen">×</button>
+        </div>
       </div>
       <div class="famCmpBody" id="familyCompareBody"></div>
     </div>
@@ -686,11 +689,23 @@ function statusRowClass(status){
   return "famRow-missing";
 }
 
-function dimCellClass(val, cur){
+function dimCellClass(val, cur, mode){
   if(val === null || val === undefined || cur === null || cur === undefined) return "";
-  const a = Number(val), b = Number(cur);
+
+  const a = Number(val);
+  const b = Number(cur);
   if(!Number.isFinite(a) || !Number.isFinite(b)) return "";
-  return a === b ? "famCmp-same" : "famCmp-diff";
+
+  // Originalflugzeug: direkter Vergleich in Metern
+  if(mode !== "model400"){
+    return a === b ? "famCmp-same" : "famCmp-diff";
+  }
+
+  // Modell 1:400: Vergleich nach Umrechnung in cm und Rundung auf 1 Nachkommastelle
+  const acm = Math.round((a * 100 / 400) * 10) / 10;
+  const bcm = Math.round((b * 100 / 400) * 10) / 10;
+
+  return acm === bcm ? "famCmp-same" : "famCmp-diff";
 }
 
 function closeFamilyCompare(){
@@ -764,6 +779,17 @@ async function openFamilyCompare(baureihe, currentAircraftId){
   const hasParent = rows.some(r => r.parent_type && String(r.parent_type).trim() !== "");
   const familyManufacturer = rows.length ? String(rows[0].manufacturer || "").trim() : "";
   const familyTitle = familyManufacturer ? `${familyManufacturer} ${familyName}` : familyName;
+  const modalTitle = `Baureihenvergleich - ${familyTitle}`;
+  const titleEl = document.getElementById("familyCompareTitle");
+  if(titleEl) titleEl.textContent = modalTitle;
+  
+  const toggleEl = document.getElementById("familyCompareToggle");
+  if(toggleEl){
+    toggleEl.innerHTML = `
+      <button type="button" class="famModeBtn is-on" data-fam-mode="original">Original</button>
+      <button type="button" class="famModeBtn" data-fam-mode="model400">1:400</button>
+    `;
+  }
   
   const body = document.getElementById("familyCompareBody");
   if(!body) return;
@@ -792,9 +818,9 @@ async function openFamilyCompare(baureihe, currentAircraftId){
             data-wingtip="${esc(String(r.wingtip || ""))}">
           <td>${esc(String(r.type || ""))}</td>
           ${hasParent ? `<td class="famParent">${r.parent_type ? esc(String(r.parent_type)) : ""}</td>` : ``}
-          <td class="num ${dimCellClass(r.length, curLen)}"><span class="famNowrap" data-raw="${esc(String(r.length ?? ""))}" data-mode="length"></span></td>
-          <td class="num ${dimCellClass(r.wingspan, curSpan)}"><span class="famNowrap" data-raw="${esc(String(r.wingspan ?? ""))}" data-mode="wingspan"></span></td>
-          <td class="num ${dimCellClass(r.height, curHeight)}"><span class="famNowrap" data-raw="${esc(String(r.height ?? ""))}" data-mode="height"></span></td>
+          <td class="num famDimCell" data-dim="length" data-raw="${esc(String(r.length ?? ""))}" data-cur="${esc(String(curLen ?? ""))}"><span class="famNowrap"></span></td>
+          <td class="num famDimCell" data-dim="wingspan" data-raw="${esc(String(r.wingspan ?? ""))}" data-cur="${esc(String(curSpan ?? ""))}"><span class="famNowrap"></span></td>
+          <td class="num famDimCell" data-dim="height" data-raw="${esc(String(r.height ?? ""))}" data-cur="${esc(String(curHeight ?? ""))}"><span class="famNowrap"></span></td>
           <td class="num">${String(r.wingtip || "").trim().toUpperCase() === "NONE" ? "" : esc(String(r.wingtip || ""))}</td>
           <td class="num famModelMark">${esc(statusSymbol(status))}</td>
         </tr>
@@ -802,16 +828,6 @@ async function openFamilyCompare(baureihe, currentAircraftId){
     }).join("");
 
     body.innerHTML = `
-      <div class="famCmpTop">
-        <div class="famCmpSub">${esc(familyTitle)}</div>
-        <div class="famCmpTopRight">
-          <div class="famCmpToggle" role="tablist" aria-label="Maßstab umschalten">
-            <button type="button" class="famModeBtn is-on" data-fam-mode="original">Original</button>
-            <button type="button" class="famModeBtn" data-fam-mode="model400">1:400</button>
-          </div>
-        </div>
-      </div>
-    
       <table class="famCmpTable" data-sort-key="length" data-sort-dir="asc">
         <thead>
           <tr>
@@ -845,9 +861,17 @@ function updateFamilyCompareDims(mode){
   const root = document.getElementById("familyCompareBody");
   if(!root) return;
 
-  root.querySelectorAll(".famNowrap").forEach(el => {
-    const raw = el.getAttribute("data-raw") || "";
-    el.textContent = scaleDim(raw, mode);
+  root.querySelectorAll(".famDimCell").forEach(td => {
+    const raw = td.getAttribute("data-raw") || "";
+    const cur = td.getAttribute("data-cur") || "";
+
+    const span = td.querySelector(".famNowrap");
+    if(span){
+      span.textContent = scaleDim(raw, mode);
+    }
+
+    td.classList.remove("famCmp-same", "famCmp-diff");
+    td.classList.add(dimCellClass(raw, cur, mode));
   });
 
   root.querySelectorAll(".famModeBtn").forEach(btn => {
