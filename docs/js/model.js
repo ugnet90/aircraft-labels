@@ -858,10 +858,10 @@ async function openFamilyCompare(baureihe, currentAircraftId){
 }
 
 function updateFamilyCompareDims(mode){
-  const root = document.getElementById("familyCompareBody");
-  if(!root) return;
+  const body = document.getElementById("familyCompareBody");
+  if(!body) return;
 
-  root.querySelectorAll(".famDimCell").forEach(td => {
+  body.querySelectorAll(".famDimCell").forEach(td => {
     const raw = td.getAttribute("data-raw") || "";
     const cur = td.getAttribute("data-cur") || "";
 
@@ -874,7 +874,8 @@ function updateFamilyCompareDims(mode){
     td.classList.add(dimCellClass(raw, cur, mode));
   });
 
-  root.querySelectorAll(".famModeBtn").forEach(btn => {
+  // WICHTIG: Buttons jetzt global im Modal updaten, nicht nur im Body
+  document.querySelectorAll("#familyCompareModal .famModeBtn").forEach(btn => {
     const m = btn.getAttribute("data-fam-mode");
     btn.classList.toggle("is-on", m === mode);
   });
