@@ -652,6 +652,47 @@ function ensureFamilyCompareModal(){
   });
 }
 
+function scaleDim(value, mode){
+  const n = Number(value);
+  if(!Number.isFinite(n)) return "—";
+
+  if(mode === "model400"){
+    const cm = n * 100 / 400;
+    return `${cm.toFixed(2).replace(".", ",")} cm`;
+  }
+
+  return `${String(value).replace(".", ",")} m`;
+}
+
+function statusLabel(status){
+  const s = String(status || "").trim();
+  if(s === "owned") return "Vorhanden";
+  if(s === "ordered") return "Bestellt";
+  if(s === "wish") return "Wunsch";
+  return "Fehlt";
+}
+
+function statusBadge(status){
+  const s = String(status || "").trim();
+  const label = statusLabel(s);
+  return `<span class="famStatus famStatus-${esc(s || "missing")}">${esc(label)}</span>`;
+}
+
+function statusRowClass(status){
+  const s = String(status || "").trim();
+  if(s === "owned") return "famRow-owned";
+  if(s === "ordered") return "famRow-ordered";
+  if(s === "wish") return "famRow-wish";
+  return "famRow-missing";
+}
+
+function dimCellClass(val, cur){
+  if(val === null || val === undefined || cur === null || cur === undefined) return "";
+  const a = Number(val), b = Number(cur);
+  if(!Number.isFinite(a) || !Number.isFinite(b)) return "";
+  return a === b ? "famCmp-same" : "famCmp-diff";
+}
+
 function closeFamilyCompare(){
   const el = document.getElementById("familyCompareModal");
   if(!el) return;
@@ -684,31 +725,42 @@ async function openFamilyCompare(baureihe, currentAircraftId){
 
     const htmlRows = rows.map(r => {
       const isCurrent = String(r.aircraft_id || "").trim() === currentId;
+      const status = String(r.status || "missing").trim();
+
       return `
-        <tr class="${isCurrent ? "famCmp-current" : ""}">
+        <tr class="${isCurrent ? "famCmp-current " : ""}${statusRowClass(status)}"
+            data-aircraft-id="${esc(String(r.aircraft_id || ""))}"
+            data-status="${esc(status)}">
           <td>${esc(String(r.type || ""))}</td>
           ${hasParent ? `<td class="famParent">${r.parent_type ? esc(String(r.parent_type)) : ""}</td>` : ``}
-          <td class="${cmpClass(r.length, curLen)}">${fmtDim(r.length)}</td>
-          <td class="${cmpClass(r.wingspan, curSpan)}">${fmtDim(r.wingspan)}</td>
-          <td class="${cmpClass(r.height, curHeight)}">${fmtDim(r.height)}</td>
-          <td>${esc(String(r.wingtip || "—"))}</td>
-          <td>${r.owned ? `<span class="famOwned">✓</span>` : `<span class="famMissing">—</span>`}</td>
+          <td class="num ${dimCellClass(r.length, curLen)}"><span class="famNowrap" data-raw="${esc(String(r.length ?? ""))}" data-mode="length"></span></td>
+          <td class="num ${dimCellClass(r.wingspan, curSpan)}"><span class="famNowrap" data-raw="${esc(String(r.wingspan ?? ""))}" data-mode="wingspan"></span></td>
+          <td class="num ${dimCellClass(r.height, curHeight)}"><span class="famNowrap" data-raw="${esc(String(r.height ?? ""))}" data-mode="height"></span></td>
+          <td class="num">${esc(String(r.wingtip || "—"))}</td>
+          <td class="num">${statusBadge(status)}</td>
         </tr>
       `;
     }).join("");
 
     body.innerHTML = `
-      <div class="famCmpSub">${esc(familyName)}</div>
+      <div class="famCmpTop">
+        <div class="famCmpSub">${esc(familyName)}</div>
+        <div class="famCmpToggle" role="tablist" aria-label="Maßstab umschalten">
+          <button type="button" class="famModeBtn is-on" data-fam-mode="original">Original</button>
+          <button type="button" class="famModeBtn" data-fam-mode="model400">1:400</button>
+        </div>
+      </div>
+
       <table class="famCmpTable">
         <thead>
           <tr>
             <th>Typ</th>
             ${hasParent ? `<th class="famParent">Basis</th>` : ``}
-            <th>Länge</th>
-            <th>Spannweite</th>
-            <th>Höhe</th>
-            <th>WL/SL</th>
-            <th>Modell</th>
+            <th class="num">Länge</th>
+            <th class="num">Spannweite</th>
+            <th class="num">Höhe</th>
+            <th class="num">WL/SL</th>
+            <th class="num">Modell</th>
           </tr>
         </thead>
         <tbody>
@@ -716,6 +768,9 @@ async function openFamilyCompare(baureihe, currentAircraftId){
         </tbody>
       </table>
     `;
+
+    // initial values = original
+    updateFamilyCompareDims("original");
   }
 
   const el = document.getElementById("familyCompareModal");
@@ -725,13 +780,46 @@ async function openFamilyCompare(baureihe, currentAircraftId){
   }
 }
 
+function updateFamilyCompareDims(mode){
+  const root = document.getElementById("familyCompareBody");
+  if(!root) return;
+
+  root.querySelectorAll(".famNowrap").forEach(el => {
+    const raw = el.getAttribute("data-raw") || "";
+    el.textContent = scaleDim(raw, mode);
+  });
+
+  root.querySelectorAll(".famModeBtn").forEach(btn => {
+    const m = btn.getAttribute("data-fam-mode");
+    btn.classList.toggle("is-on", m === mode);
+  });
+}
+
 document.addEventListener("click", (ev) => {
   const btn = ev.target && ev.target.closest ? ev.target.closest(".cmpFamilyBtn") : null;
-  if(!btn) return;
+  if(btn){
+    const family = btn.getAttribute("data-family") || "";
+    const aircraft = btn.getAttribute("data-aircraft") || "";
+    openFamilyCompare(family, aircraft);
+    return;
+  }
 
-  const family = btn.getAttribute("data-family") || "";
-  const aircraft = btn.getAttribute("data-aircraft") || "";
-  openFamilyCompare(family, aircraft);
+  const modeBtn = ev.target && ev.target.closest ? ev.target.closest(".famModeBtn") : null;
+  if(modeBtn){
+    const mode = modeBtn.getAttribute("data-fam-mode") || "original";
+    updateFamilyCompareDims(mode);
+    return;
+  }
+
+  const tr = ev.target && ev.target.closest ? ev.target.closest(".famCmpTable tbody tr") : null;
+  if(tr){
+    const status = String(tr.getAttribute("data-status") || "").trim();
+    const aircraftId = String(tr.getAttribute("data-aircraft-id") || "").trim();
+
+    if((status === "owned" || status === "ordered") && aircraftId){
+      window.location.href = `index.html?aircraft_id=${encodeURIComponent(aircraftId)}`;
+    }
+  }
 });
 
 async function main(){
