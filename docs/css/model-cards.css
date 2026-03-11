@@ -286,6 +286,11 @@
   white-space:nowrap;
 }
 
+.famCmpTable tbody tr[data-status="owned"],
+.famCmpTable tbody tr[data-status="ordered"]{
+  cursor:pointer;
+}
+
 /* ========================================
    FAMILY COMPARE MODAL / TABLE
    ======================================== */
@@ -462,6 +467,7 @@
   font-size:11px;
   line-height:1.2;
   white-space:nowrap;
+  font-weight:600;
 }
 
 .famStatus-owned{
