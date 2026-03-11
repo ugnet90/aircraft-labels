@@ -188,26 +188,6 @@
   box-shadow:0 20px 60px rgba(0,0,0,0.28);
 }
 
-.famCmpHead{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 16px;
-  border-bottom:1px solid rgba(0,0,0,0.08);
-}
-
-.famCmpTitle{
-  font-size:14px;
-  font-weight:700;
-}
-
-.famCmpClose{
-  border:0;
-  background:#fff;
-  font-size:24px;
-  cursor:pointer;
-  line-height:1;
-}
 
 .famCmpBody{
   padding:14px 16px 18px;
@@ -304,6 +284,7 @@
   display:flex;
   justify-content:space-between;
   align-items:center;
+  gap:14px;
   padding:14px 16px;
   border-bottom:1px solid rgba(0,0,0,0.08);
 }
@@ -311,6 +292,14 @@
 .famCmpTitle{
   font-size:14px;
   font-weight:700;
+  min-width:0;
+}
+
+.famCmpHeadRight{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex:0 0 auto;
 }
 
 .famCmpClose{
@@ -325,23 +314,10 @@
   padding:14px 16px 18px;
 }
 
-.famCmpTop{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:14px;
-  margin-bottom:10px;
-}
-
 .famCmpTopRight{
   display:flex;
   align-items:center;
   gap:10px;
-}
-
-.famCmpSub{
-  font-size:13px;
-  font-weight:600;
 }
 
 .famCmpToggle{
