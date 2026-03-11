@@ -231,6 +231,8 @@
 }
 
 .famCmpTable th{
+  cursor:pointer;
+  user-select:none;
   text-align:left;
   font-size:11px;
   text-transform:uppercase;
@@ -262,29 +264,10 @@
   color:#8a8a8a;
 }
 
-@media (max-width: 700px){
-  .famCmpPanel{
-    width:95vw;
-  }
-
-  .famCmpTable th,
-  .famCmpTable td{
-    padding:7px 8px;
-    font-size:13px;
-  }
-}
 
 /* ========================================
    Aircraft family compare table
    ======================================== */
-
-.famCmpTable th.famParent,
-.famCmpTable td.famParent{
-  width:120px;
-  font-size:11px;
-  color:#888;
-  white-space:nowrap;
-}
 
 .famCmpTable tbody tr[data-status="owned"],
 .famCmpTable tbody tr[data-status="ordered"]{
@@ -371,6 +354,12 @@
   margin-bottom:10px;
 }
 
+.famCmpTopRight{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
 .famCmpSub{
   font-size:13px;
   font-weight:600;
@@ -407,11 +396,26 @@
 }
 
 .famCmpTable th{
+  cursor:pointer;
+  user-select:none;
   text-align:left;
   font-size:11px;
   text-transform:uppercase;
   letter-spacing:.04em;
   color:#777;
+}
+
+.famCmpTable th[data-sort].sort-active{
+  color:#333;
+}
+
+.famCmpTable th[data-sort].sort-active::after{
+  content:" ↑";
+  font-size:10px;
+}
+
+.famCmpTable th[data-sort].sort-active.sort-desc::after{
+  content:" ↓";
 }
 
 .famCmpTable th.num,
@@ -421,7 +425,7 @@
 
 .famCmpTable th.famParent,
 .famCmpTable td.famParent{
-  width:120px;
+  width:110px;
   font-size:11px;
   color:#888;
   white-space:nowrap;
@@ -502,4 +506,9 @@
     padding:7px 8px;
     font-size:13px;
   }
+}
+
+.famModelMark{
+  font-size:18px;
+  font-weight:700;
 }
