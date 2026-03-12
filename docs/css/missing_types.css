@@ -1,5 +1,5 @@
 /* === missing types page only === */
-body{ --maxw: 1200px; }
+body{ --maxw: 1100px; }
 
 .controls{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
 label{ display:flex; gap:6px; align-items:center; }
