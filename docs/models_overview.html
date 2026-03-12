@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flugzeugmodelle – Übersicht</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- NAV: in alle Seiten gleich -->
+  <nav class="nav">
+    <div class="navInner">
+      <div class="navLeft"><a class="navHome" href="./models_overview.html">Flugzeugmodelle – Übersicht</a></div>
+      <div class="navRight">
+        <a class="active" href="./index.html">Übersicht</a>
+        <a href="./matrix.html">Matrix</a>
+        <a href="./missing_types.html">Fehlende Typen</a>
+        <a href="./types_overview.html">Typen</a>
+        <a href="./flights.html">Flüge</a>
+        <a href="./stats.html">Stats</a>
+      </div>
+    </div>
+  </nav>
+
+<div class="meta" id="meta">Lade Daten …</div>
+
+<div class="bar">
+  <input id="q" placeholder="Suche (ID, Reg, Typ, Bemalung …)" />
+  <select id="group">
+    <option value="">Alle Airline-Gruppen</option>
+  </select>
+  <select id="airline">
+    <option value="">Alle Airlines</option>
+  </select>
+  <select id="type">
+    <option value="">Alle Flugzeugtypen</option>
+  </select>
+  <select id="scale">
+    <option value="">Alle Maßstäbe</option>
+  </select>
+  <select id="flown">
+    <option value="">Mitgeflogen: egal</option>
+    <option value="true">Mitgeflogen: ja</option>
+    <option value="false">Mitgeflogen: nein</option>
+  </select>
+
+</div>
+
+<div class="right">
+  <span class="small" id="activeFilters"></span>
+  <button id="reset" class="pill" style="cursor:pointer;background:#fff">Reset</button>
+  <span class="small" id="count"></span>
+</div>
+  
+<div id="content"></div>
+
+<script src="js/time.js" defer></script>
+<script src="js/index.js" defer></script>
+</body>
+</html>
