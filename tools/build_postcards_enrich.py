@@ -5,6 +5,7 @@ import json
 import os
 import re
 import time
+from utils_time import now_local_iso
 from typing import Any, Dict, List, Tuple, Optional
 from urllib.parse import urlparse, urljoin
 
@@ -334,7 +335,7 @@ def main() -> int:
                 **base,          # keeps id/model_id/url (+ label/price if present)
                 **scraped,       # scraped metadata
                 "postcard_id": pc_id,  # keep legacy field name too
-                "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "scraped_at_utc": now_local_iso(),
             }
 
             # ensure required fields exist
@@ -351,7 +352,7 @@ def main() -> int:
                 "model_id": model_id,
                 "source_url": url,
                 "error": str(e),
-                "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "scraped_at_utc": now_local_iso(),
             }
 
         time.sleep(SLEEP_SECONDS)
