@@ -4,6 +4,7 @@
 import json
 import os
 from datetime import datetime, timezone
+from utils_time import now_local_iso
 from typing import Any, Dict, List, Tuple
 
 
@@ -11,11 +12,6 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MODELS_DIR = os.path.join(REPO_ROOT, "docs", "data", "models")
 OUT_PATH = os.path.join(REPO_ROOT, "docs", "data", "postcards_index.json")
-
-
-def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
 
 def load_json(path: str) -> Any:
     with open(path, "r", encoding="utf-8") as f:
@@ -89,7 +85,7 @@ def main() -> int:
     items, by_id = collect_from_models()
 
     out = {
-        "generated_at": utc_now_iso(),
+        "generated_at": now_local_iso(),
         "count_total": len(items),
         "count_unique": len(by_id),
         "items": items,
