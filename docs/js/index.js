@@ -186,7 +186,9 @@ function updateActiveFilterUI(filters){
 
   const box = document.getElementById("activeFilters");
   if(box){
-    box.textContent = active.length ? `Aktive Filter: ${active.join(", ")}` : "";
+    box.textContent = active.length
+      ? `Aktive Filter: ${active.join(", ")}`
+      : "Keine Filter aktiv";
   }
 }
 
