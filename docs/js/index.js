@@ -434,7 +434,7 @@ async function main(){
     state.all = data.items || [];
 
     document.getElementById("meta").innerHTML =
-      `<span class="pill">Stand: <span class="mono">${esc(formatDateTimeDE(data.generated_at || ""))}</span></span>` +
+      `<span class="pill">Stand: <span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span></span>` +
       `<span class="pill">Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span></span>`;
     
     document.getElementById("q").addEventListener("input", apply);
