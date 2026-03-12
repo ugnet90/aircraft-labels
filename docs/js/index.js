@@ -325,7 +325,7 @@ async function main(){
     document.getElementById("type").addEventListener("change", apply);
     document.getElementById("scale").addEventListener("change", apply);
     document.getElementById("flown").addEventListener("change", apply);
-    document.getElementById("sort").addEventListener("change", apply);
+
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
       document.getElementById("group").value = "";
@@ -333,7 +333,6 @@ async function main(){
       document.getElementById("type").value = "";
       document.getElementById("scale").value = "";
       document.getElementById("flown").value = "";
-      document.getElementById("sort").value = "group_model";
       
       tableSortKey = "model_id";
       tableSortDir = 1;
@@ -375,9 +374,9 @@ async function main(){
     if (p.has("flown")) {
       document.getElementById("flown").value = p.get("flown") || "";
     }
-    if (p.has("sort")) {
-      document.getElementById("sort").value = p.get("sort") || document.getElementById("sort").value;
-    }
+    //if (p.has("sort")) {
+    //  document.getElementById("sort").value = p.get("sort") || document.getElementById("sort").value;
+    //}
 
     apply();
 
