@@ -1077,10 +1077,7 @@ async function init(){
   models = idx.items || [];
   buildAirlineNameByLogo(models);
 
-  document.getElementById("meta").textContent =
-      `<span class="pill">Stand: <span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span></span>` +
-      `<span class="pill">Anzahl: <span class="mono">${flights.length} Flüge</span></span>`;
-  //`${flights.length} Flüge`;
+  document.getElementById("meta").textContent =`Gesamt: ${flights.length} Flüge`;
   
   // ✅ Default-Sort setzen, damit Pfeile/Hervorhebung sofort da sind
   if(!mainSortKey){
