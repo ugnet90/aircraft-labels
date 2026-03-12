@@ -4,19 +4,6 @@ let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // De
 let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
 if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;            // 1 = asc, -1 = desc
 
-function updateSortIndicators(){
-  document.querySelectorAll("#content th[data-sort]").forEach(th => {
-    const key = th.dataset.sort;
-    let label = th.textContent.replace(/[↑↓]/g,"").trim();
-
-    if(key === tableSortKey){
-      label += tableSortDir === 1 ? " ↑" : " ↓";
-    }
-
-    th.textContent = label;
-  });
-}
-
 function esc(s){
   return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
@@ -69,6 +56,137 @@ function buildOptions(items, selectId, keyFn, labelFn){
     opt.value = k;
     opt.textContent = label;
     sel.appendChild(opt);
+  }
+}
+
+function getGroupValue(it){
+  return (it.airline || it.group || it.airline_group || "");
+}
+
+function passesFilters(it, filters, excludeKey = ""){
+  if(excludeKey !== "q" && !matchesQuery(it, filters.q)) return false;
+  if(excludeKey !== "airline" && !matchesAirline(it, filters.airline)) return false;
+
+  const grp = getGroupValue(it);
+  if(excludeKey !== "group" && filters.group && grp !== filters.group) return false;
+
+  if(excludeKey !== "type" && !matchesType(it, filters.type)) return false;
+  if(excludeKey !== "scale" && !matchesScale(it, filters.scale)) return false;
+  if(excludeKey !== "flown" && !matchesFlown(it, filters.flown)) return false;
+
+  return true;
+}
+
+function refillSelect(selectId, firstLabel, pairs, currentValue){
+  const sel = document.getElementById(selectId);
+  if(!sel) return;
+
+  sel.innerHTML = "";
+  const first = document.createElement("option");
+  first.value = "";
+  first.textContent = firstLabel;
+  sel.appendChild(first);
+
+  pairs.forEach(([value, label]) => {
+    const opt = document.createElement("option");
+    opt.value = value;
+    opt.textContent = label;
+    sel.appendChild(opt);
+  });
+
+  const allowed = new Set(pairs.map(([value]) => value));
+  if(currentValue && allowed.has(currentValue)){
+    sel.value = currentValue;
+  }else{
+    sel.value = "";
+  }
+}
+
+function buildFacetOptions(filters){
+  // group
+  {
+    const items = state.all.filter(it => passesFilters(it, filters, "group"));
+    const map = new Map();
+    for(const it of items){
+      const key = getGroupValue(it);
+      if(key && !map.has(key)) map.set(key, key);
+    }
+    const pairs = Array.from(map.entries()).sort((a,b)=> String(a[1]).localeCompare(String(b[1]), "de"));
+    refillSelect("group", "Alle Airline-Gruppen", pairs, filters.group);
+  }
+
+  // airline
+  {
+    const items = state.all.filter(it => passesFilters(it, filters, "airline"));
+    const map = new Map();
+    for(const it of items){
+      const key = (it.airline_row || "");
+      if(key && !map.has(key)) map.set(key, key);
+    }
+    const pairs = Array.from(map.entries()).sort((a,b)=> String(a[1]).localeCompare(String(b[1]), "de"));
+    refillSelect("airline", "Alle Airlines", pairs, filters.airline);
+  }
+
+  // type
+  {
+    const items = state.all.filter(it => passesFilters(it, filters, "type"));
+    const map = new Map();
+    for(const it of items){
+      const key = (it.aircraft_type || "");
+      if(key && !map.has(key)) map.set(key, key);
+    }
+    const pairs = Array.from(map.entries()).sort((a,b)=> String(a[1]).localeCompare(String(b[1]), "de"));
+    refillSelect("type", "Alle Flugzeugtypen", pairs, filters.type);
+  }
+
+  // scale
+  {
+    const items = state.all.filter(it => passesFilters(it, filters, "scale"));
+    const map = new Map();
+    for(const it of items){
+      const key = (it.scale || "");
+      if(key && !map.has(key)) map.set(key, key);
+    }
+    const pairs = Array.from(map.entries()).sort((a,b)=> String(a[1]).localeCompare(String(b[1]), "de"));
+    refillSelect("scale", "Alle Maßstäbe", pairs, filters.scale);
+  }
+
+  // flown
+  {
+    const items = state.all.filter(it => passesFilters(it, filters, "flown"));
+    const hasTrue = items.some(it => it.flown === true);
+    const hasFalse = items.some(it => it.flown === false);
+
+    const pairs = [];
+    if(hasTrue) pairs.push(["true", "Mitgeflogen: ja"]);
+    if(hasFalse) pairs.push(["false", "Mitgeflogen: nein"]);
+
+    refillSelect("flown", "Mitgeflogen: egal", pairs, filters.flown);
+  }
+}
+
+function updateActiveFilterUI(filters){
+  const map = [
+    ["q", "Suche"],
+    ["group", "Airline-Gruppe"],
+    ["airline", "Airline"],
+    ["type", "Flugzeugtyp"],
+    ["scale", "Maßstab"],
+    ["flown", "Mitgeflogen"]
+  ];
+
+  const active = [];
+
+  map.forEach(([key, label]) => {
+    const el = document.getElementById(key);
+    const on = !!filters[key];
+    if(el) el.classList.toggle("is-active", on);
+    if(on) active.push(label);
+  });
+
+  const box = document.getElementById("activeFilters");
+  if(box){
+    box.textContent = active.length ? `Aktive Filter: ${active.join(", ")}` : "";
   }
 }
 
@@ -158,20 +276,28 @@ function render(items){
     return;
   }
 
+  const mark = (key) => {
+    if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
+    return `<span class="sortMark active">${tableSortDir === 1 ? "↑" : "↓"}</span>`;
+  };
+
+  const thClass = (key, base = "") =>
+    (tableSortKey === key ? `${base} thSort active` : `${base} thSort`).trim();
+
   let html = `
     <table>
       <thead>
         <tr>
-          <th data-sort="model_id">Modell-ID</th>
-          <th data-sort="airline">Airline-Gruppe</th>
-          <th data-sort="airline_row">Airline</th>
-          <th class="hide-m" data-sort="scale">Maßstab</th>
-          <th class="hide-m" data-sort="flown">Mitgeflogen</th>
-          <th data-sort="aircraft_type">Flugzeugtyp</th>
-          <th data-sort="wingtip">WL/SL</th>
-          <th class="hide-m" data-sort="registration">Registrierung</th>
-          <th class="hide-m" data-sort="livery_display">Bemalung</th>
-          <th class="hide-m" data-sort="arrived">Angekommen</th>
+          <th class="${thClass("model_id")}" data-sort="model_id">Modell-ID ${mark("model_id")}</th>
+          <th class="${thClass("airline")}" data-sort="airline">Airline-Gruppe ${mark("airline")}</th>
+          <th class="${thClass("airline_row")}" data-sort="airline_row">Airline ${mark("airline_row")}</th>
+          <th class="${thClass("scale","hide-m")}" data-sort="scale">Maßstab ${mark("scale")}</th>
+          <th class="${thClass("flown","hide-m")}" data-sort="flown">Mitgeflogen ${mark("flown")}</th>
+          <th class="${thClass("aircraft_type")}" data-sort="aircraft_type">Flugzeugtyp ${mark("aircraft_type")}</th>
+          <th class="${thClass("wingtip")}" data-sort="wingtip">WL/SL ${mark("wingtip")}</th>
+          <th class="${thClass("registration","hide-m")}" data-sort="registration">Registrierung ${mark("registration")}</th>
+          <th class="${thClass("livery_display","hide-m")}" data-sort="livery_display">Bemalung ${mark("livery_display")}</th>
+          <th class="${thClass("arrived","hide-m")}" data-sort="arrived">Angekommen ${mark("arrived")}</th>
         </tr>
       </thead>
       <tbody>
@@ -255,13 +381,22 @@ function render(items){
       apply();
     });
   });
-
-  updateSortIndicators();
 }
 
-
-
 function apply(){
+  const filters = {
+    q: norm(document.getElementById("q").value),
+    group: document.getElementById("group").value,
+    airline: document.getElementById("airline").value,
+    type: document.getElementById("type").value,
+    scale: document.getElementById("scale").value,
+    flown: document.getElementById("flown").value
+  };
+
+  // Facetten neu aufbauen, bevor die finale Trefferliste gerendert wird
+  buildFacetOptions(filters);
+  updateActiveFilterUI(filters);
+
   const q = norm(document.getElementById("q").value);
   const group = document.getElementById("group").value;
   const airline = document.getElementById("airline").value;
@@ -272,10 +407,10 @@ function apply(){
   let items = state.all.filter(it => {
     if (!matchesQuery(it, q)) return false;
     if (!matchesAirline(it, airline)) return false;
-    const grp = (it.airline || it.group || it.airline_group || "");
-    if (group && grp !== group) return false;   // ⭐ Airline-Gruppe
 
-    // if (group && (it.airline || "") !== group) return false;
+    const grp = getGroupValue(it);
+    if (group && grp !== group) return false;
+
     if (!matchesType(it, type)) return false;
     if (!matchesScale(it, scale)) return false;
     if (!matchesFlown(it, flown)) return false;
@@ -300,25 +435,6 @@ async function main(){
       `<span class="pill">Stand: <span class="mono">${esc(formatDateTimeDE(data.generated_at || ""))}</span></span>` +
       `<span class="pill">Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span></span>`;
     
-    buildOptions(state.all, "group",
-      it => (it.airline || ""),   // airline = Gruppe (Sheet)
-      it => (it.airline || "")
-    );
-
-    buildOptions(state.all, "airline",
-      it => (it.airline_row || ""),
-      it => (it.airline_row || "")
-    );
-    buildOptions(state.all, "type",
-      it => (it.aircraft_type || ""),
-      it => (it.aircraft_type || "")
-    );
-
-    buildOptions(state.all, "scale",
-      it => (it.scale || ""),
-      it => (it.scale || "")
-    );
-
     document.getElementById("q").addEventListener("input", apply);
     document.getElementById("group").addEventListener("change", apply);
     document.getElementById("airline").addEventListener("change", apply);
