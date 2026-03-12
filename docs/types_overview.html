@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Typen-Übersicht</title>
+  <title>Alle Flugzeugtypen</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/types_overview.css">
 </head>
@@ -11,7 +11,7 @@
   <!-- NAV: in alle Seiten gleich -->
   <nav class="nav">
     <div class="navInner">
-      <div class="navLeft"><a class="navHome" href="./index.html">Aircraft Labels</a></div>
+      <div class="navLeft"><a class="navHome" href="./types_overview.html">Alle Flugzeugtypen</a></div>
       <div class="navRight">
         <a href="./index.html">Übersicht</a>
         <a href="./matrix.html">Matrix</a>
@@ -24,15 +24,9 @@
   </nav>
   
   <div class="top">
-    <h1>Typen-Übersicht</h1>
     <span class="muted" id="meta"></span>
   </div>
 
-  <div class="row">
-    <a class="btn" href="./index.html">← Übersicht</a>
-    <a class="btn" href="./matrix.html">Matrix</a>
-    <a class="btn" href="./missing_types.html">Fehlende Typen</a>
-  </div>
   <div class="legend">
     <span class="dot dotG"></span><span class="legendTxt">vorhanden</span>
     <span class="dot dotY"></span><span class="legendTxt">bestellt</span>
@@ -61,7 +55,7 @@
     </div>
   </div>
   <div id="content"></div>
-
+<script src="js/time.js" defer></script>
 <script src="js/types_overview.js" defer></script>
 </body>
 </html>
