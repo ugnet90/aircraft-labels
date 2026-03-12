@@ -34,3 +34,38 @@ tr:hover{ background:#fafafa; }
 @media (max-width:520px){
   .hide-m{ display:none !important; }
 }
+
+/* aktive Filter */
+.bar input.is-active,
+.bar select.is-active{
+  border-color: rgba(0,0,0,0.35);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.06);
+  background: #fffdf5;
+}
+
+/* Hinweis aktive Filter */
+#activeFilters{
+  margin-left: 10px;
+  color: #555;
+}
+
+/* Sortierung wie flights */
+th.thSort{
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortMark{
+  opacity: .35;
+  margin-left: 4px;
+  font-size: 0.9em;
+}
+
+.sortMark.active{
+  opacity: 1;
+}
+
+th.thSort.active{
+  color: #111;
+  font-weight: 700;
+}
