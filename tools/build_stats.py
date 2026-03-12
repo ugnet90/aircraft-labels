@@ -2,6 +2,7 @@ import csv
 import json
 from pathlib import Path
 from collections import defaultdict
+from utils_time import now_local_iso
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_CSV = ROOT / "models_export.csv"
