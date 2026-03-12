@@ -1,4 +1,19 @@
 const state = { all: [], filtered: [] };
+let tableSortKey = "model_id";   // Default-Spalte
+let tableSortDir = 1;            // 1 = asc, -1 = desc
+
+function updateSortIndicators(){
+  document.querySelectorAll("#content th[data-sort]").forEach(th => {
+    const key = th.dataset.sort;
+    let label = th.textContent.replace(/[↑↓]/g,"").trim();
+
+    if(key === tableSortKey){
+      label += tableSortDir === 1 ? " ↑" : " ↓";
+    }
+
+    th.textContent = label;
+  });
+}
 
 function esc(s){
   return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -129,6 +144,45 @@ function sortItems(items, mode){
   return arr;
 }
 
+function sortByColumn(items){
+  if(!tableSortKey) return items.slice();
+
+  const arr = items.slice();
+
+  arr.sort((a,b)=>{
+    let va = a[tableSortKey];
+    let vb = b[tableSortKey];
+
+    if(tableSortKey === "wingtip"){
+      va = ((a.has_wingtip === true) || ((a.wingtip || "").toUpperCase() && (a.wingtip || "").toUpperCase() !== "NONE")) ? "ja" : "";
+      vb = ((b.has_wingtip === true) || ((b.wingtip || "").toUpperCase() && (b.wingtip || "").toUpperCase() !== "NONE")) ? "ja" : "";
+    }
+
+    if(tableSortKey === "flown"){
+      va = a.flown === true ? 1 : a.flown === false ? 0 : -1;
+      vb = b.flown === true ? 1 : b.flown === false ? 0 : -1;
+    }
+
+    if(tableSortKey === "arrived"){
+      va = parseDateISO(a.arrived)?.getTime() ?? -1;
+      vb = parseDateISO(b.arrived)?.getTime() ?? -1;
+    }
+
+    if(va == null) va = "";
+    if(vb == null) vb = "";
+
+    if(typeof va === "string") va = va.toLowerCase();
+    if(typeof vb === "string") vb = vb.toLowerCase();
+
+    if(va < vb) return -1 * tableSortDir;
+    if(va > vb) return  1 * tableSortDir;
+
+    return (a.model_id || "").localeCompare(b.model_id || "");
+  });
+
+  return arr;
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -141,25 +195,25 @@ function render(items){
     <table>
       <thead>
         <tr>
-          <th>Modell-ID</th>
-          <th>Airline-Gruppe</th>
-          <th>Airline</th>
-          <th class="hide-m">Maßstab</th>
-          <th class="hide-m">Mitgeflogen</th>
-          <th>Flugzeugtyp</th>
-          <th>WL/SL</th>
-          <th class="hide-m">Registrierung</th>
-          <th class="hide-m">Bemalung</th>
-          <th class="hide-m">Angekommen</th>
+          <th data-sort="model_id">Modell-ID</th>
+          <th data-sort="airline">Airline-Gruppe</th>
+          <th data-sort="airline_row">Airline</th>
+          <th class="hide-m" data-sort="scale">Maßstab</th>
+          <th class="hide-m" data-sort="flown">Mitgeflogen</th>
+          <th data-sort="aircraft_type">Flugzeugtyp</th>
+          <th data-sort="wingtip">WL/SL</th>
+          <th class="hide-m" data-sort="registration">Registrierung</th>
+          <th class="hide-m" data-sort="livery_display">Bemalung</th>
+          <th class="hide-m" data-sort="arrived">Angekommen</th>
         </tr>
       </thead>
       <tbody>
   `;
-
+  
   for(const it of items){
     const link = `./model.html?id=${encodeURIComponent(it.model_id)}`;
     html += `
-      <tr>
+      <tr class="modelRow" data-id="${esc(it.model_id || "")}">
         <td class="mono">
           <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
             ${
@@ -209,6 +263,29 @@ function render(items){
 
   html += `</tbody></table>`;
   document.getElementById("content").innerHTML = html;
+
+  document.querySelectorAll("#content .modelRow").forEach(tr => {
+    tr.addEventListener("click", (e) => {
+      if(e.target.closest("a")) return; // Links normal lassen
+      const id = tr.getAttribute("data-id");
+      if(id) location.href = `./model.html?id=${encodeURIComponent(id)}`;
+    });
+  });
+  
+  document.querySelectorAll("#content th[data-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+      if(tableSortKey === key){
+        tableSortDir *= -1;
+      }else{
+        tableSortKey = key;
+        tableSortDir = 1;
+      }
+      apply();
+    });
+  }); 
+
+  updateSortIndicators();
 }
 
 
@@ -236,10 +313,15 @@ function apply(){
   });
 
   items = sortItems(items, sort);
+
+  // optionale Sortierung per Klick auf Spaltenkopf
+  if(tableSortKey){
+    items = sortByColumn(items);
+  }
+
   state.filtered = items;
   render(items);
 }
-
 
 async function main(){
   try{
