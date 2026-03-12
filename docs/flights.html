@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Flüge</title>
+  <title>Eigene Flüge</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/flights.css">
 </head>
@@ -12,6 +12,7 @@
   <!-- NAV: in alle Seiten gleich -->
   <nav class="nav">
     <div class="navInner">
+      <div class="navLeft"><a class="navHome" href="./flights.html">Eigene Flüge</a></div>
       <div class="navRight">
         <a href="./index.html">Übersicht</a>
         <a href="./matrix.html">Matrix</a>
@@ -24,12 +25,11 @@
   </nav>
 
   <div class="top" style="margin-top:10px">
-    <h1>Flüge</h1>
     <span class="muted" id="meta"></span>
   </div>
 
   <div id="content" class="card">Lade Daten …</div>
-
+<script src="js/time.js" defer></script>
 <script src="js/flights.js" defer></script>
 </body>
 </html>
