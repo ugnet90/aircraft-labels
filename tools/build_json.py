@@ -3,6 +3,7 @@ import json
 import os
 import re
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from typing import Any, Dict, Optional, List
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -68,6 +69,8 @@ def to_float(v: str) -> Optional[float]:
     except ValueError:
         return None
 
+def now_local_iso() -> str:
+    return datetime.now(ZoneInfo("Europe/Vienna")).isoformat(timespec="seconds")    
 
 def excel_serial_to_iso(v: str) -> Optional[str]:
     """
@@ -488,7 +491,7 @@ def main() -> int:
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
     index_payload = {
-        "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": now_local_iso(),
         "count": len(index_list),
         "counts_by_airline_code": counts,
         "items": sorted(index_list, key=lambda x: (x.get("airline_code") or "", x.get("model_id") or "")),
@@ -557,7 +560,7 @@ def main() -> int:
 
     flights_payload = {
         "schema": "aircraft-labels.flights.v1",
-        "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": now_local_iso(),
         "count": len(flights_items),
         "items": flights_items,
     }
@@ -646,7 +649,7 @@ def main() -> int:
         families[fam_name] = sorted(families[fam_name], key=family_sort_key)
 
     families_out = {
-        "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": now_local_iso(),
         "count_families": len(families),
         "families": families,
     }
