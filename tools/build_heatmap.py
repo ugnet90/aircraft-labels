@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 from collections import Counter
 from pathlib import Path
+from utils_time import now_local_iso
 
 ROOT = Path(__file__).resolve().parents[1]
 FLIGHTS_JSON = ROOT / "docs" / "data" / "flights.json"
