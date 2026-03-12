@@ -655,6 +655,7 @@ def main() -> int:
         json.dump(families_out, f, ensure_ascii=False, indent=2)
 
     print("[build_json] wrote index:", INDEX_JSON, "bytes=", os.path.getsize(INDEX_JSON))
+    print("[build_json] started:", now_local_human())
     print(f"Generated {len(index_list)} JSON files into {OUT_DIR}")
     return 0
 
