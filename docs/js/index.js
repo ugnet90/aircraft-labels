@@ -1,6 +1,8 @@
 const state = { all: [], filtered: [] };
-let tableSortKey = "model_id";   // Default-Spalte
-let tableSortDir = 1;            // 1 = asc, -1 = desc
+
+let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // Default-Spalte
+let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
+if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;            // 1 = asc, -1 = desc
 
 function updateSortIndicators(){
   document.querySelectorAll("#content th[data-sort]").forEach(th => {
@@ -107,41 +109,6 @@ function matchesFlown(it, v){
   if(v === "true") return it.flown === true;
   if(v === "false") return it.flown === false;
   return true;
-}
-
-function sortItems(items, mode){
-  const arr = items.slice();
-
-  if(mode === "arrived_desc" || mode === "arrived_asc"){
-    arr.sort((a,b)=>{
-      const da = parseDateISO(a.arrived)?.getTime() ?? -1;
-      const db = parseDateISO(b.arrived)?.getTime() ?? -1;
-      return mode === "arrived_desc" ? (db - da) : (da - db);
-    });
-    return arr;
-  }
-  if(mode === "type"){
-    arr.sort((a,b)=> (a.aircraft_type||"").localeCompare(b.aircraft_type||"") || (a.model_id||"").localeCompare(b.model_id||""));
-    return arr;
-  }
-  if(mode === "reg"){
-    arr.sort((a,b)=> (a.registration||"").localeCompare(b.registration||"") || (a.model_id||"").localeCompare(b.model_id||""));
-    return arr;
-  }
-
-  if(mode === "group_model"){
-    arr.sort((a,b)=>
-      (a.airline||"").localeCompare(b.airline||"") ||
-      (a.model_id||"").localeCompare(b.model_id||"")
-    );
-    return arr;
-  }
-
-  arr.sort((a,b)=>
-    (a.airline_row||"").localeCompare(b.airline_row||"") ||
-    (a.model_id||"").localeCompare(b.model_id||"")
-  );
-  return arr;
 }
 
 function sortByColumn(items){
@@ -281,9 +248,13 @@ function render(items){
         tableSortKey = key;
         tableSortDir = 1;
       }
+  
+      localStorage.setItem("indexSortKey", tableSortKey);
+      localStorage.setItem("indexSortDir", String(tableSortDir));
+  
       apply();
     });
-  }); 
+  });
 
   updateSortIndicators();
 }
@@ -297,7 +268,6 @@ function apply(){
   const type = document.getElementById("type").value;
   const scale = document.getElementById("scale").value;
   const flown = document.getElementById("flown").value;
-  const sort = document.getElementById("sort").value;
 
   let items = state.all.filter(it => {
     if (!matchesQuery(it, q)) return false;
@@ -312,12 +282,7 @@ function apply(){
     return true;
   });
 
-  items = sortItems(items, sort);
-
-  // optionale Sortierung per Klick auf Spaltenkopf
-  if(tableSortKey){
-    items = sortByColumn(items);
-  }
+  items = sortByColumn(items);
 
   state.filtered = items;
   render(items);
@@ -369,6 +334,12 @@ async function main(){
       document.getElementById("scale").value = "";
       document.getElementById("flown").value = "";
       document.getElementById("sort").value = "group_model";
+      
+      tableSortKey = "model_id";
+      tableSortDir = 1;
+      localStorage.removeItem("indexSortKey");
+      localStorage.removeItem("indexSortDir");
+      
       apply();
 
       // URL bereinigen (Query-Parameter entfernen)
