@@ -3,7 +3,7 @@ import json
 import os
 import re
 from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo
+from utils_time import now_local_iso
 from typing import Any, Dict, Optional, List
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -68,9 +68,6 @@ def to_float(v: str) -> Optional[float]:
         return float(v)
     except ValueError:
         return None
-
-def now_local_iso() -> str:
-    return datetime.now(ZoneInfo("Europe/Vienna")).isoformat(timespec="seconds")    
 
 def excel_serial_to_iso(v: str) -> Optional[str]:
     """
