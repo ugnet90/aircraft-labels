@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 import json
 from pathlib import Path
+from utils_time import now_local_iso
 
 ROOT = Path(__file__).resolve().parents[1]
 AIRPORTS_CSV = ROOT / "data" / "airports.csv"
