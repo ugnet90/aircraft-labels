@@ -82,7 +82,7 @@ async function main(){
   const d = await res.json();
 
   const meta = d.counts
-    ? `Master: ${d.counts.master_types} · Vorhanden: ${d.counts.present_types} · Fehlend: ${d.counts.missing_types} · Bestellt: ${d.counts.ordered_types || 0}`
+    ? `Gesamtanzahl Typen: ${d.counts.master_types} davon[vorhanden: ${d.counts.present_types} · fehlend: ${d.counts.missing_types} · bestellt: ${d.counts.ordered_types || 0}]`
     : "";
   document.getElementById("meta").textContent = meta;
 
