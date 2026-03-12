@@ -4,6 +4,7 @@
 import json
 import os
 import time
+from utils_time import now_local_iso
 from typing import Any, Dict, List, Optional
 from urllib.parse import urljoin
 
@@ -316,7 +317,7 @@ def main() -> int:
                     "model_id": model_id,
                     "source_url": url,
                     "thumb_url": url,
-                    "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "scraped_at_utc": now_local_iso(),
                     "direct_image": True,
                 }
     
@@ -337,7 +338,7 @@ def main() -> int:
                     existing[model_id] = {
                         "model_id": model_id,
                         **hit,
-                        "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        "scraped_at_utc": now_local_iso(),
                         "direct_image": False,
                         "method": "planespotters_api_reg",
                     }
@@ -346,7 +347,7 @@ def main() -> int:
                         "model_id": model_id,
                         "source_url": url,
                         "thumb_url": None,
-                        "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        "scraped_at_utc": now_local_iso(),
                         "direct_image": False,
                         "method": "none",
                         "error": (hit.get("error") if isinstance(hit, dict) else None) or "no thumbnail",
@@ -357,7 +358,7 @@ def main() -> int:
                 "model_id": model_id,
                 "source_url": url,
                 "thumb_url": None,
-                "scraped_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "scraped_at_utc": now_local_iso(),
                 "error": str(e),
             }
     
