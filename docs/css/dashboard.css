@@ -1,0 +1,81 @@
+.dashWrap{
+  max-width:1200px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.dashHead{
+  margin-bottom:24px;
+}
+
+.dashHead h1{
+  margin:0 0 6px 0;
+}
+
+.dashStand{
+  color:#666;
+  font-size:14px;
+}
+
+.dashSection{
+  margin:28px 0;
+}
+
+.dashSection h2{
+  font-size:16px;
+  margin:0 0 12px 0;
+}
+
+.tileGrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+
+.tileGrid.kpi{
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+}
+
+.tile{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 2px 8px rgba(0,0,0,.04);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+
+.tile:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.tileTitle{
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.tileText{
+  color:#666;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.kpiTile{
+  background:#fafafa;
+}
+
+.kpiValue{
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.kpiLabel{
+  font-size:13px;
+  color:#666;
+}
