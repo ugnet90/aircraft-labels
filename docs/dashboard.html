@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sammlungs-Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/time.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <div class="dashWrap">
+
+    <div class="dashHead">
+      <h1>Sammlungs-Dashboard</h1>
+      <div class="dashStand" id="stand">Stand: ...</div>
+    </div>
+
+    <section class="dashSection">
+      <h2>Sammlung</h2>
+      <div class="tileGrid">
+        <a class="tile" href="./models_overview.html">
+          <div class="tileTitle">Flugzeugmodelle</div>
+          <div class="tileText">Zur Übersicht aller Modelle, Filter, Sortierung und Detailseiten.</div>
+        </a>
+
+        <a class="tile" href="./postcards_overview.html">
+          <div class="tileTitle">Postkarten</div>
+          <div class="tileText">Zur Übersicht aller Postkarten mit Bild, Daten und Detailseiten.</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="dashSection">
+      <h2>Typen & Analyse</h2>
+      <div class="tileGrid">
+        <a class="tile" href="./types_overview.html">
+          <div class="tileTitle">Typen-Übersicht</div>
+        </a>
+
+        <a class="tile" href="./missing_types.html">
+          <div class="tileTitle">Fehlende Typen</div>
+        </a>
+
+        <a class="tile" href="./matrix.html">
+          <div class="tileTitle">Matrix</div>
+        </a>
+
+        <a class="tile" href="./stats.html">
+          <div class="tileTitle">Stats</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="dashSection">
+      <h2>Persönliche Flüge</h2>
+      <div class="tileGrid">
+        <a class="tile" href="./flights.html">
+          <div class="tileTitle">Flüge</div>
+        </a>
+
+        <a class="tile" href="./heatmap.html">
+          <div class="tileTitle">Heatmap</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="dashSection">
+      <h2>Status</h2>
+      <div class="tileGrid kpi">
+        <div class="tile kpiTile">
+          <div class="kpiValue" id="kpiModels">–</div>
+          <div class="kpiLabel">Modelle</div>
+        </div>
+        <div class="tile kpiTile">
+          <div class="kpiValue" id="kpiPostcards">–</div>
+          <div class="kpiLabel">Postkarten</div>
+        </div>
+        <div class="tile kpiTile">
+          <div class="kpiValue" id="kpiAirlines">–</div>
+          <div class="kpiLabel">Airlines</div>
+        </div>
+        <div class="tile kpiTile">
+          <div class="kpiValue" id="kpiOrdered">–</div>
+          <div class="kpiLabel">Bestellungen</div>
+        </div>
+        <div class="tile kpiTile">
+          <div class="kpiValue" id="kpiWishlist">–</div>
+          <div class="kpiLabel">Wünsche</div>
+        </div>
+        <div class="tile kpiTile">
+          <div class="kpiValue" id="kpiMissingTypes">–</div>
+          <div class="kpiLabel">Fehlende Typen</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
