@@ -1,8 +1,7 @@
 .siteNav{
-  display:grid;
-  grid-template-columns: 1fr auto 1fr;
+  display:flex;
+  justify-content:space-between;
   align-items:center;
-  gap:16px;
   padding:14px 20px;
   border-bottom:1px solid rgba(0,0,0,.08);
   background:#fff;
@@ -11,90 +10,77 @@
   z-index:1000;
 }
 
-.siteNavCol{
-  display:flex;
-  align-items:center;
-  min-width:0;
-}
+/* Titel */
 
-.siteNavCol-left{
-  justify-content:flex-start;
-}
-
-.siteNavCol-center{
-  justify-content:center;
-}
-
-.siteNavCol-right{
-  justify-content:flex-end;
-}
-
-.siteNavTitle{
-  font-size:18px;
+.navTitle{
+  font-size:20px;
   font-weight:700;
-  text-align:center;
-  white-space:nowrap;
 }
 
-.siteNavGroup{
+/* Menü */
+
+.navMenu{
   display:flex;
   align-items:center;
-  gap:0;
+  gap:6px;
 }
 
-.siteNavLink{
-  text-decoration:none;
-  color:inherit;
+/* Links */
+
+.navLink{
   padding:8px 14px;
   border:1px solid rgba(0,0,0,.12);
+  text-decoration:none;
+  color:inherit;
   background:#fff;
   font-size:14px;
-  line-height:1.2;
-  border-radius:0;
-  margin-left:-1px;
+  cursor:pointer;
 }
 
-.siteNavGroup .siteNavLink:first-child{
-  margin-left:0;
-}
-
-.siteNavLink:hover{
+.navLink:hover{
   background:#f5f5f5;
 }
 
-.siteNavLink.active{
-  background:#111;
-  color:#fff;
-  border-color:#111;
+.navLink.active{
+  background:#e9eefc;
+  border-color:#c8d3ff;
   font-weight:600;
-  position:relative;
-  z-index:1;
 }
 
-@media (max-width: 1100px){
-  .siteNav{
-    grid-template-columns: 1fr;
-    gap:10px;
-  }
+/* Dropdown */
 
-  .siteNavCol-left,
-  .siteNavCol-center,
-  .siteNavCol-right{
-    justify-content:center;
-  }
+.navDropdown{
+  position:relative;
+}
 
-  .siteNavTitle{
-    white-space:normal;
-  }
+.navDropdownMenu{
+  display:none;
+  position:absolute;
+  right:0;
+  top:100%;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.12);
+  min-width:160px;
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
 
-  .siteNavGroup{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:6px;
-  }
+.navDropdownItem{
+  display:block;
+  padding:8px 12px;
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+}
 
-  .siteNavLink{
-    margin-left:0;
-    border-radius:8px;
-  }
+.navDropdownItem:hover{
+  background:#f5f5f5;
+}
+
+.navDropdownItem.active{
+  background:#e9eefc;
+  font-weight:600;
+}
+
+.navDropdown:hover .navDropdownMenu{
+  display:block;
 }
