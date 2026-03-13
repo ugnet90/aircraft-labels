@@ -26,7 +26,7 @@ function buildNavDropdown(group, currentKey){
 
   return `
     <div class="navDropdown ${isActive ? "active" : ""}">
-      <button class="navLink navDropdownToggle ${isActive ? "active" : ""}" type="button">
+      <button class="navLink navDropdownToggle ${isActive ? "active" : ""}" type="button" aria-expanded="false">
         ${group.label}
       </button>
       <div class="navDropdownMenu">
@@ -78,7 +78,7 @@ function buildGlobalNav(){
     <nav class="siteNav">
       <div class="navTitle">${page.title || ""}</div>
 
-      <button class="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
+      <="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
         ☰
       </button>
 
@@ -105,9 +105,22 @@ function bindNav(){
     btn.addEventListener("click", (ev) => {
       if(window.innerWidth > 900) return;
       ev.preventDefault();
+      ev.stopPropagation();
 
       const dd = btn.closest(".navDropdown");
-      if(dd) dd.classList.toggle("open");
+      if(!dd) return;
+
+      const willOpen = !dd.classList.contains("open");
+
+      // andere mobile Dropdowns schließen
+      document.querySelectorAll(".navDropdown.open").forEach(x => {
+        if(x !== dd) x.classList.remove("open");
+        const b = x.querySelector(".navDropdownToggle");
+        if(b) b.setAttribute("aria-expanded", "false");
+      });
+
+      dd.classList.toggle("open", willOpen);
+      btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
     });
   });
 
