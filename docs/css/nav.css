@@ -1,9 +1,9 @@
 .siteNav{
-  display:flex;
-  justify-content:space-between;
+  display:grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items:center;
   gap:16px;
-  padding:12px 20px;
+  padding:14px 20px;
   border-bottom:1px solid rgba(0,0,0,.08);
   background:#fff;
   position:sticky;
@@ -11,28 +11,51 @@
   z-index:1000;
 }
 
-.siteNavLeft,
-.siteNavRight{
+.siteNavCol{
   display:flex;
   align-items:center;
-  gap:10px;
-  flex-wrap:wrap;
+  min-width:0;
 }
 
-.siteNavBrand{
+.siteNavCol-left{
+  justify-content:flex-start;
+}
+
+.siteNavCol-center{
+  justify-content:center;
+}
+
+.siteNavCol-right{
+  justify-content:flex-end;
+}
+
+.siteNavTitle{
+  font-size:18px;
   font-weight:700;
-  text-decoration:none;
-  color:inherit;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.siteNavGroup{
+  display:flex;
+  align-items:center;
+  gap:0;
 }
 
 .siteNavLink{
   text-decoration:none;
   color:inherit;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid rgba(0,0,0,.08);
+  padding:8px 14px;
+  border:1px solid rgba(0,0,0,.12);
   background:#fff;
   font-size:14px;
+  line-height:1.2;
+  border-radius:0;
+  margin-left:-1px;
+}
+
+.siteNavGroup .siteNavLink:first-child{
+  margin-left:0;
 }
 
 .siteNavLink:hover{
@@ -40,7 +63,38 @@
 }
 
 .siteNavLink.active{
-  background:#eef3ff;
-  border-color:#b7c6f4;
+  background:#111;
+  color:#fff;
+  border-color:#111;
   font-weight:600;
+  position:relative;
+  z-index:1;
+}
+
+@media (max-width: 1100px){
+  .siteNav{
+    grid-template-columns: 1fr;
+    gap:10px;
+  }
+
+  .siteNavCol-left,
+  .siteNavCol-center,
+  .siteNavCol-right{
+    justify-content:center;
+  }
+
+  .siteNavTitle{
+    white-space:normal;
+  }
+
+  .siteNavGroup{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px;
+  }
+
+  .siteNavLink{
+    margin-left:0;
+    border-radius:8px;
+  }
 }
