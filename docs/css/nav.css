@@ -1,0 +1,46 @@
+.siteNav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:12px 20px;
+  border-bottom:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.siteNavLeft,
+.siteNavRight{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.siteNavBrand{
+  font-weight:700;
+  text-decoration:none;
+  color:inherit;
+}
+
+.siteNavLink{
+  text-decoration:none;
+  color:inherit;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  font-size:14px;
+}
+
+.siteNavLink:hover{
+  background:#f5f5f5;
+}
+
+.siteNavLink.active{
+  background:#eef3ff;
+  border-color:#b7c6f4;
+  font-weight:600;
+}
