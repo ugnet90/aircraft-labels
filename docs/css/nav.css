@@ -8,46 +8,52 @@
   position:sticky;
   top:0;
   z-index:1000;
+  gap:20px;
 }
-
-/* Titel */
 
 .navTitle{
   font-size:20px;
   font-weight:700;
+  min-width:0;
 }
-
-/* Menü */
 
 .navMenu{
   display:flex;
   align-items:center;
   gap:6px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
-/* Links */
-
 .navLink{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   padding:8px 14px;
   border:1px solid rgba(0,0,0,.12);
   text-decoration:none;
   color:inherit;
   background:#fff;
   font-size:14px;
+  line-height:1.2;
   cursor:pointer;
+  border-radius:0;
+}
+
+button.navLink{
+  font:inherit;
 }
 
 .navLink:hover{
   background:#f5f5f5;
 }
 
-.navLink.active{
+.navLink.active,
+.navDropdownToggle.active{
   background:#e9eefc;
   border-color:#c8d3ff;
   font-weight:600;
 }
-
-/* Dropdown */
 
 .navDropdown{
   position:relative;
@@ -60,8 +66,9 @@
   top:100%;
   background:#fff;
   border:1px solid rgba(0,0,0,.12);
-  min-width:160px;
+  min-width:180px;
   box-shadow:0 4px 14px rgba(0,0,0,.08);
+  z-index:1001;
 }
 
 .navDropdownItem{
@@ -70,6 +77,7 @@
   text-decoration:none;
   color:inherit;
   font-size:14px;
+  background:#fff;
 }
 
 .navDropdownItem:hover{
@@ -83,6 +91,15 @@
 
 .navDropdown:hover .navDropdownMenu{
   display:block;
+}
+
+.navHamburger{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+  padding:6px 10px;
+  border:1px solid rgba(0,0,0,.12);
+  background:#fff;
 }
 
 .breadcrumb{
@@ -105,38 +122,59 @@
   margin:0 6px;
 }
 
-.navHamburger{
-  display:none;
-  font-size:22px;
-  cursor:pointer;
-  padding:6px 10px;
-}
+@media (max-width: 900px){
+  .siteNav{
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
 
-@media (max-width:900px){
+  .navHamburger{
+    display:block;
+    margin-left:auto;
+  }
 
   .navMenu{
     display:none;
-    position:absolute;
-    right:0;
-    top:60px;
+    width:100%;
     flex-direction:column;
-    background:white;
-    border:1px solid rgba(0,0,0,.1);
-    width:220px;
+    align-items:stretch;
+    gap:0;
+    border-top:1px solid rgba(0,0,0,.08);
+    padding-top:10px;
   }
 
   .navMenu.open{
     display:flex;
   }
 
-  .navHamburger{
-    display:block;
+  .navLink{
+    justify-content:flex-start;
+    width:100%;
+    border-radius:0;
+  }
+
+  .navDropdown{
+    width:100%;
   }
 
   .navDropdownMenu{
     position:static;
+    display:none;
     border:none;
     box-shadow:none;
+    min-width:0;
+    padding-left:14px;
   }
 
+  .navDropdown.open .navDropdownMenu{
+    display:block;
+  }
+
+  .navDropdown:hover .navDropdownMenu{
+    display:none;
+  }
+
+  .navTitle{
+    font-size:18px;
+  }
 }
