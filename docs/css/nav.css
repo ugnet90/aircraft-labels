@@ -29,6 +29,8 @@
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  box-sizing:border-box;
+  min-height:40px;
   padding:8px 14px;
   border:1px solid rgba(0,0,0,.12);
   text-decoration:none;
@@ -38,10 +40,17 @@
   line-height:1.2;
   cursor:pointer;
   border-radius:0;
+  margin:0;
+  appearance:none;
+  -webkit-appearance:none;
 }
 
 button.navLink{
   font:inherit;
+}
+
+.navDropdownToggle{
+  min-height:40px;
 }
 
 .navLink:hover{
