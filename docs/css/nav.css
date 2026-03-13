@@ -157,6 +157,11 @@ button.navLink{
     width:100%;
   }
 
+  .navDropdownToggle{
+    width:100%;
+    justify-content:flex-start;
+  }
+
   .navDropdownMenu{
     position:static;
     display:none;
@@ -164,6 +169,7 @@ button.navLink{
     box-shadow:none;
     min-width:0;
     padding-left:14px;
+    background:transparent;
   }
 
   .navDropdown.open .navDropdownMenu{
@@ -172,6 +178,10 @@ button.navLink{
 
   .navDropdown:hover .navDropdownMenu{
     display:none;
+  }
+
+  .navDropdownItem{
+    padding:10px 12px;
   }
 
   .navTitle{
