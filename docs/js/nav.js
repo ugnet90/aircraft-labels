@@ -1,73 +1,79 @@
 function navCurrentFile(){
-  const p = location.pathname.split("/").pop() || "index.html";
-  return p;
+  return location.pathname.split("/").pop() || "dashboard.html";
 }
 
 function navTitleFromFile(file){
   const map = {
-    "dashboard.html": "Dashboard",
-    "models_overview.html": "Flugzeugmodelle",
-    "postcards_overview.html": "Postkarten",
-    "types_overview.html": "Typen-Übersicht",
-    "missing_types.html": "Fehlende Flugzeugtypen",
-    "matrix.html": "Matrix",
-    "stats.html": "Stats",
-    "flights.html": "Flüge",
-    "heatmap.html": "Heatmap",
-    "model.html": "Modell",
-    "postcard.html": "Postkarte"
+    "dashboard.html":"Dashboard",
+    "models_overview.html":"Flugzeugmodelle",
+    "postcards_overview.html":"Postkarten",
+    "types_overview.html":"Typen-Übersicht",
+    "missing_types.html":"Fehlende Flugzeugtypen",
+    "matrix.html":"Matrix",
+    "stats.html":"Stats",
+    "flights.html":"Flüge",
+    "heatmap.html":"Heatmap",
+    "model.html":"Modell",
+    "postcard.html":"Postkarte"
   };
   return map[file] || "";
 }
 
-function buildNavGroup(links, current){
-  return links.map(([href, label]) =>
-    `<a class="siteNavLink ${current === href ? "active" : ""}" href="./${href}">${label}</a>`
+function buildDropdown(label, items, current){
+  const active = items.some(i => i[0] === current) ? "active" : "";
+  
+  const children = items.map(([href, text]) =>
+    `<a class="navDropdownItem ${current === href ? "active" : ""}" href="./${href}">${text}</a>`
   ).join("");
-}
-
-function buildGlobalNav(){
-  const current = navCurrentFile();
-  const title = navTitleFromFile(current);
-
-  const linksLeft = [
-    ["dashboard.html", "Dashboard"],
-    ["models_overview.html", "Modelle"],
-    ["postcards_overview.html", "Postkarten"]
-  ];
-
-  const linksRight = [
-    ["types_overview.html", "Typen"],
-    ["missing_types.html", "Fehlende Typen"],
-    ["matrix.html", "Matrix"],
-    ["stats.html", "Stats"],
-    ["flights.html", "Flüge"],
-    ["heatmap.html", "Heatmap"]
-  ];
 
   return `
-    <nav class="siteNav">
-      <div class="siteNavCol siteNavCol-left">
-        <div class="siteNavGroup">
-          ${buildNavGroup(linksLeft, current)}
-        </div>
+    <div class="navDropdown ${active}">
+      <div class="navLink">${label}</div>
+      <div class="navDropdownMenu">
+        ${children}
       </div>
-
-      <div class="siteNavCol siteNavCol-center">
-        <div class="siteNavTitle">${title}</div>
-      </div>
-
-      <div class="siteNavCol siteNavCol-right">
-        <div class="siteNavGroup">
-          ${buildNavGroup(linksRight, current)}
-        </div>
-      </div>
-    </nav>
+    </div>
   `;
 }
 
-function injectGlobalNav(){
-  document.body.insertAdjacentHTML("afterbegin", buildGlobalNav());
+function buildNav(){
+  const current = navCurrentFile();
+  const title = navTitleFromFile(current);
+
+  return `
+  <nav class="siteNav">
+
+    <div class="navTitle">
+      ${title}
+    </div>
+
+    <div class="navMenu">
+
+      <a class="navLink ${current==="dashboard.html"?"active":""}" href="./dashboard.html">
+        Dashboard
+      </a>
+
+      ${buildDropdown("Sammlung",[
+        ["models_overview.html","Modelle"],
+        ["postcards_overview.html","Postkarten"]
+      ],current)}
+
+      ${buildDropdown("Analyse",[
+        ["types_overview.html","Typen"],
+        ["missing_types.html","Fehlende Typen"],
+        ["matrix.html","Matrix"],
+        ["stats.html","Stats"]
+      ],current)}
+
+      ${buildDropdown("Flüge",[
+        ["flights.html","Flüge"],
+        ["heatmap.html","Heatmap"]
+      ],current)}
+
+    </div>
+
+  </nav>
+  `;
 }
 
-injectGlobalNav();
+document.body.insertAdjacentHTML("afterbegin", buildNav());
