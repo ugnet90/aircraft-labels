@@ -1,79 +1,131 @@
-function navCurrentFile(){
-  return location.pathname.split("/").pop() || "dashboard.html";
-}
-
-function navTitleFromFile(file){
-  const map = {
-    "dashboard.html":"Dashboard",
-    "models_overview.html":"Flugzeugmodelle",
-    "postcards_overview.html":"Postkarten",
-    "types_overview.html":"Typen-Übersicht",
-    "missing_types.html":"Fehlende Flugzeugtypen",
-    "matrix.html":"Matrix",
-    "stats.html":"Stats",
-    "flights.html":"Flüge",
-    "heatmap.html":"Heatmap",
-    "model.html":"Modell",
-    "postcard.html":"Postkarte"
-  };
-  return map[file] || "";
-}
-
-function buildDropdown(label, items, current){
-  const active = items.some(i => i[0] === current) ? "active" : "";
-  
-  const children = items.map(([href, text]) =>
-    `<a class="navDropdownItem ${current === href ? "active" : ""}" href="./${href}">${text}</a>`
-  ).join("");
+function buildNavLink(key, currentKey){
+  const page = SITE_MAP[key];
+  if(!page) return "";
 
   return `
-    <div class="navDropdown ${active}">
-      <div class="navLink">${label}</div>
+    <a class="navLink ${key === currentKey ? "active" : ""}"
+       href="./${page.file}">
+      ${page.navLabel || page.title}
+    </a>
+  `;
+}
+
+function buildNavDropdown(group, currentKey){
+  const isActive = group.items.includes(currentKey);
+
+  const itemsHtml = group.items.map(key => {
+    const page = SITE_MAP[key];
+    if(!page) return "";
+    return `
+      <a class="navDropdownItem ${key === currentKey ? "active" : ""}"
+         href="./${page.file}">
+        ${page.navLabel || page.title}
+      </a>
+    `;
+  }).join("");
+
+  return `
+    <div class="navDropdown ${isActive ? "active" : ""}">
+      <button class="navLink navDropdownToggle ${isActive ? "active" : ""}" type="button">
+        ${group.label}
+      </button>
       <div class="navDropdownMenu">
-        ${children}
+        ${itemsHtml}
       </div>
     </div>
   `;
 }
 
-function buildNav(){
-  const current = navCurrentFile();
-  const title = navTitleFromFile(current);
+function buildBreadcrumb(){
+  const [, page] = siteCurrentEntry();
+  const items = page.breadcrumb || [];
+  if(items.length <= 1) return "";
+
+  const html = items.map((label, i) => {
+    if(i === 0){
+      return `<a href="./${SITE_MAP.dashboard.file}">${label}</a>`;
+    }
+
+    const hit = siteFindByBreadcrumbLabel(label);
+    const isLast = i === items.length - 1;
+
+    if(hit && !isLast){
+      const [, p] = hit;
+      return `<a href="./${p.file}">${label}</a>`;
+    }
+
+    return `<span>${label}</span>`;
+  }).join(`<span class="crumbSep">›</span>`);
+
+  return `<div class="breadcrumb">${html}</div>`;
+}
+
+function buildGlobalNav(){
+  const currentKey = siteCurrentKey();
+  const page = siteCurrentPage();
+
+  const navHtml = SITE_NAV.map(item => {
+    if(item.type === "link"){
+      return buildNavLink(item.key, currentKey);
+    }
+    if(item.type === "group"){
+      return buildNavDropdown(item, currentKey);
+    }
+    return "";
+  }).join("");
 
   return `
-  <nav class="siteNav">
+    <nav class="siteNav">
+      <div class="navTitle">${page.title || ""}</div>
 
-    <div class="navTitle">
-      ${title}
-    </div>
+      <button class="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
+        ☰
+      </button>
 
-    <div class="navMenu">
-
-      <a class="navLink ${current==="dashboard.html"?"active":""}" href="./dashboard.html">
-        Dashboard
-      </a>
-
-      ${buildDropdown("Sammlung",[
-        ["models_overview.html","Modelle"],
-        ["postcards_overview.html","Postkarten"]
-      ],current)}
-
-      ${buildDropdown("Analyse",[
-        ["types_overview.html","Typen"],
-        ["missing_types.html","Fehlende Typen"],
-        ["matrix.html","Matrix"],
-        ["stats.html","Stats"]
-      ],current)}
-
-      ${buildDropdown("Flüge",[
-        ["flights.html","Flüge"],
-        ["heatmap.html","Heatmap"]
-      ],current)}
-
-    </div>
-
-  </nav>
+      <div class="navMenu">
+        ${navHtml}
+      </div>
+    </nav>
+    ${buildBreadcrumb()}
   `;
 }
 
-document.body.insertAdjacentHTML("afterbegin", buildNav());
+function bindNav(){
+  const burger = document.querySelector(".navHamburger");
+  const menu = document.querySelector(".navMenu");
+
+  if(burger && menu){
+    burger.addEventListener("click", () => {
+      const isOpen = menu.classList.toggle("open");
+      burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  }
+
+  document.querySelectorAll(".navDropdownToggle").forEach(btn => {
+    btn.addEventListener("click", (ev) => {
+      if(window.innerWidth > 900) return;
+      ev.preventDefault();
+
+      const dd = btn.closest(".navDropdown");
+      if(dd) dd.classList.toggle("open");
+    });
+  });
+
+  document.addEventListener("click", (ev) => {
+    if(window.innerWidth > 900) return;
+
+    const insideNav = ev.target.closest(".siteNav");
+    if(!insideNav){
+      document.querySelectorAll(".navDropdown.open").forEach(dd => dd.classList.remove("open"));
+      if(menu) menu.classList.remove("open");
+      if(burger) burger.setAttribute("aria-expanded", "false");
+    }
+  });
+}
+
+function injectGlobalNav(){
+  document.body.insertAdjacentHTML("afterbegin", buildGlobalNav());
+  bindNav();
+}
+
+injectGlobalNav();
