@@ -98,11 +98,11 @@ function buildGlobalNav(){
   return `
     <nav class="siteNav">
       <div class="navTitle">${page.title || ""}</div>
-
+  
       <button class="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
         ☰
       </button>
-
+  
       <div class="navMenu">
         ${navHtml}
       </div>
