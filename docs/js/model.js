@@ -918,6 +918,13 @@ document.addEventListener("click", (ev) => {
 async function main(){
   const idRaw = qs("id");
   const id = String(idRaw || "").trim().toUpperCase();
+
+  renderBreadcrumb([
+    { label: "Dashboard", href: "./dashboard.html" },
+    { label: "Flugzeugmodelle", href: "./models_overview.html" },
+    { label: id }
+  ]);
+  
   const pill = document.getElementById("idpill");
   if(pill) pill.style.display = "none";
   document.getElementById("idpill").textContent = id ? `id=${id}` : "id=?";
