@@ -5,22 +5,12 @@ function qs(name){
 
 function esc(s){
   return String(s ?? "").replace(/[&<>"']/g, m => (
-    {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]
+    {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]
   ));
 }
 
 function asText(v){
   return (v ?? "").toString().trim();
-}
-
-function rowHtml(k, vHtml){
-  if(vHtml === undefined || vHtml === null || vHtml === "") return "";
-  return `<div><div class="k">${esc(k)}</div><div class="v">${vHtml}</div></div>`;
-}
-
-function row(k, v){
-  if(v === undefined || v === null || v === "") return "";
-  return `<div><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`;
 }
 
 function money(v){
@@ -35,6 +25,17 @@ function fmtSizeMm(mm){
   const w = Number(mm.w), h = Number(mm.h);
   if(!Number.isFinite(w) || !Number.isFinite(h)) return "";
   return `${w}×${h} mm`;
+}
+
+function metaRow(label, value, opts = {}){
+  if(value === undefined || value === null || value === "") return "";
+  const cls = opts.mono ? "postcard-metaValue mono" : "postcard-metaValue";
+  return `
+    <div class="postcard-metaItem">
+      <div class="postcard-metaLabel">${esc(label)}</div>
+      <div class="${cls}">${value}</div>
+    </div>
+  `;
 }
 
 async function loadPostcardIndex(){
@@ -74,10 +75,10 @@ function buildNavHtml(prevId, nextId, pos, total){
   const nextHref = nextId ? `postcard.html?id=${encodeURIComponent(nextId)}` : "";
 
   return `
-    <div class="navWrap">
-      <a class="navBtn ${prevId ? "" : "disabled"}" ${prevId ? `href="${prevHref}"` : ""} title="Vorherige Postkarte">←</a>
-      <div class="navPos">${total ? `${pos}/${total}` : ""}</div>
-      <a class="navBtn ${nextId ? "" : "disabled"}" ${nextId ? `href="${nextHref}"` : ""} title="Nächste Postkarte">→</a>
+    <div class="postcard-nav">
+      <a class="postcard-navBtn ${prevId ? "" : "disabled"}" ${prevId ? `href="${prevHref}"` : ""} title="Vorherige Postkarte">←</a>
+      <div class="postcard-navPos">${total ? `${pos}/${total}` : ""}</div>
+      <a class="postcard-navBtn ${nextId ? "" : "disabled"}" ${nextId ? `href="${nextHref}"` : ""} title="Nächste Postkarte">→</a>
     </div>
   `;
 }
@@ -169,7 +170,7 @@ async function main(){
 
   if(!id){
     document.getElementById("content").innerHTML =
-      `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">postcard.html?id=PC-LX007-01</span></div>`;
+      `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">postcard.html?id=PC-AB003-01</span></div>`;
     return;
   }
 
@@ -212,24 +213,18 @@ async function main(){
 
     const navHtml = (prevId || nextId) ? buildNavHtml(prevId, nextId, pos, total) : "";
 
-    const titleMain = [
-      asText(d.airline),
-      asText(d.aircraft_type_exact) || asText(d.aircraft_type),
-      asText(d.registration)
-    ].filter(Boolean).join(" · ") || id;
-
-    document.title = titleMain;
+    document.title = id;
 
     document.getElementById("title").innerHTML = `
-      <div class="headerWrap">
-        <div class="headerLeft">
-          <div class="headerTxt">
-            <div class="hTyp">${esc(asText(d.airline) || "Postkarte")}</div>
-            <div class="hMeta">
-              ${asText(d.aircraft_type_exact) || asText(d.aircraft_type) ? `<span>${esc(asText(d.aircraft_type_exact) || asText(d.aircraft_type))}</span>` : ""}
-              ${asText(d.registration) ? `<span> · ${esc(asText(d.registration))}</span>` : ""}
-            </div>
-          </div>
+      <div class="pc-titleWrap">
+        <div class="pc-titleAirline">${esc(asText(d.airline) || "Postkarte")}</div>
+        <div class="pc-titleMeta">
+          ${esc(
+            [
+              asText(d.aircraft_type_exact) || asText(d.aircraft_type),
+              asText(d.registration)
+            ].filter(Boolean).join(" · ")
+          )}
         </div>
       </div>
     `;
@@ -239,52 +234,61 @@ async function main(){
 
     const imageHtml = asText(d.thumb_url)
       ? `
-        <div class="card air-photo-box">
-          <a href="${esc(asText(d.source_url) || asText(d.url) || asText(d.thumb_url))}"
-             class="air-photo"
-             target="_blank"
-             rel="noopener"
-             id="pcImageLink">
-            <img class="air-thumb" src="${esc(asText(d.thumb_url))}" alt="${esc(id)}" loading="eager">
-          </a>
+        <div class="postcard-card postcard-photoCard">
+          <div class="postcard-photoFrame">
+            <a
+              href="${esc(asText(d.source_url) || asText(d.url) || asText(d.thumb_url))}"
+              class="postcard-photoLink"
+              target="_blank"
+              rel="noopener"
+              id="pcImageLink"
+            >
+              <img class="postcard-thumb" src="${esc(asText(d.thumb_url))}" alt="${esc(id)}" loading="eager">
+            </a>
+          </div>
           ${
             asText(d.source_url) || asText(d.url)
-              ? `<div class="air-credit postcard"><a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Quelle</a></div>`
+              ? `<div class="postcard-credit"><a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener"><i>Quelle</i></a></div>`
               : ""
           }
         </div>
       `
       : "";
 
+    const scraped = d.scraped_at_utc
+      ? (typeof formatStandDE === "function" ? formatStandDE(d.scraped_at_utc) : d.scraped_at_utc)
+      : "";
+
     const metaHtml = `
-      <div class="card">
-        <div class="k-nav">
-          <div class="k">Metadaten</div>
+      <div class="postcard-card">
+        <div class="postcard-sectionHead">
+          <div class="postcard-sectionTitle">Metadaten</div>
           ${navHtml}
         </div>
-        <div class="grid air-data postcard-meta-grid" style="margin-top:10px">
-          ${row("Postkarten-ID", d.id)}
-          ${row("Modell-ID", d.model_id)}
-          ${rowHtml("Modell", d.model_id ? `<a href="./model.html?id=${encodeURIComponent(d.model_id)}">${esc(d.model_id)}</a>` : "")}
-          ${row("Airline", d.airline)}
-          ${row("Hersteller", d.aircraft_manufacturer)}
-          ${row("Flugzeugtyp", d.aircraft_type)}
-          ${row("Flugzeugtyp exakt", d.aircraft_type_exact)}
-          ${row("Registrierung", d.registration)}
-          ${row("Herausgeber", d.publisher_norm || d.publisher)}
-          ${row("Jahr", d.year)}
-          ${row("Größe", fmtSizeMm(d.size_mm) || d.size)}
-          ${row("Zustand", d.condition)}
-          ${row("Preis", money(d.price))}
-          ${row("Info", d.label)}
-          ${rowHtml("Shop / Quelle", (asText(d.source_url) || asText(d.url)) ? `<a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Link öffnen</a>` : "")}
-          ${row("Scraped", d.scraped_at_utc ? formatStandDE(d.scraped_at_utc) : "")}
+
+        <div class="postcard-meta-grid">
+          ${metaRow("Postkarten-ID", esc(d.id), { mono:true })}
+          ${metaRow("Modell-ID", esc(d.model_id || ""), { mono:true })}
+          ${metaRow("Modell", d.model_id ? `<a class="postcard-linkBack" href="./model.html?id=${encodeURIComponent(d.model_id)}">${esc(d.model_id)}</a>` : "")}
+          ${metaRow("Airline", esc(d.airline || ""))}
+          ${metaRow("Hersteller", esc(d.aircraft_manufacturer || ""))}
+          ${metaRow("Flugzeugtyp", esc(d.aircraft_type || ""))}
+          ${metaRow("Flugzeugtyp exakt", esc(d.aircraft_type_exact || ""))}
+          ${metaRow("Registrierung", esc(d.registration || ""), { mono:true })}
+          ${metaRow("Herausgeber", esc(d.publisher_norm || d.publisher || ""))}
+          ${metaRow("Jahr", esc(d.year || ""), { mono:true })}
+          ${metaRow("Größe", esc(fmtSizeMm(d.size_mm) || d.size || ""), { mono:true })}
+          ${metaRow("Zustand", esc(d.condition || ""))}
+          ${metaRow("Preis", esc(money(d.price)), { mono:true })}
+          ${metaRow("Info", esc(d.label || ""))}
+          ${metaRow("Shop / Quelle", (asText(d.source_url) || asText(d.url)) ? `<a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Link öffnen</a>` : "")}
+          ${metaRow("Scraped", esc(scraped))}
         </div>
       </div>
     `;
 
     document.getElementById("content").innerHTML = `
-      <div class="air-layout">
+      <div class="postcard-layout">
         ${imageHtml}
         ${metaHtml}
       </div>
