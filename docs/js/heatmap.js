@@ -151,8 +151,8 @@ function haversineKm(lat1, lon1, lat2, lon2) {
   }
 
   // Unique aircraft types / regs
-  setText("kpiAircraftTypes", fmtInt(aircraftTypes.size));
-  setText("kpiRegistrations", fmtInt(registrations.size));
+  setText("kpiTypes", fmtInt(aircraftTypes.size));
+  setText("kpiRegs", fmtInt(registrations.size));
 
   // Top airline (by segment count)
   let topAirline = "–";
@@ -169,11 +169,11 @@ function haversineKm(lat1, lon1, lat2, lon2) {
   if (seatKnown > 0) {
     const pct = Math.round((windowSeats / seatKnown) * 100);
     setText(
-      "kpiWindowSeatPct",
+      "kpiWindow",
       `${pct}% (${fmtInt(windowSeats)}/${fmtInt(seatKnown)})`
     );
   } else {
-    setText("kpiWindowSeatPct", "–");
+    setText("kpiWindow", "–");
   }
   
   // Countries KPI + Top Countries
@@ -205,9 +205,8 @@ function haversineKm(lat1, lon1, lat2, lon2) {
   }
 
   // KPI: total distance and longest route
-  setText("kpiTotalKm", `${fmtKm(totalKm)} km`);
-  setText("kpiLongest", longestKm > 0 ? `${fmtKm(longestKm)} km` : "–");
-  setText("kpiLongestRoute", longestKm > 0 ? `(${longestRouteLabel})` : "");
+  setText("kpiDistance", `${fmtKm(totalKm)} km`);
+  setText("kpiLongest", longestKm > 0 ? `${fmtKm(longestKm)} km (${longestRouteLabel})` : "–");
 
   // Top tables
   const topAirports = [...points]
