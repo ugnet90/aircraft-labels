@@ -361,7 +361,7 @@ async function main(){
     });
 
     document.getElementById("meta").innerHTML =
-      `<span class="mono">${esc(idx.generated_at || "")}</span>` +
+      `<span class="mono">${esc(formatStandDE(idx.generated_at || ""))}</span>` +
       ` · Anzahl: <span class="mono">${esc(idx.count_unique || state.all.length)}</span>`;
 
     document.getElementById("q").addEventListener("input", apply);
