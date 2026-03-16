@@ -51,3 +51,14 @@
     max-width:100%;
   }
 }
+
+.postcard-meta-grid{
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+
+@media (max-width: 900px){
+  .postcard-meta-grid{
+    grid-template-columns: 1fr;
+  }
+}
