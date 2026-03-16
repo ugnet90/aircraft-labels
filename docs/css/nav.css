@@ -25,6 +25,8 @@
   justify-content:flex-end;
 }
 
+/* Hauptlinks / Dropdown-Toggles */
+
 .navLink{
   display:inline-flex;
   align-items:center;
@@ -49,10 +51,6 @@ button.navLink{
   font:inherit;
 }
 
-.navDropdownToggle{
-  min-height:40px;
-}
-
 .navLink:hover{
   background:#f5f5f5;
 }
@@ -64,8 +62,26 @@ button.navLink{
   font-weight:600;
 }
 
+/* Dropdown */
+
 .navDropdown{
   position:relative;
+}
+
+.navDropdownToggle{
+  min-height:40px;
+}
+
+.navDropdownToggle::after{
+  content:"▾";
+  margin-left:8px;
+  font-size:11px;
+  line-height:1;
+  transition:transform .15s ease;
+}
+
+.navDropdown.open .navDropdownToggle::after{
+  transform:rotate(180deg);
 }
 
 .navDropdownMenu{
@@ -98,9 +114,14 @@ button.navLink{
   font-weight:600;
 }
 
-.navDropdown:hover .navDropdownMenu{
-  display:block;
+/* Hover nur auf echten Maus-Geräten */
+@media (hover: hover) and (pointer: fine){
+  .navDropdown:hover .navDropdownMenu{
+    display:block;
+  }
 }
+
+/* Hamburger */
 
 .navHamburger{
   display:none;
@@ -110,6 +131,8 @@ button.navLink{
   border:1px solid rgba(0,0,0,.12);
   background:#fff;
 }
+
+/* Breadcrumb */
 
 .breadcrumb{
   padding:8px 20px;
@@ -130,6 +153,8 @@ button.navLink{
 .crumbSep{
   margin:0 6px;
 }
+
+/* Mobile */
 
 @media (max-width: 900px){
   .siteNav{
@@ -183,10 +208,6 @@ button.navLink{
 
   .navDropdown.open .navDropdownMenu{
     display:block;
-  }
-
-  .navDropdown:hover .navDropdownMenu{
-    display:none;
   }
 
   .navDropdownItem{
