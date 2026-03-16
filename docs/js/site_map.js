@@ -41,18 +41,18 @@ const SITE_MAP = {
 
   types_overview: {
     file: "types_overview.html",
-    title: "Typen-Übersicht",
-    navLabel: "Typen",
+    title: "Alle Flugzeugtypen",
+    navLabel: "Alle Flugzeugtypen",
     group: "Analyse",
-    breadcrumb: ["Dashboard", "Analyse", "Typen"]
+    breadcrumb: ["Dashboard", "Analyse", "Alle Flugzeugtypen"]
   },
 
   missing_types: {
     file: "missing_types.html",
     title: "Fehlende Flugzeugtypen",
-    navLabel: "Fehlende Typen",
+    navLabel: "Fehlende Flugzeugtypen",
     group: "Analyse",
-    breadcrumb: ["Dashboard", "Analyse", "Fehlende Typen"]
+    breadcrumb: ["Dashboard", "Analyse", "Fehlende Flugzeugtypen"]
   },
 
   matrix: {
@@ -65,26 +65,26 @@ const SITE_MAP = {
 
   stats: {
     file: "stats.html",
-    title: "Stats",
-    navLabel: "Stats",
+    title: "Statistiken",
+    navLabel: "Statistiken",
     group: "Analyse",
-    breadcrumb: ["Dashboard", "Analyse", "Stats"]
+    breadcrumb: ["Dashboard", "Analyse", "Statistiken"]
   },
 
   flights: {
     file: "flights.html",
-    title: "Flüge",
-    navLabel: "Flüge",
+    title: "Eigene Flüge",
+    navLabel: "Eigene Flüge",
     group: "Flüge",
-    breadcrumb: ["Dashboard", "Flüge"]
+    breadcrumb: ["Dashboard", "Eigene Flüge"]
   },
 
   heatmap: {
     file: "heatmap.html",
-    title: "Heatmap",
-    navLabel: "Heatmap",
+    title: "Flight Heatmap",
+    navLabel: "Flight Heatmap",
     group: "Flüge",
-    breadcrumb: ["Dashboard", "Flüge", "Heatmap"]
+    breadcrumb: ["Dashboard", "Flüge", "Flight Heatmap"]
   }
 };
 
