@@ -229,8 +229,6 @@ async function main(){
       </div>
     `;
 
-    document.getElementById("subtitle").textContent = asText(d.label);
-
     const imageHtml = asText(d.thumb_url)
       ? `
         <div class="postcard-photoCard">
@@ -259,7 +257,7 @@ async function main(){
     const metaHtml = `
       <div class="postcard-card">
         <div class="postcard-sectionHead">
-          <div class="postcard-sectionTitle">Metadaten</div>
+          <div class="postcard-sectionTitle">${esc(asText(d.label))}</div>
           ${navHtml}
         </div>
 
