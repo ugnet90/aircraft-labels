@@ -78,7 +78,7 @@ function buildGlobalNav(){
     <nav class="siteNav">
       <div class="navTitle">${page.title || ""}</div>
 
-      <="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
+      <button class="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
         ☰
       </button>
 
