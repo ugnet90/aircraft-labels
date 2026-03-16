@@ -428,7 +428,7 @@ async function main(){
 
     document.getElementById("meta").innerHTML =
       `<span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span>` +
-      `Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span>`;
+      ` · Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span>`;
     
     document.getElementById("q").addEventListener("input", apply);
     document.getElementById("group").addEventListener("change", apply);
