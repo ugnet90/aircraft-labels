@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Postkarten – Übersicht</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/postcards_overview.css">
+  <link rel="stylesheet" href="css/nav.css">
+
+  <script src="js/site_map.js" defer></script>
+  <script src="js/nav.js" defer></script>
+</head>
+<body>
+  <div class="meta" id="meta">Lade Daten …</div>
+
+  <div class="bar">
+    <input id="q" placeholder="Suche (ID, Modell, Airline, Reg, Typ, Verlag …)" />
+    <select id="model">
+      <option value="">Alle Modelle</option>
+    </select>
+    <select id="airline">
+      <option value="">Alle Airlines</option>
+    </select>
+    <select id="type">
+      <option value="">Alle Flugzeugtypen</option>
+    </select>
+    <select id="publisher">
+      <option value="">Alle Herausgeber</option>
+    </select>
+  </div>
+
+  <div class="right">
+    <span class="small" id="activeFilters"></span>
+    <button id="reset" class="pill" style="cursor:pointer;background:#fff">Reset</button>
+    <span class="small" id="count"></span>
+  </div>
+
+  <div id="content"></div>
+
+  <script src="js/postcards_overview.js" defer></script>
+</body>
+</html>
