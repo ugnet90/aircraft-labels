@@ -427,8 +427,8 @@ async function main(){
     state.all = data.items || [];
 
     document.getElementById("meta").innerHTML =
-      `<span class="pill">Stand: <span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span></span>` +
-      `<span class="pill">Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span></span>`;
+      `<span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span>` +
+      `Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span>`;
     
     document.getElementById("q").addEventListener("input", apply);
     document.getElementById("group").addEventListener("change", apply);
