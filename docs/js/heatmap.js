@@ -206,7 +206,8 @@ function haversineKm(lat1, lon1, lat2, lon2) {
 
   // KPI: total distance and longest route
   setText("kpiTotalKm", `${fmtKm(totalKm)} km`);
-  setText("kpiLongestKm", longestKm > 0 ? `${fmtKm(longestKm)} km (${longestRouteLabel})` : "–");
+  setText("kpiLongest", longestKm > 0 ? `${fmtKm(longestKm)} km` : "–");
+  setText("kpiLongestRoute", longestKm > 0 ? `(${longestRouteLabel})` : "");
 
   // Top tables
   const topAirports = [...points]
