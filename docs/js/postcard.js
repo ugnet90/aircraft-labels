@@ -231,7 +231,6 @@ async function main(){
             </div>
           </div>
         </div>
-        <div class="headerRight">${navHtml}</div>
       </div>
     `;
 
@@ -263,7 +262,7 @@ async function main(){
           <div class="k">Metadaten</div>
           ${navHtml}
         </div>
-        <div class="grid air-data" style="margin-top:10px">
+        <div class="grid air-data postcard-meta-grid" style="margin-top:10px">
           ${row("Postkarten-ID", d.id)}
           ${row("Modell-ID", d.model_id)}
           ${rowHtml("Modell", d.model_id ? `<a href="./model.html?id=${encodeURIComponent(d.model_id)}">${esc(d.model_id)}</a>` : "")}
@@ -279,7 +278,7 @@ async function main(){
           ${row("Preis", money(d.price))}
           ${row("Info", d.label)}
           ${rowHtml("Shop / Quelle", (asText(d.source_url) || asText(d.url)) ? `<a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Link öffnen</a>` : "")}
-          ${row("Scraped", d.scraped_at_utc)}
+          ${row("Scraped", d.scraped_at_utc ? formatStandDE(d.scraped_at_utc) : "")}
         </div>
       </div>
     `;
