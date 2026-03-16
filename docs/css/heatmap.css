@@ -31,28 +31,46 @@
   gap: 12px;
 }
 
-.kpis {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-  align-items: end;
+.kpi-section{
+  margin-bottom:18px;
 }
 
-.kpi {
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 12px;
-  padding: 10px 12px;
+.kpi-section h2{
+  font-size:14px;
+  margin:12px 0 6px 0;
+  color:#555;
 }
 
-.kpi__label {
-  opacity: 0.75;
-  font-size: 0.9rem;
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:10px;
 }
 
-.kpi__value {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-top: 2px;
+.kpi{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  padding:10px 12px;
+}
+
+.kpi-title{
+  font-size:11px;
+  color:#666;
+  margin-bottom:3px;
+}
+
+.kpi-value{
+  font-size:18px;
+  font-weight:600;
+}
+
+.kpi.longest{
+  grid-column:span 2;
+}
+
+.kpi-route{
+  font-size:12px;
+  color:#777;
 }
 
 .controls {
