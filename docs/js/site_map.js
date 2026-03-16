@@ -25,7 +25,7 @@ const SITE_MAP = {
 
   postcards_overview: {
     file: "postcards_overview.html",
-    title: "Postkarten",
+    title: "Postkarten-Übersicht",
     navLabel: "Postkarten",
     group: "Sammlung",
     breadcrumb: ["Dashboard", "Postkarten"]
