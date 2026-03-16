@@ -9,10 +9,10 @@ const SITE_MAP = {
 
   models_overview: {
     file: "models_overview.html",
-    title: "Flugzeugmodelle",
-    navLabel: "Modelle",
+    title: "Flugzeugmodelle-Übersicht",
+    navLabel: "Flugzeugmodelle-Übersicht",
     group: "Sammlung",
-    breadcrumb: ["Dashboard", "Modelle"]
+    breadcrumb: ["Dashboard", "Flugzeugmodelle-Übersicht"]
   },
 
   model: {
@@ -20,7 +20,7 @@ const SITE_MAP = {
     title: "Modell",
     navLabel: "Modell",
     group: "Sammlung",
-    breadcrumb: ["Dashboard", "Modelle", "Modell"]
+    breadcrumb: ["Dashboard", "Flugzeugmodelle-Übersicht", "Modell"]
   },
 
   postcards_overview: {
