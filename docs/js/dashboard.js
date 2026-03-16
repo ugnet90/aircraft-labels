@@ -66,19 +66,12 @@ async function main(){
     else if(Array.isArray(missingTypes?.items)) missingCount = missingTypes.items.length;
     else if(Number.isFinite(missingTypes?.count)) missingCount = missingTypes.count;
     
-    setText("kpiModels", String(modelsCount));
-    setText("kpiPostcards", String(postcardCount));
-    setText("kpiAirlines", String(airlinesCount));
-    setText("kpiOrdered", String(orderedCount));
-    setText("kpiWishlist", String(wishlistCount));
-    setText("kpiMissingTypes", String(missingCount));
-    
-    setText("kpiModelsLabel", labelCount(modelsCount, "Modell", "Modelle"));
-    setText("kpiPostcardsLabel", labelCount(postcardCount, "Postkarte", "Postkarten"));
-    setText("kpiAirlinesLabel", labelCount(airlinesCount, "Airline", "Airlines"));
-    setText("kpiOrderedLabel", labelCount(orderedCount, "Bestellung", "Bestellungen"));
-    setText("kpiWishlistLabel", labelCount(wishlistCount, "Wunsch", "Wünsche"));
-    setText("kpiMissingTypesLabel", labelCount(missingCount, "Fehlender Typ", "Fehlende Typen"));
+    setText("kpiModels", labelCount(modelsCount, "Modell", "Modelle"));
+    setText("kpiPostcards", labelCount(postcardCount, "Postkarte", "Postkarten"));
+    setText("kpiAirlines", labelCount(airlinesCount, "Airline", "Airlines"));
+    setText("kpiOrdered", labelCount(orderedCount, "Bestellung", "Bestellungen"));
+    setText("kpiWishlist", labelCount(wishlistCount, "Wunsch", "Wünsche"));
+    setText("kpiMissingTypes", labelCount(missingCount, "Fehlender Typ", "Fehlende Typen"));
 
   }catch(e){
     console.error(e);
