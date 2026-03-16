@@ -38,9 +38,9 @@ function renderDesktop(){
       const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
 
 
-      // optional: click to jump to index.html filtered (airline + type)
+      // optional: click to jump to models_overview.html filtered (airline + type)
       if(p || o){
-        const href = `./index.html?group=${encodeURIComponent(x.a)}&aircraft_id=${encodeURIComponent(y.t)}`;
+        const href = `./models_overview.html?group=${encodeURIComponent(x.a)}&aircraft_id=${encodeURIComponent(y.t)}`;
         const badge = o ? `<span class="badgeOrdered">+${o}</span>` : "";
         const cls = o ? "num cellOrdered" : "num";
         html += `<td class="${cls}"><a href="${esc(href)}" title="In Übersicht öffnen">${p}</a>${badge}</td>`;
@@ -145,7 +145,7 @@ function renderMobile(){
 
   const tbody = document.querySelector("#mobileTbl tbody");
   tbody.innerHTML = rows.map(x => {
-    const href = `./index.html?group=${encodeURIComponent(selectedAir)}&aircraft_id=${encodeURIComponent(x.t)}`;
+    const href = `./models_overview.html?group=${encodeURIComponent(selectedAir)}&aircraft_id=${encodeURIComponent(x.t)}`;
     const n = x.n ? x.n : 0;
   
     return `
