@@ -229,23 +229,24 @@ async function main(){
       </div>
     `;
 
-    document.getElementById("subtitle").textContent =
-      asText(d.label) || asText(d.publisher_norm) || "";
+    const subtitle = document.getElementById("subtitle");
+    const labelText = asText(d.label);
+    
+    subtitle.textContent = labelText;
+    subtitle.style.display = labelText ? "" : "none";
 
     const imageHtml = asText(d.thumb_url)
       ? `
-        <div class="postcard-card postcard-photoCard">
-          <div class="postcard-photoFrame">
-            <a
-              href="${esc(asText(d.source_url) || asText(d.url) || asText(d.thumb_url))}"
-              class="postcard-photoLink"
-              target="_blank"
-              rel="noopener"
-              id="pcImageLink"
-            >
-              <img class="postcard-thumb" src="${esc(asText(d.thumb_url))}" alt="${esc(id)}" loading="eager">
-            </a>
-          </div>
+        <div class="postcard-photoCard">
+          <a
+            href="${esc(asText(d.source_url) || asText(d.url) || asText(d.thumb_url))}"
+            class="postcard-photoLink"
+            target="_blank"
+            rel="noopener"
+            id="pcImageLink"
+          >
+            <img class="postcard-thumb" src="${esc(asText(d.thumb_url))}" alt="${esc(id)}" loading="eager">
+          </a>
           ${
             asText(d.source_url) || asText(d.url)
               ? `<div class="postcard-credit"><a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener"><i>Quelle</i></a></div>`
