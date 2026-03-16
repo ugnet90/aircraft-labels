@@ -275,7 +275,7 @@ function render(items){
         <td class="mono hide-m">${esc(it.registration || "")}</td>
         <td class="hide-m">${esc(it.publisher_norm || it.publisher || "")}</td>
         <td class="mono hide-m">${esc(it.year || "")}</td>
-        <td class="mono">${esc(money(it.price))}</td>
+        <td class="mono priceCell">${esc(money(it.price))}</td>
       </tr>
     `;
   }
