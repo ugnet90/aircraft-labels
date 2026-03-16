@@ -49,6 +49,7 @@
 
 button.navLink{
   font:inherit;
+  white-space:nowrap;
 }
 
 .navLink:hover{
@@ -91,7 +92,9 @@ button.navLink{
   top:100%;
   background:#fff;
   border:1px solid rgba(0,0,0,.12);
-  min-width:180px;
+  min-width:220px;
+  width:max-content;
+  max-width:320px;
   box-shadow:0 4px 14px rgba(0,0,0,.08);
   z-index:1001;
 }
@@ -103,6 +106,7 @@ button.navLink{
   color:inherit;
   font-size:14px;
   background:#fff;
+  white-space:nowrap;
 }
 
 .navDropdownItem:hover{
