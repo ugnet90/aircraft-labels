@@ -9,6 +9,10 @@ function setText(id, value){
   if(el) el.textContent = value;
 }
 
+function labelCount(n, singular, plural){
+  return `${n} ${n === 1 ? singular : plural}`;
+}
+
 function countOwnedModels(items){
   return items.filter(x => !!x.model_id).length;
 }
@@ -49,20 +53,32 @@ async function main(){
       setText("stand", indexData?.generated_at || "");
     }
 
-    setText("kpiModels", String(countOwnedModels(models)));
-    setText("kpiAirlines", String(countAirlines(models)));
-    setText("kpiOrdered", String(countOrdered(models)));
-    setText("kpiWishlist", String(countWishlist(models)));
-
+    const modelsCount = countOwnedModels(models);
+    const airlinesCount = countAirlines(models);
+    const orderedCount = countOrdered(models);
+    const wishlistCount = countWishlist(models);
+    
     const postcardCount =
       Number(postcardsIndex?.count_unique ?? postcardsIndex?.count_total ?? 0) || 0;
-    setText("kpiPostcards", String(postcardCount));
-
+    
     let missingCount = 0;
     if(Array.isArray(missingTypes)) missingCount = missingTypes.length;
     else if(Array.isArray(missingTypes?.items)) missingCount = missingTypes.items.length;
     else if(Number.isFinite(missingTypes?.count)) missingCount = missingTypes.count;
+    
+    setText("kpiModels", String(modelsCount));
+    setText("kpiPostcards", String(postcardCount));
+    setText("kpiAirlines", String(airlinesCount));
+    setText("kpiOrdered", String(orderedCount));
+    setText("kpiWishlist", String(wishlistCount));
     setText("kpiMissingTypes", String(missingCount));
+    
+    setText("kpiModelsLabel", labelCount(modelsCount, "Modell", "Modelle"));
+    setText("kpiPostcardsLabel", labelCount(postcardCount, "Postkarte", "Postkarten"));
+    setText("kpiAirlinesLabel", labelCount(airlinesCount, "Airline", "Airlines"));
+    setText("kpiOrderedLabel", labelCount(orderedCount, "Bestellung", "Bestellungen"));
+    setText("kpiWishlistLabel", labelCount(wishlistCount, "Wunsch", "Wünsche"));
+    setText("kpiMissingTypesLabel", labelCount(missingCount, "Fehlender Typ", "Fehlende Typen"));
 
   }catch(e){
     console.error(e);
