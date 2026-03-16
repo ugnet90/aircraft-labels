@@ -174,7 +174,7 @@ function render(items){
                 ${esc(x.typ_anzeige || x.aircraft_id)}
                   ${(x.status !== "missing") ? `
                     <a class="typeLink"
-                       href="./index.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}"
+                       href="./models_overview.html?aircraft_id=${encodeURIComponent(x.aircraft_id || "")}"
                        title="Alle Airlines dieses Typs anzeigen">↗︎</a>` : ""}
               </div>
               <div class="muted mono">${esc(x.aircraft_id)}</div>
@@ -235,10 +235,10 @@ function renderDetail(x){
   
       // Links
       const linkGroup =
-        `./index.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
+        `./models_overview.html?group=${encodeURIComponent(groupName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
   
       const linkAir =
-        `./index.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
+        `./models_overview.html?group=${encodeURIComponent(groupName)}&airline=${encodeURIComponent(aName)}&aircraft_id=${encodeURIComponent(aircraftId)}`;
 
       const ownedCount = Number(a.owned || 0);
       const orderedCount = Number(a.ordered || 0);
