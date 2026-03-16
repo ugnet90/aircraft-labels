@@ -229,11 +229,7 @@ async function main(){
       </div>
     `;
 
-    const subtitle = document.getElementById("subtitle");
-    const labelText = asText(d.label);
-    
-    subtitle.textContent = labelText;
-    subtitle.style.display = labelText ? "" : "none";
+    document.getElementById("subtitle").textContent = asText(d.label);
 
     const imageHtml = asText(d.thumb_url)
       ? `
