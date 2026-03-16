@@ -36,14 +36,31 @@ function buildNavDropdown(group, currentKey){
   `;
 }
 
-function buildBreadcrumb(){
+function breadcrumbHtml(items){
+  if(!Array.isArray(items) || items.length <= 1) return "";
+
+  const html = items.map((item, i) => {
+    const label = typeof item === "string" ? item : (item.label || "");
+    const href  = typeof item === "string" ? ""   : (item.href || "");
+    const isLast = i === items.length - 1;
+
+    if(href && !isLast){
+      return `<a href="${href}">${label}</a>`;
+    }
+    return `<span>${label}</span>`;
+  }).join(`<span class="crumbSep">›</span>`);
+
+  return `<div class="breadcrumb">${html}</div>`;
+}
+
+function defaultBreadcrumbItems(){
   const [, page] = siteCurrentEntry();
   const items = page.breadcrumb || [];
-  if(items.length <= 1) return "";
+  if(items.length <= 1) return [];
 
-  const html = items.map((label, i) => {
+  return items.map((label, i) => {
     if(i === 0){
-      return `<a href="./${SITE_MAP.dashboard.file}">${label}</a>`;
+      return { label, href: `./${SITE_MAP.dashboard.file}` };
     }
 
     const hit = siteFindByBreadcrumbLabel(label);
@@ -51,13 +68,17 @@ function buildBreadcrumb(){
 
     if(hit && !isLast){
       const [, p] = hit;
-      return `<a href="./${p.file}">${label}</a>`;
+      return { label, href: `./${p.file}` };
     }
 
-    return `<span>${label}</span>`;
-  }).join(`<span class="crumbSep">›</span>`);
+    return { label };
+  });
+}
 
-  return `<div class="breadcrumb">${html}</div>`;
+function renderBreadcrumb(items){
+  const host = document.getElementById("globalBreadcrumb");
+  if(!host) return;
+  host.innerHTML = breadcrumbHtml(items);
 }
 
 function buildGlobalNav(){
@@ -86,7 +107,7 @@ function buildGlobalNav(){
         ${navHtml}
       </div>
     </nav>
-    ${buildBreadcrumb()}
+    <div id="globalBreadcrumb"></div>
   `;
 }
 
@@ -155,6 +176,7 @@ function bindNav(){
 
 function injectGlobalNav(){
   document.body.insertAdjacentHTML("afterbegin", buildGlobalNav());
+  renderBreadcrumb(defaultBreadcrumbItems());
   bindNav();
 }
 
