@@ -19,11 +19,14 @@
 
 .dashSection{
   margin:28px 0;
+  padding:14px;
+  border:1px solid rgba(0,0,0,.08);
+  background:#fafafa;
 }
 
 .dashSection h2{
   font-size:16px;
-  margin:0 0 12px 0;
+  margin:0 0 14px 0;
 }
 
 .tileGrid{
@@ -42,15 +45,17 @@
   color:inherit;
   background:#fff;
   border:1px solid rgba(0,0,0,.08);
-  border-radius:16px;
+  border-radius:0;
   padding:18px;
-  box-shadow:0 2px 8px rgba(0,0,0,.04);
-  transition:transform .12s ease, box-shadow .12s ease;
+  box-shadow:none;
+  transition:background .12s ease, border-color .12s ease;
 }
 
 .tile:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  background:#f4f7fb;
+  border-color:rgba(0,0,0,.14);
+  transform:none;
+  box-shadow:none;
 }
 
 .tileTitle{
@@ -65,8 +70,36 @@
   line-height:1.35;
 }
 
+/* Bereichsfarben */
+.dashSection.collection{
+  background:#f6f8fb;
+}
+
+.dashSection.analysis{
+  background:#faf8f3;
+}
+
+.dashSection.flights{
+  background:#f5faf7;
+}
+
+.dashSection.status{
+  background:#fbfbfb;
+}
+
+/* KPI-Kacheln */
 .kpiTile{
-  background:#fafafa;
+  background:#fff;
+  border-radius:0;
+  box-shadow:none;
+  cursor:default;
+}
+
+.kpiTile:hover{
+  background:#fff;
+  border-color:rgba(0,0,0,.08);
+  transform:none;
+  box-shadow:none;
 }
 
 .kpiValue{
