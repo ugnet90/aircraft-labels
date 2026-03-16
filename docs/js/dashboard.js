@@ -62,9 +62,16 @@ async function main(){
       Number(postcardsIndex?.count_unique ?? postcardsIndex?.count_total ?? 0) || 0;
     
     let missingCount = 0;
-    if(Array.isArray(missingTypes)) missingCount = missingTypes.length;
-    else if(Array.isArray(missingTypes?.items)) missingCount = missingTypes.items.length;
-    else if(Number.isFinite(missingTypes?.count)) missingCount = missingTypes.count;
+    
+    if(Number.isFinite(missingTypes?.counts?.missing_types)){
+      missingCount = missingTypes.counts.missing_types;
+    }
+    else if(Array.isArray(missingTypes?.items)){
+      missingCount = missingTypes.items.length;
+    }
+    else if(Array.isArray(missingTypes)){
+      missingCount = missingTypes.length;
+    }
     
     setText("kpiModels", labelCount(modelsCount, "Modell", "Modelle"));
     setText("kpiPostcards", labelCount(postcardCount, "Postkarte", "Postkarten"));
