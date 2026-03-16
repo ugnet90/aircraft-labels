@@ -21,41 +21,69 @@
 <body>
   <main class="heatmapLayout">
     <section class="kpis">
-      <div class="kpi">
-        <div class="kpi__label">Segments</div>
-        <div class="kpi__value" id="kpiSegments">–</div>
+      <div class="kpi-section">
+      
+        <h2>Reise</h2>
+        <div class="kpi-grid">
+      
+          <div class="kpi">
+            <div class="kpi-title">Flugsegmente</div>
+            <div class="kpi-value" id="kpiSegments"></div>
+          </div>
+      
+          <div class="kpi">
+            <div class="kpi-title">Besuchte Flughäfen</div>
+            <div class="kpi-value" id="kpiAirports"></div>
+          </div>
+      
+          <div class="kpi">
+            <div class="kpi-title">Länder</div>
+            <div class="kpi-value" id="kpiCountries"></div>
+          </div>
+      
+          <div class="kpi">
+            <div class="kpi-title">Gesamtdistanz</div>
+            <div class="kpi-value" id="kpiDistance"></div>
+          </div>
+      
+          <div class="kpi longest">
+            <div class="kpi-title">Längste Route</div>
+            <div class="kpi-value" id="kpiLongest"></div>
+            <div class="kpi-route" id="kpiLongestRoute"></div>
+          </div>
+      
+        </div>
+      
       </div>
-      <div class="kpi">
-        <div class="kpi__label">Visited Airports</div>
-        <div class="kpi__value" id="kpiAirports">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Countries</div>
-        <div class="kpi__value" id="kpiCountries">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Total Distance</div>
-        <div class="kpi__value" id="kpiTotalKm">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Longest Route</div>
-        <div class="kpi__value" id="kpiLongestKm">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Unique Aircraft Types</div>
-        <div class="kpi__value" id="kpiAircraftTypes">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Unique Registrations</div>
-        <div class="kpi__value" id="kpiRegistrations">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Top Airline</div>
-        <div class="kpi__value" id="kpiTopAirline">–</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi__label">Window Seat %</div>
-        <div class="kpi__value" id="kpiWindowSeatPct">–</div>
+      
+      
+      <div class="kpi-section">
+      
+        <h2>Flugzeuge</h2>
+        <div class="kpi-grid">
+      
+          <div class="kpi">
+            <div class="kpi-title">Flugzeugtypen</div>
+            <div class="kpi-value" id="kpiTypes"></div>
+          </div>
+      
+          <div class="kpi">
+            <div class="kpi-title">Registrierungen</div>
+            <div class="kpi-value" id="kpiRegs"></div>
+          </div>
+      
+          <div class="kpi">
+            <div class="kpi-title">Top-Airline</div>
+            <div class="kpi-value" id="kpiTopAirline"></div>
+          </div>
+      
+          <div class="kpi">
+            <div class="kpi-title">Fensterplatz</div>
+            <div class="kpi-value" id="kpiWindow"></div>
+          </div>
+      
+        </div>
+      
       </div>
       <div class="controls">
         <label>
