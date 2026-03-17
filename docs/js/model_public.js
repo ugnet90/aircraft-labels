@@ -209,22 +209,6 @@ function renderV8Groups(obj){
   return rendered ? `<div class="masonry">${rendered}</div>` : "";
 }
 
-// --- Aircraft photo enrichment (lazy) ---
-let _aircraftPhotosEnrichedCache = null;
-
-async function loadAircraftPhotosEnriched(){
-  if(_aircraftPhotosEnrichedCache !== null) return _aircraftPhotosEnrichedCache;
-  try{
-    const res = await fetch("data/aircraft_photos_enriched.json", { cache: "no-store" });
-    if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    const j = await res.json();
-    _aircraftPhotosEnrichedCache = (j && typeof j === "object") ? j : {};
-  }catch(e){
-    _aircraftPhotosEnrichedCache = {};
-  }
-  return _aircraftPhotosEnrichedCache;
-}
-
 // ---------- Lightbox ----------
 function ensureLightbox(){
   if(document.getElementById("lightbox")) return;
@@ -299,9 +283,6 @@ async function main(){
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const d = await res.json();
 
-    const photosEnriched = await loadAircraftPhotosEnriched();
-    const photoE = photosEnriched ? (photosEnriched[id] || null) : null;
-
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
     const reg = asText(d.registration) || asText(d.aircraft?.registration);
@@ -342,17 +323,10 @@ async function main(){
 
     document.getElementById("subtitle").textContent = "";
 
-    let photoSource = asText(d.photo_source_url) || asText(d.photo) || "";
-    let photoImg    = asText(d.photo_image_url) || "";
-    let photoCredit = asText(d.photo_credit) || "";
-
-    const enrichedThumb = asText(photoE?.thumb_url);
-    const enrichedSource = asText(photoE?.source_url);
-
-    if(enrichedThumb && enrichedSource){
-      photoImg = enrichedThumb;
-      photoSource = enrichedSource;
-    }
+    // Foto NUR aus <model_id>.json
+    const photoSource = asText(d.photo_source_url) || asText(d.photo) || "";
+    const photoImg    = asText(d.photo_image_url) || "";
+    const photoCredit = asText(d.photo_credit) || "";
 
     const photoHref = photoSource || photoImg;
     const copyright = photoCredit
