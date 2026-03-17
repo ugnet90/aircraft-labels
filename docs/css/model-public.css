@@ -117,3 +117,29 @@ body.publicPage{
     grid-template-columns: 1fr;
   }
 }
+
+.publicAirlineLogo{
+  display:block;
+  height:44px;
+  width:auto;
+  max-width:220px;
+  margin-bottom:10px;
+}
+
+.publicAirline{
+  font-size:1.1rem;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.publicType{
+  font-size:1.7rem;
+  font-weight:800;
+  line-height:1.1;
+}
+
+.publicReg{
+  margin-top:4px;
+  font-size:1rem;
+  font-weight:600;
+}
