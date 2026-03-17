@@ -1,0 +1,119 @@
+/* ========================================
+   PUBLIC MODEL PAGE (QR VIEW)
+   ======================================== */
+
+body.publicPage{
+  --maxw: 980px;
+}
+
+.publicWrap{
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.publicTop{
+  margin-bottom: 14px;
+}
+
+.publicTop h1{
+  margin: 0 0 6px;
+}
+
+.publicSub{
+  color: #666;
+  font-size: 14px;
+}
+
+.publicStack{
+  display: grid;
+  gap: 18px;
+}
+
+.publicHero{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.publicPhotoBox{
+  max-width: 420px;
+}
+
+.publicPhoto{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.publicPhoto img{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: block;
+}
+
+.publicCredit{
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.6);
+}
+
+.publicData{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 22px;
+}
+
+.publicDataItem{
+  min-width: 0;
+}
+
+.publicDataLabel{
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #777;
+  margin-bottom: 3px;
+}
+
+.publicDataValue{
+  font-size: 15px;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.publicDataValue.mono{
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+  word-break: normal;
+}
+
+.publicSectionTitle{
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.publicNote{
+  color: #666;
+  font-size: 13px;
+}
+
+@media (max-width: 860px){
+  .publicHero{
+    grid-template-columns: 1fr;
+  }
+
+  .publicPhotoBox{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px){
+  .publicData{
+    grid-template-columns: 1fr;
+  }
+}
