@@ -994,7 +994,9 @@ async function main(){
       ? `<img class="airlineLogo" src="${esc(logoUrl)}" alt="Logo">`
       : "";
     const navHtml = (prevId || nextId) ? buildNavHtml(prevId, nextId, pos, total) : "";
-    const publicUrl = `./model_public.html?id=${encodeURIComponent(id)}`;
+    const publicPath = `./model_public.html?id=${encodeURIComponent(id)}`;
+    const publicUrl = new URL(publicPath, window.location.href).href;
+    const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(publicUrl)}`;
     
     document.getElementById("title").innerHTML = `
       <div class="headerWrap">
@@ -1008,11 +1010,15 @@ async function main(){
               ${d.aircraft_name ? `<span class="hName">„${esc(d.aircraft_name)}“</span>` : ""}
             </div>
           </div>
-          <div class="headerRight">
-            <a class="btnPublic" href="${esc(publicUrl)}" target="_blank" rel="noopener">
+          <div class="headerRight publicTools">
+            <a class="btnPublic" href="${esc(publicPath)}" target="_blank" rel="noopener">
               Öffentliche Ansicht
             </a>
-          </div>          
+          
+            <a class="qrPreview" href="${esc(publicPath)}" target="_blank" rel="noopener" title="QR-Ziel öffnen">
+              <img src="${esc(qrUrl)}" alt="QR-Code für öffentliche Modellansicht">
+            </a>
+          </div>
         </div>
       </div>
     `;
