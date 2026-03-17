@@ -1011,11 +1011,11 @@ async function main(){
             </div>
           </div>
           <div class="headerRight publicTools">
-            <a class="btnPublic" href="${esc(publicPath)}" target="_blank" rel="noopener">
+            <a class="btnPublic publicBtnMobile" href="${esc(publicPath)}" target="_blank" rel="noopener">
               Öffentliche Ansicht
             </a>
           
-            <a class="qrPreview" href="${esc(publicPath)}" target="_blank" rel="noopener" title="QR-Ziel öffnen">
+            <a class="qrPreview publicQrDesktop" href="${esc(publicPath)}" target="_blank" rel="noopener" title="Öffentliche Ansicht">
               <img src="${esc(qrUrl)}" alt="QR-Code für öffentliche Modellansicht">
             </a>
           </div>
