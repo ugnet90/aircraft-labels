@@ -270,6 +270,7 @@ async function main(){
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
     const reg = asText(d.registration) || asText(d.aircraft?.registration);
+    const aircraftName = asText(d.aircraft_name);
 
     const titleMain = [
       typ,
@@ -310,7 +311,6 @@ async function main(){
     const manufacturer = asText(d.manufacturer) || asText(d.model?.manufacturer);
     const scale = asText(d.model?.scale || d.scale);
     const material = asText(d.material) || asText(d.model?.material);
-    const aircraftName = asText(d.aircraft_name);
     const extraInfo = asText(d.extra_info);
     const flown = !!(d.flown ?? d.model?.flown);
     
