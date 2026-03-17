@@ -111,6 +111,20 @@ function buildGlobalNav(){
   `;
 }
 
+function syncNavTitleFromDom(){
+  const navTitle = document.querySelector(".navTitle");
+  if(!navTitle) return;
+
+  const pageTitleEl =
+    document.getElementById("pageTitle") ||
+    document.getElementById("title");
+
+  const txt = (pageTitleEl?.textContent || "").trim();
+  if(txt){
+    navTitle.textContent = txt;
+  }
+}
+
 function bindNav(){
   const burger = document.querySelector(".navHamburger");
   const menu = document.querySelector(".navMenu");
@@ -178,6 +192,7 @@ function injectGlobalNav(){
   document.body.insertAdjacentHTML("afterbegin", buildGlobalNav());
   renderBreadcrumb(defaultBreadcrumbItems());
   bindNav();
+  syncNavTitleFromDom();
 }
 
 injectGlobalNav();
