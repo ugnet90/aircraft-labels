@@ -67,3 +67,24 @@
 .btnPublic:hover{
   background:#eaeaea;
 }
+
+.publicTools{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-left:auto;
+}
+
+.qrPreview{
+  display:inline-block;
+  padding:6px;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:10px;
+  background:#fff;
+}
+
+.qrPreview img{
+  display:block;
+  width:72px;
+  height:72px;
+}
