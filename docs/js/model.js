@@ -136,9 +136,9 @@ function renderPostcardsCard(d, enrichedById){
               ${head}
               ${publisherRow}
               ${sizeRow}
-              ${priceRow}
-              ${labelRow}
               ${shopRow}
+              ${labelRow}
+              ${priceRow}
             </div>
           </div>
         </div>
