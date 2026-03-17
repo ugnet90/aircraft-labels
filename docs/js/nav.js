@@ -125,6 +125,27 @@ function syncNavTitleFromDom(){
   }
 }
 
+function setPageTitle(prefix, id){
+  const text = id ? `${prefix} ${id}` : prefix;
+
+  // 1) pageTitle setzen (falls vorhanden)
+  const pageTitleEl = document.getElementById("pageTitle");
+  if(pageTitleEl){
+    pageTitleEl.textContent = text;
+  }
+
+  // 2) Fallback: title (falls keine pageTitle existiert)
+  const titleEl = document.getElementById("title");
+  if(!pageTitleEl && titleEl){
+    titleEl.textContent = text;
+  }
+
+  // 3) Nav synchronisieren
+  if(typeof syncNavTitleFromDom === "function"){
+    syncNavTitleFromDom();
+  }
+}
+
 function bindNav(){
   const burger = document.querySelector(".navHamburger");
   const menu = document.querySelector(".navMenu");
