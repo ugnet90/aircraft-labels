@@ -88,10 +88,12 @@ function renderPostcardsCard(d, enrichedById){
     const pcId = String(pc?.id ?? "").trim();
     const e = pcId ? (enrich[pcId] || null) : null;
 
-    // thumbnail
+    // thumbnail -> Detailseite der Postkarte
     const thumbUrl = e && e.thumb_url ? String(e.thumb_url).trim() : "";
+    const postcardHref = pcId ? `./postcard.html?id=${encodeURIComponent(pcId)}` : "";
+    
     const thumbHtml = thumbUrl
-      ? `<a class="pc-thumb" href="${esc(url || thumbUrl)}" target="_blank" rel="noopener">
+      ? `<a class="pc-thumb" href="${esc(postcardHref || url || thumbUrl)}" title="Postkarte anzeigen">
            <img src="${esc(thumbUrl)}" alt="Postkarte Thumbnail" loading="lazy">
          </a>`
       : "";
@@ -120,6 +122,11 @@ function renderPostcardsCard(d, enrichedById){
     
     const labelRow = rowFixed("Info", label);
     
+    const shopUrl = String(e?.source_url || url || "").trim();
+    const shopRow = shopUrl
+      ? rowLink("Shop", shopUrl, "", "Link öffnen")
+      : rowFixed("Shop", "");
+    
     return `
       <div class="pc-subcard">
         <div class="pc-row">
@@ -131,6 +138,7 @@ function renderPostcardsCard(d, enrichedById){
               ${sizeRow}
               ${priceRow}
               ${labelRow}
+              ${shopRow}
             </div>
           </div>
         </div>
