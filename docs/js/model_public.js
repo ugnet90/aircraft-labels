@@ -243,36 +243,6 @@ async function main(){
     const d = await res.json();
     const photosEnriched = await loadAircraftPhotosEnriched();
     const photoE = photosEnriched ? (photosEnriched[id] || null) : null;
-    
-    /* WICHTIG:
-       zuerst aircraft_photos_enriched.json,
-       nur wenn dort wirklich nichts vorhanden ist, auf andere Felder zurückfallen
-    */
-    const photoImg =
-      asText(photoE?.thumb_url) ||
-      asText(photoE?.image_url);
-    
-    const photoSource =
-      asText(photoE?.source_url) ||
-      asText(photoE?.url) ||
-      photoImg;
-    
-    const photoCredit =
-      asText(d.photo_credit) ||
-      "";
-    
-    const copyright = photoCopyright(photoCredit, photoSource);
-    
-    const heroPhotoHtml = photoImg
-      ? `
-        <div class="publicPhotoBox">
-          <a class="publicPhoto" href="${esc(photoSource || photoImg)}" target="_blank" rel="noopener">
-            <img src="${esc(photoImg)}" alt="Flugzeugfoto" loading="lazy" decoding="async">
-          </a>
-          ${copyright ? `<div class="publicCredit">${esc(copyright)}</div>` : ""}
-        </div>
-      `
-      : "";
 
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
@@ -291,26 +261,18 @@ async function main(){
       aircraftName ? `„${aircraftName}“` : ""
     ].filter(Boolean).join(" · ") || id;
 
-    document.title = airline ? `${airline} · ${titleMain}` : titleMain;
-
+    // wie in model.js: Airline nur im Seitentitel, wenn Logo nicht "sprechend" ist
     const logoSpeakingRaw = getLogoSpeaking(d);
     const logoSpeaking = logoSpeakingRaw ? boolDE(logoSpeakingRaw) : true;
     const showAirlineText = !logoSpeaking;
-    
+
+    document.title = showAirlineText && airline ? `${airline} · ${titleMain}` : titleMain;
+
     const logoUrl = logoSrc(d);
     const logoHtml = logoUrl
       ? `<img class="publicAirlineLogo" src="${esc(logoUrl)}" alt="Logo">`
       : "";
 
-    const v8Table = renderV8Groups(d.aircraft_full_v8);
-    
-    const v8Block = v8Table ? `
-      <div class="card">
-        <div class="publicSectionTitle">Flugzeugdaten</div>
-        <div style="margin-top:10px">${v8Table}</div>
-      </div>
-    ` : "";
-    
     document.getElementById("title").innerHTML = `
       ${logoHtml}
       ${showAirlineText && airline ? `<div class="publicAirline">${esc(airline)}</div>` : ""}
@@ -319,7 +281,30 @@ async function main(){
     `;
 
     document.getElementById("subtitle").textContent = livery || "";
-    
+
+    // WICHTIG:
+    // 1) zuerst aircraft_photos_enriched.json
+    // 2) dann Modelldatei
+    let photoSource = asText(photoE?.source_url) || asText(d.photo_source_url) || asText(d.photo) || "";
+    let photoImg    = asText(photoE?.thumb_url)  || asText(d.photo_image_url)  || "";
+    let photoCredit = asText(d.photo_credit) || "";
+
+    const photoHref = photoSource || photoImg;
+    const copyright = photoCredit
+      ? photoCopyright(photoCredit, photoSource)
+      : hostFromUrl(photoSource);
+
+    const heroPhotoHtml = photoImg
+      ? `
+        <div class="publicPhotoBox">
+          <a class="publicPhoto" href="${esc(photoHref)}" target="_blank" rel="noopener" id="publicPhotoLink">
+            <img src="${esc(photoImg)}" alt="Flugzeugfoto" loading="lazy" decoding="async">
+          </a>
+          ${copyright ? `<div class="publicCredit">${esc(copyright)}</div>` : ""}
+        </div>
+      `
+      : "";
+
     const publicDataHtml = `
       <div>
         <div class="publicSectionTitle">Allgemeine Daten</div>
@@ -338,20 +323,14 @@ async function main(){
       </div>
     `;
 
-    const heroBlock = `
-      <div class="card">
-        <div class="publicHero">
-          ${heroPhotoHtml}
-          ${publicDataHtml}
-        </div>
-      </div>
-    `;
+    const v8Table = renderV8Groups(d.aircraft_full_v8);
 
-    const footerNote = `
-      <div class="publicNote">
-        Öffentlich reduzierte Modellansicht.
+    const v8Block = v8Table ? `
+      <div class="card">
+        <div class="publicSectionTitle">Flugzeugdaten</div>
+        <div style="margin-top:10px">${v8Table}</div>
       </div>
-    `;
+    ` : "";
 
     document.getElementById("content").innerHTML = `
       <div class="publicStack">
@@ -364,7 +343,15 @@ async function main(){
         ${v8Block}
       </div>
     `;
-    
+
+    const photoLink = document.getElementById("publicPhotoLink");
+    if(photoLink && photoImg){
+      photoLink.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        openLightbox(photoImg, photoHref);
+      });
+    }
+
   }catch(e){
     document.getElementById("content").innerHTML =
       `<div class="err"><b>Fehler:</b> Konnte <span class="mono">${esc(url)}</span> nicht laden. (${esc(e.message)})</div>`;
