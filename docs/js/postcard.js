@@ -262,25 +262,31 @@ async function main(){
           <div class="postcard-sectionTitle">${esc(asText(d.label))}</div>
           ${navHtml}
         </div>
-
         <div class="postcard-meta-grid">
-          ${metaRow("Postkarten-ID", esc(d.id), { mono:true })}
-          ${metaRow("Modell-ID", esc(d.model_id || ""), { mono:true })}
-          ${metaRow("Modell", d.model_id ? `<a class="postcard-linkBack" href="./model.html?id=${encodeURIComponent(d.model_id)}">${esc(d.model_id)}</a>` : "")}
-          ${metaRow("Airline", esc(d.airline || ""))}
-          ${metaRow("Hersteller", esc(d.aircraft_manufacturer || ""))}
-          ${metaRow("Flugzeugtyp", esc(d.aircraft_type || ""))}
-          ${metaRow("Flugzeugtyp exakt", esc(d.aircraft_type_exact || ""))}
-          ${metaRow("Registrierung", esc(d.registration || ""), { mono:true })}
+          ${d.model_id
+            ? metaRow(
+                "Sammelmodell",
+                `<a class="postcard-linkBack" href="./model.html?id=${encodeURIComponent(d.model_id)}">${esc(d.model_id)}</a>`
+              )
+            : ""
+          }
+        
           ${metaRow("Herausgeber", esc(d.publisher_norm || d.publisher || ""))}
+          ${metaRow("Airline", esc(d.airline || ""))}
           ${metaRow("Jahr", esc(d.year || ""), { mono:true })}
+          ${metaRow("Hersteller", esc(d.aircraft_manufacturer || ""))}
           ${metaRow("Größe", esc(fmtSizeMm(d.size_mm) || d.size || ""), { mono:true })}
+          ${metaRow("Flugzeugtyp", esc(d.aircraft_type || ""))}
           ${metaRow("Zustand", esc(d.condition || ""))}
+          ${metaRow("Flugzeugtyp exakt", esc(d.aircraft_type_exact || ""))}
           ${metaRow("Preis", esc(money(d.price)), { mono:true })}
-          ${metaRow("Info", esc(d.label || ""))}
-          ${metaRow("Shop / Quelle", (asText(d.source_url) || asText(d.url)) ? `<a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Link öffnen</a>` : "")}
+          ${metaRow("Registrierung", esc(d.registration || ""), { mono:true })}
+          ${metaRow("Shop / Quelle", (asText(d.source_url) || asText(d.url))
+            ? `<a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Link öffnen</a>`
+            : ""
+          )}
           ${metaRow("Scraped", esc(scraped))}
-        </div>
+</div>
       </div>
     `;
 
