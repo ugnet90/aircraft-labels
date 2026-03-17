@@ -52,6 +52,13 @@
   }
 }
 
+.publicTools{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-left:auto;
+}
+
 .btnPublic{
   display:inline-block;
   padding:6px 12px;
@@ -68,13 +75,6 @@
   background:#eaeaea;
 }
 
-.publicTools{
-  display:flex;
-  align-items:flex-start;
-  gap:12px;
-  margin-left:auto;
-}
-
 .qrPreview{
   display:inline-block;
   padding:6px;
@@ -87,4 +87,24 @@
   display:block;
   width:72px;
   height:72px;
+}
+
+/* Desktop: QR sichtbar, Button weg */
+.publicBtnMobile{
+  display:none;
+}
+
+.publicQrDesktop{
+  display:inline-block;
+}
+
+/* Mobile: Button sichtbar, QR weg */
+@media (max-width: 760px){
+  .publicBtnMobile{
+    display:inline-block;
+  }
+
+  .publicQrDesktop{
+    display:none;
+  }
 }
