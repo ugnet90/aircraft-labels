@@ -271,10 +271,10 @@ async function main(){
             : ""
           }
         
-          ${metaRow("Herausgeber", esc(d.publisher_norm || d.publisher || ""))}
+          ${metaRow("Karten-Herausgeber", esc(d.publisher_norm || d.publisher || ""))}
           ${metaRow("Airline", esc(d.airline || ""))}
-          ${metaRow("Jahr", esc(d.year || ""), { mono:true })}
-          ${metaRow("Hersteller", esc(d.aircraft_manufacturer || ""))}
+          ${metaRow("Erscheinungs-Jahr", esc(d.year || ""), { mono:true })}
+          ${metaRow("Flugzeug-Hersteller", esc(d.aircraft_manufacturer || ""))}
           ${metaRow("Größe", esc(fmtSizeMm(d.size_mm) || d.size || ""), { mono:true })}
           ${metaRow("Flugzeugtyp", esc(d.aircraft_type || ""))}
           ${metaRow("Zustand", esc(d.condition || ""))}
