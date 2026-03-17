@@ -1,9 +1,10 @@
 /* ========================================
    PUBLIC MODEL PAGE (QR VIEW)
+   abgestimmt auf model_public.js
    ======================================== */
 
 body.publicPage{
-  --maxw: 1100px;
+  --maxw: 1120px;
 }
 
 .publicWrap{
@@ -16,216 +17,289 @@ body.publicPage{
 }
 
 .publicTop h1{
-  margin: 0 0 6px;
+  margin: 0;
 }
 
 .publicSub{
+  margin-top: 4px;
   color: #666;
   font-size: 14px;
 }
 
-.publicStack{
+/* ---------- generic stacks ---------- */
+
+.stack{
   display: grid;
   gap: 18px;
 }
 
-.publicHeroCard{
-  border:1px solid rgba(0,0,0,.12);
-  border-radius:16px;
-  padding:16px;
-  background:#fff;
+.stackItem{
+  min-width: 0;
 }
 
-.publicHero{
-  display:grid;
+.sectionGrid{
+  display: grid;
+  gap: 18px;
+}
+
+/* ---------- header ---------- */
+
+.headerWrap{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.headerLeft{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-width: 0;
+}
+
+.headerTxt{
+  min-width: 0;
+}
+
+.airlineLogo{
+  display: block;
+  height: 46px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.hAir{
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.hTyp{
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.hMeta{
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.hReg{
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.hName{
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ---------- aircraft block ---------- */
+
+.air-layout{
+  display: grid;
   grid-template-columns: minmax(320px, 430px) minmax(420px, 1fr);
-  gap:22px;
-  align-items:start;
+  gap: 22px;
+  align-items: start;
+  margin-top: 10px;
 }
 
-.publicPhotoBox{
-  max-width:430px;
+.air-photo-box{
+  min-width: 0;
 }
 
-.publicPhoto{
-  display:inline-block;
-  text-decoration:none;
+.air-photo{
+  display: block;
 }
 
-.publicPhoto img{
-  width:100%;
-  height:auto;
-  border-radius:12px;
-  border:1px solid rgba(0,0,0,.08);
-  box-shadow:0 4px 12px rgba(0,0,0,.08);
-  display:block;
+.air-thumb{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
 
-.publicCredit{
-  margin-top:8px;
-  font-size:12px;
-  color:rgba(0,0,0,.65);
+.air-credit{
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(0,0,0,.65);
 }
 
-.publicInfo{
-  min-width:0;
+.air-data.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 22px;
+  min-width: 0;
 }
 
-.publicAirlineLogo{
-  display:block;
-  height:44px;
-  width:auto;
-  max-width:220px;
-  margin-bottom:10px;
+/* ---------- key/value grids ---------- */
+
+.sectionGrid,
+.air-data.grid{
+  margin-top: 8px;
 }
 
-.publicAirline{
-  font-size:1.05rem;
-  font-weight:700;
-  margin-bottom:4px;
+.sectionGrid > div,
+.air-data.grid > div{
+  min-width: 0;
 }
 
-.publicType{
-  font-size:1.9rem;
-  font-weight:800;
-  line-height:1.08;
+.k{
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #777;
+  margin-bottom: 3px;
 }
 
-.publicReg{
-  margin-top:6px;
-  font-size:1.05rem;
-  font-weight:600;
+.v{
+  font-size: 15px;
+  line-height: 1.35;
+  word-break: break-word;
 }
 
-.publicSectionTitle{
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:.05em;
-  color:#777;
-  margin-bottom:10px;
+.v .badge{
+  display: inline-block;
 }
 
-.publicData{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px 22px;
-  margin-top:14px;
-}
-
-.publicDataItem{
-  min-width:0;
-}
-
-.publicDataLabel{
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:.04em;
-  color:#777;
-  margin-bottom:3px;
-}
-
-.publicDataValue{
-  font-size:15px;
-  line-height:1.35;
-  word-break:break-word;
-}
-
-.publicDataValue.mono{
+.mono{
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
-  word-break:normal;
 }
 
-.publicBlock{
-  border:1px solid rgba(0,0,0,.12);
-  border-radius:16px;
-  padding:16px;
-  background:#fff;
+/* ---------- v8 blocks ---------- */
+
+.masonry{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-.publicNote{
-  color:#666;
-  font-size:13px;
+.masonry .card{
+  height: fit-content;
 }
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td{
+  vertical-align: top;
+  padding: 6px 8px 6px 0;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+tr:first-child td{
+  border-top: none;
+}
+
+td:first-child{
+  width: 42%;
+  color: #666;
+  font-size: 13px;
+}
+
+td:last-child{
+  font-size: 14px;
+}
+
+/* ---------- lightbox ---------- */
 
 .lb{
-  position:fixed;
-  inset:0;
-  display:none;
-  z-index:1000;
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
 }
 
 .lb.on{
-  display:block;
+  display: block;
 }
 
 .lb-backdrop{
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.72);
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.72);
 }
 
 .lb-panel{
-  position:relative;
-  z-index:1;
-  width:min(96vw, 1200px);
-  max-height:92vh;
-  margin:3vh auto;
-  background:#fff;
-  border-radius:16px;
-  padding:16px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
+  position: relative;
+  z-index: 1;
+  width: min(96vw, 1200px);
+  max-height: 92vh;
+  margin: 3vh auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .lb-close{
-  align-self:flex-end;
-  border:1px solid rgba(0,0,0,.14);
-  background:#fff;
-  border-radius:999px;
-  width:40px;
-  height:40px;
-  font-size:24px;
-  line-height:1;
-  cursor:pointer;
+  align-self: flex-end;
+  border: 1px solid rgba(0,0,0,.14);
+  background: #fff;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .lb-img{
-  display:block;
-  max-width:100%;
-  max-height:72vh;
-  margin:0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 72vh;
+  margin: 0 auto;
 }
 
 .lb-actions{
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .lb-open{
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .noscroll{
-  overflow:hidden;
+  overflow: hidden;
 }
 
-@media (max-width: 900px){
-  .publicHero{
-    grid-template-columns:1fr;
+/* ---------- responsive ---------- */
+
+@media (max-width: 920px){
+  .air-layout{
+    grid-template-columns: 1fr;
   }
 
-  .publicPhotoBox{
-    max-width:100%;
+  .masonry{
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 640px){
-  .publicData{
-    grid-template-columns:1fr;
+@media (max-width: 680px){
+  .headerLeft{
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .publicType{
-    font-size:1.55rem;
+  .hTyp{
+    font-size: 1.55rem;
+  }
+
+  .air-data.grid{
+    grid-template-columns: 1fr;
   }
 }
