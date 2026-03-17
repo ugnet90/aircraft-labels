@@ -919,14 +919,7 @@ async function main(){
   const idRaw = qs("id");
   const id = String(idRaw || "").trim().toUpperCase();
 
-  const pageTitleEl = document.getElementById("pageTitle");
-  if(pageTitleEl){
-    pageTitleEl.textContent = id ? `Sammelmodell ${id}` : "Sammelmodell";
-  }
-  
-  if(typeof syncNavTitleFromDom === "function"){
-    syncNavTitleFromDom();
-  }  
+  setPageTitle("Sammelmodell", id);
   
   renderBreadcrumb([
     { label: "Dashboard", href: "./dashboard.html" },
