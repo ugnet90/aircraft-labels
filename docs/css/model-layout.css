@@ -51,3 +51,19 @@
     max-width:100%;
   }
 }
+
+.btnPublic{
+  display:inline-block;
+  padding:6px 12px;
+  font-size:13px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.15);
+  background:#f5f5f5;
+  text-decoration:none;
+  color:#000;
+  white-space:nowrap;
+}
+
+.btnPublic:hover{
+  background:#eaeaea;
+}
