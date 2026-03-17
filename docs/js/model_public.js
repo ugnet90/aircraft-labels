@@ -13,6 +13,11 @@ function asText(v){
   return (v ?? "").toString().trim();
 }
 
+function boolDE(v){
+  const s = asText(v).toLowerCase();
+  return (s === "wahr" || s === "true" || s === "1" || s === "ja" || s === "yes" || s === "x");
+}
+
 function row(label, value, opts = {}){
   const txt = asText(value);
   if(!txt) return "";
@@ -26,153 +31,92 @@ function row(label, value, opts = {}){
   `;
 }
 
-function rowHtml(k, vHtml){
-  if(vHtml === undefined || vHtml === null || vHtml === "") return "";
-  return `<div><div class="k">${esc(k)}</div><div class="v">${vHtml}</div></div>`;
+function rowHtml(label, html, opts = {}){
+  if(!html || !String(html).trim()) return "";
+  const cls = opts.mono ? "publicDataValue mono" : "publicDataValue";
+
+  return `
+    <div class="publicDataItem">
+      <div class="publicDataLabel">${esc(label)}</div>
+      <div class="${cls}">${html}</div>
+    </div>
+  `;
 }
 
-function renderV8Groups(obj){
-  if(!obj || typeof obj !== "object") return "";
+// --- Aircraft photo enrichment (wie model.js) ---
+let _aircraftPhotosEnrichedCache = null;
 
-  function normListHtml(v){
-    const s = String(v ?? "").trim();
-    if(!s) return "";
-    return s
-      .split(/[|,]/g)
-      .map(x => x.trim())
-      .filter(Boolean)
-      .join("<br>");
+async function loadAircraftPhotosEnriched(){
+  if(_aircraftPhotosEnrichedCache !== null) return _aircraftPhotosEnrichedCache;
+  try{
+    const res = await fetch("data/aircraft_photos_enriched.json", { cache: "no-store" });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json();
+    _aircraftPhotosEnrichedCache = (j && typeof j === "object") ? j : {};
+  }catch(e){
+    _aircraftPhotosEnrichedCache = {};
   }
+  return _aircraftPhotosEnrichedCache;
+}
 
-  function translateWingtip(v){
-    const x = String(v ?? "").trim().toUpperCase();
-    const map = { "NONE":"Keine", "SL":"Sharklets", "WL":"Winglets", "RW":"Raked Wingtips" };
-    return map[x] ? `${map[x]} (${x})` : esc(v);
-  }
+// ---------- Lightbox ----------
+function ensureLightbox(){
+  if(document.getElementById("lightbox")) return;
 
-  function translateRumpf(v){
-    const x = String(v ?? "").trim();
-    const map = { "SingleAisle":"Schmalrumpf (Single Aisle)", "TwinAisle":"Großraum (Twin Aisle)" };
-    return map[x] || esc(x);
-  }
+  const el = document.createElement("div");
+  el.id = "lightbox";
+  el.className = "lb";
+  el.innerHTML = `
+    <div class="lb-backdrop" data-close="1"></div>
+    <div class="lb-panel" role="dialog" aria-modal="true">
+      <button class="lb-close" type="button" aria-label="Schließen" data-close="1">×</button>
+      <img class="lb-img" alt="Foto" />
+      <div class="lb-actions">
+        <a class="lb-open" href="#" target="_blank" rel="noopener">In neuem Tab öffnen</a>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(el);
 
-  function translateRole(v){
-    const x = String(v ?? "").trim().toUpperCase();
-    const map = { "PAX":"Passagierflugzeug (PAX)", "CARGO":"Frachtflugzeug (Cargo)" };
-    return map[x] || esc(v);
-  }
-
-  function cellWiki(url){
-    const u = String(url ?? "").trim();
-    if(!u) return "";
-    const safe = esc(u);
-    // schöner Linktext statt URL
-    return `<a href="${safe}" target="_blank" rel="noopener">Wikipedia</a>`;
-  }
-
-  function row(label, valueHtml){
-    if(!valueHtml) return "";
-    return `<tr><td>${esc(label)}</td><td>${valueHtml}</td></tr>`;
-  }
-
-  function normalizeUnit(label, valueHtml){
-    const rawLabel = String(label ?? "").trim();
-    const rawValue = String(valueHtml ?? "").trim();
-    if(!rawLabel || !rawValue) return [rawLabel, rawValue];
-  
-    const m = rawLabel.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
-    if(!m) return [rawLabel, rawValue];
-  
-    const cleanLabel = m[1].trim();
-    const unit = m[2].trim();
-  
-    return [cleanLabel, `${rawValue} ${esc(unit)}`];
-  }  
-  
-  function val(key){
-    const v = obj[key];
-    if(v === undefined || v === null) return "";
-    const s = String(v).trim();
-    return s ? esc(s) : "";
-  }
-
-  // --- Gruppen ---
-  const groups = [
-    {
-      title: "Codes",
-      rows: [
-        ["ICAO-Typcode", val("ICAO")],
-        ["IATA-Typcode", val("IATA")],
-        ["Wikipedia", cellWiki(obj["Wiki"])],
-      ]
-    },
-    {
-      title: "Betrieb",
-      rows: [
-        ["Rolle", translateRole(obj["Role"])],
-        ["Segment", val("MarketSegment")],
-        ["Rumpf (Kategorie)", translateRumpf(obj["Rumpf"])],
-        ["Wingtip / Winglets / Sharklets", translateWingtip(obj["Wingtip"])],
-        ["Erstflug", val("Erstflug")],
-        ["Status", val("Status")],
-        ["Antrieb", val("Antrieb")],
-        ["Triebwerke", val("Triebwerke")],
-        ["Reichweite (Kategorie)", val("Reichweite")],
-        ["Passagiere", val("Passengers")],
-      ]
-    },
-    {
-      title: "Abmessungen",
-      rows: [
-        ["Länge (m)", val("Length")],
-        ["Spannweite (m)", val("Wingspan")],
-        ["Höhe (m)", val("Height")],
-      ]
-    },
-    {
-      title: "Typ",
-      rows: [
-        ["Flugzeugtyp", val("Typ_anzeige")],
-        ["Hersteller", val("Hersteller")],
-        ["Baureihe", val("Baureihe")],
-        ["Unterserie", val("Unterserie")],
-        ["Marketingname", val("Marketingname")],
-        ["Alternative Bezeichnungen", normListHtml(obj["Alternate_designations"])],
-        ["Übergeordneter Typ (ID)", val("parent_aircraft_id")],
-      ]
+  el.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if(t && t.getAttribute && t.getAttribute("data-close") === "1"){
+      closeLightbox();
     }
-  ];
+  });
 
-  const rendered = groups
-    .map(g => {
-      const body = g.rows
-        .map(([label, value]) => {
-          const [nl, nv] = normalizeUnit(label, value);
-          return row(nl, nv);
-        })
-        .filter(Boolean)
-        .join("");
-      if(!body) return "";
-      return `
-        <div class="card">
-          <div class="k">${esc(g.title)}</div>
-          <div class="v" style="margin-top:8px">
-            <table>${body}</table>
-          </div>
-        </div>
-      `;
-    })
-    .filter(Boolean)
-    .join("");
-
-  return rendered ? `<div class="masonry">${rendered}</div>` : "";
+  document.addEventListener("keydown", (ev) => {
+    if(ev.key === "Escape") closeLightbox();
+  });
 }
 
-function boolDE(v){
-  const s = asText(v).toLowerCase();
-  return (s === "wahr" || s === "true" || s === "1" || s === "ja" || s === "yes" || s === "x");
+function openLightbox(imgUrl, openUrl){
+  const src = String(imgUrl || "").trim();
+  if(!src) return;
+  ensureLightbox();
+
+  const lb = document.getElementById("lightbox");
+  const img = lb.querySelector(".lb-img");
+  const a = lb.querySelector(".lb-open");
+
+  img.src = src;
+  a.href = (String(openUrl || "").trim() || src);
+
+  lb.classList.add("on");
+  document.body.classList.add("noscroll");
 }
 
+function closeLightbox(){
+  const lb = document.getElementById("lightbox");
+  if(!lb) return;
+  lb.classList.remove("on");
+  document.body.classList.remove("noscroll");
+
+  const img = lb.querySelector(".lb-img");
+  if(img) img.src = "";
+}
+
+// ---------- Logo / Quellen ----------
 function getLogoSpeaking(d){
   const raw =
     asText(d?.logo_speaking) ||
@@ -187,23 +131,12 @@ function logoSrc(d){
   if(!d || !d.logo) return "";
 
   const link = String(d.logo.link || "").trim();
-  if(/^https?:\/\//i.test(link)) return link;
+  if(link) return link;
 
   const id = String(d.logo.id || "").trim();
   if(id) return `./assets/logos/${encodeURIComponent(id)}.png`;
 
   return "";
-}
-
-async function loadAircraftPhotosEnriched(){
-  try{
-    const res = await fetch("./data/aircraft_photos_enriched.json", { cache:"no-store" });
-    if(!res.ok) return {};
-    const j = await res.json();
-    return (j && typeof j === "object") ? j : {};
-  }catch(e){
-    return {};
-  }
 }
 
 function hostFromUrl(u){
@@ -225,6 +158,68 @@ function photoCopyright(credit, sourceUrl){
   return "";
 }
 
+// ---------- V8 ----------
+function renderV8Groups(v8){
+  if(!v8 || typeof v8 !== "object") return "";
+
+  const groups = [
+    ["Basisdaten", [
+      ["Hersteller", v8.manufacturer],
+      ["Musterfamilie", v8.family],
+      ["Flugzeugtyp", v8.type],
+      ["ICAO-Typ", v8.icao_type],
+      ["IATA-Typ", v8.iata_type],
+      ["Kategorie", v8.category],
+      ["Status", v8.status]
+    ]],
+    ["Abmessungen", [
+      ["Länge", v8.length_m ? `${v8.length_m} m` : ""],
+      ["Spannweite", v8.wingspan_m ? `${v8.wingspan_m} m` : ""],
+      ["Höhe", v8.height_m ? `${v8.height_m} m` : ""]
+    ]],
+    ["Leistung", [
+      ["Reichweite", v8.range_km ? `${v8.range_km} km` : ""],
+      ["Reisegeschwindigkeit", v8.cruise_kmh ? `${v8.cruise_kmh} km/h` : ""],
+      ["Max. Geschwindigkeit", v8.max_kmh ? `${v8.max_kmh} km/h` : ""]
+    ]],
+    ["Kapazität", [
+      ["Besatzung", v8.crew],
+      ["Passagiere", v8.passengers],
+      ["Fracht", v8.cargo]
+    ]],
+    ["Antrieb", [
+      ["Triebwerksart", v8.engine_type],
+      ["Triebwerke", v8.engines],
+      ["Hersteller", v8.engine_manufacturer]
+    ]]
+  ];
+
+  const groupHtml = groups.map(([title, rows]) => {
+    const body = rows
+      .filter(([, value]) => asText(value))
+      .map(([label, value]) => `
+        <div class="publicDataItem">
+          <div class="publicDataLabel">${esc(label)}</div>
+          <div class="publicDataValue">${esc(asText(value))}</div>
+        </div>
+      `)
+      .join("");
+
+    if(!body) return "";
+
+    return `
+      <div style="margin-bottom:18px">
+        <div class="publicSectionTitle">${esc(title)}</div>
+        <div class="publicData">
+          ${body}
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  return groupHtml;
+}
+
 async function main(){
   const id = asText(qs("id")).toUpperCase();
 
@@ -243,74 +238,32 @@ async function main(){
     const d = await res.json();
     const photosEnriched = await loadAircraftPhotosEnriched();
     const photoE = photosEnriched ? (photosEnriched[id] || null) : null;
-    
-    /* WICHTIG:
-       zuerst aircraft_photos_enriched.json,
-       nur wenn dort wirklich nichts vorhanden ist, auf andere Felder zurückfallen
-    */
-    const photoImg =
-      asText(photoE?.thumb_url) ||
-      asText(photoE?.image_url);
-    
-    const photoSource =
-      asText(photoE?.source_url) ||
-      asText(photoE?.url) ||
-      photoImg;
-    
-    const photoCredit =
-      asText(d.photo_credit) ||
-      "";
-    
-    const copyright = photoCopyright(photoCredit, photoSource);
-    
-    const heroPhotoHtml = photoImg
-      ? `
-        <div class="publicPhotoBox">
-          <a class="publicPhoto" href="${esc(photoSource || photoImg)}" target="_blank" rel="noopener">
-            <img src="${esc(photoImg)}" alt="Flugzeugfoto" loading="lazy" decoding="async">
-          </a>
-          ${copyright ? `<div class="publicCredit">${esc(copyright)}</div>` : ""}
-        </div>
-      `
-      : "";
 
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
     const reg = asText(d.registration) || asText(d.aircraft?.registration);
-    const aircraftName = asText(d.aircraft_name);
     const livery = asText(d.livery_name) || asText(d.livery?.code);
     const manufacturer = asText(d.manufacturer) || asText(d.model?.manufacturer);
+    const brand = asText(d.brand) || asText(d.model?.brand);
     const scale = asText(d.model?.scale || d.scale);
     const material = asText(d.material) || asText(d.model?.material);
+    const aircraftName = asText(d.aircraft_name);
     const extraInfo = asText(d.extra_info);
     const flown = !!(d.flown ?? d.model?.flown);
 
-    const titleMain = [
-      typ,
-      reg,
-      aircraftName ? `„${aircraftName}“` : ""
-    ].filter(Boolean).join(" · ") || id;
-
-    document.title = airline ? `${airline} · ${titleMain}` : titleMain;
+    document.title = airline
+      ? `${airline} · ${typ || id}${reg ? ` · ${reg}` : ""}`
+      : (typ || id);
 
     const logoSpeakingRaw = getLogoSpeaking(d);
     const logoSpeaking = logoSpeakingRaw ? boolDE(logoSpeakingRaw) : true;
     const showAirlineText = !logoSpeaking;
-    
+
     const logoUrl = logoSrc(d);
     const logoHtml = logoUrl
       ? `<img class="publicAirlineLogo" src="${esc(logoUrl)}" alt="Logo">`
       : "";
 
-    const v8Table = renderV8Groups(d.aircraft_full_v8);
-    
-    const v8Block = v8Table ? `
-      <div class="card">
-        <div class="publicSectionTitle">Flugzeugdaten</div>
-        <div style="margin-top:10px">${v8Table}</div>
-      </div>
-    ` : "";
-    
     document.getElementById("title").innerHTML = `
       ${logoHtml}
       ${showAirlineText && airline ? `<div class="publicAirline">${esc(airline)}</div>` : ""}
@@ -319,33 +272,56 @@ async function main(){
     `;
 
     document.getElementById("subtitle").textContent = livery || "";
-    
-    const publicDataHtml = `
-      <div>
+
+    // WICHTIG: zuerst aircraft_photos_enriched.json
+    let photoSource = asText(photoE?.source_url) || asText(d.photo_source_url) || asText(d.photo) || "";
+    let photoImg    = asText(photoE?.thumb_url)  || asText(d.photo_image_url)  || "";
+    let photoCredit = asText(d.photo_credit) || "";
+
+    const copyright = photoCopyright(photoCredit, photoSource);
+
+    const heroPhotoHtml = photoImg
+      ? `
+        <div class="publicPhotoBox">
+          <a class="publicPhoto" href="${esc(photoSource || photoImg)}" target="_blank" rel="noopener" id="publicPhotoLink">
+            <img src="${esc(photoImg)}" alt="Flugzeugfoto" loading="lazy" decoding="async">
+          </a>
+          ${copyright ? `<div class="publicCredit">${esc(copyright)}</div>` : ""}
+        </div>
+      `
+      : "";
+
+    const generalDataHtml = `
+      <div class="publicInfo">
         <div class="publicSectionTitle">Allgemeine Daten</div>
         <div class="publicData">
           ${row("Airline", airline)}
           ${row("Flugzeugtyp", typ)}
           ${row("Registrierung", reg, { mono:true })}
-          ${row("Taufname", aircraftName)}
           ${row("Hersteller", manufacturer)}
-          ${row("Maßstab", scale, { mono:true })}
+          ${row("Marke", brand)}
+          ${row("Massstab", scale, { mono:true })}
           ${row("Material", material)}
+          ${row("Taufname", aircraftName)}
           ${row("Bemalung", livery)}
           ${row("Zusatzinfo", extraInfo)}
-          ${flown ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`) : ""}
+          ${flown ? rowHtml("Mitgeflogen", "ja") : ""}
         </div>
       </div>
     `;
 
-    const heroBlock = `
-      <div class="card">
-        <div class="publicHero">
-          ${heroPhotoHtml}
-          ${publicDataHtml}
+    const v8Table = renderV8Groups(d.aircraft_full_v8);
+
+    const v8Block = v8Table
+      ? `
+        <div class="publicBlock">
+          <div class="publicSectionTitle">Flugzeugdaten</div>
+          <div style="margin-top:10px">
+            ${v8Table}
+          </div>
         </div>
-      </div>
-    `;
+      `
+      : "";
 
     const footerNote = `
       <div class="publicNote">
@@ -355,16 +331,25 @@ async function main(){
 
     document.getElementById("content").innerHTML = `
       <div class="publicStack">
-        <div class="card">
+        <div class="publicHeroCard">
           <div class="publicHero">
             ${heroPhotoHtml}
-            ${publicDataHtml}
+            ${generalDataHtml}
           </div>
         </div>
         ${v8Block}
+        ${footerNote}
       </div>
     `;
-    
+
+    const photoLink = document.getElementById("publicPhotoLink");
+    if(photoLink && photoImg){
+      photoLink.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        openLightbox(photoImg, photoSource || photoImg);
+      });
+    }
+
   }catch(e){
     document.getElementById("content").innerHTML =
       `<div class="err"><b>Fehler:</b> Konnte <span class="mono">${esc(url)}</span> nicht laden. (${esc(e.message)})</div>`;
