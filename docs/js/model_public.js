@@ -306,18 +306,6 @@ async function main(){
 
     document.getElementById("subtitle").textContent = livery || "";
 
-    const heroPhotoHtml =
-      buildAircraftPhotoHtml(d, photoE) ||
-      (photoUrlFromModel(d)
-        ? `
-          <div class="publicPhotoBox">
-            <a class="publicPhoto" href="${esc(photoUrlFromModel(d))}" target="_blank" rel="noopener">
-              <img src="${esc(photoUrlFromModel(d))}" alt="Modellfoto" loading="lazy">
-            </a>
-          </div>
-        `
-        : "");
-
     const livery = asText(d.livery_name) || asText(d.livery?.code);
     const manufacturer = asText(d.manufacturer) || asText(d.model?.manufacturer);
     const scale = asText(d.model?.scale || d.scale);
