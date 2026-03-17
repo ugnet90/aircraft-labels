@@ -138,7 +138,7 @@ function renderPostcardsCard(d, enrichedById){
     `;
   }).join("");
 
-  // Total: du wolltest es eigentlich nicht mehr -> hier sicher deaktiviert
+  // Total: -> hier sicher deaktiviert
   const totalRow = "";
   const title = arr.length > 1 ? "Postkarten" : "Postkarte";
   
@@ -919,6 +919,15 @@ async function main(){
   const idRaw = qs("id");
   const id = String(idRaw || "").trim().toUpperCase();
 
+  const pageTitleEl = document.getElementById("pageTitle");
+  if(pageTitleEl){
+    pageTitleEl.textContent = id ? `Sammelmodell ${id}` : "Sammelmodell";
+  }
+  
+  if(typeof syncNavTitleFromDom === "function"){
+    syncNavTitleFromDom();
+  }  
+  
   renderBreadcrumb([
     { label: "Dashboard", href: "./dashboard.html" },
     { label: "Flugzeugmodelle", href: "./models_overview.html" },
