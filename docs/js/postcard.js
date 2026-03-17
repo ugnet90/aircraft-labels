@@ -158,6 +158,8 @@ async function main(){
   const idRaw = qs("id");
   const id = String(idRaw || "").trim().toUpperCase();
 
+  setPageTitle("Postkarte", id);
+  
   renderBreadcrumb([
     { label: "Dashboard", href: "./dashboard.html" },
     { label: "Postkarten", href: "./postcards_overview.html" },
