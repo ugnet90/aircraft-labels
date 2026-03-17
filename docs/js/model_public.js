@@ -195,16 +195,6 @@ function logoSrc(d){
   return "";
 }
 
-function photoUrlFromModel(d){
-  return asText(
-    d?.model_photo_url ||
-    d?.photo_url ||
-    d?.image_url ||
-    d?.images?.model ||
-    d?.images?.main
-  );
-}
-
 async function loadAircraftPhotosEnriched(){
   try{
     const res = await fetch("./data/aircraft_photos_enriched.json", { cache:"no-store" });
@@ -219,13 +209,16 @@ async function loadAircraftPhotosEnriched(){
 function hostFromUrl(u){
   const s = String(u || "").trim();
   if(!s) return "";
-  try { return (new URL(s)).hostname.replace(/^www\./,""); }
-  catch(e){ return ""; }
+  try{
+    return new URL(s).hostname.replace(/^www\./, "");
+  }catch(e){
+    return "";
+  }
 }
 
-function photoCopyright(credit, sourceUrl, imageUrl){
+function photoCopyright(credit, sourceUrl){
   const c = String(credit || "").trim();
-  const host = hostFromUrl(sourceUrl) || hostFromUrl(imageUrl);
+  const host = hostFromUrl(sourceUrl);
   if(c && host) return `© ${c} / ${host}`;
   if(c) return `© ${c}`;
   if(host) return host;
@@ -251,10 +244,24 @@ async function main(){
     const photosEnriched = await loadAircraftPhotosEnriched();
     const photoE = photosEnriched ? (photosEnriched[id] || null) : null;
     
-    const photoSource = asText(photoE?.source_url) || asText(d.photo_source_url) || asText(d.photo) || "";
-    const photoImg = asText(photoE?.thumb_url) || asText(d.photo_image_url) || "";
-    const photoCredit = asText(d.photo_credit) || "";
-    const copyright = photoCopyright(photoCredit, photoSource, photoImg);
+    /* WICHTIG:
+       zuerst aircraft_photos_enriched.json,
+       nur wenn dort wirklich nichts vorhanden ist, auf andere Felder zurückfallen
+    */
+    const photoImg =
+      asText(photoE?.thumb_url) ||
+      asText(photoE?.image_url);
+    
+    const photoSource =
+      asText(photoE?.source_url) ||
+      asText(photoE?.url) ||
+      photoImg;
+    
+    const photoCredit =
+      asText(d.photo_credit) ||
+      "";
+    
+    const copyright = photoCopyright(photoCredit, photoSource);
     
     const heroPhotoHtml = photoImg
       ? `
