@@ -3,7 +3,7 @@
    ======================================== */
 
 body.publicPage{
-  --maxw: 980px;
+  --maxw: 1100px;
 }
 
 .publicWrap{
@@ -29,93 +29,46 @@ body.publicPage{
   gap: 18px;
 }
 
+.publicHeroCard{
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:16px;
+  padding:16px;
+  background:#fff;
+}
+
 .publicHero{
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 22px;
-  align-items: start;
+  display:grid;
+  grid-template-columns: minmax(320px, 430px) minmax(420px, 1fr);
+  gap:22px;
+  align-items:start;
 }
 
 .publicPhotoBox{
-  max-width: 420px;
+  max-width:430px;
 }
 
 .publicPhoto{
-  display: inline-block;
-  text-decoration: none;
+  display:inline-block;
+  text-decoration:none;
 }
 
 .publicPhoto img{
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  display: block;
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  display:block;
 }
 
 .publicCredit{
-  margin-top: 6px;
-  font-size: 12px;
-  color: rgba(0,0,0,0.6);
+  margin-top:8px;
+  font-size:12px;
+  color:rgba(0,0,0,.65);
 }
 
-.publicData{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px 22px;
-}
-
-.publicDataItem{
-  min-width: 0;
-}
-
-.publicDataLabel{
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #777;
-  margin-bottom: 3px;
-}
-
-.publicDataValue{
-  font-size: 15px;
-  line-height: 1.35;
-  word-break: break-word;
-}
-
-.publicDataValue.mono{
-  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
-  word-break: normal;
-}
-
-.publicSectionTitle{
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.publicNote{
-  color: #666;
-  font-size: 13px;
-}
-
-@media (max-width: 860px){
-  .publicHero{
-    grid-template-columns: 1fr;
-  }
-
-  .publicPhotoBox{
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 640px){
-  .publicData{
-    grid-template-columns: 1fr;
-  }
+.publicInfo{
+  min-width:0;
 }
 
 .publicAirlineLogo{
@@ -127,19 +80,152 @@ body.publicPage{
 }
 
 .publicAirline{
-  font-size:1.1rem;
+  font-size:1.05rem;
   font-weight:700;
   margin-bottom:4px;
 }
 
 .publicType{
-  font-size:1.7rem;
+  font-size:1.9rem;
   font-weight:800;
-  line-height:1.1;
+  line-height:1.08;
 }
 
 .publicReg{
-  margin-top:4px;
-  font-size:1rem;
+  margin-top:6px;
+  font-size:1.05rem;
   font-weight:600;
+}
+
+.publicSectionTitle{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#777;
+  margin-bottom:10px;
+}
+
+.publicData{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px 22px;
+  margin-top:14px;
+}
+
+.publicDataItem{
+  min-width:0;
+}
+
+.publicDataLabel{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:#777;
+  margin-bottom:3px;
+}
+
+.publicDataValue{
+  font-size:15px;
+  line-height:1.35;
+  word-break:break-word;
+}
+
+.publicDataValue.mono{
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+  word-break:normal;
+}
+
+.publicBlock{
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:16px;
+  padding:16px;
+  background:#fff;
+}
+
+.publicNote{
+  color:#666;
+  font-size:13px;
+}
+
+.lb{
+  position:fixed;
+  inset:0;
+  display:none;
+  z-index:1000;
+}
+
+.lb.on{
+  display:block;
+}
+
+.lb-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.72);
+}
+
+.lb-panel{
+  position:relative;
+  z-index:1;
+  width:min(96vw, 1200px);
+  max-height:92vh;
+  margin:3vh auto;
+  background:#fff;
+  border-radius:16px;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.lb-close{
+  align-self:flex-end;
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:999px;
+  width:40px;
+  height:40px;
+  font-size:24px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.lb-img{
+  display:block;
+  max-width:100%;
+  max-height:72vh;
+  margin:0 auto;
+}
+
+.lb-actions{
+  display:flex;
+  justify-content:center;
+}
+
+.lb-open{
+  text-decoration:none;
+}
+
+.noscroll{
+  overflow:hidden;
+}
+
+@media (max-width: 900px){
+  .publicHero{
+    grid-template-columns:1fr;
+  }
+
+  .publicPhotoBox{
+    max-width:100%;
+  }
+}
+
+@media (max-width: 640px){
+  .publicData{
+    grid-template-columns:1fr;
+  }
+
+  .publicType{
+    font-size:1.55rem;
+  }
 }
