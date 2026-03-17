@@ -271,6 +271,12 @@ async function main(){
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
     const reg = asText(d.registration) || asText(d.aircraft?.registration);
     const aircraftName = asText(d.aircraft_name);
+    const livery = asText(d.livery_name) || asText(d.livery?.code);
+    const manufacturer = asText(d.manufacturer) || asText(d.model?.manufacturer);
+    const scale = asText(d.model?.scale || d.scale);
+    const material = asText(d.material) || asText(d.model?.material);
+    const extraInfo = asText(d.extra_info);
+    const flown = !!(d.flown ?? d.model?.flown);
 
     const titleMain = [
       typ,
@@ -306,13 +312,6 @@ async function main(){
     `;
 
     document.getElementById("subtitle").textContent = livery || "";
-
-    const livery = asText(d.livery_name) || asText(d.livery?.code);
-    const manufacturer = asText(d.manufacturer) || asText(d.model?.manufacturer);
-    const scale = asText(d.model?.scale || d.scale);
-    const material = asText(d.material) || asText(d.model?.material);
-    const extraInfo = asText(d.extra_info);
-    const flown = !!(d.flown ?? d.model?.flown);
     
     const publicDataHtml = `
       <div>
