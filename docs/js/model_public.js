@@ -74,6 +74,16 @@ function asText(v){
   return (v ?? "").toString().trim();
 }
 
+function formatNumberDE(v, digits = 2){
+  const s = String(v ?? "").trim();
+  if(!s) return "";
+
+  const n = Number(s.replace(",", "."));
+  if(!isFinite(n)) return s;
+
+  return n.toFixed(digits).replace(".", ",");
+}
+
 function renderV8Groups(obj){
   if(!obj || typeof obj !== "object") return "";
 
@@ -90,7 +100,7 @@ function renderV8Groups(obj){
   function translateWingtip(v){
     const x = String(v ?? "").trim().toUpperCase();
     const map = { "NONE":"Keine", "SL":"Sharklets", "WL":"Winglets", "RW":"Raked Wingtips" };
-    return map[x] ? `${map[x]} (${x})` : esc(v);
+    return map[x] || esc(v);
   }
 
   function translateRumpf(v){
@@ -159,9 +169,9 @@ function renderV8Groups(obj){
     {
       title: "Abmessungen",
       rows: [
-        ["Länge (m)", val("Length")],
-        ["Spannweite (m)", val("Wingspan")],
-        ["Höhe (m)", val("Height")]
+        ["Länge (m)", formatNumberDE(obj["Length"], 2)],
+        ["Spannweite (m)", formatNumberDE(obj["Wingspan"], 2)],
+        ["Höhe (m)", formatNumberDE(obj["Height"], 2)],
       ]
     },
 
@@ -219,6 +229,17 @@ function renderV8Groups(obj){
     .join("");
 
   return rendered ? `<div class="masonry">${rendered}</div>` : "";
+}
+
+function calcModelSizeCm(realMeters, scale){
+  const m = Number(String(realMeters ?? "").replace(",", "."));
+  if(!isFinite(m) || !scale) return "";
+
+  const s = String(scale).replace("1:", "");
+  const n = Number(s);
+  if(!isFinite(n) || n <= 0) return "";
+
+  return (m * 100 / n).toFixed(1).replace(".", ",");
 }
 
 // ---------- Lightbox ----------
@@ -345,6 +366,12 @@ async function main(){
       ? photoCopyright(photoCredit, photoSource, photoImg)
       : "";
 
+    const scale = asText(d.model?.scale || d.scale);
+    const manufacturer = asText(d.model?.manufacturer || d.manufacturer);
+    
+    const lengthCm = calcModelSizeCm(d.aircraft_full_v8?.Length, scale);
+    const wingspanCm = calcModelSizeCm(d.aircraft_full_v8?.Wingspan, scale);
+    
     const aircraftPhotoHtml = photoImg
       ? `<div class="air-photo">
            <img class="air-thumb"
@@ -366,19 +393,21 @@ async function main(){
     const aircraftBlock = `
       <div class="card">
         <div class="k">Flugzeug</div>
-
+    
         <div class="air-layout">
           ${aircraftPhotoHtml ? `
             <div class="air-photo-box">
               ${aircraftPhotoHtml}
             </div>
           ` : ""}
-
+    
           <div class="air-data grid">
-            ${row("Flugzeugtyp", typ)}
             ${row("Registrierung", reg)}
             ${row("Taufname", d.aircraft_name || "")}
-            ${row("Zusatzinfo", d.extra_info || "")}
+            ${row("Hersteller", manufacturer)}
+            ${row("Massstab", scale)}
+            ${row("Länge (Modell)", lengthCm ? `${lengthCm} cm` : "")}
+            ${row("Spannweite (Modell)", wingspanCm ? `${wingspanCm} cm` : "")}
             ${(d.flown ?? d.model?.flown)
               ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
               : ""}
