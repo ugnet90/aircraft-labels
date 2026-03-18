@@ -366,12 +366,12 @@ td:last-child{
 .kvInlineRow{
   display:flex;
   align-items:baseline;
-  gap:2px;
+  gap:0px;
 }
 
 .kvInlineLabel{
-  width:120px;
-  flex:0 0 120px;
+  width:100px;
+  flex:0 0 100px;
   color:#8a8a8a;
   font-size:14px;
   font-family:inherit;
@@ -446,8 +446,8 @@ td:last-child{
 
 @media (max-width: 760px){
   .modelInline .kvInlineLabel{
-    width:110px;
-    flex:0 0 110px;
+    width:100px;
+    flex:0 0 100px;
   }
 
   .modelInline .kvInlineRow{
