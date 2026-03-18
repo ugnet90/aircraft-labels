@@ -360,9 +360,9 @@ async function main(){
         <div class="k">Sammelmodell</div>
         <div class="publicModelRow">
           ${row("Hersteller", manufacturer)}
-          ${row("Massstab", scale)}
-          ${row("Länge (Modell)", lengthCm ? `${lengthCm} cm` : "")}
-          ${row("Spannweite (Modell)", wingspanCm ? `${wingspanCm} cm` : "")}
+          ${row("Maßstab", scale)}
+          ${row("Länge", lengthCm ? `${lengthCm} cm` : "")}
+          ${row("Spannweite", wingspanCm ? `${wingspanCm} cm` : "")}
         </div>
       </div>
     `;
