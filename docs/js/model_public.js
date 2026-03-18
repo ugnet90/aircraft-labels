@@ -62,12 +62,22 @@ function esc(s){
 
 function rowHtml(k, vHtml){
   if(vHtml === undefined || vHtml === null || vHtml === "") return "";
-  return `<div><div class="k">${esc(k)}</div><div class="v">${vHtml}</div></div>`;
+  return `
+    <div class="kvRow">
+      <div class="kvLabel">${esc(k)}</div>
+      <div class="kvValue">${vHtml}</div>
+    </div>
+  `;
 }
 
-function row(k,v){
+function row(k, v){
   if(v === undefined || v === null || v === "") return "";
-  return `<div><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`;
+  return `
+    <div class="kvRow">
+      <div class="kvLabel">${esc(k)}</div>
+      <div class="kvValue">${esc(v)}</div>
+    </div>
+  `;
 }
 
 function asText(v){
@@ -120,9 +130,9 @@ function renderV8Groups(obj){
   function groupRow(label, valueHtml){
     if(!valueHtml) return "";
     return `
-      <div class="publicKv">
-        <div class="publicKvLabel">${esc(label)}</div>
-        <div class="publicKvValue">${valueHtml}</div>
+      <div class="kvRow">
+        <div class="kvLabel">${esc(label)}</div>
+        <div class="kvValue">${valueHtml}</div>
       </div>
     `;
   }
@@ -357,28 +367,39 @@ async function main(){
       </div>
     `;
     
-    const aircraftPhotoCard = `
-      <div class="card">
-        <div class="k">Original-Flugzeug</div>
-        <div class="air-photo-only" style="margin-top:10px">
-          ${aircraftPhotoHtml || ""}
-        </div>
-      </div>
-    `;
-    
     const liveryName = (d.livery_full?.Livery_Name || "").trim();
     const liveryType = (d.livery_full?.Livery_Type || "").trim();
     const liveryNotes = (d.livery_full?.Notes || "").trim();
     
     const hasLivery = !!liveryName || !!liveryType || !!liveryNotes || !!(d.livery_note || "");
-    const liveryBlock = !hasLivery ? "" : `
+    
+    const aircraftBlock = `
       <div class="card">
-        <div class="k">Bemalung</div>
-        <div class="publicLiveryGrid" style="margin-top:8px">
-          ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
-          ${liveryName ? row("Bezeichnung", liveryName) : ""}
-          ${liveryType ? row("Typ", liveryType) : ""}
-          ${liveryNotes ? row("Erläuterung", liveryNotes) : ""}
+        <div class="k">Original-Flugzeug</div>
+    
+        <div class="publicAircraftTop">
+          <section class="publicSubgroup">
+            <h3 class="publicGroupTitle">Foto</h3>
+            <div class="air-photo-only">
+              ${aircraftPhotoHtml || ""}
+            </div>
+          </section>
+    
+          <section class="publicSubgroup">
+            <h3 class="publicGroupTitle">Bemalung</h3>
+            ${
+              hasLivery
+                ? `
+                  <div class="publicLiveryRows">
+                    ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
+                    ${liveryName ? row("Bezeichnung", liveryName) : ""}
+                    ${liveryType ? row("Typ", liveryType) : ""}
+                    ${liveryNotes ? row("Erläuterung", liveryNotes) : ""}
+                  </div>
+                `
+                : `<div class="publicEmpty">Keine Angaben</div>`
+            }
+          </section>
         </div>
       </div>
     `;
@@ -394,21 +415,10 @@ async function main(){
       </div>
     ` : "";
     
-    const aircraftTopRow = `
-      <div class="publicAircraftTop">
-        <div class="publicAircraftPhotoCol">
-          ${aircraftPhotoCard}
-        </div>
-        <div class="publicAircraftLiveryCol">
-          ${liveryBlock}
-        </div>
-      </div>
-    `;
-    
     document.getElementById("content").innerHTML = `
       <div class="stack">
         <div class="stackItem">${modelBlock}</div>
-        <div class="stackItem">${aircraftTopRow}</div>
+        <div class="stackItem">${aircraftBlock}</div>
         ${techBlock ? `<div class="stackItem">${techBlock}</div>` : ""}
       </div>
     `;
