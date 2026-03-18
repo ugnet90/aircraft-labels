@@ -95,13 +95,19 @@ function renderV8Groups(obj){
 
   function translateRumpf(v){
     const x = String(v ?? "").trim();
-    const map = { "SingleAisle":"Schmalrumpf (Single Aisle)", "TwinAisle":"Großraum (Twin Aisle)" };
+    const map = {
+      "SingleAisle":"Schmalrumpf (Single Aisle)",
+      "TwinAisle":"Großraum (Twin Aisle)"
+    };
     return map[x] || esc(x);
   }
 
   function translateRole(v){
     const x = String(v ?? "").trim().toUpperCase();
-    const map = { "PAX":"Passagierflugzeug (PAX)", "CARGO":"Frachtflugzeug (Cargo)" };
+    const map = {
+      "PAX":"Passagierflugzeug (PAX)",
+      "CARGO":"Frachtflugzeug (Cargo)"
+    };
     return map[x] || esc(v);
   }
 
@@ -139,47 +145,51 @@ function renderV8Groups(obj){
   }
 
   const groups = [
+    // 1. Codes
     {
       title: "Codes",
       rows: [
         ["ICAO-Typcode", val("ICAO")],
         ["IATA-Typcode", val("IATA")],
-        ["Wikipedia", cellWiki(obj["Wiki"])],
+        ["Wikipedia", cellWiki(obj["Wiki"])]
       ]
     },
-    {
-      title: "Betrieb",
-      rows: [
-        ["Rolle", translateRole(obj["Role"])],
-        ["Segment", val("MarketSegment")],
-        ["Rumpf (Kategorie)", translateRumpf(obj["Rumpf"])],
-        ["Wingtip / Winglets / Sharklets", translateWingtip(obj["Wingtip"])],
-        ["Erstflug", val("Erstflug")],
-        ["Status", val("Status")],
-        ["Antrieb", val("Antrieb")],
-        ["Triebwerke", val("Triebwerke")],
-        ["Reichweite (Kategorie)", val("Reichweite")],
-        ["Passagiere", val("Passengers")],
-      ]
-    },
+
+    // 2. Abmessungen
     {
       title: "Abmessungen",
       rows: [
         ["Länge (m)", val("Length")],
         ["Spannweite (m)", val("Wingspan")],
-        ["Höhe (m)", val("Height")],
+        ["Höhe (m)", val("Height")]
       ]
     },
+
+    // 3. Betrieb
+    {
+      title: "Betrieb",
+      rows: [
+        ["Rolle", translateRole(obj["Role"])],
+        ["Segment", val("MarketSegment")],
+        ["Rumpf", translateRumpf(obj["Rumpf"])],
+        ["Wingtip", translateWingtip(obj["Wingtip"])],
+        ["Erstflug", val("Erstflug")],
+        ["Status", val("Status")],
+        ["Antrieb", val("Antrieb")],
+        ["Triebwerke", val("Triebwerke")],
+        ["Reichweite", val("Reichweite")],
+        ["Passagiere", val("Passengers")]
+      ]
+    },
+
+    // 4. Typ
     {
       title: "Typ",
       rows: [
         ["Flugzeugtyp", val("Typ_anzeige")],
         ["Hersteller", val("Hersteller")],
         ["Baureihe", val("Baureihe")],
-        ["Unterserie", val("Unterserie")],
-        ["Marketingname", val("Marketingname")],
-        ["Alternative Bezeichnungen", normListHtml(obj["Alternate_designations"])],
-        ["Übergeordneter Typ (ID)", val("parent_aircraft_id")],
+        ["Unterserie", val("Unterserie")]
       ]
     }
   ];
@@ -193,7 +203,9 @@ function renderV8Groups(obj){
         })
         .filter(Boolean)
         .join("");
+
       if(!body) return "";
+
       return `
         <div class="card">
           <div class="k">${esc(g.title)}</div>
