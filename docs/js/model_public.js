@@ -87,16 +87,6 @@ function formatNumberDE(v, digits = 2){
 function renderV8Groups(obj){
   if(!obj || typeof obj !== "object") return "";
 
-  function normListHtml(v){
-    const s = String(v ?? "").trim();
-    if(!s) return "";
-    return s
-      .split(/[|,]/g)
-      .map(x => x.trim())
-      .filter(Boolean)
-      .join("<br>");
-  }
-
   function translateWingtip(v){
     const x = String(v ?? "").trim().toUpperCase();
     const map = { "NONE":"Keine", "SL":"Sharklets", "WL":"Winglets", "RW":"Raked Wingtips" };
@@ -124,8 +114,7 @@ function renderV8Groups(obj){
   function cellWiki(url){
     const u = String(url ?? "").trim();
     if(!u) return "";
-    const safe = esc(u);
-    return `<a href="${safe}" target="_blank" rel="noopener">Wikipedia</a>`;
+    return `<a href="${esc(u)}" target="_blank" rel="noopener">Wikipedia</a>`;
   }
 
   function rowT(label, valueHtml){
@@ -143,7 +132,6 @@ function renderV8Groups(obj){
 
     const cleanLabel = m[1].trim();
     const unit = m[2].trim();
-
     return [cleanLabel, `${rawValue} ${esc(unit)}`];
   }
 
@@ -155,17 +143,14 @@ function renderV8Groups(obj){
   }
 
   const groups = [
-    // 1. Abmessungen
     {
       title: "Abmessungen",
       rows: [
         ["Länge (m)", formatNumberDE(obj["Length"], 2)],
         ["Spannweite (m)", formatNumberDE(obj["Wingspan"], 2)],
-        ["Höhe (m)", formatNumberDE(obj["Height"], 2)],
+        ["Höhe (m)", formatNumberDE(obj["Height"], 2)]
       ]
     },
-
-    // 2. Betrieb
     {
       title: "Betrieb",
       rows: [
@@ -181,8 +166,6 @@ function renderV8Groups(obj){
         ["Passagiere", val("Passengers")]
       ]
     },
-
-    // 3. Typ
     {
       title: "Typ",
       rows: [
@@ -197,29 +180,26 @@ function renderV8Groups(obj){
     }
   ];
 
-  const rendered = groups
-    .map(g => {
-      const body = g.rows
-        .map(([label, value]) => {
-          const [nl, nv] = normalizeUnit(label, value);
-          return rowT(nl, nv);
-        })
-        .filter(Boolean)
-        .join("");
+  const rendered = groups.map(g => {
+    const body = g.rows
+      .map(([label, value]) => {
+        const [nl, nv] = normalizeUnit(label, value);
+        return rowT(nl, nv);
+      })
+      .filter(Boolean)
+      .join("");
 
-      if(!body) return "";
+    if(!body) return "";
 
-      return `
-        <div class="card">
-          <div class="k">${esc(g.title)}</div>
-          <div class="v" style="margin-top:8px">
-            <table>${body}</table>
-          </div>
+    return `
+      <div class="card">
+        <div class="k">${esc(g.title)}</div>
+        <div class="v" style="margin-top:8px">
+          <table>${body}</table>
         </div>
-      `;
-    })
-    .filter(Boolean)
-    .join("");
+      </div>
+    `;
+  }).join("");
 
   return rendered ? `<div class="masonry">${rendered}</div>` : "";
 }
@@ -383,25 +363,6 @@ async function main(){
             </a>${copyright ? `<div class="air-credit">${esc(copyright)}</div>` : ``}`
           : "");
 
-    const aircraftBlock = `
-      <div class="card">
-        <div class="k">Flugzeug</div>
-    
-        <div class="air-layout">
-          ${aircraftPhotoHtml ? `
-            <div class="air-photo-box">
-              ${aircraftPhotoHtml}
-            </div>
-          ` : ""}
-    
-          <div class="air-data grid">
-            ${row("Registrierung", reg)}
-            ${row("Taufname", d.aircraft_name || "")}
-          </div>
-        </div>
-      </div>
-    `;
-
     const modelBlock = `
       <div class="card">
         <div class="k">Sammelmodell</div>
@@ -417,11 +378,30 @@ async function main(){
       </div>
     `;
     
+    const aircraftPhotoCard = `
+      <div class="card">
+        <div class="k">Original-Flugzeug</div>
+    
+        <div class="air-layout" style="margin-top:10px">
+          ${aircraftPhotoHtml ? `
+            <div class="air-photo-box">
+              ${aircraftPhotoHtml}
+            </div>
+          ` : ""}
+    
+          <div class="air-data grid">
+            ${row("Registrierung", reg)}
+            ${row("Taufname", d.aircraft_name || "")}
+          </div>
+        </div>
+      </div>
+    `;
+    
     const liveryName = (d.livery_full?.Livery_Name || "").trim();
     const liveryType = (d.livery_full?.Livery_Type || "").trim();
     const liveryNotes = (d.livery_full?.Notes || "").trim();
-
-    const hasLivery = !!liveryName || !!liveryType || !!liveryNotes || !!livery || !!(d.livery_note || "");
+    
+    const hasLivery = !!liveryName || !!liveryType || !!liveryNotes || !!(d.livery_note || "");
     const liveryBlock = !hasLivery ? "" : `
       <div class="card">
         <div class="k">Bemalung</div>
@@ -433,25 +413,36 @@ async function main(){
         </div>
       </div>
     `;
-
+    
     const v8Table = renderV8Groups(d.aircraft_full_v8);
-
-    const v8Block = v8Table ? `
+    
+    const techBlock = v8Table ? `
       <div class="card">
-        <div class="k">Flugzeugdaten</div>
+        <div class="k">Technische Daten</div>
         <div style="margin-top:10px">${v8Table}</div>
       </div>
     ` : "";
-
-    const headBlock = `<div class="sectionGrid">${aircraftBlock}${modelBlock}</div>`;
-    const tailBlocks = [liveryBlock, v8Block].filter(x => x && String(x).trim() !== "");
+    
+    const aircraftTopRow = `
+      <div class="publicTwoCols">
+        ${aircraftPhotoCard}
+        ${liveryBlock}
+      </div>
+    `;
+    
+    const aircraftSection = `
+      <div class="stack">
+        <div class="stackItem">${aircraftTopRow}</div>
+        ${techBlock ? `<div class="stackItem">${techBlock}</div>` : ""}
+      </div>
+    `;
     
     document.getElementById("content").innerHTML =
       `<div class="stack">` +
-        `<div class="stackItem">${headBlock}</div>` +
-        tailBlocks.map(x => `<div class="stackItem">${x}</div>`).join("") +
+        `<div class="stackItem">${modelBlock}</div>` +
+        `<div class="stackItem">${aircraftSection}</div>` +
       `</div>`;
-
+    
   }catch(e){
     document.getElementById("content").innerHTML =
       `<div class="err"><b>Fehler:</b> Konnte <span class="mono">${esc(url)}</span> nicht laden. (${esc(e.message)})</div>`;
