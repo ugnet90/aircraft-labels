@@ -155,17 +155,7 @@ function renderV8Groups(obj){
   }
 
   const groups = [
-    // 1. Codes
-    {
-      title: "Codes",
-      rows: [
-        ["ICAO-Typcode", val("ICAO")],
-        ["IATA-Typcode", val("IATA")],
-        ["Wikipedia", cellWiki(obj["Wiki"])]
-      ]
-    },
-
-    // 2. Abmessungen
+    // 1. Abmessungen
     {
       title: "Abmessungen",
       rows: [
@@ -175,7 +165,7 @@ function renderV8Groups(obj){
       ]
     },
 
-    // 3. Betrieb
+    // 2. Betrieb
     {
       title: "Betrieb",
       rows: [
@@ -192,14 +182,17 @@ function renderV8Groups(obj){
       ]
     },
 
-    // 4. Typ
+    // 3. Typ
     {
       title: "Typ",
       rows: [
         ["Flugzeugtyp", val("Typ_anzeige")],
         ["Hersteller", val("Hersteller")],
         ["Baureihe", val("Baureihe")],
-        ["Unterserie", val("Unterserie")]
+        ["Unterserie", val("Unterserie")],
+        ["ICAO-Typcode", val("ICAO")],
+        ["IATA-Typcode", val("IATA")],
+        ["Wikipedia", cellWiki(obj["Wiki"])]
       ]
     }
   ];
@@ -404,18 +397,26 @@ async function main(){
           <div class="air-data grid">
             ${row("Registrierung", reg)}
             ${row("Taufname", d.aircraft_name || "")}
-            ${row("Hersteller", manufacturer)}
-            ${row("Massstab", scale)}
-            ${row("Länge (Modell)", lengthCm ? `${lengthCm} cm` : "")}
-            ${row("Spannweite (Modell)", wingspanCm ? `${wingspanCm} cm` : "")}
-            ${(d.flown ?? d.model?.flown)
-              ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
-              : ""}
           </div>
         </div>
       </div>
     `;
 
+    const modelBlock = `
+      <div class="card">
+        <div class="k">Sammelmodell</div>
+        <div class="sectionGrid" style="margin-top:8px">
+          ${row("Hersteller", manufacturer)}
+          ${row("Massstab", scale)}
+          ${row("Länge (Modell)", lengthCm ? `${lengthCm} cm` : "")}
+          ${row("Spannweite (Modell)", wingspanCm ? `${wingspanCm} cm` : "")}
+          ${(d.flown ?? d.model?.flown)
+            ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
+            : ""}
+        </div>
+      </div>
+    `;
+    
     const liveryName = (d.livery_full?.Livery_Name || "").trim();
     const liveryType = (d.livery_full?.Livery_Type || "").trim();
     const liveryNotes = (d.livery_full?.Notes || "").trim();
@@ -425,7 +426,6 @@ async function main(){
       <div class="card">
         <div class="k">Bemalung</div>
         <div class="sectionGrid" style="margin-top:8px">
-          ${livery ? row("Code", livery) : ""}
           ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
           ${liveryName ? row("Bezeichnung", liveryName) : ""}
           ${liveryType ? row("Typ", liveryType) : ""}
@@ -443,9 +443,9 @@ async function main(){
       </div>
     ` : "";
 
-    const headBlock = `<div class="sectionGrid">${aircraftBlock}</div>`;
+    const headBlock = `<div class="sectionGrid">${aircraftBlock}${modelBlock}</div>`;
     const tailBlocks = [liveryBlock, v8Block].filter(x => x && String(x).trim() !== "");
-
+    
     document.getElementById("content").innerHTML =
       `<div class="stack">` +
         `<div class="stackItem">${headBlock}</div>` +
