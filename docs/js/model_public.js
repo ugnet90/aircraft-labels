@@ -336,6 +336,7 @@ async function main(){
     
     const lengthCm = calcModelSizeCm(d.aircraft_full_v8?.Length, scale);
     const wingspanCm = calcModelSizeCm(d.aircraft_full_v8?.Wingspan, scale);
+    const heightCm = calcModelSizeCm(d.aircraft_full_v8?.Height, scale);
     
     const aircraftPhotoHtml = photoImg
       ? `<div class="air-photo">
@@ -363,6 +364,7 @@ async function main(){
           ${row("Maßstab", scale)}
           ${row("Länge", lengthCm ? `${lengthCm} cm` : "")}
           ${row("Spannweite", wingspanCm ? `${wingspanCm} cm` : "")}
+          ${row("Höhe", heightCm ? `${heightCm} cm` : "")}
         </div>
       </div>
     `;
