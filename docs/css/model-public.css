@@ -366,7 +366,7 @@ td:last-child{
 .kvInlineRow{
   display:flex;
   align-items:baseline;
-  gap:4px;
+  gap:2px;
 }
 
 .kvInlineLabel{
