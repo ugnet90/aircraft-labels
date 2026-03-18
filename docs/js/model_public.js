@@ -63,9 +63,9 @@ function esc(s){
 function rowHtml(k, vHtml){
   if(vHtml === undefined || vHtml === null || vHtml === "") return "";
   return `
-    <div class="kvRow">
-      <div class="kvLabel">${esc(k)}</div>
-      <div class="kvValue">${vHtml}</div>
+    <div class="kvInlineRow">
+      <span class="kvInlineLabel">${esc(k)}:</span>
+      <span class="kvInlineValue">${vHtml}</span>
     </div>
   `;
 }
@@ -73,9 +73,9 @@ function rowHtml(k, vHtml){
 function row(k, v){
   if(v === undefined || v === null || v === "") return "";
   return `
-    <div class="kvRow">
-      <div class="kvLabel">${esc(k)}</div>
-      <div class="kvValue">${esc(v)}</div>
+    <div class="kvInlineRow">
+      <span class="kvInlineLabel">${esc(k)}:</span>
+      <span class="kvInlineValue">${esc(v)}</span>
     </div>
   `;
 }
@@ -130,9 +130,9 @@ function renderV8Groups(obj){
   function groupRow(label, valueHtml){
     if(!valueHtml) return "";
     return `
-      <div class="kvRow">
-        <div class="kvLabel">${esc(label)}</div>
-        <div class="kvValue">${valueHtml}</div>
+      <div class="kvInlineRow">
+        <span class="kvInlineLabel">${esc(label)}:</span>
+        <span class="kvInlineValue">${valueHtml}</span>
       </div>
     `;
   }
@@ -394,7 +394,12 @@ async function main(){
                     ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
                     ${liveryName ? row("Bezeichnung", liveryName) : ""}
                     ${liveryType ? row("Typ", liveryType) : ""}
-                    ${liveryNotes ? row("Erläuterung", liveryNotes) : ""}
+                    ${liveryNotes ? `
+                      <div class="kvInlineRow kvInlineRow--stack">
+                        <span class="kvInlineLabel">Erläuterung:</span>
+                        <span class="kvInlineValue">${esc(liveryNotes)}</span>
+                      </div>
+                    ` : ""}
                   </div>
                 `
                 : `<div class="publicEmpty">Keine Angaben</div>`
