@@ -360,11 +360,11 @@ async function main(){
       <div class="card">
         <div class="k">Sammelmodell</div>
         <div class="publicModelRow">
-          ${row("Hersteller", manufacturer)}
-          ${row("Maßstab", scale)}
-          ${row("Länge", lengthCm ? `${lengthCm} cm` : "")}
-          ${row("Spannweite", wingspanCm ? `${wingspanCm} cm` : "")}
-          ${row("Höhe", heightCm ? `${heightCm} cm` : "")}
+          <div class="modelInline">${row("Hersteller", manufacturer)}</div>
+          <div class="modelInline">${row("Maßstab", scale)}</div>
+          <div class="modelInline">${row("Länge", lengthCm ? `${lengthCm} cm` : "")}</div>
+          <div class="modelInline">${row("Spannweite", wingspanCm ? `${wingspanCm} cm` : "")}</div>
+          <div class="modelInline">${row("Höhe", heightCm ? `${heightCm} cm` : "")}</div>
         </div>
       </div>
     `;
