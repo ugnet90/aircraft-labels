@@ -303,3 +303,15 @@ td:last-child{
     grid-template-columns: 1fr;
   }
 }
+
+.publicTwoCols{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:18px;
+}
+
+@media (max-width: 900px){
+  .publicTwoCols{
+    grid-template-columns: 1fr;
+  }
+}
