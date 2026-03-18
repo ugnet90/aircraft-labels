@@ -366,12 +366,12 @@ td:last-child{
 .kvInlineRow{
   display:flex;
   align-items:baseline;
-  gap:6px;
+  gap:4px;
 }
 
 .kvInlineLabel{
-  width:130px;
-  flex:0 0 130px;
+  width:120px;
+  flex:0 0 120px;
   color:#8a8a8a;
   font-size:14px;
   font-family:inherit;
