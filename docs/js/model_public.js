@@ -117,91 +117,73 @@ function renderV8Groups(obj){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">Wikipedia</a>`;
   }
 
-  function rowT(label, valueHtml){
+  function groupRow(label, valueHtml){
     if(!valueHtml) return "";
-    return `<tr><td>${esc(label)}</td><td>${valueHtml}</td></tr>`;
-  }
-
-  function normalizeUnit(label, valueHtml){
-    const rawLabel = String(label ?? "").trim();
-    const rawValue = String(valueHtml ?? "").trim();
-    if(!rawLabel || !rawValue) return [rawLabel, rawValue];
-
-    const m = rawLabel.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
-    if(!m) return [rawLabel, rawValue];
-
-    const cleanLabel = m[1].trim();
-    const unit = m[2].trim();
-    return [cleanLabel, `${rawValue} ${esc(unit)}`];
-  }
-
-  function val(key){
-    const v = obj[key];
-    if(v === undefined || v === null) return "";
-    const s = String(v).trim();
-    return s ? esc(s) : "";
+    return `
+      <div class="publicKv">
+        <div class="publicKvLabel">${esc(label)}</div>
+        <div class="publicKvValue">${valueHtml}</div>
+      </div>
+    `;
   }
 
   const groups = [
     {
+      title: "Typ",
+      rows: [
+        ["Flugzeugtyp", esc(String(obj["Typ_anzeige"] || "").trim())],
+        ["Hersteller", esc(String(obj["Hersteller"] || "").trim())],
+        ["Baureihe", esc(String(obj["Baureihe"] || "").trim())],
+        ["Unterserie", esc(String(obj["Unterserie"] || "").trim())],
+        ["ICAO-Typcode", esc(String(obj["ICAO"] || "").trim())],
+        ["IATA-Typcode", esc(String(obj["IATA"] || "").trim())],
+        ["Wikipedia", cellWiki(obj["Wiki"])]
+      ]
+    },
+    {
       title: "Abmessungen",
       rows: [
-        ["Länge (m)", formatNumberDE(obj["Length"], 2)],
-        ["Spannweite (m)", formatNumberDE(obj["Wingspan"], 2)],
-        ["Höhe (m)", formatNumberDE(obj["Height"], 2)]
+        ["Länge", formatNumberDE(obj["Length"], 2) ? `${formatNumberDE(obj["Length"], 2)} m` : ""],
+        ["Spannweite", formatNumberDE(obj["Wingspan"], 2) ? `${formatNumberDE(obj["Wingspan"], 2)} m` : ""],
+        ["Höhe", formatNumberDE(obj["Height"], 2) ? `${formatNumberDE(obj["Height"], 2)} m` : ""]
       ]
     },
     {
       title: "Betrieb",
       rows: [
         ["Rolle", translateRole(obj["Role"])],
-        ["Segment", val("MarketSegment")],
+        ["Segment", esc(String(obj["MarketSegment"] || "").trim())],
         ["Rumpf", translateRumpf(obj["Rumpf"])],
         ["Wingtip", translateWingtip(obj["Wingtip"])],
-        ["Erstflug", val("Erstflug")],
-        ["Status", val("Status")],
-        ["Antrieb", val("Antrieb")],
-        ["Triebwerke", val("Triebwerke")],
-        ["Reichweite", val("Reichweite")],
-        ["Passagiere", val("Passengers")]
-      ]
-    },
-    {
-      title: "Typ",
-      rows: [
-        ["Flugzeugtyp", val("Typ_anzeige")],
-        ["Hersteller", val("Hersteller")],
-        ["Baureihe", val("Baureihe")],
-        ["Unterserie", val("Unterserie")],
-        ["ICAO-Typcode", val("ICAO")],
-        ["IATA-Typcode", val("IATA")],
-        ["Wikipedia", cellWiki(obj["Wiki"])]
+        ["Erstflug", esc(String(obj["Erstflug"] || "").trim())],
+        ["Status", esc(String(obj["Status"] || "").trim())],
+        ["Antrieb", esc(String(obj["Antrieb"] || "").trim())],
+        ["Triebwerke", esc(String(obj["Triebwerke"] || "").trim())],
+        ["Reichweite", esc(String(obj["Reichweite"] || "").trim())],
+        ["Passagiere", esc(String(obj["Passengers"] || "").trim())]
       ]
     }
   ];
 
-  const rendered = groups.map(g => {
-    const body = g.rows
-      .map(([label, value]) => {
-        const [nl, nv] = normalizeUnit(label, value);
-        return rowT(nl, nv);
-      })
+  const html = groups.map(group => {
+    const rows = group.rows
+      .map(([label, value]) => groupRow(label, value))
       .filter(Boolean)
       .join("");
 
-    if(!body) return "";
+    if(!rows) return "";
 
     return `
-      <div class="card">
-        <div class="k">${esc(g.title)}</div>
-        <div class="v" style="margin-top:8px">
-          <table>${body}</table>
+      <section class="publicGroup">
+        <h3 class="publicGroupTitle">${esc(group.title)}</h3>
+        <div class="publicGroupGrid">
+          ${rows}
         </div>
-      </div>
+      </section>
     `;
   }).join("");
 
-  return rendered ? `<div class="masonry">${rendered}</div>` : "";
+  return html;
 }
 
 function calcModelSizeCm(realMeters, scale){
@@ -366,14 +348,11 @@ async function main(){
     const modelBlock = `
       <div class="card">
         <div class="k">Sammelmodell</div>
-        <div class="sectionGrid" style="margin-top:8px">
+        <div class="publicModelRow">
           ${row("Hersteller", manufacturer)}
           ${row("Massstab", scale)}
           ${row("Länge (Modell)", lengthCm ? `${lengthCm} cm` : "")}
           ${row("Spannweite (Modell)", wingspanCm ? `${wingspanCm} cm` : "")}
-          ${(d.flown ?? d.model?.flown)
-            ? rowHtml("Mitgeflogen", `<span class="badge flown">✈️ ja</span>`)
-            : ""}
         </div>
       </div>
     `;
@@ -381,18 +360,8 @@ async function main(){
     const aircraftPhotoCard = `
       <div class="card">
         <div class="k">Original-Flugzeug</div>
-    
-        <div class="air-layout" style="margin-top:10px">
-          ${aircraftPhotoHtml ? `
-            <div class="air-photo-box">
-              ${aircraftPhotoHtml}
-            </div>
-          ` : ""}
-    
-          <div class="air-data grid">
-            ${row("Registrierung", reg)}
-            ${row("Taufname", d.aircraft_name || "")}
-          </div>
+        <div class="air-photo-only" style="margin-top:10px">
+          ${aircraftPhotoHtml || ""}
         </div>
       </div>
     `;
@@ -405,7 +374,7 @@ async function main(){
     const liveryBlock = !hasLivery ? "" : `
       <div class="card">
         <div class="k">Bemalung</div>
-        <div class="sectionGrid" style="margin-top:8px">
+        <div class="publicLiveryGrid" style="margin-top:8px">
           ${d.livery_note ? row("Hinweis", d.livery_note) : ""}
           ${liveryName ? row("Bezeichnung", liveryName) : ""}
           ${liveryType ? row("Typ", liveryType) : ""}
@@ -419,29 +388,30 @@ async function main(){
     const techBlock = v8Table ? `
       <div class="card">
         <div class="k">Technische Daten</div>
-        <div style="margin-top:10px">${v8Table}</div>
+        <div style="margin-top:10px">
+          ${v8Table}
+        </div>
       </div>
     ` : "";
     
     const aircraftTopRow = `
-      <div class="publicTwoCols">
-        ${aircraftPhotoCard}
-        ${liveryBlock}
+      <div class="publicAircraftTop">
+        <div class="publicAircraftPhotoCol">
+          ${aircraftPhotoCard}
+        </div>
+        <div class="publicAircraftLiveryCol">
+          ${liveryBlock}
+        </div>
       </div>
     `;
     
-    const aircraftSection = `
+    document.getElementById("content").innerHTML = `
       <div class="stack">
+        <div class="stackItem">${modelBlock}</div>
         <div class="stackItem">${aircraftTopRow}</div>
         ${techBlock ? `<div class="stackItem">${techBlock}</div>` : ""}
       </div>
     `;
-    
-    document.getElementById("content").innerHTML =
-      `<div class="stack">` +
-        `<div class="stackItem">${modelBlock}</div>` +
-        `<div class="stackItem">${aircraftSection}</div>` +
-      `</div>`;
     
   }catch(e){
     document.getElementById("content").innerHTML =
