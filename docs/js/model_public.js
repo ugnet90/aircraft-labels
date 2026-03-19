@@ -60,6 +60,88 @@ function esc(s){
   return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
 
+async function loadSameAirlineIndexIds(currentModel){
+  const res = await fetch("./index.json", { cache:"no-store" });
+  if(!res.ok) throw new Error(`index.json HTTP ${res.status}`);
+  const j = await res.json();
+
+  let items = [];
+  if(Array.isArray(j)){
+    items = j;
+  }else if(Array.isArray(j?.items)){
+    items = j.items;
+  }else if(Array.isArray(j?.index)){
+    items = j.index;
+  }else if(Array.isArray(j?.models)){
+    items = j.models;
+  }else{
+    for(const k of Object.keys(j || {})){
+      if(Array.isArray(j[k])) { items = j[k]; break; }
+    }
+  }
+
+  const currentAirlineCode = String(currentModel?.airline_code || "").trim().toUpperCase();
+  const currentAirline = String(currentModel?.airline || "").trim().toUpperCase();
+  const currentAirlineRow = String(currentModel?.airline_row || "").trim().toUpperCase();
+
+  const ids = [];
+
+  for(const it of items){
+    const id = String(it?.model_id ?? it?.id ?? "").trim();
+    if(!id) continue;
+
+    const itAirlineCode = String(it?.airline_code || "").trim().toUpperCase();
+    const itAirline = String(it?.airline || "").trim().toUpperCase();
+    const itAirlineRow = String(it?.airline_row || "").trim().toUpperCase();
+
+    let sameAirline = false;
+
+    if(currentAirlineCode && itAirlineCode){
+      sameAirline = (itAirlineCode === currentAirlineCode);
+    }else if(currentAirlineRow && itAirlineRow){
+      sameAirline = (itAirlineRow === currentAirlineRow);
+    }else if(currentAirline && itAirline){
+      sameAirline = (itAirline === currentAirline);
+    }else if(currentAirlineCode){
+      // Fallback: model_id-Präfix, z. B. AB002 -> AB
+      sameAirline = id.toUpperCase().startsWith(currentAirlineCode);
+    }
+
+    if(sameAirline){
+      ids.push(id);
+    }
+  }
+
+  return ids;
+}
+
+function buildNavHtml(prevId, nextId, pos, total){
+  const prevHref = prevId ? `model_public.html?id=${encodeURIComponent(prevId)}` : "";
+  const nextHref = nextId ? `model_public.html?id=${encodeURIComponent(nextId)}` : "";
+
+  return `
+    <div class="navWrap">
+      <a class="navBtn ${prevId ? "" : "disabled"}" ${prevId ? `href="${prevHref}"` : ""} title="Vorheriges Modell">←</a>
+      <div class="navPos">${total ? `${pos}/${total}` : ""}</div>
+      <a class="navBtn ${nextId ? "" : "disabled"}" ${nextId ? `href="${nextHref}"` : ""} title="Nächstes Modell">→</a>
+    </div>
+  `;
+}
+
+function enableArrowKeys(prevId, nextId){
+  document.addEventListener("keydown", (ev) => {
+    const t = ev.target;
+    const tag = (t && t.tagName) ? t.tagName.toLowerCase() : "";
+    if(tag === "input" || tag === "textarea" || tag === "select") return;
+
+    if(ev.key === "ArrowLeft" && prevId){
+      window.location.href = `model_public.html?id=${encodeURIComponent(prevId)}`;
+    }else if(ev.key === "ArrowRight" && nextId){
+      window.location.href = `model_public.html?id=${encodeURIComponent(nextId)}`;
+    }
+  });
+}
+
 function rowHtml(k, vHtml){
   if(vHtml === undefined || vHtml === null || vHtml === "") return "";
   return `
@@ -274,6 +356,19 @@ async function main(){
     return;
   }
 
+  let prevId = "", nextId = "", pos = 0, total = 0;
+  try{
+    const ids = await loadSameAirlineIndexIds(d);
+    const n = navNeighbors(ids, id);
+    prevId = n.prev;
+    nextId = n.next;
+    pos = n.pos;
+    total = n.total;
+    enableArrowKeys(prevId, nextId);
+  }catch(e){
+    // index.json not critical
+  }
+  
   const url = `./data/models/${encodeURIComponent(id)}.json`;
 
   try{
@@ -302,7 +397,8 @@ async function main(){
     const logoHtml = logoUrl
       ? `<img class="airlineLogo" src="${esc(logoUrl)}" alt="Logo">`
       : "";
-
+    const navHtml = (prevId || nextId) ? buildNavHtml(prevId, nextId, pos, total) : "";
+    
     document.getElementById("title").innerHTML = `
       <div class="headerWrap">
         <div class="headerLeft">
@@ -358,7 +454,13 @@ async function main(){
 
     const modelBlock = `
       <div class="card">
-        <div class="k">Sammelmodell</div>
+        <div class="k">
+            <span>Sammelmodell</span>
+            <div class="headerRight">
+              ${navHtml}
+            </div>
+
+        </div>
         <div class="publicModelRow">
           <div class="modelInline">${row("Hersteller", manufacturer)}</div>
           <div class="modelInline">${row("Maßstab", scale)}</div>
