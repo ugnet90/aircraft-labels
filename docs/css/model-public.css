@@ -470,39 +470,70 @@ td:last-child{
 
 }
 
-.headerRight{
-  margin-left:auto;
-}
-
-.publicNav{
+/* Navigation */
+.navWrap{
   display:flex;
   align-items:center;
   gap:12px;
 }
 
-.publicNavBtn{
+.navBtn{
   width:40px;
   height:40px;
-  border-radius:999px;
-  border:1px solid rgba(0,0,0,.14);
   display:flex;
   align-items:center;
   justify-content:center;
-  text-decoration:none;
-  color:inherit;
+  border-radius:50%;
+  border:1px solid rgba(0,0,0,0.12);
   background:#fff;
+  color:#333;
+  text-decoration:none;
   font-size:20px;
-  line-height:1;
+  font-weight:600;
+  transition:all .18s ease;
 }
 
-.publicNavBtn.disabled{
+.navBtn:hover{
+  background:#f4f6f8;
+  border-color:rgba(0,0,0,0.18);
+  transform:translateY(-1px);
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.navBtn.disabled{
+  opacity:0.3;
   pointer-events:none;
-  opacity:.35;
 }
 
-.publicNavPos{
-  min-width:54px;
+.navPos{
+  font-size:12px;
+  font-weight:500;
+  color:#7a8087;
+  letter-spacing:.02em;
+  min-width:52px;
   text-align:center;
-  font-size:14px;
-  color:#555;
+}
+
+.k-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.k-nav .navWrap{
+  gap:8px;
+}
+
+.k-nav .navBtn{
+  width:34px;
+  height:34px;
+  font-size:18px;
+}
+
+.k-nav .navPos{
+  font-size:11px;
+  min-width:44px;
+  text-align:center;
+  color:#666;
 }
