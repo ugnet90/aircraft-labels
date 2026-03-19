@@ -355,19 +355,6 @@ async function main(){
       `<div class="err"><b>Fehler:</b> Keine <span class="mono">id</span> in der URL. Beispiel: <span class="mono">model_public.html?id=OS016</span></div>`;
     return;
   }
-
-  let prevId = "", nextId = "", pos = 0, total = 0;
-  try{
-    const ids = await loadSameAirlineIndexIds(d);
-    const n = navNeighbors(ids, id);
-    prevId = n.prev;
-    nextId = n.next;
-    pos = n.pos;
-    total = n.total;
-    enableArrowKeys(prevId, nextId);
-  }catch(e){
-    // index.json not critical
-  }
   
   const url = `./data/models/${encodeURIComponent(id)}.json`;
 
@@ -376,6 +363,19 @@ async function main(){
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const d = await res.json();
 
+    let prevId = "", nextId = "", pos = 0, total = 0;
+    try{
+      const ids = await loadSameAirlineIndexIds(d);
+      const n = navNeighbors(ids, id);
+      prevId = n.prev;
+      nextId = n.next;
+      pos = n.pos;
+      total = n.total;
+      enableArrowKeys(prevId, nextId);
+    }catch(e){
+      // index.json not critical
+    }
+    
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
     const typ = asText(d.aircraft_type) || asText(d.aircraft?.type);
     const reg = asText(d.registration) || asText(d.aircraft?.registration);
