@@ -469,3 +469,40 @@ td:last-child{
   }
 
 }
+
+.headerRight{
+  margin-left:auto;
+}
+
+.publicNav{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.publicNavBtn{
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.14);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:inherit;
+  background:#fff;
+  font-size:20px;
+  line-height:1;
+}
+
+.publicNavBtn.disabled{
+  pointer-events:none;
+  opacity:.35;
+}
+
+.publicNavPos{
+  min-width:54px;
+  text-align:center;
+  font-size:14px;
+  color:#555;
+}
