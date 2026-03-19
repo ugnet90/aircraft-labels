@@ -454,12 +454,9 @@ async function main(){
 
     const modelBlock = `
       <div class="card">
-        <div class="k">
+        <div class="k k-nav">
             <span>Sammelmodell</span>
-            <div class="headerRight">
-              ${navHtml}
-            </div>
-
+            ${navHtml || ""}
         </div>
         <div class="publicModelRow">
           <div class="modelInline">${row("Hersteller", manufacturer)}</div>
