@@ -115,6 +115,20 @@ async function loadSameAirlineIndexIds(currentModel){
   return ids;
 }
 
+function navNeighbors(ids, currentId){
+  const cur = String(currentId || "").trim().toUpperCase();
+  const i = ids.findIndex(x => String(x || "").trim().toUpperCase() === cur);
+
+  if(i < 0) return { prev: "", next: "", pos: 0, total: ids.length };
+
+  return {
+    prev: i > 0 ? ids[i - 1] : "",
+    next: i < ids.length - 1 ? ids[i + 1] : "",
+    pos: i + 1,
+    total: ids.length
+  };
+}
+
 function buildNavHtml(prevId, nextId, pos, total){
   const prevHref = prevId ? `model_public.html?id=${encodeURIComponent(prevId)}` : "";
   const nextHref = nextId ? `model_public.html?id=${encodeURIComponent(nextId)}` : "";
