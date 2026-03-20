@@ -20,18 +20,11 @@
   "price": 50.0,
   "shipping_allocated": 1.23,
   "flown": null,
-  "postcards_raw": "x",
-  "postcard_info": "x",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-BA003-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
   "photo_source_url": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
   "photo_image_url": "https://cdn.plnspttrs.net/08989/g-lgnb-british-airways-saab-340b_PlanespottersNet_166233_c5f41dd7e5_o.jpg",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "x",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/166233/g-lgnb-british-airways-saab-340b",
     "shop": "MW-Moba",

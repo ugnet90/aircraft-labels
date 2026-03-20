@@ -20,18 +20,11 @@
   "price": 44.5,
   "shipping_allocated": 4.25,
   "flown": null,
-  "postcards_raw": "-",
-  "postcard_info": "-",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-LH013-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
   "photo_source_url": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
   "photo_image_url": "https://cdn.plnspttrs.net/25382/d-aiko-lufthansa-airbus-a330-343_PlanespottersNet_1343486_3e9a55305f_o.jpg",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "-",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1343486/d-aiko-lufthansa-airbus-a330-343",
     "shop": "MW-MOBA",

@@ -20,18 +20,11 @@
   "price": 35.0,
   "shipping_allocated": 0.77,
   "flown": null,
-  "postcards_raw": "x",
-  "postcard_info": "x",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-SO017-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
   "photo_source_url": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
   "photo_image_url": "https://cdn.plnspttrs.net/34211/80001-united-states-air-force-boeing-757-200_PlanespottersNet_959345_d2f00474e6_o.jpg",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "x",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/959345/80001-united-states-air-force-boeing-757-200",
     "shop": "MW-Moba",

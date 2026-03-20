@@ -20,18 +20,11 @@
   "price": 54.19,
   "shipping_allocated": 17.85,
   "flown": null,
-  "postcards_raw": "-",
-  "postcard_info": "-",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-PA010-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "",
   "photo_source_url": "",
   "photo_image_url": "",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "-",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "",
     "shop": "Ebay aeromini1",

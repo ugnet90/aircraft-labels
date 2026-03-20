@@ -20,18 +20,11 @@
   "price": 56.7,
   "shipping_allocated": 46.46,
   "flown": null,
-  "postcards_raw": "-",
-  "postcard_info": "-",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-PA011-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "https://www.jetphotos.com/photo/261236",
   "photo_source_url": "https://www.jetphotos.com/photo/261236",
   "photo_image_url": "https://cdn.jetphotos.com/full/1/55613_1081719394.jpg",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "-",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.jetphotos.com/photo/261236",
     "shop": "Ebay BUCHair USA",

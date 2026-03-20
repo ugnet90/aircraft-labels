@@ -20,18 +20,11 @@
   "price": 39.5,
   "shipping_allocated": 3.25,
   "flown": null,
-  "postcards_raw": "-",
-  "postcard_info": "-",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-LH006-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
   "photo_source_url": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
   "photo_image_url": "https://cdn.plnspttrs.net/40012/d-aivd-lufthansa-airbus-a350-941_PlanespottersNet_1278652_6e823a8956_o.jpg",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "-",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "https://www.planespotters.net/photo/1278652/d-aivd-lufthansa-airbus-a350-941",
     "shop": "MW-MOBA",

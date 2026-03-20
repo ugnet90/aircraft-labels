@@ -20,18 +20,11 @@
   "price": 35.01,
   "shipping_allocated": 11.99,
   "flown": null,
-  "postcards_raw": "x",
-  "postcard_info": "x",
+  "postcards_raw": "",
+  "postcard_info": "",
   "postcard_url": "",
   "postcard_price": null,
-  "postcards": [
-    {
-      "id": "PC-SO011-01",
-      "label": "",
-      "url": "",
-      "price": null
-    }
-  ],
+  "postcards": [],
   "photo": "",
   "photo_source_url": "",
   "photo_image_url": "",
@@ -74,7 +67,7 @@
     "model_extra": ""
   },
   "links": {
-    "postcards_raw": "x",
+    "postcards_raw": "",
     "postcard_url": "",
     "photo": "",
     "shop": "Ebay worldofwingseu",
