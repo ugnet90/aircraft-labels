@@ -158,6 +158,9 @@ def write_html(items):
 def main():
     QR_DIR.mkdir(parents=True, exist_ok=True)
 
+    for old in QR_DIR.glob("*.png"):
+        old.unlink()
+
     items = load_models()
 
     for it in items:
