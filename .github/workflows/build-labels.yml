@@ -55,7 +55,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add docs/labels docs/assets/qr
+          git add docs/labels
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -70,4 +70,3 @@ jobs:
           name: labels
           path: |
             docs/labels
-            docs/assets/qr
