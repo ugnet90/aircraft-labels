@@ -1,3 +1,7 @@
+function navCanHover(){
+  return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+}
+
 function buildNavLink(key, currentKey){
   const page = SITE_MAP[key];
   if(!page) return "";
@@ -159,7 +163,7 @@ function bindNav(){
 
   document.querySelectorAll(".navDropdownToggle").forEach(btn => {
     btn.addEventListener("click", (ev) => {
-      if(window.innerWidth > 900) return;
+      if(navCanHover()) return;
 
       ev.preventDefault();
       ev.stopPropagation();
@@ -184,7 +188,7 @@ function bindNav(){
   });
   
   document.addEventListener("click", (ev) => {
-    if(window.innerWidth > 900) return;
+    if(navCanHover()) return;
 
     const insideNav = ev.target.closest(".siteNav");
     if(!insideNav){
@@ -195,18 +199,16 @@ function bindNav(){
   });
 
   window.addEventListener("resize", () => {
-    if(window.innerWidth > 900){
-      document.querySelectorAll(".navDropdown.open").forEach(dd => dd.classList.remove("open"));
-      document.querySelectorAll(".navDropdownToggle").forEach(btn => btn.setAttribute("aria-expanded", "false"));
+    document.querySelectorAll(".navDropdown.open").forEach(dd => dd.classList.remove("open"));
+    document.querySelectorAll(".navDropdownToggle").forEach(btn => btn.setAttribute("aria-expanded", "false"));
 
-      if(menu){
-        menu.classList.remove("open");
-      }
-      if(burger){
-        burger.setAttribute("aria-expanded", "false");
-      }
+    if(menu && navCanHover()){
+      menu.classList.remove("open");
     }
-  });  
+    if(burger){
+      burger.setAttribute("aria-expanded", "false");
+    }
+  });
 }
 
 function injectGlobalNav(){
