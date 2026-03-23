@@ -24,6 +24,34 @@ jobs:
       - name: Run label generator
         run: python tools/build_labels.py
 
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Generate PDF
+        run: |
+          python - << 'EOF'
+          from playwright.sync_api import sync_playwright
+          import pathlib
+
+          root = pathlib.Path(".").resolve()
+          html_path = root / "docs" / "labels.html"
+          pdf_path = root / "docs" / "labels.pdf"
+
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              page.goto(f"file://{html_path}")
+              page.pdf(
+                  path=str(pdf_path),
+                  format="A4",
+                  print_background=True,
+                  margin={"top":"8mm","bottom":"8mm","left":"8mm","right":"8mm"}
+              )
+              browser.close()
+          EOF        
+
       - name: Commit generated labels
         run: |
           git config user.name "github-actions[bot]"
@@ -43,6 +71,7 @@ jobs:
         with:
           name: labels
           path: |
-            docs/labels.html
+            docs/labels/labels.html
+            docs/labels/labels.pdf
             docs/css/labels.css
             docs/assets/qr
