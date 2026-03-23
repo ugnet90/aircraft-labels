@@ -112,3 +112,11 @@
   display:none;
 }
 
+.dashSection.tools{
+  background:#f3f8f6;
+  border-color:rgba(0,120,90,.12);
+}
+
+.dashSection.tools h2{
+  color:#0b6b57;
+}
