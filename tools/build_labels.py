@@ -43,6 +43,11 @@ def load_models():
         d = json.loads(path.read_text(encoding="utf-8"))
 
         model_id = first(d.get("model_id"), path.stem)
+        
+        # bestellte / alte Relikte nicht als Label erzeugen
+        if model_id.upper().startswith("ORD-"):
+            continue
+        
         airline = first(d.get("airline_row"), d.get("airline"))
         typ = first(d.get("aircraft_type"), d.get("aircraft", {}).get("type"))
         reg = first(d.get("registration"), d.get("aircraft", {}).get("registration"))
