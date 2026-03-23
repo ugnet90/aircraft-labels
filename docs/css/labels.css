@@ -1,0 +1,33 @@
+
+@page { size:A4; margin:8mm; }
+
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+}
+
+.sheet {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,48mm);
+  gap:4mm 4mm;
+  padding:8mm;
+}
+
+.label {
+  width:48mm;
+  height:22mm;
+  border:0.3mm solid #000;
+  padding:1.5mm;
+  display:grid;
+  grid-template-columns:1fr 15mm;
+}
+
+.model-id { font-size:10pt; font-weight:700; }
+.airline { font-size:7pt; font-weight:700; }
+.type { font-size:7pt; }
+.reg { font-size:7pt; }
+.meta { font-size:6pt; color:#444; }
+
+.qr img {
+  width:100%;
+}
