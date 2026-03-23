@@ -15,9 +15,8 @@ OUT_DIR = ROOT / "docs" / "labels"
 OUT_HTML = OUT_DIR / "labels.html"
 OUT_CSS = OUT_DIR / "labels.css"
 
-QR_DIR = ROOT / "docs" / "assets" / "qr"
+QR_DIR = ROOT / "docs" / "labels" / "qr"
 
-# ⚠️ ANPASSEN
 PUBLIC_BASE_URL = "https://ugnet90.github.io/aircraft-labels/model_public.html?id="
 
 PAGE_MARGIN_MM = 8
@@ -67,7 +66,7 @@ def load_models() -> list[dict[str, Any]]:
             "manufacturer": manufacturer,
             "scale": scale,
             "url": url,
-            "qr": f"../assets/qr/{model_id}.png",
+            "qr": f"qr/{model_id}.png",
         })
 
     return items
