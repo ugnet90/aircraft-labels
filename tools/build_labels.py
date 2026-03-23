@@ -10,8 +10,11 @@ import qrcode
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_DIR = ROOT / "docs" / "data" / "models"
-OUT_HTML = ROOT / "docs" / "labels.html"
-OUT_CSS = ROOT / "docs" / "css" / "labels.css"
+
+OUT_DIR = ROOT / "docs" / "labels"
+OUT_HTML = OUT_DIR / "labels.html"
+OUT_CSS = OUT_DIR / "labels.css"
+
 QR_DIR = ROOT / "docs" / "assets" / "qr"
 
 # ⚠️ ANPASSEN
@@ -28,7 +31,7 @@ def esc(v: Any) -> str:
     return html.escape(str(v or ""))
 
 
-def first(*vals):
+def first(*vals: Any) -> str:
     for v in vals:
         s = str(v or "").strip()
         if s:
@@ -36,23 +39,23 @@ def first(*vals):
     return ""
 
 
-def load_models():
-    items = []
+def load_models() -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
 
     for path in sorted(MODELS_DIR.glob("*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
 
         model_id = first(d.get("model_id"), path.stem)
-        
+
         # bestellte / alte Relikte nicht als Label erzeugen
         if model_id.upper().startswith("ORD-"):
             continue
-        
+
         airline = first(d.get("airline_row"), d.get("airline"))
         typ = first(d.get("aircraft_type"), d.get("aircraft", {}).get("type"))
         reg = first(d.get("registration"), d.get("aircraft", {}).get("registration"))
-        manufacturer = first(d.get("model", {}).get("manufacturer"))
-        scale = first(d.get("model", {}).get("scale"))
+        manufacturer = first(d.get("model", {}).get("manufacturer"), d.get("manufacturer"))
+        scale = first(d.get("model", {}).get("scale"), d.get("scale"))
 
         url = f"{PUBLIC_BASE_URL}{model_id}"
 
@@ -64,13 +67,13 @@ def load_models():
             "manufacturer": manufacturer,
             "scale": scale,
             "url": url,
-            "qr": f"assets/qr/{model_id}.png"
+            "qr": f"../assets/qr/{model_id}.png",
         })
 
     return items
 
 
-def build_qr(url, out):
+def build_qr(url: str, out: Path) -> None:
     qr = qrcode.QRCode(
         error_correction=qrcode.constants.ERROR_CORRECT_M,
         box_size=8,
@@ -83,83 +86,188 @@ def build_qr(url, out):
     img.save(out)
 
 
-def write_css():
-    OUT_CSS.parent.mkdir(parents=True, exist_ok=True)
-    OUT_CSS.write_text(f"""
-@page {{ size:A4; margin:{PAGE_MARGIN_MM}mm; }}
+def write_css() -> None:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    OUT_CSS.write_text(
+        f"""\
+@page {{
+  size: A4;
+  margin: {PAGE_MARGIN_MM}mm;
+}}
+
+:root {{
+  --label-w: {LABEL_W_MM}mm;
+  --label-h: {LABEL_H_MM}mm;
+  --col-gap: {COL_GAP_MM}mm;
+  --row-gap: {ROW_GAP_MM}mm;
+}}
+
+* {{
+  box-sizing: border-box;
+}}
+
+html, body {{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}}
 
 body {{
-  margin:0;
-  font-family:Arial, sans-serif;
+  padding: {PAGE_MARGIN_MM}mm;
 }}
 
 .sheet {{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,{LABEL_W_MM}mm);
-  gap:{ROW_GAP_MM}mm {COL_GAP_MM}mm;
-  padding:{PAGE_MARGIN_MM}mm;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--label-w), var(--label-w)));
+  gap: var(--row-gap) var(--col-gap);
+  align-content: start;
 }}
 
 .label {{
-  width:{LABEL_W_MM}mm;
-  height:{LABEL_H_MM}mm;
-  border:0.3mm solid #000;
-  padding:1.5mm;
-  display:grid;
-  grid-template-columns:1fr 15mm;
+  width: var(--label-w);
+  height: var(--label-h);
+  border: 0.25mm solid #000;
+  border-radius: 1.2mm;
+  padding: 1.4mm;
+  display: grid;
+  grid-template-columns: 1fr 15mm;
+  gap: 1.4mm;
+  overflow: hidden;
+  break-inside: avoid;
 }}
 
-.model-id {{ font-size:10pt; font-weight:700; }}
-.airline {{ font-size:7pt; font-weight:700; }}
-.type {{ font-size:7pt; }}
-.reg {{ font-size:7pt; }}
-.meta {{ font-size:6pt; color:#444; }}
-
-.qr img {{
-  width:100%;
+.label-main {{
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8mm;
 }}
-""", encoding="utf-8")
+
+.model-id {{
+  font-size: 10pt;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0;
+}}
+
+.airline {{
+  font-size: 7pt;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}}
+
+.type {{
+  font-size: 7pt;
+  line-height: 1.15;
+  margin: 0;
+}}
+
+.reg {{
+  font-size: 7pt;
+  line-height: 1.1;
+  margin: 0;
+}}
+
+.meta {{
+  font-size: 6pt;
+  color: #444;
+  line-height: 1.1;
+  margin: 0;
+}}
+
+.qr-box {{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}}
+
+.qr-box img {{
+  width: 100%;
+  height: auto;
+  display: block;
+}}
+
+.no-print-header {{
+  margin-bottom: 8mm;
+  font-size: 11pt;
+}}
+
+.print-btn {{
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: 1px solid rgba(0,0,0,.2);
+  background: #fff;
+  cursor: pointer;
+}}
+
+@media print {{
+  .no-print-header {{
+    display: none;
+  }}
+}}
+""",
+        encoding="utf-8",
+    )
 
 
-def label_html(it):
-    return f"""
-<div class="label">
-  <div>
-    <div class="model-id">{esc(it["model_id"])}</div>
-    <div class="airline">{esc(it["airline"])}</div>
-    <div class="type">{esc(it["type"])}</div>
-    <div class="reg">{esc(it["reg"])}</div>
-    <div class="meta">{esc(it["manufacturer"])} · {esc(it["scale"])}</div>
+def label_html(it: dict[str, Any]) -> str:
+    return f"""\
+<article class="label">
+  <div class="label-main">
+    <p class="model-id">{esc(it["model_id"])}</p>
+    <p class="airline">{esc(it["airline"])}</p>
+    <p class="type">{esc(it["type"])}</p>
+    <p class="reg">{esc(it["reg"])}</p>
+    <p class="meta">{esc(it["manufacturer"])} · {esc(it["scale"])}</p>
   </div>
-  <div class="qr">
-    <img src="{esc(it["qr"])}">
+  <div class="qr-box">
+    <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
   </div>
-</div>
+</article>
 """
 
 
-def write_html(items):
-    OUT_HTML.write_text(f"""
+def write_html(items: list[dict[str, Any]]) -> None:
+    OUT_HTML.write_text(
+        f"""\
 <!doctype html>
-<html>
+<html lang="de">
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/labels.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aircraft Labels</title>
+  <link rel="stylesheet" href="labels.css">
 </head>
 <body>
-<div class="sheet">
-{''.join(label_html(x) for x in items)}
-</div>
+  <div class="no-print-header">
+    <strong>Aircraft Labels</strong> – {len(items)} Labels<br>
+    Drucken mit 100 % Skalierung und ohne Kopf-/Fußzeilen.
+    <div>
+      <button class="print-btn" onclick="window.print()">Drucken</button>
+    </div>
+  </div>
+
+  <main class="sheet">
+    {"".join(label_html(it) for it in items)}
+  </main>
 </body>
 </html>
-""", encoding="utf-8")
+""",
+        encoding="utf-8",
+    )
 
 
-def main():
+def main() -> None:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     QR_DIR.mkdir(parents=True, exist_ok=True)
 
+    # alte QR-Dateien entfernen, damit keine Relikte bleiben
     for old in QR_DIR.glob("*.png"):
-        old.unlink()
+      old.unlink()
 
     items = load_models()
 
@@ -170,6 +278,9 @@ def main():
     write_html(items)
 
     print("Labels erstellt:", len(items))
+    print("HTML:", OUT_HTML)
+    print("CSS :", OUT_CSS)
+    print("QRs :", QR_DIR)
 
 
 if __name__ == "__main__":
