@@ -69,7 +69,11 @@ def load_models() -> list[dict[str, Any]]:
             "qr": f"qr/{model_id}.png",
         })
 
-    return items
+        items.sort(key=lambda x: (
+            str(x["airline"] or "").lower(),
+            str(x["model_id"] or "").lower()
+        ))
+        return items
 
 
 def build_qr(url: str, out: Path) -> None:
@@ -123,6 +127,21 @@ body {{
   gap: var(--row-gap) var(--col-gap);
   align-content: start;
 }}
+
+.airline-break{
+  grid-column: 1 / -1;
+  margin: 2mm 0 1mm;
+  padding: 1.5mm 2mm;
+  border-top: 0.4mm solid #000;
+  border-bottom: 0.2mm solid #999;
+  background: #f3f3f3;
+}
+
+.airline-break-title{
+  font-size: 11pt;
+  font-weight: 700;
+  line-height: 1.1;
+}
 
 .label {{
   width: var(--label-w);
@@ -231,6 +250,18 @@ def label_html(it: dict[str, Any]) -> str:
 
 
 def write_html(items: list[dict[str, Any]]) -> None:
+    parts: list[str] = []
+    last_airline = None
+
+    for it in items:
+        airline = it["airline"] or "Ohne Airline"
+
+        if airline != last_airline:
+            parts.append(airline_header_html(airline))
+            last_airline = airline
+
+        parts.append(label_html(it))
+
     OUT_HTML.write_text(
         f"""\
 <!doctype html>
@@ -251,14 +282,13 @@ def write_html(items: list[dict[str, Any]]) -> None:
   </div>
 
   <main class="sheet">
-    {"".join(label_html(it) for it in items)}
+    {"".join(parts)}
   </main>
 </body>
 </html>
 """,
         encoding="utf-8",
     )
-
 
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
