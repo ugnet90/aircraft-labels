@@ -125,6 +125,12 @@ button.navLink{
   }
 }
 
+@media (hover: none), (pointer: coarse){
+  .navDropdown.open .navDropdownMenu{
+    display:block;
+  }
+}
+
 /* Hamburger */
 
 .navHamburger{
