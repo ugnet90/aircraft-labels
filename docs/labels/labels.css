@@ -1,0 +1,119 @@
+@page {
+  size: A4;
+  margin: 8mm;
+}
+
+:root {
+  --label-w: 48mm;
+  --label-h: 22mm;
+  --col-gap: 4mm;
+  --row-gap: 4mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+body {
+  padding: 8mm;
+}
+
+.sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--label-w), var(--label-w)));
+  gap: var(--row-gap) var(--col-gap);
+  align-content: start;
+}
+
+.label {
+  width: var(--label-w);
+  height: var(--label-h);
+  border: 0.25mm solid #000;
+  border-radius: 1.2mm;
+  padding: 1.4mm;
+  display: grid;
+  grid-template-columns: 1fr 15mm;
+  gap: 1.4mm;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.label-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8mm;
+}
+
+.model-id {
+  font-size: 10pt;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.airline {
+  font-size: 7pt;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.type {
+  font-size: 7pt;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.reg {
+  font-size: 7pt;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.meta {
+  font-size: 6pt;
+  color: #444;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.qr-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.no-print-header {
+  margin-bottom: 8mm;
+  font-size: 11pt;
+}
+
+.print-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: 1px solid rgba(0,0,0,.2);
+  background: #fff;
+  cursor: pointer;
+}
+
+@media print {
+  .no-print-header {
+    display: none;
+  }
+}
