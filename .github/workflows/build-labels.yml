@@ -21,28 +21,26 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements-labels.txt
 
+      - name: Install Playwright browser
+        run: playwright install chromium
+
       - name: Run label generator
         run: python tools/build_labels.py
-
-      - name: Install Playwright
-        run: |
-          pip install playwright
-          playwright install chromium
 
       - name: Generate PDF
         run: |
           python - << 'EOF'
+          from pathlib import Path
           from playwright.sync_api import sync_playwright
-          import pathlib
 
-          root = pathlib.Path(".").resolve()
-          html_path = root / "docs" / "labels.html"
-          pdf_path = root / "docs" / "labels.pdf"
+          root = Path(".").resolve()
+          html_path = root / "docs" / "labels" / "labels.html"
+          pdf_path = root / "docs" / "labels" / "labels.pdf"
 
           with sync_playwright() as p:
               browser = p.chromium.launch()
               page = browser.new_page()
-              page.goto(f"file://{html_path}")
+              page.goto(html_path.as_uri())
               page.pdf(
                   path=str(pdf_path),
                   format="A4",
@@ -50,14 +48,14 @@ jobs:
                   margin={"top":"8mm","bottom":"8mm","left":"8mm","right":"8mm"}
               )
               browser.close()
-          EOF        
+          EOF
 
       - name: Commit generated labels
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add docs/labels.html docs/css/labels.css docs/assets/qr
+          git add docs/labels docs/assets/qr
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -71,7 +69,5 @@ jobs:
         with:
           name: labels
           path: |
-            docs/labels/labels.html
-            docs/labels/labels.pdf
-            docs/css/labels.css
+            docs/labels
             docs/assets/qr
