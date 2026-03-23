@@ -1,1 +1,2 @@
 qrcode[pil]==7.4.2
+playwright==1.54.0
