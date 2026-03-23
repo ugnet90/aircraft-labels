@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
@@ -21,6 +23,20 @@ jobs:
 
       - name: Run label generator
         run: python tools/build_labels.py
+
+      - name: Commit generated labels
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add docs/labels.html docs/css/labels.css docs/assets/qr
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Build aircraft labels"
+            git push
+          fi
 
       - name: Upload artifact
         uses: actions/upload-artifact@v6
