@@ -248,6 +248,12 @@ def label_html(it: dict[str, Any]) -> str:
 </article>
 """
 
+def airline_header_html(name: str) -> str:
+    return f"""
+<div class="airline-break">
+  <div class="airline-break-title">{esc(name)}</div>
+</div>
+"""
 
 def write_html(items: list[dict[str, Any]]) -> None:
     parts: list[str] = []
