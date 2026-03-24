@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-20T10:22:38+01:00",
+  "generated_at": "2026-03-24T09:09:20+01:00",
   "count": 174,
   "counts_by_airline_code": {
     "OS": 20,
@@ -1867,7 +1867,7 @@
       "aircraft_id": "BAE-146-300",
       "aircraft_type": "British Aerospace Avro RJ100",
       "registration": "HB-IXU",
-      "manufacturer": "?",
+      "manufacturer": "",
       "aircraft_name": "",
       "livery_note": "",
       "extra_info": "",

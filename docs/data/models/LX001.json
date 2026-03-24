@@ -3,7 +3,7 @@
   "airline_code": "LX",
   "airline": "Swiss",
   "airline_row": "Swiss",
-  "manufacturer": "?",
+  "manufacturer": "",
   "aircraft_name": "",
   "livery_note": "",
   "extra_info": "",
@@ -59,7 +59,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "?",
+    "manufacturer": "",
     "model_number": "",
     "shop": "Swiss-Edelweiss Airplane Shop",
     "price": 56.91,
