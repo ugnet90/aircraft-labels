@@ -8,8 +8,8 @@
       "col_gap_mm": 4,
       "row_gap_mm": 4,
       "qr_size_mm": 9,
-      "show_border": true,
-      "cut_marks": false,
+      "show_border": false,
+      "cut_marks": true,
       "cut_mark_length_mm": 2,
       "cut_mark_offset_mm": 1
     },
