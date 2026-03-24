@@ -169,29 +169,20 @@ body {{
   font-size:7pt;
   font-weight:700;
   line-height:1.1;
-  min-height:2.2em;
 }}
 
 .type{{
   font-size:7pt;
   line-height:1.1;
-  min-height:2.2em;
 }}
 
 .bottom-row{{
-  display:flex;
-  gap:1.2mm;
   font-size:7pt;
   line-height:1.1;
   margin-top:0.6mm;
 }}
 
 .reg{{
-  white-space:nowrap;
-}}
-
-.meta{{
-  color:#444;
   white-space:nowrap;
 }}
 
@@ -235,16 +226,6 @@ body {{
 """, encoding="utf-8")
 
 def label_html(it: dict[str, Any]) -> str:
-    # Meta bauen (wie vorher)
-    meta_parts = []
-    if str(it.get("manufacturer") or "").strip():
-        meta_parts.append(it["manufacturer"])
-    if str(it.get("scale") or "").strip():
-        meta_parts.append(it["scale"])
-
-    meta = " · ".join(meta_parts)
-    meta_html = esc(meta) if meta else ""
-
     return f"""\
 <article class="label">
   <div class="label-left">
@@ -252,8 +233,7 @@ def label_html(it: dict[str, Any]) -> str:
     <div class="type">{esc(it["type"])}</div>
 
     <div class="bottom-row">
-      <div class="reg">{esc(it["reg"])}</div>
-      <div class="meta">{meta_html}</div>
+      <div class="reg">Reg: {esc(it["reg"])}</div>
     </div>
   </div>
 
