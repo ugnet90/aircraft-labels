@@ -1,13 +1,13 @@
 @page {
   size: A4;
-  margin: 8mm;
+  margin: 8.0mm;
 }
 
 :root {
-  --label-w: 48mm;
-  --label-h: 22mm;
-  --col-gap: 4mm;
-  --row-gap: 4mm;
+  --label-w: 48.0mm;
+  --label-h: 22.0mm;
+  --col-gap: 4.0mm;
+  --row-gap: 4.0mm;
 }
 
 * {
@@ -23,7 +23,7 @@ html, body {
 }
 
 body {
-  padding: 8mm;
+  padding: 8.0mm;
 }
 
 .sheet {
@@ -33,7 +33,6 @@ body {
   align-content: start;
 }
 
-/* Airline Trenner */
 .airline-break{
   grid-column: 1 / -1;
   margin: 2mm 0 1mm;
@@ -49,18 +48,15 @@ body {
   line-height: 1.1;
 }
 
-/* Label Layout */
 .label{
   width: var(--label-w);
   height: var(--label-h);
   border: 0.25mm solid #000;
   border-radius: 1.2mm;
   padding: 1.4mm;
-
   display: grid;
   grid-template-columns: 1fr 10mm;
   gap: 1.2mm;
-
   align-content: start;
 }
 
@@ -99,7 +95,7 @@ body {
 }
 
 .qr-box img{
-  width:9mm;
+  width:9.0mm;
   height:auto;
   display:block;
 }
