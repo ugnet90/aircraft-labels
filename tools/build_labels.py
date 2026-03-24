@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -25,7 +26,15 @@ LABEL_H_MM = 22
 COL_GAP_MM = 4
 ROW_GAP_MM = 4
 
-
+def parse_ids(raw: str) -> set[str]:
+    if not raw:
+        return set()
+    return {
+        x.strip().upper()
+        for x in raw.split(",")
+        if x.strip()
+    }
+    
 def esc(v: Any) -> str:
     return html.escape(str(v or ""))
 
@@ -38,13 +47,18 @@ def first(*vals: Any) -> str:
     return ""
 
 
-def load_models() -> list[dict[str, Any]]:
+def load_models(mode, selected_ids) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
 
     for path in sorted(MODELS_DIR.glob("*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
 
         model_id = first(d.get("model_id"), path.stem)
+
+        # Filter: nur bestimmte IDs
+        if mode == "selection" and selected_ids:
+            if model_id.upper() not in selected_ids:
+                continue
 
         # bestellte / alte Relikte nicht als Label erzeugen
         if model_id.upper().startswith("ORD-"):
@@ -301,8 +315,11 @@ def main() -> None:
     # alte QR-Dateien entfernen, damit keine Relikte bleiben
     for old in QR_DIR.glob("*.png"):
       old.unlink()
+      
+    mode = os.getenv("MODE", "default").lower()
+    selected_ids = parse_ids(os.getenv("IDS", ""))
 
-    items = load_models()
+    items = load_models(mode, selected_ids)
 
     for it in items:
         build_qr(it["url"], QR_DIR / f"{it['model_id']}.png")
