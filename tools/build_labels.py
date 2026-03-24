@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import html
 import json
-import os
 from pathlib import Path
 from typing import Any
 
@@ -11,7 +10,7 @@ import qrcode
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_DIR = ROOT / "docs" / "data" / "models"
-
+CONFIG_PATH = ROOT / "tools" / "labels_config.json"
 OUT_DIR = ROOT / "docs" / "labels"
 OUT_HTML = OUT_DIR / "labels.html"
 OUT_CSS = OUT_DIR / "labels.css"
@@ -26,6 +25,19 @@ LABEL_H_MM = 22
 COL_GAP_MM = 4
 ROW_GAP_MM = 4
 
+def load_config() -> dict[str, Any]:
+    if not CONFIG_PATH.exists():
+        raise FileNotFoundError(f"Config-Datei fehlt: {CONFIG_PATH}")
+    return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+
+
+def parse_selected_ids(values: list[Any]) -> set[str]:
+    return {
+        str(x).strip().upper()
+        for x in (values or [])
+        if str(x).strip()
+    }
+    
 def parse_ids(raw: str) -> set[str]:
     if not raw:
         return set()
@@ -47,7 +59,7 @@ def first(*vals: Any) -> str:
     return ""
 
 
-def load_models(mode, selected_ids) -> list[dict[str, Any]]:
+def load_models(mode: str, selected_ids: set[str]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
 
     for path in sorted(MODELS_DIR.glob("*.json")):
@@ -55,20 +67,18 @@ def load_models(mode, selected_ids) -> list[dict[str, Any]]:
 
         model_id = first(d.get("model_id"), path.stem)
 
-        # Filter: nur bestimmte IDs
-        if mode == "selection" and selected_ids:
-            if model_id.upper() not in selected_ids:
-                continue
-
         # bestellte / alte Relikte nicht als Label erzeugen
         if model_id.upper().startswith("ORD-"):
             continue
 
+        # nur bestimmte IDs
+        if mode == "selection" and selected_ids:
+            if model_id.upper() not in selected_ids:
+                continue
+
         airline = first(d.get("airline_row"), d.get("airline"))
         typ = first(d.get("aircraft_type"), d.get("aircraft", {}).get("type"))
         reg = first(d.get("registration"), d.get("aircraft", {}).get("registration"))
-        manufacturer = first(d.get("model", {}).get("manufacturer"), d.get("manufacturer"))
-        scale = first(d.get("model", {}).get("scale"), d.get("scale"))
 
         url = f"{PUBLIC_BASE_URL}{model_id}"
 
@@ -77,8 +87,6 @@ def load_models(mode, selected_ids) -> list[dict[str, Any]]:
             "airline": airline,
             "type": typ,
             "reg": reg,
-            "manufacturer": manufacturer,
-            "scale": scale,
             "url": url,
             "qr": f"qr/{model_id}.png",
         })
@@ -87,8 +95,6 @@ def load_models(mode, selected_ids) -> list[dict[str, Any]]:
         str(x["airline"] or "").lower(),
         str(x["model_id"] or "").lower()
     ))
-    print("Modelle für Labels:", len(items))
-    print("Erste 10 IDs:", [x["model_id"] for x in items[:10]])    
     return items
     
 def build_qr(url: str, out: Path) -> None:
@@ -104,19 +110,30 @@ def build_qr(url: str, out: Path) -> None:
     img.save(out)
 
 
-def write_css() -> None:
+def write_css(
+    page_margin_mm: float,
+    label_w_mm: float,
+    label_h_mm: float,
+    col_gap_mm: float,
+    row_gap_mm: float,
+    qr_size_mm: float,
+    show_border: bool
+) -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    border_css = "0.25mm solid #000" if show_border else "none"
+
     OUT_CSS.write_text(f"""\
 @page {{
   size: A4;
-  margin: {PAGE_MARGIN_MM}mm;
+  margin: {page_margin_mm}mm;
 }}
 
 :root {{
-  --label-w: {LABEL_W_MM}mm;
-  --label-h: {LABEL_H_MM}mm;
-  --col-gap: {COL_GAP_MM}mm;
-  --row-gap: {ROW_GAP_MM}mm;
+  --label-w: {label_w_mm}mm;
+  --label-h: {label_h_mm}mm;
+  --col-gap: {col_gap_mm}mm;
+  --row-gap: {row_gap_mm}mm;
 }}
 
 * {{
@@ -132,7 +149,7 @@ html, body {{
 }}
 
 body {{
-  padding: {PAGE_MARGIN_MM}mm;
+  padding: {page_margin_mm}mm;
 }}
 
 .sheet {{
@@ -142,7 +159,6 @@ body {{
   align-content: start;
 }}
 
-/* Airline Trenner */
 .airline-break{{
   grid-column: 1 / -1;
   margin: 2mm 0 1mm;
@@ -158,18 +174,15 @@ body {{
   line-height: 1.1;
 }}
 
-/* Label Layout */
 .label{{
   width: var(--label-w);
   height: var(--label-h);
-  border: 0.25mm solid #000;
+  border: {border_css};
   border-radius: 1.2mm;
   padding: 1.4mm;
-
   display: grid;
   grid-template-columns: 1fr 10mm;
   gap: 1.2mm;
-
   align-content: start;
 }}
 
@@ -208,7 +221,7 @@ body {{
 }}
 
 .qr-box img{{
-  width:9mm;
+  width:{qr_size_mm}mm;
   height:auto;
   display:block;
 }}
@@ -267,18 +280,19 @@ def airline_header_html(name: str) -> str:
 </div>
 """
 
-def write_html(items: list[dict[str, Any]]) -> None:
+def write_html(items: list[dict[str, Any]], group_by_airline: bool) -> None:
     parts: list[str] = []
-    last_airline = None
 
-    for it in items:
-        airline = it["airline"] or "Ohne Airline"
-
-        if airline != last_airline:
-            parts.append(airline_header_html(airline))
-            last_airline = airline
-
-        parts.append(label_html(it))
+    if group_by_airline:
+        last_airline = None
+        for it in items:
+            airline = it["airline"] or "Ohne Airline"
+            if airline != last_airline:
+                parts.append(airline_header_html(airline))
+                last_airline = airline
+            parts.append(label_html(it))
+    else:
+        parts = [label_html(it) for it in items]
 
     OUT_HTML.write_text(
         f"""\
@@ -312,25 +326,52 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     QR_DIR.mkdir(parents=True, exist_ok=True)
 
-    # alte QR-Dateien entfernen, damit keine Relikte bleiben
+    config = load_config()
+
+    template_name = config.get("template", "standard")
+    templates = config.get("templates", {})
+    if template_name not in templates:
+        raise ValueError(f"Unbekannte Vorlage: {template_name}")
+
+    template = templates[template_name]
+
+    label_w_mm = float(template["label_width_mm"])
+    label_h_mm = float(template["label_height_mm"])
+    page_margin_mm = float(template["page_margin_mm"])
+    col_gap_mm = float(template["col_gap_mm"])
+    row_gap_mm = float(template["row_gap_mm"])
+    qr_size_mm = float(template["qr_size_mm"])
+    show_border = bool(template["show_border"])
+
+    mode = str(config.get("mode", "default")).strip().lower()
+    group_by_airline = bool(config.get("group_by_airline", False))
+    selected_ids = parse_selected_ids(config.get("selected_ids", []))
+
+    # alte QR-Dateien entfernen
     for old in QR_DIR.glob("*.png"):
-      old.unlink()
-      
-    mode = os.getenv("MODE", "default").lower()
-    selected_ids = parse_ids(os.getenv("IDS", ""))
+        old.unlink()
 
     items = load_models(mode, selected_ids)
 
     for it in items:
         build_qr(it["url"], QR_DIR / f"{it['model_id']}.png")
 
-    write_css()
-    write_html(items)
+    write_css(
+        page_margin_mm=page_margin_mm,
+        label_w_mm=label_w_mm,
+        label_h_mm=label_h_mm,
+        col_gap_mm=col_gap_mm,
+        row_gap_mm=row_gap_mm,
+        qr_size_mm=qr_size_mm,
+        show_border=show_border,
+    )
+
+    write_html(items, group_by_airline=group_by_airline)
 
     print("Labels erstellt:", len(items))
-    print("HTML:", OUT_HTML)
-    print("CSS :", OUT_CSS)
-    print("QRs :", QR_DIR)
+    print("Template:", template_name)
+    print("Mode:", mode)
+    print("Grouped by airline:", group_by_airline)
 
 
 if __name__ == "__main__":
