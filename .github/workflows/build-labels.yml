@@ -2,6 +2,14 @@ name: Build Labels
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "default | airline | selection"
+        required: false
+        default: "default"
+      ids:
+        description: "Model IDs (z.B. BA009,AB002)"
+        required: false
 
 jobs:
   build:
@@ -26,6 +34,9 @@ jobs:
 
       - name: Run label generator
         run: python tools/build_labels.py
+        env:
+          MODE: ${{ github.event.inputs.mode }}
+          IDS: ${{ github.event.inputs.ids }}
 
       - name: Generate PDF
         run: |
