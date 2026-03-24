@@ -33,6 +33,21 @@ body {
   align-content: start;
 }
 
+.airline-break {
+  grid-column: 1 / -1;
+  margin: 2mm 0 1mm;
+  padding: 1.5mm 2mm;
+  border-top: 0.4mm solid #000;
+  border-bottom: 0.2mm solid #999;
+  background: #f3f3f3;
+}
+
+.airline-break-title {
+  font-size: 11pt;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 .label {
   width: var(--label-w);
   height: var(--label-h);
