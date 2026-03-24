@@ -69,13 +69,14 @@ def load_models() -> list[dict[str, Any]]:
             "qr": f"qr/{model_id}.png",
         })
 
-        items.sort(key=lambda x: (
-            str(x["airline"] or "").lower(),
-            str(x["model_id"] or "").lower()
-        ))
-        return items
-
-
+    items.sort(key=lambda x: (
+        str(x["airline"] or "").lower(),
+        str(x["model_id"] or "").lower()
+    ))
+    print("Modelle für Labels:", len(items))
+    print("Erste 10 IDs:", [x["model_id"] for x in items[:10]])    
+    return items
+    
 def build_qr(url: str, out: Path) -> None:
     qr = qrcode.QRCode(
         error_correction=qrcode.constants.ERROR_CORRECT_M,
@@ -233,6 +234,17 @@ body {{
 
 
 def label_html(it: dict[str, Any]) -> str:
+    # Meta sauber zusammensetzen
+    meta_parts = []
+    if str(it.get("manufacturer") or "").strip():
+        meta_parts.append(it["manufacturer"])
+    if str(it.get("scale") or "").strip():
+        meta_parts.append(it["scale"])
+
+    meta = " · ".join(meta_parts)
+
+    meta_html = f'<p class="meta">{esc(meta)}</p>' if meta else '<p class="meta">&nbsp;</p>'
+
     return f"""\
 <article class="label">
   <div class="label-main">
@@ -240,7 +252,7 @@ def label_html(it: dict[str, Any]) -> str:
     <p class="airline">{esc(it["airline"])}</p>
     <p class="type">{esc(it["type"])}</p>
     <p class="reg">{esc(it["reg"])}</p>
-    <p class="meta">{esc(it["manufacturer"])} · {esc(it["scale"])}</p>
+    {meta_html}
   </div>
   <div class="qr-box">
     <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
