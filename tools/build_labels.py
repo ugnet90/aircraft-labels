@@ -117,11 +117,15 @@ def write_css(
     col_gap_mm: float,
     row_gap_mm: float,
     qr_size_mm: float,
-    show_border: bool
+    show_border: bool,
+    cut_marks: bool,
+    cut_mark_length_mm: float,
+    cut_mark_offset_mm: float,
 ) -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     border_css = "0.25mm solid #000" if show_border else "none"
+    cut_display = "block" if cut_marks else "none"
 
     OUT_CSS.write_text(f"""\
 @page {{
@@ -134,6 +138,9 @@ def write_css(
   --label-h: {label_h_mm}mm;
   --col-gap: {col_gap_mm}mm;
   --row-gap: {row_gap_mm}mm;
+  --qr-size: {qr_size_mm}mm;
+  --cut-len: {cut_mark_length_mm}mm;
+  --cut-off: {cut_mark_offset_mm}mm;
 }}
 
 * {{
@@ -175,6 +182,7 @@ body {{
 }}
 
 .label{{
+  position: relative;
   width: var(--label-w);
   height: var(--label-h);
   border: {border_css};
@@ -221,7 +229,7 @@ body {{
 }}
 
 .qr-box img{{
-  width:{qr_size_mm}mm;
+  width:var(--qr-size);
   height:auto;
   display:block;
 }}
@@ -230,6 +238,42 @@ body {{
   font-size:6pt;
   line-height:1;
   text-align:center;
+}}
+
+.cut {{
+  display: {cut_display};
+  position: absolute;
+  width: var(--cut-len);
+  height: var(--cut-len);
+  pointer-events: none;
+}}
+
+.cut-tl {{
+  top: calc(-1 * var(--cut-off));
+  left: calc(-1 * var(--cut-off));
+  border-top: 0.2mm solid #000;
+  border-left: 0.2mm solid #000;
+}}
+
+.cut-tr {{
+  top: calc(-1 * var(--cut-off));
+  right: calc(-1 * var(--cut-off));
+  border-top: 0.2mm solid #000;
+  border-right: 0.2mm solid #000;
+}}
+
+.cut-bl {{
+  bottom: calc(-1 * var(--cut-off));
+  left: calc(-1 * var(--cut-off));
+  border-bottom: 0.2mm solid #000;
+  border-left: 0.2mm solid #000;
+}}
+
+.cut-br {{
+  bottom: calc(-1 * var(--cut-off));
+  right: calc(-1 * var(--cut-off));
+  border-bottom: 0.2mm solid #000;
+  border-right: 0.2mm solid #000;
 }}
 
 .no-print-header {{
@@ -252,9 +296,17 @@ body {{
 }}
 """, encoding="utf-8")
 
-def label_html(it: dict[str, Any]) -> str:
+def label_html(it: dict[str, Any], show_cut_marks: bool) -> str:
+    cut_html = """
+    <span class="cut cut-tl"></span>
+    <span class="cut cut-tr"></span>
+    <span class="cut cut-bl"></span>
+    <span class="cut cut-br"></span>
+    """ if show_cut_marks else ""
+
     return f"""\
 <article class="label">
+  {cut_html}
   <div class="label-left">
     <div class="airline">{esc(it["airline"])}</div>
     <div class="type">{esc(it["type"])}</div>
@@ -280,7 +332,7 @@ def airline_header_html(name: str) -> str:
 </div>
 """
 
-def write_html(items: list[dict[str, Any]], group_by_airline: bool) -> None:
+def write_html(items: list[dict[str, Any]], group_by_airline: bool, show_cut_marks: bool) -> None:
     parts: list[str] = []
 
     if group_by_airline:
@@ -290,9 +342,9 @@ def write_html(items: list[dict[str, Any]], group_by_airline: bool) -> None:
             if airline != last_airline:
                 parts.append(airline_header_html(airline))
                 last_airline = airline
-            parts.append(label_html(it))
+            parts.append(label_html(it, show_cut_marks=show_cut_marks))
     else:
-        parts = [label_html(it) for it in items]
+        parts = [label_html(it, show_cut_marks=show_cut_marks) for it in items]
 
     OUT_HTML.write_text(
         f"""\
@@ -342,6 +394,9 @@ def main() -> None:
     row_gap_mm = float(template["row_gap_mm"])
     qr_size_mm = float(template["qr_size_mm"])
     show_border = bool(template["show_border"])
+    cut_marks = bool(template.get("cut_marks", False))
+    cut_mark_length_mm = float(template.get("cut_mark_length_mm", 2))
+    cut_mark_offset_mm = float(template.get("cut_mark_offset_mm", 1))
 
     mode = str(config.get("mode", "default")).strip().lower()
     group_by_airline = bool(config.get("group_by_airline", False))
@@ -364,9 +419,16 @@ def main() -> None:
         row_gap_mm=row_gap_mm,
         qr_size_mm=qr_size_mm,
         show_border=show_border,
+        cut_marks=cut_marks,
+        cut_mark_length_mm=cut_mark_length_mm,
+        cut_mark_offset_mm=cut_mark_offset_mm,
     )
 
-    write_html(items, group_by_airline=group_by_airline)
+    write_html(
+        items,
+        group_by_airline=group_by_airline,
+        show_cut_marks=cut_marks,
+    )
 
     print("Labels erstellt:", len(items))
     print("Template:", template_name)
