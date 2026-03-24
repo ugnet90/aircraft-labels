@@ -8,6 +8,9 @@
   --label-h: 22.0mm;
   --col-gap: 4.0mm;
   --row-gap: 4.0mm;
+  --qr-size: 9.0mm;
+  --cut-len: 2.0mm;
+  --cut-off: 1.0mm;
 }
 
 * {
@@ -49,9 +52,10 @@ body {
 }
 
 .label{
+  position: relative;
   width: var(--label-w);
   height: var(--label-h);
-  border: 0.25mm solid #000;
+  border: none;
   border-radius: 1.2mm;
   padding: 1.4mm;
   display: grid;
@@ -95,7 +99,7 @@ body {
 }
 
 .qr-box img{
-  width:9.0mm;
+  width:var(--qr-size);
   height:auto;
   display:block;
 }
@@ -104,6 +108,42 @@ body {
   font-size:6pt;
   line-height:1;
   text-align:center;
+}
+
+.cut {
+  display: block;
+  position: absolute;
+  width: var(--cut-len);
+  height: var(--cut-len);
+  pointer-events: none;
+}
+
+.cut-tl {
+  top: calc(-1 * var(--cut-off));
+  left: calc(-1 * var(--cut-off));
+  border-top: 0.2mm solid #000;
+  border-left: 0.2mm solid #000;
+}
+
+.cut-tr {
+  top: calc(-1 * var(--cut-off));
+  right: calc(-1 * var(--cut-off));
+  border-top: 0.2mm solid #000;
+  border-right: 0.2mm solid #000;
+}
+
+.cut-bl {
+  bottom: calc(-1 * var(--cut-off));
+  left: calc(-1 * var(--cut-off));
+  border-bottom: 0.2mm solid #000;
+  border-left: 0.2mm solid #000;
+}
+
+.cut-br {
+  bottom: calc(-1 * var(--cut-off));
+  right: calc(-1 * var(--cut-off));
+  border-bottom: 0.2mm solid #000;
+  border-right: 0.2mm solid #000;
 }
 
 .no-print-header {
