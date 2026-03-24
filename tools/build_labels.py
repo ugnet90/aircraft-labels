@@ -92,8 +92,7 @@ def build_qr(url: str, out: Path) -> None:
 
 def write_css() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    OUT_CSS.write_text(
-        f"""\
+    OUT_CSS.write_text(f"""\
 @page {{
   size: A4;
   margin: {PAGE_MARGIN_MM}mm;
@@ -129,7 +128,8 @@ body {{
   align-content: start;
 }}
 
-.airline-break {{
+/* Airline Trenner */
+.airline-break{{
   grid-column: 1 / -1;
   margin: 2mm 0 1mm;
   padding: 1.5mm 2mm;
@@ -138,76 +138,80 @@ body {{
   background: #f3f3f3;
 }}
 
-.airline-break-title {{
+.airline-break-title{{
   font-size: 11pt;
   font-weight: 700;
   line-height: 1.1;
 }}
 
-.label {{
+/* Label Layout */
+.label{{
   width: var(--label-w);
   height: var(--label-h);
   border: 0.25mm solid #000;
   border-radius: 1.2mm;
   padding: 1.4mm;
+
   display: grid;
-  grid-template-columns: 1fr 15mm;
-  gap: 1.4mm;
-  overflow: hidden;
-  break-inside: avoid;
+  grid-template-columns: 1fr 10mm;
+  gap: 1.2mm;
+
+  align-content: start;
 }}
 
-.label-main {{
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 0.8mm;
+.label-left{{
+  display:flex;
+  flex-direction:column;
+  gap:0.6mm;
 }}
 
-.model-id {{
-  font-size: 10pt;
-  font-weight: 700;
-  line-height: 1.05;
-  margin: 0;
+.airline{{
+  font-size:7pt;
+  font-weight:700;
+  line-height:1.1;
+  min-height:2.2em;
 }}
 
-.airline {{
-  font-size: 7pt;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0;
+.type{{
+  font-size:7pt;
+  line-height:1.1;
+  min-height:2.2em;
 }}
 
-.type {{
-  font-size: 7pt;
-  line-height: 1.15;
-  margin: 0;
+.bottom-row{{
+  display:flex;
+  gap:1.2mm;
+  font-size:7pt;
+  line-height:1.1;
+  margin-top:0.6mm;
 }}
 
-.reg {{
-  font-size: 7pt;
-  line-height: 1.1;
-  margin: 0;
+.reg{{
+  white-space:nowrap;
 }}
 
-.meta {{
-  font-size: 6pt;
-  color: #444;
-  line-height: 1.1;
-  margin: 0;
+.meta{{
+  color:#444;
+  white-space:nowrap;
 }}
 
-.qr-box {{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.label-right{{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:0.5mm;
 }}
 
-.qr-box img {{
-  width: 100%;
-  height: auto;
-  display: block;
+.qr-box img{{
+  width:9mm;
+  height:auto;
+  display:block;
+}}
+
+.model-id-small{{
+  font-size:6pt;
+  line-height:1;
+  text-align:center;
 }}
 
 .no-print-header {{
@@ -228,13 +232,10 @@ body {{
     display: none;
   }}
 }}
-""",
-        encoding="utf-8",
-    )
-
+""", encoding="utf-8")
 
 def label_html(it: dict[str, Any]) -> str:
-    # Meta sauber zusammensetzen
+    # Meta bauen (wie vorher)
     meta_parts = []
     if str(it.get("manufacturer") or "").strip():
         meta_parts.append(it["manufacturer"])
@@ -242,20 +243,25 @@ def label_html(it: dict[str, Any]) -> str:
         meta_parts.append(it["scale"])
 
     meta = " · ".join(meta_parts)
-
-    meta_html = f'<p class="meta">{esc(meta)}</p>' if meta else '<p class="meta">&nbsp;</p>'
+    meta_html = esc(meta) if meta else ""
 
     return f"""\
 <article class="label">
-  <div class="label-main">
-    <p class="model-id">{esc(it["model_id"])}</p>
-    <p class="airline">{esc(it["airline"])}</p>
-    <p class="type">{esc(it["type"])}</p>
-    <p class="reg">{esc(it["reg"])}</p>
-    {meta_html}
+  <div class="label-left">
+    <div class="airline">{esc(it["airline"])}</div>
+    <div class="type">{esc(it["type"])}</div>
+
+    <div class="bottom-row">
+      <div class="reg">{esc(it["reg"])}</div>
+      <div class="meta">{meta_html}</div>
+    </div>
   </div>
-  <div class="qr-box">
-    <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
+
+  <div class="label-right">
+    <div class="qr-box">
+      <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
+    </div>
+    <div class="model-id-small">{esc(it["model_id"])}</div>
   </div>
 </article>
 """
