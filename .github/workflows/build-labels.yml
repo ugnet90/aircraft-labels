@@ -62,8 +62,7 @@ jobs:
               page.pdf(
                   path=str(pdf_path),
                   format="A4",
-                  print_background=True,
-                  margin={"top":"8mm","bottom":"8mm","left":"8mm","right":"8mm"}
+                  print_background=True
               )
               browser.close()
           EOF
