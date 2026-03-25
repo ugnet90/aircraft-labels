@@ -9,7 +9,7 @@
       "row_gap_mm": 4,
       "qr_size_mm": 9,
       "show_border": true,
-      "show_logo": true,
+      "show_logo": false,
       "cut_marks": false,
       "cut_mark_length_mm": 2,
       "cut_mark_offset_mm": 1
@@ -22,7 +22,7 @@
       "row_gap_mm": 1,
       "qr_size_mm": 10,
       "show_border": false,
-      "show_logo": true,
+      "show_logo": false,
       "cut_marks": true,
       "cut_mark_length_mm": 2,
       "cut_mark_offset_mm": 1
