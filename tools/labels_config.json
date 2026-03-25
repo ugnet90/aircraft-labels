@@ -27,6 +27,5 @@
     }
   },
   "mode": "print_all",
-  "group_by_airline": false,
   "selected_ids": []
 }
