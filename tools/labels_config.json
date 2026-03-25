@@ -1,24 +1,24 @@
 {
-  "template": "standard",
+  "template": "cut_only",
   "templates": {
-    "standard": {
+    "frame": {
       "label_width_mm": 48,
       "label_height_mm": 22,
       "page_margin_mm": 8,
       "col_gap_mm": 4,
       "row_gap_mm": 4,
       "qr_size_mm": 9,
-      "show_border": false,
-      "cut_marks": true,
+      "show_border": true,
+      "cut_marks": false,
       "cut_mark_length_mm": 2,
       "cut_mark_offset_mm": 1
     },
-    "standard_noborder": {
+    "cut_only": {
       "label_width_mm": 48,
       "label_height_mm": 22,
       "page_margin_mm": 8,
       "col_gap_mm": 4,
-      "row_gap_mm": 4,
+      "row_gap_mm": 6,
       "qr_size_mm": 9,
       "show_border": false,
       "cut_marks": true,
@@ -26,7 +26,7 @@
       "cut_mark_offset_mm": 1
     }
   },
-  "mode": "default",
+  "mode": "print_all",
   "group_by_airline": false,
   "selected_ids": []
 }
