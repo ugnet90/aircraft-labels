@@ -16,7 +16,7 @@
     "cut_only": {
       "label_width_mm": 48,
       "label_height_mm": 22,
-      "page_margin_mm": 8,
+      "page_margin_mm": 4,
       "col_gap_mm": 1,
       "row_gap_mm": 1,
       "qr_size_mm": 9,
