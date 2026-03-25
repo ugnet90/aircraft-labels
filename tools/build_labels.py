@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -72,7 +73,7 @@ def load_models(mode: str, selected_ids: set[str]) -> list[dict[str, Any]]:
             continue
 
         # nur bestimmte IDs
-        if mode == "selection" and selected_ids:
+        if mode == "print_selection" and selected_ids:
             if model_id.upper() not in selected_ids:
                 continue
 
@@ -398,10 +399,19 @@ def main() -> None:
     cut_mark_length_mm = float(template.get("cut_mark_length_mm", 2))
     cut_mark_offset_mm = float(template.get("cut_mark_offset_mm", 1))
 
-    mode = str(config.get("mode", "default")).strip().lower()
-    group_by_airline = bool(config.get("group_by_airline", False))
-    selected_ids = parse_selected_ids(config.get("selected_ids", []))
-
+    mode = (
+        os.getenv("MODE") or
+        config.get("mode", "print_all")
+    ).strip().lower()
+    
+    group_by_airline = (mode == "print_airlinegroup")
+    
+    ids_env = os.getenv("IDS", "")
+    if ids_env.strip():
+        selected_ids = parse_ids(ids_env)
+    else:
+        selected_ids = parse_selected_ids(config.get("selected_ids", []))
+    
     # alte QR-Dateien entfernen
     for old in QR_DIR.glob("*.png"):
         old.unlink()
