@@ -77,24 +77,23 @@ body {
 .label-left{
   display:flex;
   flex-direction:column;
-  gap:0.6mm;
+  gap:0.8mm;
 }
 
 .airline{
   font-size:7pt;
   font-weight:700;
-  line-height:1.1;
+  line-height:1.15;
 }
 
 .type{
   font-size:7pt;
-  line-height:1.1;
+  line-height:1.15;
 }
 
 .bottom-row{
   font-size:7pt;
-  line-height:1.1;
-  margin-top:0.6mm;
+  line-height:1.15;
 }
 
 .reg{
@@ -112,6 +111,12 @@ body {
   width:var(--qr-size);
   height:auto;
   display:block;
+  border:0.3mm solid transparent;
+  border-radius:0.8mm;
+}
+
+.qr-box.flown img{
+  border-color:#2e7d32;
 }
 
 .model-id-small{
