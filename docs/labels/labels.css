@@ -1,6 +1,6 @@
 @page {
   size: A4;
-  margin: 4.0mm;
+  margin: 6.0mm;
 }
 
 :root {
@@ -8,7 +8,7 @@
   --label-h: 22.0mm;
   --col-gap: 1.0mm;
   --row-gap: 1.0mm;
-  --qr-size: 9.0mm;
+  --qr-size: 10.0mm;
   --cut-len: 2.0mm;
   --cut-off: 1.0mm;
 }
