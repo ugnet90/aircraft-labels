@@ -508,6 +508,7 @@ def main() -> None:
         items,
         group_by_airline=group_by_airline,
         show_cut_marks=cut_marks,
+        show_logo=show_logo,
     )
 
     print("Labels erstellt:", len(items))
