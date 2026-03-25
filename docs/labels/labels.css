@@ -67,7 +67,7 @@ body {
   height: var(--label-h);
   border: none;
   border-radius: 1.2mm;
-  padding: 1.4mm;
+  padding: 1.2mm 1.4mm 1.2mm 1.4mm;
   display: grid;
   grid-template-columns: 1fr 10mm;
   gap: 1.2mm;
@@ -77,23 +77,46 @@ body {
 .label-left{
   display:flex;
   flex-direction:column;
-  gap:0.8mm;
+  align-items:flex-start;
+  gap:0.7mm;
+  min-width:0;
+}
+
+.logo-wrap{
+  height:4.2mm;
+  display:flex;
+  align-items:flex-start;
+}
+
+.logo-wrap img{
+  max-height:4.2mm;
+  max-width:18mm;
+  width:auto;
+  object-fit:contain;
+  display:block;
 }
 
 .airline{
   font-size:7pt;
   font-weight:700;
-  line-height:1.15;
+  line-height:1.1;
+  margin:0;
+  min-width:0;
+  overflow-wrap:anywhere;
 }
 
 .type{
   font-size:7pt;
-  line-height:1.15;
+  line-height:1.1;
+  margin:0;
+  min-width:0;
+  overflow-wrap:anywhere;
 }
 
 .bottom-row{
   font-size:7pt;
-  line-height:1.15;
+  line-height:1.1;
+  margin:0;
 }
 
 .reg{
@@ -104,7 +127,14 @@ body {
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:0.5mm;
+  gap:0.6mm;
+  justify-content:flex-start;
+}
+
+.qr-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .qr-box img{
@@ -123,6 +153,7 @@ body {
   font-size:6pt;
   line-height:1;
   text-align:center;
+  margin:0;
 }
 
 .cut {
