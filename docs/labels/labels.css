@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-  padding: 8.0mm;
+  padding: 0;
 }
 
 .sheet {
@@ -51,8 +51,18 @@ body {
   line-height: 1.1;
 }
 
-.label{
+.labelSlot{
   position: relative;
+  width: calc(var(--label-w) + (2 * var(--cut-off)));
+  height: calc(var(--label-h) + (2 * var(--cut-off)));
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.label{
+  position: absolute;
+  top: var(--cut-off);
+  left: var(--cut-off);
   width: var(--label-w);
   height: var(--label-h);
   border: none;
