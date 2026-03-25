@@ -80,6 +80,7 @@ def load_models(mode: str, selected_ids: set[str]) -> list[dict[str, Any]]:
         airline = first(d.get("airline_row"), d.get("airline"))
         typ = first(d.get("aircraft_type"), d.get("aircraft", {}).get("type"))
         reg = first(d.get("registration"), d.get("aircraft", {}).get("registration"))
+        logo = d.get("logo", {}).get("link")
         flown = d.get("model", {}).get("flown") or d.get("flown")
         
         url = f"{PUBLIC_BASE_URL}{model_id}"
@@ -89,6 +90,7 @@ def load_models(mode: str, selected_ids: set[str]) -> list[dict[str, Any]]:
             "airline": airline,
             "type": typ,
             "reg": reg,
+            "logo": logo,
             "flown": bool(flown),        
             "url": url,
             "qr": f"qr/{model_id}.png",
@@ -200,7 +202,7 @@ body {{
   height: var(--label-h);
   border: {border_css};
   border-radius: 1.2mm;
-  padding: 1.4mm;
+  padding: 1.2mm 1.4mm 1.2mm 1.4mm;
   display: grid;
   grid-template-columns: 1fr 10mm;
   gap: 1.2mm;
@@ -210,23 +212,46 @@ body {{
 .label-left{{
   display:flex;
   flex-direction:column;
-  gap:0.8mm;
+  align-items:flex-start;
+  gap:0.7mm;
+  min-width:0;
+}}
+
+.logo-wrap{{
+  height:4.2mm;
+  display:flex;
+  align-items:flex-start;
+}}
+
+.logo-wrap img{{
+  max-height:4.2mm;
+  max-width:18mm;
+  width:auto;
+  object-fit:contain;
+  display:block;
 }}
 
 .airline{{
   font-size:7pt;
   font-weight:700;
-  line-height:1.15;
+  line-height:1.1;
+  margin:0;
+  min-width:0;
+  overflow-wrap:anywhere;
 }}
 
 .type{{
   font-size:7pt;
-  line-height:1.15;
+  line-height:1.1;
+  margin:0;
+  min-width:0;
+  overflow-wrap:anywhere;
 }}
 
 .bottom-row{{
   font-size:7pt;
-  line-height:1.15;
+  line-height:1.1;
+  margin:0;
 }}
 
 .reg{{
@@ -237,7 +262,14 @@ body {{
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:0.5mm;
+  gap:0.6mm;
+  justify-content:flex-start;
+}}
+
+.qr-box{{
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }}
 
 .qr-box img{{
@@ -256,6 +288,7 @@ body {{
   font-size:6pt;
   line-height:1;
   text-align:center;
+  margin:0;
 }}
 
 .cut {{
@@ -314,8 +347,7 @@ body {{
 }}
 """, encoding="utf-8")
 
-def label_html(it: dict[str, Any], show_cut_marks: bool) -> str:
-    qr_class = "qr-box flown" if it.get("flown") else "qr-box"
+def label_html(it: dict[str, Any], show_cut_marks: bool, show_logo: bool) -> str:
     cut_html = """
     <span class="cut cut-tl"></span>
     <span class="cut cut-tr"></span>
@@ -323,14 +355,25 @@ def label_html(it: dict[str, Any], show_cut_marks: bool) -> str:
     <span class="cut cut-br"></span>
     """ if show_cut_marks else ""
 
+    qr_class = "qr-box flown" if it.get("flown") else "qr-box"
+
+    logo_html = ""
+    if show_logo and str(it.get("logo") or "").strip():
+        logo_html = f'''
+        <div class="logo-wrap">
+          <img src="{esc(it["logo"])}" alt="">
+        </div>
+        '''
+        
     return f"""\
 <div class="labelSlot">
   <article class="label">
     {cut_html}
+
     <div class="label-left">
+      {logo_html}
       <div class="airline">{esc(it["airline"])}</div>
       <div class="type">{esc(it["type"])}</div>
-
       <div class="bottom-row">
         <div class="reg">Reg: {esc(it["reg"])}</div>
       </div>
@@ -353,7 +396,12 @@ def airline_header_html(name: str) -> str:
 </div>
 """
 
-def write_html(items: list[dict[str, Any]], group_by_airline: bool, show_cut_marks: bool) -> None:
+def write_html(
+    items: list[dict[str, Any]],
+    group_by_airline: bool,
+    show_cut_marks: bool,
+    show_logo: bool,
+) -> None:
     parts: list[str] = []
 
     if group_by_airline:
@@ -363,9 +411,9 @@ def write_html(items: list[dict[str, Any]], group_by_airline: bool, show_cut_mar
             if airline != last_airline:
                 parts.append(airline_header_html(airline))
                 last_airline = airline
-            parts.append(label_html(it, show_cut_marks=show_cut_marks))
+            parts.append(label_html(it, show_cut_marks=show_cut_marks, show_logo=show_logo))
     else:
-        parts = [label_html(it, show_cut_marks=show_cut_marks) for it in items]
+        parts = [label_html(it, show_cut_marks=show_cut_marks, show_logo=show_logo) for it in items]
 
     OUT_HTML.write_text(
         f"""\
@@ -415,6 +463,7 @@ def main() -> None:
     row_gap_mm = float(template["row_gap_mm"])
     qr_size_mm = float(template["qr_size_mm"])
     show_border = bool(template["show_border"])
+    show_logo = bool(template.get("show_logo", True))
     cut_marks = bool(template.get("cut_marks", False))
     cut_mark_length_mm = float(template.get("cut_mark_length_mm", 2))
     cut_mark_offset_mm = float(template.get("cut_mark_offset_mm", 1))
@@ -449,6 +498,7 @@ def main() -> None:
         row_gap_mm=row_gap_mm,
         qr_size_mm=qr_size_mm,
         show_border=show_border,
+        
         cut_marks=cut_marks,
         cut_mark_length_mm=cut_mark_length_mm,
         cut_mark_offset_mm=cut_mark_offset_mm,
