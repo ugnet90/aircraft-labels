@@ -80,7 +80,8 @@ def load_models(mode: str, selected_ids: set[str]) -> list[dict[str, Any]]:
         airline = first(d.get("airline_row"), d.get("airline"))
         typ = first(d.get("aircraft_type"), d.get("aircraft", {}).get("type"))
         reg = first(d.get("registration"), d.get("aircraft", {}).get("registration"))
-
+        flown = d.get("model", {}).get("flown") or d.get("flown")
+        
         url = f"{PUBLIC_BASE_URL}{model_id}"
 
         items.append({
@@ -88,6 +89,7 @@ def load_models(mode: str, selected_ids: set[str]) -> list[dict[str, Any]]:
             "airline": airline,
             "type": typ,
             "reg": reg,
+            "flown": bool(flown),        
             "url": url,
             "qr": f"qr/{model_id}.png",
         })
@@ -208,24 +210,23 @@ body {{
 .label-left{{
   display:flex;
   flex-direction:column;
-  gap:0.6mm;
+  gap:0.8mm;
 }}
 
 .airline{{
   font-size:7pt;
   font-weight:700;
-  line-height:1.1;
+  line-height:1.15;
 }}
 
 .type{{
   font-size:7pt;
-  line-height:1.1;
+  line-height:1.15;
 }}
 
 .bottom-row{{
   font-size:7pt;
-  line-height:1.1;
-  margin-top:0.6mm;
+  line-height:1.15;
 }}
 
 .reg{{
@@ -243,6 +244,12 @@ body {{
   width:var(--qr-size);
   height:auto;
   display:block;
+  border:0.3mm solid transparent;
+  border-radius:0.8mm;
+}}
+
+.qr-box.flown img{{
+  border-color:#2e7d32;
 }}
 
 .model-id-small{{
@@ -308,6 +315,7 @@ body {{
 """, encoding="utf-8")
 
 def label_html(it: dict[str, Any], show_cut_marks: bool) -> str:
+    qr_class = "qr-box flown" if it.get("flown") else "qr-box"
     cut_html = """
     <span class="cut cut-tl"></span>
     <span class="cut cut-tr"></span>
@@ -329,7 +337,7 @@ def label_html(it: dict[str, Any], show_cut_marks: bool) -> str:
     </div>
 
     <div class="label-right">
-      <div class="qr-box">
+      <div class="{qr_class}">
         <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
       </div>
       <div class="model-id-small">{esc(it["model_id"])}</div>
