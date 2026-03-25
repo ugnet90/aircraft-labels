@@ -157,7 +157,7 @@ html, body {{
 }}
 
 body {{
-  padding: {page_margin_mm}mm;
+  padding: 0;
 }}
 
 .sheet {{
@@ -306,24 +306,26 @@ def label_html(it: dict[str, Any], show_cut_marks: bool) -> str:
     """ if show_cut_marks else ""
 
     return f"""\
-<article class="label">
-  {cut_html}
-  <div class="label-left">
-    <div class="airline">{esc(it["airline"])}</div>
-    <div class="type">{esc(it["type"])}</div>
+<div class="labelSlot">
+  <article class="label">
+    {cut_html}
+    <div class="label-left">
+      <div class="airline">{esc(it["airline"])}</div>
+      <div class="type">{esc(it["type"])}</div>
 
-    <div class="bottom-row">
-      <div class="reg">Reg: {esc(it["reg"])}</div>
+      <div class="bottom-row">
+        <div class="reg">Reg: {esc(it["reg"])}</div>
+      </div>
     </div>
-  </div>
 
-  <div class="label-right">
-    <div class="qr-box">
-      <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
+    <div class="label-right">
+      <div class="qr-box">
+        <img src="{esc(it["qr"])}" alt="QR {esc(it["model_id"])}">
+      </div>
+      <div class="model-id-small">{esc(it["model_id"])}</div>
     </div>
-    <div class="model-id-small">{esc(it["model_id"])}</div>
-  </div>
-</article>
+  </article>
+</div>
 """
 
 def airline_header_html(name: str) -> str:
