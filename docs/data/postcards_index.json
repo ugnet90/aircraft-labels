@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-24T09:09:20+01:00",
-  "count_total": 155,
-  "count_unique": 155,
+  "generated_at": "2026-04-07T14:54:39+02:00",
+  "count_total": 156,
+  "count_unique": 156,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -567,6 +567,12 @@
       "model_id": "ORD-LX-26",
       "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
       "price": 1.35
+    },
+    {
+      "id": "PC-ORD-PA-16-01",
+      "model_id": "ORD-PA-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "price": 1.85
     },
     {
       "id": "PC-ORD-PA-7-01",
@@ -1575,6 +1581,12 @@
       "model_id": "ORD-LX-26",
       "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
       "price": 1.35
+    },
+    "PC-ORD-PA-16-01": {
+      "id": "PC-ORD-PA-16-01",
+      "model_id": "ORD-PA-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "price": 1.85
     },
     "PC-ORD-PA-7-01": {
       "id": "PC-ORD-PA-7-01",

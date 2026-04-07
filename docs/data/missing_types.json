@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 387,
     "present_types": 130,
-    "missing_types": 256,
-    "ordered_types": 1,
-    "models": 174
+    "missing_types": 255,
+    "ordered_types": 2,
+    "models": 175
   },
   "missing_types": [
     {
@@ -450,12 +450,6 @@
     {
       "aircraft_id": "BOE-737-MAX9",
       "Typ_anzeige": "Boeing 737 MAX 9",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-747-123SF",
-      "Typ_anzeige": "Boeing 747-123 Special Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1544,6 +1538,12 @@
       "Typ_anzeige": "Yakowlew Yak-42",
       "manufacturer": "Yakowlew",
       "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-123SF",
+      "Typ_anzeige": "Boeing 747-123 Special Freighter",
+      "manufacturer": "Boeing",
+      "status": "ordered"
     },
     {
       "aircraft_id": "BOE-747-SCA",
