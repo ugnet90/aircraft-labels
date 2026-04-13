@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T14:54:39+02:00",
-  "count_total": 156,
-  "count_unique": 156,
+  "generated_at": "2026-04-13T12:14:09+02:00",
+  "count_total": 157,
+  "count_unique": 157,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -593,6 +593,13 @@
       "model_id": "ORD-SO-49",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "price": 1.35
+    },
+    {
+      "id": "PC-ORD-WF-6-01",
+      "model_id": "ORD-WF-6",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
+      "label": "Bemalung nicht ganz exakt",
+      "price": 0.85
     },
     {
       "id": "PC-OS001-01",
@@ -1607,6 +1614,13 @@
       "model_id": "ORD-SO-49",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "price": 1.35
+    },
+    "PC-ORD-WF-6-01": {
+      "id": "PC-ORD-WF-6-01",
+      "model_id": "ORD-WF-6",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
+      "label": "Bemalung nicht ganz exakt",
+      "price": 0.85
     },
     "PC-OS001-01": {
       "id": "PC-OS001-01",

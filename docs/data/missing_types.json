@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 387,
     "present_types": 130,
-    "missing_types": 255,
-    "ordered_types": 2,
-    "models": 175
+    "missing_types": 254,
+    "ordered_types": 3,
+    "models": 176
   },
   "missing_types": [
     {
@@ -756,12 +756,6 @@
     {
       "aircraft_id": "DHC-DHC7",
       "Typ_anzeige": "de Havilland Canada DHC-7 Dash 7",
-      "manufacturer": "de Havilland Canada",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "DHC-DHC8-100",
-      "Typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100",
       "manufacturer": "de Havilland Canada",
       "status": "missing"
     },
@@ -1549,6 +1543,12 @@
       "aircraft_id": "BOE-747-SCA",
       "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
       "manufacturer": "Boeing",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "DHC-DHC8-100",
+      "Typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100",
+      "manufacturer": "de Havilland Canada",
       "status": "ordered"
     }
   ]

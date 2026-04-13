@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-07T14:54:39+02:00",
-  "count": 175,
+  "generated_at": "2026-04-13T12:14:09+02:00",
+  "count": 176,
   "counts_by_airline_code": {
     "OS": 20,
     "LH": 31,
@@ -19,6 +19,7 @@
     "PA": 22,
     "SK": 8,
     "TP": 2,
+    "WF": 1,
     "SO": 26,
     "SM": 3
   },
@@ -4747,6 +4748,33 @@
       "ordered": false,
       "present": true,
       "status": "owned"
+    },
+    {
+      "model_id": "ORD-WF-6",
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Widerøe",
+      "aircraft_id": "DHC-DHC8-100",
+      "aircraft_type": "De Havilland Canada DHC-8-100",
+      "registration": "LN-ILS",
+      "manufacturer": "3DModels",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": true,
+      "logo_id": "WF_WIF",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.aviation-center-berlin.de/p/3WID",
+      "ordered_at": "2026-04-13",
+      "ordered": true,
+      "present": false,
+      "status": "ordered"
     }
   ]
 }
