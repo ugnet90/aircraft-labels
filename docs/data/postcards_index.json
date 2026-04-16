@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-13T12:14:09+02:00",
-  "count_total": 157,
-  "count_unique": 157,
+  "generated_at": "2026-04-16T20:25:20+02:00",
+  "count_total": 158,
+  "count_unique": 158,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -560,6 +560,13 @@
       "model_id": "ORD-BOA-11",
       "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
       "label": "andere Kennung, nicht exakte Beschriftung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-LH-7-01",
+      "model_id": "ORD-LH-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
+      "label": "andere Kennung",
       "price": 1.35
     },
     {
@@ -1581,6 +1588,13 @@
       "model_id": "ORD-BOA-11",
       "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
       "label": "andere Kennung, nicht exakte Beschriftung",
+      "price": 1.35
+    },
+    "PC-ORD-LH-7-01": {
+      "id": "PC-ORD-LH-7-01",
+      "model_id": "ORD-LH-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
+      "label": "andere Kennung",
       "price": 1.35
     },
     "PC-ORD-LX-26-01": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T12:14:09+02:00",
+  "generated_at": "2026-04-16T20:25:20+02:00",
   "count_families": 221,
   "families": {
     "AL-60": [
@@ -118,7 +118,7 @@
         "wingspan": 44.8,
         "height": 16.5,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "ordered",
         "manufacturer": "Airbus"
       },
       {

@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 387,
     "present_types": 130,
-    "missing_types": 254,
-    "ordered_types": 3,
-    "models": 176
+    "missing_types": 253,
+    "ordered_types": 4,
+    "models": 178
   },
   "missing_types": [
     {
@@ -31,12 +31,6 @@
       "aircraft_id": "AEV-L29",
       "Typ_anzeige": "Aero Vodochody L-29 Delfín",
       "manufacturer": "Aero Vodochody",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A300-600",
-      "Typ_anzeige": "Airbus A300-600",
-      "manufacturer": "Airbus",
       "status": "missing"
     },
     {
@@ -1532,6 +1526,12 @@
       "Typ_anzeige": "Yakowlew Yak-42",
       "manufacturer": "Yakowlew",
       "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A300-600",
+      "Typ_anzeige": "Airbus A300-600",
+      "manufacturer": "Airbus",
+      "status": "ordered"
     },
     {
       "aircraft_id": "BOE-747-123SF",
