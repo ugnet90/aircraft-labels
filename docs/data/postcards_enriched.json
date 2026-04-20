@@ -3205,5 +3205,103 @@
     "postcard_id": "PC-PA021-01",
     "model_id": "PA021",
     "scraped_at_utc": "2026-03-03T13:12:07Z"
+  },
+  "PC-ORD-LH-7-01": {
+    "id": "PC-ORD-LH-7-01",
+    "model_id": "ORD-LH-7",
+    "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
+    "label": "andere Kennung",
+    "price": 1.35,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
+    "thumb_url": "https://jjpostcards.com/30709-thickbox_default/lufthansa-a300.jpg",
+    "airline": "Lufthansa",
+    "aircraft_manufacturer": "Airbus",
+    "aircraft_type": "Airbus A300",
+    "aircraft_type_exact": "A300-605R",
+    "registration": "D-AIAY",
+    "publisher": "jjPostcards",
+    "year": 2005,
+    "size": "148x105 mm",
+    "size_mm": {
+      "w": 148,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "jjPostcards",
+    "postcard_id": "PC-ORD-LH-7-01",
+    "scraped_at_utc": "2026-04-20T14:22:14+02:00"
+  },
+  "PC-ORD-PA-16-01": {
+    "id": "PC-ORD-PA-16-01",
+    "model_id": "ORD-PA-16",
+    "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+    "price": 1.85,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+    "thumb_url": "https://jjpostcards.com/19461-thickbox_default/pan-american-cargo-b747.jpg",
+    "airline": "Pan American",
+    "aircraft_manufacturer": "Boeing",
+    "aircraft_type": "Boeing 747",
+    "aircraft_type_exact": "Boeing 747-123(F)",
+    "registration": "N901PA",
+    "publisher": "Fourcolour",
+    "year": 1975,
+    "size": "145x100 mm",
+    "size_mm": {
+      "w": 145,
+      "h": 100
+    },
+    "condition": "neu",
+    "publisher_norm": "Fourcolour",
+    "postcard_id": "PC-ORD-PA-16-01",
+    "scraped_at_utc": "2026-04-20T14:22:16+02:00"
+  },
+  "PC-ORD-SO-50-01": {
+    "id": "PC-ORD-SO-50-01",
+    "model_id": "ORD-SO-50",
+    "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+    "price": 1.35,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+    "thumb_url": "https://jjpostcards.com/26219-thickbox_default/nasa-b747-space-shutlle.jpg",
+    "airline": "NASA",
+    "aircraft_manufacturer": "Boeing",
+    "aircraft_type": "Boeing 747",
+    "aircraft_type_exact": "Boeing 747-123+Space Shutlle",
+    "registration": "N905NA",
+    "publisher": "FlyingPhotos",
+    "year": 2013,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "FlyingPhotos",
+    "postcard_id": "PC-ORD-SO-50-01",
+    "scraped_at_utc": "2026-04-20T14:22:17+02:00"
+  },
+  "PC-ORD-WF-6-01": {
+    "id": "PC-ORD-WF-6-01",
+    "model_id": "ORD-WF-6",
+    "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
+    "label": "Bemalung nicht ganz exakt",
+    "price": 0.85,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
+    "thumb_url": "https://jjpostcards.com/69178-thickbox_default/Wideroe-DHC-8.jpg",
+    "airline": "Wideroe",
+    "aircraft_manufacturer": "De Havilland Canada",
+    "aircraft_type": "De Havilland Canada DHC-8 Dash 8",
+    "aircraft_type_exact": "DHC-8-103B",
+    "registration": "LN-WII",
+    "publisher": "jjPostcards",
+    "year": 2018,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "jjPostcards",
+    "postcard_id": "PC-ORD-WF-6-01",
+    "scraped_at_utc": "2026-04-20T14:22:19+02:00"
   }
 }
