@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-16T20:25:20+02:00",
-  "count_families": 221,
+  "generated_at": "2026-04-20T12:26:31+02:00",
+  "count_families": 222,
   "families": {
     "AL-60": [
       {
@@ -2220,6 +2220,20 @@
         "wingtip": "RW",
         "status": "missing",
         "manufacturer": "Boeing"
+      }
+    ],
+    "Global 5000": [
+      {
+        "aircraft_id": "BOM-BD700",
+        "type": "Bombardier BD-700 Global 5000",
+        "parent_aircraft_id": "BOM-GLOBAL6000",
+        "parent_type": "",
+        "length": 29.5,
+        "wingspan": 28.7,
+        "height": 7.7,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Bombardier"
       }
     ],
     "CRJ-100": [

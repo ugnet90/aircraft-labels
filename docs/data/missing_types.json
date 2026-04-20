@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 387,
+    "master_types": 388,
     "present_types": 130,
-    "missing_types": 253,
+    "missing_types": 254,
     "ordered_types": 4,
     "models": 178
   },
@@ -601,6 +601,12 @@
       "aircraft_id": "BOE-VC137C",
       "Typ_anzeige": "Boeing VC-137C Stratoliner",
       "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOM-BD700",
+      "Typ_anzeige": "Bombardier BD-700 Global 5000",
+      "manufacturer": "Bombardier",
       "status": "missing"
     },
     {
