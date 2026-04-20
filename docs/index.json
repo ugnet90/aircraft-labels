@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T12:26:31+02:00",
+  "generated_at": "2026-04-20T12:26:51+02:00",
   "count": 178,
   "counts_by_airline_code": {
     "OS": 21,
@@ -191,15 +191,15 @@
       "airline_code": "AF",
       "airline": "Air France",
       "airline_row": "Air France HOP",
-      "aircraft_id": "EMB-E170",
-      "aircraft_type": "Embraer ERJ-170",
+      "aircraft_id": "EMB-E170-WL",
+      "aircraft_type": "Embraer E170 (Winglets)",
       "registration": "F-HBXE",
       "manufacturer": "Herpa Wings",
       "aircraft_name": "",
       "livery_note": "Hop! for Air France",
       "extra_info": "",
-      "wingtip": "NONE",
-      "has_wingtip": false,
+      "wingtip": "WL",
+      "has_wingtip": true,
       "livery_name": "",
       "livery_display": "",
       "arrived": "2026-01-15",
@@ -3940,7 +3940,7 @@
       "status": "owned"
     },
     {
-      "model_id": "ORD-SO-49",
+      "model_id": "ORD-SO-50",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "NASA",

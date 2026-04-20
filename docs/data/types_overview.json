@@ -5207,6 +5207,19 @@
       "manufacturer": "Embraer",
       "wingtip": "NONE",
       "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "EMB-E170-WL",
+      "typ_anzeige": "Embraer E170 (Winglets)",
+      "type_key": "embraer e170 (winglets)",
+      "manufacturer": "Embraer",
+      "wingtip": "WL",
+      "has_wingtip": true,
       "status": "owned",
       "owned_count": 1,
       "ordered_count": 0,
@@ -5227,19 +5240,6 @@
           ]
         }
       ]
-    },
-    {
-      "aircraft_id": "EMB-E170-WL",
-      "typ_anzeige": "Embraer E170 (Winglets)",
-      "type_key": "embraer e170 (winglets)",
-      "manufacturer": "Embraer",
-      "wingtip": "WL",
-      "has_wingtip": true,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
     },
     {
       "aircraft_id": "EMB-E175",

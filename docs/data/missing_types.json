@@ -892,8 +892,8 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "EMB-E170-WL",
-      "Typ_anzeige": "Embraer E170 (Winglets)",
+      "aircraft_id": "EMB-E170",
+      "Typ_anzeige": "Embraer E170",
       "manufacturer": "Embraer",
       "status": "missing"
     },
