@@ -91,6 +91,7 @@ BEE-99;Beechcraft 99;Beechcraft;99;;;;;BE99;B99;NONE;SingleAisle;Regional;PAX;La
 BER-Be200;Beriev Be-200;Beriev;Be-200;;;;;BE2P;BE2;NONE;SingleAisle;Special;PAX;Amphibienflugzeug;1998;teils aktiv;Jet;2;Kurz/Mittel;72;32,05;32,78;8,9;https://de.wikipedia.org/wiki/Berijew_Be-200
 BER-Be30;Beriev Be-30;Beriev;Be-30;;;;;BE30;BE3;NONE;SingleAisle;Regional;PAX;Landflugzeug;1967;Prototyp/teils genutzt;Turboprop;2;Kurz;14;9,7;15;3,3;https://de.wikipedia.org/wiki/Berijew_Be-30
 BER-Be32;Beriev Be-32;Beriev;Be-32;;;;;BE32;BE3;NONE;SingleAisle;Regional;PAX;Landflugzeug;1976;Prototyp/teils genutzt;Turboprop;2;Kurz;14;11,84;15,5;4,3;https://en.wikipedia.org/wiki/Beriev_Be-32
+BOE-C17A;Boeing C-17A Globemaster III;Boeing;C-17;A;C-17A Globemaster III;Boeing C-17A|Globemaster III;;C17;C17;WL;Widebody;Special;CARGO;Landflugzeug;1991;aktiv;Jet;4;Lang;0;53,04;51,75;16,79;https://de.wikipedia.org/wiki/Boeing_C-17
 BOE-247;Boeing 247;Boeing;247;;;;;B247;247;NONE;SingleAisle;Standard;PAX;Landflugzeug;1933;ausgemustert;Propeller;2;Kurz/Mittel;10;15,18;22,56;3,96;https://de.wikipedia.org/wiki/Boeing_247
 BOE-307;Boeing 307 Stratoliner;Boeing;307;;Stratoliner;;;BO37;B37;NONE;SingleAisle;Standard;PAX;Landflugzeug;1938;ausgemustert;Propeller;4;Mittel;33;22,66;32,61;6,2;https://de.wikipedia.org/wiki/Boeing_307
 BOE-314;Boeing 314;Boeing;314;;;;;B314;---;NONE;SingleAisle;Special;PAX;Wasserflugzeug;1938;ausgemustert;Propeller;4;Lang;74;32,36;46,96;9,65;https://de.wikipedia.org/wiki/Boeing_314
