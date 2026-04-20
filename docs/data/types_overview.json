@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 388,
+  "master_count": 389,
   "with_any_models": 134,
-  "missing": 254,
+  "missing": 255,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -3631,6 +3631,19 @@
           ]
         }
       ]
+    },
+    {
+      "aircraft_id": "BOE-C17A",
+      "typ_anzeige": "Boeing C-17A Globemaster III",
+      "type_key": "boeing c-17a globemaster iii",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
       "aircraft_id": "BOE-C32A",

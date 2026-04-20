@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-20T12:26:51+02:00",
-  "count_families": 222,
+  "generated_at": "2026-04-20T14:19:58+02:00",
+  "count_families": 223,
   "families": {
     "AL-60": [
       {
@@ -1206,6 +1206,20 @@
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Beriev"
+      }
+    ],
+    "C-17": [
+      {
+        "aircraft_id": "BOE-C17A",
+        "type": "Boeing C-17A Globemaster III",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 53.04,
+        "wingspan": 51.75,
+        "height": 16.79,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
       }
     ],
     "247": [

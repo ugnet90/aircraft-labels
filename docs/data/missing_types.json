@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 388,
+    "master_types": 389,
     "present_types": 130,
-    "missing_types": 254,
+    "missing_types": 255,
     "ordered_types": 4,
     "models": 178
   },
@@ -576,6 +576,12 @@
     {
       "aircraft_id": "BOE-787-10",
       "Typ_anzeige": "Boeing 787-10 Dreamliner",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-C17A",
+      "Typ_anzeige": "Boeing C-17A Globemaster III",
       "manufacturer": "Boeing",
       "status": "missing"
     },
