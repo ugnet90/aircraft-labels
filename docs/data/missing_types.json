@@ -3,10 +3,10 @@
   "warning": "",
   "counts": {
     "master_types": 397,
-    "present_types": 127,
-    "missing_types": 267,
-    "ordered_types": 3,
-    "models": 178
+    "present_types": 130,
+    "missing_types": 261,
+    "ordered_types": 6,
+    "models": 180
   },
   "missing_types": [
     {
@@ -424,12 +424,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-737-C40A",
-      "Typ_anzeige": "Boeing C-40A Clipper",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "BOE-737-MAX10",
       "Typ_anzeige": "Boeing 737 MAX 10",
       "manufacturer": "Boeing",
@@ -450,12 +444,6 @@
     {
       "aircraft_id": "BOE-737-MAX9",
       "Typ_anzeige": "Boeing 737 MAX 9",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-747-100SF",
-      "Typ_anzeige": "Boeing 747-100 Special Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -538,12 +526,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-747-YAL1",
-      "Typ_anzeige": "Boeing YAL-1 Airborne Laser Testbed",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "BOE-757-200PF",
       "Typ_anzeige": "Boeing 757-200PF",
       "manufacturer": "Boeing",
@@ -564,12 +546,6 @@
     {
       "aircraft_id": "BOE-757-300-WL",
       "Typ_anzeige": "Boeing 757-300 (Winglets)",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-757-C32A",
-      "Typ_anzeige": "Boeing C-32A",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -648,12 +624,6 @@
     {
       "aircraft_id": "BOE-C17A",
       "Typ_anzeige": "Boeing C-17A Globemaster III",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-KC135D",
-      "Typ_anzeige": "Boeing KC-135D Stratotanker",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1150,12 +1120,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "LOC-C130H",
-      "Typ_anzeige": "Lockheed C-130H Hercules",
-      "manufacturer": "Lockheed",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "LOC-C5A",
       "Typ_anzeige": "Lockheed C-5A Galaxy",
       "manufacturer": "Lockheed",
@@ -1618,8 +1582,20 @@
       "status": "ordered"
     },
     {
+      "aircraft_id": "BOE-747-100SF",
+      "Typ_anzeige": "Boeing 747-100 Special Freighter",
+      "manufacturer": "Boeing",
+      "status": "ordered"
+    },
+    {
       "aircraft_id": "BOE-747-SCA",
       "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
+      "manufacturer": "Boeing",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOE-KC135D",
+      "Typ_anzeige": "Boeing KC-135D Stratotanker",
       "manufacturer": "Boeing",
       "status": "ordered"
     },
@@ -1627,6 +1603,12 @@
       "aircraft_id": "DHC-DHC8-100",
       "Typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100",
       "manufacturer": "de Havilland Canada",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "LOC-C130H",
+      "Typ_anzeige": "Lockheed C-130H Hercules",
+      "manufacturer": "Lockheed",
       "status": "ordered"
     }
   ]

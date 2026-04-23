@@ -8,7 +8,7 @@
   "livery_note": "",
   "extra_info": "B757-200",
   "shop_url": "https://mw-moba.de/Produkt/boeing-757-200-united-states-of-america-80001-gemini-jets-gjafo254-1400/",
-  "aircraft_id": "BOE-C32A",
+  "aircraft_id": "BOE-757-C32A",
   "aircraft_type": "Boeing C-32A",
   "registration": "80001",
   "livery_name": "",
@@ -38,10 +38,10 @@
     "row": "23"
   },
   "aircraft": {
-    "aircraft_id": "BOE-C32A",
+    "aircraft_id": "BOE-757-C32A",
     "type": "Boeing C-32A",
     "registration": "80001",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -79,5 +79,32 @@
     "name": "United States Air Force (USAF)",
     "airline": "United States Air Force",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-757-C32A",
+    "Typ_anzeige": "Boeing C-32A",
+    "Hersteller": "Boeing",
+    "Baureihe": "757",
+    "Unterserie": "C-32A",
+    "Marketingname": "C-32A",
+    "Alternate_designations": "USAF VIP Transport",
+    "parent_aircraft_id": "BOE-757-200",
+    "ICAO": "B752",
+    "IATA": "752",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1998",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "0",
+    "Length": "47,32",
+    "Wingspan": "38,05",
+    "Height": "13,56",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_C-32"
   }
 }

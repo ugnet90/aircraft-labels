@@ -8,7 +8,7 @@
   "livery_note": "UNITED STATES NAVY",
   "extra_info": "B737-700",
   "shop_url": "https://mw-moba.de/Produkt/boeing-c-40-united-states-navy-ry-831-gemini-jets-gjusn295-1400/",
-  "aircraft_id": "BOE-C40A",
+  "aircraft_id": "BOE-737-C40A",
   "aircraft_type": "Boeing C-40A Clipper",
   "registration": "RY-831",
   "livery_name": "",
@@ -38,10 +38,10 @@
     "row": "29"
   },
   "aircraft": {
-    "aircraft_id": "BOE-C40A",
+    "aircraft_id": "BOE-737-C40A",
     "type": "Boeing C-40A Clipper",
     "registration": "RY-831",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -79,5 +79,32 @@
     "name": "United States Navy (US Navy)",
     "airline": "United States Navy",
     "logo_speaking": "Falsch"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-737-C40A",
+    "Typ_anzeige": "Boeing C-40A Clipper",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-700",
+    "Marketingname": "C-40A Clipper",
+    "Alternate_designations": "Boeing C-40A|Clipper",
+    "parent_aircraft_id": "BOE-737-700",
+    "ICAO": "C40A",
+    "IATA": "C40A",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1999",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Mittel",
+    "Passengers": "0",
+    "Length": "33,63",
+    "Wingspan": "34,32",
+    "Height": "12,55",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_C-40#C-40A"
   }
 }

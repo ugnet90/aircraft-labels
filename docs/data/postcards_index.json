@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-23T15:54:25+02:00",
-  "count_total": 159,
-  "count_unique": 159,
+  "generated_at": "2026-04-23T15:54:46+02:00",
+  "count_total": 162,
+  "count_unique": 162,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -589,6 +589,20 @@
       "price": 0.85
     },
     {
+      "id": "PC-ORD-SO-33-01",
+      "model_id": "ORD-SO-33",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-ORD-SO-34-01",
+      "model_id": "ORD-SO-34",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
       "id": "PC-ORD-SO-37-01",
       "model_id": "ORD-SO-37",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
@@ -604,6 +618,12 @@
     {
       "id": "PC-ORD-SO-50-01",
       "model_id": "ORD-SO-50",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-SO-53-01",
+      "model_id": "ORD-SO-53",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "price": 1.35
     },
@@ -1622,6 +1642,20 @@
       "label": "andere Kennung",
       "price": 0.85
     },
+    "PC-ORD-SO-33-01": {
+      "id": "PC-ORD-SO-33-01",
+      "model_id": "ORD-SO-33",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 0.85
+    },
+    "PC-ORD-SO-34-01": {
+      "id": "PC-ORD-SO-34-01",
+      "model_id": "ORD-SO-34",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
     "PC-ORD-SO-37-01": {
       "id": "PC-ORD-SO-37-01",
       "model_id": "ORD-SO-37",
@@ -1638,6 +1672,12 @@
     "PC-ORD-SO-50-01": {
       "id": "PC-ORD-SO-50-01",
       "model_id": "ORD-SO-50",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "price": 1.35
+    },
+    "PC-ORD-SO-53-01": {
+      "id": "PC-ORD-SO-53-01",
+      "model_id": "ORD-SO-53",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "price": 1.35
     },

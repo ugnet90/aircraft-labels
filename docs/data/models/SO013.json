@@ -8,7 +8,7 @@
   "livery_note": "U.S. Air Force",
   "extra_info": "",
   "shop_url": "https://www.ebay.de/itm/297708607526?_skw=1%2F400&itmmeta=01K8TKQVTFNFET2J6P9Z4A3PRZ&hash=item4550d0d826%3Ag%3A1vsAAeSw2xto-4A0&LH_Auction=1",
-  "aircraft_id": "BOE-YAL1",
+  "aircraft_id": "BOE-747-YAL1",
   "aircraft_type": "Boeing YAL-1 Airborne Laser",
   "registration": "00-0001",
   "livery_name": "",
@@ -38,11 +38,11 @@
     "row": "28"
   },
   "aircraft": {
-    "aircraft_id": "BOE-YAL1",
+    "aircraft_id": "BOE-747-YAL1",
     "type": "Boeing YAL-1 Airborne Laser",
     "registration": "00-0001",
-    "wingtip": "",
-    "has_wingtip": false
+    "wingtip": "WL",
+    "has_wingtip": true
   },
   "livery": {
     "code": "",
@@ -79,5 +79,32 @@
     "name": "United States Air Force (USAF)",
     "airline": "United States Air Force",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-747-YAL1",
+    "Typ_anzeige": "Boeing YAL-1 Airborne Laser Testbed",
+    "Hersteller": "Boeing",
+    "Baureihe": "747",
+    "Unterserie": "YAL-1",
+    "Marketingname": "Airborne Laser Testbed",
+    "Alternate_designations": "YAL-1|ABL|Airborne Laser",
+    "parent_aircraft_id": "BOE-747-400F",
+    "ICAO": "B744",
+    "IATA": "744",
+    "Wingtip": "WL",
+    "Rumpf": "Widebody",
+    "MarketSegment": "Special",
+    "Role": "SPECIAL",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "2002",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "0",
+    "Length": "70,66",
+    "Wingspan": "64,44",
+    "Height": "19,41",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_YAL-1"
   }
 }

@@ -8,7 +8,7 @@
   "livery_note": "",
   "extra_info": "Pan Am Cargo",
   "shop_url": "https://www.kleinanzeigen.de/s-anzeige/gemini-jets-1-400-panam-cargo/3374087463-234-1999",
-  "aircraft_id": "BOE-747-123SF",
+  "aircraft_id": "BOE-747-100SF",
   "aircraft_type": "Boeing 747-123 Special Freighter",
   "registration": "N901PA",
   "livery_name": "",
@@ -45,10 +45,10 @@
     "row": "16"
   },
   "aircraft": {
-    "aircraft_id": "BOE-747-123SF",
+    "aircraft_id": "BOE-747-100SF",
     "type": "Boeing 747-123 Special Freighter",
     "registration": "N901PA",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -86,5 +86,32 @@
     "name": "Pan American World Airways Incorporated",
     "airline": "Pan Am",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-747-100SF",
+    "Typ_anzeige": "Boeing 747-100 Special Freighter",
+    "Hersteller": "Boeing",
+    "Baureihe": "747",
+    "Unterserie": "-100SF",
+    "Marketingname": "Special Freighter",
+    "Alternate_designations": "747-100(SF)",
+    "parent_aircraft_id": "BOE-747-100",
+    "ICAO": "B741",
+    "IATA": "741",
+    "Wingtip": "NONE",
+    "Rumpf": "Widebody",
+    "MarketSegment": "LongHaul",
+    "Role": "CARGO",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1969",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "0",
+    "Length": "70,66",
+    "Wingspan": "59,64",
+    "Height": "19,3",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_747"
   }
 }
