@@ -100,7 +100,7 @@
     "IATA": "720",
     "Wingtip": "NONE",
     "Rumpf": "SingleAisle",
-    "MarketSegment": "LongHaul",
+    "MarketSegment": "Standard",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
     "Erstflug": "1959",
@@ -109,8 +109,8 @@
     "Triebwerke": "4",
     "Reichweite": "Kurz/Mittel",
     "Passengers": "149",
-    "Length": "41,6",
-    "Wingspan": "39,9",
+    "Length": "41,5",
+    "Wingspan": "39,88",
     "Height": "12,93",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_720"
   }

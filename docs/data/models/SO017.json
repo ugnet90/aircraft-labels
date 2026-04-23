@@ -41,7 +41,7 @@
     "aircraft_id": "BOE-C32A",
     "type": "Boeing C-32A",
     "registration": "80001",
-    "wingtip": "NONE",
+    "wingtip": "",
     "has_wingtip": false
   },
   "livery": {
@@ -79,32 +79,5 @@
     "name": "United States Air Force (USAF)",
     "airline": "United States Air Force",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "BOE-C32A",
-    "Typ_anzeige": "Boeing C-32A (Air Force Two)",
-    "Hersteller": "Boeing",
-    "Baureihe": "757",
-    "Unterserie": "C-32A",
-    "Marketingname": "C-32A (Air Force Two)",
-    "Alternate_designations": "Boeing C-32A|USAF C-32A|Air Force Two",
-    "parent_aircraft_id": "BOE-757-200",
-    "ICAO": "B752",
-    "IATA": "752",
-    "Wingtip": "NONE",
-    "Rumpf": "SingleAisle",
-    "MarketSegment": "Special",
-    "Role": "SPECIAL",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1998",
-    "Status": "aktiv",
-    "Antrieb": "Jet",
-    "Triebwerke": "2",
-    "Reichweite": "Lang",
-    "Passengers": "45",
-    "Length": "47,32",
-    "Wingspan": "38,05",
-    "Height": "13,56",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_757#C-32A_(%E2%80%9EAir_Force_Two%E2%80%9C)"
   }
 }

@@ -94,8 +94,8 @@
     "Baureihe": "737",
     "Unterserie": "-400",
     "Marketingname": "",
-    "Alternate_designations": " ",
-    "parent_aircraft_id": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "BOE-737-300",
     "ICAO": "B734",
     "IATA": "734",
     "Wingtip": "NONE",
@@ -109,9 +109,9 @@
     "Triebwerke": "2",
     "Reichweite": "Kurz/Mittel",
     "Passengers": "168",
-    "Length": "36,5",
-    "Wingspan": "28,9",
-    "Height": "11,1",
+    "Length": "36,45",
+    "Wingspan": "28,88",
+    "Height": "11,13",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-400"
   }
 }

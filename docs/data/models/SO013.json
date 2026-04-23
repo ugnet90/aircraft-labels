@@ -41,7 +41,7 @@
     "aircraft_id": "BOE-YAL1",
     "type": "Boeing YAL-1 Airborne Laser",
     "registration": "00-0001",
-    "wingtip": "NONE",
+    "wingtip": "",
     "has_wingtip": false
   },
   "livery": {
@@ -79,32 +79,5 @@
     "name": "United States Air Force (USAF)",
     "airline": "United States Air Force",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "BOE-YAL1",
-    "Typ_anzeige": "Boeing YAL-1 Airborne Laser",
-    "Hersteller": "Boeing",
-    "Baureihe": "747",
-    "Unterserie": "YAL-1",
-    "Marketingname": "YAL-1 Airborne Laser",
-    "Alternate_designations": "Boeing YAL-1A|Airborne Laser|747-400F ABL",
-    "parent_aircraft_id": "BOE-747-400",
-    "ICAO": "B741",
-    "IATA": "741",
-    "Wingtip": "NONE",
-    "Rumpf": "TwinAisle",
-    "MarketSegment": "Special",
-    "Role": "SPECIAL",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "2002",
-    "Status": "ausgemustert",
-    "Antrieb": "Jet",
-    "Triebwerke": "4",
-    "Reichweite": "Lang",
-    "Passengers": "0",
-    "Length": "70,66",
-    "Wingspan": "64,44",
-    "Height": "19,41",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_YAL-1"
   }
 }

@@ -89,7 +89,7 @@
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-767-AOA",
-    "Typ_anzeige": "Boeing 767-200 Airborne Optical Adjunct",
+    "Typ_anzeige": "Boeing 767 Airborne Optical Adjunct",
     "Hersteller": "Boeing",
     "Baureihe": "767",
     "Unterserie": "-200",
@@ -99,12 +99,12 @@
     "ICAO": "B762",
     "IATA": "762",
     "Wingtip": "NONE",
-    "Rumpf": "TwinAisle",
+    "Rumpf": "Widebody",
     "MarketSegment": "Special",
     "Role": "SPECIAL",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1993",
-    "Status": "aktiv",
+    "Erstflug": "1981",
+    "Status": "ausgemustert",
     "Antrieb": "Jet",
     "Triebwerke": "2",
     "Reichweite": "Lang",
@@ -112,6 +112,6 @@
     "Length": "48,51",
     "Wingspan": "47,57",
     "Height": "15,85",
-    "Wiki": "https://en.wikipedia.org/wiki/Airborne_Optical_Adjunct"
+    "Wiki": "https://en.wikipedia.org/wiki/Boeing_767"
   }
 }

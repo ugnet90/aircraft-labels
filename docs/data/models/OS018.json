@@ -94,12 +94,12 @@
     "Baureihe": "767",
     "Unterserie": "-300",
     "Marketingname": "",
-    "Alternate_designations": " ",
-    "parent_aircraft_id": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "BOE-767-200",
     "ICAO": "B763",
     "IATA": "763",
     "Wingtip": "NONE",
-    "Rumpf": "TwinAisle",
+    "Rumpf": "Widebody",
     "MarketSegment": "LongHaul",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
@@ -112,7 +112,7 @@
     "Length": "54,94",
     "Wingspan": "47,57",
     "Height": "15,85",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#767-300"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#Boeing_767-300"
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

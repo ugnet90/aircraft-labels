@@ -89,17 +89,17 @@
   },
   "aircraft_full_v8": {
     "aircraft_id": "BOE-767-300ER",
-    "Typ_anzeige": "Boeing 767-300ER Extended Range",
+    "Typ_anzeige": "Boeing 767-300ER",
     "Hersteller": "Boeing",
     "Baureihe": "767",
     "Unterserie": "-300ER",
     "Marketingname": "Extended Range",
     "Alternate_designations": "",
-    "parent_aircraft_id": "",
+    "parent_aircraft_id": "BOE-767-300",
     "ICAO": "B763",
     "IATA": "76W",
     "Wingtip": "NONE",
-    "Rumpf": "TwinAisle",
+    "Rumpf": "Widebody",
     "MarketSegment": "LongHaul",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
@@ -112,6 +112,6 @@
     "Length": "54,94",
     "Wingspan": "47,57",
     "Height": "15,85",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#767-300ER"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#Boeing_767-300ER"
   }
 }

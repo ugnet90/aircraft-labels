@@ -94,10 +94,10 @@
     "Baureihe": "737",
     "Unterserie": "-800",
     "Marketingname": "",
-    "Alternate_designations": "",
-    "parent_aircraft_id": "",
+    "Alternate_designations": "737-800 Winglets",
+    "parent_aircraft_id": "BOE-737-800",
     "ICAO": "B738",
-    "IATA": "73H",
+    "IATA": "738",
     "Wingtip": "WL",
     "Rumpf": "SingleAisle",
     "MarketSegment": "Standard",
@@ -107,11 +107,11 @@
     "Status": "aktiv",
     "Antrieb": "Jet",
     "Triebwerke": "2",
-    "Reichweite": "Mittel",
+    "Reichweite": "Kurz/Mittel",
     "Passengers": "189",
-    "Length": "39,5",
+    "Length": "39,47",
     "Wingspan": "35,79",
-    "Height": "12,5",
+    "Height": "12,55",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-800"
   }
 }

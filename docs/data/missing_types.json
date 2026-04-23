@@ -2,10 +2,10 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 389,
-    "present_types": 130,
-    "missing_types": 255,
-    "ordered_types": 4,
+    "master_types": 397,
+    "present_types": 127,
+    "missing_types": 267,
+    "ordered_types": 3,
     "models": 178
   },
   "missing_types": [
@@ -388,8 +388,8 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-717",
-      "Typ_anzeige": "Boeing 717",
+      "aircraft_id": "BOE-717-200",
+      "Typ_anzeige": "Boeing 717-200",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -424,6 +424,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-737-C40A",
+      "Typ_anzeige": "Boeing C-40A Clipper",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-737-MAX10",
       "Typ_anzeige": "Boeing 737 MAX 10",
       "manufacturer": "Boeing",
@@ -444,6 +450,12 @@
     {
       "aircraft_id": "BOE-737-MAX9",
       "Typ_anzeige": "Boeing 737 MAX 9",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-100SF",
+      "Typ_anzeige": "Boeing 747-100 Special Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -472,8 +484,32 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-747-300M",
+      "Typ_anzeige": "Boeing 747-300 Combi",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-400BCF",
+      "Typ_anzeige": "Boeing 747-400BCF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-747-400D",
-      "Typ_anzeige": "Boeing 747-400D Domestic",
+      "Typ_anzeige": "Boeing 747-400D",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-400ERF",
+      "Typ_anzeige": "Boeing 747-400ER Freighter",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-400F",
+      "Typ_anzeige": "Boeing 747-400 Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -484,8 +520,38 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-747-SR",
-      "Typ_anzeige": "Boeing 747SR Short Range",
+      "aircraft_id": "BOE-747-400M",
+      "Typ_anzeige": "Boeing 747-400 Combi",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-8F",
+      "Typ_anzeige": "Boeing 747-8 Freighter",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-E4B",
+      "Typ_anzeige": "Boeing E-4B",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-YAL1",
+      "Typ_anzeige": "Boeing YAL-1 Airborne Laser Testbed",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-757-200PF",
+      "Typ_anzeige": "Boeing 757-200PF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-757-200SF",
+      "Typ_anzeige": "Boeing 757-200SF",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -502,26 +568,32 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-757-C32A",
+      "Typ_anzeige": "Boeing C-32A",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-767-200",
       "Typ_anzeige": "Boeing 767-200",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-767-200-WL",
-      "Typ_anzeige": "Boeing 767-200 (Winglets)",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "BOE-767-200ER",
-      "Typ_anzeige": "Boeing 767-200ER Extended Range",
+      "Typ_anzeige": "Boeing 767-200ER",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
       "aircraft_id": "BOE-767-300-WL",
       "Typ_anzeige": "Boeing 767-300 (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-767-300BCF",
+      "Typ_anzeige": "Boeing 767-300BCF",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -539,13 +611,13 @@
     },
     {
       "aircraft_id": "BOE-767-400ER",
-      "Typ_anzeige": "Boeing 767-400ER Extended Range",
+      "Typ_anzeige": "Boeing 767-400ER",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
       "aircraft_id": "BOE-777-200LR",
-      "Typ_anzeige": "Boeing 777-200LR Longer Range",
+      "Typ_anzeige": "Boeing 777-200LR Worldliner",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -556,19 +628,13 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-777-8",
-      "Typ_anzeige": "Boeing 777-8",
+      "aircraft_id": "BOE-777-300ERSF",
+      "Typ_anzeige": "Boeing 777-300ERSF",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-777-9",
-      "Typ_anzeige": "Boeing 777-9",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-777-F",
+      "aircraft_id": "BOE-777F",
       "Typ_anzeige": "Boeing 777F",
       "manufacturer": "Boeing",
       "status": "missing"
@@ -586,8 +652,8 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-E4B",
-      "Typ_anzeige": "Boeing E-4B",
+      "aircraft_id": "BOE-KC135D",
+      "Typ_anzeige": "Boeing KC-135D Stratotanker",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1084,6 +1150,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "LOC-C130H",
+      "Typ_anzeige": "Lockheed C-130H Hercules",
+      "manufacturer": "Lockheed",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "LOC-C5A",
       "Typ_anzeige": "Lockheed C-5A Galaxy",
       "manufacturer": "Lockheed",
@@ -1543,12 +1615,6 @@
       "aircraft_id": "AIB-A300-600",
       "Typ_anzeige": "Airbus A300-600",
       "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOE-747-123SF",
-      "Typ_anzeige": "Boeing 747-123 Special Freighter",
-      "manufacturer": "Boeing",
       "status": "ordered"
     },
     {

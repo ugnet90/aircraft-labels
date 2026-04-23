@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 389,
-  "with_any_models": 134,
-  "missing": 255,
+  "master_count": 397,
+  "with_any_models": 130,
+  "missing": 267,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -2018,8 +2018,8 @@
     },
     {
       "aircraft_id": "BOE-314",
-      "typ_anzeige": "Boeing 314",
-      "type_key": "boeing 314",
+      "typ_anzeige": "Boeing 314 Clipper",
+      "type_key": "boeing 314 clipper",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -2195,9 +2195,9 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-717",
-      "typ_anzeige": "Boeing 717",
-      "type_key": "boeing 717",
+      "aircraft_id": "BOE-717-200",
+      "typ_anzeige": "Boeing 717-200",
+      "type_key": "boeing 717-200",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -2736,8 +2736,8 @@
       "typ_anzeige": "Boeing 737-900ER",
       "type_key": "boeing 737-900er",
       "manufacturer": "Boeing",
-      "wingtip": "NONE",
-      "has_wingtip": false,
+      "wingtip": "WL",
+      "has_wingtip": true,
       "status": "missing",
       "owned_count": 0,
       "ordered_count": 0,
@@ -2829,32 +2829,17 @@
       ]
     },
     {
-      "aircraft_id": "BOE-747-123SF",
-      "typ_anzeige": "Boeing 747-123 Special Freighter",
-      "type_key": "boeing 747-123 special freighter",
+      "aircraft_id": "BOE-747-100SF",
+      "typ_anzeige": "Boeing 747-100 Special Freighter",
+      "type_key": "boeing 747-100 special freighter",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Pan Am",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Pan Am",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ]
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
       "aircraft_id": "BOE-747-200",
@@ -2965,6 +2950,19 @@
       "airline_group_counts": []
     },
     {
+      "aircraft_id": "BOE-747-300M",
+      "typ_anzeige": "Boeing 747-300 Combi",
+      "type_key": "boeing 747-300 combi",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-747-400",
       "typ_anzeige": "Boeing 747-400",
       "type_key": "boeing 747-400",
@@ -3007,6 +3005,32 @@
       ]
     },
     {
+      "aircraft_id": "BOE-747-400M",
+      "typ_anzeige": "Boeing 747-400 Combi",
+      "type_key": "boeing 747-400 combi",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-400F",
+      "typ_anzeige": "Boeing 747-400 Freighter",
+      "type_key": "boeing 747-400 freighter",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-747-400-VO",
       "typ_anzeige": "Boeing 747-400 LauncherOne Carrier Aircraft",
       "type_key": "boeing 747-400 launcherone carrier aircraft",
@@ -3035,12 +3059,38 @@
       ]
     },
     {
+      "aircraft_id": "BOE-747-400BCF",
+      "typ_anzeige": "Boeing 747-400BCF",
+      "type_key": "boeing 747-400bcf",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-747-400D",
-      "typ_anzeige": "Boeing 747-400D Domestic",
-      "type_key": "boeing 747-400d domestic",
+      "typ_anzeige": "Boeing 747-400D",
+      "type_key": "boeing 747-400d",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-400ERF",
+      "typ_anzeige": "Boeing 747-400ER Freighter",
+      "type_key": "boeing 747-400er freighter",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
       "status": "missing",
       "owned_count": 0,
       "ordered_count": 0,
@@ -3053,6 +3103,19 @@
       "type_key": "boeing 747-400lcf dreamlifter",
       "manufacturer": "Boeing",
       "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-747-8F",
+      "typ_anzeige": "Boeing 747-8 Freighter",
+      "type_key": "boeing 747-8 freighter",
+      "manufacturer": "Boeing",
+      "wingtip": "RW",
       "has_wingtip": true,
       "status": "missing",
       "owned_count": 0,
@@ -3090,8 +3153,8 @@
     },
     {
       "aircraft_id": "BOE-747-SP",
-      "typ_anzeige": "Boeing 747SP Special Performance",
-      "type_key": "boeing 747sp special performance",
+      "typ_anzeige": "Boeing 747SP",
+      "type_key": "boeing 747sp",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3115,19 +3178,6 @@
           ]
         }
       ]
-    },
-    {
-      "aircraft_id": "BOE-747-SR",
-      "typ_anzeige": "Boeing 747SR Short Range",
-      "type_key": "boeing 747sr short range",
-      "manufacturer": "Boeing",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
     },
     {
       "aircraft_id": "BOE-757-200",
@@ -3186,6 +3236,32 @@
       ]
     },
     {
+      "aircraft_id": "BOE-757-200PF",
+      "typ_anzeige": "Boeing 757-200PF",
+      "type_key": "boeing 757-200pf",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-757-200SF",
+      "typ_anzeige": "Boeing 757-200SF",
+      "type_key": "boeing 757-200sf",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-757-300",
       "typ_anzeige": "Boeing 757-300",
       "type_key": "boeing 757-300",
@@ -3212,35 +3288,9 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-767-200",
-      "typ_anzeige": "Boeing 767-200",
-      "type_key": "boeing 767-200",
-      "manufacturer": "Boeing",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
-    },
-    {
-      "aircraft_id": "BOE-767-200-WL",
-      "typ_anzeige": "Boeing 767-200 (Winglets)",
-      "type_key": "boeing 767-200 (winglets)",
-      "manufacturer": "Boeing",
-      "wingtip": "WL",
-      "has_wingtip": true,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
-    },
-    {
       "aircraft_id": "BOE-767-AOA",
-      "typ_anzeige": "Boeing 767-200 Airborne Optical Adjunct",
-      "type_key": "boeing 767-200 airborne optical adjunct",
+      "typ_anzeige": "Boeing 767 Airborne Optical Adjunct",
+      "type_key": "boeing 767 airborne optical adjunct",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3266,9 +3316,22 @@
       ]
     },
     {
+      "aircraft_id": "BOE-767-200",
+      "typ_anzeige": "Boeing 767-200",
+      "type_key": "boeing 767-200",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-767-200ER",
-      "typ_anzeige": "Boeing 767-200ER Extended Range",
-      "type_key": "boeing 767-200er extended range",
+      "typ_anzeige": "Boeing 767-200ER",
+      "type_key": "boeing 767-200er",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3320,6 +3383,19 @@
       "airline_group_counts": []
     },
     {
+      "aircraft_id": "BOE-767-300BCF",
+      "typ_anzeige": "Boeing 767-300BCF",
+      "type_key": "boeing 767-300bcf",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-767-300BCF-WL",
       "typ_anzeige": "Boeing 767-300BCF (Winglets)",
       "type_key": "boeing 767-300bcf (winglets)",
@@ -3333,22 +3409,9 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-767-300ER-WL",
-      "typ_anzeige": "Boeing 767-300ER (Winglets)",
-      "type_key": "boeing 767-300er (winglets)",
-      "manufacturer": "Boeing",
-      "wingtip": "WL",
-      "has_wingtip": true,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
-    },
-    {
       "aircraft_id": "BOE-767-300ER",
-      "typ_anzeige": "Boeing 767-300ER Extended Range",
-      "type_key": "boeing 767-300er extended range",
+      "typ_anzeige": "Boeing 767-300ER",
+      "type_key": "boeing 767-300er",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3374,9 +3437,22 @@
       ]
     },
     {
+      "aircraft_id": "BOE-767-300ER-WL",
+      "typ_anzeige": "Boeing 767-300ER (Winglets)",
+      "type_key": "boeing 767-300er (winglets)",
+      "manufacturer": "Boeing",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "BOE-767-400ER",
-      "typ_anzeige": "Boeing 767-400ER Extended Range",
-      "type_key": "boeing 767-400er extended range",
+      "typ_anzeige": "Boeing 767-400ER",
+      "type_key": "boeing 767-400er",
       "manufacturer": "Boeing",
       "wingtip": "RW",
       "has_wingtip": true,
@@ -3430,8 +3506,8 @@
     },
     {
       "aircraft_id": "BOE-777-200ER",
-      "typ_anzeige": "Boeing 777-200ER Extended Range",
-      "type_key": "boeing 777-200er extended range",
+      "typ_anzeige": "Boeing 777-200ER",
+      "type_key": "boeing 777-200er",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3458,8 +3534,8 @@
     },
     {
       "aircraft_id": "BOE-777-200LR",
-      "typ_anzeige": "Boeing 777-200LR Longer Range",
-      "type_key": "boeing 777-200lr longer range",
+      "typ_anzeige": "Boeing 777-200LR Worldliner",
+      "type_key": "boeing 777-200lr worldliner",
       "manufacturer": "Boeing",
       "wingtip": "RW",
       "has_wingtip": true,
@@ -3484,8 +3560,8 @@
     },
     {
       "aircraft_id": "BOE-777-300ER",
-      "typ_anzeige": "Boeing 777-300ER Extended Range",
-      "type_key": "boeing 777-300er extended range",
+      "typ_anzeige": "Boeing 777-300ER",
+      "type_key": "boeing 777-300er",
       "manufacturer": "Boeing",
       "wingtip": "RW",
       "has_wingtip": true,
@@ -3525,12 +3601,12 @@
       ]
     },
     {
-      "aircraft_id": "BOE-777-8",
-      "typ_anzeige": "Boeing 777-8",
-      "type_key": "boeing 777-8",
+      "aircraft_id": "BOE-777-300ERSF",
+      "typ_anzeige": "Boeing 777-300ERSF",
+      "type_key": "boeing 777-300ersf",
       "manufacturer": "Boeing",
-      "wingtip": "RW",
-      "has_wingtip": true,
+      "wingtip": "NONE",
+      "has_wingtip": false,
       "status": "missing",
       "owned_count": 0,
       "ordered_count": 0,
@@ -3538,20 +3614,7 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-777-9",
-      "typ_anzeige": "Boeing 777-9",
-      "type_key": "boeing 777-9",
-      "manufacturer": "Boeing",
-      "wingtip": "RW",
-      "has_wingtip": true,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
-    },
-    {
-      "aircraft_id": "BOE-777-F",
+      "aircraft_id": "BOE-777F",
       "typ_anzeige": "Boeing 777F",
       "type_key": "boeing 777f",
       "manufacturer": "Boeing",
@@ -3646,65 +3709,48 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-C32A",
-      "typ_anzeige": "Boeing C-32A (Air Force Two)",
-      "type_key": "boeing c-32a (air force two)",
+      "aircraft_id": "BOE-757-C32A",
+      "typ_anzeige": "Boeing C-32A",
+      "type_key": "boeing c-32a",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "United States Air Force",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-C40A",
+      "aircraft_id": "BOE-737-C40A",
       "typ_anzeige": "Boeing C-40A Clipper",
       "type_key": "boeing c-40a clipper",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "United States Navy",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
-      "aircraft_id": "BOE-E4B",
+      "aircraft_id": "BOE-747-E4B",
       "typ_anzeige": "Boeing E-4B",
       "type_key": "boeing e-4b",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "BOE-KC135D",
+      "typ_anzeige": "Boeing KC-135D Stratotanker",
+      "type_key": "boeing kc-135d stratotanker",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3758,8 +3804,8 @@
       "typ_anzeige": "Boeing VC-25A (Air Force One)",
       "type_key": "boeing vc-25a (air force one)",
       "manufacturer": "Boeing",
-      "wingtip": "WL",
-      "has_wingtip": true,
+      "wingtip": "NONE",
+      "has_wingtip": false,
       "status": "owned",
       "owned_count": 1,
       "ordered_count": 0,
@@ -3786,7 +3832,7 @@
       "typ_anzeige": "Boeing VC-25B (Air Force One, 747-8I)",
       "type_key": "boeing vc-25b (air force one, 747-8i)",
       "manufacturer": "Boeing",
-      "wingtip": "SL",
+      "wingtip": "RW",
       "has_wingtip": true,
       "status": "owned",
       "owned_count": 1,
@@ -3810,32 +3856,17 @@
       ]
     },
     {
-      "aircraft_id": "BOE-YAL1",
-      "typ_anzeige": "Boeing YAL-1 Airborne Laser",
-      "type_key": "boeing yal-1 airborne laser",
+      "aircraft_id": "BOE-747-YAL1",
+      "typ_anzeige": "Boeing YAL-1 Airborne Laser Testbed",
+      "type_key": "boeing yal-1 airborne laser testbed",
       "manufacturer": "Boeing",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "United States Air Force",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
       "aircraft_id": "BOM-BD700",
@@ -5958,6 +5989,19 @@
       "typ_anzeige": "Let L-610",
       "type_key": "let l-610",
       "manufacturer": "Let",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "LOC-C130H",
+      "typ_anzeige": "Lockheed C-130H Hercules",
+      "type_key": "lockheed c-130h hercules",
+      "manufacturer": "Lockheed",
       "wingtip": "NONE",
       "has_wingtip": false,
       "status": "missing",

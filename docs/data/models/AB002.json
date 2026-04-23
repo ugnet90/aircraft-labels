@@ -94,7 +94,7 @@
     "Baureihe": "757",
     "Unterserie": "-200",
     "Marketingname": "",
-    "Alternate_designations": " ",
+    "Alternate_designations": "",
     "parent_aircraft_id": "",
     "ICAO": "B752",
     "IATA": "752",
@@ -104,14 +104,14 @@
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
     "Erstflug": "1982",
-    "Status": "teils aktiv",
+    "Status": "aktiv",
     "Antrieb": "Jet",
     "Triebwerke": "2",
     "Reichweite": "Mittel",
-    "Passengers": "200",
+    "Passengers": "239",
     "Length": "47,32",
     "Wingspan": "38,05",
     "Height": "13,56",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_757#757-200"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_757#Boeing_757-200"
   }
 }

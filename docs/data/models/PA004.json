@@ -95,9 +95,9 @@
     "Unterserie": "-200",
     "Marketingname": "",
     "Alternate_designations": "",
-    "parent_aircraft_id": "",
+    "parent_aircraft_id": "BOE-727-100",
     "ICAO": "B722",
-    "IATA": "727",
+    "IATA": "722",
     "Wingtip": "NONE",
     "Rumpf": "SingleAisle",
     "MarketSegment": "Standard",
@@ -107,11 +107,11 @@
     "Status": "ausgemustert",
     "Antrieb": "Jet",
     "Triebwerke": "3",
-    "Reichweite": "Mittel",
+    "Reichweite": "Kurz/Mittel",
     "Passengers": "189",
     "Length": "46,7",
     "Wingspan": "32,9",
-    "Height": "10,36",
+    "Height": "10,4",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_727#727-200"
   }
 }
