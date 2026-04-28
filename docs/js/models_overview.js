@@ -419,33 +419,14 @@ function apply(){
     airline: document.getElementById("airline").value,
     type: document.getElementById("type").value,
     scale: document.getElementById("scale").value,
-    flown: document.getElementById("flown").value
+    flown: document.getElementById("flown").value,
     status: document.getElementById("status")?.value || ""
   };
 
-  // Facetten neu aufbauen, bevor die finale Trefferliste gerendert wird
   buildFacetOptions(filters);
   updateActiveFilterUI(filters);
 
-  const q = norm(document.getElementById("q").value);
-  const group = document.getElementById("group").value;
-  const airline = document.getElementById("airline").value;
-  const type = document.getElementById("type").value;
-  const scale = document.getElementById("scale").value;
-  const flown = document.getElementById("flown").value;
-
-  let items = state.all.filter(it => {
-    if (!matchesQuery(it, q)) return false;
-    if (!matchesAirline(it, airline)) return false;
-
-    const grp = getGroupValue(it);
-    if (group && grp !== group) return false;
-
-    if (!matchesType(it, type)) return false;
-    if (!matchesScale(it, scale)) return false;
-    if (!matchesFlown(it, flown)) return false;
-    return true;
-  });
+  let items = state.all.filter(it => passesFilters(it, filters));
 
   items = sortByColumn(items);
 
@@ -471,6 +452,7 @@ async function main(){
     document.getElementById("type").addEventListener("change", apply);
     document.getElementById("scale").addEventListener("change", apply);
     document.getElementById("flown").addEventListener("change", apply);
+    document.getElementById("status")?.addEventListener("change", apply);
 
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
@@ -479,6 +461,9 @@ async function main(){
       document.getElementById("type").value = "";
       document.getElementById("scale").value = "";
       document.getElementById("flown").value = "";
+      if(document.getElementById("status")){
+        document.getElementById("status").value = "";
+      }
       
       tableSortKey = "model_id";
       tableSortDir = 1;
@@ -520,6 +505,9 @@ async function main(){
     if (p.has("flown")) {
       document.getElementById("flown").value = p.get("flown") || "";
     }
+    if (p.has("status") && document.getElementById("status")) {
+      document.getElementById("status").value = p.get("status") || "";
+    }
     //if (p.has("sort")) {
     //  document.getElementById("sort").value = p.get("sort") || document.getElementById("sort").value;
     //}
@@ -551,6 +539,9 @@ document.addEventListener("click", (ev) => {
   document.getElementById("type").value = "";
   document.getElementById("scale").value = "";
   document.getElementById("flown").value = "";
+  if(document.getElementById("status")){
+    document.getElementById("status").value = "";
+  }  
   // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
   // document.getElementById("sort").value = "group_model";
 
