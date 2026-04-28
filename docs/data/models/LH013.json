@@ -41,8 +41,8 @@
     "aircraft_id": "AIB-A330-300-SL",
     "type": "Airbus A330-300 (Sharklets)",
     "registration": "D-AIKO",
-    "wingtip": "SL",
-    "has_wingtip": true
+    "wingtip": "",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",
@@ -79,32 +79,5 @@
     "name": "Deutsche Lufthansa AG",
     "airline": "Lufthansa",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "AIB-A330-300-SL",
-    "Typ_anzeige": "Airbus A330-300 (Sharklets)",
-    "Hersteller": "Airbus",
-    "Baureihe": "A330",
-    "Unterserie": "-300",
-    "Marketingname": "",
-    "Alternate_designations": "",
-    "parent_aircraft_id": "",
-    "ICAO": "A333",
-    "IATA": "333",
-    "Wingtip": "SL",
-    "Rumpf": "TwinAisle",
-    "MarketSegment": "LongHaul",
-    "Role": "PAX",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1992",
-    "Status": "aktiv",
-    "Antrieb": "Jet",
-    "Triebwerke": "2",
-    "Reichweite": "Lang",
-    "Passengers": "300",
-    "Length": "63,69",
-    "Wingspan": "60,3",
-    "Height": "16,85",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A330#A330-300"
   }
 }

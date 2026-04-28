@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T15:54:46+02:00",
+  "generated_at": "2026-04-28T10:48:23+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -386,6 +386,18 @@
     ],
     "A330": [
       {
+        "aircraft_id": "AIB-A330-MRTT",
+        "type": "Airbus A330 MRTT",
+        "parent_aircraft_id": "AIB-A330-200",
+        "parent_type": "Airbus A330-200",
+        "length": 58.82,
+        "wingspan": 60.3,
+        "height": 17.39,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Airbus"
+      },
+      {
         "aircraft_id": "AIB-A330-200",
         "type": "Airbus A330-200",
         "parent_aircraft_id": "",
@@ -395,18 +407,6 @@
         "height": 17.39,
         "wingtip": "NONE",
         "status": "missing",
-        "manufacturer": "Airbus"
-      },
-      {
-        "aircraft_id": "AIB-A330-200-SL",
-        "type": "Airbus A330-200 (Sharklets)",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 58.82,
-        "wingspan": 60.3,
-        "height": 17.39,
-        "wingtip": "SL",
-        "status": "owned",
         "manufacturer": "Airbus"
       },
       {
@@ -443,18 +443,6 @@
         "height": 16.85,
         "wingtip": "NONE",
         "status": "missing",
-        "manufacturer": "Airbus"
-      },
-      {
-        "aircraft_id": "AIB-A330-300-SL",
-        "type": "Airbus A330-300 (Sharklets)",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 63.69,
-        "wingspan": 60.3,
-        "height": 16.85,
-        "wingtip": "SL",
-        "status": "owned",
         "manufacturer": "Airbus"
       },
       {
@@ -541,7 +529,7 @@
         "length": 66.8,
         "wingspan": 64.75,
         "height": 17.05,
-        "wingtip": "SL",
+        "wingtip": "NONE",
         "status": "owned",
         "manufacturer": "Airbus"
       },
@@ -2637,7 +2625,7 @@
         "length": 38.9,
         "wingspan": 35.8,
         "height": 11.95,
-        "wingtip": "SL",
+        "wingtip": "WL",
         "status": "owned",
         "manufacturer": "Comac"
       }

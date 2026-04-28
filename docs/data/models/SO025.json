@@ -48,7 +48,7 @@
     "aircraft_id": "COM-C919-100",
     "type": "Comac C919-100",
     "registration": "B-001J",
-    "wingtip": "SL",
+    "wingtip": "WL",
     "has_wingtip": true
   },
   "livery": {
@@ -98,7 +98,7 @@
     "parent_aircraft_id": "",
     "ICAO": "C919",
     "IATA": "919",
-    "Wingtip": "SL",
+    "Wingtip": "WL",
     "Rumpf": "SingleAisle",
     "MarketSegment": "Standard",
     "Role": "PAX",

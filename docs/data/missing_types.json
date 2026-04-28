@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 397,
-    "present_types": 130,
-    "missing_types": 261,
+    "master_types": 396,
+    "present_types": 128,
+    "missing_types": 262,
     "ordered_types": 6,
     "models": 180
   },
@@ -102,6 +102,12 @@
     {
       "aircraft_id": "AIB-A330-800neo",
       "Typ_anzeige": "Airbus A330-800neo",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A330-MRTT",
+      "Typ_anzeige": "Airbus A330 MRTT",
       "manufacturer": "Airbus",
       "status": "missing"
     },

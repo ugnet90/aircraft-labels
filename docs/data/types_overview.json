@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 397,
-  "with_any_models": 136,
-  "missing": 261,
+  "master_count": 396,
+  "with_any_models": 134,
+  "missing": 262,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -963,6 +963,19 @@
       ]
     },
     {
+      "aircraft_id": "AIB-A330-MRTT",
+      "typ_anzeige": "Airbus A330 MRTT",
+      "type_key": "airbus a330 mrtt",
+      "manufacturer": "Airbus",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "AIB-A330-200",
       "typ_anzeige": "Airbus A330-200",
       "type_key": "airbus a330-200",
@@ -976,76 +989,6 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "AIB-A330-200-SL",
-      "typ_anzeige": "Airbus A330-200 (Sharklets)",
-      "type_key": "airbus a330-200 (sharklets)",
-      "manufacturer": "Airbus",
-      "wingtip": "SL",
-      "has_wingtip": true,
-      "status": "owned",
-      "owned_count": 4,
-      "ordered_count": 0,
-      "total_count": 4,
-      "airline_group_counts": [
-        {
-          "group": "Alitalia",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Alitalia",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
-        {
-          "group": "Austrian",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Austrian",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
-        {
-          "group": "Swiss",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Edelweiss",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
-        {
-          "group": "TAP",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "TAP Air Cargo",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "aircraft_id": "AIB-A330-300",
       "typ_anzeige": "Airbus A330-300",
       "type_key": "airbus a330-300",
@@ -1057,48 +1000,6 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": []
-    },
-    {
-      "aircraft_id": "AIB-A330-300-SL",
-      "typ_anzeige": "Airbus A330-300 (Sharklets)",
-      "type_key": "airbus a330-300 (sharklets)",
-      "manufacturer": "Airbus",
-      "wingtip": "SL",
-      "has_wingtip": true,
-      "status": "owned",
-      "owned_count": 2,
-      "ordered_count": 0,
-      "total_count": 2,
-      "airline_group_counts": [
-        {
-          "group": "Lufthansa",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Lufthansa",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
-        {
-          "group": "SAS",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "SAS",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
     },
     {
       "aircraft_id": "AIB-A330-743L",
@@ -1354,8 +1255,8 @@
       "typ_anzeige": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
       "type_key": "airbus acj350-900 (regierungsflugzeug, luftwaffe)",
       "manufacturer": "Airbus",
-      "wingtip": "SL",
-      "has_wingtip": true,
+      "wingtip": "NONE",
+      "has_wingtip": false,
       "status": "owned",
       "owned_count": 1,
       "ordered_count": 0,
@@ -4347,7 +4248,7 @@
       "typ_anzeige": "Comac C919-100",
       "type_key": "comac c919-100",
       "manufacturer": "Comac",
-      "wingtip": "SL",
+      "wingtip": "WL",
       "has_wingtip": true,
       "status": "owned",
       "owned_count": 1,

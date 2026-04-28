@@ -48,8 +48,8 @@
     "aircraft_id": "AIB-ACJ350-900",
     "type": "Airbus ACJ350-900",
     "registration": "10+01",
-    "wingtip": "SL",
-    "has_wingtip": true
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",
@@ -98,7 +98,7 @@
     "parent_aircraft_id": "AIB-A350-900",
     "ICAO": "A359",
     "IATA": "359",
-    "Wingtip": "SL",
+    "Wingtip": "NONE",
     "Rumpf": "TwinAisle",
     "MarketSegment": "LongHaul",
     "Role": "SPECIAL",
