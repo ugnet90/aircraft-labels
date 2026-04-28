@@ -8,8 +8,8 @@
   "livery_note": "TAP Air Cargo",
   "extra_info": "",
   "shop_url": "https://www.ebay.de/itm/336405842990",
-  "aircraft_id": "AIB-A330-200-SL",
-  "aircraft_type": "Airbus A330-200 (Sharklets)",
+  "aircraft_id": "AIB-A330-200",
+  "aircraft_type": "Airbus A330-200",
   "registration": "CS-TOP",
   "livery_name": "",
   "parent_livery": "",
@@ -45,10 +45,10 @@
     "row": "10"
   },
   "aircraft": {
-    "aircraft_id": "AIB-A330-200-SL",
-    "type": "Airbus A330-200 (Sharklets)",
+    "aircraft_id": "AIB-A330-200",
+    "type": "Airbus A330-200",
     "registration": "CS-TOP",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -86,5 +86,32 @@
     "name": "-",
     "airline": "TAP Air Cargo",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A330-200",
+    "Typ_anzeige": "Airbus A330-200",
+    "Hersteller": "Airbus",
+    "Baureihe": "A330",
+    "Unterserie": "-200",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A332",
+    "IATA": "332",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1992",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "253",
+    "Length": "58,82",
+    "Wingspan": "58",
+    "Height": "17,39",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A330#A330-200"
   }
 }

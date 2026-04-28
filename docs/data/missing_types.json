@@ -3,8 +3,8 @@
   "warning": "",
   "counts": {
     "master_types": 396,
-    "present_types": 128,
-    "missing_types": 262,
+    "present_types": 130,
+    "missing_types": 260,
     "ordered_types": 6,
     "models": 180
   },
@@ -84,18 +84,6 @@
     {
       "aircraft_id": "AIB-A321-XLR",
       "Typ_anzeige": "Airbus A321 XLR",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A330-200",
-      "Typ_anzeige": "Airbus A330-200",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A330-300",
-      "Typ_anzeige": "Airbus A330-300",
       "manufacturer": "Airbus",
       "status": "missing"
     },

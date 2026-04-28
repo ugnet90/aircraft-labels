@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "https://mw-moba.de/Produkt/airbus-a330-300-lufthansa-d-aiko-gemini-jets-gjdlh1831-1400/",
-  "aircraft_id": "AIB-A330-300-SL",
-  "aircraft_type": "Airbus A330-300 (Sharklets)",
+  "aircraft_id": "AIB-A330-300",
+  "aircraft_type": "Airbus A330-300",
   "registration": "D-AIKO",
   "livery_name": "",
   "parent_livery": "",
@@ -38,10 +38,10 @@
     "row": "19"
   },
   "aircraft": {
-    "aircraft_id": "AIB-A330-300-SL",
-    "type": "Airbus A330-300 (Sharklets)",
+    "aircraft_id": "AIB-A330-300",
+    "type": "Airbus A330-300",
     "registration": "D-AIKO",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -79,5 +79,32 @@
     "name": "Deutsche Lufthansa AG",
     "airline": "Lufthansa",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "AIB-A330-300",
+    "Typ_anzeige": "Airbus A330-300",
+    "Hersteller": "Airbus",
+    "Baureihe": "A330",
+    "Unterserie": "-300",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "A333",
+    "IATA": "333",
+    "Wingtip": "NONE",
+    "Rumpf": "TwinAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1992",
+    "Status": "aktiv",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Lang",
+    "Passengers": "300",
+    "Length": "63,69",
+    "Wingspan": "60,3",
+    "Height": "16,85",
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A330#A330-300"
   }
 }

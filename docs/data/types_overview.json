@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 396,
-  "with_any_models": 134,
-  "missing": 262,
+  "with_any_models": 136,
+  "missing": 260,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -982,11 +982,68 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 4,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "total_count": 4,
+      "airline_group_counts": [
+        {
+          "group": "Alitalia",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Alitalia",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Swiss",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Edelweiss",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "TAP",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "TAP Air Cargo",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "AIB-A330-300",
@@ -995,11 +1052,40 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 2,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "SAS",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "SAS",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "AIB-A330-743L",
