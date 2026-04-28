@@ -295,6 +295,15 @@ function sortByColumn(items){
   return arr;
 }
 
+function getRowStatusClass(it){
+  const s = String(it.status || "").toLowerCase();
+
+  if(s === "ordered") return "row-ordered";
+  if(s === "wishlist" || it.wishlist === true) return "row-wishlist";
+
+  return "";
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -333,7 +342,7 @@ function render(items){
   for(const it of items){
     const link = `./model.html?id=${encodeURIComponent(it.model_id)}`;
     html += `
-      <tr class="modelRow" data-id="${esc(it.model_id || "")}">
+      <tr class="modelRow ${getRowStatusClass(it)}" data-id="${esc(it.model_id || "")}">
         <td class="mono">
           <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
             ${
