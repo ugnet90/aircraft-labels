@@ -35,6 +35,12 @@ tr:hover{ background:#fafafa; }
   .hide-m{ display:none !important; }
 }
 
+.badge-id.wish{
+  background:#fff3cd;
+  color:#7a5b00;
+  border:1px solid rgba(122,91,0,.25);
+}
+
 /* aktive Filter */
 .bar input.is-active,
 .bar select.is-active{
