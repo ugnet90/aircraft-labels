@@ -315,6 +315,9 @@ def main() -> int:
         
         bestellt_raw = (r.get("bestellt_am", "") or "").strip()
         bestellt_iso = excel_serial_to_iso(bestellt_raw)
+
+        wunsch_raw = (r.get("Wunsch", "") or "").strip()
+        wishlist = is_truthy(wunsch_raw)
         
         vorhanden_raw = (r.get("vorhanden", "") or "").strip().lower()
         present_flag = (vorhanden_raw in ("wahr", "true", "1", "x", "ja", "yes"))
@@ -325,8 +328,18 @@ def main() -> int:
         # ordered: bestellt_am vorhanden, aber NICHT present
         ordered = bool(bestellt_iso) and not present
         
-        # status (wishlist später)
-        status = "owned" if present else ("ordered" if ordered else "owned")
+        # wishlist nur wenn weder present noch ordered
+        wishlist = wishlist and not present and not ordered
+        
+        # finaler Status
+        if present:
+            status = "owned"
+        elif ordered:
+            status = "ordered"
+        elif wishlist:
+            status = "wishlist"
+        else:
+            status = "none"
 
         source_sheet = (r.get("source_sheet", "") or "").strip()
         source_row = (r.get("source_row", "") or "").strip()
@@ -384,6 +397,8 @@ def main() -> int:
             "arrived": angekommen_iso,
             "ordered_at": bestellt_iso,
             "ordered": ordered,
+            "wishlist": wishlist,
+            "status": status,
             "source": {"sheet": source_sheet, "row": source_row},
             "aircraft": {
                 "aircraft_id": aircraft_id,
@@ -409,6 +424,7 @@ def main() -> int:
                 "ordered_at": bestellt_iso,
                 "ordered": ordered,
                 "present": present,
+                "wishlist": wishlist,
                 "status": status,
                 "flown": eigenfluege,
                 "special_note": special_note,
@@ -483,6 +499,7 @@ def main() -> int:
             "ordered_at": bestellt_iso,
             "ordered": ordered,
             "present": present,
+            "wishlist": wishlist,
             "status": status,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
