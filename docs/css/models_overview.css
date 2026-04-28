@@ -20,7 +20,7 @@ tr:hover{ background:#fafafa; }
 .right{ display:flex; gap:8px; align-items:center; justify-content:flex-end; }
 .small{ font-size:12px; color:#666; }
 
-.badge-ordered{ border-color:#e0b200; background:#fff3c4; }
+
 
 .badge-id{
   display:inline-block;
@@ -30,12 +30,21 @@ tr:hover{ background:#fafafa; }
   border:1px solid #ddd;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
 }
-.badge-id.ord{ background:#eef6ff; border-color:#cfe3ff; }
-@media (max-width:520px){
-  .hide-m{ display:none !important; }
+
+/* Statusfarben:
+   ordered = blau
+   wishlist = gelb
+*/
+
+.badge-id.ord,
+.badge-ordered{
+  background:#e3f0ff;
+  color:#0b4da2;
+  border:1px solid rgba(11,77,162,.25);
 }
 
-.badge-id.wish{
+.badge-id.wish,
+.badge-wishlist{
   background:#fff3cd;
   color:#7a5b00;
   border:1px solid rgba(122,91,0,.25);
@@ -74,4 +83,20 @@ th.thSort{
 th.thSort.active{
   color: #111;
   font-weight: 700;
+}
+
+tr.row-ordered{
+  background:#f5f9ff;
+}
+
+tr.row-wishlist{
+  background:#fff9e6;
+}
+
+tr.row-ordered:hover{
+  background:#edf5ff;
+}
+
+tr.row-wishlist:hover{
+  background:#fff3d6;
 }
