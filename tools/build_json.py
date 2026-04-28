@@ -317,7 +317,7 @@ def main() -> int:
         bestellt_iso = excel_serial_to_iso(bestellt_raw)
 
         wunsch_raw = (r.get("Wunsch", "") or "").strip()
-        wishlist = is_truthy(wunsch_raw)
+        wishlist = to_bool_x(wunsch_raw) is True
         
         vorhanden_raw = (r.get("vorhanden", "") or "").strip().lower()
         present_flag = (vorhanden_raw in ("wahr", "true", "1", "x", "ja", "yes"))
