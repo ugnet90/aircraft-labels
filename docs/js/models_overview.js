@@ -66,6 +66,7 @@ function passesFilters(it, filters, excludeKey = ""){
   if(excludeKey !== "type" && !matchesType(it, filters.type)) return false;
   if(excludeKey !== "scale" && !matchesScale(it, filters.scale)) return false;
   if(excludeKey !== "flown" && !matchesFlown(it, filters.flown)) return false;
+  if(excludeKey !== "status" && !matchesStatus(it, filters.status)) return false;
 
   return true;
 }
@@ -156,6 +157,24 @@ function buildFacetOptions(filters){
 
     refillSelect("flown", "Mitgeflogen: egal", pairs, filters.flown);
   }
+
+  // status
+  {
+    const items = state.all.filter(it => passesFilters(it, filters, "status"));
+
+    const hasOwned = items.some(it => String(it.status || "").toLowerCase() === "owned");
+    const hasOrdered = items.some(it => String(it.status || "").toLowerCase() === "ordered");
+    const hasWishlist = items.some(it =>
+      String(it.status || "").toLowerCase() === "wishlist" || it.wishlist === true
+    );
+
+    const pairs = [];
+    if(hasOwned) pairs.push(["owned", "Vorhanden"]);
+    if(hasOrdered) pairs.push(["ordered", "Bestellt"]);
+    if(hasWishlist) pairs.push(["wishlist", "Wunschmodell"]);
+
+    refillSelect("status", "Status: alle", pairs, filters.status);
+  }
 }
 
 function updateActiveFilterUI(filters){
@@ -165,7 +184,8 @@ function updateActiveFilterUI(filters){
     ["airline", "Airline"],
     ["type", "Flugzeugtyp"],
     ["scale", "Maßstab"],
-    ["flown", "Mitgeflogen"]
+    ["flown", "Mitgeflogen"],
+    ["status", "Status"]
   ];
 
   const active = [];
@@ -222,6 +242,18 @@ function matchesFlown(it, v){
   if(v === "true") return it.flown === true;
   if(v === "false") return it.flown === false;
   return true;
+}
+
+function matchesStatus(it, status){
+  if(!status) return true;
+
+  const s = String(it.status || "").trim().toLowerCase();
+
+  if(status === "wishlist"){
+    return s === "wishlist" || it.wishlist === true;
+  }
+
+  return s === status;
 }
 
 function sortByColumn(items){
@@ -388,6 +420,7 @@ function apply(){
     type: document.getElementById("type").value,
     scale: document.getElementById("scale").value,
     flown: document.getElementById("flown").value
+    status: document.getElementById("status")?.value || ""
   };
 
   // Facetten neu aufbauen, bevor die finale Trefferliste gerendert wird
