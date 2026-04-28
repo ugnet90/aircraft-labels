@@ -40,6 +40,8 @@
   "arrived": null,
   "ordered_at": "2026-04-21",
   "ordered": true,
+  "wishlist": false,
+  "status": "ordered",
   "source": {
     "sheet": "Sonstige",
     "row": "33"
@@ -68,6 +70,7 @@
     "ordered_at": "2026-04-21",
     "ordered": true,
     "present": false,
+    "wishlist": false,
     "status": "ordered",
     "flown": null,
     "special_note": "",

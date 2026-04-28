@@ -46,6 +46,8 @@
   "arrived": "2025-10-24",
   "ordered_at": null,
   "ordered": false,
+  "wishlist": false,
+  "status": "owned",
   "source": {
     "sheet": "Lufthansa",
     "row": "26"
@@ -74,6 +76,7 @@
     "ordered_at": null,
     "ordered": false,
     "present": true,
+    "wishlist": false,
     "status": "owned",
     "flown": null,
     "special_note": "",

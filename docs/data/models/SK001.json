@@ -40,6 +40,8 @@
   "arrived": null,
   "ordered_at": null,
   "ordered": false,
+  "wishlist": false,
+  "status": "owned",
   "source": {
     "sheet": "SAS",
     "row": "29"
@@ -68,6 +70,7 @@
     "ordered_at": null,
     "ordered": false,
     "present": true,
+    "wishlist": false,
     "status": "owned",
     "flown": true,
     "special_note": "",

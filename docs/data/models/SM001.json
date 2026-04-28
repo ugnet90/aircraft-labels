@@ -33,6 +33,8 @@
   "arrived": "2025-05-26",
   "ordered_at": null,
   "ordered": false,
+  "wishlist": false,
+  "status": "owned",
   "source": {
     "sheet": "Sondermaß",
     "row": "4"
@@ -61,6 +63,7 @@
     "ordered_at": null,
     "ordered": false,
     "present": true,
+    "wishlist": false,
     "status": "owned",
     "flown": null,
     "special_note": "'1:500",

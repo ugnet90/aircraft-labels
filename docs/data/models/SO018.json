@@ -40,6 +40,8 @@
   "arrived": "2025-12-06",
   "ordered_at": null,
   "ordered": false,
+  "wishlist": false,
+  "status": "owned",
   "source": {
     "sheet": "Sonstige",
     "row": "26"
@@ -68,6 +70,7 @@
     "ordered_at": null,
     "ordered": false,
     "present": true,
+    "wishlist": false,
     "status": "owned",
     "flown": null,
     "special_note": "",

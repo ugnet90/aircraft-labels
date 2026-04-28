@@ -1,26 +1,27 @@
 {
-  "generated_at": "2026-04-28T12:28:47+02:00",
-  "count": 180,
+  "generated_at": "2026-04-28T13:26:32+02:00",
+  "count": 241,
   "counts_by_airline_code": {
-    "OS": 21,
-    "LH": 32,
-    "LX": 19,
+    "OS": 23,
+    "LH": 41,
+    "LX": 22,
     "BT": 1,
-    "AB": 4,
-    "AF": 3,
-    "AZ": 3,
-    "BA": 9,
-    "BOA": 3,
+    "AB": 5,
+    "AF": 4,
+    "AZ": 4,
+    "BA": 13,
+    "BOA": 6,
     "HF": 4,
-    "FI": 1,
-    "KL": 9,
-    "WA": 4,
+    "FI": 5,
+    "KL": 15,
+    "WA": 5,
     "NG": 3,
-    "PA": 22,
-    "SK": 8,
-    "TP": 2,
-    "WF": 1,
-    "SO": 28,
+    "DY": 1,
+    "PA": 28,
+    "SK": 16,
+    "TP": 3,
+    "WF": 3,
+    "SO": 36,
     "SM": 3
   },
   "items": [
@@ -49,6 +50,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -76,6 +78,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -103,6 +106,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -130,7 +134,36 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-AB-17",
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-700-WL",
+      "aircraft_type": "Boeing 737-700 (Winglets)",
+      "registration": "D-ABBN",
+      "manufacturer": "Herpa Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "Boeing Bemalung",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "Boeing",
+      "livery_display": "Boeing",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "AB_BER",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-737-700-air-berlin-dreamliner-d-abbn-herpa-561211-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "AF001",
@@ -157,6 +190,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -184,6 +218,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -211,7 +246,36 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-AF-19",
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "registration": "F-GLZB",
+      "manufacturer": "Dragon Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "https://mw-moba.de/Produkt/airbus-a340-300-air-france-f-glzb-dragon-wings-61403-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "AZ001",
@@ -238,6 +302,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -265,6 +330,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -292,7 +358,36 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-AZ-12",
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "registration": "I-DEMV",
+      "manufacturer": "Herpa Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "AZ_AZA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-747-200-alitalia-i-demv-herpa-560283-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "BA001",
@@ -319,6 +414,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -346,6 +442,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -373,6 +470,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -400,6 +498,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -427,6 +526,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -454,6 +554,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -481,6 +582,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -508,6 +610,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -535,7 +638,120 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-BA-20",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "registration": "G-BGDE",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BA_BAW",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/set-2pcs-boeing-737-200-british-airways-g-bgde-g-bgdt-gemini-jets-gjbawset1-3557373-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-BA-21",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "registration": "G-BGDT",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BA_BAW",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/set-2pcs-boeing-737-200-british-airways-g-bgde-g-bgdt-gemini-jets-gjbawset1-3557373-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-BA-29",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Asia Airways",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "registration": "G-CIVB",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "British Asia Airways",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BR_BAW",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-747-400-british-asia-airways-chelsea-rose-england-g-civb-gemini-jets-gjbaw021-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-BA-34",
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "registration": "G-VIIJ",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "Scotland",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BA_BAW",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-777-200-british-airways-scotland-g-viij-gemini-jets-gjbaw355-3557466-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "BOA001",
@@ -562,6 +778,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -589,6 +806,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -616,7 +834,92 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-BOA-10",
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "",
+      "aircraft_id": "BOE-707-320",
+      "aircraft_type": "Boeing 707-320",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-BOA-13",
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "CAN-C4",
+      "aircraft_type": "Canadair C-4 Argonaut (North Star)",
+      "registration": "G-ALHK",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "Atlanta",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BA_BOA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/297326384232?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20250324083038%26meid%3D39e88542204346aca9c798e4904bf235%26pid%3D101952%26rk%3D1%26rkt%3D1%26mehot%3Dnone%26itm%3D297326384232%26pmt%3D1%26noa%3D1%26pg%3D4375194%26algv%3DWatchlistVariantWithMLR_BP%26brand%3DAeroClassics&_trksid=p4375194.c101952.m162921&_trkparms=parentrq%3A2c49acb11980a67a965c93affff76471%7Cpageci%3A1177107a-6614-11f0-8691-06166dad419d%7Ciid%3A1%7Cvlpname%3Avlp_homepage",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-BOA-17",
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DHV-DH106-4",
+      "aircraft_type": "De Havilland DH.106 Comet 4",
+      "registration": "G-APDC",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BA_BOA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/257022169506",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "BT001",
@@ -643,7 +946,36 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-DY-8",
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": true,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "FI001",
@@ -670,7 +1002,120 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-FI-12",
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-757-300-WL",
+      "aircraft_type": "Boeing 757-300 (Winglets)",
+      "registration": "TF-FIX",
+      "manufacturer": "NG Models",
+      "aircraft_name": "Hengill",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "FI_ICE",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.aviation-center-berlin.de/p/45007",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-FI-14",
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair Cargo",
+      "aircraft_id": "BOE-767-300BCF-WL",
+      "aircraft_type": "Boeing 767-300BCF (Winglets)",
+      "registration": "TF-ISH",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "Icelandair Cargo",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "FI_CAR",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/116784220363?itmmeta=01KPQPWGA48NDHNKWVW6P9PMZD&hash=item1b30e1c8cb:g:XzkAAOSw5rlms4Fg",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-FI-6",
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "registration": "TF-FID",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "FI_ICE",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-737-400-icelandair-tf-fid-jc-wings-xx4238-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-FI-8",
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-MAX8",
+      "aircraft_type": "Boeing 737 MAX 8",
+      "registration": "TF-ICE",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "FI_ICE",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-737-max8-icelandair-tf-ice-gemini-jets-gjice1767-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "HF001",
@@ -697,6 +1142,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -724,6 +1170,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -751,6 +1198,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -778,6 +1226,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -805,6 +1254,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -832,6 +1282,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -859,6 +1310,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -886,6 +1338,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -913,6 +1366,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -940,6 +1394,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -967,6 +1422,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -994,6 +1450,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1021,7 +1478,176 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-KL-12",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "registration": "PH-BDA",
+      "manufacturer": "",
+      "aircraft_name": "Willem Barentsz",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "KL_KLM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.modelyletadel.cz/en/b737-306-klm-royal-dutch-airlines-1990s-colors-named-willem-barentsz.html",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-KL-16",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "registration": "PH-BCL",
+      "manufacturer": "Aeropolaris",
+      "aircraft_name": "Krooneend",
+      "livery_note": "",
+      "extra_info": "andere Kennung als Eigenflug",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": true,
+      "logo_id": "KL_KLM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.aviationmegastore.com/de/models/boeing-737-800-klm-ph-bcl-aeropolaris-ha7380015-213525.html",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-KL-17",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-900",
+      "aircraft_type": "Boeing 737-900",
+      "registration": "PH-BXO",
+      "manufacturer": "",
+      "aircraft_name": "Plevier",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "KL_KLM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/167885260350?itmmeta=01K8J7C8G65FSCJY43M7VF93QN&hash=item2716bdc63e:g:KKEAAeSwc1do~WjG",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-KL-24",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-777-200ER",
+      "aircraft_type": "Boeing 777-200ER Extended Range",
+      "registration": "PH-BQF",
+      "manufacturer": "Phoenix",
+      "aircraft_name": "Ferrara City",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "KL_KLM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-777-200er-klm-royal-dutch-airlines-ph-bqf-phoenix-10426-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-KL-29",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "CON-CV340",
+      "aircraft_type": "Convair CV-340",
+      "registration": "PH-CGG",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "Nicolaas Maes",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "KL_KLM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/255069615448",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-KL-39",
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "FOK-F27",
+      "aircraft_type": "Fokker F27",
+      "registration": "PH-SAD",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "Evert van Dijk",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "KL_KLM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/136580055071?_skw=klm&itmmeta=01K8N1RV4VVCS6R9F17K26XAR7&hash=item1fccce401f:g:UYgAAOSw7UtmkJSN",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "LH001",
@@ -1048,6 +1674,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1075,6 +1702,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1102,6 +1730,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1129,6 +1758,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1156,6 +1786,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1183,6 +1814,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1210,6 +1842,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1237,6 +1870,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1264,6 +1898,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1291,6 +1926,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1318,6 +1954,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1345,6 +1982,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1372,6 +2010,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1399,6 +2038,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1426,6 +2066,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1453,6 +2094,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1480,6 +2122,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1507,6 +2150,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1534,6 +2178,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1561,6 +2206,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1588,6 +2234,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1615,6 +2262,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1642,6 +2290,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1669,6 +2318,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1696,6 +2346,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1723,6 +2374,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1750,6 +2402,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1777,6 +2430,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1804,6 +2458,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1831,6 +2486,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1858,6 +2514,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1885,7 +2542,260 @@
       "ordered_at": "2026-04-15",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
+    },
+    {
+      "model_id": "WIS-LH-11",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "registration": "D-AIQS",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "Star Alliance",
+      "extra_info": "White",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/airbus-a320-lufthansa-star-alliance-white-d-aiqs-jc-wings-xx4075-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-13",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "registration": "D-AINK",
+      "manufacturer": "Panda Model",
+      "aircraft_name": "Heidenheim an der Brenz",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/airbus-a320neo-lufthansa-d-aink-panda-model-pmd-aink-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-20",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A340-200",
+      "aircraft_type": "Airbus A340-200",
+      "registration": "D-AIBA",
+      "manufacturer": "Dragon Wings",
+      "aircraft_name": "Nürnberg",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-34",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "registration": "D-ABZD",
+      "manufacturer": "Phoenix",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "polished",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-747-230b-lufthansa-d-abzd-phoenix-04549-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-39",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "registration": "D-ABPA",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "Berlin",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "RW",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-787-9-lufthansa-d-abpa-gemini-jets-gjdlh2046-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-45",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "CON-CV340",
+      "aircraft_type": "Convair CV-340-80",
+      "registration": "D-ACUM",
+      "manufacturer": "",
+      "aircraft_name": "Metropolitan",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-57",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "registration": "D-ADHO",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-6",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "registration": "D-AIBA",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LH-8",
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "registration": "D-AICA",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LH_DLH",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.aviationmegastore.com/de/modelle/airbus-a310-200-lufthansa-d-aica-aero-classics-ac411204-209262.html",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "LX001",
@@ -1912,6 +2822,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1939,6 +2850,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1966,6 +2878,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -1993,6 +2906,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2020,6 +2934,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2047,6 +2962,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2074,6 +2990,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2101,6 +3018,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2128,6 +3046,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2155,6 +3074,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2182,6 +3102,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2209,6 +3130,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2236,6 +3158,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2263,6 +3186,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2290,6 +3214,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2317,6 +3242,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2344,6 +3270,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2371,6 +3298,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2398,7 +3326,92 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-LX-14",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "registration": "HB-JPA",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LX_SWR",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/airbus-a321neo-swiss-hb-jpa-jc-wings-ew421n007-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LX-29",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Crossair",
+      "aircraft_id": "EMB-ERJ145",
+      "aircraft_type": "Embraer ERJ-145",
+      "registration": "HB-JAB",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "Crossair",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "LX_CRX",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-LX-31",
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "McDonnell Douglas DC-9-30",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "NG001",
@@ -2425,6 +3438,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2452,6 +3466,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2479,6 +3494,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2506,6 +3522,7 @@
       "ordered_at": "2026-04-15",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
     },
     {
@@ -2533,6 +3550,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2560,6 +3578,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2587,6 +3606,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2614,6 +3634,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2641,6 +3662,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2668,6 +3690,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2695,6 +3718,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2722,6 +3746,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2749,6 +3774,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2776,6 +3802,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2803,6 +3830,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2830,6 +3858,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2857,6 +3886,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2884,6 +3914,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2911,6 +3942,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2938,6 +3970,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2965,6 +3998,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -2992,6 +4026,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3019,6 +4054,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3046,7 +4082,64 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-OS-34",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "registration": "OE-LVE",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "Austrian says goodbye Fokker 1988-2017",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "OS_AUA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/fokker-100-austrian-austrian-says-goodbye-oe-lve-gemini-jets-gjaua1740-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-OS-4",
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "registration": "OE-LAA",
+      "manufacturer": "",
+      "aircraft_name": "New York",
+      "livery_note": "",
+      "extra_info": "erstes Langstreckenflugzeug",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "AUA-1988-CHEVRON",
+      "livery_display": "Chevron / Skyline",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "OS_AUA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/225704729232",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "ORD-PA-16",
@@ -3073,6 +4166,7 @@
       "ordered_at": "2026-04-07",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
     },
     {
@@ -3100,6 +4194,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3127,6 +4222,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3154,6 +4250,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3181,6 +4278,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3208,6 +4306,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3235,6 +4334,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3262,6 +4362,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3289,6 +4390,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3316,6 +4418,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3343,6 +4446,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3370,6 +4474,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3397,6 +4502,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3424,6 +4530,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3451,6 +4558,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3478,6 +4586,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3505,6 +4614,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3532,6 +4642,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3559,6 +4670,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3586,6 +4698,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3613,6 +4726,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3640,7 +4754,176 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-PA-17",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "registration": "N733PA",
+      "manufacturer": "Witty Wings",
+      "aircraft_name": "Clipper Pride of the Sea",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "PA_PAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-747-200-pan-am-clipper-pride-of-the-sea-n733pa-apollo-witty-wings-a13005-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-PA-24",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC3",
+      "aircraft_type": "Douglas DC-3",
+      "registration": "N19912",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "PA_PAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/147186605816",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-PA-27",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC6",
+      "aircraft_type": "Douglas DC-6B",
+      "registration": "N6530C",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "Clipper Pathfinder",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "PA_PAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/147181140579",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-PA-28",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC7-C",
+      "aircraft_type": "Douglas DC-7C",
+      "registration": "N744PA",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "Clipper Pacific Trader",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "PA_PAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/297428566384?itmmeta=01JYE5Y7Y50AD3DE6Y78068D4X&hash=item45401fc170:g:js0AAOSwbORoVuvE",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-PA-32",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "LOC-L749",
+      "aircraft_type": "Lockheed L-749",
+      "registration": "N86530",
+      "manufacturer": "",
+      "aircraft_name": "Clipper Monarch of the Skies",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "PA_PAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/306351788162?_skw=pan+am+1%3A400&itmmeta=01JY1MSPC7P00JYWMTJ2FD0ZPW&hash=item4753fd5082%3Ag%3ArtgAAOSwz9JoTW8s&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dprvmbRL6LUUfh0VKBy%2FrrjrEoM8NTt%2FuMr25%2FKvDJuhyq55XZgVQXiqgXrrZPAvktQ3NiZxpTrLHXXCAgmaDwzehjKoZLYceBIV90ys4c3Jn4gQTWGTEJvOsgoL%2BAvV4Xs%2BadlDVpsLZ9xpEwRNbjCAnK3mE1RrM2I7ikkGBfgYvRiD7D1qS%2Fn37rCGN7MJhuYnWE7BEpsedI5SFUnD3wrgW95v%2FvKi%2BVvbiLXlr%2FHXM8mYjostbMTu1ewjKzo18hOAZENGJfJ%2B8gciH%2FAkKGiK35OjXCrc2dwmfUWwjhSg%3D%3D%7Ctkp%3ABk9SR7Tm5rTwZQ&LH_Auction=1&autorefresh=true",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-PA-36",
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "SUD-Concorde",
+      "aircraft_type": "Sud Aviation/BAC Concorde",
+      "registration": "x",
+      "manufacturer": "Dragon Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "PA_PAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/167878535816?itmmeta=01K8J7C8G6PEFW6B9PYMCTMNF1&hash=item2716572a88:g:P~cAAeSw-XRo-ZUf",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "SK001",
@@ -3667,6 +4950,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3694,6 +4978,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3721,6 +5006,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3748,6 +5034,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3775,6 +5062,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3802,6 +5090,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3829,6 +5118,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3856,7 +5146,232 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-SK-15",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "ATR-ATR72-600",
+      "aircraft_type": "ATR 72",
+      "registration": "OY-JZC",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SK_SAS",
+      "logo_speaking": "Wahr",
+      "shop_url": "http://skyshop.store/index.php?route=product/product&path=203_184_179_199&product_id=7644&sort=p.price&order=ASC&limit=100",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-20",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-600",
+      "aircraft_type": "Boeing 737-600",
+      "registration": "SE-DNM",
+      "manufacturer": "Herpa Wings",
+      "aircraft_name": "Bernt Viking",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SK_SAS",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-737-600-sas-scandinavian-se-dnm-herpa-560306-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-34",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "CON-CV990",
+      "aircraft_type": "Convair CV-990 Coronado",
+      "registration": "SE-DAZ",
+      "manufacturer": "Witty Wings",
+      "aircraft_name": "Ring Viking",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SK_SAS",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/297706519154?_skw=1%2F400&itmmeta=01K8TKQVTF0TY9F03N800XEPWF&hash=item4550b0fa72%3Ag%3AhvQAAeSw9K5o-mRx&LH_Auction=1",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-35",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-300 Twin Otter",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-40",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "",
+      "aircraft_id": "FOK-F28",
+      "aircraft_type": "Fokker 28 Fellowship",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-46",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "registration": "SE-DFD",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SK_SAS",
+      "logo_speaking": "Wahr",
+      "shop_url": "http://skyshop.store/index.php?route=product/product&path=203_184_179_199&product_id=7693&sort=p.price&order=ASC&limit=100",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-51",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-MD90",
+      "aircraft_type": "McDonnell Douglas MD-90",
+      "registration": "LN-ROB",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SK_SAS",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.mtsaviationmodels.com/products/pre-order-jc-wings-lh4394-1-400-sas-scandinavian-airlines-mcdonnell-douglas-md-90-oc-reg-ln-rob?_pos=6&_fid=8a85dfaea&_ss=c",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SK-8",
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": true,
+      "logo_id": "",
+      "logo_speaking": "",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "SM001",
@@ -3883,6 +5398,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3910,6 +5426,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3937,6 +5454,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -3964,6 +5482,7 @@
       "ordered_at": "2026-04-21",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
     },
     {
@@ -3991,6 +5510,7 @@
       "ordered_at": "2026-04-21",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
     },
     {
@@ -4018,6 +5538,7 @@
       "ordered_at": "2025-12-29",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
     },
     {
@@ -4045,6 +5566,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4072,6 +5594,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4099,6 +5622,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4126,6 +5650,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4153,6 +5678,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4180,6 +5706,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4207,6 +5734,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4234,6 +5762,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4261,6 +5790,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4288,6 +5818,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4315,6 +5846,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4342,6 +5874,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4369,6 +5902,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4396,6 +5930,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4423,6 +5958,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4450,6 +5986,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4477,6 +6014,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4504,6 +6042,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4531,6 +6070,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4558,6 +6098,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4585,6 +6126,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4612,6 +6154,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4639,6 +6182,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4666,6 +6210,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4693,7 +6238,232 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-SO-10",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "TRA-C160",
+      "aircraft_type": "Transall C-160",
+      "registration": "",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "DE_GAF",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-11",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "NATO",
+      "aircraft_id": "AIB-A330-MRTT",
+      "aircraft_type": "Airbus A330 MRTT",
+      "registration": "T-055",
+      "manufacturer": "Gemini Macs",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "BE_OAN",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/airbus-a330-mrtt-nato-t-055-gemini-macs-gmnaf107-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-16",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "BOM-BD700",
+      "aircraft_type": "Bombardier BD-700 Global 5000",
+      "registration": "14+02",
+      "manufacturer": "3DModels",
+      "aircraft_name": "",
+      "livery_note": "Bundesrepublik Deutschland",
+      "extra_info": "Regierungsmaschine Deutschland - Luftwaffe",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "DE_GAF",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://aviation-center-berlin.de/p/3LUF2",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-22",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-747-E4B",
+      "aircraft_type": "Boeing E-4B",
+      "registration": "31676",
+      "manufacturer": "Gemini Macs",
+      "aircraft_name": "",
+      "livery_note": "United States of America",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "US_UAF",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/boeing-e4-b-united-states-of-america-31676-gemini-macs-gmusa083-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-24",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "LOC-C5B",
+      "aircraft_type": "Lockheed C-5B Galaxy",
+      "registration": "70-045",
+      "manufacturer": "Dragon Wings",
+      "aircraft_name": "",
+      "livery_note": "U.S. Air Force",
+      "extra_info": "USAF, 436th Airlift Wing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "US_UAF",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-31",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-VC137C",
+      "aircraft_type": "Boeing VC-137C Stratoliner",
+      "registration": "72-7000",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "United States of America",
+      "extra_info": "US Air Force",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "US_UAF",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-32",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-C17A",
+      "aircraft_type": "Boeing C-17A Globemaster III",
+      "registration": "96-0006",
+      "manufacturer": "Gemini Macs",
+      "aircraft_name": "Charleston",
+      "livery_note": "U.S. Air Force",
+      "extra_info": "US Air Force",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "US_UAF",
+      "logo_speaking": "Wahr",
+      "shop_url": "",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-8",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Aeroflot - Russian Airlines",
+      "aircraft_id": "ANT-AN32",
+      "aircraft_type": "Antonov AN-32",
+      "registration": "48119",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "SU_AFL",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/antonov-an-32-aeroflot-48119-jc-wings-lh4329-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "TP001",
@@ -4720,6 +6490,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4747,7 +6518,36 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-TP-12",
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A330-900neo",
+      "aircraft_type": "Airbus A330-900",
+      "registration": "CS-TUI",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "D. Afonso Henriques",
+      "livery_note": "100th Aircraft",
+      "extra_info": "",
+      "wingtip": "SL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "TP_TAP",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://mw-moba.de/Produkt/airbus-a330neo-tap-air-portugal-first-to-fly-cs-tui-jc-wings-lh4156-1400/",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "WA001",
@@ -4774,6 +6574,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4801,6 +6602,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4828,6 +6630,7 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
     },
     {
@@ -4855,7 +6658,36 @@
       "ordered_at": null,
       "ordered": false,
       "present": true,
+      "wishlist": false,
       "status": "owned"
+    },
+    {
+      "model_id": "WIS-WA-12",
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "FOK-F70",
+      "aircraft_type": "Fokker 70",
+      "registration": "PH-KZM",
+      "manufacturer": "",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "KLM Cityhopper / Sil Air hybrid",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "WA_KLC",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.modelyletadel.cz/en/fokker-70-klm-cityhopper-sil-air-hybrid-colors.html",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     },
     {
       "model_id": "ORD-WF-6",
@@ -4882,7 +6714,64 @@
       "ordered_at": "2026-04-13",
       "ordered": true,
       "present": false,
+      "wishlist": false,
       "status": "ordered"
+    },
+    {
+      "model_id": "WIS-WF-10",
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Widerøe",
+      "aircraft_id": "EMB-E195E2",
+      "aircraft_type": "Embraer E190-E2",
+      "registration": "LN-WEA",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "WL",
+      "has_wingtip": true,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "WF_WIF",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.scalemodelstore.com/model/19083/Wideroe-Embraer_190-E2.html?srsltid=AfmBOoqhj0A-5MlHjh6fAbDloHX2g2rcB3pq042kSiTh0z-zvYhk05Xt",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-WF-9",
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Widerøe",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "registration": "LN-WDM",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "WF_WIF",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://fmb-shop.de/collection/64654/gjwif2290-gemini-jets-wideroee-bombardier-dash-8-q400-ln-wdm",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "status": "wishlist"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-28T12:28:47+02:00",
-  "count_total": 162,
-  "count_unique": 162,
+  "generated_at": "2026-04-28T13:26:32+02:00",
+  "count_total": 189,
+  "count_unique": 189,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -1054,6 +1054,180 @@
       "url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
       "label": "andere Bez. KLM UK",
       "price": 0.85
+    },
+    {
+      "id": "PC-WIS-AB-17-01",
+      "model_id": "WIS-AB-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11223-air-berlin-b737.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-AZ-12-01",
+      "model_id": "WIS-AZ-12",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2908-alitalia-b747.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-BA-21-01",
+      "model_id": "WIS-BA-21",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16822-british-regionalba-expr-b737.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-FI-14-01",
+      "model_id": "WIS-FI-14",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42457-icelandair-cargo-b767.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-KL-17-01",
+      "model_id": "WIS-KL-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1576-klm-b737.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-KL-24-01",
+      "model_id": "WIS-KL-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10114-klm-b777.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-KL-29-01",
+      "model_id": "WIS-KL-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38817-KLM-CV-340.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-KL-39-01",
+      "model_id": "WIS-KL-39",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40492-KLM-F27.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-LH-20-01",
+      "model_id": "WIS-LH-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4005-lufthansastar-alliance-a340.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-LH-34-01",
+      "model_id": "WIS-LH-34",
+      "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-LH-45-01",
+      "model_id": "WIS-LH-45",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
+      "label": "ohne Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-LH-57-01",
+      "model_id": "WIS-LH-57",
+      "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-LH-6-01",
+      "model_id": "WIS-LH-6",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10733-lufthansa-a300.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-OS-4-01",
+      "model_id": "WIS-OS-4",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15822-austrian-a310.html",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-PA-17-01",
+      "model_id": "WIS-PA-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40512-Pan-American-B747.html",
+      "label": "andere Livery, andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-PA-24-01",
+      "model_id": "WIS-PA-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3637-pan-american-dc-3.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-PA-27-01",
+      "model_id": "WIS-PA-27",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25906-pan-american-dc-6.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-PA-28-01",
+      "model_id": "WIS-PA-28",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27645-pan-american-dc-7.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-PA-32-01",
+      "model_id": "WIS-PA-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-SK-34-01",
+      "model_id": "WIS-SK-34",
+      "url": "https://jjpostcards.com/de/ansichtskarten/29567-sas-cv-990.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-SO-16-01",
+      "model_id": "WIS-SO-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
+      "id": "PC-WIS-SO-22-01",
+      "model_id": "WIS-SO-22",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-24-01",
+      "model_id": "WIS-SO-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
+      "price": 1.05
+    },
+    {
+      "id": "PC-WIS-SO-31-01",
+      "model_id": "WIS-SO-31",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-32-01",
+      "model_id": "WIS-SO-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-32-02",
+      "model_id": "WIS-SO-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-8-01",
+      "model_id": "WIS-SO-8",
+      "url": "https://jjpostcards.com/de/ansichtskarten/21980-aeroflot-an-32.html",
+      "label": "keine Kennung",
+      "price": 1.35
     }
   ],
   "by_id": {
@@ -2108,6 +2282,180 @@
       "url": "https://jjpostcards.com/de/ansichtskarten/2399-klm-uk-atr-72.html",
       "label": "andere Bez. KLM UK",
       "price": 0.85
+    },
+    "PC-WIS-AB-17-01": {
+      "id": "PC-WIS-AB-17-01",
+      "model_id": "WIS-AB-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11223-air-berlin-b737.html",
+      "price": 1.35
+    },
+    "PC-WIS-AZ-12-01": {
+      "id": "PC-WIS-AZ-12-01",
+      "model_id": "WIS-AZ-12",
+      "url": "https://jjpostcards.com/de/ansichtskarten/2908-alitalia-b747.html",
+      "price": 0.85
+    },
+    "PC-WIS-BA-21-01": {
+      "id": "PC-WIS-BA-21-01",
+      "model_id": "WIS-BA-21",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16822-british-regionalba-expr-b737.html",
+      "price": 0.85
+    },
+    "PC-WIS-FI-14-01": {
+      "id": "PC-WIS-FI-14-01",
+      "model_id": "WIS-FI-14",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42457-icelandair-cargo-b767.html",
+      "price": 1.35
+    },
+    "PC-WIS-KL-17-01": {
+      "id": "PC-WIS-KL-17-01",
+      "model_id": "WIS-KL-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1576-klm-b737.html",
+      "price": 0.85
+    },
+    "PC-WIS-KL-24-01": {
+      "id": "PC-WIS-KL-24-01",
+      "model_id": "WIS-KL-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10114-klm-b777.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-KL-29-01": {
+      "id": "PC-WIS-KL-29-01",
+      "model_id": "WIS-KL-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38817-KLM-CV-340.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-KL-39-01": {
+      "id": "PC-WIS-KL-39-01",
+      "model_id": "WIS-KL-39",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40492-KLM-F27.html",
+      "price": 1.35
+    },
+    "PC-WIS-LH-20-01": {
+      "id": "PC-WIS-LH-20-01",
+      "model_id": "WIS-LH-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4005-lufthansastar-alliance-a340.html",
+      "price": 0.85
+    },
+    "PC-WIS-LH-34-01": {
+      "id": "PC-WIS-LH-34-01",
+      "model_id": "WIS-LH-34",
+      "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
+      "price": 0.85
+    },
+    "PC-WIS-LH-45-01": {
+      "id": "PC-WIS-LH-45-01",
+      "model_id": "WIS-LH-45",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
+      "label": "ohne Kennung",
+      "price": 0.85
+    },
+    "PC-WIS-LH-57-01": {
+      "id": "PC-WIS-LH-57-01",
+      "model_id": "WIS-LH-57",
+      "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-WIS-LH-6-01": {
+      "id": "PC-WIS-LH-6-01",
+      "model_id": "WIS-LH-6",
+      "url": "https://jjpostcards.com/de/ansichtskarten/10733-lufthansa-a300.html",
+      "price": 1.35
+    },
+    "PC-WIS-OS-4-01": {
+      "id": "PC-WIS-OS-4-01",
+      "model_id": "WIS-OS-4",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15822-austrian-a310.html",
+      "price": 1.35
+    },
+    "PC-WIS-PA-17-01": {
+      "id": "PC-WIS-PA-17-01",
+      "model_id": "WIS-PA-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40512-Pan-American-B747.html",
+      "label": "andere Livery, andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-PA-24-01": {
+      "id": "PC-WIS-PA-24-01",
+      "model_id": "WIS-PA-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/3637-pan-american-dc-3.html",
+      "price": 0.85
+    },
+    "PC-WIS-PA-27-01": {
+      "id": "PC-WIS-PA-27-01",
+      "model_id": "WIS-PA-27",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25906-pan-american-dc-6.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-PA-28-01": {
+      "id": "PC-WIS-PA-28-01",
+      "model_id": "WIS-PA-28",
+      "url": "https://jjpostcards.com/de/ansichtskarten/27645-pan-american-dc-7.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-PA-32-01": {
+      "id": "PC-WIS-PA-32-01",
+      "model_id": "WIS-PA-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-SK-34-01": {
+      "id": "PC-WIS-SK-34-01",
+      "model_id": "WIS-SK-34",
+      "url": "https://jjpostcards.com/de/ansichtskarten/29567-sas-cv-990.html",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-SO-16-01": {
+      "id": "PC-WIS-SO-16-01",
+      "model_id": "WIS-SO-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    "PC-WIS-SO-22-01": {
+      "id": "PC-WIS-SO-22-01",
+      "model_id": "WIS-SO-22",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-WIS-SO-24-01": {
+      "id": "PC-WIS-SO-24-01",
+      "model_id": "WIS-SO-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
+      "price": 1.05
+    },
+    "PC-WIS-SO-31-01": {
+      "id": "PC-WIS-SO-31-01",
+      "model_id": "WIS-SO-31",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
+      "price": 0.85
+    },
+    "PC-WIS-SO-32-01": {
+      "id": "PC-WIS-SO-32-01",
+      "model_id": "WIS-SO-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
+      "price": 0.85
+    },
+    "PC-WIS-SO-32-02": {
+      "id": "PC-WIS-SO-32-02",
+      "model_id": "WIS-SO-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
+      "price": 0.85
+    },
+    "PC-WIS-SO-8-01": {
+      "id": "PC-WIS-SO-8-01",
+      "model_id": "WIS-SO-8",
+      "url": "https://jjpostcards.com/de/ansichtskarten/21980-aeroflot-an-32.html",
+      "label": "keine Kennung",
+      "price": 1.35
     }
   }
 }

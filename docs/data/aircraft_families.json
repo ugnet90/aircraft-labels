@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T12:28:47+02:00",
+  "generated_at": "2026-04-28T13:26:32+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -394,7 +394,7 @@
         "wingspan": 60.3,
         "height": 17.39,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Airbus"
       },
       {
@@ -710,7 +710,7 @@
         "wingspan": 29.2,
         "height": 8.75,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Antonov"
       }
     ],
@@ -898,7 +898,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "ATR"
       }
     ],
@@ -1388,7 +1388,7 @@
         "wingspan": 44.42,
         "height": 12.93,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       }
     ],
@@ -1402,7 +1402,7 @@
         "wingspan": 51.75,
         "height": 16.79,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       }
     ],
@@ -1612,7 +1612,7 @@
         "wingspan": 35.92,
         "height": 12.3,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       },
       {
@@ -1624,7 +1624,7 @@
         "wingspan": 34.31,
         "height": 12.5,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       },
       {
@@ -1698,7 +1698,7 @@
         "wingspan": 59.64,
         "height": 19.33,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       },
       {
@@ -2048,7 +2048,7 @@
         "wingspan": 41.1,
         "height": 13.56,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       },
       {
@@ -2146,7 +2146,7 @@
         "wingspan": 52.05,
         "height": 15.85,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Boeing"
       },
       {
@@ -2320,7 +2320,7 @@
         "wingspan": 28.7,
         "height": 7.7,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Bombardier"
       }
     ],
@@ -2486,7 +2486,7 @@
         "wingspan": 43.05,
         "height": 7.57,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Canadair"
       }
     ],
@@ -2654,7 +2654,7 @@
         "wingspan": 32.0,
         "height": 8.25,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Convair"
       }
     ],
@@ -2808,7 +2808,7 @@
         "wingspan": 19.8,
         "height": 5.94,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "de Havilland Canada"
       }
     ],
@@ -2898,7 +2898,7 @@
         "wingspan": 35.05,
         "height": 8.0,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "de Havilland"
       }
     ],
@@ -3020,7 +3020,7 @@
         "wingspan": 28.96,
         "height": 5.16,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Douglas"
       }
     ],
@@ -3074,7 +3074,7 @@
         "wingspan": 35.8,
         "height": 8.66,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Douglas"
       },
       {
@@ -3534,7 +3534,7 @@
         "wingspan": 25.0,
         "height": 8.5,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Fokker"
       }
     ],
@@ -3890,7 +3890,7 @@
         "wingspan": 67.89,
         "height": 19.84,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Lockheed"
       },
       {
@@ -3986,7 +3986,7 @@
         "wingspan": 37.5,
         "height": 7.1,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Lockheed"
       }
     ],
@@ -4428,7 +4428,7 @@
         "wingspan": 32.8,
         "height": 9.3,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "McDonnell Douglas"
       }
     ],
@@ -4928,7 +4928,7 @@
         "wingspan": 40.0,
         "height": 11.65,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wish",
         "manufacturer": "Transport Allianz"
       }
     ],
