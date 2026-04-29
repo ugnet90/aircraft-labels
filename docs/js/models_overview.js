@@ -255,6 +255,18 @@ function sortByColumn(items){
     let va = a[tableSortKey];
     let vb = b[tableSortKey];
 
+    if(tableSortKey === "model_id"){
+      const sa = String(a.status || "").toLowerCase();
+      const sb = String(b.status || "").toLowerCase();
+
+      if(sa === "wishlist" && sb === "wishlist"){
+        const pa = Number(a.wishlist_prio || 9);
+        const pb = Number(b.wishlist_prio || 9);
+
+        if(pa !== pb) return (pa - pb) * tableSortDir;
+      }
+    }
+
     if(tableSortKey === "wingtip"){
       va = ((a.has_wingtip === true) || ((a.wingtip || "").toUpperCase() && (a.wingtip || "").toUpperCase() !== "NONE")) ? "ja" : "";
       vb = ((b.has_wingtip === true) || ((b.wingtip || "").toUpperCase() && (b.wingtip || "").toUpperCase() !== "NONE")) ? "ja" : "";
@@ -337,7 +349,7 @@ function render(items){
           <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
             ${
               (it.status === "wishlist" || it.wishlist === true || (it.model_id || "").startsWith("WIS-"))
-                ? `<span class="badge-id wish" title="${esc(it.model_id)}">WIS</span>`
+                ? `<span class="badge-id wish" title="${esc(it.model_id)}">W${esc(it.wishlist_prio || "")}</span>`
                 : (it.model_id || "").startsWith("ORD-")
                   ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
                   : `${esc(it.model_id || "")}`
