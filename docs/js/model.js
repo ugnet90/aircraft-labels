@@ -914,11 +914,19 @@ document.addEventListener("click", (ev) => {
   
   const tr = ev.target && ev.target.closest ? ev.target.closest(".famCmpTable tbody tr") : null;
   if(tr){
-    const status = String(tr.getAttribute("data-status") || "").trim();
+    const status = String(tr.getAttribute("data-status") || "").trim().toLowerCase();
     const aircraftId = String(tr.getAttribute("data-aircraft-id") || "").trim();
-
+    
     if((status === "owned" || status === "ordered" || status === "wishlist") && aircraftId){
-      window.location.href = `models_overview.html?aircraft_id=${encodeURIComponent(aircraftId)}`;
+    
+      let url = `models_overview.html?aircraft_id=${encodeURIComponent(aircraftId)}`;
+    
+      // Wenn Wunschmodell → Filter aktivieren
+      if(status === "wishlist"){
+        url += "&status=wishlist";
+      }
+    
+      window.location.href = url;
     }
   }
 });
