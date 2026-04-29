@@ -178,10 +178,10 @@ function updateActiveFilterUI(filters){
     if(on) active.push(label);
   });
 
-  const allStatusOn = filters.owned && filters.ordered && filters.wishlist;
-  document.querySelector(".statusBox")?.classList.toggle("is-active", !allStatusOn);
+  const defaultStatusOn = filters.owned && filters.ordered && !filters.wishlist;
+  document.querySelector(".statusBox")?.classList.toggle("is-active", !defaultStatusOn);
   
-  if(!allStatusOn){
+  if(!defaultStatusOn){
     active.push("Status");
   }
   
@@ -442,9 +442,14 @@ async function main(){
 
     state.all = data.items || [];
 
+    const collectionCount = state.all.filter(it => {
+      const s = String(it.status || "").toLowerCase();
+      return s === "owned" || s === "ordered";
+    }).length;
+    
     document.getElementById("meta").innerHTML =
       `<span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span>` +
-      ` · Anzahl: <span class="mono">${esc(data.count || state.all.length)}</span>`;
+      ` · Anzahl: <span class="mono">${esc(collectionCount)}</span>`;
     
     document.getElementById("q").addEventListener("input", apply);
     document.getElementById("group").addEventListener("change", apply);
@@ -465,7 +470,7 @@ async function main(){
       document.getElementById("flown").value = "";
       if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
       if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
-      if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = true;
+      if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = false;
       
       tableSortKey = "model_id";
       tableSortDir = 1;
@@ -541,7 +546,7 @@ document.addEventListener("click", (ev) => {
   document.getElementById("flown").value = "";
   if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
   if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
-  if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = true;
+  if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = false;
   
   // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
   // document.getElementById("sort").value = "group_model";
