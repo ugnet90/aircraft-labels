@@ -1031,16 +1031,24 @@ async function main(){
       </div>
     `;
     
-    // Bestellt-Hinweis
+    // Status-Hinweis
     const orderedAt = asText(d.ordered_at || "");
-    const orderedText = (d.ordered && orderedAt) ? `Bestellt: ${formatDateDE(orderedAt)}` : "";
     const statusPill = document.getElementById("statuspill");
+    
     const isOrderedNow = !!d.ordered && !!orderedAt && !asText(d.arrived);
+    const isWishlistNow = d.status === "wishlist" || d.wishlist === true || d.model?.wishlist === true;
+    
+    statusPill.classList.remove("ordered", "wishlist");
     
     if(isOrderedNow){
       statusPill.style.display = "";
       statusPill.classList.add("ordered");
       statusPill.textContent = `Bestellt: ${formatDateDE(orderedAt)}`;
+    }else if(isWishlistNow){
+      const prio = d.wishlist_prio || d.model?.wishlist_prio || "";
+      statusPill.style.display = "";
+      statusPill.classList.add("wishlist");
+      statusPill.textContent = prio ? `Wunschmodell W${prio}` : "Wunschmodell";
     }else{
       statusPill.style.display = "none";
       statusPill.textContent = "";
