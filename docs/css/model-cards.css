@@ -417,11 +417,12 @@
 }
 
 .famRow-ordered{
-  background:rgba(255, 193, 7, 0.10);
+  background:#f5f9ff;
 }
 
-.famRow-wish{
-  background:rgba(64, 123, 255, 0.08);
+.famRow-wish,
+.famRow-wishlist{
+  background:#fff9e6;
 }
 
 .famRow-missing{
@@ -451,11 +452,16 @@
 }
 
 .famStatus-ordered{
-  background:rgba(255, 193, 7, 0.18);
+  background:#e3f0ff;
+  color:#0b4da2;
+  border:1px solid rgba(11,77,162,.25);
 }
 
-.famStatus-wish{
-  background:rgba(64, 123, 255, 0.14);
+.famStatus-wish,
+.famStatus-wishlist{
+  background:#fff3cd;
+  color:#7a5b00;
+  border:1px solid rgba(122,91,0,.25);
 }
 
 .famStatus-missing{
