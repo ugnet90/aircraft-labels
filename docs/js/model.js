@@ -1033,6 +1033,7 @@ async function main(){
     
     // Status-Hinweis
     const orderedAt = asText(d.ordered_at || "");
+    const orderedText = (d.ordered && orderedAt) ? `Bestellt: ${formatDateDE(orderedAt)}` : "";
     const statusPill = document.getElementById("statuspill");
     
     const isOrderedNow = !!d.ordered && !!orderedAt && !asText(d.arrived);
