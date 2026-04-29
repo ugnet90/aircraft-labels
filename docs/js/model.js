@@ -917,7 +917,7 @@ document.addEventListener("click", (ev) => {
     const status = String(tr.getAttribute("data-status") || "").trim();
     const aircraftId = String(tr.getAttribute("data-aircraft-id") || "").trim();
 
-    if((status === "owned" || status === "ordered") && aircraftId){
+    if((status === "owned" || status === "ordered" || status === "wishlist") && aircraftId){
       window.location.href = `models_overview.html?aircraft_id=${encodeURIComponent(aircraftId)}`;
     }
   }
