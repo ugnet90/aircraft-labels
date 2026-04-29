@@ -108,3 +108,17 @@
     display:none;
   }
 }
+
+#statuspill.ordered{
+  background:#e3f0ff;
+  color:#0b4da2;
+  border:1px solid rgba(11,77,162,.25);
+}
+#statuspill{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  line-height:1.2;
+}
