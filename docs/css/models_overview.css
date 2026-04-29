@@ -11,9 +11,6 @@ body{ --maxw: 1100px; }
   align-items:stretch;
 }
 
-.statusBox{
-  grid-column:1 / -1;
-}
 @media (max-width:900px){ .bar{ grid-template-columns:1fr 1fr; } }
 @media (max-width:520px){ .bar{ grid-template-columns:1fr; } }
 @media (max-width:720px){
@@ -106,7 +103,10 @@ tr.row-wishlist:hover{
   background:#fff3d6;
 }
 
+/* Status-Filter */
 .statusBox{
+  grid-column:auto;
+  max-width:420px;
   padding:8px 10px;
   border:1px solid rgba(0,0,0,.14);
   border-radius:8px;
@@ -131,7 +131,7 @@ tr.row-wishlist:hover{
 
 .statusRow{
   display:flex;
-  gap:14px;
+  gap:10px 14px;
   align-items:center;
   flex-wrap:wrap;
 }
@@ -151,30 +151,23 @@ tr.row-wishlist:hover{
 
 @media (max-width:520px){
   .statusBox{
-    display:block;
-    padding:10px 14px;
-    border-radius:8px;
-  }
-
-  .statusTitle{
-    margin-bottom:8px;
-    font-size:13px;
+    grid-column:1 / -1;
+    width:100%;
+    max-width:360px;
+    padding:10px 12px;
   }
 
   .statusRow{
     display:flex;
-    flex-direction:column;
-    gap:10px;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:10px 16px;
   }
 
   .chk{
-    display:flex;
+    display:inline-flex;
     align-items:center;
-    gap:10px;
+    gap:6px;
     font-size:14px;
-  }
-
-  .chk input{
-    margin:0;
   }
 }
