@@ -679,7 +679,7 @@ function statusSymbol(status){
   const s = String(status || "").trim();
   if(s === "owned") return "✓";
   if(s === "ordered") return "◷";
-  if(s === "wish") return "★";
+  if(s === "wishlist") return "★";
   return "x";
 }
 
@@ -693,7 +693,7 @@ function statusRowClass(status){
   const s = String(status || "").trim();
   if(s === "owned") return "famRow-owned";
   if(s === "ordered") return "famRow-ordered";
-  if(s === "wish") return "famRow-wish";
+  if(s === "wishlist") return "famRow-wishlist";
   return "famRow-missing";
 }
 
@@ -727,7 +727,7 @@ function statusRank(status){
   const s = String(status || "").trim();
   if(s === "owned") return 4;
   if(s === "ordered") return 3;
-  if(s === "wish") return 2;
+  if(s === "wishlist") return 2;
   return 1;
 }
 
