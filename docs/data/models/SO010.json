@@ -34,6 +34,7 @@
   "ordered_at": null,
   "ordered": false,
   "wishlist": false,
+  "wishlist_prio": null,
   "status": "owned",
   "source": {
     "sheet": "Sonstige",
@@ -64,6 +65,7 @@
     "ordered": false,
     "present": true,
     "wishlist": false,
+    "wishlist_prio": null,
     "status": "owned",
     "flown": null,
     "special_note": "",

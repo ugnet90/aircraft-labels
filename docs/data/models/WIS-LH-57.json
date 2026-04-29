@@ -41,6 +41,7 @@
   "ordered_at": null,
   "ordered": false,
   "wishlist": true,
+  "wishlist_prio": null,
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
@@ -71,6 +72,7 @@
     "ordered": false,
     "present": false,
     "wishlist": true,
+    "wishlist_prio": null,
     "status": "wishlist",
     "flown": null,
     "special_note": "",
