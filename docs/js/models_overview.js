@@ -157,6 +157,7 @@ function buildFacetOptions(filters){
 
     refillSelect("flown", "Mitgeflogen: egal", pairs, filters.flown);
   }
+}
 
 function updateActiveFilterUI(filters){
   const map = [
@@ -506,9 +507,7 @@ async function main(){
     if (p.has("flown")) {
       document.getElementById("flown").value = p.get("flown") || "";
     }
-    if (p.has("status") && document.getElementById("status")) {
-      document.getElementById("status").value = p.get("status") || "";
-    }
+
     //if (p.has("sort")) {
     //  document.getElementById("sort").value = p.get("sort") || document.getElementById("sort").value;
     //}
