@@ -487,7 +487,13 @@ async function main(){
     // URL-Parameter -> Filter setzen (Matrix / Mobile Links)
     // =========================
     const p = new URLSearchParams(location.search);
-
+    
+    if(p.get("status") === "wishlist"){
+      if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = false;
+      if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = false;
+      if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = true;
+    }
+    
     if (p.has("q")) {
       document.getElementById("q").value = p.get("q") || "";
     }
