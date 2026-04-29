@@ -427,7 +427,6 @@ function apply(){
   updateActiveFilterUI(filters);
 
   let items = state.all.filter(it => passesFilters(it, filters));
-
   items = sortByColumn(items);
 
   state.filtered = items;
