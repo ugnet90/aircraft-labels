@@ -609,10 +609,10 @@ def main() -> int:
         elif bestellt2:
             new_status = "ordered"
         elif wunsch2:
-            new_status = "wish"
+            new_status = "wishlist"
 
         old_status = aircraft_status.get(aid, "")
-        rank = {"": 0, "missing": 0, "wish": 1, "ordered": 2, "owned": 3}
+        rank = {"": 0, "missing": 0, "wishlist": 1, "ordered": 2, "owned": 3}
 
         if rank.get(new_status, 0) > rank.get(old_status, 0):
             aircraft_status[aid] = new_status
