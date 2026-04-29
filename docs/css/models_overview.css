@@ -151,8 +151,32 @@ tr.row-wishlist:hover{
 
 @media (max-width:520px){
   .statusBox{
-    align-items:flex-start;
-    flex-direction:column;
-    gap:6px;
+    display:block;
+    padding:10px 14px;
+    border-radius:8px;
+  }
+
+  .statusTitle{
+    display:block;
+    margin:0 0 8px 0;
+    font-size:13px;
+  }
+
+  .statusRow{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .chk{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+    line-height:1.2;
+  }
+
+  .chk input{
+    flex:0 0 auto;
   }
 }
