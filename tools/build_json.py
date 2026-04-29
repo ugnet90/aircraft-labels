@@ -318,6 +318,9 @@ def main() -> int:
 
         wunsch_raw = (r.get("Wunsch", "") or "").strip()
         wishlist = to_bool_x(wunsch_raw) is True
+
+        wunsch_prio_raw = (r.get("Wunsch_Prio", "") or "").strip()
+        wishlist_prio = int(wunsch_prio_raw) if wunsch_prio_raw.isdigit() else None
         
         vorhanden_raw = (r.get("vorhanden", "") or "").strip().lower()
         present_flag = (vorhanden_raw in ("wahr", "true", "1", "x", "ja", "yes"))
@@ -398,6 +401,7 @@ def main() -> int:
             "ordered_at": bestellt_iso,
             "ordered": ordered,
             "wishlist": wishlist,
+            "wishlist_prio": wishlist_prio,
             "status": status,
             "source": {"sheet": source_sheet, "row": source_row},
             "aircraft": {
@@ -425,6 +429,7 @@ def main() -> int:
                 "ordered": ordered,
                 "present": present,
                 "wishlist": wishlist,
+                "wishlist_prio": wishlist_prio,
                 "status": status,
                 "flown": eigenfluege,
                 "special_note": special_note,
