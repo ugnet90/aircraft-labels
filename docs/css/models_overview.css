@@ -105,8 +105,7 @@ tr.row-wishlist:hover{
 
 /* Status-Filter */
 .statusBox{
-  grid-column:auto;
-  max-width:420px;
+  grid-column:span 2;
   padding:8px 10px;
   border:1px solid rgba(0,0,0,.14);
   border-radius:8px;
@@ -115,6 +114,7 @@ tr.row-wishlist:hover{
   align-items:center;
   gap:14px;
   min-height:38px;
+  max-width:none;
 }
 
 .statusBox.is-active{
@@ -127,13 +127,14 @@ tr.row-wishlist:hover{
   font-size:12px;
   color:#666;
   white-space:nowrap;
+  flex:0 0 auto;
 }
 
 .statusRow{
   display:flex;
-  gap:10px 14px;
   align-items:center;
-  flex-wrap:wrap;
+  gap:14px;
+  flex-wrap:nowrap;
 }
 
 .chk{
@@ -143,31 +144,45 @@ tr.row-wishlist:hover{
   font-size:13px;
   color:#333;
   white-space:nowrap;
+  line-height:1.2;
 }
 
 .chk input{
   margin:0;
+  width:14px;
+  height:14px;
+  flex:0 0 auto;
+}
+
+@media (max-width:900px){
+  .statusBox{
+    grid-column:1 / -1;
+  }
 }
 
 @media (max-width:520px){
   .statusBox{
     grid-column:1 / -1;
     width:100%;
-    max-width:360px;
     padding:10px 12px;
+    gap:10px;
   }
 
   .statusRow{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    gap:10px 16px;
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:8px;
+    width:100%;
   }
 
   .chk{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    font-size:14px;
+    font-size:12px;
+    gap:4px;
+    min-width:0;
+  }
+
+  .chk input{
+    width:14px;
+    height:14px;
   }
 }
