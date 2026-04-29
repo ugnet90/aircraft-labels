@@ -240,7 +240,8 @@
    ======================================== */
 
 .famCmpTable tbody tr[data-status="owned"],
-.famCmpTable tbody tr[data-status="ordered"]{
+.famCmpTable tbody tr[data-status="ordered"],
+.famCmpTable tbody tr[data-status="wishlist"]{
   cursor:pointer;
 }
 
