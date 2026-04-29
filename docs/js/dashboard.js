@@ -14,7 +14,10 @@ function labelCount(n, singular, plural){
 }
 
 function countOwnedModels(items){
-  return items.filter(x => !!x.model_id).length;
+  return items.filter(x => {
+    const s = String(x.status || "").toLowerCase();
+    return s === "owned" || s === "ordered";
+  }).length;
 }
 
 function countAirlines(items){
