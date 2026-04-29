@@ -505,6 +505,7 @@ def main() -> int:
             "ordered": ordered,
             "present": present,
             "wishlist": wishlist,
+            "wishlist_prio": wishlist_prio,
             "status": status,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
