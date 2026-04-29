@@ -32,9 +32,14 @@
       <option value="true">Mitgeflogen: ja</option>
       <option value="false">Mitgeflogen: nein</option>
     </select>
-    <select id="status">
-      <option value="">Status: alle</option>
-    </select>
+    <div class="statusBox">
+      <div class="statusTitle">Status</div>
+      <div class="statusRow">
+        <label class="chk"><input type="checkbox" id="fOwned" checked> vorhanden</label>
+        <label class="chk"><input type="checkbox" id="fOrdered" checked> bestellt</label>
+        <label class="chk"><input type="checkbox" id="fWishlist" checked> Wunsch</label>
+      </div>
+    </div>
 
   
   </div>
