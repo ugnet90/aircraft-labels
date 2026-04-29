@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T14:43:25+02:00",
+  "generated_at": "2026-04-29T15:37:21+02:00",
   "count": 241,
   "counts_by_airline_code": {
     "OS": 23,
@@ -51,6 +51,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -79,6 +80,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -107,6 +109,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -135,6 +138,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -163,6 +167,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -191,6 +196,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -219,6 +225,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -247,6 +254,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -275,6 +283,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -303,6 +312,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -331,6 +341,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -359,6 +370,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -387,6 +399,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -415,6 +428,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -443,6 +457,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -471,6 +486,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -499,6 +515,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -527,6 +544,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -555,6 +573,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -583,6 +602,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -611,6 +631,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -639,6 +660,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -667,6 +689,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -695,6 +718,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -723,6 +747,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -751,6 +776,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -779,6 +805,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -807,6 +834,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -835,6 +863,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -863,6 +892,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -891,6 +921,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -919,6 +950,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -947,6 +979,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -975,6 +1008,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -1003,6 +1037,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1031,6 +1066,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1059,6 +1095,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -1087,6 +1124,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1115,6 +1153,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1143,6 +1182,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1171,6 +1211,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1199,6 +1240,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1227,6 +1269,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1255,6 +1298,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1283,6 +1327,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1311,6 +1356,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1339,6 +1385,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1367,6 +1414,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1395,6 +1443,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1423,6 +1472,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1451,6 +1501,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1479,6 +1530,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1507,6 +1559,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1535,6 +1588,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -1563,6 +1617,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1591,6 +1646,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1619,6 +1675,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -1647,6 +1704,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -1675,6 +1733,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1703,6 +1762,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1731,6 +1791,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1759,6 +1820,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1787,6 +1849,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1815,6 +1878,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1843,6 +1907,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1871,6 +1936,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1899,6 +1965,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1927,6 +1994,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1955,6 +2023,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -1983,6 +2052,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2011,6 +2081,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2039,6 +2110,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2067,6 +2139,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2095,6 +2168,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2123,6 +2197,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2151,6 +2226,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2179,6 +2255,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2207,6 +2284,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2235,6 +2313,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2263,6 +2342,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2291,6 +2371,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2319,6 +2400,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2347,6 +2429,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2375,6 +2458,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2403,6 +2487,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2431,6 +2516,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2459,6 +2545,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2487,6 +2574,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2515,6 +2603,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2543,6 +2632,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -2571,6 +2661,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2599,6 +2690,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2627,6 +2719,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2655,6 +2748,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 3,
       "status": "wishlist"
     },
     {
@@ -2683,6 +2777,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2711,6 +2806,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -2739,6 +2835,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2767,6 +2864,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2795,6 +2893,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -2823,6 +2922,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2851,6 +2951,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2879,6 +2980,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2907,6 +3009,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2935,6 +3038,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2963,6 +3067,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -2991,6 +3096,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3019,6 +3125,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3047,6 +3154,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3075,6 +3183,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3103,6 +3212,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3131,6 +3241,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3159,6 +3270,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3187,6 +3299,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3215,6 +3328,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3243,6 +3357,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3271,6 +3386,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3299,6 +3415,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3327,6 +3444,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3355,6 +3473,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -3383,6 +3502,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -3411,6 +3531,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -3439,6 +3560,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3467,6 +3589,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3495,6 +3618,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3523,6 +3647,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -3551,6 +3676,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3579,6 +3705,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3607,6 +3734,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3635,6 +3763,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3663,6 +3792,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3691,6 +3821,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3719,6 +3850,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3747,6 +3879,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3775,6 +3908,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3803,6 +3937,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3831,6 +3966,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3859,6 +3995,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3887,6 +4024,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3915,6 +4053,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3943,6 +4082,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3971,6 +4111,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -3999,6 +4140,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4027,6 +4169,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4055,6 +4198,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4083,6 +4227,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4111,6 +4256,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4139,6 +4285,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4167,6 +4314,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -4195,6 +4343,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4223,6 +4372,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4251,6 +4401,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4279,6 +4430,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4307,6 +4459,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4335,6 +4488,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4363,6 +4517,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4391,6 +4546,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4419,6 +4575,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4447,6 +4604,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4475,6 +4633,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4503,6 +4662,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4531,6 +4691,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4559,6 +4720,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4587,6 +4749,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4615,6 +4778,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4643,6 +4807,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4671,6 +4836,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4699,6 +4865,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4727,6 +4894,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4755,6 +4923,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4783,6 +4952,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -4811,6 +4981,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4839,6 +5010,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4867,6 +5039,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4895,6 +5068,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4923,6 +5097,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -4951,6 +5126,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -4979,6 +5155,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5007,6 +5184,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5035,6 +5213,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5063,6 +5242,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5091,6 +5271,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5119,6 +5300,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5147,6 +5329,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5175,6 +5358,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -5203,6 +5387,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -5231,6 +5416,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -5259,6 +5445,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -5287,6 +5474,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -5315,6 +5503,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -5343,6 +5532,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -5371,6 +5561,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -5399,6 +5590,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5427,6 +5619,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5455,6 +5648,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5483,6 +5677,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -5511,6 +5706,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -5539,6 +5735,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -5567,6 +5764,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5595,6 +5793,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5623,6 +5822,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5651,6 +5851,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5679,6 +5880,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5707,6 +5909,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5735,6 +5938,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5763,6 +5967,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5791,6 +5996,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5819,6 +6025,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5847,6 +6054,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5875,6 +6083,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5903,6 +6112,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5931,6 +6141,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5959,6 +6170,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -5987,6 +6199,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6015,6 +6228,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6043,6 +6257,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6071,6 +6286,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6099,6 +6315,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6127,6 +6344,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6155,6 +6373,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6183,6 +6402,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6211,6 +6431,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6239,6 +6460,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6267,6 +6489,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -6295,6 +6518,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -6323,6 +6547,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -6351,6 +6576,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -6379,6 +6605,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -6407,6 +6634,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -6435,6 +6663,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -6463,6 +6692,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -6491,6 +6721,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6519,6 +6750,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6547,6 +6779,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -6575,6 +6808,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6603,6 +6837,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6631,6 +6866,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6659,6 +6895,7 @@
       "ordered": false,
       "present": true,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "owned"
     },
     {
@@ -6687,6 +6924,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -6715,6 +6953,7 @@
       "ordered": true,
       "present": false,
       "wishlist": false,
+      "wishlist_prio": null,
       "status": "ordered"
     },
     {
@@ -6743,6 +6982,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {
@@ -6771,6 +7011,7 @@
       "ordered": false,
       "present": false,
       "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     }
   ]
