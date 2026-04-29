@@ -66,7 +66,7 @@ function passesFilters(it, filters, excludeKey = ""){
   if(excludeKey !== "type" && !matchesType(it, filters.type)) return false;
   if(excludeKey !== "scale" && !matchesScale(it, filters.scale)) return false;
   if(excludeKey !== "flown" && !matchesFlown(it, filters.flown)) return false;
-  if(excludeKey !== "status" && !matchesStatus(it, filters.status)) return false;
+  if(excludeKey !== "status" && !matchesStatus(it, filters)) return false;
 
   return true;
 }
@@ -158,25 +158,6 @@ function buildFacetOptions(filters){
     refillSelect("flown", "Mitgeflogen: egal", pairs, filters.flown);
   }
 
-  // status
-  {
-    const items = state.all.filter(it => passesFilters(it, filters, "status"));
-
-    const hasOwned = items.some(it => String(it.status || "").toLowerCase() === "owned");
-    const hasOrdered = items.some(it => String(it.status || "").toLowerCase() === "ordered");
-    const hasWishlist = items.some(it =>
-      String(it.status || "").toLowerCase() === "wishlist" || it.wishlist === true
-    );
-
-    const pairs = [];
-    if(hasOwned) pairs.push(["owned", "Vorhanden"]);
-    if(hasOrdered) pairs.push(["ordered", "Bestellt"]);
-    if(hasWishlist) pairs.push(["wishlist", "Wunschmodell"]);
-
-    refillSelect("status", "Status: alle", pairs, filters.status);
-  }
-}
-
 function updateActiveFilterUI(filters){
   const map = [
     ["q", "Suche"],
@@ -184,8 +165,7 @@ function updateActiveFilterUI(filters){
     ["airline", "Airline"],
     ["type", "Flugzeugtyp"],
     ["scale", "Maßstab"],
-    ["flown", "Mitgeflogen"],
-    ["status", "Status"]
+    ["flown", "Mitgeflogen"]
   ];
 
   const active = [];
@@ -197,6 +177,13 @@ function updateActiveFilterUI(filters){
     if(on) active.push(label);
   });
 
+  const allStatusOn = filters.owned && filters.ordered && filters.wishlist;
+  document.querySelector(".statusBox")?.classList.toggle("is-active", !allStatusOn);
+  
+  if(!allStatusOn){
+    active.push("Status");
+  }
+  
   const box = document.getElementById("activeFilters");
   if(box){
     box.textContent = active.length
@@ -244,16 +231,18 @@ function matchesFlown(it, v){
   return true;
 }
 
-function matchesStatus(it, status){
-  if(!status) return true;
-
+function matchesStatus(it, filters){
   const s = String(it.status || "").trim().toLowerCase();
 
-  if(status === "wishlist"){
-    return s === "wishlist" || it.wishlist === true;
-  }
+  const ownedOn = filters.owned !== false;
+  const orderedOn = filters.ordered !== false;
+  const wishlistOn = filters.wishlist !== false;
 
-  return s === status;
+  if(s === "owned") return ownedOn;
+  if(s === "ordered") return orderedOn;
+  if(s === "wishlist" || it.wishlist === true) return wishlistOn;
+
+  return false;
 }
 
 function sortByColumn(items){
@@ -429,7 +418,9 @@ function apply(){
     type: document.getElementById("type").value,
     scale: document.getElementById("scale").value,
     flown: document.getElementById("flown").value,
-    status: document.getElementById("status")?.value || ""
+    owned: document.getElementById("fOwned")?.checked ?? true,
+    ordered: document.getElementById("fOrdered")?.checked ?? true,
+    wishlist: document.getElementById("fWishlist")?.checked ?? true
   };
 
   buildFacetOptions(filters);
@@ -461,7 +452,9 @@ async function main(){
     document.getElementById("type").addEventListener("change", apply);
     document.getElementById("scale").addEventListener("change", apply);
     document.getElementById("flown").addEventListener("change", apply);
-    document.getElementById("status")?.addEventListener("change", apply);
+    document.getElementById("fOwned")?.addEventListener("change", apply);
+    document.getElementById("fOrdered")?.addEventListener("change", apply);
+    document.getElementById("fWishlist")?.addEventListener("change", apply);
 
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
@@ -470,9 +463,9 @@ async function main(){
       document.getElementById("type").value = "";
       document.getElementById("scale").value = "";
       document.getElementById("flown").value = "";
-      if(document.getElementById("status")){
-        document.getElementById("status").value = "";
-      }
+      if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
+      if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
+      if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = true;
       
       tableSortKey = "model_id";
       tableSortDir = 1;
@@ -548,9 +541,10 @@ document.addEventListener("click", (ev) => {
   document.getElementById("type").value = "";
   document.getElementById("scale").value = "";
   document.getElementById("flown").value = "";
-  if(document.getElementById("status")){
-    document.getElementById("status").value = "";
-  }  
+  if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
+  if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
+  if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = true;
+  
   // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
   // document.getElementById("sort").value = "group_model";
 
