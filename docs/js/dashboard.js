@@ -13,31 +13,33 @@ function labelCount(n, singular, plural){
   return `${n} ${n === 1 ? singular : plural}`;
 }
 
+function getStatus(x){
+  return String(x.status || "").trim().toLowerCase();
+}
+
 function countOwnedModels(items){
-  return items.filter(x => {
-    const s = String(x.status || "").toLowerCase();
-    return s === "owned" || s === "ordered";
-  }).length;
+  return items.filter(x => getStatus(x) === "owned").length;
 }
 
 function countAirlines(items){
   const s = new Set();
-  items.forEach(x => {
-    const v = String(x.airline_row || x.airline || "").trim();
-    if(v) s.add(v);
-  });
+
+  items
+    .filter(x => getStatus(x) === "owned")
+    .forEach(x => {
+      const v = String(x.airline_row || x.airline || x.airline_code || "").trim();
+      if(v) s.add(v);
+    });
+
   return s.size;
 }
 
 function countOrdered(items){
-  return items.filter(x => !!x.ordered_at && !x.arrived).length;
+  return items.filter(x => getStatus(x) === "ordered").length;
 }
 
 function countWishlist(items){
-  return items.filter(x => {
-    const v = String(x.wishlist || x.Wunsch || "").trim().toLowerCase();
-    return ["1","true","wahr","yes","ja","x"].includes(v);
-  }).length;
+  return items.filter(x => getStatus(x) === "wishlist" || x.wishlist === true).length;
 }
 
 async function main(){
@@ -76,12 +78,12 @@ async function main(){
       missingCount = missingTypes.length;
     }
     
-    setText("kpiModels", labelCount(modelsCount, "Modell", "Modelle"));
-    setText("kpiPostcards", labelCount(postcardCount, "Postkarte", "Postkarten"));
+    setText("kpiModels", labelCount(modelsCount, "vorhandenes Modell", "vorhandene Modelle"));
+    setText("kpiOrdered", labelCount(orderedCount, "bestelltes Modell", "bestellte Modelle"));
+    setText("kpiWishlist", labelCount(wishlistCount, "Wunschmodell", "Wunschmodelle"));
     setText("kpiAirlines", labelCount(airlinesCount, "Airline", "Airlines"));
-    setText("kpiOrdered", labelCount(orderedCount, "Bestellung", "Bestellungen"));
-    setText("kpiWishlist", labelCount(wishlistCount, "Wunsch", "Wünsche"));
-    setText("kpiMissingTypes", labelCount(missingCount, "Fehlender Typ", "Fehlende Typen"));
+    setText("kpiMissingTypes", labelCount(missingCount, "fehlender Typ", "fehlende Typen"));
+    setText("kpiPostcards", labelCount(postcardCount, "vorhandene Postkarte", "vorhandene Postkarten"));
 
   }catch(e){
     console.error(e);
