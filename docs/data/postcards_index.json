@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T08:49:40+02:00",
+  "generated_at": "2026-04-30T09:32:27+02:00",
   "count_total": 189,
   "count_unique": 189,
   "items": [
@@ -720,7 +720,7 @@
       "id": "PC-ORD-AB-7-01",
       "model_id": "ORD-AB-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
@@ -729,7 +729,7 @@
       "id": "PC-ORD-BOA-11-01",
       "model_id": "ORD-BOA-11",
       "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, nicht exakte Beschriftung",
       "price": 1.35
@@ -738,7 +738,7 @@
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
@@ -747,7 +747,7 @@
       "id": "PC-ORD-LX-26-01",
       "model_id": "ORD-LX-26",
       "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -755,7 +755,7 @@
       "id": "PC-ORD-PA-16-01",
       "model_id": "ORD-PA-16",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.85
     },
@@ -763,7 +763,7 @@
       "id": "PC-ORD-PA-7-01",
       "model_id": "ORD-PA-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 0.85
@@ -772,7 +772,7 @@
       "id": "PC-ORD-SO-33-01",
       "model_id": "ORD-SO-33",
       "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, andere Bemalung",
       "price": 0.85
@@ -781,7 +781,7 @@
       "id": "PC-ORD-SO-34-01",
       "model_id": "ORD-SO-34",
       "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 0.85
@@ -790,7 +790,7 @@
       "id": "PC-ORD-SO-37-01",
       "model_id": "ORD-SO-37",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Livery",
       "price": 1.35
@@ -799,7 +799,7 @@
       "id": "PC-ORD-SO-49-01",
       "model_id": "ORD-SO-49",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -807,7 +807,7 @@
       "id": "PC-ORD-SO-50-01",
       "model_id": "ORD-SO-50",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -815,7 +815,7 @@
       "id": "PC-ORD-SO-53-01",
       "model_id": "ORD-SO-53",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -823,7 +823,7 @@
       "id": "PC-ORD-WF-6-01",
       "model_id": "ORD-WF-6",
       "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "Bemalung nicht ganz exakt",
       "price": 0.85
@@ -2326,7 +2326,7 @@
       "id": "PC-ORD-AB-7-01",
       "model_id": "ORD-AB-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
@@ -2335,7 +2335,7 @@
       "id": "PC-ORD-BOA-11-01",
       "model_id": "ORD-BOA-11",
       "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, nicht exakte Beschriftung",
       "price": 1.35
@@ -2344,7 +2344,7 @@
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
@@ -2353,7 +2353,7 @@
       "id": "PC-ORD-LX-26-01",
       "model_id": "ORD-LX-26",
       "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -2361,7 +2361,7 @@
       "id": "PC-ORD-PA-16-01",
       "model_id": "ORD-PA-16",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.85
     },
@@ -2369,7 +2369,7 @@
       "id": "PC-ORD-PA-7-01",
       "model_id": "ORD-PA-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 0.85
@@ -2378,7 +2378,7 @@
       "id": "PC-ORD-SO-33-01",
       "model_id": "ORD-SO-33",
       "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, andere Bemalung",
       "price": 0.85
@@ -2387,7 +2387,7 @@
       "id": "PC-ORD-SO-34-01",
       "model_id": "ORD-SO-34",
       "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 0.85
@@ -2396,7 +2396,7 @@
       "id": "PC-ORD-SO-37-01",
       "model_id": "ORD-SO-37",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "andere Livery",
       "price": 1.35
@@ -2405,7 +2405,7 @@
       "id": "PC-ORD-SO-49-01",
       "model_id": "ORD-SO-49",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -2413,7 +2413,7 @@
       "id": "PC-ORD-SO-50-01",
       "model_id": "ORD-SO-50",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -2421,7 +2421,7 @@
       "id": "PC-ORD-SO-53-01",
       "model_id": "ORD-SO-53",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "price": 1.35
     },
@@ -2429,7 +2429,7 @@
       "id": "PC-ORD-WF-6-01",
       "model_id": "ORD-WF-6",
       "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
-      "status": "owned",
+      "status": "none",
       "model_status": "ordered",
       "label": "Bemalung nicht ganz exakt",
       "price": 0.85
