@@ -108,7 +108,19 @@ function render(){
   });
 
   document.getElementById("count").textContent = countLabel(items.length, status);
-
+  
+  const mark = (key) => {
+    if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
+    return `<span class="sortMark active">${tableSortDir === 1 ? "↑" : "↓"}</span>`;
+  };
+  
+  document.querySelectorAll("#tbl thead th[data-sort]").forEach(th => {
+    const key = th.dataset.sort;
+    const label = th.getAttribute("data-label") || th.textContent.replace(/[↕↑↓]/g, "").trim();
+    th.setAttribute("data-label", label);
+    th.innerHTML = `${esc(label)} ${mark(key)}`;
+  });
+  
   const tbody = document.querySelector("#tbl tbody");
   const sorted = sortMissing(items);
 
