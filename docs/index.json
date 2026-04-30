@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-30T14:37:15+02:00",
-  "count": 242,
+  "generated_at": "2026-04-30T14:37:37+02:00",
+  "count": 243,
   "counts_by_airline_code": {
     "OS": 23,
     "LH": 41,
@@ -21,7 +21,7 @@
     "SK": 16,
     "TP": 3,
     "WF": 3,
-    "SO": 37,
+    "SO": 38,
     "SM": 3
   },
   "items": [
@@ -6519,6 +6519,35 @@
       "present": false,
       "wishlist": true,
       "wishlist_prio": 1,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-12",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Ansett Airlines",
+      "aircraft_id": "LOC-L188A-F",
+      "aircraft_type": "Lockheed L-188A(F) Electra",
+      "registration": "VH-RMC",
+      "manufacturer": "Jet-X",
+      "aircraft_name": "",
+      "livery_note": "Ansett Air Freight",
+      "extra_info": "",
+      "wingtip": "",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "AN_AAA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/227323146236?itmmeta=01KQF61KKGKA72P9KCXGFCR4DR&hash=item34ed83effc:g:fycAAeSw9J9pZsKI",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "wishlist_prio": 2,
       "status": "wishlist"
     },
     {

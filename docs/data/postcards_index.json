@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-30T14:37:15+02:00",
-  "count_total": 189,
-  "count_unique": 189,
+  "generated_at": "2026-04-30T14:37:37+02:00",
+  "count_total": 190,
+  "count_unique": 190,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -1546,6 +1546,15 @@
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-SO-12-01",
+      "model_id": "WIS-SO-12",
+      "url": "https://jjpostcards.com/de/ansichtskarten/7330-ansett-electra.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Livery",
       "price": 1.35
     },
     {
@@ -3152,6 +3161,15 @@
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-WIS-SO-12-01": {
+      "id": "PC-WIS-SO-12-01",
+      "model_id": "WIS-SO-12",
+      "url": "https://jjpostcards.com/de/ansichtskarten/7330-ansett-electra.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Livery",
       "price": 1.35
     },
     "PC-WIS-SO-16-01": {
