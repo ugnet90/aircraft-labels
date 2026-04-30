@@ -74,6 +74,18 @@ function updateActiveFilterUI(){
   }
 }
 
+function countLabel(n, status){
+  if(status === "ordered"){
+    return `${n} ${n === 1 ? "bestellter Typ" : "bestellte Typen"}`;
+  }
+
+  if(status === "missing"){
+    return `${n} ${n === 1 ? "fehlender Typ" : "fehlende Typen"}`;
+  }
+
+  return `${n} ${n === 1 ? "Typ" : "Typen"}`;
+}
+
 function render(){
   const q = (document.getElementById("q").value || "").trim().toLowerCase();
   const manu = norm(document.getElementById("manu").value);
@@ -92,7 +104,7 @@ function render(){
   });
 
 
-  document.getElementById("count").textContent = `${items.length} fehlende Typen`;
+  document.getElementById("count").textContent = countLabel(items.length, status);
 
   const mark = (key) => {
     if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
@@ -192,9 +204,12 @@ async function main(){
   document.getElementById("manu").addEventListener("change", render);
   document.getElementById("status").addEventListener("change", render);
   document.getElementById("reset").addEventListener("click", () => {
-    document.getElementById("q").value = "";
+    document.getElementById("q").value = "";"
     document.getElementById("manu").value = "";
     document.getElementById("status").value = "";
+  
+    history.replaceState(null, "", location.pathname);
+  
     render();
   });
 
