@@ -108,18 +108,35 @@ function render(){
   
   const tbody = document.querySelector("#tbl tbody");
   const sorted = sortMissing(items);
-  tbody.innerHTML = sorted.map(x => `
-    <tr class="${esc(norm(x.status))}">
-      <td>
-        <span class="badge ${esc(norm(x.status))}">
-          ${esc(norm(x.status) === "ordered" ? "bestellt" : "fehlend")}
-        </span>
-      </td>
-      <td>${esc(norm(x.manufacturer) || "—")}</td>
-      <td>${esc(norm(x.Typ_anzeige) || "—")}</td>
-      <td class="mono">${esc(norm(x.aircraft_id) || "")}</td>
-    </tr>
-  `).join("");
+  
+  tbody.innerHTML = sorted.map(x => {
+    const status = norm(x.status);
+    const aircraftId = norm(x.aircraft_id);
+    const isOrdered = status === "ordered";
+    const href = isOrdered && aircraftId
+      ? `./models_overview.html?aircraft_id=${encodeURIComponent(aircraftId)}&status=ordered`
+      : "";
+  
+    return `
+      <tr class="${esc(status)} ${isOrdered ? "clickable" : ""}" data-href="${esc(href)}">
+        <td>
+          <span class="badge ${esc(status)}">
+            ${esc(status === "ordered" ? "bestellt" : "fehlend")}
+          </span>
+        </td>
+        <td>${esc(norm(x.manufacturer) || "—")}</td>
+        <td>${esc(norm(x.Typ_anzeige) || "—")}</td>
+        <td class="mono">${esc(aircraftId || "")}</td>
+      </tr>
+    `;
+  }).join("");
+
+  document.querySelectorAll("#tbl tbody tr[data-href]").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const href = tr.getAttribute("data-href");
+      if(href) location.href = href;
+    });
+  });
   
   document.querySelectorAll("#tbl thead th[data-sort]").forEach(th => {
     th.onclick = () => {
