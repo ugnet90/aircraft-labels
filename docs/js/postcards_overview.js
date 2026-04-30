@@ -92,6 +92,12 @@ function passesFilters(it, filters, excludeKey = ""){
   if(excludeKey !== "airline" && filters.airline && (it.airline || "") !== filters.airline) return false;
   if(excludeKey !== "type" && filters.type && (it.aircraft_type || "") !== filters.type) return false;
   if(excludeKey !== "publisher" && filters.publisher && (it.publisher_norm || it.publisher || "") !== filters.publisher) return false;
+
+  if(excludeKey !== "status" && filters.status){
+    const s = String(it.status || "").trim().toLowerCase();
+    if(s !== filters.status) return false;
+  }
+
   return true;
 }
 
@@ -175,6 +181,10 @@ function updateActiveFilterUI(filters){
     if(on) active.push(label);
   });
 
+  if(filters.status){
+    active.push(filters.status === "owned" ? "Status: vorhanden" : "Status");
+  }
+  
   const box = document.getElementById("activeFilters");
   if(box){
     box.textContent = active.length
@@ -314,20 +324,14 @@ function apply(){
     model: document.getElementById("model").value,
     airline: document.getElementById("airline").value,
     type: document.getElementById("type").value,
-    publisher: document.getElementById("publisher").value
+    publisher: document.getElementById("publisher").value,
+    status: new URLSearchParams(location.search).get("status") || ""
   };
 
   buildFacetOptions(filters);
   updateActiveFilterUI(filters);
 
-  let items = state.all.filter(it => {
-    if(!matchesQuery(it, filters.q)) return false;
-    if(filters.model && (it.model_id || "") !== filters.model) return false;
-    if(filters.airline && (it.airline || "") !== filters.airline) return false;
-    if(filters.type && (it.aircraft_type || "") !== filters.type) return false;
-    if(filters.publisher && (it.publisher_norm || it.publisher || "") !== filters.publisher) return false;
-    return true;
-  });
+  let items = state.all.filter(it => passesFilters(it, filters));
 
   items = sortByColumn(items);
   state.filtered = items;
@@ -360,9 +364,16 @@ async function main(){
       };
     });
 
+    const p = new URLSearchParams(location.search);
+    const statusParam = p.get("status") || "";
+    
+    const metaCount = statusParam
+      ? state.all.filter(it => String(it.status || "").toLowerCase() === statusParam).length
+      : (idx.count_unique || state.all.length);
+    
     document.getElementById("meta").innerHTML =
       `<span class="mono">${esc(formatStandDE(idx.generated_at || ""))}</span>` +
-      ` · Anzahl: <span class="mono">${esc(idx.count_unique || state.all.length)}</span>`;
+      ` · Anzahl: <span class="mono">${esc(metaCount)}</span>`;
 
     document.getElementById("q").addEventListener("input", apply);
     document.getElementById("model").addEventListener("change", apply);
