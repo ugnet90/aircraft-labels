@@ -94,6 +94,19 @@ async function main(){
 
   all = (d.missing_types || []);
   buildOptions(all);
+  
+  // URL-Parameter übernehmen, z.B. missing_types.html?status=missing
+  const p = new URLSearchParams(location.search);
+  
+  if(p.has("status")){
+    const status = p.get("status") || "";
+    const statusEl = document.getElementById("status");
+  
+    if(statusEl){
+      statusEl.value = status;
+    }
+  }
+  
   render();
 
   document.getElementById("q").addEventListener("input", render);
