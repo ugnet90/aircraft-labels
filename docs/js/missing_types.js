@@ -42,11 +42,37 @@ function buildOptions(items){
   }
 }
 
+function updateActiveFilterUI(){
+  const filters = [
+    ["q", "Suche"],
+    ["manu", "Hersteller"],
+    ["status", "Status"]
+  ];
+
+  const active = [];
+
+  filters.forEach(([id, label]) => {
+    const el = document.getElementById(id);
+    const on = !!norm(el?.value || "");
+    if(el) el.classList.toggle("is-active", on);
+    if(on) active.push(label);
+  });
+
+  const box = document.getElementById("activeFilters");
+  if(box){
+    box.textContent = active.length
+      ? `Aktive Filter: ${active.join(", ")}`
+      : "Keine Filter aktiv";
+  }
+}
+
 function render(){
   const q = (document.getElementById("q").value || "").trim().toLowerCase();
   const manu = norm(document.getElementById("manu").value);
   
   const status = norm(document.getElementById("status").value);
+
+  updateActiveFilterUI();
 
   const items = all.filter(x => {
     if(status && norm(x.status) !== status) return false;
