@@ -89,10 +89,16 @@
 
 /* KPI-Kacheln */
 .kpiTile{
+  text-decoration:none;
+  color:inherit;
   background:#fff;
   border-radius:0;
   box-shadow:none;
   cursor:default;
+}
+
+.kpiTile:visited{
+  color:inherit;
 }
 
 .kpiTile:hover{
