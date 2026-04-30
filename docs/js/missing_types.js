@@ -194,7 +194,7 @@ async function main(){
   document.getElementById("manu").addEventListener("change", render);
   document.getElementById("status").addEventListener("change", render);
   document.getElementById("reset").addEventListener("click", () => {
-    document.getElementById("q").value = "";"
+    document.getElementById("q").value = "";
     document.getElementById("manu").value = "";
     document.getElementById("status").value = "";
   
