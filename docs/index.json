@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-30T13:54:17+02:00",
-  "count": 241,
+  "generated_at": "2026-04-30T13:54:34+02:00",
+  "count": 242,
   "counts_by_airline_code": {
     "OS": 23,
     "LH": 41,
@@ -21,7 +21,7 @@
     "SK": 16,
     "TP": 3,
     "WF": 3,
-    "SO": 36,
+    "SO": 37,
     "SM": 3
   },
   "items": [
@@ -6664,6 +6664,35 @@
       "present": false,
       "wishlist": true,
       "wishlist_prio": 2,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-42",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Aeronautica Militare (Italian Air Force)",
+      "aircraft_id": "AIB-A340-500",
+      "aircraft_type": "Airbus A340-500",
+      "registration": "I-TALY",
+      "manufacturer": "JC Wings",
+      "aircraft_name": "",
+      "livery_note": "Repubblica Italiana",
+      "extra_info": "Aeronautica Militare (Italian Air Force)",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "AZ_IAM",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/127670052855?itmmeta=01KQEXR6NWWVYYCZ6VC35VX4YD&hash=item1db9ba67f7:g:P7QAAeSwjddphnb-",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
