@@ -5,22 +5,30 @@ function norm(s){ return String(s??"").trim(); }
 
 let all = [];
 
+let tableSortKey = localStorage.getItem("missingTypesSortKey") || "aircraft_id";
+let tableSortDir = Number(localStorage.getItem("missingTypesSortDir") || "1");
+if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;
+
 function sortMissing(items){
-  const status = norm(document.getElementById("status").value);
+  const arr = items.slice();
 
-  // Status == "" bedeutet "Alle"
-  if(!status){
-    // Wunsch: bei "Alle" nach aircraft_id sortieren
-    return items.slice().sort((a,b)=>
-      (norm(a.aircraft_id)).localeCompare(norm(b.aircraft_id))
-    );
-  }
+  arr.sort((a,b) => {
+    let va = a[tableSortKey];
+    let vb = b[tableSortKey];
 
-  // bei missing / ordered: Status + aircraft_id
-  return items.slice().sort((a,b)=>
-    norm(a.status).localeCompare(norm(b.status)) ||
-    norm(a.aircraft_id).localeCompare(norm(b.aircraft_id))
-  );
+    if(va == null) va = "";
+    if(vb == null) vb = "";
+
+    va = norm(va).toLowerCase();
+    vb = norm(vb).toLowerCase();
+
+    if(va < vb) return -1 * tableSortDir;
+    if(va > vb) return  1 * tableSortDir;
+
+    return norm(a.aircraft_id).localeCompare(norm(b.aircraft_id), "de");
+  });
+
+  return arr;
 }
 
 function buildOptions(items){
@@ -86,6 +94,18 @@ function render(){
 
   document.getElementById("count").textContent = `${items.length} fehlende Typen`;
 
+  const mark = (key) => {
+    if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
+    return `<span class="sortMark active">${tableSortDir === 1 ? "↑" : "↓"}</span>`;
+  };
+  
+  document.querySelectorAll("#tbl thead th[data-sort]").forEach(th => {
+    const key = th.dataset.sort;
+    const label = th.getAttribute("data-label") || th.textContent.replace(/[↕↑↓]/g, "").trim();
+    th.setAttribute("data-label", label);
+    th.innerHTML = `${esc(label)} ${mark(key)}`;
+  });
+  
   const tbody = document.querySelector("#tbl tbody");
   const sorted = sortMissing(items);
   tbody.innerHTML = sorted.map(x => `
@@ -100,7 +120,23 @@ function render(){
       <td class="mono">${esc(norm(x.aircraft_id) || "")}</td>
     </tr>
   `).join("");
-
+  
+  document.querySelectorAll("#tbl thead th[data-sort]").forEach(th => {
+    th.onclick = () => {
+      const key = th.dataset.sort;
+      if(tableSortKey === key){
+        tableSortDir *= -1;
+      }else{
+        tableSortKey = key;
+        tableSortDir = 1;
+      }
+  
+      localStorage.setItem("missingTypesSortKey", tableSortKey);
+      localStorage.setItem("missingTypesSortDir", String(tableSortDir));
+  
+      render();
+    };
+  });
 }
 
 async function main(){
