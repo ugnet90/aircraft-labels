@@ -44,6 +44,14 @@ tr.ordered td{ background:#fff8e1; }
   background: #fffdf5;
 }
 
+#q.is-active,
+#manu.is-active,
+#status.is-active{
+  border-color: rgba(0,0,0,0.35);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.06);
+  background: #fffdf5;
+}
+
 #activeFilters{
   margin: 6px 0 10px;
   color: #555;
