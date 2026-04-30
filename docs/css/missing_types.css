@@ -56,3 +56,18 @@ tr.ordered td{ background:#fff8e1; }
   margin: 6px 0 10px;
   color: #555;
 }
+
+th[data-sort]{
+  cursor:pointer;
+  user-select:none;
+}
+
+.sortMark{
+  opacity:.35;
+  margin-left:4px;
+  font-size:.9em;
+}
+
+.sortMark.active{
+  opacity:1;
+}
