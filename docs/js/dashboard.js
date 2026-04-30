@@ -63,8 +63,14 @@ async function main(){
     const orderedCount = countOrdered(models);
     const wishlistCount = countWishlist(models);
     
-    const postcardCount =
-      Number(postcardsIndex?.count_unique ?? postcardsIndex?.count_total ?? 0) || 0;
+    const postcardItems = Array.isArray(postcardsIndex?.items)
+      ? postcardsIndex.items
+      : [];
+    
+    const postcardCount = postcardItems.filter(x => {
+      const s = String(x.status || "").toLowerCase();
+      return s === "owned";
+    }).length;
     
     let missingCount = 0;
     
