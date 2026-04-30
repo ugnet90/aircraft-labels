@@ -55,6 +55,7 @@ tr.ordered td{ background:#fff8e1; }
 #activeFilters{
   margin: 6px 0 10px;
   color: #555;
+  font-size:12px;
 }
 
 th[data-sort]{
