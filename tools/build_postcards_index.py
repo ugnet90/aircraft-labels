@@ -68,7 +68,7 @@ def collect_from_models() -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, Any
                 "id": pc_id,
                 "model_id": model_id,
                 "url": url,
-                "status": "owned" if model_status in ("owned", "ordered") else "none",
+                "status": "owned" if model_status == "owned" else "none",
                 "model_status": model_status,
             }
             if label:
