@@ -500,10 +500,19 @@ async function main(){
     // =========================
     const p = new URLSearchParams(location.search);
     
-    if(p.get("status") === "wishlist"){
-      if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = false;
-      if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = false;
-      if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = true;
+    if(p.has("status")){
+      const statuses = String(p.get("status") || "")
+        .split(",")
+        .map(x => x.trim().toLowerCase())
+        .filter(Boolean);
+    
+      const hasOwned = statuses.includes("owned");
+      const hasOrdered = statuses.includes("ordered");
+      const hasWishlist = statuses.includes("wishlist");
+    
+      if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = hasOwned;
+      if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = hasOrdered;
+      if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = hasWishlist;
     }
     
     if (p.has("q")) {
@@ -531,9 +540,28 @@ async function main(){
       document.getElementById("flown").value = p.get("flown") || "";
     }
 
-    //if (p.has("sort")) {
-    //  document.getElementById("sort").value = p.get("sort") || document.getElementById("sort").value;
-    //}
+    if(p.has("sort")){
+      const sort = p.get("sort") || "";
+      const allowedSorts = new Set([
+        "model_id",
+        "airline",
+        "airline_row",
+        "scale",
+        "flown",
+        "aircraft_type",
+        "wingtip",
+        "registration",
+        "livery_display",
+        "arrived"
+      ]);
+    
+      if(allowedSorts.has(sort)){
+        tableSortKey = sort;
+        tableSortDir = 1;
+        localStorage.setItem("indexSortKey", tableSortKey);
+        localStorage.setItem("indexSortDir", String(tableSortDir));
+      }
+    }
 
     apply();
 
