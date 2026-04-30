@@ -49,6 +49,7 @@ def collect_from_models() -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, Any
 
         model_id = norm(d.get("model_id"))
         pcs = d.get("postcards")
+        model_status = norm(d.get("status") or d.get("model", {}).get("status"))
         if not model_id or not isinstance(pcs, list) or not pcs:
             continue
 
@@ -67,6 +68,8 @@ def collect_from_models() -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, Any
                 "id": pc_id,
                 "model_id": model_id,
                 "url": url,
+                "status": "owned" if model_status in ("owned", "ordered") else "none",
+                "model_status": model_status,
             }
             if label:
                 entry["label"] = label
