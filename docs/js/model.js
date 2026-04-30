@@ -549,13 +549,20 @@ async function loadIndexIds(){
     }
   }
 
-  // extract model_id in the SAME ORDER as in index.json
+  // Nur vorhandene Modelle für Pfeilnavigation
   const ids = [];
   for(const it of items){
     const id = String(it?.model_id ?? it?.id ?? "").trim();
-    if(id) ids.push(id);
+    if(!id) continue;
+
+    const status = String(it?.status || "").trim().toLowerCase();
+
+    if(status === "owned"){
+      ids.push(id);
+    }
   }
-  return ids; // keep order, no sorting, no de-dup (index should already be clean)
+
+  return ids; // Reihenfolge aus index.json bleibt erhalten
 }
 
 function navNeighbors(ids, currentId){
