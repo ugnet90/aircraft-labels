@@ -349,7 +349,7 @@ function render(items){
           <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
             ${
               (it.status === "wishlist" || it.wishlist === true || (it.model_id || "").startsWith("WIS-"))
-                ? `<span class="badge-id wish" title="${esc(it.model_id)}">W${esc(it.wishlist_prio || "")}</span>`
+                ? `<span class="badge-id wish wish-prio-${esc(it.wishlist_prio || "x")}" title="${esc(it.model_id)}">W${esc(it.wishlist_prio || "")}</span>`
                 : (it.model_id || "").startsWith("ORD-")
                   ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
                   : `${esc(it.model_id || "")}`
