@@ -21,7 +21,7 @@ function countOwnedModels(items){
   return items.filter(x => getStatus(x) === "owned").length;
 }
 
-function countAirlines(items){
+function countOwnedAirlines(items){
   const s = new Set();
 
   items
@@ -59,7 +59,7 @@ async function main(){
     }
 
     const modelsCount = countOwnedModels(models);
-    const airlinesCount = countAirlines(models);
+    const ownedAirlinesCount = countOwnedAirlines(models);
     const orderedCount = countOrdered(models);
     const wishlistCount = countWishlist(models);
     
@@ -81,7 +81,7 @@ async function main(){
     setText("kpiModels", labelCount(modelsCount, "vorhandenes Modell", "vorhandene Modelle"));
     setText("kpiOrdered", labelCount(orderedCount, "bestelltes Modell", "bestellte Modelle"));
     setText("kpiWishlist", labelCount(wishlistCount, "Wunschmodell", "Wunschmodelle"));
-    setText("kpiAirlines", labelCount(airlinesCount, "Airline", "Airlines"));
+    setText("kpiAirlines", labelCount(ownedAirlinesCount, "Airline", "Airlines"));
     setText("kpiMissingTypes", labelCount(missingCount, "fehlender Typ", "fehlende Typen"));
     setText("kpiPostcards", labelCount(postcardCount, "vorhandene Postkarte", "vorhandene Postkarten"));
 
