@@ -89,7 +89,6 @@ function countLabel(n, status){
 function render(){
   const q = (document.getElementById("q").value || "").trim().toLowerCase();
   const manu = norm(document.getElementById("manu").value);
-  
   const status = norm(document.getElementById("status").value);
 
   updateActiveFilterUI();
@@ -98,29 +97,21 @@ function render(){
     if(status && norm(x.status) !== status) return false;
     if(manu && norm(x.manufacturer) !== manu) return false;
     if(!q) return true;
-  
-    const hay = (norm(x.Typ_anzeige) + " " + norm(x.aircraft_id) + " " + norm(x.manufacturer)).toLowerCase();
+
+    const hay = (
+      norm(x.Typ_anzeige) + " " +
+      norm(x.aircraft_id) + " " +
+      norm(x.manufacturer)
+    ).toLowerCase();
+
     return hay.includes(q);
   });
 
-
   document.getElementById("count").textContent = countLabel(items.length, status);
 
-  const mark = (key) => {
-    if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
-    return `<span class="sortMark active">${tableSortDir === 1 ? "↑" : "↓"}</span>`;
-  };
-  
-  document.querySelectorAll("#tbl thead th[data-sort]").forEach(th => {
-    const key = th.dataset.sort;
-    const label = th.getAttribute("data-label") || th.textContent.replace(/[↕↑↓]/g, "").trim();
-    th.setAttribute("data-label", label);
-    th.innerHTML = `${esc(label)} ${mark(key)}`;
-  });
-  
   const tbody = document.querySelector("#tbl tbody");
   const sorted = sortMissing(items);
-  
+
   tbody.innerHTML = sorted.map(x => {
     const status = norm(x.status);
     const aircraftId = norm(x.aircraft_id);
@@ -128,7 +119,7 @@ function render(){
     const href = isOrdered && aircraftId
       ? `./models_overview.html?aircraft_id=${encodeURIComponent(aircraftId)}&status=ordered`
       : "";
-  
+
     return `
       <tr class="${esc(status)} ${isOrdered ? "clickable" : ""}" data-href="${esc(href)}">
         <td>
@@ -149,7 +140,7 @@ function render(){
       if(href) location.href = href;
     });
   });
-  
+
   document.querySelectorAll("#tbl thead th[data-sort]").forEach(th => {
     th.onclick = () => {
       const key = th.dataset.sort;
@@ -159,15 +150,14 @@ function render(){
         tableSortKey = key;
         tableSortDir = 1;
       }
-  
+
       localStorage.setItem("missingTypesSortKey", tableSortKey);
       localStorage.setItem("missingTypesSortDir", String(tableSortDir));
-  
+
       render();
     };
   });
 }
-
 async function main(){
   const res = await fetch("./data/missing_types.json", {cache:"no-store"});
   const d = await res.json();
