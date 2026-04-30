@@ -103,6 +103,27 @@ tr.row-wishlist:hover{
   background:#fff3d6;
 }
 
+.badge-id.wish.wish-prio-1{
+  background:#ffd966;
+  color:#5a4200;
+  border-color:rgba(90,66,0,.35);
+  font-weight:700;
+}
+
+.badge-id.wish.wish-prio-2{
+  background:#fff3cd;
+  color:#7a5b00;
+  border-color:rgba(122,91,0,.25);
+  font-weight:700;
+}
+
+.badge-id.wish.wish-prio-3{
+  background:#fff8e6;
+  color:#8a6d1d;
+  border-color:rgba(138,109,29,.18);
+  font-weight:600;
+}
+
 /* Status-Filter */
 .statusBox{
   grid-column:span 2;
