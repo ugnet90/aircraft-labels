@@ -36,3 +36,15 @@ tr.ordered td{ background:#fff8e1; }
 }
 .badge.missing{ background:#fff; }
 .badge.ordered{ background:#ffe08a; }
+
+.bar input.is-active,
+.bar select.is-active{
+  border-color: rgba(0,0,0,0.35);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.06);
+  background: #fffdf5;
+}
+
+#activeFilters{
+  margin: 6px 0 10px;
+  color: #555;
+}
