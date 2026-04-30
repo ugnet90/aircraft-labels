@@ -364,8 +364,8 @@ async function main(){
       };
     });
 
-    const p = new URLSearchParams(location.search);
-    const statusParam = p.get("status") || "";
+    const paramsMeta = new URLSearchParams(location.search);
+    const statusParam = paramsMeta.get("status") || "";
     
     const metaCount = statusParam
       ? state.all.filter(it => String(it.status || "").toLowerCase() === statusParam).length
