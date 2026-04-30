@@ -71,3 +71,11 @@ th[data-sort]{
 .sortMark.active{
   opacity:1;
 }
+
+#tbl tbody tr.clickable{
+  cursor:pointer;
+}
+
+#tbl tbody tr.clickable:hover{
+  background:#f5f9ff;
+}
