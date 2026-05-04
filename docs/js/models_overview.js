@@ -306,6 +306,22 @@ function getRowStatusClass(it){
   return "";
 }
 
+function getVisualGroupKey(it){
+  if(tableSortKey === "airline"){
+    return String(it.airline || "").trim();
+  }
+
+  if(tableSortKey === "airline_row"){
+    return String(it.airline_row || "").trim();
+  }
+
+  if(tableSortKey === "aircraft_type"){
+    return String(it.aircraft_type || "").trim();
+  }
+
+  return "";
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -341,10 +357,23 @@ function render(items){
       <tbody>
   `;
   
+  let lastVisualGroupKey = null;
+  
   for(const it of items){
     const link = `./model.html?id=${encodeURIComponent(it.model_id)}`;
+  
+    const visualGroupKey = getVisualGroupKey(it);
+    const isGroupStart =
+      visualGroupKey &&
+      lastVisualGroupKey !== null &&
+      visualGroupKey !== lastVisualGroupKey;
+  
+    if(visualGroupKey){
+      lastVisualGroupKey = visualGroupKey;
+    }
+  
     html += `
-      <tr class="modelRow ${getRowStatusClass(it)}" data-id="${esc(it.model_id || "")}">
+      <tr class="modelRow ${getRowStatusClass(it)} ${isGroupStart ? "groupStart" : ""}" data-id="${esc(it.model_id || "")}">
         <td class="mono">
           <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
             ${
