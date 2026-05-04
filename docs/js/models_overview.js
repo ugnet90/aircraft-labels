@@ -255,6 +255,16 @@ function sortByColumn(items){
     let va = a[tableSortKey];
     let vb = b[tableSortKey];
 
+    if(tableSortKey === "airline"){
+      va = getGroupValue(a);
+      vb = getGroupValue(b);
+    }
+
+    if(tableSortKey === "airline_row"){
+      va = a.airline_row || a.airline || a.airline_code || "";
+      vb = b.airline_row || b.airline || b.airline_code || "";
+    }    
+
     if(tableSortKey === "model_id"){
       const sa = String(a.status || "").toLowerCase();
       const sb = String(b.status || "").toLowerCase();
@@ -308,11 +318,11 @@ function getRowStatusClass(it){
 
 function getVisualGroupKey(it){
   if(tableSortKey === "airline"){
-    return String(it.airline || "").trim();
+    return String(getGroupValue(it) || "").trim();
   }
 
   if(tableSortKey === "airline_row"){
-    return String(it.airline_row || "").trim();
+    return String(it.airline_row || it.airline || it.airline_code || "").trim();
   }
 
   if(tableSortKey === "aircraft_type"){
