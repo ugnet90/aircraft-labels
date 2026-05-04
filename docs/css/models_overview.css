@@ -228,3 +228,35 @@ tr.modelRow.groupStart.row-ordered td{
 tr.modelRow.groupStart.row-wishlist td{
   border-top-color:rgba(122,91,0,.22);
 }
+
+.columnBox{
+  margin:8px 0 12px;
+  padding:8px 10px;
+  border:1px solid rgba(0,0,0,.14);
+  border-radius:8px;
+  background:#fff;
+}
+
+.columnTitle{
+  font-size:12px;
+  color:#666;
+  margin-bottom:6px;
+}
+
+.columnRow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 14px;
+}
+
+.columnRow .chk{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:13px;
+  white-space:nowrap;
+}
+
+.columnRow .chk input{
+  margin:0;
+}
