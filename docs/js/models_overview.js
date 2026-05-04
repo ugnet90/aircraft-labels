@@ -4,6 +4,38 @@ let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // De
 let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
 if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;            // 1 = asc, -1 = desc
 
+const OPTIONAL_COLUMNS = [
+  { key: "role", label: "Rolle" },
+  { key: "fuselage", label: "Rumpf" },
+  { key: "market_segment", label: "Segment" },
+  { key: "aircraft_kind", label: "Flugzeugart" },
+  { key: "aircraft_status", label: "Status" },
+  { key: "first_flight", label: "Erstflug" },
+  { key: "propulsion", label: "Antrieb" },
+  { key: "engines", label: "Triebwerke" },
+  { key: "range_class", label: "Reichweite" },
+  { key: "passengers", label: "Passagiere" },
+  { key: "length_m", label: "Länge" },
+  { key: "wingspan_m", label: "Spannweite" },
+  { key: "height_m", label: "Höhe" }
+];
+
+function getVisibleOptionalColumns(){
+  try{
+    const raw = localStorage.getItem("modelsOverviewOptionalColumns");
+    const arr = JSON.parse(raw || "[]");
+    if(!Array.isArray(arr)) return [];
+    const allowed = new Set(OPTIONAL_COLUMNS.map(c => c.key));
+    return arr.filter(x => allowed.has(x));
+  }catch(e){
+    return [];
+  }
+}
+
+function setVisibleOptionalColumns(keys){
+  localStorage.setItem("modelsOverviewOptionalColumns", JSON.stringify(keys || []));
+}
+
 function esc(s){
   return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
@@ -292,6 +324,16 @@ function sortByColumn(items){
       vb = parseDateISO(b.arrived)?.getTime() ?? -1;
     }
 
+    if(["engines", "passengers", "length_m", "wingspan_m", "height_m", "first_flight"].includes(tableSortKey)){
+      const toNum = (v) => {
+        const s = String(v ?? "").replace(",", ".").trim();
+        const n = Number(s);
+        return Number.isFinite(n) ? n : -1;
+      };
+      va = toNum(va);
+      vb = toNum(vb);
+    }    
+
     if(va == null) va = "";
     if(vb == null) vb = "";
 
@@ -348,6 +390,13 @@ function render(items){
   const thClass = (key, base = "") =>
     (tableSortKey === key ? `${base} thSort active` : `${base} thSort`).trim();
 
+  const visibleOptionalCols = getVisibleOptionalColumns();
+  const optionalHeaders = visibleOptionalCols.map(key => {
+    const col = OPTIONAL_COLUMNS.find(c => c.key === key);
+    if(!col) return "";
+    return `<th class="${thClass(key, "hide-m")}" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+  }).join("");  
+  
   let html = `
     <table>
       <thead>
@@ -362,6 +411,7 @@ function render(items){
           <th class="${thClass("registration","hide-m")}" data-sort="registration">Registrierung ${mark("registration")}</th>
           <th class="${thClass("livery_display","hide-m")}" data-sort="livery_display">Bemalung ${mark("livery_display")}</th>
           <th class="${thClass("arrived","hide-m")}" data-sort="arrived">Angekommen ${mark("arrived")}</th>
+          ${optionalHeaders}
         </tr>
       </thead>
       <tbody>
@@ -381,6 +431,10 @@ function render(items){
     if(visualGroupKey){
       lastVisualGroupKey = visualGroupKey;
     }
+
+    const optionalCells = visibleOptionalCols.map(key => {
+      return `<td class="hide-m">${esc(it[key] || "")}</td>`;
+    }).join("");
   
     html += `
       <tr class="modelRow ${getRowStatusClass(it)} ${isGroupStart ? "groupStart" : ""}" data-id="${esc(it.model_id || "")}">
@@ -429,6 +483,7 @@ function render(items){
               : ""
           }
         </td>
+        ${optionalCells}
       </tr>
     `;
   }
@@ -512,6 +567,22 @@ async function main(){
     document.getElementById("fOrdered")?.addEventListener("change", apply);
     document.getElementById("fWishlist")?.addEventListener("change", apply);
 
+    // Optionale Spalten initialisieren und speichern
+    const visibleOptionalCols = new Set(getVisibleOptionalColumns());
+
+    document.querySelectorAll(".colToggle").forEach(cb => {
+      cb.checked = visibleOptionalCols.has(cb.value);
+
+      cb.addEventListener("change", () => {
+        const keys = Array.from(document.querySelectorAll(".colToggle"))
+          .filter(x => x.checked)
+          .map(x => x.value);
+
+        setVisibleOptionalColumns(keys);
+        apply();
+      });
+    });
+    
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
       document.getElementById("group").value = "";
