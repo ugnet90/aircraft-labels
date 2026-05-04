@@ -582,6 +582,26 @@ async function main(){
         apply();
       });
     });
+
+    document.getElementById("selectAllColumns")?.addEventListener("click", () => {
+      const keys = OPTIONAL_COLUMNS.map(c => c.key);
+    
+      document.querySelectorAll(".colToggle").forEach(cb => {
+        cb.checked = true;
+      });
+    
+      setVisibleOptionalColumns(keys);
+      apply();
+    });
+    
+    document.getElementById("clearAllColumns")?.addEventListener("click", () => {
+      document.querySelectorAll(".colToggle").forEach(cb => {
+        cb.checked = false;
+      });
+    
+      setVisibleOptionalColumns([]);
+      apply();
+    });    
     
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
