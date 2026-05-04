@@ -1,0 +1,95 @@
+{
+  "model_id": "WIS-AZ-20",
+  "airline_code": "AZ",
+  "airline": "Alitalia",
+  "airline_row": "Alitalia",
+  "manufacturer": "Aeroclassics",
+  "aircraft_name": "",
+  "livery_note": "",
+  "extra_info": "Alitalia Cargo System",
+  "shop_url": "https://www.ebay.de/itm/298022141954?_skw=1%2F400&itmmeta=01KQS1QJAKW1ZEM9KHVTCRM0GW&hash=item4563810002:g:YmoAAeSw9whpDK6t",
+  "aircraft_id": "MCD-DC9-30F",
+  "aircraft_type": "McDonnell Douglas DC-9-32F",
+  "registration": "I-DIKG",
+  "livery_name": "",
+  "parent_livery": "",
+  "zusatzinfo": "I:Alitalia Cargo System",
+  "model_extra": "",
+  "special_note": "",
+  "shop": "Ebay Felindre Diecast",
+  "price": null,
+  "shipping_allocated": null,
+  "flown": null,
+  "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+  "postcard_info": "",
+  "postcard_url": "https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+  "postcard_price": 0.85,
+  "postcards": [
+    {
+      "id": "PC-WIS-AZ-20-01",
+      "label": "",
+      "url": "https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+      "price": 0.85
+    }
+  ],
+  "photo": "https://www.planespotters.net/photo/1893627/i-dikg-alitalia-linee-aeree-italiane-mcdonnell-douglas-dc-9-32f",
+  "photo_source_url": "https://www.planespotters.net/photo/1893627/i-dikg-alitalia-linee-aeree-italiane-mcdonnell-douglas-dc-9-32f",
+  "photo_image_url": "https://cdn.plnspttrs.net/01065/i-dikg-alitalia-linee-aeree-italiane-mcdonnell-douglas-dc-9-32f_PlanespottersNet_1893627_759440bd38_o.jpg",
+  "photo_credit": "Ken Fielding",
+  "arrived_excel": "",
+  "arrived": null,
+  "ordered_at": null,
+  "ordered": false,
+  "wishlist": true,
+  "wishlist_prio": 1,
+  "status": "wishlist",
+  "source": {
+    "sheet": "Alitalia",
+    "row": "20"
+  },
+  "aircraft": {
+    "aircraft_id": "MCD-DC9-30F",
+    "type": "McDonnell Douglas DC-9-32F",
+    "registration": "I-DIKG",
+    "wingtip": "",
+    "has_wingtip": false
+  },
+  "livery": {
+    "code": "",
+    "parent": "",
+    "notes_raw": "I:Alitalia Cargo System",
+    "note": ""
+  },
+  "model": {
+    "scale": "1:400",
+    "manufacturer": "Aeroclassics",
+    "model_number": "",
+    "shop": "Ebay Felindre Diecast",
+    "price": null,
+    "shipping_allocated": null,
+    "arrived": null,
+    "ordered_at": null,
+    "ordered": false,
+    "present": false,
+    "wishlist": true,
+    "wishlist_prio": 1,
+    "status": "wishlist",
+    "flown": null,
+    "special_note": "",
+    "model_extra": ""
+  },
+  "links": {
+    "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+    "postcard_url": "https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+    "photo": "https://www.planespotters.net/photo/1893627/i-dikg-alitalia-linee-aeree-italiane-mcdonnell-douglas-dc-9-32f",
+    "shop": "Ebay Felindre Diecast",
+    "shop_url": "https://www.ebay.de/itm/298022141954?_skw=1%2F400&itmmeta=01KQS1QJAKW1ZEM9KHVTCRM0GW&hash=item4563810002:g:YmoAAeSw9whpDK6t"
+  },
+  "logo": {
+    "id": "AZ_AZA",
+    "link": "https://assets.planespotters.net/files/airlines/6/alitalia-linee-aeree-italiane_34bf65_opr.png",
+    "name": "Alitalia - Linee Aeree Italiane SpA",
+    "airline": "Alitalia",
+    "logo_speaking": "Wahr"
+  }
+}

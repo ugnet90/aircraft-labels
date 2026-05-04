@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-04T07:40:56+02:00",
-  "count_total": 192,
-  "count_unique": 192,
+  "generated_at": "2026-05-04T11:42:11+02:00",
+  "count_total": 201,
+  "count_unique": 201,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -820,6 +820,14 @@
       "price": 1.35
     },
     {
+      "id": "PC-ORD-SO-58-01",
+      "model_id": "ORD-SO-58",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 1.35
+    },
+    {
       "id": "PC-ORD-WF-6-01",
       "model_id": "ORD-WF-6",
       "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
@@ -1414,6 +1422,14 @@
       "price": 0.85
     },
     {
+      "id": "PC-WIS-AZ-20-01",
+      "model_id": "WIS-AZ-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
       "id": "PC-WIS-BA-21-01",
       "model_id": "WIS-BA-21",
       "url": "https://jjpostcards.com/de/ansichtskarten/16822-british-regionalba-expr-b737.html",
@@ -1576,8 +1592,26 @@
       "price": 1.35
     },
     {
+      "id": "PC-WIS-SO-13-01",
+      "model_id": "WIS-SO-13",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
       "id": "PC-WIS-SO-16-01",
       "model_id": "WIS-SO-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
+      "id": "PC-WIS-SO-21-01",
+      "model_id": "WIS-SO-21",
       "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1602,6 +1636,23 @@
       "price": 1.05
     },
     {
+      "id": "PC-WIS-SO-27-01",
+      "model_id": "WIS-SO-27",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-29-01",
+      "model_id": "WIS-SO-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.05
+    },
+    {
       "id": "PC-WIS-SO-31-01",
       "model_id": "WIS-SO-31",
       "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
@@ -1620,6 +1671,30 @@
     {
       "id": "PC-WIS-SO-32-02",
       "model_id": "WIS-SO-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-36-01",
+      "model_id": "WIS-SO-36",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-37-01",
+      "model_id": "WIS-SO-37",
+      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-SO-37-02",
+      "model_id": "WIS-SO-37",
       "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
       "status": "none",
       "model_status": "wishlist",
@@ -2452,6 +2527,14 @@
       "model_status": "ordered",
       "price": 1.35
     },
+    "PC-ORD-SO-58-01": {
+      "id": "PC-ORD-SO-58-01",
+      "model_id": "ORD-SO-58",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 1.35
+    },
     "PC-ORD-WF-6-01": {
       "id": "PC-ORD-WF-6-01",
       "model_id": "ORD-WF-6",
@@ -3046,6 +3129,14 @@
       "model_status": "wishlist",
       "price": 0.85
     },
+    "PC-WIS-AZ-20-01": {
+      "id": "PC-WIS-AZ-20-01",
+      "model_id": "WIS-AZ-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/7224-alitalia-cargo-dc-9.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
     "PC-WIS-BA-21-01": {
       "id": "PC-WIS-BA-21-01",
       "model_id": "WIS-BA-21",
@@ -3208,9 +3299,27 @@
       "label": "andere Livery",
       "price": 1.35
     },
+    "PC-WIS-SO-13-01": {
+      "id": "PC-WIS-SO-13-01",
+      "model_id": "WIS-SO-13",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
     "PC-WIS-SO-16-01": {
       "id": "PC-WIS-SO-16-01",
       "model_id": "WIS-SO-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    "PC-WIS-SO-21-01": {
+      "id": "PC-WIS-SO-21-01",
+      "model_id": "WIS-SO-21",
       "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
       "status": "none",
       "model_status": "wishlist",
@@ -3229,6 +3338,23 @@
     "PC-WIS-SO-24-01": {
       "id": "PC-WIS-SO-24-01",
       "model_id": "WIS-SO-24",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.05
+    },
+    "PC-WIS-SO-27-01": {
+      "id": "PC-WIS-SO-27-01",
+      "model_id": "WIS-SO-27",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-WIS-SO-29-01": {
+      "id": "PC-WIS-SO-29-01",
+      "model_id": "WIS-SO-29",
       "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
       "status": "none",
       "model_status": "wishlist",
@@ -3253,6 +3379,30 @@
     "PC-WIS-SO-32-02": {
       "id": "PC-WIS-SO-32-02",
       "model_id": "WIS-SO-32",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    "PC-WIS-SO-36-01": {
+      "id": "PC-WIS-SO-36-01",
+      "model_id": "WIS-SO-36",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    "PC-WIS-SO-37-01": {
+      "id": "PC-WIS-SO-37-01",
+      "model_id": "WIS-SO-37",
+      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    "PC-WIS-SO-37-02": {
+      "id": "PC-WIS-SO-37-02",
+      "model_id": "WIS-SO-37",
       "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
       "status": "none",
       "model_status": "wishlist",

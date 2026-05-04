@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-04T07:40:56+02:00",
-  "count": 243,
+  "generated_at": "2026-05-04T11:42:11+02:00",
+  "count": 244,
   "counts_by_airline_code": {
     "OS": 23,
     "LH": 41,
@@ -8,7 +8,7 @@
     "BT": 1,
     "AB": 5,
     "AF": 4,
-    "AZ": 4,
+    "AZ": 5,
     "BA": 13,
     "BOA": 6,
     "HF": 4,
@@ -17,11 +17,11 @@
     "WA": 5,
     "NG": 3,
     "DY": 1,
-    "PA": 28,
+    "PA": 27,
     "SK": 16,
     "TP": 3,
     "WF": 3,
-    "SO": 38,
+    "SO": 39,
     "SM": 3
   },
   "items": [
@@ -400,6 +400,35 @@
       "present": false,
       "wishlist": true,
       "wishlist_prio": 2,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-AZ-20",
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "MCD-DC9-30F",
+      "aircraft_type": "McDonnell Douglas DC-9-32F",
+      "registration": "I-DIKG",
+      "manufacturer": "Aeroclassics",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "Alitalia Cargo System",
+      "wingtip": "",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "AZ_AZA",
+      "logo_speaking": "Wahr",
+      "shop_url": "https://www.ebay.de/itm/298022141954?_skw=1%2F400&itmmeta=01KQS1QJAKW1ZEM9KHVTCRM0GW&hash=item4563810002:g:YmoAAeSw9whpDK6t",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "wishlist_prio": 1,
       "status": "wishlist"
     },
     {
@@ -4811,35 +4840,6 @@
       "status": "owned"
     },
     {
-      "model_id": "PA018",
-      "airline_code": "PA",
-      "airline": "Pan Am",
-      "airline_row": "Pan Am",
-      "aircraft_id": "DOU-DC8-30",
-      "aircraft_type": "Douglas DC-8-30",
-      "registration": "N809PA",
-      "manufacturer": "Gemini Jets",
-      "aircraft_name": "Jet Clipper Great Republic",
-      "livery_note": "",
-      "extra_info": "",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "livery_name": "",
-      "livery_display": "",
-      "arrived": "2025-11-05",
-      "scale": "1:400",
-      "flown": null,
-      "logo_id": "PA_PAA",
-      "logo_speaking": "Wahr",
-      "shop_url": "https://www.ebay.de/itm/376641810428",
-      "ordered_at": null,
-      "ordered": false,
-      "present": true,
-      "wishlist": false,
-      "wishlist_prio": null,
-      "status": "owned"
-    },
-    {
       "model_id": "PA019",
       "airline_code": "PA",
       "airline": "Pan Am",
@@ -5652,7 +5652,7 @@
       "status": "owned"
     },
     {
-      "model_id": "ORD-SO-53",
+      "model_id": "ORD-SO-58",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "NASA",
@@ -6551,7 +6551,36 @@
       "status": "wishlist"
     },
     {
-      "model_id": "WIS-SO-16",
+      "model_id": "WIS-SO-13",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Volga-Dnepr",
+      "aircraft_id": "ANT-An124",
+      "aircraft_type": "Antonov An-124-100 Ruslan",
+      "registration": "RA-82078",
+      "manufacturer": "Gemini Jets",
+      "aircraft_name": "",
+      "livery_note": "Volga-Dnepr",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "VI_VDA",
+      "logo_speaking": "",
+      "shop_url": "https://www.ebay.de/itm/406891131934?itmmeta=01KQRT73KMXD823D2A7MXP8AP0&hash=item5ebc99f41e:g:SLwAAeSwcIBp8Qib",
+      "ordered_at": null,
+      "ordered": false,
+      "present": false,
+      "wishlist": true,
+      "wishlist_prio": 2,
+      "status": "wishlist"
+    },
+    {
+      "model_id": "WIS-SO-21",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "Luftwaffe (German Air Force)",
@@ -6580,7 +6609,7 @@
       "status": "wishlist"
     },
     {
-      "model_id": "WIS-SO-22",
+      "model_id": "WIS-SO-27",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "United States Air Force",
@@ -6609,7 +6638,7 @@
       "status": "wishlist"
     },
     {
-      "model_id": "WIS-SO-24",
+      "model_id": "WIS-SO-29",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "United States Air Force",
@@ -6638,7 +6667,7 @@
       "status": "wishlist"
     },
     {
-      "model_id": "WIS-SO-31",
+      "model_id": "WIS-SO-36",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "United States Air Force",
@@ -6667,7 +6696,7 @@
       "status": "wishlist"
     },
     {
-      "model_id": "WIS-SO-32",
+      "model_id": "WIS-SO-37",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "United States Air Force",
@@ -6696,7 +6725,7 @@
       "status": "wishlist"
     },
     {
-      "model_id": "WIS-SO-42",
+      "model_id": "WIS-SO-47",
       "airline_code": "SO",
       "airline": "Sonstige Airlines",
       "airline_row": "Aeronautica Militare (Italian Air Force)",
@@ -6716,7 +6745,7 @@
       "flown": null,
       "logo_id": "AZ_IAM",
       "logo_speaking": "Wahr",
-      "shop_url": "https://www.ebay.de/itm/127670052855?itmmeta=01KQEXR6NWWVYYCZ6VC35VX4YD&hash=item1db9ba67f7:g:P7QAAeSwjddphnb-",
+      "shop_url": "https://www.ebay.de/itm/267614314330?itmmeta=01KQRRQMWSG4GF75WXKHBKD2HA&hash=item3e4f0e5f5a:g:LdgAAOSwY5tlDnV3",
       "ordered_at": null,
       "ordered": false,
       "present": false,

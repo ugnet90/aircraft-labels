@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:40:56+02:00",
+  "generated_at": "2026-05-04T11:42:11+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -584,7 +584,7 @@
         "wingspan": 73.3,
         "height": 20.78,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Antonov"
       }
     ],
