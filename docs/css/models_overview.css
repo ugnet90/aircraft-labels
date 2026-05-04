@@ -214,3 +214,17 @@ tr.row-wishlist:hover{
   font-weight:700;
   padding:2px 6px;
 }
+
+/* optische Gruppentrennung je nach Sortierung */
+tr.modelRow.groupStart td{
+  border-top:4px solid rgba(0,0,0,.12);
+}
+
+/* etwas weicher bei eingefärbten Statuszeilen */
+tr.modelRow.groupStart.row-ordered td{
+  border-top-color:rgba(11,77,162,.22);
+}
+
+tr.modelRow.groupStart.row-wishlist td{
+  border-top-color:rgba(122,91,0,.22);
+}
