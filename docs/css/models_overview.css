@@ -228,3 +228,7 @@ tr.modelRow.groupStart.row-ordered td{
 tr.modelRow.groupStart.row-wishlist td{
   border-top-color:rgba(122,91,0,.22);
 }
+
+tr.modelRow.groupStart td:first-child{
+  box-shadow:inset 4px 0 0 rgba(0,0,0,.12);
+}
