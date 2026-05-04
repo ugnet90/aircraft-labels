@@ -260,3 +260,37 @@ tr.modelRow.groupStart.row-wishlist td{
 .columnRow .chk input{
   margin:0;
 }
+
+.columnHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:6px;
+}
+
+.columnActions{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+}
+
+.columnActions button{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:7px;
+  padding:4px 8px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.columnActions button:hover{
+  background:#f4f6f8;
+}
+
+@media (max-width:520px){
+  .columnHead{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+}
