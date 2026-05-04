@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 396,
-    "present_types": 130,
+    "present_types": 132,
     "missing_types": 260,
-    "ordered_types": 6,
+    "ordered_types": 4,
     "models": 243
   },
   "missing_types": [
@@ -1588,21 +1588,9 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "BOE-KC135D",
-      "Typ_anzeige": "Boeing KC-135D Stratotanker",
-      "manufacturer": "Boeing",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "DHC-DHC8-100",
       "Typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100",
       "manufacturer": "de Havilland Canada",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "LOC-C130H",
-      "Typ_anzeige": "Lockheed C-130H Hercules",
-      "manufacturer": "Lockheed",
       "status": "ordered"
     }
   ]

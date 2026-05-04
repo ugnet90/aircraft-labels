@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-30T14:37:37+02:00",
-  "count_total": 190,
-  "count_unique": 190,
+  "generated_at": "2026-05-04T07:40:56+02:00",
+  "count_total": 192,
+  "count_unique": 192,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -1334,6 +1334,24 @@
       "model_status": "owned",
       "label": "andere Livery",
       "price": 1.35
+    },
+    {
+      "id": "PC-SO026-01",
+      "model_id": "SO026",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO027-01",
+      "model_id": "SO027",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
     },
     {
       "id": "PC-TP001-01",
@@ -2949,6 +2967,24 @@
       "model_status": "owned",
       "label": "andere Livery",
       "price": 1.35
+    },
+    "PC-SO026-01": {
+      "id": "PC-SO026-01",
+      "model_id": "SO026",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 0.85
+    },
+    "PC-SO027-01": {
+      "id": "PC-SO027-01",
+      "model_id": "SO027",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
     },
     "PC-TP001-01": {
       "id": "PC-TP001-01",
