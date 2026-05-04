@@ -507,6 +507,20 @@ def main() -> int:
             "wishlist": wishlist,
             "wishlist_prio": wishlist_prio,
             "status": status,
+            # Optionale technische Felder für models_overview
+            "role": (aircraft_full.get("Role", "") if aircraft_full else "").strip(),
+            "fuselage": (aircraft_full.get("Rumpf", "") if aircraft_full else "").strip(),
+            "market_segment": (aircraft_full.get("MarketSegment", "") if aircraft_full else "").strip(),
+            "aircraft_kind": (aircraft_full.get("Flugzeugtyp", "") if aircraft_full else "").strip(),
+            "aircraft_status": (aircraft_full.get("Status", "") if aircraft_full else "").strip(),
+            "first_flight": (aircraft_full.get("Erstflug", "") if aircraft_full else "").strip(),
+            "propulsion": (aircraft_full.get("Antrieb", "") if aircraft_full else "").strip(),
+            "engines": (aircraft_full.get("Triebwerke", "") if aircraft_full else "").strip(),
+            "range_class": (aircraft_full.get("Reichweite", "") if aircraft_full else "").strip(),
+            "passengers": (aircraft_full.get("Passengers", "") if aircraft_full else "").strip(),
+            "length_m": (aircraft_full.get("Length", "") if aircraft_full else "").strip(),
+            "wingspan_m": (aircraft_full.get("Wingspan", "") if aircraft_full else "").strip(),
+            "height_m": (aircraft_full.get("Height", "") if aircraft_full else "").strip(),            
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
