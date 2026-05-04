@@ -602,6 +602,31 @@ async function main(){
       setVisibleOptionalColumns([]);
       apply();
     });    
+
+    const columnPanel = document.getElementById("columnPanel");
+    const columnBackdrop = document.getElementById("columnPanelBackdrop");
+
+    function openColumnPanel(){
+      if(columnPanel) columnPanel.hidden = false;
+      if(columnBackdrop) columnBackdrop.hidden = false;
+      document.body.classList.add("noscroll");
+    }
+
+    function closeColumnPanel(){
+      if(columnPanel) columnPanel.hidden = true;
+      if(columnBackdrop) columnBackdrop.hidden = true;
+      document.body.classList.remove("noscroll");
+    }
+
+    document.getElementById("openColumns")?.addEventListener("click", openColumnPanel);
+    document.getElementById("closeColumns")?.addEventListener("click", closeColumnPanel);
+    columnBackdrop?.addEventListener("click", closeColumnPanel);
+
+    document.addEventListener("keydown", (ev) => {
+      if(ev.key === "Escape"){
+        closeColumnPanel();
+      }
+    });
     
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
