@@ -41,13 +41,21 @@
       </div>
     </div>
     
-    <div class="columnBox">
-      <div class="columnHead">
-        <div class="columnTitle">Optionale Spalten</div>
-        <div class="columnActions">
-          <button type="button" id="selectAllColumns">Alle auswählen</button>
-          <button type="button" id="clearAllColumns">Alle abwählen</button>
-        </div>
+    <div class="columnLauncher">
+      <button type="button" id="openColumns" class="columnOpenBtn">Spalten</button>
+    </div>
+    
+    <div id="columnPanelBackdrop" class="columnPanelBackdrop" hidden></div>
+    
+    <div id="columnPanel" class="columnPanel" hidden>
+      <div class="columnPanelHead">
+        <div class="columnPanelTitle">Optionale Spalten</div>
+        <button type="button" id="closeColumns" class="columnCloseBtn" aria-label="Schließen">×</button>
+      </div>
+    
+      <div class="columnActions">
+        <button type="button" id="selectAllColumns">Alle auswählen</button>
+        <button type="button" id="clearAllColumns">Alle abwählen</button>
       </div>
     
       <div class="columnRow">
