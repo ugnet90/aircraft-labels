@@ -322,10 +322,11 @@ tr.modelRow.groupStart.row-wishlist td{
 
 .columnPanel{
   position:fixed;
-  top:84px;
-  right:20px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
   width:min(420px, calc(100vw - 24px));
-  max-height:calc(100vh - 110px);
+  max-height:calc(100vh - 40px);
   overflow:auto;
   background:#fff;
   border:1px solid rgba(0,0,0,.14);
@@ -406,12 +407,13 @@ body.noscroll{
 
 @media (max-width:700px){
   .columnPanel{
-    top:auto;
-    right:12px;
-    left:12px;
-    bottom:12px;
-    width:auto;
-    max-height:none;
+    top:50%;
+    left:50%;
+    right:auto;
+    bottom:auto;
+    transform:translate(-50%, -50%);
+    width:calc(100vw - 24px);
+    max-height:calc(100vh - 40px);
   }
 
   .columnRow{
