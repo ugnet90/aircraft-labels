@@ -137,8 +137,33 @@ def is_truthy(v: str) -> bool:
     s = (v or "").strip().lower()
     return s in {"1", "true", "wahr", "yes", "ja", "y", "x"}
 
+def clean_generated_model_jsons() -> None:
+    """
+    Entfernt alte automatisch generierte Modell-JSONs aus docs/data/models.
+    Wichtig: Dieser Ordner darf nur automatisch generierte Modell-JSON-Dateien enthalten.
+    """
+    if not os.path.isdir(OUT_DIR):
+        return
+
+    removed = 0
+
+    for fn in os.listdir(OUT_DIR):
+        if not fn.lower().endswith(".json"):
+            continue
+
+        path = os.path.join(OUT_DIR, fn)
+
+        if os.path.isfile(path):
+            os.remove(path)
+            removed += 1
+
+    print(f"[build_json] cleanup model jsons: removed={removed}")
+    
 def main() -> int:
     os.makedirs(OUT_DIR, exist_ok=True)
+
+    # Alte Modell-JSONs entfernen, damit umbenannte IDs keine verwaisten Dateien hinterlassen
+    clean_generated_model_jsons()
 
     models = read_csv(MODELS_CSV)
     pax_rows = read_csv(PAX_CSV)
