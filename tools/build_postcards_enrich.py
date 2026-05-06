@@ -113,6 +113,24 @@ def collect_postcards() -> dict:
         by_id[pc_id] = {"id": pc_id, "model_id": model_id, "url": url}
     return by_id
 
+def cleanup_stale_postcard_enrichment(existing: Dict[str, Any], postcards: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Entfernt alte Einträge aus postcards_enriched.json, die nicht mehr im aktuellen
+    postcards_index.json vorkommen.
+    """
+    valid_ids = set(postcards.keys())
+
+    cleaned = {
+        pc_id: data
+        for pc_id, data in existing.items()
+        if pc_id in valid_ids
+    }
+
+    removed = len(existing) - len(cleaned)
+    print(f"[postcards_enrich] cleanup stale entries: removed={removed}")
+
+    return cleaned
+    
 def is_jjpostcards_url(url: str) -> bool:
     try:
         host = urlparse(url).netloc.lower()
@@ -314,9 +332,12 @@ def load_existing_enriched(path: str) -> dict:
 
 def main() -> int:
     existing: Dict[str, Any] = load_existing_enriched(OUT_PATH)
-
+    
     postcards = collect_postcards()  # dict keyed by postcard_id
-
+    
+    # Alte Einträge entfernen, z. B. PC-SO... nach Umbenennung auf PC-US...
+    existing = cleanup_stale_postcard_enrichment(existing, postcards)
+    
     to_fetch = [pc_id for pc_id in postcards.keys() if pc_id not in existing]
 
     print(f"[postcards_enrich] found postcards: {len(postcards)} ; existing: {len(existing)} ; to fetch: {len(to_fetch)}")
