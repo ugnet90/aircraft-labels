@@ -432,3 +432,7 @@ body.noscroll{
 .columnPanel.is-dragging{
   opacity:.96;
 }
+
+.optionalNum{
+  text-align:right;
+}
