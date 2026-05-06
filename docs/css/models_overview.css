@@ -406,6 +406,9 @@ body.noscroll{
 }
 
 @media (max-width:700px){
+  .columnLauncher{
+    display:none;
+  }
   .columnPanel{
     top:50%;
     left:50%;
