@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T13:27:32+02:00",
+  "generated_at": "2026-05-06T13:40:48+02:00",
   "count_total": 184,
   "count_unique": 184,
   "items": [
@@ -734,8 +734,17 @@
       "price": 1.85
     },
     {
-      "id": "PC-ORD-SO-58-01",
-      "model_id": "ORD-SO-58",
+      "id": "PC-ORD-SO-13-01",
+      "model_id": "ORD-SO-13",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
+      "id": "PC-ORD-SO-62-01",
+      "model_id": "ORD-SO-62",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "status": "none",
       "model_status": "ordered",
@@ -1150,7 +1159,7 @@
     {
       "id": "PC-SO004-01",
       "model_id": "SO004",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
@@ -1158,39 +1167,22 @@
     {
       "id": "PC-SO005-01",
       "model_id": "SO005",
-      "url": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 0.85
-    },
-    {
-      "id": "PC-SO006-01",
-      "model_id": "SO006",
       "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
     {
-      "id": "PC-SO007-01",
-      "model_id": "SO007",
+      "id": "PC-SO006-01",
+      "model_id": "SO006",
       "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
     {
-      "id": "PC-SO012-01",
-      "model_id": "SO012",
-      "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-SO014-01",
-      "model_id": "SO014",
+      "id": "PC-SO009-01",
+      "model_id": "SO009",
       "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
       "status": "owned",
       "model_status": "owned",
@@ -1198,8 +1190,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-SO015-01",
-      "model_id": "SO015",
+      "id": "PC-SO010-01",
+      "model_id": "SO010",
       "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
       "status": "owned",
       "model_status": "owned",
@@ -1207,8 +1199,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-SO016-01",
-      "model_id": "SO016",
+      "id": "PC-SO011-01",
+      "model_id": "SO011",
       "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
       "status": "owned",
       "model_status": "owned",
@@ -1216,56 +1208,29 @@
       "price": 1.35
     },
     {
-      "id": "PC-SO018-01",
-      "model_id": "SO018",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Bemalung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-SO022-01",
-      "model_id": "SO022",
+      "id": "PC-SO012-01",
+      "model_id": "SO012",
       "url": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
     },
     {
-      "id": "PC-SO023-01",
-      "model_id": "SO023",
+      "id": "PC-SO013-01",
+      "model_id": "SO013",
       "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
     {
-      "id": "PC-SO025-01",
-      "model_id": "SO025",
+      "id": "PC-SO015-01",
+      "model_id": "SO015",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Livery",
       "price": 1.35
-    },
-    {
-      "id": "PC-SO026-01",
-      "model_id": "SO026",
-      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung, andere Bemalung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-SO027-01",
-      "model_id": "SO027",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 0.85
     },
     {
       "id": "PC-TP001-01",
@@ -1283,6 +1248,50 @@
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
+    },
+    {
+      "id": "PC-US004-01",
+      "model_id": "US004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 0.85
+    },
+    {
+      "id": "PC-US012-01",
+      "model_id": "US012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-US018-01",
+      "model_id": "US018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Bemalung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-US026-01",
+      "model_id": "US026",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-US027-01",
+      "model_id": "US027",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
     },
     {
       "id": "PC-WA002-01",
@@ -1498,15 +1507,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-WIS-SO-13-01",
-      "model_id": "WIS-SO-13",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
-    },
-    {
       "id": "PC-WIS-SO-21-01",
       "model_id": "WIS-SO-21",
       "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
@@ -1516,47 +1516,6 @@
       "price": 1.05
     },
     {
-      "id": "PC-WIS-SO-27-01",
-      "model_id": "WIS-SO-27",
-      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-WIS-SO-29-01",
-      "model_id": "WIS-SO-29",
-      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 1.05
-    },
-    {
-      "id": "PC-WIS-SO-36-01",
-      "model_id": "WIS-SO-36",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    {
-      "id": "PC-WIS-SO-37-01",
-      "model_id": "WIS-SO-37",
-      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    {
-      "id": "PC-WIS-SO-37-02",
-      "model_id": "WIS-SO-37",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    {
       "id": "PC-WIS-SO-8-01",
       "model_id": "WIS-SO-8",
       "url": "https://jjpostcards.com/de/ansichtskarten/21980-aeroflot-an-32.html",
@@ -1564,6 +1523,47 @@
       "model_status": "wishlist",
       "label": "keine Kennung",
       "price": 1.35
+    },
+    {
+      "id": "PC-WIS-US-16-01",
+      "model_id": "WIS-US-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-US-17-01",
+      "model_id": "WIS-US-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-US-17-02",
+      "model_id": "WIS-US-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-US-7-01",
+      "model_id": "WIS-US-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WIS-US-9-01",
+      "model_id": "WIS-US-9",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.05
     }
   ],
   "by_id": {
@@ -2297,9 +2297,18 @@
       "model_status": "ordered",
       "price": 1.85
     },
-    "PC-ORD-SO-58-01": {
-      "id": "PC-ORD-SO-58-01",
-      "model_id": "ORD-SO-58",
+    "PC-ORD-SO-13-01": {
+      "id": "PC-ORD-SO-13-01",
+      "model_id": "ORD-SO-13",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    "PC-ORD-SO-62-01": {
+      "id": "PC-ORD-SO-62-01",
+      "model_id": "ORD-SO-62",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "status": "none",
       "model_status": "ordered",
@@ -2714,7 +2723,7 @@
     "PC-SO004-01": {
       "id": "PC-SO004-01",
       "model_id": "SO004",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "url": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
@@ -2722,114 +2731,70 @@
     "PC-SO005-01": {
       "id": "PC-SO005-01",
       "model_id": "SO005",
-      "url": "https://jjpostcards.com/de/ansichtskarten/11474-aeromaritime-super-guppy.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 0.85
-    },
-    "PC-SO006-01": {
-      "id": "PC-SO006-01",
-      "model_id": "SO006",
       "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
-    "PC-SO007-01": {
-      "id": "PC-SO007-01",
-      "model_id": "SO007",
+    "PC-SO006-01": {
+      "id": "PC-SO006-01",
+      "model_id": "SO006",
       "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
-    "PC-SO012-01": {
-      "id": "PC-SO012-01",
-      "model_id": "SO012",
-      "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    "PC-SO014-01": {
-      "id": "PC-SO014-01",
-      "model_id": "SO014",
+    "PC-SO009-01": {
+      "id": "PC-SO009-01",
+      "model_id": "SO009",
       "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-SO015-01": {
-      "id": "PC-SO015-01",
-      "model_id": "SO015",
+    "PC-SO010-01": {
+      "id": "PC-SO010-01",
+      "model_id": "SO010",
       "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-SO016-01": {
-      "id": "PC-SO016-01",
-      "model_id": "SO016",
+    "PC-SO011-01": {
+      "id": "PC-SO011-01",
+      "model_id": "SO011",
       "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-SO018-01": {
-      "id": "PC-SO018-01",
-      "model_id": "SO018",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Bemalung",
-      "price": 0.85
-    },
-    "PC-SO022-01": {
-      "id": "PC-SO022-01",
-      "model_id": "SO022",
+    "PC-SO012-01": {
+      "id": "PC-SO012-01",
+      "model_id": "SO012",
       "url": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
     },
-    "PC-SO023-01": {
-      "id": "PC-SO023-01",
-      "model_id": "SO023",
+    "PC-SO013-01": {
+      "id": "PC-SO013-01",
+      "model_id": "SO013",
       "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
-    "PC-SO025-01": {
-      "id": "PC-SO025-01",
-      "model_id": "SO025",
+    "PC-SO015-01": {
+      "id": "PC-SO015-01",
+      "model_id": "SO015",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Livery",
       "price": 1.35
-    },
-    "PC-SO026-01": {
-      "id": "PC-SO026-01",
-      "model_id": "SO026",
-      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung, andere Bemalung",
-      "price": 0.85
-    },
-    "PC-SO027-01": {
-      "id": "PC-SO027-01",
-      "model_id": "SO027",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 0.85
     },
     "PC-TP001-01": {
       "id": "PC-TP001-01",
@@ -2847,6 +2812,50 @@
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
+    },
+    "PC-US004-01": {
+      "id": "PC-US004-01",
+      "model_id": "US004",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 0.85
+    },
+    "PC-US012-01": {
+      "id": "PC-US012-01",
+      "model_id": "US012",
+      "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-US018-01": {
+      "id": "PC-US018-01",
+      "model_id": "US018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Bemalung",
+      "price": 0.85
+    },
+    "PC-US026-01": {
+      "id": "PC-US026-01",
+      "model_id": "US026",
+      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 0.85
+    },
+    "PC-US027-01": {
+      "id": "PC-US027-01",
+      "model_id": "US027",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
     },
     "PC-WA002-01": {
       "id": "PC-WA002-01",
@@ -3061,15 +3070,6 @@
       "label": "andere Livery",
       "price": 1.35
     },
-    "PC-WIS-SO-13-01": {
-      "id": "PC-WIS-SO-13-01",
-      "model_id": "WIS-SO-13",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
-    },
     "PC-WIS-SO-21-01": {
       "id": "PC-WIS-SO-21-01",
       "model_id": "WIS-SO-21",
@@ -3079,47 +3079,6 @@
       "label": "andere Kennung",
       "price": 1.05
     },
-    "PC-WIS-SO-27-01": {
-      "id": "PC-WIS-SO-27-01",
-      "model_id": "WIS-SO-27",
-      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    "PC-WIS-SO-29-01": {
-      "id": "PC-WIS-SO-29-01",
-      "model_id": "WIS-SO-29",
-      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 1.05
-    },
-    "PC-WIS-SO-36-01": {
-      "id": "PC-WIS-SO-36-01",
-      "model_id": "WIS-SO-36",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    "PC-WIS-SO-37-01": {
-      "id": "PC-WIS-SO-37-01",
-      "model_id": "WIS-SO-37",
-      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    "PC-WIS-SO-37-02": {
-      "id": "PC-WIS-SO-37-02",
-      "model_id": "WIS-SO-37",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
     "PC-WIS-SO-8-01": {
       "id": "PC-WIS-SO-8-01",
       "model_id": "WIS-SO-8",
@@ -3128,6 +3087,47 @@
       "model_status": "wishlist",
       "label": "keine Kennung",
       "price": 1.35
+    },
+    "PC-WIS-US-16-01": {
+      "id": "PC-WIS-US-16-01",
+      "model_id": "WIS-US-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    "PC-WIS-US-17-01": {
+      "id": "PC-WIS-US-17-01",
+      "model_id": "WIS-US-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    "PC-WIS-US-17-02": {
+      "id": "PC-WIS-US-17-02",
+      "model_id": "WIS-US-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
+    },
+    "PC-WIS-US-7-01": {
+      "id": "PC-WIS-US-7-01",
+      "model_id": "WIS-US-7",
+      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-WIS-US-9-01": {
+      "id": "PC-WIS-US-9-01",
+      "model_id": "WIS-US-9",
+      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.05
     }
   }
 }

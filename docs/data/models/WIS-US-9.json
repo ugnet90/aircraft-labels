@@ -1,7 +1,7 @@
 {
-  "model_id": "WIS-SO-29",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "WIS-US-9",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Air Force",
   "manufacturer": "Dragon Wings",
   "aircraft_name": "",
@@ -26,7 +26,7 @@
   "postcard_price": 1.05,
   "postcards": [
     {
-      "id": "PC-WIS-SO-29-01",
+      "id": "PC-WIS-US-9-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
       "price": 1.05
@@ -44,8 +44,8 @@
   "wishlist_prio": 1,
   "status": "wishlist",
   "source": {
-    "sheet": "Sonstige",
-    "row": "29"
+    "sheet": "USAF",
+    "row": "9"
   },
   "aircraft": {
     "aircraft_id": "LOC-C5B",

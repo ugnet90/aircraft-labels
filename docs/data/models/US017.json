@@ -1,7 +1,7 @@
 {
-  "model_id": "SO017",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "US017",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Air Force",
   "manufacturer": "Gemini Jets",
   "aircraft_name": "Air Force Two",
@@ -37,8 +37,8 @@
   "wishlist_prio": null,
   "status": "owned",
   "source": {
-    "sheet": "Sonstige",
-    "row": "28"
+    "sheet": "USAF",
+    "row": "8"
   },
   "aircraft": {
     "aircraft_id": "BOE-757-C32A",

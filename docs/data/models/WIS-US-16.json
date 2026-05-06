@@ -1,7 +1,7 @@
 {
-  "model_id": "WIS-SO-36",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "WIS-US-16",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Air Force",
   "manufacturer": "Gemini Jets",
   "aircraft_name": "",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-WIS-SO-36-01",
+      "id": "PC-WIS-US-16-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
       "price": 0.85
@@ -44,8 +44,8 @@
   "wishlist_prio": 2,
   "status": "wishlist",
   "source": {
-    "sheet": "Sonstige",
-    "row": "36"
+    "sheet": "USAF",
+    "row": "16"
   },
   "aircraft": {
     "aircraft_id": "BOE-VC137C",

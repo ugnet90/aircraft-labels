@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 396,
-  "with_any_models": 136,
-  "missing": 260,
+  "with_any_models": 138,
+  "missing": 258,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -1233,11 +1233,26 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Aeronautica Militare (Italian Air Force)",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "AIB-A340-600",
@@ -1384,11 +1399,26 @@
       "manufacturer": "Antonov",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": []
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Volga-Dnepr",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "aircraft_id": "ANT-An140",
@@ -3302,7 +3332,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -3723,7 +3753,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -3751,7 +3781,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -3792,7 +3822,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -3859,7 +3889,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -3887,7 +3917,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -3915,7 +3945,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -4370,7 +4400,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -4828,7 +4858,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -5277,7 +5307,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -6058,7 +6088,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,
@@ -6447,7 +6477,7 @@
       "total_count": 1,
       "airline_group_counts": [
         {
-          "group": "Sonstige Airlines",
+          "group": "USAF",
           "owned": 1,
           "ordered": 0,
           "total": 1,

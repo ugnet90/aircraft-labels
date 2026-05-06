@@ -1,7 +1,7 @@
 {
-  "model_id": "SO019",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "US019",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Navy",
   "manufacturer": "Gemini Jets",
   "aircraft_name": "",
@@ -37,8 +37,8 @@
   "wishlist_prio": null,
   "status": "owned",
   "source": {
-    "sheet": "Sonstige",
-    "row": "34"
+    "sheet": "USAF",
+    "row": "14"
   },
   "aircraft": {
     "aircraft_id": "BOE-737-C40A",

@@ -4,8 +4,8 @@
   "counts": {
     "master_types": 396,
     "present_types": 132,
-    "missing_types": 260,
-    "ordered_types": 4,
+    "missing_types": 258,
+    "ordered_types": 6,
     "models": 244
   },
   "missing_types": [
@@ -100,12 +100,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "AIB-A340-500",
-      "Typ_anzeige": "Airbus A340-500",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "AIB-A350-1000",
       "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
@@ -120,12 +114,6 @@
     {
       "aircraft_id": "ANT-AN32",
       "Typ_anzeige": "Antonov An-32",
-      "manufacturer": "Antonov",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "ANT-An124",
-      "Typ_anzeige": "Antonov An-124 Ruslan",
       "manufacturer": "Antonov",
       "status": "missing"
     },
@@ -1573,6 +1561,18 @@
       "aircraft_id": "AIB-A300-600",
       "Typ_anzeige": "Airbus A300-600",
       "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "AIB-A340-500",
+      "Typ_anzeige": "Airbus A340-500",
+      "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "ANT-An124",
+      "Typ_anzeige": "Antonov An-124 Ruslan",
+      "manufacturer": "Antonov",
       "status": "ordered"
     },
     {

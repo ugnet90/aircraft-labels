@@ -1,7 +1,7 @@
 {
-  "model_id": "SO027",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "US027",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Air Force",
   "manufacturer": "Dragon Wings",
   "aircraft_name": "",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-SO027-01",
+      "id": "PC-US027-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
       "price": 0.85
@@ -44,8 +44,8 @@
   "wishlist_prio": null,
   "status": "owned",
   "source": {
-    "sheet": "Sonstige",
-    "row": "39"
+    "sheet": "USAF",
+    "row": "19"
   },
   "aircraft": {
     "aircraft_id": "LOC-C130H",

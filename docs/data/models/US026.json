@@ -1,7 +1,7 @@
 {
-  "model_id": "SO026",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "US026",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Air Force",
   "manufacturer": "Dragon Wings",
   "aircraft_name": "",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-SO026-01",
+      "id": "PC-US026-01",
       "label": "andere Kennung, andere Bemalung",
       "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
       "price": 0.85
@@ -44,8 +44,8 @@
   "wishlist_prio": null,
   "status": "owned",
   "source": {
-    "sheet": "Sonstige",
-    "row": "38"
+    "sheet": "USAF",
+    "row": "18"
   },
   "aircraft": {
     "aircraft_id": "BOE-KC135D",

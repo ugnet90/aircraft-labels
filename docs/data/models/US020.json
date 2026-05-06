@@ -1,7 +1,7 @@
 {
-  "model_id": "SO020",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "US020",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Army",
   "manufacturer": "Patriot Model",
   "aircraft_name": "",
@@ -26,7 +26,7 @@
   "postcard_price": 0.0,
   "postcards": [
     {
-      "id": "PC-SO020-01",
+      "id": "PC-US020-01",
       "label": "beim Modell vorhanden",
       "url": "",
       "price": null
@@ -44,8 +44,8 @@
   "wishlist_prio": null,
   "status": "owned",
   "source": {
-    "sheet": "Sonstige",
-    "row": "35"
+    "sheet": "USAF",
+    "row": "15"
   },
   "aircraft": {
     "aircraft_id": "BOE-767-AOA",

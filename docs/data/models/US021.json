@@ -1,7 +1,7 @@
 {
-  "model_id": "SO021",
-  "airline_code": "SO",
-  "airline": "Sonstige Airlines",
+  "model_id": "US021",
+  "airline_code": "US",
+  "airline": "USAF",
   "airline_row": "United States Navy",
   "manufacturer": "Dragon Wings",
   "aircraft_name": "",
@@ -37,8 +37,8 @@
   "wishlist_prio": null,
   "status": "owned",
   "source": {
-    "sheet": "Sonstige",
-    "row": "30"
+    "sheet": "USAF",
+    "row": "10"
   },
   "aircraft": {
     "aircraft_id": "LOC-RP3D",
