@@ -20,6 +20,13 @@ const OPTIONAL_COLUMNS = [
   { key: "height_m", label: "Höhe" }
 ];
 
+const MEASURE_COLUMNS = new Set(["length_m", "wingspan_m", "height_m"]);
+
+let measureMode = localStorage.getItem("modelsOverviewMeasureMode") || "scale400";
+if(measureMode !== "original" && measureMode !== "scale400"){
+  measureMode = "scale400";
+}
+
 function getVisibleOptionalColumns(){
   try{
     const raw = localStorage.getItem("modelsOverviewOptionalColumns");
@@ -324,7 +331,7 @@ function sortByColumn(items){
       vb = parseDateISO(b.arrived)?.getTime() ?? -1;
     }
 
-    if(["engines", "passengers", "length_m", "wingspan_m", "height_m", "first_flight"].includes(tableSortKey)){
+    if(["engines", "passengers", "first_flight"].includes(tableSortKey)){
       const toNum = (v) => {
         const s = String(v ?? "").replace(",", ".").trim();
         const n = Number(s);
@@ -332,7 +339,18 @@ function sortByColumn(items){
       };
       va = toNum(va);
       vb = toNum(vb);
-    }    
+    }
+    
+    if(MEASURE_COLUMNS.has(tableSortKey)){
+      const toMeasureSort = (it) => {
+        const val = formatMeasureValue(it, tableSortKey);
+        const n = parseDecimalDE(val);
+        return n === null ? -1 : n;
+      };
+    
+      va = toMeasureSort(a);
+      vb = toMeasureSort(b);
+    }
 
     if(va == null) va = "";
     if(vb == null) vb = "";
@@ -378,6 +396,70 @@ function isRightAlignedOptionalColumn(key){
   return ["engines", "passengers", "length_m", "wingspan_m", "height_m"].includes(key);
 }
 
+function hasVisibleMeasureColumn(keys){
+  return keys.some(key => MEASURE_COLUMNS.has(key));
+}
+
+function parseDecimalDE(v){
+  const s = String(v ?? "").trim().replace(",", ".");
+  const n = Number(s);
+  return Number.isFinite(n) ? n : null;
+}
+
+function getScaleDenominator(scale){
+  const m = String(scale || "").match(/1\s*:\s*(\d+)/);
+  if(!m) return null;
+  const n = Number(m[1]);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+function formatNumberDE(n, digits){
+  if(!Number.isFinite(n)) return "";
+  return n.toLocaleString("de-DE", {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits
+  });
+}
+
+function formatMeasureValue(it, key){
+  const originalM = parseDecimalDE(it[key]);
+  if(originalM === null) return "";
+
+  if(measureMode === "original"){
+    return formatNumberDE(originalM, 2);
+  }
+
+  // 1:400-Modellmaß nur für tatsächliche 1:400-Modelle anzeigen
+  const scale = String(it.scale || "").trim();
+  if(scale !== "1:400") return "";
+
+  // Original in m -> Modell in cm:
+  // m * 100 / 400 = cm
+  const cm = (originalM * 100) / 400;
+  return formatNumberDE(cm, 1);
+}
+
+function getMeasureColumnLabel(label, key){
+  if(!MEASURE_COLUMNS.has(key)) return label;
+
+  if(measureMode === "original"){
+    return `${label} (m)`;
+  }
+
+  return `${label} (cm)`;
+}
+
+function updateMeasureModeUI(){
+  const visibleOptionalCols = getVisibleOptionalColumns();
+  const show = hasVisibleMeasureColumn(visibleOptionalCols);
+
+  const box = document.getElementById("measureModeBox");
+  if(box) box.hidden = !show;
+
+  document.getElementById("measureOriginal")?.classList.toggle("is-on", measureMode === "original");
+  document.getElementById("measureScale400")?.classList.toggle("is-on", measureMode === "scale400");
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -403,7 +485,9 @@ function render(items){
       ? "hide-m optionalNum"
       : "hide-m";
   
-    return `<th class="${thClass(key, cls)}" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+    const label = getMeasureColumnLabel(col.label, key);
+  
+    return `<th class="${thClass(key, cls)}" data-sort="${esc(key)}">${esc(label)} ${mark(key)}</th>`;
   }).join("");
     
   let html = `
@@ -446,7 +530,11 @@ function render(items){
         ? "hide-m optionalNum"
         : "hide-m";
     
-      return `<td class="${cls}">${esc(it[key] || "")}</td>`;
+      const value = MEASURE_COLUMNS.has(key)
+        ? formatMeasureValue(it, key)
+        : (it[key] || "");
+    
+      return `<td class="${cls}">${esc(value)}</td>`;
     }).join("");
   
     html += `
@@ -656,13 +744,14 @@ async function main(){
 
     document.querySelectorAll(".colToggle").forEach(cb => {
       cb.checked = visibleOptionalCols.has(cb.value);
-
+    
       cb.addEventListener("change", () => {
         const keys = Array.from(document.querySelectorAll(".colToggle"))
           .filter(x => x.checked)
           .map(x => x.value);
-
+    
         setVisibleOptionalColumns(keys);
+        updateMeasureModeUI();
         apply();
       });
     });
@@ -675,6 +764,7 @@ async function main(){
       });
     
       setVisibleOptionalColumns(keys);
+      updateMeasureModeUI();
       apply();
     });
     
@@ -684,9 +774,26 @@ async function main(){
       });
     
       setVisibleOptionalColumns([]);
+      updateMeasureModeUI();
       apply();
     });    
 
+    document.getElementById("measureOriginal")?.addEventListener("click", () => {
+      measureMode = "original";
+      localStorage.setItem("modelsOverviewMeasureMode", measureMode);
+      updateMeasureModeUI();
+      apply();
+    });
+    
+    document.getElementById("measureScale400")?.addEventListener("click", () => {
+      measureMode = "scale400";
+      localStorage.setItem("modelsOverviewMeasureMode", measureMode);
+      updateMeasureModeUI();
+      apply();
+    });
+    
+    updateMeasureModeUI();
+    
     const columnPanel = document.getElementById("columnPanel");
     const columnBackdrop = document.getElementById("columnPanelBackdrop");
 
