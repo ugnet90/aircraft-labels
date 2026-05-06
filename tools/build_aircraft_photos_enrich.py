@@ -120,6 +120,33 @@ def collect_models() -> List[Dict[str, str]]:
         })
     return out
 
+def cleanup_stale_photo_enrichment(existing: Dict[str, Any], models: List[Dict[str, str]]) -> Dict[str, Any]:
+    """
+    Entfernt alte Einträge aus aircraft_photos_enriched.json,
+    deren model_id nicht mehr in den aktuellen Modell-JSONs vorkommt.
+    Beispiel: SO... wurde zu US... umbenannt.
+    """
+    valid_ids = {
+        norm(m.get("model_id"))
+        for m in models
+        if norm(m.get("model_id"))
+    }
+
+    if not valid_ids:
+        print("[photos_enrich] cleanup skipped: no valid model ids")
+        return existing
+
+    cleaned = {
+        model_id: data
+        for model_id, data in existing.items()
+        if norm(model_id) in valid_ids
+    }
+
+    removed = len(existing) - len(cleaned)
+    print(f"[photos_enrich] cleanup stale entries: removed={removed}")
+
+    return cleaned
+
 def _norm_match(s: str) -> str:
     s = (s or "").strip().lower()
     # cheap normalization
@@ -293,6 +320,10 @@ def main() -> int:
             existing = {}
 
     models = collect_models()
+
+    # Alte Einträge entfernen, z. B. SO... nach Umbenennung auf US...
+    existing = cleanup_stale_photo_enrichment(existing, models)
+
     print(f"[photos_enrich] models with photo field: {len(models)}")
     print(f"[photos_enrich] existing entries: {len(existing)} (FORCE_REBUILD={FORCE_REBUILD})")
 
