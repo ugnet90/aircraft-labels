@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-04T14:20:27+02:00",
-  "count_total": 201,
-  "count_unique": 201,
+  "generated_at": "2026-05-06T13:27:32+02:00",
+  "count_total": 184,
+  "count_unique": 184,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -717,24 +717,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-AB-7-01",
-      "model_id": "ORD-AB-7",
-      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    {
-      "id": "PC-ORD-BOA-11-01",
-      "model_id": "ORD-BOA-11",
-      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, nicht exakte Beschriftung",
-      "price": 1.35
-    },
-    {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
@@ -744,80 +726,12 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-LX-26-01",
-      "model_id": "ORD-LX-26",
-      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
-    {
       "id": "PC-ORD-PA-16-01",
       "model_id": "ORD-PA-16",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
       "status": "none",
       "model_status": "ordered",
       "price": 1.85
-    },
-    {
-      "id": "PC-ORD-PA-7-01",
-      "model_id": "ORD-PA-7",
-      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-ORD-SO-33-01",
-      "model_id": "ORD-SO-33",
-      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, andere Bemalung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-ORD-SO-34-01",
-      "model_id": "ORD-SO-34",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-ORD-SO-37-01",
-      "model_id": "ORD-SO-37",
-      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Livery",
-      "price": 1.35
-    },
-    {
-      "id": "PC-ORD-SO-49-01",
-      "model_id": "ORD-SO-49",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
-    {
-      "id": "PC-ORD-SO-50-01",
-      "model_id": "ORD-SO-50",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
-    {
-      "id": "PC-ORD-SO-53-01",
-      "model_id": "ORD-SO-53",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
     },
     {
       "id": "PC-ORD-SO-58-01",
@@ -1103,14 +1017,6 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.05
-    },
-    {
-      "id": "PC-PA018-01",
-      "model_id": "PA018",
-      "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
     },
     {
       "id": "PC-PA019-01",
@@ -1601,38 +1507,12 @@
       "price": 1.05
     },
     {
-      "id": "PC-WIS-SO-16-01",
-      "model_id": "WIS-SO-16",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
-    },
-    {
       "id": "PC-WIS-SO-21-01",
       "model_id": "WIS-SO-21",
       "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Kennung",
-      "price": 1.05
-    },
-    {
-      "id": "PC-WIS-SO-22-01",
-      "model_id": "WIS-SO-22",
-      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
-      "id": "PC-WIS-SO-24-01",
-      "model_id": "WIS-SO-24",
-      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
-      "status": "none",
-      "model_status": "wishlist",
       "price": 1.05
     },
     {
@@ -1651,30 +1531,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 1.05
-    },
-    {
-      "id": "PC-WIS-SO-31-01",
-      "model_id": "WIS-SO-31",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    {
-      "id": "PC-WIS-SO-32-01",
-      "model_id": "WIS-SO-32",
-      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    {
-      "id": "PC-WIS-SO-32-02",
-      "model_id": "WIS-SO-32",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
     },
     {
       "id": "PC-WIS-SO-36-01",
@@ -2424,24 +2280,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-AB-7-01": {
-      "id": "PC-ORD-AB-7-01",
-      "model_id": "ORD-AB-7",
-      "url": "https://jjpostcards.com/de/ansichtskarten/10528-air-berlin-a320.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    "PC-ORD-BOA-11-01": {
-      "id": "PC-ORD-BOA-11-01",
-      "model_id": "ORD-BOA-11",
-      "url": "https://jjpostcards.com/de/ansichtskarten/25719-british-airways-b747.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, nicht exakte Beschriftung",
-      "price": 1.35
-    },
     "PC-ORD-LH-7-01": {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
@@ -2451,14 +2289,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-LX-26-01": {
-      "id": "PC-ORD-LX-26-01",
-      "model_id": "ORD-LX-26",
-      "url": "https://jjpostcards.com/de/ansichtskarten/42043-Swissair-DC-6-Pan-Am-DC-7.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
     "PC-ORD-PA-16-01": {
       "id": "PC-ORD-PA-16-01",
       "model_id": "ORD-PA-16",
@@ -2466,66 +2296,6 @@
       "status": "none",
       "model_status": "ordered",
       "price": 1.85
-    },
-    "PC-ORD-PA-7-01": {
-      "id": "PC-ORD-PA-7-01",
-      "model_id": "ORD-PA-7",
-      "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    "PC-ORD-SO-33-01": {
-      "id": "PC-ORD-SO-33-01",
-      "model_id": "ORD-SO-33",
-      "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, andere Bemalung",
-      "price": 0.85
-    },
-    "PC-ORD-SO-34-01": {
-      "id": "PC-ORD-SO-34-01",
-      "model_id": "ORD-SO-34",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    "PC-ORD-SO-37-01": {
-      "id": "PC-ORD-SO-37-01",
-      "model_id": "ORD-SO-37",
-      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Livery",
-      "price": 1.35
-    },
-    "PC-ORD-SO-49-01": {
-      "id": "PC-ORD-SO-49-01",
-      "model_id": "ORD-SO-49",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
-    "PC-ORD-SO-50-01": {
-      "id": "PC-ORD-SO-50-01",
-      "model_id": "ORD-SO-50",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
-    "PC-ORD-SO-53-01": {
-      "id": "PC-ORD-SO-53-01",
-      "model_id": "ORD-SO-53",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
     },
     "PC-ORD-SO-58-01": {
       "id": "PC-ORD-SO-58-01",
@@ -2811,14 +2581,6 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.05
-    },
-    "PC-PA018-01": {
-      "id": "PC-PA018-01",
-      "model_id": "PA018",
-      "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
     },
     "PC-PA019-01": {
       "id": "PC-PA019-01",
@@ -3308,15 +3070,6 @@
       "label": "andere Kennung",
       "price": 1.05
     },
-    "PC-WIS-SO-16-01": {
-      "id": "PC-WIS-SO-16-01",
-      "model_id": "WIS-SO-16",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
-    },
     "PC-WIS-SO-21-01": {
       "id": "PC-WIS-SO-21-01",
       "model_id": "WIS-SO-21",
@@ -3324,23 +3077,6 @@
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Kennung",
-      "price": 1.05
-    },
-    "PC-WIS-SO-22-01": {
-      "id": "PC-WIS-SO-22-01",
-      "model_id": "WIS-SO-22",
-      "url": "https://jjpostcards.com/de/ansichtskarten/16462-usa-regierung-e-4a747.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    "PC-WIS-SO-24-01": {
-      "id": "PC-WIS-SO-24-01",
-      "model_id": "WIS-SO-24",
-      "url": "https://jjpostcards.com/de/ansichtskarten/44064-luftwaffe-usa-c-5-galaxy.html",
-      "status": "none",
-      "model_status": "wishlist",
       "price": 1.05
     },
     "PC-WIS-SO-27-01": {
@@ -3359,30 +3095,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 1.05
-    },
-    "PC-WIS-SO-31-01": {
-      "id": "PC-WIS-SO-31-01",
-      "model_id": "WIS-SO-31",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6843-usa-regierung-vc-137707.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    "PC-WIS-SO-32-01": {
-      "id": "PC-WIS-SO-32-01",
-      "model_id": "WIS-SO-32",
-      "url": "https://jjpostcards.com/de/ansichtskarten/952-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
-    },
-    "PC-WIS-SO-32-02": {
-      "id": "PC-WIS-SO-32-02",
-      "model_id": "WIS-SO-32",
-      "url": "https://jjpostcards.com/de/ansichtskarten/12144-luftwaffe-usa-c-17-globemaster-iii.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
     },
     "PC-WIS-SO-36-01": {
       "id": "PC-WIS-SO-36-01",
