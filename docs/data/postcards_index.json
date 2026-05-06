@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T13:40:48+02:00",
+  "generated_at": "2026-05-06T13:54:59+02:00",
   "count_total": 184,
   "count_unique": 184,
   "items": [
@@ -1250,16 +1250,16 @@
       "price": 1.35
     },
     {
-      "id": "PC-US004-01",
-      "model_id": "US004",
+      "id": "PC-US001-01",
+      "model_id": "US001",
       "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
     },
     {
-      "id": "PC-US012-01",
-      "model_id": "US012",
+      "id": "PC-US004-01",
+      "model_id": "US004",
       "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
       "status": "owned",
       "model_status": "owned",
@@ -1267,8 +1267,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-US018-01",
-      "model_id": "US018",
+      "id": "PC-US007-01",
+      "model_id": "US007",
       "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
       "status": "owned",
       "model_status": "owned",
@@ -1276,8 +1276,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-US026-01",
-      "model_id": "US026",
+      "id": "PC-US011-01",
+      "model_id": "US011",
       "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
       "status": "owned",
       "model_status": "owned",
@@ -1285,8 +1285,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-US027-01",
-      "model_id": "US027",
+      "id": "PC-US012-01",
+      "model_id": "US012",
       "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
       "status": "owned",
       "model_status": "owned",
@@ -2813,44 +2813,44 @@
       "model_status": "owned",
       "price": 1.35
     },
-    "PC-US004-01": {
-      "id": "PC-US004-01",
-      "model_id": "US004",
+    "PC-US001-01": {
+      "id": "PC-US001-01",
+      "model_id": "US001",
       "url": "https://jjpostcards.com/de/ansichtskarten/12271-usa-air-force-one-vc-25a.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
     },
-    "PC-US012-01": {
-      "id": "PC-US012-01",
-      "model_id": "US012",
+    "PC-US004-01": {
+      "id": "PC-US004-01",
+      "model_id": "US004",
       "url": "https://jjpostcards.com/de/ansichtskarten/26234-luftwaffe-usa-c-47-dakota.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 0.85
     },
-    "PC-US018-01": {
-      "id": "PC-US018-01",
-      "model_id": "US018",
+    "PC-US007-01": {
+      "id": "PC-US007-01",
+      "model_id": "US007",
       "url": "https://jjpostcards.com/de/ansichtskarten/12254-luftwaffe-usa-pby-catalina.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Bemalung",
       "price": 0.85
     },
-    "PC-US026-01": {
-      "id": "PC-US026-01",
-      "model_id": "US026",
+    "PC-US011-01": {
+      "id": "PC-US011-01",
+      "model_id": "US011",
       "url": "https://jjpostcards.com/de/ansichtskarten/1734-luftwaffe-usa-stratotanker.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung, andere Bemalung",
       "price": 0.85
     },
-    "PC-US027-01": {
-      "id": "PC-US027-01",
-      "model_id": "US027",
+    "PC-US012-01": {
+      "id": "PC-US012-01",
+      "model_id": "US012",
       "url": "https://jjpostcards.com/de/ansichtskarten/12142-luftwaffe-usa-c-130-hercules.html",
       "status": "owned",
       "model_status": "owned",
