@@ -540,6 +540,77 @@ function apply(){
   render(items);
 }
 
+function makeColumnPanelDraggable(){
+  const panel = document.getElementById("columnPanel");
+  const handle = panel?.querySelector(".columnPanelHead");
+
+  if(!panel || !handle) return;
+
+  let dragging = false;
+  let startX = 0;
+  let startY = 0;
+  let startLeft = 0;
+  let startTop = 0;
+
+  function clamp(value, min, max){
+    return Math.max(min, Math.min(max, value));
+  }
+
+  handle.addEventListener("pointerdown", (ev) => {
+    // nicht ziehen, wenn auf Button geklickt wird
+    if(ev.target.closest("button")) return;
+
+    dragging = true;
+    panel.classList.add("is-dragging");
+
+    const rect = panel.getBoundingClientRect();
+
+    startX = ev.clientX;
+    startY = ev.clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+
+    panel.style.left = `${rect.left}px`;
+    panel.style.top = `${rect.top}px`;
+    panel.style.right = "auto";
+    panel.style.bottom = "auto";
+    panel.style.transform = "none";
+
+    handle.setPointerCapture(ev.pointerId);
+  });
+
+  handle.addEventListener("pointermove", (ev) => {
+    if(!dragging) return;
+
+    const dx = ev.clientX - startX;
+    const dy = ev.clientY - startY;
+
+    const rect = panel.getBoundingClientRect();
+    const maxLeft = window.innerWidth - rect.width - 8;
+    const maxTop = window.innerHeight - rect.height - 8;
+
+    const newLeft = clamp(startLeft + dx, 8, maxLeft);
+    const newTop = clamp(startTop + dy, 8, maxTop);
+
+    panel.style.left = `${newLeft}px`;
+    panel.style.top = `${newTop}px`;
+  });
+
+  handle.addEventListener("pointerup", (ev) => {
+    dragging = false;
+    panel.classList.remove("is-dragging");
+
+    try{
+      handle.releasePointerCapture(ev.pointerId);
+    }catch(e){}
+  });
+
+  handle.addEventListener("pointercancel", () => {
+    dragging = false;
+    panel.classList.remove("is-dragging");
+  });
+}
+
 async function main(){
   try{
     const res = await fetch("./index.json", {cache:"no-store"});
@@ -607,7 +678,15 @@ async function main(){
     const columnBackdrop = document.getElementById("columnPanelBackdrop");
 
     function openColumnPanel(){
-      if(columnPanel) columnPanel.hidden = false;
+      if(columnPanel){
+        columnPanel.hidden = false;
+        columnPanel.style.left = "";
+        columnPanel.style.top = "";
+        columnPanel.style.right = "";
+        columnPanel.style.bottom = "";
+        columnPanel.style.transform = "";
+      }
+    
       if(columnBackdrop) columnBackdrop.hidden = false;
       document.body.classList.add("noscroll");
     }
@@ -622,6 +701,8 @@ async function main(){
     document.getElementById("closeColumns")?.addEventListener("click", closeColumnPanel);
     columnBackdrop?.addEventListener("click", closeColumnPanel);
 
+    makeColumnPanelDraggable();
+    
     document.addEventListener("keydown", (ev) => {
       if(ev.key === "Escape"){
         closeColumnPanel();
