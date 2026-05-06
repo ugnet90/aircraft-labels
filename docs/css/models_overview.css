@@ -423,3 +423,12 @@ body.noscroll{
     grid-template-columns:1fr;
   }
 }
+
+.columnPanelHead{
+  cursor:move;
+  user-select:none;
+}
+
+.columnPanel.is-dragging{
+  opacity:.96;
+}
