@@ -374,6 +374,10 @@ function getVisualGroupKey(it){
   return "";
 }
 
+function isRightAlignedOptionalColumn(key){
+  return ["engines", "passengers", "length_m", "wingspan_m", "height_m"].includes(key);
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -394,9 +398,14 @@ function render(items){
   const optionalHeaders = visibleOptionalCols.map(key => {
     const col = OPTIONAL_COLUMNS.find(c => c.key === key);
     if(!col) return "";
-    return `<th class="${thClass(key, "hide-m")}" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
-  }).join("");  
   
+    const cls = isRightAlignedOptionalColumn(key)
+      ? "hide-m optionalNum"
+      : "hide-m";
+  
+    return `<th class="${thClass(key, cls)}" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+  }).join("");
+    
   let html = `
     <table>
       <thead>
@@ -433,7 +442,11 @@ function render(items){
     }
 
     const optionalCells = visibleOptionalCols.map(key => {
-      return `<td class="hide-m">${esc(it[key] || "")}</td>`;
+      const cls = isRightAlignedOptionalColumn(key)
+        ? "hide-m optionalNum"
+        : "hide-m";
+    
+      return `<td class="${cls}">${esc(it[key] || "")}</td>`;
     }).join("");
   
     html += `
