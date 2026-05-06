@@ -436,3 +436,43 @@ body.noscroll{
 .optionalNum{
   text-align:right;
 }
+
+.measureModeBox{
+  margin:0 0 12px;
+  padding:8px 10px;
+  border:1px solid rgba(0,0,0,.10);
+  border-radius:10px;
+  background:#fafafa;
+}
+
+.measureModeTitle{
+  font-size:12px;
+  color:#666;
+  margin-bottom:6px;
+}
+
+.measureModeBtns{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.measureModeBtns button{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:8px;
+  padding:5px 10px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.measureModeBtns button:hover{
+  background:#f4f6f8;
+}
+
+.measureModeBtns button.is-on{
+  background:#eef3ff;
+  border-color:#b7c6f4;
+  color:#0b4da2;
+  font-weight:700;
+}
