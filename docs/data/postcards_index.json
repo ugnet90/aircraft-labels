@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T14:00:07+02:00",
+  "generated_at": "2026-05-07T14:07:48+02:00",
   "count_total": 184,
   "count_unique": 184,
   "items": [
@@ -1028,8 +1028,8 @@
       "price": 1.05
     },
     {
-      "id": "PC-PA019-01",
-      "model_id": "PA019",
+      "id": "PC-PA018-01",
+      "model_id": "PA018",
       "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
       "status": "owned",
       "model_status": "owned",
@@ -1037,8 +1037,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-PA020-01",
-      "model_id": "PA020",
+      "id": "PC-PA019-01",
+      "model_id": "PA019",
       "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
       "status": "owned",
       "model_status": "owned",
@@ -1046,8 +1046,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-PA021-01",
-      "model_id": "PA021",
+      "id": "PC-PA020-01",
+      "model_id": "PA020",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
       "status": "owned",
       "model_status": "owned",
@@ -2591,27 +2591,27 @@
       "label": "andere Kennung",
       "price": 1.05
     },
-    "PC-PA019-01": {
-      "id": "PC-PA019-01",
-      "model_id": "PA019",
+    "PC-PA018-01": {
+      "id": "PC-PA018-01",
+      "model_id": "PA018",
       "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 0.85
     },
-    "PC-PA020-01": {
-      "id": "PC-PA020-01",
-      "model_id": "PA020",
+    "PC-PA019-01": {
+      "id": "PC-PA019-01",
+      "model_id": "PA019",
       "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-PA021-01": {
-      "id": "PC-PA021-01",
-      "model_id": "PA021",
+    "PC-PA020-01": {
+      "id": "PC-PA020-01",
+      "model_id": "PA020",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
       "status": "owned",
       "model_status": "owned",

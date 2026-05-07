@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T14:00:07+02:00",
+  "generated_at": "2026-05-07T14:07:48+02:00",
   "count": 244,
   "counts_by_airline_code": {
     "OS": 23,
@@ -6999,7 +6999,7 @@
       "height_m": "6,29"
     },
     {
-      "model_id": "PA019",
+      "model_id": "PA018",
       "airline_code": "PA",
       "airline": "Pan Am",
       "airline_row": "Pan Am",
@@ -7041,7 +7041,7 @@
       "height_m": "16,5"
     },
     {
-      "model_id": "PA020",
+      "model_id": "PA019",
       "airline_code": "PA",
       "airline": "Pan Am",
       "airline_row": "Pan Am",
@@ -7083,7 +7083,7 @@
       "height_m": "17,7"
     },
     {
-      "model_id": "PA021",
+      "model_id": "PA020",
       "airline_code": "PA",
       "airline": "Pan Am",
       "airline_row": "Pan Am Express",
