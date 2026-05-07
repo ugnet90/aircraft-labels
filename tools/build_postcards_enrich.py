@@ -130,6 +130,42 @@ def cleanup_stale_postcard_enrichment(existing: Dict[str, Any], postcards: Dict[
     print(f"[postcards_enrich] cleanup stale entries: removed={removed}")
 
     return cleaned
+
+def postcard_entry_matches_index(entry: Dict[str, Any], base: Dict[str, Any]) -> bool:
+    """
+    Prüft, ob ein bestehender postcards_enriched-Eintrag noch zum aktuellen
+    postcards_index-Eintrag passt.
+
+    Wichtig bei ID-Verschiebungen, z. B. PA019 bekommt plötzlich die Daten
+    des alten PA020.
+    """
+    if not isinstance(entry, dict) or not isinstance(base, dict):
+        return False
+
+    checks = [
+        ("id", "id"),
+        ("postcard_id", "id"),
+        ("model_id", "model_id"),
+        ("url", "url"),
+        ("source_url", "url"),
+        ("label", "label"),
+        ("price", "price"),
+    ]
+
+    for entry_key, base_key in checks:
+        new_val_raw = base.get(base_key)
+
+        # optionale Felder nur vergleichen, wenn sie im aktuellen Index gesetzt sind
+        if new_val_raw in (None, ""):
+            continue
+
+        old_val = norm_space(str(entry.get(entry_key) or ""))
+        new_val = norm_space(str(new_val_raw or ""))
+
+        if old_val != new_val:
+            return False
+
+    return True
     
 def is_jjpostcards_url(url: str) -> bool:
     try:
@@ -338,10 +374,20 @@ def main() -> int:
     # Alte Einträge entfernen, z. B. PC-SO... nach Umbenennung auf PC-US...
     existing = cleanup_stale_postcard_enrichment(existing, postcards)
     
-    to_fetch = [pc_id for pc_id in postcards.keys() if pc_id not in existing]
-
+    to_fetch = []
+    
+    for pc_id, base in postcards.items():
+        if pc_id not in existing:
+            to_fetch.append(pc_id)
+            continue
+    
+        if not postcard_entry_matches_index(existing.get(pc_id, {}), base):
+            print(f"[postcards_enrich] stale entry detected, refetch: {pc_id}")
+            existing.pop(pc_id, None)
+            to_fetch.append(pc_id)
+    
     print(f"[postcards_enrich] found postcards: {len(postcards)} ; existing: {len(existing)} ; to fetch: {len(to_fetch)}")
-
+    
     for n, pc_id in enumerate(to_fetch, start=1):
         base = postcards.get(pc_id, {}) if isinstance(postcards, dict) else {}
         model_id = str(base.get("model_id") or "").strip()
