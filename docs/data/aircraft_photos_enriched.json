@@ -1842,15 +1842,6 @@
     "direct_image": false,
     "method": "planespotters_api_reg"
   },
-  "PA021": {
-    "model_id": "PA021",
-    "source_url": "https://www.planepictures.net/v3/show_en.php?id=695003",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-05-06T14:33:38+02:00",
-    "direct_image": false,
-    "method": "none",
-    "error": "no thumbnail"
-  },
   "US001": {
     "model_id": "US001",
     "source_url": "https://www.flugzeug-bild.de/bild/flughaefen~deutschland~hamburg-ham/108210/die-air-force-one-28000-das.html",
@@ -2449,5 +2440,14 @@
     "scraped_at_utc": "2026-05-06T14:34:51+02:00",
     "direct_image": false,
     "method": "planespotters_api_reg"
+  },
+  "PA018": {
+    "model_id": "PA018",
+    "source_url": "https://www.jetphotos.com/photo/10957009",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-05-07T14:15:40+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "no thumbnail"
   }
 }
