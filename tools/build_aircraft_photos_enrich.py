@@ -147,6 +147,38 @@ def cleanup_stale_photo_enrichment(existing: Dict[str, Any], models: List[Dict[s
 
     return cleaned
 
+def photo_entry_matches_model(entry: Dict[str, Any], model: Dict[str, str]) -> bool:
+    """
+    Prüft, ob ein vorhandener Foto-Enrichment-Eintrag noch zum aktuellen Modell passt.
+    Wichtig bei ID-Verschiebungen, z. B. PA019 bekommt plötzlich die Daten des alten PA020.
+    """
+    if not isinstance(entry, dict):
+        return False
+
+    checks = [
+        ("photo_url", "photo_url"),
+        ("registration", "registration"),
+        ("aircraft_id", "aircraft_id"),
+        ("aircraft_type", "aircraft_type"),
+        ("airline_row", "airline_row"),
+    ]
+
+    for entry_key, model_key in checks:
+        old_val = norm(entry.get(entry_key))
+        new_val = norm(model.get(model_key))
+
+        # Nur vergleichen, wenn der aktuelle Modellwert vorhanden ist.
+        # Leere Werte sollen nicht unnötig alles invalidieren.
+        if new_val and old_val and old_val != new_val:
+            return False
+
+        # Wenn neuer Wert vorhanden ist, alter aber fehlt, ebenfalls neu bauen,
+        # damit die Referenzfelder künftig vollständig sind.
+        if new_val and not old_val:
+            return False
+
+    return True
+    
 def _norm_match(s: str) -> str:
     s = (s or "").strip().lower()
     # cheap normalization
@@ -330,7 +362,18 @@ def main() -> int:
     to_fetch = []
     for m in models:
         mid = m["model_id"]
-        if FORCE_REBUILD or mid not in existing:
+    
+        if FORCE_REBUILD:
+            to_fetch.append(m)
+            continue
+    
+        if mid not in existing:
+            to_fetch.append(m)
+            continue
+    
+        if not photo_entry_matches_model(existing.get(mid, {}), m):
+            print(f"[photos_enrich] stale entry detected, refetch: {mid}")
+            existing.pop(mid, None)
             to_fetch.append(m)
 
     print(f"[photos_enrich] to fetch: {len(to_fetch)}")
@@ -346,6 +389,11 @@ def main() -> int:
             if is_direct_image(url):
                 existing[model_id] = {
                     "model_id": model_id,
+                    "photo_url": url,
+                    "registration": norm(m.get("registration")),
+                    "airline_row": norm(m.get("airline_row")),
+                    "aircraft_type": norm(m.get("aircraft_type")),
+                    "aircraft_id": norm(m.get("aircraft_id")),
                     "source_url": url,
                     "thumb_url": url,
                     "scraped_at_utc": now_local_iso(),
@@ -368,6 +416,11 @@ def main() -> int:
                 if hit and hit.get("thumb_url"):
                     existing[model_id] = {
                         "model_id": model_id,
+                        "photo_url": url,
+                        "registration": norm(m.get("registration")),
+                        "airline_row": norm(m.get("airline_row")),
+                        "aircraft_type": norm(m.get("aircraft_type")),
+                        "aircraft_id": norm(m.get("aircraft_id")),
                         **hit,
                         "scraped_at_utc": now_local_iso(),
                         "direct_image": False,
@@ -376,6 +429,11 @@ def main() -> int:
                 else:
                     existing[model_id] = {
                         "model_id": model_id,
+                        "photo_url": url,
+                        "registration": norm(m.get("registration")),
+                        "airline_row": norm(m.get("airline_row")),
+                        "aircraft_type": norm(m.get("aircraft_type")),
+                        "aircraft_id": norm(m.get("aircraft_id")),
                         "source_url": url,
                         "thumb_url": None,
                         "scraped_at_utc": now_local_iso(),
@@ -387,6 +445,11 @@ def main() -> int:
         except Exception as e:
             existing[model_id] = {
                 "model_id": model_id,
+                "photo_url": url,
+                "registration": norm(m.get("registration")),
+                "airline_row": norm(m.get("airline_row")),
+                "aircraft_type": norm(m.get("aircraft_type")),
+                "aircraft_id": norm(m.get("aircraft_id")),
                 "source_url": url,
                 "thumb_url": None,
                 "scraped_at_utc": now_local_iso(),
