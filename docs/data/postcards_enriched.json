@@ -2892,27 +2892,6 @@
     "model_id": "LX019",
     "scraped_at_utc": "2026-03-03T13:12:05Z"
   },
-  "PC-PA021-01": {
-    "source_url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
-    "thumb_url": "https://jjpostcards.com/23255-thickbox_default/pan-am-express-atr-42.jpg",
-    "airline": "Pan Am Express",
-    "aircraft_manufacturer": "ATR",
-    "aircraft_type": "ATR 42",
-    "aircraft_type_exact": "ATR 42-300",
-    "registration": "N4203G",
-    "publisher": "Flite-Line Fotocards",
-    "year": 1988,
-    "size": "140x89 mm",
-    "size_mm": {
-      "w": 140,
-      "h": 89
-    },
-    "condition": "neu",
-    "publisher_norm": "Flite-Line Fotocards",
-    "postcard_id": "PC-PA021-01",
-    "model_id": "PA021",
-    "scraped_at_utc": "2026-03-03T13:12:07Z"
-  },
   "PC-ORD-LH-7-01": {
     "id": "PC-ORD-LH-7-01",
     "model_id": "ORD-LH-7",
@@ -4041,5 +4020,32 @@
     "publisher_norm": "City-Gift",
     "postcard_id": "PC-WIS-US-9-01",
     "scraped_at_utc": "2026-05-06T14:24:12+02:00"
+  },
+  "PC-PA018-01": {
+    "id": "PC-PA018-01",
+    "model_id": "PA018",
+    "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
+    "status": "owned",
+    "model_status": "owned",
+    "label": "andere Kennung",
+    "price": 0.85,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
+    "thumb_url": "https://jjpostcards.com/9359-thickbox_default/pan-american-a300.jpg",
+    "airline": "Pan American",
+    "aircraft_manufacturer": "Airbus",
+    "aircraft_type": "Airbus A300",
+    "aircraft_type_exact": "A300B4-203",
+    "registration": "N203PA",
+    "publisher": "Aviation World",
+    "year": null,
+    "size": "140x89 mm",
+    "size_mm": {
+      "w": 140,
+      "h": 89
+    },
+    "condition": "neu",
+    "publisher_norm": "Aviation World",
+    "postcard_id": "PC-PA018-01",
+    "scraped_at_utc": "2026-05-07T14:14:58+02:00"
   }
 }
