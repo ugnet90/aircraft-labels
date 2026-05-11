@@ -4,8 +4,8 @@
   "counts": {
     "master_types": 396,
     "present_types": 132,
-    "missing_types": 258,
-    "ordered_types": 6,
+    "missing_types": 259,
+    "ordered_types": 5,
     "models": 244
   },
   "missing_types": [
@@ -426,6 +426,12 @@
     {
       "aircraft_id": "BOE-737-MAX9",
       "Typ_anzeige": "Boeing 737 MAX 9",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-747-100SF",
+      "Typ_anzeige": "Boeing 747-100 Special Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1573,12 +1579,6 @@
       "aircraft_id": "ANT-An124",
       "Typ_anzeige": "Antonov An-124 Ruslan",
       "manufacturer": "Antonov",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOE-747-100SF",
-      "Typ_anzeige": "Boeing 747-100 Special Freighter",
-      "manufacturer": "Boeing",
       "status": "ordered"
     },
     {

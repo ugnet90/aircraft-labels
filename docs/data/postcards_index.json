@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T14:46:38+02:00",
+  "generated_at": "2026-05-11T15:35:11+02:00",
   "count_total": 184,
   "count_unique": 184,
   "items": [
@@ -726,14 +726,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-PA-16-01",
-      "model_id": "ORD-PA-16",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.85
-    },
-    {
       "id": "PC-ORD-SO-13-01",
       "model_id": "ORD-SO-13",
       "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
@@ -1443,6 +1435,14 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 1.35
+    },
+    {
+      "id": "PC-WIS-PA-16-01",
+      "model_id": "WIS-PA-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.85
     },
     {
       "id": "PC-WIS-PA-17-01",
@@ -2289,14 +2289,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-PA-16-01": {
-      "id": "PC-ORD-PA-16-01",
-      "model_id": "ORD-PA-16",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.85
-    },
     "PC-ORD-SO-13-01": {
       "id": "PC-ORD-SO-13-01",
       "model_id": "ORD-SO-13",
@@ -3007,6 +2999,14 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 1.35
+    },
+    "PC-WIS-PA-16-01": {
+      "id": "PC-WIS-PA-16-01",
+      "model_id": "WIS-PA-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.85
     },
     "PC-WIS-PA-17-01": {
       "id": "PC-WIS-PA-17-01",

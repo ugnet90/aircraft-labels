@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-PA-16",
+  "model_id": "WIS-PA-16",
   "airline_code": "PA",
   "airline": "Pan Am",
   "airline_row": "Pan Am",
@@ -7,7 +7,7 @@
   "aircraft_name": "Clipper Carrier Dove",
   "livery_note": "",
   "extra_info": "Pan Am Cargo",
-  "shop_url": "https://www.kleinanzeigen.de/s-anzeige/gemini-jets-1-400-panam-cargo/3374087463-234-1999",
+  "shop_url": "",
   "aircraft_id": "BOE-747-100SF",
   "aircraft_type": "Boeing 747-123 Special Freighter",
   "registration": "N901PA",
@@ -16,9 +16,9 @@
   "zusatzinfo": "N:Clipper Carrier Dove | I:Pan Am Cargo",
   "model_extra": "",
   "special_note": "",
-  "shop": "Kleinanzeigen EMPE",
+  "shop": "",
   "price": 25.0,
-  "shipping_allocated": 10.0,
+  "shipping_allocated": null,
   "flown": null,
   "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
   "postcard_info": "",
@@ -26,7 +26,7 @@
   "postcard_price": 1.85,
   "postcards": [
     {
-      "id": "PC-ORD-PA-16-01",
+      "id": "PC-WIS-PA-16-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
       "price": 1.85
@@ -38,11 +38,11 @@
   "photo_credit": "",
   "arrived_excel": "",
   "arrived": null,
-  "ordered_at": "2026-04-07",
-  "ordered": true,
-  "wishlist": false,
-  "wishlist_prio": null,
-  "status": "ordered",
+  "ordered_at": null,
+  "ordered": false,
+  "wishlist": true,
+  "wishlist_prio": 1,
+  "status": "wishlist",
   "source": {
     "sheet": "Panam",
     "row": "16"
@@ -64,16 +64,16 @@
     "scale": "1:400",
     "manufacturer": "Gemini Jets",
     "model_number": "",
-    "shop": "Kleinanzeigen EMPE",
+    "shop": "",
     "price": 25.0,
-    "shipping_allocated": 10.0,
+    "shipping_allocated": null,
     "arrived": null,
-    "ordered_at": "2026-04-07",
-    "ordered": true,
+    "ordered_at": null,
+    "ordered": false,
     "present": false,
-    "wishlist": false,
-    "wishlist_prio": null,
-    "status": "ordered",
+    "wishlist": true,
+    "wishlist_prio": 1,
+    "status": "wishlist",
     "flown": null,
     "special_note": "",
     "model_extra": ""
@@ -82,8 +82,8 @@
     "postcards_raw": "U:https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
     "postcard_url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
     "photo": "https://www.airhistory.net/photo/529064/N901PA",
-    "shop": "Kleinanzeigen EMPE",
-    "shop_url": "https://www.kleinanzeigen.de/s-anzeige/gemini-jets-1-400-panam-cargo/3374087463-234-1999"
+    "shop": "",
+    "shop_url": ""
   },
   "logo": {
     "id": "PA_PAA",
