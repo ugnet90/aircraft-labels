@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T15:35:11+02:00",
+  "generated_at": "2026-05-20T13:27:47+02:00",
   "count_total": 184,
   "count_unique": 184,
   "items": [
@@ -735,14 +735,6 @@
       "price": 1.05
     },
     {
-      "id": "PC-ORD-SO-62-01",
-      "model_id": "ORD-SO-62",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
-    {
       "id": "PC-ORD-WF-6-01",
       "model_id": "ORD-WF-6",
       "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
@@ -1222,6 +1214,14 @@
       "status": "owned",
       "model_status": "owned",
       "label": "andere Livery",
+      "price": 1.35
+    },
+    {
+      "id": "PC-SO016-01",
+      "model_id": "SO016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "status": "owned",
+      "model_status": "owned",
       "price": 1.35
     },
     {
@@ -2298,14 +2298,6 @@
       "label": "andere Kennung",
       "price": 1.05
     },
-    "PC-ORD-SO-62-01": {
-      "id": "PC-ORD-SO-62-01",
-      "model_id": "ORD-SO-62",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.35
-    },
     "PC-ORD-WF-6-01": {
       "id": "PC-ORD-WF-6-01",
       "model_id": "ORD-WF-6",
@@ -2786,6 +2778,14 @@
       "status": "owned",
       "model_status": "owned",
       "label": "andere Livery",
+      "price": 1.35
+    },
+    "PC-SO016-01": {
+      "id": "PC-SO016-01",
+      "model_id": "SO016",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+      "status": "owned",
+      "model_status": "owned",
       "price": 1.35
     },
     "PC-TP001-01": {

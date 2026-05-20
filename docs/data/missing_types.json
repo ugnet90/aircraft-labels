@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 396,
-    "present_types": 132,
+    "present_types": 133,
     "missing_types": 259,
-    "ordered_types": 5,
+    "ordered_types": 4,
     "models": 244
   },
   "missing_types": [
@@ -1579,12 +1579,6 @@
       "aircraft_id": "ANT-An124",
       "Typ_anzeige": "Antonov An-124 Ruslan",
       "manufacturer": "Antonov",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOE-747-SCA",
-      "Typ_anzeige": "Boeing 747 Shuttle Carrier Aircraft",
-      "manufacturer": "Boeing",
       "status": "ordered"
     },
     {

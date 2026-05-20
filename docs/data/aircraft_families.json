@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T15:35:11+02:00",
+  "generated_at": "2026-05-20T13:27:47+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -1710,7 +1710,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Boeing"
       },
       {
