@@ -24,30 +24,6 @@
     "postcard_id": "PC-ORD-LH-7-01",
     "scraped_at_utc": "2026-04-20T14:22:14+02:00"
   },
-  "PC-ORD-PA-16-01": {
-    "id": "PC-ORD-PA-16-01",
-    "model_id": "ORD-PA-16",
-    "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-    "price": 1.85,
-    "source_url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-    "thumb_url": "https://jjpostcards.com/19461-thickbox_default/pan-american-cargo-b747.jpg",
-    "airline": "Pan American",
-    "aircraft_manufacturer": "Boeing",
-    "aircraft_type": "Boeing 747",
-    "aircraft_type_exact": "Boeing 747-123(F)",
-    "registration": "N901PA",
-    "publisher": "Fourcolour",
-    "year": 1975,
-    "size": "145x100 mm",
-    "size_mm": {
-      "w": 145,
-      "h": 100
-    },
-    "condition": "neu",
-    "publisher_norm": "Fourcolour",
-    "postcard_id": "PC-ORD-PA-16-01",
-    "scraped_at_utc": "2026-04-20T14:22:16+02:00"
-  },
   "PC-ORD-WF-6-01": {
     "id": "PC-ORD-WF-6-01",
     "model_id": "ORD-WF-6",
@@ -99,32 +75,6 @@
     "publisher_norm": "Aviation Postcards",
     "postcard_id": "PC-ORD-SO-13-01",
     "scraped_at_utc": "2026-05-06T14:22:53+02:00"
-  },
-  "PC-ORD-SO-62-01": {
-    "id": "PC-ORD-SO-62-01",
-    "model_id": "ORD-SO-62",
-    "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-    "status": "none",
-    "model_status": "ordered",
-    "price": 1.35,
-    "source_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-    "thumb_url": "https://jjpostcards.com/26219-thickbox_default/nasa-b747-space-shutlle.jpg",
-    "airline": "NASA",
-    "aircraft_manufacturer": "Boeing",
-    "aircraft_type": "Boeing 747",
-    "aircraft_type_exact": "Boeing 747-123+Space Shutlle",
-    "registration": "N905NA",
-    "publisher": "FlyingPhotos",
-    "year": 2013,
-    "size": "150x105 mm",
-    "size_mm": {
-      "w": 150,
-      "h": 105
-    },
-    "condition": "neu",
-    "publisher_norm": "FlyingPhotos",
-    "postcard_id": "PC-ORD-SO-62-01",
-    "scraped_at_utc": "2026-05-06T14:22:55+02:00"
   },
   "PC-SO009-01": {
     "id": "PC-SO009-01",
@@ -4814,5 +4764,57 @@
     "publisher_norm": "Air Hobby",
     "postcard_id": "PC-WA004-01",
     "scraped_at_utc": "2026-05-07T14:52:59+02:00"
+  },
+  "PC-SO016-01": {
+    "id": "PC-SO016-01",
+    "model_id": "SO016",
+    "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+    "status": "owned",
+    "model_status": "owned",
+    "price": 1.35,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
+    "thumb_url": "https://jjpostcards.com/26219-thickbox_default/nasa-b747-space-shutlle.jpg",
+    "airline": "NASA",
+    "aircraft_manufacturer": "Boeing",
+    "aircraft_type": "Boeing 747",
+    "aircraft_type_exact": "Boeing 747-123+Space Shutlle",
+    "registration": "N905NA",
+    "publisher": "FlyingPhotos",
+    "year": 2013,
+    "size": "150x105 mm",
+    "size_mm": {
+      "w": 150,
+      "h": 105
+    },
+    "condition": "neu",
+    "publisher_norm": "FlyingPhotos",
+    "postcard_id": "PC-SO016-01",
+    "scraped_at_utc": "2026-05-20T13:43:59+02:00"
+  },
+  "PC-WIS-PA-16-01": {
+    "id": "PC-WIS-PA-16-01",
+    "model_id": "WIS-PA-16",
+    "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+    "status": "none",
+    "model_status": "wishlist",
+    "price": 1.85,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+    "thumb_url": "https://jjpostcards.com/19461-thickbox_default/pan-american-cargo-b747.jpg",
+    "airline": "Pan American",
+    "aircraft_manufacturer": "Boeing",
+    "aircraft_type": "Boeing 747",
+    "aircraft_type_exact": "Boeing 747-123(F)",
+    "registration": "N901PA",
+    "publisher": "Fourcolour",
+    "year": 1975,
+    "size": "145x100 mm",
+    "size_mm": {
+      "w": 145,
+      "h": 100
+    },
+    "condition": "neu",
+    "publisher_norm": "Fourcolour",
+    "postcard_id": "PC-WIS-PA-16-01",
+    "scraped_at_utc": "2026-05-20T13:44:03+02:00"
   }
 }
