@@ -8,7 +8,7 @@
   "livery_note": "",
   "extra_info": "Pan Am Express",
   "shop_url": "https://www.ebay.de/itm/297974470055",
-  "aircraft_id": "ATR-ATR42-300",
+  "aircraft_id": "ATR42-300",
   "aircraft_type": "ATR-ATR42-300",
   "registration": "N4201G",
   "livery_name": "",
@@ -48,10 +48,10 @@
     "row": "7"
   },
   "aircraft": {
-    "aircraft_id": "ATR-ATR42-300",
+    "aircraft_id": "ATR42-300",
     "type": "ATR-ATR42-300",
     "registration": "N4201G",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -91,5 +91,32 @@
     "name": "Pan Am Express Airlines Incorporated",
     "airline": "Pan Am Express",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "ATR42-300",
+    "Typ_anzeige": "ATR 42-300",
+    "Hersteller": "ATR",
+    "Baureihe": "ATR 42",
+    "Unterserie": "-300",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "AT43",
+    "IATA": "ATR",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1984",
+    "Status": "teils aktiv",
+    "Antrieb": "Turboprop",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz",
+    "Passengers": "48",
+    "Length": "22,67",
+    "Wingspan": "24,57",
+    "Height": "7,59",
+    "Wiki": "https://de.wikipedia.org/wiki/ATR_42#ATR_42-300"
   }
 }

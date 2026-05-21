@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T13:34:14+02:00",
+  "generated_at": "2026-05-21T13:34:35+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -836,7 +836,7 @@
         "wingspan": 24.57,
         "height": 7.59,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "owned",
         "manufacturer": "ATR"
       },
       {
@@ -874,7 +874,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "owned",
         "manufacturer": "ATR"
       },
       {
@@ -898,7 +898,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "ATR"
       }
     ],

@@ -3,8 +3,8 @@
   "warning": "",
   "counts": {
     "master_types": 398,
-    "present_types": 131,
-    "missing_types": 263,
+    "present_types": 133,
+    "missing_types": 261,
     "ordered_types": 4,
     "models": 244
   },
@@ -202,12 +202,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "ATR42-300",
-      "Typ_anzeige": "ATR 42-300",
-      "manufacturer": "ATR",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "ATR42-500",
       "Typ_anzeige": "ATR 42-500",
       "manufacturer": "ATR",
@@ -216,12 +210,6 @@
     {
       "aircraft_id": "ATR42-600",
       "Typ_anzeige": "ATR 42-600",
-      "manufacturer": "ATR",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "ATR72-200",
-      "Typ_anzeige": "ATR 72-200",
       "manufacturer": "ATR",
       "status": "missing"
     },
