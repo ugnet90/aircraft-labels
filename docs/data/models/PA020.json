@@ -9,7 +9,7 @@
   "extra_info": "Pan Am Express",
   "shop_url": "https://www.ebay.de/itm/297974470055",
   "aircraft_id": "ATR42-300",
-  "aircraft_type": "ATR-ATR42-300",
+  "aircraft_type": "ATR 42-300",
   "registration": "N4201G",
   "livery_name": "",
   "parent_livery": "",
@@ -49,7 +49,7 @@
   },
   "aircraft": {
     "aircraft_id": "ATR42-300",
-    "type": "ATR-ATR42-300",
+    "type": "ATR 42-300",
     "registration": "N4201G",
     "wingtip": "NONE",
     "has_wingtip": false
