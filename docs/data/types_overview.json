@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 396,
-  "with_any_models": 137,
-  "missing": 259,
+  "master_count": 398,
+  "with_any_models": 135,
+  "missing": 263,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -1592,51 +1592,9 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "ATR-ATR42-300",
-      "typ_anzeige": "ATR ATR 42-300",
-      "type_key": "atr atr 42-300",
-      "manufacturer": "ATR",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 2,
-      "ordered_count": 0,
-      "total_count": 2,
-      "airline_group_counts": [
-        {
-          "group": "KLM Cityhopper",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "KLM exel",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
-        {
-          "group": "Pan Am",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Pan Am Express",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "aircraft_id": "ATR-ATR42-500",
-      "typ_anzeige": "ATR ATR 42-500",
-      "type_key": "atr atr 42-500",
+      "aircraft_id": "ATR42-300",
+      "typ_anzeige": "ATR 42-300",
+      "type_key": "atr 42-300",
       "manufacturer": "ATR",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -1647,9 +1605,9 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "ATR-ATR42-600",
-      "typ_anzeige": "ATR ATR 42-600",
-      "type_key": "atr atr 42-600",
+      "aircraft_id": "ATR42-500",
+      "typ_anzeige": "ATR 42-500",
+      "type_key": "atr 42-500",
       "manufacturer": "ATR",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -1660,37 +1618,9 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "ATR-ATR72-200",
-      "typ_anzeige": "ATR ATR 72-200",
-      "type_key": "atr atr 72-200",
-      "manufacturer": "ATR",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
-      "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "KLM Cityhopper",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "KLM exel",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "aircraft_id": "ATR-ATR72-500",
-      "typ_anzeige": "ATR ATR 72-500",
-      "type_key": "atr atr 72-500",
+      "aircraft_id": "ATR42-600",
+      "typ_anzeige": "ATR 42-600",
+      "type_key": "atr 42-600",
       "manufacturer": "ATR",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -1701,9 +1631,35 @@
       "airline_group_counts": []
     },
     {
-      "aircraft_id": "ATR-ATR72-600",
-      "typ_anzeige": "ATR ATR 72-600",
-      "type_key": "atr atr 72-600",
+      "aircraft_id": "ATR72-200",
+      "typ_anzeige": "ATR 72-200",
+      "type_key": "atr 72-200",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ATR72-500",
+      "typ_anzeige": "ATR 72-500",
+      "type_key": "atr 72-500",
+      "manufacturer": "ATR",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
+      "aircraft_id": "ATR72-600",
+      "typ_anzeige": "ATR 72-600",
+      "type_key": "atr 72-600",
       "manufacturer": "ATR",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -6372,6 +6328,19 @@
       ]
     },
     {
+      "aircraft_id": "LOC-L188A-F",
+      "typ_anzeige": "Lockheed L-188A(F) Electra",
+      "type_key": "lockheed l-188a(f) electra",
+      "manufacturer": "Lockheed",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
+    },
+    {
       "aircraft_id": "LOC-L649",
       "typ_anzeige": "Lockheed L-649 Constellation",
       "type_key": "lockheed l-649 constellation",
@@ -6666,6 +6635,19 @@
           ]
         }
       ]
+    },
+    {
+      "aircraft_id": "MCD-DC9-30F",
+      "typ_anzeige": "McDonnell Douglas DC-9-30F",
+      "type_key": "mcdonnell douglas dc-9-30f",
+      "manufacturer": "McDonnell Douglas",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": []
     },
     {
       "aircraft_id": "MCD-DC9-40",

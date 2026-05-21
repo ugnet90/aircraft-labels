@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T13:27:47+02:00",
+  "generated_at": "2026-05-21T13:34:14+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -580,7 +580,7 @@
         "type": "Antonov An-124 Ruslan",
         "parent_aircraft_id": "",
         "parent_type": "",
-        "length": 68.96,
+        "length": 69.1,
         "wingspan": 73.3,
         "height": 20.78,
         "wingtip": "NONE",
@@ -828,20 +828,8 @@
     ],
     "ATR 42": [
       {
-        "aircraft_id": "ATR-ATR42-300",
-        "type": "ATR ATR 42-300",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 22.67,
-        "wingspan": 24.57,
-        "height": 7.59,
-        "wingtip": "NONE",
-        "status": "owned",
-        "manufacturer": "ATR"
-      },
-      {
-        "aircraft_id": "ATR-ATR42-500",
-        "type": "ATR ATR 42-500",
+        "aircraft_id": "ATR42-300",
+        "type": "ATR 42-300",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 22.67,
@@ -852,8 +840,20 @@
         "manufacturer": "ATR"
       },
       {
-        "aircraft_id": "ATR-ATR42-600",
-        "type": "ATR ATR 42-600",
+        "aircraft_id": "ATR42-500",
+        "type": "ATR 42-500",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 22.67,
+        "wingspan": 24.57,
+        "height": 7.59,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "ATR"
+      },
+      {
+        "aircraft_id": "ATR42-600",
+        "type": "ATR 42-600",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 22.67,
@@ -866,20 +866,8 @@
     ],
     "ATR 72": [
       {
-        "aircraft_id": "ATR-ATR72-200",
-        "type": "ATR ATR 72-200",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 27.17,
-        "wingspan": 27.05,
-        "height": 7.65,
-        "wingtip": "NONE",
-        "status": "owned",
-        "manufacturer": "ATR"
-      },
-      {
-        "aircraft_id": "ATR-ATR72-500",
-        "type": "ATR ATR 72-500",
+        "aircraft_id": "ATR72-200",
+        "type": "ATR 72-200",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 27.17,
@@ -890,15 +878,27 @@
         "manufacturer": "ATR"
       },
       {
-        "aircraft_id": "ATR-ATR72-600",
-        "type": "ATR ATR 72-600",
+        "aircraft_id": "ATR72-500",
+        "type": "ATR 72-500",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 27.17,
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "status": "wishlist",
+        "status": "missing",
+        "manufacturer": "ATR"
+      },
+      {
+        "aircraft_id": "ATR72-600",
+        "type": "ATR 72-600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 27.17,
+        "wingspan": 27.05,
+        "height": 7.65,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "ATR"
       }
     ],
@@ -2588,20 +2588,6 @@
         "manufacturer": "Cessna"
       }
     ],
-    "C-130": [
-      {
-        "aircraft_id": "LOC-C130H",
-        "type": "Lockheed C-130H Hercules",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 29.79,
-        "wingspan": 40.41,
-        "height": 11.66,
-        "wingtip": "NONE",
-        "status": "owned",
-        "manufacturer": "Lockheed"
-      }
-    ],
     "ARJ21": [
       {
         "aircraft_id": "COM-ARJ21-700",
@@ -3868,6 +3854,20 @@
         "manufacturer": "Let"
       }
     ],
+    "C-130": [
+      {
+        "aircraft_id": "LOC-C130H",
+        "type": "Lockheed C-130H Hercules",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 29.79,
+        "wingspan": 40.41,
+        "height": 11.66,
+        "wingtip": "NONE",
+        "status": "owned",
+        "manufacturer": "Lockheed"
+      }
+    ],
     "C-5": [
       {
         "aircraft_id": "LOC-C5A",
@@ -4029,6 +4029,18 @@
         "height": 10.0,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Lockheed"
+      },
+      {
+        "aircraft_id": "LOC-L188A-F",
+        "type": "Lockheed L-188A(F) Electra",
+        "parent_aircraft_id": "LOC-L188",
+        "parent_type": "Lockheed L-188 Electra",
+        "length": 31.8,
+        "wingspan": 35.9,
+        "height": 10.0,
+        "wingtip": "NONE",
+        "status": "wishlist",
         "manufacturer": "Lockheed"
       }
     ],
@@ -4245,6 +4257,18 @@
         "height": 8.38,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "McDonnell Douglas"
+      },
+      {
+        "aircraft_id": "MCD-DC9-30F",
+        "type": "McDonnell Douglas DC-9-30F",
+        "parent_aircraft_id": "MCD-DC9-30",
+        "parent_type": "McDonnell Douglas DC-9-30",
+        "length": 36.37,
+        "wingspan": 28.47,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "status": "wishlist",
         "manufacturer": "McDonnell Douglas"
       },
       {

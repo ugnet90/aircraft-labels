@@ -51,7 +51,7 @@
     "aircraft_id": "MCD-DC9-30F",
     "type": "McDonnell Douglas DC-9-32F",
     "registration": "I-DIKG",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -91,5 +91,32 @@
     "name": "Alitalia - Linee Aeree Italiane SpA",
     "airline": "Alitalia",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "MCD-DC9-30F",
+    "Typ_anzeige": "McDonnell Douglas DC-9-30F",
+    "Hersteller": "McDonnell Douglas",
+    "Baureihe": "DC-9",
+    "Unterserie": "-30F",
+    "Marketingname": "DC-9-30F",
+    "Alternate_designations": "McDonnell Douglas DC-9-30F|DC-9 Series 30 Freighter|DC-9-30 Freighter",
+    "parent_aircraft_id": "MCD-DC9-30",
+    "ICAO": "DC93",
+    "IATA": "D93",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "Regional",
+    "Role": "CARGO",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1967",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "2",
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "0",
+    "Length": "36,37",
+    "Wingspan": "28,47",
+    "Height": "8,38",
+    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_DC-9"
   }
 }

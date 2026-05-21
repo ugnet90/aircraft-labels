@@ -44,7 +44,7 @@
     "aircraft_id": "ATR-ATR72-600",
     "type": "ATR 72",
     "registration": "OY-JZC",
-    "wingtip": "NONE",
+    "wingtip": "",
     "has_wingtip": false
   },
   "livery": {
@@ -84,32 +84,5 @@
     "name": "Scandinavian Airlines System Denmark-Norway-Sweden",
     "airline": "SAS",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "ATR-ATR72-600",
-    "Typ_anzeige": "ATR ATR 72-600",
-    "Hersteller": "ATR",
-    "Baureihe": "ATR 72",
-    "Unterserie": "-600",
-    "Marketingname": "",
-    "Alternate_designations": "",
-    "parent_aircraft_id": "",
-    "ICAO": "AT76",
-    "IATA": "ATR",
-    "Wingtip": "NONE",
-    "Rumpf": "SingleAisle",
-    "MarketSegment": "Regional",
-    "Role": "PAX",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "2009",
-    "Status": "aktiv",
-    "Antrieb": "Turboprop",
-    "Triebwerke": "2",
-    "Reichweite": "Kurz/Mittel",
-    "Passengers": "78",
-    "Length": "27,17",
-    "Wingspan": "27,05",
-    "Height": "7,65",
-    "Wiki": "https://de.wikipedia.org/wiki/ATR_72#ATR_72-600"
   }
 }
