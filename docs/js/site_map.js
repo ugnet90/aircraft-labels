@@ -15,6 +15,14 @@ const SITE_MAP = {
     breadcrumb: ["Dashboard", "Flugzeugmodelle"]
   },
 
+  airlines_overview: {
+    file: "airlines_overview.html",
+    title: "Airlines-Übersicht",
+    navLabel: "Airlines",
+    group: "Sammlung",
+    breadcrumb: ["Dashboard", "Airlines"]
+  },
+  
   model: {
     file: "model.html",
     title: "Modell",
