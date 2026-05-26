@@ -233,7 +233,10 @@ function render(rows){
   `;
 
   for(const row of rows){
-    const href = `./models_overview.html?airline=${encodeURIComponent(row.airline)}&status=owned`;
+    const href =
+      `./models_overview.html?group=${encodeURIComponent(row.group || "")}` +
+      `&airline=${encodeURIComponent(row.airline || "")}` +
+      `&status=owned`;
 
     html += `
       <tr class="airlineRow" data-href="${esc(href)}">
