@@ -17,10 +17,10 @@ const SITE_MAP = {
 
   airlines_overview: {
     file: "airlines_overview.html",
-    title: "Airlines-Übersicht",
-    navLabel: "Airlines",
-    group: "Sammlung",
-    breadcrumb: ["Dashboard", "Airlines"]
+    title: "Airline-Übersicht",
+    navLabel: "Airline-Übersicht",
+    group: "Analyse",
+    breadcrumb: ["Dashboard", "Airline-Übersicht"]
   },
   
   model: {
