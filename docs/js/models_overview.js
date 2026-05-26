@@ -712,6 +712,22 @@ function makeColumnPanelDraggable(){
   });
 }
 
+function setSelectValueFromUrl(id, value){
+  const sel = document.getElementById(id);
+  if(!sel || value == null || value === "") return;
+
+  const exists = Array.from(sel.options).some(opt => opt.value === value);
+
+  if(!exists){
+    const opt = document.createElement("option");
+    opt.value = value;
+    opt.textContent = value;
+    sel.appendChild(opt);
+  }
+
+  sel.value = value;
+}
+
 async function main(){
   try{
     const res = await fetch("./index.json", {cache:"no-store"});
@@ -880,20 +896,24 @@ async function main(){
       document.getElementById("q").value = p.get("aircraft_id") || "";
     }
 
-    if (p.has("group")) {
-      document.getElementById("group").value = p.get("group") || "";
+    if(p.has("group")){
+      setSelectValueFromUrl("group", p.get("group") || "");
     }
-    if (p.has("airline")) {
-      document.getElementById("airline").value = p.get("airline") || "";
+    
+    if(p.has("airline")){
+      setSelectValueFromUrl("airline", p.get("airline") || "");
     }
-    if (p.has("type")) {
-      document.getElementById("type").value = p.get("type") || "";
+    
+    if(p.has("type")){
+      setSelectValueFromUrl("type", p.get("type") || "");
     }
-    if (p.has("scale")) {
-      document.getElementById("scale").value = p.get("scale") || "";
+    
+    if(p.has("scale")){
+      setSelectValueFromUrl("scale", p.get("scale") || "");
     }
-    if (p.has("flown")) {
-      document.getElementById("flown").value = p.get("flown") || "";
+    
+    if(p.has("flown")){
+      setSelectValueFromUrl("flown", p.get("flown") || "");
     }
 
     if(p.has("sort")){
