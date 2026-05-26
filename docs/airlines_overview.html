@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Airlines</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./airlines_overview.css">
+
+  <script src="./site_map.js"></script>
+  <script src="./nav.js"></script>
+</head>
+<body>
+  <main>
+    <h1 id="pageTitle">Airlines</h1>
+
+    <div class="meta">
+      Stand: <span id="meta">–</span>
+    </div>
+
+    <div class="bar">
+      <input id="q" type="search" placeholder="Suche Airline oder Airline-Gruppe">
+
+      <select id="group">
+        <option value="">Alle Airline-Gruppen</option>
+      </select>
+
+      <select id="flown">
+        <option value="">Mitgeflogen: egal</option>
+        <option value="true">Mitgeflogen: ja</option>
+        <option value="false">Mitgeflogen: nein</option>
+      </select>
+
+      <button id="reset" type="button">Reset</button>
+    </div>
+
+    <div id="activeFilters" class="small">Keine Filter aktiv</div>
+
+    <div class="right">
+      <span id="count" class="small">Lade Daten…</span>
+    </div>
+
+    <section id="content">
+      <div class="small">Lade Daten…</div>
+    </section>
+  </main>
+
+  <script src="./airlines_overview.js"></script>
+</body>
+</html>
