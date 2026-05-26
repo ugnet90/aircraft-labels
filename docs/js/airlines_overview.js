@@ -1,0 +1,376 @@
+const state = {
+  all: [],
+  filtered: []
+};
+
+let tableSortKey = localStorage.getItem("airlinesSortKey") || "group";
+let tableSortDir = Number(localStorage.getItem("airlinesSortDir") || "1");
+if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;
+
+function esc(s){
+  return String(s ?? "").replace(/[&<>"']/g, m => (
+    {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]
+  ));
+}
+
+function norm(s){
+  return String(s ?? "").toLowerCase().trim();
+}
+
+function formatStandDE(iso){
+  if(!iso) return "";
+  const d = new Date(iso);
+  if(isNaN(d.getTime())) return iso;
+
+  return d.toLocaleString("de-DE", {
+    day:"2-digit",
+    month:"2-digit",
+    year:"numeric",
+    hour:"2-digit",
+    minute:"2-digit"
+  });
+}
+
+function getAirlineName(it){
+  return String(it.airline_row || it.airline || it.airline_code || "").trim();
+}
+
+function getGroupName(it){
+  return String(it.airline || it.group || it.airline_group || "").trim();
+}
+
+function isOwned(it){
+  return String(it.status || "").trim().toLowerCase() === "owned";
+}
+
+function buildAirlineRows(items){
+  const map = new Map();
+
+  items
+    .filter(isOwned)
+    .forEach(it => {
+      const airline = getAirlineName(it);
+      const group = getGroupName(it);
+
+      if(!airline) return;
+
+      const key = airline;
+
+      if(!map.has(key)){
+        map.set(key, {
+          airline,
+          group,
+          models: 0,
+          typesSet: new Set(),
+          flown: 0
+        });
+      }
+
+      const row = map.get(key);
+      row.models += 1;
+
+      if(it.aircraft_type){
+        row.typesSet.add(String(it.aircraft_type).trim());
+      }
+
+      if(it.flown === true){
+        row.flown += 1;
+      }
+
+      // Falls innerhalb derselben Airline mehrere Gruppen vorkommen:
+      // erste nicht-leere Gruppe behalten, sonst später auffüllen.
+      if(!row.group && group){
+        row.group = group;
+      }
+    });
+
+  return Array.from(map.values()).map(row => ({
+    airline: row.airline,
+    group: row.group,
+    models: row.models,
+    types: row.typesSet.size,
+    flown: row.flown
+  }));
+}
+
+function refillGroupOptions(rows, currentValue){
+  const sel = document.getElementById("group");
+  if(!sel) return;
+
+  const groups = Array.from(
+    new Set(rows.map(x => x.group).filter(Boolean))
+  ).sort((a,b) => a.localeCompare(b, "de"));
+
+  sel.innerHTML = `<option value="">Alle Airline-Gruppen</option>`;
+
+  groups.forEach(group => {
+    const opt = document.createElement("option");
+    opt.value = group;
+    opt.textContent = group;
+    sel.appendChild(opt);
+  });
+
+  if(currentValue && groups.includes(currentValue)){
+    sel.value = currentValue;
+  }else{
+    sel.value = "";
+  }
+}
+
+function matchesQuery(row, q){
+  if(!q) return true;
+
+  const hay = [
+    row.airline,
+    row.group,
+    row.models,
+    row.types,
+    row.flown
+  ].map(norm).join(" | ");
+
+  return hay.includes(q);
+}
+
+function matchesGroup(row, group){
+  if(!group) return true;
+  return row.group === group;
+}
+
+function matchesFlown(row, flown){
+  if(!flown) return true;
+
+  if(flown === "true") return row.flown > 0;
+  if(flown === "false") return row.flown === 0;
+
+  return true;
+}
+
+function updateActiveFilterUI(filters){
+  const map = [
+    ["q", "Suche"],
+    ["group", "Airline-Gruppe"],
+    ["flown", "Mitgeflogen"]
+  ];
+
+  const active = [];
+
+  map.forEach(([key, label]) => {
+    const el = document.getElementById(key);
+    const on = !!filters[key];
+
+    if(el) el.classList.toggle("is-active", on);
+    if(on) active.push(label);
+  });
+
+  const box = document.getElementById("activeFilters");
+  if(box){
+    box.textContent = active.length
+      ? `Aktive Filter: ${active.join(", ")}`
+      : "Keine Filter aktiv";
+  }
+}
+
+function sortRows(rows){
+  const arr = rows.slice();
+
+  arr.sort((a,b) => {
+    let va = a[tableSortKey];
+    let vb = b[tableSortKey];
+
+    if(["models", "types", "flown"].includes(tableSortKey)){
+      va = Number(va || 0);
+      vb = Number(vb || 0);
+    }else{
+      va = String(va || "").toLowerCase();
+      vb = String(vb || "").toLowerCase();
+    }
+
+    if(va < vb) return -1 * tableSortDir;
+    if(va > vb) return  1 * tableSortDir;
+
+    // Default-Tie-Breaker: Gruppe → Airline
+    const ga = String(a.group || "").toLowerCase();
+    const gb = String(b.group || "").toLowerCase();
+
+    if(ga < gb) return -1;
+    if(ga > gb) return 1;
+
+    return String(a.airline || "").localeCompare(String(b.airline || ""), "de");
+  });
+
+  return arr;
+}
+
+function render(rows){
+  document.getElementById("count").textContent =
+    rows.length === 1 ? "1 Airline" : `${rows.length} Airlines`;
+
+  if(!rows.length){
+    document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
+    return;
+  }
+
+  const mark = (key) => {
+    if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
+    return `<span class="sortMark active">${tableSortDir === 1 ? "↑" : "↓"}</span>`;
+  };
+
+  const thClass = (key) =>
+    tableSortKey === key ? "thSort active" : "thSort";
+
+  let html = `
+    <table>
+      <thead>
+        <tr>
+          <th class="${thClass("airline")}" data-sort="airline">Airline ${mark("airline")}</th>
+          <th class="${thClass("group")}" data-sort="group">Airline-Gruppe ${mark("group")}</th>
+          <th class="${thClass("models")} num" data-sort="models">Modelle ${mark("models")}</th>
+          <th class="${thClass("types")} num" data-sort="types">Typen ${mark("types")}</th>
+          <th class="${thClass("flown")} num" data-sort="flown">Mitgeflogen ${mark("flown")}</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  for(const row of rows){
+    const href = `./models_overview.html?airline=${encodeURIComponent(row.airline)}&status=owned`;
+
+    html += `
+      <tr class="airlineRow" data-href="${esc(href)}">
+        <td>${esc(row.airline)}</td>
+        <td>${esc(row.group)}</td>
+        <td class="num mono">${esc(row.models)}</td>
+        <td class="num mono">${esc(row.types)}</td>
+        <td class="num mono">
+          ${
+            row.flown > 0
+              ? `<span class="badge badge-flown">${esc(row.flown)}</span>`
+              : `<span class="muted">0</span>`
+          }
+        </td>
+      </tr>
+    `;
+  }
+
+  html += `</tbody></table>`;
+  document.getElementById("content").innerHTML = html;
+
+  document.querySelectorAll("#content .airlineRow").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const href = tr.getAttribute("data-href");
+      if(href) location.href = href;
+    });
+  });
+
+  document.querySelectorAll("#content th[data-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+
+      if(tableSortKey === key){
+        tableSortDir *= -1;
+      }else{
+        tableSortKey = key;
+        tableSortDir = 1;
+      }
+
+      localStorage.setItem("airlinesSortKey", tableSortKey);
+      localStorage.setItem("airlinesSortDir", String(tableSortDir));
+
+      apply();
+    });
+  });
+}
+
+function apply(){
+  const filters = {
+    q: norm(document.getElementById("q").value),
+    group: document.getElementById("group").value,
+    flown: document.getElementById("flown").value
+  };
+
+  updateActiveFilterUI(filters);
+
+  const baseRows = buildAirlineRows(state.all);
+
+  refillGroupOptions(baseRows, filters.group);
+
+  let rows = baseRows.filter(row => {
+    if(!matchesQuery(row, filters.q)) return false;
+    if(!matchesGroup(row, filters.group)) return false;
+    if(!matchesFlown(row, filters.flown)) return false;
+    return true;
+  });
+
+  rows = sortRows(rows);
+
+  state.filtered = rows;
+  render(rows);
+}
+
+async function main(){
+  try{
+    const res = await fetch("./index.json", {cache:"no-store"});
+    if(!res.ok) throw new Error(`index.json HTTP ${res.status}`);
+
+    const data = await res.json();
+    state.all = Array.isArray(data?.items) ? data.items : [];
+
+    const baseRows = buildAirlineRows(state.all);
+
+    document.getElementById("meta").innerHTML =
+      `<span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span>` +
+      ` · Anzahl: <span class="mono">${esc(baseRows.length)}</span>`;
+
+    document.getElementById("q").addEventListener("input", apply);
+    document.getElementById("group").addEventListener("change", apply);
+    document.getElementById("flown").addEventListener("change", apply);
+
+    document.getElementById("reset").addEventListener("click", () => {
+      document.getElementById("q").value = "";
+      document.getElementById("group").value = "";
+      document.getElementById("flown").value = "";
+
+      tableSortKey = "group";
+      tableSortDir = 1;
+      localStorage.removeItem("airlinesSortKey");
+      localStorage.removeItem("airlinesSortDir");
+
+      history.replaceState(null, "", location.pathname);
+      apply();
+    });
+
+    const p = new URLSearchParams(location.search);
+
+    if(p.has("q")){
+      document.getElementById("q").value = p.get("q") || "";
+    }
+
+    if(p.has("group")){
+      document.getElementById("group").value = p.get("group") || "";
+    }
+
+    if(p.has("flown")){
+      document.getElementById("flown").value = p.get("flown") || "";
+    }
+
+    if(p.has("sort")){
+      const sort = p.get("sort") || "";
+      const allowed = new Set(["airline", "group", "models", "types", "flown"]);
+
+      if(allowed.has(sort)){
+        tableSortKey = sort;
+        tableSortDir = 1;
+      }
+    }
+
+    apply();
+
+  }catch(e){
+    document.getElementById("content").innerHTML =
+      `<div class="err"><b>Fehler:</b> Konnte <span class="mono">index.json</span> nicht laden. (${esc(e.message)})</div>`;
+    document.getElementById("meta").textContent = "";
+    document.getElementById("count").textContent = "";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", main);
