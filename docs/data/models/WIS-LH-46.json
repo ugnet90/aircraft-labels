@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-45",
+  "model_id": "WIS-LH-46",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-WIS-LH-45-01",
+      "id": "PC-WIS-LH-46-01",
       "label": "ohne Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "price": 0.85
@@ -45,7 +45,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "45"
+    "row": "46"
   },
   "aircraft": {
     "aircraft_id": "CON-CV340",

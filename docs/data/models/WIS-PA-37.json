@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-PA-36",
+  "model_id": "WIS-PA-37",
   "airline_code": "PA",
   "airline": "Pan Am",
   "airline_row": "Pan Am",
@@ -38,7 +38,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Panam",
-    "row": "36"
+    "row": "37"
   },
   "aircraft": {
     "aircraft_id": "SUD-Concorde",

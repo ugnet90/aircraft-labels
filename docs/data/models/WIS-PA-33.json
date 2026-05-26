@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-PA-32",
+  "model_id": "WIS-PA-33",
   "airline_code": "PA",
   "airline": "Pan Am",
   "airline_row": "Pan Am",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-WIS-PA-32-01",
+      "id": "PC-WIS-PA-33-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
       "price": 1.35
@@ -45,7 +45,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Panam",
-    "row": "32"
+    "row": "33"
   },
   "aircraft": {
     "aircraft_id": "LOC-L749",

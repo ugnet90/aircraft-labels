@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-21T13:48:38+02:00",
-  "count_total": 184,
-  "count_unique": 184,
+  "generated_at": "2026-05-26T09:35:31+02:00",
+  "count_total": 188,
+  "count_unique": 188,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -717,6 +717,24 @@
       "price": 1.35
     },
     {
+      "id": "PC-ORD-BA-55-01",
+      "model_id": "ORD-BA-55",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8752-bea-dc-3.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-LH-28-01",
+      "model_id": "ORD-LH-28",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22503-lufthansa-b727.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
@@ -726,9 +744,18 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-SO-13-01",
-      "model_id": "ORD-SO-13",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "id": "PC-ORD-PA-16-01",
+      "model_id": "ORD-PA-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37979-Pan-American-B747.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-SO-52-01",
+      "model_id": "ORD-SO-52",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4503-germanwings-a319.html",
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
@@ -1225,6 +1252,15 @@
       "price": 1.35
     },
     {
+      "id": "PC-SO017-01",
+      "model_id": "SO017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
       "id": "PC-TP001-01",
       "model_id": "TP001",
       "url": "https://jjpostcards.com/de/suche?controller=search&s=KPB_81-27",
@@ -1395,16 +1431,16 @@
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-34-01",
-      "model_id": "WIS-LH-34",
+      "id": "PC-WIS-LH-35-01",
+      "model_id": "WIS-LH-35",
       "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-45-01",
-      "model_id": "WIS-LH-45",
+      "id": "PC-WIS-LH-46-01",
+      "model_id": "WIS-LH-46",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1412,8 +1448,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-57-01",
-      "model_id": "WIS-LH-57",
+      "id": "PC-WIS-LH-58-01",
+      "model_id": "WIS-LH-58",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1437,16 +1473,16 @@
       "price": 1.35
     },
     {
-      "id": "PC-WIS-PA-16-01",
-      "model_id": "WIS-PA-16",
+      "id": "PC-WIS-PA-17-01",
+      "model_id": "WIS-PA-17",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 1.85
     },
     {
-      "id": "PC-WIS-PA-17-01",
-      "model_id": "WIS-PA-17",
+      "id": "PC-WIS-PA-18-01",
+      "model_id": "WIS-PA-18",
       "url": "https://jjpostcards.com/de/ansichtskarten/40512-Pan-American-B747.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1454,16 +1490,16 @@
       "price": 1.35
     },
     {
-      "id": "PC-WIS-PA-24-01",
-      "model_id": "WIS-PA-24",
+      "id": "PC-WIS-PA-25-01",
+      "model_id": "WIS-PA-25",
       "url": "https://jjpostcards.com/de/ansichtskarten/3637-pan-american-dc-3.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
     },
     {
-      "id": "PC-WIS-PA-27-01",
-      "model_id": "WIS-PA-27",
+      "id": "PC-WIS-PA-28-01",
+      "model_id": "WIS-PA-28",
       "url": "https://jjpostcards.com/de/ansichtskarten/25906-pan-american-dc-6.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1471,8 +1507,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-WIS-PA-28-01",
-      "model_id": "WIS-PA-28",
+      "id": "PC-WIS-PA-29-01",
+      "model_id": "WIS-PA-29",
       "url": "https://jjpostcards.com/de/ansichtskarten/27645-pan-american-dc-7.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1480,8 +1516,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-WIS-PA-32-01",
-      "model_id": "WIS-PA-32",
+      "id": "PC-WIS-PA-33-01",
+      "model_id": "WIS-PA-33",
       "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
       "status": "none",
       "model_status": "wishlist",
@@ -2280,6 +2316,24 @@
       "label": "andere Kennung",
       "price": 1.35
     },
+    "PC-ORD-BA-55-01": {
+      "id": "PC-ORD-BA-55-01",
+      "model_id": "ORD-BA-55",
+      "url": "https://jjpostcards.com/de/ansichtskarten/8752-bea-dc-3.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-ORD-LH-28-01": {
+      "id": "PC-ORD-LH-28-01",
+      "model_id": "ORD-LH-28",
+      "url": "https://jjpostcards.com/de/ansichtskarten/22503-lufthansa-b727.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
     "PC-ORD-LH-7-01": {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
@@ -2289,10 +2343,19 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-SO-13-01": {
-      "id": "PC-ORD-SO-13-01",
-      "model_id": "ORD-SO-13",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+    "PC-ORD-PA-16-01": {
+      "id": "PC-ORD-PA-16-01",
+      "model_id": "ORD-PA-16",
+      "url": "https://jjpostcards.com/de/ansichtskarten/37979-Pan-American-B747.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-ORD-SO-52-01": {
+      "id": "PC-ORD-SO-52-01",
+      "model_id": "ORD-SO-52",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4503-germanwings-a319.html",
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
@@ -2788,6 +2851,15 @@
       "model_status": "owned",
       "price": 1.35
     },
+    "PC-SO017-01": {
+      "id": "PC-SO017-01",
+      "model_id": "SO017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.05
+    },
     "PC-TP001-01": {
       "id": "PC-TP001-01",
       "model_id": "TP001",
@@ -2958,26 +3030,26 @@
       "model_status": "wishlist",
       "price": 0.85
     },
-    "PC-WIS-LH-34-01": {
-      "id": "PC-WIS-LH-34-01",
-      "model_id": "WIS-LH-34",
+    "PC-WIS-LH-35-01": {
+      "id": "PC-WIS-LH-35-01",
+      "model_id": "WIS-LH-35",
       "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
     },
-    "PC-WIS-LH-45-01": {
-      "id": "PC-WIS-LH-45-01",
-      "model_id": "WIS-LH-45",
+    "PC-WIS-LH-46-01": {
+      "id": "PC-WIS-LH-46-01",
+      "model_id": "WIS-LH-46",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "status": "none",
       "model_status": "wishlist",
       "label": "ohne Kennung",
       "price": 0.85
     },
-    "PC-WIS-LH-57-01": {
-      "id": "PC-WIS-LH-57-01",
-      "model_id": "WIS-LH-57",
+    "PC-WIS-LH-58-01": {
+      "id": "PC-WIS-LH-58-01",
+      "model_id": "WIS-LH-58",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
       "status": "none",
       "model_status": "wishlist",
@@ -3000,52 +3072,52 @@
       "model_status": "wishlist",
       "price": 1.35
     },
-    "PC-WIS-PA-16-01": {
-      "id": "PC-WIS-PA-16-01",
-      "model_id": "WIS-PA-16",
+    "PC-WIS-PA-17-01": {
+      "id": "PC-WIS-PA-17-01",
+      "model_id": "WIS-PA-17",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 1.85
     },
-    "PC-WIS-PA-17-01": {
-      "id": "PC-WIS-PA-17-01",
-      "model_id": "WIS-PA-17",
+    "PC-WIS-PA-18-01": {
+      "id": "PC-WIS-PA-18-01",
+      "model_id": "WIS-PA-18",
       "url": "https://jjpostcards.com/de/ansichtskarten/40512-Pan-American-B747.html",
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Livery, andere Kennung",
       "price": 1.35
     },
-    "PC-WIS-PA-24-01": {
-      "id": "PC-WIS-PA-24-01",
-      "model_id": "WIS-PA-24",
+    "PC-WIS-PA-25-01": {
+      "id": "PC-WIS-PA-25-01",
+      "model_id": "WIS-PA-25",
       "url": "https://jjpostcards.com/de/ansichtskarten/3637-pan-american-dc-3.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
     },
-    "PC-WIS-PA-27-01": {
-      "id": "PC-WIS-PA-27-01",
-      "model_id": "WIS-PA-27",
+    "PC-WIS-PA-28-01": {
+      "id": "PC-WIS-PA-28-01",
+      "model_id": "WIS-PA-28",
       "url": "https://jjpostcards.com/de/ansichtskarten/25906-pan-american-dc-6.html",
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-WIS-PA-28-01": {
-      "id": "PC-WIS-PA-28-01",
-      "model_id": "WIS-PA-28",
+    "PC-WIS-PA-29-01": {
+      "id": "PC-WIS-PA-29-01",
+      "model_id": "WIS-PA-29",
       "url": "https://jjpostcards.com/de/ansichtskarten/27645-pan-american-dc-7.html",
       "status": "none",
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-WIS-PA-32-01": {
-      "id": "PC-WIS-PA-32-01",
-      "model_id": "WIS-PA-32",
+    "PC-WIS-PA-33-01": {
+      "id": "PC-WIS-PA-33-01",
+      "model_id": "WIS-PA-33",
       "url": "https://jjpostcards.com/de/ansichtskarten/40691-Pan-Am-Constellation-CSA-DC-2.html",
       "status": "none",
       "model_status": "wishlist",
