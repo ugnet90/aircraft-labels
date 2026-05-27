@@ -281,7 +281,7 @@ function sortRows(rows){
     let va = a[tableSortKey];
     let vb = b[tableSortKey];
 
-    if(["models", "types", "flown"].includes(tableSortKey)){
+    if(["models", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
       va = Number(va || 0);
       vb = Number(vb || 0);
     }else{
@@ -322,6 +322,15 @@ function render(rows){
   const thClass = (key) =>
     tableSortKey === key ? "thSort active" : "thSort";
 
+  const visibleOptionalCols = getVisibleOptionalColumns();
+  
+  const optionalHeaders = visibleOptionalCols.map(key => {
+    const col = OPTIONAL_COLUMNS.find(c => c.key === key);
+    if(!col) return "";
+  
+    return `<th class="${thClass(key)} num" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+  }).join("");
+  
   let html = `
     <table>
       <thead>
@@ -331,6 +340,7 @@ function render(rows){
           <th class="${thClass("models")} num" data-sort="models">Modelle ${mark("models")}</th>
           <th class="${thClass("types")} num" data-sort="types">Typen ${mark("types")}</th>
           <th class="${thClass("flown")} num" data-sort="flown">Mitgeflogen ${mark("flown")}</th>
+          ${optionalHeaders}
         </tr>
       </thead>
       <tbody>
@@ -341,7 +351,19 @@ function render(rows){
       `./models_overview.html?group=${encodeURIComponent(row.group || "")}` +
       `&airline=${encodeURIComponent(row.airline || "")}` +
       `&status=owned`;
-
+    
+    const optionalCells = visibleOptionalCols.map(key => {
+      let value = row[key];
+    
+      if(key === "price_total" || key === "shipping_total"){
+        value = formatMoneyDE(value);
+      }else if(key === "space_cm"){
+        value = formatCmDE(value);
+      }
+    
+      return `<td class="num mono">${esc(value)}</td>`;
+    }).join("");
+    
     html += `
       <tr class="airlineRow" data-href="${esc(href)}">
         <td>${esc(row.airline)}</td>
@@ -355,6 +377,7 @@ function render(rows){
               : `<span class="muted">0</span>`
           }
         </td>
+        ${optionalCells}
       </tr>
     `;
   }
@@ -456,6 +479,66 @@ async function main(){
       apply();
     });
 
+    const visibleOptionalCols = new Set(getVisibleOptionalColumns());
+
+    document.querySelectorAll(".colToggle").forEach(cb => {
+      cb.checked = visibleOptionalCols.has(cb.value);
+    
+      cb.addEventListener("change", () => {
+        const keys = Array.from(document.querySelectorAll(".colToggle"))
+          .filter(x => x.checked)
+          .map(x => x.value);
+    
+        setVisibleOptionalColumns(keys);
+        apply();
+      });
+    });
+    
+    document.getElementById("selectAllColumns")?.addEventListener("click", () => {
+      const keys = OPTIONAL_COLUMNS.map(c => c.key);
+    
+      document.querySelectorAll(".colToggle").forEach(cb => {
+        cb.checked = true;
+      });
+    
+      setVisibleOptionalColumns(keys);
+      apply();
+    });
+    
+    document.getElementById("clearAllColumns")?.addEventListener("click", () => {
+      document.querySelectorAll(".colToggle").forEach(cb => {
+        cb.checked = false;
+      });
+    
+      setVisibleOptionalColumns([]);
+      apply();
+    });
+    
+    const columnPanel = document.getElementById("columnPanel");
+    const columnBackdrop = document.getElementById("columnPanelBackdrop");
+    
+    function openColumnPanel(){
+      if(columnPanel) columnPanel.hidden = false;
+      if(columnBackdrop) columnBackdrop.hidden = false;
+      document.body.classList.add("noscroll");
+    }
+    
+    function closeColumnPanel(){
+      if(columnPanel) columnPanel.hidden = true;
+      if(columnBackdrop) columnBackdrop.hidden = true;
+      document.body.classList.remove("noscroll");
+    }
+    
+    document.getElementById("openColumns")?.addEventListener("click", openColumnPanel);
+    document.getElementById("closeColumns")?.addEventListener("click", closeColumnPanel);
+    columnBackdrop?.addEventListener("click", closeColumnPanel);
+    
+    document.addEventListener("keydown", (ev) => {
+      if(ev.key === "Escape"){
+        closeColumnPanel();
+      }
+    });
+    
     const p = new URLSearchParams(location.search);
 
     if(p.has("q")){
