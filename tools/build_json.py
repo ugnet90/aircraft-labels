@@ -550,7 +550,7 @@ def main() -> int:
             
             # zusätliches optionale Felder für airlines_overview
             "price": price,
-            "shipping_allocated": shipping_allocated,
+            "shipping_allocated": shipping,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
