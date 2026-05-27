@@ -110,7 +110,7 @@ const SITE_NAV = [
   {
     type: "group",
     label: "Analyse",
-    items: ["types_overview", "missing_types", "matrix", "stats"]
+    items: ["types_overview", "airlines_overview", "missing_types", "matrix", "stats"]
   },
   {
     type: "group",
