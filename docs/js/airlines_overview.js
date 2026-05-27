@@ -324,6 +324,14 @@ function formatOptionalValue(key, value){
   return value ?? "";
 }
 
+function averagePerModel(row, key){
+  const models = Number(row.models || 0);
+  if(!models) return 0;
+
+  const value = Number(row[key] || 0);
+  return Number.isFinite(value) ? value / models : 0;
+}
+
 function render(rows){
   document.getElementById("count").textContent =
     rows.length === 1 ? "1 Airline" : `${rows.length} Airlines`;
@@ -347,7 +355,17 @@ function render(rows){
     const col = OPTIONAL_COLUMNS.find(c => c.key === key);
     if(!col) return "";
   
-    return `<th class="${thClass(key)} num" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+    let html = `<th class="${thClass(key)} num" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+  
+    if(key === "price_total"){
+      html += `<th class="num">Ø Preis</th>`;
+    }
+  
+    if(key === "shipping_total"){
+      html += `<th class="num">Ø Versand</th>`;
+    }
+  
+    return html;
   }).join("");
   
   let html = `
@@ -372,8 +390,20 @@ function render(rows){
       `&status=owned`;
     
     const optionalCells = visibleOptionalCols.map(key => {
+      let html = "";
+    
       const value = formatOptionalValue(key, row[key]);
-      return `<td class="num mono">${esc(value)}</td>`;
+      html += `<td class="num mono">${esc(value)}</td>`;
+    
+      if(key === "price_total"){
+        html += `<td class="num mono">${esc(formatMoneyDE(averagePerModel(row, "price_total")))}</td>`;
+      }
+    
+      if(key === "shipping_total"){
+        html += `<td class="num mono">${esc(formatMoneyDE(averagePerModel(row, "shipping_total")))}</td>`;
+      }
+    
+      return html;
     }).join("");
         
     html += `
@@ -394,9 +424,25 @@ function render(rows){
     `;
   }
 
+  const totalModels = sumRows(rows, "models");
+  
   const optionalSumCells = visibleOptionalCols.map(key => {
-    const value = formatOptionalValue(key, sumRows(rows, key));
-    return `<td class="num mono">${esc(value)}</td>`;
+    let html = "";
+  
+    const sum = sumRows(rows, key);
+    html += `<td class="num mono">${esc(formatOptionalValue(key, sum))}</td>`;
+  
+    if(key === "price_total"){
+      const avg = totalModels ? sum / totalModels : 0;
+      html += `<td class="num mono">${esc(formatMoneyDE(avg))}</td>`;
+    }
+  
+    if(key === "shipping_total"){
+      const avg = totalModels ? sum / totalModels : 0;
+      html += `<td class="num mono">${esc(formatMoneyDE(avg))}</td>`;
+    }
+  
+    return html;
   }).join("");
 
   html += `
