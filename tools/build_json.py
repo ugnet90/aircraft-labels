@@ -532,6 +532,7 @@ def main() -> int:
             "wishlist": wishlist,
             "wishlist_prio": wishlist_prio,
             "status": status,
+            
             # Optionale technische Felder für models_overview
             "role": (aircraft_full.get("Role", "") if aircraft_full else "").strip(),
             "fuselage": (aircraft_full.get("Rumpf", "") if aircraft_full else "").strip(),
@@ -545,7 +546,11 @@ def main() -> int:
             "passengers": (aircraft_full.get("Passengers", "") if aircraft_full else "").strip(),
             "length_m": (aircraft_full.get("Length", "") if aircraft_full else "").strip(),
             "wingspan_m": (aircraft_full.get("Wingspan", "") if aircraft_full else "").strip(),
-            "height_m": (aircraft_full.get("Height", "") if aircraft_full else "").strip(),            
+            "height_m": (aircraft_full.get("Height", "") if aircraft_full else "").strip(),
+            
+            # zusätliches optionale Felder für airlines_overview
+            "price": price,
+            "shipping_allocated": shipping_allocated,
         })
         counts[airline_code] = counts.get(airline_code, 0) + 1
 
