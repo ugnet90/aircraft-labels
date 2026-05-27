@@ -7,6 +7,29 @@ let tableSortKey = localStorage.getItem("airlinesSortKey") || "group";
 let tableSortDir = Number(localStorage.getItem("airlinesSortDir") || "1");
 if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;
 
+const OPTIONAL_COLUMNS = [
+  { key: "price_total", label: "Preis" },
+  { key: "shipping_total", label: "Versandkosten" },
+  { key: "space_cm", label: "Platzbedarf" }
+];
+
+function getVisibleOptionalColumns(){
+  try{
+    const raw = localStorage.getItem("airlinesOverviewOptionalColumns");
+    const arr = JSON.parse(raw || "[]");
+    if(!Array.isArray(arr)) return [];
+
+    const allowed = new Set(OPTIONAL_COLUMNS.map(c => c.key));
+    return arr.filter(x => allowed.has(x));
+  }catch(e){
+    return [];
+  }
+}
+
+function setVisibleOptionalColumns(keys){
+  localStorage.setItem("airlinesOverviewOptionalColumns", JSON.stringify(keys || []));
+}
+
 function esc(s){
   return String(s ?? "").replace(/[&<>"']/g, m => (
     {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]
@@ -39,15 +62,87 @@ function getGroupName(it){
   return String(it.airline || it.group || it.airline_group || "").trim();
 }
 
-function isOwned(it){
-  return String(it.status || "").trim().toLowerCase() === "owned";
+function matchesModelStatus(it, filters){
+  const s = String(it.status || "").trim().toLowerCase();
+
+  const ownedOn = filters.owned !== false;
+  const orderedOn = filters.ordered === true;
+  const wishlistOn = filters.wishlist === true;
+
+  if(s === "owned") return ownedOn;
+  if(s === "ordered") return orderedOn;
+  if(s === "wishlist" || it.wishlist === true) return wishlistOn;
+
+  return false;
 }
 
-function buildAirlineRows(items){
+function parseMoneyValue(v){
+  if(v === null || v === undefined || v === "") return 0;
+
+  let s = String(v).trim();
+
+  s = s.replace(/[€\s]/g, "");
+
+  // deutsches Format: 1.234,56 -> 1234.56
+  if(s.includes(",")){
+    s = s.replace(/\./g, "").replace(",", ".");
+  }
+
+  const n = Number(s);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function parseDecimalDE(v){
+  if(v === null || v === undefined || v === "") return null;
+
+  const s = String(v).trim().replace(",", ".");
+  const n = Number(s);
+
+  return Number.isFinite(n) ? n : null;
+}
+
+function getScaleDenominator(scale){
+  const m = String(scale || "").match(/1\s*:\s*(\d+)/);
+  if(!m) return null;
+
+  const n = Number(m[1]);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+function calcModelLengthCm(it){
+  const lengthM = parseDecimalDE(it.length_m);
+  const denom = getScaleDenominator(it.scale);
+
+  if(lengthM === null || !denom) return 0;
+
+  return (lengthM * 100) / denom;
+}
+
+function formatMoneyDE(n){
+  if(!Number.isFinite(n)) n = 0;
+
+  return n.toLocaleString("de-DE", {
+    style: "currency",
+    currency: "EUR",
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+}
+
+function formatCmDE(n){
+  if(!Number.isFinite(n)) n = 0;
+
+  return `${n.toLocaleString("de-DE", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1
+  })} cm`;
+}
+
+function buildAirlineRows(items, filters){
   const map = new Map();
 
   items
-    .filter(isOwned)
+    .filter(it => matchesModelStatus(it, filters))
     .forEach(it => {
       const airline = getAirlineName(it);
       const group = getGroupName(it);
@@ -62,11 +157,15 @@ function buildAirlineRows(items){
           group,
           models: 0,
           typesSet: new Set(),
-          flown: 0
+          flown: 0,
+          priceTotal: 0,
+          shippingTotal: 0,
+          spaceCm: 0
         });
       }
 
       const row = map.get(key);
+
       row.models += 1;
 
       if(it.aircraft_type){
@@ -77,8 +176,10 @@ function buildAirlineRows(items){
         row.flown += 1;
       }
 
-      // Falls innerhalb derselben Airline mehrere Gruppen vorkommen:
-      // erste nicht-leere Gruppe behalten, sonst später auffüllen.
+      row.priceTotal += parseMoneyValue(it.price);
+      row.shippingTotal += parseMoneyValue(it.shipping_allocated);
+      row.spaceCm += calcModelLengthCm(it);
+
       if(!row.group && group){
         row.group = group;
       }
@@ -89,7 +190,10 @@ function buildAirlineRows(items){
     group: row.group,
     models: row.models,
     types: row.typesSet.size,
-    flown: row.flown
+    flown: row.flown,
+    price_total: row.priceTotal,
+    shipping_total: row.shippingTotal,
+    space_cm: row.spaceCm
   }));
 }
 
@@ -288,12 +392,18 @@ function apply(){
   const filters = {
     q: norm(document.getElementById("q").value),
     group: document.getElementById("group").value,
-    flown: document.getElementById("flown").value
+    flown: document.getElementById("flown").value,
+  
+    // derzeit bewusst fix: nur vorhandene Modelle
+    // später können hier Checkboxen für ordered / wishlist ergänzt werden
+    owned: true,
+    ordered: false,
+    wishlist: false
   };
 
   updateActiveFilterUI(filters);
 
-  const baseRows = buildAirlineRows(state.all);
+  const baseRows = buildAirlineRows(state.all, filters);
 
   refillGroupOptions(baseRows, filters.group);
 
@@ -318,7 +428,11 @@ async function main(){
     const data = await res.json();
     state.all = Array.isArray(data?.items) ? data.items : [];
 
-    const baseRows = buildAirlineRows(state.all);
+    const baseRows = buildAirlineRows(state.all, {
+      owned: true,
+      ordered: false,
+      wishlist: false
+    });
 
     document.getElementById("meta").innerHTML =
       `<span class="mono">${esc(formatStandDE(data.generated_at || ""))}</span>` +
