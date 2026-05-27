@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T15:03:32+02:00",
+  "generated_at": "2026-05-27T09:11:41+02:00",
   "count": 248,
   "counts_by_airline_code": {
     "OS": 23,
@@ -66,7 +66,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 15.0,
+      "shipping_allocated": 1.9
     },
     {
       "model_id": "AB002",
@@ -108,7 +110,9 @@
       "passengers": "239",
       "length_m": "47,32",
       "wingspan_m": "38,05",
-      "height_m": "13,56"
+      "height_m": "13,56",
+      "price": 28.0,
+      "shipping_allocated": 0.61
     },
     {
       "model_id": "AB003",
@@ -150,7 +154,9 @@
       "passengers": "189",
       "length_m": "39,47",
       "wingspan_m": "35,79",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": 17.0,
+      "shipping_allocated": 5.42
     },
     {
       "model_id": "AB004",
@@ -192,7 +198,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 10.5,
+      "shipping_allocated": 2.76
     },
     {
       "model_id": "WIS-AB-17",
@@ -234,7 +242,9 @@
       "passengers": "149",
       "length_m": "33,63",
       "wingspan_m": "35,79",
-      "height_m": "12,57"
+      "height_m": "12,57",
+      "price": 29.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "AF001",
@@ -276,7 +286,9 @@
       "passengers": "132",
       "length_m": "31,44",
       "wingspan_m": "34,1",
-      "height_m": "12,6"
+      "height_m": "12,6",
+      "price": 35.0,
+      "shipping_allocated": 0.77
     },
     {
       "model_id": "AF002",
@@ -318,7 +330,9 @@
       "passengers": "550",
       "length_m": "73,86",
       "wingspan_m": "64,8",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 26.94,
+      "shipping_allocated": 1.38
     },
     {
       "model_id": "AF003",
@@ -360,7 +374,9 @@
       "passengers": "72",
       "length_m": "29,9",
       "wingspan_m": "26",
-      "height_m": "9,73"
+      "height_m": "9,73",
+      "price": 32.5,
+      "shipping_allocated": 1.13
     },
     {
       "model_id": "WIS-AF-19",
@@ -402,7 +418,9 @@
       "passengers": "295",
       "length_m": "63,69",
       "wingspan_m": "60,3",
-      "height_m": "16,7"
+      "height_m": "16,7",
+      "price": 22.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "AZ001",
@@ -444,7 +462,9 @@
       "passengers": "177",
       "length_m": "45,9",
       "wingspan_m": "45",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 30.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "AZ002",
@@ -486,7 +506,9 @@
       "passengers": "253",
       "length_m": "58,82",
       "wingspan_m": "58",
-      "height_m": "17,39"
+      "height_m": "17,39",
+      "price": 15.5,
+      "shipping_allocated": 2.07
     },
     {
       "model_id": "AZ003",
@@ -528,7 +550,9 @@
       "passengers": "440",
       "length_m": "63,73",
       "wingspan_m": "60,93",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 16.01,
+      "shipping_allocated": 2.14
     },
     {
       "model_id": "WIS-AZ-12",
@@ -570,7 +594,9 @@
       "passengers": "400",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 32.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-AZ-20",
@@ -612,7 +638,9 @@
       "passengers": "0",
       "length_m": "36,37",
       "wingspan_m": "28,47",
-      "height_m": "8,38"
+      "height_m": "8,38",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "BA001",
@@ -654,7 +682,9 @@
       "passengers": "92",
       "length_m": "61,66",
       "wingspan_m": "25,6",
-      "height_m": "12,19"
+      "height_m": "12,19",
+      "price": 15.0,
+      "shipping_allocated": 3.2
     },
     {
       "model_id": "BA002",
@@ -696,7 +726,9 @@
       "passengers": "36",
       "length_m": "21,58",
       "wingspan_m": "22,76",
-      "height_m": "7,06"
+      "height_m": "7,06",
+      "price": 59.19,
+      "shipping_allocated": 21.68
     },
     {
       "model_id": "BA003",
@@ -738,7 +770,9 @@
       "passengers": "35",
       "length_m": "19,73",
       "wingspan_m": "21,44",
-      "height_m": "6,97"
+      "height_m": "6,97",
+      "price": 50.0,
+      "shipping_allocated": 1.23
     },
     {
       "model_id": "BA004",
@@ -780,7 +814,9 @@
       "passengers": "242",
       "length_m": "56,72",
       "wingspan_m": "60,12",
-      "height_m": "17,02"
+      "height_m": "17,02",
+      "price": 30.0,
+      "shipping_allocated": 0.66
     },
     {
       "model_id": "BA005",
@@ -822,7 +858,9 @@
       "passengers": "100",
       "length_m": "28,55",
       "wingspan_m": "26,34",
-      "height_m": "8,61"
+      "height_m": "8,61",
+      "price": 40.0,
+      "shipping_allocated": 0.88
     },
     {
       "model_id": "BA006",
@@ -864,7 +902,9 @@
       "passengers": "79",
       "length_m": "28,5",
       "wingspan_m": "26,97",
-      "height_m": "7,47"
+      "height_m": "7,47",
+      "price": 36.89,
+      "shipping_allocated": 1.55
     },
     {
       "model_id": "BA007",
@@ -906,7 +946,9 @@
       "passengers": "180",
       "length_m": "40",
       "wingspan_m": "28,5",
-      "height_m": "9,1"
+      "height_m": "9,1",
+      "price": 32.75,
+      "shipping_allocated": 1.38
     },
     {
       "model_id": "BA008",
@@ -948,7 +990,9 @@
       "passengers": "314",
       "length_m": "55,06",
       "wingspan_m": "50,39",
-      "height_m": "17,7"
+      "height_m": "17,7",
+      "price": 29.0,
+      "shipping_allocated": 3.14
     },
     {
       "model_id": "BA009",
@@ -990,7 +1034,9 @@
       "passengers": "115",
       "length_m": "37,6",
       "wingspan_m": "27",
-      "height_m": "8,6"
+      "height_m": "8,6",
+      "price": 35.85,
+      "shipping_allocated": 4.7
     },
     {
       "model_id": "ORD-BA-55",
@@ -1032,7 +1078,9 @@
       "passengers": "28",
       "length_m": "19,6",
       "wingspan_m": "28,96",
-      "height_m": "5,16"
+      "height_m": "5,16",
+      "price": 15.0,
+      "shipping_allocated": 4.62
     },
     {
       "model_id": "WIS-BA-20",
@@ -1074,7 +1122,9 @@
       "passengers": "130",
       "length_m": "30,53",
       "wingspan_m": "28,35",
-      "height_m": "11,23"
+      "height_m": "11,23",
+      "price": 17.25,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-BA-21",
@@ -1116,7 +1166,9 @@
       "passengers": "130",
       "length_m": "30,53",
       "wingspan_m": "28,35",
-      "height_m": "11,23"
+      "height_m": "11,23",
+      "price": 17.25,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-BA-29",
@@ -1158,7 +1210,9 @@
       "passengers": "416",
       "length_m": "70,66",
       "wingspan_m": "64,44",
-      "height_m": "19,41"
+      "height_m": "19,41",
+      "price": 29.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-BA-34",
@@ -1200,7 +1254,9 @@
       "passengers": "440",
       "length_m": "63,73",
       "wingspan_m": "60,93",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 32.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "BOA001",
@@ -1242,7 +1298,9 @@
       "passengers": "99",
       "length_m": "37,87",
       "wingspan_m": "43,36",
-      "height_m": "11,43"
+      "height_m": "11,43",
+      "price": 44.5,
+      "shipping_allocated": 1.16
     },
     {
       "model_id": "BOA002",
@@ -1284,7 +1342,9 @@
       "passengers": "174",
       "length_m": "48,36",
       "wingspan_m": "44,55",
-      "height_m": "12,19"
+      "height_m": "12,19",
+      "price": 44.5,
+      "shipping_allocated": 1.16
     },
     {
       "model_id": "BOA003",
@@ -1326,7 +1386,9 @@
       "passengers": "366",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 23.5,
+      "shipping_allocated": 6.18
     },
     {
       "model_id": "WIS-BOA-10",
@@ -1368,7 +1430,9 @@
       "passengers": "189",
       "length_m": "46,61",
       "wingspan_m": "44,42",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-BOA-13",
@@ -1410,7 +1474,9 @@
       "passengers": "62",
       "length_m": "28,96",
       "wingspan_m": "43,05",
-      "height_m": "7,57"
+      "height_m": "7,57",
+      "price": 115.74,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-BOA-17",
@@ -1452,7 +1518,9 @@
       "passengers": "81",
       "length_m": "34,98",
       "wingspan_m": "35,05",
-      "height_m": "8"
+      "height_m": "8",
+      "price": 95.05,
+      "shipping_allocated": null
     },
     {
       "model_id": "BT001",
@@ -1494,7 +1562,9 @@
       "passengers": "150",
       "length_m": "38,7",
       "wingspan_m": "35,1",
-      "height_m": "11,5"
+      "height_m": "11,5",
+      "price": 40.59,
+      "shipping_allocated": 24.21
     },
     {
       "model_id": "WIS-DY-8",
@@ -1536,7 +1606,9 @@
       "passengers": "189",
       "length_m": "39,47",
       "wingspan_m": "35,79",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "FI001",
@@ -1578,7 +1650,9 @@
       "passengers": "239",
       "length_m": "47,32",
       "wingspan_m": "42,06",
-      "height_m": "13,56"
+      "height_m": "13,56",
+      "price": 99.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-FI-12",
@@ -1620,7 +1694,9 @@
       "passengers": "289",
       "length_m": "54,43",
       "wingspan_m": "41,1",
-      "height_m": "13,56"
+      "height_m": "13,56",
+      "price": 45.33,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-FI-14",
@@ -1662,7 +1738,9 @@
       "passengers": "0",
       "length_m": "54,94",
       "wingspan_m": "52,05",
-      "height_m": "15,85"
+      "height_m": "15,85",
+      "price": 49.94,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-FI-6",
@@ -1704,7 +1782,9 @@
       "passengers": "168",
       "length_m": "36,45",
       "wingspan_m": "28,88",
-      "height_m": "11,13"
+      "height_m": "11,13",
+      "price": 39.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-FI-8",
@@ -1746,7 +1826,9 @@
       "passengers": "210",
       "length_m": "39,52",
       "wingspan_m": "35,92",
-      "height_m": "12,3"
+      "height_m": "12,3",
+      "price": 44.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "HF001",
@@ -1788,7 +1870,9 @@
       "passengers": "189",
       "length_m": "39,47",
       "wingspan_m": "34,31",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": 10.0,
+      "shipping_allocated": 6.0
     },
     {
       "model_id": "HF002",
@@ -1830,7 +1914,9 @@
       "passengers": "149",
       "length_m": "33,63",
       "wingspan_m": "34,31",
-      "height_m": "12,57"
+      "height_m": "12,57",
+      "price": 15.0,
+      "shipping_allocated": 0.33
     },
     {
       "model_id": "HF003",
@@ -1872,7 +1958,9 @@
       "passengers": "280",
       "length_m": "53,6",
       "wingspan_m": "44,8",
-      "height_m": "16,5"
+      "height_m": "16,5",
+      "price": 32.75,
+      "shipping_allocated": 1.38
     },
     {
       "model_id": "HF004",
@@ -1914,7 +2002,9 @@
       "passengers": "189",
       "length_m": "39,47",
       "wingspan_m": "35,79",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": 13.0,
+      "shipping_allocated": 1.41
     },
     {
       "model_id": "KL001",
@@ -1956,7 +2046,9 @@
       "passengers": "259",
       "length_m": "45,9",
       "wingspan_m": "45",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 45.0,
+      "shipping_allocated": 2.33
     },
     {
       "model_id": "KL002",
@@ -1998,7 +2090,9 @@
       "passengers": "293",
       "length_m": "61,6",
       "wingspan_m": "51,7",
-      "height_m": "17,6"
+      "height_m": "17,6",
+      "price": 40.0,
+      "shipping_allocated": 2.07
     },
     {
       "model_id": "KL003",
@@ -2040,7 +2134,9 @@
       "passengers": "416",
       "length_m": "70,66",
       "wingspan_m": "64,44",
-      "height_m": "19,41"
+      "height_m": "19,41",
+      "price": 20.0,
+      "shipping_allocated": 2.93
     },
     {
       "model_id": "KL004",
@@ -2082,7 +2178,9 @@
       "passengers": "98",
       "length_m": "31,8",
       "wingspan_m": "35,9",
-      "height_m": "10"
+      "height_m": "10",
+      "price": 30.68,
+      "shipping_allocated": 18.34
     },
     {
       "model_id": "KL005",
@@ -2124,7 +2222,9 @@
       "passengers": "79",
       "length_m": "28,5",
       "wingspan_m": "26,97",
-      "height_m": "7,47"
+      "height_m": "7,47",
+      "price": 50.66,
+      "shipping_allocated": 9.25
     },
     {
       "model_id": "KL006",
@@ -2166,7 +2266,9 @@
       "passengers": "314",
       "length_m": "55,06",
       "wingspan_m": "50,39",
-      "height_m": "17,7"
+      "height_m": "17,7",
+      "price": 15.0,
+      "shipping_allocated": 9.0
     },
     {
       "model_id": "KL007",
@@ -2208,7 +2310,9 @@
       "passengers": "105",
       "length_m": "34,9",
       "wingspan_m": "38,8",
-      "height_m": "9,6"
+      "height_m": "9,6",
+      "price": 68.49,
+      "shipping_allocated": 9.09
     },
     {
       "model_id": "KL008",
@@ -2250,7 +2354,9 @@
       "passengers": "259",
       "length_m": "57",
       "wingspan_m": "45",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 110.07,
+      "shipping_allocated": 52.69
     },
     {
       "model_id": "KL009",
@@ -2292,7 +2398,9 @@
       "passengers": "269",
       "length_m": "54,94",
       "wingspan_m": "47,57",
-      "height_m": "15,85"
+      "height_m": "15,85",
+      "price": 34.5,
+      "shipping_allocated": 1.2
     },
     {
       "model_id": "WIS-KL-12",
@@ -2334,7 +2442,9 @@
       "passengers": "149",
       "length_m": "33,4",
       "wingspan_m": "28,88",
-      "height_m": "11,13"
+      "height_m": "11,13",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-KL-16",
@@ -2376,7 +2486,9 @@
       "passengers": "189",
       "length_m": "39,47",
       "wingspan_m": "35,79",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": 49.54,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-KL-17",
@@ -2418,7 +2530,9 @@
       "passengers": "189",
       "length_m": "42,11",
       "wingspan_m": "34,31",
-      "height_m": "12,5"
+      "height_m": "12,5",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-KL-24",
@@ -2460,7 +2574,9 @@
       "passengers": "440",
       "length_m": "63,73",
       "wingspan_m": "60,93",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 49.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-KL-29",
@@ -2502,7 +2618,9 @@
       "passengers": "44",
       "length_m": "24,85",
       "wingspan_m": "32",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 50.57,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-KL-39",
@@ -2544,7 +2662,9 @@
       "passengers": "44",
       "length_m": "23,5",
       "wingspan_m": "29",
-      "height_m": "8"
+      "height_m": "8",
+      "price": 84.13,
+      "shipping_allocated": null
     },
     {
       "model_id": "LH001",
@@ -2586,7 +2706,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 54.97,
+      "shipping_allocated": null
     },
     {
       "model_id": "LH002",
@@ -2628,7 +2750,9 @@
       "passengers": "189",
       "length_m": "46,61",
       "wingspan_m": "44,42",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": 33.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "LH003",
@@ -2670,7 +2794,9 @@
       "passengers": "467",
       "length_m": "76,25",
       "wingspan_m": "68,45",
-      "height_m": "19,35"
+      "height_m": "19,35",
+      "price": 75.4,
+      "shipping_allocated": null
     },
     {
       "model_id": "LH004",
@@ -2712,7 +2838,9 @@
       "passengers": "555",
       "length_m": "72,7",
       "wingspan_m": "79,75",
-      "height_m": "24,1"
+      "height_m": "24,1",
+      "price": 24.5,
+      "shipping_allocated": 3.0
     },
     {
       "model_id": "LH005",
@@ -2754,7 +2882,9 @@
       "passengers": "109",
       "length_m": "35,4",
       "wingspan_m": "37,5",
-      "height_m": "7,6"
+      "height_m": "7,6",
+      "price": 37.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "LH006",
@@ -2796,7 +2926,9 @@
       "passengers": "325",
       "length_m": "66,8",
       "wingspan_m": "64,75",
-      "height_m": "17,05"
+      "height_m": "17,05",
+      "price": 39.5,
+      "shipping_allocated": 3.25
     },
     {
       "model_id": "LH007",
@@ -2838,7 +2970,9 @@
       "passengers": "130",
       "length_m": "30,53",
       "wingspan_m": "28,35",
-      "height_m": "11,23"
+      "height_m": "11,23",
+      "price": 39.5,
+      "shipping_allocated": 3.25
     },
     {
       "model_id": "LH008",
@@ -2880,7 +3014,9 @@
       "passengers": "44",
       "length_m": "23,5",
       "wingspan_m": "29",
-      "height_m": "8"
+      "height_m": "8",
+      "price": 51.53,
+      "shipping_allocated": 9.31
     },
     {
       "model_id": "LH009",
@@ -2922,7 +3058,9 @@
       "passengers": "270",
       "length_m": "53,6",
       "wingspan_m": "44,8",
-      "height_m": "16,5"
+      "height_m": "16,5",
+      "price": 17.0,
+      "shipping_allocated": 5.0
     },
     {
       "model_id": "LH010",
@@ -2964,7 +3102,9 @@
       "passengers": "416",
       "length_m": "70,66",
       "wingspan_m": "64,44",
-      "height_m": "19,41"
+      "height_m": "19,41",
+      "price": 17.0,
+      "shipping_allocated": 5.0
     },
     {
       "model_id": "LH011",
@@ -3006,7 +3146,9 @@
       "passengers": "185",
       "length_m": "44,51",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 34.5,
+      "shipping_allocated": 1.62
     },
     {
       "model_id": "LH012",
@@ -3048,7 +3190,9 @@
       "passengers": "50",
       "length_m": "25,25",
       "wingspan_m": "29",
-      "height_m": "7,9"
+      "height_m": "7,9",
+      "price": 25.0,
+      "shipping_allocated": 2.78
     },
     {
       "model_id": "LH013",
@@ -3090,7 +3234,9 @@
       "passengers": "300",
       "length_m": "63,69",
       "wingspan_m": "60,3",
-      "height_m": "16,85"
+      "height_m": "16,85",
+      "price": 44.5,
+      "shipping_allocated": 4.25
     },
     {
       "model_id": "LH014",
@@ -3132,7 +3278,9 @@
       "passengers": "295",
       "length_m": "63,69",
       "wingspan_m": "60,3",
-      "height_m": "16,7"
+      "height_m": "16,7",
+      "price": 15.0,
+      "shipping_allocated": 2.21
     },
     {
       "model_id": "LH015",
@@ -3174,7 +3322,9 @@
       "passengers": "168",
       "length_m": "36,45",
       "wingspan_m": "28,88",
-      "height_m": "11,13"
+      "height_m": "11,13",
+      "price": 15.0,
+      "shipping_allocated": 2.21
     },
     {
       "model_id": "LH016",
@@ -3216,7 +3366,9 @@
       "passengers": "99",
       "length_m": "48",
       "wingspan_m": "45,7",
-      "height_m": "6,1"
+      "height_m": "6,1",
+      "price": 36.68,
+      "shipping_allocated": 18.34
     },
     {
       "model_id": "LH017",
@@ -3258,7 +3410,9 @@
       "passengers": "17",
       "length_m": "18,9",
       "wingspan_m": "29,25",
-      "height_m": "4,5"
+      "height_m": "4,5",
+      "price": 47.19,
+      "shipping_allocated": 15.35
     },
     {
       "model_id": "LH018",
@@ -3300,7 +3454,9 @@
       "passengers": "131",
       "length_m": "40,6",
       "wingspan_m": "32,9",
-      "height_m": "10,4"
+      "height_m": "10,4",
+      "price": 39.5,
+      "shipping_allocated": 3.23
     },
     {
       "model_id": "LH019",
@@ -3342,7 +3498,9 @@
       "passengers": "380",
       "length_m": "75,36",
       "wingspan_m": "63,45",
-      "height_m": "17,3"
+      "height_m": "17,3",
+      "price": 54.5,
+      "shipping_allocated": 1.42
     },
     {
       "model_id": "LH020",
@@ -3384,7 +3542,9 @@
       "passengers": "149",
       "length_m": "33,4",
       "wingspan_m": "28,88",
-      "height_m": "11,13"
+      "height_m": "11,13",
+      "price": 39.5,
+      "shipping_allocated": 1.03
     },
     {
       "model_id": "LH021",
@@ -3426,7 +3586,9 @@
       "passengers": "132",
       "length_m": "31,01",
       "wingspan_m": "28,88",
-      "height_m": "11,13"
+      "height_m": "11,13",
+      "price": 39.5,
+      "shipping_allocated": 1.03
     },
     {
       "model_id": "LH022",
@@ -3468,7 +3630,9 @@
       "passengers": "50",
       "length_m": "26,77",
       "wingspan_m": "21,21",
-      "height_m": "6,22"
+      "height_m": "6,22",
+      "price": 44.5,
+      "shipping_allocated": 1.16
     },
     {
       "model_id": "LH023",
@@ -3510,7 +3674,9 @@
       "passengers": "90",
       "length_m": "36,4",
       "wingspan_m": "24,85",
-      "height_m": "7,57"
+      "height_m": "7,57",
+      "price": 39.5,
+      "shipping_allocated": 1.03
     },
     {
       "model_id": "LH024",
@@ -3552,7 +3718,9 @@
       "passengers": "149",
       "length_m": "41,5",
       "wingspan_m": "39,88",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": 41.96,
+      "shipping_allocated": 17.21
     },
     {
       "model_id": "LH025",
@@ -3594,7 +3762,9 @@
       "passengers": "89",
       "length_m": "28,55",
       "wingspan_m": "28,55",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 41.96,
+      "shipping_allocated": 17.21
     },
     {
       "model_id": "LH026",
@@ -3636,7 +3806,9 @@
       "passengers": "206",
       "length_m": "44,51",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 39.5,
+      "shipping_allocated": 0.97
     },
     {
       "model_id": "LH027",
@@ -3678,7 +3850,9 @@
       "passengers": "366",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 30.0,
+      "shipping_allocated": 15.0
     },
     {
       "model_id": "LH028",
@@ -3720,7 +3894,9 @@
       "passengers": "206",
       "length_m": "44,51",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 30.0,
+      "shipping_allocated": 0.66
     },
     {
       "model_id": "LH029",
@@ -3762,7 +3938,9 @@
       "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 20.0,
+      "shipping_allocated": 0.44
     },
     {
       "model_id": "LH030",
@@ -3804,7 +3982,9 @@
       "passengers": "0",
       "length_m": "61,2",
       "wingspan_m": "51,7",
-      "height_m": "17,6"
+      "height_m": "17,6",
+      "price": 45.18,
+      "shipping_allocated": 1.9
     },
     {
       "model_id": "LH031",
@@ -3846,7 +4026,9 @@
       "passengers": "100",
       "length_m": "36,24",
       "wingspan_m": "28,72",
-      "height_m": "10,55"
+      "height_m": "10,55",
+      "price": 37.66,
+      "shipping_allocated": 10.69
     },
     {
       "model_id": "ORD-LH-28",
@@ -3888,7 +4070,9 @@
       "passengers": "189",
       "length_m": "46,7",
       "wingspan_m": "32,9",
-      "height_m": "10,4"
+      "height_m": "10,4",
+      "price": 15.0,
+      "shipping_allocated": 4.62
     },
     {
       "model_id": "ORD-LH-7",
@@ -3930,7 +4114,9 @@
       "passengers": "266",
       "length_m": "54,1",
       "wingspan_m": "44,8",
-      "height_m": "16,5"
+      "height_m": "16,5",
+      "price": 46.56,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-11",
@@ -3972,7 +4158,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 39.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-13",
@@ -4014,7 +4202,9 @@
       "passengers": "195",
       "length_m": "37,57",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 39.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-20",
@@ -4056,7 +4246,9 @@
       "passengers": "261",
       "length_m": "59,39",
       "wingspan_m": "60,3",
-      "height_m": "16,7"
+      "height_m": "16,7",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-35",
@@ -4098,7 +4290,9 @@
       "passengers": "400",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 44.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-40",
@@ -4140,7 +4334,9 @@
       "passengers": "290",
       "length_m": "62,81",
       "wingspan_m": "60,12",
-      "height_m": "17,02"
+      "height_m": "17,02",
+      "price": 37.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-46",
@@ -4182,7 +4378,9 @@
       "passengers": "44",
       "length_m": "24,85",
       "wingspan_m": "32",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 73.69,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-58",
@@ -4224,7 +4422,9 @@
       "passengers": "314",
       "length_m": "55,06",
       "wingspan_m": "50,39",
-      "height_m": "17,7"
+      "height_m": "17,7",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-6",
@@ -4266,7 +4466,9 @@
       "passengers": "280",
       "length_m": "53,6",
       "wingspan_m": "44,8",
-      "height_m": "16,5"
+      "height_m": "16,5",
+      "price": 59.45,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LH-8",
@@ -4308,7 +4510,9 @@
       "passengers": "280",
       "length_m": "46,7",
       "wingspan_m": "43,9",
-      "height_m": "15,8"
+      "height_m": "15,8",
+      "price": 59.45,
+      "shipping_allocated": null
     },
     {
       "model_id": "LX001",
@@ -4350,7 +4554,9 @@
       "passengers": "112",
       "length_m": "31,01",
       "wingspan_m": "26,34",
-      "height_m": "8,61"
+      "height_m": "8,61",
+      "price": 56.91,
+      "shipping_allocated": null
     },
     {
       "model_id": "LX002",
@@ -4392,7 +4598,9 @@
       "passengers": "220",
       "length_m": "44,51",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 63.24,
+      "shipping_allocated": null
     },
     {
       "model_id": "LX003",
@@ -4434,7 +4642,9 @@
       "passengers": "120",
       "length_m": "35",
       "wingspan_m": "35,1",
-      "height_m": "11,5"
+      "height_m": "11,5",
+      "price": 34.5,
+      "shipping_allocated": 1.62
     },
     {
       "model_id": "LX004",
@@ -4476,7 +4686,9 @@
       "passengers": "155",
       "length_m": "45,1",
       "wingspan_m": "32,8",
-      "height_m": "9,3"
+      "height_m": "9,3",
+      "price": 24.94,
+      "shipping_allocated": 28.57
     },
     {
       "model_id": "LX005",
@@ -4518,7 +4730,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 19.5,
+      "shipping_allocated": 0.51
     },
     {
       "model_id": "LX006",
@@ -4560,7 +4774,9 @@
       "passengers": "150",
       "length_m": "38,7",
       "wingspan_m": "35,1",
-      "height_m": "11,5"
+      "height_m": "11,5",
+      "price": 34.5,
+      "shipping_allocated": 2.12
     },
     {
       "model_id": "LX007",
@@ -4602,7 +4818,9 @@
       "passengers": "550",
       "length_m": "73,86",
       "wingspan_m": "64,8",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 39.5,
+      "shipping_allocated": 2.43
     },
     {
       "model_id": "LX008",
@@ -4644,7 +4862,9 @@
       "passengers": "293",
       "length_m": "61,6",
       "wingspan_m": "51,7",
-      "height_m": "17,6"
+      "height_m": "17,6",
+      "price": 44.5,
+      "shipping_allocated": 2.74
     },
     {
       "model_id": "LX009",
@@ -4686,7 +4906,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 15.5,
+      "shipping_allocated": 1.97
     },
     {
       "model_id": "LX010",
@@ -4728,7 +4950,9 @@
       "passengers": "96",
       "length_m": "42,36",
       "wingspan_m": "36,58",
-      "height_m": "11,68"
+      "height_m": "11,68",
+      "price": 39.88,
+      "shipping_allocated": 4.34
     },
     {
       "model_id": "LX011",
@@ -4770,7 +4994,9 @@
       "passengers": "185",
       "length_m": "44,51",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 21.0,
+      "shipping_allocated": 7.0
     },
     {
       "model_id": "LX012",
@@ -4812,7 +5038,9 @@
       "passengers": "195",
       "length_m": "37,57",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 39.5,
+      "shipping_allocated": 0.97
     },
     {
       "model_id": "LX013",
@@ -4854,7 +5082,9 @@
       "passengers": "110",
       "length_m": "39,42",
       "wingspan_m": "35,8",
-      "height_m": "11"
+      "height_m": "11",
+      "price": 34.5,
+      "shipping_allocated": 0.85
     },
     {
       "model_id": "LX014",
@@ -4896,7 +5126,9 @@
       "passengers": "280",
       "length_m": "46,7",
       "wingspan_m": "43,9",
-      "height_m": "15,8"
+      "height_m": "15,8",
+      "price": 30.0,
+      "shipping_allocated": 0.66
     },
     {
       "model_id": "LX015",
@@ -4938,7 +5170,9 @@
       "passengers": "400",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 35.0,
+      "shipping_allocated": 0.77
     },
     {
       "model_id": "LX016",
@@ -4980,7 +5214,9 @@
       "passengers": "259",
       "length_m": "45,9",
       "wingspan_m": "45",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 74.2,
+      "shipping_allocated": 3.12
     },
     {
       "model_id": "LX017",
@@ -5022,7 +5258,9 @@
       "passengers": "177",
       "length_m": "45,9",
       "wingspan_m": "45",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 17.0,
+      "shipping_allocated": 1.84
     },
     {
       "model_id": "LX018",
@@ -5064,7 +5302,9 @@
       "passengers": "253",
       "length_m": "58,82",
       "wingspan_m": "58",
-      "height_m": "17,39"
+      "height_m": "17,39",
+      "price": 15.0,
+      "shipping_allocated": 2.01
     },
     {
       "model_id": "LX019",
@@ -5106,7 +5346,9 @@
       "passengers": "102",
       "length_m": "32,2",
       "wingspan_m": "35,8",
-      "height_m": "8,66"
+      "height_m": "8,66",
+      "price": 37.17,
+      "shipping_allocated": 5.62
     },
     {
       "model_id": "WIS-LX-14",
@@ -5148,7 +5390,9 @@
       "passengers": "206",
       "length_m": "44,51",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 39.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LX-29",
@@ -5190,7 +5434,9 @@
       "passengers": "50",
       "length_m": "29,87",
       "wingspan_m": "20,04",
-      "height_m": "6,75"
+      "height_m": "6,75",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-LX-31",
@@ -5232,7 +5478,9 @@
       "passengers": "115",
       "length_m": "36,37",
       "wingspan_m": "28,47",
-      "height_m": "8,38"
+      "height_m": "8,38",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "NG001",
@@ -5274,7 +5522,9 @@
       "passengers": "440",
       "length_m": "63,73",
       "wingspan_m": "60,93",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 18.0,
+      "shipping_allocated": 2.65
     },
     {
       "model_id": "NG002",
@@ -5316,7 +5566,9 @@
       "passengers": "149",
       "length_m": "31,24",
       "wingspan_m": "34,31",
-      "height_m": "12,57"
+      "height_m": "12,57",
+      "price": 20.5,
+      "shipping_allocated": 2.6
     },
     {
       "model_id": "NG003",
@@ -5358,7 +5610,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 15.0,
+      "shipping_allocated": 1.9
     },
     {
       "model_id": "ORD-OS-40",
@@ -5400,7 +5654,9 @@
       "passengers": "75",
       "length_m": "26,11",
       "wingspan_m": "28,55",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 49.54,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS001",
@@ -5442,7 +5698,9 @@
       "passengers": "156",
       "length_m": "33,84",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 54.5,
+      "shipping_allocated": 13.63
     },
     {
       "model_id": "OS002",
@@ -5484,7 +5742,9 @@
       "passengers": "185",
       "length_m": "44,51",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 24.5,
+      "shipping_allocated": 3.0
     },
     {
       "model_id": "OS003",
@@ -5526,7 +5786,9 @@
       "passengers": "109",
       "length_m": "35,53",
       "wingspan_m": "28,08",
-      "height_m": "8,5"
+      "height_m": "8,5",
+      "price": 30.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS004",
@@ -5568,7 +5830,9 @@
       "passengers": "149",
       "length_m": "31,24",
       "wingspan_m": "34,31",
-      "height_m": "12,57"
+      "height_m": "12,57",
+      "price": 47.95,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS005",
@@ -5610,7 +5874,9 @@
       "passengers": "261",
       "length_m": "59,39",
       "wingspan_m": "60,3",
-      "height_m": "16,7"
+      "height_m": "16,7",
+      "price": 39.85,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS006",
@@ -5652,7 +5918,9 @@
       "passengers": "99",
       "length_m": "32,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71"
+      "height_m": "8,71",
+      "price": 110.58,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS007",
@@ -5694,7 +5962,9 @@
       "passengers": "253",
       "length_m": "58,82",
       "wingspan_m": "58",
-      "height_m": "17,39"
+      "height_m": "17,39",
+      "price": 59.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS008",
@@ -5736,7 +6006,9 @@
       "passengers": "78",
       "length_m": "32,8",
       "wingspan_m": "28,4",
-      "height_m": "8,3"
+      "height_m": "8,3",
+      "price": 95.01,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS009",
@@ -5778,7 +6050,9 @@
       "passengers": "440",
       "length_m": "63,73",
       "wingspan_m": "60,93",
-      "height_m": "18,5"
+      "height_m": "18,5",
+      "price": 49.5,
+      "shipping_allocated": 5.5
     },
     {
       "model_id": "OS010",
@@ -5820,7 +6094,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 36.44,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS011",
@@ -5862,7 +6138,9 @@
       "passengers": "189",
       "length_m": "39,47",
       "wingspan_m": "35,79",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": 44.5,
+      "shipping_allocated": 5.5
     },
     {
       "model_id": "OS012",
@@ -5904,7 +6182,9 @@
       "passengers": "48",
       "length_m": "20,42",
       "wingspan_m": "30,18",
-      "height_m": "7,57"
+      "height_m": "7,57",
+      "price": 105.89,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS013",
@@ -5946,7 +6226,9 @@
       "passengers": "115",
       "length_m": "36,37",
       "wingspan_m": "28,47",
-      "height_m": "8,38"
+      "height_m": "8,38",
+      "price": 117.22,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS014",
@@ -5988,7 +6270,9 @@
       "passengers": "135",
       "length_m": "40,72",
       "wingspan_m": "28,47",
-      "height_m": "8,38"
+      "height_m": "8,38",
+      "price": 65.0,
+      "shipping_allocated": 15.44
     },
     {
       "model_id": "OS015",
@@ -6030,7 +6314,9 @@
       "passengers": "295",
       "length_m": "63,69",
       "wingspan_m": "60,3",
-      "height_m": "16,7"
+      "height_m": "16,7",
+      "price": 47.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "OS016",
@@ -6072,7 +6358,9 @@
       "passengers": "185",
       "length_m": "44,51",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 17.5,
+      "shipping_allocated": 1.87
     },
     {
       "model_id": "OS017",
@@ -6114,7 +6402,9 @@
       "passengers": "290",
       "length_m": "62,81",
       "wingspan_m": "60,12",
-      "height_m": "17,02"
+      "height_m": "17,02",
+      "price": 47.0,
+      "shipping_allocated": 5.22
     },
     {
       "model_id": "OS018",
@@ -6156,7 +6446,9 @@
       "passengers": "269",
       "length_m": "54,94",
       "wingspan_m": "47,57",
-      "height_m": "15,85"
+      "height_m": "15,85",
+      "price": 44.5,
+      "shipping_allocated": 4.25
     },
     {
       "model_id": "OS019",
@@ -6198,7 +6490,9 @@
       "passengers": "80",
       "length_m": "30,9",
       "wingspan_m": "28",
-      "height_m": "8,5"
+      "height_m": "8,5",
+      "price": 49.0,
+      "shipping_allocated": 6.0
     },
     {
       "model_id": "OS020",
@@ -6240,7 +6534,9 @@
       "passengers": "89",
       "length_m": "28,55",
       "wingspan_m": "28,55",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 49.54,
+      "shipping_allocated": 13.49
     },
     {
       "model_id": "WIS-OS-34",
@@ -6282,7 +6578,9 @@
       "passengers": "109",
       "length_m": "35,53",
       "wingspan_m": "28,08",
-      "height_m": "8,5"
+      "height_m": "8,5",
+      "price": 44.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-OS-4",
@@ -6324,7 +6622,9 @@
       "passengers": "280",
       "length_m": "46,7",
       "wingspan_m": "43,9",
-      "height_m": "15,8"
+      "height_m": "15,8",
+      "price": 119.53,
+      "shipping_allocated": null
     },
     {
       "model_id": "ORD-PA-16",
@@ -6366,7 +6666,9 @@
       "passengers": "366",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 20.0,
+      "shipping_allocated": 6.15
     },
     {
       "model_id": "PA001",
@@ -6408,7 +6710,9 @@
       "passengers": "276",
       "length_m": "56,31",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 47.57,
+      "shipping_allocated": 8.6
     },
     {
       "model_id": "PA002",
@@ -6450,7 +6754,9 @@
       "passengers": "168",
       "length_m": "36,45",
       "wingspan_m": "28,88",
-      "height_m": "11,13"
+      "height_m": "11,13",
+      "price": 22.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "PA003",
@@ -6492,7 +6798,9 @@
       "passengers": "100",
       "length_m": "33,6",
       "wingspan_m": "43,05",
-      "height_m": "11,66"
+      "height_m": "11,66",
+      "price": 39.95,
+      "shipping_allocated": 21.0
     },
     {
       "model_id": "PA004",
@@ -6534,7 +6842,9 @@
       "passengers": "189",
       "length_m": "46,7",
       "wingspan_m": "32,9",
-      "height_m": "10,4"
+      "height_m": "10,4",
+      "price": 44.5,
+      "shipping_allocated": 2.1
     },
     {
       "model_id": "PA005",
@@ -6576,7 +6886,9 @@
       "passengers": "270",
       "length_m": "55,55",
       "wingspan_m": "47,43",
-      "height_m": "17,7"
+      "height_m": "17,7",
+      "price": 28.3,
+      "shipping_allocated": 6.69
     },
     {
       "model_id": "PA006",
@@ -6618,7 +6930,9 @@
       "passengers": "229",
       "length_m": "50",
       "wingspan_m": "47,3",
-      "height_m": "16,9"
+      "height_m": "16,9",
+      "price": 34.5,
+      "shipping_allocated": 3.69
     },
     {
       "model_id": "PA007",
@@ -6660,7 +6974,9 @@
       "passengers": "130",
       "length_m": "30,53",
       "wingspan_m": "28,35",
-      "height_m": "11,23"
+      "height_m": "11,23",
+      "price": 35.0,
+      "shipping_allocated": 5.0
     },
     {
       "model_id": "PA008",
@@ -6702,7 +7018,9 @@
       "passengers": "280",
       "length_m": "46,7",
       "wingspan_m": "43,9",
-      "height_m": "15,8"
+      "height_m": "15,8",
+      "price": 21.92,
+      "shipping_allocated": 46.78
     },
     {
       "model_id": "PA009",
@@ -6744,7 +7062,9 @@
       "passengers": "80",
       "length_m": "28,6",
       "wingspan_m": "42,05",
-      "height_m": "8,38"
+      "height_m": "8,38",
+      "price": 54.19,
+      "shipping_allocated": 17.86
     },
     {
       "model_id": "PA010",
@@ -6786,7 +7106,9 @@
       "passengers": "80",
       "length_m": "28,6",
       "wingspan_m": "42,05",
-      "height_m": "8,38"
+      "height_m": "8,38",
+      "price": 54.19,
+      "shipping_allocated": 17.85
     },
     {
       "model_id": "PA011",
@@ -6828,7 +7150,9 @@
       "passengers": "259",
       "length_m": "48",
       "wingspan_m": "48",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 56.7,
+      "shipping_allocated": 46.46
     },
     {
       "model_id": "PA012",
@@ -6870,7 +7194,9 @@
       "passengers": "366",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 42.0,
+      "shipping_allocated": 0.0
     },
     {
       "model_id": "PA013",
@@ -6912,7 +7238,9 @@
       "passengers": "189",
       "length_m": "46,61",
       "wingspan_m": "44,42",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": 26.49,
+      "shipping_allocated": 34.11
     },
     {
       "model_id": "PA014",
@@ -6954,7 +7282,9 @@
       "passengers": "149",
       "length_m": "41,5",
       "wingspan_m": "39,88",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": 31.8,
+      "shipping_allocated": 35.54
     },
     {
       "model_id": "PA015",
@@ -6996,7 +7326,9 @@
       "passengers": "81",
       "length_m": "29",
       "wingspan_m": "37,5",
-      "height_m": "7,1"
+      "height_m": "7,1",
+      "price": 32.29,
+      "shipping_allocated": 21.18
     },
     {
       "model_id": "PA016",
@@ -7038,7 +7370,9 @@
       "passengers": "40",
       "length_m": "22,66",
       "wingspan_m": "28,96",
-      "height_m": "7"
+      "height_m": "7",
+      "price": 82.94,
+      "shipping_allocated": 26.97
     },
     {
       "model_id": "PA017",
@@ -7080,7 +7414,9 @@
       "passengers": "50",
       "length_m": "23,27",
       "wingspan_m": "32,92",
-      "height_m": "6,29"
+      "height_m": "6,29",
+      "price": 64.5,
+      "shipping_allocated": 5.27
     },
     {
       "model_id": "PA018",
@@ -7122,7 +7458,9 @@
       "passengers": "280",
       "length_m": "53,6",
       "wingspan_m": "44,8",
-      "height_m": "16,5"
+      "height_m": "16,5",
+      "price": 42.97,
+      "shipping_allocated": 40.85
     },
     {
       "model_id": "PA019",
@@ -7164,7 +7502,9 @@
       "passengers": "314",
       "length_m": "55,06",
       "wingspan_m": "50,39",
-      "height_m": "17,7"
+      "height_m": "17,7",
+      "price": 41.04,
+      "shipping_allocated": 1.73
     },
     {
       "model_id": "PA020",
@@ -7206,7 +7546,9 @@
       "passengers": "48",
       "length_m": "22,67",
       "wingspan_m": "24,57",
-      "height_m": "7,59"
+      "height_m": "7,59",
+      "price": 53.65,
+      "shipping_allocated": 8.11
     },
     {
       "model_id": "WIS-PA-17",
@@ -7248,7 +7590,9 @@
       "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 25.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-PA-18",
@@ -7290,7 +7634,9 @@
       "passengers": "400",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 59.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-PA-25",
@@ -7332,7 +7678,9 @@
       "passengers": "21",
       "length_m": "19,7",
       "wingspan_m": "28,96",
-      "height_m": "5,16"
+      "height_m": "5,16",
+      "price": 49.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-PA-28",
@@ -7374,7 +7722,9 @@
       "passengers": "102",
       "length_m": "32,2",
       "wingspan_m": "35,8",
-      "height_m": "8,66"
+      "height_m": "8,66",
+      "price": 46.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-PA-29",
@@ -7416,7 +7766,9 @@
       "passengers": "105",
       "length_m": "34,9",
       "wingspan_m": "38,8",
-      "height_m": "9,6"
+      "height_m": "9,6",
+      "price": 30.95,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-PA-33",
@@ -7458,7 +7810,9 @@
       "passengers": "95",
       "length_m": "29",
       "wingspan_m": "37,5",
-      "height_m": "7,1"
+      "height_m": "7,1",
+      "price": 70.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-PA-37",
@@ -7500,7 +7854,9 @@
       "passengers": "92",
       "length_m": "61,66",
       "wingspan_m": "25,6",
-      "height_m": "12,19"
+      "height_m": "12,19",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "SK001",
@@ -7542,7 +7898,9 @@
       "passengers": "90",
       "length_m": "36,4",
       "wingspan_m": "24,85",
-      "height_m": "7,57"
+      "height_m": "7,57",
+      "price": 73.21,
+      "shipping_allocated": null
     },
     {
       "model_id": "SK002",
@@ -7584,7 +7942,9 @@
       "passengers": "180",
       "length_m": "37,57",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 47.34,
+      "shipping_allocated": 14.06
     },
     {
       "model_id": "SK003",
@@ -7626,7 +7986,9 @@
       "passengers": "149",
       "length_m": "33,63",
       "wingspan_m": "35,79",
-      "height_m": "12,57"
+      "height_m": "12,57",
+      "price": 39.27,
+      "shipping_allocated": null
     },
     {
       "model_id": "SK004",
@@ -7668,7 +8030,9 @@
       "passengers": "155",
       "length_m": "45,1",
       "wingspan_m": "32,8",
-      "height_m": "9,3"
+      "height_m": "9,3",
+      "price": 29.5,
+      "shipping_allocated": 1.39
     },
     {
       "model_id": "SK005",
@@ -7710,7 +8074,9 @@
       "passengers": "130",
       "length_m": "40,4",
       "wingspan_m": "32,8",
-      "height_m": "9,3"
+      "height_m": "9,3",
+      "price": 29.0,
+      "shipping_allocated": 8.9
     },
     {
       "model_id": "SK006",
@@ -7752,7 +8118,9 @@
       "passengers": "156",
       "length_m": "33,84",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 38.47,
+      "shipping_allocated": 12.27
     },
     {
       "model_id": "SK007",
@@ -7794,7 +8162,9 @@
       "passengers": "259",
       "length_m": "45,9",
       "wingspan_m": "45",
-      "height_m": "12,9"
+      "height_m": "12,9",
+      "price": 33.66,
+      "shipping_allocated": 4.41
     },
     {
       "model_id": "SK008",
@@ -7836,7 +8206,9 @@
       "passengers": "300",
       "length_m": "63,69",
       "wingspan_m": "60,3",
-      "height_m": "16,85"
+      "height_m": "16,85",
+      "price": 25.5,
+      "shipping_allocated": 3.41
     },
     {
       "model_id": "WIS-SK-15",
@@ -7878,7 +8250,9 @@
       "passengers": "78",
       "length_m": "27,17",
       "wingspan_m": "27,05",
-      "height_m": "7,65"
+      "height_m": "7,65",
+      "price": 45.7,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-20",
@@ -7920,7 +8294,9 @@
       "passengers": "149",
       "length_m": "31,24",
       "wingspan_m": "34,31",
-      "height_m": "12,57"
+      "height_m": "12,57",
+      "price": 24.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-34",
@@ -7962,7 +8338,9 @@
       "passengers": "96",
       "length_m": "42,36",
       "wingspan_m": "36,58",
-      "height_m": "11,68"
+      "height_m": "11,68",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-35",
@@ -8004,7 +8382,9 @@
       "passengers": "19",
       "length_m": "15,77",
       "wingspan_m": "19,8",
-      "height_m": "5,94"
+      "height_m": "5,94",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-40",
@@ -8046,7 +8426,9 @@
       "passengers": "65",
       "length_m": "27,4",
       "wingspan_m": "25",
-      "height_m": "8,5"
+      "height_m": "8,5",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-46",
@@ -8088,7 +8470,9 @@
       "passengers": "314",
       "length_m": "55,06",
       "wingspan_m": "50,39",
-      "height_m": "17,7"
+      "height_m": "17,7",
+      "price": 44.7,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-51",
@@ -8130,7 +8514,9 @@
       "passengers": "158",
       "length_m": "46,5",
       "wingspan_m": "32,8",
-      "height_m": "9,3"
+      "height_m": "9,3",
+      "price": 43.63,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SK-8",
@@ -8172,7 +8558,9 @@
       "passengers": "195",
       "length_m": "37,57",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "SM001",
@@ -8214,7 +8602,9 @@
       "passengers": "75",
       "length_m": "26,11",
       "wingspan_m": "28,55",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 19.0,
+      "shipping_allocated": 7.5
     },
     {
       "model_id": "SM002",
@@ -8256,7 +8646,9 @@
       "passengers": "74",
       "length_m": "32,31",
       "wingspan_m": "46,33",
-      "height_m": "8,41"
+      "height_m": "8,41",
+      "price": 17.0,
+      "shipping_allocated": 6.95
     },
     {
       "model_id": "SM003",
@@ -8298,7 +8690,9 @@
       "passengers": "100",
       "length_m": "40,05",
       "wingspan_m": "48",
-      "height_m": "10,2"
+      "height_m": "10,2",
+      "price": 25.0,
+      "shipping_allocated": 14.49
     },
     {
       "model_id": "ORD-SO-51",
@@ -8340,7 +8734,9 @@
       "passengers": "313",
       "length_m": "67,9",
       "wingspan_m": "63,45",
-      "height_m": "17,1"
+      "height_m": "17,1",
+      "price": 52.8,
+      "shipping_allocated": 20.83
     },
     {
       "model_id": "ORD-SO-52",
@@ -8382,7 +8778,9 @@
       "passengers": "156",
       "length_m": "33,84",
       "wingspan_m": "34,1",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 15.0,
+      "shipping_allocated": 4.62
     },
     {
       "model_id": "SO001",
@@ -8424,7 +8822,9 @@
       "passengers": "0",
       "length_m": "84",
       "wingspan_m": "88,4",
-      "height_m": "18,1"
+      "height_m": "18,1",
+      "price": 65.85,
+      "shipping_allocated": null
     },
     {
       "model_id": "SO002",
@@ -8466,7 +8866,9 @@
       "passengers": "0",
       "length_m": "56,2",
       "wingspan_m": "44,8",
-      "height_m": "17,2"
+      "height_m": "17,2",
+      "price": 69.9,
+      "shipping_allocated": null
     },
     {
       "model_id": "SO003",
@@ -8508,7 +8910,9 @@
       "passengers": "89",
       "length_m": "28,55",
       "wingspan_m": "28,55",
-      "height_m": "8,25"
+      "height_m": "8,25",
+      "price": 31.6,
+      "shipping_allocated": null
     },
     {
       "model_id": "SO004",
@@ -8550,7 +8954,9 @@
       "passengers": "0",
       "length_m": "43,8",
       "wingspan_m": "47,6",
-      "height_m": "14,8"
+      "height_m": "14,8",
+      "price": 70.1,
+      "shipping_allocated": 19.7
     },
     {
       "model_id": "SO005",
@@ -8592,7 +8998,9 @@
       "passengers": "80",
       "length_m": "46,66",
       "wingspan_m": "43,9",
-      "height_m": "15,8"
+      "height_m": "15,8",
+      "price": 27.5,
+      "shipping_allocated": 2.94
     },
     {
       "model_id": "SO006",
@@ -8634,7 +9042,9 @@
       "passengers": "17",
       "length_m": "18,9",
       "wingspan_m": "29,25",
-      "height_m": "4,5"
+      "height_m": "4,5",
+      "price": 21.0,
+      "shipping_allocated": 11.0
     },
     {
       "model_id": "SO007",
@@ -8676,7 +9086,9 @@
       "passengers": "6",
       "length_m": "18,3",
       "wingspan_m": "8,2",
-      "height_m": "4,6"
+      "height_m": "4,6",
+      "price": 34.24,
+      "shipping_allocated": 3.85
     },
     {
       "model_id": "SO008",
@@ -8718,7 +9130,9 @@
       "passengers": "0",
       "length_m": "36,37",
       "wingspan_m": "23,92",
-      "height_m": "16,35"
+      "height_m": "16,35",
+      "price": 14.79,
+      "shipping_allocated": 8.9
     },
     {
       "model_id": "SO009",
@@ -8760,7 +9174,9 @@
       "passengers": "0",
       "length_m": "63,1",
       "wingspan_m": "60,3",
-      "height_m": "18,9"
+      "height_m": "18,9",
+      "price": 40.0,
+      "shipping_allocated": 1.16
     },
     {
       "model_id": "SO010",
@@ -8802,7 +9218,9 @@
       "passengers": "7",
       "length_m": "37,24",
       "wingspan_m": "23,79",
-      "height_m": "17,25"
+      "height_m": "17,25",
+      "price": 60.0,
+      "shipping_allocated": 1.48
     },
     {
       "model_id": "SO011",
@@ -8844,7 +9262,9 @@
       "passengers": "150",
       "length_m": "66,8",
       "wingspan_m": "64,75",
-      "height_m": "17,05"
+      "height_m": "17,05",
+      "price": 30.0,
+      "shipping_allocated": 0.66
     },
     {
       "model_id": "SO012",
@@ -8886,7 +9306,9 @@
       "passengers": "0",
       "length_m": "46,61",
       "wingspan_m": "44,42",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": 15.0,
+      "shipping_allocated": 1.62
     },
     {
       "model_id": "SO013",
@@ -8928,7 +9350,9 @@
       "passengers": "287",
       "length_m": "63,69",
       "wingspan_m": "64",
-      "height_m": "16,85"
+      "height_m": "16,85",
+      "price": 26.5,
+      "shipping_allocated": 3.54
     },
     {
       "model_id": "SO014",
@@ -8970,7 +9394,9 @@
       "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "64,44",
-      "height_m": "19,41"
+      "height_m": "19,41",
+      "price": 20.5,
+      "shipping_allocated": 2.74
     },
     {
       "model_id": "SO015",
@@ -9012,7 +9438,9 @@
       "passengers": "158",
       "length_m": "38,9",
       "wingspan_m": "35,8",
-      "height_m": "11,95"
+      "height_m": "11,95",
+      "price": 23.01,
+      "shipping_allocated": 6.05
     },
     {
       "model_id": "SO016",
@@ -9054,7 +9482,9 @@
       "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 98.77,
+      "shipping_allocated": 14.07
     },
     {
       "model_id": "SO017",
@@ -9096,7 +9526,9 @@
       "passengers": "0",
       "length_m": "69,1",
       "wingspan_m": "73,3",
-      "height_m": "20,78"
+      "height_m": "20,78",
+      "price": 52.43,
+      "shipping_allocated": 23.38
     },
     {
       "model_id": "WIS-SO-10",
@@ -9138,7 +9570,9 @@
       "passengers": "93",
       "length_m": "32,4",
       "wingspan_m": "40",
-      "height_m": "11,65"
+      "height_m": "11,65",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SO-11",
@@ -9180,7 +9614,9 @@
       "passengers": "0",
       "length_m": "58,82",
       "wingspan_m": "60,3",
-      "height_m": "17,39"
+      "height_m": "17,39",
+      "price": 49.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SO-12",
@@ -9222,7 +9658,9 @@
       "passengers": "0",
       "length_m": "31,8",
       "wingspan_m": "35,9",
-      "height_m": "10"
+      "height_m": "10",
+      "price": 24.0,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SO-21",
@@ -9264,7 +9702,9 @@
       "passengers": "17",
       "length_m": "29,5",
       "wingspan_m": "28,7",
-      "height_m": "7,7"
+      "height_m": "7,7",
+      "price": 43.31,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-SO-8",
@@ -9306,7 +9746,9 @@
       "passengers": "50",
       "length_m": "23,78",
       "wingspan_m": "29,2",
-      "height_m": "8,75"
+      "height_m": "8,75",
+      "price": 44.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "TP001",
@@ -9348,7 +9790,9 @@
       "passengers": "206",
       "length_m": "44,51",
       "wingspan_m": "35,8",
-      "height_m": "11,76"
+      "height_m": "11,76",
+      "price": 85.73,
+      "shipping_allocated": null
     },
     {
       "model_id": "TP002",
@@ -9390,7 +9834,9 @@
       "passengers": "253",
       "length_m": "58,82",
       "wingspan_m": "58",
-      "height_m": "17,39"
+      "height_m": "17,39",
+      "price": 30.55,
+      "shipping_allocated": 4.09
     },
     {
       "model_id": "WIS-TP-12",
@@ -9432,7 +9878,9 @@
       "passengers": "287",
       "length_m": "63,69",
       "wingspan_m": "64",
-      "height_m": "16,85"
+      "height_m": "16,85",
+      "price": 64.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "US001",
@@ -9474,7 +9922,9 @@
       "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "59,64",
-      "height_m": "19,3"
+      "height_m": "19,3",
+      "price": 18.0,
+      "shipping_allocated": 3.8
     },
     {
       "model_id": "US002",
@@ -9516,7 +9966,9 @@
       "passengers": "24",
       "length_m": "30,18",
       "wingspan_m": "35,81",
-      "height_m": "8,9"
+      "height_m": "8,9",
+      "price": 27.5,
+      "shipping_allocated": 10.0
     },
     {
       "model_id": "US003",
@@ -9558,7 +10010,9 @@
       "passengers": "0",
       "length_m": "76,25",
       "wingspan_m": "68,45",
-      "height_m": "19,35"
+      "height_m": "19,35",
+      "price": 35.01,
+      "shipping_allocated": 11.99
     },
     {
       "model_id": "US004",
@@ -9600,7 +10054,9 @@
       "passengers": "28",
       "length_m": "19,6",
       "wingspan_m": "28,96",
-      "height_m": "5,16"
+      "height_m": "5,16",
+      "price": 44.14,
+      "shipping_allocated": 4.8
     },
     {
       "model_id": "US005",
@@ -9642,7 +10098,9 @@
       "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "64,44",
-      "height_m": "19,41"
+      "height_m": "19,41",
+      "price": 27.06,
+      "shipping_allocated": 2.94
     },
     {
       "model_id": "US006",
@@ -9684,7 +10142,9 @@
       "passengers": "0",
       "length_m": "47,32",
       "wingspan_m": "38,05",
-      "height_m": "13,56"
+      "height_m": "13,56",
+      "price": 35.0,
+      "shipping_allocated": 0.77
     },
     {
       "model_id": "US007",
@@ -9726,7 +10186,9 @@
       "passengers": "10",
       "length_m": "19,46",
       "wingspan_m": "31,7",
-      "height_m": "6,15"
+      "height_m": "6,15",
+      "price": 45.0,
+      "shipping_allocated": 0.96
     },
     {
       "model_id": "US008",
@@ -9768,7 +10230,9 @@
       "passengers": "0",
       "length_m": "33,63",
       "wingspan_m": "34,32",
-      "height_m": "12,55"
+      "height_m": "12,55",
+      "price": 15.0,
+      "shipping_allocated": 0.33
     },
     {
       "model_id": "US009",
@@ -9810,7 +10274,9 @@
       "passengers": "0",
       "length_m": "48,51",
       "wingspan_m": "47,57",
-      "height_m": "15,85"
+      "height_m": "15,85",
+      "price": 60.35,
+      "shipping_allocated": 14.17
     },
     {
       "model_id": "US010",
@@ -9852,7 +10318,9 @@
       "passengers": "15",
       "length_m": "35,61",
       "wingspan_m": "30,37",
-      "height_m": "10,27"
+      "height_m": "10,27",
+      "price": 32.75,
+      "shipping_allocated": 1.38
     },
     {
       "model_id": "US011",
@@ -9894,7 +10362,9 @@
       "passengers": "0",
       "length_m": "41,53",
       "wingspan_m": "39,88",
-      "height_m": "12,7"
+      "height_m": "12,7",
+      "price": 33.73,
+      "shipping_allocated": 6.49
     },
     {
       "model_id": "US012",
@@ -9936,7 +10406,9 @@
       "passengers": "0",
       "length_m": "29,79",
       "wingspan_m": "40,41",
-      "height_m": "11,66"
+      "height_m": "11,66",
+      "price": 28.67,
+      "shipping_allocated": 5.51
     },
     {
       "model_id": "WIS-US-16",
@@ -9978,7 +10450,9 @@
       "passengers": "0",
       "length_m": "46,61",
       "wingspan_m": "44,42",
-      "height_m": "12,93"
+      "height_m": "12,93",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-US-17",
@@ -10020,7 +10494,9 @@
       "passengers": "0",
       "length_m": "53,04",
       "wingspan_m": "51,75",
-      "height_m": "16,79"
+      "height_m": "16,79",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-US-7",
@@ -10062,7 +10538,9 @@
       "passengers": "108",
       "length_m": "70,51",
       "wingspan_m": "59,64",
-      "height_m": "19,33"
+      "height_m": "19,33",
+      "price": 69.5,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-US-9",
@@ -10104,7 +10582,9 @@
       "passengers": "75",
       "length_m": "75,53",
       "wingspan_m": "67,89",
-      "height_m": "19,84"
+      "height_m": "19,84",
+      "price": null,
+      "shipping_allocated": null
     },
     {
       "model_id": "WA001",
@@ -10146,7 +10626,9 @@
       "passengers": "48",
       "length_m": "22,67",
       "wingspan_m": "24,57",
-      "height_m": "7,59"
+      "height_m": "7,59",
+      "price": 25.0,
+      "shipping_allocated": 1.3
     },
     {
       "model_id": "WA002",
@@ -10188,7 +10670,9 @@
       "passengers": "50",
       "length_m": "29,87",
       "wingspan_m": "20,04",
-      "height_m": "6,75"
+      "height_m": "6,75",
+      "price": 25.0,
+      "shipping_allocated": 1.3
     },
     {
       "model_id": "WA003",
@@ -10230,7 +10714,9 @@
       "passengers": "146",
       "length_m": "41,5",
       "wingspan_m": "35,1",
-      "height_m": "11,5"
+      "height_m": "11,5",
+      "price": 45.32,
+      "shipping_allocated": 5.1
     },
     {
       "model_id": "WA004",
@@ -10272,7 +10758,9 @@
       "passengers": "70",
       "length_m": "27,17",
       "wingspan_m": "27,05",
-      "height_m": "7,65"
+      "height_m": "7,65",
+      "price": 34.39,
+      "shipping_allocated": 10.47
     },
     {
       "model_id": "WIS-WA-12",
@@ -10314,7 +10802,9 @@
       "passengers": "80",
       "length_m": "30,9",
       "wingspan_m": "28",
-      "height_m": "8,5"
+      "height_m": "8,5",
+      "price": 59.96,
+      "shipping_allocated": 8.6
     },
     {
       "model_id": "ORD-WF-6",
@@ -10356,7 +10846,9 @@
       "passengers": "39",
       "length_m": "22,25",
       "wingspan_m": "25,91",
-      "height_m": "7,49"
+      "height_m": "7,49",
+      "price": 40.29,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-WF-10",
@@ -10398,7 +10890,9 @@
       "passengers": "146",
       "length_m": "41,5",
       "wingspan_m": "35,1",
-      "height_m": "11,5"
+      "height_m": "11,5",
+      "price": 42.95,
+      "shipping_allocated": null
     },
     {
       "model_id": "WIS-WF-9",
@@ -10440,7 +10934,9 @@
       "passengers": "78",
       "length_m": "32,8",
       "wingspan_m": "28,4",
-      "height_m": "8,3"
+      "height_m": "8,3",
+      "price": 37.0,
+      "shipping_allocated": null
     }
   ]
 }
