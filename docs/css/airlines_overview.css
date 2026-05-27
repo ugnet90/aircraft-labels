@@ -232,21 +232,6 @@ th.thSort.active{
   gap:8px;
 }
 
-.columnRow .chk{
-  display:inline-flex;
-  align-items:center;
-  justify-content:flex-start;
-  gap:8px;
-  font-size:14px;
-  width:auto;
-  white-space:nowrap;
-}
-
-.columnRow .chk input{
-  margin:0;
-  flex:0 0 auto;
-}
-
 body.noscroll{
   overflow:hidden;
 }
@@ -274,28 +259,6 @@ body.noscroll{
   gap:9px;
 }
 
-.columnPanel .columnRow label.chk{
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  gap:8px;
-  width:100%;
-  max-width:none;
-  margin:0;
-  padding:0;
-  text-align:left;
-}
-
-.columnPanel .columnRow label.chk input{
-  margin:0;
-  flex:0 0 auto;
-}
-
-.columnPanel .columnRow label.chk span{
-  display:inline;
-  text-align:left;
-}
-
 .sumRow td{
   border-top:2px solid rgba(0,0,0,.16);
   background:#f7f7f7;
@@ -304,4 +267,37 @@ body.noscroll{
 
 tfoot td{
   padding:9px 10px;
+}
+
+/* Optionale Spalten im Overlay – analog models_overview */
+.columnPanel .columnRow{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:8px;
+  justify-items:start;
+}
+
+.columnPanel .columnRow .chk{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:6px;
+  font-size:14px;
+  white-space:nowrap;
+  width:auto;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+
+.columnPanel .columnRow .chk input{
+  margin:0;
+  width:14px;
+  height:14px;
+  flex:0 0 auto;
+}
+
+.columnPanel .columnRow .chk span{
+  display:inline-block;
+  text-align:left;
 }
