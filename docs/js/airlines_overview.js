@@ -121,7 +121,7 @@ function calcModelLengthCm(it){
 function formatMoneyDE(n){
   if(!Number.isFinite(n)) n = 0;
 
-  return `€ ${n.toLocaleString("de-DE", {
+  return `€\u00A0${n.toLocaleString("de-DE", {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   })}`;
