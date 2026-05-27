@@ -15,14 +15,7 @@ const SITE_MAP = {
     breadcrumb: ["Dashboard", "Flugzeugmodelle"]
   },
 
-  airlines_overview: {
-    file: "airlines_overview.html",
-    title: "Airline-Übersicht",
-    navLabel: "Airline-Übersicht",
-    group: "Analyse",
-    breadcrumb: ["Dashboard", "Airline-Übersicht"]
-  },
-  
+
   model: {
     file: "model.html",
     title: "Modell",
@@ -54,7 +47,15 @@ const SITE_MAP = {
     group: "Analyse",
     breadcrumb: ["Dashboard", "Analyse", "Alle Flugzeugtypen"]
   },
-
+  
+  airlines_overview: {
+    file: "airlines_overview.html",
+    title: "Airline-Übersicht",
+    navLabel: "Airline-Übersicht",
+    group: "Analyse",
+    breadcrumb: ["Dashboard", "Analyse", "Airline-Übersicht"]
+  },
+  
   missing_types: {
     file: "missing_types.html",
     title: "Fehlende Flugzeugtypen",
