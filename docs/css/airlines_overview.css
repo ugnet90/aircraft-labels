@@ -265,3 +265,43 @@ body.noscroll{
 .columnPanel.is-dragging{
   opacity:.96;
 }
+
+/* Optionale Spalten: Checkbox + Text strikt linksbündig */
+.columnPanel .columnRow{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:9px;
+}
+
+.columnPanel .columnRow label.chk{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:8px;
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+
+.columnPanel .columnRow label.chk input{
+  margin:0;
+  flex:0 0 auto;
+}
+
+.columnPanel .columnRow label.chk span{
+  display:inline;
+  text-align:left;
+}
+
+.sumRow td{
+  border-top:2px solid rgba(0,0,0,.16);
+  background:#f7f7f7;
+  font-weight:700;
+}
+
+tfoot td{
+  padding:9px 10px;
+}
