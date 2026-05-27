@@ -136,11 +136,26 @@ function formatCmDE(n){
   })} cm`;
 }
 
+function matchesModelFlown(it, filters){
+  if(!filters.flown) return true;
+
+  if(filters.flown === "true"){
+    return it.flown === true;
+  }
+
+  if(filters.flown === "false"){
+    return it.flown === false;
+  }
+
+  return true;
+}
+
 function buildAirlineRows(items, filters){
   const map = new Map();
 
   items
     .filter(it => matchesModelStatus(it, filters))
+    .filter(it => matchesModelFlown(it, filters))
     .forEach(it => {
       const airline = getAirlineName(it);
       const group = getGroupName(it);
@@ -507,7 +522,6 @@ function apply(){
   let rows = baseRows.filter(row => {
     if(!matchesQuery(row, filters.q)) return false;
     if(!matchesGroup(row, filters.group)) return false;
-    if(!matchesFlown(row, filters.flown)) return false;
     return true;
   });
 
