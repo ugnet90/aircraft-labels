@@ -226,20 +226,25 @@ th.thSort.active{
 }
 
 .columnRow{
-  display:grid;
-  grid-template-columns:1fr;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
   gap:8px;
 }
 
 .columnRow .chk{
-  display:flex;
+  display:inline-flex;
   align-items:center;
-  gap:6px;
+  justify-content:flex-start;
+  gap:8px;
   font-size:14px;
+  width:auto;
+  white-space:nowrap;
 }
 
 .columnRow .chk input{
   margin:0;
+  flex:0 0 auto;
 }
 
 body.noscroll{
@@ -250,4 +255,13 @@ body.noscroll{
   .columnLauncher{
     display:none;
   }
+}
+
+.columnPanelHead{
+  cursor:move;
+  user-select:none;
+}
+
+.columnPanel.is-dragging{
+  opacity:.96;
 }
