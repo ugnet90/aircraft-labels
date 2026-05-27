@@ -121,12 +121,10 @@ function calcModelLengthCm(it){
 function formatMoneyDE(n){
   if(!Number.isFinite(n)) n = 0;
 
-  return n.toLocaleString("de-DE", {
-    style: "currency",
-    currency: "EUR",
+  return `€ ${n.toLocaleString("de-DE", {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
-  });
+  })}`;
 }
 
 function formatCmDE(n){
