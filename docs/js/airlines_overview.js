@@ -294,10 +294,19 @@ function sortRows(rows){
     let va = a[tableSortKey];
     let vb = b[tableSortKey];
 
-    if(["models", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
+    if(tableSortKey === "price_avg"){
+      va = averagePerModel(a, "price_total");
+      vb = averagePerModel(b, "price_total");
+    }
+    else if(tableSortKey === "shipping_avg"){
+      va = averagePerModel(a, "shipping_total");
+      vb = averagePerModel(b, "shipping_total");
+    }
+    else if(["models", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
       va = Number(va || 0);
       vb = Number(vb || 0);
-    }else{
+    }
+    else{
       va = String(va || "").toLowerCase();
       vb = String(vb || "").toLowerCase();
     }
@@ -371,11 +380,11 @@ function render(rows){
     let html = `<th class="${thClass(key)} num" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
   
     if(key === "price_total"){
-      html += `<th class="num">Ø Preis</th>`;
+      html += `<th class="${thClass("price_avg")} num" data-sort="price_avg">Ø Preis ${mark("price_avg")}</th>`;
     }
-  
+    
     if(key === "shipping_total"){
-      html += `<th class="num">Ø Versand</th>`;
+      html += `<th class="${thClass("shipping_avg")} num" data-sort="shipping_avg">Ø Versand ${mark("shipping_avg")}</th>`;
     }
   
     return html;
@@ -722,7 +731,18 @@ async function main(){
 
     if(p.has("sort")){
       const sort = p.get("sort") || "";
-      const allowed = new Set(["airline", "group", "models", "types", "flown"]);
+      const allowed = new Set([
+        "airline",
+        "group",
+        "models",
+        "types",
+        "flown",
+        "price_total",
+        "price_avg",
+        "shipping_total",
+        "shipping_avg",
+        "space_cm"
+      ]);
 
       if(allowed.has(sort)){
         tableSortKey = sort;
