@@ -305,6 +305,25 @@ function sortRows(rows){
   return arr;
 }
 
+function sumRows(rows, key){
+  return rows.reduce((sum, row) => {
+    const n = Number(row[key] || 0);
+    return sum + (Number.isFinite(n) ? n : 0);
+  }, 0);
+}
+
+function formatOptionalValue(key, value){
+  if(key === "price_total" || key === "shipping_total"){
+    return formatMoneyDE(value);
+  }
+
+  if(key === "space_cm"){
+    return formatCmDE(value);
+  }
+
+  return value ?? "";
+}
+
 function render(rows){
   document.getElementById("count").textContent =
     rows.length === 1 ? "1 Airline" : `${rows.length} Airlines`;
@@ -353,17 +372,10 @@ function render(rows){
       `&status=owned`;
     
     const optionalCells = visibleOptionalCols.map(key => {
-      let value = row[key];
-    
-      if(key === "price_total" || key === "shipping_total"){
-        value = formatMoneyDE(value);
-      }else if(key === "space_cm"){
-        value = formatCmDE(value);
-      }
-    
+      const value = formatOptionalValue(key, row[key]);
       return `<td class="num mono">${esc(value)}</td>`;
     }).join("");
-    
+        
     html += `
       <tr class="airlineRow" data-href="${esc(href)}">
         <td>${esc(row.airline)}</td>
@@ -382,7 +394,25 @@ function render(rows){
     `;
   }
 
-  html += `</tbody></table>`;
+  const optionalSumCells = visibleOptionalCols.map(key => {
+    const value = formatOptionalValue(key, sumRows(rows, key));
+    return `<td class="num mono">${esc(value)}</td>`;
+  }).join("");
+
+  html += `
+      </tbody>
+      <tfoot>
+        <tr class="sumRow">
+          <td colspan="2">Summe angezeigte Airlines</td>
+          <td class="num mono">${esc(sumRows(rows, "models"))}</td>
+          <td class="num mono">${esc(sumRows(rows, "types"))}</td>
+          <td class="num mono">${esc(sumRows(rows, "flown"))}</td>
+          ${optionalSumCells}
+        </tr>
+      </tfoot>
+    </table>
+  `;
+  
   document.getElementById("content").innerHTML = html;
 
   document.querySelectorAll("#content .airlineRow").forEach(tr => {
