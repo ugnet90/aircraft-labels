@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-PA-16",
+  "model_id": "PA021",
   "airline_code": "PA",
   "airline": "Pan Am",
   "airline_row": "Pan Am",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-ORD-PA-16-01",
+      "id": "PC-PA021-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/37979-Pan-American-B747.html",
       "price": 1.35
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.airhistory.net/photo/30964/N736PA",
   "photo_image_url": "",
   "photo_credit": "",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-05-26",
-  "ordered": true,
+  "arrived_excel": "2026-05-28",
+  "arrived": "2026-05-28",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "Panam",
     "row": "16"
@@ -67,13 +67,13 @@
     "shop": "Kleinanzeigen.de Zolldenstein",
     "price": 20.0,
     "shipping_allocated": 6.15,
-    "arrived": null,
-    "ordered_at": "2026-05-26",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-05-28",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

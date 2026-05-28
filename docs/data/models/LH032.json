@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-LH-28",
+  "model_id": "LH032",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-ORD-LH-28-01",
+      "id": "PC-LH032-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/22503-lufthansa-b727.html",
       "price": 1.35
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.planespotters.net/photo/796089/d-abci-lufthansa-boeing-727-230-adv",
   "photo_image_url": "https://cdn.plnspttrs.net/25754/d-abci-lufthansa-boeing-727-230-adv_PlanespottersNet_796089_c6633e8d28_o.jpg",
   "photo_credit": "Demo Borstell",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-05-26",
-  "ordered": true,
+  "arrived_excel": "2026-05-28",
+  "arrived": "2026-05-28",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "Lufthansa",
     "row": "28"
@@ -67,13 +67,13 @@
     "shop": "Kleinanzeigen.de Zolldenstein",
     "price": 15.0,
     "shipping_allocated": 4.62,
-    "arrived": null,
-    "ordered_at": "2026-05-26",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-05-28",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

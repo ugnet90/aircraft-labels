@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-BA-55",
+  "model_id": "BA010",
   "airline_code": "BA",
   "airline": "British Airways",
   "airline_row": "BEA",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-ORD-BA-55-01",
+      "id": "PC-BA010-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/8752-bea-dc-3.html",
       "price": 1.35
@@ -36,13 +36,13 @@
   "photo_source_url": "https://abpic.co.uk/pictures/view/1045011",
   "photo_image_url": "",
   "photo_credit": "",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-05-26",
-  "ordered": true,
+  "arrived_excel": "2026-05-28",
+  "arrived": "2026-05-28",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "BA",
     "row": "55"
@@ -67,13 +67,13 @@
     "shop": "Kleinanzeigen.de Zolldenstein",
     "price": 15.0,
     "shipping_allocated": 4.62,
-    "arrived": null,
-    "ordered_at": "2026-05-26",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-05-28",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""
