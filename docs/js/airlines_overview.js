@@ -154,7 +154,7 @@ function calcModelDisplayWidthCm(it){
 }
 
 function formatMoneyDE(n){
-  if(!Number.isFinite(n)) n = 0;
+  if(!Number.isFinite(n) || n === 0) return "";
 
   return `€\u00A0${n.toLocaleString("de-DE", {
     minimumFractionDigits: 2,
@@ -389,20 +389,26 @@ function averagePerModel(row, key){
   return Number.isFinite(value) ? value / models : 0;
 }
 
-function optionalColumnTooltip(key){
-  if(key === "space_cm"){
-    return "Berechnung: geschätzter projizierter Platzbedarf bei 45° Aufstellwinkel. Die Tragfläche wird näherungsweise bei 45% der Rumpflänge ab Nase angenommen.";
-  }
+function columnTooltip(key){
+  const wingPosPct = Math.round(WING_POSITION_FROM_NOSE * 100);
 
-  if(key === "price_total"){
-    return "Summe der Modellpreise der aktuell angezeigten Modelle.";
-  }
+  const tips = {
+    airline: "Konkrete Airline gemäß Datenfeld airline_row. Gezählt werden die aktuell gefilterten Modelle.",
+    group: "Airline-Gruppe gemäß Datenfeld airline. Dient zur Gruppierung verwandter Airlines.",
+    models: "Anzahl der aktuell berücksichtigten Modelle dieser Airline.",
+    types: "Anzahl unterschiedlicher Flugzeugtypen innerhalb der aktuell berücksichtigten Modelle dieser Airline.",
+    flown: "Anzahl der aktuell berücksichtigten Modelle dieser Airline, mit denen du mitgeflogen bist.",
 
-  if(key === "shipping_total"){
-    return "Summe der anteiligen Versandkosten der aktuell angezeigten Modelle.";
-  }
+    price_total: "Summe der Modellpreise der aktuell berücksichtigten Modelle dieser Airline.",
+    price_avg: "Durchschnittlicher Modellpreis: Summe Preis / Anzahl Modelle.",
 
-  return "";
+    shipping_total: "Summe der anteiligen Versandkosten der aktuell berücksichtigten Modelle dieser Airline.",
+    shipping_avg: "Durchschnittliche Versandkosten: Summe Versandkosten / Anzahl Modelle.",
+
+    space_cm: `Berechnung: geschätzter projizierter Platzbedarf bei ${DISPLAY_ANGLE_DEG}° Aufstellwinkel. Die Tragfläche wird näherungsweise bei ${wingPosPct}% der Rumpflänge ab Nase angenommen.`
+  };
+
+  return tips[key] || "";
 }
 
 function render(rows){
@@ -428,7 +434,7 @@ function render(rows){
     const col = OPTIONAL_COLUMNS.find(c => c.key === key);
     if(!col) return "";
   
-    const tip = optionalColumnTooltip(key);
+    const tip = columnTooltip(key);
   
     let html = `
       <th class="${thClass(key)} num" data-sort="${esc(key)}" title="${esc(tip)}">
@@ -438,7 +444,7 @@ function render(rows){
   
     if(key === "price_total"){
       html += `
-        <th class="${thClass("price_avg")} num" data-sort="price_avg" title="Durchschnittlicher Modellpreis: Summe Preis / Anzahl Modelle.">
+        <th class="${thClass("price_avg")} num" data-sort="price_avg" title="${esc(columnTooltip("price_avg"))}">
           Ø Preis ${mark("price_avg")}
         </th>
       `;
@@ -446,7 +452,7 @@ function render(rows){
   
     if(key === "shipping_total"){
       html += `
-        <th class="${thClass("shipping_avg")} num" data-sort="shipping_avg" title="Durchschnittliche Versandkosten: Summe Versandkosten / Anzahl Modelle.">
+        <th class="${thClass("shipping_avg")} num" data-sort="shipping_avg" title="${esc(columnTooltip("shipping_avg"))}">
           Ø Versand ${mark("shipping_avg")}
         </th>
       `;
@@ -459,11 +465,11 @@ function render(rows){
     <table>
       <thead>
         <tr>
-          <th class="${thClass("airline")}" data-sort="airline">Airline ${mark("airline")}</th>
-          <th class="${thClass("group")}" data-sort="group">Airline-Gruppe ${mark("group")}</th>
-          <th class="${thClass("models")} num" data-sort="models">Modelle ${mark("models")}</th>
-          <th class="${thClass("types")} num" data-sort="types">Typen ${mark("types")}</th>
-          <th class="${thClass("flown")} num" data-sort="flown">Mitgeflogen ${mark("flown")}</th>
+          <th class="${thClass("airline")}" data-sort="airline" title="${esc(columnTooltip("airline"))}">Airline ${mark("airline")}</th>
+          <th class="${thClass("group")}" data-sort="group" title="${esc(columnTooltip("group"))}">Airline-Gruppe ${mark("group")}</th>
+          <th class="${thClass("models")} num" data-sort="models" title="${esc(columnTooltip("models"))}">Modelle ${mark("models")}</th>
+          <th class="${thClass("types")} num" data-sort="types" title="${esc(columnTooltip("types"))}">Typen ${mark("types")}</th>
+          <th class="${thClass("flown")} num" data-sort="flown" title="${esc(columnTooltip("flown"))}">Mitgeflogen ${mark("flown")}</th>
           ${optionalHeaders}
         </tr>
       </thead>
@@ -503,7 +509,7 @@ function render(rows){
           ${
             row.flown > 0
               ? `<span class="badge badge-flown">${esc(row.flown)}</span>`
-              : `<span class="muted">0</span>`
+              : ""
           }
         </td>
         ${optionalCells}
