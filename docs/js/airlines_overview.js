@@ -1,3 +1,5 @@
+const DISPLAY_ANGLE_DEG = 45;
+
 const state = {
   all: [],
   filtered: []
@@ -109,13 +111,24 @@ function getScaleDenominator(scale){
   return Number.isFinite(n) && n > 0 ? n : null;
 }
 
-function calcModelLengthCm(it){
-  const lengthM = parseDecimalDE(it.length_m);
-  const denom = getScaleDenominator(it.scale);
+function calcModelDimensionCm(originalMeters, scale){
+  const m = parseDecimalDE(originalMeters);
+  const denom = getScaleDenominator(scale);
 
-  if(lengthM === null || !denom) return 0;
+  if(m === null || !denom) return 0;
 
-  return (lengthM * 100) / denom;
+  return (m * 100) / denom;
+}
+
+function calcModelDisplayWidthCm(it){
+  const lengthCm = calcModelDimensionCm(it.length_m, it.scale);
+  const wingspanCm = calcModelDimensionCm(it.wingspan_m, it.scale);
+
+  if(!lengthCm && !wingspanCm) return 0;
+
+  const angleRad = DISPLAY_ANGLE_DEG * Math.PI / 180;
+
+  return (lengthCm * Math.cos(angleRad)) + (wingspanCm * Math.sin(angleRad));
 }
 
 function formatMoneyDE(n){
@@ -191,7 +204,7 @@ function buildAirlineRows(items, filters){
 
       row.priceTotal += parseMoneyValue(it.price);
       row.shippingTotal += parseMoneyValue(it.shipping_allocated);
-      row.spaceCm += calcModelLengthCm(it);
+      row.spaceCm += calcModelDisplayWidthCm(it);
 
       if(!row.group && group){
         row.group = group;
@@ -354,6 +367,22 @@ function averagePerModel(row, key){
   return Number.isFinite(value) ? value / models : 0;
 }
 
+function optionalColumnTooltip(key){
+  if(key === "space_cm"){
+    return "Berechnung: projizierter Platzbedarf bei 45° Aufstellwinkel aus Modell-Länge und Modell-Spannweite.";
+  }
+
+  if(key === "price_total"){
+    return "Summe der Modellpreise der aktuell angezeigten Modelle.";
+  }
+
+  if(key === "shipping_total"){
+    return "Summe der anteiligen Versandkosten der aktuell angezeigten Modelle.";
+  }
+
+  return "";
+}
+
 function render(rows){
   document.getElementById("count").textContent =
     rows.length === 1 ? "1 Airline" : `${rows.length} Airlines`;
@@ -377,14 +406,28 @@ function render(rows){
     const col = OPTIONAL_COLUMNS.find(c => c.key === key);
     if(!col) return "";
   
-    let html = `<th class="${thClass(key)} num" data-sort="${esc(key)}">${esc(col.label)} ${mark(key)}</th>`;
+    const tip = optionalColumnTooltip(key);
+  
+    let html = `
+      <th class="${thClass(key)} num" data-sort="${esc(key)}" title="${esc(tip)}">
+        ${esc(col.label)} ${mark(key)}
+      </th>
+    `;
   
     if(key === "price_total"){
-      html += `<th class="${thClass("price_avg")} num" data-sort="price_avg">Ø Preis ${mark("price_avg")}</th>`;
+      html += `
+        <th class="${thClass("price_avg")} num" data-sort="price_avg" title="Durchschnittlicher Modellpreis: Summe Preis / Anzahl Modelle.">
+          Ø Preis ${mark("price_avg")}
+        </th>
+      `;
     }
-    
+  
     if(key === "shipping_total"){
-      html += `<th class="${thClass("shipping_avg")} num" data-sort="shipping_avg">Ø Versand ${mark("shipping_avg")}</th>`;
+      html += `
+        <th class="${thClass("shipping_avg")} num" data-sort="shipping_avg" title="Durchschnittliche Versandkosten: Summe Versandkosten / Anzahl Modelle.">
+          Ø Versand ${mark("shipping_avg")}
+        </th>
+      `;
     }
   
     return html;
