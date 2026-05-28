@@ -1,5 +1,3 @@
-const DISPLAY_ANGLE_DEG = 45;
-
 const state = {
   all: [],
   filtered: []
@@ -111,6 +109,8 @@ function getScaleDenominator(scale){
   return Number.isFinite(n) && n > 0 ? n : null;
 }
 
+const DISPLAY_ANGLE_DEG = 45;
+
 function calcModelDimensionCm(originalMeters, scale){
   const m = parseDecimalDE(originalMeters);
   const denom = getScaleDenominator(scale);
@@ -120,6 +120,8 @@ function calcModelDimensionCm(originalMeters, scale){
   return (m * 100) / denom;
 }
 
+const WING_POSITION_FROM_NOSE = 0.45;
+
 function calcModelDisplayWidthCm(it){
   const lengthCm = calcModelDimensionCm(it.length_m, it.scale);
   const wingspanCm = calcModelDimensionCm(it.wingspan_m, it.scale);
@@ -128,7 +130,27 @@ function calcModelDisplayWidthCm(it){
 
   const angleRad = DISPLAY_ANGLE_DEG * Math.PI / 180;
 
-  return (lengthCm * Math.cos(angleRad)) + (wingspanCm * Math.sin(angleRad));
+  const c = Math.cos(angleRad);
+  const s = Math.sin(angleRad);
+
+  // Projektion des Rumpfs auf die Vitrinenbreite:
+  // Nase = 0, Heck = lengthCm
+  const fuselageMin = 0;
+  const fuselageMax = lengthCm * c;
+
+  // Tragflächen liegen nicht über die ganze Länge,
+  // sondern ungefähr bei 45 % der Rumpflänge ab Nase.
+  const wingX = lengthCm * WING_POSITION_FROM_NOSE * c;
+  const halfWing = (wingspanCm / 2) * s;
+
+  const wingMin = wingX - halfWing;
+  const wingMax = wingX + halfWing;
+
+  // Effektiver Platzbedarf = äußerste linke bis äußerste rechte Projektion
+  const minX = Math.min(fuselageMin, wingMin);
+  const maxX = Math.max(fuselageMax, wingMax);
+
+  return Math.max(0, maxX - minX);
 }
 
 function formatMoneyDE(n){
@@ -369,7 +391,7 @@ function averagePerModel(row, key){
 
 function optionalColumnTooltip(key){
   if(key === "space_cm"){
-    return "Berechnung: projizierter Platzbedarf bei 45° Aufstellwinkel aus Modell-Länge und Modell-Spannweite.";
+    return "Berechnung: geschätzter projizierter Platzbedarf bei 45° Aufstellwinkel. Die Tragfläche wird näherungsweise bei 45% der Rumpflänge ab Nase angenommen.";
   }
 
   if(key === "price_total"){
