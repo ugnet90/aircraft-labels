@@ -179,7 +179,7 @@ function matchesModelFlown(it, filters){
   }
 
   if(filters.flown === "false"){
-    return it.flown === false;
+    return it.flown !== true;
   }
 
   return true;
