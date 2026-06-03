@@ -34,21 +34,6 @@ body{ --maxw: 1100px; }
 .tbl th{ font-size:12px; color:#666; text-align:left; white-space:nowrap; }
 .tbl tr:hover td{ background:#fafafa; }
 
-.col-type{
-  width: auto;         /* bekommt den meisten Platz */
-}
-
-.col-wing{
-  width: 70px;
-  text-align: center;
-}
-
-.col-num{
-  width: 70px;
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
 .col-status{
   width: 140px;               /* genug Platz für Toggle + Badge */
   display:flex;
@@ -87,12 +72,6 @@ body{ --maxw: 1100px; }
 
 .typeName{ font-weight:700; }
 
-.rowDetail td{
-  background:#fff;
-  border-bottom: 1px solid #eee;
-  padding-top: 6px;
-  padding-bottom: 12px;
-}
 
 /* =========================
    Detailansicht (NEU, nur Tabelle)
@@ -102,6 +81,11 @@ body{ --maxw: 1100px; }
   background:#fff;
   border-bottom: 1px solid #eee;
   padding: 10px 12px;
+}
+.rowDetail > td{
+  background:#fff;
+  border-bottom:1px solid #eee;
+  padding:10px 12px;
 }
 
 /* Detailtabelle: 3 Spalten */
@@ -286,36 +270,54 @@ a.typeLink:hover{
   text-align: center;
 }
 
-/* === Layout stabilisieren: Controls + Tabelle gleiche Breite === */
+/* === Layout stabilisieren: Controls + Tabelle === */
 .pageWrap{
-  display: inline-block;      /* shrink-to-fit */
-  max-width: 100%;            /* aber nie über Viewport */
+  display:block;
+  max-width:100%;
 }
 
 .pageWrap .card{
-  width: 100%;
+  width:100%;
 }
 
-/* Haupttabelle soll NICHT springen beim Auf-/Zuklappen */
-.tbl{
-  width: max-content;         /* passt sich Inhalt an */
-  max-width: 100%;
-  table-layout: fixed;        /* verhindert Reflow durch Detailzeilen */
-}
-
-/* Damit die Tabelle nicht überläuft, wenn Typ sehr lang ist */
-.col-type{ width: 520px; }    /* ggf. 460–620 nach Geschmack */
-.col-wing{ width: 70px; text-align:center; }
-.col-num{ width: 80px; text-align:right; font-variant-numeric: tabular-nums; }
-
-/* Content soll wie Tabelle “shrink-to-fit”, aber responsiv bleiben */
+/* Content darf horizontal scrollen, wenn optionale Spalten eingeblendet sind */
 #content{
-  width: max-content;
-  max-width: 100%;
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
 }
 
-/* Falls du hover/overflow willst: */
-#content{ overflow-x: auto; }
+/* Haupttabelle darf bei optionalen Spalten breiter werden */
+.tbl{
+  width:max-content;
+  min-width:100%;
+  max-width:none;
+  table-layout:fixed;
+}
+
+.tbl th,
+.tbl td{
+  box-sizing:border-box;
+}
+
+/* stabile Hauptspalten */
+.tbl .col-type{
+  width:380px;
+  min-width:380px;
+}
+
+.tbl .col-wing{
+  width:70px;
+  min-width:70px;
+  text-align:center;
+}
+
+.tbl .col-num{
+  width:80px;
+  min-width:80px;
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
 
 /* Status-Checkboxgruppe als eigenes Control (shrink-to-fit) */
 .statusBox{
@@ -362,195 +364,59 @@ a.typeLink:hover{
 }
 .legendTxt{ font-size:12px; color:#666; }
 
-/* === Optionale Spalten / Overlay analog models_overview === */
+/* === Optionale Spalten in types_overview === */
 
-.columnLauncher{
-  display:flex;
-  align-items:center;
-  margin-top:10px;
-}
-
-.columnOpenBtn{
-  border:1px solid rgba(0,0,0,.16);
-  background:#fff;
-  border-radius:10px;
-  padding:8px 12px;
-  font-size:14px;
-  cursor:pointer;
-}
-
-.columnOpenBtn:hover{
-  background:#f5f6f8;
-}
-
-.columnPanelBackdrop{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.22);
-  z-index:1200;
-}
-
-.columnPanel{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  width:min(420px, calc(100vw - 24px));
-  max-height:calc(100vh - 40px);
-  overflow:auto;
-  background:#fff;
-  border:1px solid rgba(0,0,0,.14);
-  border-radius:14px;
-  box-shadow:0 18px 50px rgba(0,0,0,.18);
-  padding:14px;
-  z-index:1201;
-}
-
-.columnPanelHead{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  margin-bottom:10px;
-  cursor:move;
-  user-select:none;
-}
-
-.columnPanelTitle{
-  font-size:15px;
-  font-weight:700;
-}
-
-.columnCloseBtn{
-  border:1px solid rgba(0,0,0,.14);
-  background:#fff;
-  border-radius:10px;
-  width:34px;
-  height:34px;
-  font-size:22px;
-  line-height:1;
-  cursor:pointer;
-}
-
-.columnCloseBtn:hover{
-  background:#f5f6f8;
-}
-
-.columnActions{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-bottom:12px;
-}
-
-.columnActions button{
-  border:1px solid rgba(0,0,0,.14);
-  background:#fff;
-  border-radius:8px;
-  padding:5px 9px;
-  font-size:12px;
-  cursor:pointer;
-}
-
-.columnActions button:hover{
-  background:#f4f6f8;
-}
-
-.columnRow{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:8px 16px;
-}
-
-.columnRow .chk{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:14px;
-  white-space:nowrap;
-}
-
-.columnRow .chk input{
-  margin:0;
-}
-
-.columnPanel.is-dragging{
-  opacity:.96;
-}
-
-body.noscroll{
-  overflow:hidden;
-}
-
-@media (max-width:700px){
-  .columnLauncher{
-    display:none;
-  }
-
-  .columnPanel{
-    top:50%;
-    left:50%;
-    right:auto;
-    bottom:auto;
-    transform:translate(-50%, -50%);
-    width:calc(100vw - 24px);
-    max-height:calc(100vh - 40px);
-  }
-
-  .columnRow{
-    grid-template-columns:1fr;
-  }
-}
-
-/* Maßdarstellung */
-.measureModeBox{
-  margin:0 0 12px;
-  padding:8px 10px;
-  border:1px solid rgba(0,0,0,.10);
-  border-radius:10px;
-  background:#fafafa;
-}
-
-.measureModeTitle{
-  font-size:12px;
-  color:#666;
-  margin-bottom:6px;
-}
-
-.measureModeBtns{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-}
-
-.measureModeBtns button{
-  border:1px solid rgba(0,0,0,.14);
-  background:#fff;
-  border-radius:8px;
-  padding:5px 10px;
-  font-size:12px;
-  cursor:pointer;
-}
-
-.measureModeBtns button:hover{
-  background:#f4f6f8;
-}
-
-.measureModeBtns button.is-on{
-  background:#eef3ff;
-  border-color:#b7c6f4;
-  color:#0b4da2;
-  font-weight:700;
-}
-
-/* optionale Tabellenspalten */
 .tbl th.col-opt,
 .tbl td.col-opt{
   white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 .tbl th.col-opt-num,
 .tbl td.col-opt-num{
   text-align:right;
   font-variant-numeric:tabular-nums;
+}
+
+/* Standardbreiten optionale Spalten */
+.tbl .col-opt{
+  width:120px;
+  min-width:120px;
+}
+
+/* numerische optionale Spalten */
+.tbl .col-opt-num{
+  width:90px;
+  min-width:90px;
+}
+
+/* breitere Textspalten */
+.tbl .col-opt-market_segment,
+.tbl .col-opt-aircraft_kind,
+.tbl .col-opt-aircraft_status,
+.tbl .col-opt-propulsion,
+.tbl .col-opt-range_class{
+  width:130px;
+  min-width:130px;
+}
+
+/* schmalere technische Spalten */
+.tbl .col-opt-role,
+.tbl .col-opt-fuselage,
+.tbl .col-opt-first_flight,
+.tbl .col-opt-engines,
+.tbl .col-opt-passengers,
+.tbl .col-opt-length_m,
+.tbl .col-opt-wingspan_m,
+.tbl .col-opt-height_m{
+  width:90px;
+  min-width:90px;
+}
+
+/* Detailtabelle innerhalb aufgeklappter Zeile */
+.rowDetail .detailTbl{
+  width:100%;
+  min-width:760px;
+  table-layout:auto;
 }
