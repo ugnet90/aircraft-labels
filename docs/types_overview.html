@@ -38,7 +38,49 @@
           <label class="chk"><input type="checkbox" id="fOrdered" checked> bestellt</label>
         </div>
       </div>
-    
+
+            <div class="columnLauncher">
+        <button type="button" id="openColumns" class="columnOpenBtn">Spalten</button>
+      </div>
+
+      <div id="columnPanelBackdrop" class="columnPanelBackdrop" hidden></div>
+
+      <div id="columnPanel" class="columnPanel" hidden>
+        <div class="columnPanelHead">
+          <div class="columnPanelTitle">Optionale Spalten</div>
+          <button type="button" id="closeColumns" class="columnCloseBtn" aria-label="Schließen">×</button>
+        </div>
+
+        <div class="columnActions">
+          <button type="button" id="selectAllColumns">Alle auswählen</button>
+          <button type="button" id="clearAllColumns">Alle abwählen</button>
+        </div>
+
+        <div id="measureModeBox" class="measureModeBox" hidden>
+          <div class="measureModeTitle">Maßdarstellung</div>
+          <div class="measureModeBtns">
+            <button type="button" id="measureOriginal">Original</button>
+            <button type="button" id="measureScale400">1:400</button>
+          </div>
+        </div>
+
+        <div class="columnRow">
+          <label class="chk"><input type="checkbox" class="colToggle" value="role"> Rolle</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="fuselage"> Rumpf</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="market_segment"> Segment</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="aircraft_kind"> Flugzeugart</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="aircraft_status"> Status</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="first_flight"> Erstflug</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="propulsion"> Antrieb</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="engines"> Triebwerke</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="range_class"> Reichweite</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="passengers"> Passagiere</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="length_m"> Länge</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="wingspan_m"> Spannweite</label>
+          <label class="chk"><input type="checkbox" class="colToggle" value="height_m"> Höhe</label>
+        </div>
+      </div>
+      
       <div class="muted" id="count"></div>
     </div>
   </div>
