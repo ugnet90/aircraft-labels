@@ -280,21 +280,34 @@ a.typeLink:hover{
   width:100%;
 }
 
-/* Content ist der horizontale Scroll-Container */
+/* Content NICHT als interner Scroll-Container, analog models_overview */
 #content{
   display:block;
-  width:100%;
-  max-width:100%;
-  overflow-x:auto;
-  overflow-y:visible;
+  width:max-content;
+  max-width:none;
+  overflow:visible;
 }
 
-/* Tabelle darf breiter als der sichtbare Bereich werden */
+/* Tabelle darf in die Breite wachsen */
 .tbl{
   width:max-content;
   min-width:100%;
   max-width:none;
   table-layout:fixed;
+}
+
+@media (max-width:700px){
+  #content{
+    width:100%;
+    max-width:100%;
+    overflow-x:auto;
+    overflow-y:visible;
+  }
+
+  .tbl{
+    width:max-content;
+    min-width:100%;
+  }
 }
 
 .tbl th,
