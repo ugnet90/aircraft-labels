@@ -3,7 +3,7 @@ body{ --maxw: 1100px; }
 /* Controls-Layout: 2 Zeilen */
 .bar{
   display:grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr; /* Suche, Hersteller, Wingtip, Sort */
+  grid-template-columns: 1.6fr 1fr 1fr; /* Suche, Hersteller, Wingtip */
   gap: 10px;
   align-items: center;
 }
