@@ -659,8 +659,15 @@ body.noscroll{
   min-width:90px;
 }
 
+/* Detailtabelle bewusst schmäler halten */
+.detailWrap{
+  width:min(900px, 100%);
+  max-width:900px;
+  margin:8px 0 10px 14px;
+}
+
 .rowDetail .detailTbl{
   width:100%;
-  min-width:760px;
+  min-width:0;
   table-layout:auto;
 }
