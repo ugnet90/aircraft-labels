@@ -418,11 +418,13 @@ function render(items){
   
     if(isOpen && canOpen){
       const totalCols = 4 + visibleOptionalCols.length;
-
+    
       html += `
         <tr class="rowDetail">
           <td colspan="${esc(totalCols)}">
-            ${renderDetail(x)}
+            <div class="detailWrap">
+              ${renderDetail(x)}
+            </div>
           </td>
         </tr>
       `;
