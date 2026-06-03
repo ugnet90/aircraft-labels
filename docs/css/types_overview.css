@@ -671,3 +671,24 @@ body.noscroll{
   min-width:0;
   table-layout:auto;
 }
+
+/* Sortierung */
+th.thSort{
+  cursor:pointer;
+  user-select:none;
+}
+
+th.thSort.active{
+  color:#111;
+  font-weight:700;
+}
+
+.sortMark{
+  opacity:.35;
+  margin-left:4px;
+  font-size:.9em;
+}
+
+.sortMark.active{
+  opacity:1;
+}
