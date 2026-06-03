@@ -280,14 +280,16 @@ a.typeLink:hover{
   width:100%;
 }
 
-/* Content darf horizontal scrollen, wenn optionale Spalten eingeblendet sind */
+/* Content ist der horizontale Scroll-Container */
 #content{
+  display:block;
   width:100%;
   max-width:100%;
   overflow-x:auto;
+  overflow-y:visible;
 }
 
-/* Haupttabelle darf bei optionalen Spalten breiter werden */
+/* Tabelle darf breiter als der sichtbare Bereich werden */
 .tbl{
   width:max-content;
   min-width:100%;
@@ -401,4 +403,251 @@ a.typeLink:hover{
   .columnPanel .columnRow{
     grid-template-columns:1fr;
   }
+}
+
+/* === Optionale Spalten / Overlay === */
+
+.columnLauncher{
+  display:flex;
+  align-items:center;
+  margin-top:10px;
+}
+
+.columnOpenBtn{
+  border:1px solid rgba(0,0,0,.16);
+  background:#fff;
+  border-radius:10px;
+  padding:8px 12px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.columnOpenBtn:hover{
+  background:#f5f6f8;
+}
+
+.columnPanelBackdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.22);
+  z-index:1200;
+}
+
+.columnPanel{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:min(420px, calc(100vw - 24px));
+  max-height:calc(100vh - 40px);
+  overflow:auto;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.14);
+  border-radius:14px;
+  box-shadow:0 18px 50px rgba(0,0,0,.18);
+  padding:14px;
+  z-index:1201;
+}
+
+.columnPanelHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:10px;
+  cursor:move;
+  user-select:none;
+}
+
+.columnPanelTitle{
+  font-size:15px;
+  font-weight:700;
+}
+
+.columnCloseBtn{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:10px;
+  width:34px;
+  height:34px;
+  font-size:22px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.columnCloseBtn:hover{
+  background:#f5f6f8;
+}
+
+.columnActions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+
+.columnActions button{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:8px;
+  padding:5px 9px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.columnActions button:hover{
+  background:#f4f6f8;
+}
+
+.columnPanel .columnRow{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:8px 16px;
+  justify-items:start;
+}
+
+.columnPanel .columnChk{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:6px;
+  font-size:14px;
+  white-space:nowrap;
+  width:auto;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+
+.columnPanel .columnChk input{
+  margin:0;
+  width:14px;
+  height:14px;
+  flex:0 0 auto;
+}
+
+.columnPanel .columnChk span{
+  display:inline-block;
+  text-align:left;
+}
+
+.columnPanel.is-dragging{
+  opacity:.96;
+}
+
+body.noscroll{
+  overflow:hidden;
+}
+
+@media (max-width:700px){
+  .columnLauncher{
+    display:none;
+  }
+
+  .columnPanel{
+    top:50%;
+    left:50%;
+    right:auto;
+    bottom:auto;
+    transform:translate(-50%, -50%);
+    width:calc(100vw - 24px);
+    max-height:calc(100vh - 40px);
+  }
+
+  .columnPanel .columnRow{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Maßdarstellung */
+.measureModeBox{
+  margin:0 0 12px;
+  padding:8px 10px;
+  border:1px solid rgba(0,0,0,.10);
+  border-radius:10px;
+  background:#fafafa;
+}
+
+.measureModeTitle{
+  font-size:12px;
+  color:#666;
+  margin-bottom:6px;
+}
+
+.measureModeBtns{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.measureModeBtns button{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:8px;
+  padding:5px 10px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.measureModeBtns button:hover{
+  background:#f4f6f8;
+}
+
+.measureModeBtns button.is-on{
+  background:#eef3ff;
+  border-color:#b7c6f4;
+  color:#0b4da2;
+  font-weight:700;
+}
+
+/* === Optionale Tabellenspalten === */
+
+.tbl th.col-opt,
+.tbl td.col-opt{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.tbl th.col-opt-num,
+.tbl td.col-opt-num{
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+
+.tbl .col-opt{
+  width:120px;
+  min-width:120px;
+}
+
+.tbl .col-opt-num{
+  width:90px;
+  min-width:90px;
+}
+
+.tbl .col-opt-market_segment,
+.tbl .col-opt-aircraft_kind,
+.tbl .col-opt-aircraft_status,
+.tbl .col-opt-propulsion,
+.tbl .col-opt-range_class{
+  width:130px;
+  min-width:130px;
+}
+
+.tbl .col-opt-role,
+.tbl .col-opt-fuselage,
+.tbl .col-opt-first_flight,
+.tbl .col-opt-engines,
+.tbl .col-opt-passengers,
+.tbl .col-opt-length_m,
+.tbl .col-opt-wingspan_m,
+.tbl .col-opt-height_m{
+  width:90px;
+  min-width:90px;
+}
+
+.rowDetail .detailTbl{
+  width:100%;
+  min-width:760px;
+  table-layout:auto;
 }
