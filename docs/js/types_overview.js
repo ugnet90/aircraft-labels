@@ -7,6 +7,46 @@ let data = null;
 let all = [];
 let expanded = new Set(); // aircraft_id
 
+const OPTIONAL_COLUMNS = [
+  { key: "role", label: "Rolle" },
+  { key: "fuselage", label: "Rumpf" },
+  { key: "market_segment", label: "Segment" },
+  { key: "aircraft_kind", label: "Flugzeugart" },
+  { key: "aircraft_status", label: "Status" },
+  { key: "first_flight", label: "Erstflug" },
+  { key: "propulsion", label: "Antrieb" },
+  { key: "engines", label: "Triebwerke" },
+  { key: "range_class", label: "Reichweite" },
+  { key: "passengers", label: "Passagiere" },
+  { key: "length_m", label: "Länge" },
+  { key: "wingspan_m", label: "Spannweite" },
+  { key: "height_m", label: "Höhe" }
+];
+
+const MEASURE_COLUMNS = new Set(["length_m", "wingspan_m", "height_m"]);
+
+let measureMode = localStorage.getItem("typesOverviewMeasureMode") || "original";
+if(measureMode !== "original" && measureMode !== "scale400"){
+  measureMode = "original";
+}
+
+function getVisibleOptionalColumns(){
+  try{
+    const raw = localStorage.getItem("typesOverviewOptionalColumns");
+    const arr = JSON.parse(raw || "[]");
+    if(!Array.isArray(arr)) return [];
+
+    const allowed = new Set(OPTIONAL_COLUMNS.map(c => c.key));
+    return arr.filter(x => allowed.has(x));
+  }catch(e){
+    return [];
+  }
+}
+
+function setVisibleOptionalColumns(keys){
+  localStorage.setItem("typesOverviewOptionalColumns", JSON.stringify(keys || []));
+}
+
 function buildSelect(id, firstLabel, options){
   const sel = document.getElementById(id);
   sel.innerHTML = "";
@@ -133,11 +173,182 @@ function wingBadge(v){
   return v === true ? `<span class="badge">WL/SL</span>` : "";
 }
 
+function getTypeField(x, key){
+  const aliases = {
+    role: ["role", "Role"],
+    fuselage: ["fuselage", "rumpf", "Rumpf"],
+    market_segment: ["market_segment", "MarketSegment"],
+    aircraft_kind: ["aircraft_kind", "Flugzeugtyp"],
+    aircraft_status: ["aircraft_status", "Status"],
+    first_flight: ["first_flight", "Erstflug"],
+    propulsion: ["propulsion", "Antrieb"],
+    engines: ["engines", "Triebwerke"],
+    range_class: ["range_class", "Reichweite"],
+    passengers: ["passengers", "Passengers"],
+    length_m: ["length_m", "Length"],
+    wingspan_m: ["wingspan_m", "Wingspan"],
+    height_m: ["height_m", "Height"]
+  };
+
+  const keys = aliases[key] || [key];
+
+  for(const k of keys){
+    const v = x?.[k];
+    if(v !== undefined && v !== null && String(v).trim() !== ""){
+      return v;
+    }
+  }
+
+  return "";
+}
+
+function isRightAlignedOptionalColumn(key){
+  return ["engines", "passengers", "length_m", "wingspan_m", "height_m"].includes(key);
+}
+
+function hasVisibleMeasureColumn(keys){
+  return keys.some(key => MEASURE_COLUMNS.has(key));
+}
+
+function parseDecimalDE(v){
+  if(v === null || v === undefined || v === "") return null;
+
+  const s = String(v).trim().replace(",", ".");
+  const n = Number(s);
+
+  return Number.isFinite(n) ? n : null;
+}
+
+function formatNumberDE(n, digits){
+  if(!Number.isFinite(n)) return "";
+
+  return n.toLocaleString("de-DE", {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits
+  });
+}
+
+function formatMeasureValue(x, key){
+  const originalM = parseDecimalDE(getTypeField(x, key));
+  if(originalM === null) return "";
+
+  if(measureMode === "original"){
+    return formatNumberDE(originalM, 2);
+  }
+
+  // Typen-Übersicht: simuliertes Modellmaß 1:400 in cm
+  const cm = (originalM * 100) / 400;
+  return formatNumberDE(cm, 1);
+}
+
+function getMeasureColumnLabel(label, key){
+  if(!MEASURE_COLUMNS.has(key)) return label;
+
+  if(measureMode === "original"){
+    return `${label} (m)`;
+  }
+
+  return `${label} (cm)`;
+}
+
+function updateMeasureModeUI(){
+  const visibleOptionalCols = getVisibleOptionalColumns();
+  const show = hasVisibleMeasureColumn(visibleOptionalCols);
+
+  const box = document.getElementById("measureModeBox");
+  if(box) box.hidden = !show;
+
+  document.getElementById("measureOriginal")?.classList.toggle("is-on", measureMode === "original");
+  document.getElementById("measureScale400")?.classList.toggle("is-on", measureMode === "scale400");
+}
+
+function makeColumnPanelDraggable(){
+  const panel = document.getElementById("columnPanel");
+  const handle = panel?.querySelector(".columnPanelHead");
+
+  if(!panel || !handle) return;
+
+  let dragging = false;
+  let startX = 0;
+  let startY = 0;
+  let startLeft = 0;
+  let startTop = 0;
+
+  function clamp(value, min, max){
+    return Math.max(min, Math.min(max, value));
+  }
+
+  handle.addEventListener("pointerdown", (ev) => {
+    if(ev.target.closest("button")) return;
+
+    dragging = true;
+    panel.classList.add("is-dragging");
+
+    const rect = panel.getBoundingClientRect();
+
+    startX = ev.clientX;
+    startY = ev.clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+
+    panel.style.left = `${rect.left}px`;
+    panel.style.top = `${rect.top}px`;
+    panel.style.right = "auto";
+    panel.style.bottom = "auto";
+    panel.style.transform = "none";
+
+    handle.setPointerCapture(ev.pointerId);
+  });
+
+  handle.addEventListener("pointermove", (ev) => {
+    if(!dragging) return;
+
+    const dx = ev.clientX - startX;
+    const dy = ev.clientY - startY;
+
+    const rect = panel.getBoundingClientRect();
+    const maxLeft = window.innerWidth - rect.width - 8;
+    const maxTop = window.innerHeight - rect.height - 8;
+
+    const newLeft = clamp(startLeft + dx, 8, maxLeft);
+    const newTop = clamp(startTop + dy, 8, maxTop);
+
+    panel.style.left = `${newLeft}px`;
+    panel.style.top = `${newTop}px`;
+  });
+
+  handle.addEventListener("pointerup", (ev) => {
+    dragging = false;
+    panel.classList.remove("is-dragging");
+
+    try{
+      handle.releasePointerCapture(ev.pointerId);
+    }catch(e){}
+  });
+
+  handle.addEventListener("pointercancel", () => {
+    dragging = false;
+    panel.classList.remove("is-dragging");
+  });
+}
+
 function render(items){
   if(items.length === 0){
     document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
     return;
   }
+
+  const visibleOptionalCols = getVisibleOptionalColumns();
+
+  const optionalHeaders = visibleOptionalCols.map(key => {
+    const col = OPTIONAL_COLUMNS.find(c => c.key === key);
+    if(!col) return "";
+
+    const cls = isRightAlignedOptionalColumn(key) ? "col-opt col-opt-num" : "col-opt";
+    const label = getMeasureColumnLabel(col.label, key);
+
+    return `<th class="${cls}">${esc(label)}</th>`;
+  }).join("");  
 
   let html = `
     <table class="tbl">
@@ -147,6 +358,7 @@ function render(items){
           <th class="col-wing">WL</th>
           <th class="col-num">best.</th>
           <th class="col-num">vorh.</th>
+          ${optionalHeaders}
         </tr>
       </thead>
       <tbody>
@@ -161,7 +373,17 @@ function render(items){
            ${isOpen ? "▾" : "▸"}
          </button>`
       : ""; // kein Platzhalter mehr!
-  
+
+    const optionalCells = visibleOptionalCols.map(key => {
+      const cls = isRightAlignedOptionalColumn(key) ? "col-opt col-opt-num mono" : "col-opt";
+
+      const value = MEASURE_COLUMNS.has(key)
+        ? formatMeasureValue(x, key)
+        : getTypeField(x, key);
+
+      return `<td class="${cls}">${esc(value)}</td>`;
+    }).join("");
+    
     html += `
       <tr class="rowMain st-${esc(x.status || "")}" data-aid="${esc(x.aircraft_id)}">
  
@@ -185,17 +407,18 @@ function render(items){
         <td class="col-wing">${wingBadge(x.has_wingtip === true)}</td>
         <td class="col-num mono">${(x.ordered_count > 0) ? esc(x.ordered_count) : ""}</td>
         <td class="col-num mono">${(x.owned_count > 0) ? esc(x.owned_count) : ""}</td>
+        ${optionalCells}        
       </tr>
     `;
   
     if(isOpen && canOpen){
+      const totalCols = 4 + visibleOptionalCols.length;
+
       html += `
         <tr class="rowDetail">
-          <td colspan="3">
+          <td colspan="${esc(totalCols)}">
             ${renderDetail(x)}
           </td>
-          <td></td>
-          <td></td>
         </tr>
       `;
     }
@@ -365,6 +588,96 @@ async function main(){
   document.getElementById("fOwned").addEventListener("change", apply);
   document.getElementById("fOrdered").addEventListener("change", apply);
 
+  // Optionale Spalten initialisieren
+  const visibleOptionalCols = new Set(getVisibleOptionalColumns());
+
+  document.querySelectorAll(".colToggle").forEach(cb => {
+    cb.checked = visibleOptionalCols.has(cb.value);
+
+    cb.addEventListener("change", () => {
+      const keys = Array.from(document.querySelectorAll(".colToggle"))
+        .filter(x => x.checked)
+        .map(x => x.value);
+
+      setVisibleOptionalColumns(keys);
+      updateMeasureModeUI();
+      apply();
+    });
+  });
+
+  document.getElementById("selectAllColumns")?.addEventListener("click", () => {
+    const keys = OPTIONAL_COLUMNS.map(c => c.key);
+
+    document.querySelectorAll(".colToggle").forEach(cb => {
+      cb.checked = true;
+    });
+
+    setVisibleOptionalColumns(keys);
+    updateMeasureModeUI();
+    apply();
+  });
+
+  document.getElementById("clearAllColumns")?.addEventListener("click", () => {
+    document.querySelectorAll(".colToggle").forEach(cb => {
+      cb.checked = false;
+    });
+
+    setVisibleOptionalColumns([]);
+    updateMeasureModeUI();
+    apply();
+  });
+
+  document.getElementById("measureOriginal")?.addEventListener("click", () => {
+    measureMode = "original";
+    localStorage.setItem("typesOverviewMeasureMode", measureMode);
+    updateMeasureModeUI();
+    apply();
+  });
+
+  document.getElementById("measureScale400")?.addEventListener("click", () => {
+    measureMode = "scale400";
+    localStorage.setItem("typesOverviewMeasureMode", measureMode);
+    updateMeasureModeUI();
+    apply();
+  });
+
+  updateMeasureModeUI();
+
+  const columnPanel = document.getElementById("columnPanel");
+  const columnBackdrop = document.getElementById("columnPanelBackdrop");
+
+  function openColumnPanel(){
+    if(columnPanel){
+      columnPanel.hidden = false;
+      columnPanel.style.left = "";
+      columnPanel.style.top = "";
+      columnPanel.style.right = "";
+      columnPanel.style.bottom = "";
+      columnPanel.style.transform = "";
+    }
+
+    if(columnBackdrop) columnBackdrop.hidden = false;
+    document.body.classList.add("noscroll");
+  }
+
+  function closeColumnPanel(){
+    if(columnPanel) columnPanel.hidden = true;
+    if(columnBackdrop) columnBackdrop.hidden = true;
+    document.body.classList.remove("noscroll");
+  }
+
+  document.getElementById("openColumns")?.addEventListener("click", openColumnPanel);
+  document.getElementById("closeColumns")?.addEventListener("click", closeColumnPanel);
+  columnBackdrop?.addEventListener("click", closeColumnPanel);
+
+  makeColumnPanelDraggable();
+
+  document.addEventListener("keydown", (ev) => {
+    if(ev.key === "Escape"){
+      closeColumnPanel();
+    }
+  });
+  
   apply();
 }
 
