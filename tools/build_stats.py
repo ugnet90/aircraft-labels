@@ -202,6 +202,21 @@ def main():
             "manufacturer": manu,
             "wingtip": wingtip,
             "has_wingtip": (wingtip != "" and wingtip != "NONE"),
+
+            # optionale technische Felder für types_overview
+            "role": norm(r.get("Role")),
+            "fuselage": norm(r.get("Rumpf")),
+            "market_segment": norm(r.get("MarketSegment")),
+            "aircraft_kind": norm(r.get("Flugzeugtyp")),
+            "aircraft_status": norm(r.get("Status")),
+            "first_flight": norm(r.get("Erstflug")),
+            "propulsion": norm(r.get("Antrieb")),
+            "engines": norm(r.get("Triebwerke")),
+            "range_class": norm(r.get("Reichweite")),
+            "passengers": norm(r.get("Passengers")),
+            "length_m": norm(r.get("Length")),
+            "wingspan_m": norm(r.get("Wingspan")),
+            "height_m": norm(r.get("Height")),
         }
         if manu:
             manufacturers_set.add(manu)
@@ -296,6 +311,21 @@ def main():
                 "ordered_count": ordered,
                 "total_count": total,
                 "airline_group_counts": group_list,
+
+                # optionale technische Felder für types_overview
+                "role": base.get("role", ""),
+                "fuselage": base.get("fuselage", ""),
+                "market_segment": base.get("market_segment", ""),
+                "aircraft_kind": base.get("aircraft_kind", ""),
+                "aircraft_status": base.get("aircraft_status", ""),
+                "first_flight": base.get("first_flight", ""),
+                "propulsion": base.get("propulsion", ""),
+                "engines": base.get("engines", ""),
+                "range_class": base.get("range_class", ""),
+                "passengers": base.get("passengers", ""),
+                "length_m": base.get("length_m", ""),
+                "wingspan_m": base.get("wingspan_m", ""),
+                "height_m": base.get("height_m", ""),
             }
         )
 
