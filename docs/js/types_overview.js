@@ -6,6 +6,9 @@ function norm(s){ return String(s ?? "").trim().toLowerCase(); }
 let data = null;
 let all = [];
 let expanded = new Set(); // aircraft_id
+let tableSortKey = localStorage.getItem("typesSortKey") || "type";
+let tableSortDir = Number(localStorage.getItem("typesSortDir") || "1");
+if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;
 
 const OPTIONAL_COLUMNS = [
   { key: "role", label: "Rolle" },
@@ -64,21 +67,11 @@ function buildSelect(id, firstLabel, options){
 }
 
 function buildStaticSelects(){  
-  // Wingtip
   const wing = document.getElementById("wing");
   wing.innerHTML = `
     <option value="">Wingtip: alle</option>
     <option value="true">Wingtip: ja</option>
     <option value="false">Wingtip: nein</option>
-  `;
-
-  // Sortierung
-  const sort = document.getElementById("sort");
-  sort.innerHTML = `
-    <option value="type_az">Sort: Typ A→Z</option>
-    <option value="owned_desc">Sort: vorhanden ↓</option>
-    <option value="ordered_desc">Sort: bestellt ↓</option>
-    <option value="manufacturer_az">Sort: Hersteller A→Z</option>
   `;
 }
 
@@ -95,7 +88,6 @@ function apply(){
   const q = norm(document.getElementById("q").value);
   const manu = document.getElementById("manu").value;
   const wing = document.getElementById("wing").value;
-  const sort = document.getElementById("sort").value || "type_az";
 
   const fMissing = document.getElementById("fMissing").checked;
   const fOwned = document.getElementById("fOwned").checked;
@@ -126,7 +118,7 @@ function apply(){
     return hay.includes(q);
   });
 
-  items = sortItems(items, sort);
+  items = sortItems(items);
 
   document.getElementById("count").textContent =
     `${items.length} Typen · davon ${items.filter(x => (x.total_count || 0) > 0).length} mit Modellen`;
@@ -134,21 +126,56 @@ function apply(){
   render(items);
 }
 
-function sortItems(items, mode){
+function sortItems(items){
   const arr = items.slice();
-  if(mode === "owned_desc"){
-    arr.sort((a,b)=>(b.owned_count-a.owned_count) || (a.type_key||"").localeCompare(b.type_key||""));
-    return arr;
-  }
-  if(mode === "ordered_desc"){
-    arr.sort((a,b)=>(b.ordered_count-a.ordered_count) || (a.type_key||"").localeCompare(b.type_key||""));
-    return arr;
-  }
-  if(mode === "manufacturer_az"){
-    arr.sort((a,b)=> (a.manufacturer||"").localeCompare(b.manufacturer||"") || (a.type_key||"").localeCompare(b.type_key||""));
-    return arr;
-  }
-  arr.sort((a,b)=> (a.type_key||"").localeCompare(b.type_key||""));
+
+  arr.sort((a,b) => {
+    let va = "";
+    let vb = "";
+
+    if(tableSortKey === "type"){
+      va = a.type_key || a.typ_anzeige || a.aircraft_id || "";
+      vb = b.type_key || b.typ_anzeige || b.aircraft_id || "";
+    }
+    else if(tableSortKey === "wingtip"){
+      va = a.has_wingtip === true ? 1 : 0;
+      vb = b.has_wingtip === true ? 1 : 0;
+    }
+    else if(tableSortKey === "ordered_count"){
+      va = Number(a.ordered_count || 0);
+      vb = Number(b.ordered_count || 0);
+    }
+    else if(tableSortKey === "owned_count"){
+      va = Number(a.owned_count || 0);
+      vb = Number(b.owned_count || 0);
+    }
+    else if(tableSortKey === "manufacturer"){
+      va = a.manufacturer || "";
+      vb = b.manufacturer || "";
+    }
+    else if(MEASURE_COLUMNS.has(tableSortKey)){
+      va = parseDecimalDE(formatMeasureValue(a, tableSortKey)) ?? -1;
+      vb = parseDecimalDE(formatMeasureValue(b, tableSortKey)) ?? -1;
+    }
+    else if(["engines", "passengers", "first_flight"].includes(tableSortKey)){
+      va = parseDecimalDE(getTypeField(a, tableSortKey)) ?? -1;
+      vb = parseDecimalDE(getTypeField(b, tableSortKey)) ?? -1;
+    }
+    else{
+      va = getTypeField(a, tableSortKey);
+      vb = getTypeField(b, tableSortKey);
+    }
+
+    if(typeof va === "string") va = va.toLowerCase();
+    if(typeof vb === "string") vb = vb.toLowerCase();
+
+    if(va < vb) return -1 * tableSortDir;
+    if(va > vb) return  1 * tableSortDir;
+
+    return String(a.type_key || a.typ_anzeige || a.aircraft_id || "")
+      .localeCompare(String(b.type_key || b.typ_anzeige || b.aircraft_id || ""), "de");
+  });
+
   return arr;
 }
 
@@ -338,6 +365,14 @@ function render(items){
     return;
   }
 
+  const mark = (key) => {
+    if(tableSortKey !== key) return `<span class="sortMark">↕</span>`;
+    return `<span class="sortMark active">${tableSortDir === 1 ? "↑" : "↓"}</span>`;
+  };
+
+  const thClass = (key, base = "") =>
+    (tableSortKey === key ? `${base} thSort active` : `${base} thSort`).trim();
+  
   const visibleOptionalCols = getVisibleOptionalColumns();
 
   const optionalHeaders = visibleOptionalCols.map(key => {
@@ -350,17 +385,17 @@ function render(items){
   
     const label = getMeasureColumnLabel(col.label, key);
   
-    return `<th class="${cls}">${esc(label)}</th>`;
-  }).join(""); 
+    return `<th class="${thClass(key, cls)}" data-sort="${esc(key)}">${esc(label)} ${mark(key)}</th>`;
+  }).join("");
 
   let html = `
     <table class="tbl">
       <thead>
         <tr>
-          <th class="col-type">Typ</th>
-          <th class="col-wing">WL</th>
-          <th class="col-num">best.</th>
-          <th class="col-num">vorh.</th>
+          <th class="${thClass("type", "col-type")}" data-sort="type">Typ ${mark("type")}</th>
+          <th class="${thClass("wingtip", "col-wing")}" data-sort="wingtip">WL ${mark("wingtip")}</th>
+          <th class="${thClass("ordered_count", "col-num")}" data-sort="ordered_count">best. ${mark("ordered_count")}</th>
+          <th class="${thClass("owned_count", "col-num")}" data-sort="owned_count">vorh. ${mark("owned_count")}</th>
           ${optionalHeaders}
         </tr>
       </thead>
@@ -433,6 +468,23 @@ function render(items){
 
   html += `</tbody></table>`;
   document.getElementById("content").innerHTML = html;
+  document.querySelectorAll("#content th[data-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+
+      if(tableSortKey === key){
+        tableSortDir *= -1;
+      }else{
+        tableSortKey = key;
+        tableSortDir = 1;
+      }
+
+      localStorage.setItem("typesSortKey", tableSortKey);
+      localStorage.setItem("typesSortDir", String(tableSortDir));
+
+      apply();
+    });
+  });  
 }
 
 function renderDetail(x){
@@ -590,7 +642,6 @@ async function main(){
   document.getElementById("q").addEventListener("input", apply);
   document.getElementById("manu").addEventListener("change", apply);
   document.getElementById("wing").addEventListener("change", apply);
-  document.getElementById("sort").addEventListener("change", apply);
   document.getElementById("fMissing").addEventListener("change", apply);
   document.getElementById("fOwned").addEventListener("change", apply);
   document.getElementById("fOrdered").addEventListener("change", apply);
