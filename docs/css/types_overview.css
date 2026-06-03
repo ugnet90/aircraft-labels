@@ -364,59 +364,41 @@ a.typeLink:hover{
 }
 .legendTxt{ font-size:12px; color:#666; }
 
-/* === Optionale Spalten in types_overview === */
+/* Optionale Spalten: eigene Checkbox-Klasse, unabhängig vom Statusblock */
+.columnPanel .columnRow{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:8px 16px;
+  justify-items:start;
+}
 
-.tbl th.col-opt,
-.tbl td.col-opt{
+.columnPanel .columnChk{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:6px;
+  font-size:14px;
   white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  width:auto;
+  margin:0;
+  padding:0;
+  text-align:left;
 }
 
-.tbl th.col-opt-num,
-.tbl td.col-opt-num{
-  text-align:right;
-  font-variant-numeric:tabular-nums;
+.columnPanel .columnChk input{
+  margin:0;
+  width:14px;
+  height:14px;
+  flex:0 0 auto;
 }
 
-/* Standardbreiten optionale Spalten */
-.tbl .col-opt{
-  width:120px;
-  min-width:120px;
+.columnPanel .columnChk span{
+  display:inline-block;
+  text-align:left;
 }
 
-/* numerische optionale Spalten */
-.tbl .col-opt-num{
-  width:90px;
-  min-width:90px;
-}
-
-/* breitere Textspalten */
-.tbl .col-opt-market_segment,
-.tbl .col-opt-aircraft_kind,
-.tbl .col-opt-aircraft_status,
-.tbl .col-opt-propulsion,
-.tbl .col-opt-range_class{
-  width:130px;
-  min-width:130px;
-}
-
-/* schmalere technische Spalten */
-.tbl .col-opt-role,
-.tbl .col-opt-fuselage,
-.tbl .col-opt-first_flight,
-.tbl .col-opt-engines,
-.tbl .col-opt-passengers,
-.tbl .col-opt-length_m,
-.tbl .col-opt-wingspan_m,
-.tbl .col-opt-height_m{
-  width:90px;
-  min-width:90px;
-}
-
-/* Detailtabelle innerhalb aufgeklappter Zeile */
-.rowDetail .detailTbl{
-  width:100%;
-  min-width:760px;
-  table-layout:auto;
+@media (max-width:700px){
+  .columnPanel .columnRow{
+    grid-template-columns:1fr;
+  }
 }
