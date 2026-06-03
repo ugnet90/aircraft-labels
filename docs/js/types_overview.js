@@ -343,12 +343,15 @@ function render(items){
   const optionalHeaders = visibleOptionalCols.map(key => {
     const col = OPTIONAL_COLUMNS.find(c => c.key === key);
     if(!col) return "";
-
-    const cls = isRightAlignedOptionalColumn(key) ? "col-opt col-opt-num" : "col-opt";
+  
+    const cls = isRightAlignedOptionalColumn(key)
+      ? `col-opt col-opt-num col-opt-${esc(key)}`
+      : `col-opt col-opt-${esc(key)}`;
+  
     const label = getMeasureColumnLabel(col.label, key);
-
+  
     return `<th class="${cls}">${esc(label)}</th>`;
-  }).join("");  
+  }).join(""); 
 
   let html = `
     <table class="tbl">
@@ -375,12 +378,14 @@ function render(items){
       : ""; // kein Platzhalter mehr!
 
     const optionalCells = visibleOptionalCols.map(key => {
-      const cls = isRightAlignedOptionalColumn(key) ? "col-opt col-opt-num mono" : "col-opt";
-
+      const cls = isRightAlignedOptionalColumn(key)
+        ? `col-opt col-opt-num col-opt-${esc(key)} mono`
+        : `col-opt col-opt-${esc(key)}`;
+    
       const value = MEASURE_COLUMNS.has(key)
         ? formatMeasureValue(x, key)
         : getTypeField(x, key);
-
+    
       return `<td class="${cls}">${esc(value)}</td>`;
     }).join("");
     
