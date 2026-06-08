@@ -223,6 +223,8 @@ function buildShopRows(items, filters){
           shop_url: "",
           shopUrlsSet: new Set(),
           models: 0,
+          ordered_count: 0,
+          owned_count: 0,
           price_sum: 0,
           shipping_sum: 0,
           total_sum: 0,
@@ -235,6 +237,16 @@ function buildShopRows(items, filters){
 
       row.models += 1;
 
+      const status = String(it.status || "").trim().toLowerCase();
+      
+      if(status === "owned"){
+        row.owned_count += 1;
+      }
+      
+      if(status === "ordered"){
+        row.ordered_count += 1;
+      }
+      
       const price = parseMoneyValue(it.price);
       const shipping = parseMoneyValue(it.shipping_allocated);
 
@@ -262,6 +274,9 @@ function buildShopRows(items, filters){
       shop_url: urls.length === 1 ? urls[0] : "",
       shop_url_count: urls.length,
       models: row.models,
+      owned_count: row.owned_count,
+      ordered_count: row.ordered_count,
+      has_ordered: row.ordered_count > 0,      
       price_sum: row.price_sum,
       price_avg: avg(row.price_sum, row.models),
       shipping_sum: row.shipping_sum,
@@ -309,12 +324,12 @@ function updateActiveFilterUI(filters){
 
   qEl?.classList.toggle("is-active", !!filters.q);
   groupEl?.classList.toggle("is-active", !!filters.group);
-  statusEl?.classList.toggle("is-active", filters.statusValue !== "owned");
+  statusEl?.classList.toggle("is-active", filters.statusValue !== "all");
   shopKnownEl?.classList.toggle("is-active", !!filters.shopKnown);
 
   if(filters.q) active.push("Suche");
   if(filters.group) active.push("Airline-Gruppe");
-  if(filters.statusValue !== "owned") active.push("Status");
+  if(filters.statusValue !== "all") active.push("Status");
   if(filters.shopKnown) active.push("Shop");
 
   const box = document.getElementById("activeFilters");
@@ -445,8 +460,10 @@ function render(rows){
     }
 
     html += `
-      <tr class="shopRow" data-href="${esc(href)}">
-        <td>${shopCell}</td>
+      <tr class="shopRow ${row.has_ordered ? "row-has-ordered" : ""}" data-href="${esc(href)}">
+        <td title="${row.has_ordered ? esc(`${row.ordered_count} Bestellung(en) bei diesem Shop`) : ""}">
+          ${shopCell}
+        </td>
         <td class="num mono">${esc(row.models)}</td>
         <td class="num mono money">${esc(formatMoneyDE(row.price_sum))}</td>
         <td class="num mono money">${esc(formatMoneyDE(row.price_avg))}</td>
