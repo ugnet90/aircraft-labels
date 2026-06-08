@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 400,
     "present_types": 135,
-    "missing_types": 263,
-    "ordered_types": 2,
-    "models": 249
+    "missing_types": 261,
+    "ordered_types": 4,
+    "models": 250
   },
   "missing_types": [
     {
@@ -96,12 +96,6 @@
     {
       "aircraft_id": "AIB-A330-MRTT",
       "Typ_anzeige": "Airbus A330 MRTT",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A350-1000",
-      "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -642,12 +636,6 @@
     {
       "aircraft_id": "BOM-CL600",
       "Typ_anzeige": "Bombardier Challenger 600",
-      "manufacturer": "Bombardier",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOM-CL601",
-      "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
       "status": "missing"
     },
@@ -1597,6 +1585,18 @@
       "aircraft_id": "AIB-A340-500",
       "Typ_anzeige": "Airbus A340-500",
       "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "AIB-A350-1000",
+      "Typ_anzeige": "Airbus A350-1000",
+      "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOM-CL601",
+      "Typ_anzeige": "Bombardier Challenger 601",
+      "manufacturer": "Bombardier",
       "status": "ordered"
     }
   ]

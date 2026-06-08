@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-35",
+  "model_id": "WIS-LH-36",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-WIS-LH-35-01",
+      "id": "PC-WIS-LH-36-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
       "price": 0.85
@@ -45,7 +45,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "35"
+    "row": "36"
   },
   "aircraft": {
     "aircraft_id": "BOE-747-200",

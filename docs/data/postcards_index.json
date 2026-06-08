@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T14:15:18+02:00",
+  "generated_at": "2026-06-08T14:46:09+02:00",
   "count_total": 188,
   "count_unique": 188,
   "items": [
@@ -1431,16 +1431,16 @@
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-35-01",
-      "model_id": "WIS-LH-35",
+      "id": "PC-WIS-LH-36-01",
+      "model_id": "WIS-LH-36",
       "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-46-01",
-      "model_id": "WIS-LH-46",
+      "id": "PC-WIS-LH-47-01",
+      "model_id": "WIS-LH-47",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "status": "none",
       "model_status": "wishlist",
@@ -1448,8 +1448,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-58-01",
-      "model_id": "WIS-LH-58",
+      "id": "PC-WIS-LH-59-01",
+      "model_id": "WIS-LH-59",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
       "status": "none",
       "model_status": "wishlist",
@@ -3030,26 +3030,26 @@
       "model_status": "wishlist",
       "price": 0.85
     },
-    "PC-WIS-LH-35-01": {
-      "id": "PC-WIS-LH-35-01",
-      "model_id": "WIS-LH-35",
+    "PC-WIS-LH-36-01": {
+      "id": "PC-WIS-LH-36-01",
+      "model_id": "WIS-LH-36",
       "url": "https://jjpostcards.com/de/ansichtskarten/256-lufthansa-b747.html",
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
     },
-    "PC-WIS-LH-46-01": {
-      "id": "PC-WIS-LH-46-01",
-      "model_id": "WIS-LH-46",
+    "PC-WIS-LH-47-01": {
+      "id": "PC-WIS-LH-47-01",
+      "model_id": "WIS-LH-47",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "status": "none",
       "model_status": "wishlist",
       "label": "ohne Kennung",
       "price": 0.85
     },
-    "PC-WIS-LH-58-01": {
-      "id": "PC-WIS-LH-58-01",
-      "model_id": "WIS-LH-58",
+    "PC-WIS-LH-59-01": {
+      "id": "PC-WIS-LH-59-01",
+      "model_id": "WIS-LH-59",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
       "status": "none",
       "model_status": "wishlist",

@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-40",
+  "model_id": "WIS-LH-41",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -38,7 +38,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "40"
+    "row": "41"
   },
   "aircraft": {
     "aircraft_id": "BOE-787-9",
