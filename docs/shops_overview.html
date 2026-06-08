@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop-Übersicht</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shops_overview.css">
+  <link rel="stylesheet" href="css/nav.css">
+
+  <script src="js/site_map.js" defer></script>
+  <script src="js/nav.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="meta">
+      Stand: <span id="meta">–</span>
+    </div>
+
+    <div class="bar">
+      <input id="q" type="search" placeholder="Suche Shop oder Airline-Gruppe">
+
+      <select id="group">
+        <option value="">Alle Airline-Gruppen</option>
+      </select>
+
+      <select id="status">
+        <option value="owned">Status: vorhanden</option>
+        <option value="owned,ordered">Status: vorhanden + bestellt</option>
+        <option value="ordered">Status: bestellt</option>
+        <option value="all">Status: alle</option>
+      </select>
+
+      <select id="shopKnown">
+        <option value="">Shop: alle</option>
+        <option value="known">Shop vorhanden</option>
+        <option value="missing">Shop fehlt</option>
+      </select>
+
+      <button id="reset" type="button">Reset</button>
+    </div>
+
+    <div id="activeFilters" class="small">Keine Filter aktiv</div>
+
+    <div class="right">
+      <span id="count" class="small">Lade Daten…</span>
+    </div>
+
+    <section id="content">
+      <div class="small">Lade Daten…</div>
+    </section>
+  </main>
+
+  <script src="js/time.js" defer></script>
+  <script src="js/shops_overview.js" defer></script>
+</body>
+</html>
