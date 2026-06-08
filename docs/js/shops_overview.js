@@ -408,6 +408,16 @@ function modelsOverviewStatusParam(){
   return v;
 }
 
+function formatOrderCountText(n){
+  const count = Number(n || 0);
+
+  if(count === 1){
+    return "1 Bestellung bei diesem Shop";
+  }
+
+  return `${count} Bestellungen bei diesem Shop`;
+}
+
 function render(rows){
   document.getElementById("count").textContent =
     rows.length === 1 ? "1 Shop" : `${rows.length} Shops`;
@@ -461,7 +471,7 @@ function render(rows){
 
     html += `
       <tr class="shopRow ${row.has_ordered ? "row-has-ordered" : ""}" data-href="${esc(href)}">
-        <td title="${row.has_ordered ? esc(`${row.ordered_count} Bestellung(en) bei diesem Shop`) : ""}">
+        <td title="${row.has_ordered ? esc(formatOrderCountText(row.ordered_count)) : ""}">
           ${shopCell}
         </td>
         <td class="num mono">${esc(row.models)}</td>
