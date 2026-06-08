@@ -384,7 +384,7 @@ function columnTooltip(key){
 }
 
 function modelsOverviewStatusParam(){
-  const v = document.getElementById("status")?.value || "owned";
+  const v = document.getElementById("status")?.value || "all";
 
   if(v === "all"){
     return "owned,ordered";
@@ -522,7 +522,7 @@ function render(rows){
 }
 
 function apply(){
-  const statusValue = document.getElementById("status").value || "owned";
+  const statusValue = document.getElementById("status").value || "all";
 
   const filters = {
     q: norm(document.getElementById("q").value),
@@ -557,8 +557,8 @@ async function main(){
     state.all = Array.isArray(data?.items) ? data.items : [];
 
     const initialFilters = {
-      statusValue: "owned",
-      statuses: statusAllowedSet("owned")
+      statusValue: "all",
+      statuses: statusAllowedSet("all")
     };
     const initialRows = buildShopRows(state.all, initialFilters);
 
@@ -574,7 +574,7 @@ async function main(){
     document.getElementById("reset").addEventListener("click", () => {
       document.getElementById("q").value = "";
       document.getElementById("group").value = "";
-      document.getElementById("status").value = "owned";
+      document.getElementById("status").value = "all";
       document.getElementById("shopKnown").value = "";
 
       tableSortKey = "total_sum";
@@ -597,7 +597,7 @@ async function main(){
     }
 
     if(p.has("status")){
-      document.getElementById("status").value = p.get("status") || "owned";
+      document.getElementById("status").value = p.get("status") || "all";
     }
 
     if(p.has("shopKnown")){
