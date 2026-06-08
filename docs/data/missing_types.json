@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 398,
-    "present_types": 134,
+    "present_types": 135,
     "missing_types": 261,
-    "ordered_types": 3,
+    "ordered_types": 2,
     "models": 248
   },
   "missing_types": [
@@ -1585,12 +1585,6 @@
       "aircraft_id": "AIB-A340-500",
       "Typ_anzeige": "Airbus A340-500",
       "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "DHC-DHC8-100",
-      "Typ_anzeige": "de Havilland Canada DHC-8-100 Dash 8-100",
-      "manufacturer": "de Havilland Canada",
       "status": "ordered"
     }
   ]

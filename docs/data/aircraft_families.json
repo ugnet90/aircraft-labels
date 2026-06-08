@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T08:13:59+02:00",
+  "generated_at": "2026-06-08T09:48:49+02:00",
   "count_families": 225,
   "families": {
     "AL-60": [
@@ -2822,7 +2822,7 @@
         "wingspan": 25.91,
         "height": 7.49,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "de Havilland Canada"
       },
       {

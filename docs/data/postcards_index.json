@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T08:13:59+02:00",
+  "generated_at": "2026-06-08T09:48:49+02:00",
   "count_total": 188,
   "count_unique": 188,
   "items": [
@@ -744,15 +744,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-WF-6-01",
-      "model_id": "ORD-WF-6",
-      "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "Bemalung nicht ganz exakt",
-      "price": 0.85
-    },
-    {
       "id": "PC-OS001-01",
       "model_id": "OS001",
       "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
@@ -1346,6 +1337,15 @@
       "status": "owned",
       "model_status": "owned",
       "label": "andere Bez. KLM UK",
+      "price": 0.85
+    },
+    {
+      "id": "PC-WF001-01",
+      "model_id": "WF001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "Bemalung nicht ganz exakt",
       "price": 0.85
     },
     {
@@ -2343,15 +2343,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-WF-6-01": {
-      "id": "PC-ORD-WF-6-01",
-      "model_id": "ORD-WF-6",
-      "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "Bemalung nicht ganz exakt",
-      "price": 0.85
-    },
     "PC-OS001-01": {
       "id": "PC-OS001-01",
       "model_id": "OS001",
@@ -2946,6 +2937,15 @@
       "status": "owned",
       "model_status": "owned",
       "label": "andere Bez. KLM UK",
+      "price": 0.85
+    },
+    "PC-WF001-01": {
+      "id": "PC-WF001-01",
+      "model_id": "WF001",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34141-Wideroe-DHC-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "Bemalung nicht ganz exakt",
       "price": 0.85
     },
     "PC-WIS-AB-17-01": {
