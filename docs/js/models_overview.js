@@ -241,6 +241,8 @@ function matchesQuery(it, q){
     it.registration, it.livery_name,
     it.livery_display,
     it.arrived,
+    it.shop,
+    it.shop_url,
     it.ordered ? "bestellt" : "",
     it.ordered_at,
     it.scale,
