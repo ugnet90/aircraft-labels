@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T09:48:49+02:00",
-  "count_families": 225,
+  "generated_at": "2026-06-08T14:14:55+02:00",
+  "count_families": 227,
   "families": {
     "AL-60": [
       {
@@ -2321,6 +2321,34 @@
         "height": 7.7,
         "wingtip": "WL",
         "status": "wishlist",
+        "manufacturer": "Bombardier"
+      }
+    ],
+    "CL-600": [
+      {
+        "aircraft_id": "BOM-CL600",
+        "type": "Bombardier Challenger 600",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 20.85,
+        "wingspan": 18.85,
+        "height": 6.3,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Bombardier"
+      }
+    ],
+    "CL-601": [
+      {
+        "aircraft_id": "BOM-CL601",
+        "type": "Bombardier Challenger 601",
+        "parent_aircraft_id": "BOM-CL600",
+        "parent_type": "Bombardier Challenger 600",
+        "length": 20.85,
+        "wingspan": 19.61,
+        "height": 6.3,
+        "wingtip": "WL",
+        "status": "missing",
         "manufacturer": "Bombardier"
       }
     ],

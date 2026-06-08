@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 398,
+    "master_types": 400,
     "present_types": 135,
-    "missing_types": 261,
+    "missing_types": 263,
     "ordered_types": 2,
     "models": 248
   },
@@ -636,6 +636,18 @@
     {
       "aircraft_id": "BOM-BD700",
       "Typ_anzeige": "Bombardier BD-700 Global 5000",
+      "manufacturer": "Bombardier",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOM-CL600",
+      "Typ_anzeige": "Bombardier Challenger 600",
+      "manufacturer": "Bombardier",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOM-CL601",
+      "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
       "status": "missing"
     },
