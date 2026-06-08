@@ -5,6 +5,7 @@ let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
 if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;            // 1 = asc, -1 = desc
 
 const OPTIONAL_COLUMNS = [
+  { key: "shop", label: "Shop" },
   { key: "role", label: "Rolle" },
   { key: "fuselage", label: "Rumpf" },
   { key: "market_segment", label: "Segment" },
@@ -460,6 +461,14 @@ function updateMeasureModeUI(){
   document.getElementById("measureScale400")?.classList.toggle("is-on", measureMode === "scale400");
 }
 
+function getShopName(it){
+  return String(it.shop || it.Shop || "").trim();
+}
+
+function getShopUrl(it){
+  return String(it.shop_url || it.Shop_url || it.Shop_URL || "").trim();
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -529,6 +538,25 @@ function render(items){
       const cls = isRightAlignedOptionalColumn(key)
         ? "hide-m optionalNum"
         : "hide-m";
+    
+      if(key === "shop"){
+        const shop = getShopName(it);
+        const url = getShopUrl(it);
+    
+        if(!shop) return `<td class="${cls}"></td>`;
+    
+        if(url){
+          return `
+            <td class="${cls}">
+              <a href="${esc(url)}" target="_blank" rel="noopener noreferrer">
+                ${esc(shop)}
+              </a>
+            </td>
+          `;
+        }
+    
+        return `<td class="${cls}">${esc(shop)}</td>`;
+      }
     
       const value = MEASURE_COLUMNS.has(key)
         ? formatMeasureValue(it, key)
