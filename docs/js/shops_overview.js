@@ -80,7 +80,9 @@ function avg(sum, count){
 
 function statusAllowedSet(value){
   if(value === "all"){
-    return new Set(["owned", "ordered", "wishlist"]);
+    // Für Shop-Statistik bedeutet "alle": vorhanden + bestellt.
+    // Wunschmodelle werden bewusst nicht einbezogen.
+    return new Set(["owned", "ordered"]);
   }
 
   return new Set(
@@ -127,45 +129,68 @@ function matchesQueryRow(row, q){
   return hay.includes(q);
 }
 
+function looksLikeDomainOrUrl(s){
+  const v = String(s || "").trim();
+  return /^https?:\/\//i.test(v) || /^[a-z0-9.-]+\.[a-z]{2,}(\/.*)?$/i.test(v);
+}
+
 function normalizeShopKey(raw){
   let s = String(raw || "").trim();
   if(!s) return "";
 
-  s = s.toLowerCase();
+  // URL / Domain normalisieren
+  if(looksLikeDomainOrUrl(s)){
+    let urlText = s;
 
-  // Falls nur Domain ohne Protokoll eingegeben wurde
-  if(!/^https?:\/\//i.test(s)){
-    s = "https://" + s;
-  }
-
-  try{
-    const u = new URL(s);
-    let host = u.hostname.toLowerCase();
-
-    if(host.startsWith("www.")){
-      host = host.slice(4);
+    if(!/^https?:\/\//i.test(urlText)){
+      urlText = "https://" + urlText;
     }
 
-    return host.replace(/\/+$/, "");
-  }catch(e){
-    // Fallback für freie Texte
-    s = s.replace(/^https?:\/\//, "");
-    s = s.replace(/^www\./, "");
-    s = s.replace(/\/+$/, "");
-    return s.trim();
+    try{
+      const u = new URL(urlText);
+      let host = u.hostname.toLowerCase();
+
+      if(host.startsWith("www.")){
+        host = host.slice(4);
+      }
+
+      return host.replace(/\/+$/, "");
+    }catch(e){
+      return s
+        .toLowerCase()
+        .replace(/^https?:\/\//, "")
+        .replace(/^www\./, "")
+        .replace(/\/+$/, "")
+        .trim();
+    }
   }
+
+  // Freier Shopname: nur vereinheitlichen, nicht URL-kodieren
+  return s
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function shopDisplayName(raw){
-  const key = normalizeShopKey(raw);
+  const original = String(raw || "").trim();
+  const key = normalizeShopKey(original);
+
   if(!key) return "— Shop fehlt —";
 
-  // optionale hübschere Sonderfälle
   const labels = {
     "flight-shop.de": "Flight-Shop.de"
   };
 
-  return labels[key] || key;
+  if(labels[key]) return labels[key];
+
+  // Bei Domain: normalisierte Domain anzeigen
+  if(looksLikeDomainOrUrl(original)){
+    return key;
+  }
+
+  // Bei freiem Text: Original-Schreibweise erhalten
+  return original.replace(/\s+/g, " ").trim();
 }
 
 function buildShopRows(items, filters){
@@ -381,13 +406,13 @@ function render(rows){
           <th class="${thClass("groups", "num")}" data-sort="groups" title="${esc(columnTooltip("groups"))}">Airline-Gruppen ${mark("groups")}</th>
           <th class="${thClass("types", "num")}" data-sort="types" title="${esc(columnTooltip("types"))}">Typen ${mark("types")}</th>
         </tr>
-      </thead>
+      </thead> 
       <tbody>
   `;
 
   for(const row of rows){
     const shopText = row.shop || "";
-    const shopQuery = row.shop_key === "__missing_shop__" ? "" : shopText;
+    const shopQuery = row.shop_key === "__missing_shop__" ? "__shop_missing__" : row.shop_key;
     const href = `./models_overview.html?q=${encodeURIComponent(shopQuery)}&status=owned`;
     
     let shopCell = esc(shopText);
@@ -422,7 +447,7 @@ function render(rows){
       </tbody>
       <tfoot>
         <tr class="sumRow">
-          <td>Summe angezeigte Shops</td>
+          <td>Summen</td>
           <td class="num mono">${esc(totalModels)}</td>
           <td class="num mono money">${esc(formatMoneyDE(totalPrice))}</td>
           <td class="num mono money">${esc(formatMoneyDE(avg(totalPrice, totalModels)))}</td>
