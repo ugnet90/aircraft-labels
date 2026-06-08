@@ -1,3 +1,6 @@
+const SHOP_MISSING_KEY = "__missing_shop__";
+const SHOP_MISSING_LABEL = "— Shop fehlt —";
+
 const state = {
   all: [],
   filtered: []
@@ -206,10 +209,12 @@ function buildShopRows(items, filters){
     .filter(it => matchesShopKnown(it, filters))
     .forEach(it => {
       const rawShop = getShopName(it);
-      const shopKey = normalizeShopKey(rawShop);
-      const shop = shopDisplayName(rawShop);
-      const shopUrl = getShopUrl(it);
-      const key = shopKey || "__missing_shop__";
+      const hasShop = hasShopValue(it);
+      
+      const shopKey = hasShop ? normalizeShopKey(rawShop) : SHOP_MISSING_KEY;
+      const shop = hasShop ? shopDisplayName(rawShop) : SHOP_MISSING_LABEL;
+      const shopUrl = hasShop ? getShopUrl(it) : "";
+      const key = shopKey;
       
       if(!map.has(key)){
         map.set(key, {
@@ -426,7 +431,7 @@ function render(rows){
 
   for(const row of rows){
     const shopText = row.shop || "";
-    const shopQuery = row.shop_key === "__missing_shop__" ? "__shop_missing__" : row.shop_key;
+    const shopQuery = row.shop_key === SHOP_MISSING_KEY ? "__shop_missing__" : row.shop_key;
     const statusParam = modelsOverviewStatusParam();
     const href =
       `./models_overview.html?q=${encodeURIComponent(shopQuery)}` +
