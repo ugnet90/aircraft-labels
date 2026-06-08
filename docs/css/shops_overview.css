@@ -133,3 +133,11 @@ th.thSort.active{
 tfoot td{
   padding:9px 10px;
 }
+
+tr.row-has-ordered td{
+  background:#f5f9ff;
+}
+
+tr.row-has-ordered:hover td{
+  background:#edf5ff;
+}
