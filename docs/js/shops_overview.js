@@ -127,6 +127,47 @@ function matchesQueryRow(row, q){
   return hay.includes(q);
 }
 
+function normalizeShopKey(raw){
+  let s = String(raw || "").trim();
+  if(!s) return "";
+
+  s = s.toLowerCase();
+
+  // Falls nur Domain ohne Protokoll eingegeben wurde
+  if(!/^https?:\/\//i.test(s)){
+    s = "https://" + s;
+  }
+
+  try{
+    const u = new URL(s);
+    let host = u.hostname.toLowerCase();
+
+    if(host.startsWith("www.")){
+      host = host.slice(4);
+    }
+
+    return host.replace(/\/+$/, "");
+  }catch(e){
+    // Fallback für freie Texte
+    s = s.replace(/^https?:\/\//, "");
+    s = s.replace(/^www\./, "");
+    s = s.replace(/\/+$/, "");
+    return s.trim();
+  }
+}
+
+function shopDisplayName(raw){
+  const key = normalizeShopKey(raw);
+  if(!key) return "— Shop fehlt —";
+
+  // optionale hübschere Sonderfälle
+  const labels = {
+    "flight-shop.de": "Flight-Shop.de"
+  };
+
+  return labels[key] || key;
+}
+
 function buildShopRows(items, filters){
   const map = new Map();
 
@@ -135,14 +176,18 @@ function buildShopRows(items, filters){
     .filter(it => matchesGroup(it, filters))
     .filter(it => matchesShopKnown(it, filters))
     .forEach(it => {
-      const shop = getShopName(it) || "— Shop fehlt —";
+      const rawShop = getShopName(it);
+      const shopKey = normalizeShopKey(rawShop);
+      const shop = shopDisplayName(rawShop);
       const shopUrl = getShopUrl(it);
-      const key = shop;
-
+      const key = shopKey || "__missing_shop__";
+      
       if(!map.has(key)){
         map.set(key, {
           shop,
-          shop_url: shopUrl,
+          shop_key: key,
+          shop_url: "",
+          shopUrlsSet: new Set(),
           models: 0,
           price_sum: 0,
           shipping_sum: 0,
@@ -169,25 +214,31 @@ function buildShopRows(items, filters){
       const type = getAircraftType(it);
       if(type) row.typesSet.add(type);
 
-      if(!row.shop_url && shopUrl){
-        row.shop_url = shopUrl;
+      if(shopUrl){
+        row.shopUrlsSet.add(shopUrl);
       }
     });
 
-  return Array.from(map.values()).map(row => ({
-    shop: row.shop,
-    shop_url: row.shop_url,
-    models: row.models,
-    price_sum: row.price_sum,
-    price_avg: avg(row.price_sum, row.models),
-    shipping_sum: row.shipping_sum,
-    shipping_avg: avg(row.shipping_sum, row.models),
-    total_sum: row.total_sum,
-    total_avg: avg(row.total_sum, row.models),
-    groups: row.groupsSet.size,
-    types: row.typesSet.size,
-    group_list: Array.from(row.groupsSet).sort((a,b)=>a.localeCompare(b, "de")).join(", ")
-  }));
+  return Array.from(map.values()).map(row => {
+    const urls = Array.from(row.shopUrlsSet);
+  
+    return {
+      shop: row.shop,
+      shop_key: row.shop_key,
+      shop_url: urls.length === 1 ? urls[0] : "",
+      shop_url_count: urls.length,
+      models: row.models,
+      price_sum: row.price_sum,
+      price_avg: avg(row.price_sum, row.models),
+      shipping_sum: row.shipping_sum,
+      shipping_avg: avg(row.shipping_sum, row.models),
+      total_sum: row.total_sum,
+      total_avg: avg(row.total_sum, row.models),
+      groups: row.groupsSet.size,
+      types: row.typesSet.size,
+      group_list: Array.from(row.groupsSet).sort((a,b)=>a.localeCompare(b, "de")).join(", ")
+    };
+  });
 }
 
 function refillGroupOptions(items, currentValue){
@@ -336,11 +387,15 @@ function render(rows){
 
   for(const row of rows){
     const shopText = row.shop || "";
-    const href = `./models_overview.html?q=${encodeURIComponent(shopText === "— Shop fehlt —" ? "" : shopText)}&status=owned`;
-
-    const shopCell = row.shop_url
-      ? `<a href="${esc(row.shop_url)}" target="_blank" rel="noopener noreferrer">${esc(shopText)}</a>`
-      : esc(shopText);
+    const shopQuery = row.shop_key === "__missing_shop__" ? "" : shopText;
+    const href = `./models_overview.html?q=${encodeURIComponent(shopQuery)}&status=owned`;
+    
+    let shopCell = esc(shopText);
+    
+    // Externer Produktlink nur, wenn genau ein Modell/eine eindeutige URL dahinterliegt
+    if(row.models === 1 && row.shop_url){
+      shopCell = `<a href="${esc(row.shop_url)}" target="_blank" rel="noopener noreferrer">${esc(shopText)}</a>`;
+    }
 
     html += `
       <tr class="shopRow" data-href="${esc(href)}">
