@@ -55,6 +55,14 @@ const SITE_MAP = {
     group: "Analyse",
     breadcrumb: ["Dashboard", "Analyse", "Airline-Übersicht"]
   },
+
+  shops_overview: {
+    file: "shops_overview.html",
+    title: "Shop-Übersicht",
+    navLabel: "Shop-Übersicht",
+    group: "Analyse",
+    breadcrumb: ["Dashboard", "Analyse", "Shop-Übersicht"]
+  },
   
   missing_types: {
     file: "missing_types.html",
@@ -110,7 +118,7 @@ const SITE_NAV = [
   {
     type: "group",
     label: "Analyse",
-    items: ["types_overview", "airlines_overview", "missing_types", "matrix", "stats"]
+    items: ["types_overview", "airlines_overview", "shops_overview", "missing_types", "matrix", "stats"]
   },
   {
     type: "group",
