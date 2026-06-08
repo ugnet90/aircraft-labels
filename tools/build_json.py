@@ -525,6 +525,7 @@ def main() -> int:
             "logo_id": logo_id,
             "logo_speaking": logo_speaking,
         
+            "shop": (r.get("Shop", "") if r else "").strip(),
             "shop_url": (r.get("Shop_url", "") or "").strip(),
             "ordered_at": bestellt_iso,
             "ordered": ordered,
