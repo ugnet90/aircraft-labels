@@ -370,11 +370,11 @@ function render(rows){
           <td>Summe angezeigte Shops</td>
           <td class="num mono">${esc(totalModels)}</td>
           <td class="num mono money">${esc(formatMoneyDE(totalPrice))}</td>
-          <td class="num mono money">${esc(formatMoneyDE(avg(totalPrice, totalModels))}</td>
+          <td class="num mono money">${esc(formatMoneyDE(avg(totalPrice, totalModels)))}</td>
           <td class="num mono money">${esc(formatMoneyDE(totalShipping))}</td>
-          <td class="num mono money">${esc(formatMoneyDE(avg(totalShipping, totalModels))}</td>
+          <td class="num mono money">${esc(formatMoneyDE(avg(totalShipping, totalModels)))}</td>
           <td class="num mono money">${esc(formatMoneyDE(totalAll))}</td>
-          <td class="num mono money">${esc(formatMoneyDE(avg(totalAll, totalModels))}</td>
+          <td class="num mono money">${esc(formatMoneyDE(avg(totalAll, totalModels)))}</td>
           <td class="num mono"></td>
           <td class="num mono"></td>
         </tr>
