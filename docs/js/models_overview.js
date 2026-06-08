@@ -233,6 +233,45 @@ function updateActiveFilterUI(filters){
   }
 }
 
+function normalizeShopKeyForSearch(raw){
+  let s = String(raw || "").trim();
+  if(!s) return "";
+
+  const looksLikeDomainOrUrl =
+    /^https?:\/\//i.test(s) || /^[a-z0-9.-]+\.[a-z]{2,}(\/.*)?$/i.test(s);
+
+  if(looksLikeDomainOrUrl){
+    let urlText = s;
+
+    if(!/^https?:\/\//i.test(urlText)){
+      urlText = "https://" + urlText;
+    }
+
+    try{
+      const u = new URL(urlText);
+      let host = u.hostname.toLowerCase();
+
+      if(host.startsWith("www.")){
+        host = host.slice(4);
+      }
+
+      return host.replace(/\/+$/, "");
+    }catch(e){
+      return s
+        .toLowerCase()
+        .replace(/^https?:\/\//, "")
+        .replace(/^www\./, "")
+        .replace(/\/+$/, "")
+        .trim();
+    }
+  }
+
+  return s
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function matchesQuery(it, q){
   if(!q) return true;
   const hay = [
@@ -243,6 +282,9 @@ function matchesQuery(it, q){
     it.arrived,
     it.shop,
     it.shop_url,
+    normalizeShopKeyForSearch(it.shop),
+    normalizeShopKeyForSearch(it.shop_url),
+    (!it.shop && !it.Shop ? "__shop_missing__" : ""),
     it.ordered ? "bestellt" : "",
     it.ordered_at,
     it.scale,
