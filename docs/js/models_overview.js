@@ -284,7 +284,7 @@ function matchesQuery(it, q){
     it.shop_url,
     normalizeShopKeyForSearch(it.shop),
     normalizeShopKeyForSearch(it.shop_url),
-    (!it.shop && !it.Shop ? "__shop_missing__" : ""),
+    (!String(it.shop || it.Shop || "").trim() ? "__shop_missing__" : ""),
     it.ordered ? "bestellt" : "",
     it.ordered_at,
     it.scale,
