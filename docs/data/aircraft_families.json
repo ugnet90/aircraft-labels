@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T14:14:55+02:00",
+  "generated_at": "2026-06-08T14:15:18+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -2348,7 +2348,7 @@
         "wingspan": 19.61,
         "height": 6.3,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Bombardier"
       }
     ],
