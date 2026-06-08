@@ -98,13 +98,17 @@ function matchesStatus(it, filters){
   return filters.statuses.has(s);
 }
 
+function hasShopValue(it){
+  return !!String(it.shop || it.Shop || "").trim();
+}
+
 function matchesShopKnown(it, filters){
   if(!filters.shopKnown) return true;
 
-  const shop = getShopName(it);
+  const hasShop = hasShopValue(it);
 
-  if(filters.shopKnown === "known") return !!shop;
-  if(filters.shopKnown === "missing") return !shop;
+  if(filters.shopKnown === "known") return hasShop;
+  if(filters.shopKnown === "missing") return !hasShop;
 
   return true;
 }
@@ -374,6 +378,16 @@ function columnTooltip(key){
   return tips[key] || "";
 }
 
+function modelsOverviewStatusParam(){
+  const v = document.getElementById("status")?.value || "owned";
+
+  if(v === "all"){
+    return "owned,ordered";
+  }
+
+  return v;
+}
+
 function render(rows){
   document.getElementById("count").textContent =
     rows.length === 1 ? "1 Shop" : `${rows.length} Shops`;
@@ -413,7 +427,10 @@ function render(rows){
   for(const row of rows){
     const shopText = row.shop || "";
     const shopQuery = row.shop_key === "__missing_shop__" ? "__shop_missing__" : row.shop_key;
-    const href = `./models_overview.html?q=${encodeURIComponent(shopQuery)}&status=owned`;
+    const statusParam = modelsOverviewStatusParam();
+    const href =
+      `./models_overview.html?q=${encodeURIComponent(shopQuery)}` +
+      `&status=${encodeURIComponent(statusParam)}`;
     
     let shopCell = esc(shopText);
     
