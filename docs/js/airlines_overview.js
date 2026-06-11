@@ -192,18 +192,18 @@ function buildAirlineRows(items, filters){
     .filter(it => matchesModelStatus(it, filters))
     .filter(it => matchesModelFlown(it, filters))
     .forEach(it => {
-      const airline = getAirlineName(it);
       const group = getGroupName(it);
 
-      if(!airline) return;
+      if(!group) return;
 
-      const key = airline;
+      const key = group;
 
       if(!map.has(key)){
         map.set(key, {
-          airline,
           group,
           models: 0,
+          owned: 0,
+          ordered: 0,
           typesSet: new Set(),
           flown: 0,
           priceTotal: 0,
@@ -213,8 +213,17 @@ function buildAirlineRows(items, filters){
       }
 
       const row = map.get(key);
+      const status = String(it.status || "").trim().toLowerCase();
 
       row.models += 1;
+
+      if(status === "owned"){
+        row.owned += 1;
+      }
+
+      if(status === "ordered"){
+        row.ordered += 1;
+      }
 
       if(it.aircraft_type){
         row.typesSet.add(String(it.aircraft_type).trim());
@@ -227,16 +236,13 @@ function buildAirlineRows(items, filters){
       row.priceTotal += parseMoneyValue(it.price);
       row.shippingTotal += parseMoneyValue(it.shipping_allocated);
       row.spaceCm += calcModelDisplayWidthCm(it);
-
-      if(!row.group && group){
-        row.group = group;
-      }
     });
 
   return Array.from(map.values()).map(row => ({
-    airline: row.airline,
     group: row.group,
     models: row.models,
+    owned: row.owned,
+    ordered: row.ordered,
     types: row.typesSet.size,
     flown: row.flown,
     price_total: row.priceTotal,
@@ -273,9 +279,10 @@ function matchesQuery(row, q){
   if(!q) return true;
 
   const hay = [
-    row.airline,
     row.group,
     row.models,
+    row.owned,
+    row.ordered,
     row.types,
     row.flown
   ].map(norm).join(" | ");
@@ -337,7 +344,7 @@ function sortRows(rows){
       va = averagePerModel(a, "shipping_total");
       vb = averagePerModel(b, "shipping_total");
     }
-    else if(["models", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
+    else if(["models", "owned", "ordered", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
       va = Number(va || 0);
       vb = Number(vb || 0);
     }
@@ -393,16 +400,17 @@ function columnTooltip(key){
   const wingPosPct = Math.round(WING_POSITION_FROM_NOSE * 100);
 
   const tips = {
-    airline: "Konkrete Airline gemäß Datenfeld airline_row. Gezählt werden die aktuell gefilterten Modelle.",
-    group: "Airline-Gruppe gemäß Datenfeld airline. Dient zur Gruppierung verwandter Airlines.",
-    models: "Anzahl der aktuell berücksichtigten Modelle dieser Airline.",
-    types: "Anzahl unterschiedlicher Flugzeugtypen innerhalb der aktuell berücksichtigten Modelle dieser Airline.",
-    flown: "Anzahl der aktuell berücksichtigten Modelle dieser Airline, mit denen du mitgeflogen bist.",
+    group: "Airline-Gruppe gemäß Datenfeld airline. Die Auswertung erfolgt gruppiert nach Airline-Gruppe.",
+    models: "Gesamtanzahl der aktuell berücksichtigten vorhandenen und bestellten Modelle dieser Airline-Gruppe.",
+    owned: "Anzahl vorhandener Modelle dieser Airline-Gruppe.",
+    ordered: "Anzahl bestellter Modelle dieser Airline-Gruppe.",
+    types: "Anzahl unterschiedlicher Flugzeugtypen innerhalb der aktuell berücksichtigten Modelle dieser Airline-Gruppe.",
+    flown: "Anzahl der aktuell berücksichtigten Modelle dieser Airline-Gruppe, mit denen du mitgeflogen bist.",
 
-    price_total: "Summe der Modellpreise der aktuell berücksichtigten Modelle dieser Airline.",
+    price_total: "Summe der Modellpreise der aktuell berücksichtigten Modelle dieser Airline-Gruppe.",
     price_avg: "Durchschnittlicher Modellpreis: Summe Preis / Anzahl Modelle.",
 
-    shipping_total: "Summe der anteiligen Versandkosten der aktuell berücksichtigten Modelle dieser Airline.",
+    shipping_total: "Summe der anteiligen Versandkosten der aktuell berücksichtigten Modelle dieser Airline-Gruppe.",
     shipping_avg: "Durchschnittliche Versandkosten: Summe Versandkosten / Anzahl Modelle.",
 
     space_cm: `Berechnung: geschätzter projizierter Platzbedarf bei ${DISPLAY_ANGLE_DEG}° Aufstellwinkel. Die Tragfläche wird näherungsweise bei ${wingPosPct}% der Rumpflänge ab Nase angenommen.`
@@ -413,7 +421,7 @@ function columnTooltip(key){
 
 function render(rows){
   document.getElementById("count").textContent =
-    rows.length === 1 ? "1 Airline" : `${rows.length} Airlines`;
+    rows.length === 1 ? "1 Airline-Gruppe" : `${rows.length} Airline-Gruppen`;
 
   if(!rows.length){
     document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
@@ -465,9 +473,10 @@ function render(rows){
     <table>
       <thead>
         <tr>
-          <th class="${thClass("airline")}" data-sort="airline" title="${esc(columnTooltip("airline"))}">Airline ${mark("airline")}</th>
           <th class="${thClass("group")}" data-sort="group" title="${esc(columnTooltip("group"))}">Airline-Gruppe ${mark("group")}</th>
           <th class="${thClass("models")} num" data-sort="models" title="${esc(columnTooltip("models"))}">Modelle ${mark("models")}</th>
+          <th class="${thClass("owned")} num" data-sort="owned" title="${esc(columnTooltip("owned"))}">vorh. ${mark("owned")}</th>
+          <th class="${thClass("ordered")} num" data-sort="ordered" title="${esc(columnTooltip("ordered"))}">best. ${mark("ordered")}</th>
           <th class="${thClass("types")} num" data-sort="types" title="${esc(columnTooltip("types"))}">Typen ${mark("types")}</th>
           <th class="${thClass("flown")} num" data-sort="flown" title="${esc(columnTooltip("flown"))}">Mitgeflogen ${mark("flown")}</th>
           ${optionalHeaders}
@@ -479,8 +488,7 @@ function render(rows){
   for(const row of rows){
     const href =
       `./models_overview.html?group=${encodeURIComponent(row.group || "")}` +
-      `&airline=${encodeURIComponent(row.airline || "")}` +
-      `&status=owned`;
+      `&status=owned,ordered`;
     
     const optionalCells = visibleOptionalCols.map(key => {
       let html = "";
@@ -501,9 +509,10 @@ function render(rows){
         
     html += `
       <tr class="airlineRow" data-href="${esc(href)}">
-        <td>${esc(row.airline)}</td>
         <td>${esc(row.group)}</td>
         <td class="num mono">${esc(row.models)}</td>
+        <td class="num mono">${row.owned > 0 ? esc(row.owned) : ""}</td>
+        <td class="num mono">${row.ordered > 0 ? esc(row.ordered) : ""}</td>
         <td class="num mono">${esc(row.types)}</td>
         <td class="num mono">
           ${
@@ -542,10 +551,14 @@ function render(rows){
       </tbody>
       <tfoot>
         <tr class="sumRow">
-          <td colspan="2">Summe angezeigte Airlines</td>
+          <td>Summen</td>
           <td class="num mono">${esc(sumRows(rows, "models"))}</td>
+          <td class="num mono">${sumRows(rows, "owned") > 0 ? esc(sumRows(rows, "owned")) : ""}</td>
+          <td class="num mono">${sumRows(rows, "ordered") > 0 ? esc(sumRows(rows, "ordered")) : ""}</td>
           <td class="num mono">${esc(sumRows(rows, "types"))}</td>
-          <td class="num mono">${esc(sumRows(rows, "flown"))}</td>
+          <td class="num mono">
+            ${sumRows(rows, "flown") > 0 ? esc(sumRows(rows, "flown")) : ""}
+          </td>
           ${optionalSumCells}
         </tr>
       </tfoot>
@@ -586,10 +599,9 @@ function apply(){
     group: document.getElementById("group").value,
     flown: document.getElementById("flown").value,
   
-    // derzeit bewusst fix: nur vorhandene Modelle
-    // später können hier Checkboxen für ordered / wishlist ergänzt werden
+    // Default: vorhandene + bestellte Modelle
     owned: true,
-    ordered: false,
+    ordered: true,
     wishlist: false
   };
 
@@ -691,7 +703,7 @@ async function main(){
 
     const baseRows = buildAirlineRows(state.all, {
       owned: true,
-      ordered: false,
+      ordered: true,
       wishlist: false
     });
 
