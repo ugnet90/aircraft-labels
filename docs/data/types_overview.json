@@ -7567,11 +7567,25 @@
       "manufacturer": "de Havilland Canada",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
+      "status": "mixed",
       "owned_count": 1,
-      "ordered_count": 0,
-      "total_count": 1,
+      "ordered_count": 1,
+      "total_count": 2,
       "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa CityLine",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        },
         {
           "group": "Wideroe",
           "owned": 1,

@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-59",
+  "model_id": "WIS-LH-60",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-WIS-LH-59-01",
+      "id": "PC-WIS-LH-60-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
       "price": 0.85
@@ -45,7 +45,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "59"
+    "row": "60"
   },
   "aircraft": {
     "aircraft_id": "MCD-DC10-30",
