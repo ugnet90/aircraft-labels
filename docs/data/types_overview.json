@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 401,
-  "with_any_models": 139,
-  "missing": 262,
+  "with_any_models": 140,
+  "missing": 261,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -12120,11 +12120,26 @@
       "manufacturer": "Saab",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "DHL Aviation",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "SingleAisle",
       "market_segment": "Regional",

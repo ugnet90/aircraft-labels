@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 401,
     "present_types": 135,
-    "missing_types": 262,
-    "ordered_types": 4,
-    "models": 251
+    "missing_types": 261,
+    "ordered_types": 5,
+    "models": 252
   },
   "missing_types": [
     {
@@ -1408,12 +1408,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "SAB-340A-F",
-      "Typ_anzeige": "Saab 340A(F)",
-      "manufacturer": "Saab",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "SCA-M348",
       "Typ_anzeige": "Scaled Composites Model 348 White Knight Two",
       "manufacturer": "Scaled Composites",
@@ -1603,6 +1597,12 @@
       "aircraft_id": "BOM-CL601",
       "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "SAB-340A-F",
+      "Typ_anzeige": "Saab 340A(F)",
+      "manufacturer": "Saab",
       "status": "ordered"
     }
   ]
