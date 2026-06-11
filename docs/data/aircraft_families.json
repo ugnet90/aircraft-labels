@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T08:17:29+02:00",
+  "generated_at": "2026-06-11T18:43:46+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -4779,6 +4779,18 @@
         "height": 6.97,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Saab"
+      },
+      {
+        "aircraft_id": "SAB-340A-F",
+        "type": "Saab 340A(F)",
+        "parent_aircraft_id": "SAB-340",
+        "parent_type": "Saab 340",
+        "length": 19.73,
+        "wingspan": 21.44,
+        "height": 6.97,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Saab"
       }
     ],

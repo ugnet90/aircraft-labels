@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 400,
+    "master_types": 401,
     "present_types": 135,
-    "missing_types": 261,
+    "missing_types": 262,
     "ordered_types": 4,
     "models": 251
   },
@@ -1404,6 +1404,12 @@
     {
       "aircraft_id": "SAB-2000",
       "Typ_anzeige": "Saab 2000",
+      "manufacturer": "Saab",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "SAB-340A-F",
+      "Typ_anzeige": "Saab 340A(F)",
       "manufacturer": "Saab",
       "status": "missing"
     },

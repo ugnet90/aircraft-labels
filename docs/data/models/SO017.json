@@ -87,10 +87,10 @@
   },
   "logo": {
     "id": "VI_VDA",
-    "link": "",
-    "name": "",
-    "airline": "",
-    "logo_speaking": ""
+    "link": "https://assets.planespotters.net/files/airlines/9/volga-dnepr_opk.jpg",
+    "name": "Volga-Dnepr Airlines",
+    "airline": "Volga-Dnepr",
+    "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
     "aircraft_id": "ANT-An124",

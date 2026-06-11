@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T08:17:29+02:00",
+  "generated_at": "2026-06-11T18:43:46+02:00",
   "count": 251,
   "counts_by_airline_code": {
     "OS": 23,
@@ -9811,7 +9811,7 @@
       "scale": "1:400",
       "flown": null,
       "logo_id": "VI_VDA",
-      "logo_speaking": "",
+      "logo_speaking": "Wahr",
       "shop": "Ebay lorrgr_155",
       "shop_url": "https://www.ebay.de/itm/406891131934?itmmeta=01KQRT73KMXD823D2A7MXP8AP0&hash=item5ebc99f41e:g:SLwAAeSwcIBp8Qib",
       "ordered_at": null,
@@ -9856,7 +9856,7 @@
       "scale": "1:400",
       "flown": null,
       "logo_id": "4U_GWI",
-      "logo_speaking": "",
+      "logo_speaking": "Wahr",
       "shop": "Kleinanzeigen.de Zolldenstein",
       "shop_url": "https://www.kleinanzeigen.de/s-anzeige/grosse-sammlung-an-1-400-flugzeugmetallmodellen-abzugeben/3401381031-234-7939",
       "ordered_at": null,
