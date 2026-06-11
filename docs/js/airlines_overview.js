@@ -4,6 +4,9 @@ const state = {
 };
 
 let tableSortKey = localStorage.getItem("airlinesSortKey") || "group";
+if(tableSortKey === "airline"){
+  tableSortKey = "group";
+}
 let tableSortDir = Number(localStorage.getItem("airlinesSortDir") || "1");
 if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;
 
