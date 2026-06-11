@@ -247,6 +247,7 @@ function buildAirlineRows(items, filters){
     owned: row.owned,
     ordered: row.ordered,
     types: row.typesSet.size,
+    type_keys: Array.from(row.typesSet),
     flown: row.flown,
     price_total: row.priceTotal,
     shipping_total: row.shippingTotal,
@@ -422,6 +423,35 @@ function columnTooltip(key){
   return tips[key] || "";
 }
 
+function countUniqueTypes(rows){
+  const set = new Set();
+
+  rows.forEach(row => {
+    const arr = Array.isArray(row.type_keys) ? row.type_keys : [];
+    arr.forEach(t => {
+      const s = String(t || "").trim();
+      if(s) set.add(s);
+    });
+  });
+
+  return set.size;
+}
+
+function isNumericSortKey(key){
+  return [
+    "models",
+    "owned",
+    "ordered",
+    "types",
+    "flown",
+    "price_total",
+    "price_avg",
+    "shipping_total",
+    "shipping_avg",
+    "space_cm"
+  ].includes(key);
+}
+
 function render(rows){
   document.getElementById("count").textContent =
     rows.length === 1 ? "1 Airline-Gruppe" : `${rows.length} Airline-Gruppen`;
@@ -558,7 +588,7 @@ function render(rows){
           <td class="num mono">${esc(sumRows(rows, "models"))}</td>
           <td class="num mono">${sumRows(rows, "owned") > 0 ? esc(sumRows(rows, "owned")) : ""}</td>
           <td class="num mono">${sumRows(rows, "ordered") > 0 ? esc(sumRows(rows, "ordered")) : ""}</td>
-          <td class="num mono">${esc(sumRows(rows, "types"))}</td>
+          <td class="num mono">${esc(countUniqueTypes(rows))}</td>
           <td class="num mono">
             ${sumRows(rows, "flown") > 0 ? esc(sumRows(rows, "flown")) : ""}
           </td>
@@ -580,17 +610,17 @@ function render(rows){
   document.querySelectorAll("#content th[data-sort]").forEach(th => {
     th.addEventListener("click", () => {
       const key = th.dataset.sort;
-
+  
       if(tableSortKey === key){
         tableSortDir *= -1;
       }else{
         tableSortKey = key;
-        tableSortDir = 1;
+        tableSortDir = isNumericSortKey(key) ? -1 : 1;
       }
-
+  
       localStorage.setItem("airlinesSortKey", tableSortKey);
       localStorage.setItem("airlinesSortDir", String(tableSortDir));
-
+  
       apply();
     });
   });
