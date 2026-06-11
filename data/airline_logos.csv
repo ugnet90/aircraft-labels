@@ -23,8 +23,10 @@ BR_BAW;British Asia Airways;British Asia Airways Limited;BR;BAW;SPEEDBIRD;Wahr;h
 SU_BUR;Buran Space Shuttle;-;-;-;-;Falsch;https://www.buran-energia.com/img/img_logoV2.png
 B_COM;COMAC;Commercial Aircraft Corporation of China, Ltd.;-;-;-;Wahr;https://assets.planespotters.net/files/airlines/1/comac_ab7ba8.svg
 LX_CRX;Crossair;Crossair Ltd. Co.;LX;CRX;CROSSAIR;Wahr;https://assets.planespotters.net/files/airlines/9/crossair_cfd0b4_opk.png
+DE_DHL;DHL Aviation;DHL Aviation;-;-;-;Wahr;https://assets.planespotters.net/files/airlines/9/dhl-aviation_14801d_opr.png
 WK_EDW;Edelweiss;Edelweiss Air AG;WK;EDW;EDELWEISS;Wahr;https://assets.planespotters.net/files/airlines/6/edelweiss-air_afd2d0.svg
 FX_GEC;German Cargo;German Cargo Services GmbH;FX;GEC;GERMAN CARGO;Wahr;https://assets.planespotters.net/files/airlines/8/german-cargo_a6d4d7_opk.png
+4U_GWI;Germanwings;Germanwings GmbH;4U;GWI;GERMANWINGS;Wahr;https://assets.planespotters.net/files/airlines/3/germanwings_78b506.svg
 HF_HLF;Hapag-Lloyd;Hapag-Lloyd Flug GmbH;HF;HLF;HAPAG LLOYD;Wahr;https://assets.planespotters.net/files/airlines/1/hapag-lloyd_4b7463.png
 X3_HLX;Hapag-Lloyd Express;Hapag-Lloyd Express GmbH;X3;HLX;YELLOW CAB;Wahr;https://assets.planespotters.net/files/airlines/3/hapag-lloyd-express_137e3c.png
 FI_ICE;Icelandair;Flugleidir HF.;FI;ICE;ICEAIR;Wahr;https://assets.planespotters.net/files/airlines/3/icelandair_732c13.svg
@@ -60,4 +62,5 @@ US_ARM;United States Army;United States Army;-;-;-;Falsch;https://assets.planesp
 US_NAV;United States Navy;United States Navy (US Navy);-;CNV;CONVOY;Falsch;https://assets.planespotters.net/files/airlines/9/us-navy_6a3378.svg
 US_VGX;Virgin Galactic;Virgin Galactic Holdings Incorporated;-;VGX;GALACTIC;Wahr;https://assets.planespotters.net/files/airlines/9/virgin-galactic_1fb966_opk.png
 US_OBT;Virgin Orbit;Virgin Orbit LLC;;OBT;COSMIC GIRL;Wahr;https://assets.planespotters.net/files/airlines/3/virgin-orbit_e3ae92_opk.png
+VI_VDA;Volga-Dnepr;Volga-Dnepr Airlines;VI;VDA;VOLGA;Wahr;https://assets.planespotters.net/files/airlines/9/volga-dnepr_opk.jpg
 WF_WIF;Widerøe;Widerøes Flyveselskap AS;WF;WIF;WIDEROE;Wahr;https://assets.planespotters.net/files/airlines/8/wideroe_540471_opk.png
