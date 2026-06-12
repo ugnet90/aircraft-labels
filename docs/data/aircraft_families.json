@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T18:44:08+02:00",
+  "generated_at": "2026-06-12T11:58:48+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -4350,6 +4350,18 @@
         "manufacturer": "McDonnell Douglas"
       },
       {
+        "aircraft_id": "MCD-DC10-40F",
+        "type": "McDonnell Douglas DC-10-40F",
+        "parent_aircraft_id": "MCD-DC10-40",
+        "parent_type": "McDonnell Douglas DC-10-40",
+        "length": 55.5,
+        "wingspan": 50.4,
+        "height": 17.7,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "McDonnell Douglas"
+      },
+      {
         "aircraft_id": "MCD-DC10-10",
         "type": "McDonnell Douglas DC-10-10",
         "parent_aircraft_id": "",
@@ -5064,6 +5076,18 @@
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Tupolew"
+      },
+      {
+        "aircraft_id": "TUP-Tu154M",
+        "type": "Tupolev Tu-154M",
+        "parent_aircraft_id": "TUP-Tu154",
+        "parent_type": "Tupolew Tu-154",
+        "length": 47.92,
+        "wingspan": 37.55,
+        "height": 11.4,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Tupolev"
       }
     ],
     "Tu-204": [

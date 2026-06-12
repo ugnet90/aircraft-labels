@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 401,
+    "master_types": 403,
     "present_types": 135,
-    "missing_types": 261,
+    "missing_types": 263,
     "ordered_types": 5,
     "models": 252
   },
@@ -1234,6 +1234,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "MCD-DC10-40F",
+      "Typ_anzeige": "McDonnell Douglas DC-10-40F",
+      "manufacturer": "McDonnell Douglas",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "MCD-DC9-10",
       "Typ_anzeige": "McDonnell Douglas DC-9-10",
       "manufacturer": "McDonnell Douglas",
@@ -1501,6 +1507,12 @@
       "aircraft_id": "TUP-Tu154",
       "Typ_anzeige": "Tupolew Tu-154",
       "manufacturer": "Tupolew",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "TUP-Tu154M",
+      "Typ_anzeige": "Tupolev Tu-154M",
+      "manufacturer": "Tupolev",
       "status": "missing"
     },
     {
