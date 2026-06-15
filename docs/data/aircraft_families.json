@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T11:58:48+02:00",
+  "generated_at": "2026-06-15T15:08:14+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -356,7 +356,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Airbus"
       },
       {
@@ -886,7 +886,7 @@
         "wingspan": 27.05,
         "height": 7.65,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "ATR"
       },
       {
@@ -1004,7 +1004,7 @@
         "wingspan": 28.5,
         "height": 7.47,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "BAC"
       }
     ],
@@ -1456,7 +1456,7 @@
         "wingspan": 28.35,
         "height": 11.23,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Boeing"
       },
       {
@@ -2362,7 +2362,7 @@
         "wingspan": 21.21,
         "height": 6.22,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Bombardier"
       }
     ],
@@ -2390,7 +2390,7 @@
         "wingspan": 23.24,
         "height": 7.57,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Bombardier"
       }
     ],
@@ -3464,7 +3464,7 @@
         "wingspan": 28.72,
         "height": 10.55,
         "wingtip": "WL",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Embraer"
       }
     ],
@@ -3492,7 +3492,7 @@
         "wingspan": 14.2,
         "height": 4.7,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Fairchild Swearingen"
       }
     ],
@@ -3616,7 +3616,7 @@
         "wingspan": 32.85,
         "height": 6.3,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "wishlist",
         "manufacturer": "Focke-Wulf"
       }
     ],
