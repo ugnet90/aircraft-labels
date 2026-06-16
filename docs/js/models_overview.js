@@ -555,6 +555,7 @@ function render(items){
           <th class="${thClass("aircraft_type")}" data-sort="aircraft_type">Flugzeugtyp ${mark("aircraft_type")}</th>
           <th class="${thClass("wingtip")}" data-sort="wingtip">WL/SL ${mark("wingtip")}</th>
           <th class="${thClass("registration","hide-m")}" data-sort="registration">Registrierung ${mark("registration")}</th>
+          <th class="${thClass("aircraft_name","hide-m")}" data-sort="aircraft_name">Name ${mark("aircraft_name")}</th>
           <th class="${thClass("livery_display","hide-m")}" data-sort="livery_display">Bemalung ${mark("livery_display")}</th>
           <th class="${thClass("arrived","hide-m")}" data-sort="arrived">Angekommen ${mark("arrived")}</th>
           ${optionalHeaders}
@@ -647,6 +648,7 @@ function render(items){
           }
         </td>
         <td class="mono hide-m">${esc(it.registration || "")}</td>
+        <td class="hide-m">${esc(it.aircraft_name || "")}</td>
         <td class="hide-m">${esc(it.livery_display || it.livery_name || "")}</td>
         <td class="mono hide-m">
           ${esc(formatDateDE(it.arrived || ""))}
@@ -999,6 +1001,7 @@ async function main(){
         "aircraft_type",
         "wingtip",
         "registration",
+        "aircraft_name",
         "livery_display",
         "arrived"
       ]);
