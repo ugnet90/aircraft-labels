@@ -476,3 +476,97 @@ body.noscroll{
   color:#0b4da2;
   font-weight:700;
 }
+
+.photoCol{
+  width:54px;
+  text-align:center;
+}
+
+.photoBtn{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:8px;
+  padding:3px 7px;
+  font-size:14px;
+  line-height:1.2;
+  cursor:pointer;
+}
+
+.photoBtn:hover{
+  background:#f4f6f8;
+}
+
+.photoOverlayBackdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  z-index:1300;
+}
+
+.photoOverlay{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:min(900px, calc(100vw - 28px));
+  max-height:calc(100vh - 36px);
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 20px 70px rgba(0,0,0,.30);
+  z-index:1301;
+  overflow:hidden;
+  border:1px solid rgba(0,0,0,.16);
+}
+
+.photoOverlayHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px 12px;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.photoOverlayTitle{
+  font-weight:700;
+  font-size:14px;
+}
+
+.photoOverlayClose{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:10px;
+  width:34px;
+  height:34px;
+  font-size:22px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.photoOverlayClose:hover{
+  background:#f5f6f8;
+}
+
+.photoOverlayBody{
+  padding:12px;
+}
+
+.photoOverlayBody img{
+  display:block;
+  max-width:100%;
+  max-height:calc(100vh - 160px);
+  margin:0 auto;
+  object-fit:contain;
+  border-radius:10px;
+  background:#f3f3f3;
+}
+
+.photoOverlayMeta{
+  margin-top:8px;
+  font-size:12px;
+  text-align:right;
+}
+
+body.noscroll{
+  overflow:hidden;
+}
