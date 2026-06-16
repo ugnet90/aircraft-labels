@@ -1,4 +1,4 @@
-const state = { all: [], filtered: [] };
+const state = { all: [], filtered: [], photos: {} };
 
 let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // Default-Spalte
 let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
@@ -513,6 +513,115 @@ function getShopUrl(it){
   return String(it.shop_url || it.Shop_url || it.Shop_URL || "").trim();
 }
 
+function getAircraftPhotoEntry(modelId){
+  const id = String(modelId || "").trim();
+  if(!id) return null;
+
+  const entry = state.photos?.[id];
+  return entry && typeof entry === "object" ? entry : null;
+}
+
+function getAircraftPhotoUrl(modelId){
+  const entry = getAircraftPhotoEntry(modelId);
+  if(!entry) return "";
+
+  return String(
+    entry.thumb_url ||
+    entry.image_url ||
+    entry.photo_url ||
+    entry.og_image ||
+    ""
+  ).trim();
+}
+
+function getAircraftPhotoSourceUrl(modelId){
+  const entry = getAircraftPhotoEntry(modelId);
+  if(!entry) return "";
+
+  return String(
+    entry.source_url ||
+    entry.photo_url ||
+    ""
+  ).trim();
+}
+
+function hasAircraftPhoto(modelId){
+  return !!getAircraftPhotoUrl(modelId);
+}
+
+function ensurePhotoOverlay(){
+  if(document.getElementById("photoOverlay")) return;
+
+  const html = `
+    <div id="photoOverlayBackdrop" class="photoOverlayBackdrop" hidden></div>
+    <div id="photoOverlay" class="photoOverlay" hidden>
+      <div class="photoOverlayHead">
+        <div id="photoOverlayTitle" class="photoOverlayTitle">Originalfoto</div>
+        <button type="button" id="photoOverlayClose" class="photoOverlayClose" aria-label="Schließen">×</button>
+      </div>
+      <div class="photoOverlayBody">
+        <img id="photoOverlayImg" alt="Originalflugzeug">
+        <div id="photoOverlayMeta" class="photoOverlayMeta"></div>
+      </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML("beforeend", html);
+
+  document.getElementById("photoOverlayClose")?.addEventListener("click", closePhotoOverlay);
+  document.getElementById("photoOverlayBackdrop")?.addEventListener("click", closePhotoOverlay);
+
+  document.addEventListener("keydown", (ev) => {
+    if(ev.key === "Escape"){
+      closePhotoOverlay();
+    }
+  });
+}
+
+function openPhotoOverlay(modelId){
+  ensurePhotoOverlay();
+
+  const photoUrl = getAircraftPhotoUrl(modelId);
+  if(!photoUrl) return;
+
+  const item = state.all.find(x => String(x.model_id || "") === String(modelId || ""));
+  const sourceUrl = getAircraftPhotoSourceUrl(modelId);
+
+  const titleParts = [
+    item?.airline_row || item?.airline || "",
+    item?.aircraft_type || "",
+    item?.registration || ""
+  ].filter(Boolean);
+
+  document.getElementById("photoOverlayTitle").textContent =
+    titleParts.length ? titleParts.join(" · ") : "Originalfoto";
+
+  const img = document.getElementById("photoOverlayImg");
+  img.src = photoUrl;
+  img.alt = titleParts.length ? titleParts.join(" · ") : "Originalflugzeug";
+
+  document.getElementById("photoOverlayMeta").innerHTML = sourceUrl
+    ? `<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Quelle öffnen</a>`
+    : "";
+
+  document.getElementById("photoOverlayBackdrop").hidden = false;
+  document.getElementById("photoOverlay").hidden = false;
+  document.body.classList.add("noscroll");
+}
+
+function closePhotoOverlay(){
+  const img = document.getElementById("photoOverlayImg");
+  if(img) img.src = "";
+
+  const backdrop = document.getElementById("photoOverlayBackdrop");
+  const overlay = document.getElementById("photoOverlay");
+
+  if(backdrop) backdrop.hidden = true;
+  if(overlay) overlay.hidden = true;
+
+  document.body.classList.remove("noscroll");
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -556,6 +665,7 @@ function render(items){
           <th class="${thClass("wingtip")}" data-sort="wingtip">WL/SL ${mark("wingtip")}</th>
           <th class="${thClass("registration","hide-m")}" data-sort="registration">Registrierung ${mark("registration")}</th>
           <th class="${thClass("aircraft_name","hide-m")}" data-sort="aircraft_name">Name ${mark("aircraft_name")}</th>
+          <th class="hide-m photoCol">Foto</th>
           <th class="${thClass("livery_display","hide-m")}" data-sort="livery_display">Bemalung ${mark("livery_display")}</th>
           <th class="${thClass("arrived","hide-m")}" data-sort="arrived">Angekommen ${mark("arrived")}</th>
           ${optionalHeaders}
@@ -649,6 +759,13 @@ function render(items){
         </td>
         <td class="mono hide-m">${esc(it.registration || "")}</td>
         <td class="hide-m">${esc(it.aircraft_name || "")}</td>
+        <td class="hide-m photoCol">
+          ${
+            hasAircraftPhoto(it.model_id)
+              ? `<button type="button" class="photoBtn" data-photo-model-id="${esc(it.model_id)}" title="Originalfoto anzeigen">📷</button>`
+              : ""
+          }
+        </td>
         <td class="hide-m">${esc(it.livery_display || it.livery_name || "")}</td>
         <td class="mono hide-m">
           ${esc(formatDateDE(it.arrived || ""))}
@@ -673,6 +790,16 @@ function render(items){
       if(id) location.href = `./model.html?id=${encodeURIComponent(id)}`;
     });
   });
+
+  document.querySelectorAll("#content .photoBtn").forEach(btn => {
+    btn.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      ev.stopPropagation();
+  
+      const modelId = btn.getAttribute("data-photo-model-id") || "";
+      openPhotoOverlay(modelId);
+    });
+  });  
   
   document.querySelectorAll("#content th[data-sort]").forEach(th => {
     th.addEventListener("click", () => {
@@ -810,6 +937,15 @@ async function main(){
 
     state.all = data.items || [];
 
+    try{
+      const photoRes = await fetch("./data/aircraft_photos_enriched.json", {cache:"no-store"});
+      if(photoRes.ok){
+        state.photos = await photoRes.json();
+      }
+    }catch(e){
+      state.photos = {};
+    }
+    
     const collectionCount = state.all.filter(it => {
       const s = String(it.status || "").toLowerCase();
       return s === "owned" || s === "ordered";
