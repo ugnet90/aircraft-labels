@@ -1,4 +1,4 @@
-const state = { all: [], filtered: [], photos: {}, postcards: {} };
+const state = { all: [], filtered: [], postcards: {} };
 
 let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // Default-Spalte
 let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
@@ -513,36 +513,31 @@ function getShopUrl(it){
   return String(it.shop_url || it.Shop_url || it.Shop_URL || "").trim();
 }
 
-function getAircraftPhotoEntry(modelId){
+function getModelItem(modelId){
   const id = String(modelId || "").trim();
   if(!id) return null;
 
-  const entry = state.photos?.[id];
-  return entry && typeof entry === "object" ? entry : null;
+  return state.all.find(x => String(x.model_id || "").trim() === id) || null;
 }
 
-function getAircraftPhotoUrl(modelId){
-  const entry = getAircraftPhotoEntry(modelId);
-  if(!entry) return "";
+function getModelPhotoUrl(modelId){
+  const it = getModelItem(modelId);
+  if(!it) return "";
 
   return String(
-    entry.thumb_url ||
-    entry.image_url ||
-    entry.photo_image_url ||
-    entry.photo_url ||
-    entry.og_image ||
+    it.photo_image_url ||
+    it.photo_img_url ||
     ""
   ).trim();
 }
 
-function getAircraftPhotoSourceUrl(modelId){
-  const entry = getAircraftPhotoEntry(modelId);
-  if(!entry) return "";
+function getModelPhotoSourceUrl(modelId){
+  const it = getModelItem(modelId);
+  if(!it) return "";
 
   return String(
-    entry.source_url ||
-    entry.photo_source_url ||
-    entry.photo_url ||
+    it.photo_source_url ||
+    it.photo ||
     ""
   ).trim();
 }
@@ -593,13 +588,13 @@ function getPostcardSourceUrl(modelId){
 }
 
 function getBestModelImage(modelId){
-  const photoUrl = getAircraftPhotoUrl(modelId);
+  const photoUrl = getModelPhotoUrl(modelId);
 
   if(photoUrl){
     return {
       kind: "photo",
       image_url: photoUrl,
-      source_url: getAircraftPhotoSourceUrl(modelId),
+      source_url: getModelPhotoSourceUrl(modelId),
       label: "Originalfoto"
     };
   }
@@ -1010,15 +1005,6 @@ async function main(){
     const data = await res.json();
 
     state.all = data.items || [];
-
-    try{
-      const photoRes = await fetch("./data/aircraft_photos_enriched.json", {cache:"no-store"});
-      if(photoRes.ok){
-        state.photos = await photoRes.json();
-      }
-    }catch(e){
-      state.photos = {};
-    }
 
     try{
       const pcRes = await fetch("./data/postcards_enriched.json", {cache:"no-store"});
