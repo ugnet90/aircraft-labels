@@ -3,10 +3,10 @@
   "warning": "",
   "counts": {
     "master_types": 403,
-    "present_types": 133,
-    "missing_types": 266,
-    "ordered_types": 4,
-    "models": 265
+    "present_types": 135,
+    "missing_types": 263,
+    "ordered_types": 5,
+    "models": 269
   },
   "missing_types": [
     {
@@ -31,12 +31,6 @@
       "aircraft_id": "AEV-L29",
       "Typ_anzeige": "Aero Vodochody L-29 Delfín",
       "manufacturer": "Aero Vodochody",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A310-304VIP",
-      "Typ_anzeige": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
-      "manufacturer": "Airbus",
       "status": "missing"
     },
     {
@@ -102,12 +96,6 @@
     {
       "aircraft_id": "AIB-A330-MRTT",
       "Typ_anzeige": "Airbus A330 MRTT",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-ACJ350-900",
-      "Typ_anzeige": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -648,12 +636,6 @@
     {
       "aircraft_id": "BOM-CL600",
       "Typ_anzeige": "Bombardier Challenger 600",
-      "manufacturer": "Bombardier",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOM-CL601",
-      "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
       "status": "missing"
     },
@@ -1621,6 +1603,12 @@
       "aircraft_id": "AIB-A350-1000",
       "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOM-CL601",
+      "Typ_anzeige": "Bombardier Challenger 601",
+      "manufacturer": "Bombardier",
       "status": "ordered"
     },
     {
