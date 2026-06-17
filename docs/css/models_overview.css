@@ -581,3 +581,93 @@ body.noscroll{
 body.noscroll{
   overflow:hidden;
 }
+
+.typeStockBtn{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:999px;
+  padding:3px 8px;
+  font-size:12px;
+  line-height:1.25;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.typeStockBtn:hover{
+  background:#f4f6f8;
+}
+
+.typeStockLayer{
+  position:fixed;
+  z-index:1400;
+  width:min(560px, calc(100vw - 20px));
+  max-height:min(420px, calc(100vh - 20px));
+  overflow:auto;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.16);
+  border-radius:12px;
+  box-shadow:0 18px 50px rgba(0,0,0,.22);
+}
+
+.typeStockLayerHead{
+  position:sticky;
+  top:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:9px 10px;
+  background:#fff;
+  border-bottom:1px solid rgba(0,0,0,.08);
+  font-weight:700;
+  font-size:13px;
+  z-index:1;
+}
+
+#typeStockLayerClose{
+  border:1px solid rgba(0,0,0,.14);
+  background:#fff;
+  border-radius:8px;
+  width:28px;
+  height:28px;
+  font-size:18px;
+  line-height:1;
+  cursor:pointer;
+}
+
+#typeStockLayerClose:hover{
+  background:#f5f6f8;
+}
+
+.typeStockLayerBody{
+  padding:10px;
+}
+
+.typeStockLayerTbl{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.typeStockLayerTbl th,
+.typeStockLayerTbl td{
+  padding:6px 7px;
+  border-bottom:1px solid rgba(0,0,0,.07);
+  text-align:left;
+  vertical-align:top;
+  font-size:12px;
+}
+
+.typeStockLayerTbl th{
+  color:#666;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+.typeStockLayerTbl tr.is-current td{
+  background:#eefaf0;
+}
+
+.typeStockEmpty{
+  color:#666;
+  font-size:12px;
+}
