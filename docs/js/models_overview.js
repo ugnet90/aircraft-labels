@@ -6,6 +6,7 @@ if(tableSortDir !== 1 && tableSortDir !== -1) tableSortDir = 1;            // 1 
 
 const OPTIONAL_COLUMNS = [
   { key: "shop", label: "Shop" },
+  { key: "type_stock", label: "Typ-Bestand" },
   { key: "role", label: "Rolle" },
   { key: "fuselage", label: "Rumpf" },
   { key: "market_segment", label: "Segment" },
@@ -706,6 +707,179 @@ function closePhotoOverlay(){
   document.body.classList.remove("noscroll");
 }
 
+function getTypeStockRows(aircraftId){
+  const aid = String(aircraftId || "").trim();
+  if(!aid) return [];
+
+  return state.all
+    .filter(x => String(x.aircraft_id || "").trim() === aid)
+    .filter(x => {
+      const s = String(x.status || "").trim().toLowerCase();
+      return s === "owned" || s === "ordered";
+    })
+    .sort((a,b) => {
+      const rank = (x) => {
+        const s = String(x.status || "").trim().toLowerCase();
+        if(s === "owned") return 1;
+        if(s === "ordered") return 2;
+        return 9;
+      };
+
+      const ra = rank(a);
+      const rb = rank(b);
+      if(ra !== rb) return ra - rb;
+
+      return String(a.model_id || "").localeCompare(String(b.model_id || ""), "de", {
+        numeric: true,
+        sensitivity: "base"
+      });
+    });
+}
+
+function getTypeStockSummary(aircraftId){
+  const rows = getTypeStockRows(aircraftId);
+
+  const owned = rows.filter(x => String(x.status || "").trim().toLowerCase() === "owned").length;
+  const ordered = rows.filter(x => String(x.status || "").trim().toLowerCase() === "ordered").length;
+
+  const parts = [
+    owned ? `${owned} vorh.` : "",
+    ordered ? `${ordered} best.` : ""
+  ].filter(Boolean);
+
+  return {
+    owned,
+    ordered,
+    total: owned + ordered,
+    text: parts.join(" · ")
+  };
+}
+
+function renderTypeStockPopoverContent(aircraftId, currentModelId){
+  const current = String(currentModelId || "").trim().toUpperCase();
+  const rows = getTypeStockRows(aircraftId);
+
+  if(!rows.length){
+    return `<div class="typeStockEmpty">Keine weiteren Modelle dieses Typs.</div>`;
+  }
+
+  const htmlRows = rows.map(x => {
+    const mid = String(x.model_id || "").trim();
+    const isCurrent = mid.toUpperCase() === current;
+    const status = String(x.status || "").trim().toLowerCase();
+
+    const statusLabel =
+      status === "owned" ? "vorhanden" :
+      status === "ordered" ? "bestellt" :
+      status;
+
+    const airline = String(x.airline_row || x.airline || x.airline_code || "").trim();
+    const reg = String(x.registration || "").trim();
+    const name = String(x.aircraft_name || "").trim();
+
+    return `
+      <tr class="${isCurrent ? "is-current" : ""}">
+        <td class="mono">
+          ${
+            isCurrent
+              ? `<strong>${esc(mid)}</strong>`
+              : `<a href="./model.html?id=${encodeURIComponent(mid)}">${esc(mid)}</a>`
+          }
+        </td>
+        <td>${esc(statusLabel)}</td>
+        <td>${esc(airline)}</td>
+        <td class="mono">${esc(reg)}</td>
+        <td>${esc(name)}</td>
+      </tr>
+    `;
+  }).join("");
+
+  return `
+    <div class="typeStockLayerTitle">Weitere Modelle dieses Typs</div>
+    <table class="typeStockLayerTbl">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Status</th>
+          <th>Airline</th>
+          <th>Reg.</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${htmlRows}
+      </tbody>
+    </table>
+  `;
+}
+
+function ensureTypeStockLayer(){
+  if(document.getElementById("typeStockLayer")) return;
+
+  const html = `
+    <div id="typeStockLayer" class="typeStockLayer" hidden>
+      <div class="typeStockLayerHead">
+        <span>Typ-Bestand</span>
+        <button type="button" id="typeStockLayerClose" aria-label="Schließen">×</button>
+      </div>
+      <div id="typeStockLayerBody" class="typeStockLayerBody"></div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML("beforeend", html);
+
+  document.getElementById("typeStockLayerClose")?.addEventListener("click", closeTypeStockLayer);
+
+  document.addEventListener("keydown", (ev) => {
+    if(ev.key === "Escape"){
+      closeTypeStockLayer();
+    }
+  });
+
+  document.addEventListener("click", (ev) => {
+    const layer = document.getElementById("typeStockLayer");
+    if(!layer || layer.hidden) return;
+
+    if(ev.target.closest(".typeStockBtn")) return;
+    if(ev.target.closest("#typeStockLayer")) return;
+
+    closeTypeStockLayer();
+  });
+}
+
+function openTypeStockLayer(btn){
+  ensureTypeStockLayer();
+
+  const layer = document.getElementById("typeStockLayer");
+  const body = document.getElementById("typeStockLayerBody");
+
+  const aircraftId = btn.getAttribute("data-aircraft-id") || "";
+  const modelId = btn.getAttribute("data-model-id") || "";
+
+  body.innerHTML = renderTypeStockPopoverContent(aircraftId, modelId);
+
+  const rect = btn.getBoundingClientRect();
+
+  layer.hidden = false;
+  layer.style.left = `${Math.min(rect.left, window.innerWidth - 560)}px`;
+  layer.style.top = `${rect.bottom + 8}px`;
+
+  const layerRect = layer.getBoundingClientRect();
+
+  if(layerRect.right > window.innerWidth - 8){
+    layer.style.left = `${Math.max(8, window.innerWidth - layerRect.width - 8)}px`;
+  }
+
+  if(layerRect.bottom > window.innerHeight - 8){
+    layer.style.top = `${Math.max(8, rect.top - layerRect.height - 8)}px`;
+  }
+}
+
+function closeTypeStockLayer(){
+  const layer = document.getElementById("typeStockLayer");
+  if(layer) layer.hidden = true;
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -796,6 +970,26 @@ function render(items){
     
         return `<td class="${cls}">${esc(shop)}</td>`;
       }
+
+      if(key === "type_stock"){
+        const stock = getTypeStockSummary(it.aircraft_id);
+      
+        if(stock.total <= 1){
+          return `<td class="${cls}"></td>`;
+        }
+      
+        return `
+          <td class="${cls}">
+            <button type="button"
+              class="typeStockBtn"
+              data-aircraft-id="${esc(it.aircraft_id || "")}"
+              data-model-id="${esc(it.model_id || "")}"
+              title="Weitere Modelle dieses Typs anzeigen">
+              ${esc(stock.text)}
+            </button>
+          </td>
+        `;
+      }      
     
       const value = MEASURE_COLUMNS.has(key)
         ? formatMeasureValue(it, key)
@@ -882,6 +1076,15 @@ function render(items){
   
       const modelId = btn.getAttribute("data-photo-model-id") || "";
       openPhotoOverlay(modelId);
+    });
+  });  
+
+  document.querySelectorAll("#content .typeStockBtn").forEach(btn => {
+    btn.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      ev.stopPropagation();
+  
+      openTypeStockLayer(btn);
     });
   });  
   
