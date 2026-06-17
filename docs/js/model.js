@@ -565,6 +565,137 @@ async function loadIndexIds(){
   return ids; // Reihenfolge aus index.json bleibt erhalten
 }
 
+async function loadIndexItems(){
+  const res = await fetch("./index.json", {cache:"no-store"});
+  if(!res.ok) throw new Error(`index.json HTTP ${res.status}`);
+  const j = await res.json();
+
+  if(Array.isArray(j)) return j;
+  if(Array.isArray(j?.items)) return j.items;
+  if(Array.isArray(j?.index)) return j.index;
+  if(Array.isArray(j?.models)) return j.models;
+
+  for(const k of Object.keys(j || {})){
+    if(Array.isArray(j[k])) return j[k];
+  }
+
+  return [];
+}
+
+function sameTypeStatusLabel(status){
+  const s = String(status || "").trim().toLowerCase();
+
+  if(s === "owned") return "vorhanden";
+  if(s === "ordered") return "bestellt";
+  if(s === "wishlist") return "Wunsch";
+
+  return s;
+}
+
+function sameTypeStatusClass(status){
+  const s = String(status || "").trim().toLowerCase();
+
+  if(s === "owned") return "sameType-owned";
+  if(s === "ordered") return "sameType-ordered";
+  if(s === "wishlist") return "sameType-wishlist";
+
+  return "";
+}
+
+function renderSameTypeModelsCard(rows, currentId){
+  const current = String(currentId || "").trim().toUpperCase();
+
+  const relevant = rows
+    .filter(x => {
+      const s = String(x.status || "").trim().toLowerCase();
+      return s === "owned" || s === "ordered";
+    })
+    .sort((a,b) => {
+      const rank = (x) => {
+        const s = String(x.status || "").trim().toLowerCase();
+        if(s === "owned") return 1;
+        if(s === "ordered") return 2;
+        return 9;
+      };
+
+      const ra = rank(a);
+      const rb = rank(b);
+      if(ra !== rb) return ra - rb;
+
+      return String(a.model_id || "").localeCompare(String(b.model_id || ""), "de", {
+        numeric: true,
+        sensitivity: "base"
+      });
+    });
+
+  if(relevant.length <= 1) return "";
+
+  const ownedCount = relevant.filter(x => String(x.status || "").trim().toLowerCase() === "owned").length;
+  const orderedCount = relevant.filter(x => String(x.status || "").trim().toLowerCase() === "ordered").length;
+
+  const summary = [
+    ownedCount ? `${ownedCount} vorhanden` : "",
+    orderedCount ? `${orderedCount} bestellt` : ""
+  ].filter(Boolean).join(" · ");
+
+  const rowsHtml = relevant.map(x => {
+    const mid = String(x.model_id || "").trim();
+    const isCurrent = mid.toUpperCase() === current;
+    const status = String(x.status || "").trim().toLowerCase();
+
+    const airline = String(x.airline_row || x.airline || x.airline_code || "").trim();
+    const reg = String(x.registration || "").trim();
+    const name = String(x.aircraft_name || "").trim();
+    const livery = String(x.livery_display || x.livery_name || "").trim();
+
+    return `
+      <tr class="${isCurrent ? "sameType-current" : ""}">
+        <td class="mono">
+          ${
+            isCurrent
+              ? `<strong>${esc(mid)}</strong>`
+              : `<a href="./model.html?id=${encodeURIComponent(mid)}">${esc(mid)}</a>`
+          }
+        </td>
+        <td>
+          <span class="sameTypeStatus ${sameTypeStatusClass(status)}">
+            ${esc(sameTypeStatusLabel(status))}
+          </span>
+        </td>
+        <td>${esc(airline)}</td>
+        <td class="mono">${esc(reg)}</td>
+        <td>${esc(name)}</td>
+        <td>${esc(livery)}</td>
+      </tr>
+    `;
+  }).join("");
+
+  return `
+    <div class="card">
+      <div class="k">Weitere Modelle dieses Typs</div>
+      <div class="muted sameTypeSummary">${esc(summary)}</div>
+
+      <div class="sameTypeWrap">
+        <table class="sameTypeTbl">
+          <thead>
+            <tr>
+              <th>Modell-ID</th>
+              <th>Status</th>
+              <th>Airline</th>
+              <th>Registrierung</th>
+              <th>Name</th>
+              <th>Bemalung</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rowsHtml}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
 function navNeighbors(ids, currentId){
   const cur = String(currentId || "").trim().toUpperCase();
   const i = ids.findIndex(x => String(x || "").trim().toUpperCase() === cur);
@@ -978,6 +1109,18 @@ async function main(){
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const d = await res.json();
 
+    let sameTypeModels = [];
+    try{
+      const indexItems = await loadIndexItems();
+      const aircraftId = asText(d.aircraft_id);
+
+      sameTypeModels = indexItems.filter(x =>
+        asText(x.aircraft_id) === aircraftId
+      );
+    }catch(e){
+      sameTypeModels = [];
+    }    
+
     const photosEnriched = await loadAircraftPhotosEnriched();
     const photoE = photosEnriched ? (photosEnriched[id] || null) : null;    
     const airline = asText(d.airline_row) || asText(d.airline) || asText(d.airline_code);
@@ -1230,7 +1373,10 @@ async function main(){
     const tailBlocks = [liveryBlock, v8Block, sourceBlock]
       .filter(x => x && String(x).trim() !== "");
     
-    const midBlocks = [postcardBlock].filter(x => x && String(x).trim() !== "");
+    const sameTypeBlock = renderSameTypeModelsCard(sameTypeModels, id);
+
+    const midBlocks = [postcardBlock, sameTypeBlock]
+      .filter(x => x && String(x).trim() !== "");
 
     document.getElementById("content").innerHTML =
       `<div class="stack">` +
