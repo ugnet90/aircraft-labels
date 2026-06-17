@@ -372,6 +372,21 @@ function sortByColumn(items){
       vb = b.flown === true ? 1 : b.flown === false ? 0 : -1;
     }
 
+    if(tableSortKey === "type_stock"){
+      const sa = getTypeStockSummary(a.aircraft_id);
+      const sb = getTypeStockSummary(b.aircraft_id);
+    
+      // Primär: Gesamtbestand dieses Typs
+      va = sa.total;
+      vb = sb.total;
+    
+      // Sekundär: vorhandene Modelle höher gewichten
+      if(va === vb && sa.owned !== sb.owned){
+        va = sa.owned;
+        vb = sb.owned;
+      }
+    }    
+
     if(tableSortKey === "arrived"){
       va = parseDateISO(a.arrived)?.getTime() ?? -1;
       vb = parseDateISO(b.arrived)?.getTime() ?? -1;
@@ -880,6 +895,19 @@ function closeTypeStockLayer(){
   if(layer) layer.hidden = true;
 }
 
+function isNumericSortKey(key){
+  return [
+    "flown",
+    "engines",
+    "passengers",
+    "first_flight",
+    "length_m",
+    "wingspan_m",
+    "height_m",
+    "type_stock"
+  ].includes(key);
+}
+
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
@@ -1095,7 +1123,7 @@ function render(items){
         tableSortDir *= -1;
       }else{
         tableSortKey = key;
-        tableSortDir = 1;
+        tableSortDir = isNumericSortKey(key) ? -1 : 1;
       }
   
       localStorage.setItem("indexSortKey", tableSortKey);
@@ -1426,7 +1454,8 @@ async function main(){
         "registration",
         "aircraft_name",
         "livery_display",
-        "arrived"
+        "arrived",
+        "type_stock"
       ]);
     
       if(allowedSorts.has(sort)){
