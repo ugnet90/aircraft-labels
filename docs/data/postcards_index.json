@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-17T09:09:44+02:00",
-  "count_total": 189,
-  "count_unique": 189,
+  "generated_at": "2026-06-17T15:37:59+02:00",
+  "count_total": 186,
+  "count_unique": 186,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -1168,23 +1168,24 @@
     {
       "id": "PC-SO005-01",
       "model_id": "SO005",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
-    },
-    {
-      "id": "PC-SO006-01",
-      "model_id": "SO006",
       "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
     {
+      "id": "PC-SO008-01",
+      "model_id": "SO008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
       "id": "PC-SO009-01",
       "model_id": "SO009",
-      "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
@@ -1193,40 +1194,22 @@
     {
       "id": "PC-SO010-01",
       "model_id": "SO010",
-      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    {
-      "id": "PC-SO011-01",
-      "model_id": "SO011",
-      "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    {
-      "id": "PC-SO012-01",
-      "model_id": "SO012",
       "url": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
     },
     {
-      "id": "PC-SO013-01",
-      "model_id": "SO013",
+      "id": "PC-SO011-01",
+      "model_id": "SO011",
       "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
     {
-      "id": "PC-SO015-01",
-      "model_id": "SO015",
+      "id": "PC-SO013-01",
+      "model_id": "SO013",
       "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
       "status": "owned",
       "model_status": "owned",
@@ -1234,16 +1217,16 @@
       "price": 1.35
     },
     {
-      "id": "PC-SO016-01",
-      "model_id": "SO016",
+      "id": "PC-SO014-01",
+      "model_id": "SO014",
       "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
     {
-      "id": "PC-SO017-01",
-      "model_id": "SO017",
+      "id": "PC-SO015-01",
+      "model_id": "SO015",
       "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
       "status": "owned",
       "model_status": "owned",
@@ -1251,8 +1234,8 @@
       "price": 1.05
     },
     {
-      "id": "PC-SO018-01",
-      "model_id": "SO018",
+      "id": "PC-SO016-01",
+      "model_id": "SO016",
       "url": "https://jjpostcards.com/de/ansichtskarten/4503-germanwings-a319.html",
       "status": "owned",
       "model_status": "owned",
@@ -1549,15 +1532,6 @@
       "model_status": "wishlist",
       "label": "andere Livery",
       "price": 1.35
-    },
-    {
-      "id": "PC-WIS-SO-21-01",
-      "model_id": "WIS-SO-21",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
     },
     {
       "id": "PC-WIS-SO-8-01",
@@ -2776,23 +2750,24 @@
     "PC-SO005-01": {
       "id": "PC-SO005-01",
       "model_id": "SO005",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
-    },
-    "PC-SO006-01": {
-      "id": "PC-SO006-01",
-      "model_id": "SO006",
       "url": "https://jjpostcards.com/de/ansichtskarten/9756-luftwaffe-schweiz-ju-52.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
     },
+    "PC-SO008-01": {
+      "id": "PC-SO008-01",
+      "model_id": "SO008",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
     "PC-SO009-01": {
       "id": "PC-SO009-01",
       "model_id": "SO009",
-      "url": "https://jjpostcards.com/de/ansichtskarten/40959-Airbus-Transport-A330-Beluga-XL.html",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
@@ -2801,33 +2776,32 @@
     "PC-SO010-01": {
       "id": "PC-SO010-01",
       "model_id": "SO010",
-      "url": "https://jjpostcards.com/de/ansichtskarten/40969-NASA-Space-Shuttle.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    "PC-SO011-01": {
-      "id": "PC-SO011-01",
-      "model_id": "SO011",
-      "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    "PC-SO012-01": {
-      "id": "PC-SO012-01",
-      "model_id": "SO012",
       "url": "https://jjpostcards.com/de/ansichtskarten/26246-german-cargo-b707.html",
       "status": "owned",
       "model_status": "owned",
       "price": 0.85
     },
+    "PC-SO011-01": {
+      "id": "PC-SO011-01",
+      "model_id": "SO011",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.35
+    },
     "PC-SO013-01": {
       "id": "PC-SO013-01",
       "model_id": "SO013",
-      "url": "https://jjpostcards.com/de/ansichtskarten/43010-air-belgium-a330neo.html",
+      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Livery",
+      "price": 1.35
+    },
+    "PC-SO014-01": {
+      "id": "PC-SO014-01",
+      "model_id": "SO014",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
       "status": "owned",
       "model_status": "owned",
       "price": 1.35
@@ -2835,32 +2809,15 @@
     "PC-SO015-01": {
       "id": "PC-SO015-01",
       "model_id": "SO015",
-      "url": "https://jjpostcards.com/de/ansichtskarten/43083-china-eastern-c919.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Livery",
-      "price": 1.35
-    },
-    "PC-SO016-01": {
-      "id": "PC-SO016-01",
-      "model_id": "SO016",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13106-nasa-b747-space-shutlle.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
-    },
-    "PC-SO017-01": {
-      "id": "PC-SO017-01",
-      "model_id": "SO017",
       "url": "https://jjpostcards.com/de/ansichtskarten/4438-volga-dnepr-an-124.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.05
     },
-    "PC-SO018-01": {
-      "id": "PC-SO018-01",
-      "model_id": "SO018",
+    "PC-SO016-01": {
+      "id": "PC-SO016-01",
+      "model_id": "SO016",
       "url": "https://jjpostcards.com/de/ansichtskarten/4503-germanwings-a319.html",
       "status": "owned",
       "model_status": "owned",
@@ -3157,15 +3114,6 @@
       "model_status": "wishlist",
       "label": "andere Livery",
       "price": 1.35
-    },
-    "PC-WIS-SO-21-01": {
-      "id": "PC-WIS-SO-21-01",
-      "model_id": "WIS-SO-21",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
     },
     "PC-WIS-SO-8-01": {
       "id": "PC-WIS-SO-8-01",
