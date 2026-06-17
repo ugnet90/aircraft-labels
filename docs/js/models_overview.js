@@ -667,6 +667,8 @@ function ensurePhotoOverlay(){
 }
 
 function openPhotoOverlay(modelId){
+  closeTypeStockLayer();
+
   ensurePhotoOverlay();
 
   const imgInfo = getBestModelImage(modelId);
@@ -867,6 +869,8 @@ function ensureTypeStockLayer(){
 }
 
 function openTypeStockLayer(btn){
+  closePhotoOverlay();
+
   ensureTypeStockLayer();
 
   const layer = document.getElementById("typeStockLayer");
