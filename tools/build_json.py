@@ -533,6 +533,10 @@ def main() -> int:
             "wishlist": wishlist,
             "wishlist_prio": wishlist_prio,
             "status": status,
+
+            "photo_image_url": photo_image_url,
+            "photo_source_url": photo_source_url,
+            "photo_credit": photo_credit,
             
             # Optionale technische Felder für models_overview
             "role": (aircraft_full.get("Role", "") if aircraft_full else "").strip(),
