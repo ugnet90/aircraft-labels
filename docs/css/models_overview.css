@@ -675,3 +675,14 @@ body.noscroll{
 .typeStockLayerTbl a.currentModelLink{
   font-weight:700;
 }
+
+.typeStockTypeName{
+  display:inline-block;
+  margin-left:4px;
+  padding:2px 7px;
+  border:1px solid rgba(0,0,0,.14);
+  border-radius:999px;
+  background:#f7f7f7;
+  font-weight:700;
+  white-space:nowrap;
+}
