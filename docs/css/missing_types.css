@@ -25,7 +25,13 @@ td.small{ font-size:12px; color:#666; }
   th, td{ padding:10px 10px; }
 }
 
-tr.ordered td{ background:#fff8e1; }
+tr.ordered td{
+  background:#f5f9ff;
+}
+
+tr.ordered:hover td{
+  background:#edf5ff;
+}
 
 .badge{
   display:inline-block;
@@ -34,8 +40,16 @@ tr.ordered td{ background:#fff8e1; }
   font-size:11px;
   border:1px solid #ddd;
 }
-.badge.missing{ background:#fff; }
-.badge.ordered{ background:#ffe08a; }
+
+.badge.missing{
+  background:#fff;
+}
+
+.badge.ordered{
+  background:#f5f9ff;
+  border-color:#b7d4f5;
+  color:#0b4da2;
+}
 
 .bar input.is-active,
 .bar select.is-active{
