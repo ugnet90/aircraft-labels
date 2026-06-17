@@ -671,3 +671,7 @@ body.noscroll{
   color:#666;
   font-size:12px;
 }
+
+.typeStockLayerTbl a.currentModelLink{
+  font-weight:700;
+}
