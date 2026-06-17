@@ -813,7 +813,7 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
         <td>
           ${
             airline
-              ? `<a href="./models_overview.html?group=${encodeURIComponent(group)}&airline=${encodeURIComponent(airline)}&status=owned,ordered">${esc(airline)}</a>`
+              ? `<a href="./models_overview.html?airline=${encodeURIComponent(airline)}&status=owned,ordered">${esc(airline)}</a>`
               : ""
           }
         </td>
