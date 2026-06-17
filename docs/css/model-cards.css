@@ -491,3 +491,60 @@
   font-size:18px;
   font-weight:700;
 }
+
+.sameTypeSummary{
+  margin-top:6px;
+  font-size:12px;
+}
+
+.sameTypeWrap{
+  margin-top:10px;
+  overflow-x:auto;
+}
+
+.sameTypeTbl{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.sameTypeTbl th,
+.sameTypeTbl td{
+  padding:7px 8px;
+  border-bottom:1px solid rgba(0,0,0,.07);
+  text-align:left;
+  vertical-align:top;
+}
+
+.sameTypeTbl th{
+  font-size:12px;
+  color:#666;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+.sameTypeTbl tr.sameType-current td{
+  background:#eefaf0;
+}
+
+.sameTypeStatus{
+  display:inline-block;
+  padding:2px 7px;
+  border-radius:999px;
+  font-size:12px;
+  border:1px solid rgba(0,0,0,.12);
+  white-space:nowrap;
+}
+
+.sameType-owned{
+  background:#eefaf0;
+}
+
+.sameType-ordered{
+  background:#f5f9ff;
+  color:#0b4da2;
+}
+
+.sameType-wishlist{
+  background:#fff3cd;
+  color:#7a5b00;
+}
