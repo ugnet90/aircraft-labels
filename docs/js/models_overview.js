@@ -774,6 +774,13 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
   const current = String(currentModelId || "").trim().toUpperCase();
   const rows = getTypeStockRows(aircraftId);
 
+  const ref =
+    state.all.find(x => String(x.model_id || "").trim().toUpperCase() === current) ||
+    rows[0] ||
+    null;
+
+  const typeLabel = String(ref?.aircraft_type || ref?.typ_anzeige || aircraftId || "").trim();
+
   if(!rows.length){
     return `<div class="typeStockEmpty">Keine weiteren Modelle dieses Typs.</div>`;
   }
@@ -795,11 +802,9 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
     return `
       <tr class="${isCurrent ? "is-current" : ""}">
         <td class="mono">
-          ${
-            isCurrent
-              ? `<strong>${esc(mid)}</strong>`
-              : `<a href="./model.html?id=${encodeURIComponent(mid)}">${esc(mid)}</a>`
-          }
+          <a href="./model.html?id=${encodeURIComponent(mid)}" ${isCurrent ? `class="currentModelLink"` : ""}>
+            ${isCurrent ? `<strong>${esc(mid)}</strong>` : esc(mid)}
+          </a>
         </td>
         <td>${esc(statusLabel)}</td>
         <td>${esc(airline)}</td>
@@ -810,7 +815,6 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
   }).join("");
 
   return `
-    <div class="typeStockLayerTitle">Weitere Modelle dieses Typs</div>
     <table class="typeStockLayerTbl">
       <thead>
         <tr>
@@ -834,7 +838,7 @@ function ensureTypeStockLayer(){
   const html = `
     <div id="typeStockLayer" class="typeStockLayer" hidden>
       <div class="typeStockLayerHead">
-        <span>Typ-Bestand</span>
+        <span id="typeStockLayerTitle">Typ-Bestand</span>
         <button type="button" id="typeStockLayerClose" aria-label="Schließen">×</button>
       </div>
       <div id="typeStockLayerBody" class="typeStockLayerBody"></div>
@@ -871,6 +875,16 @@ function openTypeStockLayer(btn){
   const aircraftId = btn.getAttribute("data-aircraft-id") || "";
   const modelId = btn.getAttribute("data-model-id") || "";
 
+  const ref =
+    state.all.find(x => String(x.model_id || "").trim() === String(modelId || "").trim()) ||
+    getTypeStockRows(aircraftId)[0] ||
+    null;
+  
+  const typeLabel = String(ref?.aircraft_type || ref?.typ_anzeige || aircraftId || "").trim();
+  
+  document.getElementById("typeStockLayerTitle").textContent =
+    typeLabel ? `Alle Modelle des Typs ${typeLabel}` : "Alle Modelle dieses Typs";
+    
   body.innerHTML = renderTypeStockPopoverContent(aircraftId, modelId);
 
   const rect = btn.getBoundingClientRect();
