@@ -882,8 +882,10 @@ function openTypeStockLayer(btn){
   
   const typeLabel = String(ref?.aircraft_type || ref?.typ_anzeige || aircraftId || "").trim();
   
-  document.getElementById("typeStockLayerTitle").textContent =
-    typeLabel ? `Alle Modelle des Typs ${typeLabel}` : "Alle Modelle dieses Typs";
+  document.getElementById("typeStockLayerTitle").innerHTML =
+    typeLabel
+      ? `Alle Modelle des Typs <span class="typeStockTypeName">${esc(typeLabel)}</span>`
+      : "Alle Modelle dieses Typs";
     
   body.innerHTML = renderTypeStockPopoverContent(aircraftId, modelId);
 
