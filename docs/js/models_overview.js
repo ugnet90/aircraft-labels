@@ -798,6 +798,7 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
       status;
 
     const airline = String(x.airline_row || x.airline || x.airline_code || "").trim();
+    const group = String(x.airline || x.group || x.airline_group || "").trim();
     const reg = String(x.registration || "").trim();
     const name = String(x.aircraft_name || "").trim();
 
@@ -809,7 +810,13 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
           </a>
         </td>
         <td>${esc(statusLabel)}</td>
-        <td>${esc(airline)}</td>
+        <td>
+          ${
+            airline
+              ? `<a href="./models_overview.html?group=${encodeURIComponent(group)}&airline=${encodeURIComponent(airline)}&status=owned,ordered">${esc(airline)}</a>`
+              : ""
+          }
+        </td>
         <td class="mono">${esc(reg)}</td>
         <td>${esc(name)}</td>
       </tr>
