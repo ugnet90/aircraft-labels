@@ -561,9 +561,20 @@ body.noscroll{
   background:#f3f3f3;
 }
 
-.photoOverlayMeta{
+.photoOverlayFooter{
   margin-top:8px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
   font-size:12px;
+}
+
+.photoOverlayModelLink{
+  text-align:left;
+}
+
+.photoOverlayMeta{
   text-align:right;
 }
 
