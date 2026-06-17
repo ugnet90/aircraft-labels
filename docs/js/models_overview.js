@@ -629,7 +629,11 @@ function ensurePhotoOverlay(){
       </div>
       <div class="photoOverlayBody">
         <img id="photoOverlayImg" alt="Originalflugzeug">
-        <div id="photoOverlayMeta" class="photoOverlayMeta"></div>
+      
+        <div class="photoOverlayFooter">
+          <div id="photoOverlayModelLink" class="photoOverlayModelLink"></div>
+          <div id="photoOverlayMeta" class="photoOverlayMeta"></div>
+        </div>
       </div>
     </div>
   `;
@@ -669,6 +673,11 @@ function openPhotoOverlay(modelId){
   img.src = imgInfo.image_url;
   img.alt = titleParts.length ? titleParts.join(" · ") : imgInfo.label;
 
+  document.getElementById("photoOverlayModelLink").innerHTML =
+    modelId
+      ? `<a href="./model.html?id=${encodeURIComponent(modelId)}">Zur Modellseite</a>`
+      : "";
+  
   document.getElementById("photoOverlayMeta").innerHTML = imgInfo.source_url
     ? `<a href="${esc(imgInfo.source_url)}" target="_blank" rel="noopener noreferrer">Quelle öffnen</a>`
     : "";
@@ -682,6 +691,12 @@ function closePhotoOverlay(){
   const img = document.getElementById("photoOverlayImg");
   if(img) img.src = "";
 
+  const modelLink = document.getElementById("photoOverlayModelLink");
+  if(modelLink) modelLink.innerHTML = "";
+
+  const meta = document.getElementById("photoOverlayMeta");
+  if(meta) meta.innerHTML = "";
+  
   const backdrop = document.getElementById("photoOverlayBackdrop");
   const overlay = document.getElementById("photoOverlay");
 
