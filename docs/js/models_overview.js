@@ -1,4 +1,4 @@
-const state = { all: [], filtered: [], photos: {} };
+const state = { all: [], filtered: [], photos: {}, postcards: {} };
 
 let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // Default-Spalte
 let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
@@ -528,6 +528,7 @@ function getAircraftPhotoUrl(modelId){
   return String(
     entry.thumb_url ||
     entry.image_url ||
+    entry.photo_image_url ||
     entry.photo_url ||
     entry.og_image ||
     ""
@@ -540,13 +541,85 @@ function getAircraftPhotoSourceUrl(modelId){
 
   return String(
     entry.source_url ||
+    entry.photo_source_url ||
     entry.photo_url ||
     ""
   ).trim();
 }
 
-function hasAircraftPhoto(modelId){
-  return !!getAircraftPhotoUrl(modelId);
+function getPostcardEntriesForModel(modelId){
+  const id = String(modelId || "").trim();
+  if(!id || !state.postcards || typeof state.postcards !== "object") return [];
+
+  return Object.values(state.postcards).filter(pc => {
+    if(!pc || typeof pc !== "object") return false;
+    return String(pc.model_id || "").trim() === id;
+  });
+}
+
+function getPostcardImageUrl(modelId){
+  const entries = getPostcardEntriesForModel(modelId);
+
+  for(const pc of entries){
+    const url = String(
+      pc.thumb_url ||
+      pc.image_url ||
+      pc.img_url ||
+      pc.image ||
+      pc.thumbnail_url ||
+      ""
+    ).trim();
+
+    if(url) return url;
+  }
+
+  return "";
+}
+
+function getPostcardSourceUrl(modelId){
+  const entries = getPostcardEntriesForModel(modelId);
+
+  for(const pc of entries){
+    const url = String(
+      pc.source_url ||
+      pc.url ||
+      ""
+    ).trim();
+
+    if(url) return url;
+  }
+
+  return "";
+}
+
+function getBestModelImage(modelId){
+  const photoUrl = getAircraftPhotoUrl(modelId);
+
+  if(photoUrl){
+    return {
+      kind: "photo",
+      image_url: photoUrl,
+      source_url: getAircraftPhotoSourceUrl(modelId),
+      label: "Originalfoto"
+    };
+  }
+
+  const postcardUrl = getPostcardImageUrl(modelId);
+
+  if(postcardUrl){
+    return {
+      kind: "postcard",
+      image_url: postcardUrl,
+      source_url: getPostcardSourceUrl(modelId),
+      label: "Postkartenbild"
+    };
+  }
+
+  return null;
+}
+
+function hasModelImage(modelId){
+  return !!getBestModelImage(modelId);
 }
 
 function ensurePhotoOverlay(){
@@ -556,7 +629,7 @@ function ensurePhotoOverlay(){
     <div id="photoOverlayBackdrop" class="photoOverlayBackdrop" hidden></div>
     <div id="photoOverlay" class="photoOverlay" hidden>
       <div class="photoOverlayHead">
-        <div id="photoOverlayTitle" class="photoOverlayTitle">Originalfoto</div>
+        <div id="photoOverlayTitle" class="photoOverlayTitle">Foto</div>
         <button type="button" id="photoOverlayClose" class="photoOverlayClose" aria-label="Schließen">×</button>
       </div>
       <div class="photoOverlayBody">
@@ -581,11 +654,10 @@ function ensurePhotoOverlay(){
 function openPhotoOverlay(modelId){
   ensurePhotoOverlay();
 
-  const photoUrl = getAircraftPhotoUrl(modelId);
-  if(!photoUrl) return;
+  const imgInfo = getBestModelImage(modelId);
+  if(!imgInfo?.image_url) return;
 
   const item = state.all.find(x => String(x.model_id || "") === String(modelId || ""));
-  const sourceUrl = getAircraftPhotoSourceUrl(modelId);
 
   const titleParts = [
     item?.airline_row || item?.airline || "",
@@ -594,14 +666,16 @@ function openPhotoOverlay(modelId){
   ].filter(Boolean);
 
   document.getElementById("photoOverlayTitle").textContent =
-    titleParts.length ? titleParts.join(" · ") : "Originalfoto";
+    titleParts.length
+      ? `${imgInfo.label}: ${titleParts.join(" · ")}`
+      : imgInfo.label;
 
   const img = document.getElementById("photoOverlayImg");
-  img.src = photoUrl;
-  img.alt = titleParts.length ? titleParts.join(" · ") : "Originalflugzeug";
+  img.src = imgInfo.image_url;
+  img.alt = titleParts.length ? titleParts.join(" · ") : imgInfo.label;
 
-  document.getElementById("photoOverlayMeta").innerHTML = sourceUrl
-    ? `<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Quelle öffnen</a>`
+  document.getElementById("photoOverlayMeta").innerHTML = imgInfo.source_url
+    ? `<a href="${esc(imgInfo.source_url)}" target="_blank" rel="noopener noreferrer">Quelle öffnen</a>`
     : "";
 
   document.getElementById("photoOverlayBackdrop").hidden = false;
@@ -761,8 +835,8 @@ function render(items){
         <td class="hide-m">${esc(it.aircraft_name || "")}</td>
         <td class="hide-m photoCol">
           ${
-            hasAircraftPhoto(it.model_id)
-              ? `<button type="button" class="photoBtn" data-photo-model-id="${esc(it.model_id)}" title="Originalfoto anzeigen">📷</button>`
+            hasModelImage(it.model_id)
+              ? `<button type="button" class="photoBtn" data-photo-model-id="${esc(it.model_id)}" title="Foto anzeigen">📷</button>`
               : ""
           }
         </td>
@@ -945,6 +1019,15 @@ async function main(){
     }catch(e){
       state.photos = {};
     }
+
+    try{
+      const pcRes = await fetch("./data/postcards_enriched.json", {cache:"no-store"});
+      if(pcRes.ok){
+        state.postcards = await pcRes.json();
+      }
+    }catch(e){
+      state.postcards = {};
+    }    
     
     const collectionCount = state.all.filter(it => {
       const s = String(it.status || "").toLowerCase();
