@@ -118,9 +118,7 @@ function renderFlights(items){
     const aid = asText(f.aircraft_id);
 
     const reg = asText(f.registration);
-    const regLink = f.reg_url
-      ? `<a href="${esc(f.reg_url)}" target="_blank" rel="noopener">${esc(reg)}</a>`
-      : esc(reg);
+    const regLink = registrationLink(reg) || esc(reg);
 
     html += `
       <tr class="rowFlight" data-id="${esc(f.flight_id)}">
