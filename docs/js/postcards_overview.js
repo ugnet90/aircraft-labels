@@ -282,7 +282,7 @@ function render(items){
         </td>
         <td>${esc(it.airline || "")}</td>
         <td>${esc(it.aircraft_type || "")}</td>
-        <td class="mono hide-m">${esc(it.registration || "")}</td>
+        <td class="mono hide-m">${registrationLink(it.registration)}</td>
         <td class="hide-m">${esc(it.publisher_norm || it.publisher || "")}</td>
         <td class="mono hide-m">${esc(it.year || "")}</td>
         <td class="mono priceCell">${esc(money(it.price))}</td>
