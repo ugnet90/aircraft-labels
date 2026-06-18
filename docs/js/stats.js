@@ -379,7 +379,7 @@ function renderAirlines(){
           <tr>
             <td class="mono"><a href="${esc(href)}">${esc(d.date)}</a></td>
             <td class="mono">${esc(d.route)}</td>
-            <td class="mono">${esc(d.reg)}</td>
+            <td class="mono">${registrationLink(d.reg)}</td>
             <td>${esc(d.typ)}</td>
             <td class="dotsCell">${d.dots}</td>
           </tr>
@@ -590,7 +590,7 @@ function renderTypes(){
             <td class="mono"><a href="${esc(href)}">${esc(d.date)}</a></td>
             <td class="mono">${esc(d.route)}</td>
             <td>${esc(d.airline)}</td>
-            <td class="mono">${esc(d.reg)}</td>
+            <td class="mono">${registrationLink(d.reg)}</td>
             <td class="dotsCell">${d.dots}</td>
           </tr>
         `;
@@ -725,12 +725,10 @@ function renderRegs(){
   for(const s of regList){
     const isOpen = (expandedReg === s.reg);
   
-    const regUrl = `https://airport-data.com/aircraft/${encodeURIComponent(s.reg)}.html`;
-  
     html += `
       <tr class="regRow ${isOpen ? "open" : ""}" data-reg="${esc(s.reg)}">
         <td class="mono">
-          <a href="${esc(regUrl)}" target="_blank" rel="noopener" title="airport-data.com öffnen">${esc(s.reg)}</a>
+          ${registrationLink(s.reg)}
         </td>
         <td class="col-num mono">${s.total}</td>
         <td class="col-num mono">${s.exactOwned || ""}</td>
@@ -994,7 +992,7 @@ function renderRoutes(){
         <tr>
           <td class="mono"><a href="${esc(x.href)}">${esc(x.date)}</a></td>
           <td>${esc(x.airline)}</td>
-          <td class="mono">${esc(x.reg)}</td>
+          <td class="mono">${registrationLink(x.reg)}</td>
           <td>${esc(x.typ)}</td>
           <td class="dotsCell">${x.dots}</td>
         </tr>
