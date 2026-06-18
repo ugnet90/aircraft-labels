@@ -9,5 +9,5 @@ function registrationLink(reg){
   const r = String(reg || "").trim();
   if(!r) return "";
 
-  return `<a href="${esc(airportDataUrl(r))}" target="airportDataTab" rel="noopener noreferrer">${esc(r)}</a>`;
+  return `<a href="${esc(airportDataUrl(r))}" target="airportDataTab">${esc(r)}</a>`;
 }
