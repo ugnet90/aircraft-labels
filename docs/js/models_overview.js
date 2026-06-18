@@ -935,20 +935,6 @@ function isNumericSortKey(key){
   ].includes(key);
 }
 
-function airportDataUrl(reg){
-  const r = String(reg || "").trim();
-  if(!r) return "";
-
-  return `https://airport-data.com/aircraft/${encodeURIComponent(r)}`;
-}
-
-function registrationLink(reg){
-  const r = String(reg || "").trim();
-  if(!r) return "";
-
-  return `<a href="${esc(airportDataUrl(r))}" target="_blank" rel="noopener noreferrer">${esc(r)}</a>`;
-}
-
 function render(items){
   document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
 
