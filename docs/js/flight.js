@@ -268,10 +268,7 @@ async function main(){
       setPageTitle(flightTitle);
     }else{
       const pageTitle = document.getElementById("pageTitle");
-      const title = document.getElementById("title");
-    
       if(pageTitle) pageTitle.textContent = flightTitle;
-      if(title) title.textContent = flightTitle;
     }
     
     document.getElementById("meta").innerHTML =
