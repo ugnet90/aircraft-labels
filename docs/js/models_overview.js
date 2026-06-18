@@ -11,7 +11,7 @@ const OPTIONAL_COLUMNS = [
   { key: "fuselage", label: "Rumpf" },
   { key: "market_segment", label: "Segment" },
   { key: "aircraft_kind", label: "Flugzeugart" },
-  { key: "aircraft_status", label: "Status" },
+  { key: "aircraft_status", label: "Status" },rende
   { key: "first_flight", label: "Erstflug" },
   { key: "propulsion", label: "Antrieb" },
   { key: "engines", label: "Triebwerke" },
@@ -817,7 +817,7 @@ function renderTypeStockPopoverContent(aircraftId, currentModelId){
               : ""
           }
         </td>
-        <td class="mono">${esc(reg)}</td>
+        <td class="mono">${registrationLink(reg)}</td>
         <td>${esc(name)}</td>
       </tr>
     `;
@@ -933,6 +933,20 @@ function isNumericSortKey(key){
     "height_m",
     "type_stock"
   ].includes(key);
+}
+
+function airportDataUrl(reg){
+  const r = String(reg || "").trim();
+  if(!r) return "";
+
+  return `https://airport-data.com/aircraft/${encodeURIComponent(r)}`;
+}
+
+function registrationLink(reg){
+  const r = String(reg || "").trim();
+  if(!r) return "";
+
+  return `<a href="${esc(airportDataUrl(r))}" target="_blank" rel="noopener noreferrer">${esc(r)}</a>`;
 }
 
 function render(items){
@@ -1090,7 +1104,7 @@ function render(items){
               : ""
           }
         </td>
-        <td class="mono hide-m">${esc(it.registration || "")}</td>
+        <td class="mono hide-m">${registrationLink(it.registration)}</td>
         <td class="hide-m">${esc(it.aircraft_name || "")}</td>
         <td class="hide-m photoCol">
           ${
