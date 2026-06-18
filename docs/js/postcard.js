@@ -280,7 +280,7 @@ async function main(){
           ${metaRow("Zustand", esc(d.condition || ""))}
           ${metaRow("Flugzeugtyp exakt", esc(d.aircraft_type_exact || ""))}
           ${metaRow("Preis", esc(money(d.price)), { mono:true })}
-          ${metaRow("Registrierung", esc(d.registration || ""), { mono:true })}
+          ${metaRow("Registrierung", registrationLink(d.registration), { mono:true })}
           ${metaRow("Shop / Quelle", (asText(d.source_url) || asText(d.url))
             ? `<a href="${esc(asText(d.source_url) || asText(d.url))}" target="_blank" rel="noopener">Link öffnen</a>`
             : ""
