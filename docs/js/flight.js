@@ -274,13 +274,10 @@ async function main(){
       if(title) title.textContent = flightTitle;
     }
     
-    // Keine separate Route-/Datum-Zeile unterhalb der Breadcrumbs mehr.
-    // Meta zeigt nur noch Airline/Flugnummer/Badges, falls vorhanden.
     document.getElementById("meta").innerHTML =
-      esc([airline, flightNo].filter(Boolean).join(" · ")) +
-      (firstBadgesHtml
+      firstBadgesHtml
         ? `<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">${firstBadgesHtml}</div>`
-        : "");
+        : "";
 
     // Matching
     const analysis = analyzeFlight(models, f);
