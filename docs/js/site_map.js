@@ -93,7 +93,15 @@ const SITE_MAP = {
     title: "Eigene Flüge",
     navLabel: "Eigene Flüge",
     group: "Flüge",
-    breadcrumb: ["Dashboard", "Eigene Flüge"]
+    breadcrumb: ["Dashboard", "Flüge", "Eigene Flüge"]
+  },
+
+  flight: {
+    file: "flight.html",
+    title: "Flug",
+    navLabel: "Flug",
+    group: "Flüge",
+    breadcrumb: ["Dashboard", "Flüge", "Eigene Flüge", "Flug"]
   },
 
   heatmap: {
