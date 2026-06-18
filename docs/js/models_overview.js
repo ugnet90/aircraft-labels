@@ -11,7 +11,7 @@ const OPTIONAL_COLUMNS = [
   { key: "fuselage", label: "Rumpf" },
   { key: "market_segment", label: "Segment" },
   { key: "aircraft_kind", label: "Flugzeugart" },
-  { key: "aircraft_status", label: "Status" },rende
+  { key: "aircraft_status", label: "Status" },
   { key: "first_flight", label: "Erstflug" },
   { key: "propulsion", label: "Antrieb" },
   { key: "engines", label: "Triebwerke" },
