@@ -17,6 +17,23 @@
   min-width:0;
 }
 
+.navLogoLink{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+
+.navLogo{
+  width:42px;
+  height:42px;
+  display:block;
+  border-radius:8px;
+}
+
 .navMenu{
   display:flex;
   align-items:center;
@@ -173,6 +190,10 @@ button.navLink{
     flex-wrap:wrap;
   }
 
+  .navLogoLink{
+    display:none;
+  }
+  
   .navHamburger{
     display:block;
     margin-left:auto;
