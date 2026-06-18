@@ -259,8 +259,23 @@ async function main(){
     const manu = asText(f.manufacturer);
     const wingtip = asText(f.wingtip);
 
+    const flightTitle = `Flug ${route || ""}${dateDE ? " · " + dateDE : ""}${timeHHMM ? " " + timeHHMM : ""}`.trim();
+    
     document.title = `${dateDE}${timeHHMM ? " " + timeHHMM : ""} · ${route || "Flug"} · ${reg || typ || "Details"}`;
-    document.getElementById("title").textContent = `${route || "Flug"}${dateDE ? " · " + dateDE : ""}${timeHHMM ? " " + timeHHMM : ""}`;
+    
+    // Neuer Kopf-Titel oben
+    if(typeof setPageTitle === "function"){
+      setPageTitle(flightTitle);
+    }else{
+      const pageTitle = document.getElementById("pageTitle");
+      const title = document.getElementById("title");
+    
+      if(pageTitle) pageTitle.textContent = flightTitle;
+      if(title) title.textContent = flightTitle;
+    }
+    
+    // Keine separate Route-/Datum-Zeile unterhalb der Breadcrumbs mehr.
+    // Meta zeigt nur noch Airline/Flugnummer/Badges, falls vorhanden.
     document.getElementById("meta").innerHTML =
       esc([airline, flightNo].filter(Boolean).join(" · ")) +
       (firstBadgesHtml
