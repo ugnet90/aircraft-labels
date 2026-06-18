@@ -252,8 +252,7 @@ async function main(){
     const callsign = asText(f.callsign);
 
     const reg = asText(f.registration);
-    const regUrl = asText(f.reg_url) || (reg ? `https://airport-data.com/aircraft/${encodeURIComponent(reg)}.html` : "");
-    const regLink = reg ? linkA(regUrl, reg) : "";
+    const regLink = registrationLink(reg);
 
     const typ = asText(f.typ_anzeige) || asText(f.type) || asText(f.aircraft_id);
     const aircraftId = asText(f.aircraft_id);
@@ -317,7 +316,7 @@ async function main(){
           <td class="mono">
             <a href="./model.html?id=${esc(m.model_id)}">${esc(m.model_id)}</a>
           </td>
-          <td class="mono">${esc(m.registration || "")}</td>
+          <td class="mono">${registrationLink(m.registration)}</td>
           <td>${dot}</td>
         </tr>
       `;
