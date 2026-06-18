@@ -663,7 +663,7 @@ function renderSameTypeModelsCard(rows, currentId){
           </span>
         </td>
         <td>${esc(airline)}</td>
-        <td class="mono">${esc(reg)}</td>
+        <td class="mono">${registrationLink(reg)}</td>
         <td>${esc(name)}</td>
         <td>${esc(livery)}</td>
       </tr>
@@ -1323,7 +1323,7 @@ async function main(){
           <div class="air-data grid">
             ${row("Flugzeugtyp", typ)}
             ${familyCompareRow}
-            ${row("Registrierung", reg)}
+            ${rowHtml("Registrierung", registrationLink(reg))}
             ${row("Taufname", d.aircraft_name || "")}
             ${row("Zusatzinfo", d.extra_info || "")}
             ${(d.flown ?? d.model?.flown)
