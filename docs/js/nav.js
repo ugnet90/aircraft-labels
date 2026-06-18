@@ -103,6 +103,10 @@ function buildGlobalNav(){
     <nav class="siteNav">
       <div class="navTitle">${page.title || ""}</div>
   
+      <a class="navLogoLink" href="./${SITE_MAP.dashboard.file}" aria-label="Dashboard">
+        <img class="navLogo" src="./assets/logo/aviation-dashboard-logo.png" alt="">
+      </a>
+  
       <button class="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
         ☰
       </button>
