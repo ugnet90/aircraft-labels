@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 403,
-    "present_types": 135,
-    "missing_types": 263,
+    "master_types": 402,
+    "present_types": 133,
+    "missing_types": 264,
     "ordered_types": 5,
     "models": 269
   },
@@ -340,26 +340,32 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-707-120",
-      "Typ_anzeige": "Boeing 707-120",
+      "aircraft_id": "BOE-707-100",
+      "Typ_anzeige": "Boeing 707-100",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-707-138",
-      "Typ_anzeige": "Boeing 707-138",
+      "aircraft_id": "BOE-707-200",
+      "Typ_anzeige": "Boeing 707-200",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-707-220",
-      "Typ_anzeige": "Boeing 707-220",
+      "aircraft_id": "BOE-707-300",
+      "Typ_anzeige": "Boeing 707-300",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-707-420",
-      "Typ_anzeige": "Boeing 707-420",
+      "aircraft_id": "BOE-707-300C",
+      "Typ_anzeige": "Boeing 707-300C",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-707-400",
+      "Typ_anzeige": "Boeing 707-400",
       "manufacturer": "Boeing",
       "status": "missing"
     },

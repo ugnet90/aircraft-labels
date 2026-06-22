@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 403,
-  "with_any_models": 140,
-  "missing": 263,
+  "master_count": 402,
+  "with_any_models": 138,
+  "missing": 264,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -3303,9 +3303,9 @@
       "height_m": "11,66"
     },
     {
-      "aircraft_id": "BOE-707-120",
-      "typ_anzeige": "Boeing 707-120",
-      "type_key": "boeing 707-120",
+      "aircraft_id": "BOE-707-100",
+      "typ_anzeige": "Boeing 707-100",
+      "type_key": "boeing 707-100",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3329,35 +3329,9 @@
       "height_m": "12,93"
     },
     {
-      "aircraft_id": "BOE-707-138",
-      "typ_anzeige": "Boeing 707-138",
-      "type_key": "boeing 707-138",
-      "manufacturer": "Boeing",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1959",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "179",
-      "length_m": "44,07",
-      "wingspan_m": "39,88",
-      "height_m": "12,93"
-    },
-    {
-      "aircraft_id": "BOE-707-220",
-      "typ_anzeige": "Boeing 707-220",
-      "type_key": "boeing 707-220",
+      "aircraft_id": "BOE-707-200",
+      "typ_anzeige": "Boeing 707-200",
+      "type_key": "boeing 707-200",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3381,46 +3355,17 @@
       "height_m": "12,93"
     },
     {
-      "aircraft_id": "BOE-707-320",
-      "typ_anzeige": "Boeing 707-320 Intercontinental",
-      "type_key": "boeing 707-320 intercontinental",
+      "aircraft_id": "BOE-707-300",
+      "typ_anzeige": "Boeing 707-300",
+      "type_key": "boeing 707-300",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 2,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 2,
-      "airline_group_counts": [
-        {
-          "group": "Lufthansa",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Lufthansa",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
-        {
-          "group": "Pan Am",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Pan Am",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -3436,32 +3381,17 @@
       "height_m": "12,93"
     },
     {
-      "aircraft_id": "BOE-707-330C",
-      "typ_anzeige": "Boeing 707-330C",
-      "type_key": "boeing 707-330c",
+      "aircraft_id": "BOE-707-300C",
+      "typ_anzeige": "Boeing 707-300C",
+      "type_key": "boeing 707-300c",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "German Cargo",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "CARGO",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -3477,9 +3407,9 @@
       "height_m": "12,93"
     },
     {
-      "aircraft_id": "BOE-707-420",
-      "typ_anzeige": "Boeing 707-420",
-      "type_key": "boeing 707-420",
+      "aircraft_id": "BOE-707-400",
+      "typ_anzeige": "Boeing 707-400",
+      "type_key": "boeing 707-400",
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -3571,13 +3501,13 @@
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
-      "market_segment": "Standard",
+      "market_segment": "MediumHaul",
       "aircraft_kind": "Landflugzeug",
       "aircraft_status": "ausgemustert",
       "first_flight": "1959",
       "propulsion": "Jet",
       "engines": "4",
-      "range_class": "Kurz/Mittel",
+      "range_class": "Mittel",
       "passengers": "149",
       "length_m": "41,5",
       "wingspan_m": "39,88",

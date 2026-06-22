@@ -51,7 +51,7 @@
     "aircraft_id": "BOE-707-320",
     "type": "Boeing 707-320",
     "registration": "N412PA",
-    "wingtip": "NONE",
+    "wingtip": "",
     "has_wingtip": false
   },
   "livery": {
@@ -91,32 +91,5 @@
     "name": "Pan American World Airways Incorporated",
     "airline": "Pan Am",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "BOE-707-320",
-    "Typ_anzeige": "Boeing 707-320 Intercontinental",
-    "Hersteller": "Boeing",
-    "Baureihe": "707",
-    "Unterserie": "-320",
-    "Marketingname": "Intercontinental",
-    "Alternate_designations": "",
-    "parent_aircraft_id": "BOE-707-120",
-    "ICAO": "B703",
-    "IATA": "703",
-    "Wingtip": "NONE",
-    "Rumpf": "SingleAisle",
-    "MarketSegment": "LongHaul",
-    "Role": "PAX",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1958",
-    "Status": "ausgemustert",
-    "Antrieb": "Jet",
-    "Triebwerke": "4",
-    "Reichweite": "Lang",
-    "Passengers": "189",
-    "Length": "46,61",
-    "Wingspan": "44,42",
-    "Height": "12,93",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_707#707-300"
   }
 }

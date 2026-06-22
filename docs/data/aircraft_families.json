@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-17T15:44:15+02:00",
-  "count_families": 227,
+  "generated_at": "2026-06-22T12:01:40+02:00",
+  "count_families": 226,
   "families": {
     "AL-60": [
       {
@@ -1254,80 +1254,6 @@
     ],
     "707": [
       {
-        "aircraft_id": "BOE-707-120",
-        "type": "Boeing 707-120",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 44.07,
-        "wingspan": 39.88,
-        "height": 12.93,
-        "wingtip": "NONE",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      },
-      {
-        "aircraft_id": "BOE-707-138",
-        "type": "Boeing 707-138",
-        "parent_aircraft_id": "BOE-707-120",
-        "parent_type": "Boeing 707-120",
-        "length": 44.07,
-        "wingspan": 39.88,
-        "height": 12.93,
-        "wingtip": "NONE",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      },
-      {
-        "aircraft_id": "BOE-707-220",
-        "type": "Boeing 707-220",
-        "parent_aircraft_id": "BOE-707-120",
-        "parent_type": "Boeing 707-120",
-        "length": 44.07,
-        "wingspan": 39.88,
-        "height": 12.93,
-        "wingtip": "NONE",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      },
-      {
-        "aircraft_id": "BOE-707-320",
-        "type": "Boeing 707-320 Intercontinental",
-        "parent_aircraft_id": "BOE-707-120",
-        "parent_type": "Boeing 707-120",
-        "length": 46.61,
-        "wingspan": 44.42,
-        "height": 12.93,
-        "wingtip": "NONE",
-        "status": "owned",
-        "manufacturer": "Boeing"
-      },
-      {
-        "aircraft_id": "BOE-707-330C",
-        "type": "Boeing 707-330C",
-        "parent_aircraft_id": "BOE-707-320",
-        "parent_type": "Boeing 707-320 Intercontinental",
-        "length": 46.61,
-        "wingspan": 44.42,
-        "height": 12.93,
-        "wingtip": "NONE",
-        "status": "owned",
-        "manufacturer": "Boeing"
-      },
-      {
-        "aircraft_id": "BOE-707-420",
-        "type": "Boeing 707-420",
-        "parent_aircraft_id": "BOE-707-320",
-        "parent_type": "Boeing 707-320 Intercontinental",
-        "length": 46.61,
-        "wingspan": 44.42,
-        "height": 12.93,
-        "wingtip": "NONE",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      }
-    ],
-    "720": [
-      {
         "aircraft_id": "BOE-720",
         "type": "Boeing 720",
         "parent_aircraft_id": "",
@@ -1337,6 +1263,66 @@
         "height": 12.93,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-707-100",
+        "type": "Boeing 707-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 44.07,
+        "wingspan": 39.88,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-707-200",
+        "type": "Boeing 707-200",
+        "parent_aircraft_id": "BOE-707-100",
+        "parent_type": "Boeing 707-100",
+        "length": 44.07,
+        "wingspan": 39.88,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-707-300",
+        "type": "Boeing 707-300",
+        "parent_aircraft_id": "BOE-707-100",
+        "parent_type": "Boeing 707-100",
+        "length": 46.61,
+        "wingspan": 44.42,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-707-300C",
+        "type": "Boeing 707-300C",
+        "parent_aircraft_id": "BOE-707-300",
+        "parent_type": "Boeing 707-300",
+        "length": 46.61,
+        "wingspan": 44.42,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-707-400",
+        "type": "Boeing 707-400",
+        "parent_aircraft_id": "BOE-707-300",
+        "parent_type": "Boeing 707-300",
+        "length": 46.61,
+        "wingspan": 44.42,
+        "height": 12.93,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Boeing"
       }
     ],

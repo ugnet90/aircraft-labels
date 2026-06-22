@@ -51,7 +51,7 @@
     "aircraft_id": "BOE-707-330C",
     "type": "Boeing 707-330C",
     "registration": "D-ABUA",
-    "wingtip": "NONE",
+    "wingtip": "",
     "has_wingtip": false
   },
   "livery": {
@@ -91,32 +91,5 @@
     "name": "German Cargo Services GmbH",
     "airline": "German Cargo",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "BOE-707-330C",
-    "Typ_anzeige": "Boeing 707-330C",
-    "Hersteller": "Boeing",
-    "Baureihe": "707",
-    "Unterserie": "-330C",
-    "Marketingname": "",
-    "Alternate_designations": "707-330C Convertible",
-    "parent_aircraft_id": "BOE-707-320",
-    "ICAO": "B703",
-    "IATA": "703",
-    "Wingtip": "NONE",
-    "Rumpf": "SingleAisle",
-    "MarketSegment": "LongHaul",
-    "Role": "CARGO",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1963",
-    "Status": "ausgemustert",
-    "Antrieb": "Jet",
-    "Triebwerke": "4",
-    "Reichweite": "Lang",
-    "Passengers": "0",
-    "Length": "46,61",
-    "Wingspan": "44,42",
-    "Height": "12,93",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_707#707-300"
   }
 }
