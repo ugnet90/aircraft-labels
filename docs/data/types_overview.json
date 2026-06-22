@@ -1,9 +1,9 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 402,
+  "master_count": 403,
   "with_any_models": 138,
-  "missing": 264,
+  "missing": 265,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -3163,6 +3163,32 @@
       "length_m": "16,3",
       "wingspan_m": "22,66",
       "height_m": "3,7"
+    },
+    {
+      "aircraft_id": "BOE-2707",
+      "typ_anzeige": "Boeing 2707 SST",
+      "type_key": "boeing 2707 sst",
+      "manufacturer": "Boeing",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "missing",
+      "owned_count": 0,
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
+      "role": "PAX",
+      "fuselage": "Widebody",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "nie gebaut",
+      "first_flight": "1969",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Ultra-lang",
+      "passengers": "277",
+      "length_m": "93,27",
+      "wingspan_m": "54,97",
+      "height_m": "14,1"
     },
     {
       "aircraft_id": "BOE-307",

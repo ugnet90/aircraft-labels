@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-22T12:53:01+02:00",
-  "count_families": 226,
+  "generated_at": "2026-06-22T16:10:28+02:00",
+  "count_families": 227,
   "families": {
     "AL-60": [
       {
@@ -1205,6 +1205,20 @@
         "length": 16.3,
         "wingspan": 22.66,
         "height": 3.7,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      }
+    ],
+    "2707": [
+      {
+        "aircraft_id": "BOE-2707",
+        "type": "Boeing 2707 SST",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 93.27,
+        "wingspan": 54.97,
+        "height": 14.1,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Boeing"

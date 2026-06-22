@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 402,
+    "master_types": 403,
     "present_types": 133,
-    "missing_types": 264,
+    "missing_types": 265,
     "ordered_types": 5,
     "models": 266
   },
@@ -342,6 +342,12 @@
     {
       "aircraft_id": "BOE-247",
       "Typ_anzeige": "Boeing 247",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-2707",
+      "Typ_anzeige": "Boeing 2707 SST",
       "manufacturer": "Boeing",
       "status": "missing"
     },
