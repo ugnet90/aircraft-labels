@@ -710,26 +710,11 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Luftwaffe",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Luftwaffe (German Air Force)",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "SPECIAL",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -2012,26 +1997,11 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
-      "owned_count": 1,
+      "status": "missing",
+      "owned_count": 0,
       "ordered_count": 0,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Luftwaffe",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Luftwaffe (German Air Force)",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "SPECIAL",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -3361,11 +3331,40 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 2,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "total_count": 2,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -3387,11 +3386,26 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "German Cargo",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -6279,26 +6293,11 @@
       "manufacturer": "Bombardier",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Luftwaffe",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Luftwaffe (German Air Force)",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "PRIVATE",
       "fuselage": "SingleAisle",
       "market_segment": "Special",
@@ -8659,11 +8658,26 @@
       "manufacturer": "Embraer",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Regional",

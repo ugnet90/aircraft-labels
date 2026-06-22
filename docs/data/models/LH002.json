@@ -8,7 +8,7 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "BOE-707-320",
+  "aircraft_id": "BOE-707-300",
   "aircraft_type": "Boeing 707-330B",
   "registration": "D-ABUC",
   "livery_name": "",
@@ -48,10 +48,10 @@
     "row": "26"
   },
   "aircraft": {
-    "aircraft_id": "BOE-707-320",
+    "aircraft_id": "BOE-707-300",
     "type": "Boeing 707-330B",
     "registration": "D-ABUC",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -91,5 +91,32 @@
     "name": "Deutsche Lufthansa AG",
     "airline": "Lufthansa",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "BOE-707-300",
+    "Typ_anzeige": "Boeing 707-300",
+    "Hersteller": "Boeing",
+    "Baureihe": "707",
+    "Unterserie": "-300",
+    "Marketingname": "",
+    "Alternate_designations": "Boeing 707-320|707-320B",
+    "parent_aircraft_id": "BOE-707-100",
+    "ICAO": "B703",
+    "IATA": "703",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1958",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "189",
+    "Length": "46,61",
+    "Wingspan": "44,42",
+    "Height": "12,93",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_707"
   }
 }

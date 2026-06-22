@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T12:01:40+02:00",
-  "count_total": 189,
-  "count_unique": 189,
+  "generated_at": "2026-06-22T12:01:56+02:00",
+  "count_total": 187,
+  "count_unique": 187,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -192,23 +192,6 @@
       "url": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
       "status": "owned",
       "model_status": "owned",
-      "price": 1.35
-    },
-    {
-      "id": "PC-DE001-01",
-      "model_id": "DE001",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
-    },
-    {
-      "id": "PC-DE002-01",
-      "model_id": "DE002",
-      "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
       "price": 1.35
     },
     {
@@ -750,6 +733,14 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    {
+      "id": "PC-ORD-BA-58-01",
+      "model_id": "ORD-BA-58",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4215-british-airw-city-flyer-embraer-170.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 0.85
     },
     {
       "id": "PC-ORD-LH-48-01",
@@ -1389,15 +1380,6 @@
       "price": 0.85
     },
     {
-      "id": "PC-WIS-DE-6-01",
-      "model_id": "WIS-DE-6",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
-    },
-    {
       "id": "PC-WIS-FI-14-01",
       "model_id": "WIS-FI-14",
       "url": "https://jjpostcards.com/de/ansichtskarten/42457-icelandair-cargo-b767.html",
@@ -1800,23 +1782,6 @@
       "url": "https://jjpostcards.com/de/ansichtskarten/38752-Air-Baltic-A220.html",
       "status": "owned",
       "model_status": "owned",
-      "price": 1.35
-    },
-    "PC-DE001-01": {
-      "id": "PC-DE001-01",
-      "model_id": "DE001",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9794-deutschland-regierung-a310.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.35
-    },
-    "PC-DE002-01": {
-      "id": "PC-DE002-01",
-      "model_id": "DE002",
-      "url": "https://jjpostcards.com/de/ansichtskarten/38668-Deutschland-Regierung-A350.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
       "price": 1.35
     },
     "PC-FI001-01": {
@@ -2358,6 +2323,14 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    "PC-ORD-BA-58-01": {
+      "id": "PC-ORD-BA-58-01",
+      "model_id": "ORD-BA-58",
+      "url": "https://jjpostcards.com/de/ansichtskarten/4215-british-airw-city-flyer-embraer-170.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 0.85
     },
     "PC-ORD-LH-48-01": {
       "id": "PC-ORD-LH-48-01",
@@ -2995,15 +2968,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
-    },
-    "PC-WIS-DE-6-01": {
-      "id": "PC-WIS-DE-6-01",
-      "model_id": "WIS-DE-6",
-      "url": "https://jjpostcards.com/de/ansichtskarten/4572-deutschland-reg-bd-700-global-5000.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.05
     },
     "PC-WIS-FI-14-01": {
       "id": "PC-WIS-FI-14-01",

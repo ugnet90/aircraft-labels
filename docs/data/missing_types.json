@@ -6,7 +6,7 @@
     "present_types": 133,
     "missing_types": 264,
     "ordered_types": 5,
-    "models": 269
+    "models": 266
   },
   "missing_types": [
     {
@@ -31,6 +31,12 @@
       "aircraft_id": "AEV-L29",
       "Typ_anzeige": "Aero Vodochody L-29 Delfín",
       "manufacturer": "Aero Vodochody",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A310-304VIP",
+      "Typ_anzeige": "Airbus A310-304 VIP (Regierungsflugzeug, Luftwaffe)",
+      "manufacturer": "Airbus",
       "status": "missing"
     },
     {
@@ -96,6 +102,12 @@
     {
       "aircraft_id": "AIB-A330-MRTT",
       "Typ_anzeige": "Airbus A330 MRTT",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-ACJ350-900",
+      "Typ_anzeige": "Airbus ACJ350-900 (Regierungsflugzeug, Luftwaffe)",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -348,18 +360,6 @@
     {
       "aircraft_id": "BOE-707-200",
       "Typ_anzeige": "Boeing 707-200",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-707-300",
-      "Typ_anzeige": "Boeing 707-300",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-707-300C",
-      "Typ_anzeige": "Boeing 707-300C",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -646,6 +646,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOM-CL601",
+      "Typ_anzeige": "Bombardier Challenger 601",
+      "manufacturer": "Bombardier",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOM-CRJ100",
       "Typ_anzeige": "Bombardier CRJ-100",
       "manufacturer": "Bombardier",
@@ -925,12 +931,6 @@
       "aircraft_id": "DOU-DC8-73",
       "Typ_anzeige": "Douglas DC-8-73 Super 73",
       "manufacturer": "Douglas",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "EMB-E170",
-      "Typ_anzeige": "Embraer E170",
-      "manufacturer": "Embraer",
       "status": "missing"
     },
     {
@@ -1612,9 +1612,9 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "BOM-CL601",
-      "Typ_anzeige": "Bombardier Challenger 601",
-      "manufacturer": "Bombardier",
+      "aircraft_id": "EMB-E170",
+      "Typ_anzeige": "Embraer E170",
+      "manufacturer": "Embraer",
       "status": "ordered"
     },
     {

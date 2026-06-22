@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T12:01:40+02:00",
+  "generated_at": "2026-06-22T12:01:56+02:00",
   "count_families": 226,
   "families": {
     "AL-60": [
@@ -144,7 +144,7 @@
         "wingspan": 43.9,
         "height": 15.8,
         "wingtip": "NONE",
-        "status": "owned",
+        "status": "missing",
         "manufacturer": "Airbus"
       },
       {
@@ -530,7 +530,7 @@
         "wingspan": 64.75,
         "height": 17.05,
         "wingtip": "NONE",
-        "status": "owned",
+        "status": "missing",
         "manufacturer": "Airbus"
       },
       {
@@ -1298,7 +1298,7 @@
         "wingspan": 44.42,
         "height": 12.93,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "owned",
         "manufacturer": "Boeing"
       },
       {
@@ -1310,7 +1310,7 @@
         "wingspan": 44.42,
         "height": 12.93,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "owned",
         "manufacturer": "Boeing"
       },
       {
@@ -2306,7 +2306,7 @@
         "wingspan": 28.7,
         "height": 7.7,
         "wingtip": "WL",
-        "status": "wishlist",
+        "status": "missing",
         "manufacturer": "Bombardier"
       }
     ],
@@ -2334,7 +2334,7 @@
         "wingspan": 19.61,
         "height": 6.3,
         "wingtip": "WL",
-        "status": "ordered",
+        "status": "missing",
         "manufacturer": "Bombardier"
       }
     ],
@@ -3368,7 +3368,7 @@
         "wingspan": 26.0,
         "height": 9.73,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "ordered",
         "manufacturer": "Embraer"
       },
       {
