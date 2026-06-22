@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-22T16:10:28+02:00",
-  "count": 266,
+  "generated_at": "2026-06-22T16:10:50+02:00",
+  "count": 267,
   "counts_by_airline_code": {
     "OS": 28,
     "LH": 56,
@@ -22,7 +22,7 @@
     "TP": 3,
     "US": 16,
     "WF": 3,
-    "SO": 22,
+    "SO": 23,
     "SM": 3
   },
   "items": [
@@ -4584,7 +4584,7 @@
       "wingspan_m": "25,91",
       "height_m": "7,49",
       "price": 39.62,
-      "shipping_allocated": 1.19
+      "shipping_allocated": 4.81
     },
     {
       "model_id": "ORD-LH-7",
@@ -6888,7 +6888,7 @@
       "wingspan_m": "28,55",
       "height_m": "8,25",
       "price": 49.54,
-      "shipping_allocated": null
+      "shipping_allocated": 6.01
     },
     {
       "model_id": "OS001",
@@ -10488,7 +10488,7 @@
       "wingspan_m": "21,44",
       "height_m": "6,97",
       "price": 42.6,
-      "shipping_allocated": 1.28
+      "shipping_allocated": 5.17
     },
     {
       "model_id": "ORD-SO-51",
@@ -10537,6 +10537,54 @@
       "height_m": "17,1",
       "price": 52.8,
       "shipping_allocated": 20.83
+    },
+    {
+      "model_id": "ORD-SO-53",
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Boeing",
+      "aircraft_id": "BOE-2707",
+      "aircraft_type": "Boeing 2707 SST",
+      "registration": "N2707",
+      "manufacturer": "Atlantis Productions",
+      "aircraft_name": "",
+      "livery_note": "",
+      "extra_info": "",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "livery_name": "",
+      "livery_display": "",
+      "arrived": null,
+      "scale": "1:400",
+      "flown": null,
+      "logo_id": "US_BOE",
+      "logo_speaking": "Wahr",
+      "shop": "Aviationmegastore",
+      "shop_url": "https://www.aviationmegastore.com/de/modellbau/boeing-sst-b2707-atlantis-productions-m6815-197355.html",
+      "ordered_at": "2026-06-22",
+      "ordered": true,
+      "present": false,
+      "wishlist": false,
+      "wishlist_prio": null,
+      "status": "ordered",
+      "photo_image_url": "",
+      "photo_source_url": "",
+      "photo_credit": "",
+      "role": "PAX",
+      "fuselage": "Widebody",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "nie gebaut",
+      "first_flight": "1969",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Ultra-lang",
+      "passengers": "277",
+      "length_m": "93,27",
+      "wingspan_m": "54,97",
+      "height_m": "14,1",
+      "price": 27.72,
+      "shipping_allocated": 3.37
     },
     {
       "model_id": "SO001",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T16:10:28+02:00",
-  "count_total": 187,
-  "count_unique": 187,
+  "generated_at": "2026-06-22T16:10:50+02:00",
+  "count_total": 188,
+  "count_unique": 188,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -758,6 +758,14 @@
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    {
+      "id": "PC-ORD-SO-53-01",
+      "model_id": "ORD-SO-53",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 1.05
     },
     {
       "id": "PC-OS001-01",
@@ -2348,6 +2356,14 @@
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    "PC-ORD-SO-53-01": {
+      "id": "PC-ORD-SO-53-01",
+      "model_id": "ORD-SO-53",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 1.05
     },
     "PC-OS001-01": {
       "id": "PC-OS001-01",
