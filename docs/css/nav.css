@@ -238,6 +238,12 @@ button.navLink{
     width:36px;
     height:36px;
   }  
+
+    .navBrandText{
+      max-width:calc(100vw - 110px);
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }  
 }
 
 .navBrand{
