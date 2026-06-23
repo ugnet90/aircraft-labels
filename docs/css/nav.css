@@ -235,18 +235,18 @@ button.navLink{
   .navHamburger{
     grid-area:burger;
     display:flex;
-    width:40px;
-    height:40px;
+    width:36px;
+    height:36px;
     align-items:center;
     justify-content:center;
-    font-size:21px;
+    font-size:20px;
     line-height:1;
     cursor:pointer;
     padding:0;
     border:1px solid #0050c8;
     color:#0050c8;
     background:#fff;
-    border-radius:9px;
+    border-radius:8px;
     margin-left:0;
     justify-self:end;
   }
