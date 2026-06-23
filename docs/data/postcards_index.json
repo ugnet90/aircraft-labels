@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T14:47:52+02:00",
+  "generated_at": "2026-06-23T21:06:46+02:00",
   "count_total": 190,
   "count_unique": 190,
   "items": [
@@ -751,6 +751,15 @@
       "price": 0.85
     },
     {
+      "id": "PC-ORD-LH-60-01",
+      "model_id": "ORD-LH-60",
+      "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
@@ -758,6 +767,14 @@
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    {
+      "id": "PC-ORD-SK-20-01",
+      "model_id": "ORD-SK-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 0.85
     },
     {
       "id": "PC-ORD-SO-28-01",
@@ -1471,15 +1488,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-WIS-LH-60-01",
-      "model_id": "WIS-LH-60",
-      "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
       "id": "PC-WIS-OS-4-01",
       "model_id": "WIS-OS-4",
       "url": "https://jjpostcards.com/de/ansichtskarten/15822-austrian-a310.html",
@@ -1538,14 +1546,6 @@
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.35
-    },
-    {
-      "id": "PC-WIS-SK-20-01",
-      "model_id": "WIS-SK-20",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
     },
     {
       "id": "PC-WIS-SK-34-01",
@@ -2364,6 +2364,15 @@
       "model_status": "ordered",
       "price": 0.85
     },
+    "PC-ORD-LH-60-01": {
+      "id": "PC-ORD-LH-60-01",
+      "model_id": "ORD-LH-60",
+      "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
     "PC-ORD-LH-7-01": {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
@@ -2372,6 +2381,14 @@
       "model_status": "ordered",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    "PC-ORD-SK-20-01": {
+      "id": "PC-ORD-SK-20-01",
+      "model_id": "ORD-SK-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 0.85
     },
     "PC-ORD-SO-28-01": {
       "id": "PC-ORD-SO-28-01",
@@ -3084,15 +3101,6 @@
       "model_status": "wishlist",
       "price": 1.35
     },
-    "PC-WIS-LH-60-01": {
-      "id": "PC-WIS-LH-60-01",
-      "model_id": "WIS-LH-60",
-      "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
     "PC-WIS-OS-4-01": {
       "id": "PC-WIS-OS-4-01",
       "model_id": "WIS-OS-4",
@@ -3152,14 +3160,6 @@
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.35
-    },
-    "PC-WIS-SK-20-01": {
-      "id": "PC-WIS-SK-20-01",
-      "model_id": "WIS-SK-20",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 0.85
     },
     "PC-WIS-SK-34-01": {
       "id": "PC-WIS-SK-34-01",
