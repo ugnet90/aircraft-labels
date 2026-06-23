@@ -114,12 +114,14 @@ function buildGlobalNav(){
         ${navHtml}
       </div>
     </nav>
+  
+    <div class="navPageTitle">${page.title || ""}</div>
     <div id="globalBreadcrumb"></div>
   `;
 }
 
 function syncNavTitleFromDom(){
-  const navTitle = document.querySelector(".navTitle");
+  const navTitle = document.querySelector(".navPageTitle");
   if(!navTitle) return;
 
   const pageTitleEl =
