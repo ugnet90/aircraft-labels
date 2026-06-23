@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T16:10:50+02:00",
-  "count_total": 188,
-  "count_unique": 188,
+  "generated_at": "2026-06-23T14:47:52+02:00",
+  "count_total": 190,
+  "count_unique": 190,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -760,8 +760,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-SO-53-01",
-      "model_id": "ORD-SO-53",
+      "id": "PC-ORD-SO-28-01",
+      "model_id": "ORD-SO-28",
       "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
       "status": "none",
       "model_status": "ordered",
@@ -1038,6 +1038,14 @@
     {
       "id": "PC-PA018-01",
       "model_id": "PA018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA019-01",
+      "model_id": "PA019",
       "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
       "status": "owned",
       "model_status": "owned",
@@ -1045,8 +1053,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-PA019-01",
-      "model_id": "PA019",
+      "id": "PC-PA020-01",
+      "model_id": "PA020",
       "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
       "status": "owned",
       "model_status": "owned",
@@ -1054,8 +1062,8 @@
       "price": 1.35
     },
     {
-      "id": "PC-PA020-01",
-      "model_id": "PA020",
+      "id": "PC-PA021-01",
+      "model_id": "PA021",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
       "status": "owned",
       "model_status": "owned",
@@ -1063,8 +1071,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-PA021-01",
-      "model_id": "PA021",
+      "id": "PC-PA022-01",
+      "model_id": "PA022",
       "url": "https://jjpostcards.com/de/ansichtskarten/37979-Pan-American-B747.html",
       "status": "owned",
       "model_status": "owned",
@@ -1530,6 +1538,14 @@
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    {
+      "id": "PC-WIS-SK-20-01",
+      "model_id": "WIS-SK-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
     },
     {
       "id": "PC-WIS-SK-34-01",
@@ -2357,9 +2373,9 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-SO-53-01": {
-      "id": "PC-ORD-SO-53-01",
-      "model_id": "ORD-SO-53",
+    "PC-ORD-SO-28-01": {
+      "id": "PC-ORD-SO-28-01",
+      "model_id": "ORD-SO-28",
       "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
       "status": "none",
       "model_status": "ordered",
@@ -2636,33 +2652,41 @@
     "PC-PA018-01": {
       "id": "PC-PA018-01",
       "model_id": "PA018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/34072-Pan-American-DC-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.35
+    },
+    "PC-PA019-01": {
+      "id": "PC-PA019-01",
+      "model_id": "PA019",
       "url": "https://jjpostcards.com/de/ansichtskarten/4679-pan-american-a300.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 0.85
     },
-    "PC-PA019-01": {
-      "id": "PC-PA019-01",
-      "model_id": "PA019",
+    "PC-PA020-01": {
+      "id": "PC-PA020-01",
+      "model_id": "PA020",
       "url": "https://jjpostcards.com/de/ansichtskarten/44472-pan-american-dc-10.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-PA020-01": {
-      "id": "PC-PA020-01",
-      "model_id": "PA020",
+    "PC-PA021-01": {
+      "id": "PC-PA021-01",
+      "model_id": "PA021",
       "url": "https://jjpostcards.com/de/ansichtskarten/11626-pan-am-express-atr-42.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 0.85
     },
-    "PC-PA021-01": {
-      "id": "PC-PA021-01",
-      "model_id": "PA021",
+    "PC-PA022-01": {
+      "id": "PC-PA022-01",
+      "model_id": "PA022",
       "url": "https://jjpostcards.com/de/ansichtskarten/37979-Pan-American-B747.html",
       "status": "owned",
       "model_status": "owned",
@@ -3128,6 +3152,14 @@
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.35
+    },
+    "PC-WIS-SK-20-01": {
+      "id": "PC-WIS-SK-20-01",
+      "model_id": "WIS-SK-20",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 0.85
     },
     "PC-WIS-SK-34-01": {
       "id": "PC-WIS-SK-34-01",

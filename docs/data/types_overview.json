@@ -8322,10 +8322,24 @@
       "wingtip": "NONE",
       "has_wingtip": false,
       "status": "owned",
-      "owned_count": 1,
+      "owned_count": 2,
       "ordered_count": 0,
-      "total_count": 1,
+      "total_count": 2,
       "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
         {
           "group": "Swiss",
           "owned": 1,

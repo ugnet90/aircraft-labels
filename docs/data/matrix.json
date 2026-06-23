@@ -3,7 +3,7 @@
   "counts": {
     "groups": 21,
     "types": 172,
-    "models": 267
+    "models": 268
   },
   "groups": [
     "Air Baltic",
@@ -2583,7 +2583,7 @@
       0,
       0,
       0,
-      0,
+      1,
       0,
       0,
       1,

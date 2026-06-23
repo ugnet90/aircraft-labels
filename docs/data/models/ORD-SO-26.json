@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-SO-51",
+  "model_id": "ORD-SO-26",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "airline_row": "Aeronautica Militare (Italian Air Force)",
@@ -38,7 +38,7 @@
   "status": "ordered",
   "source": {
     "sheet": "Sonstige",
-    "row": "51"
+    "row": "26"
   },
   "aircraft": {
     "aircraft_id": "AIB-A340-500",

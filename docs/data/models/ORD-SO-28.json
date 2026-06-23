@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-SO-53",
+  "model_id": "ORD-SO-28",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "airline_row": "Boeing",
@@ -26,7 +26,7 @@
   "postcard_price": 1.05,
   "postcards": [
     {
-      "id": "PC-ORD-SO-53-01",
+      "id": "PC-ORD-SO-28-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
       "price": 1.05
@@ -45,7 +45,7 @@
   "status": "ordered",
   "source": {
     "sheet": "Sonstige",
-    "row": "53"
+    "row": "28"
   },
   "aircraft": {
     "aircraft_id": "BOE-2707",
