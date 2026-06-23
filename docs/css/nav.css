@@ -170,16 +170,42 @@ button.navLink{
 
 @media (max-width: 900px){
   .siteNav{
-    align-items:flex-start;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand burger"
+      "menu menu";
+    align-items:center;
+    gap:10px;
   }
-  
+
+  .navBrand{
+    grid-area:brand;
+    min-width:0;
+  }
+
+  .navBrandText{
+    font-size:18px;
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  .navBrandLogo{
+    width:36px;
+    height:36px;
+  }
+
   .navHamburger{
+    grid-area:burger;
     display:block;
-    margin-left:auto;
+    margin-left:0;
+    justify-self:end;
   }
 
   .navMenu{
+    grid-area:menu;
     display:none;
     width:100%;
     flex-direction:column;
@@ -267,4 +293,11 @@ button.navLink{
   font-size:20px;
   font-weight:700;
   white-space:nowrap;
+}
+
+.navPageTitle{
+  padding:14px 20px 4px 20px;
+  font-size:20px;
+  font-weight:700;
+  background:#fff;
 }
