@@ -136,18 +136,18 @@ button.navLink{
 
 .navHamburger{
   display:none;
-  width:42px;
-  height:42px;
+  width:40px;
+  height:40px;
   align-items:center;
   justify-content:center;
-  font-size:22px;
+  font-size:21px;
   line-height:1;
   cursor:pointer;
   padding:0;
-  border:2px solid #0050c8;
+  border:1px solid #0050c8;
   color:#0050c8;
   background:#fff;
-  border-radius:10px;
+  border-radius:9px;
 }
 
 /* Breadcrumb */
@@ -233,7 +233,8 @@ button.navLink{
   }
 
   .navHamburger{
-    display:none;
+    grid-area:burger;
+    display:flex;
     width:40px;
     height:40px;
     align-items:center;
@@ -246,6 +247,8 @@ button.navLink{
     color:#0050c8;
     background:#fff;
     border-radius:9px;
+    margin-left:0;
+    justify-self:end;
   }
 
   .navMenu{
