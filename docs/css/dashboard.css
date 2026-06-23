@@ -127,87 +127,14 @@
   color:#0b6b57;
 }
 
-.dashTitleRow{
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
-
-.dashLogo{
-  width:58px;
-  height:58px;
-  border-radius:12px;
-  flex:0 0 auto;
-}
-
-.dashTitleRow h1{
-  margin:0;
-}
-
-@media (max-width:700px){
-  .dashTitleRow{
-    gap:10px;
-  }
-
-  .dashLogo{
-    width:46px;
-    height:46px;
-    border-radius:10px;
-  }
-}
-
-.dashboardBrandBar{
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  padding:10px 14px;
-  margin-bottom:14px;
-  background:#f3f5f7;
-  border-radius:0;
-}
-
-.dashboardBrand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
-  color:inherit;
-  min-width:0;
-}
-
-.dashboardBrandLogo{
-  width:42px;
-  height:42px;
-  display:block;
-  flex:0 0 auto;
-}
-
-.dashboardBrandText{
-  font-size:20px;
-  font-weight:700;
-  white-space:nowrap;
-}
-
-@media (max-width:700px){
-  .dashboardBrandBar{
-    padding:10px 14px;
-    margin-bottom:12px;
-  }
-
-  .dashboardBrandLogo{
-    width:36px;
-    height:36px;
-  }
-
-  .dashboardBrandText{
-    font-size:18px;
-  }
-}
-
 .dashStandBottom{
   margin-top:24px;
   padding-top:10px;
   font-size:11px;
   color:#777;
   text-align:right;
+}
+
+.dashboardNav{
+  position:static;
 }
