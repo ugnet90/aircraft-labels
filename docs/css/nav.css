@@ -136,11 +136,18 @@ button.navLink{
 
 .navHamburger{
   display:none;
+  width:42px;
+  height:42px;
+  align-items:center;
+  justify-content:center;
   font-size:22px;
+  line-height:1;
   cursor:pointer;
-  padding:6px 10px;
-  border:1px solid rgba(0,0,0,.12);
+  padding:0;
+  border:2px solid #0050c8;
+  color:#0050c8;
   background:#fff;
+  border-radius:10px;
 }
 
 /* Breadcrumb */
@@ -184,14 +191,6 @@ button.navLink{
     min-width:0;
   }
 
-  .navBrandText{
-    font-size:18px;
-    min-width:0;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-  }
-
   .navBrandLogo{
     width:36px;
     height:36px;
@@ -199,7 +198,7 @@ button.navLink{
 
   .navHamburger{
     grid-area:burger;
-    display:block;
+    display:flex;
     margin-left:0;
     justify-self:end;
   }
@@ -256,20 +255,24 @@ button.navLink{
     font-size:18px;
   }
 
-  .navBrandText{
-    font-size:18px;
-  }
-
   .navBrandLogo{
     width:36px;
     height:36px;
   }  
 
-    .navBrandText{
-      max-width:calc(100vw - 110px);
-      overflow:hidden;
-      text-overflow:ellipsis;
-    }  
+  .navBrandText{
+    font-size:18px;
+    min-width:0;
+    white-space:nowrap;
+  }
+
+  .navBrandTextFull{
+    display:none;
+  }
+
+  .navBrandTextShort{
+    display:inline;
+  }
 }
 
 .navBrand{
@@ -293,6 +296,10 @@ button.navLink{
   font-size:20px;
   font-weight:700;
   white-space:nowrap;
+}
+
+.navBrandTextShort{
+  display:none;
 }
 
 .navPageTitle{
