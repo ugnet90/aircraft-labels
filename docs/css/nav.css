@@ -173,6 +173,42 @@ button.navLink{
   margin:0 6px;
 }
 
+/* Brand / Seitentitel */
+
+.navBrand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+  min-width:0;
+  flex:0 0 auto;
+}
+
+.navBrandLogo{
+  width:42px;
+  height:42px;
+  display:block;
+  flex:0 0 auto;
+}
+
+.navBrandText{
+  font-size:20px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.navBrandTextShort{
+  display:none;
+}
+
+.navPageTitle{
+  padding:14px 20px 4px 20px;
+  font-size:20px;
+  font-weight:700;
+  background:#fff;
+}
+
 /* Mobile */
 
 @media (max-width: 900px){
@@ -275,36 +311,4 @@ button.navLink{
   }
 }
 
-.navBrand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
-  color:inherit;
-  min-width:0;
-  flex:0 0 auto;
-}
 
-.navBrandLogo{
-  width:42px;
-  height:42px;
-  display:block;
-  flex:0 0 auto;
-}
-
-.navBrandText{
-  font-size:20px;
-  font-weight:700;
-  white-space:nowrap;
-}
-
-.navBrandTextShort{
-  display:none;
-}
-
-.navPageTitle{
-  padding:14px 20px 4px 20px;
-  font-size:20px;
-  font-weight:700;
-  background:#fff;
-}
