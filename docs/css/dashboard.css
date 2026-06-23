@@ -203,3 +203,11 @@
     font-size:18px;
   }
 }
+
+.dashStandBottom{
+  margin-top:24px;
+  padding-top:10px;
+  font-size:11px;
+  color:#777;
+  text-align:right;
+}
