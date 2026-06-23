@@ -3,12 +3,13 @@
   justify-content:space-between;
   align-items:center;
   padding:14px 20px;
-  border-bottom:1px solid rgba(0,0,0,.08);
-  background:#fff;
+  border-bottom:1px solid rgba(0,0,0,.10);
+  background:#f3f5f7;
   position:sticky;
   top:0;
   z-index:1000;
   gap:20px;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
 }
 
 .navTitle{
