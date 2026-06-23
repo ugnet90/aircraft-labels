@@ -233,10 +233,19 @@ button.navLink{
   }
 
   .navHamburger{
-    grid-area:burger;
-    display:flex;
-    margin-left:0;
-    justify-self:end;
+    display:none;
+    width:40px;
+    height:40px;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+    line-height:1;
+    cursor:pointer;
+    padding:0;
+    border:1px solid #0050c8;
+    color:#0050c8;
+    background:#fff;
+    border-radius:9px;
   }
 
   .navMenu{
@@ -308,6 +317,16 @@ button.navLink{
 
   .navBrandTextShort{
     display:inline;
+  }  
+}
+
+@media (max-width: 900px) and (orientation: landscape){
+  .navBrandTextFull{
+    display:inline;
+  }
+
+  .navBrandTextShort{
+    display:none;
   }
 }
 
