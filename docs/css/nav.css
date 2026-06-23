@@ -17,22 +17,6 @@
   min-width:0;
 }
 
-.navLogoLink{
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-}
-
-.navLogo{
-  width:56px;
-  height:56px;
-  display:block;
-  border-radius:8px;
-}
 
 .navMenu{
   display:flex;
@@ -189,10 +173,6 @@ button.navLink{
     align-items:flex-start;
     flex-wrap:wrap;
   }
-
-  .navLogoLink{
-    display:none;
-  }
   
   .navHamburger{
     display:block;
@@ -249,4 +229,36 @@ button.navLink{
   .navTitle{
     font-size:18px;
   }
+
+  .navBrandText{
+    font-size:18px;
+  }
+
+  .navBrandLogo{
+    width:36px;
+    height:36px;
+  }  
+}
+
+.navBrand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+  min-width:0;
+  flex:0 0 auto;
+}
+
+.navBrandLogo{
+  width:42px;
+  height:42px;
+  display:block;
+  flex:0 0 auto;
+}
+
+.navBrandText{
+  font-size:20px;
+  font-weight:700;
+  white-space:nowrap;
 }
