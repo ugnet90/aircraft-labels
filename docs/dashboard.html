@@ -15,23 +15,19 @@
   <script src="js/dashboard.js" defer></script>
 </head>
 <body>
+  <div class="dashboardBrandBar">
+    <a class="dashboardBrand" href="./dashboard.html" aria-label="Daniels Aviation-Database">
+      <img
+        class="dashboardBrandLogo"
+        src="assets/logo/aviation-database-logo.png"
+        alt=""
+        aria-hidden="true"
+      >
+      <span class="dashboardBrandText">Daniels Aviation-Database</span>
+    </a>
+  </div>  
+  
   <div class="dashWrap">
-
-    <div class="dashboardBrandBar">
-      <a class="dashboardBrand" href="./dashboard.html" aria-label="Daniels Aviation-Database">
-        <img
-          class="dashboardBrandLogo"
-          src="assets/logo/aviation-database-logo.png"
-          alt=""
-          aria-hidden="true"
-        >
-        <span class="dashboardBrandText">Daniels Aviation-Database</span>
-      </a>
-    </div>
-    
-    <div class="dashStand" id="stand">Stand: ...</div>
-
-    
     <section class="dashSection collection">
       <h2>Sammlung</h2>
       <div class="tileGrid">
@@ -128,6 +124,8 @@
 
       </div>
     </section>
+    
+    <div class="dashStand" id="stand">Stand: ...</div>
   </div>
 </body>
 </html>
