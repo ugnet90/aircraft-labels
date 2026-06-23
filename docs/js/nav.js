@@ -103,7 +103,8 @@ function buildGlobalNav(){
     <nav class="siteNav">
       <a class="navBrand" href="./${SITE_MAP.dashboard.file}" aria-label="Daniels Aviation-Database">
         <img class="navBrandLogo" src="./assets/logo/aviation-database-logo.png" alt="">
-        <span class="navBrandText">Daniels Aviation-Database</span>
+        <span class="navBrandText navBrandTextFull">Daniels Aviation-Database</span>
+        <span class="navBrandText navBrandTextShort">Aviation-Database</span>
       </a>
   
       <button class="navHamburger" type="button" aria-label="Menü öffnen" aria-expanded="false">
