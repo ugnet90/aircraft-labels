@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T21:06:46+02:00",
+  "generated_at": "2026-06-26T09:29:12+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -107,6 +107,30 @@
         "height": 16.5,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Airbus"
+      },
+      {
+        "aircraft_id": "AIB-A300-B4F",
+        "type": "Airbus A300B4(F)",
+        "parent_aircraft_id": "AIB-A300-B4",
+        "parent_type": "Airbus A300 B4",
+        "length": 53.61,
+        "wingspan": 44.84,
+        "height": 16.53,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Airbus"
+      },
+      {
+        "aircraft_id": "AIB-A300-600RF",
+        "type": "Airbus A300-600R(F)",
+        "parent_aircraft_id": "AIB-A300-600",
+        "parent_type": "Airbus A300-600",
+        "length": 54.08,
+        "wingspan": 44.84,
+        "height": 16.62,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Airbus"
       },
       {
@@ -372,6 +396,30 @@
         "manufacturer": "Airbus"
       },
       {
+        "aircraft_id": "AIB-A321-200P2F",
+        "type": "Airbus A321-200P2F",
+        "parent_aircraft_id": "AIB-A321-200",
+        "parent_type": "Airbus A321-200",
+        "length": 44.51,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Airbus"
+      },
+      {
+        "aircraft_id": "AIB-A321-200PCF",
+        "type": "Airbus A321-200PCF",
+        "parent_aircraft_id": "AIB-A321-200",
+        "parent_type": "Airbus A321-200",
+        "length": 44.51,
+        "wingspan": 34.1,
+        "height": 11.76,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Airbus"
+      },
+      {
         "aircraft_id": "AIB-A321-neo",
         "type": "Airbus A321neo",
         "parent_aircraft_id": "",
@@ -410,6 +458,18 @@
         "manufacturer": "Airbus"
       },
       {
+        "aircraft_id": "AIB-A330-200F",
+        "type": "Airbus A330-200F",
+        "parent_aircraft_id": "AIB-A330-200",
+        "parent_type": "Airbus A330-200",
+        "length": 58.82,
+        "wingspan": 60.3,
+        "height": 17.39,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Airbus"
+      },
+      {
         "aircraft_id": "AIB-A330-800neo",
         "type": "Airbus A330-800neo",
         "parent_aircraft_id": "",
@@ -443,6 +503,18 @@
         "height": 16.85,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Airbus"
+      },
+      {
+        "aircraft_id": "AIB-A330-300P2F",
+        "type": "Airbus A330-300P2F",
+        "parent_aircraft_id": "AIB-A330-300",
+        "parent_type": "Airbus A330-300",
+        "length": 63.69,
+        "wingspan": 60.3,
+        "height": 16.83,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Airbus"
       },
       {
@@ -840,6 +912,18 @@
         "manufacturer": "ATR"
       },
       {
+        "aircraft_id": "ATR42-300F",
+        "type": "ATR 42-300(F)",
+        "parent_aircraft_id": "ATR42-300",
+        "parent_type": "ATR 42-300",
+        "length": 22.67,
+        "wingspan": 24.57,
+        "height": 7.59,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "ATR"
+      },
+      {
         "aircraft_id": "ATR42-500",
         "type": "ATR 42-500",
         "parent_aircraft_id": "",
@@ -878,6 +962,18 @@
         "manufacturer": "ATR"
       },
       {
+        "aircraft_id": "ATR72-212F",
+        "type": "ATR 72-212(F)",
+        "parent_aircraft_id": "ATR72-200",
+        "parent_type": "ATR 72-200",
+        "length": 27.17,
+        "wingspan": 27.05,
+        "height": 7.65,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "ATR"
+      },
+      {
         "aircraft_id": "ATR72-500",
         "type": "ATR 72-500",
         "parent_aircraft_id": "",
@@ -887,6 +983,18 @@
         "height": 7.65,
         "wingtip": "NONE",
         "status": "wishlist",
+        "manufacturer": "ATR"
+      },
+      {
+        "aircraft_id": "ATR72-500F",
+        "type": "ATR 72-500(F)",
+        "parent_aircraft_id": "ATR72-500",
+        "parent_type": "ATR 72-500",
+        "length": 27.17,
+        "wingspan": 27.05,
+        "height": 7.65,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "ATR"
       },
       {
@@ -1472,6 +1580,18 @@
         "manufacturer": "Boeing"
       },
       {
+        "aircraft_id": "BOE-737-200C",
+        "type": "Boeing 737-200C",
+        "parent_aircraft_id": "BOE-737-200",
+        "parent_type": "Boeing 737-200",
+        "length": 30.53,
+        "wingspan": 28.35,
+        "height": 11.23,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
         "aircraft_id": "BOE-737-500",
         "type": "Boeing 737-500",
         "parent_aircraft_id": "BOE-737-300",
@@ -1517,6 +1637,18 @@
         "height": 11.13,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-300SF",
+        "type": "Boeing 737-300SF",
+        "parent_aircraft_id": "BOE-737-300",
+        "parent_type": "Boeing 737-300",
+        "length": 33.4,
+        "wingspan": 28.88,
+        "height": 11.13,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Boeing"
       },
       {
@@ -1580,6 +1712,18 @@
         "manufacturer": "Boeing"
       },
       {
+        "aircraft_id": "BOE-737-400SF",
+        "type": "Boeing 737-400SF",
+        "parent_aircraft_id": "BOE-737-400",
+        "parent_type": "Boeing 737-400",
+        "length": 36.45,
+        "wingspan": 28.88,
+        "height": 11.13,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
         "aircraft_id": "BOE-737-800",
         "type": "Boeing 737-800",
         "parent_aircraft_id": "BOE-737-400",
@@ -1601,6 +1745,78 @@
         "height": 12.55,
         "wingtip": "WL",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-800BCF",
+        "type": "Boeing 737-800BCF",
+        "parent_aircraft_id": "BOE-737-800",
+        "parent_type": "Boeing 737-800",
+        "length": 39.47,
+        "wingspan": 34.31,
+        "height": 12.55,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-800BCF-WL",
+        "type": "Boeing 737-800BCF (Winglets)",
+        "parent_aircraft_id": "BOE-737-800BCF",
+        "parent_type": "Boeing 737-800BCF",
+        "length": 39.47,
+        "wingspan": 35.79,
+        "height": 12.55,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-800BDSF",
+        "type": "Boeing 737-800BDSF",
+        "parent_aircraft_id": "BOE-737-800",
+        "parent_type": "Boeing 737-800",
+        "length": 39.47,
+        "wingspan": 34.31,
+        "height": 12.55,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-800BDSF-WL",
+        "type": "Boeing 737-800BDSF (Winglets)",
+        "parent_aircraft_id": "BOE-737-800BDSF",
+        "parent_type": "Boeing 737-800BDSF",
+        "length": 39.47,
+        "wingspan": 35.79,
+        "height": 12.55,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-800SF",
+        "type": "Boeing 737-800SF",
+        "parent_aircraft_id": "BOE-737-800",
+        "parent_type": "Boeing 737-800",
+        "length": 39.47,
+        "wingspan": 34.31,
+        "height": 12.55,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-737-800SF-WL",
+        "type": "Boeing 737-800SF (Winglets)",
+        "parent_aircraft_id": "BOE-737-800SF",
+        "parent_type": "Boeing 737-800SF",
+        "length": 39.47,
+        "wingspan": 35.79,
+        "height": 12.55,
+        "wingtip": "WL",
+        "status": "missing",
         "manufacturer": "Boeing"
       },
       {
@@ -1834,30 +2050,6 @@
         "manufacturer": "Boeing"
       },
       {
-        "aircraft_id": "BOE-747-400M",
-        "type": "Boeing 747-400 Combi",
-        "parent_aircraft_id": "BOE-747-400",
-        "parent_type": "Boeing 747-400",
-        "length": 70.66,
-        "wingspan": 64.44,
-        "height": 19.41,
-        "wingtip": "WL",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      },
-      {
-        "aircraft_id": "BOE-747-400F",
-        "type": "Boeing 747-400 Freighter",
-        "parent_aircraft_id": "BOE-747-400",
-        "parent_type": "Boeing 747-400",
-        "length": 70.66,
-        "wingspan": 64.44,
-        "height": 19.41,
-        "wingtip": "WL",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      },
-      {
         "aircraft_id": "BOE-747-400-VO",
         "type": "Boeing 747-400 LauncherOne Carrier Aircraft",
         "parent_aircraft_id": "BOE-747-400",
@@ -1895,9 +2087,33 @@
       },
       {
         "aircraft_id": "BOE-747-400ERF",
-        "type": "Boeing 747-400ER Freighter",
+        "type": "Boeing 747-400ERF",
         "parent_aircraft_id": "BOE-747-400F",
-        "parent_type": "Boeing 747-400 Freighter",
+        "parent_type": "Boeing 747-400F",
+        "length": 70.66,
+        "wingspan": 64.44,
+        "height": 19.41,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-747-400F",
+        "type": "Boeing 747-400F",
+        "parent_aircraft_id": "BOE-747-400",
+        "parent_type": "Boeing 747-400",
+        "length": 70.66,
+        "wingspan": 64.44,
+        "height": 19.41,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-747-400M",
+        "type": "Boeing 747-400M Combi",
+        "parent_aircraft_id": "BOE-747-400",
+        "parent_type": "Boeing 747-400",
         "length": 70.66,
         "wingspan": 64.44,
         "height": 19.41,
@@ -1921,7 +2137,7 @@
         "aircraft_id": "BOE-747-YAL1",
         "type": "Boeing YAL-1 Airborne Laser Testbed",
         "parent_aircraft_id": "BOE-747-400F",
-        "parent_type": "Boeing 747-400 Freighter",
+        "parent_type": "Boeing 747-400F",
         "length": 70.66,
         "wingspan": 64.44,
         "height": 19.41,
@@ -1942,18 +2158,6 @@
         "manufacturer": "Boeing"
       },
       {
-        "aircraft_id": "BOE-747-8F",
-        "type": "Boeing 747-8 Freighter",
-        "parent_aircraft_id": "BOE-747-8",
-        "parent_type": "Boeing 747-8 Intercontinental",
-        "length": 76.25,
-        "wingspan": 68.45,
-        "height": 19.35,
-        "wingtip": "RW",
-        "status": "missing",
-        "manufacturer": "Boeing"
-      },
-      {
         "aircraft_id": "BOE-747-8",
         "type": "Boeing 747-8 Intercontinental",
         "parent_aircraft_id": "BOE-747-400",
@@ -1963,6 +2167,18 @@
         "height": 19.35,
         "wingtip": "RW",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-747-8F",
+        "type": "Boeing 747-8F",
+        "parent_aircraft_id": "BOE-747-8",
+        "parent_type": "Boeing 747-8 Intercontinental",
+        "length": 76.25,
+        "wingspan": 68.45,
+        "height": 19.35,
+        "wingtip": "RW",
+        "status": "missing",
         "manufacturer": "Boeing"
       },
       {
@@ -2001,6 +2217,30 @@
         "height": 13.56,
         "wingtip": "WL",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-757-200PCF",
+        "type": "Boeing 757-200PCF",
+        "parent_aircraft_id": "BOE-757-200",
+        "parent_type": "Boeing 757-200",
+        "length": 47.32,
+        "wingspan": 38.05,
+        "height": 13.56,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-757-200PCF-WL",
+        "type": "Boeing 757-200PCF (Winglets)",
+        "parent_aircraft_id": "BOE-757-200PCF",
+        "parent_type": "Boeing 757-200PCF",
+        "length": 47.32,
+        "wingspan": 42.06,
+        "height": 13.56,
+        "wingtip": "WL",
+        "status": "missing",
         "manufacturer": "Boeing"
       },
       {
@@ -2090,6 +2330,18 @@
         "manufacturer": "Boeing"
       },
       {
+        "aircraft_id": "BOE-767-200BDSF",
+        "type": "Boeing 767-200BDSF",
+        "parent_aircraft_id": "BOE-767-200",
+        "parent_type": "Boeing 767-200",
+        "length": 48.51,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
         "aircraft_id": "BOE-767-200ER",
         "type": "Boeing 767-200ER",
         "parent_aircraft_id": "BOE-767-200",
@@ -2150,6 +2402,30 @@
         "manufacturer": "Boeing"
       },
       {
+        "aircraft_id": "BOE-767-300BDSF",
+        "type": "Boeing 767-300BDSF",
+        "parent_aircraft_id": "BOE-767-300ER",
+        "parent_type": "Boeing 767-300ER",
+        "length": 54.94,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-767-300BDSF-WL",
+        "type": "Boeing 767-300BDSF (Winglets)",
+        "parent_aircraft_id": "BOE-767-300BDSF",
+        "parent_type": "Boeing 767-300BDSF",
+        "length": 54.94,
+        "wingspan": 52.05,
+        "height": 15.85,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
         "aircraft_id": "BOE-767-300ER",
         "type": "Boeing 767-300ER",
         "parent_aircraft_id": "BOE-767-300",
@@ -2166,6 +2442,30 @@
         "type": "Boeing 767-300ER (Winglets)",
         "parent_aircraft_id": "BOE-767-300ER",
         "parent_type": "Boeing 767-300ER",
+        "length": 54.94,
+        "wingspan": 52.05,
+        "height": 15.85,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-767-300F",
+        "type": "Boeing 767-300F",
+        "parent_aircraft_id": "BOE-767-300ER",
+        "parent_type": "Boeing 767-300ER",
+        "length": 54.94,
+        "wingspan": 47.57,
+        "height": 15.85,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-767-300F-WL",
+        "type": "Boeing 767-300F (Winglets)",
+        "parent_aircraft_id": "BOE-767-300F",
+        "parent_type": "Boeing 767-300F",
         "length": 54.94,
         "wingspan": 52.05,
         "height": 15.85,
@@ -2946,11 +3246,11 @@
     ],
     "Do 228": [
       {
-        "aircraft_id": "DOR-Do228",
-        "type": "Dornier Do 228",
+        "aircraft_id": "DOR-Do228-100",
+        "type": "Dornier Do 228-100",
         "parent_aircraft_id": "",
         "parent_type": "",
-        "length": 16.56,
+        "length": 15.03,
         "wingspan": 16.97,
         "height": 4.86,
         "wingtip": "NONE",
@@ -3283,6 +3583,18 @@
         "length": 57.0,
         "wingspan": 45.0,
         "height": 12.9,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Douglas"
+      },
+      {
+        "aircraft_id": "DOU-DC8-73CFF",
+        "type": "Douglas DC-8-73CF(F)",
+        "parent_aircraft_id": "DOU-DC8-73",
+        "parent_type": "Douglas DC-8-73 Super 73",
+        "length": 57.12,
+        "wingspan": 45.24,
+        "height": 12.93,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Douglas"
@@ -4300,6 +4612,18 @@
         "manufacturer": "McDonnell Douglas"
       },
       {
+        "aircraft_id": "MCD-DC9-40F",
+        "type": "McDonnell Douglas DC-9-40F",
+        "parent_aircraft_id": "MCD-DC9-40",
+        "parent_type": "McDonnell Douglas DC-9-40",
+        "length": 38.28,
+        "wingspan": 28.47,
+        "height": 8.38,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "McDonnell Douglas"
+      },
+      {
         "aircraft_id": "MCD-DC9-40",
         "type": "McDonnell Douglas DC-9-40",
         "parent_aircraft_id": "",
@@ -5104,6 +5428,30 @@
         "manufacturer": "Tupolew"
       },
       {
+        "aircraft_id": "TUP-Tu204-100",
+        "type": "Tupolev Tu-204-100",
+        "parent_aircraft_id": "",
+        "parent_type": "",
+        "length": 46.2,
+        "wingspan": 42.0,
+        "height": 13.9,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Tupolev"
+      },
+      {
+        "aircraft_id": "TUP-Tu204-100C",
+        "type": "Tupolev Tu-204-100C",
+        "parent_aircraft_id": "TUP-Tu204-100",
+        "parent_type": "Tupolev Tu-204-100",
+        "length": 46.2,
+        "wingspan": 42.0,
+        "height": 13.9,
+        "wingtip": "WL",
+        "status": "missing",
+        "manufacturer": "Tupolev"
+      },
+      {
         "aircraft_id": "TUP-Tu204-300",
         "type": "Tupolew Tu-204-300",
         "parent_aircraft_id": "",
@@ -5136,9 +5484,21 @@
         "type": "Vickers Vanguard 953",
         "parent_aircraft_id": "",
         "parent_type": "",
-        "length": 41.15,
-        "wingspan": 43.36,
-        "height": 11.3,
+        "length": 37.5,
+        "wingspan": 36.1,
+        "height": 10.64,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Vickers"
+      },
+      {
+        "aircraft_id": "VIC-Vanguard-953C",
+        "type": "Vickers Vanguard 953C Merchantman",
+        "parent_aircraft_id": "VIC-Vanguard-953",
+        "parent_type": "Vickers Vanguard 953",
+        "length": 37.5,
+        "wingspan": 36.1,
+        "height": 10.64,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Vickers"

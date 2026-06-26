@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 403,
+    "master_types": 433,
     "present_types": 133,
-    "missing_types": 264,
+    "missing_types": 294,
     "ordered_types": 6,
     "models": 268
   },
@@ -31,6 +31,18 @@
       "aircraft_id": "AEV-L29",
       "Typ_anzeige": "Aero Vodochody L-29 Delfín",
       "manufacturer": "Aero Vodochody",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A300-600RF",
+      "Typ_anzeige": "Airbus A300-600R(F)",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A300-B4F",
+      "Typ_anzeige": "Airbus A300B4(F)",
+      "manufacturer": "Airbus",
       "status": "missing"
     },
     {
@@ -82,6 +94,18 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "AIB-A321-200P2F",
+      "Typ_anzeige": "Airbus A321-200P2F",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A321-200PCF",
+      "Typ_anzeige": "Airbus A321-200PCF",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "AIB-A321-LR",
       "Typ_anzeige": "Airbus A321 LR",
       "manufacturer": "Airbus",
@@ -90,6 +114,18 @@
     {
       "aircraft_id": "AIB-A321-XLR",
       "Typ_anzeige": "Airbus A321 XLR",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A330-200F",
+      "Typ_anzeige": "Airbus A330-200F",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A330-300P2F",
+      "Typ_anzeige": "Airbus A330-300P2F",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -208,6 +244,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "ATR42-300F",
+      "Typ_anzeige": "ATR 42-300(F)",
+      "manufacturer": "ATR",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "ATR42-500",
       "Typ_anzeige": "ATR 42-500",
       "manufacturer": "ATR",
@@ -220,8 +262,20 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "ATR72-212F",
+      "Typ_anzeige": "ATR 72-212(F)",
+      "manufacturer": "ATR",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "ATR72-500",
       "Typ_anzeige": "ATR 72-500",
+      "manufacturer": "ATR",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "ATR72-500F",
+      "Typ_anzeige": "ATR 72-500(F)",
       "manufacturer": "ATR",
       "status": "missing"
     },
@@ -382,8 +436,62 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-737-200C",
+      "Typ_anzeige": "Boeing 737-200C",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-300SF",
+      "Typ_anzeige": "Boeing 737-300SF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-400SF",
+      "Typ_anzeige": "Boeing 737-400SF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-737-600-WL",
       "Typ_anzeige": "Boeing 737-600 (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-800BCF",
+      "Typ_anzeige": "Boeing 737-800BCF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-800BCF-WL",
+      "Typ_anzeige": "Boeing 737-800BCF (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-800BDSF",
+      "Typ_anzeige": "Boeing 737-800BDSF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-800BDSF-WL",
+      "Typ_anzeige": "Boeing 737-800BDSF (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-800SF",
+      "Typ_anzeige": "Boeing 737-800SF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-737-800SF-WL",
+      "Typ_anzeige": "Boeing 737-800SF (Winglets)",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -479,13 +587,13 @@
     },
     {
       "aircraft_id": "BOE-747-400ERF",
-      "Typ_anzeige": "Boeing 747-400ER Freighter",
+      "Typ_anzeige": "Boeing 747-400ERF",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
       "aircraft_id": "BOE-747-400F",
-      "Typ_anzeige": "Boeing 747-400 Freighter",
+      "Typ_anzeige": "Boeing 747-400F",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -497,19 +605,31 @@
     },
     {
       "aircraft_id": "BOE-747-400M",
-      "Typ_anzeige": "Boeing 747-400 Combi",
+      "Typ_anzeige": "Boeing 747-400M Combi",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
       "aircraft_id": "BOE-747-8F",
-      "Typ_anzeige": "Boeing 747-8 Freighter",
+      "Typ_anzeige": "Boeing 747-8F",
       "manufacturer": "Boeing",
       "status": "missing"
     },
     {
       "aircraft_id": "BOE-747-E4B",
       "Typ_anzeige": "Boeing E-4B",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-757-200PCF",
+      "Typ_anzeige": "Boeing 757-200PCF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-757-200PCF-WL",
+      "Typ_anzeige": "Boeing 757-200PCF (Winglets)",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -544,6 +664,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-767-200BDSF",
+      "Typ_anzeige": "Boeing 767-200BDSF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-767-200ER",
       "Typ_anzeige": "Boeing 767-200ER",
       "manufacturer": "Boeing",
@@ -568,8 +694,32 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-767-300BDSF",
+      "Typ_anzeige": "Boeing 767-300BDSF",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-767-300BDSF-WL",
+      "Typ_anzeige": "Boeing 767-300BDSF (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-767-300ER-WL",
       "Typ_anzeige": "Boeing 767-300ER (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-767-300F",
+      "Typ_anzeige": "Boeing 767-300F",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-767-300F-WL",
+      "Typ_anzeige": "Boeing 767-300F (Winglets)",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -838,8 +988,8 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "DOR-Do228",
-      "Typ_anzeige": "Dornier Do 228",
+      "aircraft_id": "DOR-Do228-100",
+      "Typ_anzeige": "Dornier Do 228-100",
       "manufacturer": "Dornier",
       "status": "missing"
     },
@@ -930,6 +1080,12 @@
     {
       "aircraft_id": "DOU-DC8-73",
       "Typ_anzeige": "Douglas DC-8-73 Super 73",
+      "manufacturer": "Douglas",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "DOU-DC8-73CFF",
+      "Typ_anzeige": "Douglas DC-8-73CF(F)",
       "manufacturer": "Douglas",
       "status": "missing"
     },
@@ -1276,6 +1432,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "MCD-DC9-40F",
+      "Typ_anzeige": "McDonnell Douglas DC-9-40F",
+      "manufacturer": "McDonnell Douglas",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "MCD-MD11-ER",
       "Typ_anzeige": "McDonnell Douglas MD-11ER Extended Range",
       "manufacturer": "McDonnell Douglas",
@@ -1522,6 +1684,18 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "TUP-Tu204-100",
+      "Typ_anzeige": "Tupolev Tu-204-100",
+      "manufacturer": "Tupolev",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "TUP-Tu204-100C",
+      "Typ_anzeige": "Tupolev Tu-204-100C",
+      "manufacturer": "Tupolev",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "TUP-Tu204-200",
       "Typ_anzeige": "Tupolew Tu-204-200",
       "manufacturer": "Tupolew",
@@ -1560,6 +1734,12 @@
     {
       "aircraft_id": "VIC-Vanguard-953",
       "Typ_anzeige": "Vickers Vanguard 953",
+      "manufacturer": "Vickers",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "VIC-Vanguard-953C",
+      "Typ_anzeige": "Vickers Vanguard 953C Merchantman",
       "manufacturer": "Vickers",
       "status": "missing"
     },
