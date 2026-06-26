@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 433,
-    "present_types": 133,
+    "present_types": 135,
     "missing_types": 294,
-    "ordered_types": 6,
+    "ordered_types": 4,
     "models": 268
   },
   "missing_types": [
@@ -1792,21 +1792,9 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "BOE-2707",
-      "Typ_anzeige": "Boeing 2707 SST",
-      "manufacturer": "Boeing",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "EMB-E170",
       "Typ_anzeige": "Embraer E170",
       "manufacturer": "Embraer",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "SAB-340A-F",
-      "Typ_anzeige": "Saab 340A(F)",
-      "manufacturer": "Saab",
       "status": "ordered"
     }
   ]

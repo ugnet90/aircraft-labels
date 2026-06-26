@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T09:29:12+02:00",
+  "generated_at": "2026-06-26T09:29:28+02:00",
   "count_total": 190,
   "count_unique": 190,
   "items": [
@@ -561,6 +561,14 @@
       "price": 1.35
     },
     {
+      "id": "PC-LH033-01",
+      "model_id": "LH033",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15686-lufthansa-city-line-dhc-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 0.85
+    },
+    {
       "id": "PC-LX002-01",
       "model_id": "LX002",
       "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
@@ -743,14 +751,6 @@
       "price": 0.85
     },
     {
-      "id": "PC-ORD-LH-48-01",
-      "model_id": "ORD-LH-48",
-      "url": "https://jjpostcards.com/de/ansichtskarten/15686-lufthansa-city-line-dhc-8.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 0.85
-    },
-    {
       "id": "PC-ORD-LH-60-01",
       "model_id": "ORD-LH-60",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
@@ -775,14 +775,6 @@
       "status": "none",
       "model_status": "ordered",
       "price": 0.85
-    },
-    {
-      "id": "PC-ORD-SO-28-01",
-      "model_id": "ORD-SO-28",
-      "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.05
     },
     {
       "id": "PC-OS001-01",
@@ -1281,6 +1273,14 @@
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
+      "price": 1.05
+    },
+    {
+      "id": "PC-SO017-01",
+      "model_id": "SO017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
+      "status": "owned",
+      "model_status": "owned",
       "price": 1.05
     },
     {
@@ -2174,6 +2174,14 @@
       "label": "andere Kennung",
       "price": 1.35
     },
+    "PC-LH033-01": {
+      "id": "PC-LH033-01",
+      "model_id": "LH033",
+      "url": "https://jjpostcards.com/de/ansichtskarten/15686-lufthansa-city-line-dhc-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 0.85
+    },
     "PC-LX002-01": {
       "id": "PC-LX002-01",
       "model_id": "LX002",
@@ -2356,14 +2364,6 @@
       "model_status": "ordered",
       "price": 0.85
     },
-    "PC-ORD-LH-48-01": {
-      "id": "PC-ORD-LH-48-01",
-      "model_id": "ORD-LH-48",
-      "url": "https://jjpostcards.com/de/ansichtskarten/15686-lufthansa-city-line-dhc-8.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 0.85
-    },
     "PC-ORD-LH-60-01": {
       "id": "PC-ORD-LH-60-01",
       "model_id": "ORD-LH-60",
@@ -2389,14 +2389,6 @@
       "status": "none",
       "model_status": "ordered",
       "price": 0.85
-    },
-    "PC-ORD-SO-28-01": {
-      "id": "PC-ORD-SO-28-01",
-      "model_id": "ORD-SO-28",
-      "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
-      "status": "none",
-      "model_status": "ordered",
-      "price": 1.05
     },
     "PC-OS001-01": {
       "id": "PC-OS001-01",
@@ -2895,6 +2887,14 @@
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
+      "price": 1.05
+    },
+    "PC-SO017-01": {
+      "id": "PC-SO017-01",
+      "model_id": "SO017",
+      "url": "https://jjpostcards.com/de/ansichtskarten/23859-boeing-co-boeing-sst.html",
+      "status": "owned",
+      "model_status": "owned",
       "price": 1.05
     },
     "PC-TP001-01": {

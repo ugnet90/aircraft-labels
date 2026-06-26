@@ -3,7 +3,7 @@
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
-  "manufacturer": "Gemini Jets",
+  "manufacturer": "Aeroclassics",
   "aircraft_name": "",
   "livery_note": "",
   "extra_info": "",
@@ -62,7 +62,7 @@
   },
   "model": {
     "scale": "1:400",
-    "manufacturer": "Gemini Jets",
+    "manufacturer": "Aeroclassics",
     "model_number": "",
     "shop": "Ebay designklassiker321",
     "price": 5.87,
