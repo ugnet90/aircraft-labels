@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 433,
-  "with_any_models": 139,
-  "missing": 294,
+  "with_any_models": 142,
+  "missing": 291,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -762,11 +762,26 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Luftwaffe",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "SPECIAL",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -2153,11 +2168,26 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Luftwaffe",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "SPECIAL",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -3606,10 +3636,10 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
+      "status": "mixed",
       "owned_count": 2,
-      "ordered_count": 0,
-      "total_count": 2,
+      "ordered_count": 1,
+      "total_count": 3,
       "airline_group_counts": [
         {
           "group": "Lufthansa",
@@ -3621,6 +3651,20 @@
               "airline": "Lufthansa",
               "owned": 1,
               "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Luftwaffe",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 0,
+              "ordered": 1,
               "total": 1
             }
           ]
@@ -6998,11 +7042,26 @@
       "manufacturer": "Bombardier",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Luftwaffe",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PRIVATE",
       "fuselage": "SingleAisle",
       "market_segment": "Special",
