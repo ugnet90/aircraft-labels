@@ -60,6 +60,16 @@ function cellStatus(p, o, w){
   return "missing";
 }
 
+function cellMatchesFilters(p, o, w, filters){
+  if(p > 0 && filters.present) return true;
+  if(o > 0 && filters.ordered) return true;
+  if(w > 0 && filters.wishlist) return true;
+
+  if(p === 0 && o === 0 && w === 0 && filters.missing) return true;
+
+  return false;
+}
+
 function renderMatrixCell(group, aircraftId, p, o, w, filters){
   const status = cellStatus(p, o, w);
 
@@ -122,11 +132,11 @@ function renderDesktop(){
   const filters = statusFilters();
 
 
-  const ai = airlines
+  const aiRaw = airlines
     .map((a, idx) => ({a, idx}))
     .filter(x => !airQ || x.a.toLowerCase().includes(airQ));
-
-  const ti = types
+  
+  const tiRaw = types
     .map((t, idx) => ({
       t,
       idx,
@@ -137,46 +147,54 @@ function renderDesktop(){
       x.t.toLowerCase().includes(typeQ) ||
       x.label.toLowerCase().includes(typeQ)
     );
-
+  
+  // Nur Typ-Zeilen mit mindestens einem sichtbaren Status
+  const ti = tiRaw.filter(y => {
+    return aiRaw.some(x => {
+      const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
+      const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
+      const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
+  
+      return cellMatchesFilters(p, o, w, filters);
+    });
+  });
+  
+  // Nur Airline-Spalten mit mindestens einem sichtbaren Status
+  const ai = aiRaw.filter(x => {
+    return ti.some(y => {
+      const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
+      const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
+      const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
+  
+      return cellMatchesFilters(p, o, w, filters);
+    });
+  });
+  
   let html = "<thead><tr><th class='typeCol'>Typ \\ Airline</th>";
+  
   for(const x of ai){
     html += `<th class="colHead">${esc(x.a)}</th>`;
   }
-
+  
   html += "</tr></thead><tbody>";
-
-  let shownRows = 0;
   
   for(const y of ti){
     let rowCells = "";
-    let rowHasVisibleStatus = false;
   
     for(const x of ai){
       const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
       const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
       const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
   
-      const status = cellStatus(p, o, w);
-  
-      if(filters[status]){
-        rowHasVisibleStatus = true;
-      }
-  
       rowCells += renderMatrixCell(x.a, y.t, p, o, w, filters);
     }
   
-    if(!rowHasVisibleStatus){
-      continue;
-    }
-  
-    shownRows++;
     html += `<tr><td class="typeCol">${typeCellHtml(y.idx)}</td>${rowCells}</tr>`;
   }
-  html += "</tbody>";
 
   document.getElementById("tbl").innerHTML = html;
   document.getElementById("meta").textContent =
-    `${ai.length} Airlines · ${shownRows} Typen (aus ${airlines.length}×${types.length})`;
+    `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
 
   // Sync top scrollbar width + scroll position
   requestAnimationFrame(() => {
