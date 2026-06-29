@@ -99,7 +99,7 @@ function renderMatrixCell(group, aircraftId, p, o, w, filters){
     return `
       <td class="num cellWishlist">
         <a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">
-          Wunsch
+          W${esc(w)}
         </a>
       </td>
     `;
@@ -199,17 +199,17 @@ function initMobile(){
 
   // build airline dropdown
   mAir.innerHTML = "";
-  const optAll = document.createElement("option");
-  optAll.value = "";
-  optAll.textContent = "Alle Airlines";
-  mAir.appendChild(optAll);
-
   const airlines = data.groups || data.airlines || [];
+  
   for(const a of airlines){
     const opt = document.createElement("option");
     opt.value = a;
     opt.textContent = a;
     mAir.appendChild(opt);
+  }
+  
+  if(airlines.length){
+    mAir.value = airlines[0];
   }
 
   document.getElementById("mAir").addEventListener("change", renderMobile);
@@ -292,7 +292,7 @@ function renderMobile(){
         `<a href="${esc(x.n ? ownedHref : baseHref)}" title="In Übersicht öffnen">${esc(x.n || 0)}</a>` +
         (x.o ? ` <a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(x.o)}</a>` : "");
     }else if(x.w){
-      statusHtml = `<a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">Wunsch</a>`;
+      statusHtml = `<a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">W${esc(x.w)}</a>`;
     }else{
       statusHtml = `<span class="matrixMissing">–</span>`;
     }
