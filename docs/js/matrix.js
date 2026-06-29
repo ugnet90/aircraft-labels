@@ -145,23 +145,38 @@ function renderDesktop(){
 
   html += "</tr></thead><tbody>";
 
+  let shownRows = 0;
+  
   for(const y of ti){
-    html += `<tr><td class="typeCol">${typeCellHtml(y.idx)}</td>`;
+    let rowCells = "";
+    let rowHasVisibleStatus = false;
+  
     for(const x of ai){
       const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
       const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
       const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
-      
-      html += renderMatrixCell(x.a, y.t, p, o, w, filters);
-
+  
+      const status = cellStatus(p, o, w);
+  
+      if(filters[status]){
+        rowHasVisibleStatus = true;
+      }
+  
+      rowCells += renderMatrixCell(x.a, y.t, p, o, w, filters);
     }
-    html += "</tr>";
+  
+    if(!rowHasVisibleStatus){
+      continue;
+    }
+  
+    shownRows++;
+    html += `<tr><td class="typeCol">${typeCellHtml(y.idx)}</td>${rowCells}</tr>`;
   }
   html += "</tbody>";
 
   document.getElementById("tbl").innerHTML = html;
   document.getElementById("meta").textContent =
-    `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
+    `${ai.length} Airlines · ${shownRows} Typen (aus ${airlines.length}×${types.length})`;
 
   // Sync top scrollbar width + scroll position
   requestAnimationFrame(() => {
