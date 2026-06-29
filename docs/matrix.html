@@ -28,9 +28,34 @@
     <label class="muted">Airline enthält:
       <input id="airQ" placeholder="z.B. Austrian" />
     </label>
+  
     <label class="muted">Typ enthält:
       <input id="typeQ" placeholder="z.B. A320" />
     </label>
+  
+    <fieldset class="statusFilter">
+      <legend>Status</legend>
+  
+      <label>
+        <input type="checkbox" id="statusPresent" checked>
+        vorhanden
+      </label>
+  
+      <label>
+        <input type="checkbox" id="statusOrdered" checked>
+        bestellt
+      </label>
+  
+      <label>
+        <input type="checkbox" id="statusWishlist" checked>
+        Wunsch
+      </label>
+  
+      <label>
+        <input type="checkbox" id="statusMissing">
+        fehlt
+      </label>
+    </fieldset>
   </div>
 
   <!-- Desktop/Tablet matrix -->
@@ -47,16 +72,43 @@
       <label class="muted">Airline:
         <select id="mAir"></select>
       </label>
+    
       <label class="muted">Typ-Suche:
         <input id="mTypeQ" placeholder="z.B. A320" />
       </label>
-      <label class="muted">Nur vorhanden:
+    
+      <label class="muted">Nur Treffer:
         <select id="mOnlyNonZero">
           <option value="true">ja</option>
           <option value="false">nein</option>
         </select>
       </label>
+    
+      <fieldset class="statusFilter">
+        <legend>Status</legend>
+    
+        <label>
+          <input type="checkbox" id="mStatusPresent" checked>
+          vorhanden
+        </label>
+    
+        <label>
+          <input type="checkbox" id="mStatusOrdered" checked>
+          bestellt
+        </label>
+    
+        <label>
+          <input type="checkbox" id="mStatusWishlist" checked>
+          Wunsch
+        </label>
+    
+        <label>
+          <input type="checkbox" id="mStatusMissing">
+          fehlt
+        </label>
+      </fieldset>
     </div>
+    
     <div class="muted" id="mMeta"></div>
     <table id="mobileTbl" style="width:100%;border-collapse:collapse;margin-top:10px">
       <thead>
