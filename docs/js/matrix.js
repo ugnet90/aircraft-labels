@@ -9,12 +9,12 @@ function checked(id, fallback=true){
   return el ? !!el.checked : fallback;
 }
 
-function statusFilters(){
+function statusFilters(prefix=""){
   return {
-    present: checked("statusPresent", true),
-    ordered: checked("statusOrdered", true),
-    wishlist: checked("statusWishlist", true),
-    missing: checked("statusMissing", false)
+    present: checked(`${prefix}StatusPresent`, true),
+    ordered: checked(`${prefix}StatusOrdered`, true),
+    wishlist: checked(`${prefix}StatusWishlist`, true),
+    missing: checked(`${prefix}StatusMissing`, false)
   };
 }
 
@@ -212,7 +212,7 @@ function renderMobile(){
   const matrix = data.present_matrix || data.matrix || [];
   const ordered = data.ordered_matrix || [];
   const wishlist = data.wishlist_matrix || [];
-  const filters = statusFilters();
+  const filters = statusFilters("m");
 
   const selectedAir = (document.getElementById("mAir").value || "");
   const typeQ = (document.getElementById("mTypeQ").value || "").trim().toLowerCase();
@@ -304,7 +304,10 @@ async function main(){
   document.getElementById("airQ").addEventListener("input", renderDesktop);
   document.getElementById("typeQ").addEventListener("input", renderDesktop);
 
-  ["statusPresent", "statusOrdered", "statusWishlist", "statusMissing"].forEach(id => {
+  [
+    "statusPresent", "statusOrdered", "statusWishlist", "statusMissing",
+    "mStatusPresent", "mStatusOrdered", "mStatusWishlist", "mStatusMissing"
+  ].forEach(id => {
     const el = document.getElementById(id);
     if(el){
       el.addEventListener("change", () => {
@@ -312,7 +315,7 @@ async function main(){
         renderMobile();
       });
     }
-  });  
+  });
 }
 
 main();
