@@ -1029,7 +1029,16 @@ function render(items){
       if(key === "type_stock"){
         const stock = getTypeStockSummary(it.aircraft_id);
       
-        if(stock.total <= 1){
+        const status = String(it.status || "").trim().toLowerCase();
+        const isWishlist = status === "wishlist" || it.wishlist === true;
+      
+        // Bei vorhandenen/bestellten Modellen erst anzeigen, wenn es weitere gibt.
+        // Bei Wunschmodellen bereits anzeigen, wenn es überhaupt vorhandene/bestellte Modelle dieses Typs gibt.
+        const shouldShow = isWishlist
+          ? stock.total >= 1
+          : stock.total > 1;
+      
+        if(!shouldShow){
           return `<td class="${cls}"></td>`;
         }
       
@@ -1039,12 +1048,12 @@ function render(items){
               class="typeStockBtn"
               data-aircraft-id="${esc(it.aircraft_id || "")}"
               data-model-id="${esc(it.model_id || "")}"
-              title="Weitere Modelle dieses Typs anzeigen">
+              title="Vorhandene/bestellte Modelle dieses Typs anzeigen">
               ${esc(stock.text)}
             </button>
           </td>
         `;
-      }      
+      }  
     
       const value = MEASURE_COLUMNS.has(key)
         ? formatMeasureValue(it, key)
