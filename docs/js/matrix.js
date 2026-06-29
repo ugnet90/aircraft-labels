@@ -4,6 +4,110 @@ function esc(s){
 
 let data = null;
 
+function checked(id, fallback=true){
+  const el = document.getElementById(id);
+  return el ? !!el.checked : fallback;
+}
+
+function statusFilters(){
+  return {
+    present: checked("statusPresent", true),
+    ordered: checked("statusOrdered", true),
+    wishlist: checked("statusWishlist", true),
+    missing: checked("statusMissing", false)
+  };
+}
+
+function matrixTypeId(idx){
+  return (data.types || [])[idx] || "";
+}
+
+function matrixTypeLabel(idx){
+  const labels = data.type_labels || data.aircraft_types || [];
+  return labels[idx] || matrixTypeId(idx);
+}
+
+function typeCellHtml(idx){
+  const id = matrixTypeId(idx);
+  const label = matrixTypeLabel(idx);
+
+  if(label && label !== id){
+    return `
+      <strong>${esc(label)}</strong>
+      <div class="muted mono">${esc(id)}</div>
+    `;
+  }
+
+  return `<strong>${esc(id)}</strong>`;
+}
+
+function modelHref(group, aircraftId, status){
+  const p = new URLSearchParams();
+  p.set("group", group);
+  p.set("aircraft_id", aircraftId);
+
+  if(status){
+    p.set("status", status);
+  }
+
+  return `./models_overview.html?${p.toString()}`;
+}
+
+function cellStatus(p, o, w){
+  if(p > 0) return "present";
+  if(o > 0) return "ordered";
+  if(w > 0) return "wishlist";
+  return "missing";
+}
+
+function renderMatrixCell(group, aircraftId, p, o, w, filters){
+  const status = cellStatus(p, o, w);
+
+  if(!filters[status]){
+    return `<td class="num"></td>`;
+  }
+
+  if(status === "missing"){
+    return `
+      <td class="num cellMissing">
+        <span class="matrixMissing">–</span>
+      </td>
+    `;
+  }
+
+  const baseHref = modelHref(group, aircraftId, "");
+  const ownedHref = modelHref(group, aircraftId, "owned");
+  const orderedHref = modelHref(group, aircraftId, "ordered");
+  const wishlistHref = modelHref(group, aircraftId, "wishlist");
+
+  if(p || o){
+    const orderedBadge = o
+      ? `<a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(o)}</a>`
+      : "";
+
+    const cls = o ? "num cellOrdered" : "num";
+
+    return `
+      <td class="${cls}">
+        <a href="${esc(p ? ownedHref : baseHref)}" title="In Übersicht öffnen">${esc(p)}</a>
+        ${orderedBadge}
+      </td>
+    `;
+  }
+
+  if(w){
+    return `
+      <td class="num cellWishlist">
+        <a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">
+          Wunsch
+        </a>
+      </td>
+    `;
+  }
+
+  return `<td class="num"></td>`;
+}
+
 function renderDesktop(){
   if(!data) return;
 
@@ -14,6 +118,8 @@ function renderDesktop(){
   const types = data.types || [];
   const pm = data.present_matrix || data.matrix || [];
   const om = data.ordered_matrix || [];
+  const wm = data.wishlist_matrix || [];
+  const filters = statusFilters();
 
 
   const ai = airlines
@@ -21,8 +127,16 @@ function renderDesktop(){
     .filter(x => !airQ || x.a.toLowerCase().includes(airQ));
 
   const ti = types
-    .map((t, idx) => ({t, idx}))
-    .filter(x => !typeQ || x.t.toLowerCase().includes(typeQ));
+    .map((t, idx) => ({
+      t,
+      idx,
+      label: matrixTypeLabel(idx)
+    }))
+    .filter(x =>
+      !typeQ ||
+      x.t.toLowerCase().includes(typeQ) ||
+      x.label.toLowerCase().includes(typeQ)
+    );
 
   let html = "<thead><tr><th class='typeCol'>Typ \\ Airline</th>";
   for(const x of ai){
@@ -32,21 +146,13 @@ function renderDesktop(){
   html += "</tr></thead><tbody>";
 
   for(const y of ti){
-    html += `<tr><td class="typeCol">${esc(y.t)}</td>`;
+    html += `<tr><td class="typeCol">${typeCellHtml(y.idx)}</td>`;
     for(const x of ai){
       const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
       const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
-
-
-      // optional: click to jump to models_overview.html filtered (airline + type)
-      if(p || o){
-        const href = `./models_overview.html?group=${encodeURIComponent(x.a)}&aircraft_id=${encodeURIComponent(y.t)}`;
-        const badge = o ? `<span class="badgeOrdered">+${o}</span>` : "";
-        const cls = o ? "num cellOrdered" : "num";
-        html += `<td class="${cls}"><a href="${esc(href)}" title="In Übersicht öffnen">${p}</a>${badge}</td>`;
-      }else{
-        html += `<td class="num"></td>`;
-      }
+      const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
+      
+      html += renderMatrixCell(x.a, y.t, p, o, w, filters);
 
     }
     html += "</tr>";
@@ -105,7 +211,8 @@ function renderMobile(){
   const types = data.types || [];
   const matrix = data.present_matrix || data.matrix || [];
   const ordered = data.ordered_matrix || [];
-
+  const wishlist = data.wishlist_matrix || [];
+  const filters = statusFilters();
 
   const selectedAir = (document.getElementById("mAir").value || "");
   const typeQ = (document.getElementById("mTypeQ").value || "").trim().toLowerCase();
@@ -128,13 +235,26 @@ function renderMobile(){
   const rows = [];
   for(let ti = 0; ti < types.length; ti++){
     const t = types[ti];
-    if(typeQ && !t.toLowerCase().includes(typeQ)) continue;
+    const label = matrixTypeLabel(ti);
+    
+    if(
+      typeQ &&
+      !t.toLowerCase().includes(typeQ) &&
+      !label.toLowerCase().includes(typeQ)
+    ){
+      continue;
+    }
 
     const n = (matrix[airlineIdx] && matrix[airlineIdx][ti]) ? matrix[airlineIdx][ti] : 0;
     const o = (ordered[airlineIdx] && ordered[airlineIdx][ti]) ? ordered[airlineIdx][ti] : 0;
-    if(onlyNonZero && !n) continue;
-
-     rows.push({t, n, o});
+    const w = (wishlist[airlineIdx] && wishlist[airlineIdx][ti]) ? wishlist[airlineIdx][ti] : 0;
+    
+    const status = cellStatus(n, o, w);
+    
+    if(!filters[status]) continue;
+    if(onlyNonZero && !n && !o && !w) continue;
+    
+    rows.push({t, label, n, o, w, status});
   }
 
   rows.sort((a,b) => a.t.localeCompare(b.t));
@@ -145,15 +265,30 @@ function renderMobile(){
 
   const tbody = document.querySelector("#mobileTbl tbody");
   tbody.innerHTML = rows.map(x => {
-    const href = `./models_overview.html?group=${encodeURIComponent(selectedAir)}&aircraft_id=${encodeURIComponent(x.t)}`;
-    const n = x.n ? x.n : 0;
-  
+    const baseHref = modelHref(selectedAir, x.t, "");
+    const ownedHref = modelHref(selectedAir, x.t, "owned");
+    const orderedHref = modelHref(selectedAir, x.t, "ordered");
+    const wishlistHref = modelHref(selectedAir, x.t, "wishlist");
+    
+    let statusHtml = "";
+    
+    if(x.n || x.o){
+      statusHtml =
+        `<a href="${esc(x.n ? ownedHref : baseHref)}" title="In Übersicht öffnen">${esc(x.n || 0)}</a>` +
+        (x.o ? ` <a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(x.o)}</a>` : "");
+    }else if(x.w){
+      statusHtml = `<a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">Wunsch</a>`;
+    }else{
+      statusHtml = `<span class="matrixMissing">–</span>`;
+    }
+    
     return `
       <tr>
-        <td class="num">
-          <a href="${esc(href)}" title="In Übersicht öffnen">${esc(n)}</a>${x.o ? ` <span class="badgeOrdered">+${esc(x.o)}</span>` : ""}
+        <td class="num">${statusHtml}</td>
+        <td>
+          <strong>${esc(x.label || x.t)}</strong>
+          <div class="muted mono">${esc(x.t)}</div>
         </td>
-        <td>${esc(x.t)}</td>
       </tr>
     `;
   }).join("");
@@ -168,6 +303,16 @@ async function main(){
 
   document.getElementById("airQ").addEventListener("input", renderDesktop);
   document.getElementById("typeQ").addEventListener("input", renderDesktop);
+
+  ["statusPresent", "statusOrdered", "statusWishlist", "statusMissing"].forEach(id => {
+    const el = document.getElementById(id);
+    if(el){
+      el.addEventListener("change", () => {
+        renderDesktop();
+        renderMobile();
+      });
+    }
+  });  
 }
 
 main();
