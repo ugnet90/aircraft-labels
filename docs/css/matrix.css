@@ -25,7 +25,6 @@ th{ position:sticky; top:0; z-index:3; }
 td:first-child, th:first-child{ position:sticky; left:0; z-index:2; }
 tr:nth-child(even) td{ background:#fafafa; }
 
-td.num{ text-align:right; font-variant-numeric:tabular-nums; }
 td.num > a:first-child{
   display:inline-block;
   text-decoration:none;
@@ -48,8 +47,17 @@ td.num a:hover{ text-decoration:underline; }
   #tableWrap{ max-height:70vh; }
 }
 @media (max-width:720px){
-  #matrixCard{ display:none; }
-  #mobileCard{ display:block; }
+  #desktopControls{
+    display:none;
+  }
+
+  #matrixCard{
+    display:none;
+  }
+
+  #mobileCard{
+    display:block;
+  }
 }
 
 th.typeCol,
@@ -63,13 +71,23 @@ td.typeCol{
   line-height:1.2;
 }
 th.colHead{
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
   white-space:nowrap;
-  padding:8px 6px;
-  height:150px;
+  padding:6px 3px;
+  height:140px;
   vertical-align:bottom;
-  min-width:56px;
+  min-width:38px;
+  width:38px;
+  max-width:38px;
+}
+
+td.num{
+  width:38px;
+  min-width:38px;
+  max-width:38px;
+  text-align:center;
+  font-variant-numeric:tabular-nums;
 }
 
 .cellOrdered{
@@ -96,7 +114,7 @@ th.colHead{
 }
 
 .cellWishlist{
-  background:#f6f7f9 !important;
+  background:#fff7df !important;
 }
 
 .badgeWishlist{
@@ -105,16 +123,16 @@ th.colHead{
   border-radius:999px;
   font-size:11px;
   line-height:1.2;
-  border:1px solid #cfd6df;
-  background:#f8fafc;
-  color:#56616f;
+  border:1px solid #e4b84a;
+  background:#ffe08a;
+  color:#5c4300;
   text-decoration:none;
   font-weight:600;
   white-space:nowrap;
 }
 
 .badgeWishlist:hover{
-  background:#eef1f5;
+  background:#ffd866;
   text-decoration:none;
 }
 
