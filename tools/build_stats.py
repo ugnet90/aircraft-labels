@@ -41,7 +41,26 @@ def is_ordered(row) -> bool:
     present = is_present(row)
     return (not present) and bool(bestellt) and (not angekommen)
 
+def is_wishlist(row) -> bool:
+    """
+    Wunschmodell = explizit als Wunsch markiert,
+    aber nicht vorhanden und nicht bestellt.
+    Unterstützt mehrere mögliche Spaltennamen.
+    """
+    v = (
+        row.get("Wunsch")
+        or row.get("wunsch")
+        or row.get("wishlist")
+        or row.get("wish")
+        or ""
+    ).strip().lower()
 
+    return (
+        v in ("wahr", "true", "1", "x", "ja", "yes")
+        and not is_present(row)
+        and not is_ordered(row)
+    )
+    
 def main():
     models = read_csv(MODELS_CSV, delimiter=";")
     pax = read_csv(PASSENGER_CSV, delimiter=";")
@@ -133,46 +152,75 @@ def main():
     # =========================
     present_counts = defaultdict(lambda: defaultdict(int))
     ordered_counts = defaultdict(lambda: defaultdict(int))
+    wishlist_counts = defaultdict(lambda: defaultdict(int))
     seen_types = set()
-
+    
     for r in models:
         group = norm(r.get("airline")) or norm(r.get("airline_code"))
         t = norm(r.get("aircraft_id"))
         if not group or not t:
             continue
-
+    
         seen_types.add(t)
-
+    
         if is_present(r):
             present_counts[group][t] += 1
         elif is_ordered(r):
             ordered_counts[group][t] += 1
-
-    groups = sorted(set(list(present_counts.keys()) + list(ordered_counts.keys())))
-    types = sorted(seen_types)
-
+        elif is_wishlist(r):
+            wishlist_counts[group][t] += 1
+    
+    groups = sorted(
+        set(
+            list(present_counts.keys())
+            + list(ordered_counts.keys())
+            + list(wishlist_counts.keys())
+        )
+    )
+    
+    types = sorted(
+        seen_types,
+        key=lambda aid: (id_to_label.get(aid, aid).lower(), aid)
+    )
+    
+    type_labels = [id_to_label.get(t, t) for t in types]
+    
     present_matrix = []
     ordered_matrix = []
+    wishlist_matrix = []
+    
     for g in groups:
         prow = []
         orow = []
+        wrow = []
+    
         for t in types:
             prow.append(present_counts[g].get(t, 0))
             orow.append(ordered_counts[g].get(t, 0))
+            wrow.append(wishlist_counts[g].get(t, 0))
+    
         present_matrix.append(prow)
         ordered_matrix.append(orow)
-
+        wishlist_matrix.append(wrow)
+    
     payload_matrix = {
-        "schema": "aircraft-labels.matrix.v2",
+        "schema": "aircraft-labels.matrix.v3",
         "counts": {
             "groups": len(groups),
             "types": len(types),
             "models": len(models),
         },
         "groups": groups,
+    
+        # aircraft_id bleibt technischer Schlüssel
         "types": types,
+    
+        # lesbare Anzeige in der ersten Spalte
+        "type_labels": type_labels,
+    
         "present_matrix": present_matrix,
         "ordered_matrix": ordered_matrix,
+        "wishlist_matrix": wishlist_matrix,
     }
     OUT_MATRIX.write_text(
         json.dumps(payload_matrix, ensure_ascii=False, indent=2), encoding="utf-8"
