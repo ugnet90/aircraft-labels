@@ -302,8 +302,7 @@ td.num > a:first-child:hover{
 /* iPhone / schmale Geräte senkrecht: nur Drehhinweis */
 @media (max-width:900px) and (orientation:portrait){
   #desktopControls,
-  #matrixCard,
-  #mobileCard{
+  #matrixCard{
     display:none !important;
   }
 
@@ -317,15 +316,14 @@ td.num > a:first-child:hover{
   }
 }
 
-/* iPhone / schmale Geräte quer: mobile Liste anzeigen */
+/* iPhone / schmale Geräte quer: normale Matrix anzeigen */
 @media (max-width:900px) and (orientation:landscape){
-  #desktopControls,
-  #matrixCard,
   .rotateHint{
     display:none !important;
   }
 
-  #mobileCard{
+  #desktopControls,
+  #matrixCard{
     display:block !important;
   }
 }
