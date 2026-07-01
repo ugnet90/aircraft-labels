@@ -1,6 +1,6 @@
 /* === matrix page only === */
 
-/* Matrix darf die volle Breite nutzen */
+/* Matrix darf breiter als Standardseiten sein, aber nicht künstlich gestreckt */
 body{
   --maxw:none;
 }
@@ -48,7 +48,7 @@ label{
   padding:0;
 }
 
-/* kein zusätzlicher horizontaler Scrollbalken */
+/* kein separater horizontaler Zusatzscrollbalken */
 #topScroll{
   display:none;
 }
@@ -57,12 +57,17 @@ label{
   height:1px;
 }
 
+/*
+  Desktop:
+  - horizontales Scrollen nur falls wirklich nötig
+  - Tabelle wird NICHT auf volle Bildschirmbreite gedehnt
+*/
 #tableWrap{
   overflow:auto;
   max-height:75vh;
 }
 
-/* Tabelle soll in die Breite passen */
+/* Tabelle kompakt halten */
 table{
   width:max-content;
   min-width:auto;
@@ -161,7 +166,7 @@ td.num.cellOrdered{
   max-width:42px;
 }
 
-/* Links in Zellen */
+/* Links / Inhalte in Zahlenzellen sauber zentrieren */
 td.num > a,
 td.num > span{
   display:inline-flex;
@@ -180,29 +185,34 @@ td.num > a:first-child:hover{
   text-decoration:underline;
 }
 
+/* Gemeinsames Badge-Layout */
+.badgeOrdered,
+.badgeWishlist{
+  margin:0;
+  min-width:22px;
+  height:18px;
+  box-sizing:border-box;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:1px 5px;
+  border-radius:999px;
+  font-size:10px;
+  line-height:1;
+  text-decoration:none !important;
+  font-weight:600;
+  white-space:nowrap;
+}
+
 /* Bestellung: blau */
 .cellOrdered{
   background:#eef5ff !important;
 }
 
 .badgeOrdered{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  margin:0;
-  min-width:22px;
-  height:18px;
-  box-sizing:border-box;
-  padding:1px 5px;
-  border-radius:999px;
-  font-size:10px;
-  line-height:1;
   border:1px solid #9cc3f5;
   background:#dbeafe;
   color:#0b4da2 !important;
-  text-decoration:none !important;
-  font-weight:600;
-  white-space:nowrap;
 }
 
 .badgeOrdered:hover{
@@ -216,23 +226,9 @@ td.num > a:first-child:hover{
 }
 
 .badgeWishlist{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  margin:0;
-  min-width:24px;
-  height:18px;
-  box-sizing:border-box;
-  padding:1px 5px;
-  border-radius:999px;
-  font-size:10px;
-  line-height:1;
   border:1px solid #d8a900;
   background:#ffe08a;
   color:#5c4300 !important;
-  text-decoration:none !important;
-  font-weight:600;
-  white-space:nowrap;
 }
 
 .badgeWishlist:hover{
@@ -250,7 +246,7 @@ td.num > a:first-child:hover{
   font-size:11px;
 }
 
-/* Mobile */
+/* Mobile-Grundzustand */
 #mobileCard{
   display:none;
 }
@@ -260,6 +256,12 @@ td.num > a:first-child:hover{
 }
 
 /* Mobile-Tabelle, falls Querformat genutzt wird */
+#mobileTbl{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
 #mobileTbl td,
 #mobileTbl th{
   border-bottom:1px solid #eee;
@@ -297,8 +299,8 @@ td.num > a:first-child:hover{
   }
 }
 
-/* iPhone senkrecht: nur Drehhinweis */
-@media (max-width:720px) and (orientation:portrait){
+/* iPhone / schmale Geräte senkrecht: nur Drehhinweis */
+@media (max-width:900px) and (orientation:portrait){
   #desktopControls,
   #matrixCard,
   #mobileCard{
@@ -306,7 +308,7 @@ td.num > a:first-child:hover{
   }
 
   .rotateHint{
-    display:block;
+    display:block !important;
     font-size:15px;
     line-height:1.4;
     color:#555;
@@ -315,8 +317,8 @@ td.num > a:first-child:hover{
   }
 }
 
-/* iPhone quer: mobile Liste anzeigen */
-@media (max-width:720px) and (orientation:landscape){
+/* iPhone / schmale Geräte quer: mobile Liste anzeigen */
+@media (max-width:900px) and (orientation:landscape){
   #desktopControls,
   #matrixCard,
   .rotateHint{
