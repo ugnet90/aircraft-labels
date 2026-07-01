@@ -64,6 +64,14 @@ function cellMatchesFilters(p, o, w, filters){
   if(p > 0 && filters.present) return true;
   if(o > 0 && filters.ordered) return true;
   if(w > 0 && filters.wishlist) return true;
+  if(p === 0 && o === 0 && w === 0 && filters.missing) return true;
+  return false;
+}
+
+function cellMatchesFilters(p, o, w, filters){
+  if(p > 0 && filters.present) return true;
+  if(o > 0 && filters.ordered) return true;
+  if(w > 0 && filters.wishlist) return true;
 
   if(p === 0 && o === 0 && w === 0 && filters.missing) return true;
 
@@ -71,19 +79,60 @@ function cellMatchesFilters(p, o, w, filters){
 }
 
 function renderMatrixCell(group, aircraftId, p, o, w, filters){
-  const status = cellStatus(p, o, w);
+  const showPresent = p > 0 && filters.present;
+  const showOrdered = o > 0 && filters.ordered;
+  const showWishlist = w > 0 && filters.wishlist;
+  const showMissing = p === 0 && o === 0 && w === 0 && filters.missing;
 
-  if(!filters[status]){
+  if(!showPresent && !showOrdered && !showWishlist && !showMissing){
     return `<td class="num"></td>`;
   }
 
-  if(status === "missing"){
+  if(showMissing){
     return `
       <td class="num cellMissing">
         <span class="matrixMissing">–</span>
       </td>
     `;
   }
+
+  const baseHref = modelHref(group, aircraftId, "");
+  const ownedHref = modelHref(group, aircraftId, "owned");
+  const orderedHref = modelHref(group, aircraftId, "ordered");
+  const wishlistHref = modelHref(group, aircraftId, "wishlist");
+
+  const parts = [];
+
+  if(showPresent){
+    parts.push(
+      `<a href="${esc(ownedHref)}" title="Vorhandene Modelle in Übersicht öffnen">${esc(p)}</a>`
+    );
+  }else if(showOrdered){
+    parts.push(
+      `<a href="${esc(baseHref)}" title="In Übersicht öffnen">0</a>`
+    );
+  }
+
+  if(showOrdered){
+    parts.push(
+      `<a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(o)}</a>`
+    );
+  }
+
+  if(showWishlist && !showPresent && !showOrdered){
+    parts.push(
+      `<a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">W${esc(w)}</a>`
+    );
+  }
+
+  const cls = [
+    "num",
+    showOrdered ? "cellOrdered" : "",
+    showWishlist && !showPresent && !showOrdered ? "cellWishlist" : ""
+  ].filter(Boolean).join(" ");
+
+  return `<td class="${cls}">${parts.join(" ")}</td>`;
+}
 
   const baseHref = modelHref(group, aircraftId, "");
   const ownedHref = modelHref(group, aircraftId, "owned");
@@ -131,44 +180,41 @@ function renderDesktop(){
   const wm = data.wishlist_matrix || [];
   const filters = statusFilters();
 
+const aiRaw = airlines
+  .map((a, idx) => ({a, idx}))
+  .filter(x => !airQ || x.a.toLowerCase().includes(airQ));
 
-  const aiRaw = airlines
-    .map((a, idx) => ({a, idx}))
-    .filter(x => !airQ || x.a.toLowerCase().includes(airQ));
-  
-  const tiRaw = types
-    .map((t, idx) => ({
-      t,
-      idx,
-      label: matrixTypeLabel(idx)
-    }))
-    .filter(x =>
-      !typeQ ||
-      x.t.toLowerCase().includes(typeQ) ||
-      x.label.toLowerCase().includes(typeQ)
-    );
-  
-  // Nur Typ-Zeilen mit mindestens einem sichtbaren Status
-  const ti = tiRaw.filter(y => {
-    return aiRaw.some(x => {
-      const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
-      const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
-      const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
-  
-      return cellMatchesFilters(p, o, w, filters);
-    });
+const tiRaw = types
+  .map((t, idx) => ({
+    t,
+    idx,
+    label: matrixTypeLabel(idx)
+  }))
+  .filter(x =>
+    !typeQ ||
+    x.t.toLowerCase().includes(typeQ) ||
+    x.label.toLowerCase().includes(typeQ)
+  );
+
+const ti = tiRaw.filter(y => {
+  return aiRaw.some(x => {
+    const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
+    const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
+    const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
+
+    return cellMatchesFilters(p, o, w, filters);
   });
-  
-  // Nur Airline-Spalten mit mindestens einem sichtbaren Status
-  const ai = aiRaw.filter(x => {
-    return ti.some(y => {
-      const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
-      const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
-      const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
-  
-      return cellMatchesFilters(p, o, w, filters);
-    });
+});
+
+const ai = aiRaw.filter(x => {
+  return ti.some(y => {
+    const p = (pm[x.idx] && pm[x.idx][y.idx]) ? pm[x.idx][y.idx] : 0;
+    const o = (om[x.idx] && om[x.idx][y.idx]) ? om[x.idx][y.idx] : 0;
+    const w = (wm[x.idx] && wm[x.idx][y.idx]) ? wm[x.idx][y.idx] : 0;
+
+    return cellMatchesFilters(p, o, w, filters);
   });
+});
   
   let html = "<thead><tr><th class='typeCol'>Typ \\ Airline</th>";
   
@@ -337,16 +383,25 @@ async function main(){
   document.getElementById("airQ").addEventListener("input", renderDesktop);
   document.getElementById("typeQ").addEventListener("input", renderDesktop);
 
-  [
-    "statusPresent", "statusOrdered", "statusWishlist", "statusMissing",
-    "mStatusPresent", "mStatusOrdered", "mStatusWishlist", "mStatusMissing"
-  ].forEach(id => {
-    const el = document.getElementById(id);
-    if(el){
-      el.addEventListener("change", () => {
-        renderDesktop();
-        renderMobile();
-      });
+  document.addEventListener("change", (ev) => {
+    const el = ev.target;
+  
+    if(!el || !el.matches("input[type='checkbox']")){
+      return;
+    }
+  
+    if(
+      el.id === "statusPresent" ||
+      el.id === "statusOrdered" ||
+      el.id === "statusWishlist" ||
+      el.id === "statusMissing" ||
+      el.id === "mStatusPresent" ||
+      el.id === "mStatusOrdered" ||
+      el.id === "mStatusWishlist" ||
+      el.id === "mStatusMissing"
+    ){
+      renderDesktop();
+      renderMobile();
     }
   });
 }
