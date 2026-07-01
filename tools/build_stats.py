@@ -178,8 +178,13 @@ def main():
         )
     )
     
+    # Für die Matrix sollen bei aktivem Status "fehlt" auch Typen erscheinen,
+    # die noch bei keiner Airline vorhanden/bestellt/gewünscht sind.
+    # Deshalb nehmen wir alle Master-Typen plus alle Typen aus den Modelldaten.
+    matrix_type_ids = seen_types | master_ids
+    
     types = sorted(
-        seen_types,
+        matrix_type_ids,
         key=lambda aid: (id_to_label.get(aid, aid).lower(), aid)
     )
     
