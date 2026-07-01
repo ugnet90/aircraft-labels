@@ -256,7 +256,7 @@ td.num > a:first-child:hover{
 
 /* Fehlend */
 .cellMissing{
-  background:#fff !important;
+  background:transparent;
 }
 
 .matrixMissing{
