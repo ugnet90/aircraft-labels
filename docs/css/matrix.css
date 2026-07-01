@@ -1,148 +1,121 @@
 /* === matrix page only === */
-body{ --maxw: 1100px; }   /* oder 1200px, wenn du etwas mehr Luft willst */
 
-.controls{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
-label{ display:flex; gap:6px; align-items:center; }
+/* Matrix darf die volle Breite nutzen */
+body{
+  --maxw:none;
+}
 
-#matrixCard{ padding:0; }
-#topScroll{ overflow:auto; border-bottom:1px solid #eee; }
-#topScrollInner{ height:1px; }
-#tableWrap{ overflow:auto; max-height:75vh; }
+/* Controls */
+.controls{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+}
 
+label{
+  display:flex;
+  gap:6px;
+  align-items:center;
+}
+
+/* Status-Checkboxgruppe */
+.statusFilter{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:8px 10px;
+  margin:0;
+  background:#fff;
+}
+
+.statusFilter legend{
+  padding:0 4px;
+  font-size:12px;
+  color:#666;
+}
+
+.statusFilter label{
+  font-size:13px;
+  color:#333;
+}
+
+/* Desktop-Matrix */
+#matrixCard{
+  padding:0;
+}
+
+/* kein zusätzlicher horizontaler Scrollbalken */
+#topScroll{
+  display:none;
+}
+
+#topScrollInner{
+  height:1px;
+}
+
+#tableWrap{
+  overflow-x:visible;
+  overflow-y:auto;
+  max-height:75vh;
+}
+
+/* Tabelle soll in die Breite passen */
 table{
-  width:max-content;
-  min-width:100%;
+  width:100%;
+  table-layout:fixed;
   border-collapse:collapse;
   font-size:12px;
 }
-th, td{
+
+th,
+td{
   border:1px solid #e6e6e6;
-  padding:6px 8px;
-  vertical-align:top;
+  padding:5px 4px;
+  vertical-align:middle;
   background:#fff;
 }
-th{ position:sticky; top:0; z-index:3; }
-td:first-child, th:first-child{ position:sticky; left:0; z-index:2; }
-tr:nth-child(even) td{ background:#fafafa; }
 
-td.num > a:first-child{
-  display:inline-block;
-  text-decoration:none;
-  color:#000;
+th{
+  position:sticky;
+  top:0;
+  z-index:3;
+  background:#fff;
 }
 
-td.num > a:first-child:hover{
-  text-decoration:underline;
-}
-td.num a:hover{ text-decoration:underline; }
-
-#mobileCard{ display:none; }
-#mobileTbl td, #mobileTbl th{ border-bottom:1px solid #eee; padding:6px 8px; font-size:14px; }
-#mobileTbl td.num{ text-align:right; font-variant-numeric:tabular-nums; }
-#mobileTbl td.num a{ color:#000; text-decoration:none; display:inline-block; padding:2px 6px; border:1px solid #ddd; border-radius:10px; }
-#mobileTbl td.num a:hover{ background:#fafafa; }
-
-@media (max-width:900px){
-  body{ margin:12px; }
-  #tableWrap{ max-height:70vh; }
-}
-@media (max-width:720px){
-  #desktopControls{
-    display:none;
-  }
-
-  #matrixCard{
-    display:none;
-  }
-
-  #mobileCard{
-    display:block;
-  }
+td:first-child,
+th:first-child{
+  position:sticky;
+  left:0;
+  z-index:2;
+  background:#fff;
 }
 
+th:first-child{
+  z-index:4;
+}
+
+tr:nth-child(even) td{
+  background:#fafafa;
+}
+
+tr:nth-child(even) td:first-child{
+  background:#fafafa;
+}
+
+/* Erste Spalte: lesbarer Flugzeugtyp */
 th.typeCol,
 td.typeCol{
-  min-width:220px;
-  width:220px;
-  max-width:220px;
+  width:190px;
+  min-width:190px;
+  max-width:190px;
   white-space:normal;
   word-break:normal;
   overflow-wrap:normal;
-  line-height:1.2;
-}
-th.colHead{
-  writing-mode:vertical-rl;
-  transform:rotate(180deg);
-  white-space:nowrap;
-  padding:6px 3px;
-  height:140px;
-  vertical-align:bottom;
-  min-width:38px;
-  width:38px;
-  max-width:38px;
-}
-
-td.num{
-  width:38px;
-  min-width:38px;
-  max-width:38px;
-  text-align:center;
-  font-variant-numeric:tabular-nums;
-}
-
-.cellOrdered{
-  background:#eef5ff !important;
-}
-
-.badgeOrdered{
-  display:inline-block;
-  margin-left:6px;
-  padding:2px 6px;
-  border-radius:999px;
-  font-size:11px;
-  line-height:1.2;
-  border:1px solid #9cc3f5;
-  background:#dbeafe;
-  color:#0b4da2;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.badgeOrdered:hover{
-  background:#cfe3ff;
-  text-decoration:none;
-}
-
-.cellWishlist{
-  background:#fff7df !important;
-}
-
-.badgeWishlist{
-  display:inline-block;
-  padding:2px 6px;
-  border-radius:999px;
-  font-size:11px;
-  line-height:1.2;
-  border:1px solid #e4b84a;
-  background:#ffe08a;
-  color:#5c4300;
-  text-decoration:none;
-  font-weight:600;
-  white-space:nowrap;
-}
-
-.badgeWishlist:hover{
-  background:#ffd866;
-  text-decoration:none;
-}
-
-.cellMissing{
-  background:#fff !important;
-}
-
-.matrixMissing{
-  color:#bbb;
-  font-size:11px;
+  line-height:1.15;
 }
 
 td.typeCol strong{
@@ -156,24 +129,203 @@ td.typeCol .muted{
   color:#777;
 }
 
-.statusFilter{
-  display:flex;
+/* Airline-Spalten kompakt */
+th.colHead{
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+  white-space:nowrap;
+  padding:6px 2px;
+  height:135px;
+  vertical-align:bottom;
+  width:34px;
+  min-width:34px;
+  max-width:34px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* Matrix-Zellen */
+td.num{
+  width:34px;
+  min-width:34px;
+  max-width:34px;
+  padding:3px 2px;
+  text-align:center;
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+  vertical-align:middle;
+}
+
+/* Zelle mit Zahl + Bestellbadge braucht etwas mehr Platz */
+td.num.cellOrdered{
+  width:42px;
+  min-width:42px;
+  max-width:42px;
+}
+
+/* Links in Zellen */
+td.num > a,
+td.num > span{
+  display:inline-flex;
   align-items:center;
-  gap:10px;
-  flex-wrap:wrap;
-  border:1px solid #ddd;
-  border-radius:8px;
-  padding:8px 10px;
+  justify-content:center;
+  vertical-align:middle;
+}
+
+td.num > a:first-child{
+  min-width:16px;
+  text-decoration:none;
+  color:#000;
+}
+
+td.num > a:first-child:hover{
+  text-decoration:underline;
+}
+
+/* Bestellung: blau */
+.cellOrdered{
+  background:#eef5ff !important;
+}
+
+.badgeOrdered{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   margin:0;
+  min-width:22px;
+  height:18px;
+  box-sizing:border-box;
+  padding:1px 5px;
+  border-radius:999px;
+  font-size:10px;
+  line-height:1;
+  border:1px solid #9cc3f5;
+  background:#dbeafe;
+  color:#0b4da2 !important;
+  text-decoration:none !important;
+  font-weight:600;
+  white-space:nowrap;
 }
 
-.statusFilter legend{
-  padding:0 4px;
-  font-size:12px;
-  color:#666;
+.badgeOrdered:hover{
+  background:#cfe3ff;
+  text-decoration:none !important;
 }
 
-.statusFilter label{
-  font-size:13px;
-  color:#333;
+/* Wunsch: gelb/orange wie models_overview */
+.cellWishlist{
+  background:#fff7df !important;
+}
+
+.badgeWishlist{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+  min-width:24px;
+  height:18px;
+  box-sizing:border-box;
+  padding:1px 5px;
+  border-radius:999px;
+  font-size:10px;
+  line-height:1;
+  border:1px solid #d8a900;
+  background:#ffe08a;
+  color:#5c4300 !important;
+  text-decoration:none !important;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+.badgeWishlist:hover{
+  background:#ffd866;
+  text-decoration:none !important;
+}
+
+/* Fehlend */
+.cellMissing{
+  background:#fff !important;
+}
+
+.matrixMissing{
+  color:#bbb;
+  font-size:11px;
+}
+
+/* Mobile */
+#mobileCard{
+  display:none;
+}
+
+.rotateHint{
+  display:none;
+}
+
+/* Mobile-Tabelle, falls Querformat genutzt wird */
+#mobileTbl td,
+#mobileTbl th{
+  border-bottom:1px solid #eee;
+  padding:6px 8px;
+  font-size:14px;
+}
+
+#mobileTbl td.num{
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+
+#mobileTbl td.num a{
+  color:#000;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:2px 6px;
+  border-radius:10px;
+}
+
+#mobileTbl td.num a:hover{
+  background:#fafafa;
+}
+
+/* Tablet / schmalere Breiten */
+@media (max-width:900px){
+  body{
+    margin:12px;
+  }
+
+  #tableWrap{
+    max-height:70vh;
+  }
+}
+
+/* iPhone senkrecht: nur Drehhinweis */
+@media (max-width:720px) and (orientation:portrait){
+  #desktopControls,
+  #matrixCard,
+  #mobileCard{
+    display:none !important;
+  }
+
+  .rotateHint{
+    display:block;
+    font-size:15px;
+    line-height:1.4;
+    color:#555;
+    text-align:center;
+    padding:18px 14px;
+  }
+}
+
+/* iPhone quer: mobile Liste anzeigen */
+@media (max-width:720px) and (orientation:landscape){
+  #desktopControls,
+  #matrixCard,
+  .rotateHint{
+    display:none !important;
+  }
+
+  #mobileCard{
+    display:block !important;
+  }
 }
