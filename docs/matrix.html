@@ -71,61 +71,6 @@
     Bitte iPhone quer drehen, um die Matrix anzuzeigen.
   </div>
   
-  <!-- Mobile controls + list -->
-  <div class="card" id="mobileCard">
-    <div class="controls" style="margin-bottom:10px">
-      <label class="muted">Airline:
-        <select id="mAir"></select>
-      </label>
-    
-      <label class="muted">Typ-Suche:
-        <input id="mTypeQ" placeholder="z.B. A320" />
-      </label>
-    
-      <label class="muted">Nur Treffer:
-        <select id="mOnlyNonZero">
-          <option value="true">ja</option>
-          <option value="false">nein</option>
-        </select>
-      </label>
-    
-      <fieldset class="statusFilter">
-        <legend>Status</legend>
-    
-        <label>
-          <input type="checkbox" id="mStatusPresent" checked>
-          vorhanden
-        </label>
-    
-        <label>
-          <input type="checkbox" id="mStatusOrdered" checked>
-          bestellt
-        </label>
-    
-        <label>
-          <input type="checkbox" id="mStatusWishlist" checked>
-          Wunsch
-        </label>
-    
-        <label>
-          <input type="checkbox" id="mStatusMissing">
-          fehlt
-        </label>
-      </fieldset>
-    </div>
-    
-    <div class="muted" id="mMeta"></div>
-    <table id="mobileTbl" style="width:100%;border-collapse:collapse;margin-top:10px">
-      <thead>
-        <tr>
-          <th style="text-align:right;border-bottom:1px solid #eee;padding:6px 8px">#</th>
-          <th style="text-align:left;border-bottom:1px solid #eee;padding:6px 8px">Typ</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-<script src="js/matrix.js" defer></script>
+  <script src="js/matrix.js" defer></script>
 </body>
 </html>
