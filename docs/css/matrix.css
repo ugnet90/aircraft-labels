@@ -58,15 +58,15 @@ label{
 }
 
 #tableWrap{
-  overflow-x:visible;
-  overflow-y:auto;
+  overflow:auto;
   max-height:75vh;
 }
 
 /* Tabelle soll in die Breite passen */
 table{
-  width:100%;
-  table-layout:fixed;
+  width:max-content;
+  min-width:auto;
+  table-layout:auto;
   border-collapse:collapse;
   font-size:12px;
 }
@@ -140,8 +140,6 @@ th.colHead{
   width:34px;
   min-width:34px;
   max-width:34px;
-  overflow:hidden;
-  text-overflow:ellipsis;
 }
 
 /* Matrix-Zellen */
