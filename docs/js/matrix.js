@@ -68,16 +68,6 @@ function cellMatchesFilters(p, o, w, filters){
   return false;
 }
 
-function cellMatchesFilters(p, o, w, filters){
-  if(p > 0 && filters.present) return true;
-  if(o > 0 && filters.ordered) return true;
-  if(w > 0 && filters.wishlist) return true;
-
-  if(p === 0 && o === 0 && w === 0 && filters.missing) return true;
-
-  return false;
-}
-
 function renderMatrixCell(group, aircraftId, p, o, w, filters){
   const showPresent = p > 0 && filters.present;
   const showOrdered = o > 0 && filters.ordered;
@@ -132,39 +122,6 @@ function renderMatrixCell(group, aircraftId, p, o, w, filters){
   ].filter(Boolean).join(" ");
 
   return `<td class="${cls}">${parts.join(" ")}</td>`;
-}
-
-  const baseHref = modelHref(group, aircraftId, "");
-  const ownedHref = modelHref(group, aircraftId, "owned");
-  const orderedHref = modelHref(group, aircraftId, "ordered");
-  const wishlistHref = modelHref(group, aircraftId, "wishlist");
-
-  if(p || o){
-    const orderedBadge = o
-      ? `<a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(o)}</a>`
-      : "";
-
-    const cls = o ? "num cellOrdered" : "num";
-
-    return `
-      <td class="${cls}">
-        <a href="${esc(p ? ownedHref : baseHref)}" title="In Übersicht öffnen">${esc(p)}</a>
-        ${orderedBadge}
-      </td>
-    `;
-  }
-
-  if(w){
-    return `
-      <td class="num cellWishlist">
-        <a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">
-          W${esc(w)}
-        </a>
-      </td>
-    `;
-  }
-
-  return `<td class="num"></td>`;
 }
 
 function renderDesktop(){
@@ -237,7 +194,9 @@ const ai = aiRaw.filter(x => {
   
     html += `<tr><td class="typeCol">${typeCellHtml(y.idx)}</td>${rowCells}</tr>`;
   }
-
+  
+  html += "</tbody>";
+  
   document.getElementById("tbl").innerHTML = html;
   document.getElementById("meta").textContent =
     `${ai.length} Airlines · ${ti.length} Typen (aus ${airlines.length}×${types.length})`;
