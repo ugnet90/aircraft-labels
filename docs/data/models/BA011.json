@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-BA-58",
+  "model_id": "BA011",
   "airline_code": "BA",
   "airline": "British Airways",
   "airline_row": "British Airways",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-ORD-BA-58-01",
+      "id": "PC-BA011-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/4215-british-airw-city-flyer-embraer-170.html",
       "price": 0.85
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.planespotters.net/photo/484245/g-lcyf-british-airways-embraer-erj-170std-erj-170-100",
   "photo_image_url": "https://cdn.plnspttrs.net/03182/g-lcyf-british-airways-embraer-erj-170std-erj-170-100_PlanespottersNet_484245_39721d1c29_o.jpg",
   "photo_credit": "Stefan Siegenthaler",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-06-19",
-  "ordered": true,
+  "arrived_excel": "2026-07-01",
+  "arrived": "2026-07-01",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "BA",
     "row": "58"
@@ -67,13 +67,13 @@
     "shop": "Ebay hermannjosef1461",
     "price": 21.0,
     "shipping_allocated": 9.0,
-    "arrived": null,
-    "ordered_at": "2026-06-19",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-07-01",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

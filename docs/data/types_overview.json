@@ -3636,9 +3636,9 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 2,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
       "total_count": 3,
       "airline_group_counts": [
         {
@@ -3657,14 +3657,14 @@
         },
         {
           "group": "Luftwaffe",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Luftwaffe (German Air Force)",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -4349,9 +4349,9 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 2,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 3,
+      "ordered_count": 0,
       "total_count": 3,
       "airline_group_counts": [
         {
@@ -4384,14 +4384,14 @@
         },
         {
           "group": "SAS",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "SAS",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -9462,21 +9462,21 @@
       "manufacturer": "Embraer",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "British Airways",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "British Airways",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -11637,9 +11637,9 @@
       "manufacturer": "McDonnell Douglas",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 3,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 4,
+      "ordered_count": 0,
       "total_count": 4,
       "airline_group_counts": [
         {
@@ -11672,14 +11672,14 @@
         },
         {
           "group": "Lufthansa",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Lufthansa",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]

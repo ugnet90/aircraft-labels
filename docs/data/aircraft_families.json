@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T12:21:34+02:00",
+  "generated_at": "2026-07-01T13:31:11+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -3694,7 +3694,7 @@
         "wingspan": 26.0,
         "height": 9.73,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Embraer"
       },
       {

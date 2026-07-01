@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-SK-20",
+  "model_id": "SK009",
   "airline_code": "SK",
   "airline": "SAS",
   "airline_row": "SAS",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-ORD-SK-20-01",
+      "id": "PC-SK009-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/6850-sas-b737.html",
       "price": 0.85
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.planespotters.net/photo/1118552/se-dnm-sas-scandinavian-airlines-boeing-737-683",
   "photo_image_url": "https://cdn.plnspttrs.net/07486/se-dnm-sas-scandinavian-airlines-boeing-737-683_PlanespottersNet_1118552_f4d834fdd7_o.jpg",
   "photo_credit": "Marco Dotti",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-06-23",
-  "ordered": true,
+  "arrived_excel": "2026-06-30",
+  "arrived": "2026-06-30",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "SAS",
     "row": "20"
@@ -67,13 +67,13 @@
     "shop": "Ebay labonnepioche960",
     "price": 11.61,
     "shipping_allocated": 7.82,
-    "arrived": null,
-    "ordered_at": "2026-06-23",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-06-30",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

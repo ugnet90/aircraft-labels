@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-LH-60",
+  "model_id": "LH034",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-ORD-LH-60-01",
+      "id": "PC-LH034-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/281-lufthansa-dc-10.html",
       "price": 0.85
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.planespotters.net/photo/253566/d-adho-lufthansa-mcdonnell-douglas-dc-10-30",
   "photo_image_url": "https://cdn.plnspttrs.net/05528/d-adho-lufthansa-mcdonnell-douglas-dc-10-30_PlanespottersNet_253566_e48540b9a9_o.jpg",
   "photo_credit": "Rémi Dallot",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-06-23",
-  "ordered": true,
+  "arrived_excel": "2026-07-01",
+  "arrived": "2026-07-01",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "Lufthansa",
     "row": "60"
@@ -67,13 +67,13 @@
     "shop": "Ebay designklassiker321",
     "price": 5.87,
     "shipping_allocated": 16.99,
-    "arrived": null,
-    "ordered_at": "2026-06-23",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-07-01",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

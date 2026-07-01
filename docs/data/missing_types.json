@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 433,
-    "present_types": 137,
+    "present_types": 138,
     "missing_types": 291,
-    "ordered_types": 5,
+    "ordered_types": 4,
     "models": 285
   },
   "missing_types": [
@@ -1777,12 +1777,6 @@
       "aircraft_id": "BOM-CL601",
       "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "EMB-E170",
-      "Typ_anzeige": "Embraer E170",
-      "manufacturer": "Embraer",
       "status": "ordered"
     }
   ]
