@@ -1,0 +1,633 @@
+﻿airline_code;airline;airline_row;aircraft_id;aircraft_type;source_sheet;source_row
+OS;Austrian;Austrian;AIB-A310-300;Airbus A310-300;AUA;4
+OS;Austrian;Austrian;AIB-A319;Airbus A319-100;AUA;5
+OS;Austrian;Austrian;AIB-A320-200;Airbus A320-200;AUA;6
+OS;Austrian;Austrian;AIB-A321-100;Airbus A321-100;AUA;7
+OS;Austrian;Austrian;AIB-A321-100;Airbus A321-100;AUA;8
+OS;Austrian;Austrian;AIB-A321-200;Airbus A321-200;AUA;9
+OS;Austrian;Austrian;AIB-A330-200;Airbus A330-200;AUA;10
+OS;Austrian;Austrian;AIB-A340-200;Airbus A340-200;AUA;11
+OS;Austrian;Austrian;AIB-A340-300;Airbus A340-300;AUA;12
+OS;Austrian;Austrian;BAC-111-500;BAC 1-11 Series 500;AUA;13
+OS;Austrian;Austrian;BOE-707-300;Boeing 707-329;AUA;14
+OS;Austrian;Austrian;BOE-737-200;Boeing 737-200;AUA;15
+OS;Austrian;Austrian;BOE-737-300;Boeing 737-300;AUA;16
+OS;Austrian;Austrian;BOE-737-600;Boeing 737-600;AUA;17
+OS;Austrian;Austrian;BOE-737-700;Boeing 737-700;AUA;18
+OS;Austrian;Austrian;BOE-737-700-WL;Boeing 737-700 (Winglets);AUA;19
+OS;Austrian;Austrian;BOE-737-800-WL;Boeing 737-800 (Winglets);AUA;20
+OS;Austrian;Austrian;BOE-767-300;Boeing 767-300;AUA;21
+OS;Austrian;Austrian;BOE-777-200;Boeing 777-200;AUA;22
+OS;Austrian;Austrian;BOE-787-9;Boeing 787-9 Dreamliner;AUA;23
+OS;Austrian;Austrian;DHC-DHC8-100;De Havilland Canada DHC-8-100;AUA;24
+OS;Austrian;Austrian Arrows;DHC-DHC8-400;De Havilland Canada DHC-8-400;AUA;25
+OS;Austrian;Austrian;DOU-DC3;Douglas DC-3;AUA;26
+OS;Austrian;Austrian;DOU-DC8-63;Douglas DC-8-63;AUA;27
+OS;Austrian;Austrian;MCD-DC9-30;Douglas DC-9-30;AUA;28
+OS;Austrian;Austrian;MCD-DC9-50;Douglas DC-9-50;AUA;29
+OS;Austrian;Austrian;EMB-E195;Embraer ERJ-190-200;AUA;30
+OS;Austrian;Austrian;FOK-F50;Fokker 50;AUA;31
+OS;Austrian;Tyrolean Airways;FOK-F70;Fokker 70;AUA;32
+OS;Austrian;Austrian Arrows;FOK-F100;Fokker 100;AUA;33
+OS;Austrian;Austrian;FOK-F100;Fokker 100;AUA;34
+OS;Austrian;Austrian;HAW-HS748;Hawker-Siddeley HS-748;AUA;35
+OS;Austrian;Austrian;MCD-MD81;McDonnell Douglas MD-81/82/83/88;AUA;36
+OS;Austrian;Austrian;MCD-MD87;McDonnell Douglas MD-87;AUA;37
+OS;Austrian;Austrian;SUD-Caravelle-VIR;Sud Aviation SE 210 Caravelle VI-R;AUA;38
+OS;Austrian;Austrian;FAI-SA226;Swearingen SA-226TC Metro II;AUA;39
+OS;Austrian;Austrian;VIC-Viscount-700;Vickers Viscount 745;AUA;40
+OS;Austrian;Austrian;VIC-Viscount-700;Vickers Viscount 779;AUA;41
+OS;Austrian;Austrian;VIC-Viscount-800;Vickers Viscount 837;AUA;42
+LH;Lufthansa;Lufthansa;ATR72-500;ATR 72;Lufthansa;4
+LH;Lufthansa;Lufthansa;AIB-A300-B2;Airbus A300B2;Lufthansa;5
+LH;Lufthansa;Lufthansa;AIB-A300-B4;Airbus A300B4;Lufthansa;6
+LH;Lufthansa;Lufthansa;AIB-A300-600;Airbus A300-600;Lufthansa;7
+LH;Lufthansa;Lufthansa;AIB-A310-200;Airbus A310-200;Lufthansa;8
+LH;Lufthansa;Lufthansa;AIB-A310-300;Airbus A310-300;Lufthansa;9
+LH;Lufthansa;Lufthansa;AIB-A319;Airbus A319-100;Lufthansa;10
+LH;Lufthansa;Lufthansa;AIB-A320-200;Airbus A320-200;Lufthansa;11
+LH;Lufthansa;Lufthansa;AIB-A320-200-SL;Airbus A320-200 (Sharklets);Lufthansa;12
+LH;Lufthansa;Lufthansa;AIB-A320-neo;Airbus A320neo;Lufthansa;13
+LH;Lufthansa;Lufthansa;AIB-A321-100;Airbus A321-100;Lufthansa;14
+LH;Lufthansa;Lufthansa;AIB-A321-200;Airbus A321-200;Lufthansa;15
+LH;Lufthansa;Lufthansa;AIB-A321-neo;Airbus A321 neo;Lufthansa;16
+LH;Lufthansa;Lufthansa;AIB-A321-neo;Airbus A321 neo;Lufthansa;17
+LH;Lufthansa;Lufthansa;AIB-A330-200;Airbus A330-200;Lufthansa;18
+LH;Lufthansa;Lufthansa;AIB-A330-300;Airbus A330-300;Lufthansa;19
+LH;Lufthansa;Lufthansa;AIB-A340-200;Airbus A340-200;Lufthansa;20
+LH;Lufthansa;Lufthansa;AIB-A340-300;Airbus A340-300;Lufthansa;21
+LH;Lufthansa;Lufthansa;AIB-A340-600;Airbus A340-600;Lufthansa;22
+LH;Lufthansa;Lufthansa;AIB-A350-900;Airbus A350-900;Lufthansa;23
+LH;Lufthansa;Lufthansa;AIB-A350-1000;Airbus A350-1000;Lufthansa;24
+LH;Lufthansa;Lufthansa;AIB-A380-800;Airbus A380-800;Lufthansa;25
+LH;Lufthansa;Lufthansa;BOE-707-300;Boeing 707-330B;Lufthansa;26
+LH;Lufthansa;Lufthansa;BOE-720;Boeing 720;Lufthansa;27
+LH;Lufthansa;Lufthansa;BOE-727-100;Boeing 727-100;Lufthansa;28
+LH;Lufthansa;Lufthansa;BOE-727-200;Boeing 727-200;Lufthansa;29
+LH;Lufthansa;Lufthansa;BOE-737-100;Boeing 737-100;Lufthansa;30
+LH;Lufthansa;Lufthansa;BOE-737-200;Boeing 737-200;Lufthansa;31
+LH;Lufthansa;Lufthansa;BOE-737-300;Boeing 737-300;Lufthansa;32
+LH;Lufthansa;Lufthansa;BOE-737-400;Boeing 737-400;Lufthansa;33
+LH;Lufthansa;Lufthansa;BOE-737-500;Boeing 737-500;Lufthansa;34
+LH;Lufthansa;Lufthansa;BOE-747-100;Boeing 747-100;Lufthansa;35
+LH;Lufthansa;Lufthansa;BOE-747-200;Boeing 747-200;Lufthansa;36
+LH;Lufthansa;Lufthansa;BOE-747-200F;Boeing 747-200F;Lufthansa;37
+LH;Lufthansa;Lufthansa;BOE-747-400;Boeing 747-400;Lufthansa;38
+LH;Lufthansa;Lufthansa;BOE-747-8;Boeing 747-8;Lufthansa;39
+LH;Lufthansa;Lufthansa;BOE-767-300;Boeing 767-300;Lufthansa;40
+LH;Lufthansa;Lufthansa;BOE-787-9;Boeing 787-9 Dreamliner;Lufthansa;41
+LH;Lufthansa;Lufthansa;BOM-CRJ100;Bombardier CRJ-100;Lufthansa;42
+LH;Lufthansa;Lufthansa;BOM-CRJ200;Bombardier CRJ-200;Lufthansa;43
+LH;Lufthansa;Lufthansa;BOM-CRJ700;Bombardier CRJ-700;Lufthansa;44
+LH;Lufthansa;Lufthansa CityLine;BOM-CRJ900;Bombardier CRJ-900;Lufthansa;45
+LH;Lufthansa;Lufthansa;BAE-146-200;British Aerospace 146-200;Lufthansa;46
+LH;Lufthansa;Lufthansa;CON-CV340;Convair CV-340-80;Lufthansa;47
+LH;Lufthansa;Lufthansa CityLine;DHC-DHC8-100;De Havilland Canada DHC-8-100;Lufthansa;48
+LH;Lufthansa;Lufthansa;DOR-DOX;Dornier Do X;Lufthansa;49
+LH;Lufthansa;Lufthansa;DOU-DC8-50;Douglas DC-8-50;Lufthansa;50
+LH;Lufthansa;Lufthansa Regional;EMB-E190;Embraer ERJ-190;Lufthansa;51
+LH;Lufthansa;Lufthansa;EMB-E195;Embraer ERJ-195;Lufthansa;52
+LH;Lufthansa;Lufthansa;FOW-FW200;Focke-Wulf Fw 200;Lufthansa;53
+LH;Lufthansa;Lufthansa;FOK-F27;Fokker F27-400 Friendship;Lufthansa;54
+LH;Lufthansa;Team Lufthansa;FOK-F50;Fokker 50;Lufthansa;55
+LH;Lufthansa;Lufthansa;FOK-F100;Fokker 100;Lufthansa;56
+LH;Lufthansa;Lufthansa;JUN-JU52-3M;Junkers Ju 52/3m;Lufthansa;57
+LH;Lufthansa;Lufthansa;LOC-L1049;Lockheed L-1049G Super Constellation;Lufthansa;58
+LH;Lufthansa;Lufthansa;LOC-L1649;Lockheed L-1649A Starliner;Lufthansa;59
+LH;Lufthansa;Lufthansa;MCD-DC10-30;McDonnell Douglas DC-10-30;Lufthansa;60
+LH;Lufthansa;Lufthansa Cargo;MCD-MD11F;McDonnell Douglas MD-11F;Lufthansa;61
+LH;Lufthansa;Lufthansa;VIC-Viscount-800;Vickers Viscount 814;Lufthansa;62
+LX;Swiss;Swiss;AIB-A220-100;Airbus A220-100;Swiss;4
+LX;Swiss;Swiss;AIB-A220-300;Airbus A220-300;Swiss;5
+LX;Swiss;Swiss;AIB-A310-200;Airbus A310-200;Swiss;6
+LX;Swiss;Swiss;AIB-A319;Airbus A319-100;Swiss;7
+LX;Swiss;Swiss;AIB-A320-200;Airbus A320-200;Swiss;8
+LX;Swiss;Swiss;AIB-A320-200;Airbus A320-200;Swiss;9
+LX;Swiss;Swiss;AIB-A320-200-SL;Airbus A320-200 (Sharklets);Swiss;10
+LX;Swiss;Swiss;AIB-A320-neo;Airbus A320neo;Swiss;11
+LX;Swiss;Swissair;AIB-A321-100;Airbus A321-100;Swiss;12
+LX;Swiss;Swiss;AIB-A321-200-SL;Airbus A321-200 (Sharklets);Swiss;13
+LX;Swiss;Swiss;AIB-A321-neo;Airbus A321neo;Swiss;14
+LX;Swiss;Edelweiss;AIB-A330-200;Airbus A330-200;Swiss;15
+LX;Swiss;Swiss;AIB-A330-300;Airbus A330-300;Swiss;16
+LX;Swiss;Swiss;AIB-A340-300;Airbus A340-300;Swiss;17
+LX;Swiss;Swiss;AIB-A350-900;Airbus A350-900;Swiss;18
+LX;Swiss;Swissair;BOE-747-200;Boeing 747-200;Swiss;19
+LX;Swiss;Swiss;BOE-777-300ER;Boeing 777-300ER;Swiss;20
+LX;Swiss;Swiss;BAE-146-200;British Aerospace Avro RJ85;Swiss;21
+LX;Swiss;Swiss;BAE-146-300;British Aerospace Avro RJ100;Swiss;22
+LX;Swiss;Swiss;CON-CV880;Convair CV-880 Golden Arrow;Swiss;23
+LX;Swiss;Swissair;CON-CV990;Convair CV-990 Coronado;Swiss;24
+LX;Swiss;Swiss;DHC-DHC8-400;De Havilland Canada DHC-8-400;Swiss;25
+LX;Swiss;Swissair;DOU-DC6-B;Douglas DC-6B;Swiss;26
+LX;Swiss;Swissair;DOU-DC8-30;Douglas DC-8-32;Swiss;27
+LX;Swiss;Swissair;DOU-DC8-50;Douglas DC-8-53;Swiss;28
+LX;Swiss;Crossair;EMB-ERJ145;Embraer ERJ-145;Swiss;29
+LX;Swiss;Swiss;FOK-F100;Fokker 100;Swiss;30
+LX;Swiss;Swiss;MCD-DC9-30;McDonnell Douglas DC-9-30;Swiss;31
+LX;Swiss;Swissair;MCD-MD11;McDonnell Douglas MD-11;Swiss;32
+LX;Swiss;Swiss;MCD-MD81;McDonnell Douglas MD-81;Swiss;33
+LX;Swiss;Swiss;SAB-2000;Saab 2000;Swiss;34
+LX;Swiss;Swiss;SAB-340;Saab 340;Swiss;35
+BT;Air Baltic;AirBaltic;AIB-A220-300;Airbus A220-300;AirBaltic;4
+BT;Air Baltic;Air Baltic;AIB-A319;Airbus A319-100;AirBaltic;5
+BT;Air Baltic;Air Baltic;AIB-A320-200;Airbus A320-200;AirBaltic;6
+BT;Air Baltic;Air Baltic;BOE-737-300;Boeing 737-300;AirBaltic;7
+BT;Air Baltic;Air Baltic;BOE-737-500;Boeing 737-500;AirBaltic;8
+BT;Air Baltic;Air Baltic;BOE-757-200;Boeing 757-200;AirBaltic;9
+BT;Air Baltic;Air Baltic;BAE-146-200;British Aerospace 146-200;AirBaltic;10
+BT;Air Baltic;Air Baltic;BAE-146-100;British Aerospace Avro RJ70;AirBaltic;11
+BT;Air Baltic;Air Baltic;DHC-DHC8-400;De Havilland Canada DHC-8-400;AirBaltic;12
+BT;Air Baltic;Air Baltic;FOK-F50;Fokker 50;AirBaltic;13
+BT;Air Baltic;Air Baltic;SAB-340;Saab 340;AirBaltic;14
+AB;Air Berlin;Air Berlin;ATR72-200;ATR 72;AirBerlin;4
+AB;Air Berlin;Air Berlin;AIB-A319;Airbus A319-100;AirBerlin;5
+AB;Air Berlin;Air Berlin;AIB-A320-200;Airbus A320-200;AirBerlin;6
+AB;Air Berlin;Air Berlin;AIB-A320-200;Airbus A320-200;AirBerlin;7
+AB;Air Berlin;Air Berlin;AIB-A320-200-SL;Airbus A320-200;AirBerlin;8
+AB;Air Berlin;Air Berlin;AIB-A321-200;Airbus A321-200;AirBerlin;9
+AB;Air Berlin;Air Berlin;AIB-A321-200-SL;Airbus A321-200 (Sharklets);AirBerlin;10
+AB;Air Berlin;Air Berlin;AIB-A330-200;Airbus A330-200;AirBerlin;11
+AB;Air Berlin;Air Berlin;AIB-A330-300;Airbus A330-300;AirBerlin;12
+AB;Air Berlin;Air Berlin;BOE-737-300;Boeing 737-300;AirBerlin;13
+AB;Air Berlin;Air Berlin;BOE-737-400;Boeing 737-400;AirBerlin;14
+AB;Air Berlin;Air Berlin;BOE-737-500;Boeing 737-500;AirBerlin;15
+AB;Air Berlin;Air Berlin;BOE-737-700;Boeing 737-700;AirBerlin;16
+AB;Air Berlin;Air Berlin;BOE-737-700-WL;Boeing 737-700 (Winglets);AirBerlin;17
+AB;Air Berlin;Air Berlin;BOE-737-800;Boeing 737-800;AirBerlin;18
+AB;Air Berlin;Air Berlin;BOE-737-800-WL;Boeing 737-800 (Winglets);AirBerlin;19
+AB;Air Berlin;Air Berlin;BOE-757-200;Boeing 757-200;AirBerlin;20
+AB;Air Berlin;Air Berlin;BAE-146-200;British Aerospace 146-200;AirBerlin;21
+AB;Air Berlin;Air Berlin;BAE-146-300;British Aerospace 146-300;AirBerlin;22
+AB;Air Berlin;Air Berlin;DHC-DHC8-400;De Havilland Canada DHC-8-400;AirBerlin;23
+AB;Air Berlin;Air Berlin;EMB-E190;Embraer ERJ-190;AirBerlin;24
+AB;Air Berlin;Air Berlin;FOK-F100;Fokker 100;AirBerlin;25
+AF;Air France;Air France;ATR42-300;ATR 42;AirFrance;4
+AF;Air France;Air France;ATR72-200;ATR 72;AirFrance;5
+AF;Air France;Air France;AIB-A220-300;Airbus A220-300;AirFrance;6
+AF;Air France;Air France;AIB-A300-B2;Airbus A300B2;AirFrance;7
+AF;Air France;Air France;AIB-A300-B4;Airbus A300B4;AirFrance;8
+AF;Air France;Air France;AIB-A310-200;Airbus A310-200;AirFrance;9
+AF;Air France;Air France;AIB-A310-300;Airbus A310-300;AirFrance;10
+AF;Air France;Air France;AIB-A318;Airbus A318-100;AirFrance;11
+AF;Air France;Air France;AIB-A319;Airbus A319-100;AirFrance;12
+AF;Air France;Air France;AIB-A320-100;Airbus A320-100;AirFrance;13
+AF;Air France;Air France;AIB-A320-200;Airbus A320-200;AirFrance;14
+AF;Air France;Air France;AIB-A321-100;Airbus A321-100;AirFrance;15
+AF;Air France;Air France;AIB-A321-200;Airbus A321-200;AirFrance;16
+AF;Air France;Air France;AIB-A330-200;Airbus A330-200;AirFrance;17
+AF;Air France;Air France;AIB-A340-200;Airbus A340-200;AirFrance;18
+AF;Air France;Air France;AIB-A340-300;Airbus A340-300;AirFrance;19
+AF;Air France;Air France;AIB-A350-900;Airbus A350-900;AirFrance;20
+AF;Air France;Air France;AIB-A380-800;Airbus A380-800;AirFrance;21
+AF;Air France;Air France;SUD-CONCORDE;Aérospatiale/BAC Concorde;AirFrance;22
+AF;Air France;Air France;BOE-737-200;Boeing 737-200;AirFrance;23
+AF;Air France;Air France;BOE-737-300;Boeing 737-300;AirFrance;24
+AF;Air France;Air France;BOE-737-500;Boeing 737-500;AirFrance;25
+AF;Air France;Air France;BOE-747-100;Boeing 747-100;AirFrance;26
+AF;Air France;Air France;BOE-747-200;Boeing 747-200;AirFrance;27
+AF;Air France;Air France;BOE-747-300;Boeing 747-300;AirFrance;28
+AF;Air France;Air France;BOE-747-400;Boeing 747-400;AirFrance;29
+AF;Air France;Air France;BOE-767-200;Boeing 767-200;AirFrance;30
+AF;Air France;Air France;BOE-767-300;Boeing 767-300;AirFrance;31
+AF;Air France;Air France;BOE-777-200;Boeing 777-200;AirFrance;32
+AF;Air France;Air France;BOE-777F;Boeing 777F;AirFrance;33
+AF;Air France;Air France;BOE-777-300ER;Boeing 777-300ER;AirFrance;34
+AF;Air France;Air France;BOE-787-9;Boeing 787-9 Dreamliner;AirFrance;35
+AF;Air France;Air France;BOM-CRJ100;Bombardier CRJ-100;AirFrance;36
+AF;Air France;Air France;BOM-CRJ200;Bombardier CRJ-200;AirFrance;37
+AF;Air France;Air France;BOM-CRJ700;Bombardier CRJ-700;AirFrance;38
+AF;Air France;Air France;BOM-CRJ900;Bombardier CRJ-900;AirFrance;39
+AF;Air France;Air France;BOM-CRJ1000;Bombardier CRJ-1000;AirFrance;40
+AF;Air France;Air France;BRI-Britannia-312;Bristol 175 Britannia 312;AirFrance;41
+AF;Air France;Air France;BAE-146-100;British Aerospace 146-100;AirFrance;42
+AF;Air France;Air France;BAE-146-200;British Aerospace 146-200;AirFrance;43
+AF;Air France;Air France;BAE-146-300;British Aerospace 146-300;AirFrance;44
+AF;Air France;Air France;CON-CV990;Convair CV-990 Coronado;AirFrance;45
+AF;Air France;Air France;DHC-DHC7;De Havilland Canada DHC-7-100;AirFrance;46
+AF;Air France;Air France;DOR-Do328-100;Dornier 328-100;AirFrance;47
+AF;Air France;Air France;DOU-DC8-30;Douglas DC-8-30 Series 30;AirFrance;48
+AF;Air France;Air France;DOU-DC8-61;Douglas DC-8-61 Super 61;AirFrance;49
+AF;Air France;Air France;EMB-EMB120;Embraer EMB-120 Brasilia;AirFrance;50
+AF;Air France;Air France;EMB-ERJ135;Embraer ERJ-135;AirFrance;51
+AF;Air France;Air France;EMB-ERJ145;Embraer ERJ-145;AirFrance;52
+AF;Air France;Air France HOP;EMB-E170-WL;Embraer E170 (Winglets);AirFrance;53
+AF;Air France;Air France;EMB-E190;Embraer ERJ-190;AirFrance;54
+AF;Air France;Air France;FOK-F70;Fokker 70;AirFrance;55
+AF;Air France;Air France;FOK-F100;Fokker 100;AirFrance;56
+AF;Air France;Air France;LOC-L1011-500;Lockheed L-1011 TriStar 500;AirFrance;57
+AF;Air France;Air France;MCD-DC10-30;McDonnell Douglas DC-10-30;AirFrance;58
+AF;Air France;Air France;SAB-340;Saab 340;AirFrance;59
+AF;Air France;Air France;SAB-2000;Saab 2000;AirFrance;60
+AF;Air France;Air France;VFW-614;VFW-Fokker 614;AirFrance;61
+AZ;Alitalia;Alitalia;AIB-A300-B2;Airbus A300B2;Alitalia;4
+AZ;Alitalia;Alitalia;AIB-A300-B4;Airbus A300B4;Alitalia;5
+AZ;Alitalia;Alitalia;AIB-A319;Airbus A319-100;Alitalia;6
+AZ;Alitalia;Alitalia;AIB-A320-200;Airbus A320-200;Alitalia;7
+AZ;Alitalia;Alitalia;AIB-A321-100;Airbus A321-100;Alitalia;8
+AZ;Alitalia;Alitalia;AIB-A330-200;Airbus A330-200;Alitalia;9
+AZ;Alitalia;Alitalia;BOE-737-200;Boeing 737-200;Alitalia;10
+AZ;Alitalia;Alitalia;BOE-747-100;Boeing 747-100;Alitalia;11
+AZ;Alitalia;Alitalia;BOE-747-200;Boeing 747-200;Alitalia;12
+AZ;Alitalia;Alitalia;BOE-747-400;Boeing 747-400;Alitalia;13
+AZ;Alitalia;Alitalia;BOE-767-300;Boeing 767-300;Alitalia;14
+AZ;Alitalia;Alitalia;BOE-777-200ER;Boeing 777-200ER Extended Range;Alitalia;15
+AZ;Alitalia;Alitalia;DOU-DC8-40;Douglas DC-8-40;Alitalia;16
+AZ;Alitalia;Alitalia;DOU-DC8-50;Douglas DC-8-50;Alitalia;17
+AZ;Alitalia;Alitalia;DOU-DC8-62;Douglas DC-8-60/70;Alitalia;18
+AZ;Alitalia;Alitalia;MCD-DC9-30;McDonnell Douglas DC-9-30;Alitalia;19
+AZ;Alitalia;Alitalia;MCD-DC9-30F;McDonnell Douglas DC-9-32F;Alitalia;20
+AZ;Alitalia;Alitalia;MCD-DC10-30;McDonnell Douglas DC-10-30;Alitalia;21
+AZ;Alitalia;Alitalia;MCD-MD11;McDonnell Douglas MD-11;Alitalia;22
+AZ;Alitalia;Alitalia;MCD-MD82;McDonnell Douglas MD-82;Alitalia;23
+BA;British Airways;British Airways;ATR42-300;ATR 42;BA;4
+BA;British Airways;British Airways;ATR72-200;ATR 72;BA;5
+BA;British Airways;British Airways;AIB-A318;Airbus A318-100;BA;6
+BA;British Airways;British Airways;AIB-A319;Airbus A319-100;BA;7
+BA;British Airways;British Airways;AIB-A320-100;Airbus A320-100;BA;8
+BA;British Airways;British Airways;AIB-A320-200;Airbus A320-200;BA;9
+BA;British Airways;British Airways;AIB-A320-neo;Airbus A320neo;BA;10
+BA;British Airways;British Airways;AIB-A321-200;Airbus A321-200;BA;11
+BA;British Airways;British Airways;AIB-A321-neo;Airbus A321neo;BA;12
+BA;British Airways;British Airways;AIB-A350-1000;Airbus A350-1000;BA;13
+BA;British Airways;British Airways;AIB-A380-800;Airbus A380-800;BA;14
+BA;British Airways;British Airways;SUD-Concorde;Aérospatiale/BAC Concorde;BA;15
+BA;British Airways;British Airways;BAC-111-400;BAC 1-11 Series 400;BA;16
+BA;British Airways;British Airways;BAC-111-500;BAC 1-11 Series 500;BA;17
+BA;British Airways;British Airways;VIC-VC10;BAC VC-10 Standard;BA;18
+BA;British Airways;British Airways;VIC-VC10-SUPER;BAC VC-10 Super;BA;19
+BA;British Airways;British Airways;BOE-737-200;Boeing 737-200;BA;20
+BA;British Airways;British Airways;BOE-737-200;Boeing 737-200;BA;21
+BA;British Airways;British Airways;BOE-737-300;Boeing 737-300;BA;22
+BA;British Airways;British Airways;BOE-737-400;Boeing 737-400;BA;23
+BA;British Airways;British Airways;BOE-737-500;Boeing 737-500;BA;24
+BA;British Airways;British Airways;BOE-737-800;Boeing 737-800;BA;25
+BA;British Airways;British Airways;BOE-737-MAX8;Boeing 737 MAX 8;BA;26
+BA;British Airways;British Airways;BOE-747-100;Boeing 747-100;BA;27
+BA;British Airways;British Airways;BOE-747-200;Boeing 747-200;BA;28
+BA;British Airways;British Asia Airways;BOE-747-400;Boeing 747-400;BA;29
+BA;British Airways;British Airways;BOE-757-200;Boeing 757-200;BA;30
+BA;British Airways;British Airways;BOE-757-200-WL;Boeing 757-200 (Winglets);BA;31
+BA;British Airways;British Airways;BOE-767-200;Boeing 767-200;BA;32
+BA;British Airways;British Airways;BOE-767-300;Boeing 767-300;BA;33
+BA;British Airways;British Airways;BOE-777-200;Boeing 777-200;BA;34
+BA;British Airways;British Airways;BOE-777-300ER;Boeing 777-300ER;BA;35
+BA;British Airways;British Airways;BOE-787-8;Boeing 787-8 Dreamliner;BA;36
+BA;British Airways;British Airways;BOE-787-9;Boeing 787-9 Dreamliner;BA;37
+BA;British Airways;British Airways;BOE-787-10;Boeing 787-10 Dreamliner;BA;38
+BA;British Airways;British Airways;BOM-CRJ200;Bombardier CRJ-200;BA;39
+BA;British Airways;British Airways;BOM-CRJ700;Bombardier CRJ-700;BA;40
+BA;British Airways;British Airways;BAE-146-100;British Aerospace 146-100;BA;41
+BA;British Airways;British Airways;BAE-146-200;British Aerospace 146-200;BA;42
+BA;British Airways;British Airways;BAE-146-300;British Aerospace 146-300;BA;43
+BA;British Airways;British Airways;BAE-ATP;British Aerospace BAe ATP;BA;44
+BA;British Airways;British Airways;BAE-Jetstream-31;British Aerospace Jetstream 31;BA;45
+BA;British Airways;British Airways;BAE-Jetstream-32;British Aerospace Jetstream 32;BA;46
+BA;British Airways;British Airways;BAE-Jetstream-41;British Aerospace Jetstream 41;BA;47
+BA;British Airways;British Airways;BRN-BN2;Britten-Norman BN-2 Islander;BA;48
+BA;British Airways;British Airways;DHC-DHC6;De Havilland Canada DHC-6-300 Twin Otter;BA;49
+BA;British Airways;British Airways;DHC-DHC7;De Havilland Canada DHC-7-100;BA;50
+BA;British Airways;British Airways;DHC-DHC8-100;De Havilland Canada DHC-8-100;BA;51
+BA;British Airways;British Airways;DHC-DHC8-300;De Havilland Canada DHC-8-300;BA;52
+BA;British Airways;British Airways;DOR-Do328-100;Dornier 328-100;BA;53
+BA;British Airways;British Airways;DOR-Do328-300;Dornier 328JET-300;BA;54
+BA;British Airways;BEA;DOU-C47;Douglas C-47 Dakota;BA;55
+BA;British Airways;British Airways;EMB-EMB120;Embraer EMB-120 Brasilia;BA;56
+BA;British Airways;British Airways;EMB-ERJ145;Embraer ERJ-145;BA;57
+BA;British Airways;British Airways;EMB-E170;Embraer ERJ-170;BA;58
+BA;British Airways;British Airways;EMB-E190;Embraer ERJ-190;BA;59
+BA;British Airways;British Airways;FOK-F100;Fokker 100;BA;60
+BA;British Airways;British Airways;HAW-Trident-1;Hawker Siddeley HS-121 Trident 1;BA;61
+BA;British Airways;BEA;HAW-Trident-2;Hawker Siddeley HS-121 Trident 2;BA;62
+BA;British Airways;BEA;HAW-Trident-3;Hawker Siddeley HS-121 Trident 3;BA;63
+BA;British Airways;British Airways;LOC-L1011-100;Lockheed L-1011 TriStar 1/100/200;BA;64
+BA;British Airways;British Airways;LOC-L1011-500;Lockheed L-1011 TriStar 500;BA;65
+BA;British Airways;British Airways;MCD-DC10-30;McDonnell Douglas DC-10-30;BA;66
+BA;British Airways;British Airways;SAB-340;Saab 340;BA;67
+BA;British Airways;British Airways;SAB-2000;Saab 2000;BA;68
+BA;British Airways;British Airways;SHO-360;Shorts 360;BA;69
+BA;British Airways;British Airways;VIC-Vanguard-953;Vickers Vanguard;BA;70
+BOA;BOAC;BOAC;ARW-AW27;Armstrong Whitworth A.W.27;BOAC;4
+BOA;BOAC;BOAC;AVR-691;Avro 691 Lancastrian;BOAC;5
+BOA;BOAC;BOAC;AVR-688;Avro  688/689 Tudor;BOAC;6
+BOA;BOAC;BOAC;AVR-685;Avro 685 York;BOAC;7
+BOA;BOAC;BOAC;BOE-314;Boeing 314 Clipper;BOAC;8
+BOA;BOAC;BOAC;BOE-377;Boeing 377 Stratocruiser;BOAC;9
+BOA;BOAC;BOAC;BOE-707-300;Boeing 707-320;BOAC;10
+BOA;BOAC;BOAC;BOE-747-100;Boeing 747-100;BOAC;11
+BOA;BOAC;BOAC;BRI-Britannia-312;Bristol 175 Britannia 312;BOAC;12
+BOA;BOAC;BOAC;CAN-C4;Canadair C-4 Argonaut (North Star);BOAC;13
+BOA;BOAC;BOAC;DHV-DH91;De Havilland DH.91 Albatross;BOAC;14
+BOA;BOAC;BOAC;DHV-DH95;De Havilland DH.95 Flamingo;BOAC;15
+BOA;BOAC;BOAC;DHV-DH106-1;De Havilland DH.106 Comet 1;BOAC;16
+BOA;BOAC;BOAC;DHV-DH106-4;De Havilland DH.106 Comet 4;BOAC;17
+BOA;BOAC;BOAC;VIC-VC10;BAC Vickers VC-10;BOAC;18
+BOA;BOAC;BOAC;VIC-VC10-SUPER;BAC Vickers VC-10 Super;BOAC;19
+BOA;BOAC;BOAC;DOU-DC3;Douglas DC-3;BOAC;20
+BOA;BOAC;BOAC;DOU-DC7-C;Douglas DC-7C;BOAC;21
+BOA;BOAC;BOAC;FOW-FW200;Focke-Wulf Fw 200;BOAC;22
+BOA;BOAC;BOAC;HPR-HP81;Handley Page Hermes IV;BOAC;23
+BOA;BOAC;BOAC;LOC-L049;Lockheed L-049 Constallation;BOAC;24
+BOA;BOAC;BOAC;LOC-L18;Lockheed Model 18 Lodestar;BOAC;25
+BOA;BOAC;BOAC;SHO-S23;Short S.23 Empire;BOAC;26
+BOA;BOAC;BOAC;SHO-S26;Short S.26;BOAC;27
+BOA;BOAC;BOAC;SHO-S45;Short S.45 Solent;BOAC;28
+DHL;DHL;DHL;ATR42-300F;ATR 42-300(F);DHL;4
+DHL;DHL;DHL;ATR72-500F;ATR 72-500(F);DHL;5
+DHL;DHL;DHL;AIB-A300-B4F;Airbus A300B4(F);DHL;6
+DHL;DHL;DHL;AIB-A300-600RF;Airbus A300-600R(F);DHL;7
+DHL;DHL;DHL;AIB-A321-200PCF;Airbus A321-200PCF;DHL;8
+DHL;DHL;DHL;AIB-A330-200F;Airbus A330-200F;DHL;9
+DHL;DHL;DHL Aviation;AIB-A330-300P2F;Airbus A330-300P2F;DHL;10
+DHL;DHL;DHL Aviation;BOE-727-200F;Boeing 727-200F;DHL;11
+DHL;DHL;DHL;BOE-737-200C;Boeing 737-200C;DHL;12
+DHL;DHL;DHL;BOE-737-300SF;Boeing 737-300SF;DHL;13
+DHL;DHL;DHL;BOE-737-400SF;Boeing 737-400SF;DHL;14
+DHL;DHL;DHL;BOE-737-800BCF-WL;Boeing 737-800BCF (Winglets);DHL;15
+DHL;DHL;DHL;BOE-747-400BCF;Boeing 747-400BCF;DHL;16
+DHL;DHL;DHL;BOE-747-8F;Boeing 747-8F;DHL;17
+DHL;DHL;DHL Aviation;BOE-757-200PCF;Boeing 757-200PCF;DHL;18
+DHL;DHL;DHL;BOE-757-200PCF-WL;Boeing 757-200PCF (Winglets);DHL;19
+DHL;DHL;DHL;BOE-767-200BDSF;Boeing 767-200BDSF;DHL;20
+DHL;DHL;DHL;BOE-767-300BDSF-WL;Boeing 767-300BDSF (Winglets);DHL;21
+DHL;DHL;DHL;BOE-777F;Boeing 777F;DHL;22
+DHL;DHL;DHL;DOR-Do228-100;Dornier Do 228-100;DHL;23
+DHL;DHL;DHL;DOU-DC8-73CFF;Douglas DC-8-73CF(F);DHL;24
+DHL;DHL;DHL;LOC-L188A-F;Lockheed L-188A(F) Electra;DHL;25
+DHL;DHL;DHL;MCD-DC9-30F;McDonnell Douglas DC-9-30F;DHL;26
+DHL;DHL;DHL;MCD-DC9-40F;McDonnell Douglas DC-9-40F;DHL;27
+DHL;DHL;DHL Aviation;SAB-340A-F;Saab 340A(F);DHL;28
+DHL;DHL;DHL;TUP-Tu204-100C;Tupolev Tu-204-100C;DHL;29
+DHL;DHL;DHL;VIC-Vanguard-953C;Vickers Vanguard 953C Merchantman;DHL;30
+HF;Hapag-Lloyd;Hapag-Lloyd;AIB-A300-B4;Airbus A300B4;HapagLloyd;4
+HF;Hapag-Lloyd;Hapag-Lloyd;AIB-A310-200;Airbus A310-200;HapagLloyd;5
+HF;Hapag-Lloyd;Hapag-Lloyd;AIB-A310-300;Airbus A310-300;HapagLloyd;6
+HF;Hapag-Lloyd;Hapag-Lloyd;BAC-111-500;BAC 1-11 Series 500;HapagLloyd;7
+HF;Hapag-Lloyd;Hapag-Lloyd;BOE-737-200;Boeing 737-200;HapagLloyd;8
+HF;Hapag-Lloyd;Hapag-Lloyd;BOE-737-400;Boeing 737-400;HapagLloyd;9
+HF;Hapag-Lloyd;Hapag-Lloyd;BOE-737-500;Boeing 737-500;HapagLloyd;10
+HF;Hapag-Lloyd;Hapag-Lloyd Express;BOE-737-700;Boeing 737-700;HapagLloyd;11
+HF;Hapag-Lloyd;Hapag-Lloyd;BOE-737-800;Boeing 737-800;HapagLloyd;12
+HF;Hapag-Lloyd;Hapag-Lloyd;BOE-737-800-WL;Boeing 737-800 (Winglets);HapagLloyd;13
+FI;Icelandair;Icelandair;AIB-A321-neo;Airbus A321neo;Icelandair;4
+FI;Icelandair;Icelandair;BOE-737-300;Boeing 737-300;Icelandair;5
+FI;Icelandair;Icelandair;BOE-737-400;Boeing 737-400;Icelandair;6
+FI;Icelandair;Icelandair;BOE-737-800;Boeing 737-800;Icelandair;7
+FI;Icelandair;Icelandair;BOE-737-MAX8;Boeing 737 MAX 8;Icelandair;8
+FI;Icelandair;Icelandair;BOE-737-MAX9;Boeing 737 MAX 9;Icelandair;9
+FI;Icelandair;Icelandair;BOE-747-100;Boeing 747-100;Icelandair;10
+FI;Icelandair;Icelandair;BOE-757-200-WL;Boeing 757-200 (Winglets);Icelandair;11
+FI;Icelandair;Icelandair;BOE-757-300-WL;Boeing 757-300 (Winglets);Icelandair;12
+FI;Icelandair;Icelandair;BOE-767-300;Boeing 767-300;Icelandair;13
+FI;Icelandair;Icelandair Cargo;BOE-767-300BCF-WL;Boeing 767-300BCF (Winglets);Icelandair;14
+FI;Icelandair;Icelandair;DHC-DHC6;De Havilland Canada DHC-6-200 Twin Otter;Icelandair;15
+FI;Icelandair;Icelandair;DHC-DHC8-200;De Havilland Canada DHC-8-200;Icelandair;16
+FI;Icelandair;Icelandair;DHC-DHC8-400;De Havilland Canada DHC-8-400;Icelandair;17
+FI;Icelandair;Icelandair;DOU-DC8-50;Douglas DC-8-50;Icelandair;18
+FI;Icelandair;Icelandair;DOU-DC8-63;Douglas DC-8-60/70;Icelandair;19
+FI;Icelandair;Icelandair;FOK-F50;Fokker 50;Icelandair;20
+FI;Icelandair;Icelandair;LOC-L1011-100;Lockheed L-1011 TriStar 1/100/200;Icelandair;21
+FI;Icelandair;Icelandair;MCD-DC10-30;McDonnell Douglas DC-10-30;Icelandair;22
+KL;KLM;KLM;AIB-A310-200;Airbus A310-200;KLM;4
+KL;KLM;KLM;AIB-A320-neo;Airbus A320 neo;KLM;5
+KL;KLM;KLM;AIB-A321-neo;Airbus A321neo;KLM;6
+KL;KLM;KLM;AIB-A330-200;Airbus A330-200;KLM;7
+KL;KLM;KLM;AIB-A330-300;Airbus A330-300;KLM;8
+KL;KLM;KLM;AIB-A350-900;Airbus A350-900;KLM;9
+KL;KLM;KLM;BAC-111-300;BAC 1-11 Series 300;KLM;10
+KL;KLM;KLM;BOE-737-200;Boeing 737-200;KLM;11
+KL;KLM;KLM;BOE-737-300;Boeing 737-300;KLM;12
+KL;KLM;KLM;BOE-737-400;Boeing 737-400;KLM;13
+KL;KLM;KLM;BOE-737-700;Boeing 737-700;KLM;14
+KL;KLM;KLM;BOE-737-800;Boeing 737-800;KLM;15
+KL;KLM;KLM;BOE-737-800-WL;Boeing 737-800 (Winglets);KLM;16
+KL;KLM;KLM;BOE-737-900;Boeing 737-900;KLM;17
+KL;KLM;KLM;BOE-737-900-WL;Boeing 737-900 (Winglets);KLM;18
+KL;KLM;KLM;BOE-747-200;Boeing 747-200;KLM;19
+KL;KLM;KLM;BOE-747-200SUD;Boeing 747-200B SUD;KLM;20
+KL;KLM;KLM;BOE-747-300;Boeing 747-300;KLM;21
+KL;KLM;KLM Asia;BOE-747-400;Boeing 747-400;KLM;22
+KL;KLM;KLM;BOE-767-300ER;Boeing 767-300ER Extended Range;KLM;23
+KL;KLM;KLM;BOE-777-200ER;Boeing 777-200ER Extended Range;KLM;24
+KL;KLM;KLM;BOE-777-300ER;Boeing 777-300ER Extended Range;KLM;25
+KL;KLM;KLM;BOE-787-9;Boeing 787-9 Dreamliner;KLM;26
+KL;KLM;KLM;BOE-787-10;Boeing 787-10 Dreamliner;KLM;27
+KL;KLM;KLM;CON-CV240;Convair CV-240;KLM;28
+KL;KLM;KLM;CON-CV340;Convair CV-340;KLM;29
+KL;KLM;KLM;CON-CV880;Convair CV-880;KLM;30
+KL;KLM;KLM;DOU-DC2;Douglas DC-2;KLM;31
+KL;KLM;KLM;DOU-DC3;Douglas DC-3;KLM;32
+KL;KLM;KLM;DOU-DC4;Douglas DC-4;KLM;33
+KL;KLM;KLM;DOU-DC6;Douglas DC-6;KLM;34
+KL;KLM;KLM;DOU-DC7-C;Douglas DC-7C Seven Seas;KLM;35
+KL;KLM;KLM;DOU-DC8-30;Douglas DC-8-30;KLM;36
+KL;KLM;KLM;DOU-DC8-50;Douglas DC-8-53;KLM;37
+KL;KLM;KLM;DOU-DC8-63;Douglas DC-8-63;KLM;38
+KL;KLM;KLM;FOK-F27;Fokker F27;KLM;39
+KL;KLM;KLM;FOK-F100;Fokker 100;KLM;40
+KL;KLM;KLM;LOC-L188;Lockheed L-188 Electra;KLM;41
+KL;KLM;KLM;MCD-DC9-15;McDonnell Douglas DC-9-15;KLM;42
+KL;KLM;KLM;MCD-DC9-30;McDonnell Douglas DC-9-30;KLM;43
+KL;KLM;KLM;MCD-DC10-30;McDonnell Douglas DC-10-30;KLM;44
+KL;KLM;KLM;MCD-MD11;McDonnell Douglas MD-11;KLM;45
+WA;KLM Cityhopper;KLM exel;ATR42-300;ATR 42-320;KLM_CH;4
+WA;KLM Cityhopper;KLM exel;ATR72-200;ATR 72-200;KLM_CH;5
+WA;KLM Cityhopper;KLM exel;EMB-ERJ145;Embraer ERJ-145MP;KLM_CH;6
+WA;KLM Cityhopper;KLM Cityhopper;EMB-E170-WL;Embraer ERJ-170;KLM_CH;7
+WA;KLM Cityhopper;KLM Cityhopper;EMB-E175;Embraer ERJ-175;KLM_CH;8
+WA;KLM Cityhopper;KLM Cityhopper;EMB-E190;Embraer ERJ-190;KLM_CH;9
+WA;KLM Cityhopper;KLM Cityhopper;EMB-E195E2;Embraer E195-E2;KLM_CH;10
+WA;KLM Cityhopper;KLM Cityhopper;FOK-F50;Fokker 50;KLM_CH;11
+WA;KLM Cityhopper;KLM Cityhopper;FOK-F70;Fokker 70;KLM_CH;12
+WA;KLM Cityhopper;KLM Cityhopper;FOK-F100;Fokker 100;KLM_CH;13
+WA;KLM Cityhopper;KLM Cityhopper;SAB-340;Saab 340;KLM_CH;14
+NG;Lauda Air;Niki;AIB-A320-200;Airbus A320-200;LaudaAir;4
+NG;Lauda Air;Lauda Air;BAC-111-500;BAC 1-11 Series 500;LaudaAir;5
+NG;Lauda Air;Lauda Air;BOE-737-200;Boeing 737-200;LaudaAir;6
+NG;Lauda Air;Lauda Air;BOE-737-300;Boeing 737-300;LaudaAir;7
+NG;Lauda Air;Lauda Air;BOE-737-400;Boeing 737-400;LaudaAir;8
+NG;Lauda Air;Lauda Air;BOE-737-500;Boeing 737-500;LaudaAir;9
+NG;Lauda Air;Lauda Air;BOE-737-600;Boeing 737-600;LaudaAir;10
+NG;Lauda Air;Lauda Air;BOE-737-700;Boeing 737-700;LaudaAir;11
+NG;Lauda Air;Lauda Air;BOE-737-700-WL;Boeing 737-700 (Winglets);LaudaAir;12
+NG;Lauda Air;Lauda Air;BOE-737-800;Boeing 737-800;LaudaAir;13
+NG;Lauda Air;Lauda Air;BOE-737-800-WL;Boeing 737-800 (Winglets);LaudaAir;14
+NG;Lauda Air;Lauda Air;BOE-767-300;Boeing 767-300;LaudaAir;15
+NG;Lauda Air;Lauda Air;BOE-777-200;Boeing 777-200;LaudaAir;16
+NG;Lauda Air;Lauda Air;BOM-CRJ100;Bombardier CRJ-100;LaudaAir;17
+DE;Luftwaffe;Luftwaffe (German Air Force);AIB-A310-304VIP;Airbus A310-304;Luftwaffe;4
+DE;Luftwaffe;Luftwaffe (German Air Force);AIB-ACJ350-900;Airbus ACJ350-900;Luftwaffe;5
+DE;Luftwaffe;Luftwaffe (German Air Force);BOE-707-300;Boeing 707-307C;Luftwaffe;6
+DE;Luftwaffe;Luftwaffe (German Air Force);BOM-BD700;Bombardier BD-700 Global 5000;Luftwaffe;7
+DE;Luftwaffe;Luftwaffe (German Air Force);BOM-CL601;Bombardier Challenger 601;Luftwaffe;8
+DE;Luftwaffe;Luftwaffe (German Air Force);TUP-Tu154M;Tupolev Tu-154M;Luftwaffe;9
+DY;Norwegian;Norwegian;AIB-A330-200;Airbus A330-200;Norwegian;4
+DY;Norwegian;Norwegian;AIB-A340-300;Airbus A340-300;Norwegian;5
+DY;Norwegian;Norwegian;BOE-737-300;Boeing 737-300;Norwegian;6
+DY;Norwegian;Norwegian;BOE-737-500;Boeing 737-500;Norwegian;7
+DY;Norwegian;Norwegian;BOE-737-800-WL;Boeing 737-800;Norwegian;8
+DY;Norwegian;Norwegian;BOE-737-MAX8;Boeing 737 MAX 8;Norwegian;9
+DY;Norwegian;Norwegian;BOE-787-8;Boeing 787-8 Dreamliner;Norwegian;10
+DY;Norwegian;Norwegian;BOE-787-9;Boeing 787-9 Dreamliner;Norwegian;11
+DY;Norwegian;Norwegian;DHC-DHC6;De Havilland Canada DHC-6 Twin Otter;Norwegian;12
+DY;Norwegian;Norwegian;DHC-DHC7;De Havilland Canada DHC-7-100;Norwegian;13
+DY;Norwegian;Norwegian;DHC-DHC8-100;De Havilland Canada DHC-8-100;Norwegian;14
+DY;Norwegian;Norwegian;DHC-DHC8-200;De Havilland Canada DHC-8-200;Norwegian;15
+DY;Norwegian;Norwegian;DHC-DHC8-300;De Havilland Canada DHC-8-300;Norwegian;16
+DY;Norwegian;Norwegian;DHC-DHC8-400;De Havilland Canada DHC-8-400;Norwegian;17
+DY;Norwegian;Norwegian;EMB-E195E2;Embraer E190-E2;Norwegian;18
+DY;Norwegian;Norwegian;EMB-EMB120;Embraer EMB-120 Brasilia;Norwegian;19
+DY;Norwegian;Norwegian;FOK-F50;Fokker 50;Norwegian;20
+DY;Norwegian;Norwegian;MCD-MD82;McDonnell Douglas MD-82;Norwegian;21
+DY;Norwegian;Norwegian;MCD-MD83;McDonnell Douglas MD-83;Norwegian;22
+PA;Pan Am;Pan Am;AIB-A300-B4;Airbus A300B4;Panam;4
+PA;Pan Am;Pan Am;AIB-A310-200;Airbus A310-200;Panam;5
+PA;Pan Am;Pan Am;AIB-A310-300;Airbus A310-300;Panam;6
+PA;Pan Am;Pan Am Express;ATR42-300;ATR 42-300;Panam;7
+PA;Pan Am;Pan Am;BOE-314;Boeing 314 Clipper (Pan Am);Panam;8
+PA;Pan Am;Pan Am;BOE-377;Boeing 377 Stratocruiser;Panam;9
+PA;Pan Am;Pan Am;BOE-707-300;Boeing 707-320;Panam;10
+PA;Pan Am;Pan Am;BOE-720;Boeing 720;Panam;11
+PA;Pan Am;Pan Am;BOE-727-200;Boeing 727-200;Panam;12
+PA;Pan Am;Pan Am;BOE-737-200;Boeing 737-200;Panam;13
+PA;Pan Am;Pan Am;BOE-737-400;Boeing 737-400;Panam;14
+PA;Pan Am;Pan Am;BOE-747-100;Boeing 747-100;Panam;15
+PA;Pan Am;Pan Am;BOE-747-100;Boeing 747-100;Panam;16
+PA;Pan Am;Pan Am;BOE-747-100SF;Boeing 747-123 Special Freighter;Panam;17
+PA;Pan Am;Pan Am;BOE-747-200;Boeing 747-200;Panam;18
+PA;Pan Am;Pan Am;BOE-747-SP;Boeing 747SP;Panam;19
+PA;Pan Am;Pan Am;BAE-Jetstream-32;British Aerospace Jetstream 32	;Panam;20
+PA;Pan Am;Pan Am;CON-CV240;Convair CV-240 Convairliner;Panam;21
+PA;Pan Am;Pan Am;CUR-C46;Curtiss-Wright C-46 Commando;Panam;22
+PA;Pan Am;Pan Am;DHC-DHC6;De Havilland Canada DHC-6-200 Twin Otter;Panam;23
+PA;Pan Am;Pan Am;DHC-DHC7;De Havilland Canada DHC-7-100	;Panam;24
+PA;Pan Am;Pan Am;DOU-DC3;Douglas DC-3;Panam;25
+PA;Pan Am;Pan Am;DOU-DC4;Douglas DC-4;Panam;26
+PA;Pan Am;Pan Am;DOU-DC4;Douglas DC-4;Panam;27
+PA;Pan Am;Pan Am;DOU-DC6;Douglas DC-6B;Panam;28
+PA;Pan Am;Pan Am;DOU-DC7-C;Douglas DC-7C;Panam;29
+PA;Pan Am;Pan Am;DOU-DC8-30;Douglas DC-8-30;Panam;30
+PA;Pan Am;Pan Am;DOU-DC8-62;Douglas DC-8-62;Panam;31
+PA;Pan Am;Pan Am;LOC-L049;Lockheed L-049 Constallation;Panam;32
+PA;Pan Am;Pan Am;LOC-L749;Lockheed L-749;Panam;33
+PA;Pan Am;Pan Am;LOC-L1011-500;Lockheed L-1011 TriStar 500;Panam;34
+PA;Pan Am;Pan Am;MCD-DC10-10;McDonnell Douglas DC-10-10;Panam;35
+PA;Pan Am;Pan Am;MCD-DC10-30;McDonnell Douglas DC-10-30;Panam;36
+PA;Pan Am;Pan Am;SUD-Concorde;Sud Aviation/BAC Concorde;Panam;37
+SK;SAS;SAS;AIB-A300-B2;Airbus A300B2;SAS;4
+SK;SAS;SAS;AIB-A300-B4;Airbus A300B4;SAS;5
+SK;SAS;SAS;AIB-A319;Airbus A319-100;SAS;6
+SK;SAS;SAS;AIB-A320-200;Airbus A320-200;SAS;7
+SK;SAS;SAS;AIB-A320-neo;Airbus A320neo;SAS;8
+SK;SAS;SAS;AIB-A321-200;Airbus A321-200;SAS;9
+SK;SAS;SAS;AIB-A321-neo;Airbus A321neo;SAS;10
+SK;SAS;SAS;AIB-A330-300;Airbus A330-300;SAS;11
+SK;SAS;SAS;AIB-A340-300;Airbus A340-300;SAS;12
+SK;SAS;SAS;AIB-A350-900;Airbus A350-900;SAS;13
+SK;SAS;SAS;ATR42-600;ATR 42;SAS;14
+SK;SAS;SAS;ATR72-600;ATR 72;SAS;15
+SK;SAS;SAS;BAC-111-300;BAC 1-11 Series 300;SAS;16
+SK;SAS;SAS;BOE-717-200;Boeing 717-200;SAS;17
+SK;SAS;SAS;BOE-737-400;Boeing 737-400;SAS;18
+SK;SAS;SAS;BOE-737-500;Boeing 737-500;SAS;19
+SK;SAS;SAS;BOE-737-600;Boeing 737-600;SAS;20
+SK;SAS;SAS;BOE-737-700-WL;Boeing 737-700 (Winglets);SAS;21
+SK;SAS;SAS;BOE-737-800;Boeing 737-800;SAS;22
+SK;SAS;SAS;BOE-737-800-WL;Boeing 737-800 (Winglets);SAS;23
+SK;SAS;SAS;BOE-747-100;Boeing 747-100;SAS;24
+SK;SAS;SAS;BOE-747-200;Boeing 747-200;SAS;25
+SK;SAS;SAS;BOE-767-200;Boeing 767-200;SAS;26
+SK;SAS;SAS;BOE-767-300;Boeing 767-300;SAS;27
+SK;SAS;SAS;BOM-CRJ200;Bombardier CRJ-200;SAS;28
+SK;SAS;SAS;BOM-CRJ900;Bombardier CRJ-900;SAS;29
+SK;SAS;SAS;BOM-CRJ1000;Bombardier CRJ-1000;SAS;30
+SK;SAS;SAS;BAE-146-100;British Aerospace 146-100;SAS;31
+SK;SAS;SAS;BAE-146-200;British Aerospace 146-200;SAS;32
+SK;SAS;SAS;BAE-146-300;British Aerospace 146-300;SAS;33
+SK;SAS;SAS;CON-CV990;Convair CV-990 Coronado;SAS;34
+SK;SAS;SAS;DHC-DHC6;De Havilland Canada DHC-6-300 Twin Otter;SAS;35
+SK;SAS;SAS;DHC-DHC8-400;De Havilland Canada DHC-8-400;SAS;36
+SK;SAS;SAS;DOU-DC8-30;Douglas DC-8-30;SAS;37
+SK;SAS;SAS;DOU-DC8-50;Douglas DC-8-55;SAS;38
+SK;SAS;SAS;DOU-DC8-62;Douglas DC-8-60/70;SAS;39
+SK;SAS;SAS;FOK-F28;Fokker 28 Fellowship;SAS;40
+SK;SAS;SAS;FOK-F50;Fokker 50;SAS;41
+SK;SAS;SAS;MCD-DC9-20;McDonnell Douglas DC-9-20;SAS;42
+SK;SAS;SAS;MCD-DC9-30;McDonnell Douglas DC-9-30;SAS;43
+SK;SAS;SAS;MCD-DC9-40;McDonnell Douglas DC-9-40;SAS;44
+SK;SAS;SAS;MCD-DC9-50;McDonnell Douglas DC-9-50;SAS;45
+SK;SAS;SAS;MCD-DC10-30;McDonnell Douglas DC-10-30;SAS;46
+SK;SAS;SAS;MCD-MD81;McDonnell Douglas MD-81;SAS;47
+SK;SAS;SAS;MCD-MD82;McDonnell Douglas MD-82;SAS;48
+SK;SAS;SAS;MCD-MD83;McDonnell Douglas MD-83;SAS;49
+SK;SAS;SAS;MCD-MD87;McDonnell Douglas MD-87;SAS;50
+SK;SAS;SAS;MCD-MD90;McDonnell Douglas MD-90;SAS;51
+SK;SAS;SAS;SAB-2000;Saab 2000;SAS;52
+SK;SAS;SAS;SAB-340;Saab 340;SAS;53
+TP;TAP;TAP;AIB-A310-300;Airbus A310-300;TAP;4
+TP;TAP;TAP;AIB-A319;Airbus A319-100;TAP;5
+TP;TAP;TAP;AIB-A320-200;Airbus A320-200;TAP;6
+TP;TAP;TAP;AIB-A320-neo;Airbus A320neo;TAP;7
+TP;TAP;TAP;AIB-A321-200;Airbus A321-200;TAP;8
+TP;TAP;TAP;AIB-A321-neo;Airbus A321neo;TAP;9
+TP;TAP;TAP Air Cargo;AIB-A330-200;Airbus A330-200;TAP;10
+TP;TAP;TAP;AIB-A330-300;Airbus A330-300;TAP;11
+TP;TAP;TAP;AIB-A330-900neo;Airbus A330-900;TAP;12
+TP;TAP;TAP;AIB-A340-300;Airbus A340-300;TAP;13
+TP;TAP;TAP;ATR72-600;ATR 72;TAP;14
+TP;TAP;TAP;BOE-737-200;Boeing 737-200;TAP;15
+TP;TAP;TAP;BOE-737-300;Boeing 737-300;TAP;16
+TP;TAP;TAP;BOE-747-200;Boeing 747-200;TAP;17
+TP;TAP;TAP;DHC-DHC6;De Havilland Canada DHC-6-300 Twin Otter;TAP;18
+TP;TAP;TAP;EMB-E190;Embraer ERJ-190;TAP;19
+TP;TAP;TAP;EMB-E195;Embraer ERJ-195;TAP;20
+TP;TAP;TAP;LOC-L1011-500;Lockheed L-1011 TriStar 500;TAP;21
+US;USAF;United States Air Force;BOE-747-VC25A;Boeing VC-25A;USAF;4
+US;USAF;United States Air Force;BOE-747-VC25B;Boeing VC-25B;USAF;5
+US;USAF;United States Air Force;DOU-VC118A;Douglas VC-118A;USAF;6
+US;USAF;United States Air Force;BOE-747-E4B;Boeing E-4B;USAF;7
+US;USAF;United States Air Force;BOE-757-C32A;Boeing C-32A;USAF;8
+US;USAF;United States Air Force;LOC-C5B;Lockheed C-5B Galaxy;USAF;9
+US;USAF;United States Navy;LOC-RP3D;Lockheed RP-3D Orion;USAF;10
+US;USAF;United States Air Force;CSA-PBY5;Consolidated PBY-5 Catalina;USAF;11
+US;USAF;United States Air Force;DOU-C47;Douglas C-47 Skytrain;USAF;12
+US;USAF;United States Air Force;BOE-747-YAL1;Boeing YAL-1 Airborne Laser;USAF;13
+US;USAF;United States Navy;BOE-737-C40A;Boeing C-40A Clipper;USAF;14
+US;USAF;United States Army;BOE-767-AOA;Boeing 767-200 Airborne Optical Adjunct;USAF;15
+US;USAF;United States Air Force;BOE-VC137C;Boeing VC-137C Stratoliner;USAF;16
+US;USAF;United States Air Force;BOE-C17A;Boeing C-17A Globemaster III;USAF;17
+US;USAF;United States Air Force;BOE-KC135D;Boeing KC-135D Stratotanker;USAF;18
+US;USAF;United States Air Force;LOC-C130H;Lockheed C-130H Hercules;USAF;19
+WF;Wideroe;Wideroe;DHC-DHC6;De Havilland Canada DHC-6-200 Twin Otter;Wideroe;4
+WF;Wideroe;Wideroe;DHC-DHC7;De Havilland Canada DHC-7-100;Wideroe;5
+WF;Wideroe;Widerøe;DHC-DHC8-100;De Havilland Canada DHC-8-100;Wideroe;6
+WF;Wideroe;Wideroe;DHC-DHC8-200;De Havilland Canada DHC-8-200;Wideroe;7
+WF;Wideroe;Wideroe;DHC-DHC8-300;De Havilland Canada DHC-8-300;Wideroe;8
+WF;Wideroe;Widerøe;DHC-DHC8-400;De Havilland Canada DHC-8-400;Wideroe;9
+WF;Wideroe;Widerøe;EMB-E195E2;Embraer E190-E2;Wideroe;10
+WF;Wideroe;Wideroe;EMB-EMB120;Embraer EMB-120 Brasilia;Wideroe;11
+SO;Sonstige Airlines;Airbus Beluga Transport;AIB-A300-600ST;Airbus A300B4-600ST;Sonstige;5
+SO;Sonstige Airlines;Airbus Beluga Transport;AIB-A330-743L;Airbus 330 Beluga XL;Sonstige;6
+SO;Sonstige Airlines;Airbus Transport International;ASP-B377SGT;Boeing B-377SGT-201 Super Guppy;Sonstige;7
+SO;Sonstige Airlines;Aeroflot - Russian Airlines;ANT-AN32;Antonov AN-32;Sonstige;8
+SO;Sonstige Airlines;Antonov Airlines;ANT-An225;Antonov AN-225 Mriya;Sonstige;9
+SO;Sonstige Airlines;Luftwaffe (German Air Force);TRA-C160;Transall C-160;Sonstige;10
+SO;Sonstige Airlines;NATO;AIB-A330-MRTT;Airbus A330 MRTT;Sonstige;11
+SO;Sonstige Airlines;Ansett Airlines;LOC-L188A-F;Lockheed L-188A(F) Electra;Sonstige;12
+SO;Sonstige Airlines;Volga-Dnepr;ANT-An124;Antonov An-124-100 Ruslan;Sonstige;13
+SO;Sonstige Airlines;German Cargo;BOE-707-300C;Boeing 707-330C;Sonstige;20
+SO;Sonstige Airlines;Schweizer Luftwaffe (Swiss Air Force);JUN-JU52-3M;Junkers JU-52;Sonstige;21
+SO;Sonstige Airlines;Arkia - Israeli Airlines;VIC-Viscount-800;Vickers Viscount 800;Sonstige;22
+SO;Sonstige Airlines;Air Belgium;AIB-A330-900neo;Airbus A330-900neo;Sonstige;23
+SO;Sonstige Airlines;Virgin Orbit;BOE-747-400-VO;Boeing 747-400 LauncherOne Carrier Aircraft;Sonstige;24
+SO;Sonstige Airlines;COMAC;COM-C919-100;Comac C919-100;Sonstige;25
+SO;Sonstige Airlines;Aeronautica Militare (Italian Air Force);AIB-A340-500;Airbus A340-500;Sonstige;26
+SO;Sonstige Airlines;Germanwings;AIB-A319;Airbus A319;Sonstige;27
+SO;Sonstige Airlines;Boeing;BOE-2707;Boeing 2707 SST;Sonstige;28
+SO;Sonstige Airlines;NASA;ROC-OV102;Space Shuttle Orbiter Columbia;Sonstige;34
+SO;Sonstige Airlines;Buran Space Shuttle;BUR-OK1K1;Buran Space Orbiter OK-1K1;Sonstige;35
+SO;Sonstige Airlines;Virgin Galactic;SCA-SS2;SpaceShipTwo;Sonstige;36
+SO;Sonstige Airlines;NASA;BOE-747-SCA;Boeing 747 Shuttle Carrier Aircraft;Sonstige;37
+SM;Sondermaße;Austrian;VIC-Viscount-700;Vickers Viscount 779;Sondermaß;4
+SM;Sondermaße;Pan Am;BOE-314;Boeing 314 Clipper;Sondermaß;5
+SM;Sondermaße;Lufthansa;DOR-DOX;Dornier Do X;Sondermaß;6
