@@ -709,3 +709,29 @@ body.noscroll{
   font-size:14px;
   cursor:pointer;
 }
+
+.badge-id.missing{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:44px;
+  height:20px;
+  padding:0 7px;
+
+  border:1px solid #9aa3ad;
+  border-radius:999px;
+  background:#eef1f4;
+
+  color:#39414a;
+  font-size:12px;
+  font-weight:700;
+  line-height:1;
+}
+
+tr.row-missing td{
+  color:#4d5660;
+}
+
+tr.row-missing td:first-child{
+  font-weight:700;
+}
