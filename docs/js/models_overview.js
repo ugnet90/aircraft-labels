@@ -221,7 +221,7 @@ function updateActiveFilterUI(filters){
     if(on) active.push(label);
   });
 
-  const defaultStatusOn = filters.owned && filters.ordered && !filters.wishlist && filters.missing;
+  const defaultStatusOn = filters.owned && filters.ordered && !filters.wishlist && !filters.missing;
   document.querySelector(".statusBox")?.classList.toggle("is-active", !defaultStatusOn);
   
   if(!defaultStatusOn){
@@ -418,7 +418,21 @@ function buildMissingRows(realRows, groupTypes, filters){
       ordered: false,
       ordered_at: "",
       wishlist: false,
-
+      
+      role: gt.role || "",
+      fuselage: gt.fuselage || "",
+      market_segment: gt.market_segment || "",
+      aircraft_kind: gt.aircraft_kind || "",
+      aircraft_status: gt.aircraft_status || "",
+      first_flight: gt.first_flight || "",
+      propulsion: gt.propulsion || "",
+      engines: gt.engines || "",
+      range_class: gt.range_class || "",
+      passengers: gt.passengers || "",
+      length_m: gt.length_m || "",
+      wingspan_m: gt.wingspan_m || "",
+      height_m: gt.height_m || "",
+      
       source_sheet: gt.source_sheet || "",
       source_row: gt.source_row || ""
     });
@@ -1311,7 +1325,7 @@ function apply(){
     owned: document.getElementById("fOwned")?.checked ?? true,
     ordered: document.getElementById("fOrdered")?.checked ?? true,
     wishlist: document.getElementById("fWishlist")?.checked ?? false,
-    missing: document.getElementById("fMissing")?.checked ?? true
+    missing: document.getElementById("fMissing")?.checked ?? false
   };
 
   buildFacetOptions(filters);
@@ -1558,7 +1572,7 @@ async function main(){
       if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
       if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
       if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = false;
-      if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = true;
+      if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = false;
       
       tableSortKey = "model_id";
       tableSortDir = 1;
@@ -1677,7 +1691,7 @@ document.addEventListener("click", (ev) => {
   if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
   if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
   if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = false;
-  if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = true;
+  if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = false;
   
   // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
   // document.getElementById("sort").value = "group_model";
