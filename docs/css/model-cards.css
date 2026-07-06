@@ -548,3 +548,100 @@
   background:#fff3cd;
   color:#7a5b00;
 }
+
+.sameTypeHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:14px;
+  margin-bottom:10px;
+}
+
+.sameTypeType{
+  margin-top:3px;
+  font-size:15px;
+  font-weight:700;
+  color:#222;
+}
+
+.sameTypeControls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:flex-end;
+  font-size:13px;
+  color:#333;
+}
+
+.sameTypeControls label{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  white-space:nowrap;
+}
+
+.sameTypeControls input{
+  width:15px;
+  height:15px;
+  margin:0;
+}
+
+.sameTypeCard .sameType-row-wishlist,
+.sameTypeCard .sameType-row-missing{
+  display:none;
+}
+
+.sameTypeCard.show-wishlist .sameType-row-wishlist{
+  display:table-row;
+}
+
+.sameTypeCard.show-missing .sameType-row-missing{
+  display:table-row;
+}
+
+/* Wenn Wunsch sichtbar ist, soll derselbe Bedarf nicht zusätzlich als "fehlt" erscheinen. */
+.sameTypeCard.show-wishlist.show-missing .sameType-row-missing.sameTypeMissingFromWishlist{
+  display:none;
+}
+
+.sameTypeStatus.sameType-missing{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:44px;
+  height:20px;
+  padding:0 7px;
+
+  border:1px solid #d27a8a;
+  border-radius:999px;
+  background:#ffe1e8;
+
+  color:#8a2438;
+  font-size:12px;
+  font-weight:700;
+  line-height:1;
+}
+
+.sameTypeTbl tr.sameType-row-missing td{
+  background:#fff0f3;
+  color:#4d2430;
+}
+
+.sameTypeTbl tr.sameType-row-missing:nth-child(even) td{
+  background:#ffe8ee;
+}
+
+.sameTypeTbl tr.sameType-row-missing:hover td{
+  background:#ffdce6;
+}
+
+@media (max-width: 700px){
+  .sameTypeHead{
+    display:block;
+  }
+
+  .sameTypeControls{
+    justify-content:flex-start;
+    margin-top:10px;
+  }
+}
