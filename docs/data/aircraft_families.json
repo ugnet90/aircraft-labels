@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T13:31:11+02:00",
+  "generated_at": "2026-07-06T08:34:30+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -1539,6 +1539,18 @@
         "height": 10.4,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-727-200F",
+        "type": "Boeing 727-200F",
+        "parent_aircraft_id": "BOE-727-200",
+        "parent_type": "Boeing 727-200",
+        "length": 46.69,
+        "wingspan": 32.92,
+        "height": 10.36,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Boeing"
       },
       {
@@ -4102,6 +4114,18 @@
         "type": "Ilyushin Il-62",
         "parent_aircraft_id": "",
         "parent_type": "",
+        "length": 53.12,
+        "wingspan": 43.2,
+        "height": 12.35,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Ilyushin"
+      },
+      {
+        "aircraft_id": "ILY-Il62M",
+        "type": "Ilyushin Il-62M",
+        "parent_aircraft_id": "ILY-Il62",
+        "parent_type": "Ilyushin Il-62",
         "length": 53.12,
         "wingspan": 43.2,
         "height": 12.35,

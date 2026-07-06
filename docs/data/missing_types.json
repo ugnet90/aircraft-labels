@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 433,
+    "master_types": 435,
     "present_types": 138,
-    "missing_types": 291,
+    "missing_types": 293,
     "ordered_types": 4,
     "models": 285
   },
@@ -414,6 +414,12 @@
     {
       "aircraft_id": "BOE-717-200",
       "Typ_anzeige": "Boeing 717-200",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-727-200F",
+      "Typ_anzeige": "Boeing 727-200F",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1218,6 +1224,12 @@
     {
       "aircraft_id": "ILY-Il62",
       "Typ_anzeige": "Ilyushin Il-62",
+      "manufacturer": "Ilyushin",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "ILY-Il62M",
+      "Typ_anzeige": "Ilyushin Il-62M",
       "manufacturer": "Ilyushin",
       "status": "missing"
     },
