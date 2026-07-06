@@ -301,3 +301,46 @@ tfoot td{
   display:inline-block;
   text-align:left;
 }
+
+/* Vertikale Kennzahlenblöcke */
+th.blockStart,
+td.blockStart{
+  border-left:2px solid rgba(0,0,0,.12);
+}
+
+th.optionalBlockStart,
+td.optionalBlockStart{
+  border-left:2px solid rgba(0,0,0,.12);
+}
+
+/* Wunsch / Fehlend Badges */
+.badge-wishlist{
+  background:#fff3cd;
+  color:#7a5b00;
+  border-color:rgba(122,91,0,.28);
+  font-weight:700;
+  text-decoration:none;
+}
+
+.badge-missing{
+  background:#ffe1e8;
+  color:#8a2438;
+  border-color:#d27a8a;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.badge-wishlist:hover,
+.badge-missing:hover{
+  filter:brightness(.96);
+}
+
+/* Auf sehr kleinen Screens die Trennlinien etwas dezenter */
+@media (max-width:720px){
+  th.blockStart,
+  td.blockStart,
+  th.optionalBlockStart,
+  td.optionalBlockStart{
+    border-left:1px solid rgba(0,0,0,.10);
+  }
+}
