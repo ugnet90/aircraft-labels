@@ -1,0 +1,5631 @@
+{
+  "schema": "aviation-database.group_aircraft_types.v1",
+  "count": 625,
+  "items": [
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "AirBaltic",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "AirBaltic",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "AirBaltic",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "AirBaltic",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "BOE-757-200",
+      "aircraft_type": "Boeing 757-200",
+      "source_sheet": "AirBaltic",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "source_sheet": "AirBaltic",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "BAE-146-100",
+      "aircraft_type": "British Aerospace Avro RJ70",
+      "source_sheet": "AirBaltic",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "AirBaltic",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "AirBaltic",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "Air Baltic",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "source_sheet": "AirBaltic",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "BT",
+      "airline": "Air Baltic",
+      "airline_row": "AirBaltic",
+      "aircraft_id": "AIB-A220-300",
+      "aircraft_type": "Airbus A220-300",
+      "source_sheet": "AirBaltic",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "AirBerlin",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "AirBerlin",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A320-200-SL",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "AirBerlin",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "AirBerlin",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A321-200-SL",
+      "aircraft_type": "Airbus A321-200 (Sharklets)",
+      "source_sheet": "AirBerlin",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "AirBerlin",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "source_sheet": "AirBerlin",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "ATR72-200",
+      "aircraft_type": "ATR 72",
+      "source_sheet": "AirBerlin",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "AirBerlin",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "AirBerlin",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "AirBerlin",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-700",
+      "aircraft_type": "Boeing 737-700",
+      "source_sheet": "AirBerlin",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-700-WL",
+      "aircraft_type": "Boeing 737-700 (Winglets)",
+      "source_sheet": "AirBerlin",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "AirBerlin",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "source_sheet": "AirBerlin",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BOE-757-200",
+      "aircraft_type": "Boeing 757-200",
+      "source_sheet": "AirBerlin",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "source_sheet": "AirBerlin",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "BAE-146-300",
+      "aircraft_type": "British Aerospace 146-300",
+      "source_sheet": "AirBerlin",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "AirBerlin",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "EMB-E190",
+      "aircraft_type": "Embraer ERJ-190",
+      "source_sheet": "AirBerlin",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "AB",
+      "airline": "Air Berlin",
+      "airline_row": "Air Berlin",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "AirBerlin",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A220-300",
+      "aircraft_type": "Airbus A220-300",
+      "source_sheet": "AirFrance",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A300-B2",
+      "aircraft_type": "Airbus A300B2",
+      "source_sheet": "AirFrance",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "source_sheet": "AirFrance",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "source_sheet": "AirFrance",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "source_sheet": "AirFrance",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A318",
+      "aircraft_type": "Airbus A318-100",
+      "source_sheet": "AirFrance",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "AirFrance",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A320-100",
+      "aircraft_type": "Airbus A320-100",
+      "source_sheet": "AirFrance",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "AirFrance",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "source_sheet": "AirFrance",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "AirFrance",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "AirFrance",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A340-200",
+      "aircraft_type": "Airbus A340-200",
+      "source_sheet": "AirFrance",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "AirFrance",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A350-900",
+      "aircraft_type": "Airbus A350-900",
+      "source_sheet": "AirFrance",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "AIB-A380-800",
+      "aircraft_type": "Airbus A380-800",
+      "source_sheet": "AirFrance",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "ATR42-300",
+      "aircraft_type": "ATR 42",
+      "source_sheet": "AirFrance",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "ATR72-200",
+      "aircraft_type": "ATR 72",
+      "source_sheet": "AirFrance",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "SUD-CONCORDE",
+      "aircraft_type": "Aérospatiale/BAC Concorde",
+      "source_sheet": "AirFrance",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "AirFrance",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "AirFrance",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "AirFrance",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "AirFrance",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "AirFrance",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-747-300",
+      "aircraft_type": "Boeing 747-300",
+      "source_sheet": "AirFrance",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "source_sheet": "AirFrance",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-767-200",
+      "aircraft_type": "Boeing 767-200",
+      "source_sheet": "AirFrance",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "AirFrance",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "source_sheet": "AirFrance",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-777-300ER",
+      "aircraft_type": "Boeing 777-300ER",
+      "source_sheet": "AirFrance",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-777F",
+      "aircraft_type": "Boeing 777F",
+      "source_sheet": "AirFrance",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "source_sheet": "AirFrance",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOM-CRJ100",
+      "aircraft_type": "Bombardier CRJ-100",
+      "source_sheet": "AirFrance",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOM-CRJ1000",
+      "aircraft_type": "Bombardier CRJ-1000",
+      "source_sheet": "AirFrance",
+      "source_row": "40"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOM-CRJ200",
+      "aircraft_type": "Bombardier CRJ-200",
+      "source_sheet": "AirFrance",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOM-CRJ700",
+      "aircraft_type": "Bombardier CRJ-700",
+      "source_sheet": "AirFrance",
+      "source_row": "38"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BOM-CRJ900",
+      "aircraft_type": "Bombardier CRJ-900",
+      "source_sheet": "AirFrance",
+      "source_row": "39"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BRI-Britannia-312",
+      "aircraft_type": "Bristol 175 Britannia 312",
+      "source_sheet": "AirFrance",
+      "source_row": "41"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BAE-146-100",
+      "aircraft_type": "British Aerospace 146-100",
+      "source_sheet": "AirFrance",
+      "source_row": "42"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "source_sheet": "AirFrance",
+      "source_row": "43"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "BAE-146-300",
+      "aircraft_type": "British Aerospace 146-300",
+      "source_sheet": "AirFrance",
+      "source_row": "44"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "CON-CV990",
+      "aircraft_type": "Convair CV-990 Coronado",
+      "source_sheet": "AirFrance",
+      "source_row": "45"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "DHC-DHC7",
+      "aircraft_type": "De Havilland Canada DHC-7-100",
+      "source_sheet": "AirFrance",
+      "source_row": "46"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "DOR-Do328-100",
+      "aircraft_type": "Dornier 328-100",
+      "source_sheet": "AirFrance",
+      "source_row": "47"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-30 Series 30",
+      "source_sheet": "AirFrance",
+      "source_row": "48"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "DOU-DC8-61",
+      "aircraft_type": "Douglas DC-8-61 Super 61",
+      "source_sheet": "AirFrance",
+      "source_row": "49"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "EMB-EMB120",
+      "aircraft_type": "Embraer EMB-120 Brasilia",
+      "source_sheet": "AirFrance",
+      "source_row": "50"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "EMB-ERJ135",
+      "aircraft_type": "Embraer ERJ-135",
+      "source_sheet": "AirFrance",
+      "source_row": "51"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "EMB-ERJ145",
+      "aircraft_type": "Embraer ERJ-145",
+      "source_sheet": "AirFrance",
+      "source_row": "52"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "EMB-E190",
+      "aircraft_type": "Embraer ERJ-190",
+      "source_sheet": "AirFrance",
+      "source_row": "54"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "AirFrance",
+      "source_row": "56"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "FOK-F70",
+      "aircraft_type": "Fokker 70",
+      "source_sheet": "AirFrance",
+      "source_row": "55"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "LOC-L1011-500",
+      "aircraft_type": "Lockheed L-1011 TriStar 500",
+      "source_sheet": "AirFrance",
+      "source_row": "57"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "AirFrance",
+      "source_row": "58"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "SAB-2000",
+      "aircraft_type": "Saab 2000",
+      "source_sheet": "AirFrance",
+      "source_row": "60"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "source_sheet": "AirFrance",
+      "source_row": "59"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France",
+      "aircraft_id": "VFW-614",
+      "aircraft_type": "VFW-Fokker 614",
+      "source_sheet": "AirFrance",
+      "source_row": "61"
+    },
+    {
+      "airline_code": "AF",
+      "airline": "Air France",
+      "airline_row": "Air France HOP",
+      "aircraft_id": "EMB-E170-WL",
+      "aircraft_type": "Embraer E170 (Winglets)",
+      "source_sheet": "AirFrance",
+      "source_row": "53"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "AIB-A300-B2",
+      "aircraft_type": "Airbus A300B2",
+      "source_sheet": "Alitalia",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "source_sheet": "Alitalia",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "Alitalia",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "Alitalia",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "source_sheet": "Alitalia",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "Alitalia",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "Alitalia",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "Alitalia",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "Alitalia",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "source_sheet": "Alitalia",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "Alitalia",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "BOE-777-200ER",
+      "aircraft_type": "Boeing 777-200ER Extended Range",
+      "source_sheet": "Alitalia",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "DOU-DC8-40",
+      "aircraft_type": "Douglas DC-8-40",
+      "source_sheet": "Alitalia",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-50",
+      "source_sheet": "Alitalia",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "DOU-DC8-62",
+      "aircraft_type": "Douglas DC-8-60/70",
+      "source_sheet": "Alitalia",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "Alitalia",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "McDonnell Douglas DC-9-30",
+      "source_sheet": "Alitalia",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "MCD-DC9-30F",
+      "aircraft_type": "McDonnell Douglas DC-9-32F",
+      "source_sheet": "Alitalia",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "MCD-MD11",
+      "aircraft_type": "McDonnell Douglas MD-11",
+      "source_sheet": "Alitalia",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "AZ",
+      "airline": "Alitalia",
+      "airline_row": "Alitalia",
+      "aircraft_id": "MCD-MD82",
+      "aircraft_type": "McDonnell Douglas MD-82",
+      "source_sheet": "Alitalia",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "source_sheet": "AUA",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "AUA",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "AUA",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "source_sheet": "AUA",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "AUA",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "AUA",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A340-200",
+      "aircraft_type": "Airbus A340-200",
+      "source_sheet": "AUA",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "AUA",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BAC-111-500",
+      "aircraft_type": "BAC 1-11 Series 500",
+      "source_sheet": "AUA",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-707-300",
+      "aircraft_type": "Boeing 707-329",
+      "source_sheet": "AUA",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "AUA",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "AUA",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-737-600",
+      "aircraft_type": "Boeing 737-600",
+      "source_sheet": "AUA",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-737-700",
+      "aircraft_type": "Boeing 737-700",
+      "source_sheet": "AUA",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-737-700-WL",
+      "aircraft_type": "Boeing 737-700 (Winglets)",
+      "source_sheet": "AUA",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "source_sheet": "AUA",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "AUA",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "source_sheet": "AUA",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "source_sheet": "AUA",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "DHC-DHC8-100",
+      "aircraft_type": "De Havilland Canada DHC-8-100",
+      "source_sheet": "AUA",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "DOU-DC3",
+      "aircraft_type": "Douglas DC-3",
+      "source_sheet": "AUA",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "DOU-DC8-63",
+      "aircraft_type": "Douglas DC-8-63",
+      "source_sheet": "AUA",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "Douglas DC-9-30",
+      "source_sheet": "AUA",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "MCD-DC9-50",
+      "aircraft_type": "Douglas DC-9-50",
+      "source_sheet": "AUA",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "EMB-E195",
+      "aircraft_type": "Embraer ERJ-190-200",
+      "source_sheet": "AUA",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "AUA",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "AUA",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "HAW-HS748",
+      "aircraft_type": "Hawker-Siddeley HS-748",
+      "source_sheet": "AUA",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "MCD-MD81",
+      "aircraft_type": "McDonnell Douglas MD-81/82/83/88",
+      "source_sheet": "AUA",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "MCD-MD87",
+      "aircraft_type": "McDonnell Douglas MD-87",
+      "source_sheet": "AUA",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "SUD-Caravelle-VIR",
+      "aircraft_type": "Sud Aviation SE 210 Caravelle VI-R",
+      "source_sheet": "AUA",
+      "source_row": "38"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "FAI-SA226",
+      "aircraft_type": "Swearingen SA-226TC Metro II",
+      "source_sheet": "AUA",
+      "source_row": "39"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "VIC-Viscount-700",
+      "aircraft_type": "Vickers Viscount 745",
+      "source_sheet": "AUA",
+      "source_row": "40"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian",
+      "aircraft_id": "VIC-Viscount-800",
+      "aircraft_type": "Vickers Viscount 837",
+      "source_sheet": "AUA",
+      "source_row": "42"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian Arrows",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "AUA",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Austrian Arrows",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "AUA",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
+      "airline_row": "Tyrolean Airways",
+      "aircraft_id": "FOK-F70",
+      "aircraft_type": "Fokker 70",
+      "source_sheet": "AUA",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "ARW-AW27",
+      "aircraft_type": "Armstrong Whitworth A.W.27",
+      "source_sheet": "BOAC",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "AVR-688",
+      "aircraft_type": "Avro  688/689 Tudor",
+      "source_sheet": "BOAC",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "AVR-685",
+      "aircraft_type": "Avro 685 York",
+      "source_sheet": "BOAC",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "AVR-691",
+      "aircraft_type": "Avro 691 Lancastrian",
+      "source_sheet": "BOAC",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "VIC-VC10",
+      "aircraft_type": "BAC Vickers VC-10",
+      "source_sheet": "BOAC",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "VIC-VC10-SUPER",
+      "aircraft_type": "BAC Vickers VC-10 Super",
+      "source_sheet": "BOAC",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "BOE-314",
+      "aircraft_type": "Boeing 314 Clipper",
+      "source_sheet": "BOAC",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "BOE-377",
+      "aircraft_type": "Boeing 377 Stratocruiser",
+      "source_sheet": "BOAC",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "BOE-707-300",
+      "aircraft_type": "Boeing 707-320",
+      "source_sheet": "BOAC",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "BOAC",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "BRI-Britannia-312",
+      "aircraft_type": "Bristol 175 Britannia 312",
+      "source_sheet": "BOAC",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "CAN-C4",
+      "aircraft_type": "Canadair C-4 Argonaut (North Star)",
+      "source_sheet": "BOAC",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DHV-DH106-1",
+      "aircraft_type": "De Havilland DH.106 Comet 1",
+      "source_sheet": "BOAC",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DHV-DH106-4",
+      "aircraft_type": "De Havilland DH.106 Comet 4",
+      "source_sheet": "BOAC",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DHV-DH91",
+      "aircraft_type": "De Havilland DH.91 Albatross",
+      "source_sheet": "BOAC",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DHV-DH95",
+      "aircraft_type": "De Havilland DH.95 Flamingo",
+      "source_sheet": "BOAC",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DOU-DC3",
+      "aircraft_type": "Douglas DC-3",
+      "source_sheet": "BOAC",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "DOU-DC7-C",
+      "aircraft_type": "Douglas DC-7C",
+      "source_sheet": "BOAC",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "FOW-FW200",
+      "aircraft_type": "Focke-Wulf Fw 200",
+      "source_sheet": "BOAC",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "HPR-HP81",
+      "aircraft_type": "Handley Page Hermes IV",
+      "source_sheet": "BOAC",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "LOC-L049",
+      "aircraft_type": "Lockheed L-049 Constallation",
+      "source_sheet": "BOAC",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "LOC-L18",
+      "aircraft_type": "Lockheed Model 18 Lodestar",
+      "source_sheet": "BOAC",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "SHO-S23",
+      "aircraft_type": "Short S.23 Empire",
+      "source_sheet": "BOAC",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "SHO-S26",
+      "aircraft_type": "Short S.26",
+      "source_sheet": "BOAC",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "SHO-S45",
+      "aircraft_type": "Short S.45 Solent",
+      "source_sheet": "BOAC",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "BEA",
+      "aircraft_id": "DOU-C47",
+      "aircraft_type": "Douglas C-47 Dakota",
+      "source_sheet": "BA",
+      "source_row": "55"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "BEA",
+      "aircraft_id": "HAW-Trident-2",
+      "aircraft_type": "Hawker Siddeley HS-121 Trident 2",
+      "source_sheet": "BA",
+      "source_row": "62"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "BEA",
+      "aircraft_id": "HAW-Trident-3",
+      "aircraft_type": "Hawker Siddeley HS-121 Trident 3",
+      "source_sheet": "BA",
+      "source_row": "63"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A318",
+      "aircraft_type": "Airbus A318-100",
+      "source_sheet": "BA",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "BA",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A320-100",
+      "aircraft_type": "Airbus A320-100",
+      "source_sheet": "BA",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "BA",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "source_sheet": "BA",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "BA",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "source_sheet": "BA",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A350-1000",
+      "aircraft_type": "Airbus A350-1000",
+      "source_sheet": "BA",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "AIB-A380-800",
+      "aircraft_type": "Airbus A380-800",
+      "source_sheet": "BA",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "ATR42-300",
+      "aircraft_type": "ATR 42",
+      "source_sheet": "BA",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "ATR72-200",
+      "aircraft_type": "ATR 72",
+      "source_sheet": "BA",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "SUD-Concorde",
+      "aircraft_type": "Aérospatiale/BAC Concorde",
+      "source_sheet": "BA",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAC-111-400",
+      "aircraft_type": "BAC 1-11 Series 400",
+      "source_sheet": "BA",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAC-111-500",
+      "aircraft_type": "BAC 1-11 Series 500",
+      "source_sheet": "BA",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "VIC-VC10",
+      "aircraft_type": "BAC VC-10 Standard",
+      "source_sheet": "BA",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "VIC-VC10-SUPER",
+      "aircraft_type": "BAC VC-10 Super",
+      "source_sheet": "BA",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-MAX8",
+      "aircraft_type": "Boeing 737 MAX 8",
+      "source_sheet": "BA",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "BA",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "BA",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "BA",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "BA",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "BA",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "BA",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "BA",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-757-200",
+      "aircraft_type": "Boeing 757-200",
+      "source_sheet": "BA",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-757-200-WL",
+      "aircraft_type": "Boeing 757-200 (Winglets)",
+      "source_sheet": "BA",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-767-200",
+      "aircraft_type": "Boeing 767-200",
+      "source_sheet": "BA",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "BA",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "source_sheet": "BA",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-777-300ER",
+      "aircraft_type": "Boeing 777-300ER",
+      "source_sheet": "BA",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-787-10",
+      "aircraft_type": "Boeing 787-10 Dreamliner",
+      "source_sheet": "BA",
+      "source_row": "38"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-787-8",
+      "aircraft_type": "Boeing 787-8 Dreamliner",
+      "source_sheet": "BA",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "source_sheet": "BA",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOM-CRJ200",
+      "aircraft_type": "Bombardier CRJ-200",
+      "source_sheet": "BA",
+      "source_row": "39"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BOM-CRJ700",
+      "aircraft_type": "Bombardier CRJ-700",
+      "source_sheet": "BA",
+      "source_row": "40"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-146-100",
+      "aircraft_type": "British Aerospace 146-100",
+      "source_sheet": "BA",
+      "source_row": "41"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "source_sheet": "BA",
+      "source_row": "42"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-146-300",
+      "aircraft_type": "British Aerospace 146-300",
+      "source_sheet": "BA",
+      "source_row": "43"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-ATP",
+      "aircraft_type": "British Aerospace BAe ATP",
+      "source_sheet": "BA",
+      "source_row": "44"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-Jetstream-31",
+      "aircraft_type": "British Aerospace Jetstream 31",
+      "source_sheet": "BA",
+      "source_row": "45"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-Jetstream-32",
+      "aircraft_type": "British Aerospace Jetstream 32",
+      "source_sheet": "BA",
+      "source_row": "46"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BAE-Jetstream-41",
+      "aircraft_type": "British Aerospace Jetstream 41",
+      "source_sheet": "BA",
+      "source_row": "47"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "BRN-BN2",
+      "aircraft_type": "Britten-Norman BN-2 Islander",
+      "source_sheet": "BA",
+      "source_row": "48"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-300 Twin Otter",
+      "source_sheet": "BA",
+      "source_row": "49"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "DHC-DHC7",
+      "aircraft_type": "De Havilland Canada DHC-7-100",
+      "source_sheet": "BA",
+      "source_row": "50"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "DHC-DHC8-100",
+      "aircraft_type": "De Havilland Canada DHC-8-100",
+      "source_sheet": "BA",
+      "source_row": "51"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "DHC-DHC8-300",
+      "aircraft_type": "De Havilland Canada DHC-8-300",
+      "source_sheet": "BA",
+      "source_row": "52"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "DOR-Do328-100",
+      "aircraft_type": "Dornier 328-100",
+      "source_sheet": "BA",
+      "source_row": "53"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "DOR-Do328-300",
+      "aircraft_type": "Dornier 328JET-300",
+      "source_sheet": "BA",
+      "source_row": "54"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "EMB-EMB120",
+      "aircraft_type": "Embraer EMB-120 Brasilia",
+      "source_sheet": "BA",
+      "source_row": "56"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "EMB-ERJ145",
+      "aircraft_type": "Embraer ERJ-145",
+      "source_sheet": "BA",
+      "source_row": "57"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "EMB-E170",
+      "aircraft_type": "Embraer ERJ-170",
+      "source_sheet": "BA",
+      "source_row": "58"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "EMB-E190",
+      "aircraft_type": "Embraer ERJ-190",
+      "source_sheet": "BA",
+      "source_row": "59"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "BA",
+      "source_row": "60"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "HAW-Trident-1",
+      "aircraft_type": "Hawker Siddeley HS-121 Trident 1",
+      "source_sheet": "BA",
+      "source_row": "61"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "LOC-L1011-100",
+      "aircraft_type": "Lockheed L-1011 TriStar 1/100/200",
+      "source_sheet": "BA",
+      "source_row": "64"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "LOC-L1011-500",
+      "aircraft_type": "Lockheed L-1011 TriStar 500",
+      "source_sheet": "BA",
+      "source_row": "65"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "BA",
+      "source_row": "66"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "SAB-2000",
+      "aircraft_type": "Saab 2000",
+      "source_sheet": "BA",
+      "source_row": "68"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "source_sheet": "BA",
+      "source_row": "67"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "SHO-360",
+      "aircraft_type": "Shorts 360",
+      "source_sheet": "BA",
+      "source_row": "69"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "VIC-Vanguard-953",
+      "aircraft_type": "Vickers Vanguard",
+      "source_sheet": "BA",
+      "source_row": "70"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Asia Airways",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "source_sheet": "BA",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "AIB-A300-600RF",
+      "aircraft_type": "Airbus A300-600R(F)",
+      "source_sheet": "DHL",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "AIB-A300-B4F",
+      "aircraft_type": "Airbus A300B4(F)",
+      "source_sheet": "DHL",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "AIB-A321-200PCF",
+      "aircraft_type": "Airbus A321-200PCF",
+      "source_sheet": "DHL",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "AIB-A330-200F",
+      "aircraft_type": "Airbus A330-200F",
+      "source_sheet": "DHL",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "ATR42-300F",
+      "aircraft_type": "ATR 42-300(F)",
+      "source_sheet": "DHL",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "ATR72-500F",
+      "aircraft_type": "ATR 72-500(F)",
+      "source_sheet": "DHL",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-737-200C",
+      "aircraft_type": "Boeing 737-200C",
+      "source_sheet": "DHL",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-737-300SF",
+      "aircraft_type": "Boeing 737-300SF",
+      "source_sheet": "DHL",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-737-400SF",
+      "aircraft_type": "Boeing 737-400SF",
+      "source_sheet": "DHL",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-737-800BCF-WL",
+      "aircraft_type": "Boeing 737-800BCF (Winglets)",
+      "source_sheet": "DHL",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-747-400BCF",
+      "aircraft_type": "Boeing 747-400BCF",
+      "source_sheet": "DHL",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-747-8F",
+      "aircraft_type": "Boeing 747-8F",
+      "source_sheet": "DHL",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-757-200PCF-WL",
+      "aircraft_type": "Boeing 757-200PCF (Winglets)",
+      "source_sheet": "DHL",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-767-200BDSF",
+      "aircraft_type": "Boeing 767-200BDSF",
+      "source_sheet": "DHL",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-767-300BDSF-WL",
+      "aircraft_type": "Boeing 767-300BDSF (Winglets)",
+      "source_sheet": "DHL",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "BOE-777F",
+      "aircraft_type": "Boeing 777F",
+      "source_sheet": "DHL",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "DOR-Do228-100",
+      "aircraft_type": "Dornier Do 228-100",
+      "source_sheet": "DHL",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "DOU-DC8-73CFF",
+      "aircraft_type": "Douglas DC-8-73CF(F)",
+      "source_sheet": "DHL",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "LOC-L188A-F",
+      "aircraft_type": "Lockheed L-188A(F) Electra",
+      "source_sheet": "DHL",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "MCD-DC9-30F",
+      "aircraft_type": "McDonnell Douglas DC-9-30F",
+      "source_sheet": "DHL",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "MCD-DC9-40F",
+      "aircraft_type": "McDonnell Douglas DC-9-40F",
+      "source_sheet": "DHL",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "TUP-Tu204-100C",
+      "aircraft_type": "Tupolev Tu-204-100C",
+      "source_sheet": "DHL",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL",
+      "aircraft_id": "VIC-Vanguard-953C",
+      "aircraft_type": "Vickers Vanguard 953C Merchantman",
+      "source_sheet": "DHL",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL Aviation",
+      "aircraft_id": "AIB-A330-300P2F",
+      "aircraft_type": "Airbus A330-300P2F",
+      "source_sheet": "DHL",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL Aviation",
+      "aircraft_id": "BOE-727-200F",
+      "aircraft_type": "Boeing 727-200F",
+      "source_sheet": "DHL",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL Aviation",
+      "aircraft_id": "BOE-757-200PCF",
+      "aircraft_type": "Boeing 757-200PCF",
+      "source_sheet": "DHL",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "DHL",
+      "airline": "DHL",
+      "airline_row": "DHL Aviation",
+      "aircraft_id": "SAB-340A-F",
+      "aircraft_type": "Saab 340A(F)",
+      "source_sheet": "DHL",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "source_sheet": "HapagLloyd",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "source_sheet": "HapagLloyd",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "source_sheet": "HapagLloyd",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "BAC-111-500",
+      "aircraft_type": "BAC 1-11 Series 500",
+      "source_sheet": "HapagLloyd",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "HapagLloyd",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "HapagLloyd",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "HapagLloyd",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "HapagLloyd",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "source_sheet": "HapagLloyd",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "HF",
+      "airline": "Hapag-Lloyd",
+      "airline_row": "Hapag-Lloyd Express",
+      "aircraft_id": "BOE-737-700",
+      "aircraft_type": "Boeing 737-700",
+      "source_sheet": "HapagLloyd",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "source_sheet": "Icelandair",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-MAX8",
+      "aircraft_type": "Boeing 737 MAX 8",
+      "source_sheet": "Icelandair",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-MAX9",
+      "aircraft_type": "Boeing 737 MAX 9",
+      "source_sheet": "Icelandair",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "Icelandair",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "Icelandair",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "Icelandair",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "Icelandair",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-757-200-WL",
+      "aircraft_type": "Boeing 757-200 (Winglets)",
+      "source_sheet": "Icelandair",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-757-300-WL",
+      "aircraft_type": "Boeing 757-300 (Winglets)",
+      "source_sheet": "Icelandair",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "Icelandair",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-200 Twin Otter",
+      "source_sheet": "Icelandair",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "DHC-DHC8-200",
+      "aircraft_type": "De Havilland Canada DHC-8-200",
+      "source_sheet": "Icelandair",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "Icelandair",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-50",
+      "source_sheet": "Icelandair",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "DOU-DC8-63",
+      "aircraft_type": "Douglas DC-8-60/70",
+      "source_sheet": "Icelandair",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "Icelandair",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "LOC-L1011-100",
+      "aircraft_type": "Lockheed L-1011 TriStar 1/100/200",
+      "source_sheet": "Icelandair",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "Icelandair",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "FI",
+      "airline": "Icelandair",
+      "airline_row": "Icelandair Cargo",
+      "aircraft_id": "BOE-767-300BCF-WL",
+      "aircraft_type": "Boeing 767-300BCF (Winglets)",
+      "source_sheet": "Icelandair",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "source_sheet": "KLM",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320 neo",
+      "source_sheet": "KLM",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "source_sheet": "KLM",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "KLM",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "source_sheet": "KLM",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "AIB-A350-900",
+      "aircraft_type": "Airbus A350-900",
+      "source_sheet": "KLM",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BAC-111-300",
+      "aircraft_type": "BAC 1-11 Series 300",
+      "source_sheet": "KLM",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "KLM",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "KLM",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "KLM",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-700",
+      "aircraft_type": "Boeing 737-700",
+      "source_sheet": "KLM",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "KLM",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "source_sheet": "KLM",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-900",
+      "aircraft_type": "Boeing 737-900",
+      "source_sheet": "KLM",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-737-900-WL",
+      "aircraft_type": "Boeing 737-900 (Winglets)",
+      "source_sheet": "KLM",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "KLM",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-747-200SUD",
+      "aircraft_type": "Boeing 747-200B SUD",
+      "source_sheet": "KLM",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-747-300",
+      "aircraft_type": "Boeing 747-300",
+      "source_sheet": "KLM",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-767-300ER",
+      "aircraft_type": "Boeing 767-300ER Extended Range",
+      "source_sheet": "KLM",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-777-200ER",
+      "aircraft_type": "Boeing 777-200ER Extended Range",
+      "source_sheet": "KLM",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-777-300ER",
+      "aircraft_type": "Boeing 777-300ER Extended Range",
+      "source_sheet": "KLM",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-787-10",
+      "aircraft_type": "Boeing 787-10 Dreamliner",
+      "source_sheet": "KLM",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "source_sheet": "KLM",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "CON-CV240",
+      "aircraft_type": "Convair CV-240",
+      "source_sheet": "KLM",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "CON-CV340",
+      "aircraft_type": "Convair CV-340",
+      "source_sheet": "KLM",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "CON-CV880",
+      "aircraft_type": "Convair CV-880",
+      "source_sheet": "KLM",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC2",
+      "aircraft_type": "Douglas DC-2",
+      "source_sheet": "KLM",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC3",
+      "aircraft_type": "Douglas DC-3",
+      "source_sheet": "KLM",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC4",
+      "aircraft_type": "Douglas DC-4",
+      "source_sheet": "KLM",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC6",
+      "aircraft_type": "Douglas DC-6",
+      "source_sheet": "KLM",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC7-C",
+      "aircraft_type": "Douglas DC-7C Seven Seas",
+      "source_sheet": "KLM",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-30",
+      "source_sheet": "KLM",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-53",
+      "source_sheet": "KLM",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "DOU-DC8-63",
+      "aircraft_type": "Douglas DC-8-63",
+      "source_sheet": "KLM",
+      "source_row": "38"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "KLM",
+      "source_row": "40"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "FOK-F27",
+      "aircraft_type": "Fokker F27",
+      "source_sheet": "KLM",
+      "source_row": "39"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "LOC-L188",
+      "aircraft_type": "Lockheed L-188 Electra",
+      "source_sheet": "KLM",
+      "source_row": "41"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "KLM",
+      "source_row": "44"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "MCD-DC9-15",
+      "aircraft_type": "McDonnell Douglas DC-9-15",
+      "source_sheet": "KLM",
+      "source_row": "42"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "McDonnell Douglas DC-9-30",
+      "source_sheet": "KLM",
+      "source_row": "43"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM",
+      "aircraft_id": "MCD-MD11",
+      "aircraft_type": "McDonnell Douglas MD-11",
+      "source_sheet": "KLM",
+      "source_row": "45"
+    },
+    {
+      "airline_code": "KL",
+      "airline": "KLM",
+      "airline_row": "KLM Asia",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "source_sheet": "KLM",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "EMB-E195E2",
+      "aircraft_type": "Embraer E195-E2",
+      "source_sheet": "KLM_CH",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "EMB-E170-WL",
+      "aircraft_type": "Embraer ERJ-170",
+      "source_sheet": "KLM_CH",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "EMB-E175",
+      "aircraft_type": "Embraer ERJ-175",
+      "source_sheet": "KLM_CH",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "EMB-E190",
+      "aircraft_type": "Embraer ERJ-190",
+      "source_sheet": "KLM_CH",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "KLM_CH",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "KLM_CH",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "FOK-F70",
+      "aircraft_type": "Fokker 70",
+      "source_sheet": "KLM_CH",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM Cityhopper",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "source_sheet": "KLM_CH",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM exel",
+      "aircraft_id": "ATR42-300",
+      "aircraft_type": "ATR 42-320",
+      "source_sheet": "KLM_CH",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM exel",
+      "aircraft_id": "ATR72-200",
+      "aircraft_type": "ATR 72-200",
+      "source_sheet": "KLM_CH",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "WA",
+      "airline": "KLM Cityhopper",
+      "airline_row": "KLM exel",
+      "aircraft_id": "EMB-ERJ145",
+      "aircraft_type": "Embraer ERJ-145MP",
+      "source_sheet": "KLM_CH",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BAC-111-500",
+      "aircraft_type": "BAC 1-11 Series 500",
+      "source_sheet": "LaudaAir",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "LaudaAir",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "LaudaAir",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "LaudaAir",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "LaudaAir",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-600",
+      "aircraft_type": "Boeing 737-600",
+      "source_sheet": "LaudaAir",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-700",
+      "aircraft_type": "Boeing 737-700",
+      "source_sheet": "LaudaAir",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-700-WL",
+      "aircraft_type": "Boeing 737-700 (Winglets)",
+      "source_sheet": "LaudaAir",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "LaudaAir",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "source_sheet": "LaudaAir",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "LaudaAir",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOE-777-200",
+      "aircraft_type": "Boeing 777-200",
+      "source_sheet": "LaudaAir",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Lauda Air",
+      "aircraft_id": "BOM-CRJ100",
+      "aircraft_type": "Bombardier CRJ-100",
+      "source_sheet": "LaudaAir",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "NG",
+      "airline": "Lauda Air",
+      "airline_row": "Niki",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "LaudaAir",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A300-600",
+      "aircraft_type": "Airbus A300-600",
+      "source_sheet": "Lufthansa",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A300-B2",
+      "aircraft_type": "Airbus A300B2",
+      "source_sheet": "Lufthansa",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "source_sheet": "Lufthansa",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "source_sheet": "Lufthansa",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A320-200-SL",
+      "aircraft_type": "Airbus A320-200 (Sharklets)",
+      "source_sheet": "Lufthansa",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "source_sheet": "Lufthansa",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321 neo",
+      "source_sheet": "Lufthansa",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "source_sheet": "Lufthansa",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A340-200",
+      "aircraft_type": "Airbus A340-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "Lufthansa",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A340-600",
+      "aircraft_type": "Airbus A340-600",
+      "source_sheet": "Lufthansa",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A350-1000",
+      "aircraft_type": "Airbus A350-1000",
+      "source_sheet": "Lufthansa",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A350-900",
+      "aircraft_type": "Airbus A350-900",
+      "source_sheet": "Lufthansa",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "AIB-A380-800",
+      "aircraft_type": "Airbus A380-800",
+      "source_sheet": "Lufthansa",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "ATR72-500",
+      "aircraft_type": "ATR 72",
+      "source_sheet": "Lufthansa",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-707-300",
+      "aircraft_type": "Boeing 707-330B",
+      "source_sheet": "Lufthansa",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-720",
+      "aircraft_type": "Boeing 720",
+      "source_sheet": "Lufthansa",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-727-100",
+      "aircraft_type": "Boeing 727-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-727-200",
+      "aircraft_type": "Boeing 727-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-737-100",
+      "aircraft_type": "Boeing 737-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "Lufthansa",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "Lufthansa",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "Lufthansa",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-747-200F",
+      "aircraft_type": "Boeing 747-200F",
+      "source_sheet": "Lufthansa",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-747-400",
+      "aircraft_type": "Boeing 747-400",
+      "source_sheet": "Lufthansa",
+      "source_row": "38"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-747-8",
+      "aircraft_type": "Boeing 747-8",
+      "source_sheet": "Lufthansa",
+      "source_row": "39"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "Lufthansa",
+      "source_row": "40"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "source_sheet": "Lufthansa",
+      "source_row": "41"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOM-CRJ100",
+      "aircraft_type": "Bombardier CRJ-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "42"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOM-CRJ200",
+      "aircraft_type": "Bombardier CRJ-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "43"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BOM-CRJ700",
+      "aircraft_type": "Bombardier CRJ-700",
+      "source_sheet": "Lufthansa",
+      "source_row": "44"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "source_sheet": "Lufthansa",
+      "source_row": "46"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "CON-CV340",
+      "aircraft_type": "Convair CV-340-80",
+      "source_sheet": "Lufthansa",
+      "source_row": "47"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "DOR-DOX",
+      "aircraft_type": "Dornier Do X",
+      "source_sheet": "Lufthansa",
+      "source_row": "49"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-50",
+      "source_sheet": "Lufthansa",
+      "source_row": "50"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "EMB-E195",
+      "aircraft_type": "Embraer ERJ-195",
+      "source_sheet": "Lufthansa",
+      "source_row": "52"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "FOW-FW200",
+      "aircraft_type": "Focke-Wulf Fw 200",
+      "source_sheet": "Lufthansa",
+      "source_row": "53"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "Lufthansa",
+      "source_row": "56"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "FOK-F27",
+      "aircraft_type": "Fokker F27-400 Friendship",
+      "source_sheet": "Lufthansa",
+      "source_row": "54"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "JUN-JU52-3M",
+      "aircraft_type": "Junkers Ju 52/3m",
+      "source_sheet": "Lufthansa",
+      "source_row": "57"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "LOC-L1049",
+      "aircraft_type": "Lockheed L-1049G Super Constellation",
+      "source_sheet": "Lufthansa",
+      "source_row": "58"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "LOC-L1649",
+      "aircraft_type": "Lockheed L-1649A Starliner",
+      "source_sheet": "Lufthansa",
+      "source_row": "59"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "Lufthansa",
+      "source_row": "60"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "VIC-Viscount-800",
+      "aircraft_type": "Vickers Viscount 814",
+      "source_sheet": "Lufthansa",
+      "source_row": "62"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa Cargo",
+      "aircraft_id": "MCD-MD11F",
+      "aircraft_type": "McDonnell Douglas MD-11F",
+      "source_sheet": "Lufthansa",
+      "source_row": "61"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa CityLine",
+      "aircraft_id": "BOM-CRJ900",
+      "aircraft_type": "Bombardier CRJ-900",
+      "source_sheet": "Lufthansa",
+      "source_row": "45"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa CityLine",
+      "aircraft_id": "DHC-DHC8-100",
+      "aircraft_type": "De Havilland Canada DHC-8-100",
+      "source_sheet": "Lufthansa",
+      "source_row": "48"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa Regional",
+      "aircraft_id": "EMB-E190",
+      "aircraft_type": "Embraer ERJ-190",
+      "source_sheet": "Lufthansa",
+      "source_row": "51"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Team Lufthansa",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "Lufthansa",
+      "source_row": "55"
+    },
+    {
+      "airline_code": "DE",
+      "airline": "Luftwaffe",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "AIB-A310-304VIP",
+      "aircraft_type": "Airbus A310-304",
+      "source_sheet": "Luftwaffe",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "DE",
+      "airline": "Luftwaffe",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "AIB-ACJ350-900",
+      "aircraft_type": "Airbus ACJ350-900",
+      "source_sheet": "Luftwaffe",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "DE",
+      "airline": "Luftwaffe",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "BOE-707-300",
+      "aircraft_type": "Boeing 707-307C",
+      "source_sheet": "Luftwaffe",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "DE",
+      "airline": "Luftwaffe",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "BOM-BD700",
+      "aircraft_type": "Bombardier BD-700 Global 5000",
+      "source_sheet": "Luftwaffe",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "DE",
+      "airline": "Luftwaffe",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "BOM-CL601",
+      "aircraft_type": "Bombardier Challenger 601",
+      "source_sheet": "Luftwaffe",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "DE",
+      "airline": "Luftwaffe",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "TUP-Tu154M",
+      "aircraft_type": "Tupolev Tu-154M",
+      "source_sheet": "Luftwaffe",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "Norwegian",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "Norwegian",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "BOE-737-MAX8",
+      "aircraft_type": "Boeing 737 MAX 8",
+      "source_sheet": "Norwegian",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "Norwegian",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "Norwegian",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "Norwegian",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "BOE-787-8",
+      "aircraft_type": "Boeing 787-8 Dreamliner",
+      "source_sheet": "Norwegian",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "BOE-787-9",
+      "aircraft_type": "Boeing 787-9 Dreamliner",
+      "source_sheet": "Norwegian",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6 Twin Otter",
+      "source_sheet": "Norwegian",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "DHC-DHC7",
+      "aircraft_type": "De Havilland Canada DHC-7-100",
+      "source_sheet": "Norwegian",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "DHC-DHC8-100",
+      "aircraft_type": "De Havilland Canada DHC-8-100",
+      "source_sheet": "Norwegian",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "DHC-DHC8-200",
+      "aircraft_type": "De Havilland Canada DHC-8-200",
+      "source_sheet": "Norwegian",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "DHC-DHC8-300",
+      "aircraft_type": "De Havilland Canada DHC-8-300",
+      "source_sheet": "Norwegian",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "Norwegian",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "EMB-E195E2",
+      "aircraft_type": "Embraer E190-E2",
+      "source_sheet": "Norwegian",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "EMB-EMB120",
+      "aircraft_type": "Embraer EMB-120 Brasilia",
+      "source_sheet": "Norwegian",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "Norwegian",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "MCD-MD82",
+      "aircraft_type": "McDonnell Douglas MD-82",
+      "source_sheet": "Norwegian",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "DY",
+      "airline": "Norwegian",
+      "airline_row": "Norwegian",
+      "aircraft_id": "MCD-MD83",
+      "aircraft_type": "McDonnell Douglas MD-83",
+      "source_sheet": "Norwegian",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "source_sheet": "Panam",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "source_sheet": "Panam",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "source_sheet": "Panam",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-314",
+      "aircraft_type": "Boeing 314 Clipper (Pan Am)",
+      "source_sheet": "Panam",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-377",
+      "aircraft_type": "Boeing 377 Stratocruiser",
+      "source_sheet": "Panam",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-707-300",
+      "aircraft_type": "Boeing 707-320",
+      "source_sheet": "Panam",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-720",
+      "aircraft_type": "Boeing 720",
+      "source_sheet": "Panam",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-727-200",
+      "aircraft_type": "Boeing 727-200",
+      "source_sheet": "Panam",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "Panam",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "Panam",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "Panam",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-747-100SF",
+      "aircraft_type": "Boeing 747-123 Special Freighter",
+      "source_sheet": "Panam",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "Panam",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-747-SP",
+      "aircraft_type": "Boeing 747SP",
+      "source_sheet": "Panam",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BAE-Jetstream-32",
+      "aircraft_type": "British Aerospace Jetstream 32",
+      "source_sheet": "Panam",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "CON-CV240",
+      "aircraft_type": "Convair CV-240 Convairliner",
+      "source_sheet": "Panam",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "CUR-C46",
+      "aircraft_type": "Curtiss-Wright C-46 Commando",
+      "source_sheet": "Panam",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-200 Twin Otter",
+      "source_sheet": "Panam",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DHC-DHC7",
+      "aircraft_type": "De Havilland Canada DHC-7-100",
+      "source_sheet": "Panam",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC3",
+      "aircraft_type": "Douglas DC-3",
+      "source_sheet": "Panam",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC4",
+      "aircraft_type": "Douglas DC-4",
+      "source_sheet": "Panam",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC6",
+      "aircraft_type": "Douglas DC-6B",
+      "source_sheet": "Panam",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC7-C",
+      "aircraft_type": "Douglas DC-7C",
+      "source_sheet": "Panam",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-30",
+      "source_sheet": "Panam",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "DOU-DC8-62",
+      "aircraft_type": "Douglas DC-8-62",
+      "source_sheet": "Panam",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "LOC-L049",
+      "aircraft_type": "Lockheed L-049 Constallation",
+      "source_sheet": "Panam",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "LOC-L1011-500",
+      "aircraft_type": "Lockheed L-1011 TriStar 500",
+      "source_sheet": "Panam",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "LOC-L749",
+      "aircraft_type": "Lockheed L-749",
+      "source_sheet": "Panam",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "MCD-DC10-10",
+      "aircraft_type": "McDonnell Douglas DC-10-10",
+      "source_sheet": "Panam",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "Panam",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am",
+      "aircraft_id": "SUD-Concorde",
+      "aircraft_type": "Sud Aviation/BAC Concorde",
+      "source_sheet": "Panam",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "PA",
+      "airline": "Pan Am",
+      "airline_row": "Pan Am Express",
+      "aircraft_id": "ATR42-300",
+      "aircraft_type": "ATR 42-300",
+      "source_sheet": "Panam",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A300-B2",
+      "aircraft_type": "Airbus A300B2",
+      "source_sheet": "SAS",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A300-B4",
+      "aircraft_type": "Airbus A300B4",
+      "source_sheet": "SAS",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "SAS",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "SAS",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "source_sheet": "SAS",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "SAS",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "source_sheet": "SAS",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "source_sheet": "SAS",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "SAS",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "AIB-A350-900",
+      "aircraft_type": "Airbus A350-900",
+      "source_sheet": "SAS",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "ATR42-600",
+      "aircraft_type": "ATR 42",
+      "source_sheet": "SAS",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "ATR72-600",
+      "aircraft_type": "ATR 72",
+      "source_sheet": "SAS",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BAC-111-300",
+      "aircraft_type": "BAC 1-11 Series 300",
+      "source_sheet": "SAS",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-717-200",
+      "aircraft_type": "Boeing 717-200",
+      "source_sheet": "SAS",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-400",
+      "aircraft_type": "Boeing 737-400",
+      "source_sheet": "SAS",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-500",
+      "aircraft_type": "Boeing 737-500",
+      "source_sheet": "SAS",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-600",
+      "aircraft_type": "Boeing 737-600",
+      "source_sheet": "SAS",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-700-WL",
+      "aircraft_type": "Boeing 737-700 (Winglets)",
+      "source_sheet": "SAS",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-800",
+      "aircraft_type": "Boeing 737-800",
+      "source_sheet": "SAS",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-737-800-WL",
+      "aircraft_type": "Boeing 737-800 (Winglets)",
+      "source_sheet": "SAS",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-747-100",
+      "aircraft_type": "Boeing 747-100",
+      "source_sheet": "SAS",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "SAS",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-767-200",
+      "aircraft_type": "Boeing 767-200",
+      "source_sheet": "SAS",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOE-767-300",
+      "aircraft_type": "Boeing 767-300",
+      "source_sheet": "SAS",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOM-CRJ1000",
+      "aircraft_type": "Bombardier CRJ-1000",
+      "source_sheet": "SAS",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOM-CRJ200",
+      "aircraft_type": "Bombardier CRJ-200",
+      "source_sheet": "SAS",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BOM-CRJ900",
+      "aircraft_type": "Bombardier CRJ-900",
+      "source_sheet": "SAS",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BAE-146-100",
+      "aircraft_type": "British Aerospace 146-100",
+      "source_sheet": "SAS",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace 146-200",
+      "source_sheet": "SAS",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "BAE-146-300",
+      "aircraft_type": "British Aerospace 146-300",
+      "source_sheet": "SAS",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "CON-CV990",
+      "aircraft_type": "Convair CV-990 Coronado",
+      "source_sheet": "SAS",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-300 Twin Otter",
+      "source_sheet": "SAS",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "SAS",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-30",
+      "source_sheet": "SAS",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-55",
+      "source_sheet": "SAS",
+      "source_row": "38"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "DOU-DC8-62",
+      "aircraft_type": "Douglas DC-8-60/70",
+      "source_sheet": "SAS",
+      "source_row": "39"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "FOK-F28",
+      "aircraft_type": "Fokker 28 Fellowship",
+      "source_sheet": "SAS",
+      "source_row": "40"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "FOK-F50",
+      "aircraft_type": "Fokker 50",
+      "source_sheet": "SAS",
+      "source_row": "41"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-DC10-30",
+      "aircraft_type": "McDonnell Douglas DC-10-30",
+      "source_sheet": "SAS",
+      "source_row": "46"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-DC9-20",
+      "aircraft_type": "McDonnell Douglas DC-9-20",
+      "source_sheet": "SAS",
+      "source_row": "42"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "McDonnell Douglas DC-9-30",
+      "source_sheet": "SAS",
+      "source_row": "43"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-DC9-40",
+      "aircraft_type": "McDonnell Douglas DC-9-40",
+      "source_sheet": "SAS",
+      "source_row": "44"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-DC9-50",
+      "aircraft_type": "McDonnell Douglas DC-9-50",
+      "source_sheet": "SAS",
+      "source_row": "45"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-MD81",
+      "aircraft_type": "McDonnell Douglas MD-81",
+      "source_sheet": "SAS",
+      "source_row": "47"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-MD82",
+      "aircraft_type": "McDonnell Douglas MD-82",
+      "source_sheet": "SAS",
+      "source_row": "48"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-MD83",
+      "aircraft_type": "McDonnell Douglas MD-83",
+      "source_sheet": "SAS",
+      "source_row": "49"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-MD87",
+      "aircraft_type": "McDonnell Douglas MD-87",
+      "source_sheet": "SAS",
+      "source_row": "50"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "MCD-MD90",
+      "aircraft_type": "McDonnell Douglas MD-90",
+      "source_sheet": "SAS",
+      "source_row": "51"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "SAB-2000",
+      "aircraft_type": "Saab 2000",
+      "source_sheet": "SAS",
+      "source_row": "52"
+    },
+    {
+      "airline_code": "SK",
+      "airline": "SAS",
+      "airline_row": "SAS",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "source_sheet": "SAS",
+      "source_row": "53"
+    },
+    {
+      "airline_code": "SM",
+      "airline": "Sondermaße",
+      "airline_row": "Austrian",
+      "aircraft_id": "VIC-Viscount-700",
+      "aircraft_type": "Vickers Viscount 779",
+      "source_sheet": "Sondermaß",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "SM",
+      "airline": "Sondermaße",
+      "airline_row": "Lufthansa",
+      "aircraft_id": "DOR-DOX",
+      "aircraft_type": "Dornier Do X",
+      "source_sheet": "Sondermaß",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "SM",
+      "airline": "Sondermaße",
+      "airline_row": "Pan Am",
+      "aircraft_id": "BOE-314",
+      "aircraft_type": "Boeing 314 Clipper",
+      "source_sheet": "Sondermaß",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Aeroflot - Russian Airlines",
+      "aircraft_id": "ANT-AN32",
+      "aircraft_type": "Antonov AN-32",
+      "source_sheet": "Sonstige",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Aeroflot - Russian Airlines",
+      "aircraft_id": "ILY-Il62M",
+      "aircraft_type": "Ilyushin Il-62M",
+      "source_sheet": "Sonstige",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Aeronautica Militare (Italian Air Force)",
+      "aircraft_id": "AIB-A340-500",
+      "aircraft_type": "Airbus A340-500",
+      "source_sheet": "Sonstige",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Air Belgium",
+      "aircraft_id": "AIB-A330-900neo",
+      "aircraft_type": "Airbus A330-900neo",
+      "source_sheet": "Sonstige",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Airbus Beluga Transport",
+      "aircraft_id": "AIB-A330-743L",
+      "aircraft_type": "Airbus 330 Beluga XL",
+      "source_sheet": "Sonstige",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Airbus Beluga Transport",
+      "aircraft_id": "AIB-A300-600ST",
+      "aircraft_type": "Airbus A300B4-600ST",
+      "source_sheet": "Sonstige",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Airbus Transport International",
+      "aircraft_id": "ASP-B377SGT",
+      "aircraft_type": "Boeing B-377SGT-201 Super Guppy",
+      "source_sheet": "Sonstige",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Ansett Airlines",
+      "aircraft_id": "LOC-L188A-F",
+      "aircraft_type": "Lockheed L-188A(F) Electra",
+      "source_sheet": "Sonstige",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Antonov Airlines",
+      "aircraft_id": "ANT-An225",
+      "aircraft_type": "Antonov AN-225 Mriya",
+      "source_sheet": "Sonstige",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Arkia - Israeli Airlines",
+      "aircraft_id": "VIC-Viscount-800",
+      "aircraft_type": "Vickers Viscount 800",
+      "source_sheet": "Sonstige",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Boeing",
+      "aircraft_id": "BOE-2707",
+      "aircraft_type": "Boeing 2707 SST",
+      "source_sheet": "Sonstige",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Buran Space Shuttle",
+      "aircraft_id": "BUR-OK1K1",
+      "aircraft_type": "Buran Space Orbiter OK-1K1",
+      "source_sheet": "Sonstige",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "COMAC",
+      "aircraft_id": "COM-C919-100",
+      "aircraft_type": "Comac C919-100",
+      "source_sheet": "Sonstige",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "German Cargo",
+      "aircraft_id": "BOE-707-300C",
+      "aircraft_type": "Boeing 707-330C",
+      "source_sheet": "Sonstige",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Germanwings",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319",
+      "source_sheet": "Sonstige",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Luftwaffe (German Air Force)",
+      "aircraft_id": "TRA-C160",
+      "aircraft_type": "Transall C-160",
+      "source_sheet": "Sonstige",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "NASA",
+      "aircraft_id": "BOE-747-SCA",
+      "aircraft_type": "Boeing 747 Shuttle Carrier Aircraft",
+      "source_sheet": "Sonstige",
+      "source_row": "37"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "NASA",
+      "aircraft_id": "ROC-OV102",
+      "aircraft_type": "Space Shuttle Orbiter Columbia",
+      "source_sheet": "Sonstige",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "NATO",
+      "aircraft_id": "AIB-A330-MRTT",
+      "aircraft_type": "Airbus A330 MRTT",
+      "source_sheet": "Sonstige",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Schweizer Luftwaffe (Swiss Air Force)",
+      "aircraft_id": "JUN-JU52-3M",
+      "aircraft_type": "Junkers JU-52",
+      "source_sheet": "Sonstige",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Virgin Galactic",
+      "aircraft_id": "SCA-SS2",
+      "aircraft_type": "SpaceShipTwo",
+      "source_sheet": "Sonstige",
+      "source_row": "36"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Virgin Orbit",
+      "aircraft_id": "BOE-747-400-VO",
+      "aircraft_type": "Boeing 747-400 LauncherOne Carrier Aircraft",
+      "source_sheet": "Sonstige",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "SO",
+      "airline": "Sonstige Airlines",
+      "airline_row": "Volga-Dnepr",
+      "aircraft_id": "ANT-An124",
+      "aircraft_type": "Antonov An-124-100 Ruslan",
+      "source_sheet": "Sonstige",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Crossair",
+      "aircraft_id": "EMB-ERJ145",
+      "aircraft_type": "Embraer ERJ-145",
+      "source_sheet": "Swiss",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Edelweiss",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "Swiss",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A220-100",
+      "aircraft_type": "Airbus A220-100",
+      "source_sheet": "Swiss",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A220-300",
+      "aircraft_type": "Airbus A220-300",
+      "source_sheet": "Swiss",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A310-200",
+      "aircraft_type": "Airbus A310-200",
+      "source_sheet": "Swiss",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "Swiss",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "Swiss",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A320-200-SL",
+      "aircraft_type": "Airbus A320-200 (Sharklets)",
+      "source_sheet": "Swiss",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "source_sheet": "Swiss",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A321-200-SL",
+      "aircraft_type": "Airbus A321-200 (Sharklets)",
+      "source_sheet": "Swiss",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "source_sheet": "Swiss",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "source_sheet": "Swiss",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "Swiss",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "AIB-A350-900",
+      "aircraft_type": "Airbus A350-900",
+      "source_sheet": "Swiss",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "BOE-777-300ER",
+      "aircraft_type": "Boeing 777-300ER",
+      "source_sheet": "Swiss",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "BAE-146-300",
+      "aircraft_type": "British Aerospace Avro RJ100",
+      "source_sheet": "Swiss",
+      "source_row": "22"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "BAE-146-200",
+      "aircraft_type": "British Aerospace Avro RJ85",
+      "source_sheet": "Swiss",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "CON-CV880",
+      "aircraft_type": "Convair CV-880 Golden Arrow",
+      "source_sheet": "Swiss",
+      "source_row": "23"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "Swiss",
+      "source_row": "25"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "FOK-F100",
+      "aircraft_type": "Fokker 100",
+      "source_sheet": "Swiss",
+      "source_row": "30"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "McDonnell Douglas DC-9-30",
+      "source_sheet": "Swiss",
+      "source_row": "31"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "MCD-MD81",
+      "aircraft_type": "McDonnell Douglas MD-81",
+      "source_sheet": "Swiss",
+      "source_row": "33"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "SAB-2000",
+      "aircraft_type": "Saab 2000",
+      "source_sheet": "Swiss",
+      "source_row": "34"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swiss",
+      "aircraft_id": "SAB-340",
+      "aircraft_type": "Saab 340",
+      "source_sheet": "Swiss",
+      "source_row": "35"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "AIB-A321-100",
+      "aircraft_type": "Airbus A321-100",
+      "source_sheet": "Swiss",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "Swiss",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "CON-CV990",
+      "aircraft_type": "Convair CV-990 Coronado",
+      "source_sheet": "Swiss",
+      "source_row": "24"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "DOU-DC6-B",
+      "aircraft_type": "Douglas DC-6B",
+      "source_sheet": "Swiss",
+      "source_row": "26"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "DOU-DC8-30",
+      "aircraft_type": "Douglas DC-8-32",
+      "source_sheet": "Swiss",
+      "source_row": "27"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "DOU-DC8-50",
+      "aircraft_type": "Douglas DC-8-53",
+      "source_sheet": "Swiss",
+      "source_row": "28"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "MCD-MD11",
+      "aircraft_type": "McDonnell Douglas MD-11",
+      "source_sheet": "Swiss",
+      "source_row": "32"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A310-300",
+      "aircraft_type": "Airbus A310-300",
+      "source_sheet": "TAP",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A319",
+      "aircraft_type": "Airbus A319-100",
+      "source_sheet": "TAP",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A320-200",
+      "aircraft_type": "Airbus A320-200",
+      "source_sheet": "TAP",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A320-neo",
+      "aircraft_type": "Airbus A320neo",
+      "source_sheet": "TAP",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A321-200",
+      "aircraft_type": "Airbus A321-200",
+      "source_sheet": "TAP",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A321-neo",
+      "aircraft_type": "Airbus A321neo",
+      "source_sheet": "TAP",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A330-300",
+      "aircraft_type": "Airbus A330-300",
+      "source_sheet": "TAP",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A330-900neo",
+      "aircraft_type": "Airbus A330-900",
+      "source_sheet": "TAP",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "AIB-A340-300",
+      "aircraft_type": "Airbus A340-300",
+      "source_sheet": "TAP",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "ATR72-600",
+      "aircraft_type": "ATR 72",
+      "source_sheet": "TAP",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "BOE-737-200",
+      "aircraft_type": "Boeing 737-200",
+      "source_sheet": "TAP",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "BOE-737-300",
+      "aircraft_type": "Boeing 737-300",
+      "source_sheet": "TAP",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "BOE-747-200",
+      "aircraft_type": "Boeing 747-200",
+      "source_sheet": "TAP",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-300 Twin Otter",
+      "source_sheet": "TAP",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "EMB-E190",
+      "aircraft_type": "Embraer ERJ-190",
+      "source_sheet": "TAP",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "EMB-E195",
+      "aircraft_type": "Embraer ERJ-195",
+      "source_sheet": "TAP",
+      "source_row": "20"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP",
+      "aircraft_id": "LOC-L1011-500",
+      "aircraft_type": "Lockheed L-1011 TriStar 500",
+      "source_sheet": "TAP",
+      "source_row": "21"
+    },
+    {
+      "airline_code": "TP",
+      "airline": "TAP",
+      "airline_row": "TAP Air Cargo",
+      "aircraft_id": "AIB-A330-200",
+      "aircraft_type": "Airbus A330-200",
+      "source_sheet": "TAP",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-C17A",
+      "aircraft_type": "Boeing C-17A Globemaster III",
+      "source_sheet": "USAF",
+      "source_row": "17"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-757-C32A",
+      "aircraft_type": "Boeing C-32A",
+      "source_sheet": "USAF",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-747-E4B",
+      "aircraft_type": "Boeing E-4B",
+      "source_sheet": "USAF",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-KC135D",
+      "aircraft_type": "Boeing KC-135D Stratotanker",
+      "source_sheet": "USAF",
+      "source_row": "18"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-VC137C",
+      "aircraft_type": "Boeing VC-137C Stratoliner",
+      "source_sheet": "USAF",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-747-VC25A",
+      "aircraft_type": "Boeing VC-25A",
+      "source_sheet": "USAF",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-747-VC25B",
+      "aircraft_type": "Boeing VC-25B",
+      "source_sheet": "USAF",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "BOE-747-YAL1",
+      "aircraft_type": "Boeing YAL-1 Airborne Laser",
+      "source_sheet": "USAF",
+      "source_row": "13"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "CSA-PBY5",
+      "aircraft_type": "Consolidated PBY-5 Catalina",
+      "source_sheet": "USAF",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "DOU-C47",
+      "aircraft_type": "Douglas C-47 Skytrain",
+      "source_sheet": "USAF",
+      "source_row": "12"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "DOU-VC118A",
+      "aircraft_type": "Douglas VC-118A",
+      "source_sheet": "USAF",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "LOC-C130H",
+      "aircraft_type": "Lockheed C-130H Hercules",
+      "source_sheet": "USAF",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Air Force",
+      "aircraft_id": "LOC-C5B",
+      "aircraft_type": "Lockheed C-5B Galaxy",
+      "source_sheet": "USAF",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Army",
+      "aircraft_id": "BOE-767-AOA",
+      "aircraft_type": "Boeing 767-200 Airborne Optical Adjunct",
+      "source_sheet": "USAF",
+      "source_row": "15"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Navy",
+      "aircraft_id": "BOE-737-C40A",
+      "aircraft_type": "Boeing C-40A Clipper",
+      "source_sheet": "USAF",
+      "source_row": "14"
+    },
+    {
+      "airline_code": "US",
+      "airline": "USAF",
+      "airline_row": "United States Navy",
+      "aircraft_id": "LOC-RP3D",
+      "aircraft_type": "Lockheed RP-3D Orion",
+      "source_sheet": "USAF",
+      "source_row": "10"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Wideroe",
+      "aircraft_id": "DHC-DHC6",
+      "aircraft_type": "De Havilland Canada DHC-6-200 Twin Otter",
+      "source_sheet": "Wideroe",
+      "source_row": "4"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Wideroe",
+      "aircraft_id": "DHC-DHC7",
+      "aircraft_type": "De Havilland Canada DHC-7-100",
+      "source_sheet": "Wideroe",
+      "source_row": "5"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Wideroe",
+      "aircraft_id": "DHC-DHC8-200",
+      "aircraft_type": "De Havilland Canada DHC-8-200",
+      "source_sheet": "Wideroe",
+      "source_row": "7"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Wideroe",
+      "aircraft_id": "DHC-DHC8-300",
+      "aircraft_type": "De Havilland Canada DHC-8-300",
+      "source_sheet": "Wideroe",
+      "source_row": "8"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Wideroe",
+      "aircraft_id": "EMB-EMB120",
+      "aircraft_type": "Embraer EMB-120 Brasilia",
+      "source_sheet": "Wideroe",
+      "source_row": "11"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Widerøe",
+      "aircraft_id": "DHC-DHC8-100",
+      "aircraft_type": "De Havilland Canada DHC-8-100",
+      "source_sheet": "Wideroe",
+      "source_row": "6"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Widerøe",
+      "aircraft_id": "DHC-DHC8-400",
+      "aircraft_type": "De Havilland Canada DHC-8-400",
+      "source_sheet": "Wideroe",
+      "source_row": "9"
+    },
+    {
+      "airline_code": "WF",
+      "airline": "Wideroe",
+      "airline_row": "Widerøe",
+      "aircraft_id": "EMB-E195E2",
+      "aircraft_type": "Embraer E190-E2",
+      "source_sheet": "Wideroe",
+      "source_row": "10"
+    }
+  ]
+}
