@@ -728,8 +728,39 @@ function buildSameTypeOverviewRows(indexItems, groupTypes, aircraftId){
   return realRows.concat(missingRows);
 }
 
+const SAME_TYPE_PREFS_KEY = "modelSameTypePrefs";
+
+function loadSameTypePrefs(){
+  try{
+    const raw = localStorage.getItem(SAME_TYPE_PREFS_KEY);
+    const obj = JSON.parse(raw || "{}");
+
+    return {
+      wishlist: obj.wishlist === true,
+      missing: obj.missing === true
+    };
+  }catch(e){
+    return {
+      wishlist: false,
+      missing: false
+    };
+  }
+}
+
+function saveSameTypePrefs(prefs){
+  try{
+    localStorage.setItem(SAME_TYPE_PREFS_KEY, JSON.stringify({
+      wishlist: prefs?.wishlist === true,
+      missing: prefs?.missing === true
+    }));
+  }catch(e){
+    // localStorage nicht verfügbar -> ignorieren
+  }
+}
+
 function renderSameTypeModelsCard(rows, currentId, typeLabel){
   const current = String(currentId || "").trim().toUpperCase();
+  const prefs = loadSameTypePrefs();
 
   const allRows = (rows || [])
     .filter(x => {
@@ -838,7 +869,7 @@ function renderSameTypeModelsCard(rows, currentId, typeLabel){
   }).join("");
 
   return `
-    <div class="card sameTypeCard">
+    <div class="card sameTypeCard${prefs.wishlist ? " show-wishlist" : ""}${prefs.missing ? " show-missing" : ""}">
       <div class="sameTypeHead">
         <div>
           <div class="k">Typübersicht</div>
@@ -848,11 +879,11 @@ function renderSameTypeModelsCard(rows, currentId, typeLabel){
 
         <div class="sameTypeControls">
           <label>
-            <input type="checkbox" data-same-type-toggle="wishlist">
+            <input type="checkbox" data-same-type-toggle="wishlist" ${prefs.wishlist ? "checked" : ""}>
             Wunsch einblenden
           </label>
           <label>
-            <input type="checkbox" data-same-type-toggle="missing">
+            <input type="checkbox" data-same-type-toggle="missing" ${prefs.missing ? "checked" : ""}>
             Fehlende einblenden
           </label>
         </div>
@@ -899,6 +930,14 @@ document.addEventListener("change", (ev) => {
   if(what === "missing"){
     card.classList.toggle("show-missing", cb.checked);
   }
+
+  const wishCb = card.querySelector('[data-same-type-toggle="wishlist"]');
+  const missingCb = card.querySelector('[data-same-type-toggle="missing"]');
+
+  saveSameTypePrefs({
+    wishlist: wishCb ? wishCb.checked : false,
+    missing: missingCb ? missingCb.checked : false
+  });
 });
 
 function navNeighbors(ids, currentId){
