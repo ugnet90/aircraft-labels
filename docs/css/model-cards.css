@@ -623,16 +623,8 @@
 }
 
 .sameTypeTbl tr.sameType-row-missing td{
-  background:#fff0f3;
-  color:#4d2430;
-}
-
-.sameTypeTbl tr.sameType-row-missing:nth-child(even) td{
-  background:#ffe8ee;
-}
-
-.sameTypeTbl tr.sameType-row-missing:hover td{
-  background:#ffdce6;
+  background:transparent;
+  color:inherit;
 }
 
 @media (max-width: 700px){
