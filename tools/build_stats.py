@@ -7,6 +7,7 @@ from utils_time import now_local_iso
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_CSV = ROOT / "models_export.csv"
 PASSENGER_CSV = ROOT / "data" / "passenger_aircraft_full.csv"
+GROUP_TYPES_CSV = ROOT / "data" / "group_aircraft_types.csv"
 
 OUT_DIR = ROOT / "docs" / "data"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -64,6 +65,7 @@ def is_wishlist(row) -> bool:
 def main():
     models = read_csv(MODELS_CSV, delimiter=";")
     pax = read_csv(PASSENGER_CSV, delimiter=";")
+    group_types = read_csv(GROUP_TYPES_CSV, delimiter=";")
 
     # =========================
     # Missing types (stable by aircraft_id; display Typ_anzeige)
@@ -146,87 +148,120 @@ def main():
     )
 
     # =========================
-    # Matrix: Gruppen (airline = Sheet/Gruppe) x Typen (aircraft_type)
-    # - present_matrix: nur vorhandene Modelle
-    # - ordered_matrix: bestellte Modelle (vorhanden=FALSCH & bestellt_am gesetzt)
+    # Matrix: Gruppen (airline = Sheet/Gruppe) x Typen
+    # - present_matrix: vorhandene Modelle
+    # - ordered_matrix: bestellte Modelle
+    # - wishlist_matrix: Wunschmodelle
+    # - relevant_matrix: Typ ist laut group_aircraft_types.csv für diese Airline-Gruppe relevant
     # =========================
     present_counts = defaultdict(lambda: defaultdict(int))
     ordered_counts = defaultdict(lambda: defaultdict(int))
     wishlist_counts = defaultdict(lambda: defaultdict(int))
+
+    # Relevanz: Airline-Gruppe hat/hatte diesen Typ laut Excel-Typenliste
+    relevant_pairs = set()
+    group_type_labels = {}
+
+    for r in group_types:
+        group = norm(r.get("airline"))
+        aid = norm(r.get("aircraft_id"))
+        typ = norm(r.get("aircraft_type"))
+
+        if not group or not aid:
+            continue
+
+        relevant_pairs.add((group, aid))
+
+        # Label aus group_aircraft_types bevorzugt übernehmen,
+        # falls aircraft_id nicht oder anders im Master beschriftet ist.
+        if typ and aid not in group_type_labels:
+            group_type_labels[aid] = typ
+
     seen_types = set()
-    
+
     for r in models:
         group = norm(r.get("airline")) or norm(r.get("airline_code"))
         t = norm(r.get("aircraft_id"))
         if not group or not t:
             continue
-    
+
         seen_types.add(t)
-    
+
         if is_present(r):
             present_counts[group][t] += 1
         elif is_ordered(r):
             ordered_counts[group][t] += 1
         elif is_wishlist(r):
             wishlist_counts[group][t] += 1
-    
+
+    # Gruppen aus Modellen und aus Typenliste
     groups = sorted(
         set(
             list(present_counts.keys())
             + list(ordered_counts.keys())
             + list(wishlist_counts.keys())
-        )
+            + [g for (g, aid) in relevant_pairs]
+        ),
+        key=lambda s: s.lower()
     )
-    
-    # Für die Matrix sollen bei aktivem Status "fehlt" auch Typen erscheinen,
-    # die noch bei keiner Airline vorhanden/bestellt/gewünscht sind.
-    # Deshalb nehmen wir alle Master-Typen plus alle Typen aus den Modelldaten.
-    matrix_type_ids = seen_types | master_ids
-    
+
+    # Typen aus Modellen und aus Typenliste
+    relevant_types = {aid for (g, aid) in relevant_pairs}
+    matrix_type_ids = seen_types | relevant_types
+
     types = sorted(
         matrix_type_ids,
-        key=lambda aid: (id_to_label.get(aid, aid).lower(), aid)
+        key=lambda aid: (
+            id_to_label.get(aid, group_type_labels.get(aid, aid)).lower(),
+            aid
+        )
     )
-    
-    type_labels = [id_to_label.get(t, t) for t in types]
-    
+
+    type_labels = [
+        id_to_label.get(t, group_type_labels.get(t, t))
+        for t in types
+    ]
+
     present_matrix = []
     ordered_matrix = []
     wishlist_matrix = []
-    
+    relevant_matrix = []
+
     for g in groups:
         prow = []
         orow = []
         wrow = []
-    
+        rrow = []
+
         for t in types:
             prow.append(present_counts[g].get(t, 0))
             orow.append(ordered_counts[g].get(t, 0))
             wrow.append(wishlist_counts[g].get(t, 0))
-    
+            rrow.append(1 if (g, t) in relevant_pairs else 0)
+
         present_matrix.append(prow)
         ordered_matrix.append(orow)
         wishlist_matrix.append(wrow)
-    
+        relevant_matrix.append(rrow)
+
     payload_matrix = {
-        "schema": "aircraft-labels.matrix.v3",
+        "schema": "aviation-database.matrix.v4",
         "counts": {
             "groups": len(groups),
             "types": len(types),
             "models": len(models),
+            "group_aircraft_type_rows": len(group_types),
+            "relevant_pairs": len(relevant_pairs),
         },
         "groups": groups,
-    
-        # aircraft_id bleibt technischer Schlüssel
         "types": types,
-    
-        # lesbare Anzeige in der ersten Spalte
         "type_labels": type_labels,
-    
         "present_matrix": present_matrix,
         "ordered_matrix": ordered_matrix,
         "wishlist_matrix": wishlist_matrix,
+        "relevant_matrix": relevant_matrix,
     }
+
     OUT_MATRIX.write_text(
         json.dumps(payload_matrix, ensure_ascii=False, indent=2), encoding="utf-8"
     )
