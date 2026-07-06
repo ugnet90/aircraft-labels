@@ -364,3 +364,26 @@ td.num > a:first-child:hover{
     display:block !important;
   }
 }
+
+td.num.cellMissing{
+  text-align:center;
+}
+
+.matrixMissing{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-width:18px;
+  height:18px;
+  padding:0 4px;
+
+  border:1px solid #9aa3ad;
+  border-radius:999px;
+  background:#eef1f4;
+
+  color:#39414a;
+  font-size:15px;
+  font-weight:800;
+  line-height:1;
+}
