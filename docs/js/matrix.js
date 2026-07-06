@@ -78,7 +78,18 @@ function cellMatchesFilters(p, o, w, r, filters){
   if(o > 0 && filters.ordered) return true;
   if(w > 0 && filters.wishlist) return true;
 
-  if(r > 0 && p === 0 && o === 0 && w === 0 && filters.missing) {
+  // fehlt anzeigen, wenn:
+  // - Typ für diese Airline-Gruppe relevant ist
+  // - kein vorhandenes Modell existiert
+  // - keine Bestellung existiert
+  // - und entweder kein Wunsch existiert ODER Wunsch gerade ausgeblendet ist
+  if(
+    r > 0 &&
+    p === 0 &&
+    o === 0 &&
+    (w === 0 || !filters.wishlist) &&
+    filters.missing
+  ){
     return true;
   }
 
@@ -94,7 +105,7 @@ function renderMatrixCell(group, aircraftId, p, o, w, r, filters){
     r > 0 &&
     p === 0 &&
     o === 0 &&
-    w === 0 &&
+    (w === 0 || !filters.wishlist) &&
     filters.missing;
 
   if(!showPresent && !showOrdered && !showWishlist && !showMissing){
