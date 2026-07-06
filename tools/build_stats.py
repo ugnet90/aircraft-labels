@@ -68,6 +68,21 @@ def main():
     pax = read_csv(PASSENGER_CSV, delimiter=";")
     group_types = read_csv(GROUP_TYPES_CSV, delimiter=";")
 
+    def first_value(row, *keys):
+        for key in keys:
+            v = norm(row.get(key))
+            if v:
+                return v
+        return ""
+    
+    
+    aircraft_master_by_id = {}
+    
+    for r in pax:
+        aid = norm(r.get("aircraft_id"))
+        if aid:
+            aircraft_master_by_id[aid] = r    
+
     # =========================
     # Group aircraft types JSON
     # Quelle für "fehlt" in models_overview.html
@@ -94,12 +109,30 @@ def main():
 
         group_type_seen.add(key)
 
+        m = aircraft_master_by_id.get(aircraft_id, {})
+        
         group_type_items.append({
             "airline_code": airline_code,
             "airline": airline,
             "airline_row": airline_row,
             "aircraft_id": aircraft_id,
             "aircraft_type": aircraft_type,
+        
+            # technische Daten aus passenger_aircraft_full.csv
+            "role": first_value(m, "Role", "role"),
+            "fuselage": first_value(m, "Rumpf", "fuselage"),
+            "market_segment": first_value(m, "MarketSegment", "market_segment"),
+            "aircraft_kind": first_value(m, "Flugzeugtyp", "aircraft_kind"),
+            "aircraft_status": first_value(m, "Status", "aircraft_status"),
+            "first_flight": first_value(m, "Erstflug", "first_flight"),
+            "propulsion": first_value(m, "Antrieb", "propulsion"),
+            "engines": first_value(m, "Triebwerke", "engines"),
+            "range_class": first_value(m, "Reichweite", "range_class"),
+            "passengers": first_value(m, "Passengers", "passengers"),
+            "length_m": first_value(m, "Length", "length_m"),
+            "wingspan_m": first_value(m, "Wingspan", "wingspan_m"),
+            "height_m": first_value(m, "Height", "height_m"),
+        
             "source_sheet": source_sheet,
             "source_row": source_row,
         })
