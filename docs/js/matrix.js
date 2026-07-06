@@ -114,7 +114,7 @@ function renderMatrixCell(group, aircraftId, p, o, w, r, filters){
 
   if(showMissing){
     return `
-      <td class="num cellMissing">
+      <td class="num cellMissing" title="Fehlendes Modell">
         <span class="matrixMissing">–</span>
       </td>
     `;
