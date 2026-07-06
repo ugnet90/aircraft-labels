@@ -735,3 +735,38 @@ tr.row-missing td{
 tr.row-missing td:first-child{
   font-weight:700;
 }
+
+#content tr.row-missing td{
+  background:#fff0f3;
+  color:#4d2430;
+}
+
+#content tr.row-missing:nth-child(even) td{
+  background:#ffe8ee;
+}
+
+#content tr.row-missing:hover td{
+  background:#ffdce6;
+}
+
+#content tr.row-missing td:first-child{
+  font-weight:700;
+}
+
+.badge-id.missing{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:44px;
+  height:20px;
+  padding:0 7px;
+
+  border:1px solid #d27a8a;
+  border-radius:999px;
+  background:#ffe1e8;
+
+  color:#8a2438;
+  font-size:12px;
+  font-weight:700;
+  line-height:1;
+}
