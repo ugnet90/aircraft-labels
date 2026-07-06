@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 435,
-  "with_any_models": 143,
-  "missing": 292,
+  "with_any_models": 144,
+  "missing": 291,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -5006,11 +5006,26 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",

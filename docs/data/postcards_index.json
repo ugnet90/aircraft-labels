@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T14:17:52+02:00",
+  "generated_at": "2026-07-06T19:54:48+02:00",
   "count_total": 196,
   "count_unique": 196,
   "items": [
@@ -786,6 +786,14 @@
       "price": 1.35
     },
     {
+      "id": "PC-ORD-PA-17-01",
+      "model_id": "ORD-PA-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 1.85
+    },
+    {
       "id": "PC-ORD-SO-29-01",
       "model_id": "ORD-SO-29",
       "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
@@ -1546,14 +1554,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 1.35
-    },
-    {
-      "id": "PC-WIS-PA-17-01",
-      "model_id": "WIS-PA-17",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 1.85
     },
     {
       "id": "PC-WIS-PA-18-01",
@@ -2451,6 +2451,14 @@
       "label": "andere Kennung",
       "price": 1.35
     },
+    "PC-ORD-PA-17-01": {
+      "id": "PC-ORD-PA-17-01",
+      "model_id": "ORD-PA-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "none",
+      "model_status": "ordered",
+      "price": 1.85
+    },
     "PC-ORD-SO-29-01": {
       "id": "PC-ORD-SO-29-01",
       "model_id": "ORD-SO-29",
@@ -3212,14 +3220,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 1.35
-    },
-    "PC-WIS-PA-17-01": {
-      "id": "PC-WIS-PA-17-01",
-      "model_id": "WIS-PA-17",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "price": 1.85
     },
     "PC-WIS-PA-18-01": {
       "id": "PC-WIS-PA-18-01",
