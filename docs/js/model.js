@@ -582,12 +582,31 @@ async function loadIndexItems(){
   return [];
 }
 
+let _groupAircraftTypesCache = null;
+
+async function loadGroupAircraftTypes(){
+  if(_groupAircraftTypesCache !== null) return _groupAircraftTypesCache;
+
+  try{
+    const res = await fetch("./data/group_aircraft_types.json", {cache:"no-store"});
+    if(!res.ok) throw new Error(`group_aircraft_types.json HTTP ${res.status}`);
+
+    const j = await res.json();
+    _groupAircraftTypesCache = Array.isArray(j?.items) ? j.items : [];
+  }catch(e){
+    _groupAircraftTypesCache = [];
+  }
+
+  return _groupAircraftTypesCache;
+}
+
 function sameTypeStatusLabel(status){
   const s = String(status || "").trim().toLowerCase();
 
   if(s === "owned") return "vorhanden";
   if(s === "ordered") return "bestellt";
   if(s === "wishlist") return "Wunsch";
+  if(s === "missing") return "fehlt";
 
   return s;
 }
@@ -598,29 +617,139 @@ function sameTypeStatusClass(status){
   if(s === "owned") return "sameType-owned";
   if(s === "ordered") return "sameType-ordered";
   if(s === "wishlist") return "sameType-wishlist";
+  if(s === "missing") return "sameType-missing";
 
   return "";
 }
 
-function renderSameTypeModelsCard(rows, currentId){
+function sameTypeGroupValue(x){
+  return asText(x?.airline) || asText(x?.group) || asText(x?.airline_group) || asText(x?.airline_code);
+}
+
+function sameTypeAirlineValue(x){
+  return asText(x?.airline_row) || asText(x?.airline) || asText(x?.airline_code);
+}
+
+function sameTypeNormalizeStatus(x){
+  const s = asText(x?.status).toLowerCase();
+
+  if(s === "owned") return "owned";
+  if(s === "ordered") return "ordered";
+  if(s === "wishlist" || x?.wishlist === true) return "wishlist";
+  if(s === "missing" || x?.__missing === true) return "missing";
+
+  return "";
+}
+
+function sameTypeRank(x){
+  const s = sameTypeNormalizeStatus(x);
+
+  if(s === "owned") return 1;
+  if(s === "ordered") return 2;
+  if(s === "wishlist") return 3;
+  if(s === "missing") return 4;
+
+  return 9;
+}
+
+function sameTypePairKey(group, aircraftId){
+  return `${asText(group)}||${asText(aircraftId)}`;
+}
+
+function buildSameTypeOverviewRows(indexItems, groupTypes, aircraftId){
+  const aid = asText(aircraftId);
+  if(!aid) return [];
+
+  const realRows = (indexItems || [])
+    .filter(x => asText(x?.aircraft_id) === aid)
+    .filter(x => {
+      const s = sameTypeNormalizeStatus(x);
+      return s === "owned" || s === "ordered" || s === "wishlist";
+    });
+
+  const statusByGroup = new Map();
+
+  for(const x of realRows){
+    const group = sameTypeGroupValue(x);
+    if(!group) continue;
+
+    const key = sameTypePairKey(group, aid);
+
+    if(!statusByGroup.has(key)){
+      statusByGroup.set(key, { owned: 0, ordered: 0, wishlist: 0 });
+    }
+
+    const s = sameTypeNormalizeStatus(x);
+    const item = statusByGroup.get(key);
+
+    if(s === "owned") item.owned += 1;
+    if(s === "ordered") item.ordered += 1;
+    if(s === "wishlist") item.wishlist += 1;
+  }
+
+  const missingRows = [];
+  const seenRelevantGroups = new Set();
+
+  for(const gt of groupTypes || []){
+    if(asText(gt?.aircraft_id) !== aid) continue;
+
+    const group = asText(gt?.airline);
+    if(!group) continue;
+
+    const key = sameTypePairKey(group, aid);
+    if(seenRelevantGroups.has(key)) continue;
+    seenRelevantGroups.add(key);
+
+    const s = statusByGroup.get(key) || { owned: 0, ordered: 0, wishlist: 0 };
+
+    // vorhanden oder bestellt verhindert "fehlt" immer.
+    // Wunsch verhindert "fehlt" nur, wenn Wunsch eingeblendet wird.
+    if(s.owned > 0 || s.ordered > 0) continue;
+
+    missingRows.push({
+      __missing: true,
+      __missingFromWishlist: s.wishlist > 0,
+      status: "missing",
+
+      model_id: "",
+      airline_code: gt.airline_code || "",
+      airline: group,
+      airline_row: gt.airline_row || group,
+      aircraft_id: aid,
+      aircraft_type: gt.aircraft_type || "",
+
+      registration: "",
+      aircraft_name: "",
+      livery_display: "",
+      livery_name: ""
+    });
+  }
+
+  return realRows.concat(missingRows);
+}
+
+function renderSameTypeModelsCard(rows, currentId, typeLabel){
   const current = String(currentId || "").trim().toUpperCase();
 
-  const relevant = rows
+  const allRows = (rows || [])
     .filter(x => {
-      const s = String(x.status || "").trim().toLowerCase();
-      return s === "owned" || s === "ordered";
+      const s = sameTypeNormalizeStatus(x);
+      return s === "owned" || s === "ordered" || s === "wishlist" || s === "missing";
     })
     .sort((a,b) => {
-      const rank = (x) => {
-        const s = String(x.status || "").trim().toLowerCase();
-        if(s === "owned") return 1;
-        if(s === "ordered") return 2;
-        return 9;
-      };
-
-      const ra = rank(a);
-      const rb = rank(b);
+      const ra = sameTypeRank(a);
+      const rb = sameTypeRank(b);
       if(ra !== rb) return ra - rb;
+
+      const ga = sameTypeGroupValue(a);
+      const gb = sameTypeGroupValue(b);
+      const gcmp = ga.localeCompare(gb, "de", { sensitivity: "base", numeric: true });
+      if(gcmp !== 0) return gcmp;
+
+      const aa = sameTypeAirlineValue(a);
+      const ab = sameTypeAirlineValue(b);
+      const acmp = aa.localeCompare(ab, "de", { sensitivity: "base", numeric: true });
+      if(acmp !== 0) return acmp;
 
       return String(a.model_id || "").localeCompare(String(b.model_id || ""), "de", {
         numeric: true,
@@ -628,41 +757,79 @@ function renderSameTypeModelsCard(rows, currentId){
       });
     });
 
-  if(relevant.length <= 1) return "";
+  const ownedCount = allRows.filter(x => sameTypeNormalizeStatus(x) === "owned").length;
+  const orderedCount = allRows.filter(x => sameTypeNormalizeStatus(x) === "ordered").length;
+  const wishlistCount = allRows.filter(x => sameTypeNormalizeStatus(x) === "wishlist").length;
 
-  const ownedCount = relevant.filter(x => String(x.status || "").trim().toLowerCase() === "owned").length;
-  const orderedCount = relevant.filter(x => String(x.status || "").trim().toLowerCase() === "ordered").length;
+  // "echte" fehlende ohne Wunsch zählen separat;
+  // Wunsch-Zeilen können bei ausgeblendeter Wunsch-Ansicht zusätzlich als fehlt erscheinen.
+  const missingCount = allRows.filter(x =>
+    sameTypeNormalizeStatus(x) === "missing" && x.__missingFromWishlist !== true
+  ).length;
+
+  const hasOptionalRows = wishlistCount > 0 || allRows.some(x => sameTypeNormalizeStatus(x) === "missing");
+  const hasMoreThanCurrent =
+    allRows.some(x => {
+      const mid = String(x.model_id || "").trim().toUpperCase();
+      const s = sameTypeNormalizeStatus(x);
+
+      if(s === "missing") return true;
+      if(s === "wishlist") return true;
+      if(mid && mid !== current) return true;
+
+      return false;
+    });
+
+  // Wenn es wirklich nur genau dieses eine Modell gibt und keine Wunsch-/Fehlend-Info,
+  // bleibt der Block weiterhin ausgeblendet.
+  if(!hasOptionalRows && !hasMoreThanCurrent) return "";
 
   const summary = [
     ownedCount ? `${ownedCount} vorhanden` : "",
-    orderedCount ? `${orderedCount} bestellt` : ""
+    orderedCount ? `${orderedCount} bestellt` : "",
+    wishlistCount ? `${wishlistCount} Wunsch` : "",
+    missingCount ? `${missingCount} fehlt` : ""
   ].filter(Boolean).join(" · ");
 
-  const rowsHtml = relevant.map(x => {
+  const shownTypeLabel = asText(typeLabel) || asText(allRows[0]?.aircraft_type) || "dieser Typ";
+
+  const rowsHtml = allRows.map(x => {
+    const status = sameTypeNormalizeStatus(x);
     const mid = String(x.model_id || "").trim();
-    const isCurrent = mid.toUpperCase() === current;
-    const status = String(x.status || "").trim().toLowerCase();
+    const isCurrent = mid && mid.toUpperCase() === current;
 
-    const airline = String(x.airline_row || x.airline || x.airline_code || "").trim();
-    const reg = String(x.registration || "").trim();
-    const name = String(x.aircraft_name || "").trim();
-    const livery = String(x.livery_display || x.livery_name || "").trim();
+    const group = sameTypeGroupValue(x);
+    const airline = sameTypeAirlineValue(x);
+    const reg = asText(x.registration);
+    const name = asText(x.aircraft_name);
+    const livery = asText(x.livery_display) || asText(x.livery_name);
 
-    return `
-      <tr class="${isCurrent ? "sameType-current" : ""}">
-        <td class="mono">
-          ${
+    const rowClasses = [
+      isCurrent ? "sameType-current" : "",
+      `sameType-row-${status}`,
+      x.__missingFromWishlist === true ? "sameTypeMissingFromWishlist" : ""
+    ].filter(Boolean).join(" ");
+
+    const modelCell =
+      status === "missing"
+        ? `<span class="muted">—</span>`
+        : (
             isCurrent
               ? `<strong>${esc(mid)}</strong>`
               : `<a href="./model.html?id=${encodeURIComponent(mid)}">${esc(mid)}</a>`
-          }
-        </td>
-        <td>
-          <span class="sameTypeStatus ${sameTypeStatusClass(status)}">
-            ${esc(sameTypeStatusLabel(status))}
-          </span>
-        </td>
+          );
+
+    const statusHtml =
+      status === "missing"
+        ? `<span class="sameTypeStatus ${sameTypeStatusClass(status)}" title="${x.__missingFromWishlist ? "Wunschmodell ausgeblendet" : "Fehlendes Modell"}">${esc(sameTypeStatusLabel(status))}</span>`
+        : `<span class="sameTypeStatus ${sameTypeStatusClass(status)}">${esc(sameTypeStatusLabel(status))}</span>`;
+
+    return `
+      <tr class="${rowClasses}">
+        <td>${statusHtml}</td>
+        <td>${esc(group)}</td>
         <td>${esc(airline)}</td>
+        <td class="mono">${modelCell}</td>
         <td class="mono">${registrationLink(reg)}</td>
         <td>${esc(name)}</td>
         <td>${esc(livery)}</td>
@@ -671,17 +838,34 @@ function renderSameTypeModelsCard(rows, currentId){
   }).join("");
 
   return `
-    <div class="card">
-      <div class="k">Weitere Modelle dieses Typs</div>
-      <div class="muted sameTypeSummary">${esc(summary)}</div>
+    <div class="card sameTypeCard">
+      <div class="sameTypeHead">
+        <div>
+          <div class="k">Typübersicht</div>
+          <div class="sameTypeType">${esc(shownTypeLabel)}</div>
+          <div class="muted sameTypeSummary">${esc(summary)}</div>
+        </div>
+
+        <div class="sameTypeControls">
+          <label>
+            <input type="checkbox" data-same-type-toggle="wishlist">
+            Wunsch einblenden
+          </label>
+          <label>
+            <input type="checkbox" data-same-type-toggle="missing">
+            Fehlende einblenden
+          </label>
+        </div>
+      </div>
 
       <div class="sameTypeWrap">
         <table class="sameTypeTbl">
           <thead>
             <tr>
-              <th>Modell-ID</th>
               <th>Status</th>
+              <th>Airline-Gruppe</th>
               <th>Airline</th>
+              <th>Modell / Info</th>
               <th>Registrierung</th>
               <th>Name</th>
               <th>Bemalung</th>
@@ -695,6 +879,27 @@ function renderSameTypeModelsCard(rows, currentId){
     </div>
   `;
 }
+
+document.addEventListener("change", (ev) => {
+  const cb = ev.target && ev.target.closest
+    ? ev.target.closest("[data-same-type-toggle]")
+    : null;
+
+  if(!cb) return;
+
+  const card = cb.closest(".sameTypeCard");
+  if(!card) return;
+
+  const what = cb.getAttribute("data-same-type-toggle");
+
+  if(what === "wishlist"){
+    card.classList.toggle("show-wishlist", cb.checked);
+  }
+
+  if(what === "missing"){
+    card.classList.toggle("show-missing", cb.checked);
+  }
+});
 
 function navNeighbors(ids, currentId){
   const cur = String(currentId || "").trim().toUpperCase();
@@ -1112,14 +1317,13 @@ async function main(){
     let sameTypeModels = [];
     try{
       const indexItems = await loadIndexItems();
+      const groupTypes = await loadGroupAircraftTypes();
       const aircraftId = asText(d.aircraft_id);
-
-      sameTypeModels = indexItems.filter(x =>
-        asText(x.aircraft_id) === aircraftId
-      );
+    
+      sameTypeModels = buildSameTypeOverviewRows(indexItems, groupTypes, aircraftId);
     }catch(e){
       sameTypeModels = [];
-    }    
+    }  
 
     const photosEnriched = await loadAircraftPhotosEnriched();
     const photoE = photosEnriched ? (photosEnriched[id] || null) : null;    
@@ -1373,7 +1577,11 @@ async function main(){
     const tailBlocks = [liveryBlock, v8Block, sourceBlock]
       .filter(x => x && String(x).trim() !== "");
     
-    const sameTypeBlock = renderSameTypeModelsCard(sameTypeModels, id);
+    const sameTypeBlock = renderSameTypeModelsCard(
+      sameTypeModels,
+      id,
+      typ || asText(d.aircraft_id)
+    );
 
     const midBlocks = [postcardBlock, sameTypeBlock]
       .filter(x => x && String(x).trim() !== "");
