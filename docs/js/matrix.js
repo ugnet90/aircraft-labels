@@ -15,12 +15,17 @@ function checked(id, fallback=true){
   return el ? !!el.checked : fallback;
 }
 
+function checkedOrDefault(id, fallback){
+  const el = document.getElementById(id);
+  return el ? el.checked : fallback;
+}
+
 function statusFilters(){
   return {
-    present: checked("statusPresent", true),
-    ordered: checked("statusOrdered", true),
-    wishlist: checked("statusWishlist", true),
-    missing: checked("statusMissing", false)
+    present: checkedOrDefault("statusPresent", true),
+    ordered: checkedOrDefault("statusOrdered", true),
+    wishlist: checkedOrDefault("statusWishlist", true),
+    missing: checkedOrDefault("statusMissing", true)
   };
 }
 
@@ -61,10 +66,10 @@ function modelHref(group, aircraftId, status){
 
 function getCell(pm, om, wm, rm, groupIdx, typeIdx){
   return {
-    p: (pm[groupIdx] && pm[groupIdx][typeIdx]) ? pm[groupIdx][typeIdx] : 0,
-    o: (om[groupIdx] && om[groupIdx][typeIdx]) ? om[groupIdx][typeIdx] : 0,
-    w: (wm[groupIdx] && wm[groupIdx][typeIdx]) ? wm[groupIdx][typeIdx] : 0,
-    r: (rm[groupIdx] && rm[groupIdx][typeIdx]) ? rm[groupIdx][typeIdx] : 0
+    p: Number((pm[groupIdx] && pm[groupIdx][typeIdx]) || 0),
+    o: Number((om[groupIdx] && om[groupIdx][typeIdx]) || 0),
+    w: Number((wm[groupIdx] && wm[groupIdx][typeIdx]) || 0),
+    r: Number((rm[groupIdx] && rm[groupIdx][typeIdx]) || 0)
   };
 }
 
@@ -73,9 +78,9 @@ function cellMatchesFilters(p, o, w, r, filters){
   if(o > 0 && filters.ordered) return true;
   if(w > 0 && filters.wishlist) return true;
 
-  // fehlt = laut group_aircraft_types.csv relevant,
-  // aber kein Bestand / keine Bestellung / kein Wunsch
-  if(r > 0 && p === 0 && o === 0 && w === 0 && filters.missing) return true;
+  if(r > 0 && p === 0 && o === 0 && w === 0 && filters.missing) {
+    return true;
+  }
 
   return false;
 }
