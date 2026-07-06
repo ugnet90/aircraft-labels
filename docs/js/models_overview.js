@@ -1,4 +1,4 @@
-const state = { all: [], filtered: [], postcards: {} };
+const state = { all: [], filtered: [], postcards: {}, groupTypes: [] };
 
 let tableSortKey = localStorage.getItem("indexSortKey") || "model_id";     // Default-Spalte
 let tableSortDir = Number(localStorage.getItem("indexSortDir") || "1");
@@ -138,9 +138,11 @@ function refillSelect(selectId, firstLabel, pairs, currentValue){
 }
 
 function buildFacetOptions(filters){
+  const baseItems = getOverviewBaseRows(filters);
+  
   // group
   {
-    const items = state.all.filter(it => passesFilters(it, filters, "group"));
+    const items = baseItems.filter(it => passesFilters(it, filters, "group"));
     const map = new Map();
     for(const it of items){
       const key = getGroupValue(it);
@@ -152,7 +154,7 @@ function buildFacetOptions(filters){
 
   // airline
   {
-    const items = state.all.filter(it => passesFilters(it, filters, "airline"));
+    const items = baseItems.filter(it => passesFilters(it, filters, "airline"));
     const map = new Map();
     for(const it of items){
       const key = (it.airline_row || "");
@@ -164,7 +166,7 @@ function buildFacetOptions(filters){
 
   // type
   {
-    const items = state.all.filter(it => passesFilters(it, filters, "type"));
+    const items = baseItems.filter(it => passesFilters(it, filters, "type"));
     const map = new Map();
     for(const it of items){
       const key = (it.aircraft_type || "");
@@ -176,7 +178,7 @@ function buildFacetOptions(filters){
 
   // scale
   {
-    const items = state.all.filter(it => passesFilters(it, filters, "scale"));
+    const items = baseItems.filter(it => passesFilters(it, filters, "scale"));
     const map = new Map();
     for(const it of items){
       const key = (it.scale || "");
@@ -188,7 +190,7 @@ function buildFacetOptions(filters){
 
   // flown
   {
-    const items = state.all.filter(it => passesFilters(it, filters, "flown"));
+    const items = baseItems.filter(it => passesFilters(it, filters, "flown"));
     const hasTrue = items.some(it => it.flown === true);
     const hasFalse = items.some(it => it.flown === false);
 
@@ -219,7 +221,7 @@ function updateActiveFilterUI(filters){
     if(on) active.push(label);
   });
 
-  const defaultStatusOn = filters.owned && filters.ordered && !filters.wishlist;
+  const defaultStatusOn = filters.owned && filters.ordered && !filters.wishlist && filters.missing;
   document.querySelector(".statusBox")?.classList.toggle("is-active", !defaultStatusOn);
   
   if(!defaultStatusOn){
@@ -287,6 +289,8 @@ function matchesQuery(it, q){
     normalizeShopKeyForSearch(it.shop_url),
     (!String(it.shop || it.Shop || "").trim() ? "__shop_missing__" : ""),
     it.ordered ? "bestellt" : "",
+    isMissingRow(it) ? "fehlt missing fehlend" : "",
+    it.status,
     it.ordered_at,
     it.scale,
     (it.flown===true?"mitgeflogen":it.flown===false?"nicht mitgeflogen":"")
@@ -317,13 +321,125 @@ function matchesFlown(it, v){
   return true;
 }
 
+function pairKey(airline, aircraftId){
+  return `${String(airline || "").trim()}||${String(aircraftId || "").trim()}`;
+}
+
+function isMissingRow(it){
+  return it && (it.__missing === true || String(it.status || "").toLowerCase() === "missing");
+}
+
+function makeMissingModelId(gt){
+  const airlineCode = String(gt.airline_code || "").trim() || "XX";
+  const aircraftId = String(gt.aircraft_id || "").trim() || "UNKNOWN";
+
+  return `MIS-${airlineCode}-${aircraftId}`
+    .replace(/\s+/g, "-")
+    .replace(/[^A-Za-z0-9_-]/g, "-");
+}
+
+function buildPairStatusIndex(rows){
+  const idx = new Map();
+
+  for(const it of rows){
+    const airline = String(getGroupValue(it) || "").trim();
+    const aircraftId = String(it.aircraft_id || "").trim();
+
+    if(!airline || !aircraftId) continue;
+
+    const key = pairKey(airline, aircraftId);
+
+    if(!idx.has(key)){
+      idx.set(key, { owned: 0, ordered: 0, wishlist: 0 });
+    }
+
+    const item = idx.get(key);
+    const s = String(it.status || "").trim().toLowerCase();
+
+    if(s === "owned") item.owned += 1;
+    else if(s === "ordered") item.ordered += 1;
+    else if(s === "wishlist" || it.wishlist === true) item.wishlist += 1;
+  }
+
+  return idx;
+}
+
+function buildMissingRows(realRows, groupTypes, filters){
+  if(filters.missing === false) return [];
+
+  const statusIdx = buildPairStatusIndex(realRows);
+  const out = [];
+  const seen = new Set();
+
+  for(const gt of groupTypes || []){
+    const airline = String(gt.airline || "").trim();
+    const airlineRow = String(gt.airline_row || gt.airline || "").trim();
+    const aircraftId = String(gt.aircraft_id || "").trim();
+    const aircraftType = String(gt.aircraft_type || "").trim();
+
+    if(!airline || !aircraftId) continue;
+
+    // Absichtlich gruppenbezogen wie in der Matrix:
+    // Airline-Gruppe + aircraft_id entscheidet, ob etwas fehlt.
+    const key = pairKey(airline, aircraftId);
+
+    if(seen.has(key)) continue;
+    seen.add(key);
+
+    const s = statusIdx.get(key) || { owned: 0, ordered: 0, wishlist: 0 };
+
+    const shouldShowMissing =
+      s.owned === 0 &&
+      s.ordered === 0 &&
+      (s.wishlist === 0 || filters.wishlist === false);
+
+    if(!shouldShowMissing) continue;
+
+    out.push({
+      __missing: true,
+      status: "missing",
+
+      model_id: makeMissingModelId(gt),
+      airline_code: gt.airline_code || "",
+      airline: airline,
+      airline_row: airlineRow,
+      aircraft_id: aircraftId,
+      aircraft_type: aircraftType,
+
+      scale: "",
+      flown: null,
+      wingtip: "",
+      has_wingtip: false,
+      registration: "",
+      aircraft_name: "",
+      livery_display: "",
+      livery_name: "",
+      arrived: "",
+      ordered: false,
+      ordered_at: "",
+      wishlist: false,
+
+      source_sheet: gt.source_sheet || "",
+      source_row: gt.source_row || ""
+    });
+  }
+
+  return out;
+}
+
+function getOverviewBaseRows(filters){
+  return state.all.concat(buildMissingRows(state.all, state.groupTypes, filters));
+}
+
 function matchesStatus(it, filters){
   const s = String(it.status || "").trim().toLowerCase();
 
   const ownedOn = filters.owned !== false;
   const orderedOn = filters.ordered !== false;
   const wishlistOn = filters.wishlist !== false;
+  const missingOn = filters.missing !== false;
 
+  if(isMissingRow(it) || s === "missing") return missingOn;
   if(s === "owned") return ownedOn;
   if(s === "ordered") return orderedOn;
   if(s === "wishlist" || it.wishlist === true) return wishlistOn;
@@ -431,6 +547,7 @@ function sortByColumn(items){
 function getRowStatusClass(it){
   const s = String(it.status || "").toLowerCase();
 
+  if(isMissingRow(it) || s === "missing") return "row-missing";
   if(s === "ordered") return "row-ordered";
   if(s === "wishlist" || it.wishlist === true) return "row-wishlist";
 
@@ -936,7 +1053,11 @@ function isNumericSortKey(key){
 }
 
 function render(items){
-  document.getElementById("count").textContent = (items.length === 1) ? "1 Modell" : `${items.length} Modelle`;
+  const hasMissing = items.some(isMissingRow);
+  
+  document.getElementById("count").textContent = hasMissing
+    ? ((items.length === 1) ? "1 Eintrag" : `${items.length} Einträge`)
+    : ((items.length === 1) ? "1 Modell" : `${items.length} Modelle`);
 
   if(items.length === 0){
     document.getElementById("content").innerHTML = `<div class="err">Keine Treffer.</div>`;
@@ -990,6 +1111,7 @@ function render(items){
   let lastVisualGroupKey = null;
   
   for(const it of items){
+    const isMissing = isMissingRow(it);
     const link = `./model.html?id=${encodeURIComponent(it.model_id)}`;
   
     const visualGroupKey = getVisualGroupKey(it);
@@ -1027,6 +1149,10 @@ function render(items){
       }
 
       if(key === "type_stock"){
+        if(isMissingRow(it)){
+          return `<td class="${cls}"></td>`;
+        }
+      
         const stock = getTypeStockSummary(it.aircraft_id);
       
         const status = String(it.status || "").trim().toLowerCase();
@@ -1063,17 +1189,21 @@ function render(items){
     }).join("");
   
     html += `
-      <tr class="modelRow ${getRowStatusClass(it)} ${isGroupStart ? "groupStart" : ""}" data-id="${esc(it.model_id || "")}">
+      <tr class="modelRow ${getRowStatusClass(it)} ${isGroupStart ? "groupStart" : ""}" data-id="${isMissing ? "" : esc(it.model_id || "")}">
         <td class="mono">
-          <a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
-            ${
-              (it.status === "wishlist" || it.wishlist === true || (it.model_id || "").startsWith("WIS-"))
-                ? `<span class="badge-id wish wish-prio-${esc(it.wishlist_prio || "x")}" title="${esc(it.model_id)}">W${esc(it.wishlist_prio || "")}</span>`
-                : (it.model_id || "").startsWith("ORD-")
-                  ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
-                  : `${esc(it.model_id || "")}`
-            }
-          </a>
+          ${
+            isMissing
+              ? `<span class="badge-id missing" title="${esc(it.model_id || "fehlendes Modell")}">fehlt</span>`
+              : `<a href="./model.html?id=${encodeURIComponent(it.model_id)}" title="Modell anzeigen">
+                  ${
+                    (it.status === "wishlist" || it.wishlist === true || (it.model_id || "").startsWith("WIS-"))
+                      ? `<span class="badge-id wish wish-prio-${esc(it.wishlist_prio || "x")}" title="${esc(it.model_id)}">W${esc(it.wishlist_prio || "")}</span>`
+                      : (it.model_id || "").startsWith("ORD-")
+                        ? `<span class="badge-id ord" title="${esc(it.model_id)}">ORD</span>`
+                        : `${esc(it.model_id || "")}`
+                  }
+                </a>`
+          }
         </td>
         <td>
           <a href="#" data-group="${esc(it.airline || "")}">
@@ -1180,13 +1310,14 @@ function apply(){
     flown: document.getElementById("flown").value,
     owned: document.getElementById("fOwned")?.checked ?? true,
     ordered: document.getElementById("fOrdered")?.checked ?? true,
-    wishlist: document.getElementById("fWishlist")?.checked ?? true
+    wishlist: document.getElementById("fWishlist")?.checked ?? false,
+    missing: document.getElementById("fMissing")?.checked ?? true
   };
 
   buildFacetOptions(filters);
   updateActiveFilterUI(filters);
 
-  let items = state.all.filter(it => passesFilters(it, filters));
+  let items = getOverviewBaseRows(filters).filter(it => passesFilters(it, filters));
   items = sortByColumn(items);
 
   state.filtered = items;
@@ -1287,7 +1418,17 @@ async function main(){
     const data = await res.json();
 
     state.all = data.items || [];
-
+    
+    try{
+      const gtRes = await fetch("./data/group_aircraft_types.json", {cache:"no-store"});
+      if(gtRes.ok){
+        const gtData = await gtRes.json();
+        state.groupTypes = Array.isArray(gtData.items) ? gtData.items : [];
+      }
+    }catch(e){
+      state.groupTypes = [];
+    }
+    
     try{
       const pcRes = await fetch("./data/postcards_enriched.json", {cache:"no-store"});
       if(pcRes.ok){
@@ -1315,6 +1456,7 @@ async function main(){
     document.getElementById("fOwned")?.addEventListener("change", apply);
     document.getElementById("fOrdered")?.addEventListener("change", apply);
     document.getElementById("fWishlist")?.addEventListener("change", apply);
+    document.getElementById("fMissing")?.addEventListener("change", apply);
 
     // Optionale Spalten initialisieren und speichern
     const visibleOptionalCols = new Set(getVisibleOptionalColumns());
@@ -1416,6 +1558,7 @@ async function main(){
       if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
       if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
       if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = false;
+      if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = true;
       
       tableSortKey = "model_id";
       tableSortDir = 1;
@@ -1442,10 +1585,12 @@ async function main(){
       const hasOwned = statuses.includes("owned");
       const hasOrdered = statuses.includes("ordered");
       const hasWishlist = statuses.includes("wishlist");
-    
+      const hasMissing = statuses.includes("missing") || statuses.includes("fehlt");
+      
       if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = hasOwned;
       if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = hasOrdered;
       if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = hasWishlist;
+      if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = hasMissing;
     }
     
     if (p.has("q")) {
@@ -1532,6 +1677,7 @@ document.addEventListener("click", (ev) => {
   if(document.getElementById("fOwned")) document.getElementById("fOwned").checked = true;
   if(document.getElementById("fOrdered")) document.getElementById("fOrdered").checked = true;
   if(document.getElementById("fWishlist")) document.getElementById("fWishlist").checked = false;
+  if(document.getElementById("fMissing")) document.getElementById("fMissing").checked = true;
   
   // sort NICHT zwingend resetten – wenn du willst, nächste Zeile aktivieren:
   // document.getElementById("sort").value = "group_model";
