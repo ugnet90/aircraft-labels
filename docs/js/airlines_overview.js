@@ -1,6 +1,7 @@
 const state = {
   all: [],
-  filtered: []
+  filtered: [],
+  groupTypes: []
 };
 
 let tableSortKey = localStorage.getItem("airlinesSortKey") || "group";
@@ -63,6 +64,51 @@ function getAirlineName(it){
 
 function getGroupName(it){
   return String(it.airline || it.group || it.airline_group || "").trim();
+}
+
+function getModelStatus(it){
+  const s = String(it.status || "").trim().toLowerCase();
+
+  if(s === "owned") return "owned";
+  if(s === "ordered") return "ordered";
+  if(s === "wishlist" || it.wishlist === true) return "wishlist";
+
+  return "";
+}
+
+function pairKey(group, aircraftId){
+  return `${String(group || "").trim()}||${String(aircraftId || "").trim()}`;
+}
+
+function ensureAirlineRow(map, group){
+  const g = String(group || "").trim();
+  if(!g) return null;
+
+  if(!map.has(g)){
+    map.set(g, {
+      group: g,
+
+      // Bestand / Bedarf
+      models: 0,
+      owned: 0,
+      ordered: 0,
+      wishlist: 0,
+      missing: 0,
+
+      // Typen
+      typesSet: new Set(),
+      wishlistTypesSet: new Set(),
+      missingTypesSet: new Set(),
+
+      // übrige bestehende Kennzahlen
+      flown: 0,
+      priceTotal: 0,
+      shippingTotal: 0,
+      spaceCm: 0
+    });
+  }
+
+  return map.get(g);
 }
 
 function matchesModelStatus(it, filters){
@@ -188,67 +234,122 @@ function matchesModelFlown(it, filters){
   return true;
 }
 
-function buildAirlineRows(items, filters){
+function buildAirlineRows(items, groupTypes, filters){
   const map = new Map();
 
-  items
-    .filter(it => matchesModelStatus(it, filters))
+  // Status je Airline-Gruppe + aircraft_id:
+  // Grundlage für die Berechnung "fehlend".
+  const statusByGroupType = new Map();
+
+  (items || []).forEach(it => {
+    const group = getGroupName(it);
+    const aircraftId = String(it.aircraft_id || "").trim();
+    const status = getModelStatus(it);
+
+    if(!group || !aircraftId || !status) return;
+
+    const key = pairKey(group, aircraftId);
+
+    if(!statusByGroupType.has(key)){
+      statusByGroupType.set(key, { owned: 0, ordered: 0, wishlist: 0 });
+    }
+
+    const item = statusByGroupType.get(key);
+
+    if(status === "owned") item.owned += 1;
+    if(status === "ordered") item.ordered += 1;
+    if(status === "wishlist") item.wishlist += 1;
+  });
+
+  // Echte Modelle / Bestellungen / Wünsche zählen.
+  (items || [])
     .filter(it => matchesModelFlown(it, filters))
     .forEach(it => {
       const group = getGroupName(it);
-
       if(!group) return;
 
-      const key = group;
+      const row = ensureAirlineRow(map, group);
+      if(!row) return;
 
-      if(!map.has(key)){
-        map.set(key, {
-          group,
-          models: 0,
-          owned: 0,
-          ordered: 0,
-          typesSet: new Set(),
-          flown: 0,
-          priceTotal: 0,
-          shippingTotal: 0,
-          spaceCm: 0
-        });
-      }
-
-      const row = map.get(key);
-      const status = String(it.status || "").trim().toLowerCase();
-
-      row.models += 1;
+      const status = getModelStatus(it);
+      const aircraftType = String(it.aircraft_type || "").trim();
+      const aircraftId = String(it.aircraft_id || "").trim();
 
       if(status === "owned"){
+        row.models += 1;
         row.owned += 1;
+
+        if(aircraftType) row.typesSet.add(aircraftType);
+
+        if(it.flown === true){
+          row.flown += 1;
+        }
+
+        row.priceTotal += parseMoneyValue(it.price);
+        row.shippingTotal += parseMoneyValue(it.shipping_allocated);
+        row.spaceCm += calcModelDisplayWidthCm(it);
       }
 
       if(status === "ordered"){
+        row.models += 1;
         row.ordered += 1;
+
+        if(aircraftType) row.typesSet.add(aircraftType);
+
+        row.priceTotal += parseMoneyValue(it.price);
+        row.shippingTotal += parseMoneyValue(it.shipping_allocated);
+        row.spaceCm += calcModelDisplayWidthCm(it);
       }
 
-      if(it.aircraft_type){
-        row.typesSet.add(String(it.aircraft_type).trim());
+      if(status === "wishlist"){
+        row.wishlist += 1;
+        if(aircraftId) row.wishlistTypesSet.add(aircraftId);
       }
-
-      if(it.flown === true){
-        row.flown += 1;
-      }
-
-      row.priceTotal += parseMoneyValue(it.price);
-      row.shippingTotal += parseMoneyValue(it.shipping_allocated);
-      row.spaceCm += calcModelDisplayWidthCm(it);
     });
+
+  // Fehlende Typen aus group_aircraft_types.json ableiten.
+  const seenRelevantPairs = new Set();
+
+  (groupTypes || []).forEach(gt => {
+    const group = String(gt.airline || "").trim();
+    const aircraftId = String(gt.aircraft_id || "").trim();
+
+    if(!group || !aircraftId) return;
+
+    const key = pairKey(group, aircraftId);
+    if(seenRelevantPairs.has(key)) return;
+    seenRelevantPairs.add(key);
+
+    const row = ensureAirlineRow(map, group);
+    if(!row) return;
+
+    const s = statusByGroupType.get(key) || { owned: 0, ordered: 0, wishlist: 0 };
+
+    // Für diese Verdichtungsseite gilt:
+    // Wunsch wird separat gezählt und verhindert daher "fehlend".
+    if(s.owned > 0 || s.ordered > 0 || s.wishlist > 0) return;
+
+    row.missing += 1;
+    row.missingTypesSet.add(aircraftId);
+  });
 
   return Array.from(map.values()).map(row => ({
     group: row.group,
+
     models: row.models,
     owned: row.owned,
     ordered: row.ordered,
+    wishlist: row.wishlist,
+    missing: row.missing,
+
     types: row.typesSet.size,
     type_keys: Array.from(row.typesSet),
+
+    wishlist_types: row.wishlistTypesSet.size,
+    missing_types: row.missingTypesSet.size,
+
     flown: row.flown,
+
     price_total: row.priceTotal,
     shipping_total: row.shippingTotal,
     space_cm: row.spaceCm
@@ -287,8 +388,12 @@ function matchesQuery(row, q){
     row.models,
     row.owned,
     row.ordered,
+    row.wishlist,
+    row.missing,
     row.types,
-    row.flown
+    row.flown,
+    row.wishlist > 0 ? "wunsch wishlist" : "",
+    row.missing > 0 ? "fehlt fehlend missing" : ""
   ].map(norm).join(" | ");
 
   return hay.includes(q);
@@ -348,7 +453,7 @@ function sortRows(rows){
       va = averagePerModel(a, "shipping_total");
       vb = averagePerModel(b, "shipping_total");
     }
-    else if(["models", "owned", "ordered", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
+    else if(["models", "owned", "ordered", "wishlist", "missing", "types", "flown", "price_total", "shipping_total", "space_cm"].includes(tableSortKey)){
       va = Number(va || 0);
       vb = Number(vb || 0);
     }
@@ -408,6 +513,8 @@ function columnTooltip(key){
     models: "Gesamtanzahl der aktuell berücksichtigten vorhandenen und bestellten Modelle dieser Airline-Gruppe.",
     owned: "Anzahl vorhandener Modelle dieser Airline-Gruppe.",
     ordered: "Anzahl bestellter Modelle dieser Airline-Gruppe.",
+    wishlist: "Anzahl der Wunschmodelle dieser Airline-Gruppe.",
+    missing: "Anzahl fehlender Flugzeugtypen laut group_aircraft_types.json: Typ ist für die Airline-Gruppe relevant, aber weder vorhanden noch bestellt noch als Wunsch erfasst.",    
     types: "Anzahl unterschiedlicher Flugzeugtypen innerhalb der aktuell berücksichtigten Modelle dieser Airline-Gruppe.",
     flown: "Anzahl der aktuell berücksichtigten Modelle dieser Airline-Gruppe, mit denen du mitgeflogen bist.",
 
@@ -442,6 +549,8 @@ function isNumericSortKey(key){
     "models",
     "owned",
     "ordered",
+    "wishlist",
+    "missing",
     "types",
     "flown",
     "price_total",
@@ -478,7 +587,7 @@ function render(rows){
     const tip = columnTooltip(key);
   
     let html = `
-      <th class="${thClass(key)} num" data-sort="${esc(key)}" title="${esc(tip)}">
+      <th class="${thClass(key)} num optionalBlockStart" data-sort="${esc(key)}" title="${esc(tip)}">
         ${esc(col.label)} ${mark(key)}
       </th>
     `;
@@ -506,12 +615,34 @@ function render(rows){
     <table>
       <thead>
         <tr>
-          <th class="${thClass("group")}" data-sort="group" title="${esc(columnTooltip("group"))}">Airline-Gruppe ${mark("group")}</th>
-          <th class="${thClass("models")} num" data-sort="models" title="${esc(columnTooltip("models"))}">Modelle ${mark("models")}</th>
-          <th class="${thClass("owned")} num" data-sort="owned" title="${esc(columnTooltip("owned"))}">vorh. ${mark("owned")}</th>
-          <th class="${thClass("ordered")} num" data-sort="ordered" title="${esc(columnTooltip("ordered"))}">best. ${mark("ordered")}</th>
-          <th class="${thClass("types")} num" data-sort="types" title="${esc(columnTooltip("types"))}">Typen ${mark("types")}</th>
-          <th class="${thClass("flown")} num" data-sort="flown" title="${esc(columnTooltip("flown"))}">Mitgeflogen ${mark("flown")}</th>
+          <th class="${thClass("group")}" data-sort="group" title="${esc(columnTooltip("group"))}">
+            Airline-Gruppe ${mark("group")}
+          </th>
+        
+          <th class="${thClass("models")} num blockStart" data-sort="models" title="${esc(columnTooltip("models"))}">
+            Modelle ${mark("models")}
+          </th>
+          <th class="${thClass("owned")} num" data-sort="owned" title="${esc(columnTooltip("owned"))}">
+            vorh. ${mark("owned")}
+          </th>
+          <th class="${thClass("ordered")} num" data-sort="ordered" title="${esc(columnTooltip("ordered"))}">
+            best. ${mark("ordered")}
+          </th>
+          <th class="${thClass("wishlist")} num" data-sort="wishlist" title="${esc(columnTooltip("wishlist"))}">
+            Wunsch ${mark("wishlist")}
+          </th>
+          <th class="${thClass("missing")} num" data-sort="missing" title="${esc(columnTooltip("missing"))}">
+            fehlt ${mark("missing")}
+          </th>
+        
+          <th class="${thClass("types")} num blockStart" data-sort="types" title="${esc(columnTooltip("types"))}">
+            Typen ${mark("types")}
+          </th>
+        
+          <th class="${thClass("flown")} num blockStart" data-sort="flown" title="${esc(columnTooltip("flown"))}">
+            Mitgeflogen ${mark("flown")}
+          </th>
+        
           ${optionalHeaders}
         </tr>
       </thead>
@@ -527,7 +658,7 @@ function render(rows){
       let html = "";
     
       const value = formatOptionalValue(key, row[key]);
-      html += `<td class="num mono">${esc(value)}</td>`;
+      html += `<td class="num mono optionalBlockStart">${esc(value)}</td>`;
     
       if(key === "price_total"){
         html += `<td class="num mono">${esc(formatMoneyDE(averagePerModel(row, "price_total")))}</td>`;
@@ -543,17 +674,37 @@ function render(rows){
     html += `
       <tr class="airlineRow" data-href="${esc(href)}">
         <td>${esc(row.group)}</td>
-        <td class="num mono">${esc(row.models)}</td>
+        
+        <td class="num mono blockStart">${esc(row.models)}</td>
         <td class="num mono">${row.owned > 0 ? esc(row.owned) : ""}</td>
         <td class="num mono">${row.ordered > 0 ? esc(row.ordered) : ""}</td>
-        <td class="num mono">${esc(row.types)}</td>
+        
         <td class="num mono">
+          ${
+            row.wishlist > 0
+              ? `<a class="badge badge-wishlist" href="./models_overview.html?group=${encodeURIComponent(row.group || "")}&status=wishlist">${esc(row.wishlist)}</a>`
+              : ""
+          }
+        </td>
+        
+        <td class="num mono">
+          ${
+            row.missing > 0
+              ? `<a class="badge badge-missing" href="./models_overview.html?group=${encodeURIComponent(row.group || "")}&status=missing">${esc(row.missing)}</a>`
+              : ""
+          }
+        </td>
+        
+        <td class="num mono blockStart">${esc(row.types)}</td>
+        
+        <td class="num mono blockStart">
           ${
             row.flown > 0
               ? `<span class="badge badge-flown">${esc(row.flown)}</span>`
               : ""
           }
         </td>
+        
         ${optionalCells}
       </tr>
     `;
@@ -565,7 +716,7 @@ function render(rows){
     let html = "";
   
     const sum = sumRows(rows, key);
-    html += `<td class="num mono">${esc(formatOptionalValue(key, sum))}</td>`;
+    html += `<td class="num mono optionalBlockStart">${esc(formatOptionalValue(key, sum))}</td>`;
   
     if(key === "price_total"){
       const avg = totalModels ? sum / totalModels : 0;
@@ -585,13 +736,19 @@ function render(rows){
       <tfoot>
         <tr class="sumRow">
           <td>Summen</td>
-          <td class="num mono">${esc(sumRows(rows, "models"))}</td>
+          
+          <td class="num mono blockStart">${esc(sumRows(rows, "models"))}</td>
           <td class="num mono">${sumRows(rows, "owned") > 0 ? esc(sumRows(rows, "owned")) : ""}</td>
           <td class="num mono">${sumRows(rows, "ordered") > 0 ? esc(sumRows(rows, "ordered")) : ""}</td>
-          <td class="num mono">${esc(countUniqueTypes(rows))}</td>
-          <td class="num mono">
+          <td class="num mono">${sumRows(rows, "wishlist") > 0 ? esc(sumRows(rows, "wishlist")) : ""}</td>
+          <td class="num mono">${sumRows(rows, "missing") > 0 ? esc(sumRows(rows, "missing")) : ""}</td>
+          
+          <td class="num mono blockStart">${esc(countUniqueTypes(rows))}</td>
+          
+          <td class="num mono blockStart">
             ${sumRows(rows, "flown") > 0 ? esc(sumRows(rows, "flown")) : ""}
           </td>
+          
           ${optionalSumCells}
         </tr>
       </tfoot>
@@ -601,7 +758,9 @@ function render(rows){
   document.getElementById("content").innerHTML = html;
 
   document.querySelectorAll("#content .airlineRow").forEach(tr => {
-    tr.addEventListener("click", () => {
+    tr.addEventListener("click", (ev) => {
+      if(ev.target.closest("a")) return;
+  
       const href = tr.getAttribute("data-href");
       if(href) location.href = href;
     });
@@ -640,7 +799,7 @@ function apply(){
 
   updateActiveFilterUI(filters);
 
-  const baseRows = buildAirlineRows(state.all, filters);
+  const baseRows = buildAirlineRows(state.all, state.groupTypes, filters);
 
   refillGroupOptions(baseRows, filters.group);
 
@@ -733,8 +892,18 @@ async function main(){
 
     const data = await res.json();
     state.all = Array.isArray(data?.items) ? data.items : [];
-
-    const baseRows = buildAirlineRows(state.all, {
+    
+    try{
+      const gtRes = await fetch("./data/group_aircraft_types.json", {cache:"no-store"});
+      if(gtRes.ok){
+        const gtData = await gtRes.json();
+        state.groupTypes = Array.isArray(gtData?.items) ? gtData.items : [];
+      }
+    }catch(e){
+      state.groupTypes = [];
+    }
+    
+    const baseRows = buildAirlineRows(state.all, state.groupTypes, {
       owned: true,
       ordered: true,
       wishlist: false
@@ -853,6 +1022,8 @@ async function main(){
         "models",
         "types",
         "flown",
+        "wishlist",
+        "missing",        
         "price_total",
         "price_avg",
         "shipping_total",
