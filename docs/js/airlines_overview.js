@@ -324,11 +324,13 @@ function buildAirlineRows(items, groupTypes, filters){
     if(!row) return;
 
     const s = statusByGroupType.get(key) || { owned: 0, ordered: 0, wishlist: 0 };
-
-    // Für diese Verdichtungsseite gilt:
-    // Wunsch wird separat gezählt und verhindert daher "fehlend".
-    if(s.owned > 0 || s.ordered > 0 || s.wishlist > 0) return;
-
+    
+    // Fehlend = für diese Airline-Gruppe relevant,
+    // aber weder vorhanden noch bestellt.
+    // Wunschmodelle zählen weiterhin als fehlend,
+    // werden aber zusätzlich in der Spalte "Wunsch" ausgewiesen.
+    if(s.owned > 0 || s.ordered > 0) return;
+    
     row.missing += 1;
     row.missingTypesSet.add(aircraftId);
   });
@@ -514,7 +516,7 @@ function columnTooltip(key){
     owned: "Anzahl vorhandener Modelle dieser Airline-Gruppe.",
     ordered: "Anzahl bestellter Modelle dieser Airline-Gruppe.",
     wishlist: "Anzahl der Wunschmodelle dieser Airline-Gruppe.",
-    missing: "Anzahl fehlender Flugzeugtypen laut group_aircraft_types.json: Typ ist für die Airline-Gruppe relevant, aber weder vorhanden noch bestellt noch als Wunsch erfasst.",    
+    missing: "Anzahl fehlender Flugzeugtypen laut group_aircraft_types.json: Typ ist für die Airline-Gruppe relevant, aber weder vorhanden noch bestellt. Wunschmodelle zählen hier weiterhin als fehlend und werden zusätzlich separat ausgewiesen.",    
     types: "Anzahl unterschiedlicher Flugzeugtypen innerhalb der aktuell berücksichtigten Modelle dieser Airline-Gruppe.",
     flown: "Anzahl der aktuell berücksichtigten Modelle dieser Airline-Gruppe, mit denen du mitgeflogen bist.",
 
