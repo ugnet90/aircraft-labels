@@ -15,6 +15,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_MISSING = OUT_DIR / "missing_types.json"
 OUT_MATRIX = OUT_DIR / "matrix.json"
 OUT_TYPES = OUT_DIR / "types_overview.json"
+OUT_GROUP_TYPES = OUT_DIR / "group_aircraft_types.json"
 
 
 def read_csv(path: Path, delimiter=";"):
@@ -67,6 +68,61 @@ def main():
     pax = read_csv(PASSENGER_CSV, delimiter=";")
     group_types = read_csv(GROUP_TYPES_CSV, delimiter=";")
 
+    # =========================
+    # Group aircraft types JSON
+    # Quelle für "fehlt" in models_overview.html
+    # =========================
+    group_type_seen = set()
+    group_type_items = []
+
+    for r in group_types:
+        airline_code = norm(r.get("airline_code"))
+        airline = norm(r.get("airline"))
+        airline_row = norm(r.get("airline_row")) or airline
+        aircraft_id = norm(r.get("aircraft_id"))
+        aircraft_type = norm(r.get("aircraft_type"))
+        source_sheet = norm(r.get("source_sheet"))
+        source_row = norm(r.get("source_row"))
+
+        if not airline or not aircraft_id:
+            continue
+
+        key = (airline, airline_row, aircraft_id)
+
+        if key in group_type_seen:
+            continue
+
+        group_type_seen.add(key)
+
+        group_type_items.append({
+            "airline_code": airline_code,
+            "airline": airline,
+            "airline_row": airline_row,
+            "aircraft_id": aircraft_id,
+            "aircraft_type": aircraft_type,
+            "source_sheet": source_sheet,
+            "source_row": source_row,
+        })
+
+    group_type_items.sort(
+        key=lambda x: (
+            x.get("airline", "").lower(),
+            x.get("airline_row", "").lower(),
+            x.get("aircraft_type", "").lower(),
+            x.get("aircraft_id", "").lower(),
+        )
+    )
+
+    OUT_GROUP_TYPES.write_text(
+        json.dumps({
+            "schema": "aviation-database.group_aircraft_types.v1",
+            "count": len(group_type_items),
+            "items": group_type_items,
+        }, ensure_ascii=False, indent=2),
+        encoding="utf-8"
+    )
+
+    
     # =========================
     # Missing types (stable by aircraft_id; display Typ_anzeige)
     # =========================
