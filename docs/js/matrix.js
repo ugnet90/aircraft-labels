@@ -149,46 +149,6 @@ function renderMatrixCell(group, aircraftId, p, o, w, r, filters){
   return `<td class="${cls}">${parts.join(" ")}</td>`;
 }
 
-  const baseHref = modelHref(group, aircraftId, "");
-  const ownedHref = modelHref(group, aircraftId, "owned");
-  const orderedHref = modelHref(group, aircraftId, "ordered");
-  const wishlistHref = modelHref(group, aircraftId, "wishlist");
-
-  const parts = [];
-
-  if(showPresent){
-    parts.push(
-      `<a href="${esc(ownedHref)}" title="Vorhandene Modelle in Übersicht öffnen">${esc(p)}</a>`
-    );
-  }
-
-  if(showOrdered){
-    if(!showPresent && p === 0){
-      parts.push(
-        `<a href="${esc(baseHref)}" title="In Übersicht öffnen">0</a>`
-      );
-    }
-
-    parts.push(
-      `<a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(o)}</a>`
-    );
-  }
-
-  if(showWishlist){
-    parts.push(
-      `<a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">W${esc(w)}</a>`
-    );
-  }
-
-  const cls = [
-    "num",
-    showOrdered ? "cellOrdered" : "",
-    showWishlist && !showPresent && !showOrdered ? "cellWishlist" : ""
-  ].filter(Boolean).join(" ");
-
-  return `<td class="${cls}">${parts.join(" ")}</td>`;
-}
-
 function renderDesktop(){
   if(!data) return;
 
