@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 435,
-  "with_any_models": 142,
-  "missing": 293,
+  "with_any_models": 143,
+  "missing": 292,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -10630,11 +10630,26 @@
       "manufacturer": "Ilyushin",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Aeroflot - Russian Airlines",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",

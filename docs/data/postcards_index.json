@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-06T08:34:30+02:00",
-  "count_total": 193,
-  "count_unique": 193,
+  "generated_at": "2026-07-06T08:34:51+02:00",
+  "count_total": 196,
+  "count_unique": 196,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -786,6 +786,15 @@
       "price": 1.35
     },
     {
+      "id": "PC-ORD-SO-29-01",
+      "model_id": "ORD-SO-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
       "id": "PC-OS001-01",
       "model_id": "OS001",
       "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
@@ -1437,6 +1446,23 @@
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.05
+    },
+    {
+      "id": "PC-WIS-DHL-10-01",
+      "model_id": "WIS-DHL-10",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40598-EAT-Leipzig-DHL-A330.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.35
+    },
+    {
+      "id": "PC-WIS-DHL-18-01",
+      "model_id": "WIS-DHL-18",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38363-DHL-B757.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung, ohne Sticker",
+      "price": 0.85
     },
     {
       "id": "PC-WIS-FI-14-01",
@@ -2425,6 +2451,15 @@
       "label": "andere Kennung",
       "price": 1.35
     },
+    "PC-ORD-SO-29-01": {
+      "id": "PC-ORD-SO-29-01",
+      "model_id": "ORD-SO-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
     "PC-OS001-01": {
       "id": "PC-OS001-01",
       "model_id": "OS001",
@@ -3077,6 +3112,23 @@
       "model_status": "wishlist",
       "label": "andere Kennung",
       "price": 1.05
+    },
+    "PC-WIS-DHL-10-01": {
+      "id": "PC-WIS-DHL-10-01",
+      "model_id": "WIS-DHL-10",
+      "url": "https://jjpostcards.com/de/ansichtskarten/40598-EAT-Leipzig-DHL-A330.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "price": 1.35
+    },
+    "PC-WIS-DHL-18-01": {
+      "id": "PC-WIS-DHL-18-01",
+      "model_id": "WIS-DHL-18",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38363-DHL-B757.html",
+      "status": "none",
+      "model_status": "wishlist",
+      "label": "andere Kennung, ohne Sticker",
+      "price": 0.85
     },
     "PC-WIS-FI-14-01": {
       "id": "PC-WIS-FI-14-01",

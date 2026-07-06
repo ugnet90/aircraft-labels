@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 435,
     "present_types": 138,
-    "missing_types": 293,
-    "ordered_types": 4,
-    "models": 285
+    "missing_types": 292,
+    "ordered_types": 5,
+    "models": 290
   },
   "missing_types": [
     {
@@ -1228,12 +1228,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "ILY-Il62M",
-      "Typ_anzeige": "Ilyushin Il-62M",
-      "manufacturer": "Ilyushin",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "ILY-Il86",
       "Typ_anzeige": "Ilyushin Il-86",
       "manufacturer": "Ilyushin",
@@ -1789,6 +1783,12 @@
       "aircraft_id": "BOM-CL601",
       "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "ILY-Il62M",
+      "Typ_anzeige": "Ilyushin Il-62M",
+      "manufacturer": "Ilyushin",
       "status": "ordered"
     }
   ]
