@@ -59,28 +59,38 @@ function modelHref(group, aircraftId, status){
   return `./models_overview.html?${p.toString()}`;
 }
 
-function getCell(pm, om, wm, groupIdx, typeIdx){
+function getCell(pm, om, wm, rm, groupIdx, typeIdx){
   return {
     p: (pm[groupIdx] && pm[groupIdx][typeIdx]) ? pm[groupIdx][typeIdx] : 0,
     o: (om[groupIdx] && om[groupIdx][typeIdx]) ? om[groupIdx][typeIdx] : 0,
-    w: (wm[groupIdx] && wm[groupIdx][typeIdx]) ? wm[groupIdx][typeIdx] : 0
+    w: (wm[groupIdx] && wm[groupIdx][typeIdx]) ? wm[groupIdx][typeIdx] : 0,
+    r: (rm[groupIdx] && rm[groupIdx][typeIdx]) ? rm[groupIdx][typeIdx] : 0
   };
 }
 
-function cellMatchesFilters(p, o, w, filters){
+function cellMatchesFilters(p, o, w, r, filters){
   if(p > 0 && filters.present) return true;
   if(o > 0 && filters.ordered) return true;
   if(w > 0 && filters.wishlist) return true;
-  if(p === 0 && o === 0 && w === 0 && filters.missing) return true;
+
+  // fehlt = laut group_aircraft_types.csv relevant,
+  // aber kein Bestand / keine Bestellung / kein Wunsch
+  if(r > 0 && p === 0 && o === 0 && w === 0 && filters.missing) return true;
 
   return false;
 }
 
-function renderMatrixCell(group, aircraftId, p, o, w, filters){
+function renderMatrixCell(group, aircraftId, p, o, w, r, filters){
   const showPresent = p > 0 && filters.present;
   const showOrdered = o > 0 && filters.ordered;
   const showWishlist = w > 0 && filters.wishlist;
-  const showMissing = p === 0 && o === 0 && w === 0 && filters.missing;
+
+  const showMissing =
+    r > 0 &&
+    p === 0 &&
+    o === 0 &&
+    w === 0 &&
+    filters.missing;
 
   if(!showPresent && !showOrdered && !showWishlist && !showMissing){
     return `<td class="num"></td>`;
@@ -134,6 +144,46 @@ function renderMatrixCell(group, aircraftId, p, o, w, filters){
   return `<td class="${cls}">${parts.join(" ")}</td>`;
 }
 
+  const baseHref = modelHref(group, aircraftId, "");
+  const ownedHref = modelHref(group, aircraftId, "owned");
+  const orderedHref = modelHref(group, aircraftId, "ordered");
+  const wishlistHref = modelHref(group, aircraftId, "wishlist");
+
+  const parts = [];
+
+  if(showPresent){
+    parts.push(
+      `<a href="${esc(ownedHref)}" title="Vorhandene Modelle in Übersicht öffnen">${esc(p)}</a>`
+    );
+  }
+
+  if(showOrdered){
+    if(!showPresent && p === 0){
+      parts.push(
+        `<a href="${esc(baseHref)}" title="In Übersicht öffnen">0</a>`
+      );
+    }
+
+    parts.push(
+      `<a class="badgeOrdered" href="${esc(orderedHref)}" title="Bestellungen in Übersicht öffnen">+${esc(o)}</a>`
+    );
+  }
+
+  if(showWishlist){
+    parts.push(
+      `<a class="badgeWishlist" href="${esc(wishlistHref)}" title="Wunschmodelle in Übersicht öffnen">W${esc(w)}</a>`
+    );
+  }
+
+  const cls = [
+    "num",
+    showOrdered ? "cellOrdered" : "",
+    showWishlist && !showPresent && !showOrdered ? "cellWishlist" : ""
+  ].filter(Boolean).join(" ");
+
+  return `<td class="${cls}">${parts.join(" ")}</td>`;
+}
+
 function renderDesktop(){
   if(!data) return;
 
@@ -145,6 +195,7 @@ function renderDesktop(){
   const pm = data.present_matrix || data.matrix || [];
   const om = data.ordered_matrix || [];
   const wm = data.wishlist_matrix || [];
+  const rm = data.relevant_matrix || [];
   const filters = statusFilters();
 
   const aiRaw = airlines
@@ -165,15 +216,15 @@ function renderDesktop(){
 
   const ti = tiRaw.filter(y => {
     return aiRaw.some(x => {
-      const {p, o, w} = getCell(pm, om, wm, x.idx, y.idx);
-      return cellMatchesFilters(p, o, w, filters);
+      const {p, o, w, r} = getCell(pm, om, wm, rm, x.idx, y.idx);
+      return cellMatchesFilters(p, o, w, r, filters);
     });
   });
 
   const ai = aiRaw.filter(x => {
     return ti.some(y => {
-      const {p, o, w} = getCell(pm, om, wm, x.idx, y.idx);
-      return cellMatchesFilters(p, o, w, filters);
+      const {p, o, w, r} = getCell(pm, om, wm, rm, x.idx, y.idx);
+      return cellMatchesFilters(p, o, w, r, filters);
     });
   });
 
@@ -189,8 +240,8 @@ function renderDesktop(){
     let rowCells = "";
 
     for(const x of ai){
-      const {p, o, w} = getCell(pm, om, wm, x.idx, y.idx);
-      rowCells += renderMatrixCell(x.a, y.t, p, o, w, filters);
+      const {p, o, w, r} = getCell(pm, om, wm, rm, x.idx, y.idx);
+      rowCells += renderMatrixCell(x.a, y.t, p, o, w, r, filters);
     }
 
     html += `<tr><td class="typeCol">${typeCellHtml(y.idx)}</td>${rowCells}</tr>`;
