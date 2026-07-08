@@ -17,7 +17,7 @@ OS;Austrian;Austrian;BOE-737-700;Boeing 737-700;AUA;18
 OS;Austrian;Austrian;BOE-737-700-WL;Boeing 737-700 (Winglets);AUA;19
 OS;Austrian;Austrian;BOE-737-800-WL;Boeing 737-800 (Winglets);AUA;20
 OS;Austrian;Austrian;BOE-767-300;Boeing 767-300;AUA;21
-OS;Austrian;Austrian;BOE-777-200;Boeing 777-200;AUA;22
+OS;Austrian;Austrian;BOE-777-200ER;Boeing 777-200ER;AUA;22
 OS;Austrian;Austrian;BOE-787-9;Boeing 787-9 Dreamliner;AUA;23
 OS;Austrian;Austrian;DHC-DHC8-100;De Havilland Canada DHC-8-100;AUA;24
 OS;Austrian;Austrian Arrows;DHC-DHC8-400;De Havilland Canada DHC-8-400;AUA;25
@@ -231,7 +231,7 @@ AZ;Alitalia;Alitalia;BOE-747-100;Boeing 747-100;Alitalia;11
 AZ;Alitalia;Alitalia;BOE-747-200;Boeing 747-200;Alitalia;12
 AZ;Alitalia;Alitalia;BOE-747-400;Boeing 747-400;Alitalia;13
 AZ;Alitalia;Alitalia;BOE-767-300;Boeing 767-300;Alitalia;14
-AZ;Alitalia;Alitalia;BOE-777-200ER;Boeing 777-200ER Extended Range;Alitalia;15
+AZ;Alitalia;Alitalia;BOE-777-200ER;Boeing 777-200ER;Alitalia;15
 AZ;Alitalia;Alitalia;DOU-DC8-40;Douglas DC-8-40;Alitalia;16
 AZ;Alitalia;Alitalia;DOU-DC8-50;Douglas DC-8-50;Alitalia;17
 AZ;Alitalia;Alitalia;DOU-DC8-62;Douglas DC-8-60/70;Alitalia;18
