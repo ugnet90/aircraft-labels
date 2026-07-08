@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "https://mw-moba.de/produkt-kategorie/1400/",
-  "aircraft_id": "BOE-777-200",
-  "aircraft_type": "Boeing 777-200",
+  "aircraft_id": "BOE-777-200ER",
+  "aircraft_type": "Boeing 777-200ER",
   "registration": "OE-LPD",
   "livery_name": "AUA-2003-BLUEBELLY",
   "parent_livery": "",
@@ -48,8 +48,8 @@
     "row": "22"
   },
   "aircraft": {
-    "aircraft_id": "BOE-777-200",
-    "type": "Boeing 777-200",
+    "aircraft_id": "BOE-777-200ER",
+    "type": "Boeing 777-200ER",
     "registration": "OE-LPD",
     "wingtip": "NONE",
     "has_wingtip": false
@@ -93,14 +93,14 @@
     "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
-    "aircraft_id": "BOE-777-200",
-    "Typ_anzeige": "Boeing 777-200",
+    "aircraft_id": "BOE-777-200ER",
+    "Typ_anzeige": "Boeing 777-200ER",
     "Hersteller": "Boeing",
     "Baureihe": "777",
-    "Unterserie": "-200",
-    "Marketingname": "",
+    "Unterserie": "-200ER",
+    "Marketingname": "Extended Range",
     "Alternate_designations": "",
-    "parent_aircraft_id": "",
+    "parent_aircraft_id": "BOE-777-200",
     "ICAO": "B772",
     "IATA": "772",
     "Wingtip": "NONE",
@@ -108,7 +108,7 @@
     "MarketSegment": "LongHaul",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1994",
+    "Erstflug": "1997",
     "Status": "aktiv",
     "Antrieb": "Jet",
     "Triebwerke": "2",
@@ -117,7 +117,7 @@
     "Length": "63,73",
     "Wingspan": "60,93",
     "Height": "18,5",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_777#Boeing_777-200"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_777#Boeing_777-200ER"
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

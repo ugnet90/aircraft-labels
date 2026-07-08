@@ -6293,24 +6293,10 @@
       "wingtip": "NONE",
       "has_wingtip": false,
       "status": "owned",
-      "owned_count": 2,
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 2,
+      "total_count": 1,
       "airline_group_counts": [
-        {
-          "group": "Austrian",
-          "owned": 1,
-          "ordered": 0,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Austrian",
-              "owned": 1,
-              "ordered": 0,
-              "total": 1
-            }
-          ]
-        },
         {
           "group": "Lauda Air",
           "owned": 1,
@@ -6348,9 +6334,9 @@
       "wingtip": "NONE",
       "has_wingtip": false,
       "status": "owned",
-      "owned_count": 1,
+      "owned_count": 2,
       "ordered_count": 0,
-      "total_count": 1,
+      "total_count": 2,
       "airline_group_counts": [
         {
           "group": "Alitalia",
@@ -6360,6 +6346,20 @@
           "airlines": [
             {
               "airline": "Alitalia",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Austrian",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Austrian",
               "owned": 1,
               "ordered": 0,
               "total": 1
