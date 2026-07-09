@@ -361,3 +361,31 @@ th.subCol{
 th.mainCol{
   font-weight:700;
 }
+
+
+thead .subGroup{
+  text-align:center;
+  color:#777;
+  font-size:11px;
+  font-weight:600;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+thead tr.headMain th{
+  vertical-align:bottom;
+}
+
+thead tr.headSub th{
+  color:#777;
+  font-size:11px;
+  font-weight:600;
+  text-transform:none;
+  letter-spacing:0;
+  padding-top:2px;
+}
+
+thead tr.headSub th.thSort.active{
+  color:#333;
+  font-weight:700;
+}
