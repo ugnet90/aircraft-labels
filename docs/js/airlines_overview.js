@@ -616,54 +616,46 @@ function render(rows){
   let html = `
     <table>
       <thead>
-        <tr>
-          <th class="${thClass("group")}" data-sort="group" title="${esc(columnTooltip("group"))}">
+        <tr class="headMain">
+          <th class="${thClass("group")}" rowspan="2" data-sort="group" title="${esc(columnTooltip("group"))}">
             Airline-Gruppe ${mark("group")}
           </th>
-        
-          <th class="${thClass("types")} num blockStart mainCol"
-              data-sort="types"
-              title="${esc(columnTooltip("types"))}">
+      
+          <th class="${thClass("types")} num blockStart" rowspan="2" data-sort="types" title="${esc(columnTooltip("types"))}">
             Typen ${mark("types")}
           </th>
-        
-          <th class="${thClass("models")} num blockStart mainCol"
-              data-sort="models"
-              title="${esc(columnTooltip("models"))}">
+      
+          <th class="${thClass("models")} num blockStart" rowspan="2" data-sort="models" title="${esc(columnTooltip("models"))}">
             Modelle ${mark("models")}
           </th>
-        
-          <th class="${thClass("owned")} num subCol"
-              data-sort="owned"
-              title="${esc(columnTooltip("owned"))}">
-            davon vorh. ${mark("owned")}
-          </th>
-        
-          <th class="${thClass("ordered")} num subCol"
-              data-sort="ordered"
-              title="${esc(columnTooltip("ordered"))}">
-            best. ${mark("ordered")}
-          </th>
-        
-          <th class="${thClass("missing")} num blockStart mainCol"
-              data-sort="missing"
-              title="${esc(columnTooltip("missing"))}">
+      
+          <th class="num subGroup" colspan="2">davon</th>
+      
+          <th class="${thClass("missing")} num blockStart" rowspan="2" data-sort="missing" title="${esc(columnTooltip("missing"))}">
             Fehlend ${mark("missing")}
           </th>
-        
-          <th class="${thClass("wishlist")} num subCol"
-              data-sort="wishlist"
-              title="${esc(columnTooltip("wishlist"))}">
-            davon Wunsch ${mark("wishlist")}
-          </th>
-        
-          <th class="${thClass("flown")} num blockStart mainCol"
-              data-sort="flown"
-              title="${esc(columnTooltip("flown"))}">
+      
+          <th class="num subGroup">davon</th>
+      
+          <th class="${thClass("flown")} num blockStart" rowspan="2" data-sort="flown" title="${esc(columnTooltip("flown"))}">
             Mitgeflogen ${mark("flown")}
           </th>
-        
+      
           ${optionalHeaders}
+        </tr>
+      
+        <tr class="headSub">
+          <th class="${thClass("owned")} num" data-sort="owned" title="${esc(columnTooltip("owned"))}">
+            vorh. ${mark("owned")}
+          </th>
+      
+          <th class="${thClass("ordered")} num" data-sort="ordered" title="${esc(columnTooltip("ordered"))}">
+            best. ${mark("ordered")}
+          </th>
+      
+          <th class="${thClass("wishlist")} num" data-sort="wishlist" title="${esc(columnTooltip("wishlist"))}">
+            Wunsch ${mark("wishlist")}
+          </th>
         </tr>
       </thead>
       <tbody>
