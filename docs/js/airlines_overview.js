@@ -513,10 +513,10 @@ function columnTooltip(key){
   const tips = {
     group: "Airline-Gruppe gemäß Datenfeld airline. Die Auswertung erfolgt gruppiert nach Airline-Gruppe.",
     models: "Gesamtanzahl der aktuell berücksichtigten vorhandenen und bestellten Modelle dieser Airline-Gruppe.",
-    owned: "Anzahl vorhandener Modelle dieser Airline-Gruppe.",
+    owned: "Von den Modellen bereits vorhanden.",
     ordered: "Anzahl bestellter Modelle dieser Airline-Gruppe.",
     wishlist: "Anzahl der Wunschmodelle dieser Airline-Gruppe.",
-    missing: "Anzahl fehlender Flugzeugtypen laut group_aircraft_types.json: Typ ist für die Airline-Gruppe relevant, aber weder vorhanden noch bestellt. Wunschmodelle zählen hier weiterhin als fehlend und werden zusätzlich separat ausgewiesen.",    
+    missing: "Von den fehlenden Typen bereits als Wunschmodell erfasst.",    
     types: "Anzahl unterschiedlicher Flugzeugtypen innerhalb der aktuell berücksichtigten Modelle dieser Airline-Gruppe.",
     flown: "Anzahl der aktuell berücksichtigten Modelle dieser Airline-Gruppe, mit denen du mitgeflogen bist.",
 
@@ -621,27 +621,45 @@ function render(rows){
             Airline-Gruppe ${mark("group")}
           </th>
         
-          <th class="${thClass("models")} num blockStart" data-sort="models" title="${esc(columnTooltip("models"))}">
-            Modelle ${mark("models")}
-          </th>
-          <th class="${thClass("owned")} num" data-sort="owned" title="${esc(columnTooltip("owned"))}">
-            vorh. ${mark("owned")}
-          </th>
-          <th class="${thClass("ordered")} num" data-sort="ordered" title="${esc(columnTooltip("ordered"))}">
-            best. ${mark("ordered")}
-          </th>
-          <th class="${thClass("wishlist")} num" data-sort="wishlist" title="${esc(columnTooltip("wishlist"))}">
-            Wunsch ${mark("wishlist")}
-          </th>
-          <th class="${thClass("missing")} num" data-sort="missing" title="${esc(columnTooltip("missing"))}">
-            fehlt ${mark("missing")}
-          </th>
-        
-          <th class="${thClass("types")} num blockStart" data-sort="types" title="${esc(columnTooltip("types"))}">
+          <th class="${thClass("types")} num blockStart"
+              data-sort="types"
+              title="${esc(columnTooltip("types"))}">
             Typen ${mark("types")}
           </th>
         
-          <th class="${thClass("flown")} num blockStart" data-sort="flown" title="${esc(columnTooltip("flown"))}">
+          <th class="${thClass("models")} num blockStart"
+              data-sort="models"
+              title="${esc(columnTooltip("models"))}">
+            Modelle ${mark("models")}
+          </th>
+        
+          <th class="${thClass("owned")} num"
+              data-sort="owned"
+              title="${esc(columnTooltip("owned"))}">
+            davon vorh. ${mark("owned")}
+          </th>
+        
+          <th class="${thClass("ordered")} num"
+              data-sort="ordered"
+              title="${esc(columnTooltip("ordered"))}">
+            best. ${mark("ordered")}
+          </th>
+        
+          <th class="${thClass("missing")} num blockStart"
+              data-sort="missing"
+              title="${esc(columnTooltip("missing"))}">
+            Fehlend ${mark("missing")}
+          </th>
+        
+          <th class="${thClass("wishlist")} num"
+              data-sort="wishlist"
+              title="${esc(columnTooltip("wishlist"))}">
+            davon Wunsch ${mark("wishlist")}
+          </th>
+        
+          <th class="${thClass("flown")} num blockStart"
+              data-sort="flown"
+              title="${esc(columnTooltip("flown"))}">
             Mitgeflogen ${mark("flown")}
           </th>
         
@@ -677,32 +695,40 @@ function render(rows){
       <tr class="airlineRow" data-href="${esc(href)}">
         <td>${esc(row.group)}</td>
         
+        <td class="num mono blockStart">${esc(row.types)}</td>
+        
         <td class="num mono blockStart">${esc(row.models)}</td>
-        <td class="num mono">${row.owned > 0 ? esc(row.owned) : ""}</td>
-        <td class="num mono">${row.ordered > 0 ? esc(row.ordered) : ""}</td>
+        
+        <td class="num mono">
+          ${row.owned > 0 ? esc(row.owned) : ""}
+        </td>
+        
+        <td class="num mono">
+          ${row.ordered > 0 ? esc(row.ordered) : ""}
+        </td>
+        
+        <td class="num mono blockStart">
+          ${
+            row.missing > 0
+              ? `<a class="badge badge-missing"
+                    href="./models_overview.html?group=${encodeURIComponent(row.group)}&status=missing">${row.missing}</a>`
+              : ""
+          }
+        </td>
         
         <td class="num mono">
           ${
             row.wishlist > 0
-              ? `<a class="badge badge-wishlist" href="./models_overview.html?group=${encodeURIComponent(row.group || "")}&status=wishlist">${esc(row.wishlist)}</a>`
+              ? `<a class="badge badge-wishlist"
+                    href="./models_overview.html?group=${encodeURIComponent(row.group)}&status=wishlist">${row.wishlist}</a>`
               : ""
           }
         </td>
-        
-        <td class="num mono">
-          ${
-            row.missing > 0
-              ? `<a class="badge badge-missing" href="./models_overview.html?group=${encodeURIComponent(row.group || "")}&status=missing">${esc(row.missing)}</a>`
-              : ""
-          }
-        </td>
-        
-        <td class="num mono blockStart">${esc(row.types)}</td>
         
         <td class="num mono blockStart">
           ${
             row.flown > 0
-              ? `<span class="badge badge-flown">${esc(row.flown)}</span>`
+              ? `<span class="badge badge-flown">${row.flown}</span>`
               : ""
           }
         </td>
@@ -739,16 +765,28 @@ function render(rows){
         <tr class="sumRow">
           <td>Summen</td>
           
-          <td class="num mono blockStart">${esc(sumRows(rows, "models"))}</td>
-          <td class="num mono">${sumRows(rows, "owned") > 0 ? esc(sumRows(rows, "owned")) : ""}</td>
-          <td class="num mono">${sumRows(rows, "ordered") > 0 ? esc(sumRows(rows, "ordered")) : ""}</td>
-          <td class="num mono">${sumRows(rows, "wishlist") > 0 ? esc(sumRows(rows, "wishlist")) : ""}</td>
-          <td class="num mono">${sumRows(rows, "missing") > 0 ? esc(sumRows(rows, "missing")) : ""}</td>
-          
           <td class="num mono blockStart">${esc(countUniqueTypes(rows))}</td>
           
+          <td class="num mono blockStart">${esc(sumRows(rows,"models"))}</td>
+          
+          <td class="num mono">
+            ${sumRows(rows,"owned") || ""}
+          </td>
+          
+          <td class="num mono">
+            ${sumRows(rows,"ordered") || ""}
+          </td>
+          
           <td class="num mono blockStart">
-            ${sumRows(rows, "flown") > 0 ? esc(sumRows(rows, "flown")) : ""}
+            ${sumRows(rows,"missing") || ""}
+          </td>
+          
+          <td class="num mono">
+            ${sumRows(rows,"wishlist") || ""}
+          </td>
+          
+          <td class="num mono blockStart">
+            ${sumRows(rows,"flown") || ""}
           </td>
           
           ${optionalSumCells}
