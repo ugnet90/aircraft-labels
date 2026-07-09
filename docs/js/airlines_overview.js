@@ -621,7 +621,7 @@ function render(rows){
             Airline-Gruppe ${mark("group")}
           </th>
         
-          <th class="${thClass("types")} num blockStartc mainCol"
+          <th class="${thClass("types")} num blockStart mainCol"
               data-sort="types"
               title="${esc(columnTooltip("types"))}">
             Typen ${mark("types")}
