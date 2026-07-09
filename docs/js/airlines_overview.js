@@ -621,43 +621,43 @@ function render(rows){
             Airline-Gruppe ${mark("group")}
           </th>
         
-          <th class="${thClass("types")} num blockStart"
+          <th class="${thClass("types")} num blockStartc mainCol"
               data-sort="types"
               title="${esc(columnTooltip("types"))}">
             Typen ${mark("types")}
           </th>
         
-          <th class="${thClass("models")} num blockStart"
+          <th class="${thClass("models")} num blockStart mainCol"
               data-sort="models"
               title="${esc(columnTooltip("models"))}">
             Modelle ${mark("models")}
           </th>
         
-          <th class="${thClass("owned")} num"
+          <th class="${thClass("owned")} num subCol"
               data-sort="owned"
               title="${esc(columnTooltip("owned"))}">
             davon vorh. ${mark("owned")}
           </th>
         
-          <th class="${thClass("ordered")} num"
+          <th class="${thClass("ordered")} num subCol"
               data-sort="ordered"
               title="${esc(columnTooltip("ordered"))}">
             best. ${mark("ordered")}
           </th>
         
-          <th class="${thClass("missing")} num blockStart"
+          <th class="${thClass("missing")} num blockStart mainCol"
               data-sort="missing"
               title="${esc(columnTooltip("missing"))}">
             Fehlend ${mark("missing")}
           </th>
         
-          <th class="${thClass("wishlist")} num"
+          <th class="${thClass("wishlist")} num subCol"
               data-sort="wishlist"
               title="${esc(columnTooltip("wishlist"))}">
             davon Wunsch ${mark("wishlist")}
           </th>
         
-          <th class="${thClass("flown")} num blockStart"
+          <th class="${thClass("flown")} num blockStart mainCol"
               data-sort="flown"
               title="${esc(columnTooltip("flown"))}">
             Mitgeflogen ${mark("flown")}
