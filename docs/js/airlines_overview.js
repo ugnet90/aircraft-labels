@@ -618,11 +618,11 @@ function render(rows){
       <thead>
         <tr class="headMain">
           <th class="${thClass("group")}" rowspan="2" data-sort="group" title="${esc(columnTooltip("group"))}">
-            Airline-Gruppe ${mark("group")}
+            Airline-<br>Gruppe ${mark("group")}
           </th>
       
           <th class="${thClass("types")} num blockStart" rowspan="2" data-sort="types" title="${esc(columnTooltip("types"))}">
-            Typen ${mark("types")}
+            Flugzeug-<br>Typen ${mark("types")}
           </th>
       
           <th class="${thClass("models")} num blockStart" rowspan="2" data-sort="models" title="${esc(columnTooltip("models"))}">
@@ -638,7 +638,7 @@ function render(rows){
           <th class="num subGroup">davon</th>
       
           <th class="${thClass("flown")} num blockStart" rowspan="2" data-sort="flown" title="${esc(columnTooltip("flown"))}">
-            Mitgeflogen ${mark("flown")}
+            Mitge-<br>flogen ${mark("flown")}
           </th>
       
           ${optionalHeaders}
