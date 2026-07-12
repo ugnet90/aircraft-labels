@@ -125,20 +125,6 @@
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/EI-EJG"
   },
-  "AZ003": {
-    "model_id": "AZ003",
-    "photo_url": "https://www.jetphotos.com/photo/7936576",
-    "registration": "I-DISA",
-    "airline_row": "Alitalia",
-    "aircraft_type": "Boeing 777-200ER Extended Range",
-    "aircraft_id": "BOE-777-200ER",
-    "source_url": "https://www.jetphotos.com/photo/7936576",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-06-23T14:54:31+02:00",
-    "direct_image": false,
-    "method": "none",
-    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/I-DISA"
-  },
   "BA001": {
     "model_id": "BA001",
     "photo_url": "https://www.planespotters.net/photo/1658048/g-boad-british-airways-aerospatiale-bac-concorde-102",
@@ -1436,20 +1422,6 @@
     "direct_image": false,
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/OE-LGI"
-  },
-  "OS009": {
-    "model_id": "OS009",
-    "photo_url": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
-    "registration": "OE-LPD",
-    "airline_row": "Austrian",
-    "aircraft_type": "Boeing 777-200",
-    "aircraft_id": "BOE-777-200",
-    "source_url": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-06-23T14:56:59+02:00",
-    "direct_image": false,
-    "method": "none",
-    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/OE-LPD"
   },
   "OS010": {
     "model_id": "OS010",
@@ -2887,20 +2859,6 @@
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N19912"
   },
-  "WIS-PA-28": {
-    "model_id": "WIS-PA-28",
-    "photo_url": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Douglas-DC-6B/25039",
-    "registration": "N6530C",
-    "airline_row": "Pan Am",
-    "aircraft_type": "Douglas DC-6B",
-    "aircraft_id": "DOU-DC6",
-    "source_url": "https://www.airliners.net/photo/Pan-American-World-Airways-PAA/Douglas-DC-6B/25039",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-06-23T14:59:33+02:00",
-    "direct_image": false,
-    "method": "none",
-    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N6530C"
-  },
   "WIS-PA-29": {
     "model_id": "WIS-PA-29",
     "photo_url": "https://www.airliners.net/photo/Pan-American-World-Airways-Pan-Am/Douglas-DC-7C-Seven-Seas/310204/L",
@@ -3318,5 +3276,75 @@
     "direct_image": false,
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N901PA"
+  },
+  "AZ003": {
+    "model_id": "AZ003",
+    "photo_url": "https://www.jetphotos.com/photo/7936576",
+    "registration": "I-DISA",
+    "airline_row": "Alitalia",
+    "aircraft_type": "Boeing 777-200ER",
+    "aircraft_id": "BOE-777-200ER",
+    "source_url": "https://www.jetphotos.com/photo/7936576",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-12T15:59:55+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/I-DISA"
+  },
+  "ORD-PA-28": {
+    "model_id": "ORD-PA-28",
+    "photo_url": "https://www.airhistory.net/photo/534189/N6519C",
+    "registration": "N6519C",
+    "airline_row": "Pan Am",
+    "aircraft_type": "Douglas DC-6B",
+    "aircraft_id": "DOU-DC6",
+    "source_url": "https://www.airhistory.net/photo/534189/N6519C",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-12T15:59:56+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N6519C"
+  },
+  "ORD-SO-14": {
+    "model_id": "ORD-SO-14",
+    "photo_url": "https://www.planespotters.net/photo/884756/n470up-united-parcel-service-ups-boeing-757-24apf",
+    "registration": "N470UP",
+    "airline_row": "United Parcel Service (UPS)",
+    "aircraft_type": "Boeing 757-200PF",
+    "aircraft_id": "BOE-757-200PF",
+    "source_url": "https://www.planespotters.net/photo/884756/n470up-united-parcel-service-ups-boeing-757-24apf",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-12T15:59:57+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N470UP"
+  },
+  "ORD-SO-30": {
+    "model_id": "ORD-SO-30",
+    "photo_url": "https://www.planespotters.net/photo/135844/jy-agm-royal-jordanian-airbus-a310-304",
+    "registration": "JY-AGM",
+    "airline_row": "Royal Jordanian",
+    "aircraft_type": "Airbus A310-304",
+    "aircraft_id": "AIB-A310-304VIP",
+    "source_url": "https://www.planespotters.net/photo/135844/jy-agm-royal-jordanian-airbus-a310-304",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-12T15:59:59+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/JY-AGM"
+  },
+  "OS009": {
+    "model_id": "OS009",
+    "photo_url": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
+    "registration": "OE-LPD",
+    "airline_row": "Austrian",
+    "aircraft_type": "Boeing 777-200ER",
+    "aircraft_id": "BOE-777-200ER",
+    "source_url": "https://www.planespotters.net/photo/1084147/oe-lpd-austrian-airlines-boeing-777-2z9er",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-12T16:00:00+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/OE-LPD"
   }
 }
