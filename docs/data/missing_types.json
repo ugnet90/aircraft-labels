@@ -6,7 +6,7 @@
     "present_types": 138,
     "missing_types": 291,
     "ordered_types": 6,
-    "models": 290
+    "models": 292
   },
   "missing_types": [
     {
@@ -532,6 +532,12 @@
       "status": "missing"
     },
     {
+      "aircraft_id": "BOE-747-100SF",
+      "Typ_anzeige": "Boeing 747-100 Special Freighter",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
       "aircraft_id": "BOE-747-200B",
       "Typ_anzeige": "Boeing 747-200B",
       "manufacturer": "Boeing",
@@ -618,12 +624,6 @@
     {
       "aircraft_id": "BOE-757-200PCF-WL",
       "Typ_anzeige": "Boeing 757-200PCF (Winglets)",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-757-200PF",
-      "Typ_anzeige": "Boeing 757-200PF",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1006,12 +1006,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "DOU-DC6",
-      "Typ_anzeige": "Douglas DC-6",
-      "manufacturer": "Douglas",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "DOU-DC6-A",
       "Typ_anzeige": "Douglas DC-6A",
       "manufacturer": "Douglas",
@@ -1218,6 +1212,12 @@
     {
       "aircraft_id": "ILY-Il62",
       "Typ_anzeige": "Ilyushin Il-62",
+      "manufacturer": "Ilyushin",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "ILY-Il62M",
+      "Typ_anzeige": "Ilyushin Il-62M",
       "manufacturer": "Ilyushin",
       "status": "missing"
     },
@@ -1774,8 +1774,8 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "BOE-747-100SF",
-      "Typ_anzeige": "Boeing 747-100 Special Freighter",
+      "aircraft_id": "BOE-757-200PF",
+      "Typ_anzeige": "Boeing 757-200PF",
       "manufacturer": "Boeing",
       "status": "ordered"
     },
@@ -1786,9 +1786,9 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "ILY-Il62M",
-      "Typ_anzeige": "Ilyushin Il-62M",
-      "manufacturer": "Ilyushin",
+      "aircraft_id": "DOU-DC6",
+      "Typ_anzeige": "Douglas DC-6",
+      "manufacturer": "Douglas",
       "status": "ordered"
     }
   ]

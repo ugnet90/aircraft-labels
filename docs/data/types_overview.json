@@ -762,10 +762,10 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "owned",
+      "status": "mixed",
       "owned_count": 1,
-      "ordered_count": 0,
-      "total_count": 1,
+      "ordered_count": 1,
+      "total_count": 2,
       "airline_group_counts": [
         {
           "group": "Luftwaffe",
@@ -777,6 +777,20 @@
               "airline": "Luftwaffe (German Air Force)",
               "owned": 1,
               "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Royal Jordanian",
+              "owned": 0,
+              "ordered": 1,
               "total": 1
             }
           ]
@@ -5006,26 +5020,11 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Pan Am",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Pan Am",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "CARGO",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -5753,11 +5752,26 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "United Parcel Service (UPS)",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "SingleAisle",
       "market_segment": "MediumHaul",
@@ -8847,11 +8861,26 @@
       "manufacturer": "Douglas",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10645,26 +10674,11 @@
       "manufacturer": "Ilyushin",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Aeroflot - Russian Airlines",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",

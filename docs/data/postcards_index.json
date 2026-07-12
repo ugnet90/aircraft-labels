@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-12T15:54:48+02:00",
-  "count_total": 196,
-  "count_unique": 196,
+  "generated_at": "2026-07-12T15:55:06+02:00",
+  "count_total": 198,
+  "count_unique": 198,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -789,14 +789,41 @@
       "id": "PC-ORD-PA-17-01",
       "model_id": "ORD-PA-17",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.85
+    },
+    {
+      "id": "PC-ORD-PA-28-01",
+      "model_id": "ORD-PA-28",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
       "status": "none",
       "model_status": "ordered",
-      "price": 1.85
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-SO-14-01",
+      "model_id": "ORD-SO-14",
+      "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung, anderer Sticker",
+      "price": 0.85
     },
     {
       "id": "PC-ORD-SO-29-01",
       "model_id": "ORD-SO-29",
       "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-ORD-SO-30-01",
+      "model_id": "ORD-SO-30",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5648-royal-jordanian-a310.html",
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
@@ -1571,15 +1598,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
-    },
-    {
-      "id": "PC-WIS-PA-28-01",
-      "model_id": "WIS-PA-28",
-      "url": "https://jjpostcards.com/de/ansichtskarten/25906-pan-american-dc-6.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.35
     },
     {
       "id": "PC-WIS-PA-29-01",
@@ -2455,14 +2473,41 @@
       "id": "PC-ORD-PA-17-01",
       "model_id": "ORD-PA-17",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.85
+    },
+    "PC-ORD-PA-28-01": {
+      "id": "PC-ORD-PA-28-01",
+      "model_id": "ORD-PA-28",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
       "status": "none",
       "model_status": "ordered",
-      "price": 1.85
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-ORD-SO-14-01": {
+      "id": "PC-ORD-SO-14-01",
+      "model_id": "ORD-SO-14",
+      "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung, anderer Sticker",
+      "price": 0.85
     },
     "PC-ORD-SO-29-01": {
       "id": "PC-ORD-SO-29-01",
       "model_id": "ORD-SO-29",
       "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-ORD-SO-30-01": {
+      "id": "PC-ORD-SO-30-01",
+      "model_id": "ORD-SO-30",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5648-royal-jordanian-a310.html",
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
@@ -3237,15 +3282,6 @@
       "status": "none",
       "model_status": "wishlist",
       "price": 0.85
-    },
-    "PC-WIS-PA-28-01": {
-      "id": "PC-WIS-PA-28-01",
-      "model_id": "WIS-PA-28",
-      "url": "https://jjpostcards.com/de/ansichtskarten/25906-pan-american-dc-6.html",
-      "status": "none",
-      "model_status": "wishlist",
-      "label": "andere Kennung",
-      "price": 1.35
     },
     "PC-WIS-PA-29-01": {
       "id": "PC-WIS-PA-29-01",
