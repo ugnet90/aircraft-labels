@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T15:55:06+02:00",
+  "generated_at": "2026-07-13T07:54:15+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -1962,7 +1962,7 @@
         "wingspan": 59.64,
         "height": 19.3,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Boeing"
       },
       {
@@ -4130,7 +4130,7 @@
         "wingspan": 43.2,
         "height": 12.35,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Ilyushin"
       }
     ],

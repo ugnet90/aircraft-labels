@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-SO-29",
+  "model_id": "SO018",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "airline_row": "Aeroflot - Russian Airlines",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-ORD-SO-29-01",
+      "id": "PC-SO018-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
       "price": 0.85
@@ -38,7 +38,7 @@
   "photo_credit": "",
   "arrived_excel": "2026-07-11",
   "arrived": "2026-07-11",
-  "ordered_at": "2026-07-04",
+  "ordered_at": null,
   "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
@@ -68,7 +68,7 @@
     "price": 22.0,
     "shipping_allocated": 9.9,
     "arrived": "2026-07-11",
-    "ordered_at": "2026-07-04",
+    "ordered_at": null,
     "ordered": false,
     "present": true,
     "wishlist": false,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T15:55:06+02:00",
+  "generated_at": "2026-07-13T07:54:15+02:00",
   "count_total": 198,
   "count_unique": 198,
   "items": [
@@ -786,14 +786,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-PA-17-01",
-      "model_id": "ORD-PA-17",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.85
-    },
-    {
       "id": "PC-ORD-PA-28-01",
       "model_id": "ORD-PA-28",
       "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
@@ -809,15 +801,6 @@
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, anderer Sticker",
-      "price": 0.85
-    },
-    {
-      "id": "PC-ORD-SO-29-01",
-      "model_id": "ORD-SO-29",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
       "price": 0.85
     },
     {
@@ -1142,6 +1125,14 @@
       "price": 1.35
     },
     {
+      "id": "PC-PA023-01",
+      "model_id": "PA023",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.85
+    },
+    {
       "id": "PC-SK001-01",
       "model_id": "SK001",
       "url": "https://jjpostcards.com/de/ansichtskarten/40732-SAS-CRJ-900.html",
@@ -1343,6 +1334,15 @@
       "status": "owned",
       "model_status": "owned",
       "price": 1.05
+    },
+    {
+      "id": "PC-SO018-01",
+      "model_id": "SO018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
     },
     {
       "id": "PC-TP001-01",
@@ -2469,14 +2469,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-PA-17-01": {
-      "id": "PC-ORD-PA-17-01",
-      "model_id": "ORD-PA-17",
-      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-      "status": "owned",
-      "model_status": "owned",
-      "price": 1.85
-    },
     "PC-ORD-PA-28-01": {
       "id": "PC-ORD-PA-28-01",
       "model_id": "ORD-PA-28",
@@ -2493,15 +2485,6 @@
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, anderer Sticker",
-      "price": 0.85
-    },
-    "PC-ORD-SO-29-01": {
-      "id": "PC-ORD-SO-29-01",
-      "model_id": "ORD-SO-29",
-      "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
-      "status": "owned",
-      "model_status": "owned",
-      "label": "andere Kennung",
       "price": 0.85
     },
     "PC-ORD-SO-30-01": {
@@ -2825,6 +2808,14 @@
       "label": "andere Kennung",
       "price": 1.35
     },
+    "PC-PA023-01": {
+      "id": "PC-PA023-01",
+      "model_id": "PA023",
+      "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.85
+    },
     "PC-SK001-01": {
       "id": "PC-SK001-01",
       "model_id": "SK001",
@@ -3027,6 +3018,15 @@
       "status": "owned",
       "model_status": "owned",
       "price": 1.05
+    },
+    "PC-SO018-01": {
+      "id": "PC-SO018-01",
+      "model_id": "SO018",
+      "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
     },
     "PC-TP001-01": {
       "id": "PC-TP001-01",

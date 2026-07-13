@@ -3,8 +3,8 @@
   "warning": "",
   "counts": {
     "master_types": 435,
-    "present_types": 138,
-    "missing_types": 291,
+    "present_types": 140,
+    "missing_types": 289,
     "ordered_types": 6,
     "models": 292
   },
@@ -528,12 +528,6 @@
     {
       "aircraft_id": "BOE-737-MAX9",
       "Typ_anzeige": "Boeing 737 MAX 9",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-747-100SF",
-      "Typ_anzeige": "Boeing 747-100 Special Freighter",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -1212,12 +1206,6 @@
     {
       "aircraft_id": "ILY-Il62",
       "Typ_anzeige": "Ilyushin Il-62",
-      "manufacturer": "Ilyushin",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "ILY-Il62M",
-      "Typ_anzeige": "Ilyushin Il-62M",
       "manufacturer": "Ilyushin",
       "status": "missing"
     },

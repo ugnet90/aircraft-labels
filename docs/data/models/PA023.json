@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-PA-17",
+  "model_id": "PA023",
   "airline_code": "PA",
   "airline": "Pan Am",
   "airline_row": "Pan Am",
@@ -26,7 +26,7 @@
   "postcard_price": 1.85,
   "postcards": [
     {
-      "id": "PC-ORD-PA-17-01",
+      "id": "PC-PA023-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
       "price": 1.85
@@ -38,7 +38,7 @@
   "photo_credit": "",
   "arrived_excel": "2026-07-11",
   "arrived": "2026-07-11",
-  "ordered_at": "2026-07-06",
+  "ordered_at": null,
   "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
@@ -68,7 +68,7 @@
     "price": 25.0,
     "shipping_allocated": 16.49,
     "arrived": "2026-07-11",
-    "ordered_at": "2026-07-06",
+    "ordered_at": null,
     "ordered": false,
     "present": true,
     "wishlist": false,

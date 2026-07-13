@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 435,
-  "with_any_models": 144,
-  "missing": 291,
+  "with_any_models": 146,
+  "missing": 289,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -5020,11 +5020,26 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Pan Am",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Pan Am",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -10674,11 +10689,26 @@
       "manufacturer": "Ilyushin",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
+      "status": "owned",
+      "owned_count": 1,
       "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Sonstige Airlines",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Aeroflot - Russian Airlines",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
