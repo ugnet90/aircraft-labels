@@ -3139,20 +3139,6 @@
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/12+05"
   },
-  "ORD-SO-29": {
-    "model_id": "ORD-SO-29",
-    "photo_url": "https://www.jetphotos.com/photo/333629",
-    "registration": "CCCP-86485",
-    "airline_row": "Aeroflot - Russian Airlines",
-    "aircraft_type": "Ilyushin Il-62M",
-    "aircraft_id": "ILY-Il62M",
-    "source_url": "https://www.jetphotos.com/photo/333629",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-07-06T11:15:29+02:00",
-    "direct_image": false,
-    "method": "none",
-    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/CCCP-86485"
-  },
   "OS021": {
     "model_id": "OS021",
     "photo_url": "https://commons.wikimedia.org/wiki/Category:OE-LAN_(Vickers_Viscount)?uselang=de#/media/File:Austrian_Vickers_Viscount.jpg",
@@ -3263,20 +3249,6 @@
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/OE-LBA"
   },
-  "ORD-PA-17": {
-    "model_id": "ORD-PA-17",
-    "photo_url": "https://www.airhistory.net/photo/529064/N901PA",
-    "registration": "N901PA",
-    "airline_row": "Pan Am",
-    "aircraft_type": "Boeing 747-123 Special Freighter",
-    "aircraft_id": "BOE-747-100SF",
-    "source_url": "https://www.airhistory.net/photo/529064/N901PA",
-    "thumb_url": null,
-    "scraped_at_utc": "2026-07-06T19:56:54+02:00",
-    "direct_image": false,
-    "method": "none",
-    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N901PA"
-  },
   "AZ003": {
     "model_id": "AZ003",
     "photo_url": "https://www.jetphotos.com/photo/7936576",
@@ -3346,5 +3318,33 @@
     "direct_image": false,
     "method": "none",
     "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/OE-LPD"
+  },
+  "PA023": {
+    "model_id": "PA023",
+    "photo_url": "https://www.airhistory.net/photo/529064/N901PA",
+    "registration": "N901PA",
+    "airline_row": "Pan Am",
+    "aircraft_type": "Boeing 747-123 Special Freighter",
+    "aircraft_id": "BOE-747-100SF",
+    "source_url": "https://www.airhistory.net/photo/529064/N901PA",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-13T08:57:25+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/N901PA"
+  },
+  "SO018": {
+    "model_id": "SO018",
+    "photo_url": "https://www.jetphotos.com/photo/333629",
+    "registration": "CCCP-86485",
+    "airline_row": "Aeroflot - Russian Airlines",
+    "aircraft_type": "Ilyushin Il-62M",
+    "aircraft_id": "ILY-Il62M",
+    "source_url": "https://www.jetphotos.com/photo/333629",
+    "thumb_url": null,
+    "scraped_at_utc": "2026-07-13T08:57:26+02:00",
+    "direct_image": false,
+    "method": "none",
+    "error": "api reg failed: 403 Client Error: Forbidden for url: https://api.planespotters.net/pub/photos/reg/CCCP-86485"
   }
 }
