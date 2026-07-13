@@ -5003,33 +5003,6 @@
     "postcard_id": "PC-WIS-DE-7-01",
     "scraped_at_utc": "2026-07-01T13:39:31+02:00"
   },
-  "PC-ORD-SO-29-01": {
-    "id": "PC-ORD-SO-29-01",
-    "model_id": "ORD-SO-29",
-    "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
-    "status": "none",
-    "model_status": "ordered",
-    "label": "andere Kennung",
-    "price": 0.85,
-    "source_url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
-    "thumb_url": "https://jjpostcards.com/12571-thickbox_default/aeroflot-il-62.jpg",
-    "airline": "Aeroflot",
-    "aircraft_manufacturer": "Ilyushin",
-    "aircraft_type": "Ilyushin Il-62",
-    "aircraft_type_exact": "Ilyushin Il-62M",
-    "registration": "CCCP-86533",
-    "publisher": "Bucher",
-    "year": 1991,
-    "size": "140x90 mm",
-    "size_mm": {
-      "w": 140,
-      "h": 90
-    },
-    "condition": "neu",
-    "publisher_norm": "Bucher",
-    "postcard_id": "PC-ORD-SO-29-01",
-    "scraped_at_utc": "2026-07-06T11:16:44+02:00"
-  },
   "PC-WIS-DHL-10-01": {
     "id": "PC-WIS-DHL-10-01",
     "model_id": "WIS-DHL-10",
@@ -5082,32 +5055,6 @@
     "publisher_norm": "Brno Airport",
     "postcard_id": "PC-WIS-DHL-18-01",
     "scraped_at_utc": "2026-07-06T11:16:49+02:00"
-  },
-  "PC-ORD-PA-17-01": {
-    "id": "PC-ORD-PA-17-01",
-    "model_id": "ORD-PA-17",
-    "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-    "status": "none",
-    "model_status": "ordered",
-    "price": 1.85,
-    "source_url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
-    "thumb_url": "https://jjpostcards.com/19461-thickbox_default/pan-american-cargo-b747.jpg",
-    "airline": "Pan American",
-    "aircraft_manufacturer": "Boeing",
-    "aircraft_type": "Boeing 747",
-    "aircraft_type_exact": "Boeing 747-123(F)",
-    "registration": "N901PA",
-    "publisher": "Fourcolour",
-    "year": 1975,
-    "size": "145x100 mm",
-    "size_mm": {
-      "w": 145,
-      "h": 100
-    },
-    "condition": "neu",
-    "publisher_norm": "Fourcolour",
-    "postcard_id": "PC-ORD-PA-17-01",
-    "scraped_at_utc": "2026-07-06T19:56:26+02:00"
   },
   "PC-ORD-PA-28-01": {
     "id": "PC-ORD-PA-28-01",
@@ -5189,5 +5136,58 @@
     "publisher_norm": "Bucher",
     "postcard_id": "PC-ORD-SO-30-01",
     "scraped_at_utc": "2026-07-12T15:59:11+02:00"
+  },
+  "PC-PA023-01": {
+    "id": "PC-PA023-01",
+    "model_id": "PA023",
+    "url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+    "status": "owned",
+    "model_status": "owned",
+    "price": 1.85,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/9729-pan-american-cargo-b747.html",
+    "thumb_url": "https://jjpostcards.com/19461-thickbox_default/pan-american-cargo-b747.jpg",
+    "airline": "Pan American",
+    "aircraft_manufacturer": "Boeing",
+    "aircraft_type": "Boeing 747",
+    "aircraft_type_exact": "Boeing 747-123(F)",
+    "registration": "N901PA",
+    "publisher": "Fourcolour",
+    "year": 1975,
+    "size": "145x100 mm",
+    "size_mm": {
+      "w": 145,
+      "h": 100
+    },
+    "condition": "neu",
+    "publisher_norm": "Fourcolour",
+    "postcard_id": "PC-PA023-01",
+    "scraped_at_utc": "2026-07-13T08:56:53+02:00"
+  },
+  "PC-SO018-01": {
+    "id": "PC-SO018-01",
+    "model_id": "SO018",
+    "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+    "status": "owned",
+    "model_status": "owned",
+    "label": "andere Kennung",
+    "price": 0.85,
+    "source_url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+    "thumb_url": "https://jjpostcards.com/12571-thickbox_default/aeroflot-il-62.jpg",
+    "airline": "Aeroflot",
+    "aircraft_manufacturer": "Ilyushin",
+    "aircraft_type": "Ilyushin Il-62",
+    "aircraft_type_exact": "Ilyushin Il-62M",
+    "registration": "CCCP-86533",
+    "publisher": "Bucher",
+    "year": 1991,
+    "size": "140x90 mm",
+    "size_mm": {
+      "w": 140,
+      "h": 90
+    },
+    "condition": "neu",
+    "publisher_norm": "Bucher",
+    "postcard_id": "PC-SO018-01",
+    "scraped_at_utc": "2026-07-13T08:56:54+02:00"
   }
 }
