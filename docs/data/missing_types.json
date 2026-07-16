@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 435,
-    "present_types": 140,
-    "missing_types": 289,
-    "ordered_types": 6,
+    "present_types": 141,
+    "missing_types": 290,
+    "ordered_types": 4,
     "models": 292
   },
   "missing_types": [
@@ -132,6 +132,12 @@
     {
       "aircraft_id": "AIB-A330-MRTT",
       "Typ_anzeige": "Airbus A330 MRTT",
+      "manufacturer": "Airbus",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A340-500",
+      "Typ_anzeige": "Airbus A340-500",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -1750,21 +1756,9 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "AIB-A340-500",
-      "Typ_anzeige": "Airbus A340-500",
-      "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "AIB-A350-1000",
       "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOE-757-200PF",
-      "Typ_anzeige": "Boeing 757-200PF",
-      "manufacturer": "Boeing",
       "status": "ordered"
     },
     {

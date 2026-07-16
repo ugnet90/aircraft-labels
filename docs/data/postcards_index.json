@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T07:54:15+02:00",
+  "generated_at": "2026-07-16T13:32:03+02:00",
   "count_total": 198,
   "count_unique": 198,
   "items": [
@@ -795,24 +795,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-SO-14-01",
-      "model_id": "ORD-SO-14",
-      "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, anderer Sticker",
-      "price": 0.85
-    },
-    {
-      "id": "PC-ORD-SO-30-01",
-      "model_id": "ORD-SO-30",
-      "url": "https://jjpostcards.com/de/ansichtskarten/5648-royal-jordanian-a310.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
-    {
       "id": "PC-OS001-01",
       "model_id": "OS001",
       "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
@@ -1339,6 +1321,24 @@
       "id": "PC-SO018-01",
       "model_id": "SO018",
       "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO019-01",
+      "model_id": "SO019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, anderer Sticker",
+      "price": 0.85
+    },
+    {
+      "id": "PC-SO020-01",
+      "model_id": "SO020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5648-royal-jordanian-a310.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
@@ -2478,24 +2478,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-SO-14-01": {
-      "id": "PC-ORD-SO-14-01",
-      "model_id": "ORD-SO-14",
-      "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, anderer Sticker",
-      "price": 0.85
-    },
-    "PC-ORD-SO-30-01": {
-      "id": "PC-ORD-SO-30-01",
-      "model_id": "ORD-SO-30",
-      "url": "https://jjpostcards.com/de/ansichtskarten/5648-royal-jordanian-a310.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 0.85
-    },
     "PC-OS001-01": {
       "id": "PC-OS001-01",
       "model_id": "OS001",
@@ -3023,6 +3005,24 @@
       "id": "PC-SO018-01",
       "model_id": "SO018",
       "url": "https://jjpostcards.com/de/ansichtskarten/6284-aeroflot-il-62.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    "PC-SO019-01": {
+      "id": "PC-SO019-01",
+      "model_id": "SO019",
+      "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, anderer Sticker",
+      "price": 0.85
+    },
+    "PC-SO020-01": {
+      "id": "PC-SO020-01",
+      "model_id": "SO020",
+      "url": "https://jjpostcards.com/de/ansichtskarten/5648-royal-jordanian-a310.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",

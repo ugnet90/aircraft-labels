@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-SO-14",
+  "model_id": "SO019",
   "airline_code": "SO",
   "airline": "Sonstige Airlines",
   "airline_row": "United Parcel Service (UPS)",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-ORD-SO-14-01",
+      "id": "PC-SO019-01",
       "label": "andere Kennung, anderer Sticker",
       "url": "https://jjpostcards.com/de/ansichtskarten/20955-ups-b757.html",
       "price": 0.85
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.planespotters.net/photo/884756/n470up-united-parcel-service-ups-boeing-757-24apf",
   "photo_image_url": "https://cdn.plnspttrs.net/08483/n470up-united-parcel-service-ups-boeing-757-24apf_PlanespottersNet_884756_2ecae46195_o.jpg",
   "photo_credit": "Hector A Rivera Valentin -HR Planespotter",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-07-10",
-  "ordered": true,
+  "arrived_excel": "2026-07-16",
+  "arrived": "2026-07-16",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "Sonstige",
     "row": "14"
@@ -67,13 +67,13 @@
     "shop": "Ebay hermannjosef1461",
     "price": 12.0,
     "shipping_allocated": 3.96,
-    "arrived": null,
-    "ordered_at": "2026-07-10",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-07-16",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

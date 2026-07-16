@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 435,
-  "with_any_models": 146,
-  "missing": 289,
+  "with_any_models": 145,
+  "missing": 290,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -762,9 +762,9 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "mixed",
-      "owned_count": 1,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 2,
+      "ordered_count": 0,
       "total_count": 2,
       "airline_group_counts": [
         {
@@ -783,14 +783,14 @@
         },
         {
           "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Royal Jordanian",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -1977,26 +1977,11 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Aeronautica Militare (Italian Air Force)",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -5767,21 +5752,21 @@
       "manufacturer": "Boeing",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Sonstige Airlines",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "United Parcel Service (UPS)",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
