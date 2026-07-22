@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T13:32:03+02:00",
+  "generated_at": "2026-07-22T21:55:51+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -2289,6 +2289,18 @@
         "height": 13.56,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Boeing"
+      },
+      {
+        "aircraft_id": "BOE-757-C32B",
+        "type": "Boeing C-32B Gatekeeper",
+        "parent_aircraft_id": "BOE-757-200",
+        "parent_type": "Boeing 757-200",
+        "length": 47.32,
+        "wingspan": 38.05,
+        "height": 13.56,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Boeing"
       },
       {

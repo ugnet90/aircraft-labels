@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 435,
+    "master_types": 436,
     "present_types": 141,
-    "missing_types": 290,
+    "missing_types": 291,
     "ordered_types": 4,
     "models": 292
   },
@@ -642,6 +642,12 @@
     {
       "aircraft_id": "BOE-757-300-WL",
       "Typ_anzeige": "Boeing 757-300 (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOE-757-C32B",
+      "Typ_anzeige": "Boeing C-32B Gatekeeper",
       "manufacturer": "Boeing",
       "status": "missing"
     },
