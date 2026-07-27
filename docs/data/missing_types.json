@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 436,
-    "present_types": 141,
+    "present_types": 142,
     "missing_types": 291,
-    "ordered_types": 4,
+    "ordered_types": 3,
     "models": 292
   },
   "missing_types": [
@@ -1771,12 +1771,6 @@
       "aircraft_id": "BOM-CL601",
       "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "DOU-DC6",
-      "Typ_anzeige": "Douglas DC-6",
-      "manufacturer": "Douglas",
       "status": "ordered"
     }
   ]

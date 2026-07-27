@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T21:55:51+02:00",
+  "generated_at": "2026-07-27T14:35:26+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -3412,7 +3412,7 @@
         "wingspan": 35.8,
         "height": 8.66,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Douglas"
       },
       {

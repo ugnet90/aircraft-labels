@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T21:55:51+02:00",
+  "generated_at": "2026-07-27T14:35:26+02:00",
   "count_total": 198,
   "count_unique": 198,
   "items": [
@@ -786,15 +786,6 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-PA-28-01",
-      "model_id": "ORD-PA-28",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
-    {
       "id": "PC-OS001-01",
       "model_id": "OS001",
       "url": "https://jjpostcards.com/de/ansichtskarten/39091-Austrian-A319.html",
@@ -1113,6 +1104,15 @@
       "status": "owned",
       "model_status": "owned",
       "price": 1.85
+    },
+    {
+      "id": "PC-PA024-01",
+      "model_id": "PA024",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.35
     },
     {
       "id": "PC-SK001-01",
@@ -2469,15 +2469,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-PA-28-01": {
-      "id": "PC-ORD-PA-28-01",
-      "model_id": "ORD-PA-28",
-      "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
-      "price": 1.35
-    },
     "PC-OS001-01": {
       "id": "PC-OS001-01",
       "model_id": "OS001",
@@ -2797,6 +2788,15 @@
       "status": "owned",
       "model_status": "owned",
       "price": 1.85
+    },
+    "PC-PA024-01": {
+      "id": "PC-PA024-01",
+      "model_id": "PA024",
+      "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.35
     },
     "PC-SK001-01": {
       "id": "PC-SK001-01",
