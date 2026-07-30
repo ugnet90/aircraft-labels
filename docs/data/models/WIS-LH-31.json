@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-44",
+  "model_id": "WIS-LH-31",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "",
@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "BOM-CRJ700",
-  "aircraft_type": "Bombardier CRJ-700",
+  "aircraft_id": "BOE-737-100",
+  "aircraft_type": "Boeing 737-100",
   "registration": "",
   "livery_name": "",
   "parent_livery": "",
@@ -38,14 +38,14 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "44"
+    "row": "31"
   },
   "aircraft": {
-    "aircraft_id": "BOM-CRJ700",
-    "type": "Bombardier CRJ-700",
+    "aircraft_id": "BOE-737-100",
+    "type": "Boeing 737-100",
     "registration": "",
-    "wingtip": "WL",
-    "has_wingtip": true
+    "wingtip": "NONE",
+    "has_wingtip": false
   },
   "livery": {
     "code": "",
@@ -79,30 +79,30 @@
     "shop_url": ""
   },
   "aircraft_full_v8": {
-    "aircraft_id": "BOM-CRJ700",
-    "Typ_anzeige": "Bombardier CRJ-700",
-    "Hersteller": "Bombardier",
-    "Baureihe": "CRJ-700",
-    "Unterserie": "",
+    "aircraft_id": "BOE-737-100",
+    "Typ_anzeige": "Boeing 737-100",
+    "Hersteller": "Boeing",
+    "Baureihe": "737",
+    "Unterserie": "-100",
     "Marketingname": "",
     "Alternate_designations": "",
     "parent_aircraft_id": "",
-    "ICAO": "CRJ7",
-    "IATA": "CR7",
-    "Wingtip": "WL",
+    "ICAO": "B731",
+    "IATA": "731",
+    "Wingtip": "NONE",
     "Rumpf": "SingleAisle",
-    "MarketSegment": "Regional",
+    "MarketSegment": "Standard",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1999",
-    "Status": "aktiv",
+    "Erstflug": "1967",
+    "Status": "ausgemustert",
     "Antrieb": "Jet",
     "Triebwerke": "2",
-    "Reichweite": "Mittel",
-    "Passengers": "70",
-    "Length": "32,51",
-    "Wingspan": "23,24",
-    "Height": "7,57",
-    "Wiki": "https://de.wikipedia.org/wiki/Bombardier_CRJ#CRJ700"
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "103",
+    "Length": "28,65",
+    "Wingspan": "28,35",
+    "Height": "11,23",
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-100"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-20",
+  "model_id": "WIS-LH-21",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 0.85,
   "postcards": [
     {
-      "id": "PC-WIS-LH-20-01",
+      "id": "PC-WIS-LH-21-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/4005-lufthansastar-alliance-a340.html",
       "price": 0.85
@@ -45,7 +45,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "20"
+    "row": "21"
   },
   "aircraft": {
     "aircraft_id": "AIB-A340-200",

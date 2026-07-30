@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-BA-34",
+  "model_id": "WIS-BA-35",
   "airline_code": "BA",
   "airline": "British Airways",
   "airline_row": "British Airways",
@@ -38,7 +38,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "BA",
-    "row": "34"
+    "row": "35"
   },
   "aircraft": {
     "aircraft_id": "BOE-777-200",

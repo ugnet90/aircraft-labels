@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 436,
-  "with_any_models": 145,
-  "missing": 291,
+  "with_any_models": 149,
+  "missing": 287,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -1450,11 +1450,26 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Lufthansa",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa Cargo",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "SingleAisle",
       "market_segment": "MediumHaul",
@@ -5177,7 +5192,7 @@
           "total": 1,
           "airlines": [
             {
-              "airline": "Lufthansa",
+              "airline": "Lufthansa Cargo",
               "owned": 1,
               "ordered": 0,
               "total": 1
@@ -5551,11 +5566,26 @@
       "manufacturer": "Boeing",
       "wingtip": "RW",
       "has_wingtip": true,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways World Cargo",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "CARGO",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -5845,11 +5875,26 @@
       "manufacturer": "Boeing",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Icelandair",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Icelandair",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -7071,11 +7116,26 @@
       "manufacturer": "Bombardier",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "Luftwaffe",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Luftwaffe (German Air Force)",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "Business",
       "fuselage": "SuperMidsizeJet",
       "market_segment": "LongHaul",

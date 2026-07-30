@@ -4,9 +4,9 @@
   "counts": {
     "master_types": 436,
     "present_types": 142,
-    "missing_types": 291,
-    "ordered_types": 3,
-    "models": 292
+    "missing_types": 287,
+    "ordered_types": 7,
+    "models": 294
   },
   "missing_types": [
     {
@@ -84,12 +84,6 @@
     {
       "aircraft_id": "AIB-A321-200",
       "Typ_anzeige": "Airbus A321-200",
-      "manufacturer": "Airbus",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "AIB-A321-200P2F",
-      "Typ_anzeige": "Airbus A321-200P2F",
       "manufacturer": "Airbus",
       "status": "missing"
     },
@@ -604,12 +598,6 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "BOE-747-8F",
-      "Typ_anzeige": "Boeing 747-8F",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "BOE-747-E4B",
       "Typ_anzeige": "Boeing E-4B",
       "manufacturer": "Boeing",
@@ -636,12 +624,6 @@
     {
       "aircraft_id": "BOE-757-300",
       "Typ_anzeige": "Boeing 757-300",
-      "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOE-757-300-WL",
-      "Typ_anzeige": "Boeing 757-300 (Winglets)",
       "manufacturer": "Boeing",
       "status": "missing"
     },
@@ -775,12 +757,6 @@
       "aircraft_id": "BOE-VC137C",
       "Typ_anzeige": "Boeing VC-137C Stratoliner",
       "manufacturer": "Boeing",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "BOM-BD700",
-      "Typ_anzeige": "Bombardier BD-700 Global 5000",
-      "manufacturer": "Bombardier",
       "status": "missing"
     },
     {
@@ -1762,9 +1738,33 @@
       "status": "ordered"
     },
     {
+      "aircraft_id": "AIB-A321-200P2F",
+      "Typ_anzeige": "Airbus A321-200P2F",
+      "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
       "aircraft_id": "AIB-A350-1000",
       "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOE-747-8F",
+      "Typ_anzeige": "Boeing 747-8F",
+      "manufacturer": "Boeing",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOE-757-300-WL",
+      "Typ_anzeige": "Boeing 757-300 (Winglets)",
+      "manufacturer": "Boeing",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "BOM-BD700",
+      "Typ_anzeige": "Bombardier BD-700 Global 5000",
+      "manufacturer": "Bombardier",
       "status": "ordered"
     },
     {

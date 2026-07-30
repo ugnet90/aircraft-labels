@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-40",
+  "model_id": "WIS-LH-51",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "",
@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "BOE-767-300",
-  "aircraft_type": "Boeing 767-300",
+  "aircraft_id": "DOU-DC8-50",
+  "aircraft_type": "Douglas DC-8-50",
   "registration": "",
   "livery_name": "",
   "parent_livery": "",
@@ -38,11 +38,11 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "40"
+    "row": "51"
   },
   "aircraft": {
-    "aircraft_id": "BOE-767-300",
-    "type": "Boeing 767-300",
+    "aircraft_id": "DOU-DC8-50",
+    "type": "Douglas DC-8-50",
     "registration": "",
     "wingtip": "NONE",
     "has_wingtip": false
@@ -79,30 +79,30 @@
     "shop_url": ""
   },
   "aircraft_full_v8": {
-    "aircraft_id": "BOE-767-300",
-    "Typ_anzeige": "Boeing 767-300",
-    "Hersteller": "Boeing",
-    "Baureihe": "767",
-    "Unterserie": "-300",
-    "Marketingname": "",
+    "aircraft_id": "DOU-DC8-50",
+    "Typ_anzeige": "Douglas DC-8-50 Series 50",
+    "Hersteller": "Douglas",
+    "Baureihe": "DC-8",
+    "Unterserie": "-50",
+    "Marketingname": "Series 50",
     "Alternate_designations": "",
-    "parent_aircraft_id": "BOE-767-200",
-    "ICAO": "B763",
-    "IATA": "763",
+    "parent_aircraft_id": "",
+    "ICAO": "DC85",
+    "IATA": "D50",
     "Wingtip": "NONE",
-    "Rumpf": "Widebody",
+    "Rumpf": "SingleAisle",
     "MarketSegment": "LongHaul",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1986",
-    "Status": "aktiv",
+    "Erstflug": "1961",
+    "Status": "ausgemustert",
     "Antrieb": "Jet",
-    "Triebwerke": "2",
+    "Triebwerke": "4",
     "Reichweite": "Lang",
-    "Passengers": "269",
-    "Length": "54,94",
-    "Wingspan": "47,57",
-    "Height": "15,85",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_767#Boeing_767-300"
+    "Passengers": "259",
+    "Length": "45,9",
+    "Wingspan": "45",
+    "Height": "12,9",
+    "Wiki": "https://de.wikipedia.org/wiki/Douglas_DC-8#Fr%C3%BChe_Serien"
   }
 }

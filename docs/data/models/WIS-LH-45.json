@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-LH-52",
+  "model_id": "WIS-LH-45",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "",
@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "EMB-E195",
-  "aircraft_type": "Embraer ERJ-195",
+  "aircraft_id": "BOM-CRJ700",
+  "aircraft_type": "Bombardier CRJ-700",
   "registration": "",
   "livery_name": "",
   "parent_livery": "",
@@ -38,11 +38,11 @@
   "status": "wishlist",
   "source": {
     "sheet": "Lufthansa",
-    "row": "52"
+    "row": "45"
   },
   "aircraft": {
-    "aircraft_id": "EMB-E195",
-    "type": "Embraer ERJ-195",
+    "aircraft_id": "BOM-CRJ700",
+    "type": "Bombardier CRJ-700",
     "registration": "",
     "wingtip": "WL",
     "has_wingtip": true
@@ -79,30 +79,30 @@
     "shop_url": ""
   },
   "aircraft_full_v8": {
-    "aircraft_id": "EMB-E195",
-    "Typ_anzeige": "Embraer E195",
-    "Hersteller": "Embraer",
-    "Baureihe": "E195",
+    "aircraft_id": "BOM-CRJ700",
+    "Typ_anzeige": "Bombardier CRJ-700",
+    "Hersteller": "Bombardier",
+    "Baureihe": "CRJ-700",
     "Unterserie": "",
-    "Marketingname": "E195",
-    "Alternate_designations": "ERJ 190-200|E195LR|E195AR",
-    "parent_aircraft_id": "EMB-E190",
-    "ICAO": "E190",
-    "IATA": "E95",
+    "Marketingname": "",
+    "Alternate_designations": "",
+    "parent_aircraft_id": "",
+    "ICAO": "CRJ7",
+    "IATA": "CR7",
     "Wingtip": "WL",
     "Rumpf": "SingleAisle",
     "MarketSegment": "Regional",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "2004",
+    "Erstflug": "1999",
     "Status": "aktiv",
     "Antrieb": "Jet",
     "Triebwerke": "2",
     "Reichweite": "Mittel",
-    "Passengers": "108",
-    "Length": "38,65",
-    "Wingspan": "28,72",
-    "Height": "10,55",
-    "Wiki": "https://de.wikipedia.org/wiki/Embraer_E-Jets#ERJ_195"
+    "Passengers": "70",
+    "Length": "32,51",
+    "Wingspan": "23,24",
+    "Height": "7,57",
+    "Wiki": "https://de.wikipedia.org/wiki/Bombardier_CRJ#CRJ700"
   }
 }

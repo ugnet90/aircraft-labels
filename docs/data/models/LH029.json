@@ -2,7 +2,7 @@
   "model_id": "LH029",
   "airline_code": "LH",
   "airline": "Lufthansa",
-  "airline_row": "Lufthansa",
+  "airline_row": "Lufthansa Cargo",
   "manufacturer": "Dragon Wings",
   "aircraft_name": "Africa",
   "livery_note": "",
@@ -45,7 +45,7 @@
   "status": "owned",
   "source": {
     "sheet": "Lufthansa",
-    "row": "37"
+    "row": "38"
   },
   "aircraft": {
     "aircraft_id": "BOE-747-200F",
@@ -86,10 +86,10 @@
     "shop_url": "https://mw-moba.de/Produkt/boeing-747-200f-lufthansa-cargo-africa-d-abzf-dragon-55075-1400/"
   },
   "logo": {
-    "id": "LH_DLH",
-    "link": "https://assets.planespotters.net/files/airlines/2/lufthansa_5cfd8f.svg",
-    "name": "Deutsche Lufthansa AG",
-    "airline": "Lufthansa",
+    "id": "LH_GEC",
+    "link": "https://assets.planespotters.net/files/airlines/3/lufthansa-cargo_3f7355_opk.jpg",
+    "name": "Lufthansa Cargo AG",
+    "airline": "Lufthansa Cargo",
     "logo_speaking": "Wahr"
   },
   "aircraft_full_v8": {
