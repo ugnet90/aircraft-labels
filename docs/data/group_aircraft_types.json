@@ -1,6 +1,6 @@
 {
   "schema": "aviation-database.group_aircraft_types.v1",
-  "count": 627,
+  "count": 629,
   "items": [
     {
       "airline_code": "BT",
@@ -3806,7 +3806,7 @@
       "wingspan_m": "28,96",
       "height_m": "5,16",
       "source_sheet": "BA",
-      "source_row": "55"
+      "source_row": "56"
     },
     {
       "airline_code": "BA",
@@ -3828,7 +3828,7 @@
       "wingspan_m": "27",
       "height_m": "8,6",
       "source_sheet": "BA",
-      "source_row": "62"
+      "source_row": "63"
     },
     {
       "airline_code": "BA",
@@ -3850,7 +3850,7 @@
       "wingspan_m": "28,5",
       "height_m": "9,1",
       "source_sheet": "BA",
-      "source_row": "63"
+      "source_row": "64"
     },
     {
       "airline_code": "BA",
@@ -4400,7 +4400,7 @@
       "wingspan_m": "38,05",
       "height_m": "13,56",
       "source_sheet": "BA",
-      "source_row": "30"
+      "source_row": "31"
     },
     {
       "airline_code": "BA",
@@ -4422,7 +4422,7 @@
       "wingspan_m": "42,06",
       "height_m": "13,56",
       "source_sheet": "BA",
-      "source_row": "31"
+      "source_row": "32"
     },
     {
       "airline_code": "BA",
@@ -4444,7 +4444,7 @@
       "wingspan_m": "47,57",
       "height_m": "15,85",
       "source_sheet": "BA",
-      "source_row": "32"
+      "source_row": "33"
     },
     {
       "airline_code": "BA",
@@ -4466,7 +4466,7 @@
       "wingspan_m": "47,57",
       "height_m": "15,85",
       "source_sheet": "BA",
-      "source_row": "33"
+      "source_row": "34"
     },
     {
       "airline_code": "BA",
@@ -4488,7 +4488,7 @@
       "wingspan_m": "60,93",
       "height_m": "18,5",
       "source_sheet": "BA",
-      "source_row": "34"
+      "source_row": "35"
     },
     {
       "airline_code": "BA",
@@ -4510,7 +4510,7 @@
       "wingspan_m": "64,8",
       "height_m": "18,5",
       "source_sheet": "BA",
-      "source_row": "35"
+      "source_row": "36"
     },
     {
       "airline_code": "BA",
@@ -4532,7 +4532,7 @@
       "wingspan_m": "60,12",
       "height_m": "17,02",
       "source_sheet": "BA",
-      "source_row": "38"
+      "source_row": "39"
     },
     {
       "airline_code": "BA",
@@ -4554,7 +4554,7 @@
       "wingspan_m": "60,12",
       "height_m": "17,02",
       "source_sheet": "BA",
-      "source_row": "36"
+      "source_row": "37"
     },
     {
       "airline_code": "BA",
@@ -4576,7 +4576,7 @@
       "wingspan_m": "60,12",
       "height_m": "17,02",
       "source_sheet": "BA",
-      "source_row": "37"
+      "source_row": "38"
     },
     {
       "airline_code": "BA",
@@ -4598,7 +4598,7 @@
       "wingspan_m": "21,21",
       "height_m": "6,22",
       "source_sheet": "BA",
-      "source_row": "39"
+      "source_row": "40"
     },
     {
       "airline_code": "BA",
@@ -4620,7 +4620,7 @@
       "wingspan_m": "23,24",
       "height_m": "7,57",
       "source_sheet": "BA",
-      "source_row": "40"
+      "source_row": "41"
     },
     {
       "airline_code": "BA",
@@ -4642,7 +4642,7 @@
       "wingspan_m": "26,34",
       "height_m": "8,61",
       "source_sheet": "BA",
-      "source_row": "41"
+      "source_row": "42"
     },
     {
       "airline_code": "BA",
@@ -4664,7 +4664,7 @@
       "wingspan_m": "26,34",
       "height_m": "8,61",
       "source_sheet": "BA",
-      "source_row": "42"
+      "source_row": "43"
     },
     {
       "airline_code": "BA",
@@ -4686,7 +4686,7 @@
       "wingspan_m": "26,34",
       "height_m": "8,61",
       "source_sheet": "BA",
-      "source_row": "43"
+      "source_row": "44"
     },
     {
       "airline_code": "BA",
@@ -4708,7 +4708,7 @@
       "wingspan_m": "30,6",
       "height_m": "8,5",
       "source_sheet": "BA",
-      "source_row": "44"
+      "source_row": "45"
     },
     {
       "airline_code": "BA",
@@ -4730,7 +4730,7 @@
       "wingspan_m": "15,8",
       "height_m": "5",
       "source_sheet": "BA",
-      "source_row": "45"
+      "source_row": "46"
     },
     {
       "airline_code": "BA",
@@ -4752,7 +4752,7 @@
       "wingspan_m": "15,8",
       "height_m": "5",
       "source_sheet": "BA",
-      "source_row": "46"
+      "source_row": "47"
     },
     {
       "airline_code": "BA",
@@ -4774,7 +4774,7 @@
       "wingspan_m": "18,29",
       "height_m": "5,74",
       "source_sheet": "BA",
-      "source_row": "47"
+      "source_row": "48"
     },
     {
       "airline_code": "BA",
@@ -4796,7 +4796,7 @@
       "wingspan_m": "14,94",
       "height_m": "4,17",
       "source_sheet": "BA",
-      "source_row": "48"
+      "source_row": "49"
     },
     {
       "airline_code": "BA",
@@ -4818,7 +4818,7 @@
       "wingspan_m": "19,8",
       "height_m": "5,94",
       "source_sheet": "BA",
-      "source_row": "49"
+      "source_row": "50"
     },
     {
       "airline_code": "BA",
@@ -4840,7 +4840,7 @@
       "wingspan_m": "28,35",
       "height_m": "8,36",
       "source_sheet": "BA",
-      "source_row": "50"
+      "source_row": "51"
     },
     {
       "airline_code": "BA",
@@ -4862,7 +4862,7 @@
       "wingspan_m": "25,91",
       "height_m": "7,49",
       "source_sheet": "BA",
-      "source_row": "51"
+      "source_row": "52"
     },
     {
       "airline_code": "BA",
@@ -4884,7 +4884,7 @@
       "wingspan_m": "27,4",
       "height_m": "7,49",
       "source_sheet": "BA",
-      "source_row": "52"
+      "source_row": "53"
     },
     {
       "airline_code": "BA",
@@ -4906,7 +4906,7 @@
       "wingspan_m": "21",
       "height_m": "7,23",
       "source_sheet": "BA",
-      "source_row": "53"
+      "source_row": "54"
     },
     {
       "airline_code": "BA",
@@ -4928,7 +4928,7 @@
       "wingspan_m": "20,98",
       "height_m": "7,24",
       "source_sheet": "BA",
-      "source_row": "54"
+      "source_row": "55"
     },
     {
       "airline_code": "BA",
@@ -4950,7 +4950,7 @@
       "wingspan_m": "19,8",
       "height_m": "6,3",
       "source_sheet": "BA",
-      "source_row": "56"
+      "source_row": "57"
     },
     {
       "airline_code": "BA",
@@ -4972,7 +4972,7 @@
       "wingspan_m": "20,04",
       "height_m": "6,75",
       "source_sheet": "BA",
-      "source_row": "57"
+      "source_row": "58"
     },
     {
       "airline_code": "BA",
@@ -4994,7 +4994,7 @@
       "wingspan_m": "26",
       "height_m": "9,73",
       "source_sheet": "BA",
-      "source_row": "58"
+      "source_row": "59"
     },
     {
       "airline_code": "BA",
@@ -5016,7 +5016,7 @@
       "wingspan_m": "28,72",
       "height_m": "10,55",
       "source_sheet": "BA",
-      "source_row": "59"
+      "source_row": "60"
     },
     {
       "airline_code": "BA",
@@ -5038,7 +5038,7 @@
       "wingspan_m": "28,08",
       "height_m": "8,5",
       "source_sheet": "BA",
-      "source_row": "60"
+      "source_row": "61"
     },
     {
       "airline_code": "BA",
@@ -5060,7 +5060,7 @@
       "wingspan_m": "27",
       "height_m": "8,6",
       "source_sheet": "BA",
-      "source_row": "61"
+      "source_row": "62"
     },
     {
       "airline_code": "BA",
@@ -5082,7 +5082,7 @@
       "wingspan_m": "47,3",
       "height_m": "16,9",
       "source_sheet": "BA",
-      "source_row": "64"
+      "source_row": "65"
     },
     {
       "airline_code": "BA",
@@ -5104,7 +5104,7 @@
       "wingspan_m": "47,3",
       "height_m": "16,9",
       "source_sheet": "BA",
-      "source_row": "65"
+      "source_row": "66"
     },
     {
       "airline_code": "BA",
@@ -5126,7 +5126,7 @@
       "wingspan_m": "50,39",
       "height_m": "17,7",
       "source_sheet": "BA",
-      "source_row": "66"
+      "source_row": "67"
     },
     {
       "airline_code": "BA",
@@ -5148,7 +5148,7 @@
       "wingspan_m": "24,76",
       "height_m": "7,4",
       "source_sheet": "BA",
-      "source_row": "68"
+      "source_row": "69"
     },
     {
       "airline_code": "BA",
@@ -5170,7 +5170,7 @@
       "wingspan_m": "21,44",
       "height_m": "6,97",
       "source_sheet": "BA",
-      "source_row": "67"
+      "source_row": "68"
     },
     {
       "airline_code": "BA",
@@ -5192,7 +5192,7 @@
       "wingspan_m": "22,76",
       "height_m": "7,06",
       "source_sheet": "BA",
-      "source_row": "69"
+      "source_row": "70"
     },
     {
       "airline_code": "BA",
@@ -5214,7 +5214,29 @@
       "wingspan_m": "36,1",
       "height_m": "10,64",
       "source_sheet": "BA",
-      "source_row": "70"
+      "source_row": "71"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways World Cargo",
+      "aircraft_id": "BOE-747-8F",
+      "aircraft_type": "Boeing 747-8F",
+      "role": "CARGO",
+      "fuselage": "Widebody",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "aktiv",
+      "first_flight": "2011",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "0",
+      "length_m": "76,25",
+      "wingspan_m": "68,45",
+      "height_m": "19,35",
+      "source_sheet": "BA",
+      "source_row": "30"
     },
     {
       "airline_code": "BA",
@@ -8162,7 +8184,7 @@
       "wingspan_m": "35,8",
       "height_m": "11,76",
       "source_sheet": "Lufthansa",
-      "source_row": "16"
+      "source_row": "17"
     },
     {
       "airline_code": "LH",
@@ -8228,7 +8250,7 @@
       "wingspan_m": "58",
       "height_m": "17,39",
       "source_sheet": "Lufthansa",
-      "source_row": "18"
+      "source_row": "19"
     },
     {
       "airline_code": "LH",
@@ -8250,7 +8272,7 @@
       "wingspan_m": "60,3",
       "height_m": "16,85",
       "source_sheet": "Lufthansa",
-      "source_row": "19"
+      "source_row": "20"
     },
     {
       "airline_code": "LH",
@@ -8272,7 +8294,7 @@
       "wingspan_m": "60,3",
       "height_m": "16,7",
       "source_sheet": "Lufthansa",
-      "source_row": "20"
+      "source_row": "21"
     },
     {
       "airline_code": "LH",
@@ -8294,7 +8316,7 @@
       "wingspan_m": "60,3",
       "height_m": "16,7",
       "source_sheet": "Lufthansa",
-      "source_row": "21"
+      "source_row": "22"
     },
     {
       "airline_code": "LH",
@@ -8316,7 +8338,7 @@
       "wingspan_m": "63,45",
       "height_m": "17,3",
       "source_sheet": "Lufthansa",
-      "source_row": "22"
+      "source_row": "23"
     },
     {
       "airline_code": "LH",
@@ -8338,7 +8360,7 @@
       "wingspan_m": "64,75",
       "height_m": "17,08",
       "source_sheet": "Lufthansa",
-      "source_row": "24"
+      "source_row": "25"
     },
     {
       "airline_code": "LH",
@@ -8360,7 +8382,7 @@
       "wingspan_m": "64,75",
       "height_m": "17,05",
       "source_sheet": "Lufthansa",
-      "source_row": "23"
+      "source_row": "24"
     },
     {
       "airline_code": "LH",
@@ -8382,7 +8404,7 @@
       "wingspan_m": "79,75",
       "height_m": "24,1",
       "source_sheet": "Lufthansa",
-      "source_row": "25"
+      "source_row": "26"
     },
     {
       "airline_code": "LH",
@@ -8426,7 +8448,7 @@
       "wingspan_m": "44,42",
       "height_m": "12,93",
       "source_sheet": "Lufthansa",
-      "source_row": "26"
+      "source_row": "27"
     },
     {
       "airline_code": "LH",
@@ -8448,7 +8470,7 @@
       "wingspan_m": "39,88",
       "height_m": "12,93",
       "source_sheet": "Lufthansa",
-      "source_row": "27"
+      "source_row": "28"
     },
     {
       "airline_code": "LH",
@@ -8470,7 +8492,7 @@
       "wingspan_m": "32,9",
       "height_m": "10,4",
       "source_sheet": "Lufthansa",
-      "source_row": "28"
+      "source_row": "29"
     },
     {
       "airline_code": "LH",
@@ -8492,7 +8514,7 @@
       "wingspan_m": "32,9",
       "height_m": "10,4",
       "source_sheet": "Lufthansa",
-      "source_row": "29"
+      "source_row": "30"
     },
     {
       "airline_code": "LH",
@@ -8514,7 +8536,7 @@
       "wingspan_m": "28,35",
       "height_m": "11,23",
       "source_sheet": "Lufthansa",
-      "source_row": "30"
+      "source_row": "31"
     },
     {
       "airline_code": "LH",
@@ -8536,7 +8558,7 @@
       "wingspan_m": "28,35",
       "height_m": "11,23",
       "source_sheet": "Lufthansa",
-      "source_row": "31"
+      "source_row": "32"
     },
     {
       "airline_code": "LH",
@@ -8558,7 +8580,7 @@
       "wingspan_m": "28,88",
       "height_m": "11,13",
       "source_sheet": "Lufthansa",
-      "source_row": "32"
+      "source_row": "33"
     },
     {
       "airline_code": "LH",
@@ -8580,7 +8602,7 @@
       "wingspan_m": "28,88",
       "height_m": "11,13",
       "source_sheet": "Lufthansa",
-      "source_row": "33"
+      "source_row": "34"
     },
     {
       "airline_code": "LH",
@@ -8602,7 +8624,7 @@
       "wingspan_m": "28,88",
       "height_m": "11,13",
       "source_sheet": "Lufthansa",
-      "source_row": "34"
+      "source_row": "35"
     },
     {
       "airline_code": "LH",
@@ -8624,7 +8646,7 @@
       "wingspan_m": "59,64",
       "height_m": "19,3",
       "source_sheet": "Lufthansa",
-      "source_row": "35"
+      "source_row": "36"
     },
     {
       "airline_code": "LH",
@@ -8642,28 +8664,6 @@
       "engines": "4",
       "range_class": "Lang",
       "passengers": "400",
-      "length_m": "70,66",
-      "wingspan_m": "59,64",
-      "height_m": "19,3",
-      "source_sheet": "Lufthansa",
-      "source_row": "36"
-    },
-    {
-      "airline_code": "LH",
-      "airline": "Lufthansa",
-      "airline_row": "Lufthansa",
-      "aircraft_id": "BOE-747-200F",
-      "aircraft_type": "Boeing 747-200F",
-      "role": "CARGO",
-      "fuselage": "Widebody",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1971",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "0",
       "length_m": "70,66",
       "wingspan_m": "59,64",
       "height_m": "19,3",
@@ -8690,7 +8690,7 @@
       "wingspan_m": "64,44",
       "height_m": "19,41",
       "source_sheet": "Lufthansa",
-      "source_row": "38"
+      "source_row": "39"
     },
     {
       "airline_code": "LH",
@@ -8712,7 +8712,7 @@
       "wingspan_m": "68,45",
       "height_m": "19,35",
       "source_sheet": "Lufthansa",
-      "source_row": "39"
+      "source_row": "40"
     },
     {
       "airline_code": "LH",
@@ -8734,7 +8734,7 @@
       "wingspan_m": "47,57",
       "height_m": "15,85",
       "source_sheet": "Lufthansa",
-      "source_row": "40"
+      "source_row": "41"
     },
     {
       "airline_code": "LH",
@@ -8756,7 +8756,7 @@
       "wingspan_m": "60,12",
       "height_m": "17,02",
       "source_sheet": "Lufthansa",
-      "source_row": "41"
+      "source_row": "42"
     },
     {
       "airline_code": "LH",
@@ -8778,7 +8778,7 @@
       "wingspan_m": "21,21",
       "height_m": "6,22",
       "source_sheet": "Lufthansa",
-      "source_row": "42"
+      "source_row": "43"
     },
     {
       "airline_code": "LH",
@@ -8800,7 +8800,7 @@
       "wingspan_m": "21,21",
       "height_m": "6,22",
       "source_sheet": "Lufthansa",
-      "source_row": "43"
+      "source_row": "44"
     },
     {
       "airline_code": "LH",
@@ -8822,7 +8822,7 @@
       "wingspan_m": "23,24",
       "height_m": "7,57",
       "source_sheet": "Lufthansa",
-      "source_row": "44"
+      "source_row": "45"
     },
     {
       "airline_code": "LH",
@@ -8844,7 +8844,7 @@
       "wingspan_m": "26,34",
       "height_m": "8,61",
       "source_sheet": "Lufthansa",
-      "source_row": "46"
+      "source_row": "47"
     },
     {
       "airline_code": "LH",
@@ -8866,7 +8866,7 @@
       "wingspan_m": "32",
       "height_m": "8,25",
       "source_sheet": "Lufthansa",
-      "source_row": "47"
+      "source_row": "48"
     },
     {
       "airline_code": "LH",
@@ -8888,7 +8888,7 @@
       "wingspan_m": "48",
       "height_m": "10,2",
       "source_sheet": "Lufthansa",
-      "source_row": "49"
+      "source_row": "50"
     },
     {
       "airline_code": "LH",
@@ -8910,7 +8910,7 @@
       "wingspan_m": "45",
       "height_m": "12,9",
       "source_sheet": "Lufthansa",
-      "source_row": "50"
+      "source_row": "51"
     },
     {
       "airline_code": "LH",
@@ -8932,7 +8932,7 @@
       "wingspan_m": "28,72",
       "height_m": "10,55",
       "source_sheet": "Lufthansa",
-      "source_row": "52"
+      "source_row": "53"
     },
     {
       "airline_code": "LH",
@@ -8954,7 +8954,7 @@
       "wingspan_m": "32,85",
       "height_m": "6,3",
       "source_sheet": "Lufthansa",
-      "source_row": "53"
+      "source_row": "54"
     },
     {
       "airline_code": "LH",
@@ -8976,7 +8976,7 @@
       "wingspan_m": "28,08",
       "height_m": "8,5",
       "source_sheet": "Lufthansa",
-      "source_row": "56"
+      "source_row": "57"
     },
     {
       "airline_code": "LH",
@@ -8998,7 +8998,7 @@
       "wingspan_m": "29",
       "height_m": "8",
       "source_sheet": "Lufthansa",
-      "source_row": "54"
+      "source_row": "55"
     },
     {
       "airline_code": "LH",
@@ -9020,7 +9020,7 @@
       "wingspan_m": "29,25",
       "height_m": "4,5",
       "source_sheet": "Lufthansa",
-      "source_row": "57"
+      "source_row": "58"
     },
     {
       "airline_code": "LH",
@@ -9042,7 +9042,7 @@
       "wingspan_m": "37,5",
       "height_m": "7,6",
       "source_sheet": "Lufthansa",
-      "source_row": "58"
+      "source_row": "59"
     },
     {
       "airline_code": "LH",
@@ -9064,7 +9064,7 @@
       "wingspan_m": "45,7",
       "height_m": "6,1",
       "source_sheet": "Lufthansa",
-      "source_row": "59"
+      "source_row": "60"
     },
     {
       "airline_code": "LH",
@@ -9086,7 +9086,7 @@
       "wingspan_m": "50,39",
       "height_m": "17,7",
       "source_sheet": "Lufthansa",
-      "source_row": "60"
+      "source_row": "61"
     },
     {
       "airline_code": "LH",
@@ -9108,7 +9108,51 @@
       "wingspan_m": "28,55",
       "height_m": "8,25",
       "source_sheet": "Lufthansa",
-      "source_row": "62"
+      "source_row": "63"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa Cargo",
+      "aircraft_id": "AIB-A321-200P2F",
+      "aircraft_type": "Airbus A321-200P2F",
+      "role": "CARGO",
+      "fuselage": "SingleAisle",
+      "market_segment": "MediumHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "aktiv",
+      "first_flight": "2020",
+      "propulsion": "Jet",
+      "engines": "2",
+      "range_class": "Mittel",
+      "passengers": "0",
+      "length_m": "44,51",
+      "wingspan_m": "34,1",
+      "height_m": "11,76",
+      "source_sheet": "Lufthansa",
+      "source_row": "16"
+    },
+    {
+      "airline_code": "LH",
+      "airline": "Lufthansa",
+      "airline_row": "Lufthansa Cargo",
+      "aircraft_id": "BOE-747-200F",
+      "aircraft_type": "Boeing 747-200F",
+      "role": "CARGO",
+      "fuselage": "Widebody",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1971",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "0",
+      "length_m": "70,66",
+      "wingspan_m": "59,64",
+      "height_m": "19,3",
+      "source_sheet": "Lufthansa",
+      "source_row": "38"
     },
     {
       "airline_code": "LH",
@@ -9130,7 +9174,7 @@
       "wingspan_m": "51,7",
       "height_m": "17,6",
       "source_sheet": "Lufthansa",
-      "source_row": "61"
+      "source_row": "62"
     },
     {
       "airline_code": "LH",
@@ -9152,7 +9196,7 @@
       "wingspan_m": "24,85",
       "height_m": "7,57",
       "source_sheet": "Lufthansa",
-      "source_row": "45"
+      "source_row": "46"
     },
     {
       "airline_code": "LH",
@@ -9174,7 +9218,7 @@
       "wingspan_m": "25,91",
       "height_m": "7,49",
       "source_sheet": "Lufthansa",
-      "source_row": "48"
+      "source_row": "49"
     },
     {
       "airline_code": "LH",
@@ -9196,7 +9240,7 @@
       "wingspan_m": "28,72",
       "height_m": "10,55",
       "source_sheet": "Lufthansa",
-      "source_row": "51"
+      "source_row": "52"
     },
     {
       "airline_code": "LH",
@@ -9218,7 +9262,7 @@
       "wingspan_m": "29",
       "height_m": "7,9",
       "source_sheet": "Lufthansa",
-      "source_row": "55"
+      "source_row": "56"
     },
     {
       "airline_code": "DE",
