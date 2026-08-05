@@ -1450,21 +1450,21 @@
       "manufacturer": "Airbus",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Lufthansa",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Lufthansa Cargo",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -5566,21 +5566,21 @@
       "manufacturer": "Boeing",
       "wingtip": "RW",
       "has_wingtip": true,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "British Airways",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "British Airways World Cargo",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -7116,21 +7116,21 @@
       "manufacturer": "Bombardier",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Luftwaffe",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Luftwaffe (German Air Force)",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]

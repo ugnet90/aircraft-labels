@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-BA-30",
+  "model_id": "BA012",
   "airline_code": "BA",
   "airline": "British Airways",
   "airline_row": "British Airways World Cargo",
@@ -26,7 +26,7 @@
   "postcard_price": 0.5,
   "postcards": [
     {
-      "id": "PC-ORD-BA-30-01",
+      "id": "PC-BA012-01",
       "label": "andere Kennung",
       "url": "https://www.aviation-center-berlin.de/p/ACB030",
       "price": 0.5
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.planespotters.net/photo/301133/g-gssf-british-airways-world-cargo-boeing-747-87uf",
   "photo_image_url": "https://cdn.plnspttrs.net/05667/g-gssf-british-airways-world-cargo-boeing-747-87uf_PlanespottersNet_301133_8f326fddcd_o.jpg",
   "photo_credit": "Mark Empson - AeroResource",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-07-30",
-  "ordered": true,
+  "arrived_excel": "2026-08-04",
+  "arrived": "2026-08-04",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "BA",
     "row": "30"
@@ -67,13 +67,13 @@
     "shop": "Aviation Center Berlin",
     "price": 40.29,
     "shipping_allocated": 4.36,
-    "arrived": null,
-    "ordered_at": "2026-07-30",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-08-04",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

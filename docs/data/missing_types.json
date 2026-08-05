@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 436,
-    "present_types": 142,
+    "present_types": 145,
     "missing_types": 287,
-    "ordered_types": 7,
+    "ordered_types": 4,
     "models": 294
   },
   "missing_types": [
@@ -1738,33 +1738,15 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "AIB-A321-200P2F",
-      "Typ_anzeige": "Airbus A321-200P2F",
-      "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "AIB-A350-1000",
       "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
       "status": "ordered"
     },
     {
-      "aircraft_id": "BOE-747-8F",
-      "Typ_anzeige": "Boeing 747-8F",
-      "manufacturer": "Boeing",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "BOE-757-300-WL",
       "Typ_anzeige": "Boeing 757-300 (Winglets)",
       "manufacturer": "Boeing",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOM-BD700",
-      "Typ_anzeige": "Bombardier BD-700 Global 5000",
-      "manufacturer": "Bombardier",
       "status": "ordered"
     },
     {

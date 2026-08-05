@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T07:58:32+02:00",
+  "generated_at": "2026-08-05T07:59:00+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -404,7 +404,7 @@
         "wingspan": 34.1,
         "height": 11.76,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Airbus"
       },
       {
@@ -2190,7 +2190,7 @@
         "wingspan": 68.45,
         "height": 19.35,
         "wingtip": "RW",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Boeing"
       },
       {
@@ -2644,7 +2644,7 @@
         "wingspan": 28.7,
         "height": 7.7,
         "wingtip": "WL",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Bombardier"
       }
     ],
