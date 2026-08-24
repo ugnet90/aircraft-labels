@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-PA-18",
+  "model_id": "WIS-PA-19",
   "airline_code": "PA",
   "airline": "Pan Am",
   "airline_row": "Pan Am",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-WIS-PA-18-01",
+      "id": "PC-WIS-PA-19-01",
       "label": "andere Livery, andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/40512-Pan-American-B747.html",
       "price": 1.35
@@ -45,7 +45,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "Panam",
-    "row": "18"
+    "row": "19"
   },
   "aircraft": {
     "aircraft_id": "BOE-747-200",

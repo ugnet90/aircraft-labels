@@ -11,8 +11,8 @@
   "aircraft_id": "ATR42-300",
   "aircraft_type": "ATR 42-300",
   "registration": "N4201G",
-  "livery_name": "",
-  "parent_livery": "",
+  "livery_name": "PAA-1987-EXPRESS-BILLBOARD",
+  "parent_livery": "PAA-1984-BILLBOARD",
   "zusatzinfo": "N:Clipper Commodore | I:Pan Am Express",
   "model_extra": "",
   "special_note": "",
@@ -55,8 +55,8 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
-    "parent": "",
+    "code": "PAA-1987-EXPRESS-BILLBOARD",
+    "parent": "PAA-1984-BILLBOARD",
     "notes_raw": "N:Clipper Commodore | I:Pan Am Express",
     "note": ""
   },

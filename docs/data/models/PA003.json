@@ -11,7 +11,7 @@
   "aircraft_id": "BOE-377",
   "aircraft_type": "Boeing 377 Stratocruiser",
   "registration": "N1025V",
-  "livery_name": "",
+  "livery_name": "PAA-1945-WINGED-GLOBE-SILVER",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper America",
   "model_extra": "",
@@ -55,7 +55,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1945-WINGED-GLOBE-SILVER",
     "parent": "",
     "notes_raw": "N:Clipper America",
     "note": ""

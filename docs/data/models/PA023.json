@@ -11,8 +11,8 @@
   "aircraft_id": "BOE-747-100SF",
   "aircraft_type": "Boeing 747-123 Special Freighter",
   "registration": "N901PA",
-  "livery_name": "",
-  "parent_livery": "",
+  "livery_name": "PAA-1970-CARGO",
+  "parent_livery": "0",
   "zusatzinfo": "N:Clipper Carrier Dove | I:Pan Am Cargo",
   "model_extra": "",
   "special_note": "",
@@ -45,7 +45,7 @@
   "status": "owned",
   "source": {
     "sheet": "Panam",
-    "row": "17"
+    "row": "18"
   },
   "aircraft": {
     "aircraft_id": "BOE-747-100SF",
@@ -55,8 +55,8 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
-    "parent": "",
+    "code": "PAA-1970-CARGO",
+    "parent": "0",
     "notes_raw": "N:Clipper Carrier Dove | I:Pan Am Cargo",
     "note": ""
   },

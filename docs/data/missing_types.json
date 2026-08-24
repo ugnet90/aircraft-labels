@@ -3,10 +3,10 @@
   "warning": "",
   "counts": {
     "master_types": 436,
-    "present_types": 145,
-    "missing_types": 287,
+    "present_types": 144,
+    "missing_types": 288,
     "ordered_types": 4,
-    "models": 294
+    "models": 296
   },
   "missing_types": [
     {
@@ -1686,6 +1686,12 @@
     {
       "aircraft_id": "VIC-VC10-C1K",
       "Typ_anzeige": "Vickers VC10 C1K (RAF Government & VIP)",
+      "manufacturer": "Vickers",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "VIC-VC10-SUPER",
+      "Typ_anzeige": "Vickers VC10 Super",
       "manufacturer": "Vickers",
       "status": "missing"
     },

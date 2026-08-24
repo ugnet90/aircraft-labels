@@ -11,7 +11,7 @@
   "aircraft_id": "AIB-A300-B4",
   "aircraft_type": "Airbus A300B4",
   "registration": "N207PA",
-  "livery_name": "",
+  "livery_name": "PAA-1984-BILLBOARD",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Panama",
   "model_extra": "",
@@ -55,7 +55,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1984-BILLBOARD",
     "parent": "",
     "notes_raw": "N:Clipper Panama",
     "note": ""

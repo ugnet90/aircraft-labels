@@ -11,7 +11,7 @@
   "aircraft_id": "BOE-720",
   "aircraft_type": "Boeing 720",
   "registration": "N783PA",
-  "livery_name": "",
+  "livery_name": "PAA-1970-GLOBE-SHORT",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Bonita",
   "model_extra": "",
@@ -45,7 +45,7 @@
   "status": "owned",
   "source": {
     "sheet": "Panam",
-    "row": "11"
+    "row": "12"
   },
   "aircraft": {
     "aircraft_id": "BOE-720",
@@ -55,7 +55,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1970-GLOBE-SHORT",
     "parent": "",
     "notes_raw": "N:Clipper Bonita",
     "note": ""

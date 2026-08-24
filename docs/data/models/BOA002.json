@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "https://mw-moba.de/Produkt/vickers-super-vc10-boac-g-asgh-gemini-jets-gjbaw657-1400/",
-  "aircraft_id": "VIC-VC10-SUPER",
-  "aircraft_type": "BAC Vickers VC-10 Super",
+  "aircraft_id": "VIC-VC10-1151",
+  "aircraft_type": "Vickers Super VC10 Type 1151",
   "registration": "G-ASGH",
   "livery_name": "",
   "parent_livery": "",
@@ -48,10 +48,10 @@
     "row": "19"
   },
   "aircraft": {
-    "aircraft_id": "VIC-VC10-SUPER",
-    "type": "BAC Vickers VC-10 Super",
+    "aircraft_id": "VIC-VC10-1151",
+    "type": "Vickers Super VC10 Type 1151",
     "registration": "G-ASGH",
-    "wingtip": "NONE",
+    "wingtip": "",
     "has_wingtip": false
   },
   "livery": {
@@ -91,32 +91,5 @@
     "name": "British Overseas Airways Corporation",
     "airline": "BOAC",
     "logo_speaking": "Wahr"
-  },
-  "aircraft_full_v8": {
-    "aircraft_id": "VIC-VC10-SUPER",
-    "Typ_anzeige": "Vickers VC10 Super",
-    "Hersteller": "Vickers",
-    "Baureihe": "VC10",
-    "Unterserie": "Super VC10",
-    "Marketingname": "",
-    "Alternate_designations": "",
-    "parent_aircraft_id": "",
-    "ICAO": "VC10",
-    "IATA": "VC2",
-    "Wingtip": "NONE",
-    "Rumpf": "SingleAisle",
-    "MarketSegment": "LongHaul",
-    "Role": "PAX",
-    "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1964",
-    "Status": "ausgemustert",
-    "Antrieb": "Jet",
-    "Triebwerke": "4",
-    "Reichweite": "Lang",
-    "Passengers": "174",
-    "Length": "48,36",
-    "Wingspan": "44,55",
-    "Height": "12,19",
-    "Wiki": "https://de.wikipedia.org/wiki/Vickers_VC10"
   }
 }

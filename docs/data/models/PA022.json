@@ -11,7 +11,7 @@
   "aircraft_id": "BOE-747-100",
   "aircraft_type": "Boeing 747-100",
   "registration": "N736PA",
-  "livery_name": "",
+  "livery_name": "PAA-1976-GLOBE-LARGE",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Victor",
   "model_extra": "",
@@ -45,7 +45,7 @@
   "status": "owned",
   "source": {
     "sheet": "Panam",
-    "row": "16"
+    "row": "17"
   },
   "aircraft": {
     "aircraft_id": "BOE-747-100",
@@ -55,7 +55,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1976-GLOBE-LARGE",
     "parent": "",
     "notes_raw": "N:Clipper Victor",
     "note": ""

@@ -11,7 +11,7 @@
   "aircraft_id": "BOE-707-300",
   "aircraft_type": "Boeing 707-320",
   "registration": "N412PA",
-  "livery_name": "",
+  "livery_name": "PAA-1958-GLOBE-PANAMERICAN",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Empress of the Skies",
   "model_extra": "",
@@ -55,7 +55,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1958-GLOBE-PANAMERICAN",
     "parent": "",
     "notes_raw": "N:Clipper Empress of the Skies",
     "note": ""

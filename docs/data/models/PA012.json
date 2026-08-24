@@ -11,7 +11,7 @@
   "aircraft_id": "BOE-747-100",
   "aircraft_type": "Boeing 747-100",
   "registration": "N4704U",
-  "livery_name": "",
+  "livery_name": "PAA-1984-BILLBOARD",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Belle of the Sea",
   "model_extra": "",
@@ -38,7 +38,7 @@
   "status": "owned",
   "source": {
     "sheet": "Panam",
-    "row": "15"
+    "row": "16"
   },
   "aircraft": {
     "aircraft_id": "BOE-747-100",
@@ -48,7 +48,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1984-BILLBOARD",
     "parent": "",
     "notes_raw": "N:Clipper Belle of the Sea",
     "note": ""

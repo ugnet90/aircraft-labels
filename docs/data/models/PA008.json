@@ -11,7 +11,7 @@
   "aircraft_id": "AIB-A310-300",
   "aircraft_type": "Airbus A310-300",
   "registration": "N818PA",
-  "livery_name": "",
+  "livery_name": "PAA-1984-BILLBOARD",
   "parent_livery": "",
   "zusatzinfo": "N:Clipper Morning Star",
   "model_extra": "",
@@ -55,7 +55,7 @@
     "has_wingtip": false
   },
   "livery": {
-    "code": "",
+    "code": "PAA-1984-BILLBOARD",
     "parent": "",
     "notes_raw": "N:Clipper Morning Star",
     "note": ""
