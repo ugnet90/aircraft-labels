@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-OS-39",
+  "model_id": "WIS-OS-38",
   "airline_code": "OS",
   "airline": "Austrian",
   "airline_row": "",
@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "FAI-SA226",
-  "aircraft_type": "Swearingen SA-226TC Metro II",
+  "aircraft_id": "MCD-MD87",
+  "aircraft_type": "McDonnell Douglas MD-87",
   "registration": "",
   "livery_name": "",
   "parent_livery": "",
@@ -38,11 +38,11 @@
   "status": "wishlist",
   "source": {
     "sheet": "AUA",
-    "row": "39"
+    "row": "38"
   },
   "aircraft": {
-    "aircraft_id": "FAI-SA226",
-    "type": "Swearingen SA-226TC Metro II",
+    "aircraft_id": "MCD-MD87",
+    "type": "McDonnell Douglas MD-87",
     "registration": "",
     "wingtip": "NONE",
     "has_wingtip": false
@@ -79,30 +79,30 @@
     "shop_url": ""
   },
   "aircraft_full_v8": {
-    "aircraft_id": "FAI-SA226",
-    "Typ_anzeige": "Fairchild Swearingen Metro",
-    "Hersteller": "Fairchild Swearingen",
-    "Baureihe": "SA226",
+    "aircraft_id": "MCD-MD87",
+    "Typ_anzeige": "McDonnell Douglas MD-87",
+    "Hersteller": "McDonnell Douglas",
+    "Baureihe": "MD-87",
     "Unterserie": "",
-    "Marketingname": "Metro",
-    "Alternate_designations": "Metroliner|Swearingen SA226|Fairchild Metro",
+    "Marketingname": "",
+    "Alternate_designations": "DC-9-87",
     "parent_aircraft_id": "",
-    "ICAO": "SWM",
-    "IATA": "MET",
+    "ICAO": "DCMD",
+    "IATA": "M87",
     "Wingtip": "NONE",
     "Rumpf": "SingleAisle",
-    "MarketSegment": "Regional",
+    "MarketSegment": "Standard",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1969",
-    "Status": "teils aktiv",
-    "Antrieb": "Turboprop",
+    "Erstflug": "1987",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
     "Triebwerke": "2",
-    "Reichweite": "Kurz",
-    "Passengers": "19",
-    "Length": "18,08",
-    "Wingspan": "14,2",
-    "Height": "4,7",
-    "Wiki": "https://de.wikipedia.org/wiki/Fairchild_Swearingen_Metro"
+    "Reichweite": "Kurz/Mittel",
+    "Passengers": "130",
+    "Length": "40,4",
+    "Wingspan": "32,8",
+    "Height": "9,3",
+    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_MD-80#MD-87"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T13:34:41+02:00",
-  "count_total": 204,
-  "count_unique": 204,
+  "generated_at": "2026-08-26T13:35:16+02:00",
+  "count_total": 207,
+  "count_unique": 207,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -803,6 +803,15 @@
       "price": 1.35
     },
     {
+      "id": "PC-ORD-BA-17-01",
+      "model_id": "ORD-BA-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/45383-british-airways-bac-1-11.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
       "id": "PC-ORD-BA-18-01",
       "model_id": "ORD-BA-18",
       "url": "https://jjpostcards.com/de/ansichtskarten/36551-British-Airways-VC-10.html",
@@ -835,6 +844,23 @@
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-LX-36-01",
+      "model_id": "ORD-LX-36",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25908-swissair-caravelle.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "kleiner Farbunterschied (Schriftzug \"\"Caravelle\"\")",
+      "price": 1.35
+    },
+    {
+      "id": "PC-ORD-OS-29-01",
+      "model_id": "ORD-OS-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38773-Air-Malta-DC-9.html",
+      "status": "none",
+      "model_status": "ordered",
       "price": 1.35
     },
     {
@@ -2538,6 +2564,15 @@
       "label": "andere Kennung",
       "price": 1.35
     },
+    "PC-ORD-BA-17-01": {
+      "id": "PC-ORD-BA-17-01",
+      "model_id": "ORD-BA-17",
+      "url": "https://jjpostcards.com/de/ansichtskarten/45383-british-airways-bac-1-11.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
     "PC-ORD-BA-18-01": {
       "id": "PC-ORD-BA-18-01",
       "model_id": "ORD-BA-18",
@@ -2571,6 +2606,23 @@
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-ORD-LX-36-01": {
+      "id": "PC-ORD-LX-36-01",
+      "model_id": "ORD-LX-36",
+      "url": "https://jjpostcards.com/de/ansichtskarten/25908-swissair-caravelle.html",
+      "status": "none",
+      "model_status": "ordered",
+      "label": "kleiner Farbunterschied (Schriftzug \"\"Caravelle\"\")",
+      "price": 1.35
+    },
+    "PC-ORD-OS-29-01": {
+      "id": "PC-ORD-OS-29-01",
+      "model_id": "ORD-OS-29",
+      "url": "https://jjpostcards.com/de/ansichtskarten/38773-Air-Malta-DC-9.html",
+      "status": "none",
+      "model_status": "ordered",
       "price": 1.35
     },
     "PC-ORD-PA-11-01": {

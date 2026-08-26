@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-OS-36",
+  "model_id": "WIS-OS-40",
   "airline_code": "OS",
   "airline": "Austrian",
   "airline_row": "",
@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "MCD-MD81",
-  "aircraft_type": "McDonnell Douglas MD-81/82/83/88",
+  "aircraft_id": "FAI-SA226",
+  "aircraft_type": "Swearingen SA-226TC Metro II",
   "registration": "",
   "livery_name": "",
   "parent_livery": "",
@@ -38,11 +38,11 @@
   "status": "wishlist",
   "source": {
     "sheet": "AUA",
-    "row": "36"
+    "row": "40"
   },
   "aircraft": {
-    "aircraft_id": "MCD-MD81",
-    "type": "McDonnell Douglas MD-81/82/83/88",
+    "aircraft_id": "FAI-SA226",
+    "type": "Swearingen SA-226TC Metro II",
     "registration": "",
     "wingtip": "NONE",
     "has_wingtip": false
@@ -79,30 +79,30 @@
     "shop_url": ""
   },
   "aircraft_full_v8": {
-    "aircraft_id": "MCD-MD81",
-    "Typ_anzeige": "McDonnell Douglas MD-81",
-    "Hersteller": "McDonnell Douglas",
-    "Baureihe": "MD-81",
+    "aircraft_id": "FAI-SA226",
+    "Typ_anzeige": "Fairchild Swearingen Metro",
+    "Hersteller": "Fairchild Swearingen",
+    "Baureihe": "SA226",
     "Unterserie": "",
-    "Marketingname": "",
-    "Alternate_designations": "DC-9-81",
+    "Marketingname": "Metro",
+    "Alternate_designations": "Metroliner|Swearingen SA226|Fairchild Metro",
     "parent_aircraft_id": "",
-    "ICAO": "DCMD",
-    "IATA": "M81",
+    "ICAO": "SWM",
+    "IATA": "MET",
     "Wingtip": "NONE",
     "Rumpf": "SingleAisle",
-    "MarketSegment": "Standard",
+    "MarketSegment": "Regional",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1980",
-    "Status": "ausgemustert",
-    "Antrieb": "Jet",
+    "Erstflug": "1969",
+    "Status": "teils aktiv",
+    "Antrieb": "Turboprop",
     "Triebwerke": "2",
-    "Reichweite": "Kurz/Mittel",
-    "Passengers": "155",
-    "Length": "45,1",
-    "Wingspan": "32,8",
-    "Height": "9,3",
-    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_MD-80#MD-81"
+    "Reichweite": "Kurz",
+    "Passengers": "19",
+    "Length": "18,08",
+    "Wingspan": "14,2",
+    "Height": "4,7",
+    "Wiki": "https://de.wikipedia.org/wiki/Fairchild_Swearingen_Metro"
   }
 }

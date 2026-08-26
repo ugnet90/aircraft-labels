@@ -8,8 +8,8 @@
   "livery_note": "",
   "extra_info": "",
   "shop_url": "",
-  "aircraft_id": "MCD-MD87",
-  "aircraft_type": "McDonnell Douglas MD-87",
+  "aircraft_id": "MCD-MD81",
+  "aircraft_type": "McDonnell Douglas MD-81/82/83/88",
   "registration": "",
   "livery_name": "",
   "parent_livery": "",
@@ -41,8 +41,8 @@
     "row": "37"
   },
   "aircraft": {
-    "aircraft_id": "MCD-MD87",
-    "type": "McDonnell Douglas MD-87",
+    "aircraft_id": "MCD-MD81",
+    "type": "McDonnell Douglas MD-81/82/83/88",
     "registration": "",
     "wingtip": "NONE",
     "has_wingtip": false
@@ -79,30 +79,30 @@
     "shop_url": ""
   },
   "aircraft_full_v8": {
-    "aircraft_id": "MCD-MD87",
-    "Typ_anzeige": "McDonnell Douglas MD-87",
+    "aircraft_id": "MCD-MD81",
+    "Typ_anzeige": "McDonnell Douglas MD-81",
     "Hersteller": "McDonnell Douglas",
-    "Baureihe": "MD-87",
+    "Baureihe": "MD-81",
     "Unterserie": "",
     "Marketingname": "",
-    "Alternate_designations": "DC-9-87",
+    "Alternate_designations": "DC-9-81",
     "parent_aircraft_id": "",
     "ICAO": "DCMD",
-    "IATA": "M87",
+    "IATA": "M81",
     "Wingtip": "NONE",
     "Rumpf": "SingleAisle",
     "MarketSegment": "Standard",
     "Role": "PAX",
     "Flugzeugtyp": "Landflugzeug",
-    "Erstflug": "1987",
+    "Erstflug": "1980",
     "Status": "ausgemustert",
     "Antrieb": "Jet",
     "Triebwerke": "2",
     "Reichweite": "Kurz/Mittel",
-    "Passengers": "130",
-    "Length": "40,4",
+    "Passengers": "155",
+    "Length": "45,1",
     "Wingspan": "32,8",
     "Height": "9,3",
-    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_MD-80#MD-87"
+    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_MD-80#MD-81"
   }
 }

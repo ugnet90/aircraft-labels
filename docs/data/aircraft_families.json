@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T13:34:41+02:00",
+  "generated_at": "2026-08-26T13:35:16+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -1112,7 +1112,7 @@
         "wingspan": 28.5,
         "height": 7.47,
         "wingtip": "NONE",
-        "status": "wishlist",
+        "status": "ordered",
         "manufacturer": "BAC"
       }
     ],
@@ -5286,7 +5286,7 @@
         "wingspan": 34.3,
         "height": 8.72,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "ordered",
         "manufacturer": "Sud Aviation"
       },
       {

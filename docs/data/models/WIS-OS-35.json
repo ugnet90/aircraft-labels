@@ -1,5 +1,5 @@
 {
-  "model_id": "WIS-OS-34",
+  "model_id": "WIS-OS-35",
   "airline_code": "OS",
   "airline": "Austrian",
   "airline_row": "Austrian",
@@ -38,7 +38,7 @@
   "status": "wishlist",
   "source": {
     "sheet": "AUA",
-    "row": "34"
+    "row": "35"
   },
   "aircraft": {
     "aircraft_id": "FOK-F100",
