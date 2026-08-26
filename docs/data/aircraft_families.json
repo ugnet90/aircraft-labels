@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T12:16:26+02:00",
+  "generated_at": "2026-08-26T13:34:41+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -5266,25 +5266,13 @@
     ],
     "Caravelle": [
       {
-        "aircraft_id": "SUD-Caravelle-10B",
-        "type": "Sud Aviation Caravelle 10B",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 32.01,
-        "wingspan": 34.3,
-        "height": 8.71,
-        "wingtip": "NONE",
-        "status": "missing",
-        "manufacturer": "Sud Aviation"
-      },
-      {
         "aircraft_id": "SUD-Caravelle-I",
         "type": "Sud Aviation Caravelle I",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 32.01,
         "wingspan": 34.3,
-        "height": 8.71,
+        "height": 8.72,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Sud Aviation"
@@ -5292,11 +5280,11 @@
       {
         "aircraft_id": "SUD-Caravelle-III",
         "type": "Sud Aviation Caravelle III",
-        "parent_aircraft_id": "",
-        "parent_type": "",
+        "parent_aircraft_id": "SUD-Caravelle-I",
+        "parent_type": "Sud Aviation Caravelle I",
         "length": 32.01,
         "wingspan": 34.3,
-        "height": 8.71,
+        "height": 8.72,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Sud Aviation"
@@ -5304,11 +5292,11 @@
       {
         "aircraft_id": "SUD-Caravelle-VIN",
         "type": "Sud Aviation Caravelle VI-N",
-        "parent_aircraft_id": "",
-        "parent_type": "",
+        "parent_aircraft_id": "SUD-Caravelle-III",
+        "parent_type": "Sud Aviation Caravelle III",
         "length": 32.01,
         "wingspan": 34.3,
-        "height": 8.71,
+        "height": 8.72,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Sud Aviation"
@@ -5316,13 +5304,25 @@
       {
         "aircraft_id": "SUD-Caravelle-VIR",
         "type": "Sud Aviation Caravelle VI-R",
-        "parent_aircraft_id": "",
-        "parent_type": "",
+        "parent_aircraft_id": "SUD-Caravelle-VIN",
+        "parent_type": "Sud Aviation Caravelle VI-N",
         "length": 32.01,
         "wingspan": 34.3,
-        "height": 8.71,
+        "height": 8.72,
         "wingtip": "NONE",
         "status": "owned",
+        "manufacturer": "Sud Aviation"
+      },
+      {
+        "aircraft_id": "SUD-Caravelle-10B3",
+        "type": "Sud Aviation Caravelle 10B3",
+        "parent_aircraft_id": "INFO:SUD-Caravelle-10A",
+        "parent_type": "",
+        "length": 33.01,
+        "wingspan": 34.3,
+        "height": 8.72,
+        "wingtip": "NONE",
+        "status": "missing",
         "manufacturer": "Sud Aviation"
       }
     ],
@@ -5543,9 +5543,9 @@
     "VC10": [
       {
         "aircraft_id": "VIC-VC10-C1K",
-        "type": "Vickers VC10 C1K (RAF Government & VIP)",
-        "parent_aircraft_id": "VIC-VC10-SUPER",
-        "parent_type": "Vickers VC10 Super",
+        "type": "Vickers VC10 C1K",
+        "parent_aircraft_id": "VIC-VC10-1101",
+        "parent_type": "Vickers VC10 Type 1101",
         "length": 48.36,
         "wingspan": 44.55,
         "height": 12.04,
@@ -5554,27 +5554,27 @@
         "manufacturer": "Vickers"
       },
       {
-        "aircraft_id": "VIC-VC10",
-        "type": "Vickers VC10 Standard",
+        "aircraft_id": "VIC-VC10-1101",
+        "type": "Vickers VC10 Type 1101",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 48.36,
         "wingspan": 44.55,
         "height": 12.19,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "ordered",
         "manufacturer": "Vickers"
       },
       {
-        "aircraft_id": "VIC-VC10-SUPER",
-        "type": "Vickers VC10 Super",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 48.36,
+        "aircraft_id": "VIC-VC10-1151",
+        "type": "Vickers Super VC10 Type 1151",
+        "parent_aircraft_id": "VIC-VC10-1101",
+        "parent_type": "Vickers VC10 Type 1101",
+        "length": 52.32,
         "wingspan": 44.55,
         "height": 12.19,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "owned",
         "manufacturer": "Vickers"
       }
     ],

@@ -1,6 +1,6 @@
 {
   "schema": "aviation-database.group_aircraft_types.v1",
-  "count": 629,
+  "count": 631,
   "items": [
     {
       "airline_code": "BT",
@@ -2425,6 +2425,28 @@
     {
       "airline_code": "OS",
       "airline": "Austrian",
+      "airline_row": "Air Malta",
+      "aircraft_id": "MCD-DC9-30",
+      "aircraft_type": "Douglas DC-9-30",
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "Standard",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1967",
+      "propulsion": "Jet",
+      "engines": "2",
+      "range_class": "Mittel",
+      "passengers": "115",
+      "length_m": "36,37",
+      "wingspan_m": "28,47",
+      "height_m": "8,38",
+      "source_sheet": "AUA",
+      "source_row": "29"
+    },
+    {
+      "airline_code": "OS",
+      "airline": "Austrian",
       "airline_row": "Austrian",
       "aircraft_id": "AIB-A310-300",
       "aircraft_type": "Airbus A310-300",
@@ -2948,7 +2970,7 @@
       "wingspan_m": "28,47",
       "height_m": "8,38",
       "source_sheet": "AUA",
-      "source_row": "29"
+      "source_row": "30"
     },
     {
       "airline_code": "OS",
@@ -2970,7 +2992,7 @@
       "wingspan_m": "28,72",
       "height_m": "10,55",
       "source_sheet": "AUA",
-      "source_row": "30"
+      "source_row": "31"
     },
     {
       "airline_code": "OS",
@@ -2992,7 +3014,7 @@
       "wingspan_m": "28,08",
       "height_m": "8,5",
       "source_sheet": "AUA",
-      "source_row": "34"
+      "source_row": "35"
     },
     {
       "airline_code": "OS",
@@ -3014,7 +3036,7 @@
       "wingspan_m": "29",
       "height_m": "7,9",
       "source_sheet": "AUA",
-      "source_row": "31"
+      "source_row": "32"
     },
     {
       "airline_code": "OS",
@@ -3036,7 +3058,7 @@
       "wingspan_m": "30,18",
       "height_m": "7,57",
       "source_sheet": "AUA",
-      "source_row": "35"
+      "source_row": "36"
     },
     {
       "airline_code": "OS",
@@ -3058,7 +3080,7 @@
       "wingspan_m": "32,8",
       "height_m": "9,3",
       "source_sheet": "AUA",
-      "source_row": "36"
+      "source_row": "37"
     },
     {
       "airline_code": "OS",
@@ -3080,7 +3102,7 @@
       "wingspan_m": "32,8",
       "height_m": "9,3",
       "source_sheet": "AUA",
-      "source_row": "37"
+      "source_row": "38"
     },
     {
       "airline_code": "OS",
@@ -3093,16 +3115,16 @@
       "market_segment": "Standard",
       "aircraft_kind": "Landflugzeug",
       "aircraft_status": "ausgemustert",
-      "first_flight": "1962",
+      "first_flight": "1961",
       "propulsion": "Jet",
       "engines": "2",
       "range_class": "Mittel",
       "passengers": "99",
       "length_m": "32,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71",
+      "height_m": "8,72",
       "source_sheet": "AUA",
-      "source_row": "38"
+      "source_row": "39"
     },
     {
       "airline_code": "OS",
@@ -3124,7 +3146,7 @@
       "wingspan_m": "14,2",
       "height_m": "4,7",
       "source_sheet": "AUA",
-      "source_row": "39"
+      "source_row": "40"
     },
     {
       "airline_code": "OS",
@@ -3146,7 +3168,7 @@
       "wingspan_m": "28,55",
       "height_m": "8,25",
       "source_sheet": "AUA",
-      "source_row": "40"
+      "source_row": "41"
     },
     {
       "airline_code": "OS",
@@ -3168,7 +3190,7 @@
       "wingspan_m": "28,55",
       "height_m": "8,25",
       "source_sheet": "AUA",
-      "source_row": "42"
+      "source_row": "43"
     },
     {
       "airline_code": "OS",
@@ -3212,7 +3234,7 @@
       "wingspan_m": "28,08",
       "height_m": "8,5",
       "source_sheet": "AUA",
-      "source_row": "33"
+      "source_row": "34"
     },
     {
       "airline_code": "OS",
@@ -3234,7 +3256,7 @@
       "wingspan_m": "28",
       "height_m": "8,5",
       "source_sheet": "AUA",
-      "source_row": "32"
+      "source_row": "33"
     },
     {
       "airline_code": "BOA",
@@ -3323,50 +3345,6 @@
       "height_m": "6,6",
       "source_sheet": "BOAC",
       "source_row": "5"
-    },
-    {
-      "airline_code": "BOA",
-      "airline": "BOAC",
-      "airline_row": "BOAC",
-      "aircraft_id": "VIC-VC10",
-      "aircraft_type": "BAC Vickers VC-10",
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1962",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "151",
-      "length_m": "48,36",
-      "wingspan_m": "44,55",
-      "height_m": "12,19",
-      "source_sheet": "BOAC",
-      "source_row": "18"
-    },
-    {
-      "airline_code": "BOA",
-      "airline": "BOAC",
-      "airline_row": "BOAC",
-      "aircraft_id": "VIC-VC10-SUPER",
-      "aircraft_type": "BAC Vickers VC-10 Super",
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1964",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "174",
-      "length_m": "48,36",
-      "wingspan_m": "44,55",
-      "height_m": "12,19",
-      "source_sheet": "BOAC",
-      "source_row": "19"
     },
     {
       "airline_code": "BOA",
@@ -3787,6 +3765,50 @@
       "source_row": "28"
     },
     {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "VIC-VC10-1151",
+      "aircraft_type": "Vickers Super VC10 Type 1151",
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1964",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "174",
+      "length_m": "52,32",
+      "wingspan_m": "44,55",
+      "height_m": "12,19",
+      "source_sheet": "BOAC",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "BOA",
+      "airline": "BOAC",
+      "airline_row": "BOAC",
+      "aircraft_id": "VIC-VC10-1101",
+      "aircraft_type": "Vickers VC10 Type 1101",
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1962",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "151",
+      "length_m": "48,36",
+      "wingspan_m": "44,55",
+      "height_m": "12,19",
+      "source_sheet": "BOAC",
+      "source_row": "18"
+    },
+    {
       "airline_code": "BA",
       "airline": "British Airways",
       "airline_row": "BEA",
@@ -4159,50 +4181,6 @@
       "height_m": "7,47",
       "source_sheet": "BA",
       "source_row": "17"
-    },
-    {
-      "airline_code": "BA",
-      "airline": "British Airways",
-      "airline_row": "British Airways",
-      "aircraft_id": "VIC-VC10",
-      "aircraft_type": "BAC VC-10 Standard",
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1962",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "151",
-      "length_m": "48,36",
-      "wingspan_m": "44,55",
-      "height_m": "12,19",
-      "source_sheet": "BA",
-      "source_row": "18"
-    },
-    {
-      "airline_code": "BA",
-      "airline": "British Airways",
-      "airline_row": "British Airways",
-      "aircraft_id": "VIC-VC10-SUPER",
-      "aircraft_type": "BAC VC-10 Super",
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1964",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "174",
-      "length_m": "48,36",
-      "wingspan_m": "44,55",
-      "height_m": "12,19",
-      "source_sheet": "BA",
-      "source_row": "19"
     },
     {
       "airline_code": "BA",
@@ -5198,6 +5176,28 @@
       "airline_code": "BA",
       "airline": "British Airways",
       "airline_row": "British Airways",
+      "aircraft_id": "VIC-VC10-1151",
+      "aircraft_type": "Vickers Super VC10 Type 1151",
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1964",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "174",
+      "length_m": "52,32",
+      "wingspan_m": "44,55",
+      "height_m": "12,19",
+      "source_sheet": "BA",
+      "source_row": "19"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
       "aircraft_id": "VIC-Vanguard-953",
       "aircraft_type": "Vickers Vanguard",
       "role": "PAX",
@@ -5215,6 +5215,28 @@
       "height_m": "10,64",
       "source_sheet": "BA",
       "source_row": "71"
+    },
+    {
+      "airline_code": "BA",
+      "airline": "British Airways",
+      "airline_row": "British Airways",
+      "aircraft_id": "VIC-VC10-1101",
+      "aircraft_type": "Vickers VC10 Type 1101",
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1962",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "151",
+      "length_m": "48,36",
+      "wingspan_m": "44,55",
+      "height_m": "12,19",
+      "source_sheet": "BA",
+      "source_row": "18"
     },
     {
       "airline_code": "BA",
@@ -9966,7 +9988,7 @@
       "wingspan_m": "39,88",
       "height_m": "12,93",
       "source_sheet": "Panam",
-      "source_row": "11"
+      "source_row": "12"
     },
     {
       "airline_code": "PA",
@@ -9988,7 +10010,7 @@
       "wingspan_m": "32,9",
       "height_m": "10,4",
       "source_sheet": "Panam",
-      "source_row": "12"
+      "source_row": "13"
     },
     {
       "airline_code": "PA",
@@ -10010,7 +10032,7 @@
       "wingspan_m": "28,35",
       "height_m": "11,23",
       "source_sheet": "Panam",
-      "source_row": "13"
+      "source_row": "14"
     },
     {
       "airline_code": "PA",
@@ -10032,7 +10054,7 @@
       "wingspan_m": "28,88",
       "height_m": "11,13",
       "source_sheet": "Panam",
-      "source_row": "14"
+      "source_row": "15"
     },
     {
       "airline_code": "PA",
@@ -10054,7 +10076,7 @@
       "wingspan_m": "59,64",
       "height_m": "19,3",
       "source_sheet": "Panam",
-      "source_row": "15"
+      "source_row": "16"
     },
     {
       "airline_code": "PA",
@@ -10076,7 +10098,7 @@
       "wingspan_m": "59,64",
       "height_m": "19,3",
       "source_sheet": "Panam",
-      "source_row": "17"
+      "source_row": "18"
     },
     {
       "airline_code": "PA",
@@ -10098,7 +10120,7 @@
       "wingspan_m": "59,64",
       "height_m": "19,3",
       "source_sheet": "Panam",
-      "source_row": "18"
+      "source_row": "19"
     },
     {
       "airline_code": "PA",
@@ -10120,7 +10142,7 @@
       "wingspan_m": "59,64",
       "height_m": "19,3",
       "source_sheet": "Panam",
-      "source_row": "19"
+      "source_row": "20"
     },
     {
       "airline_code": "PA",
@@ -10142,7 +10164,7 @@
       "wingspan_m": "15,8",
       "height_m": "5",
       "source_sheet": "Panam",
-      "source_row": "20"
+      "source_row": "21"
     },
     {
       "airline_code": "PA",
@@ -10164,7 +10186,7 @@
       "wingspan_m": "28,96",
       "height_m": "7",
       "source_sheet": "Panam",
-      "source_row": "21"
+      "source_row": "22"
     },
     {
       "airline_code": "PA",
@@ -10186,7 +10208,7 @@
       "wingspan_m": "32,92",
       "height_m": "6,29",
       "source_sheet": "Panam",
-      "source_row": "22"
+      "source_row": "23"
     },
     {
       "airline_code": "PA",
@@ -10208,7 +10230,7 @@
       "wingspan_m": "19,8",
       "height_m": "5,94",
       "source_sheet": "Panam",
-      "source_row": "23"
+      "source_row": "24"
     },
     {
       "airline_code": "PA",
@@ -10230,7 +10252,7 @@
       "wingspan_m": "28,35",
       "height_m": "8,36",
       "source_sheet": "Panam",
-      "source_row": "24"
+      "source_row": "25"
     },
     {
       "airline_code": "PA",
@@ -10252,7 +10274,7 @@
       "wingspan_m": "28,96",
       "height_m": "5,16",
       "source_sheet": "Panam",
-      "source_row": "25"
+      "source_row": "26"
     },
     {
       "airline_code": "PA",
@@ -10274,7 +10296,7 @@
       "wingspan_m": "42,05",
       "height_m": "8,38",
       "source_sheet": "Panam",
-      "source_row": "26"
+      "source_row": "27"
     },
     {
       "airline_code": "PA",
@@ -10296,7 +10318,7 @@
       "wingspan_m": "35,8",
       "height_m": "8,66",
       "source_sheet": "Panam",
-      "source_row": "28"
+      "source_row": "29"
     },
     {
       "airline_code": "PA",
@@ -10318,7 +10340,7 @@
       "wingspan_m": "38,8",
       "height_m": "9,6",
       "source_sheet": "Panam",
-      "source_row": "29"
+      "source_row": "30"
     },
     {
       "airline_code": "PA",
@@ -10340,7 +10362,7 @@
       "wingspan_m": "45",
       "height_m": "12,9",
       "source_sheet": "Panam",
-      "source_row": "30"
+      "source_row": "31"
     },
     {
       "airline_code": "PA",
@@ -10362,7 +10384,7 @@
       "wingspan_m": "48",
       "height_m": "12,9",
       "source_sheet": "Panam",
-      "source_row": "31"
+      "source_row": "32"
     },
     {
       "airline_code": "PA",
@@ -10384,7 +10406,7 @@
       "wingspan_m": "37,5",
       "height_m": "7,1",
       "source_sheet": "Panam",
-      "source_row": "32"
+      "source_row": "33"
     },
     {
       "airline_code": "PA",
@@ -10406,7 +10428,7 @@
       "wingspan_m": "47,3",
       "height_m": "16,9",
       "source_sheet": "Panam",
-      "source_row": "34"
+      "source_row": "35"
     },
     {
       "airline_code": "PA",
@@ -10428,7 +10450,7 @@
       "wingspan_m": "37,5",
       "height_m": "7,1",
       "source_sheet": "Panam",
-      "source_row": "33"
+      "source_row": "34"
     },
     {
       "airline_code": "PA",
@@ -10450,7 +10472,7 @@
       "wingspan_m": "47,43",
       "height_m": "17,7",
       "source_sheet": "Panam",
-      "source_row": "35"
+      "source_row": "36"
     },
     {
       "airline_code": "PA",
@@ -10472,7 +10494,7 @@
       "wingspan_m": "50,39",
       "height_m": "17,7",
       "source_sheet": "Panam",
-      "source_row": "36"
+      "source_row": "37"
     },
     {
       "airline_code": "PA",
@@ -10494,7 +10516,7 @@
       "wingspan_m": "25,6",
       "height_m": "12,19",
       "source_sheet": "Panam",
-      "source_row": "37"
+      "source_row": "38"
     },
     {
       "airline_code": "PA",
@@ -12915,6 +12937,28 @@
       "height_m": "17,6",
       "source_sheet": "Swiss",
       "source_row": "32"
+    },
+    {
+      "airline_code": "LX",
+      "airline": "Swiss",
+      "airline_row": "Swissair",
+      "aircraft_id": "SUD-Caravelle-III",
+      "aircraft_type": "Sud Aviation Caravelle III",
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "Standard",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1959",
+      "propulsion": "Jet",
+      "engines": "2",
+      "range_class": "Mittel",
+      "passengers": "99",
+      "length_m": "32,01",
+      "wingspan_m": "34,3",
+      "height_m": "8,72",
+      "source_sheet": "Swiss",
+      "source_row": "36"
     },
     {
       "airline_code": "TP",

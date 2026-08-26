@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 436,
-    "present_types": 144,
-    "missing_types": 288,
-    "ordered_types": 4,
+    "present_types": 145,
+    "missing_types": 286,
+    "ordered_types": 5,
     "models": 296
   },
   "missing_types": [
@@ -1570,8 +1570,8 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "SUD-Caravelle-10B",
-      "Typ_anzeige": "Sud Aviation Caravelle 10B",
+      "aircraft_id": "SUD-Caravelle-10B3",
+      "Typ_anzeige": "Sud Aviation Caravelle 10B3",
       "manufacturer": "Sud Aviation",
       "status": "missing"
     },
@@ -1678,20 +1678,8 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "VIC-VC10",
-      "Typ_anzeige": "Vickers VC10 Standard",
-      "manufacturer": "Vickers",
-      "status": "missing"
-    },
-    {
       "aircraft_id": "VIC-VC10-C1K",
-      "Typ_anzeige": "Vickers VC10 C1K (RAF Government & VIP)",
-      "manufacturer": "Vickers",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "VIC-VC10-SUPER",
-      "Typ_anzeige": "Vickers VC10 Super",
+      "Typ_anzeige": "Vickers VC10 C1K",
       "manufacturer": "Vickers",
       "status": "missing"
     },
@@ -1759,6 +1747,12 @@
       "aircraft_id": "BOM-CL601",
       "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
+      "status": "ordered"
+    },
+    {
+      "aircraft_id": "VIC-VC10-1101",
+      "Typ_anzeige": "Vickers VC10 Type 1101",
+      "manufacturer": "Vickers",
       "status": "ordered"
     }
   ]

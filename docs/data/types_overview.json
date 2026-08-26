@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 436,
-  "with_any_models": 148,
-  "missing": 288,
+  "with_any_models": 150,
+  "missing": 286,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -13393,9 +13393,9 @@
       "height_m": "4,6"
     },
     {
-      "aircraft_id": "SUD-Caravelle-10B",
-      "typ_anzeige": "Sud Aviation Caravelle 10B",
-      "type_key": "sud aviation caravelle 10b",
+      "aircraft_id": "SUD-Caravelle-10B3",
+      "typ_anzeige": "Sud Aviation Caravelle 10B3",
+      "type_key": "sud aviation caravelle 10b3",
       "manufacturer": "Sud Aviation",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -13413,10 +13413,10 @@
       "propulsion": "Jet",
       "engines": "2",
       "range_class": "Mittel",
-      "passengers": "99",
-      "length_m": "32,01",
+      "passengers": "118",
+      "length_m": "33,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71"
+      "height_m": "8,72"
     },
     {
       "aircraft_id": "SUD-Caravelle-I",
@@ -13435,14 +13435,14 @@
       "market_segment": "Standard",
       "aircraft_kind": "Landflugzeug",
       "aircraft_status": "ausgemustert",
-      "first_flight": "1955",
+      "first_flight": "1958",
       "propulsion": "Jet",
       "engines": "2",
       "range_class": "Mittel",
       "passengers": "80",
       "length_m": "32,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71"
+      "height_m": "8,72"
     },
     {
       "aircraft_id": "SUD-Caravelle-III",
@@ -13465,10 +13465,10 @@
       "propulsion": "Jet",
       "engines": "2",
       "range_class": "Mittel",
-      "passengers": "80",
+      "passengers": "99",
       "length_m": "32,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71"
+      "height_m": "8,72"
     },
     {
       "aircraft_id": "SUD-Caravelle-VIN",
@@ -13494,7 +13494,7 @@
       "passengers": "99",
       "length_m": "32,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71"
+      "height_m": "8,72"
     },
     {
       "aircraft_id": "SUD-Caravelle-VIR",
@@ -13528,14 +13528,14 @@
       "market_segment": "Standard",
       "aircraft_kind": "Landflugzeug",
       "aircraft_status": "ausgemustert",
-      "first_flight": "1962",
+      "first_flight": "1961",
       "propulsion": "Jet",
       "engines": "2",
       "range_class": "Mittel",
       "passengers": "99",
       "length_m": "32,01",
       "wingspan_m": "34,3",
-      "height_m": "8,71"
+      "height_m": "8,72"
     },
     {
       "aircraft_id": "SUD-Concorde",
@@ -13943,6 +13943,47 @@
       "height_m": "7,45"
     },
     {
+      "aircraft_id": "VIC-VC10-1151",
+      "typ_anzeige": "Vickers Super VC10 Type 1151",
+      "type_key": "vickers super vc10 type 1151",
+      "manufacturer": "Vickers",
+      "wingtip": "NONE",
+      "has_wingtip": false,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "BOAC",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "BOAC",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        }
+      ],
+      "role": "PAX",
+      "fuselage": "SingleAisle",
+      "market_segment": "LongHaul",
+      "aircraft_kind": "Landflugzeug",
+      "aircraft_status": "ausgemustert",
+      "first_flight": "1964",
+      "propulsion": "Jet",
+      "engines": "4",
+      "range_class": "Lang",
+      "passengers": "174",
+      "length_m": "52,32",
+      "wingspan_m": "44,55",
+      "height_m": "12,19"
+    },
+    {
       "aircraft_id": "VIC-Vanguard-953",
       "typ_anzeige": "Vickers Vanguard 953",
       "type_key": "vickers vanguard 953",
@@ -13996,8 +14037,8 @@
     },
     {
       "aircraft_id": "VIC-VC10-C1K",
-      "typ_anzeige": "Vickers VC10 C1K (RAF Government & VIP)",
-      "type_key": "vickers vc10 c1k (raf government & vip)",
+      "typ_anzeige": "Vickers VC10 C1K",
+      "type_key": "vickers vc10 c1k",
       "manufacturer": "Vickers",
       "wingtip": "NONE",
       "has_wingtip": false,
@@ -14007,7 +14048,7 @@
       "total_count": 0,
       "airline_group_counts": [],
       "role": "SPECIAL",
-      "fuselage": "TwinAisle",
+      "fuselage": "SingleAisle",
       "market_segment": "Special",
       "aircraft_kind": "Landflugzeug",
       "aircraft_status": "ausgemustert",
@@ -14021,17 +14062,32 @@
       "height_m": "12,04"
     },
     {
-      "aircraft_id": "VIC-VC10",
-      "typ_anzeige": "Vickers VC10 Standard",
-      "type_key": "vickers vc10 standard",
+      "aircraft_id": "VIC-VC10-1101",
+      "typ_anzeige": "Vickers VC10 Type 1101",
+      "type_key": "vickers vc10 type 1101",
       "manufacturer": "Vickers",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "missing",
+      "status": "ordered",
       "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
+      "ordered_count": 1,
+      "total_count": 1,
+      "airline_group_counts": [
+        {
+          "group": "British Airways",
+          "owned": 0,
+          "ordered": 1,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "British Airways",
+              "owned": 0,
+              "ordered": 1,
+              "total": 1
+            }
+          ]
+        }
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -14042,32 +14098,6 @@
       "engines": "4",
       "range_class": "Lang",
       "passengers": "151",
-      "length_m": "48,36",
-      "wingspan_m": "44,55",
-      "height_m": "12,19"
-    },
-    {
-      "aircraft_id": "VIC-VC10-SUPER",
-      "typ_anzeige": "Vickers VC10 Super",
-      "type_key": "vickers vc10 super",
-      "manufacturer": "Vickers",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "LongHaul",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1964",
-      "propulsion": "Jet",
-      "engines": "4",
-      "range_class": "Lang",
-      "passengers": "174",
       "length_m": "48,36",
       "wingspan_m": "44,55",
       "height_m": "12,19"

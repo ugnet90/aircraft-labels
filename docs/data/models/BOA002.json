@@ -51,7 +51,7 @@
     "aircraft_id": "VIC-VC10-1151",
     "type": "Vickers Super VC10 Type 1151",
     "registration": "G-ASGH",
-    "wingtip": "",
+    "wingtip": "NONE",
     "has_wingtip": false
   },
   "livery": {
@@ -91,5 +91,32 @@
     "name": "British Overseas Airways Corporation",
     "airline": "BOAC",
     "logo_speaking": "Wahr"
+  },
+  "aircraft_full_v8": {
+    "aircraft_id": "VIC-VC10-1151",
+    "Typ_anzeige": "Vickers Super VC10 Type 1151",
+    "Hersteller": "Vickers",
+    "Baureihe": "VC10",
+    "Unterserie": "Type 1151",
+    "Marketingname": "Super VC10",
+    "Alternate_designations": "Vickers Super VC10|VC10 Type 1151|BOAC Super VC10",
+    "parent_aircraft_id": "VIC-VC10-1101",
+    "ICAO": "VC10",
+    "IATA": "VC2",
+    "Wingtip": "NONE",
+    "Rumpf": "SingleAisle",
+    "MarketSegment": "LongHaul",
+    "Role": "PAX",
+    "Flugzeugtyp": "Landflugzeug",
+    "Erstflug": "1964",
+    "Status": "ausgemustert",
+    "Antrieb": "Jet",
+    "Triebwerke": "4",
+    "Reichweite": "Lang",
+    "Passengers": "174",
+    "Length": "52,32",
+    "Wingspan": "44,55",
+    "Height": "12,19",
+    "Wiki": "https://de.wikipedia.org/wiki/Vickers_VC10"
   }
 }
