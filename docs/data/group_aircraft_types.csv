@@ -24,20 +24,21 @@ OS;Austrian;Austrian Arrows;DHC-DHC8-400;De Havilland Canada DHC-8-400;AUA;25
 OS;Austrian;Austrian;DOU-DC3;Douglas DC-3;AUA;26
 OS;Austrian;Austrian;DOU-DC8-63;Douglas DC-8-63;AUA;27
 OS;Austrian;Austrian;MCD-DC9-30;Douglas DC-9-30;AUA;28
-OS;Austrian;Austrian;MCD-DC9-50;Douglas DC-9-50;AUA;29
-OS;Austrian;Austrian;EMB-E195;Embraer ERJ-190-200;AUA;30
-OS;Austrian;Austrian;FOK-F50;Fokker 50;AUA;31
-OS;Austrian;Tyrolean Airways;FOK-F70;Fokker 70;AUA;32
-OS;Austrian;Austrian Arrows;FOK-F100;Fokker 100;AUA;33
-OS;Austrian;Austrian;FOK-F100;Fokker 100;AUA;34
-OS;Austrian;Austrian;HAW-HS748;Hawker-Siddeley HS-748;AUA;35
-OS;Austrian;Austrian;MCD-MD81;McDonnell Douglas MD-81/82/83/88;AUA;36
-OS;Austrian;Austrian;MCD-MD87;McDonnell Douglas MD-87;AUA;37
-OS;Austrian;Austrian;SUD-Caravelle-VIR;Sud Aviation SE 210 Caravelle VI-R;AUA;38
-OS;Austrian;Austrian;FAI-SA226;Swearingen SA-226TC Metro II;AUA;39
-OS;Austrian;Austrian;VIC-Viscount-700;Vickers Viscount 745;AUA;40
-OS;Austrian;Austrian;VIC-Viscount-700;Vickers Viscount 779;AUA;41
-OS;Austrian;Austrian;VIC-Viscount-800;Vickers Viscount 837;AUA;42
+OS;Austrian;Air Malta;MCD-DC9-30;Douglas DC-9-30;AUA;29
+OS;Austrian;Austrian;MCD-DC9-50;Douglas DC-9-50;AUA;30
+OS;Austrian;Austrian;EMB-E195;Embraer ERJ-190-200;AUA;31
+OS;Austrian;Austrian;FOK-F50;Fokker 50;AUA;32
+OS;Austrian;Tyrolean Airways;FOK-F70;Fokker 70;AUA;33
+OS;Austrian;Austrian Arrows;FOK-F100;Fokker 100;AUA;34
+OS;Austrian;Austrian;FOK-F100;Fokker 100;AUA;35
+OS;Austrian;Austrian;HAW-HS748;Hawker-Siddeley HS-748;AUA;36
+OS;Austrian;Austrian;MCD-MD81;McDonnell Douglas MD-81/82/83/88;AUA;37
+OS;Austrian;Austrian;MCD-MD87;McDonnell Douglas MD-87;AUA;38
+OS;Austrian;Austrian;SUD-Caravelle-VIR;Sud Aviation SE 210 Caravelle VI-R;AUA;39
+OS;Austrian;Austrian;FAI-SA226;Swearingen SA-226TC Metro II;AUA;40
+OS;Austrian;Austrian;VIC-Viscount-700;Vickers Viscount 745;AUA;41
+OS;Austrian;Austrian;VIC-Viscount-700;Vickers Viscount 779;AUA;42
+OS;Austrian;Austrian;VIC-Viscount-800;Vickers Viscount 837;AUA;43
 LH;Lufthansa;Lufthansa;ATR72-500;ATR 72;Lufthansa;4
 LH;Lufthansa;Lufthansa;AIB-A300-B2;Airbus A300B2;Lufthansa;5
 LH;Lufthansa;Lufthansa;AIB-A300-B4;Airbus A300B4;Lufthansa;6
@@ -130,6 +131,7 @@ LX;Swiss;Swissair;MCD-MD11;McDonnell Douglas MD-11;Swiss;32
 LX;Swiss;Swiss;MCD-MD81;McDonnell Douglas MD-81;Swiss;33
 LX;Swiss;Swiss;SAB-2000;Saab 2000;Swiss;34
 LX;Swiss;Swiss;SAB-340;Saab 340;Swiss;35
+LX;Swiss;Swissair;SUD-Caravelle-III;Sud Aviation Caravelle III;Swiss;36
 BT;Air Baltic;AirBaltic;AIB-A220-300;Airbus A220-300;AirBaltic;4
 BT;Air Baltic;Air Baltic;AIB-A319;Airbus A319-100;AirBaltic;5
 BT;Air Baltic;Air Baltic;AIB-A320-200;Airbus A320-200;AirBaltic;6
