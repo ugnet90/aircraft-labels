@@ -4,7 +4,7 @@
   "master_count": 436,
   "with_any_models": 152,
   "missing": 284,
-  "with_alternate_designations": 194,
+  "with_alternate_designations": 236,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -405,10 +405,14 @@
         }
       ],
       "alternate_designations": [
+        "CSeries, BCS1 (CS100), BCS3 (CS300)|Bombardier CS-100|CS-100|CS100",
         "CSeries, BCS1 (CS100), BCS3 (CS300)",
+        "Bombardier CS-100",
+        "CS-100",
+        "CS100",
         "CSeries",
         "BCS1 (CS100)",
-        "BCS3 (CS300)"
+        "BCS3 (CS300)|Bombardier CS-100|CS-100|CS100"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -614,7 +618,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A300-605B|A300-605B",
+        "Airbus A300-605B",
+        "A300-605B"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -719,10 +727,12 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "A300B4-203(F)|A300B4F|A300B4 Freighter",
+        "A300B4-203(F)|A300B4F|A300B4 Freighter|Airbus A300-B4|A300-B4",
         "A300B4-203(F)",
         "A300B4F",
-        "A300B4 Freighter"
+        "A300B4 Freighter",
+        "Airbus A300-B4",
+        "A300-B4"
       ],
       "role": "CARGO",
       "fuselage": "Widebody",
@@ -1014,7 +1024,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A319-131|A319-131",
+        "Airbus A319-131",
+        "A319-131"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -1704,10 +1718,12 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "A330 MRTT|KC-30A|Voyager",
+        "A330 MRTT|KC-30A|Voyager|Airbus A330-243MRTT|A330-243MRTT",
         "A330 MRTT",
         "KC-30A",
-        "Voyager"
+        "Voyager",
+        "Airbus A330-243MRTT",
+        "A330-243MRTT"
       ],
       "role": "CARGO",
       "fuselage": "Widebody",
@@ -1793,7 +1809,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A330-243|A330-243",
+        "Airbus A330-243",
+        "A330-243"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -2128,7 +2148,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A340-313|A340-313",
+        "Airbus A340-313",
+        "A340-313"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -2285,7 +2309,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A350XWB|A350XWB",
+        "Airbus A350XWB",
+        "A350XWB"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -2328,7 +2356,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A380|A380",
+        "Airbus A380",
+        "A380"
+      ],
       "role": "PAX",
       "fuselage": "VeryLarge",
       "market_segment": "VLA",
@@ -3361,7 +3393,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "BAC 111|BAC One-Eleven",
+        "BAC 111",
+        "BAC One-Eleven"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -4101,11 +4137,13 @@
         }
       ],
       "alternate_designations": [
-        "Boeing 707-320C|707-330C|707-307C|707-300C",
+        "Boeing 707-320C|707-330C|707-307C|707-300C|Boeing 707-323C|707-323C",
         "Boeing 707-320C",
         "707-330C",
         "707-307C",
-        "707-300C"
+        "707-300C",
+        "Boeing 707-323C",
+        "707-323C"
       ],
       "role": "CARGO",
       "fuselage": "SingleAisle",
@@ -4224,9 +4262,11 @@
         }
       ],
       "alternate_designations": [
-        "Boeing 707-020|Boeing 720",
+        "Boeing 707-020|Boeing 720|Boeing 720B|720B",
         "Boeing 707-020",
-        "Boeing 720"
+        "Boeing 720",
+        "Boeing 720B",
+        "720B"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -4270,7 +4310,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 727-100C|727-100C",
+        "Boeing 727-100C",
+        "727-100C"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -4327,7 +4371,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 727-251|727-251",
+        "Boeing 727-251",
+        "727-251"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -4444,7 +4492,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 737 MAX8|737 MAX8",
+        "Boeing 737 MAX8",
+        "737 MAX8"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -4472,7 +4524,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 737 MAX9|737 MAX9",
+        "Boeing 737 MAX9",
+        "737 MAX9"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -4634,7 +4690,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 737-376|737-376",
+        "Boeing 737-376",
+        "737-376"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -4724,7 +4784,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 737-4Q8|737-4Q8",
+        "Boeing 737-4Q8",
+        "737-4Q8"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -5032,7 +5096,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 737-832|737-832",
+        "Boeing 737-832",
+        "737-832"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -5505,7 +5573,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 747-124|747-124",
+        "Boeing 747-124",
+        "747-124"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -5594,9 +5666,11 @@
         }
       ],
       "alternate_designations": [
-        "Boeing 747-200|747-200A",
+        "Boeing 747-200|747-200A|Boeing 747-238B|747-238B",
         "Boeing 747-200",
-        "747-200A"
+        "747-200A",
+        "Boeing 747-238B",
+        "747-238B"
       ],
       "role": "PAX",
       "fuselage": "Widebody",
@@ -5857,7 +5931,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 747-422|747-422",
+        "Boeing 747-422",
+        "747-422"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -6136,7 +6214,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 747-8|747-8",
+        "Boeing 747-8",
+        "747-8"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -6713,7 +6795,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 767-375|767-375",
+        "Boeing 767-375",
+        "767-375"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -6910,7 +6996,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 767-322ER|767-322ER",
+        "Boeing 767-322ER",
+        "767-322ER"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -7033,7 +7123,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 767-400|767-400",
+        "Boeing 767-400",
+        "767-400"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -7162,7 +7256,10 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "Worldliner"
+        "Worldliner|Boeing 777-200LR|777-200LR",
+        "Worldliner",
+        "Boeing 777-200LR",
+        "777-200LR"
       ],
       "role": "PAX",
       "fuselage": "Widebody",
@@ -7304,7 +7401,12 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 777-200LRF|777-200LRF|777F",
+        "Boeing 777-200LRF",
+        "777-200LRF",
+        "777F"
+      ],
       "role": "CARGO",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -7332,7 +7434,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 787-10|787-10",
+        "Boeing 787-10",
+        "787-10"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -7375,7 +7481,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 787-8|787-8",
+        "Boeing 787-8",
+        "787-8"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -7418,7 +7528,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Boeing 787-9|787-9",
+        "Boeing 787-9",
+        "787-9"
+      ],
       "role": "PAX",
       "fuselage": "Widebody",
       "market_segment": "LongHaul",
@@ -7572,9 +7686,11 @@
         }
       ],
       "alternate_designations": [
-        "Boeing C-40A|Clipper",
+        "Boeing C-40A|Clipper|Boeing C-40|C-40",
         "Boeing C-40A",
-        "Clipper"
+        "Clipper",
+        "Boeing C-40",
+        "C-40"
       ],
       "role": "SPECIAL",
       "fuselage": "SingleAisle",
@@ -8123,7 +8239,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Bombardier CRJ200|CRJ200",
+        "Bombardier CRJ200",
+        "CRJ200"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Regional",
@@ -8279,7 +8399,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Bristol 175 Britannia 313|Britannia 313",
+        "Bristol 175 Britannia 313",
+        "Britannia 313"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -9099,9 +9223,11 @@
         }
       ],
       "alternate_designations": [
-        "Convair CV-880|Golden Arrow",
+        "Convair CV-880|Golden Arrow|Convair 880|Convair CV-880|CV-880",
         "Convair CV-880",
-        "Golden Arrow"
+        "Golden Arrow",
+        "Convair 880",
+        "CV-880"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -9465,7 +9591,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Bombardier Q400|Q400",
+        "Bombardier Q400",
+        "Q400"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Regional",
@@ -10253,7 +10383,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-8-30|DC-8-30",
+        "Douglas DC-8-30",
+        "DC-8-30"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10381,7 +10515,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-8-50|DC-8-50",
+        "Douglas DC-8-50",
+        "DC-8-50"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10409,7 +10547,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-8-61|DC-8-61",
+        "Douglas DC-8-61",
+        "DC-8-61"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10452,7 +10594,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-8-62|DC-8-62",
+        "Douglas DC-8-62",
+        "DC-8-62"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10495,7 +10641,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-8-63|DC-8-63",
+        "Douglas DC-8-63",
+        "DC-8-63"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10705,9 +10855,11 @@
         }
       ],
       "alternate_designations": [
-        "ERJ 170-100|E170STD",
+        "ERJ 170-100|E170STD|Embraer ERJ-170|ERJ-170",
         "ERJ 170-100",
-        "E170STD"
+        "E170STD",
+        "Embraer ERJ-170",
+        "ERJ-170"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -10916,10 +11068,12 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "ERJ 190-200|E195LR|E195AR",
+        "ERJ 190-200|E195LR|E195AR|Embraer 195|E195",
         "ERJ 190-200",
         "E195LR",
-        "E195AR"
+        "E195AR",
+        "Embraer 195",
+        "E195"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -11688,7 +11842,12 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Hawker Siddeley HS-121|HS-121|HS121",
+        "Hawker Siddeley HS-121",
+        "HS-121",
+        "HS121"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -11731,7 +11890,12 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Hawker Siddeley HS.121 Trident 2E|HS.121 Trident 2E|HS121 Trident 2E",
+        "Hawker Siddeley HS.121 Trident 2E",
+        "HS.121 Trident 2E",
+        "HS121 Trident 2E"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -11886,7 +12050,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Ilyushin Il-18F|Ilyushin IL-18F|IL-18F",
+        "Ilyushin Il-18F",
+        "IL-18F"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -12487,7 +12655,10 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "L-1011-385-1"
+        "L-1011-385-1|Lockheed L-1011-1|L-1011-1",
+        "L-1011-385-1",
+        "Lockheed L-1011-1",
+        "L-1011-1"
       ],
       "role": "PAX",
       "fuselage": "TwinAisle",
@@ -12592,7 +12763,10 @@
         }
       ],
       "alternate_designations": [
-        "L-1011-385-3"
+        "L-1011-385-3|Lockheed L-1011-500|L-1011-500",
+        "L-1011-385-3",
+        "Lockheed L-1011-500",
+        "L-1011-500"
       ],
       "role": "PAX",
       "fuselage": "TwinAisle",
@@ -12788,7 +12962,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Lockheed L-188A|L-188A",
+        "Lockheed L-188A",
+        "L-188A"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -13242,7 +13420,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-10-30|DC-10-30",
+        "Douglas DC-10-30",
+        "DC-10-30"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -13270,7 +13452,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-10-40|DC-10-40",
+        "Douglas DC-10-40",
+        "DC-10-40"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -13449,9 +13635,11 @@
         }
       ],
       "alternate_designations": [
-        "McDonnell Douglas DC-9-30|DC-9 Series 30",
+        "McDonnell Douglas DC-9-30|DC-9 Series 30|Douglas DC-9-30|DC-9-30",
         "McDonnell Douglas DC-9-30",
-        "DC-9 Series 30"
+        "DC-9 Series 30",
+        "Douglas DC-9-30",
+        "DC-9-30"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -15301,7 +15489,10 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "Tupolev Tu-204-100"
+        "Tupolev Tu-204-100|Tupolev Tu-204-100E|Tupolev TU-204-100E|TU-204-100E",
+        "Tupolev Tu-204-100",
+        "Tupolev Tu-204-100E",
+        "TU-204-100E"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -15446,7 +15637,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Tupolev Tu-134A|Tupolev TU-134A|TU-134A",
+        "Tupolev Tu-134A",
+        "TU-134A"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -15474,7 +15669,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Tupolev Tu-154B|Tupolev TU-154B|TU-154B",
+        "Tupolev Tu-154B",
+        "TU-154B"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -15530,7 +15729,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Tupolev Tu-204-300|Tupolev TU-204-300|TU-204-300",
+        "Tupolev Tu-204-300",
+        "TU-204-300"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -15558,7 +15761,11 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Tupolev Tu-214|Tupolev TU-214|TU-214",
+        "Tupolev Tu-214",
+        "TU-214"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -15634,10 +15841,13 @@
         }
       ],
       "alternate_designations": [
-        "Vickers Super VC10|VC10 Type 1151|BOAC Super VC10",
+        "Vickers Super VC10|VC10 Type 1151|BOAC Super VC10|Vickers Super VC-10|Super VC-10|VC-10 Super",
         "Vickers Super VC10",
         "VC10 Type 1151",
-        "BOAC Super VC10"
+        "BOAC Super VC10",
+        "Vickers Super VC-10",
+        "Super VC-10",
+        "VC-10 Super"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -15777,10 +15987,13 @@
         }
       ],
       "alternate_designations": [
-        "Vickers VC10 Standard|VC10 Type 1101|BOAC VC10",
+        "Vickers VC10 Standard|VC10 Type 1101|BOAC VC10|Vickers Standard VC-10|Standard VC-10|VC-10 Standard",
         "Vickers VC10 Standard",
         "VC10 Type 1101",
-        "BOAC VC10"
+        "BOAC VC10",
+        "Vickers Standard VC-10",
+        "Standard VC-10",
+        "VC-10 Standard"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
