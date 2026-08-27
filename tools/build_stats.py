@@ -1,5 +1,6 @@
 import csv
 import json
+import re
 from pathlib import Path
 from collections import defaultdict
 from utils_time import now_local_iso
@@ -28,7 +29,44 @@ def read_csv(path: Path, delimiter=";"):
 def norm(s) -> str:
     return (s or "").strip()
 
+def split_alternate_designations(value) -> list:
+    """
+    Zerlegt Alternate_designations aus passenger_aircraft_full.csv.
 
+    Primärer Trenner bleibt |.
+    Zusätzlich wird die Rohform selbst behalten, damit bestehende Einträge
+    nicht durch eine zu aggressive Zerlegung beschädigt werden.
+    """
+    raw = norm(value)
+
+    if not raw:
+        return []
+
+    parts = [raw]
+
+    for part in re.split(r"\s*\|\s*", raw):
+        part = norm(part)
+        if part:
+            parts.append(part)
+
+    # Du hast einige ältere Einträge mit Komma-Trennung.
+    # Die Rohform bleibt oben erhalten; Komma-Split liefert zusätzliche Treffer.
+    for part in re.split(r"\s*,\s*", raw):
+        part = norm(part)
+        if part:
+            parts.append(part)
+
+    result = []
+    seen = set()
+
+    for part in parts:
+        key = part.lower()
+        if key not in seen:
+            result.append(part)
+            seen.add(key)
+
+    return result
+    
 def is_present(row) -> bool:
     v = (row.get("vorhanden", "") or "").strip().lower()
     return v in ("wahr", "true", "1", "x", "ja", "yes")
@@ -380,6 +418,8 @@ def main():
             "wingtip": wingtip,
             "has_wingtip": (wingtip != "" and wingtip != "NONE"),
 
+            "alternate_designations": split_alternate_designations(r.get("Alternate_designations")),
+
             # optionale technische Felder für types_overview
             "role": norm(r.get("Role")),
             "fuselage": norm(r.get("Rumpf")),
@@ -488,6 +528,8 @@ def main():
                 "ordered_count": ordered,
                 "total_count": total,
                 "airline_group_counts": group_list,
+
+                "alternate_designations": base.get("alternate_designations", []),
 
                 # optionale technische Felder für types_overview
                 "role": base.get("role", ""),
