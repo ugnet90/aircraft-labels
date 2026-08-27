@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-LH-51",
+  "model_id": "LH036",
   "airline_code": "LH",
   "airline": "Lufthansa",
   "airline_row": "Lufthansa",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-ORD-LH-51-01",
+      "id": "PC-LH036-01",
       "label": "",
       "url": "https://jjpostcards.com/de/ansichtskarten/28533-lufthansa-dc-8.html",
       "price": 1.35
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.airliners.net/photo/Lufthansa-Trans-International-Airlines-TIA/Douglas-DC-8-51/91485",
   "photo_image_url": "https://imgproc.airliners.net/photos/airliners/5/8/4/0091485.jpg?v=v40",
   "photo_credit": "Mel Lawrence",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-08-20",
-  "ordered": true,
+  "arrived_excel": "2028-06-26",
+  "arrived": "2028-06-26",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "Lufthansa",
     "row": "51"
@@ -67,13 +67,13 @@
     "shop": "Ebay Les Miniatures De L'Ouest",
     "price": 52.68,
     "shipping_allocated": 7.32,
-    "arrived": null,
-    "ordered_at": "2026-08-20",
-    "ordered": true,
-    "present": false,
+    "arrived": "2028-06-26",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

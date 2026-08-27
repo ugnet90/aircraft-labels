@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-BA-18",
+  "model_id": "BA013",
   "airline_code": "BA",
   "airline": "British Airways",
   "airline_row": "British Airways",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-ORD-BA-18-01",
+      "id": "PC-BA013-01",
       "label": "andere Bemalung",
       "url": "https://jjpostcards.com/de/ansichtskarten/36551-British-Airways-VC-10.html",
       "price": 1.35
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.jetphotos.com/photo/5731363",
   "photo_image_url": "",
   "photo_credit": "",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-08-20",
-  "ordered": true,
+  "arrived_excel": "2026-08-26",
+  "arrived": "2026-08-26",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "BA",
     "row": "18"
@@ -67,13 +67,13 @@
     "shop": "Ebay Les Miniatures De L'Ouest",
     "price": 52.68,
     "shipping_allocated": 7.32,
-    "arrived": null,
-    "ordered_at": "2026-08-20",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-08-26",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""

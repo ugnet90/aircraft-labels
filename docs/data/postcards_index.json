@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T11:10:15+02:00",
+  "generated_at": "2026-08-27T13:58:01+02:00",
   "count_total": 207,
   "count_unique": 207,
   "items": [
@@ -176,6 +176,15 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 0.5
+    },
+    {
+      "id": "PC-BA013-01",
+      "model_id": "BA013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36551-British-Airways-VC-10.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Bemalung",
+      "price": 1.35
     },
     {
       "id": "PC-BOA001-01",
@@ -629,6 +638,14 @@
       "price": 1.35
     },
     {
+      "id": "PC-LH036-01",
+      "model_id": "LH036",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28533-lufthansa-dc-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.35
+    },
+    {
       "id": "PC-LX002-01",
       "model_id": "LX002",
       "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
@@ -812,29 +829,12 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-BA-18-01",
-      "model_id": "ORD-BA-18",
-      "url": "https://jjpostcards.com/de/ansichtskarten/36551-British-Airways-VC-10.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Bemalung",
-      "price": 1.35
-    },
-    {
       "id": "PC-ORD-FI-12-01",
       "model_id": "ORD-FI-12",
       "url": "https://jjpostcards.com/de/ansichtskarten/35177-Icelandair-B757.html",
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, andere Bemalung",
-      "price": 1.35
-    },
-    {
-      "id": "PC-ORD-LH-51-01",
-      "model_id": "ORD-LH-51",
-      "url": "https://jjpostcards.com/de/ansichtskarten/28533-lufthansa-dc-8.html",
-      "status": "none",
-      "model_status": "ordered",
       "price": 1.35
     },
     {
@@ -861,15 +861,6 @@
       "url": "https://jjpostcards.com/de/ansichtskarten/38773-Air-Malta-DC-9.html",
       "status": "none",
       "model_status": "ordered",
-      "price": 1.35
-    },
-    {
-      "id": "PC-ORD-PA-11-01",
-      "model_id": "ORD-PA-11",
-      "url": "https://jjpostcards.com/de/ansichtskarten/28549-pan-american-b707.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
       "price": 1.35
     },
     {
@@ -1196,6 +1187,15 @@
       "id": "PC-PA024-01",
       "model_id": "PA024",
       "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    {
+      "id": "PC-PA025-01",
+      "model_id": "PA025",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28549-pan-american-b707.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",
@@ -1939,6 +1939,15 @@
       "label": "andere Kennung",
       "price": 0.5
     },
+    "PC-BA013-01": {
+      "id": "PC-BA013-01",
+      "model_id": "BA013",
+      "url": "https://jjpostcards.com/de/ansichtskarten/36551-British-Airways-VC-10.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Bemalung",
+      "price": 1.35
+    },
     "PC-BOA001-01": {
       "id": "PC-BOA001-01",
       "model_id": "BOA001",
@@ -2390,6 +2399,14 @@
       "model_status": "owned",
       "price": 1.35
     },
+    "PC-LH036-01": {
+      "id": "PC-LH036-01",
+      "model_id": "LH036",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28533-lufthansa-dc-8.html",
+      "status": "owned",
+      "model_status": "owned",
+      "price": 1.35
+    },
     "PC-LX002-01": {
       "id": "PC-LX002-01",
       "model_id": "LX002",
@@ -2573,15 +2590,6 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-BA-18-01": {
-      "id": "PC-ORD-BA-18-01",
-      "model_id": "ORD-BA-18",
-      "url": "https://jjpostcards.com/de/ansichtskarten/36551-British-Airways-VC-10.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Bemalung",
-      "price": 1.35
-    },
     "PC-ORD-FI-12-01": {
       "id": "PC-ORD-FI-12-01",
       "model_id": "ORD-FI-12",
@@ -2589,14 +2597,6 @@
       "status": "none",
       "model_status": "ordered",
       "label": "andere Kennung, andere Bemalung",
-      "price": 1.35
-    },
-    "PC-ORD-LH-51-01": {
-      "id": "PC-ORD-LH-51-01",
-      "model_id": "ORD-LH-51",
-      "url": "https://jjpostcards.com/de/ansichtskarten/28533-lufthansa-dc-8.html",
-      "status": "none",
-      "model_status": "ordered",
       "price": 1.35
     },
     "PC-ORD-LH-7-01": {
@@ -2623,15 +2623,6 @@
       "url": "https://jjpostcards.com/de/ansichtskarten/38773-Air-Malta-DC-9.html",
       "status": "none",
       "model_status": "ordered",
-      "price": 1.35
-    },
-    "PC-ORD-PA-11-01": {
-      "id": "PC-ORD-PA-11-01",
-      "model_id": "ORD-PA-11",
-      "url": "https://jjpostcards.com/de/ansichtskarten/28549-pan-american-b707.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung",
       "price": 1.35
     },
     "PC-OS001-01": {
@@ -2958,6 +2949,15 @@
       "id": "PC-PA024-01",
       "model_id": "PA024",
       "url": "https://jjpostcards.com/de/ansichtskarten/13687-pan-american-dc-6.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 1.35
+    },
+    "PC-PA025-01": {
+      "id": "PC-PA025-01",
+      "model_id": "PA025",
+      "url": "https://jjpostcards.com/de/ansichtskarten/28549-pan-american-b707.html",
       "status": "owned",
       "model_status": "owned",
       "label": "andere Kennung",

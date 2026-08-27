@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 436,
-    "present_types": 145,
+    "present_types": 146,
     "missing_types": 284,
-    "ordered_types": 7,
+    "ordered_types": 6,
     "models": 299
   },
   "missing_types": [
@@ -1747,12 +1747,6 @@
       "aircraft_id": "SUD-Caravelle-III",
       "Typ_anzeige": "Sud Aviation Caravelle III",
       "manufacturer": "Sud Aviation",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "VIC-VC10-1101",
-      "Typ_anzeige": "Vickers VC10 Type 1101",
-      "manufacturer": "Vickers",
       "status": "ordered"
     }
   ]

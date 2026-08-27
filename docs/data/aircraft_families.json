@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T11:10:14+02:00",
+  "generated_at": "2026-08-27T13:58:01+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -5562,7 +5562,7 @@
         "wingspan": 44.55,
         "height": 12.19,
         "wingtip": "NONE",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Vickers"
       },
       {
