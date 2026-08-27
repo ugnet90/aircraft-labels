@@ -411,6 +411,25 @@ def main():
         typ = norm(r.get("Typ_anzeige")) or aid
         manu = norm(r.get("Hersteller"))
         wingtip = norm(r.get("Wingtip")).upper()
+
+        alternate_designations = split_alternate_designations(
+            first_value(
+                r,
+                "Alternate_designations",
+                "alternate_designations",
+                "Alternative_designations",
+                "Alternative Bezeichnungen",
+                "Alternativbezeichnungen",
+            )
+        )
+        parent_aircraft_id = first_value(
+            r,
+            "parent_aircraft_id",
+            "Parent_aircraft_id",
+            "Parent",
+            "parent",
+        )
+
         pax_by_id[aid] = {
             "aircraft_id": aid,
             "typ_anzeige": typ,
@@ -418,7 +437,8 @@ def main():
             "wingtip": wingtip,
             "has_wingtip": (wingtip != "" and wingtip != "NONE"),
 
-            "alternate_designations": split_alternate_designations(r.get("Alternate_designations")),
+            "alternate_designations": alternate_designations,
+            "parent_aircraft_id": parent_aircraft_id,
 
             # optionale technische Felder für types_overview
             "role": norm(r.get("Role")),
@@ -521,6 +541,7 @@ def main():
                 "typ_anzeige": base.get("typ_anzeige", aid),
                 "type_key": (base.get("typ_anzeige", aid) or aid).lower(),
                 "manufacturer": base.get("manufacturer", ""),
+                "parent_aircraft_id": base.get("parent_aircraft_id", ""),
                 "wingtip": base.get("wingtip", ""),
                 "has_wingtip": bool(base.get("has_wingtip", False)),
                 "status": type_status(owned, ordered),
@@ -554,6 +575,7 @@ def main():
         "master_count": len(pax_by_id),
         "with_any_models": sum(1 for x in items if (x.get("total_count", 0) or 0) > 0),
         "missing": sum(1 for x in items if (x.get("total_count", 0) or 0) == 0),
+        "with_alternate_designations": sum(1 for x in items if x.get("alternate_designations")),
         "filters": {
             "manufacturers": sorted(manufacturers_set, key=lambda s: s.lower()),
             "statuses": ["all", "missing", "owned", "ordered", "mixed"],
@@ -566,6 +588,12 @@ def main():
 
     OUT_TYPES.write_text(
         json.dumps(payload_types, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(
+        f"[build_stats] wrote {OUT_TYPES} "
+        f"({len(items)} types, "
+        f"{payload_types['with_alternate_designations']} with alternate_designations)"
     )
 
 
