@@ -4,7 +4,7 @@
   "master_count": 436,
   "with_any_models": 152,
   "missing": 284,
-  "with_alternate_designations": 246,
+  "with_alternate_designations": 247,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -575,7 +575,15 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A300B|A300B|Airbus A300-B4|A300-B4|Airbus A300B4|A300B4",
+        "Airbus A300B",
+        "A300B",
+        "Airbus A300-B4",
+        "A300-B4",
+        "Airbus A300B4",
+        "A300B4"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
