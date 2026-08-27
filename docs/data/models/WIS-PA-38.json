@@ -92,7 +92,7 @@
     "Baureihe": "Concorde",
     "Unterserie": "",
     "Marketingname": "",
-    "Alternate_designations": "",
+    "Alternate_designations": "Concorde",
     "parent_aircraft_id": "",
     "ICAO": "CONC",
     "IATA": "SSC",
@@ -110,6 +110,8 @@
     "Length": "61,66",
     "Wingspan": "25,6",
     "Height": "12,19",
-    "Wiki": "https://de.wikipedia.org/wiki/Concorde"
+    "Wiki": "https://de.wikipedia.org/wiki/Concorde",
+    "alt": "Concorde",
+    "diff": ""
   }
 }

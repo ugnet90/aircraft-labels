@@ -117,7 +117,9 @@
     "Length": "46,7",
     "Wingspan": "32,9",
     "Height": "10,4",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_727#727-200"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_727#727-200",
+    "alt": "Boeing 727-251|727-251",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Pan American Airways (1998–2004)",

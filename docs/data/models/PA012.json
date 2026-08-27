@@ -110,7 +110,9 @@
     "Length": "70,66",
     "Wingspan": "59,64",
     "Height": "19,3",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_747#747-100"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_747#747-100",
+    "alt": "Boeing 747-124|747-124",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Pan American World Airways",

@@ -117,7 +117,9 @@
     "Length": "46,7",
     "Wingspan": "43,9",
     "Height": "15,8",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A310#A310-300"
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A310#A310-300",
+    "alt": "",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

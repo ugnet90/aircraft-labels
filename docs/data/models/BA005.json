@@ -99,7 +99,7 @@
     "Baureihe": "BAe 146",
     "Unterserie": "200",
     "Marketingname": "Avro RJ85",
-    "Alternate_designations": "BAe 146-200|Avro RJ85",
+    "Alternate_designations": "British Aerospace BAE 146/RJ-85|BAE 146/RJ-85|RJ-85",
     "parent_aircraft_id": "",
     "ICAO": "B462",
     "IATA": "146",
@@ -117,6 +117,8 @@
     "Length": "28,55",
     "Wingspan": "26,34",
     "Height": "8,61",
-    "Wiki": "https://de.wikipedia.org/wiki/British_Aerospace_BAe_146#BAe_146-200"
+    "Wiki": "https://de.wikipedia.org/wiki/British_Aerospace_BAe_146#BAe_146-200",
+    "alt": "British Aerospace BAE 146/RJ-85|BAE 146/RJ-85|RJ-85",
+    "diff": ""
   }
 }

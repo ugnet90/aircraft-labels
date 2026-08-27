@@ -99,7 +99,7 @@
     "Baureihe": "A330",
     "Unterserie": "-900neo",
     "Marketingname": "",
-    "Alternate_designations": "",
+    "Alternate_designations": "Airbus A330neo|A330neo|Airbus A330-900|A330-900",
     "parent_aircraft_id": "",
     "ICAO": "A339",
     "IATA": "339",
@@ -117,6 +117,8 @@
     "Length": "63,69",
     "Wingspan": "64",
     "Height": "16,85",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A330neo"
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A330neo",
+    "alt": "Airbus A330neo|A330neo|Airbus A330-900|A330-900",
+    "diff": ""
   }
 }

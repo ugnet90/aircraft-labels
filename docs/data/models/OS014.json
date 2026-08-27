@@ -99,7 +99,7 @@
     "Baureihe": "DC-9",
     "Unterserie": "-50",
     "Marketingname": "DC-9-50",
-    "Alternate_designations": "McDonnell Douglas DC-9-50|DC-9 Series 50",
+    "Alternate_designations": "Douglas DC-9-50|DC-9-50",
     "parent_aircraft_id": "",
     "ICAO": "DC95",
     "IATA": "D95",
@@ -117,7 +117,9 @@
     "Length": "40,72",
     "Wingspan": "28,47",
     "Height": "8,38",
-    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_DC-9#DC-9-50"
+    "Wiki": "https://de.wikipedia.org/wiki/McDonnell_Douglas_DC-9#DC-9-50",
+    "alt": "Douglas DC-9-50|DC-9-50",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

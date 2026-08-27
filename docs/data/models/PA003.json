@@ -117,7 +117,9 @@
     "Length": "33,6",
     "Wingspan": "43,05",
     "Height": "11,66",
-    "Wiki": "https://de.wikipedia.org/wiki/Boeing_377"
+    "Wiki": "https://de.wikipedia.org/wiki/Boeing_377",
+    "alt": "",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Pan American World Airways",

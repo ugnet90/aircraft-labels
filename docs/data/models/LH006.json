@@ -92,7 +92,7 @@
     "Baureihe": "A350",
     "Unterserie": "-900",
     "Marketingname": "",
-    "Alternate_designations": "Airbus A350XWB|A350XWB",
+    "Alternate_designations": "Airbus A350XWB|A350XWB|Airbus A350-900XWB|A350-900XWB",
     "parent_aircraft_id": "",
     "ICAO": "A359",
     "IATA": "359",
@@ -110,6 +110,8 @@
     "Length": "66,8",
     "Wingspan": "64,75",
     "Height": "17,05",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A350#A350-900"
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A350#A350-900",
+    "alt": "Airbus A350XWB|A350XWB|Airbus A350-900XWB|A350-900XWB",
+    "diff": ""
   }
 }

@@ -92,7 +92,7 @@
     "Baureihe": "North Star",
     "Unterserie": "C-4",
     "Marketingname": "",
-    "Alternate_designations": "DC-4M, Argonaut",
+    "Alternate_designations": "Canadair C-4F|C-4F",
     "parent_aircraft_id": "",
     "ICAO": "NSTR",
     "IATA": "NS4",
@@ -110,6 +110,8 @@
     "Length": "28,96",
     "Wingspan": "43,05",
     "Height": "7,57",
-    "Wiki": "https://de.wikipedia.org/wiki/Canadair_North_Star"
+    "Wiki": "https://de.wikipedia.org/wiki/Canadair_North_Star",
+    "alt": "Canadair C-4F|C-4F",
+    "diff": ""
   }
 }

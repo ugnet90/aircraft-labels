@@ -99,7 +99,7 @@
     "Baureihe": "A320",
     "Unterserie": "-200",
     "Marketingname": "",
-    "Alternate_designations": "",
+    "Alternate_designations": "Airbus A320 Sharklet|A320 Sharklet|Airbus A320SL|A320SL",
     "parent_aircraft_id": "",
     "ICAO": "A320",
     "IATA": "320",
@@ -117,6 +117,8 @@
     "Length": "37,57",
     "Wingspan": "35,8",
     "Height": "11,76",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200"
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200",
+    "alt": "Airbus A320 Sharklet|A320 Sharklet|Airbus A320SL|A320SL",
+    "diff": ""
   }
 }

@@ -117,7 +117,9 @@
     "Length": "37,57",
     "Wingspan": "34,1",
     "Height": "11,76",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200"
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A320#A320-200",
+    "alt": "",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

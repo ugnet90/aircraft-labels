@@ -99,7 +99,7 @@
     "Baureihe": "L-188",
     "Unterserie": "",
     "Marketingname": "L-188 Electra",
-    "Alternate_designations": "Lockheed L-188A|L-188A",
+    "Alternate_designations": "Lockheed L-188A Electra|L-188A Electra|Lockheed L-188C Electra|L-188C Electra",
     "parent_aircraft_id": "",
     "ICAO": "LO18",
     "IATA": "L88",
@@ -117,6 +117,8 @@
     "Length": "31,8",
     "Wingspan": "35,9",
     "Height": "10",
-    "Wiki": "https://de.wikipedia.org/wiki/Lockheed_L-188"
+    "Wiki": "https://de.wikipedia.org/wiki/Lockheed_L-188",
+    "alt": "Lockheed L-188A Electra|L-188A Electra|Lockheed L-188C Electra|L-188C Electra",
+    "diff": ""
   }
 }

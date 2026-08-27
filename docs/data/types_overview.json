@@ -4,7 +4,7 @@
   "master_count": 436,
   "with_any_models": 152,
   "missing": 284,
-  "with_alternate_designations": 236,
+  "with_alternate_designations": 246,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -619,9 +619,9 @@
         }
       ],
       "alternate_designations": [
-        "Airbus A300-605B|A300-605B",
-        "Airbus A300-605B",
-        "A300-605B"
+        "Airbus A300-600R|A300-600R",
+        "Airbus A300-600R",
+        "A300-600R"
       ],
       "role": "PAX",
       "fuselage": "TwinAisle",
@@ -1310,7 +1310,13 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A320 Sharklet|A320 Sharklet|Airbus A320SL|A320SL",
+        "Airbus A320 Sharklet",
+        "A320 Sharklet",
+        "Airbus A320SL",
+        "A320SL"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -1409,7 +1415,12 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A321XLRneo|A321XLRneo|A321 XLRneo",
+        "Airbus A321XLRneo",
+        "A321XLRneo",
+        "A321 XLRneo"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -1551,7 +1562,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A321SL|A321SL",
+        "Airbus A321SL",
+        "A321SL"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -1977,7 +1992,14 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus Beluga XL|Beluga XL|Airbus A330-700L Beluga XL|A330-700L Beluga XL|A330-700L",
+        "Airbus Beluga XL",
+        "Beluga XL",
+        "Airbus A330-700L Beluga XL",
+        "A330-700L Beluga XL",
+        "A330-700L"
+      ],
       "role": "CARGO",
       "fuselage": "TwinAisle",
       "market_segment": "Special",
@@ -2048,7 +2070,13 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Airbus A330neo|A330neo|Airbus A330-900|A330-900",
+        "Airbus A330neo",
+        "A330neo",
+        "Airbus A330-900",
+        "A330-900"
+      ],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -2310,9 +2338,11 @@
         }
       ],
       "alternate_designations": [
-        "Airbus A350XWB|A350XWB",
+        "Airbus A350XWB|A350XWB|Airbus A350-900XWB|A350-900XWB",
         "Airbus A350XWB",
-        "A350XWB"
+        "A350XWB",
+        "Airbus A350-900XWB",
+        "A350-900XWB"
       ],
       "role": "PAX",
       "fuselage": "TwinAisle",
@@ -3516,9 +3546,10 @@
         }
       ],
       "alternate_designations": [
-        "BAe 146-200|Avro RJ85",
-        "BAe 146-200",
-        "Avro RJ85"
+        "British Aerospace BAE 146/RJ-85|BAE 146/RJ-85|RJ-85",
+        "British Aerospace BAE 146/RJ-85",
+        "BAE 146/RJ-85",
+        "RJ-85"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -7720,10 +7751,9 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "Boeing E-4B|E-4A|NAOC",
-        "Boeing E-4B",
-        "E-4A",
-        "NAOC"
+        "Boeing E4-B|E4-B",
+        "Boeing E4-B",
+        "E4-B"
       ],
       "role": "SPECIAL",
       "fuselage": "Widebody",
@@ -8676,9 +8706,9 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "DC-4M, Argonaut",
-        "DC-4M",
-        "Argonaut"
+        "Canadair C-4F|C-4F",
+        "Canadair C-4F",
+        "C-4F"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -10326,7 +10356,12 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Douglas DC-8-21|DC-8-21|McDonnell Douglas DC-8-21",
+        "Douglas DC-8-21",
+        "DC-8-21",
+        "McDonnell Douglas DC-8-21"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",
@@ -10384,9 +10419,9 @@
         }
       ],
       "alternate_designations": [
-        "Douglas DC-8-30|DC-8-30",
-        "Douglas DC-8-30",
-        "DC-8-30"
+        "Douglas DC-8-32|DC-8-32",
+        "Douglas DC-8-32",
+        "DC-8-32"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -10516,9 +10551,11 @@
         }
       ],
       "alternate_designations": [
-        "Douglas DC-8-50|DC-8-50",
-        "Douglas DC-8-50",
-        "DC-8-50"
+        "Douglas DC-8-51|DC-8-51|Douglas DC-8-53|DC-8-53",
+        "Douglas DC-8-51",
+        "DC-8-51",
+        "Douglas DC-8-53",
+        "DC-8-53"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -11814,7 +11851,11 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Hawker Siddeley HS-748|HS-748",
+        "Hawker Siddeley HS-748",
+        "HS-748"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Regional",
@@ -12278,7 +12319,13 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Junkers JU-52|JU-52|Ju 52/3m|Junkers Ju 52/3m",
+        "Junkers JU-52",
+        "JU-52",
+        "Ju 52/3m",
+        "Junkers Ju 52/3m"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Standard",
@@ -12963,9 +13010,11 @@
         }
       ],
       "alternate_designations": [
-        "Lockheed L-188A|L-188A",
-        "Lockheed L-188A",
-        "L-188A"
+        "Lockheed L-188A Electra|L-188A Electra|Lockheed L-188C Electra|L-188C Electra",
+        "Lockheed L-188A Electra",
+        "L-188A Electra",
+        "Lockheed L-188C Electra",
+        "L-188C Electra"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -13782,9 +13831,9 @@
         }
       ],
       "alternate_designations": [
-        "McDonnell Douglas DC-9-50|DC-9 Series 50",
-        "McDonnell Douglas DC-9-50",
-        "DC-9 Series 50"
+        "Douglas DC-9-50|DC-9-50",
+        "Douglas DC-9-50",
+        "DC-9-50"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -14170,7 +14219,9 @@
       "ordered_count": 0,
       "total_count": 0,
       "airline_group_counts": [],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "YS-11"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "Regional",
@@ -15148,13 +15199,10 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "Sud Aviation SE 210 Caravelle 10B3|SE 210-10B3|SE-210-10B3|Caravelle 10B3|Caravelle 10B|Super Caravelle",
-        "Sud Aviation SE 210 Caravelle 10B3",
-        "SE 210-10B3",
-        "SE-210-10B3",
-        "Caravelle 10B3",
-        "Caravelle 10B",
-        "Super Caravelle"
+        "Sud Aviation SE-210 10B|SE-210 10B|SE 210 10B",
+        "Sud Aviation SE-210 10B",
+        "SE-210 10B",
+        "SE 210 10B"
       ],
       "role": "PAX",
       "fuselage": "SingleAisle",
@@ -15367,7 +15415,9 @@
           ]
         }
       ],
-      "alternate_designations": [],
+      "alternate_designations": [
+        "Concorde"
+      ],
       "role": "PAX",
       "fuselage": "SingleAisle",
       "market_segment": "LongHaul",

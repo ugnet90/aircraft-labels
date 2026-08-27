@@ -117,7 +117,9 @@
     "Length": "32,01",
     "Wingspan": "34,3",
     "Height": "8,72",
-    "Wiki": "https://de.wikipedia.org/wiki/Sud_Aviation_Caravelle#Caravelle_VI-R"
+    "Wiki": "https://de.wikipedia.org/wiki/Sud_Aviation_Caravelle#Caravelle_VI-R",
+    "alt": "Sud Aviation SE 210 Caravelle VI-R|SE 210 VI-R|SE-210 VI-R|Caravelle 6R|Caravelle VIR",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

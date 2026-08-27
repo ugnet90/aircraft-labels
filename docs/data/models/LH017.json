@@ -99,7 +99,7 @@
     "Baureihe": "Ju",
     "Unterserie": "3m",
     "Marketingname": "Tante Ju",
-    "Alternate_designations": "",
+    "Alternate_designations": "Junkers JU-52|JU-52|Ju 52/3m|Junkers Ju 52/3m",
     "parent_aircraft_id": "",
     "ICAO": "JU52",
     "IATA": "J52",
@@ -117,6 +117,8 @@
     "Length": "18,9",
     "Wingspan": "29,25",
     "Height": "4,5",
-    "Wiki": "https://de.wikipedia.org/wiki/Junkers_Ju_52"
+    "Wiki": "https://de.wikipedia.org/wiki/Junkers_Ju_52",
+    "alt": "Junkers JU-52|JU-52|Ju 52/3m|Junkers Ju 52/3m",
+    "diff": ""
   }
 }

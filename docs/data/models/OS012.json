@@ -99,7 +99,7 @@
     "Baureihe": "HS 748",
     "Unterserie": "",
     "Marketingname": "",
-    "Alternate_designations": "",
+    "Alternate_designations": "Hawker Siddeley HS-748|HS-748",
     "parent_aircraft_id": "",
     "ICAO": "A748",
     "IATA": "H74",
@@ -117,7 +117,9 @@
     "Length": "20,42",
     "Wingspan": "30,18",
     "Height": "7,57",
-    "Wiki": "https://de.wikipedia.org/wiki/Hawker-Siddeley_HS_748"
+    "Wiki": "https://de.wikipedia.org/wiki/Hawker-Siddeley_HS_748",
+    "alt": "Hawker Siddeley HS-748|HS-748",
+    "diff": ""
   },
   "livery_full": {
     "Airline": "Austrian Airlines",

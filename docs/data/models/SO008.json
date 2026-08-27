@@ -99,7 +99,7 @@
     "Baureihe": "A330",
     "Unterserie": "-743L",
     "Marketingname": "BelugaXL",
-    "Alternate_designations": "",
+    "Alternate_designations": "Airbus Beluga XL|Beluga XL|Airbus A330-700L Beluga XL|A330-700L Beluga XL|A330-700L",
     "parent_aircraft_id": "",
     "ICAO": "A337",
     "IATA": "37L",
@@ -117,6 +117,8 @@
     "Length": "63,1",
     "Wingspan": "60,3",
     "Height": "18,9",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_Beluga_XL"
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_Beluga_XL",
+    "alt": "Airbus Beluga XL|Beluga XL|Airbus A330-700L Beluga XL|A330-700L Beluga XL|A330-700L",
+    "diff": ""
   }
 }
