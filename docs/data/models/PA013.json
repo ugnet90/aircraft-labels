@@ -118,5 +118,20 @@
     "Wingspan": "44,42",
     "Height": "12,93",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_707"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan American World Airways",
+    "Livery_ID": "PAA-1958-GLOBE-PANAMERICAN",
+    "Livery_Name": "Jet Age / Globe – Pan American Titles",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1958",
+    "End_Year": "1970",
+    "Aircraft_Type": "DC-3|DC-4|DC-6|DC-7|B377|B707|B720|B727|DC-8",
+    "Example_Reg": "",
+    "Notes": "Klassisches Globe Scheme der Jet Age mit dünner blauer Cheatline, schwarzem ausgeschriebenem PAN AMERICAN Schriftzug und dem neuen blauen Globe am Leitwerk. Auf Jets als Jet Clippers bekannt.",
+    "Source_URL": "https://yesterdaysairlines.com/pan-am-liveries/",
+    "Photo_URL": ""
   }
 }

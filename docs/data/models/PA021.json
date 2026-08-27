@@ -118,5 +118,20 @@
     "Wingspan": "24,57",
     "Height": "7,59",
     "Wiki": "https://de.wikipedia.org/wiki/ATR_42#ATR_42-300"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan Am Express",
+    "Livery_ID": "PAA-1987-EXPRESS-BILLBOARD",
+    "Livery_Name": "Pan Am Express – Billboard",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "PAA-1984-BILLBOARD",
+    "Start_Year": "1987",
+    "End_Year": "1991",
+    "Aircraft_Type": "ATR 42|DHC-7|Jetstream 31",
+    "Example_Reg": "N4201G",
+    "Notes": "Pan-Am-Billboard-Grunddesign mit weißem Rumpf, sehr großem blauem PAN AM Schriftzug und Globe am Leitwerk, ergänzt um EXPRESS als Kennzeichnung der Regionaltochter Pan Am Express.",
+    "Source_URL": "https://www.pan-am.com/about",
+    "Photo_URL": ""
   }
 }

@@ -118,5 +118,20 @@
     "Wingspan": "39,88",
     "Height": "12,93",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_720"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan American World Airways",
+    "Livery_ID": "PAA-1970-GLOBE-SHORT",
+    "Livery_Name": "Globe – Pan Am Short Titles",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1970",
+    "End_Year": "1973",
+    "Aircraft_Type": "B707|B720|B727|B747|DC-8",
+    "Example_Reg": "",
+    "Notes": "Umstellung vom ausgeschriebenen PAN AMERICAN auf den kurzen schwarzen PAN AM Schriftzug. Alte, weit gesperrte Buchstabenform blieb zunächst erhalten; bei der 747 wurden Titel und Globe gegenüber der Rollout-Version vergrößert.",
+    "Source_URL": "https://yesterdaysairlines.com/pan-am-liveries/",
+    "Photo_URL": ""
   }
 }

@@ -118,5 +118,20 @@
     "Wingspan": "32,9",
     "Height": "10,4",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_727#727-200"
+  },
+  "livery_full": {
+    "Airline": "Pan American Airways (1998–2004)",
+    "Operator": "Pan American Airways",
+    "Livery_ID": "PAA3-1998-BILLBOARD",
+    "Livery_Name": "Pan Am III – Billboard",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "PAA2-1996-BILLBOARD",
+    "Start_Year": "1998",
+    "End_Year": "2004",
+    "Aircraft_Type": "B727-200",
+    "Example_Reg": "N363PA",
+    "Notes": "Dritte Verwendung der Pan-Am-Marke nach dem Ende von Pan Am II. Weiterführung des weißen Billboard-Designs mit großem blauem PAN AM Schriftzug und Globe am Leitwerk, hauptsächlich auf Boeing 727-200.",
+    "Source_URL": "https://en.wikipedia.org/wiki/Pan_Am_(1998%E2%80%932004)",
+    "Photo_URL": ""
   }
 }

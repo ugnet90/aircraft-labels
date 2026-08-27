@@ -118,5 +118,20 @@
     "Wingspan": "28,35",
     "Height": "11,23",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-200"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan American World Airways",
+    "Livery_ID": "PAA-1976-GLOBE-LARGE",
+    "Livery_Name": "Globe – Large Pan Am Titles",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1976",
+    "End_Year": "1984",
+    "Aircraft_Type": "B707|B727|B737|B747|B747SP|L1011|DC-10",
+    "Example_Reg": "",
+    "Notes": "Mit Einführung der 747SP überarbeitetes Globe Scheme: größerer schwarzer PAN AM Schriftzug mit engerem Buchstabenabstand, bei 747s bis zum Radom geführte blaue Cheatline, Script-Clipper-Namen sowie größere und schräg gestellte US-Flagge am Leitwerk.",
+    "Source_URL": "https://yesterdaysairlines.com/pan-am-liveries/",
+    "Photo_URL": ""
   }
 }

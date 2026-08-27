@@ -118,5 +118,20 @@
     "Wingspan": "43,9",
     "Height": "15,8",
     "Wiki": "https://de.wikipedia.org/wiki/Airbus_A310#A310-300"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan American World Airways",
+    "Livery_ID": "PAA-1984-BILLBOARD",
+    "Livery_Name": "Billboard PAN AM",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1984",
+    "End_Year": "1991",
+    "Aircraft_Type": "A300|A310|B727|B737|B747|B747SP|Dash 7|ATR42",
+    "Example_Reg": "",
+    "Notes": "Finales Billboard Scheme mit übergroßem blauem PAN AM Schriftzug auf weitgehend weißem Rumpf und weiterhin blauem Globe am Leitwerk. Airbus-Maschinen waren vollständig weiß; viele Boeing-Maschinen behielten einen naturmetallischen Unterrumpf.",
+    "Source_URL": "https://yesterdaysairlines.com/pan-am-liveries/",
+    "Photo_URL": ""
   }
 }

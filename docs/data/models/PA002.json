@@ -118,5 +118,20 @@
     "Wingspan": "28,88",
     "Height": "11,13",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_737#Boeing_737-400"
+  },
+  "livery_full": {
+    "Airline": "Pan American Airways (1996–1998)",
+    "Operator": "Pan American Airways",
+    "Livery_ID": "PAA2-1996-BILLBOARD",
+    "Livery_Name": "Pan Am II – Billboard",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "PAA-1984-BILLBOARD",
+    "Start_Year": "1996",
+    "End_Year": "1998",
+    "Aircraft_Type": "A300|B737-400|B727-200",
+    "Example_Reg": "N406KW",
+    "Notes": "Wiederbelebung der Pan-Am-Marke durch die 1996 gegründete Pan American Airways. Weißer Rumpf mit sehr großem blauem PAN AM Schriftzug und klassischem Globe am Leitwerk, optisch eng an das Billboard-Schema der ursprünglichen Pan Am angelehnt.",
+    "Source_URL": "https://yesterdaysairlines.com/no-carnival-pan-am-ii-1996-1998/",
+    "Photo_URL": ""
   }
 }

@@ -118,5 +118,20 @@
     "Wingspan": "43,05",
     "Height": "11,66",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_377"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan American World Airways",
+    "Livery_ID": "PAA-1945-WINGED-GLOBE-SILVER",
+    "Livery_Name": "Winged Globe – Silver",
+    "Livery_Type": "Standard",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1945",
+    "End_Year": "1950",
+    "Aircraft_Type": "C46|DC-4|CV240|L049|L749|B377",
+    "Example_Reg": "",
+    "Notes": "Nachkriegs-Livery mit weitgehend naturmetallischem Rumpf, zweigeteilter dunkelblauer Cheatline um die Fensterreihe, ausgeschriebenem PAN AMERICAN WORLD AIRWAYS Schriftzug und Winged-Globe-Logo. Früheste Ausführung des Postwar Winged Globe Scheme.",
+    "Source_URL": "https://yesterdaysairlines.com/pan-am-liveries/",
+    "Photo_URL": ""
   }
 }

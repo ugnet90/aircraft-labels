@@ -118,5 +118,20 @@
     "Wingspan": "59,64",
     "Height": "19,3",
     "Wiki": "https://de.wikipedia.org/wiki/Boeing_747"
+  },
+  "livery_full": {
+    "Airline": "Pan American World Airways",
+    "Operator": "Pan American World Airways",
+    "Livery_ID": "PAA-1970-CARGO",
+    "Livery_Name": "Pan Am Cargo",
+    "Livery_Type": "Special",
+    "Parent_Livery_ID": "",
+    "Start_Year": "1970",
+    "End_Year": "1983",
+    "Aircraft_Type": "B707|B747",
+    "Example_Reg": "N771PA",
+    "Notes": "Cargo-Branding der Globe-Ära auf 707- und 747-Frachtern beziehungsweise Frachterumbauten. Je nach Zeitraum und Maschine erschienen PAN AMERICAN beziehungsweise PAN AM CARGO Titel; die dedizierten Pan-Am-747-Cargoflugzeuge verließen die Flotte bis 1983.",
+    "Source_URL": "https://www.panam.org/component/igallery/a-747-salute?i=Pan_Am_Cargo_B747_Roy_Andersen_1977",
+    "Photo_URL": ""
   }
 }
