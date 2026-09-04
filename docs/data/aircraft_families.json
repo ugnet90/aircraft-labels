@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T16:52:47+02:00",
+  "generated_at": "2026-09-04T07:52:00+02:00",
   "count_families": 227,
   "families": {
     "AL-60": [
@@ -4590,18 +4590,6 @@
       {
         "aircraft_id": "MCD-DC9-10",
         "type": "McDonnell Douglas DC-9-10",
-        "parent_aircraft_id": "",
-        "parent_type": "",
-        "length": 31.82,
-        "wingspan": 27.25,
-        "height": 8.38,
-        "wingtip": "NONE",
-        "status": "missing",
-        "manufacturer": "McDonnell Douglas"
-      },
-      {
-        "aircraft_id": "MCD-DC9-15",
-        "type": "McDonnell Douglas DC-9-15",
         "parent_aircraft_id": "",
         "parent_type": "",
         "length": 31.82,

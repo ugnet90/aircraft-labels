@@ -99,7 +99,7 @@
     "Baureihe": "A300",
     "Unterserie": "B4",
     "Marketingname": "",
-    "Alternate_designations": "Airbus A300B|A300B|Airbus A300-B4|A300-B4|Airbus A300B4|A300B4",
+    "Alternate_designations": "",
     "parent_aircraft_id": "",
     "ICAO": "A30B",
     "IATA": "AB4",
@@ -117,8 +117,6 @@
     "Length": "53,6",
     "Wingspan": "44,8",
     "Height": "16,5",
-    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A300#A300_B4",
-    "alt": "",
-    "diff": ""
+    "Wiki": "https://de.wikipedia.org/wiki/Airbus_A300#A300_B4"
   }
 }

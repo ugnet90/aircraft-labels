@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 436,
+    "master_types": 435,
     "present_types": 146,
-    "missing_types": 284,
+    "missing_types": 283,
     "ordered_types": 6,
     "models": 299
   },
@@ -1356,12 +1356,6 @@
     {
       "aircraft_id": "MCD-DC9-10",
       "Typ_anzeige": "McDonnell Douglas DC-9-10",
-      "manufacturer": "McDonnell Douglas",
-      "status": "missing"
-    },
-    {
-      "aircraft_id": "MCD-DC9-15",
-      "Typ_anzeige": "McDonnell Douglas DC-9-15",
       "manufacturer": "McDonnell Douglas",
       "status": "missing"
     },

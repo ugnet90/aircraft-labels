@@ -1,10 +1,10 @@
 {
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
-  "master_count": 436,
+  "master_count": 435,
   "with_any_models": 152,
-  "missing": 284,
-  "with_alternate_designations": 247,
+  "missing": 283,
+  "with_alternate_designations": 245,
   "filters": {
     "manufacturers": [
       "Aermacchi",
@@ -575,15 +575,7 @@
           ]
         }
       ],
-      "alternate_designations": [
-        "Airbus A300B|A300B|Airbus A300-B4|A300-B4|Airbus A300B4|A300B4",
-        "Airbus A300B",
-        "A300B",
-        "Airbus A300-B4",
-        "A300-B4",
-        "Airbus A300B4",
-        "A300B4"
-      ],
+      "alternate_designations": [],
       "role": "PAX",
       "fuselage": "TwinAisle",
       "market_segment": "LongHaul",
@@ -13574,8 +13566,13 @@
       "total_count": 0,
       "airline_group_counts": [],
       "alternate_designations": [
-        "McDonnell Douglas DC-9-10|DC-9 Series 10",
+        "McDonnell Douglas DC-9-10|Douglas DC-9-11|Douglas DC-9-12|Douglas DC-9-13|Douglas DC-9-14|Douglas DC-9-15|DC-9 Series 10",
         "McDonnell Douglas DC-9-10",
+        "Douglas DC-9-11",
+        "Douglas DC-9-12",
+        "Douglas DC-9-13",
+        "Douglas DC-9-14",
+        "Douglas DC-9-15",
         "DC-9 Series 10"
       ],
       "role": "PAX",
@@ -13584,39 +13581,6 @@
       "aircraft_kind": "Landflugzeug",
       "aircraft_status": "ausgemustert",
       "first_flight": "1965",
-      "propulsion": "Jet",
-      "engines": "2",
-      "range_class": "Kurz/Mittel",
-      "passengers": "90",
-      "length_m": "31,82",
-      "wingspan_m": "27,25",
-      "height_m": "8,38"
-    },
-    {
-      "aircraft_id": "MCD-DC9-15",
-      "typ_anzeige": "McDonnell Douglas DC-9-15",
-      "type_key": "mcdonnell douglas dc-9-15",
-      "manufacturer": "McDonnell Douglas",
-      "parent_aircraft_id": "",
-      "wingtip": "NONE",
-      "has_wingtip": false,
-      "status": "missing",
-      "owned_count": 0,
-      "ordered_count": 0,
-      "total_count": 0,
-      "airline_group_counts": [],
-      "alternate_designations": [
-        "McDonnell Douglas DC-9-15|DC-9 Series 10|DC-9-10",
-        "McDonnell Douglas DC-9-15",
-        "DC-9 Series 10",
-        "DC-9-10"
-      ],
-      "role": "PAX",
-      "fuselage": "SingleAisle",
-      "market_segment": "Regional",
-      "aircraft_kind": "Landflugzeug",
-      "aircraft_status": "ausgemustert",
-      "first_flight": "1968",
       "propulsion": "Jet",
       "engines": "2",
       "range_class": "Kurz/Mittel",
