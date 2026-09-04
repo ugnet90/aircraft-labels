@@ -3,9 +3,9 @@
   "warning": "",
   "counts": {
     "master_types": 435,
-    "present_types": 146,
+    "present_types": 148,
     "missing_types": 283,
-    "ordered_types": 6,
+    "ordered_types": 4,
     "models": 299
   },
   "missing_types": [
@@ -1720,12 +1720,6 @@
       "status": "ordered"
     },
     {
-      "aircraft_id": "BAC-111-500",
-      "Typ_anzeige": "BAC 1-11-500",
-      "manufacturer": "BAC",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "BOE-757-300-WL",
       "Typ_anzeige": "Boeing 757-300 (Winglets)",
       "manufacturer": "Boeing",
@@ -1735,12 +1729,6 @@
       "aircraft_id": "BOM-CL601",
       "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "SUD-Caravelle-III",
-      "Typ_anzeige": "Sud Aviation Caravelle III",
-      "manufacturer": "Sud Aviation",
       "status": "ordered"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "model_id": "ORD-BA-17",
+  "model_id": "BA014",
   "airline_code": "BA",
   "airline": "British Airways",
   "airline_row": "British Airways",
@@ -26,7 +26,7 @@
   "postcard_price": 1.35,
   "postcards": [
     {
-      "id": "PC-ORD-BA-17-01",
+      "id": "PC-BA014-01",
       "label": "andere Kennung",
       "url": "https://jjpostcards.com/de/ansichtskarten/45383-british-airways-bac-1-11.html",
       "price": 1.35
@@ -36,13 +36,13 @@
   "photo_source_url": "https://www.jetphotos.com/photo/10975321",
   "photo_image_url": "",
   "photo_credit": "",
-  "arrived_excel": "",
-  "arrived": null,
-  "ordered_at": "2026-08-26",
-  "ordered": true,
+  "arrived_excel": "2026-09-01",
+  "arrived": "2026-09-01",
+  "ordered_at": null,
+  "ordered": false,
   "wishlist": false,
   "wishlist_prio": null,
-  "status": "ordered",
+  "status": "owned",
   "source": {
     "sheet": "BA",
     "row": "17"
@@ -67,13 +67,13 @@
     "shop": "MW-Moba",
     "price": 50.58,
     "shipping_allocated": 3.0,
-    "arrived": null,
-    "ordered_at": "2026-08-26",
-    "ordered": true,
-    "present": false,
+    "arrived": "2026-09-01",
+    "ordered_at": null,
+    "ordered": false,
+    "present": true,
     "wishlist": false,
     "wishlist_prio": null,
-    "status": "ordered",
+    "status": "owned",
     "flown": null,
     "special_note": "",
     "model_extra": ""
