@@ -77,28 +77,29 @@ LH;Lufthansa;Lufthansa Cargo;BOE-747-200F;Boeing 747-200F;Lufthansa;38
 LH;Lufthansa;Lufthansa;BOE-747-400;Boeing 747-400;Lufthansa;39
 LH;Lufthansa;Lufthansa;BOE-747-8;Boeing 747-8;Lufthansa;40
 LH;Lufthansa;Lufthansa;BOE-767-300;Boeing 767-300;Lufthansa;41
-LH;Lufthansa;Lufthansa;BOE-787-9;Boeing 787-9 Dreamliner;Lufthansa;42
-LH;Lufthansa;Lufthansa;BOM-CRJ100;Bombardier CRJ-100;Lufthansa;43
-LH;Lufthansa;Lufthansa;BOM-CRJ200;Bombardier CRJ-200;Lufthansa;44
-LH;Lufthansa;Lufthansa;BOM-CRJ700;Bombardier CRJ-700;Lufthansa;45
-LH;Lufthansa;Lufthansa CityLine;BOM-CRJ900;Bombardier CRJ-900;Lufthansa;46
-LH;Lufthansa;Lufthansa;BAE-146-200;British Aerospace 146-200;Lufthansa;47
-LH;Lufthansa;Lufthansa;CON-CV340;Convair CV-340-80;Lufthansa;48
-LH;Lufthansa;Lufthansa CityLine;DHC-DHC8-100;De Havilland Canada DHC-8-100;Lufthansa;49
-LH;Lufthansa;Lufthansa;DOR-DOX;Dornier Do X;Lufthansa;50
-LH;Lufthansa;Lufthansa;DOU-DC8-50;Douglas DC-8-50;Lufthansa;51
-LH;Lufthansa;Lufthansa Regional;EMB-E190;Embraer ERJ-190;Lufthansa;52
-LH;Lufthansa;Lufthansa;EMB-E195;Embraer ERJ-195;Lufthansa;53
-LH;Lufthansa;Lufthansa;FOW-FW200;Focke-Wulf Fw 200;Lufthansa;54
-LH;Lufthansa;Lufthansa;FOK-F27;Fokker F27-400 Friendship;Lufthansa;55
-LH;Lufthansa;Team Lufthansa;FOK-F50;Fokker 50;Lufthansa;56
-LH;Lufthansa;Lufthansa;FOK-F100;Fokker 100;Lufthansa;57
-LH;Lufthansa;Lufthansa;JUN-JU52-3M;Junkers Ju 52/3m;Lufthansa;58
-LH;Lufthansa;Lufthansa;LOC-L1049;Lockheed L-1049G Super Constellation;Lufthansa;59
-LH;Lufthansa;Lufthansa;LOC-L1649;Lockheed L-1649A Starliner;Lufthansa;60
-LH;Lufthansa;Lufthansa;MCD-DC10-30;McDonnell Douglas DC-10-30;Lufthansa;61
-LH;Lufthansa;Lufthansa Cargo;MCD-MD11F;McDonnell Douglas MD-11F;Lufthansa;62
-LH;Lufthansa;Lufthansa;VIC-Viscount-800;Vickers Viscount 814;Lufthansa;63
+LH;Lufthansa;Lufthansa Cargo;BOE-777F;Boeing 777F;Lufthansa;42
+LH;Lufthansa;Lufthansa;BOE-787-9;Boeing 787-9 Dreamliner;Lufthansa;43
+LH;Lufthansa;Lufthansa;BOM-CRJ100;Bombardier CRJ-100;Lufthansa;44
+LH;Lufthansa;Lufthansa;BOM-CRJ200;Bombardier CRJ-200;Lufthansa;45
+LH;Lufthansa;Lufthansa;BOM-CRJ700;Bombardier CRJ-700;Lufthansa;46
+LH;Lufthansa;Lufthansa CityLine;BOM-CRJ900;Bombardier CRJ-900;Lufthansa;47
+LH;Lufthansa;Lufthansa;BAE-146-200;British Aerospace 146-200;Lufthansa;48
+LH;Lufthansa;Lufthansa;CON-CV340;Convair CV-340-80;Lufthansa;49
+LH;Lufthansa;Lufthansa CityLine;DHC-DHC8-100;De Havilland Canada DHC-8-100;Lufthansa;50
+LH;Lufthansa;Lufthansa;DOR-DOX;Dornier Do X;Lufthansa;51
+LH;Lufthansa;Lufthansa;DOU-DC8-50;Douglas DC-8-50;Lufthansa;52
+LH;Lufthansa;Lufthansa Regional;EMB-E190;Embraer ERJ-190;Lufthansa;53
+LH;Lufthansa;Lufthansa;EMB-E195;Embraer ERJ-195;Lufthansa;54
+LH;Lufthansa;Lufthansa;FOW-FW200;Focke-Wulf Fw 200;Lufthansa;55
+LH;Lufthansa;Lufthansa;FOK-F27;Fokker F27-400 Friendship;Lufthansa;56
+LH;Lufthansa;Team Lufthansa;FOK-F50;Fokker 50;Lufthansa;57
+LH;Lufthansa;Lufthansa;FOK-F100;Fokker 100;Lufthansa;58
+LH;Lufthansa;Lufthansa;JUN-JU52-3M;Junkers Ju 52/3m;Lufthansa;59
+LH;Lufthansa;Lufthansa;LOC-L1049;Lockheed L-1049G Super Constellation;Lufthansa;60
+LH;Lufthansa;Lufthansa;LOC-L1649;Lockheed L-1649A Starliner;Lufthansa;61
+LH;Lufthansa;Lufthansa;MCD-DC10-30;McDonnell Douglas DC-10-30;Lufthansa;62
+LH;Lufthansa;Lufthansa Cargo;MCD-MD11F;McDonnell Douglas MD-11F;Lufthansa;63
+LH;Lufthansa;Lufthansa;VIC-Viscount-800;Vickers Viscount 814;Lufthansa;64
 LX;Swiss;Swiss;AIB-A220-100;Airbus A220-100;Swiss;4
 LX;Swiss;Swiss;AIB-A220-300;Airbus A220-300;Swiss;5
 LX;Swiss;Swiss;AIB-A310-200;Airbus A310-200;Swiss;6
@@ -603,6 +604,7 @@ US;USAF;United States Air Force;BOE-VC137C;Boeing VC-137C Stratoliner;USAF;16
 US;USAF;United States Air Force;BOE-C17A;Boeing C-17A Globemaster III;USAF;17
 US;USAF;United States Air Force;BOE-KC135D;Boeing KC-135D Stratotanker;USAF;18
 US;USAF;United States Air Force;LOC-C130H;Lockheed C-130H Hercules;USAF;19
+US;USAF;United States Air Force;LOC-EC121D;Lockheed EC-121D Warning Star;USAF;20
 WF;Wideroe;Wideroe;DHC-DHC6;De Havilland Canada DHC-6-200 Twin Otter;Wideroe;4
 WF;Wideroe;Wideroe;DHC-DHC7;De Havilland Canada DHC-7-100;Wideroe;5
 WF;Wideroe;Widerøe;DHC-DHC8-100;De Havilland Canada DHC-8-100;Wideroe;6
