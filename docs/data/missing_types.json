@@ -3,10 +3,10 @@
   "warning": "",
   "counts": {
     "master_types": 437,
-    "present_types": 148,
-    "missing_types": 285,
-    "ordered_types": 4,
-    "models": 299
+    "present_types": 149,
+    "missing_types": 287,
+    "ordered_types": 1,
+    "models": 301
   },
   "missing_types": [
     {
@@ -31,6 +31,12 @@
       "aircraft_id": "AEV-L29",
       "Typ_anzeige": "Aero Vodochody L-29 Delfín",
       "manufacturer": "Aero Vodochody",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "AIB-A300-600",
+      "Typ_anzeige": "Airbus A300-600",
+      "manufacturer": "Airbus",
       "status": "missing"
     },
     {
@@ -756,6 +762,12 @@
     {
       "aircraft_id": "BOM-CL600",
       "Typ_anzeige": "Bombardier Challenger 600",
+      "manufacturer": "Bombardier",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "BOM-CL601",
+      "Typ_anzeige": "Bombardier Challenger 601",
       "manufacturer": "Bombardier",
       "status": "missing"
     },
@@ -1720,27 +1732,9 @@
       "status": "missing"
     },
     {
-      "aircraft_id": "AIB-A300-600",
-      "Typ_anzeige": "Airbus A300-600",
-      "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
       "aircraft_id": "AIB-A350-1000",
       "Typ_anzeige": "Airbus A350-1000",
       "manufacturer": "Airbus",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOE-757-300-WL",
-      "Typ_anzeige": "Boeing 757-300 (Winglets)",
-      "manufacturer": "Boeing",
-      "status": "ordered"
-    },
-    {
-      "aircraft_id": "BOM-CL601",
-      "Typ_anzeige": "Bombardier Challenger 601",
-      "manufacturer": "Bombardier",
       "status": "ordered"
     }
   ]

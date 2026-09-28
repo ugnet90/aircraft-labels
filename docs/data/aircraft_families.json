@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T08:28:53+02:00",
+  "generated_at": "2026-09-28T08:29:18+02:00",
   "count_families": 228,
   "families": {
     "AL-60": [
@@ -2312,7 +2312,7 @@
         "wingspan": 41.1,
         "height": 13.56,
         "wingtip": "WL",
-        "status": "ordered",
+        "status": "owned",
         "manufacturer": "Boeing"
       },
       {
@@ -2556,7 +2556,7 @@
         "wingspan": 64.8,
         "height": 18.5,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "ordered",
         "manufacturer": "Boeing"
       },
       {
@@ -4292,7 +4292,7 @@
         "wingspan": 38.46,
         "height": 8.23,
         "wingtip": "NONE",
-        "status": "missing",
+        "status": "ordered",
         "manufacturer": "Lockheed"
       },
       {

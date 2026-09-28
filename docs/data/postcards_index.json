@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T08:28:53+02:00",
-  "count_total": 207,
-  "count_unique": 207,
+  "generated_at": "2026-09-28T08:29:18+02:00",
+  "count_total": 209,
+  "count_unique": 209,
   "items": [
     {
       "id": "PC-AB001-01",
@@ -254,6 +254,15 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.05
+    },
+    {
+      "id": "PC-FI0002-01",
+      "model_id": "FI0002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/35177-Icelandair-B757.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 1.35
     },
     {
       "id": "PC-FI001-01",
@@ -655,6 +664,15 @@
       "price": 1.35
     },
     {
+      "id": "PC-LH037-01",
+      "model_id": "LH037",
+      "url": "https://jjpostcards.com/de/ansichtskarten/35590-Lufthansa-A319.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
+    {
       "id": "PC-LX002-01",
       "model_id": "LX002",
       "url": "https://jjpostcards.com/de/ansichtskarten/9633-swissair-a321.html",
@@ -838,20 +856,19 @@
       "price": 1.35
     },
     {
-      "id": "PC-ORD-FI-12-01",
-      "model_id": "ORD-FI-12",
-      "url": "https://jjpostcards.com/de/ansichtskarten/35177-Icelandair-B757.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, andere Bemalung",
+      "id": "PC-ORD-LH-42-01",
+      "model_id": "ORD-LH-42",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42273-lufthansa-cargo-b777f.html",
+      "status": "owned",
+      "model_status": "owned",
       "price": 1.35
     },
     {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
-      "status": "none",
-      "model_status": "ordered",
+      "status": "owned",
+      "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
@@ -1636,8 +1653,8 @@
       "price": 0.85
     },
     {
-      "id": "PC-WIS-LH-48-01",
-      "model_id": "WIS-LH-48",
+      "id": "PC-WIS-LH-49-01",
+      "model_id": "WIS-LH-49",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "status": "none",
       "model_status": "wishlist",
@@ -2016,6 +2033,15 @@
       "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.05
+    },
+    "PC-FI0002-01": {
+      "id": "PC-FI0002-01",
+      "model_id": "FI0002",
+      "url": "https://jjpostcards.com/de/ansichtskarten/35177-Icelandair-B757.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung, andere Bemalung",
+      "price": 1.35
     },
     "PC-FI001-01": {
       "id": "PC-FI001-01",
@@ -2416,6 +2442,15 @@
       "model_status": "owned",
       "price": 1.35
     },
+    "PC-LH037-01": {
+      "id": "PC-LH037-01",
+      "model_id": "LH037",
+      "url": "https://jjpostcards.com/de/ansichtskarten/35590-Lufthansa-A319.html",
+      "status": "owned",
+      "model_status": "owned",
+      "label": "andere Kennung",
+      "price": 0.85
+    },
     "PC-LX002-01": {
       "id": "PC-LX002-01",
       "model_id": "LX002",
@@ -2599,21 +2634,20 @@
       "label": "andere Kennung",
       "price": 1.35
     },
-    "PC-ORD-FI-12-01": {
-      "id": "PC-ORD-FI-12-01",
-      "model_id": "ORD-FI-12",
-      "url": "https://jjpostcards.com/de/ansichtskarten/35177-Icelandair-B757.html",
-      "status": "none",
-      "model_status": "ordered",
-      "label": "andere Kennung, andere Bemalung",
+    "PC-ORD-LH-42-01": {
+      "id": "PC-ORD-LH-42-01",
+      "model_id": "ORD-LH-42",
+      "url": "https://jjpostcards.com/de/ansichtskarten/42273-lufthansa-cargo-b777f.html",
+      "status": "owned",
+      "model_status": "owned",
       "price": 1.35
     },
     "PC-ORD-LH-7-01": {
       "id": "PC-ORD-LH-7-01",
       "model_id": "ORD-LH-7",
       "url": "https://jjpostcards.com/de/ansichtskarten/15351-lufthansa-a300.html",
-      "status": "none",
-      "model_status": "ordered",
+      "status": "owned",
+      "model_status": "owned",
       "label": "andere Kennung",
       "price": 1.35
     },
@@ -3397,9 +3431,9 @@
       "model_status": "wishlist",
       "price": 0.85
     },
-    "PC-WIS-LH-48-01": {
-      "id": "PC-WIS-LH-48-01",
-      "model_id": "WIS-LH-48",
+    "PC-WIS-LH-49-01": {
+      "id": "PC-WIS-LH-49-01",
+      "model_id": "WIS-LH-49",
       "url": "https://jjpostcards.com/de/ansichtskarten/15740-lufthansa-cv-440.html",
       "status": "none",
       "model_status": "wishlist",

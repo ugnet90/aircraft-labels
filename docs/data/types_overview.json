@@ -2,8 +2,8 @@
   "schema": "aircraft-labels.types-overview.v1",
   "generated_at": "",
   "master_count": 437,
-  "with_any_models": 152,
-  "missing": 285,
+  "with_any_models": 150,
+  "missing": 287,
   "with_alternate_designations": 247,
   "filters": {
     "manufacturers": [
@@ -598,26 +598,11 @@
       "parent_aircraft_id": "",
       "wingtip": "NONE",
       "has_wingtip": false,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Lufthansa",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Lufthansa",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
       "alternate_designations": [
         "Airbus A300-600R|A300-600R",
         "Airbus A300-600R",
@@ -977,9 +962,9 @@
       "wingtip": "NONE",
       "has_wingtip": false,
       "status": "owned",
-      "owned_count": 3,
+      "owned_count": 4,
       "ordered_count": 0,
-      "total_count": 3,
+      "total_count": 4,
       "airline_group_counts": [
         {
           "group": "Austrian",
@@ -989,6 +974,20 @@
           "airlines": [
             {
               "airline": "Austrian",
+              "owned": 1,
+              "ordered": 0,
+              "total": 1
+            }
+          ]
+        },
+        {
+          "group": "Lufthansa",
+          "owned": 1,
+          "ordered": 0,
+          "total": 1,
+          "airlines": [
+            {
+              "airline": "Lufthansa",
               "owned": 1,
               "ordered": 0,
               "total": 1
@@ -6625,21 +6624,21 @@
       "parent_aircraft_id": "BOE-757-300",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "ordered",
-      "owned_count": 0,
-      "ordered_count": 1,
+      "status": "owned",
+      "owned_count": 1,
+      "ordered_count": 0,
       "total_count": 1,
       "airline_group_counts": [
         {
           "group": "Icelandair",
-          "owned": 0,
-          "ordered": 1,
+          "owned": 1,
+          "ordered": 0,
           "total": 1,
           "airlines": [
             {
               "airline": "Icelandair",
-              "owned": 0,
-              "ordered": 1,
+              "owned": 1,
+              "ordered": 0,
               "total": 1
             }
           ]
@@ -8145,26 +8144,11 @@
       "parent_aircraft_id": "BOM-CL600",
       "wingtip": "WL",
       "has_wingtip": true,
-      "status": "ordered",
+      "status": "missing",
       "owned_count": 0,
-      "ordered_count": 1,
-      "total_count": 1,
-      "airline_group_counts": [
-        {
-          "group": "Luftwaffe",
-          "owned": 0,
-          "ordered": 1,
-          "total": 1,
-          "airlines": [
-            {
-              "airline": "Luftwaffe (German Air Force)",
-              "owned": 0,
-              "ordered": 1,
-              "total": 1
-            }
-          ]
-        }
-      ],
+      "ordered_count": 0,
+      "total_count": 0,
+      "airline_group_counts": [],
       "alternate_designations": [
         "Canadair CL-601 Challenger|CL-601-1A|CL-601-3A",
         "Canadair CL-601 Challenger",
