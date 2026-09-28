@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T07:52:20+02:00",
-  "count_families": 227,
+  "generated_at": "2026-09-28T08:28:53+02:00",
+  "count_families": 228,
   "families": {
     "AL-60": [
       {
@@ -4277,6 +4277,32 @@
         "length": 75.53,
         "wingspan": 67.89,
         "height": 19.84,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Lockheed"
+      }
+    ],
+    "EC-121": [
+      {
+        "aircraft_id": "LOC-EC121D",
+        "type": "Lockheed EC-121D Warning Star",
+        "parent_aircraft_id": "INFO:LOC-EC121C",
+        "parent_type": "",
+        "length": 35.41,
+        "wingspan": 38.46,
+        "height": 8.23,
+        "wingtip": "NONE",
+        "status": "missing",
+        "manufacturer": "Lockheed"
+      },
+      {
+        "aircraft_id": "LOC-EC121T",
+        "type": "Lockheed EC-121T Warning Star",
+        "parent_aircraft_id": "LOC-EC121D",
+        "parent_type": "Lockheed EC-121D Warning Star",
+        "length": 35.41,
+        "wingspan": 38.46,
+        "height": 8.23,
         "wingtip": "NONE",
         "status": "missing",
         "manufacturer": "Lockheed"

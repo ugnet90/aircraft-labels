@@ -2,9 +2,9 @@
   "schema": "aircraft-labels.missing-types.v3",
   "warning": "",
   "counts": {
-    "master_types": 435,
+    "master_types": 437,
     "present_types": 148,
-    "missing_types": 283,
+    "missing_types": 285,
     "ordered_types": 4,
     "models": 299
   },
@@ -1236,6 +1236,18 @@
     {
       "aircraft_id": "LOC-C5M",
       "Typ_anzeige": "Lockheed C-5M Super Galaxy",
+      "manufacturer": "Lockheed",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "LOC-EC121D",
+      "Typ_anzeige": "Lockheed EC-121D Warning Star",
+      "manufacturer": "Lockheed",
+      "status": "missing"
+    },
+    {
+      "aircraft_id": "LOC-EC121T",
+      "Typ_anzeige": "Lockheed EC-121T Warning Star",
       "manufacturer": "Lockheed",
       "status": "missing"
     },
